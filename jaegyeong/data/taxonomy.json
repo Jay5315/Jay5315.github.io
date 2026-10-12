@@ -1,0 +1,742 @@
+[
+  {
+    "id": "F01",
+    "subject": "재무회계",
+    "chapter": "회계기초·재무보고",
+    "name": "회계의 기초·개념체계",
+    "source_count": 101,
+    "entry_count": 91,
+    "representative_count": 91,
+    "review_count": 0
+  },
+  {
+    "id": "F02",
+    "subject": "재무회계",
+    "chapter": "회계기초·재무보고",
+    "name": "재무제표 표시·공시",
+    "source_count": 70,
+    "entry_count": 65,
+    "representative_count": 64,
+    "review_count": 1
+  },
+  {
+    "id": "F03",
+    "subject": "재무회계",
+    "chapter": "회계기초·재무보고",
+    "name": "보고기간후사건",
+    "source_count": 17,
+    "entry_count": 16,
+    "representative_count": 16,
+    "review_count": 1
+  },
+  {
+    "id": "F04",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "재고자산",
+    "source_count": 122,
+    "entry_count": 119,
+    "representative_count": 114,
+    "review_count": 5
+  },
+  {
+    "id": "F05",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "유형자산",
+    "source_count": 101,
+    "entry_count": 101,
+    "representative_count": 98,
+    "review_count": 7
+  },
+  {
+    "id": "F06",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "차입원가",
+    "source_count": 10,
+    "entry_count": 10,
+    "representative_count": 10,
+    "review_count": 0
+  },
+  {
+    "id": "F07",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "무형자산",
+    "source_count": 71,
+    "entry_count": 70,
+    "representative_count": 68,
+    "review_count": 0
+  },
+  {
+    "id": "F08",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "투자부동산",
+    "source_count": 37,
+    "entry_count": 36,
+    "representative_count": 36,
+    "review_count": 5
+  },
+  {
+    "id": "F09",
+    "subject": "재무회계",
+    "chapter": "자산",
+    "name": "자산손상",
+    "source_count": 21,
+    "entry_count": 21,
+    "representative_count": 21,
+    "review_count": 1
+  },
+  {
+    "id": "F10",
+    "subject": "재무회계",
+    "chapter": "금융상품",
+    "name": "금융자산",
+    "source_count": 95,
+    "entry_count": 93,
+    "representative_count": 90,
+    "review_count": 3
+  },
+  {
+    "id": "F11",
+    "subject": "재무회계",
+    "chapter": "금융상품",
+    "name": "금융부채·사채",
+    "source_count": 64,
+    "entry_count": 63,
+    "representative_count": 59,
+    "review_count": 0
+  },
+  {
+    "id": "F12",
+    "subject": "재무회계",
+    "chapter": "금융상품",
+    "name": "복합금융상품",
+    "source_count": 34,
+    "entry_count": 32,
+    "representative_count": 32,
+    "review_count": 4
+  },
+  {
+    "id": "F13",
+    "subject": "재무회계",
+    "chapter": "부채·자본",
+    "name": "충당부채·우발항목",
+    "source_count": 37,
+    "entry_count": 35,
+    "representative_count": 33,
+    "review_count": 5
+  },
+  {
+    "id": "F14",
+    "subject": "재무회계",
+    "chapter": "부채·자본",
+    "name": "자본·배당",
+    "source_count": 74,
+    "entry_count": 68,
+    "representative_count": 64,
+    "review_count": 1
+  },
+  {
+    "id": "F15",
+    "subject": "재무회계",
+    "chapter": "수익·비용",
+    "name": "수익인식",
+    "source_count": 91,
+    "entry_count": 90,
+    "representative_count": 86,
+    "review_count": 2
+  },
+  {
+    "id": "F16",
+    "subject": "재무회계",
+    "chapter": "수익·비용",
+    "name": "건설계약",
+    "source_count": 50,
+    "entry_count": 48,
+    "representative_count": 41,
+    "review_count": 1
+  },
+  {
+    "id": "F17",
+    "subject": "재무회계",
+    "chapter": "수익·비용",
+    "name": "종업원급여",
+    "source_count": 43,
+    "entry_count": 43,
+    "representative_count": 42,
+    "review_count": 0
+  },
+  {
+    "id": "F18",
+    "subject": "재무회계",
+    "chapter": "수익·비용",
+    "name": "주식기준보상",
+    "source_count": 38,
+    "entry_count": 37,
+    "representative_count": 34,
+    "review_count": 0
+  },
+  {
+    "id": "F19",
+    "subject": "재무회계",
+    "chapter": "수익·비용",
+    "name": "법인세회계",
+    "source_count": 76,
+    "entry_count": 71,
+    "representative_count": 69,
+    "review_count": 0
+  },
+  {
+    "id": "F20",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "회계변경·오류수정",
+    "source_count": 33,
+    "entry_count": 30,
+    "representative_count": 30,
+    "review_count": 4
+  },
+  {
+    "id": "F21",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "주당이익",
+    "source_count": 38,
+    "entry_count": 38,
+    "representative_count": 35,
+    "review_count": 0
+  },
+  {
+    "id": "F22",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "관계기업·지분법",
+    "source_count": 72,
+    "entry_count": 68,
+    "representative_count": 61,
+    "review_count": 0
+  },
+  {
+    "id": "F23",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "환율변동효과",
+    "source_count": 38,
+    "entry_count": 35,
+    "representative_count": 34,
+    "review_count": 1
+  },
+  {
+    "id": "F24",
+    "subject": "재무회계",
+    "chapter": "금융상품",
+    "name": "파생상품·위험회피",
+    "source_count": 35,
+    "entry_count": 32,
+    "representative_count": 32,
+    "review_count": 0
+  },
+  {
+    "id": "F25",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "리스",
+    "source_count": 47,
+    "entry_count": 45,
+    "representative_count": 45,
+    "review_count": 0
+  },
+  {
+    "id": "F26",
+    "subject": "재무회계",
+    "chapter": "기타 회계처리",
+    "name": "현금흐름표",
+    "source_count": 105,
+    "entry_count": 101,
+    "representative_count": 93,
+    "review_count": 1
+  },
+  {
+    "id": "T01",
+    "subject": "세무회계",
+    "chapter": "조세총론·국세기본법",
+    "name": "조세총론·조세법 원칙",
+    "source_count": 35,
+    "entry_count": 32,
+    "representative_count": 32,
+    "review_count": 0
+  },
+  {
+    "id": "T02",
+    "subject": "세무회계",
+    "chapter": "조세총론·국세기본법",
+    "name": "국세기본법·납세절차",
+    "source_count": 112,
+    "entry_count": 110,
+    "representative_count": 110,
+    "review_count": 0
+  },
+  {
+    "id": "C01",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "법인세 총설·사업연도·납세지",
+    "source_count": 32,
+    "entry_count": 31,
+    "representative_count": 31,
+    "review_count": 0
+  },
+  {
+    "id": "C02",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "세무조정·소득처분",
+    "source_count": 39,
+    "entry_count": 38,
+    "representative_count": 38,
+    "review_count": 3
+  },
+  {
+    "id": "C03",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "익금·수입배당금",
+    "source_count": 32,
+    "entry_count": 32,
+    "representative_count": 32,
+    "review_count": 0
+  },
+  {
+    "id": "C04",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "손금·인건비·지급이자",
+    "source_count": 120,
+    "entry_count": 117,
+    "representative_count": 117,
+    "review_count": 7
+  },
+  {
+    "id": "C05",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "손익귀속·자산평가",
+    "source_count": 44,
+    "entry_count": 43,
+    "representative_count": 43,
+    "review_count": 1
+  },
+  {
+    "id": "C06",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "감가상각 세무조정",
+    "source_count": 78,
+    "entry_count": 75,
+    "representative_count": 74,
+    "review_count": 3
+  },
+  {
+    "id": "C07",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "기부금",
+    "source_count": 50,
+    "entry_count": 49,
+    "representative_count": 49,
+    "review_count": 3
+  },
+  {
+    "id": "C08",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "접대비·기업업무추진비",
+    "source_count": 39,
+    "entry_count": 38,
+    "representative_count": 38,
+    "review_count": 0
+  },
+  {
+    "id": "C09",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "충당금·준비금·대손금",
+    "source_count": 73,
+    "entry_count": 67,
+    "representative_count": 66,
+    "review_count": 1
+  },
+  {
+    "id": "C10",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "부당행위계산 부인",
+    "source_count": 38,
+    "entry_count": 38,
+    "representative_count": 37,
+    "review_count": 0
+  },
+  {
+    "id": "C11",
+    "subject": "세무회계",
+    "chapter": "법인세",
+    "name": "과세표준·세액계산·신고납부",
+    "source_count": 74,
+    "entry_count": 72,
+    "representative_count": 72,
+    "review_count": 0
+  },
+  {
+    "id": "I01",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "소득세 총설·납세의무",
+    "source_count": 35,
+    "entry_count": 34,
+    "representative_count": 34,
+    "review_count": 1
+  },
+  {
+    "id": "I02",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "금융소득",
+    "source_count": 37,
+    "entry_count": 35,
+    "representative_count": 35,
+    "review_count": 0
+  },
+  {
+    "id": "I03",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "사업소득",
+    "source_count": 40,
+    "entry_count": 40,
+    "representative_count": 39,
+    "review_count": 0
+  },
+  {
+    "id": "I04",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "근로소득",
+    "source_count": 47,
+    "entry_count": 47,
+    "representative_count": 47,
+    "review_count": 2
+  },
+  {
+    "id": "I05",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "연금·기타·퇴직소득",
+    "source_count": 42,
+    "entry_count": 41,
+    "representative_count": 41,
+    "review_count": 0
+  },
+  {
+    "id": "I06",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "종합소득공제·세액계산",
+    "source_count": 88,
+    "entry_count": 88,
+    "representative_count": 88,
+    "review_count": 3
+  },
+  {
+    "id": "I07",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "양도소득",
+    "source_count": 35,
+    "entry_count": 35,
+    "representative_count": 34,
+    "review_count": 4
+  },
+  {
+    "id": "I08",
+    "subject": "세무회계",
+    "chapter": "소득세",
+    "name": "원천징수·신고납부",
+    "source_count": 56,
+    "entry_count": 54,
+    "representative_count": 54,
+    "review_count": 2
+  },
+  {
+    "id": "V01",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "부가가치세 총설·사업장",
+    "source_count": 144,
+    "entry_count": 139,
+    "representative_count": 139,
+    "review_count": 0
+  },
+  {
+    "id": "V02",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "과세거래·간주공급",
+    "source_count": 35,
+    "entry_count": 34,
+    "representative_count": 34,
+    "review_count": 0
+  },
+  {
+    "id": "V03",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "공급시기",
+    "source_count": 25,
+    "entry_count": 23,
+    "representative_count": 23,
+    "review_count": 0
+  },
+  {
+    "id": "V04",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "영세율·면세",
+    "source_count": 40,
+    "entry_count": 39,
+    "representative_count": 39,
+    "review_count": 2
+  },
+  {
+    "id": "V05",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "과세표준·매출세액",
+    "source_count": 44,
+    "entry_count": 44,
+    "representative_count": 44,
+    "review_count": 6
+  },
+  {
+    "id": "V06",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "매입세액·안분계산",
+    "source_count": 41,
+    "entry_count": 41,
+    "representative_count": 41,
+    "review_count": 1
+  },
+  {
+    "id": "V07",
+    "subject": "세무회계",
+    "chapter": "부가가치세",
+    "name": "신고납부·세금계산서·가산세",
+    "source_count": 45,
+    "entry_count": 43,
+    "representative_count": 43,
+    "review_count": 1
+  },
+  {
+    "id": "M01",
+    "subject": "원가관리회계",
+    "chapter": "원가계산의 기초",
+    "name": "원가의 개념·분류",
+    "source_count": 43,
+    "entry_count": 34,
+    "representative_count": 34,
+    "review_count": 1
+  },
+  {
+    "id": "M02",
+    "subject": "원가관리회계",
+    "chapter": "원가계산의 기초",
+    "name": "원가흐름·제조원가명세서",
+    "source_count": 45,
+    "entry_count": 43,
+    "representative_count": 36,
+    "review_count": 4
+  },
+  {
+    "id": "M03",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "원가배분·보조부문",
+    "source_count": 71,
+    "entry_count": 69,
+    "representative_count": 67,
+    "review_count": 0
+  },
+  {
+    "id": "M04",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "개별원가계산",
+    "source_count": 88,
+    "entry_count": 80,
+    "representative_count": 67,
+    "review_count": 8
+  },
+  {
+    "id": "M05",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "종합원가계산",
+    "source_count": 122,
+    "entry_count": 112,
+    "representative_count": 98,
+    "review_count": 2
+  },
+  {
+    "id": "M06",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "정상원가계산",
+    "source_count": 43,
+    "entry_count": 38,
+    "representative_count": 37,
+    "review_count": 3
+  },
+  {
+    "id": "M07",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "표준원가·차이분석",
+    "source_count": 180,
+    "entry_count": 163,
+    "representative_count": 155,
+    "review_count": 0
+  },
+  {
+    "id": "M08",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "전부·변동·초변동원가계산",
+    "source_count": 184,
+    "entry_count": 172,
+    "representative_count": 156,
+    "review_count": 0
+  },
+  {
+    "id": "M09",
+    "subject": "원가관리회계",
+    "chapter": "원가계산",
+    "name": "활동기준원가계산",
+    "source_count": 41,
+    "entry_count": 36,
+    "representative_count": 35,
+    "review_count": 0
+  },
+  {
+    "id": "M10",
+    "subject": "원가관리회계",
+    "chapter": "계획·통제",
+    "name": "원가추정",
+    "source_count": 40,
+    "entry_count": 35,
+    "representative_count": 33,
+    "review_count": 0
+  },
+  {
+    "id": "M11",
+    "subject": "원가관리회계",
+    "chapter": "계획·통제",
+    "name": "CVP·손익분기·영업레버리지",
+    "source_count": 115,
+    "entry_count": 110,
+    "representative_count": 105,
+    "review_count": 3
+  },
+  {
+    "id": "M12",
+    "subject": "원가관리회계",
+    "chapter": "계획·통제",
+    "name": "예산편성",
+    "source_count": 31,
+    "entry_count": 26,
+    "representative_count": 26,
+    "review_count": 0
+  },
+  {
+    "id": "M13",
+    "subject": "원가관리회계",
+    "chapter": "계획·통제",
+    "name": "책임회계·성과평가",
+    "source_count": 175,
+    "entry_count": 156,
+    "representative_count": 143,
+    "review_count": 15
+  },
+  {
+    "id": "M14",
+    "subject": "원가관리회계",
+    "chapter": "의사결정",
+    "name": "단기의사결정",
+    "source_count": 156,
+    "entry_count": 142,
+    "representative_count": 125,
+    "review_count": 3
+  },
+  {
+    "id": "M15",
+    "subject": "원가관리회계",
+    "chapter": "의사결정",
+    "name": "자본예산·장기의사결정",
+    "source_count": 110,
+    "entry_count": 97,
+    "representative_count": 91,
+    "review_count": 4
+  },
+  {
+    "id": "M16",
+    "subject": "원가관리회계",
+    "chapter": "의사결정",
+    "name": "대체가격",
+    "source_count": 29,
+    "entry_count": 28,
+    "representative_count": 22,
+    "review_count": 0
+  },
+  {
+    "id": "M17",
+    "subject": "원가관리회계",
+    "chapter": "의사결정",
+    "name": "판매가격 결정",
+    "source_count": 9,
+    "entry_count": 8,
+    "representative_count": 8,
+    "review_count": 0
+  },
+  {
+    "id": "M18",
+    "subject": "원가관리회계",
+    "chapter": "전략적 원가관리",
+    "name": "품질원가",
+    "source_count": 21,
+    "entry_count": 21,
+    "representative_count": 20,
+    "review_count": 1
+  },
+  {
+    "id": "M19",
+    "subject": "원가관리회계",
+    "chapter": "전략적 원가관리",
+    "name": "목표원가·수명주기·적시생산",
+    "source_count": 11,
+    "entry_count": 9,
+    "representative_count": 9,
+    "review_count": 0
+  },
+  {
+    "id": "M20",
+    "subject": "원가관리회계",
+    "chapter": "전략적 원가관리",
+    "name": "균형성과표",
+    "source_count": 6,
+    "entry_count": 6,
+    "representative_count": 6,
+    "review_count": 0
+  }
+]

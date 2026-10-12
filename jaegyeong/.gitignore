@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+_artifacts/
+dist/
+data/extraction-cache*.json
+build.log
+.env
+.env.*

@@ -1,0 +1,15 @@
+{
+  "source_questions": 4560,
+  "classified_entries": 4322,
+  "part_count": 74,
+  "parts_with_questions": 74,
+  "review_entries": 126,
+  "confidence_counts": {
+    "high": 4189,
+    "medium": 105,
+    "low": 17,
+    "reviewed": 11
+  },
+  "family_disagreements": 0,
+  "method": "subject-specific weighted content rules plus reviewed overrides; no question-number inference"
+}

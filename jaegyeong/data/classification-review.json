@@ -1,0 +1,4878 @@
+[
+  {
+    "id": "2022-01-069",
+    "subject": "세무회계",
+    "primary_part_id": "I07",
+    "part": "양도소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "C11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "장기보유특별공제",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "양도소득과세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I07",
+        "score": 30.72
+      },
+      {
+        "part_id": "C11",
+        "score": 28.0
+      },
+      {
+        "part_id": "C05",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-01-073",
+    "subject": "세무회계",
+    "primary_part_id": "V04",
+    "part": "영세율·면세",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "V06"
+    ],
+    "tags": [
+      "면세",
+      "매입세액"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "면세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V04",
+        "score": 33.0
+      },
+      {
+        "part_id": "V06",
+        "score": 31.02
+      },
+      {
+        "part_id": "V05",
+        "score": 8.39
+      }
+    ]
+  },
+  {
+    "id": "2022-01-087",
+    "subject": "원가관리회계",
+    "primary_part_id": "M05",
+    "part": "종합원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M13",
+      "M04"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "종합원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M05",
+        "score": 25.0
+      },
+      {
+        "part_id": "M13",
+        "score": 21.0
+      },
+      {
+        "part_id": "M04",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2022-01-107",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "성과평가",
+        "location": "stem"
+      },
+      {
+        "pattern": "이익중심점",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 21.51
+      },
+      {
+        "part_id": "M11",
+        "score": 16.0
+      },
+      {
+        "part_id": "M08",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-01-108",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매출수량차이",
+        "location": "stem"
+      },
+      {
+        "pattern": "매출배합차이",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-01-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자수익률",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "성과평가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 30.44
+      },
+      {
+        "part_id": "M15",
+        "score": 25.51
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-01-111",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 28.0
+      },
+      {
+        "part_id": "M15",
+        "score": 25.0
+      },
+      {
+        "part_id": "M09",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-03-018",
+    "subject": "재무회계",
+    "primary_part_id": "F12",
+    "part": "복합금융상품",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "전환권",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "전환사채",
+        "location": "choices"
+      },
+      {
+        "pattern": "신주인수권부사채",
+        "location": "choices"
+      },
+      {
+        "pattern": "신주인수권",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F12",
+        "score": 17.17
+      },
+      {
+        "part_id": "F11",
+        "score": 16.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-03-077",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "C05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 18
+      },
+      {
+        "part_id": "C05",
+        "score": 16.0
+      },
+      {
+        "part_id": "V01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-03-080",
+    "subject": "세무회계",
+    "primary_part_id": "V07",
+    "part": "신고납부·세금계산서·가산세",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "V06"
+    ],
+    "tags": [
+      "매입세액"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "부가가치세확정신고",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "확정신고",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "세금계산서",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V07",
+        "score": 34.02
+      },
+      {
+        "part_id": "V06",
+        "score": 30.51
+      },
+      {
+        "part_id": "V01",
+        "score": 8.0
+      }
+    ]
+  },
+  {
+    "id": "2022-03-108",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자수익률",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "성과평가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 42.44
+      },
+      {
+        "part_id": "M15",
+        "score": 37.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-05-044",
+    "subject": "세무회계",
+    "primary_part_id": "C07",
+    "part": "기부금",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C11",
+      "C04"
+    ],
+    "tags": [
+      "세무조정",
+      "기부금"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기부금",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C07",
+        "score": 21.0
+      },
+      {
+        "part_id": "C11",
+        "score": 18.72
+      },
+      {
+        "part_id": "C04",
+        "score": 16.51
+      }
+    ]
+  },
+  {
+    "id": "2022-05-046",
+    "subject": "세무회계",
+    "primary_part_id": "C02",
+    "part": "세무조정·소득처분",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C04"
+    ],
+    "tags": [
+      "세무조정",
+      "소득처분"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "소득처분",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "익금산입",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "익금불산입",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "유보",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "손금산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C02",
+        "score": 23.06
+      },
+      {
+        "part_id": "C04",
+        "score": 21.02
+      },
+      {
+        "part_id": "C01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-05-052",
+    "subject": "세무회계",
+    "primary_part_id": "C06",
+    "part": "감가상각 세무조정",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C10"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "감가상각",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C06",
+        "score": 19.23
+      },
+      {
+        "part_id": "C10",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-06-014",
+    "subject": "재무회계",
+    "primary_part_id": "F08",
+    "part": "투자부동산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F25"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자부동산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "공정가치모형",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F08",
+        "score": 25.51
+      },
+      {
+        "part_id": "F25",
+        "score": 25.0
+      },
+      {
+        "part_id": "F05",
+        "score": 3.39
+      }
+    ]
+  },
+  {
+    "id": "2022-07-014",
+    "subject": "재무회계",
+    "primary_part_id": "F08",
+    "part": "투자부동산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F25"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자부동산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "공정가치모형",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F08",
+        "score": 25.51
+      },
+      {
+        "part_id": "F25",
+        "score": 25.0
+      },
+      {
+        "part_id": "F05",
+        "score": 3.39
+      }
+    ]
+  },
+  {
+    "id": "2022-07-069",
+    "subject": "세무회계",
+    "primary_part_id": "I07",
+    "part": "양도소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "C11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "장기보유특별공제",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "양도소득과세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I07",
+        "score": 30.72
+      },
+      {
+        "part_id": "C11",
+        "score": 28.0
+      },
+      {
+        "part_id": "C05",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-09-005",
+    "subject": "재무회계",
+    "primary_part_id": "F03",
+    "part": "보고기간후사건",
+    "chapter": "회계기초·재무보고",
+    "secondary_part_ids": [
+      "F20",
+      "F09"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "보고기간후사건",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F03",
+        "score": 28.0
+      },
+      {
+        "part_id": "F20",
+        "score": 25.0
+      },
+      {
+        "part_id": "F09",
+        "score": 24.0
+      }
+    ]
+  },
+  {
+    "id": "2022-09-018",
+    "subject": "재무회계",
+    "primary_part_id": "F10",
+    "part": "금융자산",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [
+      "금융자산분류",
+      "유효이자율"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "회사채를취득",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "사채를취득",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "금융자산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "회사채를취득",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "사채를취득",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F10",
+        "score": 22.46
+      },
+      {
+        "part_id": "F11",
+        "score": 16.51
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-09-045",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C08"
+    ],
+    "tags": [
+      "접대비·기업업무추진비"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "지급이자",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "인건비",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 44.72
+      },
+      {
+        "part_id": "C08",
+        "score": 41.0
+      },
+      {
+        "part_id": "C01",
+        "score": 7.0
+      }
+    ]
+  },
+  {
+    "id": "2022-09-046",
+    "subject": "세무회계",
+    "primary_part_id": "C09",
+    "part": "충당금·준비금·대손금",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C08",
+      "C02"
+    ],
+    "tags": [
+      "감가상각",
+      "퇴직급여",
+      "세무조정",
+      "접대비·기업업무추진비"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "퇴직급여충당금",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C09",
+        "score": 25.0
+      },
+      {
+        "part_id": "C08",
+        "score": 21.0
+      },
+      {
+        "part_id": "C02",
+        "score": 16.51
+      }
+    ]
+  },
+  {
+    "id": "2022-11-022",
+    "subject": "재무회계",
+    "primary_part_id": "F02",
+    "part": "재무제표 표시·공시",
+    "chapter": "회계기초·재무보고",
+    "secondary_part_ids": [
+      "F14"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재무제표에대한",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F02",
+        "score": 16.0
+      },
+      {
+        "part_id": "F14",
+        "score": 12.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-11-035",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F23"
+    ],
+    "tags": [
+      "재평가"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재평가잉여금",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "재평가모형",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "유형자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 21.44
+      },
+      {
+        "part_id": "F23",
+        "score": 16.51
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-11-053",
+    "subject": "세무회계",
+    "primary_part_id": "C07",
+    "part": "기부금",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C08"
+    ],
+    "tags": [
+      "기부금",
+      "접대비·기업업무추진비"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기부금",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "비지정기부금",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C07",
+        "score": 37.39
+      },
+      {
+        "part_id": "C08",
+        "score": 37.0
+      },
+      {
+        "part_id": "C01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2022-11-086",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 16.0
+      },
+      {
+        "part_id": "M07",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-11-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 28.0
+      },
+      {
+        "part_id": "M15",
+        "score": 25.0
+      },
+      {
+        "part_id": "M09",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2022-12-083",
+    "subject": "원가관리회계",
+    "primary_part_id": "M01",
+    "part": "원가의 개념·분류",
+    "chapter": "원가계산의 기초",
+    "secondary_part_ids": [
+      "M02",
+      "M14"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "원가행태",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "원가의개념",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M01",
+        "score": 18.72
+      },
+      {
+        "part_id": "M02",
+        "score": 18.72
+      },
+      {
+        "part_id": "M14",
+        "score": 12.0
+      }
+    ]
+  },
+  {
+    "id": "2023-01-009",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "감가상각",
+        "location": "stem"
+      },
+      {
+        "pattern": "정액법",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "잔존가치",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "내용연수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 13.53
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-01-052",
+    "subject": "세무회계",
+    "primary_part_id": "C06",
+    "part": "감가상각 세무조정",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C10"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "감가상각",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C06",
+        "score": 31.23
+      },
+      {
+        "part_id": "C10",
+        "score": 28.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-03-076",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "C05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 18
+      },
+      {
+        "part_id": "C05",
+        "score": 16.0
+      },
+      {
+        "part_id": "V01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-05-020",
+    "subject": "재무회계",
+    "primary_part_id": "F13",
+    "part": "충당부채·우발항목",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "충당부채",
+        "location": "stem"
+      },
+      {
+        "pattern": "제품보증",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F13",
+        "score": 12.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-05-053",
+    "subject": "세무회계",
+    "primary_part_id": "C07",
+    "part": "기부금",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C08"
+    ],
+    "tags": [
+      "기부금",
+      "접대비·기업업무추진비"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기부금",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "특례기부금",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C07",
+        "score": 37.39
+      },
+      {
+        "part_id": "C08",
+        "score": 37.0
+      },
+      {
+        "part_id": "C01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-05-074",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "C05",
+      "C11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 18
+      },
+      {
+        "part_id": "C05",
+        "score": 16.0
+      },
+      {
+        "part_id": "C11",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2023-05-075",
+    "subject": "세무회계",
+    "primary_part_id": "V04",
+    "part": "영세율·면세",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "V06"
+    ],
+    "tags": [
+      "세액공제",
+      "영세율",
+      "면세",
+      "매입세액"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "영세율",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "면세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V04",
+        "score": 35.72
+      },
+      {
+        "part_id": "V06",
+        "score": 30.51
+      },
+      {
+        "part_id": "V01",
+        "score": 8.0
+      }
+    ]
+  },
+  {
+    "id": "2023-05-111",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자수익률",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "성과평가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 42.44
+      },
+      {
+        "part_id": "M15",
+        "score": 37.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-06-055",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C09"
+    ],
+    "tags": [
+      "세무조정",
+      "대손"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "지급이자",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "업무무관",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "손금불산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 27.02
+      },
+      {
+        "part_id": "C09",
+        "score": 25.0
+      },
+      {
+        "part_id": "C10",
+        "score": 16.51
+      }
+    ]
+  },
+  {
+    "id": "2023-06-058",
+    "subject": "세무회계",
+    "primary_part_id": "C06",
+    "part": "감가상각 세무조정",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C10"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "감가상각",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "신고내용연수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C06",
+        "score": 19.23
+      },
+      {
+        "part_id": "C10",
+        "score": 18.72
+      },
+      {
+        "part_id": "C02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-06-086",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 16.0
+      },
+      {
+        "part_id": "M07",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-06-088",
+    "subject": "원가관리회계",
+    "primary_part_id": "M05",
+    "part": "종합원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M13",
+      "M04"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "종합원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M05",
+        "score": 25.0
+      },
+      {
+        "part_id": "M13",
+        "score": 21.0
+      },
+      {
+        "part_id": "M04",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2023-07-031",
+    "subject": "재무회계",
+    "primary_part_id": "F20",
+    "part": "회계변경·오류수정",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F04"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "F20",
+        "score": 18
+      },
+      {
+        "part_id": "F04",
+        "score": 16.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-07-035",
+    "subject": "재무회계",
+    "primary_part_id": "F10",
+    "part": "금융자산",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F23"
+    ],
+    "tags": [
+      "금융자산분류",
+      "FVOCI"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "주식을.{0,20}취득.*공정가치",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "금융자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F10",
+        "score": 18.72
+      },
+      {
+        "part_id": "F23",
+        "score": 16.51
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-07-047",
+    "subject": "세무회계",
+    "primary_part_id": "C02",
+    "part": "세무조정·소득처분",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C04"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "신고조정",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "결산조정",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C02",
+        "score": 34.72
+      },
+      {
+        "part_id": "C04",
+        "score": 32.0
+      },
+      {
+        "part_id": "C09",
+        "score": 6.69
+      }
+    ]
+  },
+  {
+    "id": "2023-07-067",
+    "subject": "세무회계",
+    "primary_part_id": "I06",
+    "part": "종합소득공제·세액계산",
+    "chapter": "소득세",
+    "secondary_part_ids": [],
+    "tags": [
+      "세액공제"
+    ],
+    "confidence": "reviewed",
+    "review_required": true,
+    "method": "reviewed_override",
+    "evidence": [
+      {
+        "pattern": "세액공제",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C11",
+        "score": 3.0
+      },
+      {
+        "part_id": "I06",
+        "score": 3.0
+      },
+      {
+        "part_id": "C01",
+        "score": 0
+      }
+    ],
+    "review_note": "개인·법인 공통 세액공제를 비교하는 혼합 문제. 소득세 세액공제를 주 파트로 임시 배치"
+  },
+  {
+    "id": "2023-07-110",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자수익률",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "성과평가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 42.44
+      },
+      {
+        "part_id": "M15",
+        "score": 37.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-09-011",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F09"
+    ],
+    "tags": [
+      "감가상각",
+      "자산손상"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "감가상각",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "건물.{0,80}정액법",
+        "location": "stem"
+      },
+      {
+        "pattern": "정액법",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "잔존가치",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "내용연수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 32.08
+      },
+      {
+        "part_id": "F09",
+        "score": 28.51
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2023-09-022",
+    "subject": "재무회계",
+    "primary_part_id": "F14",
+    "part": "자본·배당",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [
+      "F01"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "자본총계",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "자본에관한",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "주식발행",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F14",
+        "score": 31.23
+      },
+      {
+        "part_id": "F01",
+        "score": 28.0
+      },
+      {
+        "part_id": "F21",
+        "score": 2.3
+      }
+    ]
+  },
+  {
+    "id": "2023-09-120",
+    "subject": "원가관리회계",
+    "primary_part_id": "M18",
+    "part": "품질원가",
+    "chapter": "전략적 원가관리",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "reviewed",
+    "review_required": true,
+    "method": "reviewed_override",
+    "evidence": [
+      {
+        "pattern": "품질원가",
+        "location": "choices"
+      },
+      {
+        "pattern": "평가원가",
+        "location": "choices"
+      },
+      {
+        "pattern": "외부실패원가",
+        "location": "choices"
+      },
+      {
+        "pattern": "예방원가",
+        "location": "choices"
+      },
+      {
+        "pattern": "내부실패원가",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M18",
+        "score": 3.86
+      },
+      {
+        "part_id": "M19",
+        "score": 2.3
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ],
+    "review_note": "품질원가와 목표원가 관리시스템 비교. 품질원가를 주 파트로 임시 배치"
+  },
+  {
+    "id": "2023-12-018",
+    "subject": "재무회계",
+    "primary_part_id": "F12",
+    "part": "복합금융상품",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "전환사채",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "전환권",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F12",
+        "score": 27.72
+      },
+      {
+        "part_id": "F11",
+        "score": 21.83
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-12-026",
+    "subject": "재무회계",
+    "primary_part_id": "F16",
+    "part": "건설계약",
+    "chapter": "수익·비용",
+    "secondary_part_ids": [
+      "F02"
+    ],
+    "tags": [
+      "진행률"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "추정총계약원가",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "건설계약",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "진행률",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "진행기준",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "계약수익",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F16",
+        "score": 29.13
+      },
+      {
+        "part_id": "F02",
+        "score": 28.0
+      },
+      {
+        "part_id": "F15",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2023-12-031",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F01"
+    ],
+    "tags": [
+      "재평가",
+      "현금흐름"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재평가모형",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "유형자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 30.72
+      },
+      {
+        "part_id": "F01",
+        "score": 28.0
+      },
+      {
+        "part_id": "F20",
+        "score": 3.08
+      }
+    ]
+  },
+  {
+    "id": "2023-12-088",
+    "subject": "원가관리회계",
+    "primary_part_id": "M02",
+    "part": "원가흐름·제조원가명세서",
+    "chapter": "원가계산의 기초",
+    "secondary_part_ids": [
+      "M05"
+    ],
+    "tags": [
+      "평균법",
+      "완성품환산량"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기말재공품원가를계산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "기말재공품원가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M02",
+        "score": 30.72
+      },
+      {
+        "part_id": "M05",
+        "score": 25.51
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2023-12-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 28.0
+      },
+      {
+        "part_id": "M15",
+        "score": 25.0
+      },
+      {
+        "part_id": "M09",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-01-014",
+    "subject": "재무회계",
+    "primary_part_id": "F08",
+    "part": "투자부동산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F05"
+    ],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자부동산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "임대수익",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F08",
+        "score": 25.51
+      },
+      {
+        "part_id": "F05",
+        "score": 20.76
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-01-087",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 16.0
+      },
+      {
+        "part_id": "M07",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-01-105",
+    "subject": "원가관리회계",
+    "primary_part_id": "M11",
+    "part": "CVP·손익분기·영업레버리지",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기존의세전영업이익을유지",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M11",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-03-049",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C06"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "업무용승용차",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입금액",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 19.23
+      },
+      {
+        "part_id": "C06",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.51
+      }
+    ]
+  },
+  {
+    "id": "2024-05-020",
+    "subject": "재무회계",
+    "primary_part_id": "F13",
+    "part": "충당부채·우발항목",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "충당부채",
+        "location": "stem"
+      },
+      {
+        "pattern": "제품보증",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F13",
+        "score": 12.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-05-022",
+    "subject": "재무회계",
+    "primary_part_id": "F04",
+    "part": "재고자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F14",
+      "F05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재고자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F04",
+        "score": 16.0
+      },
+      {
+        "part_id": "F14",
+        "score": 13.02
+      },
+      {
+        "part_id": "F05",
+        "score": 12.0
+      }
+    ]
+  },
+  {
+    "id": "2024-06-014",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F08"
+    ],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "유형자산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "건물.{0,80}정액법",
+        "location": "stem"
+      },
+      {
+        "pattern": "감가상각",
+        "location": "stem"
+      },
+      {
+        "pattern": "정액법",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "잔존가치",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 22.12
+      },
+      {
+        "part_id": "F08",
+        "score": 17.02
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-06-040",
+    "subject": "재무회계",
+    "primary_part_id": "F26",
+    "part": "현금흐름표",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F05"
+    ],
+    "tags": [
+      "감가상각",
+      "현금흐름"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자활동",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F26",
+        "score": 21.0
+      },
+      {
+        "part_id": "F05",
+        "score": 18.55
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-06-049",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C06"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "업무용승용차",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입금액",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 19.23
+      },
+      {
+        "part_id": "C06",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.51
+      }
+    ]
+  },
+  {
+    "id": "2024-06-069",
+    "subject": "세무회계",
+    "primary_part_id": "I07",
+    "part": "양도소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "C11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "장기보유특별공제",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "양도소득과세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I07",
+        "score": 30.72
+      },
+      {
+        "part_id": "C11",
+        "score": 28.0
+      },
+      {
+        "part_id": "C05",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-06-117",
+    "subject": "원가관리회계",
+    "primary_part_id": "M15",
+    "part": "자본예산·장기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [],
+    "tags": [
+      "NPV·IRR"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자안",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "투자종료시점",
+        "location": "choices"
+      },
+      {
+        "pattern": "투자시점",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M15",
+        "score": 12.78
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-07-009",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "감가상각",
+        "location": "stem"
+      },
+      {
+        "pattern": "기계장치",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 12.51
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-07-031",
+    "subject": "재무회계",
+    "primary_part_id": "F20",
+    "part": "회계변경·오류수정",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F04"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "F20",
+        "score": 18
+      },
+      {
+        "part_id": "F04",
+        "score": 16.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-07-035",
+    "subject": "재무회계",
+    "primary_part_id": "F04",
+    "part": "재고자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F23"
+    ],
+    "tags": [
+      "재고자산평가"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재고자산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "순실현가능가치",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F04",
+        "score": 16.51
+      },
+      {
+        "part_id": "F23",
+        "score": 16.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-07-113",
+    "subject": "원가관리회계",
+    "primary_part_id": "M14",
+    "part": "단기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "외부에서구입",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M14",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-09-011",
+    "subject": "재무회계",
+    "primary_part_id": "F09",
+    "part": "자산손상",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F05"
+    ],
+    "tags": [
+      "감가상각",
+      "자산손상"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "자산손상",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손상차손",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "사용가치",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F09",
+        "score": 39.23
+      },
+      {
+        "part_id": "F05",
+        "score": 34.12
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-09-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매출수량차이",
+        "location": "stem"
+      },
+      {
+        "pattern": "매출배합차이",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-09-119",
+    "subject": "원가관리회계",
+    "primary_part_id": "M14",
+    "part": "단기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [
+      "M16"
+    ],
+    "tags": [
+      "자가제조·외부구입"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "외부구입",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M14",
+        "score": 21.0
+      },
+      {
+        "part_id": "M16",
+        "score": 16.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-11-020",
+    "subject": "재무회계",
+    "primary_part_id": "F13",
+    "part": "충당부채·우발항목",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "충당부채",
+        "location": "stem"
+      },
+      {
+        "pattern": "제품보증",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F13",
+        "score": 12.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2024-11-069",
+    "subject": "세무회계",
+    "primary_part_id": "I07",
+    "part": "양도소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "C11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "장기보유특별공제",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "양도소득과세",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I07",
+        "score": 30.72
+      },
+      {
+        "part_id": "C11",
+        "score": 28.0
+      },
+      {
+        "part_id": "C05",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-11-078",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "V06"
+    ],
+    "tags": [
+      "세액공제",
+      "매입세액"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "부가가치세과세표준",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 25.0
+      },
+      {
+        "part_id": "V06",
+        "score": 21.0
+      },
+      {
+        "part_id": "C11",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-12-076",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "C05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 18
+      },
+      {
+        "part_id": "C05",
+        "score": 16.0
+      },
+      {
+        "part_id": "V01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2024-12-118",
+    "subject": "원가관리회계",
+    "primary_part_id": "M15",
+    "part": "자본예산·장기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [],
+    "tags": [
+      "NPV·IRR"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자안",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "투자종료시점",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M15",
+        "score": 12.39
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-01-067",
+    "subject": "세무회계",
+    "primary_part_id": "I06",
+    "part": "종합소득공제·세액계산",
+    "chapter": "소득세",
+    "secondary_part_ids": [],
+    "tags": [
+      "세액공제"
+    ],
+    "confidence": "reviewed",
+    "review_required": true,
+    "method": "reviewed_override",
+    "evidence": [
+      {
+        "pattern": "세액공제",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C11",
+        "score": 3.0
+      },
+      {
+        "part_id": "I06",
+        "score": 3.0
+      },
+      {
+        "part_id": "C01",
+        "score": 0
+      }
+    ],
+    "review_note": "개인·법인 공통 세액공제를 비교하는 혼합 문제. 소득세 세액공제를 주 파트로 임시 배치"
+  },
+  {
+    "id": "2025-01-086",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "부문별제조간접원가배부율",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-01-091",
+    "subject": "원가관리회계",
+    "primary_part_id": "M06",
+    "part": "정상원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "정상원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M06",
+        "score": 28.0
+      },
+      {
+        "part_id": "M07",
+        "score": 25.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-01-110",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매출수량차이",
+        "location": "stem"
+      },
+      {
+        "pattern": "매출배합차이",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-03-014",
+    "subject": "재무회계",
+    "primary_part_id": "F08",
+    "part": "투자부동산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F05"
+    ],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자부동산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "임대수익",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F08",
+        "score": 25.51
+      },
+      {
+        "part_id": "F05",
+        "score": 20.76
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-03-035",
+    "subject": "재무회계",
+    "primary_part_id": "F23",
+    "part": "환율변동효과",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F10"
+    ],
+    "tags": [
+      "금융자산분류",
+      "FVOCI"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기능통화",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "환율",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F23",
+        "score": 16.51
+      },
+      {
+        "part_id": "F10",
+        "score": 16.0
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-05-035",
+    "subject": "재무회계",
+    "primary_part_id": "F05",
+    "part": "유형자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F23"
+    ],
+    "tags": [
+      "재평가"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재평가잉여금",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "재평가모형",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "유형자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F05",
+        "score": 21.44
+      },
+      {
+        "part_id": "F23",
+        "score": 16.51
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-05-067",
+    "subject": "세무회계",
+    "primary_part_id": "I06",
+    "part": "종합소득공제·세액계산",
+    "chapter": "소득세",
+    "secondary_part_ids": [],
+    "tags": [
+      "세액공제"
+    ],
+    "confidence": "reviewed",
+    "review_required": true,
+    "method": "reviewed_override",
+    "evidence": [
+      {
+        "pattern": "세액공제",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "의료비세액공제",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I06",
+        "score": 3.39
+      },
+      {
+        "part_id": "C11",
+        "score": 3.0
+      },
+      {
+        "part_id": "I04",
+        "score": 2.3
+      }
+    ],
+    "review_note": "개인·법인 공통 세액공제를 비교하는 혼합 문제. 소득세 세액공제를 주 파트로 임시 배치"
+  },
+  {
+    "id": "2025-05-079",
+    "subject": "세무회계",
+    "primary_part_id": "V06",
+    "part": "매입세액·안분계산",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "C08"
+    ],
+    "tags": [
+      "접대비·기업업무추진비",
+      "세액공제",
+      "매입세액"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매입세액",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V06",
+        "score": 25.0
+      },
+      {
+        "part_id": "C08",
+        "score": 21.0
+      },
+      {
+        "part_id": "C06",
+        "score": 12.0
+      }
+    ]
+  },
+  {
+    "id": "2025-05-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M15"
+    ],
+    "tags": [
+      "ROI·잔여이익"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "잔여이익",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 28.0
+      },
+      {
+        "part_id": "M15",
+        "score": 25.0
+      },
+      {
+        "part_id": "M02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-06-020",
+    "subject": "재무회계",
+    "primary_part_id": "F13",
+    "part": "충당부채·우발항목",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "충당부채",
+        "location": "stem"
+      },
+      {
+        "pattern": "제품보증",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F13",
+        "score": 12.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-06-022",
+    "subject": "재무회계",
+    "primary_part_id": "F04",
+    "part": "재고자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F14",
+      "F05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재고자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F04",
+        "score": 16.0
+      },
+      {
+        "part_id": "F14",
+        "score": 13.02
+      },
+      {
+        "part_id": "F05",
+        "score": 12.0
+      }
+    ]
+  },
+  {
+    "id": "2025-07-019",
+    "subject": "재무회계",
+    "primary_part_id": "F12",
+    "part": "복합금융상품",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "전환사채",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "전환권",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F12",
+        "score": 27.72
+      },
+      {
+        "part_id": "F11",
+        "score": 21.95
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-07-086",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M02"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "개별원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 18.72
+      },
+      {
+        "part_id": "M02",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-07-091",
+    "subject": "원가관리회계",
+    "primary_part_id": "M06",
+    "part": "정상원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "정상원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M06",
+        "score": 28.0
+      },
+      {
+        "part_id": "M07",
+        "score": 25.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-09-031",
+    "subject": "재무회계",
+    "primary_part_id": "F20",
+    "part": "회계변경·오류수정",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F04"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "F20",
+        "score": 18
+      },
+      {
+        "part_id": "F04",
+        "score": 16.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-09-049",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C06",
+      "C02"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정",
+      "소득처분"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "업무용승용차",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 16.0
+      },
+      {
+        "part_id": "C06",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 12.51
+      }
+    ]
+  },
+  {
+    "id": "2025-09-082",
+    "subject": "원가관리회계",
+    "primary_part_id": "M02",
+    "part": "원가흐름·제조원가명세서",
+    "chapter": "원가계산의 기초",
+    "secondary_part_ids": [],
+    "tags": [
+      "감가상각",
+      "퇴직급여"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "당기제품제조원가",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M02",
+        "score": 12.0
+      },
+      {
+        "part_id": "M05",
+        "score": 3.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-11-049",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C06"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "업무용승용차",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입금액",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 19.23
+      },
+      {
+        "part_id": "C06",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.51
+      }
+    ]
+  },
+  {
+    "id": "2025-11-078",
+    "subject": "세무회계",
+    "primary_part_id": "V05",
+    "part": "과세표준·매출세액",
+    "chapter": "부가가치세",
+    "secondary_part_ids": [
+      "V06"
+    ],
+    "tags": [
+      "세액공제",
+      "매입세액"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "부가가치세과세표준",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "V05",
+        "score": 25.0
+      },
+      {
+        "part_id": "V06",
+        "score": 21.0
+      },
+      {
+        "part_id": "C11",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-11-087",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 16.0
+      },
+      {
+        "part_id": "M07",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-11-117",
+    "subject": "원가관리회계",
+    "primary_part_id": "M15",
+    "part": "자본예산·장기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [],
+    "tags": [
+      "NPV·IRR"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자안",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "투자종료시점",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M15",
+        "score": 12.39
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-12-017",
+    "subject": "재무회계",
+    "primary_part_id": "F10",
+    "part": "금융자산",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [
+      "금융자산분류",
+      "FVOCI",
+      "유효이자율"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "회사채를취득",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "사채를취득",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "금융자산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "회사채를취득",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "사채를취득",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F10",
+        "score": 22.46
+      },
+      {
+        "part_id": "F11",
+        "score": 16.51
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-12-024",
+    "subject": "재무회계",
+    "primary_part_id": "F15",
+    "part": "수익인식",
+    "chapter": "수익·비용",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "인식할매출액",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F15",
+        "score": 12.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2025-12-047",
+    "subject": "세무회계",
+    "primary_part_id": "C05",
+    "part": "손익귀속·자산평가",
+    "chapter": "법인세",
+    "secondary_part_ids": [],
+    "tags": [
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "유가증권의평가",
+        "location": "stem"
+      },
+      {
+        "pattern": "평가손익",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C05",
+        "score": 12.51
+      },
+      {
+        "part_id": "C02",
+        "score": 4.02
+      },
+      {
+        "part_id": "C01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2025-12-109",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [
+      "M07"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "판매부서",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "성과평가",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "매출가격차이",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 42.44
+      },
+      {
+        "part_id": "M07",
+        "score": 37.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-01-087",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M02"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "개별원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 18.72
+      },
+      {
+        "part_id": "M02",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2026-01-089",
+    "subject": "원가관리회계",
+    "primary_part_id": "M02",
+    "part": "원가흐름·제조원가명세서",
+    "chapter": "원가계산의 기초",
+    "secondary_part_ids": [
+      "M05"
+    ],
+    "tags": [
+      "선입선출법",
+      "완성품환산량"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기말재공품원가를계산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "기말재공품원가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M02",
+        "score": 30.72
+      },
+      {
+        "part_id": "M05",
+        "score": 25.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-03-020",
+    "subject": "재무회계",
+    "primary_part_id": "F13",
+    "part": "충당부채·우발항목",
+    "chapter": "부채·자본",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "충당부채",
+        "location": "stem"
+      },
+      {
+        "pattern": "제품보증",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F13",
+        "score": 12.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      },
+      {
+        "part_id": "F02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-03-104",
+    "subject": "원가관리회계",
+    "primary_part_id": "M11",
+    "part": "CVP·손익분기·영업레버리지",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기존의세전영업이익을유지",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M11",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-03-110",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매출수량차이",
+        "location": "stem"
+      },
+      {
+        "pattern": "매출배합차이",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-03-119",
+    "subject": "원가관리회계",
+    "primary_part_id": "M14",
+    "part": "단기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [
+      "M16"
+    ],
+    "tags": [
+      "자가제조·외부구입"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "외부구입",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M14",
+        "score": 21.0
+      },
+      {
+        "part_id": "M16",
+        "score": 16.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-05-022",
+    "subject": "재무회계",
+    "primary_part_id": "F04",
+    "part": "재고자산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F14",
+      "F05"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재고자산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F04",
+        "score": 16.0
+      },
+      {
+        "part_id": "F14",
+        "score": 13.02
+      },
+      {
+        "part_id": "F05",
+        "score": 12.0
+      }
+    ]
+  },
+  {
+    "id": "2026-06-019",
+    "subject": "재무회계",
+    "primary_part_id": "F12",
+    "part": "복합금융상품",
+    "chapter": "금융상품",
+    "secondary_part_ids": [
+      "F11"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "신주인수권부사채",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "신주인수권",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F12",
+        "score": 39.72
+      },
+      {
+        "part_id": "F11",
+        "score": 33.95
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-06-031",
+    "subject": "재무회계",
+    "primary_part_id": "F20",
+    "part": "회계변경·오류수정",
+    "chapter": "기타 회계처리",
+    "secondary_part_ids": [
+      "F04"
+    ],
+    "tags": [],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "F20",
+        "score": 18
+      },
+      {
+        "part_id": "F04",
+        "score": 16.51
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-06-049",
+    "subject": "세무회계",
+    "primary_part_id": "C04",
+    "part": "손금·인건비·지급이자",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C06"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "업무용승용차",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입금액",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "손금불산입",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C04",
+        "score": 19.23
+      },
+      {
+        "part_id": "C06",
+        "score": 16.0
+      },
+      {
+        "part_id": "C02",
+        "score": 3.51
+      }
+    ]
+  },
+  {
+    "id": "2026-07-025",
+    "subject": "재무회계",
+    "primary_part_id": "F15",
+    "part": "수익인식",
+    "chapter": "수익·비용",
+    "secondary_part_ids": [
+      "F16"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "인식할매출액",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F15",
+        "score": 16.0
+      },
+      {
+        "part_id": "F16",
+        "score": 12.0
+      },
+      {
+        "part_id": "F05",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-046",
+    "subject": "세무회계",
+    "primary_part_id": "C02",
+    "part": "세무조정·소득처분",
+    "chapter": "법인세",
+    "secondary_part_ids": [
+      "C07",
+      "C08",
+      "C04"
+    ],
+    "tags": [
+      "감가상각",
+      "세무조정",
+      "소득처분",
+      "기부금",
+      "접대비·기업업무추진비"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "소득처분",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "세무조정",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "C02",
+        "score": 28.51
+      },
+      {
+        "part_id": "C07",
+        "score": 23.04
+      },
+      {
+        "part_id": "C08",
+        "score": 21.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-061",
+    "subject": "세무회계",
+    "primary_part_id": "I01",
+    "part": "소득세 총설·납세의무",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "I02",
+      "I03",
+      "I04"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [],
+    "candidates": [
+      {
+        "part_id": "I01",
+        "score": 18
+      },
+      {
+        "part_id": "I02",
+        "score": 16.0
+      },
+      {
+        "part_id": "I03",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-065",
+    "subject": "세무회계",
+    "primary_part_id": "I08",
+    "part": "원천징수·신고납부",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "I05"
+    ],
+    "tags": [
+      "세액공제",
+      "원천징수"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "원천징수세율",
+        "location": "stem"
+      },
+      {
+        "pattern": "원천징수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I08",
+        "score": 25.51
+      },
+      {
+        "part_id": "I05",
+        "score": 20.51
+      },
+      {
+        "part_id": "I06",
+        "score": 7.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-086",
+    "subject": "원가관리회계",
+    "primary_part_id": "M04",
+    "part": "개별원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M02"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "작업원가표",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "개별원가계산",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M04",
+        "score": 18.72
+      },
+      {
+        "part_id": "M02",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-087",
+    "subject": "원가관리회계",
+    "primary_part_id": "M06",
+    "part": "정상원가계산",
+    "chapter": "원가계산",
+    "secondary_part_ids": [
+      "M02",
+      "M04"
+    ],
+    "tags": [
+      "제조간접원가차이"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "정상원가계산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "배부차이",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M06",
+        "score": 18.72
+      },
+      {
+        "part_id": "M02",
+        "score": 16.0
+      },
+      {
+        "part_id": "M04",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-104",
+    "subject": "원가관리회계",
+    "primary_part_id": "M11",
+    "part": "CVP·손익분기·영업레버리지",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기존의세전영업이익을유지",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M11",
+        "score": 12.0
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-107",
+    "subject": "원가관리회계",
+    "primary_part_id": "M13",
+    "part": "책임회계·성과평가",
+    "chapter": "계획·통제",
+    "secondary_part_ids": [],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "매출수량차이",
+        "location": "stem"
+      },
+      {
+        "pattern": "매출배합차이",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M13",
+        "score": 14.04
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-07-118",
+    "subject": "원가관리회계",
+    "primary_part_id": "M15",
+    "part": "자본예산·장기의사결정",
+    "chapter": "의사결정",
+    "secondary_part_ids": [],
+    "tags": [
+      "NPV·IRR"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자안",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "투자종료시점",
+        "location": "choices"
+      },
+      {
+        "pattern": "투자시점",
+        "location": "choices"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M15",
+        "score": 12.78
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      },
+      {
+        "part_id": "M02",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-006",
+    "subject": "재무회계",
+    "primary_part_id": "F04",
+    "part": "재고자산",
+    "chapter": "자산",
+    "secondary_part_ids": [],
+    "tags": [
+      "재고자산평가"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "재고자산",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F04",
+        "score": 12.0
+      },
+      {
+        "part_id": "F02",
+        "score": 3.0
+      },
+      {
+        "part_id": "F01",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-014",
+    "subject": "재무회계",
+    "primary_part_id": "F08",
+    "part": "투자부동산",
+    "chapter": "자산",
+    "secondary_part_ids": [
+      "F05"
+    ],
+    "tags": [
+      "감가상각"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "투자부동산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "임대목적",
+        "location": "stem_weak"
+      },
+      {
+        "pattern": "공정가치모형",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "F08",
+        "score": 26.02
+      },
+      {
+        "part_id": "F05",
+        "score": 20.76
+      },
+      {
+        "part_id": "F07",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-065",
+    "subject": "세무회계",
+    "primary_part_id": "I08",
+    "part": "원천징수·신고납부",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "I05"
+    ],
+    "tags": [
+      "원천징수",
+      "면세"
+    ],
+    "confidence": "low",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "종합소득확정신고",
+        "location": "stem"
+      },
+      {
+        "pattern": "원천징수",
+        "location": "stem_weak"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I08",
+        "score": 16.51
+      },
+      {
+        "part_id": "I05",
+        "score": 16.0
+      },
+      {
+        "part_id": "V04",
+        "score": 9.0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-066",
+    "subject": "세무회계",
+    "primary_part_id": "I04",
+    "part": "근로소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "I03",
+      "I06"
+    ],
+    "tags": [],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "근로소득",
+        "location": "stem"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I04",
+        "score": 21.0
+      },
+      {
+        "part_id": "I03",
+        "score": 16.0
+      },
+      {
+        "part_id": "I06",
+        "score": 16.0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-067",
+    "subject": "세무회계",
+    "primary_part_id": "I04",
+    "part": "근로소득",
+    "chapter": "소득세",
+    "secondary_part_ids": [
+      "I06"
+    ],
+    "tags": [
+      "세액공제"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "일용근로자",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "근로소득",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "I04",
+        "score": 30.72
+      },
+      {
+        "part_id": "I06",
+        "score": 28.51
+      },
+      {
+        "part_id": "C11",
+        "score": 3.0
+      }
+    ]
+  },
+  {
+    "id": "2026-09-089",
+    "subject": "원가관리회계",
+    "primary_part_id": "M02",
+    "part": "원가흐름·제조원가명세서",
+    "chapter": "원가계산의 기초",
+    "secondary_part_ids": [
+      "M05"
+    ],
+    "tags": [
+      "평균법",
+      "완성품환산량"
+    ],
+    "confidence": "medium",
+    "review_required": true,
+    "method": "content_rules_v2",
+    "evidence": [
+      {
+        "pattern": "기말재공품원가를계산",
+        "location": "stem_head"
+      },
+      {
+        "pattern": "기말재공품원가",
+        "location": "stem_head"
+      }
+    ],
+    "candidates": [
+      {
+        "part_id": "M02",
+        "score": 30.72
+      },
+      {
+        "part_id": "M05",
+        "score": 25.51
+      },
+      {
+        "part_id": "M01",
+        "score": 0
+      }
+    ]
+  }
+]

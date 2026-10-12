@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>재경관리사 · 문제 자료실</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#182a38;background:#f4f5f1;font-size:16px}*{box-sizing:border-box}body{margin:0}header{background:#173a39;color:white;padding:30px max(24px,calc((100vw - 1280px)/2))}header p{color:#cadbd6;margin:10px 0 0;line-height:1.7}h1{font-size:28px;margin:0}h2{margin:0;font-size:21px}main{max-width:1328px;margin:auto;padding:24px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px}aside,.card{background:#fff;border:1px solid #dce1d9;border-radius:14px;padding:20px}aside{align-self:start;position:sticky;top:20px}label{display:block;font-size:14px;font-weight:650;margin:15px 0 6px}select,input{width:100%;padding:11px;border:1px solid #bdc9c4;border-radius:8px;background:white;font:inherit}button{padding:10px 15px;border:1px solid #c5d2cc;border-radius:8px;background:white;color:#173a39;font:inherit;cursor:pointer}button:hover{background:#eef4ee}button:disabled{opacity:.45;cursor:default}.primary{background:#173a39;color:white}.primary:hover{background:#245552}.muted{color:#65716c;font-size:14px;line-height:1.65}.badge{background:#edf2eb;padding:4px 9px;border-radius:20px;font-size:12px;display:inline-block;margin:0 5px 6px 0}.notice{padding:12px;background:#fff4dc;border-radius:8px;line-height:1.6;font-size:14px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin:15px 0}.question-image{display:block;width:100%;height:auto;background:white;margin:20px 0}.answers{display:flex;gap:8px;flex-wrap:wrap}.answers button{min-width:65px}.result{min-height:28px;margin:12px 0;color:#173a39;font-weight:650}.links{font-size:14px;margin-top:14px;line-height:1.8}a{color:#23635b}details{margin-top:18px;font-size:14px}summary{cursor:pointer}pre{white-space:pre-wrap;line-height:1.7;font-family:inherit}.empty{padding:40px;color:#65716c}.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare .card{padding:14px}.compare img{width:100%}#status{margin-top:12px}.count{font-size:30px;line-height:1.3;color:#173a39;font-weight:750}.tabs{display:flex;gap:8px;margin-bottom:15px}.tabs button[aria-pressed=true]{background:#173a39;color:white}#review-panel{grid-column:1/-1}.error{color:#a42b2b}.footer{padding:20px 24px;text-align:center;color:#65716c;font-size:13px}@media(max-width:850px){main{grid-template-columns:1fr;padding:14px;gap:14px}aside{position:static}.compare{grid-template-columns:1fr}header{padding:24px}h1{font-size:24px}}[hidden]{display:none!important}
+</style></head><body>
+<header><h1>재경관리사 문제 자료실</h1><p>2022–2026년 9월 · 대표 문제와 변형 문제 · 원본 및 확정답안 연결</p></header>
+<main><aside>
+<div class="tabs"><button id="bank-tab" aria-pressed="true">문제 보기</button><button id="review-tab" aria-pressed="false">유사문제 비교</button></div>
+<div id="stats" class="muted">자료를 불러오는 중입니다.</div>
+<label for="subject">과목</label><select id="subject"><option value="">전체 과목</option><option>재무회계</option><option>세무회계</option><option>원가관리회계</option></select>
+<label for="part">세부 파트</label><select id="part"><option value="">전체 파트</option></select>
+<label for="classification-status">분류 상태</label><select id="classification-status"><option value="">전체</option><option value="review">분류 검토가 필요한 문제</option></select>
+<label for="query">문제 내용·태그·회차 검색</label><input id="query" type="search" placeholder="예: 재고자산, 2026-07">
+<label for="scope">문제 범위</label><select id="scope"><option value="representatives">유형별 대표 문제</option><option value="entries">변형을 포함한 모든 문제</option><option value="quarantine">원문 확인이 필요한 보류 문항</option></select>
+<p id="count" class="muted"></p><p class="muted">내용이 달라질 수 있는 유사 문제는 검토가 끝나기 전까지 각각 유지합니다. 주 파트와 보조 태그로 분류했습니다. 분류 검토 표시가 있는 문항은 임시 분류입니다. 해설은 포함하지 않았습니다.</p>
+<p class="links"><a href="reports/파트분류결과.md">파트 분류 결과</a><br><a href="reports/파트별문항목록.csv" download>파트별 문항 목록 내려받기</a><br><a href="reports/중복정리결과.md">중복 정리 결과</a><br><a href="reports/출처와중복매핑.csv" download>출처·중복 매핑 내려받기</a></p>
+</aside>
+<section id="bank-panel" class="card"><div id="question"></div><div class="toolbar"><button id="prev">← 이전</button><span id="position" class="muted"></span><button id="next">다음 →</button></div></section>
+<section id="review-panel" hidden><div class="card"><h2>합치기 전 비교가 필요한 문제</h2><p class="muted">유사도는 검토 순서만 정합니다. 이 목록의 문제들은 자동으로 삭제하거나 합치지 않았습니다.</p><div class="toolbar"><button id="review-prev">← 이전 비교</button><span id="review-position"></span><button id="review-next">다음 비교 →</button></div></div><div id="comparison" class="compare" style="margin-top:16px"></div></section>
+</main><p class="footer">원본 문항과 공식 답안을 보존한 자료 정리본입니다. 최신 법령·회계기준 적용 여부와 개별 표·도표 내용은 추가 검토가 필요합니다.</p>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+let questions,entries,families,candidates,summary,taxonomy,byId,entryById,familyById;
+let filtered=[],reviewFiltered=[],index=0,reviewIndex=0,mode='bank';
+function el(tag,text,cls){const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x;}
+function link(text,href){const a=el('a',text);a.href=href;a.target='_blank';a.rel='noopener';return a;}
+function questionCard(q,compact=false){
+ const box=el('div');box.append(el('span',q.subject,'badge'),el('span',`${q.exam} · ${q.number}번`,'badge'));
+ const e=entryById.get(q.entry_id);box.append(el('h2',`${q.subject} ${q.subject_number}번`));
+ const c=e.classification;
+ box.append(el('p',`${c.chapter} › ${c.part}`,'part-label'));
+ const tags=el('div',undefined,'topic-tags');for(const tag of c.tags)tags.append(el('span',tag,'badge'));box.append(tags);
+ if(c.review_required)box.append(el('p','분류 검토 필요 · 여러 파트가 섞였거나 분류 근거가 부족한 문항입니다. 현재 파트는 임시 분류입니다.','notice classification-notice'));
+ const classification=el('details');classification.append(el('summary','분류 정보'));
+ if(c.secondary_part_ids.length)classification.append(el('p','관련 파트: '+c.secondary_part_ids.map(id=>taxonomy.find(p=>p.id===id)?.name||id).join(', ')));
+ classification.append(el('p',c.review_note||'문제 본문을 기준으로 자동 분류했습니다. 보조 태그는 본문에 등장하는 개념이며 정답이나 주제를 확정하는 표시는 아닙니다.','muted'));box.append(classification);
+ if(q.review_flags.includes('official_answer_conflict'))box.append(el('p','동일 내용에 대한 회차별 공식 정답이 달라 별도로 유지했습니다.','notice'));
+ if(!q.choice_parse_ok)box.append(el('p','보기의 배치가 복잡한 문항입니다. 원본 이미지와 확정답안을 기준으로 확인하세요.','notice'));
+ if(!q.study_eligible)box.append(el('p','원본 PDF에서 보기가 ③까지만 확인되어 기본 풀이 목록에서 제외한 문항입니다.','notice'));
+ if(q.tax_law_year)box.append(el('p',`원문 지정 적용 세법: ${q.tax_law_year}년`,'muted'));
+ const img=el('img');img.src=q.image;img.alt=`${q.exam} ${q.subject} ${q.subject_number}번 원본 문항`;img.className='question-image';img.loading='lazy';box.append(img);
+ const result=el('p','','result');result.setAttribute('aria-live','polite');
+ if(!compact){const options=el('div',undefined,'answers');for(let i=1;i<=4;i++){const b=el('button','①②③④'[i-1]);b.disabled=!q.study_eligible;b.setAttribute('aria-label',`${i}번 선택`);b.onclick=()=>{result.textContent=(q.answers.includes(i)?'정답입니다.':'다시 확인해 보세요.')+' 공식 정답: '+q.answers.map(n=>'①②③④'[n-1]).join(' 또는 ');};options.append(b);}const reveal=el('button','정답 확인','primary');reveal.onclick=()=>{result.textContent='공식 정답: '+q.answers.map(n=>'①②③④'[n-1]).join(' 또는 ');};options.append(reveal);box.append(options,result);}
+ else box.append(el('p','공식 정답: '+q.answers.map(n=>'①②③④'[n-1]).join(' 또는 ')));
+ const sources=el('div',undefined,'links');sources.append(link('원본 PDF',q.source_pdf+`#page=${q.page}`),document.createTextNode(' · '),link('확정답안 PDF',q.answer_pdf));box.append(sources);
+ const details=el('details');details.append(el('summary',`같은 문제의 출처 ${e.occurrence_count}건`));for(const id of e.occurrence_ids){const src=byId.get(id);details.append(el('div',`${id} · 정답 ${src.answers.map(n=>'①②③④'[n-1]).join(' 또는 ')}`));}box.append(details);
+ if(q.subject_instructions){const note=el('details');note.append(el('summary','원문 시험 공통 안내'),el('pre',q.subject_instructions));box.append(note);}
+ const text=el('details');text.append(el('summary','검색용 추출 텍스트'),el('pre',q.text));box.append(text);return box;
+}
+function filter(){
+ const subject=$('subject').value,query=$('query').value.trim().toLowerCase();
+ const scope=$('scope').value,part=$('part').value,reviewOnly=$('classification-status').value==='review';
+ const base=(scope==='representatives'?families.map(f=>entryById.get(f.representative_entry_id)):entries).filter(e=>scope==='quarantine'?!e.study_eligible:e.study_eligible);
+ const match=e=>{const q=byId.get(e.id);const c=e.classification;return(!subject||q.subject===subject)&&(!part||c.primary_part_id===part)&&(!reviewOnly||c.review_required)&&(!query||(q.text+' '+e.occurrence_ids.join(' ')+' '+c.part+' '+c.chapter+' '+c.tags.join(' ')).toLowerCase().includes(query));};
+ filtered=base.filter(match).sort((a,b)=>b.id.localeCompare(a.id));reviewFiltered=candidates.filter(c=>match(entryById.get(c.left_id))||match(entryById.get(c.right_id)));
+ index=reviewIndex=0;render();
+}
+function renderQuestion(q){$('question').replaceChildren(questionCard(q));const e=entryById.get(q.entry_id),family=familyById.get(e.family_id);if(family.entry_ids.length>1){const toolbar=el('div',undefined,'toolbar');const label=el('label','같은 유형의 변형 문제');const select=el('select');select.setAttribute('aria-label','변형 문제 선택');for(const id of family.entry_ids){const option=el('option',`${id}${id===family.representative_entry_id?' · 대표':''}`);option.value=id;option.selected=id===q.entry_id;select.append(option);}select.onchange=()=>renderQuestion(byId.get(select.value));toolbar.append(label,select);$('question').prepend(toolbar);}}
+function render(){
+ $('bank-panel').hidden=mode!=='bank';$('review-panel').hidden=mode!=='review';$('bank-tab').setAttribute('aria-pressed',String(mode==='bank'));$('review-tab').setAttribute('aria-pressed',String(mode==='review'));
+ $('count').textContent=`검색 결과 ${filtered.length.toLocaleString()}문제 · 비교 후보 ${reviewFiltered.length.toLocaleString()}쌍`;
+ if(mode==='bank'){
+  if(filtered.length)renderQuestion(byId.get(filtered[index].id));else $('question').replaceChildren(el('p','조건에 맞는 문제가 없습니다.','empty'));
+  $('position').textContent=filtered.length?`${index+1} / ${filtered.length}`:'0 / 0';$('prev').disabled=index===0;$('next').disabled=index>=filtered.length-1;
+ }else{
+  $('comparison').replaceChildren();const candidate=reviewFiltered[reviewIndex];if(candidate){for(const id of [candidate.left_id,candidate.right_id]){const card=el('div',undefined,'card');card.append(questionCard(byId.get(id),true));$('comparison').append(card);}$('review-position').textContent=`${reviewIndex+1} / ${reviewFiltered.length} · 문자 유사도 ${Math.round(candidate.similarity*100)}%`;}else{$('comparison').append(el('p','비교 후보가 없습니다.','empty'));$('review-position').textContent='0 / 0';}$('review-prev').disabled=reviewIndex===0;$('review-next').disabled=reviewIndex>=reviewFiltered.length-1;
+ }
+}
+function populateParts(){
+ const previous=$('part').value,subject=$('subject').value;
+ $('part').replaceChildren(el('option','전체 파트'));$('part').firstChild.value='';
+ const groups=new Map();for(const p of taxonomy.filter(p=>!subject||p.subject===subject)){
+  const group=p.subject+' · '+p.chapter;if(!groups.has(group)){const g=el('optgroup');g.label=group;groups.set(group,g);$('part').append(g);}
+  const option=el('option',`${p.name} (${p.entry_count})`);option.value=p.id;groups.get(group).append(option);
+ }
+ if([...$('part').options].some(o=>o.value===previous))$('part').value=previous;
+}
+$('subject').onchange=()=>{populateParts();filter();};
+for(const id of ['part','classification-status','scope'])$(id).onchange=filter;$('query').oninput=filter;
+$('prev').onclick=()=>{index--;render();};$('next').onclick=()=>{index++;render();};$('review-prev').onclick=()=>{reviewIndex--;render();};$('review-next').onclick=()=>{reviewIndex++;render();};
+$('bank-tab').onclick=()=>{mode='bank';render();};$('review-tab').onclick=()=>{mode='review';render();};
+Promise.all(['questions','entries','families','review-candidates','summary','taxonomy'].map(async name=>{const r=await fetch(`data/${name}.json`);if(!r.ok)throw Error(name);return r.json();})).then(data=>{
+ [questions,entries,families,candidates,summary,taxonomy]=data;byId=new Map(questions.map(q=>[q.id,q]));entryById=new Map(entries.map(e=>[e.id,e]));familyById=new Map(families.map(f=>[f.id,f]));
+ $('stats').replaceChildren(el('div',summary.bank_entries.toLocaleString(),'count'),el('div',`정리된 문제 · 원본 ${summary.source_questions.toLocaleString()}문항 중 중복 ${summary.duplicate_occurrences_suppressed.toLocaleString()}건 통합`),el('div',`${taxonomy.length}개 세부 파트 · 분류 검토 ${entries.filter(e=>e.classification.review_required).length}문항`));populateParts();filter();
+}).catch(error=>{$('stats').textContent='자료를 불러오지 못했습니다. README의 실행 방법을 확인하세요.';$('stats').classList.add('error');console.error(error);});
+</script></body></html>

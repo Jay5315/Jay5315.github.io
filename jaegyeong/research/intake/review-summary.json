@@ -1,0 +1,446 @@
+{
+  "uploaded_files": 76,
+  "unique_files": 68,
+  "duplicate_files": 8,
+  "exam_count": 38,
+  "question_count": 4560,
+  "special_answers": [
+    {
+      "exam": "2026-07",
+      "number": 26,
+      "answers": [
+        1,
+        4
+      ]
+    }
+  ],
+  "exams": {
+    "2022-01": {
+      "year": 2022,
+      "month": 1,
+      "question_file": "/workspace/attachments/d725e414-844b-4338-95a5-02a7490ce3c8/f (1).pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/d725e414-844b-4338-95a5-02a7490ce3c8/f (1).pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-03": {
+      "year": 2022,
+      "month": 3,
+      "question_file": "/workspace/attachments/07c6e758-be83-46c2-af62-882a7d87f785/f2.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/07c6e758-be83-46c2-af62-882a7d87f785/f2.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-05": {
+      "year": 2022,
+      "month": 5,
+      "question_file": "/workspace/attachments/849a1dcc-ee80-46a9-9c86-8edc4890e026/f 3.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/849a1dcc-ee80-46a9-9c86-8edc4890e026/f 3.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-06": {
+      "year": 2022,
+      "month": 6,
+      "question_file": "/workspace/attachments/798c50a8-f423-4ca9-8182-e30ce8b07fa9/f 3423.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/798c50a8-f423-4ca9-8182-e30ce8b07fa9/f 3423.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-07": {
+      "year": 2022,
+      "month": 7,
+      "question_file": "/workspace/attachments/7c2eff5e-ada1-40c8-b972-9f437e673ea5/34232.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/7c2eff5e-ada1-40c8-b972-9f437e673ea5/34232.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-09": {
+      "year": 2022,
+      "month": 9,
+      "question_file": "/workspace/attachments/c96bd36d-7bb1-4ecc-8448-4796c89695e9/2343242.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/c96bd36d-7bb1-4ecc-8448-4796c89695e9/2343242.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-11": {
+      "year": 2022,
+      "month": 11,
+      "question_file": "/workspace/attachments/f7a1e35f-91ed-4fba-aa28-cd5778f17439/2342352.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/f7a1e35f-91ed-4fba-aa28-cd5778f17439/2342352.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-12": {
+      "year": 2022,
+      "month": 12,
+      "question_file": "/workspace/attachments/b05104e8-160a-4b11-a3b4-be1ee3ebb282/2t4t45.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/b05104e8-160a-4b11-a3b4-be1ee3ebb282/2t4t45.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-01": {
+      "year": 2023,
+      "month": 1,
+      "question_file": "/workspace/attachments/470b0fc3-6b31-45e7-a9fb-f0c37fb5e6de/2023년 01월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/3b955517-eb80-4dae-9654-21019238b105/2023년 01월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-03": {
+      "year": 2023,
+      "month": 3,
+      "question_file": "/workspace/attachments/9e70a123-4ab1-437a-85c0-743bc103f2c0/2023년 03월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/0790f43a-993f-4761-9734-17e48081a864/2023년 03월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-05": {
+      "year": 2023,
+      "month": 5,
+      "question_file": "/workspace/attachments/d835fc99-1866-4877-8520-c0d76929a828/2023년 05월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/b389d82d-84d9-4fb0-875b-4273cefdfdb4/2023년 05월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-06": {
+      "year": 2023,
+      "month": 6,
+      "question_file": "/workspace/attachments/ae690227-bfbf-42c8-a1e6-04da15178958/2023년 06월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/f1a5bf11-2264-44b6-b776-15f950a2282e/2023년 06월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-07": {
+      "year": 2023,
+      "month": 7,
+      "question_file": "/workspace/attachments/4c9927fb-7fa1-4a4c-91d2-12756d17faa8/2023년 07월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/cafdbf86-61c5-4870-a613-cfc19fbe8b43/2023년 07월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-09": {
+      "year": 2023,
+      "month": 9,
+      "question_file": "/workspace/attachments/50e90b2e-0b2b-4928-a0a3-7ea4a0b7918b/2023년 09월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/7b221496-88e8-4f3c-843e-ae7ac921be1c/2023년 09월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-11": {
+      "year": 2023,
+      "month": 11,
+      "question_file": "/workspace/attachments/3918fb13-26a5-4b54-80a3-4826d5385518/2023년 11월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/56b8343a-90b8-464f-a9cb-cfa27fda710d/2023년 11월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-12": {
+      "year": 2023,
+      "month": 12,
+      "question_file": "/workspace/attachments/8563f87d-bbe1-41a0-9c13-5439a557d0c9/2023년 12월 재경관리사 기출문제.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/8bb389fa-709f-4daa-b46e-c2c8a93ad3ab/2023년 12월 재경관리사 답안모음.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-01": {
+      "year": 2024,
+      "month": 1,
+      "question_file": "/workspace/attachments/2988f057-3314-4acb-af7c-eccfa4cda945/24년_1월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/8bdfe41c-de98-435f-9dda-c5033716d443/24년_1월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-03": {
+      "year": 2024,
+      "month": 3,
+      "question_file": "/workspace/attachments/33c43255-c3de-486d-bfd4-0057f7391d12/24년_3월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/78be2928-13f7-4474-95a6-ea281037956a/24년_3월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-05": {
+      "year": 2024,
+      "month": 5,
+      "question_file": "/workspace/attachments/de9126d3-8273-48e8-b55a-f95e9c046129/24년_5월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/cc39c54d-e823-4906-aef5-a36e9348d500/24년_5월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-06": {
+      "year": 2024,
+      "month": 6,
+      "question_file": "/workspace/attachments/0801c835-7608-4729-8fe8-24530fe603dc/24년_6월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/ed44098b-9c78-420d-99be-3c1d38aaae24/24년_6월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-07": {
+      "year": 2024,
+      "month": 7,
+      "question_file": "/workspace/attachments/474aa966-f222-4a9a-84bd-29175fa1f6c8/24년_7월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/37dda84d-7593-4480-a14c-0e2e25c0eb7f/24년_7월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-09": {
+      "year": 2024,
+      "month": 9,
+      "question_file": "/workspace/attachments/b54683e2-9e38-4ced-ae43-a62adf6b5929/24년_9월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/b5117896-427e-4717-8d9e-e0c4c0325b3b/24년_9월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-11": {
+      "year": 2024,
+      "month": 11,
+      "question_file": "/workspace/attachments/8534bdbc-b599-4ece-91c4-77b8b17bc130/24년_11월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/d73b7f89-dc10-45db-9795-c3a35ca61cb3/24년_11월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-12": {
+      "year": 2024,
+      "month": 12,
+      "question_file": "/workspace/attachments/0f0e29c5-c1f2-4271-9d44-c3ae08838636/24년_12월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/b2a280c7-9403-4e8d-8226-f06769092014/24년_12월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-01": {
+      "year": 2025,
+      "month": 1,
+      "question_file": "/workspace/attachments/d7470d4b-fc59-4ada-b5d7-806e8f43acc0/2025_재경관리사_1월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/ceb5d28c-18b0-48cc-8a6b-83c0a379a4ee/2025년_1월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-03": {
+      "year": 2025,
+      "month": 3,
+      "question_file": "/workspace/attachments/7e34606c-c897-4c43-bc53-fe6375ee6877/2025_재경관리사_3월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/e34e2a9d-551c-48fe-b5e9-4fb0ed3b64c8/2025년_3월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-05": {
+      "year": 2025,
+      "month": 5,
+      "question_file": "/workspace/attachments/6b48c5de-18e3-4fd5-830e-d56f0f6d390e/2025_재경관리사_5월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/4178edc7-f4c1-442f-86b9-51330f031d11/2025년_5월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-06": {
+      "year": 2025,
+      "month": 6,
+      "question_file": "/workspace/attachments/d85260f1-821c-4a4c-80ce-5def03f383c4/2025_재경관리사_6월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/ac450724-1aa5-40fc-9592-3cc6cebb7b20/2025년_6월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-07": {
+      "year": 2025,
+      "month": 7,
+      "question_file": "/workspace/attachments/370f9e5b-3416-42c7-8905-36cfd9d30667/2025_재경관리사_7월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/55d6254f-6ca5-4042-be7a-60689bc33491/2025년_7월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-09": {
+      "year": 2025,
+      "month": 9,
+      "question_file": "/workspace/attachments/53725da5-a922-44bf-963e-7d3ca916e432/2025_재경관리사_9월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/040478bc-0092-432e-9caf-847f026e6093/2025년_9월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-11": {
+      "year": 2025,
+      "month": 11,
+      "question_file": "/workspace/attachments/3c13133b-8ef6-4bb0-9734-8c876e625d1a/2025_재경관리사_11월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/48b8843b-6975-486a-b8e2-0c88df09f52b/2025년_11월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-12": {
+      "year": 2025,
+      "month": 12,
+      "question_file": "/workspace/attachments/383bf1fc-bd01-469d-a78a-4193e8f60253/2025_재경관리사_12월.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/70113f11-4b4d-4972-86c6-b798ec21b15e/2025년_12월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-01": {
+      "year": 2026,
+      "month": 1,
+      "question_file": "/workspace/attachments/a6d656d6-d088-489b-baff-d3f11b451785/2026_1월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/419769af-4eff-426e-b628-79748c8ecc7f/26년_1월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-03": {
+      "year": 2026,
+      "month": 3,
+      "question_file": "/workspace/attachments/0787c34b-875d-4a81-92f6-cae1785739d0/2026_3월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/aa9c1c02-3815-45ba-a7d8-609de61cebdf/26년_3월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-05": {
+      "year": 2026,
+      "month": 5,
+      "question_file": "/workspace/attachments/20ac6ba9-fa96-4f52-8c98-1c02aee20d5a/2026_5월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/37442911-b64a-4d67-9a0f-aa6bf5a602db/26년_5월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-06": {
+      "year": 2026,
+      "month": 6,
+      "question_file": "/workspace/attachments/1953f9a1-7169-4572-b752-ce4c53bf3c25/2026_6월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/9f47468a-0c24-4a01-971a-0a53015f0b96/26년_6월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-07": {
+      "year": 2026,
+      "month": 7,
+      "question_file": "/workspace/attachments/8f038e40-37f1-41a3-8942-40b8b56e01ce/2026_7월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/7227ebc8-faee-47f7-8e8b-d44e34b40319/26년_7월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": [
+        {
+          "number": 26,
+          "answers": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    "2026-09": {
+      "year": 2026,
+      "month": 9,
+      "question_file": "/workspace/attachments/6636f65c-95bf-4745-aadc-70d27736a94d/2026_9월_재경관리사.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "/workspace/attachments/80d0d383-f7a5-4376-8ffa-0c481a89c8c5/26년_9월_재경관리사_확정답안.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    }
+  },
+  "scope": "File readability, text layer, question numbering, subject boundaries, answer numbering, and filename/answer-date pairing checked. Full question/table extraction accuracy and answer correctness not reviewed."
+}

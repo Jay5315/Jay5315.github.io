@@ -1,11 +1,90 @@
-# 차곡 재경관리사 문제은행
+# 차곡 · 재경관리사 문제은행
 
-제공된 2022~2026년 9월 기출 38회분을 정리한 파트별 학습 웹앱입니다.
+**서비스:** https://jay5315.github.io/jaegyeong/
 
-- 74개 파트, 오답 노트, 즐겨찾기, 이어 풀기, 기록 백업·복원
-- `index.html` 및 `assets/`, `images/`, `sources/`를 함께 제공합니다.
-- 기록은 브라우저에 저장되며 기기 간 자동 동기화는 제공하지 않습니다.
-- 원문 보기 누락 1문항은 학습에서 제외합니다. 분류 검토 표시 문항은 임시 분류입니다.
-- 추출 텍스트의 표·수식은 원본 이미지/PDF를 함께 확인하세요. 해설은 포함하지 않았습니다.
+**다른 AI가 이어서 작업할 때:** [HANDOFF.md](HANDOFF.md)를 먼저 읽으세요.
 
-별도 빌드나 외부 API가 필요 없는 정적 웹앱입니다. 상위 사이트의 기존 페이지는 변경하지 않습니다.
+**추가 요청:** [파트별 핵심 개념·학습 팁 구현 계획](CONCEPT_NOTES_PLAN.md) (아직 미구현)
+
+과목·74개 파트별 기출 풀이, 즉시 채점, 오답 노트, 즐겨찾기, 이어 풀기, 기록 백업·복원을 제공하는 정적 웹앱입니다. HTML/CSS/JavaScript만으로 실행되며 외부 API나 서버 애플리케이션, 프런트엔드 빌드가 필요하지 않습니다.
+
+## 폴더
+
+| 경로 | 용도 |
+|---|---|
+| `index.html`, `assets/app.css`, `assets/app.js` | 실행 화면과 기능 |
+| `assets/bank-data.js` | 웹앱용으로 생성한 데이터 번들 |
+| `sources/`, `images/` | 원본 PDF·답안과 문항 이미지 |
+| `data/` | 원본문항, 중복·변형 매핑, 파트 분류, 검토 목록 |
+| `scripts/` | 추출·중복 정리·분류·번들 생성·테스트·패키징 |
+| `review.html` | 중복 후보·원문 보류·분류 검토용 화면 |
+| `reports/` | 검토 결과, 문항 목록 CSV, 화면 확인 자료 |
+| `research/intake/` | 초기 파일 수신·분석 기록 (역사 자료) |
+
+## 실행
+
+저장소 루트에서 아래 명령을 실행하고 `/jaegyeong/` 경로로 접속합니다.
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+메인 웹앱은 일반 스크립트 번들이어서 폴더 전체를 받은 뒤 `index.html`을 로컬 브라우저에서 열도록도 구성했습니다. 관리형 브라우저의 파일 실행 제한 및 모바일 OS에 따라 HTTP(S)가 필요할 수 있습니다. `review.html`은 JSON을 fetch하므로 HTTP 서버가 필요합니다.
+
+## 데이터 재생성
+
+아래 명령은 저장소 루트 기준이며 Python 3.12 환경에서 확인했습니다. 일반 웹앱 이용에는 Python 패키지가 필요하지 않습니다.
+
+```sh
+python3 -m venv jaegyeong/.venv
+. jaegyeong/.venv/bin/activate
+python -m pip install -r jaegyeong/requirements.txt
+
+# 기존 문항 데이터를 사용해 중복·변형·분류·웹앱 번들을 모두 갱신
+python jaegyeong/scripts/build_bank.py
+
+# 분류만 갱신 (웹앱 번들도 함께 갱신)
+python jaegyeong/scripts/classify_parts.py
+
+# 웹앱 번들만 갱신
+python jaegyeong/scripts/build_app_data.py
+
+# PDF부터 다시 추출해야 할 때만 실행: 이미지와 파생 데이터를 다시 만듦
+python jaegyeong/scripts/build_bank.py --reextract
+```
+
+원본 위치는 `data/source-exams.json`에 상대 경로로 저장했습니다. 과거 업로드 파일이나 이 대화, `/workspace/attachments/`가 없어도 재생성할 수 있습니다. SHA-256은 `data/source-manifest.json`에 있습니다.
+
+## 검증
+
+```sh
+python jaegyeong/scripts/test_bank.py
+python jaegyeong/scripts/test_parts.py
+
+# 브라우저 테스트용 추가 설치
+python -m pip install -r jaegyeong/requirements-dev.txt
+python -m playwright install chromium
+
+# 위 HTTP 서버가 별도 터미널에서 실행 중일 때
+python jaegyeong/scripts/test_app.py
+python jaegyeong/scripts/test_browser.py
+```
+
+기본 테스트 주소는 `http://127.0.0.1:8000/jaegyeong/`입니다. 다른 포트나 앱 폴더를 직접 제공하는 경우 `APP_BASE_URL` 환경변수로 바꿉니다. 설치된 시스템 `chromium`을 우선 사용하며, 없으면 Playwright가 설치한 브라우저를 사용합니다. 테스트 스크린샷은 Git에서 제외한 `_artifacts/`에 저장합니다.
+
+```sh
+APP_BASE_URL=http://127.0.0.1:8002/jaegyeong/ python jaegyeong/scripts/test_app.py
+python jaegyeong/scripts/package_app.py
+```
+
+패키지는 Git에서 제외한 `jaegyeong/dist/`에 생성됩니다. 이미지·PDF가 이미 저장소에 있으므로 대용량 ZIP이나 추출 캐시를 다시 커밋할 필요가 없습니다.
+
+## 현재 범위와 기록
+
+원본 4,560문항, 중복 정리 4,322항목, 학습 가능 4,321항목, 기본 유형 대표 4,144항목입니다. 중복 유사 후보 1,649쌍과 파트 분류 검토 126항목은 추가 검토 대상으로 보존합니다. 자세한 기준은 [중복 정리 결과](reports/중복정리결과.md)와 [파트 분류 결과](reports/파트분류결과.md)를 확인하세요.
+
+개인 학습 기록은 `localStorage`의 `chagok.study.v1`에 저장합니다. GitHub에는 개인 오답·즐겨찾기 기록이 올라가지 않습니다. 브라우저나 기기를 바꾸기 전에 앱에서 백업하고 새 브라우저에서 복원하세요. 해설, 로그인, 자동 기기 동기화, 최신 법령에 따른 정답 재검증은 제공하지 않습니다.
+
+## 배포
+
+`main`에 반영하면 기존 GitHub Pages의 `pages build and deployment`가 실행됩니다. 해당 커밋의 배포 성공을 확인하세요. 원래 사이트의 `/`, `privacy.html`, `terms.html`, `style.css`는 문제은행과 별개입니다.

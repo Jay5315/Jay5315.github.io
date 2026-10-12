@@ -1,0 +1,430 @@
+{
+  "exams": {
+    "2022-01": {
+      "year": 2022,
+      "month": 1,
+      "question_file": "sources/2022-01-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-01-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-03": {
+      "year": 2022,
+      "month": 3,
+      "question_file": "sources/2022-03-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-03-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-05": {
+      "year": 2022,
+      "month": 5,
+      "question_file": "sources/2022-05-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-05-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-06": {
+      "year": 2022,
+      "month": 6,
+      "question_file": "sources/2022-06-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-06-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-07": {
+      "year": 2022,
+      "month": 7,
+      "question_file": "sources/2022-07-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-07-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-09": {
+      "year": 2022,
+      "month": 9,
+      "question_file": "sources/2022-09-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-09-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-11": {
+      "year": 2022,
+      "month": 11,
+      "question_file": "sources/2022-11-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-11-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2022-12": {
+      "year": 2022,
+      "month": 12,
+      "question_file": "sources/2022-12-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2022-12-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-01": {
+      "year": 2023,
+      "month": 1,
+      "question_file": "sources/2023-01-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-01-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-03": {
+      "year": 2023,
+      "month": 3,
+      "question_file": "sources/2023-03-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-03-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-05": {
+      "year": 2023,
+      "month": 5,
+      "question_file": "sources/2023-05-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-05-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-06": {
+      "year": 2023,
+      "month": 6,
+      "question_file": "sources/2023-06-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-06-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-07": {
+      "year": 2023,
+      "month": 7,
+      "question_file": "sources/2023-07-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-07-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-09": {
+      "year": 2023,
+      "month": 9,
+      "question_file": "sources/2023-09-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-09-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-11": {
+      "year": 2023,
+      "month": 11,
+      "question_file": "sources/2023-11-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-11-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2023-12": {
+      "year": 2023,
+      "month": 12,
+      "question_file": "sources/2023-12-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2023-12-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-01": {
+      "year": 2024,
+      "month": 1,
+      "question_file": "sources/2024-01-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-01-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-03": {
+      "year": 2024,
+      "month": 3,
+      "question_file": "sources/2024-03-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-03-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-05": {
+      "year": 2024,
+      "month": 5,
+      "question_file": "sources/2024-05-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-05-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-06": {
+      "year": 2024,
+      "month": 6,
+      "question_file": "sources/2024-06-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-06-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-07": {
+      "year": 2024,
+      "month": 7,
+      "question_file": "sources/2024-07-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-07-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-09": {
+      "year": 2024,
+      "month": 9,
+      "question_file": "sources/2024-09-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-09-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-11": {
+      "year": 2024,
+      "month": 11,
+      "question_file": "sources/2024-11-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-11-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2024-12": {
+      "year": 2024,
+      "month": 12,
+      "question_file": "sources/2024-12-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2024-12-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-01": {
+      "year": 2025,
+      "month": 1,
+      "question_file": "sources/2025-01-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-01-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-03": {
+      "year": 2025,
+      "month": 3,
+      "question_file": "sources/2025-03-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-03-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-05": {
+      "year": 2025,
+      "month": 5,
+      "question_file": "sources/2025-05-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-05-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-06": {
+      "year": 2025,
+      "month": 6,
+      "question_file": "sources/2025-06-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-06-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-07": {
+      "year": 2025,
+      "month": 7,
+      "question_file": "sources/2025-07-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-07-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-09": {
+      "year": 2025,
+      "month": 9,
+      "question_file": "sources/2025-09-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-09-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-11": {
+      "year": 2025,
+      "month": 11,
+      "question_file": "sources/2025-11-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-11-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2025-12": {
+      "year": 2025,
+      "month": 12,
+      "question_file": "sources/2025-12-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2025-12-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-01": {
+      "year": 2026,
+      "month": 1,
+      "question_file": "sources/2026-01-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-01-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-03": {
+      "year": 2026,
+      "month": 3,
+      "question_file": "sources/2026-03-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-03-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-05": {
+      "year": 2026,
+      "month": 5,
+      "question_file": "sources/2026-05-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-05-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-06": {
+      "year": 2026,
+      "month": 6,
+      "question_file": "sources/2026-06-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-06-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    },
+    "2026-07": {
+      "year": 2026,
+      "month": 7,
+      "question_file": "sources/2026-07-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-07-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": [
+        {
+          "number": 26,
+          "answers": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    "2026-09": {
+      "year": 2026,
+      "month": 9,
+      "question_file": "sources/2026-09-questions.pdf",
+      "questions": 120,
+      "question_pages": 48,
+      "answer_file": "sources/2026-09-answers.pdf",
+      "answer_count": 120,
+      "answer_numbering_checked": true,
+      "multiple_answers": []
+    }
+  }
+}

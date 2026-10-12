@@ -1,0 +1,382 @@
+[
+  {
+    "path": "sources/2022-01-answers.pdf",
+    "bytes": 427700,
+    "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+  },
+  {
+    "path": "sources/2022-01-questions.pdf",
+    "bytes": 427700,
+    "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+  },
+  {
+    "path": "sources/2022-03-answers.pdf",
+    "bytes": 444971,
+    "sha256": "8ce49b72eb6513b8cc879724bd43e32e341fd7a86d56fdd610c3b79358e7628b"
+  },
+  {
+    "path": "sources/2022-03-questions.pdf",
+    "bytes": 444971,
+    "sha256": "8ce49b72eb6513b8cc879724bd43e32e341fd7a86d56fdd610c3b79358e7628b"
+  },
+  {
+    "path": "sources/2022-05-answers.pdf",
+    "bytes": 441024,
+    "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+  },
+  {
+    "path": "sources/2022-05-questions.pdf",
+    "bytes": 441024,
+    "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+  },
+  {
+    "path": "sources/2022-06-answers.pdf",
+    "bytes": 433495,
+    "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+  },
+  {
+    "path": "sources/2022-06-questions.pdf",
+    "bytes": 433495,
+    "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+  },
+  {
+    "path": "sources/2022-07-answers.pdf",
+    "bytes": 442432,
+    "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+  },
+  {
+    "path": "sources/2022-07-questions.pdf",
+    "bytes": 442432,
+    "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+  },
+  {
+    "path": "sources/2022-09-answers.pdf",
+    "bytes": 473851,
+    "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+  },
+  {
+    "path": "sources/2022-09-questions.pdf",
+    "bytes": 473851,
+    "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+  },
+  {
+    "path": "sources/2022-11-answers.pdf",
+    "bytes": 433560,
+    "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+  },
+  {
+    "path": "sources/2022-11-questions.pdf",
+    "bytes": 433560,
+    "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+  },
+  {
+    "path": "sources/2022-12-answers.pdf",
+    "bytes": 392770,
+    "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+  },
+  {
+    "path": "sources/2022-12-questions.pdf",
+    "bytes": 392770,
+    "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+  },
+  {
+    "path": "sources/2023-01-answers.pdf",
+    "bytes": 63317,
+    "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+  },
+  {
+    "path": "sources/2023-01-questions.pdf",
+    "bytes": 399121,
+    "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda"
+  },
+  {
+    "path": "sources/2023-03-answers.pdf",
+    "bytes": 63460,
+    "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6"
+  },
+  {
+    "path": "sources/2023-03-questions.pdf",
+    "bytes": 374402,
+    "sha256": "10c7cb960dbda7f35ef8445207a875cfd6c98392edbb4670a77fba6c748d6c13"
+  },
+  {
+    "path": "sources/2023-05-answers.pdf",
+    "bytes": 63371,
+    "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+  },
+  {
+    "path": "sources/2023-05-questions.pdf",
+    "bytes": 385196,
+    "sha256": "b35038c0bc11dda99d6adb0e8500869eef6e646e8b57bd7f4893578c8fa715ce"
+  },
+  {
+    "path": "sources/2023-06-answers.pdf",
+    "bytes": 62254,
+    "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+  },
+  {
+    "path": "sources/2023-06-questions.pdf",
+    "bytes": 374558,
+    "sha256": "3f0d96ddcef55c97528ffce0ddc17d13ce4c091f61c936678a083cb169cc390b"
+  },
+  {
+    "path": "sources/2023-07-answers.pdf",
+    "bytes": 62186,
+    "sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+  },
+  {
+    "path": "sources/2023-07-questions.pdf",
+    "bytes": 364448,
+    "sha256": "bd25a4d0a0732e4d1f18980ee7a8a4d5985f6867710a2dc6d421da8b95e6a33d"
+  },
+  {
+    "path": "sources/2023-09-answers.pdf",
+    "bytes": 62267,
+    "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c"
+  },
+  {
+    "path": "sources/2023-09-questions.pdf",
+    "bytes": 394424,
+    "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c"
+  },
+  {
+    "path": "sources/2023-11-answers.pdf",
+    "bytes": 62224,
+    "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+  },
+  {
+    "path": "sources/2023-11-questions.pdf",
+    "bytes": 386329,
+    "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5"
+  },
+  {
+    "path": "sources/2023-12-answers.pdf",
+    "bytes": 62143,
+    "sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8"
+  },
+  {
+    "path": "sources/2023-12-questions.pdf",
+    "bytes": 382407,
+    "sha256": "438d17eced34f979cd64a56d3ed0f8cd77025bcbf2ea2040ec19aeb4ce0ab274"
+  },
+  {
+    "path": "sources/2024-01-answers.pdf",
+    "bytes": 63347,
+    "sha256": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+  },
+  {
+    "path": "sources/2024-01-questions.pdf",
+    "bytes": 371135,
+    "sha256": "9304c964702577e38a00fbe4303f7f8a68593a1b0b5660a380990fea1664df20"
+  },
+  {
+    "path": "sources/2024-03-answers.pdf",
+    "bytes": 63741,
+    "sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a"
+  },
+  {
+    "path": "sources/2024-03-questions.pdf",
+    "bytes": 396494,
+    "sha256": "3b99d19a6a1a96dfd49165c97cd6acac1015f4f239b906a49b8347bb4125ed83"
+  },
+  {
+    "path": "sources/2024-05-answers.pdf",
+    "bytes": 63483,
+    "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+  },
+  {
+    "path": "sources/2024-05-questions.pdf",
+    "bytes": 371068,
+    "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c"
+  },
+  {
+    "path": "sources/2024-06-answers.pdf",
+    "bytes": 63524,
+    "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+  },
+  {
+    "path": "sources/2024-06-questions.pdf",
+    "bytes": 366857,
+    "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385"
+  },
+  {
+    "path": "sources/2024-07-answers.pdf",
+    "bytes": 63401,
+    "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+  },
+  {
+    "path": "sources/2024-07-questions.pdf",
+    "bytes": 365570,
+    "sha256": "e7ff73319b2b88e155937534bf2757ea675337bc2a215fb5262a35a8521a7354"
+  },
+  {
+    "path": "sources/2024-09-answers.pdf",
+    "bytes": 76166,
+    "sha256": "e93f70bb0a27ae4f3e8367db42b09d8d2d93d520bb175b20155e136e3d34fe3b"
+  },
+  {
+    "path": "sources/2024-09-questions.pdf",
+    "bytes": 420131,
+    "sha256": "8051a3b2d46a2c88d61877addf55906452190a83bfd2533f7b88d227eb6b01d1"
+  },
+  {
+    "path": "sources/2024-11-answers.pdf",
+    "bytes": 63294,
+    "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+  },
+  {
+    "path": "sources/2024-11-questions.pdf",
+    "bytes": 381337,
+    "sha256": "5d11a643560392886e4b649be54ed439f4fc26f93844b0a11e8d021d4d527cad"
+  },
+  {
+    "path": "sources/2024-12-answers.pdf",
+    "bytes": 63305,
+    "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+  },
+  {
+    "path": "sources/2024-12-questions.pdf",
+    "bytes": 392613,
+    "sha256": "ada320a74cca87a792eddce347980d2366bbfd4236ef9b27dc62e5e7fc74b7bd"
+  },
+  {
+    "path": "sources/2025-01-answers.pdf",
+    "bytes": 63320,
+    "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b"
+  },
+  {
+    "path": "sources/2025-01-questions.pdf",
+    "bytes": 375080,
+    "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285"
+  },
+  {
+    "path": "sources/2025-03-answers.pdf",
+    "bytes": 63320,
+    "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73"
+  },
+  {
+    "path": "sources/2025-03-questions.pdf",
+    "bytes": 383859,
+    "sha256": "1fe24392496bb55631ffd80747402bf0ae7353d41d89af775fbf262fb14d1211"
+  },
+  {
+    "path": "sources/2025-05-answers.pdf",
+    "bytes": 63332,
+    "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+  },
+  {
+    "path": "sources/2025-05-questions.pdf",
+    "bytes": 373604,
+    "sha256": "f445101c34fcaf9351de3c69ad0ebed9450890753a4d0873b5fd2a1e83183541"
+  },
+  {
+    "path": "sources/2025-06-answers.pdf",
+    "bytes": 63544,
+    "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+  },
+  {
+    "path": "sources/2025-06-questions.pdf",
+    "bytes": 371458,
+    "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623"
+  },
+  {
+    "path": "sources/2025-07-answers.pdf",
+    "bytes": 63453,
+    "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+  },
+  {
+    "path": "sources/2025-07-questions.pdf",
+    "bytes": 401144,
+    "sha256": "7a7bdbd64814dbbbf9e7f2339c1f5b019bf5d95229deda54532395a858f7c11a"
+  },
+  {
+    "path": "sources/2025-09-answers.pdf",
+    "bytes": 182402,
+    "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+  },
+  {
+    "path": "sources/2025-09-questions.pdf",
+    "bytes": 418120,
+    "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc"
+  },
+  {
+    "path": "sources/2025-11-answers.pdf",
+    "bytes": 106060,
+    "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+  },
+  {
+    "path": "sources/2025-11-questions.pdf",
+    "bytes": 382949,
+    "sha256": "9d5f96865775539f30f7256c0af276a2ce0ff37bdafffb5625684502f856fc5f"
+  },
+  {
+    "path": "sources/2025-12-answers.pdf",
+    "bytes": 198623,
+    "sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac"
+  },
+  {
+    "path": "sources/2025-12-questions.pdf",
+    "bytes": 400968,
+    "sha256": "6a37603f836f12dd387a8522e87fef8b1ad6e25c2f0580482ab2b96544d89411"
+  },
+  {
+    "path": "sources/2026-01-answers.pdf",
+    "bytes": 106060,
+    "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8"
+  },
+  {
+    "path": "sources/2026-01-questions.pdf",
+    "bytes": 385551,
+    "sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652"
+  },
+  {
+    "path": "sources/2026-03-answers.pdf",
+    "bytes": 108689,
+    "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77"
+  },
+  {
+    "path": "sources/2026-03-questions.pdf",
+    "bytes": 404439,
+    "sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55"
+  },
+  {
+    "path": "sources/2026-05-answers.pdf",
+    "bytes": 306256,
+    "sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+  },
+  {
+    "path": "sources/2026-05-questions.pdf",
+    "bytes": 389301,
+    "sha256": "acc304d920dda3680501167a7598e591d2d43fb2e7d4ca71e83b8e18572c677a"
+  },
+  {
+    "path": "sources/2026-06-answers.pdf",
+    "bytes": 198593,
+    "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d"
+  },
+  {
+    "path": "sources/2026-06-questions.pdf",
+    "bytes": 377546,
+    "sha256": "82d6d1c653c9902bdec623c69f06296f48f8a84787d1b0ff4c47a821ca625620"
+  },
+  {
+    "path": "sources/2026-07-answers.pdf",
+    "bytes": 220562,
+    "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+  },
+  {
+    "path": "sources/2026-07-questions.pdf",
+    "bytes": 402838,
+    "sha256": "6e68f3564059ac47d0f7a554a1281dc9981d54d80976f0139aa1d2e205419603"
+  },
+  {
+    "path": "sources/2026-09-answers.pdf",
+    "bytes": 198599,
+    "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+  },
+  {
+    "path": "sources/2026-09-questions.pdf",
+    "bytes": 426952,
+    "sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c"
+  }
+]

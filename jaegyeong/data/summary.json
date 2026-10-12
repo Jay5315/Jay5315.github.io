@@ -1,0 +1,76 @@
+{
+  "source_questions": 4560,
+  "bank_entries": 4322,
+  "duplicate_occurrences_suppressed": 238,
+  "duplicate_groups": 210,
+  "families": 4145,
+  "numeric_variant_families": 140,
+  "review_candidate_pairs": 1649,
+  "answer_conflicts": 0,
+  "choice_parse_review_count": 1,
+  "quarantined_source_questions": 1,
+  "subjects": {
+    "재무회계": {
+      "source_questions": 1520,
+      "entries": 1458,
+      "families": 1398
+    },
+    "세무회계": {
+      "source_questions": 1520,
+      "entries": 1479,
+      "families": 1474
+    },
+    "원가관리회계": {
+      "source_questions": 1520,
+      "entries": 1385,
+      "families": 1273
+    }
+  },
+  "semantic_rules": [
+    [
+      "가장올바르지않은것은",
+      "옳지않은것은"
+    ],
+    [
+      "올바르지않은것은",
+      "옳지않은것은"
+    ],
+    [
+      "가장옳지않은것은",
+      "옳지않은것은"
+    ],
+    [
+      "가장올바른것은",
+      "옳은것은"
+    ],
+    [
+      "올바른것은",
+      "옳은것은"
+    ],
+    [
+      "가장옳은것은",
+      "옳은것은"
+    ],
+    [
+      "에관한설명",
+      "에대한설명"
+    ],
+    [
+      "과관련된설명",
+      "에대한설명"
+    ],
+    [
+      "와관련된설명",
+      "에대한설명"
+    ],
+    [
+      "국제회계기준의적용으로자산및부채에대한공정가치측정대상이확대되었다",
+      "국제회계기준은자산및부채에대한공정가치적용이확대되었다"
+    ],
+    [
+      "국제회계기준의적용으로자산및부채에대한공정가치적용이확대되었다",
+      "국제회계기준은자산및부채에대한공정가치적용이확대되었다"
+    ]
+  ],
+  "status": "conservative_dedup_complete_semantic_candidates_pending"
+}
