@@ -54,11 +54,12 @@ class ConceptNotesTest(unittest.TestCase):
                 self.assertTrue(years and all(isinstance(y,int) for y in years),n['id'])
                 self.assertTrue(all(x['ref'] in ('CIT_LAW','CIT_DECREE','PIT_LAW','VAT_LAW','VAT_DECREE') for x in n['sources']),n['id'])
             else:self.assertIsNone(years,f"{n['id']}: non-tax notes must not claim a tax-law year")
-            if n['part_id'].startswith('F') and n['sources']:
-                self.assertNotEqual(s,'source_checked',f"{n['id']}: K-IFRS text was not checked, so financial notes stay partial")
+            if n['part_id'].startswith('F') and s in ('source_checked','partial'):
+                self.assertTrue(any(x['ref'].startswith('KIFRS') for x in n['sources']),f"{n['id']}: financial notes must cite the K-IFRS standard they were checked against")
         for k,r in self.c['sources'].items():
             self.assertTrue(r['versions'],k)
-            self.assertTrue(r['url'].startswith('https://www.law.go.kr/') if not k.startswith('OSX') else r['url'].startswith('https://openstax.org/books/'),k)
+            prefix={'OSX':'https://openstax.org/books/','KIFRS':'https://www.kasb.or.kr/'}.get(k.split('_')[0],'https://www.law.go.kr/')
+            self.assertTrue(r['url'].startswith(prefix),k)
     def test_example_arithmetic(self):
         checked=0
         for n in self.notes:
