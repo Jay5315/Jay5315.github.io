@@ -1,0 +1,1074 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-12",
+  "notes": [
+    "note-V04",
+    "note-V07",
+    "note-M13",
+    "note-M15"
+  ],
+  "registered_count": 74,
+  "source_checked": 66,
+  "partial": 8,
+  "unchanged_status_and_unchecked_scopes": true,
+  "added_examples": 5,
+  "added_example_calculation_checks": 25,
+  "expert_reviewed": false,
+  "scope": "작성자와다른에이전트가실제추가문단·예제·출처·조건을검토. 발견된섹션번호와대체분해합계과잉단정을교정한제안만통합. 기존개념본문과상태는보존.",
+  "records": [
+    {
+      "file": "concepts-tax.qa.json",
+      "raw_sha256": "b3129e8c5071f032f46a5bac275cf85ea2b72b65661ca17117a3770772df4b50",
+      "result": {
+        "schema_version": 1,
+        "proposal_id": "r6_tax_b_V04_V07_followup",
+        "reviewer": "r6_tax_a",
+        "independent_of_author": true,
+        "proposal_path": "concepts-tax.delta.json",
+        "proposal_sha256": "a2f734ab539dd1d91b56971398d7873cc420189f7d387bad6e9b68638dcc37a5",
+        "checked_on": "2026-10-12",
+        "items": [
+          {
+            "note_id": "note-V04",
+            "status": "issue",
+            "body_status": "pass",
+            "source_locator_metadata_issue": {
+              "actual_heading": "15.2 Financing Government",
+              "proposed_heading": "§15.3",
+              "finding": "HTML id의 ch15_s03와 실제 본문 절 번호가 다릅니다. 실제 regressive/sales-tax 본문과 정책도출은 유효하며 해당절번호 메타데이터만 교정이 필요합니다.",
+              "fields_to_correct": [
+                "sources.SAYLOR_R6_TAXB_REGRESSIVE.verification",
+                "deltas[note-V04].append.sources[SAYLOR_R6_TAXB_REGRESSIVE].locator",
+                "deltas[note-V04].actual_source_reads[SAYLOR_R6_TAXB_REGRESSIVE].read_locator"
+              ],
+              "frozen_proposal_changed": false
+            },
+            "before_sha256_canonical_sorted_compact_utf8": "6e05aba1b48c69b92ce61425130cd77d529c97609160b2edb8645b8cdba86489",
+            "after_sha256_canonical_sorted_compact_utf8": "ae8fd7eb379ec739ed7ae39844e641e0cf98ac4fa7bfdfc4e410f0aba64bd4fd",
+            "before_matches_current_note": true,
+            "append_prefix_preserved": true,
+            "existing_nonappend_fields_preserved": true,
+            "review_status_preserved": true,
+            "unchecked_points_preserved": true,
+            "existing_text_exact_duplicates": false,
+            "semantic_duplicate_finding": "새정책효과/서식기능은 기존기본영세율·면세/필수기재사항 설명과 구별되는추가사항입니다. 기존설명을 새규정으로 반복하지 않았습니다.",
+            "append_semantic_checks": [
+              {
+                "location": "append.key_points[0]",
+                "status": "pass",
+                "finding": "실제 한국법4/21/38/59와 NTS소비자징수구조에서 수출0%+관련매입공제환급이 수출국세액을 제거하고 소비지수입과세와 연결된다는 정책효과를 도출합니다. 모든국가의구체규칙검증이라는 주장은 없습니다."
+              },
+              {
+                "location": "append.key_points[1]",
+                "status": "pass",
+                "finding": "한국생활필수 면세종류는 법26①1/5/6로 확인되고 소비지출비중/역진성은 Saylor일반경제원리로 분리됩니다. 미국의음식/의약품예시를 한국면세목록·요건으로전용하지 않았습니다. 면세가 해당소비부담을 낮춰 완화방향으로작용한다는 범위이며 실제전가율/분배효과를 계량확정하지 않습니다."
+              },
+              {
+                "location": "append.pitfalls[0]",
+                "status": "pass",
+                "finding": "법39①7의 면세매입불공제를 명시해 영세율처럼 전체이전단계세액제거로 단정하지 않습니다."
+              }
+            ],
+            "actual_source_reads": [
+              {
+                "ref": "CTB_VAT_LAW_2024",
+                "private_path": "TA_CROSS02_VAT_LAW_20240101.md",
+                "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+                "proposal_locator": "metadata제19931호2024-01-01 및4/21/26/32/34/38/39①7/59:수입과세·수출0·생활필수소비면세·증빙·입력공제/환급",
+                "independent_read_locator": "독립재독 metadata 제19931호·2024-01-01 및 제4조 수입과세/제21조 수출0%/제26조제1항1·5·6 법정면세/제38조 사업용매입공제/제39조제1항7 면세매입불공제/제59조 일반·영세환급 (기존파트전체조문검수아님)",
+                "source_read": true
+              },
+              {
+                "ref": "NTS_R6_TAXB_VAT2024",
+                "private_path": "nts-vat-guide-2024.pdf",
+                "sha256": "dbb702ba304285591994a36ff7e2003c088e5da6e94dff2c949b595679c38e3d",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=d90b2e4297eec508e4a4aea46838b72a",
+                "proposal_locator": "PDF16쪽 가. 부가가치세개요:최종소비자부담/사업자의징수납부",
+                "independent_read_locator": "독립재독 PDF16쪽 가 부가가치세개요의 매출−매입계산·물건값포함·최종소비자부담·사업자징수납부 및 나의 법정면세사업 구분",
+                "source_read": true
+              },
+              {
+                "ref": "SAYLOR_R6_TAXB_REGRESSIVE",
+                "private_path": "s18-02-financing-government.html",
+                "sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://github.com/saylordotorg/text_principles-of-microeconomics-v2.0/blob/4c1a18ff24289583ba7dccf11969d1a4ccf1c4b0/s18-02-financing-government.html",
+                "proposal_locator": "§15.3 rittenberg-ch15_s03_s01_s01_s01_p01 및 s02_s03_p01–p02",
+                "independent_read_locator": "독립재독 실제본문heading §15.2 FinancingGovernment 및 rittenberg-ch15_s03_s01_s01_s01_p01 역진세정의 및 s02_s03_p01~p02 일반판매세의 음식/의약품면제예시·저소득소비비중; 한국면세요건으로전용하지않음",
+                "source_read": true
+              }
+            ],
+            "scope": "추가3개핵심문장과2개주의문구만의 독립내용검증; 기존파트전체/모든연도규칙/전문가검수로 확대하지 않음",
+            "expert_reviewed": false
+          },
+          {
+            "note_id": "note-V07",
+            "status": "pass",
+            "body_status": "pass",
+            "source_locator_metadata_issue": null,
+            "before_sha256_canonical_sorted_compact_utf8": "1eeae8f6fa0978860116e8abc25335cffb985d94ba9d0fc9f353c72f7fa097b5",
+            "after_sha256_canonical_sorted_compact_utf8": "938fbbf9bab230eefa05bc3f9fd1da73e1eabdad43e1d11820908c263decc94f",
+            "before_matches_current_note": true,
+            "append_prefix_preserved": true,
+            "existing_nonappend_fields_preserved": true,
+            "review_status_preserved": true,
+            "unchecked_points_preserved": true,
+            "existing_text_exact_duplicates": false,
+            "semantic_duplicate_finding": "새정책효과/서식기능은 기존기본영세율·면세/필수기재사항 설명과 구별되는추가사항입니다. 기존설명을 새규정으로 반복하지 않았습니다.",
+            "append_semantic_checks": [
+              {
+                "location": "append.key_points[0]",
+                "status": "pass",
+                "finding": "2024시행규칙49조가 별지14를 연결하고 실제 공식1쪽에 영수/청구표시·공급가액/세액/합계금액이 있습니다. 거래·세액증빙과 대금청구/영수자료 기능에 한정해 확인됩니다."
+              },
+              {
+                "location": "append.pitfalls[0]",
+                "status": "pass",
+                "finding": "공급거래증빙과 청구/영수자료의기능을 공급계약 합의 자체와 구별합니다. 세금계산서가 어떤민사사건에서도 계약증거가 될 수 없다는 단정으로 확장하지 않습니다."
+              }
+            ],
+            "actual_source_reads": [
+              {
+                "ref": "CTB_VAT_LAW_2024",
+                "private_path": "TA_CROSS02_VAT_LAW_20240101.md",
+                "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+                "proposal_locator": "metadata제19931호2024-01-01 및4/21/26/32/34/38/39①7/59:수입과세·수출0·생활필수소비면세·증빙·입력공제/환급",
+                "independent_read_locator": "독립재독 metadata 제19931호·2024-01-01 및 제4조 수입과세/제21조 수출0%/제26조제1항1·5·6 법정면세/제38조 사업용매입공제/제39조제1항7 면세매입불공제/제59조 일반·영세환급 (기존파트전체조문검수아님)",
+                "source_read": true
+              },
+              {
+                "ref": "R6_CPT_TAXB_RULE2024",
+                "private_path": "VAT_RULE_2024.md",
+                "sha256": "6ec50f4ee55dd13cba347ecbd576f03a782d1dd29cdd6f90dd202edd9e0fffb1",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://www.law.go.kr/법령/부가가치세법시행규칙",
+                "proposal_locator": "metadata 시행2024-03-22·49조·별지14PDF링크flSeq139003295",
+                "independent_read_locator": "독립재독 metadata 기재부령1055·2024-03-22, 제49조 별지14서식 지정, 별지14첨부 PDF링크 flSeq139003295",
+                "source_read": true
+              },
+              {
+                "ref": "R6_CPT_TAXB_FORM14_2024",
+                "private_path": "VAT_RULE2024_form14.pdf",
+                "sha256": "cc459472e7110fc0c70a8c183580cb2860c6ece40595fbf78dd277093060436d",
+                "sha256_matches_proposal": true,
+                "acquisition_or_publication_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=139003295",
+                "proposal_locator": "PDF1쪽 양식전체중 공급정보/가액/세액/합계금액/영수·청구 및현금·외상미수금칸",
+                "independent_read_locator": "독립재독 PDF1쪽 공급자/공급받는자보관용 양식 텍스트 및 렌더이미지; 공급가액·세액·합계금액·현금/수표/어음/외상미수금 및 이금액을영수/청구함 표시",
+                "source_read": true
+              }
+            ],
+            "scope": "추가3개핵심문장과2개주의문구만의 독립내용검증; 기존파트전체/모든연도규칙/전문가검수로 확대하지 않음",
+            "expert_reviewed": false
+          }
+        ],
+        "validation": {
+          "assigned": 2,
+          "reviewed_exactly_once": 2,
+          "pass": 1,
+          "issue": 1,
+          "body_pass": 2,
+          "metadata_locator_issue": 1,
+          "current_before_hashes_match": true,
+          "simulated_after_hashes_match": true,
+          "append_field_prefixes_preserved": true,
+          "status_and_unchecked_preserved": true,
+          "non_target_notes_preserved_in_private_candidate": true,
+          "source_metadata_existing_collision_equal": true,
+          "actual_unique_source_files_read": 5,
+          "actual_source_sha256_matches": true,
+          "new_examples": 0,
+          "new_numeric_checks": 0,
+          "preserved_V07_example_calculation_checks": [
+            {
+              "note_id": "note-V07",
+              "scope": "preserved existing example consistency; no new example authored",
+              "label": "기본 납부세액",
+              "expr": "3000000-2000000",
+              "expected": 1000000,
+              "actual": 1000000,
+              "status": "pass"
+            },
+            {
+              "note_id": "note-V07",
+              "scope": "preserved existing example consistency; no new example authored",
+              "label": "미발급 가산세",
+              "expr": "10000000*.02",
+              "expected": 200000,
+              "actual": 200000.0,
+              "status": "pass"
+            },
+            {
+              "note_id": "note-V07",
+              "scope": "preserved existing example consistency; no new example authored",
+              "label": "예시 최종 납부액",
+              "expr": "1000000+200000",
+              "expected": 1200000,
+              "actual": 1200000,
+              "status": "pass"
+            }
+          ],
+          "current_tests_actually_executed_against_private_candidate": {
+            "test_names": [
+              "test_structure_and_part_links",
+              "test_sources_and_status_are_honest",
+              "test_example_arithmetic"
+            ],
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "errors": 0,
+            "log_path": "concepts-tax.qa.tests.log"
+          },
+          "actual_merger_executed": false,
+          "merger_contract_simulated_in_memory": true,
+          "shared_repository_modified": false,
+          "frozen_proposal_modified": false,
+          "new_downloads_or_network_calls": false,
+          "whole_part_expert_review_claimed": false,
+          "expert_reviewed": false
+        },
+        "limitations": [
+          "역진성은 소득대비소비비중의 일반 경제원리와 한국법정면세제도를 연결한 정책방향입니다. 실제가격전가율·전체소득계층별분배효과·전국가의부가가치세구체규칙을 계량확정하지 않습니다.",
+          "V07 서식기능은 2024 역사서식의직접확인입니다. 이후서식개정 전체 또는 개별민사계약성립/효력 전체의검수로 확대하지 않습니다.",
+          "기존노트의 source_checked/unchecked는 동일하게 보존합니다. 이는 V04/V07 전체파트의새전문가검수라는의미가 아닙니다."
+        ]
+      }
+    },
+    {
+      "file": "concepts-tax.correction-qa.json",
+      "raw_sha256": "41fdc32f7118864748620663a0eb3b4f1147ac72daf7138b88ef22666e768de3",
+      "result": {
+        "schema_version": 1,
+        "reviewer": "r6_tax_a",
+        "status": "pass",
+        "original_proposal_sha256": "a2f734ab539dd1d91b56971398d7873cc420189f7d387bad6e9b68638dcc37a5",
+        "reviewed_copy_sha256": "57bd8742e47e22be0ea298f9bca53a98f53e349269b3ec1f151b1429aafe3135",
+        "changes_actual_compared": [
+          {
+            "path": ".deltas[0].actual_source_reads[2].read_locator",
+            "before": "§15.3 rittenberg-ch15_s03_s01_s01_s01_p01 및 s02_s03_p01–p02",
+            "after": "본문 §15.2(HTML id ch15_s03) rittenberg-ch15_s03_s01_s01_s01_p01 및 s02_s03_p01–p02"
+          },
+          {
+            "path": ".deltas[0].after_sha256_canonical_sorted_compact_utf8",
+            "before": "ae8fd7eb379ec739ed7ae39844e641e0cf98ac4fa7bfdfc4e410f0aba64bd4fd",
+            "after": "952ff16b8241ec411cea2295e4e79dc63b8e388ab41491669a78643004aa0392"
+          },
+          {
+            "path": ".deltas[0].append.sources[2].locator",
+            "before": "§15.3 RegressiveTax/SalesTaxes:저소득소비비중·소비세면제의일반원리",
+            "after": "본문 §15.2(HTML id ch15_s03) RegressiveTax/SalesTaxes:저소득소비비중·소비세면제의일반원리"
+          },
+          {
+            "path": ".sources.SAYLOR_R6_TAXB_REGRESSIVE.verification",
+            "before": "공개교재§15.3 RegressiveTax 및SalesTaxes 문단에서 저소득일수록 소득중 소비지출 비중이 커져 소비세가 역진적일 수 있다는 일반원리를 실제 읽었습니다. 식품/의약품면제 예시는 일반적 완화방향만 보조하며 미국법규를 한국면세대상이나 요건으로 전용하지 않습니다.",
+            "after": "공개교재본문 §15.2(HTML id ch15_s03) RegressiveTax 및SalesTaxes 문단에서 저소득일수록 소득중 소비지출 비중이 커져 소비세가 역진적일 수 있다는 일반원리를 실제 읽었습니다. 식품/의약품면제 예시는 일반적 완화방향만 보조하며 미국법규를 한국면세대상이나 요건으로 전용하지 않습니다."
+          },
+          {
+            "path": ".validation.parent_correction",
+            "before": null,
+            "after": {
+              "original_proposal_sha256": "a2f734ab539dd1d91b56971398d7873cc420189f7d387bad6e9b68638dcc37a5",
+              "changed_scope": "Saylor본문섹션번호15.3→15.2만정정;HTMLidch15_s03은유지",
+              "parent_actual_heading_read": true,
+              "evidence_sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+              "expert_reviewed": false
+            }
+          }
+        ],
+        "metadata_correction_only": true,
+        "actual_heading": "15.2 Financing Government",
+        "stable_html_ids_preserved": true,
+        "original_source_cache_sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+        "prior_body_qa_sha256": "b3129e8c5071f032f46a5bac275cf85ea2b72b65661ca17117a3770772df4b50",
+        "prior_body_pass_preserved": true,
+        "V04_after_hash_recomputed_and_verified": true,
+        "V07_delta_unchanged": true,
+        "all_append_content_and_status_except_source_locator_unchanged": true,
+        "new_tests_run": 0,
+        "actual_checks_executed": "JSON recursive diff; exact3 §15.3→본문 §15.2(HTML id ch15_s03) locator corrections; stableheading/id inspection; bothnotes before/after hash in-memory reconstruction; allcache SHA checks",
+        "frozen_original_proposal_and_prior_QA_changed": false,
+        "shared_repository_modified": false,
+        "expert_reviewed": false,
+        "checked_on": "2026-10-12"
+      }
+    },
+    {
+      "file": "concepts-cost.qa.json",
+      "raw_sha256": "f2d78ced833e3ae785064b769d3a3fdffc6410fd8386aa5e9232e6ea4e4f90b1",
+      "result": {
+        "schema_version": 1,
+        "proposal_id": "round6-cost-finance-b-M13-M15-append",
+        "reviewer": "r6_tax_a",
+        "independent_of_author": true,
+        "proposal_sha256": "b943ce8e82abdfe3779576d38d5730fe2dc20a904c5b137ff5d0861e7da04d3f",
+        "items": [
+          {
+            "note_id": "note-M13",
+            "status": "issue",
+            "body_other_than_identified_pitfall_status": "pass",
+            "before_current_note_hash_matches": true,
+            "before_sha256_canonical_sorted_compact_utf8": "93aaf4ac9857452b388451c4296fc554fec8e3e7903e26b14a3882d4b5f686a8",
+            "independent_simulated_after_sha256_canonical_sorted_compact_utf8": "bfb55797c6c64060556426e6af2f706011287e859944145095b57b25d9e0d2e9",
+            "proposal_provided_after_sha256": null,
+            "after_hash_validation_scope": "original proposal supplies before hashes only; after calculated independently from current baseline and declared append/unchanged status",
+            "append_prefixes_preserved": true,
+            "existing_nonappend_fields_preserved": true,
+            "status_and_unchecked_points_preserved": true,
+            "exact_duplicate_append_entries": false,
+            "semantic_checks": [
+              "B/R/A 모두 예산CM를고정한금액평가여서 실제이익자체를새로가정하지 않음. A−R+R−B=A−B를 대수적으로도출.",
+              "제품별예산CM 및 actual총량×예산mix의 중간R로 배합/수량분리; 가격/원가변화를새로포함하지않음.",
+              "manager controllable vs divisiontraceable를구별하고 중앙공통배분제외는ACCA직접본문.",
+              "양수/음수는 예산CM로평가한이익기여의증가/감소라는방향기준과일치."
+            ],
+            "actual_source_reads": [
+              {
+                "ref": "SAYLOR_R6_FINB_FLEX",
+                "private_path": "s14-01-flexible-budgets.html",
+                "sha256": "19529f32707c2773f5d39ac41bdb5a575077746d69a085d8c837452449387401",
+                "sha256_matches_proposal": true,
+                "url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-01-flexible-budgets.html",
+                "proposal_locator": "ch10_s01_p01–p06,KeyTakeaway,ReviewProblem10.1",
+                "independent_actual_read_scope": "QA06에서실제독립재독한 Saylor10.1 actualactivitylevel 수정예산·KeyTakeaway/ReviewProblem10.1 본문을 재사용; 현재같은원본SHA직접재대조",
+                "actual_authority_body_read_reused_from": "result.json",
+                "read_provenance_qa06_sha256": "8579db07b3cb180fb181e46eeacfcd90d0cac120d870d8b50a534ea62aeccc89"
+              },
+              {
+                "ref": "SAYLOR_R6_FINB_CVP",
+                "private_path": "s10-02-cost-volume-profit-analysis-fo.html",
+                "sha256": "df2435a14c30e367812024437993c5baae71671fda3d54e68b07d9c6f0924e4c",
+                "sha256_matches_proposal": true,
+                "url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s10-02-cost-volume-profit-analysis-fo.html",
+                "proposal_locator": "§Break-EvenPointinUnitsandtheWeightedAverageContributionMarginperUnit,판매배합60/40 사례와 가중평균정의",
+                "independent_actual_read_scope": "QA06에서실제독립재독한 Saylor6.2 판매배합60/40 및 weightedaverageCM 정의를 재사용; 현재같은원본SHA직접재대조",
+                "actual_authority_body_read_reused_from": "result.json",
+                "read_provenance_qa06_sha256": "8579db07b3cb180fb181e46eeacfcd90d0cac120d870d8b50a534ea62aeccc89"
+              },
+              {
+                "ref": "COST_R6_FINB_ACCA_DIV",
+                "private_path": "acca-divisional-performance-management.html",
+                "sha256": "116bb548d3860c268e02372f9e7a63cdc74aa4e0e8527834702d4f5d09536cb0",
+                "sha256_matches_proposal": true,
+                "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/professional-exams-study-resources/p5/technical-articles/divisional-performance-management.html",
+                "proposal_locator": "Controllability–distinguishingcontrollablevsnon-controllableprofit;ROI/RI advantages/disadvantages",
+                "independent_actual_read_scope": "QA06에서실제독립재독한 Controllability의 managercontrollable/divisiontraceable 및 allocatedhead-office 제외 문단을 재사용; 현재같은원본SHA직접재대조",
+                "actual_authority_body_read_reused_from": "result.json",
+                "read_provenance_qa06_sha256": "8579db07b3cb180fb181e46eeacfcd90d0cac120d870d8b50a534ea62aeccc89"
+              }
+            ],
+            "expert_reviewed": false
+          },
+          {
+            "note_id": "note-M15",
+            "status": "pass",
+            "body_other_than_identified_pitfall_status": "pass",
+            "before_current_note_hash_matches": true,
+            "before_sha256_canonical_sorted_compact_utf8": "1604eb9f13a06f5fcecafcd9a533f4d91d8566b9ebd86d222d5bf16f2118578e",
+            "independent_simulated_after_sha256_canonical_sorted_compact_utf8": "4a7ffeedda65bf35a288e3ae1f5412456c70b256725c51e49eeb6fb1bc35b3f8",
+            "proposal_provided_after_sha256": null,
+            "after_hash_validation_scope": "original proposal supplies before hashes only; after calculated independently from current baseline and declared append/unchanged status",
+            "append_prefixes_preserved": true,
+            "existing_nonappend_fields_preserved": true,
+            "status_and_unchecked_points_preserved": true,
+            "exact_duplicate_append_entries": false,
+            "semantic_checks": [
+              "프로젝트증분영업흐름/전체자본비용할인 범위에서 조달이자제외; 자본조달비용이없다는실제사실로 확대하지않음.",
+              "명목↔명목/실질↔실질 및 같은기간의일반인플레이션 Fisher관계는ACCA직접본문. 고유가격인플레이션/일반물가를구별.",
+              "새예제의 세금없음/1기간 조건을명시해 외국세율/한국법정처분세후규칙을옮기지않음.",
+              "기존 partial와 두 unchecked를유지해 IRR논쟁/한국세후조건전체 검증으로확대하지않음."
+            ],
+            "actual_source_reads": [
+              {
+                "ref": "COST_R6_FINB_ACCA_DCF",
+                "private_path": "advanced-investment-appraisal.html",
+                "sha256": "f43a01c519764dd41300bacb949f46c3f854d7ddb64c6bd9b2b2eeef0a80fba6",
+                "sha256_matches_proposal": true,
+                "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f9/technical-articles/advanced-investment-appraisal.html",
+                "proposal_locator": "Inflation,Taxation,Relevant/irrelevantcashflows(읽은텍스트441–464행)",
+                "independent_actual_read_scope": "QA06에서실제독립재독한 Relevant/irrelevantcashflows의 futureincremental/financingcosts ignored(costindiscountrate) 직접본문을 재사용; 현재같은원본SHA직접재대조",
+                "actual_authority_body_read_reused_from": "result.json",
+                "read_provenance_qa06_sha256": "8579db07b3cb180fb181e46eeacfcd90d0cac120d870d8b50a534ea62aeccc89"
+              },
+              {
+                "ref": "COST_R6_FINB_ACCA_INFL",
+                "private_path": "inflation-investment-appraisal.html",
+                "sha256": "57329603a5e3ba27bfdd16a9d9f7df91bfcdfd58b9742081e735742f08ec7054",
+                "sha256_matches_proposal": true,
+                "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f9/technical-articles/inflation-investment-appraisal.html",
+                "proposal_locator": "Realandnominalcostsofcapital,Realcashflows,Nominaltermsapproach,Realtermsapproach,Theeffectoftaxation(694–707,824–845,933–937,1023–1036)",
+                "independent_actual_read_scope": "QA06에서실제독립재독한 Fisher식/Realandnominalcostsofcapital/Realcashflows 및 명목·실질 대응할인 approach 본문을 재사용; 현재같은원본SHA직접재대조",
+                "actual_authority_body_read_reused_from": "result.json",
+                "read_provenance_qa06_sha256": "8579db07b3cb180fb181e46eeacfcd90d0cac120d870d8b50a534ea62aeccc89"
+              }
+            ],
+            "expert_reviewed": false
+          }
+        ],
+        "issues": [
+          {
+            "note_id": "note-M13",
+            "location": "append.pitfalls[0]",
+            "category": "logical_overstatement",
+            "finding": "두 기준을 함께 교환한 일관된 대체중간예산 분해는 총량합계도 맞습니다. 한 기준만 혼합하면 교차항 누락/중복이 될 수 있지만, 두기준동시교환을 항상 합계불일치로 단정할 수 없습니다. 공식정의에 해당하는 두 개별효과가 다르다는 점과 합계불일치를 구별해야 합니다.",
+            "primary_definitions_and_answers_unchanged": true,
+            "parent_reviewed_fix_available": "concepts-cost.parent-reviewed.delta.json"
+          }
+        ],
+        "validation": {
+          "assigned": 2,
+          "reviewed_exactly_once": 2,
+          "pass": 1,
+          "issue": 1,
+          "core_other_than_overstated_pitfall_pass": 2,
+          "examples": 5,
+          "proposal_calculations_executed": 25,
+          "additional_independent_reconstructions": 15,
+          "logical_counterexample_checks": [
+            {
+              "label": "alternate share",
+              "expr": "10000*(.25-.20)*40",
+              "expected": 20000,
+              "actual": 19999.999999999996,
+              "status": "pass",
+              "scope": "M13pitfall logical counterexample from first teaching example setup"
+            },
+            {
+              "label": "alternate size",
+              "expr": "(8000-10000)*.25*40",
+              "expected": -20000,
+              "actual": -20000.0,
+              "status": "pass",
+              "scope": "M13pitfall logical counterexample from first teaching example setup"
+            },
+            {
+              "label": "alternate total",
+              "expr": "10000*(.25-.20)*40+(8000-10000)*.25*40",
+              "expected": 0,
+              "actual": -3.637978807091713e-12,
+              "status": "pass",
+              "scope": "M13pitfall logical counterexample from first teaching example setup"
+            },
+            {
+              "label": "official total",
+              "expr": "8000*(.25-.20)*40+(8000-10000)*.20*40",
+              "expected": 0,
+              "actual": -3.637978807091713e-12,
+              "status": "pass",
+              "scope": "M13pitfall logical counterexample from first teaching example setup"
+            }
+          ],
+          "numeric_evidence": [
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "B",
+              "expr": "10000*.2*40",
+              "expected": 80000,
+              "actual": 80000.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "R",
+              "expr": "8000*.2*40",
+              "expected": 64000,
+              "actual": 64000.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "A",
+              "expr": "8000*.25*40",
+              "expected": 80000,
+              "actual": 80000.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "점유율",
+              "expr": "8000*(.25-.2)*40",
+              "expected": 16000,
+              "actual": 15999.999999999996,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "규모",
+              "expr": "(8000-10000)*.2*40",
+              "expected": -16000,
+              "actual": -16000.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "시장축소와 점유율 증가의 상쇄",
+              "label": "합계항등식",
+              "expr": "8000*(.25-.2)*40+(8000-10000)*.2*40-(8000*.25*40-10000*.2*40)",
+              "expected": 0,
+              "actual": -3.637978807091713e-12,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "수정A량",
+              "expr": "(80+40)*50/(50+50)",
+              "expected": 60,
+              "actual": 60.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "가중평균CM",
+              "expr": "(50*30+50*10)/(50+50)",
+              "expected": 20,
+              "actual": 20.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "B",
+              "expr": "50*30+50*10",
+              "expected": 2000,
+              "actual": 2000,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "R",
+              "expr": "60*30+60*10",
+              "expected": 2400,
+              "actual": 2400,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "A",
+              "expr": "80*30+40*10",
+              "expected": 2800,
+              "actual": 2800,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "배합",
+              "expr": "(80-60)*30+(40-60)*10",
+              "expected": 400,
+              "actual": 400,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "수량",
+              "expr": "(120-100)*20",
+              "expected": 400,
+              "actual": 400,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "총수량 증가와 제품배합 개선",
+              "label": "합계항등식",
+              "expr": "400+400-(2800-2000)",
+              "expected": 0,
+              "actual": 0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "사업부와 경영자의 평가범위",
+              "label": "경영자",
+              "expr": "120000-10000",
+              "expected": 110000,
+              "actual": 110000,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "사업부와 경영자의 평가범위",
+              "label": "사업부",
+              "expr": "120000-10000-20000",
+              "expected": 90000,
+              "actual": 90000,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M13",
+              "example": "사업부와 경영자의 평가범위",
+              "label": "배분후",
+              "expr": "90000-15000",
+              "expected": 75000,
+              "actual": 75000,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "조달이자 중복차감 비교",
+              "label": "올바른NPV",
+              "expr": "1210/1.1-1000",
+              "expected": 100,
+              "actual": 100.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "조달이자 중복차감 비교",
+              "label": "중복차감오류값",
+              "expr": "round((1210-50)/1.1-1000,2)",
+              "expected": 54.55,
+              "actual": 54.55,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "조달이자 중복차감 비교",
+              "label": "중복차감현재가치",
+              "expr": "round(50/1.1,2)",
+              "expected": 45.45,
+              "actual": 45.45,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "명목과 실질의 같은 현재가치",
+              "label": "명목현금흐름",
+              "expr": "1100*1.05",
+              "expected": 1155,
+              "actual": 1155.0,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "명목과 실질의 같은 현재가치",
+              "label": "명목할인율%",
+              "expr": "(1.1*1.05-1)*100",
+              "expected": 15.5,
+              "actual": 15.500000000000025,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "명목과 실질의 같은 현재가치",
+              "label": "실질현재가치",
+              "expr": "1100/1.1",
+              "expected": 1000,
+              "actual": 999.9999999999999,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "명목과 실질의 같은 현재가치",
+              "label": "명목현재가치",
+              "expr": "1155/(1.1*1.05)",
+              "expected": 1000,
+              "actual": 999.9999999999998,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "note_id": "note-M15",
+              "example": "명목과 실질의 같은 현재가치",
+              "label": "현재가치동일성",
+              "expr": "1155/(1.1*1.05)-1100/1.1",
+              "expected": 0,
+              "actual": -1.1368683772161603e-13,
+              "status": "pass",
+              "type": "proposal_check_independently_executed"
+            },
+            {
+              "label": "market share",
+              "expr": "(2000-1600)*40",
+              "expected": 16000,
+              "actual": 16000,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "market size",
+              "expr": "(1600-2000)*40",
+              "expected": -16000,
+              "actual": -16000,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "market total",
+              "expr": "(2000-2000)*40",
+              "expected": 0,
+              "actual": 0,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "mix",
+              "expr": "(80*30+40*10)-120*((50*30+50*10)/100)",
+              "expected": 400,
+              "actual": 400.0,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "quantity",
+              "expr": "(120-100)*((50*30+50*10)/100)",
+              "expected": 400,
+              "actual": 400.0,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "mix+quantity total",
+              "expr": "(80*30+40*10)-(50*30+50*10)",
+              "expected": 800,
+              "actual": 800,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "manager contribution",
+              "expr": "120000-10000",
+              "expected": 110000,
+              "actual": 110000,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "traceable contribution",
+              "expr": "110000-20000",
+              "expected": 90000,
+              "actual": 90000,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "allocated result",
+              "expr": "120000-10000-20000-15000",
+              "expected": 75000,
+              "actual": 75000,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "project NPV",
+              "expr": "1210/(1+.10)-1000",
+              "expected": 100,
+              "actual": 100.0,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "doubly deducted NPV",
+              "expr": "round(1160/(1+.10)-1000,2)",
+              "expected": 54.55,
+              "actual": 54.55,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "financing difference PV",
+              "expr": "round(1210/(1+.10)-1160/(1+.10),2)",
+              "expected": 45.45,
+              "actual": 45.45,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "real PV",
+              "expr": "1100/(1+.10)",
+              "expected": 1000,
+              "actual": 999.9999999999999,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "nominal PV",
+              "expr": "1100*(1+.05)/((1+.10)*(1+.05))",
+              "expected": 1000,
+              "actual": 999.9999999999998,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            },
+            {
+              "label": "Fisher annual rate",
+              "expr": "round(((1+.10)*(1+.05)-1)*100,6)",
+              "expected": 15.5,
+              "actual": 15.5,
+              "status": "pass",
+              "type": "independent_setup_reconstruction"
+            }
+          ],
+          "actual_unique_source_files_sha_verified": 5,
+          "source_body_reads_reused_from_actual_QA06": true,
+          "append_prefixes_and_non_target_notes_preserved": true,
+          "source_registry_collision_overwrite": false,
+          "review_status_and_unchecked_unchanged": true,
+          "actual_tests_against_private_original_candidate": {
+            "tests": 3,
+            "passed": 3,
+            "test_names": [
+              "test_structure_and_part_links",
+              "test_sources_and_status_are_honest",
+              "test_example_arithmetic"
+            ],
+            "log_path": "concepts-cost.qa.tests.log",
+            "content_scope_limit": "These current structural/honesty/arithmetic tests do not detect the identified logical prose issue."
+          },
+          "shared_repo_modified": false,
+          "frozen_proposal_modified": false,
+          "actual_mutating_merger_run": false,
+          "whole_part_expert_review_claimed": false,
+          "expert_reviewed": false
+        },
+        "checked_on": "2026-10-12"
+      }
+    },
+    {
+      "file": "concepts-cost.correction-qa.json",
+      "raw_sha256": "e1dcd2598b18dba508048485be94b5980b0dd8c966c446b96a8d6b302f16d78f",
+      "result": {
+        "schema_version": 1,
+        "reviewer": "r6_tax_a",
+        "status": "pass",
+        "original_proposal_sha256": "b943ce8e82abdfe3779576d38d5730fe2dc20a904c5b137ff5d0861e7da04d3f",
+        "original_QA_sha256": "f2d78ced833e3ae785064b769d3a3fdffc6410fd8386aa5e9232e6ea4e4f90b1",
+        "parent_reviewed_copy_sha256": "d4190bb2694dc7e0b209ad929a2accfb166bcf8d032967f66e99f8da24700949",
+        "items": [
+          {
+            "note_id": "note-M13",
+            "status": "pass",
+            "before_sha256": "93aaf4ac9857452b388451c4296fc554fec8e3e7903e26b14a3882d4b5f686a8",
+            "after_sha256": "36a0e029a9120ea68b9f9f66cd47f467bb85b2a5c2d904cc73ab398954112360",
+            "append_prefix_preserved": true,
+            "status_unchecked_preserved": true
+          },
+          {
+            "note_id": "note-M15",
+            "status": "pass",
+            "before_sha256": "1604eb9f13a06f5fcecafcd9a533f4d91d8566b9ebd86d222d5bf16f2118578e",
+            "after_sha256": "4a7ffeedda65bf35a288e3ae1f5412456c70b256725c51e49eeb6fb1bc35b3f8",
+            "append_prefix_preserved": true,
+            "status_unchecked_preserved": true
+          }
+        ],
+        "actual_changes_compared": [
+          {
+            "path": ".deltas[0].after_sha256_canonical_sorted_compact_utf8",
+            "before": null,
+            "after": "36a0e029a9120ea68b9f9f66cd47f467bb85b2a5c2d904cc73ab398954112360"
+          },
+          {
+            "path": ".deltas[0].append.pitfalls[0]",
+            "before": "시장점유율 효과에는 실제시장규모를, 시장규모 효과에는 예산점유율을 고정합니다. 점유율 효과에 예산시장규모를 쓰거나 규모 효과에 실제점유율을 쓰면 두 변화가 중복되어 합계가 어긋납니다.",
+            "after": "문항의 시장점유율차이는 실제시장규모를, 시장규모차이는 예산점유율을 고정합니다. 두 기준을 모두 일관되게 바꾸면 다른 중간예산을 사용한 분해로 합계가 같을 수도 있지만 각 차이의 정의와는 다릅니다. 기준 하나만 섞어 사용하면 교차효과가 누락되거나 중복될 수 있으므로 개별 기준과 합계 항등식을 함께 확인하세요."
+          },
+          {
+            "path": ".deltas[1].after_sha256_canonical_sorted_compact_utf8",
+            "before": null,
+            "after": "4a7ffeedda65bf35a288e3ae1f5412456c70b256725c51e49eeb6fb1bc35b3f8"
+          },
+          {
+            "path": ".validation.parent_correction",
+            "before": null,
+            "after": {
+              "original_proposal_sha256": "b943ce8e82abdfe3779576d38d5730fe2dc20a904c5b137ff5d0861e7da04d3f",
+              "changed_scope": "M13추가pitfall1의대체일관분해도합계성립가능함을명시;기존본문/기존노트/공식정답/모든예제계산/상태는불변",
+              "independent_finder": "r6_tax_a",
+              "expert_reviewed": false
+            }
+          }
+        ],
+        "logical_fix_finding": "Corrected M13 pitfall distinguishes official individual-effect definitions from a consistent alternative intermediate budget whose total still agrees, and qualifies cross-term error to mixing one base. The first teaching-example counterexample remains a direct verification.",
+        "counterexample_checks": [
+          {
+            "label": "alternate share",
+            "expr": "10000*(.25-.20)*40",
+            "expected": 20000,
+            "actual": 19999.999999999996,
+            "status": "pass",
+            "scope": "M13pitfall logical counterexample from first teaching example setup"
+          },
+          {
+            "label": "alternate size",
+            "expr": "(8000-10000)*.25*40",
+            "expected": -20000,
+            "actual": -20000.0,
+            "status": "pass",
+            "scope": "M13pitfall logical counterexample from first teaching example setup"
+          },
+          {
+            "label": "alternate total",
+            "expr": "10000*(.25-.20)*40+(8000-10000)*.25*40",
+            "expected": 0,
+            "actual": -3.637978807091713e-12,
+            "status": "pass",
+            "scope": "M13pitfall logical counterexample from first teaching example setup"
+          },
+          {
+            "label": "official total",
+            "expr": "8000*(.25-.20)*40+(8000-10000)*.20*40",
+            "expected": 0,
+            "actual": -3.637978807091713e-12,
+            "status": "pass",
+            "scope": "M13pitfall logical counterexample from first teaching example setup"
+          }
+        ],
+        "all_other_proposal_content_sources_examples_and_status_unchanged": true,
+        "new_tests_run": 0,
+        "prior_actual_proposal_checks": 25,
+        "prior_actual_fresh_reconstructions": 15,
+        "frozen_original_proposal_and_QA_modified": false,
+        "shared_repo_modified": false,
+        "expert_reviewed": false,
+        "checked_on": "2026-10-12"
+      }
+    },
+    {
+      "file": "2026-06-110.correction-qa.json",
+      "raw_sha256": "6b03b6183e30c460ad1ef5c749a03fed8228ce43894d2e985cd2698dfcaa4a11",
+      "result": {
+        "schema_version": 1,
+        "reviewer": "r6_tax_a",
+        "question_id": "2026-06-110",
+        "status": "pass",
+        "before_explanation_sha256": "54c6e16d333f9ce047121811325655a1a7d0c136d4b608b3ce5893fffe422fa0",
+        "after_explanation_sha256": "37b0b13f75133917aedcbfa550cd58f9f2d469d325caba9af1ee7a6ed48a034c",
+        "actual_changes": [
+          {
+            "path": ".option_notes[3].reason",
+            "before": "점유율에는 예산시장, 규모에는 실제점유율을 사용하여 두 효과가 중복되므로 합계도 맞지 않습니다.",
+            "after": "예산시장규모로 점유율차이를, 실제점유율로 시장규모차이를 계산한 대체 분해입니다. 두 금액의 합계는 -4,500,000원으로 맞지만, 문항이 묻는 점유율차이의 실제시장 고정 및 규모차이의 예산점유율 고정 기준과 다르므로 오답입니다."
+          }
+        ],
+        "official_answer_definition_and_primary_calculation_preserved": true,
+        "current_question_row_sha256": "bd367abbdb670c03bd2fea9e8ada42014868d44aa62ec670364e2d895f4ba9cb",
+        "original_question_row_sha256": "bd367abbdb670c03bd2fea9e8ada42014868d44aa62ec670364e2d895f4ba9cb",
+        "original_PDF_image_and_official_answer_actual_review_provenance": "result.json",
+        "new_visual_review_claimed": false,
+        "finding": "④의개별금액은문항이요구한실제시장고정/예산점유율고정정의와다르므로오답입니다. 두기준을함께바꾼대체분해는합계가−4,500,000원으로맞아 합계불일치주장만제거한교정이 타당합니다.",
+        "actual_numeric_checks": [
+          {
+            "label": "예산판매량",
+            "expr": "200000*0.3",
+            "expected": 60000.0,
+            "actual": 60000.0,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "수정판매량",
+            "expr": "150000*0.3",
+            "expected": 45000.0,
+            "actual": 45000.0,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "실제판매량",
+            "expr": "150000*0.35",
+            "expected": 52500.0,
+            "actual": 52500.0,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "점유율차이",
+            "expr": "150000*(0.35-0.3)*600",
+            "expected": 4500000,
+            "actual": 4499999.999999999,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "시장규모차이",
+            "expr": "(150000-200000)*0.3*600",
+            "expected": -9000000,
+            "actual": -9000000.0,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "수량차이합계",
+            "expr": "(150000*0.35-200000*0.3)*600",
+            "expected": -4500000,
+            "actual": -4500000.0,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "분해합계검증",
+            "expr": "150000*(0.35-0.3)*600+(150000-200000)*0.3*600-(150000*0.35-200000*0.3)*600",
+            "expected": 0,
+            "actual": -9.313225746154785e-10,
+            "scope": "unchanged original check actually reexecuted"
+          },
+          {
+            "label": "대체점유율",
+            "expr": "200000*(.35-.30)*600",
+            "expected": 6000000,
+            "actual": 5999999.999999999,
+            "scope": "independently verified original-question counterexample"
+          },
+          {
+            "label": "대체규모",
+            "expr": "(150000-200000)*.35*600",
+            "expected": -10500000,
+            "actual": -10500000.0,
+            "scope": "independently verified original-question counterexample"
+          },
+          {
+            "label": "대체합계",
+            "expr": "200000*(.35-.30)*600+(150000-200000)*.35*600",
+            "expected": -4500000,
+            "actual": -4500000.000000001,
+            "scope": "independently verified original-question counterexample"
+          },
+          {
+            "label": "전체효과",
+            "expr": "(150000*.35-200000*.30)*600",
+            "expected": -4500000,
+            "actual": -4500000.0,
+            "scope": "independently verified original-question counterexample"
+          }
+        ],
+        "checks_actually_executed": 11,
+        "current_schema_validator_actually_executed": true,
+        "frozen_QA06_or_writer_output_modified": false,
+        "shared_repository_modified_by_reviewer": false,
+        "expert_reviewed": false,
+        "checked_on": "2026-10-12"
+      }
+    }
+  ]
+}

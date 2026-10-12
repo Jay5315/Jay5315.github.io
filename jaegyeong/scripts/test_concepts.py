@@ -52,7 +52,18 @@ class ConceptNotesTest(unittest.TestCase):
             if self.t[n['part_id']]['subject']=='세무회계':
                 self.assertEqual(s,'source_checked',f"{n['id']}: tax notes need checked law text")
                 self.assertTrue(years and all(isinstance(y,int) for y in years),n['id'])
-                self.assertTrue(all(self.c['sources'][x['ref']]['url'].startswith('https://www.law.go.kr/') for x in n['sources']),n['id'])
+                sources=[self.c['sources'][x['ref']] for x in n['sources']]
+                self.assertTrue(any(x['url'].startswith('https://www.law.go.kr/') for x in sources),
+                                f"{n['id']}: Korean tax rules still need Korean law sources")
+                for source in sources:
+                    url=source['url']
+                    if url.startswith(('https://www.law.go.kr/','https://www.nts.go.kr/')):
+                        continue
+                    self.assertRegex(url,r'^https://github\.com/saylordotorg/[^/]+/blob/[0-9a-f]{40}/')
+                    self.assertTrue(source.get('provenance_limit'),
+                                    f"{n['id']}: foreign economics material must state its limited role")
+                    self.assertIn('한국',source['provenance_limit'])
+                    self.assertIn('일반',source['provenance_limit'])
             else:self.assertIsNone(years,f"{n['id']}: non-tax notes must not claim a tax-law year")
             if n['part_id'].startswith('F') and s in ('source_checked','partial'):
                 self.assertTrue(any(x['ref'].startswith(('KIFRS','EUIFRS')) for x in n['sources']),
@@ -66,6 +77,7 @@ class ConceptNotesTest(unittest.TestCase):
             self.assertTrue(r['versions'],k)
             prefix={'OSX':('https://openstax.org/books/','https://github.com/openstax/'),
                     'KIFRS':'https://www.kasb.or.kr/','SAYLOR':'https://github.com/saylordotorg/',
+                    'NTS':'https://www.nts.go.kr/',
                     'MSDOCS':'https://github.com/MicrosoftDocs/',
                     'IFRSCF':'https://github.com/DhestyaSyafaAmanda/tugas-akhir-analisis-dan-desain-sistem-dhestya-syafa-amanda/blob/',
                     'COST':('https://www.accaglobal.com/','https://biz.libretexts.org/','https://ocw.mit.edu/'),

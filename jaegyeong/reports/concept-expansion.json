@@ -7560,12 +7560,1099 @@
         "parent_reviewed": true
       },
       "output_hash": "045c2009570b38b1a0e36be402b54c950cd05e1f6a18d448048870624b05dbec"
+    },
+    {
+      "note_id": "note-V04",
+      "before": {
+        "id": "note-V04",
+        "part_id": "V04",
+        "title": "영세율과 면세",
+        "summary": "영세율은 과세 거래에 0% 세율을 적용하므로 매입세액을 공제받을 수 있고, 면세는 부가가치세를 면제하므로 관련 매입세액을 공제받지 못합니다.",
+        "key_points": [
+          "수출하는 재화와 국외에서 공급하는 용역에는 영세율(0%)을 적용합니다. (부가가치세법 제21조①·제22조)",
+          "수출에는 내국물품의 외국 반출, 중계무역 등 대통령령으로 정하는 거래, 내국신용장·구매확인서에 의한 공급(금지금 제외) 등이 포함됩니다. (제21조②)",
+          "면세 대상은 미가공 식료품, 수돗물, 연탄·무연탄, 의료보건 용역, 교육 용역, 여객운송 용역(항공기·고속버스·택시·고속철도 등 제외), 도서·신문(광고 제외), 금융·보험 용역, 주택 임대, 토지 등입니다. (제26조①)",
+          "면세 재화·용역의 공급에 통상적으로 부수되는 공급도 면세에 포함됩니다. (제26조②)",
+          "면세사업등에 관련된 매입세액은 매출세액에서 공제하지 않습니다. (제39조①7호)",
+          "영세율 적용 대상, 주택 임대·인적 용역·공익단체 공급 등은 면세를 포기할 수 있고, 포기하면 신고한 날부터 3년간 면세를 받지 못합니다. (제28조①②)"
+        ],
+        "formulas": [],
+        "pitfalls": [
+          "제26조①14호의 '토지'는 토지의 공급입니다. 토지의 임대는 면세 목록 중 주택에 부수되는 토지의 임대(12호)만 해당합니다. 거래가 공급인지 임대인지 확인하세요.",
+          "여객운송 중 항공기·고속버스·전세버스·택시·고속철도 등은 면세에서 제외됩니다.",
+          "도서·신문은 면세지만 그 광고는 과세입니다."
+        ],
+        "examples": [],
+        "related_part_ids": [
+          "V02",
+          "V06",
+          "V01"
+        ],
+        "tags": [
+          "영세율",
+          "면세",
+          "매입세액"
+        ],
+        "applicability": {
+          "basis": "부가가치세법",
+          "tax_law_years": [
+            2024,
+            2025,
+            2026
+          ],
+          "year_note": "세 판본의 제22조·제28조 문구가 같습니다. 제21조는 조문 표기 정비, 제26조는 의료 관련 혈액 범위 등 일부 문구가 2024.12.31. 개정으로 바뀌었습니다."
+        },
+        "sources": [
+          {
+            "ref": "VAT_LAW",
+            "locator": "제21조, 제22조, 제26조, 제28조, 제39조①7호"
+          }
+        ],
+        "review_status": "source_checked",
+        "review_note": "조문 원문 대조 완료. 세무 전문가 검수는 아직 받지 않았습니다.",
+        "unchecked_points": []
+      },
+      "before_hash": "6e05aba1b48c69b92ce61425130cd77d529c97609160b2edb8645b8cdba86489",
+      "after_hash": "952ff16b8241ec411cea2295e4e79dc63b8e388ab41491669a78643004aa0392",
+      "operations": {
+        "key_points": [
+          "수출에 영세율을 적용하고 관련 매입세액을 공제·환급하면 수출국의 부가가치세가 수출품 가격에 남지 않도록 합니다. 수입국에서 소비될 때 과세하는 구조와 함께 국제적인 이중과세를 방지하는 효과를 설명할 수 있습니다.",
+          "최종소비자가 부담하는 소비세는 소득이 낮을수록 소득 대비 소비지출 비중이 커져 역진적일 수 있습니다. 미가공 식료품·의료·교육 등 생활필수 소비에 대한 면세는 해당 소비의 세금부담을 낮추어 역진성을 완화하는 방향으로 작용합니다."
+        ],
+        "formulas": [],
+        "pitfalls": [
+          "면세의 역진성 완화는 정책 효과에 관한 설명입니다. 면세사업의 관련 매입세액은 공제되지 않으므로 영세율처럼 이전 거래단계의 세액까지 모두 제거된다는 뜻으로 해석하지 않습니다."
+        ],
+        "examples": [],
+        "sources": [
+          {
+            "ref": "CTB_VAT_LAW_2024",
+            "locator": "제4조·제21조·제26조①1/5/6·제38조·제39조①7·제59조:한국법정수입/수출/면세/공제·환급구조"
+          },
+          {
+            "ref": "NTS_R6_TAXB_VAT2024",
+            "locator": "PDF16쪽 가. VAT개요:물건값/최종소비자부담·징수납부"
+          },
+          {
+            "ref": "SAYLOR_R6_TAXB_REGRESSIVE",
+            "locator": "본문 §15.2(HTML id ch15_s03) RegressiveTax/SalesTaxes:저소득소비비중·소비세면제의일반원리"
+          }
+        ]
+      },
+      "source_reads": [
+        {
+          "ref": "CTB_VAT_LAW_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+          "original_url": "https://www.law.go.kr/법령/부가가치세법",
+          "private_path": "/tmp/chagok-round6/r6_tax_06/TA_CROSS02_VAT_LAW_20240101.md",
+          "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+          "read_locator": "metadata제19931호2024-01-01 및4/21/26/32/34/38/39①7/59:수입과세·수출0·생활필수소비면세·증빙·입력공제/환급",
+          "scope_role": "한국VAT고유법정구조; 고정역사본문의직접확인",
+          "source_read": true
+        },
+        {
+          "ref": "NTS_R6_TAXB_VAT2024",
+          "url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=d90b2e4297eec508e4a4aea46838b72a",
+          "private_path": "/tmp/chagok-round3/tax-a-cross-review/nts-vat-guide-2024.pdf",
+          "sha256": "dbb702ba304285591994a36ff7e2003c088e5da6e94dff2c949b595679c38e3d",
+          "read_locator": "PDF16쪽 가. 부가가치세개요:최종소비자부담/사업자의징수납부",
+          "scope_role": "국세청공식교육;한국VAT부담메커니즘",
+          "source_read": true
+        },
+        {
+          "ref": "SAYLOR_R6_TAXB_REGRESSIVE",
+          "url": "https://github.com/saylordotorg/text_principles-of-microeconomics-v2.0/blob/4c1a18ff24289583ba7dccf11969d1a4ccf1c4b0/s18-02-financing-government.html",
+          "private_path": "/tmp/chagok-parallel/remaining_cost_027.micro-source/s18-02-financing-government.html",
+          "sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+          "read_locator": "본문 §15.2(HTML id ch15_s03) rittenberg-ch15_s03_s01_s01_s01_p01 및 s02_s03_p01–p02",
+          "scope_role": "일반경제교육원리;한국세법법정요건의근거가아님",
+          "source_read": true,
+          "provenance_limit": "일반 소비비중·역진성의 경제원리만 보조합니다. 한국 법령 검증 출처 아님: 한국VAT 면세목록·공제·환급·수출/수입규칙은 실제 한국법령 판본으로 확인합니다."
+        }
+      ],
+      "reason": "수출국세액제거/소비지과세와 역진성 완화는 실제 한국2024VAT조문/NTS부담메커니즘 및 공개교재의 일반소비세원리로 도출한 정책효과입니다. 일반교재는 한국면세목록/법정요건의 근거로 쓰지 않았고 모든 국가의 국경간 규칙·가격전가 정도를 검증한 것으로 확대하지 않습니다. 기존 확인상태와 미확인항목은 유지하며 전문가 검수는 아직입니다.",
+      "worker_validation": {
+        "shared_repo_modified": false,
+        "append_only": true,
+        "tracked_merger_contract_in_memory": "passed",
+        "actual_source_files": 5,
+        "source_hashes_rechecked": true,
+        "before_and_after_note_hashes_checked": true,
+        "current_review_status_preserved": true,
+        "unchecked_points_preserved": true,
+        "expert_reviewed": false,
+        "scope": [
+          "V04 policy effects derived from actual KoreanVAT mechanism and general consumption-tax principles",
+          "V07 actual2024 form receipt/billing function"
+        ],
+        "duplicates_of_existing_text": false,
+        "examples_added": 0,
+        "numeric_checks": [],
+        "current_tests_actual_run": {
+          "private_candidate_only": true,
+          "tests": 3,
+          "passed": 3,
+          "failed": 0,
+          "errors": 0,
+          "log_path": "/tmp/chagok-round6/concepts-tax.private-test.log",
+          "authority_scope_check": "현재 parent 보완검사 실제 통과: 모든 세무노트 한국법령근거 보유 유지, 공식NTS 보조 및 고정40자리Saylor commit+provenance_limit 일반경제/한국법령아님 범위구분. 제안저자는 test/repo수정없음."
+        },
+        "parent_correction": {
+          "original_proposal_sha256": "a2f734ab539dd1d91b56971398d7873cc420189f7d387bad6e9b68638dcc37a5",
+          "changed_scope": "Saylor본문섹션번호15.3→15.2만정정;HTMLidch15_s03은유지",
+          "parent_actual_heading_read": true,
+          "evidence_sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+          "expert_reviewed": false
+        }
+      },
+      "output_hash": "57bd8742e47e22be0ea298f9bca53a98f53e349269b3ec1f151b1429aafe3135"
+    },
+    {
+      "note_id": "note-V07",
+      "before": {
+        "id": "note-V07",
+        "part_id": "V07",
+        "title": "세금계산서 발급·전송과 신고납부",
+        "summary": "세금계산서 발급과 전자 발급명세 전송을 구분하고, 신고 시 납부세액과 위반 유형별 가산세를 따로 계산합니다.",
+        "key_points": [
+          "세금계산서의 주요 기재사항은 공급자 등록번호·명칭, 공급받는 자 등록번호, 공급가액·세액, 작성 연월일입니다. 법인사업자는 전자세금계산서 발급 대상입니다. (제32조①②)",
+          "발급은 원칙적으로 공급시기입니다. 월합계 등 제34조③의 요건을 갖춘 경우 공급월 다음 달 10일까지 발급할 수 있으며 그 날이 공휴일·토요일이면 바로 다음 영업일입니다. (제34조①③)",
+          "전자세금계산서 발급명세 전송기한은 발급일 다음 날입니다. 거래처에 발급하는 의무와 국세청에 전송하는 의무를 구분합니다. (제32조③, 시행령 제68조⑦)",
+          "일반과세자의 예정·확정신고 기본기한은 해당 기간 종료 후 25일 이내입니다. 폐업 확정신고는 폐업한 달의 다음 달 25일 이내입니다. 예정고지·이미 신고한 금액 등 법정 조정은 별도로 반영합니다. (제48조①, 제49조①②)",
+          "납부세액은 매출세액에서 공제 가능한 매입세액을 차감하는 구조이며, 최종 납부액은 법정 공제·가산세와 이미 납부한 금액 등을 반영합니다. (제37조②③, 제49조②)",
+          "발급기한 후 확정신고기한까지 지연 발급은 공급가액의 1%, 그 기한까지 미발급은 원칙적으로 2%입니다. 종이발급·다른 사업장 명의 발급 등 1% 특례와 다른 위반 유형을 구분합니다. (제60조②1호·2호)"
+        ],
+        "formulas": [
+          {
+            "name": "기본 납부세액",
+            "expression": "납부세액 = 매출세액 − 공제 가능한 매입세액",
+            "variables": [],
+            "conditions": "대손세액·그 밖의 세액공제·예정납부·가산세가 없는 기본 예시입니다."
+          },
+          {
+            "name": "발급 위반 가산세",
+            "expression": "가산세 = 위반 대상 공급가액 × 해당 위반율",
+            "variables": [],
+            "conditions": "세액이나 세액 포함 대가가 아닌 공급가액이 기준입니다. 감면·중복 적용 배제 등을 확인합니다."
+          }
+        ],
+        "pitfalls": [
+          "세금계산서를 늦게 발급한 것과 전자 발급명세를 늦게 전송한 것은 위반 항목과 가산세율이 다릅니다.",
+          "미발급 가산세 2%를 거래 세액 10%에 곱하지 않습니다. 해당 공급가액에 곱합니다.",
+          "실물 거래 없이 발급·수취한 세금계산서의 가산세는 2026년부터 4%입니다. 2026년 시행 전에 발급·수취한 건은 종전 규정의 경과조치를 확인합니다."
+        ],
+        "examples": [
+          {
+            "title": "기본 납부세액과 미발급 가산세",
+            "setup": "2024~2026년 일반과세자. 매출세액 3,000,000원, 공제 가능한 매입세액 2,000,000원. 실제 과세 공급가액 10,000,000원에 대한 세금계산서를 확정신고기한까지 전혀 발급하지 않았고 1% 특례·가산세 감면·중복 배제·대손세액·다른 공제·예정납부는 없습니다.",
+            "steps": [
+              "기본 납부세액은 3,000,000−2,000,000＝1,000,000원입니다.",
+              "미발급 가산세는 10,000,000×2%＝200,000원입니다.",
+              "이를 더한 예시 납부액은 1,200,000원입니다."
+            ],
+            "answer": "기본 납부세액 1,000,000원, 미발급 가산세 200,000원, 합계 1,200,000원",
+            "checks": [
+              {
+                "label": "기본 납부세액",
+                "expr": "3000000-2000000",
+                "expected": 1000000
+              },
+              {
+                "label": "미발급 가산세",
+                "expr": "10000000*.02",
+                "expected": 200000
+              },
+              {
+                "label": "예시 최종 납부액",
+                "expr": "1000000+200000",
+                "expected": 1200000
+              }
+            ]
+          }
+        ],
+        "related_part_ids": [
+          "V01",
+          "V04",
+          "V05"
+        ],
+        "tags": [
+          "매입세액"
+        ],
+        "applicability": {
+          "basis": "부가가치세법·시행령의 일반 세금계산서 및 일반과세 신고납부",
+          "tax_law_years": [
+            2024,
+            2025,
+            2026
+          ],
+          "year_note": "2024·2025·2026년에 이미 시행 중인 인용 조문을 각 역사 판본으로 대조했습니다. 2026년 법률은 1월 1일 시행본, 시행령은 1월 당시 시행 중이던 판본을 사용했습니다. 미래 시행 조문은 적용하지 않습니다."
+        },
+        "sources": [
+          {
+            "ref": "CTB_VAT_LAW_2024",
+            "locator": "제32조①~③, 제34조①③, 제37조②③, 제48조①, 제49조①②, 제60조②1호·2호·③1호·2호"
+          },
+          {
+            "ref": "CTB_VAT_LAW_2025",
+            "locator": "제32조①~③, 제34조①③, 제37조②③, 제48조①, 제49조①②, 제60조②1호·2호·③1호·2호"
+          },
+          {
+            "ref": "CTB_VAT_LAW_2026",
+            "locator": "제32조①~③, 제34조①③, 제37조②③, 제48조①, 제49조①②, 제60조②1호·2호·③1호·2호; 2026년 판본 부칙(법률 제21218호) 제1조·제3조"
+          },
+          {
+            "ref": "CTB_VAT_DECREE_2024",
+            "locator": "제68조⑦: 전자세금계산서 발급명세 전송기한"
+          },
+          {
+            "ref": "CTB_VAT_DECREE_2025",
+            "locator": "제68조⑦: 전자세금계산서 발급명세 전송기한"
+          },
+          {
+            "ref": "CTB_VAT_DECREE_2026",
+            "locator": "제68조⑦: 전자세금계산서 발급명세 전송기한"
+          }
+        ],
+        "review_status": "source_checked",
+        "review_note": "일반 세금계산서 발급·전자 전송, 일반과세 신고납부 및 대표적 발급 가산세 범위만 확인했습니다. 개별 수정세금계산서 사유·간이과세 절차·가산세 전 유형의 검수는 포함하지 않습니다. 인용한 원문·시행일과 필요한 부칙 적용례 및 아래 예시 계산을 직접 대조했습니다. 이 노트의 확인 범위를 해당 파트 전체의 전문가 검수로 보지 않습니다. 세무 전문가 검수는 아직입니다.",
+        "unchecked_points": [],
+        "year_table": {
+          "caption": "세금계산서의 대표적 위반율",
+          "years": [
+            2024,
+            2025,
+            2026
+          ],
+          "rows": [
+            [
+              "확정신고기한까지 지연 발급",
+              "1%",
+              "1%",
+              "1%"
+            ],
+            [
+              "확정신고기한까지 미발급(원칙)",
+              "2%",
+              "2%",
+              "2%"
+            ],
+            [
+              "실물 거래 없이 발급·수취",
+              "3%",
+              "3%",
+              "4%"
+            ]
+          ],
+          "note": "각 비율의 기준은 해당 공급가액입니다. 법률 제21218호 부칙 제3조에 따라 2026.1.1. 전에 실물 거래 없이 발급·수취한 건은 종전 규정을 적용합니다. 전송 위반 등 다른 유형에 이 비율을 대입하지 않습니다."
+        }
+      },
+      "before_hash": "1eeae8f6fa0978860116e8abc25335cffb985d94ba9d0fc9f353c72f7fa097b5",
+      "after_hash": "938fbbf9bab230eefa05bc3f9fd1da73e1eabdad43e1d11820908c263decc94f",
+      "operations": {
+        "key_points": [
+          "2024년 판본의 법정 세금계산서 서식에는 공급가액·세액·합계금액과 함께 “이 금액을 영수/청구함” 표시가 있습니다. 세금계산서는 거래와 세액을 증명하면서 대금을 청구하거나 영수하는 자료로도 기능합니다."
+        ],
+        "formulas": [],
+        "pitfalls": [
+          "세금계산서의 공급거래 증빙과 대금 청구·영수 기능을, 당사자가 재화·용역을 공급하기로 합의하는 공급계약 자체와 구별합니다."
+        ],
+        "examples": [],
+        "sources": [
+          {
+            "ref": "R6_CPT_TAXB_RULE2024",
+            "locator": "제49조:세금계산서를별지14호서식으로지정"
+          },
+          {
+            "ref": "R6_CPT_TAXB_FORM14_2024",
+            "locator": "실제PDF1쪽 공급자/공급받는자본의영수·청구표시/가액·세액·합계금액"
+          }
+        ]
+      },
+      "source_reads": [
+        {
+          "ref": "CTB_VAT_LAW_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+          "original_url": "https://www.law.go.kr/법령/부가가치세법",
+          "private_path": "/tmp/chagok-round6/r6_tax_06/TA_CROSS02_VAT_LAW_20240101.md",
+          "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+          "read_locator": "metadata제19931호2024-01-01 및4/21/26/32/34/38/39①7/59:수입과세·수출0·생활필수소비면세·증빙·입력공제/환급",
+          "scope_role": "한국VAT고유법정구조; 고정역사본문의직접확인",
+          "source_read": true
+        },
+        {
+          "ref": "R6_CPT_TAXB_RULE2024",
+          "url": "https://www.law.go.kr/법령/부가가치세법시행규칙",
+          "private_path": "/tmp/chagok-round6/r6_tax_06/VAT_RULE_2024.md",
+          "sha256": "6ec50f4ee55dd13cba347ecbd576f03a782d1dd29cdd6f90dd202edd9e0fffb1",
+          "read_locator": "metadata 시행2024-03-22·49조·별지14PDF링크flSeq139003295",
+          "scope_role": "한국VAT법정세금계산서서식연결",
+          "source_read": true
+        },
+        {
+          "ref": "R6_CPT_TAXB_FORM14_2024",
+          "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=139003295",
+          "private_path": "/tmp/chagok-round6/r6_tax_06/VAT_RULE2024_form14.pdf",
+          "sha256": "cc459472e7110fc0c70a8c183580cb2860c6ece40595fbf78dd277093060436d",
+          "read_locator": "PDF1쪽 양식전체중 공급정보/가액/세액/합계금액/영수·청구 및현금·외상미수금칸",
+          "scope_role": "한국VAT공식법정서식;대금청구·영수기능직접확인",
+          "source_read": true
+        }
+      ],
+      "reason": "2024역사시행규칙49조와 공식별지14의 영수/청구·거래/세액표시를 직접 확인한 기능 설명을 추가했습니다. 이후 연도의 새 서식 전체나 민사계약효력 전체를 새로 검수한 것으로 확대하지 않습니다. 기존 확인상태와 미확인항목은 유지하며 전문가 검수는 아직입니다.",
+      "worker_validation": {
+        "shared_repo_modified": false,
+        "append_only": true,
+        "tracked_merger_contract_in_memory": "passed",
+        "actual_source_files": 5,
+        "source_hashes_rechecked": true,
+        "before_and_after_note_hashes_checked": true,
+        "current_review_status_preserved": true,
+        "unchecked_points_preserved": true,
+        "expert_reviewed": false,
+        "scope": [
+          "V04 policy effects derived from actual KoreanVAT mechanism and general consumption-tax principles",
+          "V07 actual2024 form receipt/billing function"
+        ],
+        "duplicates_of_existing_text": false,
+        "examples_added": 0,
+        "numeric_checks": [],
+        "current_tests_actual_run": {
+          "private_candidate_only": true,
+          "tests": 3,
+          "passed": 3,
+          "failed": 0,
+          "errors": 0,
+          "log_path": "/tmp/chagok-round6/concepts-tax.private-test.log",
+          "authority_scope_check": "현재 parent 보완검사 실제 통과: 모든 세무노트 한국법령근거 보유 유지, 공식NTS 보조 및 고정40자리Saylor commit+provenance_limit 일반경제/한국법령아님 범위구분. 제안저자는 test/repo수정없음."
+        },
+        "parent_correction": {
+          "original_proposal_sha256": "a2f734ab539dd1d91b56971398d7873cc420189f7d387bad6e9b68638dcc37a5",
+          "changed_scope": "Saylor본문섹션번호15.3→15.2만정정;HTMLidch15_s03은유지",
+          "parent_actual_heading_read": true,
+          "evidence_sha256": "b50c5422fea4a67bb9fe23cfecc9bc999868565e83b3f89d78ff0e4388530e46",
+          "expert_reviewed": false
+        }
+      },
+      "output_hash": "57bd8742e47e22be0ea298f9bca53a98f53e349269b3ec1f151b1429aafe3135"
+    },
+    {
+      "note_id": "note-M13",
+      "before": {
+        "id": "note-M13",
+        "part_id": "M13",
+        "title": "책임중심점과 ROI·잔여이익",
+        "summary": "관리자가 통제하는 범위에 맞춰 평가하고, 투자중심점은 ROI의 비율과 잔여이익의 금액을 구별합니다.",
+        "key_points": [
+          "원가중심점은 원가, 수익중심점은 수익, 이익중심점은 수익·원가, 투자중심점은 수익·원가·투자자산을 중심으로 책임 범위를 구별합니다.",
+          "관리자를 평가할 때 그 관리자가 영향을 줄 수 있는 성과와 통제할 수 없는 항목을 구별하는 것이 중요합니다.",
+          "ROI는 영업이익을 평균 영업자산으로 나눈 비율입니다. 문제에서 기말자산 등 별도 기준을 지정하면 그 조건을 먼저 확인합니다.",
+          "ROI는 영업이익률(영업이익÷매출액)과 자산회전율(매출액÷평균 영업자산)의 곱으로도 분석할 수 있습니다.",
+          "잔여이익은 영업이익에서 평균 영업자산에 대한 최소 요구수익을 차감한 금액입니다. 자산·이익·요구수익률의 기간과 평가 범위를 맞춥니다."
+        ],
+        "formulas": [
+          {
+            "name": "ROI",
+            "expression": "ROI = 영업이익 ÷ 평균 영업자산",
+            "variables": [],
+            "conditions": "백분율 표시는 계산 비율에 100을 곱합니다."
+          },
+          {
+            "name": "잔여이익",
+            "expression": "잔여이익 = 영업이익 − 평균 영업자산 × 요구수익률",
+            "variables": [],
+            "conditions": "요구수익률과 이익의 기간을 같게 맞춥니다."
+          }
+        ],
+        "pitfalls": [
+          "ROI 20%와 잔여이익 20,000원을 같은 단위로 비교하지 마세요.",
+          "영업이익을 사용한 분자와 영업자산을 사용한 분모의 범위를 맞추고, 임의로 당기순이익을 섞지 마세요.",
+          "비율만 높이려고 자산 투자를 줄이면 회사에 유리한 투자도 거절될 수 있으므로 여러 성과지표를 함께 살핍니다."
+        ],
+        "examples": [
+          {
+            "title": "비율과 금액으로 같은 사업부 평가",
+            "setup": "영업이익 20,000원, 매출액 200,000원, 평균 영업자산 100,000원, 요구수익률 10%.",
+            "steps": [
+              "ROI = 20,000원÷100,000원=20%입니다.",
+              "영업이익률 10%×자산회전율 2회=20%로 같은 ROI를 얻습니다.",
+              "최소 요구수익은 100,000원×10%=10,000원이고 잔여이익은 10,000원입니다."
+            ],
+            "answer": "ROI 20%, 잔여이익 10,000원.",
+            "checks": [
+              {
+                "label": "ROI %",
+                "expr": "20000/100000*100",
+                "expected": 20
+              },
+              {
+                "label": "영업이익률 %",
+                "expr": "20000/200000*100",
+                "expected": 10
+              },
+              {
+                "label": "자산회전율",
+                "expr": "200000/100000",
+                "expected": 2
+              },
+              {
+                "label": "ROI 분해 검산",
+                "expr": "(20000/200000)*(200000/100000)*100",
+                "expected": 20
+              },
+              {
+                "label": "잔여이익",
+                "expr": "20000-100000*.10",
+                "expected": 10000
+              }
+            ]
+          }
+        ],
+        "related_part_ids": [
+          "M15",
+          "M16",
+          "M20"
+        ],
+        "tags": [
+          "ROI·잔여이익",
+          "감가상각"
+        ],
+        "applicability": {
+          "basis": "공개 영문 교재에서 직접 확인한 원가관리회계 일반 원리 및 아래 노트의 제한된 범위",
+          "tax_law_years": null,
+          "year_note": "세법 적용연도는 해당하지 않습니다. 각 노트의 인용 절과 명시한 계산 가정에 한하여 적용하며 국내 파트의 모든 특수규정을 검수한 것은 아닙니다."
+        },
+        "sources": [
+          {
+            "ref": "OSX_CA_MGR",
+            "locator": "m68078 책임중심점 구분; m68079 관리자의 통제 가능성; m68097 효과적인 성과측정; m68098 ROI·RI 계산 설명 및 공식 alt"
+          },
+          {
+            "ref": "SAYLOR_CA_MGR",
+            "locator": "s15-04-using-return-on-investment-roi.html heisinger_1.0-ch11_s04_p02 및 ch11_s04_s04_p02~p05 ROI 정의·영업이익률·자산회전율"
+          }
+        ],
+        "review_status": "source_checked",
+        "review_note": "인용 공개 교재 원문·공식·예시를 직접 읽고 노트의 설명과 대조했습니다. 짧은 파생 수치 예시는 독립 검산했습니다. 표시된 핵심 범위의 노트이며 전체 파트의 기준서 검수는 아닙니다. 전문가 검수는 아직 받지 않았습니다.",
+        "unchecked_points": []
+      },
+      "before_hash": "93aaf4ac9857452b388451c4296fc554fec8e3e7903e26b14a3882d4b5f686a8",
+      "after_hash": "36a0e029a9120ea68b9f9f66cd47f467bb85b2a5c2d904cc73ab398954112360",
+      "operations": {
+        "key_points": [
+          "회사의 판매수량은 전체 시장규모×회사 점유율입니다. 예산단위공헌이익을 고정한 예산액B와 실제량 평가액A 사이에 실제시장규모·예산점유율의 수정예산R을 넣으면, 점유율 A−R과 시장규모 R−B의 합이 전체 A−B가 됩니다.",
+          "여러 제품의 판매량효과를 분리할 때는 실제 총판매수량을 예산배합으로 나눈 수정량을 사용합니다. 제품별 예산단위공헌이익을 고정하면 실제배합과 수정배합의 차이는 배합효과, 수정총량과 예산총량의 차이는 수량효과입니다.",
+          "경영자 개인과 사업부 자체의 평가대상은 다릅니다. 경영자는 통제가능 원가를 차감한 이익으로, 사업부 자체는 관리자에게 통제불가능해도 그 사업부에 추적가능한 원가까지 차감한 이익으로 평가합니다. 여러 사업부를 위한 중앙 공통고정원가의 배분액은 후자의 추적가능 이익에서 제외합니다."
+        ],
+        "formulas": [
+          {
+            "name": "시장점유율·시장규모 차이의 합분해",
+            "expression": "B = 예산시장규모×예산점유율×c, R = 실제시장규모×예산점유율×c, A = 실제시장규모×실제점유율×c; 점유율차이=A−R, 규모차이=R−B, 합계=A−B",
+            "variables": [
+              [
+                "c",
+                "예산평균 단위공헌이익(원/개)"
+              ],
+              [
+                "B·R·A",
+                "예산·수정예산·실제판매량을 c로 평가한 금액(원)"
+              ]
+            ],
+            "conditions": "c는 고정한 예산평균 단위공헌이익(원/개)입니다. 양수는 이익기여 증가로 유리, 음수는 감소로 불리입니다. 실제단위공헌이익 변화는 포함하지 않습니다."
+          },
+          {
+            "name": "매출배합·수량 차이의 합분해",
+            "expression": "B=Σ(예산제품수량×제품별예산단위공헌이익), R=실제총수량×Σ(예산제품비중×제품별예산단위공헌이익), A=Σ(실제제품수량×제품별예산단위공헌이익); 배합차이=A−R, 수량차이=R−B",
+            "variables": [
+              [
+                "제품비중",
+                "예산제품수량÷예산총수량"
+              ],
+              [
+                "A",
+                "실제제품수량의 예산단위공헌이익 평가액(실제이익 자체가 아님)"
+              ]
+            ],
+            "conditions": "제품별 예산단위공헌이익을 고정합니다. R의 제품수량은 실제총수량×예산배합이며 배합비중 합계는1입니다. 두 차이 합계가A−B인지 검산합니다."
+          },
+          {
+            "name": "경영자와 사업부의 공헌이익",
+            "expression": "경영자공헌이익=공헌이익−추적가능·통제가능고정원가; 사업부공헌이익=경영자공헌이익−추적가능·통제불능고정원가",
+            "variables": [],
+            "conditions": "여기서 사업부공헌이익은 해당 사업부에 추적가능한 원가를 반영한 이익입니다. 중앙 공통고정원가 배분을 제외하고 경영자 개인의 책임범위와 구별합니다."
+          }
+        ],
+        "pitfalls": [
+          "문항의 시장점유율차이는 실제시장규모를, 시장규모차이는 예산점유율을 고정합니다. 두 기준을 모두 일관되게 바꾸면 다른 중간예산을 사용한 분해로 합계가 같을 수도 있지만 각 차이의 정의와는 다릅니다. 기준 하나만 섞어 사용하면 교차효과가 누락되거나 중복될 수 있으므로 개별 기준과 합계 항등식을 함께 확인하세요.",
+          "배합효과를 계산하면서 실제판매가격·실제변동원가를 넣으면 가격·원가변화까지 섞입니다. 총수량을 같은 실제량에 맞춘 뒤 예산단위공헌이익으로 배합만 비교하세요.",
+          "사업부 자체를 묻는지 사업부경영자 개인을 묻는지 먼저 확인하세요. 사업부에 귀속되는 통제불능 고정원가와 중앙 공통원가 배분액은 서로 다른 범위입니다."
+        ],
+        "examples": [
+          {
+            "title": "시장축소와 점유율 증가의 상쇄",
+            "setup": "예산시장10,000개·예산점유율20%, 실제시장8,000개·실제점유율25%, 예산평균공헌이익40원/개. 단가·배합 변화는 따로 고려하지 않는 독립 학습 예시입니다.",
+            "steps": [
+              "B=10,000×20%×40=80,000원, R=8,000×20%×40=64,000원, A=8,000×25%×40=80,000원입니다.",
+              "점유율 A−R=16,000원 유리, 시장규모 R−B=16,000원 불리입니다.",
+              "합계0원은 A−B=0원과 같아 시장축소와 점유율 개선이 정확히 상쇄됩니다."
+            ],
+            "answer": "점유율16,000원 유리·규모16,000원 불리, 합계0원.",
+            "checks": [
+              {
+                "label": "B",
+                "expr": "10000*.2*40",
+                "expected": 80000
+              },
+              {
+                "label": "R",
+                "expr": "8000*.2*40",
+                "expected": 64000
+              },
+              {
+                "label": "A",
+                "expr": "8000*.25*40",
+                "expected": 80000
+              },
+              {
+                "label": "점유율",
+                "expr": "8000*(.25-.2)*40",
+                "expected": 16000
+              },
+              {
+                "label": "규모",
+                "expr": "(8000-10000)*.2*40",
+                "expected": -16000
+              },
+              {
+                "label": "합계항등식",
+                "expr": "8000*(.25-.2)*40+(8000-10000)*.2*40-(8000*.25*40-10000*.2*40)",
+                "expected": 0
+              }
+            ]
+          },
+          {
+            "title": "총수량 증가와 제품배합 개선",
+            "setup": "제품A/B 예산단위공헌이익30/10원, 예산판매량50/50개, 실제판매량80/40개. 예산단위공헌이익을 고정한 독립 학습 예시입니다.",
+            "steps": [
+              "실제총수량120개를 예산50:50으로 나누면 수정량60/60개입니다. B=2,000원, R=2,400원, A=2,800원입니다.",
+              "배합 A−R=(80−60)×30+(40−60)×10=400원 유리입니다.",
+              "수량 R−B=(120−100)×20=400원 유리이며 합계800원은 A−B와 같습니다."
+            ],
+            "answer": "배합400원 유리·수량400원 유리, 합계800원.",
+            "checks": [
+              {
+                "label": "수정A량",
+                "expr": "(80+40)*50/(50+50)",
+                "expected": 60
+              },
+              {
+                "label": "가중평균CM",
+                "expr": "(50*30+50*10)/(50+50)",
+                "expected": 20
+              },
+              {
+                "label": "B",
+                "expr": "50*30+50*10",
+                "expected": 2000
+              },
+              {
+                "label": "R",
+                "expr": "60*30+60*10",
+                "expected": 2400
+              },
+              {
+                "label": "A",
+                "expr": "80*30+40*10",
+                "expected": 2800
+              },
+              {
+                "label": "배합",
+                "expr": "(80-60)*30+(40-60)*10",
+                "expected": 400
+              },
+              {
+                "label": "수량",
+                "expr": "(120-100)*20",
+                "expected": 400
+              },
+              {
+                "label": "합계항등식",
+                "expr": "400+400-(2800-2000)",
+                "expected": 0
+              }
+            ]
+          },
+          {
+            "title": "사업부와 경영자의 평가범위",
+            "setup": "공헌이익120,000원, 추적가능·통제가능고정원가10,000원, 추적가능·통제불능고정원가20,000원, 중앙 공통고정원가 배분15,000원. 다른 항목이 없는 독립 학습 예시입니다.",
+            "steps": [
+              "경영자공헌이익=120,000−10,000=110,000원입니다.",
+              "사업부공헌이익=110,000−20,000=90,000원입니다. 사업부 자체에 귀속되는 원가를 포함합니다.",
+              "공통배분까지 차감하면75,000원이지만 사업부 추적가능 성과와 구별합니다."
+            ],
+            "answer": "경영자110,000원·사업부90,000원·공통배분 후75,000원.",
+            "checks": [
+              {
+                "label": "경영자",
+                "expr": "120000-10000",
+                "expected": 110000
+              },
+              {
+                "label": "사업부",
+                "expr": "120000-10000-20000",
+                "expected": 90000
+              },
+              {
+                "label": "배분후",
+                "expr": "90000-15000",
+                "expected": 75000
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "ref": "SAYLOR_R6_FINB_FLEX",
+            "locator": "ch10_s01_p01–p06,KeyTakeaway,ReviewProblem10.1"
+          },
+          {
+            "ref": "SAYLOR_R6_FINB_CVP",
+            "locator": "§Break-EvenPointinUnitsandtheWeightedAverageContributionMarginperUnit,판매배합60/40 사례와 가중평균정의"
+          },
+          {
+            "ref": "COST_R6_FINB_ACCA_DIV",
+            "locator": "Controllability–distinguishingcontrollablevsnon-controllableprofit;ROI/RI advantages/disadvantages"
+          }
+        ]
+      },
+      "source_reads": [
+        {
+          "ref": "SAYLOR_R6_FINB_FLEX",
+          "private_path": "/tmp/chagok-parallel/remaining_cost_001.saylor-source/s14-01-flexible-budgets.html",
+          "sha256": "19529f32707c2773f5d39ac41bdb5a575077746d69a085d8c837452449387401",
+          "url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-01-flexible-budgets.html",
+          "locator": "ch10_s01_p01–p06,KeyTakeaway,ReviewProblem10.1",
+          "actual_scope": "실제읽은Saylor10.1의실제조업도수정예산원리를문제조건의시장규모×점유율과B→R→A금액차이로대수적으로확장합니다.교재가국내명칭의시장차이공식을직접제시했다는주장이아닙니다.",
+          "actually_read": true,
+          "checked_on": "2026-10-12"
+        },
+        {
+          "ref": "SAYLOR_R6_FINB_CVP",
+          "private_path": "/tmp/chagok-parallel/remaining_cost_001.saylor-source/s10-02-cost-volume-profit-analysis-fo.html",
+          "sha256": "df2435a14c30e367812024437993c5baae71671fda3d54e68b07d9c6f0924e4c",
+          "url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s10-02-cost-volume-profit-analysis-fo.html",
+          "locator": "§Break-EvenPointinUnitsandtheWeightedAverageContributionMarginperUnit,판매배합60/40 사례와 가중평균정의",
+          "actual_scope": "실제읽은Saylor6.2의판매수량배합/가중평균공헌이익원리를예산배합수정량에적용하여배합과총수량효과를대수적으로분리합니다.실제단가/원가변화를섞지않는조건이며국내명명공식의직접인용은아닙니다.",
+          "actually_read": true,
+          "checked_on": "2026-10-12"
+        },
+        {
+          "ref": "COST_R6_FINB_ACCA_DIV",
+          "private_path": "/tmp/chagok-round6/r6_cost_04/acca-divisional-performance-management.html",
+          "sha256": "116bb548d3860c268e02372f9e7a63cdc74aa4e0e8527834702d4f5d09536cb0",
+          "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/professional-exams-study-resources/p5/technical-articles/divisional-performance-management.html",
+          "locator": "Controllability–distinguishingcontrollablevsnon-controllableprofit;ROI/RI advantages/disadvantages",
+          "actual_scope": "실제읽은ACCA본문의manager controllableprofit/division traceableprofit및중앙공통원가배분제외만적용합니다.한국어문항의사업부공헌이익은traceableprofit에대응하며ACCA의별도divisionalprofit명칭과혼동하지않습니다.",
+          "actually_read": true,
+          "checked_on": "2026-10-12"
+        }
+      ],
+      "reason": "M13의시장/배합B→R→A대수분해·사업부/관리자평가 및 M15의일반조달비용중복제외·명목실질일치 중 이 note에 실제 추가한 범위만 확인. 기존 전체파트 검수나 상태승격 없음.",
+      "worker_validation": {
+        "append_only": true,
+        "shared_repo_mutations": false,
+        "schema_matches_merge_concept_followups": true,
+        "before_current_note_hashes": {
+          "note-M13": "93aaf4ac9857452b388451c4296fc554fec8e3e7903e26b14a3882d4b5f686a8",
+          "note-M15": "1604eb9f13a06f5fcecafcd9a533f4d91d8566b9ebd86d222d5bf16f2118578e"
+        },
+        "source_registry_collisions": false,
+        "actual_source_files_sha_checked": true,
+        "example_count": 5,
+        "numeric_checks": 25,
+        "numeric_evaluator": "test_concepts.calc actually executed",
+        "status_and_unchecked_points_preserved": true,
+        "expert_reviewed": false,
+        "checked_on": "2026-10-12",
+        "parent_correction": {
+          "original_proposal_sha256": "b943ce8e82abdfe3779576d38d5730fe2dc20a904c5b137ff5d0861e7da04d3f",
+          "changed_scope": "M13추가pitfall1의대체일관분해도합계성립가능함을명시;기존본문/기존노트/공식정답/모든예제계산/상태는불변",
+          "independent_finder": "r6_tax_a",
+          "expert_reviewed": false
+        }
+      },
+      "output_hash": "d4190bb2694dc7e0b209ad929a2accfb166bcf8d032967f66e99f8da24700949"
+    },
+    {
+      "note_id": "note-M15",
+      "before": {
+        "id": "note-M15",
+        "part_id": "M15",
+        "title": "투자안의 현금흐름과 현재가치",
+        "summary": "장기 투자안은 시점별 현금흐름을 할인해 비교합니다. NPV는 금액, IRR은 할인율이며 회수기간은 투자금을 회수하는 시간입니다.",
+        "key_points": [
+          "자본예산은 설비 등 장기 투자안을 평가하는 과정이며 단순한 당기 이익 비교와 다릅니다.",
+          "NPV는 미래 순현금흐름의 현재가치 합계에서 최초 투자지출을 뺀 값입니다. 독립적인 투자안에서 NPV가 양수이면 요구수익률을 충족하고 음수이면 충족하지 못합니다.",
+          "IRR은 NPV를 0으로 만드는 할인율입니다. 처음 투자지출 후 현금유입이 이어지는 통상적 투자안에서는 요구수익률과 비교해 판단합니다.",
+          "현금흐름에 추가 유출이 있는 투자안에서는 NPV를 0으로 만드는 할인율이 둘 이상일 수 있습니다. 아래 −100, +230, −132원의 독립 예시는 10%와 20% 모두에서 NPV가 0입니다. 한 개의 IRR만 자동 계산해 채택 기준으로 삼기 전에 현금흐름을 확인하세요.",
+          "단순 회수기간은 화폐의 시간가치를 무시하고 투자금 회수 이후의 현금흐름도 평가에 반영하지 않으므로 NPV와 판단이 달라질 수 있습니다.",
+          "감가상각 자체는 현금 지급이 아니므로 순현금흐름과 회계이익을 구별합니다. 이 노트의 예시는 세금·잔존가액·운전자본 변동이 없는 경우로 한정합니다.",
+          "추가 OpenStax Finance는 여러 기간에 유출이 나타나면 복수IRR이 생길 수 있다고 명시합니다. IRR법의 재투자가정을 설명하면서 높은 IRR로 실제 재투자 기회를 찾기 어려울 수 있다는 한계를 지적하되, 단일 투자안의 채택 여부만 결정할 때 그 재투자 한계는 관련 없다고 범위를 한정합니다.",
+          "같은 기간·조달가능한 상호배타 투자안을 비교할 때는 기업가치 증가액인 NPV가 더 큰 안을 선택합니다. 수명이 다르면 단순NPV 비교 대신 반복가능성 등 별도 가정을 검토하며 자본제약이 있으면 전체 조합을 검토해야 합니다."
+        ],
+        "formulas": [
+          {
+            "name": "순현재가치",
+            "expression": "NPV = 각 시점 순현금흐름 ÷ (1 + 할인율)의 해당 연도 거듭제곱을 합산 − 최초 투자지출",
+            "variables": [
+              [
+                "할인율",
+                "기간과 일치하는 요구수익률"
+              ],
+              [
+                "현금흐름",
+                "각 기간 말 순현금흐름 (원)"
+              ]
+            ],
+            "conditions": "예시는 최초 투자 시점 0, 이후 기말 현금유입입니다. 할인율과 현금흐름의 기간을 일치시킵니다."
+          },
+          {
+            "name": "내부수익률",
+            "expression": "IRR = 투자안의 NPV를 0으로 만드는 할인율",
+            "variables": [],
+            "conditions": "통상적인 최초 유출 후 유입 투자안의 기본 정의입니다."
+          },
+          {
+            "name": "단순 회수기간",
+            "expression": "연간 현금유입이 일정한 경우 회수기간 = 최초 투자지출 ÷ 연간 순현금유입",
+            "variables": [],
+            "conditions": "현금유입이 불균등하면 연도별 누적액으로 회수 시점을 찾습니다. 단순 회수기간은 할인하지 않습니다."
+          }
+        ],
+        "pitfalls": [
+          "회계이익·매출액을 순현금흐름으로 그대로 넣지 마세요. 비용·현금 지급·회수 시점을 구별해야 합니다.",
+          "NPV 금액과 IRR 비율, 회수기간 연수를 같은 지표처럼 비교하지 마세요.",
+          "IRR은NPV를0으로 만드는 할인율이라는 정의와 중간유입을 실제 재투자하여 얻는 최종가치를 구별합니다. 여기서 재투자 설명은 인용교재의 서술 범위이며 모든 학술 논쟁이나 한국 세무처리를 검증한 것은 아닙니다."
+        ],
+        "examples": [
+          {
+            "title": "두 해 기말 현금유입의 NPV",
+            "setup": "최초 투자 100,000원, 1년 말·2년 말 각각 순현금유입 60,500원, 연간 할인율 10%. 세금·잔존가액·운전자본 변동 없음.",
+            "steps": [
+              "1년 말 현재가치 = 60,500 ÷ 1.1 = 55,000원",
+              "2년 말 현재가치 = 60,500 ÷ (1.1 × 1.1) = 50,000원",
+              "NPV = 55,000 + 50,000 − 100,000 = 5,000원"
+            ],
+            "answer": "NPV 5,000원으로 양수",
+            "checks": [
+              {
+                "label": "1년 현재가치",
+                "expr": "60500/1.1",
+                "expected": 55000
+              },
+              {
+                "label": "2년 현재가치",
+                "expr": "60500/(1.1*1.1)",
+                "expected": 50000
+              },
+              {
+                "label": "NPV",
+                "expr": "60500/1.1+60500/(1.1*1.1)-100000",
+                "expected": 5000
+              }
+            ]
+          },
+          {
+            "title": "일정한 현금유입의 회수기간",
+            "setup": "최초 투자 120,000원, 매년 순현금유입 40,000원. 단순 회수기간을 계산합니다.",
+            "steps": [
+              "회수기간 = 120,000 ÷ 40,000 = 3년"
+            ],
+            "answer": "단순 회수기간 3년",
+            "checks": [
+              {
+                "label": "회수기간",
+                "expr": "120000/40000",
+                "expected": 3
+              }
+            ]
+          },
+          {
+            "title": "두 할인율에서 NPV가 0인 예시",
+            "setup": "시점 0에 100원 유출, 1년 말 230원 유입, 2년 말 132원 유출입니다. 이 예시는 교재의 IRR=NPV 0 정의에 숫자를 독립 대입해 만든 것입니다.",
+            "steps": [
+              "10%에서 NPV = −100 + 230÷1.1 − 132÷(1.1×1.1) = 0원입니다.",
+              "20%에서 NPV = −100 + 230÷1.2 − 132÷(1.2×1.2) = 0원입니다.",
+              "같은 투자안에 IRR 10%와 20%가 존재합니다. 이 예시만으로 두 IRR 중 어느 것을 채택 기준으로 선택해야 하는지 단정하지 않습니다."
+            ],
+            "answer": "10%와 20% 모두 NPV 0의 조건을 충족합니다.",
+            "checks": [
+              {
+                "label": "10%의 NPV",
+                "expr": "-100+230/1.1-132/(1.1*1.1)",
+                "expected": 0
+              },
+              {
+                "label": "20%의 NPV",
+                "expr": "-100+230/1.2-132/(1.2*1.2)",
+                "expected": 0
+              }
+            ]
+          },
+          {
+            "title": "IRR 순위와 NPV 순위가 다른 동기간 투자",
+            "setup": "상호배타적인1년 투자A는100원 지급후120원 수취, B는1,000원 지급후1,150원 수취합니다. 요구수익률10%, 두 투자 모두 자금조달 가능, 세금/추가 현금흐름 없음. 교재 기준에 독립 대입한 작은 예시입니다.",
+            "steps": [
+              "A의IRR20%, B의IRR15%는 각각 NPV를0으로 만듭니다.",
+              "요구수익률10%에서 A의NPV는약9.09원, B는약45.45원입니다.",
+              "같은 기간의 상호배타 선택은 더 큰 가치를 더하는B를 NPV기준으로 선택합니다. 이 예시는 예산제약/수명차이가 없는 조건입니다."
+            ],
+            "answer": "IRR은A가 높지만 NPV기준 선택은B입니다.",
+            "checks": [
+              {
+                "label": "A의IRR 확인",
+                "expr": "-100+120/1.2",
+                "expected": 0
+              },
+              {
+                "label": "B의IRR 확인",
+                "expr": "-1000+1150/1.15",
+                "expected": 0
+              },
+              {
+                "label": "A NPV반올림",
+                "expr": "round(-100+120/1.1,2)",
+                "expected": 9.09
+              },
+              {
+                "label": "B NPV반올림",
+                "expr": "round(-1000+1150/1.1,2)",
+                "expected": 45.45
+              }
+            ]
+          },
+          {
+            "title": "교재 재투자전제와 최종가치의 구별",
+            "setup": "최초100원 유출,1년말60원·2년말72원 유입. IRR20%이며 중간유입60원을 별도로 재투자할 수 있다고 가정합니다. 국내 세무 규정의 예시가 아닙니다.",
+            "steps": [
+              "IRR 정의로는−100＋60÷1.2＋72÷(1.2×1.2)＝0입니다.",
+              "중간유입을20%에 재투자하면 최종가치는60×1.2＋72＝144원입니다.",
+              "10%에 재투자하면 최종가치는138원입니다. IRR의 NPV0 정의와 별도 재투자에 따른 실현 최종가치가 같다는 주장을 혼동하지 않습니다."
+            ],
+            "answer": "IRR 정의20%는 확인되며 최종가치는 재투자율20%일 때144원·10%일 때138원입니다.",
+            "checks": [
+              {
+                "label": "IRR20퍼센트",
+                "expr": "-100+60/1.2+72/(1.2*1.2)",
+                "expected": 0
+              },
+              {
+                "label": "20퍼센트 최종가치",
+                "expr": "60*1.2+72",
+                "expected": 144
+              },
+              {
+                "label": "10퍼센트 최종가치",
+                "expr": "60*1.1+72",
+                "expected": 138
+              }
+            ]
+          }
+        ],
+        "related_part_ids": [
+          "M14",
+          "M16"
+        ],
+        "tags": [
+          "NPV·IRR",
+          "현금흐름",
+          "회수기간"
+        ],
+        "applicability": {
+          "basis": "원가관리회계 일반 원리 · 실제 읽은 공개 교재 인용절",
+          "tax_law_years": null,
+          "year_note": "교재의 해당 가정에 맞춘 학습 노트입니다. 국내 기준서 전체나 세법상 수치의 검증을 주장하지 않습니다."
+        },
+        "sources": [
+          {
+            "ref": "OSX_COST_B_CONCEPT",
+            "locator": "modules/m68089/index.cnxml: Capital Investment Decisions; modules/m68090/index.cnxml: Payback Method; modules/m68092/index.cnxml: Present Values of Lump Sums and Annuities; modules/m68093/index.cnxml: NPV Method and Internal Rate of Return; modules/m68094/index.cnxml: comparison of time-value and non-time-value methods; m68093 fs-idm201856160·fs-idm432069312·fs-idm237367792의 IRR=NPV 0 정의를 실제 읽고, 복수 근 예시는 그 정의에 독립 대입해 검산(교재에 해당 복수 IRR 예시가 실렸다는 주장이 아님)"
+          },
+          {
+            "ref": "OSX_COST_B_R3_IRR",
+            "locator": "m00101 para-00009 No Single Mathematical Solution, para-00011 Reinvestment Rate Assumption 및 바로 다음 단독채택 한정 문장"
+          },
+          {
+            "ref": "OSX_COST_B_R3_CHOICE",
+            "locator": "m00103 para-00005 Choosing between Mutually Exclusive Projects 및 two machines NPV/IRR표; different lives의반복가능성조건"
+          }
+        ],
+        "review_status": "partial",
+        "review_note": "공개 교재 인용절의 원문·공식을 직접 대조하고 아래 수치 예시를 독립 검산했습니다. 표시한 세부 범위는 확인하지 않았으며 그 범위의 공식·예시를 작성하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. 추가로 메인이 IRR 정의 원문을 직접 읽고 두 할인율의 NPV를 독립 재계산했습니다. 의사결정 선택·재투자 가정의 미확인 범위는 유지합니다. 3차 추가로 교재가 실제 명시한 복수IRR 가능성과 재투자가정/단독채택 한정; 동기간·상호배타·자금조달가능 조건의 NPV우선 및 실제재투자최종가치 구별를 해당 본문·도표와 독립 수치로 대조했습니다. 관리회계/재무관리 일반 원리의 확인이며 남은 세부 원문 및 한국 세법 검증은 계속 미확인입니다. 전문가 검수는 아직입니다.",
+        "unchecked_points": [
+          "복수IRR 중 하나를 단독 선택하는 일반 규칙과 IRR 재투자가정에 대한 상반 학술 논쟁 전체는 확인하지 않았습니다. OpenStax의 명시된 교재 설명 및 동기간 상호배타 NPV우선만 검증했습니다.",
+          "자산 처분손익의 한국 세무 조정 및 세후 현금흐름 적용은 국내 법률·연도별 조건의 실제 대조가 필요하며 일반 재무관리 교재만으로 완료하지 않습니다."
+        ]
+      },
+      "before_hash": "1604eb9f13a06f5fcecafcd9a533f4d91d8566b9ebd86d222d5bf16f2118578e",
+      "after_hash": "4a7ffeedda65bf35a288e3ae1f5412456c70b256725c51e49eeb6fb1bc35b3f8",
+      "operations": {
+        "key_points": [
+          "프로젝트의 미래 증분 영업현금흐름을 조달비용이 반영된 자본비용으로 할인하는 일반 자본예산에서는 이자 등 자금조달비용을 그 현금흐름에서 다시 차감하지 않습니다. 할인율과 현금흐름에 같은 조달비용을 중복 반영하지 않기 위한 원리입니다.",
+          "물가 기준도 서로 맞춥니다. 미래가격으로 표시한 명목현금흐름은 명목할인율로, 일정 구매력의 실질현금흐름은 실질할인율로 할인합니다. 같은 물가상승률로 일관되게 환산하면 두 현재가치는 같습니다."
+        ],
+        "formulas": [
+          {
+            "name": "명목·실질 할인율의 일치",
+            "expression": "1+명목할인율=(1+실질할인율)×(1+일반물가상승률)",
+            "variables": [
+              [
+                "명목·실질 할인율",
+                "같은 기간의 비율"
+              ],
+              [
+                "일반물가상승률",
+                "명목을 실질 구매력으로 환산하는 기간별 비율"
+              ]
+            ],
+            "conditions": "같은 기간의 할인율과 일반물가상승률을 사용합니다. 각 가격항목의 고유 물가상승률과 일반물가상승률을 혼동하지 않습니다. 아래 예시는 세금 없는1기간 현금흐름입니다."
+          }
+        ],
+        "pitfalls": [
+          "현금으로 이자를 지급한다는 이유만으로 프로젝트의 영업현금흐름에서 다시 차감하지 마세요. 사용한 할인율에 자금조달비용이 반영되어 있는지와 평가현금흐름의 범위를 함께 확인해야 합니다.",
+          "명목현금흐름을 실질할인율로 할인하거나 실질현금흐름을 명목할인율로 할인하면 물가효과가 불일치합니다. 연간현금흐름에 월간할인율을 그대로 쓰는 기간 불일치도 구별하세요."
+        ],
+        "examples": [
+          {
+            "title": "조달이자 중복차감 비교",
+            "setup": "기업 전체의1년 투자안: 최초지출1,000원, 1년 말 영업순현금유입1,210원, 조달비용을 반영한 자본비용10%. 이 영업현금흐름에는 별도 조달이자50원이 포함되지 않았습니다. 세금·다른현금흐름이 없는 독립 학습 예시입니다.",
+            "steps": [
+              "조달비용을 반영한10%로 영업현금흐름을 할인하면NPV=1,210÷1.1−1,000=100원입니다.",
+              "이자50원을 영업현금흐름에서 다시 빼면1,160÷1.1−1,000≈54.55원으로 잘못 낮아집니다.",
+              "두 값의 차이≈45.45원은 중복차감한50원의 현재가치입니다. 이자는 할인율과 중복하여 반영하지 않습니다."
+            ],
+            "answer": "올바른NPV100원; 이자중복차감값약54.55원은 오류입니다.",
+            "checks": [
+              {
+                "label": "올바른NPV",
+                "expr": "1210/1.1-1000",
+                "expected": 100
+              },
+              {
+                "label": "중복차감오류값",
+                "expr": "round((1210-50)/1.1-1000,2)",
+                "expected": 54.55
+              },
+              {
+                "label": "중복차감현재가치",
+                "expr": "round(50/1.1,2)",
+                "expected": 45.45
+              }
+            ]
+          },
+          {
+            "title": "명목과 실질의 같은 현재가치",
+            "setup": "1년 말 실질현금유입1,100원, 실질할인율10%, 일반물가상승률5%. 같은 물가 기준으로 명목 현금흐름과 할인율을 구하는 세금 없는 독립 학습 예시입니다.",
+            "steps": [
+              "명목현금흐름=1,100×1.05=1,155원입니다.",
+              "명목할인율=(1.10×1.05)−1=15.5%입니다.",
+              "실질현재가치1,100÷1.10=1,000원과 명목현재가치1,155÷1.155=1,000원이 같습니다."
+            ],
+            "answer": "물가 기준을 일치시키면 명목·실질 모두 현재가치1,000원.",
+            "checks": [
+              {
+                "label": "명목현금흐름",
+                "expr": "1100*1.05",
+                "expected": 1155
+              },
+              {
+                "label": "명목할인율%",
+                "expr": "(1.1*1.05-1)*100",
+                "expected": 15.5
+              },
+              {
+                "label": "실질현재가치",
+                "expr": "1100/1.1",
+                "expected": 1000
+              },
+              {
+                "label": "명목현재가치",
+                "expr": "1155/(1.1*1.05)",
+                "expected": 1000
+              },
+              {
+                "label": "현재가치동일성",
+                "expr": "1155/(1.1*1.05)-1100/1.1",
+                "expected": 0
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "ref": "COST_R6_FINB_ACCA_DCF",
+            "locator": "Inflation,Taxation,Relevant/irrelevantcashflows(읽은텍스트441–464행)"
+          },
+          {
+            "ref": "COST_R6_FINB_ACCA_INFL",
+            "locator": "Realandnominalcostsofcapital,Realcashflows,Nominaltermsapproach,Realtermsapproach,Theeffectoftaxation(694–707,824–845,933–937,1023–1036)"
+          }
+        ]
+      },
+      "source_reads": [
+        {
+          "ref": "COST_R6_FINB_ACCA_DCF",
+          "private_path": "/tmp/chagok-round6/r6_cost_05/advanced-investment-appraisal.html",
+          "sha256": "f43a01c519764dd41300bacb949f46c3f854d7ddb64c6bd9b2b2eeef0a80fba6",
+          "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f9/technical-articles/advanced-investment-appraisal.html",
+          "locator": "Inflation,Taxation,Relevant/irrelevantcashflows(읽은텍스트441–464행)",
+          "actual_scope": "실제읽은ACCA의futureincrementalcashflow및financingcosts는할인율에반영되어제외한다는직접규칙입니다.프로젝트영업현금흐름을전체자본비용으로할인하는일반자본예산범위에한정하고한국세후/처분세법을추가검증하지않습니다.",
+          "actually_read": true,
+          "checked_on": "2026-10-12"
+        },
+        {
+          "ref": "COST_R6_FINB_ACCA_INFL",
+          "private_path": "/tmp/chagok-round6/r6_cost_05/inflation-investment-appraisal.html",
+          "sha256": "57329603a5e3ba27bfdd16a9d9f7df91bfcdfd58b9742081e735742f08ec7054",
+          "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f9/technical-articles/inflation-investment-appraisal.html",
+          "locator": "Realandnominalcostsofcapital,Realcashflows,Nominaltermsapproach,Realtermsapproach,Theeffectoftaxation(694–707,824–845,933–937,1023–1036)",
+          "actual_scope": "실제읽은ACCA의명목/실질현금흐름과각각동일기준할인율의일치및Fisher식입니다.새예제는세금없는1기간학습조건으로만들며외국예제세율이나한국법정세무규칙을옮기지않습니다.",
+          "actually_read": true,
+          "checked_on": "2026-10-12"
+        }
+      ],
+      "reason": "M13의시장/배합B→R→A대수분해·사업부/관리자평가 및 M15의일반조달비용중복제외·명목실질일치 중 이 note에 실제 추가한 범위만 확인. 기존 전체파트 검수나 상태승격 없음.",
+      "worker_validation": {
+        "append_only": true,
+        "shared_repo_mutations": false,
+        "schema_matches_merge_concept_followups": true,
+        "before_current_note_hashes": {
+          "note-M13": "93aaf4ac9857452b388451c4296fc554fec8e3e7903e26b14a3882d4b5f686a8",
+          "note-M15": "1604eb9f13a06f5fcecafcd9a533f4d91d8566b9ebd86d222d5bf16f2118578e"
+        },
+        "source_registry_collisions": false,
+        "actual_source_files_sha_checked": true,
+        "example_count": 5,
+        "numeric_checks": 25,
+        "numeric_evaluator": "test_concepts.calc actually executed",
+        "status_and_unchecked_points_preserved": true,
+        "expert_reviewed": false,
+        "checked_on": "2026-10-12",
+        "parent_correction": {
+          "original_proposal_sha256": "b943ce8e82abdfe3779576d38d5730fe2dc20a904c5b137ff5d0861e7da04d3f",
+          "changed_scope": "M13추가pitfall1의대체일관분해도합계성립가능함을명시;기존본문/기존노트/공식정답/모든예제계산/상태는불변",
+          "independent_finder": "r6_tax_a",
+          "expert_reviewed": false
+        }
+      },
+      "output_hash": "d4190bb2694dc7e0b209ad929a2accfb166bcf8d032967f66e99f8da24700949"
     }
   ],
   "applied_followup_delta_hashes": [
     "5d9b69abbbefe01c3adf6cde43c4564cba1f25e3007fff6b4ff1a4f5d68d375a",
     "4811d28cffea0a32344fe7f8e0601e633419902714ecf351b6cbf01f922c199d",
-    "045c2009570b38b1a0e36be402b54c950cd05e1f6a18d448048870624b05dbec"
+    "045c2009570b38b1a0e36be402b54c950cd05e1f6a18d448048870624b05dbec",
+    "57bd8742e47e22be0ea298f9bca53a98f53e349269b3ec1f151b1429aafe3135",
+    "d4190bb2694dc7e0b209ad929a2accfb166bcf8d032967f66e99f8da24700949"
   ],
   "source_metadata_amendments": [
     {
