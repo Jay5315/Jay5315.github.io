@@ -9,7 +9,7 @@ def main():
  rows=[]
  for e in entries:
   q=qs[e['id']];c=e['classification']
-  rows.append(dict(id=q['id'],subject=q['subject'],number=q['subject_number'],exam=q['exam'],part=c['primary_part_id'],tags=c['tags'],secondary=c.get('secondary_part_ids',[]),review=c['review_required'],originalOnly=('formula_font_use_original_image' in q['review_flags'] or q['graphics_kind']=='diagram_or_image'),image=q['image'],pdf=q['source_pdf'],answerPdf=q['answer_pdf'],page=q['page'],answers=q['answers'],eligible=q['study_eligible'],text=q['text'],stem=q['stem'],taxYear=q['tax_law_year'],instructions=q['subject_instructions'],representative=e['id'] in representatives,occurrences=e['occurrence_ids'],family=e['family_id']))
+  rows.append(dict(id=q['id'],subject=q['subject'],number=q['subject_number'],exam=q['exam'],part=c['primary_part_id'],tags=c['tags'],secondary=c.get('secondary_part_ids',[]),review=c['review_required'],graphics=q['graphics_kind'],originalOnly=('formula_font_use_original_image' in q['review_flags'] or q['graphics_kind']=='diagram_or_image'),image=q['image'],pdf=q['source_pdf'],answerPdf=q['answer_pdf'],page=q['page'],answers=q['answers'],eligible=q['study_eligible'],text=q['text'],stem=q['stem'],taxYear=q['tax_law_year'],instructions=q['subject_instructions'],representative=e['id'] in representatives,occurrences=e['occurrence_ids'],family=e['family_id']))
  concepts=read('concept-notes');part_ids={p['id'] for p in read('taxonomy')}
  for n in concepts['notes']:
   bad=[x for x in [n['part_id'],*n['related_part_ids']] if x not in part_ids]
