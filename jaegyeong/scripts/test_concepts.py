@@ -36,19 +36,29 @@ class ConceptNotesTest(unittest.TestCase):
                 for row in yt['rows']:self.assertEqual(len(row),len(yt['years'])+1,n['id'])
                 self.assertTrue(set(yt['years'])<=set(n['applicability']['tax_law_years'] or []),n['id'])
     def test_sources_and_status_are_honest(self):
-        self.assertTrue(self.c['verification']['checked_on'] and self.c['verification']['method'])
+        v=self.c['verification'];self.assertTrue(v['checked_on'] and v['method'])
         for n in self.notes:
-            s=n['review_status'];self.assertIn(s,{'source_checked','calc_checked','needs_source'},n['id'])
+            s=n['review_status'];self.assertIn(s,{'source_checked','partial','calc_checked','needs_source'},n['id'])
             for src in n['sources']:self.assertIn(src['ref'],self.c['sources']);self.assertTrue(src['locator'])
-            if s=='source_checked':self.assertTrue(n['sources'],f"{n['id']} claims checked sources but lists none")
+            unchecked=n.get('unchecked_points',[])
+            flagged=any(f.get('unchecked') for f in n['formulas'])
+            if s=='source_checked':
+                self.assertTrue(n['sources'],f"{n['id']} claims checked sources but lists none")
+                self.assertFalse(unchecked or flagged,f"{n['id']}: fully checked notes cannot carry unchecked content")
+            elif s=='partial':
+                self.assertTrue(n['sources'],n['id']);self.assertTrue(unchecked or flagged,f"{n['id']}: partial notes must say what was not checked")
             else:self.assertEqual(n['sources'],[],f"{n['id']}: unverified notes must not list verified sources")
-            if s=='needs_source':self.assertTrue(n.get('pending_references'),n['id'])
             years=n['applicability']['tax_law_years']
             if self.t[n['part_id']]['subject']=='세무회계':
                 self.assertEqual(s,'source_checked',f"{n['id']}: tax notes need checked law text")
                 self.assertTrue(years and all(isinstance(y,int) for y in years),n['id'])
+                self.assertTrue(all(x['ref'] in ('CIT_LAW','CIT_DECREE','PIT_LAW','VAT_LAW','VAT_DECREE') for x in n['sources']),n['id'])
             else:self.assertIsNone(years,f"{n['id']}: non-tax notes must not claim a tax-law year")
-        for r in self.c['sources'].values():self.assertTrue(r['url'].startswith('https://www.law.go.kr/') and r['versions'])
+            if n['part_id'].startswith('F') and n['sources']:
+                self.assertNotEqual(s,'source_checked',f"{n['id']}: K-IFRS text was not checked, so financial notes stay partial")
+        for k,r in self.c['sources'].items():
+            self.assertTrue(r['versions'],k)
+            self.assertTrue(r['url'].startswith('https://www.law.go.kr/') if not k.startswith('OSX') else r['url'].startswith('https://openstax.org/books/'),k)
     def test_example_arithmetic(self):
         checked=0
         for n in self.notes:

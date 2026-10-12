@@ -90,9 +90,10 @@ python jaegyeong/scripts/package_app.py
 
 | 상태 | 뜻 | 현재 |
 |---|---|---|
-| `source_checked` | 법령 조문을 판본별로 원문 대조 (전문가 검수 전) | 세무 6개 (C02·C08·C11·I02·V03·V04) |
-| `calc_checked` | 계산식·예시 검증, 외부 출처 미대조 | 원가 5개 (M05·M07·M08·M11·M14) |
-| `needs_source` | 초안, 회계기준 원문 대조 필요 | 재무 4개 (F04·F05·F15·F21) |
+| `source_checked` | 노트 내용 전체를 법령 조문이나 공개 교재 원문과 대조 (전문가 검수 전) | 세무 6개 (C02·C08·C11·I02·V03·V04), 원가 1개 (M11) |
+| `partial` | 핵심 원리는 원문과 대조, 대조하지 못한 문장은 `unchecked_points`·`unchecked` 표시로 분리 | 원가 4개 (M05·M07·M08·M14), 재무 4개 (F04·F05·F15·F21) |
+
+원가·재무 노트는 OpenStax 공개 교재 *Principles of Accounting* 1·2권(CC BY-NC-SA 4.0, 영문)의 GitHub 원본(`openstax/osbooks-principles-accounting-bundle`)과 대조했습니다. 교재가 미국 기준이라 K-IFRS 고유 내용(재평가모형, 변동대가, 희석주당이익 등)은 대조하지 못했고, 재무 노트는 K-IFRS 원문을 확인하기 전까지 `partial`로 둡니다.
 
 세법 노트는 2024·2025·2026년 시행 판본을 비교했고, 연도별로 다른 수치는 `year_table`에 연도 열로 나눴습니다(예: 2026년 법인세율 1%p 인상, 배당가산율 11%는 2027년 지급분부터). 문제의 `taxYear`와 노트 대조 범위를 비교해 풀이 화면에 표시합니다. 출처·확인 방법은 파일의 `verification`, `sources`에 있습니다.
 

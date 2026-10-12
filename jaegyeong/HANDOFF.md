@@ -117,7 +117,8 @@ ID 재배정이나 데이터 그룹 변경, 저장 형식 변경 시 기존 기�
 
 - 원본: `data/concept-notes.json` → `build_app_data.py`로 번들. 한 파트에 노트 하나, `id`는 `note-파트ID`.
 - 세법 근거 확인 방법: 이 환경에서는 law.go.kr·ifrs.org·nts.go.kr 접속이 막혀 있어, law.go.kr OpenAPI를 Git으로 보존한 `legalize-kr/legalize-kr` 저장소를 받아 조문을 판본별로 대조했습니다. `git clone --filter=blob:none --no-checkout`, `git sparse-checkout set --no-cone 'kr/법인세법/*' ...`, 연도별 판본은 `git rev-list -1 --before=날짜 HEAD -- 파일`과 파일 머리의 `시행일자`로 고릅니다. 부칙의 적용 시기(예: 소득세법 법률 제21221호 부칙 제1조·제14조)도 같이 확인하세요.
-- K-IFRS 원문은 대조하지 못했습니다. 재무 노트(`needs_source`)는 교재나 회계기준원 자료로 대조한 뒤 `sources`에 넣고 상태를 바꾸세요. `test_concepts.py`가 상태와 출처의 일관성을 검사합니다(검증하지 않은 노트에 출처를 넣으면 실패).
+- 원가·재무 노트는 OpenStax 공개 교재 원본(GitHub `openstax/osbooks-principles-accounting-bundle`, CNXML; 공식은 `<media alt=...>`에 있음)과 대조했습니다. 대조하지 못한 문장은 `unchecked_points`, 공식은 `"unchecked": true`, 예시는 `unchecked_note`로 분리합니다.
+- K-IFRS 원문은 저작권상 공개 사본이 없고 kasb.or.kr·ifrs.org가 막혀 대조하지 못했습니다. 재무 노트는 `partial`로 두고, 원문을 확인하면 해당 문장을 본문으로 옮기고 상태를 바꾸세요. `test_concepts.py`가 상태·출처·미대조 표시의 일관성을 검사합니다.
 - 예시는 `checks`의 계산식을 테스트가 다시 계산합니다. 예시를 추가하면 검산식도 함께 넣으세요.
 - 태그로 연결할 때는 같은 과목의 노트만 보여 줍니다(재고자산의 '선입선출법'이 원가회계 노트로 가지 않도록).
 - 다음 후보: 나머지 59개 파트 작성, 재무 4개 원문 대조, 전문가 검수, 문항별 해설(별도 범위).
