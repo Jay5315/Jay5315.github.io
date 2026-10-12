@@ -2,7 +2,7 @@
   "schema_version": 1,
   "verification": {
     "checked_on": "2026-10-12",
-    "method": "세법 노트는 국가법령정보센터(law.go.kr) OpenAPI 자료를 보존한 legalize-kr 저장소의 조문을 판본별로 대조했습니다. 재무 노트는 한국회계기준원 '시행 중 K-IFRS' 목록에서 공개로 내려받을 수 있는 기준서 PDF 원문의 문단과 대조했습니다(원문은 저작권상 저장소에 넣지 않고 문단 번호만 기록). 원가 노트는 OpenStax 공개 교재 'Principles of Accounting' 2권(CC BY-NC-SA 4.0, 영문)의 GitHub 원본과 대조했습니다.",
+    "method": "세법 노트는 국가법령정보센터(law.go.kr) OpenAPI 자료를 보존한 legalize-kr 저장소의 조문을 판본별로 대조했습니다. 재무 노트는 한국회계기준원 '시행 중 K-IFRS' 목록에서 공개로 내려받을 수 있는 기준서 PDF 원문의 문단과 대조했습니다(원문은 저작권상 저장소에 넣지 않고 문단 번호만 기록). 원가 노트는 OpenStax 'Principles of Accounting' 2권(CC BY-NC-SA 4.0)과 Saylor Academy 'Managerial Accounting'(CC BY-NC-SA 3.0) 공개 교재의 GitHub 원본과 대조했습니다(둘 다 영문).",
     "mirror": {
       "name": "legalize-kr (대한민국 법령 Git 저장소)",
       "url": "https://github.com/legalize-kr/legalize-kr",
@@ -10,7 +10,7 @@
       "commit_date": "2026-10-08",
       "caution": "저장소 안내에 따르면 파이프라인 개선 시 force-push로 커밋 해시가 바뀔 수 있습니다. 판본은 공포번호·시행일로 확인하세요."
     },
-    "not_verified": "원가 노트 중 교재에 없는 내용(초변동원가계산, 종합원가 선입선출법 계산식, 공손, 고정제조간접원가 차이 계산식 등)과 유형자산의 정률법·연수합계법 계산식은 대조할 공개 원문을 찾지 못해 노트마다 따로 표시했습니다.",
+    "not_verified": "초변동원가계산, 종합원가의 공손 처리, 유형자산의 정률법·연수합계법 계산식은 이 환경에서 받을 수 있는 공개 원문(법령, K-IFRS, 일반기업회계기준 제7장, OpenStax·Saylor 교재)에서 찾지 못해 노트마다 따로 표시했습니다.",
     "textbook_mirror": {
       "name": "openstax/osbooks-principles-accounting-bundle",
       "url": "https://github.com/openstax/osbooks-principles-accounting-bundle",
@@ -121,6 +121,14 @@
       "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
       "versions": [
         "시행 중 판본: 2007 제정, 2015 타기준서 제정 반영, 2020 구성양식 변경 반영"
+      ]
+    },
+    "SAYLOR_MGR": {
+      "title": "Saylor Academy, Managerial Accounting (2012)",
+      "kind": "공개 교재 (CC BY-NC-SA 3.0, 영문)",
+      "url": "https://github.com/saylordotorg/text_managerial-accounting",
+      "versions": [
+        "GitHub 원본 커밋 6b8ed09 (2021-08-26) 대조"
       ]
     }
   },
@@ -1026,9 +1034,10 @@
       "key_points": [
         "4단계: ① 원가를 배분할 물량 파악 → ② 완성품환산량 계산 → ③ 환산량 단위당 원가 → ④ 완성품(대체)과 기말재공품에 원가 배분.",
         "평균법: 기초재공품을 당기에 착수한 것과 합쳐 계산합니다. 환산량 = 완성품 수량 + 기말재공품 환산량.",
-        "선입선출법: 전기에서 넘어온 기초재공품을 먼저 완성한다고 가정합니다. 교재는 평균법보다 복잡해 상급 과정에서 다룬다고만 설명합니다.",
+        "선입선출법: 기초재공품을 먼저 완성해 대체한다고 보고, 기초재공품원가를 당기발생원가와 따로 관리합니다. 그래서 환산량은 '당기에 한 작업량' = 완성품 수량 − 기초재공품 환산량 + 기말재공품 환산량이고, 단위원가에는 당기발생원가만 씁니다(교재의 정의에서 유도한 식).",
         "재료를 공정 초기에 투입하면 재료원가 진행률은 100%이고, 가공원가는 공정 전체에 걸쳐 균등하게 발생합니다. 그래서 재료와 가공원가의 진행률이 다를 수 있습니다.",
-        "후속 공정에서는 앞 공정에서 넘어온 원가(전공정원가)를 함께 배분합니다."
+        "후속 공정에서는 앞 공정에서 넘어온 원가(전공정원가)를 함께 배분합니다.",
+        "두 방법의 환산량 차이는 기초재공품의 환산량과 같습니다(위 두 식의 차이)."
       ],
       "formulas": [
         {
@@ -1041,13 +1050,12 @@
           "name": "선입선출법 환산량",
           "expression": "완성품 수량 − 기초재공품 × 진행률 + 기말재공품 × 진행률",
           "variables": [],
-          "conditions": "원가 = 당기발생원가만",
-          "unchecked": true
+          "conditions": "원가 = 당기발생원가만. 교재의 선입선출법 정의(기초재공품원가 분리)에서 유도한 식입니다."
         }
       ],
       "pitfalls": [
         "재료 투입 시점(초기·중간·종료)에 따라 재료원가 진행률이 달라집니다.",
-        "평균법 단위원가 = (기초재공품원가 + 당기발생원가) ÷ 평균법 환산량입니다."
+        "평균법 단위원가 = (기초재공품원가 + 당기발생원가) ÷ 평균법 환산량, 선입선출법 단위원가 = 당기발생원가 ÷ 선입선출법 환산량입니다."
       ],
       "examples": [
         {
@@ -1070,8 +1078,7 @@
               "expr": "1000 - 200*0.4 + 300*0.5",
               "expected": 1070
             }
-          ],
-          "unchecked_note": "선입선출법 부분은 교재로 대조하지 못한 계산식을 사용합니다."
+          ]
         }
       ],
       "related_part_ids": [
@@ -1093,16 +1100,17 @@
       "sources": [
         {
           "ref": "OSX_MGR",
-          "locator": "Explain and Compute Equivalent Units and Total Cost of Production in an Initial / a Subsequent Processing Stage; Compare and Contrast Job Order Costing and Process Costing"
+          "locator": "Equivalent Units ... Initial / Subsequent Processing Stage; Compare and Contrast Job Order Costing and Process Costing (FIFO 정의)"
+        },
+        {
+          "ref": "SAYLOR_MGR",
+          "locator": "Determining Equivalent Units; The Weighted Average Method (FIFO 정의: 기초재공품원가를 당기원가와 분리)"
         }
       ],
       "review_status": "partial",
-      "review_note": "평균법·진행률·단계 구성은 공개 교재 원문과 대조했습니다. 선입선출법 계산과 공손은 따로 표시했습니다.",
+      "review_note": "평균법·선입선출법의 정의와 단계는 공개 교재 원문과 대조했습니다. 선입선출법 환산량 식은 교재 정의에서 유도했고 예시로 검산했습니다. 공손만 따로 표시했습니다.",
       "unchecked_points": [
-        "선입선출법 환산량 = 완성품 수량 − 기초재공품 환산량 + 기말재공품 환산량이고, 단위원가에는 당기발생원가만 씁니다.",
-        "두 방법의 환산량 차이는 기초재공품의 완성품환산량과 같습니다.",
-        "공손은 검사시점 통과 여부로 정상공손원가의 배분 대상을 정합니다.",
-        "— 이 교재는 선입선출법 계산과 공손을 다루지 않아 위 내용은 대조하지 못했습니다."
+        "공손은 검사시점 통과 여부로 정상공손원가의 배분 대상을 정합니다. — 대조한 공개 교재와 일반기업회계기준 제7장 어디에도 공손 배분 방법이 없어 대조하지 못했습니다."
       ]
     },
     {
@@ -1115,7 +1123,7 @@
         "직접노무: 임률차이 = (AR − SR) × AH, 능률(시간)차이 = (AH − SH) × SR.",
         "SQ·SH는 '실제 생산량에 대해 기대되는' 표준 수량·표준 시간입니다.",
         "변동제조간접원가: 소비(배부율)차이 = (실제 배부율 − 표준 배부율) × AH, 능률차이 = (AH − SH) × 표준 배부율.",
-        "고정제조간접원가 차이는 두 가지입니다. 고정제조간접원가를 계획보다 많이/적게 쓴 차이(예산·소비차이)와, 실제 생산이 기준 조업도보다 많거나 적어서 생기는 차이(조업도차이)입니다.",
+        "고정제조간접원가 차이는 두 가지입니다. 소비(예산)차이 = 실제 고정제조간접원가 − 예산 고정제조간접원가, 조업도차이 = 예산 고정제조간접원가 − 배부된 고정제조간접원가(SH × 고정 표준배부율).",
         "실제 원가가 표준보다 작으면 유리(F), 크면 불리(U)입니다."
       ],
       "formulas": [
@@ -1148,7 +1156,7 @@
       ],
       "pitfalls": [
         "가격차이의 AQ가 '구입량'인지 '사용량'인지 문항 조건을 확인하세요. 교재도 구입 시점에 분리하는 경우를 함께 설명합니다.",
-        "고정제조간접원가는 위 두 가지 차이로만 나눕니다. 변동제조간접원가처럼 능률차이를 따로 계산하지 않습니다.",
+        "고정제조간접원가에는 능률차이가 없습니다. 조업도차이는 예산 생산량과 실제 생산량의 차이에서만 생깁니다.",
         "양수 결과가 '불리'인지 공식의 빼는 순서로 다시 확인하세요."
       ],
       "examples": [
@@ -1199,14 +1207,16 @@
       "sources": [
         {
           "ref": "OSX_MGR",
-          "locator": "Compute and Evaluate Materials Variances; Compute and Evaluate Labor Variances; Compute and Evaluate Overhead Variances"
+          "locator": "Compute and Evaluate Materials / Labor / Overhead Variances"
+        },
+        {
+          "ref": "SAYLOR_MGR",
+          "locator": "Fixed Manufacturing Overhead Variance Analysis (소비차이·조업도차이, 능률차이 없음)"
         }
       ],
-      "review_status": "partial",
-      "review_note": "재료·노무·변동제조간접원가 차이 공식은 공개 교재 원문과 대조했습니다. 고정제조간접원가 계산식은 따로 표시했습니다.",
-      "unchecked_points": [
-        "고정제조간접원가의 계산식: 예산차이 = 실제 고정제조간접원가 − 예산 고정제조간접원가, 조업도차이 = 예산 고정제조간접원가 − SH × 고정 표준배부율. — 교재는 두 차이의 개념만 설명하고 계산식은 보여 주지 않아 대조하지 못했습니다."
-      ]
+      "review_status": "source_checked",
+      "review_note": "두 공개 교재 원문과 공식·설명을 대조했고 예시 계산을 검산했습니다. 전문가 검수는 아직 받지 않았습니다.",
+      "unchecked_points": []
     },
     {
       "id": "note-M08",
@@ -1380,8 +1390,9 @@
       "key_points": [
         "관련원가: 대안 사이에 달라지는 미래 원가입니다. 대안과 상관없이 같은 미래 원가는 관련이 없습니다.",
         "매몰원가는 이미 발생해 어떤 대안을 골라도 바뀌지 않으므로 의사결정과 관련이 없습니다. 기존 설비의 장부금액도 매몰원가입니다.",
-        "특별주문: 먼저 정상 생산능력 안에서 소화할 수 있는지 확인합니다. 여유 생산능력이 있으면 주문의 증분수익과 증분원가를 비교합니다.",
+        "특별주문: 먼저 정상 생산능력 안에서 소화할 수 있는지 확인합니다. 유휴 생산능력이 있으면 증분수익과 증분원가만 비교하고, 생산능력이 꽉 차 기존 고객 주문을 포기해야 하면 그 기회원가(포기하는 공헌이익)를 분석에 넣습니다.",
         "자가제조 vs 외부구입: 외부 구입가격과, 외부 구입으로 바꾸면 회피할 수 있는 원가를 비교합니다.",
+        "기회원가는 한 대안을 고를 때 포기하는 효익입니다. 공간·설비를 임대 등 다른 용도로 쓸 수 있으면 그 수익을 기회원가로 분석에 포함합니다(교재: 제품라인 유지·폐지 사례).",
         "제약자원이 있으면 제약자원 단위당 공헌이익(단위당 공헌이익 ÷ 제약자원 사용량)이 큰 제품부터 생산합니다."
       ],
       "formulas": [
@@ -1389,7 +1400,7 @@
           "name": "특별주문 증분이익",
           "expression": "증분이익 = 주문수량 × (특별가격 − 단위당 변동원가) − 추가 고정원가 − 기회원가",
           "variables": [],
-          "conditions": "여유 생산능력이 있으면 기회원가는 0입니다. 생산능력이 부족할 때의 기회원가 반영은 교재로 대조하지 못했습니다."
+          "conditions": "유휴 생산능력이 충분하면 기회원가는 0입니다."
         }
       ],
       "pitfalls": [
@@ -1433,16 +1444,16 @@
       "sources": [
         {
           "ref": "OSX_MGR",
-          "locator": "Identify Relevant Information for Decision-Making; Accept or Reject a Special Order; Make or Buy a Component; Keep or Discontinue a Segment or Product; Decisions When Resources Are Constrained"
+          "locator": "Identify Relevant Information; Special Order; Make or Buy; Keep or Discontinue; Resources Are Constrained"
+        },
+        {
+          "ref": "SAYLOR_MGR",
+          "locator": "Special Order Decisions (생산능력 부족 시 기회원가); Product Line Decisions (Including Opportunity Costs)"
         }
       ],
-      "review_status": "partial",
-      "review_note": "관련원가·매몰원가·제약자원·폐지 판단은 공개 교재 원문과 대조했습니다. 기회원가 관련 두 문장은 따로 표시했습니다.",
-      "unchecked_points": [
-        "여유 생산능력이 없을 때 특별주문을 받으면 포기하는 정규 판매의 공헌이익을 기회원가로 반영합니다.",
-        "자가제조 설비를 다른 용도로 쓸 수 있으면 그 이익도 외부 구입의 효익에 더합니다.",
-        "— 위 두 문장은 교재에서 같은 형태로 확인하지 못했습니다."
-      ]
+      "review_status": "source_checked",
+      "review_note": "두 공개 교재 원문과 대조했고 예시 계산을 검산했습니다. 전문가 검수는 아직 받지 않았습니다.",
+      "unchecked_points": []
     }
   ]
 }

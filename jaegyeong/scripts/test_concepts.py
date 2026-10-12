@@ -58,7 +58,7 @@ class ConceptNotesTest(unittest.TestCase):
                 self.assertTrue(any(x['ref'].startswith('KIFRS') for x in n['sources']),f"{n['id']}: financial notes must cite the K-IFRS standard they were checked against")
         for k,r in self.c['sources'].items():
             self.assertTrue(r['versions'],k)
-            prefix={'OSX':'https://openstax.org/books/','KIFRS':'https://www.kasb.or.kr/'}.get(k.split('_')[0],'https://www.law.go.kr/')
+            prefix={'OSX':'https://openstax.org/books/','KIFRS':'https://www.kasb.or.kr/','SAYLOR':'https://github.com/saylordotorg/'}.get(k.split('_')[0],'https://www.law.go.kr/')
             self.assertTrue(r['url'].startswith(prefix),k)
     def test_example_arithmetic(self):
         checked=0
