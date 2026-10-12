@@ -111,6 +111,16 @@ with sync_playwright() as pw:
  goto('home');expect(page.locator('.next-steps')).to_be_visible();expect(page.locator('.hero')).to_have_count(0)
  page.locator('[data-action=subject][data-subject="재무회계"]').click()
  heads=page.locator('.chapter-title').all_inner_texts();assert len(heads)==len(set(heads)),heads
+ # Theme toggle cycles system → light → dark, persists separately from study records, and scans can stay original.
+ before=json.dumps(state(),sort_keys=True)
+ goto('home');page.locator('#theme-btn').click();assert page.evaluate("document.documentElement.dataset.theme")=='light'
+ page.locator('#theme-btn').click();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
+ page.reload();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
+ assert page.evaluate("getComputedStyle(document.body).backgroundColor")!='rgb(245, 246, 243)'
+ page.locator('.avatar').click();page.locator('#img-invert').uncheck();assert page.evaluate("localStorage.getItem('chagok.img')")=='original'
+ page.locator('#img-invert').check();page.locator('[data-action=theme-set][data-theme=system]').click();page.keyboard.press('Escape')
+ assert page.evaluate("document.documentElement.dataset.theme") is None and page.evaluate("localStorage.getItem('chagok.theme')") is None
+ assert json.dumps(state(),sort_keys=True)==before,'theme settings must not touch chagok.study.v1'
  goto('home');page.locator('#setup-subject').select_option('');page.locator('#setup-part').select_option('F04');expect(page.locator('.setup-concept')).to_contain_text('핵심 개념')
  # Reload, dashboard, desktop and mobile layout, text/original switch, zoom.
  page.reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
@@ -138,4 +148,4 @@ with sync_playwright() as pw:
  m.locator('#keep-session').click();expect(m.locator('.question-card')).to_be_visible()
  assert not errors,errors
  browser.close()
- print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters; no browser errors')
+ print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors')
