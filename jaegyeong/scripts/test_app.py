@@ -96,6 +96,21 @@ with sync_playwright() as pw:
  pending=page.evaluate('BANK_DATA.questions.find(q=>q.eligible&&q.part==="F01").id')
  goto('library');page.locator('#library-query').fill(pending);page.locator('.library-card [data-action=concept-modal]').click()
  expect(page.locator('dialog')).to_contain_text('준비 중');page.locator('dialog [data-action=close-modal]').first.click()
+ # Text view splits ①-④ into blocks without changing the question text; arrow keys move between questions.
+ qid=page.evaluate("BANK_DATA.questions.find(q=>q.eligible&&q.representative&&q.graphics==='none'&&!q.originalOnly&&[1,2,3,4].every(n=>q.text.split('\\n').some(l=>l.trim().startsWith('①②③④'[n-1])))).id")
+ goto('library');page.locator('#library-query').fill(qid);page.locator('.library-card [data-action=preview]').click();page.locator('[data-action=single]').click();start_or_replace()
+ expect(page.locator('.question-text .q-choice')).to_have_count(4)
+ shown,orig=page.evaluate("(id)=>[document.querySelector('.question-text').textContent,BANK_DATA.questions.find(q=>q.id===id).text]",qid)
+ assert ''.join(shown.split())==''.join(orig.split()),'text view must keep the original wording'
+ page.locator('[data-action=finish]').click();page.locator('[data-action=finish-now]').click()
+ retry_ids=[q['id'] for q in page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.part==='F03'&&q.representative).slice(0,3)")]
+ page.evaluate("([k,ids])=>{const s=JSON.parse(localStorage.getItem(k));s.active={id:'arrow',title:'arrow',ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null};localStorage.setItem(k,JSON.stringify(s));}",[KEY,retry_ids])
+ goto('quiz');page.reload();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
+ page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
+ # Returning learners get next steps; parts are grouped so each chapter heading appears once.
+ goto('home');expect(page.locator('.next-steps')).to_be_visible();expect(page.locator('.hero')).to_have_count(0)
+ page.locator('[data-action=subject][data-subject="재무회계"]').click()
+ heads=page.locator('.chapter-title').all_inner_texts();assert len(heads)==len(set(heads)),heads
  goto('home');page.locator('#setup-subject').select_option('');page.locator('#setup-part').select_option('F04');expect(page.locator('.setup-concept')).to_contain_text('핵심 개념')
  # Reload, dashboard, desktop and mobile layout, text/original switch, zoom.
  page.reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
@@ -123,4 +138,4 @@ with sync_playwright() as pw:
  m.locator('#keep-session').click();expect(m.locator('.question-card')).to_be_visible()
  assert not errors,errors
  browser.close()
- print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept); no browser errors')
+ print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters; no browser errors')

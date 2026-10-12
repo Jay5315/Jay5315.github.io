@@ -503,3 +503,36 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .segments button{font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Round 3: choice blocks, progress, next steps, result rows */
+.question-text .q-stem{display:block}
+.question-text .q-choices{display:grid;gap:10px;margin-top:18px}
+.question-text .q-choice{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:start;padding:10px 14px;border-radius:10px;background:var(--surface-2)}
+.question-text .q-choice b{font-weight:800;color:var(--brand-text);font-size:19px;line-height:1.75}
+.question-text .q-choice>span{min-width:0}
+.part-progress{display:flex!important;align-items:center;gap:8px;color:var(--muted)!important}
+.part-progress .bar{width:64px;height:5px;border-radius:999px;background:var(--surface-3);overflow:hidden;flex-shrink:0}
+.part-progress .bar i{display:block;height:100%;background:var(--ok);border-radius:999px}
+.next-steps{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin-bottom:22px;box-shadow:var(--shadow)}
+.next-steps h2{font-size:18px;margin-bottom:12px}
+.next-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.next-tile{display:flex;align-items:center;gap:12px;text-align:left;padding:14px 16px;border-radius:12px;background:var(--brand-soft);color:var(--brand-text);min-height:72px;border:1px solid transparent}
+.next-tile:hover{border-color:var(--brand)}
+.next-tile span{flex:1;min-width:0}
+.next-tile b{display:block;font-size:16px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.next-tile small{display:block;font-size:13.5px;color:var(--ink-2);margin-top:1px}
+.next-tile>svg:first-child{width:24px;height:24px}
+.score-inner span{font-size:12px;max-width:96px;text-align:center;line-height:1.35;margin-top:2px}
+.answer-status.good{color:var(--ok)}
+.answer-status.none{color:var(--faint);font-weight:600}
+.result-row .grow{text-align:left}
+.result-stem{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;line-height:1.55}
+.concept-icon{color:var(--ok);background:var(--ok-bg);border-color:var(--ok-line)}
+@media(max-width:640px){
+ .question-text .q-choice{grid-template-columns:26px 1fr;padding:9px 11px}
+ .question-text .q-choice b{font-size:18px}
+ .result-stem{-webkit-line-clamp:2}
+ .next-steps{padding:16px}
+ .next-grid{grid-template-columns:1fr}
+ .part-progress .bar{width:48px}
+}
