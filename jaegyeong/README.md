@@ -4,9 +4,9 @@
 
 **다른 AI가 이어서 작업할 때:** [HANDOFF.md](HANDOFF.md)를 먼저 읽으세요.
 
-**추가 요청:** [파트별 핵심 개념·학습 팁 구현 계획](CONCEPT_NOTES_PLAN.md) (아직 미구현)
+**개념 노트:** [파트별 핵심 개념·학습 팁](CONCEPT_NOTES_PLAN.md) — 74개 중 15개 파트 작성, 나머지는 '준비 중' 표시
 
-과목·74개 파트별 기출 풀이, 즉시 채점, 오답 노트, 즐겨찾기, 이어 풀기, 기록 백업·복원을 제공하는 정적 웹앱입니다. HTML/CSS/JavaScript만으로 실행되며 외부 API나 서버 애플리케이션, 프런트엔드 빌드가 필요하지 않습니다.
+과목·74개 파트별 기출 풀이, 파트별 핵심 개념 노트, 즉시 채점, 오답 노트, 즐겨찾기, 이어 풀기, 기록 백업·복원을 제공하는 정적 웹앱입니다. HTML/CSS/JavaScript만으로 실행되며 외부 API나 서버 애플리케이션, 프런트엔드 빌드가 필요하지 않습니다.
 
 ## 폴더
 
@@ -15,7 +15,7 @@
 | `index.html`, `assets/app.css`, `assets/app.js` | 실행 화면과 기능 |
 | `assets/bank-data.js` | 웹앱용으로 생성한 데이터 번들 |
 | `sources/`, `images/` | 원본 PDF·답안과 문항 이미지 |
-| `data/` | 원본문항, 중복·변형 매핑, 파트 분류, 검토 목록 |
+| `data/` | 원본문항, 중복·변형 매핑, 파트 분류, 검토 목록, 개념 노트(`concept-notes.json`) |
 | `scripts/` | 추출·중복 정리·분류·번들 생성·테스트·패키징 |
 | `review.html` | 중복 후보·원문 보류·분류 검토용 화면 |
 | `reports/` | 검토 결과, 문항 목록 CSV, 화면 확인 자료 |
@@ -60,6 +60,7 @@ python jaegyeong/scripts/build_bank.py --reextract
 ```sh
 python jaegyeong/scripts/test_bank.py
 python jaegyeong/scripts/test_parts.py
+python jaegyeong/scripts/test_concepts.py
 
 # 브라우저 테스트용 추가 설치
 python -m pip install -r jaegyeong/requirements-dev.txt
@@ -83,7 +84,19 @@ python jaegyeong/scripts/package_app.py
 
 원본 4,560문항, 중복 정리 4,322항목, 학습 가능 4,321항목, 기본 유형 대표 4,144항목입니다. 중복 유사 후보 1,649쌍과 파트 분류 검토 126항목은 추가 검토 대상으로 보존합니다. 자세한 기준은 [중복 정리 결과](reports/중복정리결과.md)와 [파트 분류 결과](reports/파트분류결과.md)를 확인하세요.
 
-개인 학습 기록은 `localStorage`의 `chagok.study.v1`에 저장합니다. GitHub에는 개인 오답·즐겨찾기 기록이 올라가지 않습니다. 브라우저나 기기를 바꾸기 전에 앱에서 백업하고 새 브라우저에서 복원하세요. 해설, 로그인, 자동 기기 동기화, 최신 법령에 따른 정답 재검증은 제공하지 않습니다.
+## 개념 노트
+
+편집 원본은 `data/concept-notes.json`이며 `build_app_data.py`가 번들에 넣습니다(분류·문항 데이터는 바뀌지 않음). 노트마다 `review_status`를 둡니다.
+
+| 상태 | 뜻 | 현재 |
+|---|---|---|
+| `source_checked` | 법령 조문을 판본별로 원문 대조 (전문가 검수 전) | 세무 6개 (C02·C08·C11·I02·V03·V04) |
+| `calc_checked` | 계산식·예시 검증, 외부 출처 미대조 | 원가 5개 (M05·M07·M08·M11·M14) |
+| `needs_source` | 초안, 회계기준 원문 대조 필요 | 재무 4개 (F04·F05·F15·F21) |
+
+세법 노트는 2024·2025·2026년 시행 판본을 비교했고, 연도별로 다른 수치는 `year_table`에 연도 열로 나눴습니다(예: 2026년 법인세율 1%p 인상, 배당가산율 11%는 2027년 지급분부터). 문제의 `taxYear`와 노트 대조 범위를 비교해 풀이 화면에 표시합니다. 출처·확인 방법은 파일의 `verification`, `sources`에 있습니다.
+
+개인 학습 기록은 `localStorage`의 `chagok.study.v1`에 저장합니다. GitHub에는 개인 오답·즐겨찾기 기록이 올라가지 않습니다. 브라우저나 기기를 바꾸기 전에 앱에서 백업하고 새 브라우저에서 복원하세요. 문항별 해설, 로그인, 자동 기기 동기화, 최신 법령에 따른 정답 재검증은 제공하지 않습니다.
 
 ## 배포
 
