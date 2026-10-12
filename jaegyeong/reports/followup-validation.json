@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-12",
+  "scope": "Final local generated data and Chromium UI; public deployment verified separately for exact pushed commit",
+  "registered_explanations": 3903,
+  "baseline_registered": 2854,
+  "added_net": 1049,
+  "review_required": 418,
+  "unprocessed_question_count": 0,
+  "concept_notes": 74,
+  "concept_statuses": {
+    "source_checked": 66,
+    "partial": 8
+  },
+  "test_suites": [
+    "test_bank",
+    "test_parts",
+    "test_concepts",
+    "test_explanations",
+    "test_app",
+    "test_browser",
+    "test_explanations_app"
+  ],
+  "all_suites_passed": true,
+  "unit_test_cases_passed": 36,
+  "rendered_explanation_count": 3903,
+  "actual_grading_flow_count": 167,
+  "concept_notes_desktop_mobile": 74,
+  "explanation_calculation_checks": 4063,
+  "concept_calculation_checks": 314,
+  "original_bank_bundle_fields_unchanged": true,
+  "baseline_2854_prose_calculations_order_preserved": true,
+  "baseline_source_objects_order_preserved": true,
+  "initial_finance_metadata_only_upgrades": 10,
+  "question_ids_official_answers_classification_tax_year_unchanged": true,
+  "study_storage_unchanged": "chagok.study.v1",
+  "root_site_unchanged": true,
+  "javascript_browser_errors": 0,
+  "expert_review_completed": false,
+  "unique_subagents_used": 9,
+  "max_simultaneous_subworkers": 6,
+  "max_simultaneous_slots_including_main": 7,
+  "recursive_subagent_creation": false,
+  "extra_recheck_attempts": 188,
+  "extra_rechecked_unique_questions": 169,
+  "extra_recheck_new_explanations": 71,
+  "review_categories": {
+    "source_unverified": 312,
+    "answer_suspected": 53,
+    "parse_problem": 52,
+    "calculation_unresolved": 1
+  },
+  "public_tls_certificate_validation_enabled": true,
+  "source_raw_pdfs_republished": false,
+  "cloud_setup_draft_saved": true,
+  "cloud_environment_publish_claimed": false,
+  "completed_test_logs": {
+    "test_bank": {
+      "sha256": "c63e93346a86f3963942eb5831cc6dbb2928ab6359a856d40652cc1be934f1c1",
+      "result": "passed"
+    },
+    "test_parts": {
+      "sha256": "9cf3dde6951e985329c9b7e753a508535754645639e146d2be97e81cc9e4c236",
+      "result": "passed"
+    },
+    "test_concepts": {
+      "sha256": "1ef21b24f2acc64922fdd4c55e21f10fd0e2b5154a2f7c6c9cde0c3e2f36b3a4",
+      "result": "passed"
+    },
+    "test_explanations": {
+      "sha256": "5b6003059639251fb21726f0a4e5c7eb0de23731a91af9e402ddbbc2da4384e8",
+      "result": "passed"
+    },
+    "test_app": {
+      "sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "result": "passed"
+    },
+    "test_browser": {
+      "sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "result": "passed"
+    },
+    "test_explanations_app": {
+      "sha256": "8cc9a906d6eca7b00e3648e63e344d4c1dc88d5b59f98094d7a0e5af0c39093a",
+      "result": "passed"
+    }
+  },
+  "data_sha256": {
+    "data/explanations.json": "3d7f80eb3380d8717b67aa666ccb13247490b64bde46b7bb03038c82bd7bc4a7",
+    "data/concept-notes.json": "07a6a4c7a33eccb1d3163771f254fd65bc8d14c9444f1e300821b6771703954d",
+    "assets/bank-data.js": "6881f44949f87787a177fd1da8f2270319cd811fbe4ac86c32372e5d1c8c7438"
+  },
+  "completed_importers_idempotent": true,
+  "completed_importer_replays": 6,
+  "javascript_syntax_python_compile_diff_check": "passed",
+  "independent_final_qa_selected_finance": 60,
+  "independent_final_qa_current_finance_passed": 59,
+  "independent_final_qa_withdrawn": 1,
+  "independent_final_qa_final_cost_passed": 8,
+  "independent_final_qa_new_M07_checks_passed": 7
+}

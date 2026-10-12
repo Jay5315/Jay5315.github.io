@@ -403,6 +403,7 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .concept-card .chip{flex-shrink:0}
 .note-page{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:36px 40px;max-width:860px}
 .note-badges{display:flex;flex-wrap:wrap;gap:6px}
+.note-badges .chip{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
 .note-summary{font-size:19px;line-height:1.8;color:var(--ink);margin:18px 0 4px;font-weight:600;letter-spacing:-.025em}
 .note-sec{margin-top:34px}
 .note-sec h3{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:12px;display:flex;align-items:center;gap:10px}
@@ -443,6 +444,7 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .related-chip.empty{border-style:dashed;color:var(--muted);font-weight:600}
 .related-chip small{font-size:12px;color:var(--faint);margin-left:4px}
 .source-box{background:var(--surface-2);border-radius:16px;padding:20px 22px}
+.source-box li{min-width:0;overflow-wrap:anywhere}
 .basis{display:grid;grid-template-columns:max-content 1fr;gap:8px 16px;margin:0;font-size:15px}
 .basis dt{color:var(--muted);font-weight:650}
 .basis dd{margin:0;line-height:1.7;color:var(--ink-2)}

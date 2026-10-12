@@ -1,6 +1,7 @@
 """Validate authored explanations before they can be published in the app bundle."""
 import hashlib
 import json
+import math
 
 
 def question_fingerprint(q):
@@ -39,6 +40,13 @@ def validate_explanations(data, questions, entry_ids, part_ids):
             raise ValueError(f'{id}: partial review must specify unchecked content')
         if n['review_status'] == 'source_checked' and n['unchecked_points']:
             raise ValueError(f'{id}: fully checked status contradicts unchecked points')
+        for c in n['checks']:
+            if (not isinstance(c.get('label'), str) or not c['label'].strip()
+                    or not isinstance(c.get('expr'), str) or not c['expr'].strip()
+                    or isinstance(c.get('expected'), bool)
+                    or not isinstance(c.get('expected'), (int, float))
+                    or not math.isfinite(c['expected'])):
+                raise ValueError(f'{id}: incomplete arithmetic check')
         for s in n['sources']:
             if s['ref'] not in data['sources'] or not s['locator']:
                 raise ValueError(f'{id}: unknown or unlocated verified source')

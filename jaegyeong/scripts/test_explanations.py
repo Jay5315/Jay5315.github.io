@@ -32,6 +32,28 @@ class ExplanationTests(unittest.TestCase):
     def validate(self, data=None, qs=None):
         return validate_explanations(data or self.data, qs or self.qs, self.entries, self.parts)
 
+    def assert_preserved_or_source_upgraded(self, id, expected_hash):
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        upgrades = {u['question_id']: u for u in self.audit.get('baseline_source_upgrades', [])}
+        if id not in upgrades:
+            self.assertEqual(digest(self.notes[id]), expected_hash, id)
+            return
+        u = upgrades[id]
+        self.assertIn(id, self.baseline_ids)
+        self.assertEqual(self.qs[id]['subject'], '재무회계')
+        self.assertEqual(digest(u['before']), expected_hash, id)
+        self.assertEqual(digest(self.notes[id]), u['after_hash'], id)
+        self.assertEqual(u['before']['review_status'], 'partial')
+        self.assertEqual(self.notes[id]['review_status'], 'source_checked')
+        self.assertTrue(u['source_reads'] and u['reason'] and u['validation'], id)
+        self.assertEqual(set(u['changed_fields']), {'sources', 'review_status', 'review_note', 'unchecked_points'})
+        for field in set(u['before']) - set(u['changed_fields']):
+            self.assertEqual(self.notes[id][field], u['before'][field], id)
+        self.assertEqual(self.notes[id]['sources'][:len(u['before']['sources'])], u['before']['sources'], id)
+        self.assertFalse(self.notes[id]['unchecked_points'])
+
     def test_coverage_original_binding_and_four_options(self):
         self.validate()
         self.assertGreaterEqual(len(self.notes), 30)
@@ -66,7 +88,8 @@ class ExplanationTests(unittest.TestCase):
     def test_review_status_and_exact_source_years(self):
         self.assertFalse(self.data['verification']['expert_reviewed'])
         for id, n in self.notes.items():
-            if id in self.baseline_ids and self.qs[id]['subject'] == '재무회계':
+            upgraded = {u['question_id'] for u in (self.audit or {}).get('baseline_source_upgrades', [])}
+            if id in self.baseline_ids and self.qs[id]['subject'] == '재무회계' and id not in upgraded:
                 self.assertEqual(n['review_status'], 'partial')
                 self.assertTrue(n['unchecked_points'])
                 self.assertTrue(all(s['ref'].startswith('NOTE_') for s in n['sources']))
@@ -87,7 +110,7 @@ class ExplanationTests(unittest.TestCase):
             return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
                                              separators=(',', ':')).encode()).hexdigest()
         for id, hash in self.audit['baseline_hashes'].items():
-            self.assertEqual(digest(self.notes[id]), hash, id)
+            self.assert_preserved_or_source_upgraded(id, hash)
         for ref, hash in self.audit['baseline_source_hashes'].items():
             self.assertEqual(digest(self.data['sources'][ref]), hash, ref)
         self.assertEqual(self.audit['registered_count'], len(self.notes))
@@ -115,6 +138,9 @@ class ExplanationTests(unittest.TestCase):
         reviews = {n['question_id']: n for n in self.audit['review']}
         resolved = {n['question_id']: n for n in self.audit['review_resolutions']
                     if 'recheck_batch_id' in n}
+        later = {n['question_id']: n for n in self.audit['review_resolutions']
+                 if 'round3_batch_id' in n or 'extra_batch_id' in n}
+        withdrawn = {n['question_id'] for n in self.audit.get('final_quality_withdrawals', [])}
         for b in records:
             self.assertTrue(20 <= len(b['assigned_ids']) <= 30)
             prior = {n['question_id'] for n in b['previous_review']}
@@ -128,8 +154,172 @@ class ExplanationTests(unittest.TestCase):
                 self.assertEqual(resolved[id]['recheck_batch_id'], b['batch_id'])
                 self.assertTrue(resolved[id]['previous_reason'])
             for id in remaining:
-                self.assertEqual(reviews[id]['recheck_batch_id'], b['batch_id'])
+                if id in later:
+                    if id in withdrawn:
+                        self.assertTrue(reviews[id]['final_quality_withdrawal'])
+                        self.assertNotIn(id,self.notes)
+                    else:self.assertIn(id, self.notes)
+                    self.assertTrue(later[id]['previous_reason'])
+                else:
+                    self.assertEqual(reviews[id]['recheck_batch_id'], b['batch_id'])
         self.assertEqual(self.audit['second_pass_added_count'], len(resolved))
+
+    def test_followup_review_transitions_and_existing_explanations(self):
+        if not self.audit or not self.audit.get('third_pass_batches'):
+            self.skipTest('No follow-up audit yet')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        records = self.audit['third_pass_batches']
+        ids = [id for b in records for id in b['assigned_ids']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(len(ids), self.audit['third_pass_processed_count'])
+        self.assertLessEqual(len(ids), self.audit['third_pass_target_count'])
+        pending = set(self.audit.get('third_pass_unprocessed_ids', []))
+        if 'third_pass_unprocessed_ids' in self.audit:
+            self.assertFalse(set(ids) & pending)
+            self.assertEqual(len(ids) + len(pending), self.audit['third_pass_target_count'])
+            self.assertEqual(self.audit['third_pass_complete'], not pending)
+        for id, h in self.audit['third_pass_baseline_hashes'].items():
+            self.assert_preserved_or_source_upgraded(id, h)
+        for ref, h in self.audit['third_pass_baseline_source_hashes'].items():
+            self.assertEqual(digest(self.data['sources'][ref]), h, ref)
+        reviews = {n['question_id']: n for n in self.audit['review']}
+        resolved = {n['question_id']: n for n in self.audit['review_resolutions']
+                    if 'round3_batch_id' in n}
+        extra = {n['question_id']: n for n in self.audit['review_resolutions']
+                 if 'extra_batch_id' in n}
+        withdrawn = {n['question_id'] for n in self.audit.get('final_quality_withdrawals', [])}
+        for b in records:
+            assigned, done, remaining = map(set, (b['assigned_ids'], b['resolved_ids'], b['remaining_ids']))
+            self.assertTrue(20 <= len(assigned) <= 30)
+            self.assertFalse(done & remaining)
+            self.assertEqual(assigned, done | remaining)
+            self.assertEqual(assigned, {n['question_id'] for n in b['previous_review']})
+            self.assertTrue(b['worker_validation'] and b['output_hash'])
+            for id in done:
+                if id in withdrawn:
+                    self.assertNotIn(id,self.notes)
+                    self.assertTrue(reviews[id]['final_quality_withdrawal'])
+                else:self.assertIn(id, self.notes)
+                self.assertEqual(resolved[id]['round3_batch_id'], b['batch_id'])
+            for id in remaining:
+                if id in extra:
+                    self.assertEqual(extra[id]['previous_review']['round3_batch_id'], b['batch_id'])
+                    self.assertIn(id, self.notes)
+                else:
+                    self.assertEqual(reviews[id]['round3_batch_id'], b['batch_id'])
+        self.assertEqual(self.audit['third_pass_added_count'], len(resolved))
+        self.assertEqual(set(self.notes), (set(self.audit['third_pass_baseline_hashes']) | set(resolved) | set(extra))-withdrawn)
+
+    def test_independent_cross_review_preserves_prior_rounds(self):
+        records = (self.audit or {}).get('extra_rechecks', [])
+        if not records:
+            self.skipTest('No extra cross-review imported yet')
+        ids = [id for b in records for id in b['assigned_ids']]
+        self.assertEqual(len(ids), self.audit['extra_rechecked_count'])
+        for round_number in {b.get('extra_round',4) for b in records}:
+            round_ids=[id for b in records if b.get('extra_round',4)==round_number for id in b['assigned_ids']]
+            self.assertEqual(len(round_ids),len(set(round_ids)),'overlap within one extra round')
+        if 'extra_rechecked_unique_count' in self.audit:
+            self.assertEqual(len(set(ids)),self.audit['extra_rechecked_unique_count'])
+        resolved = {r['question_id']: r for r in self.audit['review_resolutions'] if 'extra_batch_id' in r}
+        reviews = {r['question_id']: r for r in self.audit['review']}
+        self.assertEqual(len(resolved), self.audit['extra_added_count'])
+        for index,b in enumerate(records):
+            self.assertTrue(20 <= len(b['assigned_ids']) <= 30)
+            done, remaining = set(b['resolved_ids']), set(b['remaining_ids'])
+            self.assertFalse(done & remaining)
+            self.assertEqual(set(b['assigned_ids']), done | remaining)
+            self.assertEqual(set(b['assigned_ids']), {r['question_id'] for r in b['previous_review']})
+            self.assertTrue(b['output_hash'] and b['worker_validation'])
+            for id in done:
+                self.assertIn(id, self.notes)
+                self.assertEqual(resolved[id]['extra_batch_id'], b['batch_id'])
+                self.assertTrue(resolved[id]['previous_reason'])
+            for id in remaining:
+                later=[x for x in records[index+1:] if id in x['assigned_ids']]
+                if later:
+                    previous=next(r for r in later[0]['previous_review'] if r['question_id']==id)
+                    self.assertEqual(previous['extra_batch_id'],b['batch_id'])
+                if id in resolved:
+                    self.assertIn(id,self.notes)
+                else:
+                    self.assertEqual(reviews[id]['extra_batch_id'],later[-1]['batch_id'] if later else b['batch_id'])
+
+    def test_source_links_point_to_actual_law_repository(self):
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        for ref, source in self.data['sources'].items():
+            self.assertNotIn('github.com/legalize-dev/legalize-kr/', source['url'], ref)
+        for correction in (self.audit or {}).get('source_url_corrections', []):
+            ref = correction['ref']
+            self.assertEqual(digest(correction['before']), correction['before_hash'])
+            self.assertEqual(digest(self.data['sources'][ref]), correction['after_hash'])
+            self.assertTrue(correction['git_blob_sha256'] and correction['reason'])
+            before, after = dict(correction['before']), dict(correction['after'])
+            self.assertTrue(after.pop('url').startswith('https://github.com/legalize-kr/legalize-kr/blob/'))
+            before.pop('url')
+            self.assertEqual(before, after)
+
+    def test_targeted_prose_amendments_keep_answers_and_calculations(self):
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        histories = {}
+        withdrawn = {n['question_id']:n for n in (self.audit or {}).get('final_quality_withdrawals', [])}
+        for amendment in (self.audit or {}).get('third_pass_prose_amendments', []):
+            id = amendment['question_id']
+            self.assertNotIn(id, self.audit['third_pass_baseline_hashes'])
+            self.assertTrue(set(amendment['changed_fields']) <= {'summary', 'steps', 'option_notes'})
+            self.assertTrue(amendment['reason'] and amendment['delta_hash'])
+            histories.setdefault(id, []).append(amendment)
+        for id, chain in histories.items():
+            for index, amendment in enumerate(chain):
+                after = (chain[index + 1]['before'] if index + 1 < len(chain)
+                         else withdrawn[id]['before'] if id in withdrawn else self.notes[id])
+                self.assertEqual(digest(after), amendment['after_hash'], id)
+                for field, value in amendment['before'].items():
+                    if field not in amendment['changed_fields']:
+                        self.assertEqual(after[field], value, id + ': ' + field)
+                for old, new in zip(amendment['before']['option_notes'],after['option_notes']):
+                    self.assertEqual({k:v for k,v in old.items() if k!='reason'},
+                                     {k:v for k,v in new.items() if k!='reason'},id)
+
+    def test_quality_withdrawals_preserve_history_and_official_questions(self):
+        def digest(x):
+            return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        reviews={r['question_id']:r for r in (self.audit or {}).get('review',[])}
+        withdrawn=(self.audit or {}).get('final_quality_withdrawals',[])
+        ids=[r['question_id'] for r in withdrawn]
+        self.assertEqual(len(ids),len(set(ids)))
+        for row in withdrawn:
+            id=row['question_id']
+            self.assertNotIn(id,self.audit['third_pass_baseline_hashes'])
+            self.assertNotIn(id,self.notes)
+            self.assertTrue(reviews[id]['final_quality_withdrawal'])
+            self.assertEqual(row['before_hash'],digest(row['before']))
+            self.assertEqual(row['official_answers_preserved'],self.qs[id]['answers'])
+            self.assertTrue(row['source_reads'] and row['worker_validation'] and row['proposal_hash'])
+            self.assertTrue(any(id in b['resolved_ids'] for b in self.audit['third_pass_batches']))
+        if withdrawn:
+            self.assertEqual(self.audit['third_pass_net_added_count'],self.audit['third_pass_added_count']-len(ids))
+
+    def test_source_locator_corrections_preserve_explanation_content(self):
+        def digest(x):
+            return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        for row in (self.audit or {}).get('final_source_locator_amendments',[]):
+            id=row['question_id'];after=self.notes[id];before=row['before']
+            self.assertNotIn(id,self.audit['third_pass_baseline_hashes'])
+            self.assertEqual(digest(after),row['after_hash'])
+            for field in set(before)-{'sources'}:self.assertEqual(before[field],after[field],id)
+            self.assertEqual([s['ref'] for s in before['sources']],[s['ref'] for s in after['sources']],id)
+            ref=row['source_ref'];source=self.data['sources'][ref]
+            self.assertEqual(digest(source),row['source_after_hash'])
+            for field in set(row['source_before'])-{'verification'}:
+                self.assertEqual(source[field],row['source_before'][field],ref)
+            self.assertTrue(row['reason'] and row['proposal_hash'] and row['evidence_parent_sha256'])
 
     def test_legal_source_effective_dates_do_not_follow_question_scope(self):
         for id, n in self.notes.items():
@@ -156,13 +346,18 @@ class ExplanationTests(unittest.TestCase):
             qs[id][field] = value
             with self.assertRaises(ValueError, msg=field):
                 self.validate(qs=qs)
-        for mutate in ('duplicate', 'answer', 'source', 'status', 'option'):
+        for mutate in ('duplicate', 'answer', 'source', 'status', 'unchecked', 'option', 'check_label', 'check_number'):
             d = copy.deepcopy(self.data)
             if mutate == 'duplicate': d['items'].append(d['items'][0])
             elif mutate == 'answer': d['items'][0]['answers'] = [1]
             elif mutate == 'source': d['items'][0]['sources'][0]['ref'] = 'invented'
-            elif mutate == 'status': d['items'][0]['review_status'] = 'source_checked'
+            elif mutate == 'status': d['items'][0]['review_status'] = 'invented'
+            elif mutate == 'unchecked':
+                d['items'][0]['review_status'] = 'source_checked'
+                d['items'][0]['unchecked_points'] = ['검증하지 않은 내용']
             elif mutate == 'option': d['items'][0]['option_notes'][0]['is_answer'] = True
+            elif mutate == 'check_label': d['items'][0]['checks'][0].pop('label')
+            elif mutate == 'check_number': d['items'][0]['checks'][0]['expected'] = float('inf')
             with self.assertRaises(ValueError, msg=mutate): self.validate(d)
 
     def test_bundle_has_exact_explanations_and_unchanged_question_rows(self):

@@ -81,7 +81,7 @@ with sync_playwright() as pw:
  assert state()==before_notes,'Reading concept notes changed study records'
  goto('concepts')
  page.locator('[data-action=concept-subject][data-subject="세무회계"]').click();expect(page.locator('.concept-card')).to_have_count(28)
- goto('concept/F01');expect(page.locator('.empty')).to_contain_text('준비 중')
+ goto('concept/F01');expect(page.locator('.note-page .note-summary')).to_be_visible()
  goto('concept/C11');expect(page.locator('.note-page h3').first).to_contain_text('핵심 개념')
  expect(page.locator('.year-table thead')).to_contain_text('2026년');expect(page.locator('.source-box')).to_contain_text('법인세법')
  page.locator('.note-page [data-action=concept][data-id=C02]').click();expect(page.locator('h1')).to_contain_text('세무조정과 소득처분')
@@ -98,15 +98,28 @@ with sync_playwright() as pw:
  goto('library');page.locator('#library-query').fill(qid);page.locator('.library-card [data-action=concept-modal]').click()
  expect(page.locator('dialog .notice.ok')).to_contain_text('2025년');expect(page.locator('dialog .year-table th.hi')).to_contain_text('2025년')
  page.locator('dialog [data-action=close-modal]').first.click()
- # Wrong-answer review links to the part note; pending parts still open safely.
+ # Wrong-answer review links to the part note; newly written financial notes open too.
  page.locator('.library-card [data-action=preview]').click();page.locator('[data-action=single]').click();start_or_replace()
  q=active_q();choose(next(n for n in [1,2,3,4] if n not in q['answers']))
  goto('wrong');card=page.locator('.library-card').filter(has_text=q['exam'])
  card.first.locator('[data-action=concept-modal]').click();expect(page.locator('dialog .note-title')).to_contain_text('과세표준')
  page.locator('dialog a[data-action=close-modal-link]').click();expect(page.locator('h1')).to_contain_text('법인세 과세표준')
- pending=page.evaluate('BANK_DATA.questions.find(q=>q.eligible&&q.part==="F01").id')
- goto('library');page.locator('#library-query').fill(pending);page.locator('.library-card [data-action=concept-modal]').click()
- expect(page.locator('dialog')).to_contain_text('준비 중');page.locator('dialog [data-action=close-modal]').first.click()
+ financial=page.evaluate('BANK_DATA.questions.find(q=>q.eligible&&q.part==="F01").id')
+ goto('library');page.locator('#library-query').fill(financial);page.locator('.library-card [data-action=concept-modal]').click()
+ expect(page.locator('dialog .note-summary')).to_be_visible()
+ expect(page.locator('dialog .source-box')).to_contain_text('IAS1')
+ page.locator('dialog [data-action=close-modal]').first.click()
+ # Keep the missing-note regression using an isolated fixture now that all 74 parts are written.
+ fixture=json.loads((R/'assets/bank-data.js').read_text()[len('window.BANK_DATA='):-2])
+ fixture['concepts']['notes']=[n for n in fixture['concepts']['notes'] if n['part_id']!='F01']
+ pending_context=browser.new_context()
+ pending_context.route('**/bank-data.js',lambda route:route.fulfill(
+  status=200,content_type='application/javascript',body='window.BANK_DATA='+json.dumps(fixture,ensure_ascii=False)+';'))
+ pending_page=pending_context.new_page();pending_page.on('pageerror',lambda e:errors.append(str(e)))
+ pending_page.goto(URL+'#concept/F01');expect(pending_page.locator('.empty')).to_contain_text('준비 중')
+ pending_page.goto(URL+'#library');pending_page.locator('#library-query').fill(financial)
+ pending_page.locator('.library-card [data-action=concept-modal]').click()
+ expect(pending_page.locator('dialog')).to_contain_text('준비 중');pending_context.close()
  # Text view splits ①-④ into blocks without changing the question text; arrow keys move between questions.
  qid=page.evaluate("BANK_DATA.questions.find(q=>q.eligible&&q.representative&&q.graphics==='none'&&!q.originalOnly&&[1,2,3,4].every(n=>q.text.split('\\n').some(l=>l.trim().startsWith('①②③④'[n-1])))).id")
  goto('library');page.locator('#library-query').fill(qid);page.locator('.library-card [data-action=preview]').click();page.locator('[data-action=single]').click();start_or_replace()

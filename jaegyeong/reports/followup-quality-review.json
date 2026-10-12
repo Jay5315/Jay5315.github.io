@@ -1,0 +1,3178 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-12",
+  "scope": "Selected 60 finance questions plus final 8 cost questions and M07 new append; not expert validation of all questions",
+  "parent_current_item_hashes_confirmed": true,
+  "expert_review_completed": false,
+  "reviews": [
+    {
+      "task": "finance_a 선정60개 독립최종QA",
+      "checked_on": "2026-10-12T16:09:37.929199+00:00",
+      "scope": {
+        "selected_count": 60,
+        "input_paths": [
+          "finance_a.final-qa-01.input.json",
+          "finance_a.final-qa-02.input.json",
+          "finance_a.final-qa-03.input.json"
+        ],
+        "initial_2854_excluded": true,
+        "initial_2854_revalidated": false,
+        "recursive_agents_used": false,
+        "repo_or_approved_output_modified_by_this_agent": false
+      },
+      "totals": {
+        "selected": 60,
+        "current_registered": 59,
+        "passed": 59,
+        "source_locator_correction_proposed": 0,
+        "known_withdrawal": 1,
+        "original_pdf_and_images_read": 60,
+        "official_answers_match": 60,
+        "four_options_checked": 240,
+        "math_checks_original_qa": 195,
+        "math_checks_current_registered": 192,
+        "math_checks_withdrawn": 3,
+        "new_question_or_math_defects": 0,
+        "prose_delta_items": 19,
+        "approved_source_only_delta_items": 1,
+        "source_objects_actual_read_for_core_rules": 33
+      },
+      "knownwithdrawal": {
+        "question_id": "2025-05-037",
+        "reason": "원문과PDF공통조건에정액법/소비형태근거가없음; IAS16.60~62는일반정액법기본가정허용아님",
+        "proposal_preexisting": "finance_a.final-qa.2025-05-037.narrow-proposal.json",
+        "proposal_sha256": "4552d987b61384762ea8ceef3fc28dd8c2a9618ba4393c42ce09dfb4c1168583",
+        "current_registered": false,
+        "official_answers_preserved": [
+          4
+        ],
+        "checks_count_before_withdrawal": 3,
+        "counted_as_pass": false
+      },
+      "narrow_source_proposal": {
+        "path": "2026-07-016.source-locator.narrow-proposal.json",
+        "sha256": "ca547f6c015116c320ede899802e8d2067ab287a0429c13640b901d064bb7eba",
+        "applied_and_current_verified": true
+      },
+      "limits": [
+        "선정60개만검증. 초기2854개, 비선정문항전체·앱실행/학습기록마이그레이션·배포는검증범위밖.",
+        "EU자료는비공식재형식화보존판;원발행자HTML/PDF/서명hash직접검증아님.",
+        "KASB7개는제공된공식다운로드로그sha와localPDF실제본문을대조한현행2026보존판;모든과거시험시점의한국어전체판본확인아님.",
+        "AASB/싱가포르/공개교재는표시된좁은공통규칙·계산원리만. 국가별예외및USGAAP전체를KIFRS로확대하지않음.",
+        "IFRS18의2027의무시행내용을2026해설에소급하지않음.",
+        "자료저작권원PDF는tmp에서읽기만했으며커밋/복제배포하지않음.",
+        "완성해설재생성없음;전문가검수완료주장없음."
+      ],
+      "delta_verification": [
+        {
+          "question_id": "2022-06-017",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "3152f8d64c7c5f2599225562998b6c64bbb8eed7d61a5a86cdf7e572ea381161",
+          "current_hash": "fc5f67a8085b07188c46ab79f8fafce5f6fdcd14d14211ee1d3297b44f2c7047",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2022-06-016",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "a235aa9913a2755ca996bcd0591b8267caed708107528cacf6eec1a468889564",
+          "current_hash": "5a471642d64a7280ef79462b025e5dfc638eb4484ad1c4158de30f3c2bc1ccec",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-07-016",
+          "fields": [
+            "sources"
+          ],
+          "input_hash": "b1168e6856e008af85ad86a5f7429d9a563b7207bff3e77863b9cb01f8eea6e4",
+          "current_hash": "508c7c60531a4daa347cb543cd18ca86873521ead12444168e5205792b41fe3f",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": true
+        },
+        {
+          "question_id": "2026-09-014",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "f1e0a21968addf4fffd2bd404313890edb9d09db34409ae50bd22cfbffea4d69",
+          "current_hash": "fa6d22a9db9fe32576c5df109737ccb1be36671914b811ea476a171dca6b1e88",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2025-03-011",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "9f5ac5336ca8b372d133b636638570b04a881a006cc5ac749df658a4a0f70425",
+          "current_hash": "0a643b8a97d7ae999c5a054ad8c87140308271c15c22008deb477a49a1fb7c2e",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-09-012",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "df6c4af44d4e480359048718426e251ed09aecb60d5565bac719f66250e95e67",
+          "current_hash": "1ce40debb6511d381aa2863ba394bb32efe9c3744ff5d97451423c23dfd5f646",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2023-01-011",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "ef2085d856bddd31dc0a2fa1c51533bc058161dc702e6b1c2595a176bee427af",
+          "current_hash": "138aa0a37206ef40a9a0fcb50f7624a87dc212582ad292e3d4241c5a64358b10",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2025-09-037",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "475fa1b45a3b1a1a46e395feac1ee7613cc69f831d70885ed005372cdbb9341c",
+          "current_hash": "4d5a3f5a6e96347df2f0b6f1215204a5cdb2626f099fb847469e0be03104e65c",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-09-039",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "2a692b4a859285fb33f09617f417e9d2fd2f70b7680d2301d74fd4c5c6ded72d",
+          "current_hash": "1329274e30967bd9be13f11ad3a691e133af93545477276eaf126129b785f79e",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2025-12-026",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "08b89cd190bfd03e774c6f99dea9ab1de82de1c2b10348a9aa54a8f6ca46bd1d",
+          "current_hash": "940ae8850f7d33026d0cb427a36a71526be169f768c3bc1d9cee92673718ecad",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-05-024",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "2a22f0a222a9b5fb0bb97fa4a9a914355ec0dc7c436f5cd01cd32332aca2d7fe",
+          "current_hash": "5d41cc40bfc39b669da4c575265a68efac8274a017e59f6684c00ba313c75bc3",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2025-12-024",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "3bd1477e0d6cb90f32bc0234a8c0d332ecd261f5bdae88cb6da89bc909df1707",
+          "current_hash": "1a2c1fb42ecf8df59ca751f208f2ca7f14089b23b0efcfecc53f8bd1b241b982",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2025-11-024",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "803d01c0e47185a33a6baf82c0c46b5e1bc35de744e3ad63172a7103d77231b2",
+          "current_hash": "a2835ca6c1cea9bb469a4b5bc2eef8f8257e6d70e0f06a1dc701a3ea1b382e00",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-03-024",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "7103a7b2e1b3f4a8b55523f77b1e79f910ff646ed9d9ccbf421afff9a19c7d35",
+          "current_hash": "6960b7d19e58b33ca21f584f6af7954202ca661227c618c5f9ce25c157da8b95",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2022-03-026",
+          "fields": [
+            "option_notes",
+            "steps",
+            "summary"
+          ],
+          "input_hash": "91d9fc13a2ab6c4b02e2e0214a9db53148d81bfc5a501d080d3af7a1b923ae98",
+          "current_hash": "1c3d43d1ef929e2d6303ce417fc9b8431c0b753ef24c677fe0a1daea7209c3cf",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-09-030",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "c9760869110767f1e6fd3b0cf1a034a467b5349536190b69de5dcdfb65e21e20",
+          "current_hash": "05c5ac0ae67788267a73624ba78b405232ef16d34ec5af62d53f4b30212ed61b",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-07-031",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "8cb0cfc37b6e451d91a5b3da361c1d4a4fc7c6cf9129d95f0892b326f55e0923",
+          "current_hash": "5e96e5fe431a5235258e7d19fc6651322194a19837dee72b95534b4edfc1aa96",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2026-05-030",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "ee3723e9993479673f6473bd50340eb044b27f461a285046ba5b7d9bdad1d2d7",
+          "current_hash": "637df05163be87ae501ec71b027a3218da3cd09d08151059377862ab8e044cfd",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2023-01-040",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "d601e347dba4ff67e13a88927e858996d694fad2af4bfe40647fb5f7b9f35754",
+          "current_hash": "0f55178516a354ce68e0d44911f7f80fc212b6ea2ecb30c9dd11168ab26a385c",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        },
+        {
+          "question_id": "2024-01-040",
+          "fields": [
+            "steps"
+          ],
+          "input_hash": "7491e906358df86cd5d11180d30bff04373a7bb66dbf443c85a62c0c8839ec43",
+          "current_hash": "fe6369b2c4f816dcee9ce370e625a6f6da50faf22bbc2dafd746394b639fb947",
+          "critical_fields_unchanged": true,
+          "approved_narrow_source_correction": false
+        }
+      ],
+      "approved_worker_result_sha256": "3e164185abeef3458f2934634731cc5b86563110bddd307d95bf6a83326a42b5",
+      "results": [
+        {
+          "question_id": "2026-06-017",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "95753686fddf5ba04f6dee3bc019c29537e683eac8771de758a99ae2285ef684",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "0e6120671440351e4212a5a17bfc0bbaf343e7fba6834657439d88ee9569f3fd",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-06-017",
+            "answer_pdf": "sources/2026-06-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-017",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "2b1b40e9ea42ede87e84d6cdfcfc7a4310b470b78142253cf6f9afcd78b3d54b",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a4abb37e056242c7147fa6f68c1497dd32be62462e266b7ec78a337b0bcb82d3",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-017",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-09-018",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "f2265f15460110b62531a41425471bfc342279e8754abfb6d3f96e4e745ef4d4",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "41f26a9bc3ccd4ebfb7f2ac758fb9a8ecb0fb096ed674282135eba18e6293e27",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-09-018",
+            "answer_pdf": "sources/2022-09-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-06-017",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "fc5f67a8085b07188c46ab79f8fafce5f6fdcd14d14211ee1d3297b44f2c7047",
+          "current_source_object_hashes": {
+            "R3FB014_EU_IFRS9": "2c6427e728c5339d02086c61de37571cf303d593706e3e072a1f382d5bd7f704"
+          },
+          "source_refs": [
+            "R3FB014_EU_IFRS9"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "84b49e3448d1b8e50ceb61bdcfa967c137ffa798c0180d7a8bf69a7572ce04a6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-06-017",
+            "answer_pdf": "sources/2022-06-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-06-016",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "5a471642d64a7280ef79462b025e5dfc638eb4484ad1c4158de30f3c2bc1ccec",
+          "current_source_object_hashes": {
+            "R3FB014_EU_IFRS9": "2c6427e728c5339d02086c61de37571cf303d593706e3e072a1f382d5bd7f704"
+          },
+          "source_refs": [
+            "R3FB014_EU_IFRS9"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "737a04020f7128a047730f23fc9a89a00bc0d157c65c214afbad4a39275e53d9",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-06-016",
+            "answer_pdf": "sources/2022-06-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-09-016",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "adeae1980395a5c02ed33d4327cd97d170cc36f1cde37a2d40823a81756d8b96",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a019cd062116bbbd28296507703a5378287b2f75ed7fd66d31982141988638c6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-09-016",
+            "answer_pdf": "sources/2024-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "e93f70bb0a27ae4f3e8367db42b09d8d2d93d520bb175b20155e136e3d34fe3b"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-07-035",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "622ed3d2e91132394a2940dd8412c94ebeb68b3d8ff773e1cb39af16d8eabde8",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a6f48c17c644e1118bdeb9c3c2a1aa1f974d512adb2a5d15294b3a314b439607",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-07-035",
+            "answer_pdf": "sources/2023-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-06-016",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "db6847cfb63f5161c60b80ba1376ffa77daddbc484701054d527fefc13f548eb",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "8a5799de4caeb229fa7588fac74509cce84105a3d2c52f67eee42e012b478ae5",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-06-016",
+            "answer_pdf": "sources/2026-06-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-015",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "afc3f6c937dac4d0940e2346176575bdd6f61fe1d8435c9b2b2d156c8c24efc4",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "6d05068266cdad8e3401663e2db9916818e4ba032b5b00bea8f13112d5737a4f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-015",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-09-016",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "87eaa2cebb5193100f77ddf5e7edb1ac8742058ef06dcc095e2fdb86481c701e",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "53cb5d91ec5f498e3ad86f3bd9a89ac28eba40e2e84b588ce7870e21dcc498d6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-09-016",
+            "answer_pdf": "sources/2025-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-01-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "ac7b3ae684b3f8eb8fd6a1d16cfe7908681b894cd8299bbf1903500d0bf2c19b",
+          "current_source_object_hashes": {
+            "R3CB_FIN018_AASB9": "bdcdac1930f7b2794cbb228f7dbc2bb0dd12a5f0f0b30a96073ffd3c9f19f940",
+            "R3CB_R3_FINANCE_018_IAS32_20230926": "6edb04c825b7ab7dae711f91a49fecb90279a142677c646f946a729a0c714c84"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_018_IAS32_20230926",
+            "R3CB_FIN018_AASB9"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "e60f30b8972f236c0379efac7d023a86922e694c0f93db94ae8ef70ae3dd376e",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-01-019",
+            "answer_pdf": "sources/2024-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-12-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "7e35399f47a714c228bd2464d5b16b3f239e37411d67ff5d2f5215ccf5cb8c3a",
+          "current_source_object_hashes": {
+            "R3CB_FIN018_SB32_2022": "1a18d78694ee04ce027a82815aa8751c668f34f3f72ed03496787674ea46e17b"
+          },
+          "source_refs": [
+            "R3CB_FIN018_SB32_2022"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "ae27832cc8cf7f644ca924590ed5e92440b6948b60ec933e2cd072b263952e6f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-12-019",
+            "answer_pdf": "sources/2022-12-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 2,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-05-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "9f4f32c9f6b230a30f21ab5dc94d4350ec0dd5bded253e4adb4ef1c967cf3005",
+          "current_source_object_hashes": {
+            "R3_CA_EU_IAS32_2025": "bc74430ef3727f8e90d1a27a388d5f1b217abed3b6377e63c95e8d011ff170ad",
+            "R3_CA_EU_IFRS9_2025": "5c0c370a4a8037ff7705e210fb838c09f3ab8b2d80f4502e479b3d9d1d26ea9e"
+          },
+          "source_refs": [
+            "R3_CA_EU_IAS32_2025",
+            "R3_CA_EU_IFRS9_2025"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "eb44822f7e83815e6984bbc2bd5c3489fa51caede01bd8c593658ee44f508afa",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-05-019",
+            "answer_pdf": "sources/2026-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-07-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "a71c4ae8dadb1e339025dfc263ee8f3f422809ccbbd70c431db5a721039a4175",
+          "current_source_object_hashes": {
+            "R3_CA_EU_IAS32_2025": "bc74430ef3727f8e90d1a27a388d5f1b217abed3b6377e63c95e8d011ff170ad",
+            "R3_CA_EU_IFRS9_2025": "5c0c370a4a8037ff7705e210fb838c09f3ab8b2d80f4502e479b3d9d1d26ea9e"
+          },
+          "source_refs": [
+            "R3_CA_EU_IAS32_2025",
+            "R3_CA_EU_IFRS9_2025"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "d618932441869572626f62d92a544ea7a4a6b3a1aea69eeb8f65048e18e4a302",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-07-019",
+            "answer_pdf": "sources/2025-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-07-016",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "508c7c60531a4daa347cb543cd18ca86873521ead12444168e5205792b41fe3f",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_018_IAS32_20250730": "9c55007ebe8b620cd2b24334d4f0447d83168c1db05ec50b730aefc844967b5b",
+            "R3CB_R3_FINANCE_018_IAS32_20230926": "6edb04c825b7ab7dae711f91a49fecb90279a142677c646f946a729a0c714c84"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_018_IAS32_20250730",
+            "R3CB_R3_FINANCE_018_IAS32_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "d556f9d7c9c14840a7616e19703827255b8a4d38d2d3096d1a8474ddcd22ada7",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-07-016",
+            "answer_pdf": "sources/2026-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-05-017",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "c259f10c3bdc3e2b1538c1c874c4483af8b4d2e9b7047735b963ae3937165cf7",
+          "current_source_object_hashes": {
+            "R3CB_FIN018_AASB9": "bdcdac1930f7b2794cbb228f7dbc2bb0dd12a5f0f0b30a96073ffd3c9f19f940"
+          },
+          "source_refs": [
+            "R3CB_FIN018_AASB9"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "b1a8376b0b8cf7aee86e0d92bba6cd76e1161fe0dc299ca63b90ab68f43c9827",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-05-017",
+            "answer_pdf": "sources/2026-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-11-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "0c5c81f4b8e8b11bc54c995f0f3cb5fa529015dedd1f8439e80ce640bfe58fd1",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IAS32_2023": "194bc336b6f6629319181a1288914d7587df1d4c40bdf6379672031c3bf255fb",
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5",
+            "R3_FA_EU_IAS32_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "e848dc0f00d8228497c91b7ab3e3e55b65a2702c1d4ffe628ec47647d1e2a636",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-11-019",
+            "answer_pdf": "sources/2024-11-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-07-019",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "f1751052847a9cb0326162520a25faacccd5682e4e44ce9ddd06c3c4d1a1f7f7",
+          "current_source_object_hashes": {
+            "R3_FA_SFA14_5": "08a168b260b2e70761cdb3090edbd1c6219a216c05060585896985aa8adf3952",
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5",
+            "R3_FA_SFA14_5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a40385dd15e630faeb743dba6afd9e7fdd2ad505fc37ea842e9d8a2356fd2a8e",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-07-019",
+            "answer_pdf": "sources/2024-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-037",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "7e90daba836a97d57ede6966fb6f18230cb93ff4d9ad8709057f230a704c2b00",
+          "current_source_object_hashes": {
+            "R3_FA_AASB9_C5": "50bdf9de46a9e5a2824c2267218837411ea1e59b92a36e6e44a82552a0367e66"
+          },
+          "source_refs": [
+            "R3_FA_AASB9_C5"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "4c3bf5cbaeddae04deadfdd5af7953d951c7e2bc37dd2fc718847e7f080d52e3",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-037",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-11-036",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "707679e2088826031a8451edb182149a640d17a77fb459223fc0f76e839eb0d1",
+          "current_source_object_hashes": {
+            "EUIFRS_R3_FINANCE_033_IFRS9_20250730": "25d17cf08cb60769cdd0bfb5c89b1ffc7d0b177126aa1dd436b7cae3767e20fb"
+          },
+          "source_refs": [
+            "EUIFRS_R3_FINANCE_033_IFRS9_20250730"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "28a07da6ff2539216308037069d7cf2bf861602fa775318d266d84bbad7b6a25",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-11-036",
+            "answer_pdf": "sources/2024-11-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 0,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-05-032",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "f67a826a94948bbd73755f021bc1fc61e89498895eb5eff6def01b3ad98414a6",
+          "current_source_object_hashes": {
+            "R3CB_FIN009_SYD": "10d793500e2be310fe417cc0ecca21f20f3440e47627c7b4b10612ded18c5741",
+            "R3CB_R3_FINANCE_009_IAS8_20230926": "03d899bacebdac3da0d4c907a6acd66f131bfb20e4325d7b3724dedf69c7020f",
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926",
+            "R3CB_R3_FINANCE_009_IAS8_20230926",
+            "R3CB_FIN009_SYD"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "91953db9f4498dac06fbc32b1f3654a5709534d7b1b3961159b4cb3047d8a1ff",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-05-032",
+            "answer_pdf": "sources/2023-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-11-031",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "933beb0ba1331a539f39123ceb7b817317ec9f5712a9e89e7ea646bb3fbc26d3",
+          "current_source_object_hashes": {
+            "R3CB_FIN009_SYD": "10d793500e2be310fe417cc0ecca21f20f3440e47627c7b4b10612ded18c5741",
+            "R3CB_R3_FINANCE_009_IAS8_20230926": "03d899bacebdac3da0d4c907a6acd66f131bfb20e4325d7b3724dedf69c7020f",
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926",
+            "R3CB_R3_FINANCE_009_IAS8_20230926",
+            "R3CB_FIN009_SYD"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "3cc248aef7b087eb19eb59e05b116ff5363f290d59bf47eff13607e5a01547d6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-11-031",
+            "answer_pdf": "sources/2024-11-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-06-009",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "7c76f29c75503cee177346b3119ad9202c9409c87af1c1487a1dfbe89ecf80d3",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "c5f737bbe28deda72b418bf615cbd7adb7edd3b4799a4609578225b22caf2c74",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-06-009",
+            "answer_pdf": "sources/2023-06-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-06-010",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "a9dee411cb49b2fee1968ad093b9fbf4980b571659a6387f0649a24c4ca5ea66",
+          "current_source_object_hashes": {
+            "R3CB_FIN009_SYD": "10d793500e2be310fe417cc0ecca21f20f3440e47627c7b4b10612ded18c5741",
+            "R3CB_R3_FINANCE_009_IAS8_20230926": "03d899bacebdac3da0d4c907a6acd66f131bfb20e4325d7b3724dedf69c7020f",
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926",
+            "R3CB_R3_FINANCE_009_IAS8_20230926",
+            "R3CB_FIN009_SYD"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "aafd452c82758d669c50260a00d85a16b8a159c3d45819bdc08e32e8d16ed8e8",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-06-010",
+            "answer_pdf": "sources/2024-06-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-09-010",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "ec9344bc68829374fd3285b9a8d0fd6c6b40b430ed0a60be1f93e87410eca1a6",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "02ec66e6eab7ac864f24dbba42d3bbff83b4295d29f8ca9193252dcd918beeb6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-09-010",
+            "answer_pdf": "sources/2023-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-05-010",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "d0e96587d226157b69ac24685f7db80d3efeeb9f21441dd7f7fcc6590c1d3e21",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "4bcef5cc121cbd87d5d83df6a93985c159109a014e371d19642088495ca0e485",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-05-010",
+            "answer_pdf": "sources/2024-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-03-009",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "af88886e3abc564002a16ab01be3b12918912d34580dbad322a40239ac1a53b7",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_009_IAS20_20230926": "aaa41f6ab1613f3ed04773f047b81612e1b5bca1cc159f02c621f7dc1c9f3f8d",
+            "R3CB_R3_FINANCE_009_IAS16_20230926": "4b9dbf8ff89c7f44f5ed1444d1cc94d4a1b529a15cbac75981356ee1d0fa52cf"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_009_IAS16_20230926",
+            "R3CB_R3_FINANCE_009_IAS20_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "628d3801675b0d49c768c2abba049283d26ef35703d93df381b8207b1b6cb9d2",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-03-009",
+            "answer_pdf": "sources/2024-03-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "[1]",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-009",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "c19ca56dbf9443d191fcd7d343c7ee12b64cf567b181a7a0eef82d05c62b9e9f",
+          "current_source_object_hashes": {
+            "EUIFRS_R3F011_IAS23_2023": "48aa0de46c84a4d683c3e485a900b0facddbfedcd107529864dac052464b4a6c"
+          },
+          "source_refs": [
+            "EUIFRS_R3F011_IAS23_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "d213c068b3fdfc6a140839ee8aef75f033f1b191d97dc25c4185a179ebe69188",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-009",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-07-013",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "a83fbdd959b72ecf21a2fd7bfe516e7736bb834d27beb6cfd36416ceaf48221a",
+          "current_source_object_hashes": {
+            "EUIFRS_R3_FINANCE_012_IAS38_20250730": "fd78e737966bd31438355bfbd37c1175208a6abbdcf7c4b4a5d558d608cdebc9",
+            "EUIFRS_R3_FINANCE_012_IAS36_20250730": "09f244d04d08152c559d9a7636dc67a053c862c206ab737df6d9ae2bcf9b5b4e"
+          },
+          "source_refs": [
+            "EUIFRS_R3_FINANCE_012_IAS38_20250730",
+            "EUIFRS_R3_FINANCE_012_IAS36_20250730"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "c46dccf05530aa6d7d8bb6c2d2e45f5761b2dfe8fcd5e87c1cca2dc68499b23d",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-07-013",
+            "answer_pdf": "sources/2025-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-014",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "fa6d22a9db9fe32576c5df109737ccb1be36671914b811ea476a171dca6b1e88",
+          "current_source_object_hashes": {
+            "R3FB014_OS_m67897": "7c310437288a646325a172a0dff008e9ad59ee62c4f8cce58305661afab8f61f",
+            "R3FB014_EU_IAS16": "168c697c5c64fbdbfdc12e1d8b216143be5130c4d7681c6eb0f2a3b54342d15a",
+            "R3FB014_EU_IAS40": "9f1e9211e29b0fd63d492b5cc4ffdf1ffc4aa4e291ad6a69e750318f99d3f11f"
+          },
+          "source_refs": [
+            "R3FB014_EU_IAS40",
+            "R3FB014_EU_IAS16",
+            "R3FB014_OS_m67897"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "12442ab6884ac9fd8070d86c2b19e84392caaa6222ea3256e6754b17e99dc24b",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-014",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-05-014",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "2aaabc672549a8606457989823307fe1158bce0f64d2103ab037bed92fa44c18",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IAS40_2023": "9fdc56c1e0c57805185ccd2927904bbe3b7ae40cb4b5f16eaba65bb5d2fc17d1",
+            "R3_FA_EU_IAS16_2023": "dad939d097ab9a639023b23f70ee6dac23ccc72416635c22ef4f8abb64e5c895"
+          },
+          "source_refs": [
+            "R3_FA_EU_IAS40_2023",
+            "R3_FA_EU_IAS16_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "007af83723faa1c813de041c8aaaa1ea9761a02443aee88d18d8fd9a33118085",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-05-014",
+            "answer_pdf": "sources/2024-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-03-011",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "0a643b8a97d7ae999c5a054ad8c87140308271c15c22008deb477a49a1fb7c2e",
+          "current_source_object_hashes": {
+            "R3FB014_EU_IAS36": "0463b4c7c6f937e4970ccb1aad71a565e7c124eb80da409857a9e89dc45752d2",
+            "R3FB014_EU_IAS16": "168c697c5c64fbdbfdc12e1d8b216143be5130c4d7681c6eb0f2a3b54342d15a"
+          },
+          "source_refs": [
+            "R3FB014_EU_IAS36",
+            "R3FB014_EU_IAS16"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a6658d78a9c35592392f732fcbc353a27309bdcab29e0d47992475b120c1512f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-03-011",
+            "answer_pdf": "sources/2025-03-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 6,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-012",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "1ce40debb6511d381aa2863ba394bb32efe9c3744ff5d97451423c23dfd5f646",
+          "current_source_object_hashes": {
+            "R3FB014_EU_IAS36": "0463b4c7c6f937e4970ccb1aad71a565e7c124eb80da409857a9e89dc45752d2"
+          },
+          "source_refs": [
+            "R3FB014_EU_IAS36"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "c987971b1a96f07b437d21f897f285985be1298de51a6ae40eb547b8877230a3",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-012",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-01-011",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "138aa0a37206ef40a9a0fcb50f7624a87dc212582ad292e3d4241c5a64358b10",
+          "current_source_object_hashes": {
+            "R3FB014_EU_IAS36": "0463b4c7c6f937e4970ccb1aad71a565e7c124eb80da409857a9e89dc45752d2",
+            "R3FB014_OS_m67897": "7c310437288a646325a172a0dff008e9ad59ee62c4f8cce58305661afab8f61f",
+            "R3FB014_EU_IAS16": "168c697c5c64fbdbfdc12e1d8b216143be5130c4d7681c6eb0f2a3b54342d15a"
+          },
+          "source_refs": [
+            "R3FB014_EU_IAS36",
+            "R3FB014_EU_IAS16",
+            "R3FB014_OS_m67897"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "2a75806d444077f9d6c62bfb3df2277e86b994160d9409801c0825abf7468536",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-01-011",
+            "answer_pdf": "sources/2023-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 7,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-12-037",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "de8852a40a46ef3e23c7fccc2836ca449401aef9faf9def38374d351a10fcc5d",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IFRS16_2023": "1aa6be1c858ecbb7cc15425ebd84e4d94a065c6399740e0b1dad44360475876f"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS16_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "83f1964afe9427ebb2ef6a4f24d4d398b50eca16ee731390481dcd2fc0576913",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-12-037",
+            "answer_pdf": "sources/2022-12-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-01-037",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "143c00c85c1cd669509ba0a79e555a94909f726eefc8569919c7d131d73871e4",
+          "current_source_object_hashes": {
+            "r3_finance_034__R3_FA_EU_IAS16_2023": "1410b7be5c1bfea0bf696a71f1928fdbb04dfcf1e271e610fb1ab9370e46e0e4",
+            "R3_FA_EU_IFRS16_2023": "1aa6be1c858ecbb7cc15425ebd84e4d94a065c6399740e0b1dad44360475876f"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS16_2023",
+            "r3_finance_034__R3_FA_EU_IAS16_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "4290181228e161be76a08dbba6c36e6667cad7e94d93d62376d27f7cf1f83e5a",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-01-037",
+            "answer_pdf": "sources/2023-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-12-037",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "1cc4ab51cccabc534ae6dacfa9adb542e775f19f093a4d9e2804d8cbd37b1933",
+          "current_source_object_hashes": {
+            "r3_finance_034__R3_FA_EU_IAS16_2023": "1410b7be5c1bfea0bf696a71f1928fdbb04dfcf1e271e610fb1ab9370e46e0e4",
+            "R3_FA_EU_IFRS16_2023": "1aa6be1c858ecbb7cc15425ebd84e4d94a065c6399740e0b1dad44360475876f"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS16_2023",
+            "r3_finance_034__R3_FA_EU_IAS16_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "d7bfc52e01c47b0a2408dbf0ebbac5c8c4b01a8d82c5558d39f037c6960be8b8",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-12-037",
+            "answer_pdf": "sources/2023-12-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-05-037",
+          "status": "known_withdrawal",
+          "current_registered": false,
+          "current_item_hash": null,
+          "current_source_object_hashes": {
+            "R3FB035_OS_DEPRECIATION": "c5e3e05d253da099ad340ef411c6b53cb00deed6466c1e9ee0bf499acace5b86",
+            "R3FB035_EU_IFRS16": "0ac050f775d4af8c1b5e05cdd047893d4b4de8ebecb4991163ef7a521ae00c80"
+          },
+          "source_refs": [
+            "R3FB035_EU_IFRS16",
+            "R3FB035_OS_DEPRECIATION"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "7916cc92d25f9175c0ff90feeb2274c6e05efdb953003c564204d0b7c7de72cb",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-05-037",
+            "answer_pdf": "sources/2025-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-09-037",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "4d5a3f5a6e96347df2f0b6f1215204a5cdb2626f099fb847469e0be03104e65c",
+          "current_source_object_hashes": {
+            "R3FB035_EU_IAS37": "7e5cda4f41a1195a6b044f229beb5cf9fadf3ee0fd31a2d93a67c3eb6c4cec88",
+            "R3FB035_EU_IFRS16": "0ac050f775d4af8c1b5e05cdd047893d4b4de8ebecb4991163ef7a521ae00c80"
+          },
+          "source_refs": [
+            "R3FB035_EU_IFRS16",
+            "R3FB035_EU_IAS37"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "afdf3b7ac7b3581d521f5a779c43bbc8b0f46e6defb183864f911211f3db8831",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-09-037",
+            "answer_pdf": "sources/2025-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 2,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-039",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "1329274e30967bd9be13f11ad3a691e133af93545477276eaf126129b785f79e",
+          "current_source_object_hashes": {
+            "R3FB035_EU_IFRS16": "0ac050f775d4af8c1b5e05cdd047893d4b4de8ebecb4991163ef7a521ae00c80"
+          },
+          "source_refs": [
+            "R3FB035_EU_IFRS16"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "afa91561b3ec22c2064d41c96d197b1f7cbd9409eef986514c00b9a12f4498e8",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-039",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-01-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "44dd8d4bd4db1ca6bce86f9d3cb5f8396c62cbeabdc87a7659df96c8b64f519d",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IFRS15_2023": "9091abdd8483ee4fffa837841928c5c4efcde94b2043718617c0ef49dc8e9dbb"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS15_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "81c37a855a59b214e17fc9b9bd121569732ee51900dd2ddde703534f6e97d58e",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-01-024",
+            "answer_pdf": "sources/2024-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-12-026",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "940ae8850f7d33026d0cb427a36a71526be169f768c3bc1d9cee92673718ecad",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "24df17746e37d4277c32a92e2b2fff9197670402965d5961e6c3257c76fc93f3",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-12-026",
+            "answer_pdf": "sources/2025-12-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-05-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "5d41cc40bfc39b669da4c575265a68efac8274a017e59f6684c00ba313c75bc3",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "0ac3cf17a053dac4d8cdf596f0d56d8b1b8944f476af921fb830d55df3fb6e6f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-05-024",
+            "answer_pdf": "sources/2026-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-12-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "1a2c1fb42ecf8df59ca751f208f2ca7f14089b23b0efcfecc53f8bd1b241b982",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "cc8bed735206a941b970235188910e15f4ac6977d73d2004eb8a7ae8626b672f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-12-024",
+            "answer_pdf": "sources/2025-12-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-12-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "3261a52487563cee9d2d25c348dcfff470f3cbc2a524a0ac8d07742fd926f685",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IFRS15_2023": "9091abdd8483ee4fffa837841928c5c4efcde94b2043718617c0ef49dc8e9dbb"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS15_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "52e98b4e24b79c97ab7515f1a0d6f5b7bd2ac5852918d212ff3ce07ac97d03e3",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-12-024",
+            "answer_pdf": "sources/2023-12-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-11-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "a2835ca6c1cea9bb469a4b5bc2eef8f8257e6d70e0f06a1dc701a3ea1b382e00",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "36c75bcab7906ad2e0311ebd3f786326306374b8a33fb2931ef53ce91b9334b9",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-11-024",
+            "answer_pdf": "sources/2025-11-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-03-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "6960b7d19e58b33ca21f584f6af7954202ca661227c618c5f9ce25c157da8b95",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "36ee30eeadc4d1158902d7684db17cbd355020a3b8708e8d920e51986c875f3a",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-03-024",
+            "answer_pdf": "sources/2026-03-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-07-024",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "060c934892563b79b19f4bb4b3e74b28feb18a6fed38c704df1b8933958d0ea1",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IFRS15_2023": "9091abdd8483ee4fffa837841928c5c4efcde94b2043718617c0ef49dc8e9dbb"
+          },
+          "source_refs": [
+            "R3_FA_EU_IFRS15_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "2e8b24ed40f575a3235431450a854fe322ac50b2825413f4737a6d71411700db",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-07-024",
+            "answer_pdf": "sources/2024-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-05-023",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "bf7498cb2b9906e826e8f104b03ae54946df365d368bb74eeba2a3ec889ad034",
+          "current_source_object_hashes": {
+            "EUIFRS_R3_FINANCE_021_IFRS15_20230926": "6df7ad9df36f104cb4c15f71f3d2f970ef93cd1044114b664d8d3b2da3f4d0e7"
+          },
+          "source_refs": [
+            "EUIFRS_R3_FINANCE_021_IFRS15_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "8453885855020fb873cf6e05f6bfeb0719b451049af11a2a68a5e2761eb21c8e",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-05-023",
+            "answer_pdf": "sources/2022-05-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-09-025",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "fecb90dbf148fc8f057bcb4577ac811406fb2c8e740f42d458ddfbf9b93cbd3e",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_024_IFRS15_20230926": "fa81296c76d76ca5457447919598d8a92fece129fd44bf5b57da4349b8d78c8d",
+            "R3CB_R3_FINANCE_024_IFRS15_20250730": "7eaec661c2c11a3c1672ef6ee511c98b677a6fc8c3a34f83ca6ae109f368a20d"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_024_IFRS15_20230926",
+            "R3CB_R3_FINANCE_024_IFRS15_20250730"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "973cfe14182074208a62f8453d6bd6e11d8353521d94a7a807be26da9869fc40",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-09-025",
+            "answer_pdf": "sources/2025-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 7,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-026",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "cc1c4eec65c081e57b696c01cffc4fbc37e3057599fd68fb0db6f61c759a4faa",
+          "current_source_object_hashes": {
+            "R3CB_R3_FINANCE_024_IFRS15_20230926": "fa81296c76d76ca5457447919598d8a92fece129fd44bf5b57da4349b8d78c8d",
+            "R3CB_R3_FINANCE_024_IFRS15_20250730": "7eaec661c2c11a3c1672ef6ee511c98b677a6fc8c3a34f83ca6ae109f368a20d"
+          },
+          "source_refs": [
+            "R3CB_R3_FINANCE_024_IFRS15_20230926",
+            "R3CB_R3_FINANCE_024_IFRS15_20250730"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "a916f99f05d647e8cd74ae5d8bd5cc036a1c67f8b55e0b8418759c36eea7fe6a",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-026",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2022-03-026",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "1c3d43d1ef929e2d6303ce417fc9b8431c0b753ef24c677fe0a1daea7209c3cf",
+          "current_source_object_hashes": {
+            "R3FB023_EU_IFRS15": "05652c8cfc6875c51617e1a1d5a23ba125669b07ef68bfbcc7e7c539c52c6d1b"
+          },
+          "source_refs": [
+            "R3FB023_EU_IFRS15"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "c5dd4ca77566e0838f2cf7864031521cb1b9eba04feb7f47a9affb6c5bf547e6",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2022-03-026",
+            "answer_pdf": "sources/2022-03-answers.pdf",
+            "pdf_page_index": 48,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "8ce49b72eb6513b8cc879724bd43e32e341fd7a86d56fdd610c3b79358e7628b"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-09-030",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "05c5ac0ae67788267a73624ba78b405232ef16d34ec5af62d53f4b30212ed61b",
+          "current_source_object_hashes": {
+            "R29_1": "2f22302caa2c5b426d347aadb8d5a4fa720185951c2566ca6e19fcbd92dc7ca2",
+            "R29_32": "a0d35ba28e69e340270b1f2ba535f0a25caf2e425f57f89225e0992f4ce11cd6",
+            "R29_12": "9a46232f73bbfbf8bd3845e7f82374344942fee6e7d18a9f216f747e395115ad"
+          },
+          "source_refs": [
+            "R29_12",
+            "R29_1",
+            "R29_32"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "58d1c60582af33c7dcd07213f0584c4ba72e80ce39a2e7d5d3056b4ce715161f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-09-030",
+            "answer_pdf": "sources/2026-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "1",
+            "answers": [
+              1
+            ],
+            "passed": true,
+            "pdf_sha256_now": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-07-031",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "5e96e5fe431a5235258e7d19fc6651322194a19837dee72b95534b4edfc1aa96",
+          "current_source_object_hashes": {
+            "R29_1": "2f22302caa2c5b426d347aadb8d5a4fa720185951c2566ca6e19fcbd92dc7ca2",
+            "R29_12": "9a46232f73bbfbf8bd3845e7f82374344942fee6e7d18a9f216f747e395115ad"
+          },
+          "source_refs": [
+            "R29_12",
+            "R29_1"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "2d6402f91a1d0f7ce6b819aaf8dee82d03484e892f57f42784967d8609a64a94",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-07-031",
+            "answer_pdf": "sources/2026-07-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 3,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2026-05-030",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "637df05163be87ae501ec71b027a3218da3cd09d08151059377862ab8e044cfd",
+          "current_source_object_hashes": {
+            "R29_1": "2f22302caa2c5b426d347aadb8d5a4fa720185951c2566ca6e19fcbd92dc7ca2",
+            "R29_12": "9a46232f73bbfbf8bd3845e7f82374344942fee6e7d18a9f216f747e395115ad"
+          },
+          "source_refs": [
+            "R29_12",
+            "R29_1"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "73d4f2844a4c51ae9f5752c859d3719895c62cdbe362b325a7cb6a93a6cb2072",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2026-05-030",
+            "answer_pdf": "sources/2026-05-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 4,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2025-09-029",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "34bbf5f0d5d872dd1f00c446b8a654262114184c63b45aeca3cedb88cc986e13",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IAS12_2023": "4ed9ac85609cd76c8835c8dacb49e356326d3606df97b7291b412ff2c3743d7d"
+          },
+          "source_refs": [
+            "R3_FA_EU_IAS12_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "5efdd796cbd2adb61ec733fecd5a5e9a7c7e5592bd3b1dfaa0f788350bae2673",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2025-09-029",
+            "answer_pdf": "sources/2025-09-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 5,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-01-030",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "cd90345b2002f9cb75c8d84557e7490f93ad653c1e1f89b9169d2e77078261dc",
+          "current_source_object_hashes": {
+            "EUIFRS_R3_FINANCE_027_IAS12_20230926": "7e478b854cbe208202df7fc8344cba323ed6e094b19bb124c81cc3667cf787ce",
+            "EUIFRS_R3_FINANCE_027_IAS32_20230926": "a3ae65324598232a7881bcb3e35a4640e11b86f34979d168e54e4e10312f2e31"
+          },
+          "source_refs": [
+            "EUIFRS_R3_FINANCE_027_IAS12_20230926",
+            "EUIFRS_R3_FINANCE_027_IAS32_20230926"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "d4cf55188cce090dfafe33c9c9df25ccc0b895df2a55e77cb660d948d0495489",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-01-030",
+            "answer_pdf": "sources/2023-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "3",
+            "answers": [
+              3
+            ],
+            "passed": true,
+            "pdf_sha256_now": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-06-029",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "cfe6130e415474e5514b7fbab46701e31619986cd146eb7e3a510f91267ee7e5",
+          "current_source_object_hashes": {
+            "R3_FA_EU_IAS12_2023": "4ed9ac85609cd76c8835c8dacb49e356326d3606df97b7291b412ff2c3743d7d"
+          },
+          "source_refs": [
+            "R3_FA_EU_IAS12_2023"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "04510e7d4bd5ac225bf9154e4879de672640566a5c413e4af0c56b8ad1b4bbf9",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-06-029",
+            "answer_pdf": "sources/2024-06-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "2",
+            "answers": [
+              2
+            ],
+            "passed": true,
+            "pdf_sha256_now": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2023-01-040",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "0f55178516a354ce68e0d44911f7f80fc212b6ea2ecb30c9dd11168ab26a385c",
+          "current_source_object_hashes": {
+            "R3FB035_EU_IAS7": "761cf9c78e7cf048878d82e057d2d6440a8db0c5ceaf50479bf974f720da25e7"
+          },
+          "source_refs": [
+            "R3FB035_EU_IAS7"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "f0d3c8f46507c95caacab6e691fe3d2f8867bcb3be964a572fbe5a032103860f",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2023-01-040",
+            "answer_pdf": "sources/2023-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        },
+        {
+          "question_id": "2024-01-040",
+          "status": "pass",
+          "current_registered": true,
+          "current_item_hash": "fe6369b2c4f816dcee9ce370e625a6f6da50faf22bbc2dafd746394b639fb947",
+          "current_source_object_hashes": {
+            "R3FB035_EU_IAS7": "761cf9c78e7cf048878d82e057d2d6440a8db0c5ceaf50479bf974f720da25e7"
+          },
+          "source_refs": [
+            "R3FB035_EU_IAS7"
+          ],
+          "answers_checks_fingerprint_unchanged": true,
+          "original_question_equals_input": true,
+          "question_fingerprint": "20a1a6cbb51aad277be76ad88ab96b247e454ff934f14d2b9afd4fa5d87c04e4",
+          "official_answer": {
+            "reused_from_previous_completed_log": true,
+            "question_id": "2024-01-040",
+            "answer_pdf": "sources/2024-01-answers.pdf",
+            "pdf_page_index": 0,
+            "raw_answer_cell": "4",
+            "answers": [
+              4
+            ],
+            "passed": true,
+            "pdf_sha256_now": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+          },
+          "four_options_individually_compared": true,
+          "calculation_check_count": 1,
+          "source_rule_assessment_complete_for_question_conditions": true
+        }
+      ],
+      "source_files": [
+        {
+          "path": "IAS37.md",
+          "sha256": "861c4f8784bc48e0420d88bdd446768874c8826c9db336306dc6e9a9a6cf2910",
+          "locators": [
+            "45",
+            "47"
+          ]
+        },
+        {
+          "path": "IAS36.md",
+          "sha256": "e50ac37bb4e1c8261ef7a63e05d0fc06a69b0abc88262630ecb8d89ea0bc4402",
+          "locators": [
+            "9",
+            "10"
+          ]
+        },
+        {
+          "path": "IAS8.md",
+          "sha256": "7142faf90ec6e1c4859143440f79a7dc9d2657761955a0840dbd4c37396162c8",
+          "locators": [
+            "54I",
+            "34",
+            "36",
+            "37"
+          ]
+        },
+        {
+          "path": "IAS16.md",
+          "sha256": "fc866da8146942449e0c29a597911c11862c1d9cad923ecd756acba3f27ad9f6",
+          "locators": [
+            "81",
+            "16",
+            "17",
+            "20A",
+            "39",
+            "40",
+            "50",
+            "51",
+            "55",
+            "60",
+            "61",
+            "62",
+            "68",
+            "71",
+            "81N"
+          ]
+        },
+        {
+          "path": "IAS20.md",
+          "sha256": "52700d83df7db885aa79d8a2ca58098460538a01998c53eb72f81f011a038bec",
+          "locators": [
+            "41",
+            "24",
+            "27"
+          ]
+        },
+        {
+          "path": "IAS38.md",
+          "sha256": "74d156953ad58727a665e1f4f0e9c6b7105bbe1234f4c1e58aa382b8141f59b0",
+          "locators": [
+            "130",
+            "74",
+            "97"
+          ]
+        },
+        {
+          "path": "IFRS9.md",
+          "sha256": "5b25ccb309d78e5740091e5d9362dc857b28b6fff460ca19586538a5894bc242",
+          "locators": [
+            "7.1.3",
+            "7.1.4",
+            "7.1.6",
+            "7.1.9",
+            "7.1.10",
+            "3.2.3",
+            "5.1.1",
+            "5.4.1",
+            "5.7.5",
+            "5.7.10",
+            "B5.7.1",
+            "6.5.2",
+            "6.5.8",
+            "7.1.1"
+          ]
+        },
+        {
+          "path": "IFRS16.md",
+          "sha256": "fb891c28a62c923f2200ea19f97decc4bc6788b92a11f8be0aea5430d303ae06",
+          "locators": [
+            "AppendixA",
+            "24",
+            "26",
+            "27",
+            "31",
+            "32",
+            "67",
+            "68",
+            "69",
+            "75",
+            "C1"
+          ]
+        },
+        {
+          "path": "finance_b.AASB_09.candidate.pdf",
+          "sha256": "5027705da96e95fd8ec724769cf860d02e21b3bca0496fba36a7421e60a7063d"
+        },
+        {
+          "path": "IAS32.md",
+          "sha256": "2793b02211e99eb4251f9b0615394526751259c83dd6873fe74f51d88f46dd0f",
+          "locators": [
+            "11",
+            "16",
+            "18",
+            "28",
+            "31",
+            "32",
+            "AG31",
+            "96"
+          ]
+        },
+        {
+          "path": "IFRS9.md",
+          "sha256": "1540bcc97fcf7c24167fc5673474eb14f9c950ae1cadb56550d94a4464adef3c",
+          "locators": [
+            "5.1.1",
+            "6.5.8",
+            "7.1.1"
+          ]
+        },
+        {
+          "path": "IAS38.md",
+          "sha256": "3c972813dabd4461f032acc322a0688af68521029cd48172c129c6174e57fe62",
+          "locators": [
+            "74",
+            "97"
+          ]
+        },
+        {
+          "path": "IFRS15.md",
+          "sha256": "00381d90f55baf9d42ddfb87b414e9485e21a51e09f1c75412f6f10ce8050579",
+          "locators": [
+            "39",
+            "105",
+            "106",
+            "107"
+          ]
+        },
+        {
+          "path": "IAS32.md",
+          "sha256": "9403169f7a1d7e7372d21b3af5056d6b7955c8481f4434df0231ad4fea9674c3",
+          "locators": [
+            "28",
+            "31",
+            "32",
+            "AG31",
+            "96",
+            "33"
+          ]
+        },
+        {
+          "path": "IAS12.md",
+          "sha256": "1be71db334c4ef72fa948c026667118bd327cc1c7aefcdbc7d4bb70d8d3d995e",
+          "locators": [
+            "5",
+            "7",
+            "15",
+            "24",
+            "46",
+            "47",
+            "49",
+            "53",
+            "58",
+            "61A",
+            "71",
+            "74",
+            "89"
+          ]
+        },
+        {
+          "path": "IAS1.md",
+          "sha256": "238e024043d94934f3d156e9d51d2e14b3b3d057be3d46006395796656fbb840",
+          "locators": [
+            "56"
+          ]
+        },
+        {
+          "path": "IAS7.md",
+          "sha256": "2019f81ba728bdde4fc3f1ee4eb417cd629d31fc25a7be53a9edf5df54cab5f1",
+          "locators": [
+            "18",
+            "20",
+            "35",
+            "36",
+            "53"
+          ]
+        },
+        {
+          "path": "IFRS15.md",
+          "sha256": "a1c189484b159736c1e2b429801e05b7b9a5444811974411fb391e707cea0613",
+          "locators": [
+            "22",
+            "31",
+            "35",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "50",
+            "53",
+            "56",
+            "59",
+            "74",
+            "76",
+            "87",
+            "88",
+            "105",
+            "106",
+            "107",
+            "108",
+            "B18",
+            "B19",
+            "B21",
+            "B23",
+            "B25",
+            "B40",
+            "B42",
+            "B44",
+            "B45",
+            "B46",
+            "C1"
+          ]
+        },
+        {
+          "path": "IAS23.md",
+          "sha256": "97abfdcd7c2a645430a80e763a4d4686a20b442064497ce6a40c88517d886510",
+          "locators": [
+            "8",
+            "12",
+            "14",
+            "17",
+            "18",
+            "29"
+          ]
+        },
+        {
+          "path": "IAS36.md",
+          "sha256": "46b5e13ce7931f1e17fa40e120f45b00701cc2fa0aaafd0e84ee869cb9728292",
+          "locators": [
+            "18",
+            "59",
+            "63",
+            "64",
+            "114",
+            "117",
+            "119",
+            "121",
+            "139"
+          ]
+        },
+        {
+          "path": "IAS40.md",
+          "sha256": "1696a0de30051236684d05b2e00c2e01cc07784f655f4707966de145fb9217b2",
+          "locators": [
+            "33",
+            "35",
+            "56",
+            "61",
+            "62",
+            "85"
+          ]
+        },
+        {
+          "path": "KIFRS1016.pdf",
+          "sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d",
+          "locators": [
+            "16",
+            "17",
+            "20A",
+            "50",
+            "60",
+            "61",
+            "62",
+            "81N"
+          ]
+        },
+        {
+          "path": "KIFRS1020.pdf",
+          "sha256": "1e5d121dae371098cac38b45d7a4d068b179161bfa5a9ba9af22769af0d3f083",
+          "locators": [
+            "24",
+            "27"
+          ]
+        },
+        {
+          "path": "KIFRS1038.pdf",
+          "sha256": "0c5c8f80dbb07e9e4b25293d1c7f0a77509a6b1d2031cc5fed9f47d89efbf3cc",
+          "locators": [
+            "74",
+            "97"
+          ]
+        },
+        {
+          "path": "KIFRS1037.pdf",
+          "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d",
+          "locators": [
+            "45",
+            "47"
+          ]
+        },
+        {
+          "path": "KIFRS1012.pdf",
+          "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+          "locators": [
+            "47",
+            "49",
+            "53",
+            "58",
+            "61A"
+          ]
+        },
+        {
+          "path": "KIFRS1115.pdf",
+          "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+          "locators": [
+            "74",
+            "88",
+            "105",
+            "108",
+            "B25",
+            "B42",
+            "B46"
+          ]
+        },
+        {
+          "path": "KIFRS1007.pdf",
+          "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+          "locators": [
+            "20",
+            "35"
+          ]
+        },
+        {
+          "path": "finance_b.SG_SB32_2022.pdf",
+          "sha256": "68eec71c2d372c4c61479c20d4ab31de5bf48f24e8a42244c8463873dd671353"
+        },
+        {
+          "path": "finance_b.MS_SYD.md",
+          "sha256": "77535fff8b8269472036740cc23a3e2f3ae3027030f65705d92eca043869fd30",
+          "locators": [
+            "Parameters/Remarks"
+          ]
+        },
+        {
+          "path": "finance_b.MS_SYD_IMAGE.gif",
+          "sha256": "a00436d8957218831ad11843e2e2c0f5af814b0fbd8da3b98dd9a3f5662f3e56",
+          "locators": [
+            "원수식view_image: (cost-salvage)*(life-per+1)*2/(life*(life+1))"
+          ]
+        },
+        {
+          "path": "s17-05-issuing-and-accounting-for-ser.html",
+          "sha256": "694958ea5e3b495e005bb7be428a13f9ebbfa3084e6e0156ae5d904367c876f9",
+          "locators": [
+            "Effective rate method paragraph 및현가단계"
+          ]
+        },
+        {
+          "path": "index.cnxml",
+          "sha256": "6ecec36764c1028102a92ffd45837db97ec602936b6390c1bbd1dbe24da5494f",
+          "locators": [
+            "fs-idm388605808/fs-idm372212496"
+          ]
+        }
+      ]
+    },
+    {
+      "checked_on": "2026-10-12T16:32:38.321227+00:00",
+      "task": "마지막8해설및M07새append 독립QA",
+      "scope": {
+        "selected_ids": [
+          "2026-07-108",
+          "2024-03-110",
+          "2026-01-109",
+          "2025-07-108",
+          "2025-06-108",
+          "2022-12-110",
+          "2025-09-110",
+          "2026-03-108"
+        ],
+        "initial_2854_or_other_items_qa": false,
+        "M07_scope": "ACCA재료배합/수율신규append만. 기존제조간접원가/표준유형/차이마감법을재검증/승인한것아님.",
+        "shared_repo_mutated_by_qa_agent": false,
+        "subagents_spawned": false
+      },
+      "totals": {
+        "questions_checked": 8,
+        "passed": 8,
+        "official_answers_match": 8,
+        "original_question_images_visually_read": 8,
+        "options_individually_checked": 32,
+        "explanation_numeric_checks_passed": 38,
+        "M07_added_checks_passed": 7,
+        "independent_table_recalculations": 7,
+        "new_defects": 0
+      },
+      "M07_append": {
+        "status": "pass",
+        "proposal_file": "cross-cost-05.M07.proposal.json",
+        "proposal_sha256": "1f17216a9541ed34995187f8b59e5c764151d11ce86c1d2e49e39247512bac73",
+        "before_hash": "6ff46501379796a42c8a23b7436f784c09a5702692d00094ce55c5fc91a3bc9b",
+        "after_hash": "11b08c8914fe296f69da4247acacdbda25c14675258029d1b5d5bd7c704152ca",
+        "current_note_hash": "11b08c8914fe296f69da4247acacdbda25c14675258029d1b5d5bd7c704152ca",
+        "current_equals_proposal_after": true,
+        "append_only_and_original_fields_preserved": {
+          "id": true,
+          "part_id": true,
+          "title": true,
+          "summary": true,
+          "key_points": true,
+          "formulas": true,
+          "pitfalls": true,
+          "examples": true,
+          "related_part_ids": true,
+          "tags": true,
+          "applicability": true,
+          "sources": true,
+          "review_status": true,
+          "review_note": true,
+          "unchecked_points": true
+        },
+        "definitions_verified": [
+          "같은수량단위조건과표준가격평가",
+          "실제총투입량을표준배합으로환산한중간값",
+          "전체능률=배합+수율;전체와분해항목이중합산금지",
+          "표준배합가중평균가격;두단가의단순평균/실제가격미사용",
+          "대체재배합변화는수율/품질과연계;유리배합만으로성과단정금지"
+        ],
+        "independent_calculation": {
+          "standard_quantity_total": "500",
+          "actual_quantity_total": "450",
+          "actual_mix_at_standard_prices": "7700",
+          "actual_total_at_standard_mix_prices": "8100",
+          "allowed_standard_cost_actual_output": "9000",
+          "mix_adverse_positive": "-400",
+          "yield_adverse_positive": "-900",
+          "usage_adverse_positive": "-1300",
+          "decomposition_identity_passed": true
+        },
+        "added_numeric_checks": [
+          {
+            "label": "표준배합 환산 A kg",
+            "expr": "(160+290)*2/(2+3)",
+            "expected": 180,
+            "actual": 180.0,
+            "passed": true
+          },
+          {
+            "label": "표준배합 환산 B kg",
+            "expr": "(160+290)*3/(2+3)",
+            "expected": 270,
+            "actual": 270.0,
+            "passed": true
+          },
+          {
+            "label": "중간평가액 원",
+            "expr": "180*30+270*10",
+            "expected": 8100,
+            "actual": 8100,
+            "passed": true
+          },
+          {
+            "label": "배합차이 원",
+            "expr": "160*30+290*10-(180*30+270*10)",
+            "expected": -400,
+            "actual": -400,
+            "passed": true
+          },
+          {
+            "label": "수율차이 원",
+            "expr": "(180*30+270*10)-100*(2*30+3*10)",
+            "expected": -900,
+            "actual": -900,
+            "passed": true
+          },
+          {
+            "label": "전체 수량차이 원",
+            "expr": "160*30+290*10-100*(2*30+3*10)",
+            "expected": -1300,
+            "actual": -1300,
+            "passed": true
+          },
+          {
+            "label": "분해 합계 원",
+            "expr": "-400-900",
+            "expected": -1300,
+            "actual": -1300,
+            "passed": true
+          }
+        ],
+        "existing_checks_not_reapproved": true
+      },
+      "source_and_image_limits": [
+        "ACCA공식기사확보HTMLsha와추출본문L447~494정의·불일치·locator를대조. 이QA에서새HTTP요청은하지않음.",
+        "ACCA기사표이미지는미열람. 예제333/580금액불일치와Alpha/Omega문언오류를재확인했으며문제별풀이에그예제값을사용하지않음.",
+        "8개원본문항이미지는모두실제로열람;공식답안PDF는원문텍스트/셀번호를읽었지만답안이미지자체는이QA에서미열람.",
+        "Saylor102단위원가/총예산원가본문만대조;교재예제그림미열람. 배치에등록됐지만8문항이인용하지않는Saylor23/109는이QA대상아님.",
+        "M07기존요약·공식·주의사항의정확성을이번검증범위로확대하지않고새append와7checks및기존필드보존만확인.",
+        "앱실행/배포/학습기록/초기2854는이번검증범위밖. 원본PDF커밋없음;전문가검수주장없음."
+      ],
+      "approved_worker_result_sha256": "bdf7146fa8b2f43f416cca2567b6bcbb7789a647b0c5816a691eb17f82faa867",
+      "results": [
+        {
+          "question_id": "2026-07-108",
+          "status": "pass",
+          "current_item_hash": "612407d722d7ff211170421ea35df91bc147450c8557a26a32e0374c7a4d1505",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "2689480b30e2f52f9b0a5d134fa6f22f54c82363abafc7e9bc561cec94f7d999",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            4
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "6e68f3564059ac47d0f7a554a1281dc9981d54d80976f0139aa1d2e205419603",
+          "original_image_sha256": "aee52fe89dc368d956784367cf495ce620cd2b57d31cfad2e43802e2ceb5c1ac",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "950000",
+            "actual_quantity_total": "900000",
+            "actual_mix_at_standard_prices": "33000000",
+            "actual_total_at_standard_mix_prices": "30600000",
+            "allowed_standard_cost_actual_output": "32300000",
+            "mix_adverse_positive": "2400000",
+            "yield_adverse_positive": "-1700000",
+            "usage_adverse_positive": "700000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "원문 표준총투입량",
+              "expr": "(152+38)*5000",
+              "expected": 950000,
+              "actual": 950000,
+              "passed": true
+            },
+            {
+              "label": "실제총투입량",
+              "expr": "600000+300000",
+              "expected": 900000,
+              "actual": 900000,
+              "passed": true
+            },
+            {
+              "label": "전체수량차이",
+              "expr": "(600000-152*5000)*30+(300000-38*5000)*50",
+              "expected": 700000,
+              "actual": 700000,
+              "passed": true
+            },
+            {
+              "label": "표준배합 중간비교 직접 정의 적용",
+              "expr": "(600000+300000)*(152*30+38*50)/(152+38)",
+              "expected": 30600000,
+              "actual": 30600000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 직접 정의 적용",
+              "expr": "600000*30+300000*50-(600000+300000)*(152*30+38*50)/(152+38)",
+              "expected": 2400000,
+              "actual": 2400000.0,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "(600000+300000-(152+38)*5000)*(152*30+38*50)/(152+38)",
+              "expected": -1700000,
+              "actual": -1700000.0,
+              "passed": true
+            },
+            {
+              "label": "직접 정의 적용 분해 항등식",
+              "expr": "2400000-1700000",
+              "expected": 700000,
+              "actual": 700000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2024-03-110",
+          "status": "pass",
+          "current_item_hash": "089b421a4b4fa14e8f4f47d82ee579daac7291ed027053f1ae926f4556343ef6",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "d0e741215eea553287b51c6045839b60e610aa7083e6a427e814853ee12b561c",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            4
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "3b99d19a6a1a96dfd49165c97cd6acac1015f4f239b906a49b8347bb4125ed83",
+          "original_image_sha256": "35256cd42d698c0a44e632e63d55a486524b4a5d1fa49b58ec7a034fc5d0e468",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "950000",
+            "actual_quantity_total": "900000",
+            "actual_mix_at_standard_prices": "33000000",
+            "actual_total_at_standard_mix_prices": "30600000",
+            "allowed_standard_cost_actual_output": "32300000",
+            "mix_adverse_positive": "2400000",
+            "yield_adverse_positive": "-1700000",
+            "usage_adverse_positive": "700000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "원문 표준총투입량",
+              "expr": "(152+38)*5000",
+              "expected": 950000,
+              "actual": 950000,
+              "passed": true
+            },
+            {
+              "label": "실제총투입량",
+              "expr": "600000+300000",
+              "expected": 900000,
+              "actual": 900000,
+              "passed": true
+            },
+            {
+              "label": "전체수량차이",
+              "expr": "(600000-152*5000)*30+(300000-38*5000)*50",
+              "expected": 700000,
+              "actual": 700000,
+              "passed": true
+            },
+            {
+              "label": "표준배합 중간비교 직접 정의 적용",
+              "expr": "(600000+300000)*(152*30+38*50)/(152+38)",
+              "expected": 30600000,
+              "actual": 30600000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 직접 정의 적용",
+              "expr": "600000*30+300000*50-(600000+300000)*(152*30+38*50)/(152+38)",
+              "expected": 2400000,
+              "actual": 2400000.0,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "(600000+300000-(152+38)*5000)*(152*30+38*50)/(152+38)",
+              "expected": -1700000,
+              "actual": -1700000.0,
+              "passed": true
+            },
+            {
+              "label": "직접 정의 적용 분해 항등식",
+              "expr": "2400000-1700000",
+              "expected": 700000,
+              "actual": 700000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2026-01-109",
+          "status": "pass",
+          "current_item_hash": "565d850bea6a57be288e15c25dee9be5fa6b0af80f411837199fcaa937333895",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "36a5a8ce574775afc1f904cf6155e392455a9dd5b1c20cdb270f5912f6fc61c7",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            3
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+          "original_image_sha256": "630e44579e06fdfc6e8edb11088c8f9981ff2c550524c8821eb9fb0a2283b751",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "120000",
+            "actual_quantity_total": "110000",
+            "actual_mix_at_standard_prices": "1760000",
+            "actual_total_at_standard_mix_prices": "1650000",
+            "allowed_standard_cost_actual_output": "1800000",
+            "mix_adverse_positive": "110000",
+            "yield_adverse_positive": "-150000",
+            "usage_adverse_positive": "-40000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "전체수량차이",
+              "expr": "(77000-90*1000)*10+(33000-30*1000)*30",
+              "expected": -40000,
+              "actual": -40000,
+              "passed": true
+            },
+            {
+              "label": "표준배합 중간원가 직접 정의 적용",
+              "expr": "(77000+33000)*(90*10+30*30)/(90+30)",
+              "expected": 1650000,
+              "actual": 1650000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 직접 정의 적용",
+              "expr": "77000*10+33000*30-(77000+33000)*(90*10+30*30)/(90+30)",
+              "expected": 110000,
+              "actual": 110000.0,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "((77000+33000)-(90+30)*1000)*(90*10+30*30)/(90+30)",
+              "expected": -150000,
+              "actual": -150000.0,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2025-07-108",
+          "status": "pass",
+          "current_item_hash": "63ed9d9ebad4d9474dc0894e6f6b61c3f1011d6168bfd3f007289226fadb677a",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "e80c4b050efd90dad467c1dd6807c5939c92251d09701473511b5978f9d79dff",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            2
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "7a7bdbd64814dbbbf9e7f2339c1f5b019bf5d95229deda54532395a858f7c11a",
+          "original_image_sha256": "ce862c1a70d87728d48d3eaaeec082d3cff3cbd456c852fc26169e3edd322c57",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "7200",
+            "actual_quantity_total": "6900",
+            "actual_mix_at_standard_prices": "930000",
+            "actual_total_at_standard_mix_prices": "920000",
+            "allowed_standard_cost_actual_output": "960000",
+            "mix_adverse_positive": "10000",
+            "yield_adverse_positive": "-40000",
+            "usage_adverse_positive": "-30000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "전체수량차이",
+              "expr": "(4500-480*10)*100+(2400-480*5)*200",
+              "expected": -30000,
+              "actual": -30000,
+              "passed": true
+            },
+            {
+              "label": "총투입 차이",
+              "expr": "4500+2400-480*(10+5)",
+              "expected": -300,
+              "actual": -300,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "(4500+2400-480*(10+5))*(10*100+5*200)/(10+5)",
+              "expected": -40000,
+              "actual": -40000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 잔차 직접 정의 적용",
+              "expr": "-30000-(-40000)",
+              "expected": 10000,
+              "actual": 10000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2025-06-108",
+          "status": "pass",
+          "current_item_hash": "2645750ea45fb267784bc17d8374c448c9d6cf0b67513a297d46f1216a667c77",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "61917afe86ded1aeb494a95be2b049273d178d69533f627bef6de2fb2eb33d3a",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            4
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+          "original_image_sha256": "b250e82d7726553cef858a05af23287925658bfbc92f3d81c98c841f9c054b85",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "50000",
+            "actual_quantity_total": "42000",
+            "actual_mix_at_standard_prices": "560000",
+            "actual_total_at_standard_mix_prices": "588000",
+            "allowed_standard_cost_actual_output": "700000",
+            "mix_adverse_positive": "-28000",
+            "yield_adverse_positive": "-112000",
+            "usage_adverse_positive": "-140000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "전체수량차이",
+              "expr": "(14000-10000*2)*20+(28000-10000*3)*10",
+              "expected": -140000,
+              "actual": -140000,
+              "passed": true
+            },
+            {
+              "label": "중간표준배합 직접 정의 적용",
+              "expr": "(14000+28000)*(2*20+3*10)/(2+3)",
+              "expected": 588000,
+              "actual": 588000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 직접 정의 적용",
+              "expr": "14000*20+28000*10-(14000+28000)*(2*20+3*10)/(2+3)",
+              "expected": -28000,
+              "actual": -28000.0,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "((14000+28000)-10000*(2+3))*(2*20+3*10)/(2+3)",
+              "expected": -112000,
+              "actual": -112000.0,
+              "passed": true
+            },
+            {
+              "label": "분해 항등식",
+              "expr": "-28000-112000",
+              "expected": -140000,
+              "actual": -140000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2022-12-110",
+          "status": "pass",
+          "current_item_hash": "0a68ff5f6c510f91b094e77200433fe95ca35f465a6fbe04a6d13200e737b6d5",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "225f987b239c75109b04c5030eecb70966689162dd16adc47d0be23df6b9c8ce",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            2
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+          "original_image_sha256": "ad8a9cc272487b66eee852bbbce791a89c6da38fb1024690bc537d098fdeac9d",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "128000",
+            "actual_quantity_total": "120000",
+            "actual_mix_at_standard_prices": "1520000",
+            "actual_total_at_standard_mix_prices": "1500000",
+            "allowed_standard_cost_actual_output": "1600000",
+            "mix_adverse_positive": "20000",
+            "yield_adverse_positive": "-100000",
+            "usage_adverse_positive": "-80000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "실제투입 표준가격원가",
+              "expr": "88000*10+32000*20",
+              "expected": 1520000,
+              "actual": 1520000,
+              "passed": true
+            },
+            {
+              "label": "제품단위 표준원가",
+              "expr": "30*10+10*20",
+              "expected": 500,
+              "actual": 500,
+              "passed": true
+            },
+            {
+              "label": "분해 합계 직접 정의 적용",
+              "expr": "20000-100000",
+              "expected": -80000,
+              "actual": -80000,
+              "passed": true
+            },
+            {
+              "label": "생산량 직접 정의 적용",
+              "expr": "(88000*10+32000*20-(20000-100000))/(30*10+10*20)",
+              "expected": 3200,
+              "actual": 3200.0,
+              "passed": true
+            },
+            {
+              "label": "전체수량차이 일치",
+              "expr": "88000*10+32000*20-3200*(30*10+10*20)",
+              "expected": -80000,
+              "actual": -80000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2025-09-110",
+          "status": "pass",
+          "current_item_hash": "a003adf5862014a6f235a2a8709ee2f1475244363b28bbf5b79db0b3c7514769",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "bc68b43c0b351df92ee879e53e001985cc66bdc69e77d1ac92b2d0c7602bfb7e",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            2
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+          "original_image_sha256": "a83a136377670448e14c2a63ab5efa40b46b894abd48b44d46e89bc57536b31b",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "standard_quantity_total": "80000",
+            "actual_quantity_total": "82000",
+            "actual_mix_at_standard_prices": "149000000",
+            "actual_total_at_standard_mix_prices": "143500000",
+            "allowed_standard_cost_actual_output": "140000000",
+            "mix_adverse_positive": "5500000",
+            "yield_adverse_positive": "3500000",
+            "usage_adverse_positive": "9000000",
+            "decomposition_identity_passed": true
+          },
+          "replayed_checks": [
+            {
+              "label": "전체수량차이",
+              "expr": "(48000-50*1000)*1000+(23000-20*1000)*2000+(11000-10*1000)*5000",
+              "expected": 9000000,
+              "actual": 9000000,
+              "passed": true
+            },
+            {
+              "label": "실제총투입",
+              "expr": "48000+23000+11000",
+              "expected": 82000,
+              "actual": 82000,
+              "passed": true
+            },
+            {
+              "label": "표준배합 중간값 직접 정의 적용",
+              "expr": "(48000+23000+11000)*(50*1000+20*2000+10*5000)/(50+20+10)",
+              "expected": 143500000,
+              "actual": 143500000.0,
+              "passed": true
+            },
+            {
+              "label": "배합 직접 정의 적용",
+              "expr": "48000*1000+23000*2000+11000*5000-(48000+23000+11000)*(50*1000+20*2000+10*5000)/(50+20+10)",
+              "expected": 5500000,
+              "actual": 5500000.0,
+              "passed": true
+            },
+            {
+              "label": "수율 직접 정의 적용",
+              "expr": "((48000+23000+11000)-(50+20+10)*1000)*(50*1000+20*2000+10*5000)/(50+20+10)",
+              "expected": 3500000,
+              "actual": 3500000.0,
+              "passed": true
+            },
+            {
+              "label": "분해 일치",
+              "expr": "5500000+3500000",
+              "expected": 9000000,
+              "actual": 9000000,
+              "passed": true
+            }
+          ]
+        },
+        {
+          "question_id": "2026-03-108",
+          "status": "pass",
+          "current_item_hash": "6519ecf68a2a77dceda3327a2baf6f7efe9467414730e1707bff7e6d179724d0",
+          "current_equals_integrated_batch": true,
+          "question_fingerprint": "a1ddacc5b2e0e2ef601ddb9ddbc274fa6429c4d3846642498ef67b37dbac39fc",
+          "answers_checks_source_links_unchanged": true,
+          "official_answers": [
+            1
+          ],
+          "official_pdf_text_actually_read": true,
+          "official_pdf_image_visually_viewed": false,
+          "original_pdf_sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55",
+          "original_image_sha256": "0eb8702bce4d812993e304894f3dd25419373b9df2f601a102e05fae5e165986",
+          "original_image_visual_checked": true,
+          "four_options_logically_compared": true,
+          "independent_calculation": {
+            "symbolic_identity": "(actual_standard_cost-mid)+(mid-allowed_standard_cost)=actual_standard_cost-allowed_standard_cost",
+            "passed": true
+          },
+          "replayed_checks": []
+        }
+      ],
+      "source_files": [
+        {},
+        {
+          "path": "s14-02-standard-costs.html",
+          "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+        }
+      ]
+    }
+  ]
+}

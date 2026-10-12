@@ -1,5 +1,5 @@
 """Concept-note data: structure, part links, source/status honesty, example arithmetic, bundle."""
-import ast, hashlib, json, operator, unittest
+import ast, copy, hashlib, json, operator, re, unittest
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];D=R/'data'
 def read(name):return json.loads((D/(name+'.json')).read_text())
@@ -55,11 +55,28 @@ class ConceptNotesTest(unittest.TestCase):
                 self.assertTrue(all(self.c['sources'][x['ref']]['url'].startswith('https://www.law.go.kr/') for x in n['sources']),n['id'])
             else:self.assertIsNone(years,f"{n['id']}: non-tax notes must not claim a tax-law year")
             if n['part_id'].startswith('F') and s in ('source_checked','partial'):
-                self.assertTrue(any(x['ref'].startswith('KIFRS') for x in n['sources']),f"{n['id']}: financial notes must cite the K-IFRS standard they were checked against")
+                self.assertTrue(any(x['ref'].startswith(('KIFRS','EUIFRS')) for x in n['sources']),
+                                f"{n['id']}: financial notes need an actually read standard source")
+                if not any(x['ref'].startswith('KIFRS') for x in n['sources']):
+                    self.assertIn('K-IFRS',n['review_note'])
+                    self.assertIn('직접',n['review_note'])
+                    self.assertTrue(all(self.c['sources'][x['ref']].get('provenance_limit')
+                                        for x in n['sources']),n['id'])
         for k,r in self.c['sources'].items():
             self.assertTrue(r['versions'],k)
-            prefix={'OSX':'https://openstax.org/books/','KIFRS':'https://www.kasb.or.kr/','SAYLOR':'https://github.com/saylordotorg/'}.get(k.split('_')[0],'https://www.law.go.kr/')
+            prefix={'OSX':('https://openstax.org/books/','https://github.com/openstax/'),
+                    'KIFRS':'https://www.kasb.or.kr/','SAYLOR':'https://github.com/saylordotorg/',
+                    'MSDOCS':'https://github.com/MicrosoftDocs/',
+                    'IFRSCF':'https://github.com/DhestyaSyafaAmanda/tugas-akhir-analisis-dan-desain-sistem-dhestya-syafa-amanda/blob/',
+                    'COST':('https://www.accaglobal.com/','https://biz.libretexts.org/','https://ocw.mit.edu/'),
+                    'EUIFRS':'https://github.com/legalize-dev/legalize-eu/blob/'}.get(k.split('_')[0],'https://www.law.go.kr/')
             self.assertTrue(r['url'].startswith(prefix),k)
+            if k.startswith('EUIFRS'):
+                self.assertRegex(r['url'],r'/blob/[0-9a-f]{40}/eu/1c/32023R1803\.md')
+                self.assertTrue(r.get('original_url') and r.get('publisher') and r.get('provenance_limit'),k)
+            if k.startswith('IFRSCF'):
+                self.assertRegex(r['url'],r'/blob/[0-9a-f]{40}/conceptual-framework-for-financial-reporting\.pdf$')
+                self.assertTrue(r.get('original_publisher') and r.get('provenance_limit'),k)
     def test_example_arithmetic(self):
         checked=0
         for n in self.notes:
@@ -68,6 +85,16 @@ class ConceptNotesTest(unittest.TestCase):
                 for c in e['checks']:
                     self.assertAlmostEqual(calc(c['expr']),c['expected'],places=6,msg=f"{n['id']} {c['label']}");checked+=1
         self.assertGreater(checked,10)
+    def test_source_metadata_amendments_preserve_verified_provenance(self):
+        a=json.loads((R/'reports/concept-expansion.json').read_text())
+        def digest(x):return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        for u in a.get('source_metadata_amendments',[]):
+            self.assertEqual(digest(u['before']),u['before_hash'])
+            self.assertEqual(digest(self.c['sources'][u['ref']]),u['after_hash'])
+            self.assertTrue(u['reason'])
+            allowed={'title','versions','url','download_url'}
+            self.assertEqual({k:v for k,v in u['before'].items() if k not in allowed},
+                             {k:v for k,v in u['after'].items() if k not in allowed})
     def test_tax_year_values(self):
         n={x['part_id']:x for x in self.notes}
         rates=n['C11']['year_table'];self.assertEqual(rates['years'],[2024,2025,2026])
@@ -79,9 +106,57 @@ class ConceptNotesTest(unittest.TestCase):
         if not path.exists():self.skipTest('No concept expansion audit yet')
         a=json.loads(path.read_text())
         def digest(x):return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-        notes={n['id']:n for n in self.notes}
-        for id,h in a['baseline_hashes'].items():self.assertEqual(digest(notes[id]),h,id)
+        notes=copy.deepcopy({n['id']:n for n in self.notes})
+        # Verify later enrichments first, then reconstruct the previous protected snapshots.
+        for u in reversed(a.get('followup_note_amendments',[])):
+            id=u['note_id'];after=notes[id];before=u['before']
+            self.assertEqual(digest(after),u['after_hash'],id)
+            self.assertEqual(digest(before),u['before_hash'],id)
+            self.assertTrue(u['source_reads'] and u['reason'] and u['output_hash'],id)
+            append_fields={'key_points','formulas','examples','pitfalls','sources'}
+            for field in append_fields:self.assertEqual(after[field][:len(before[field])],before[field],id)
+            for field in set(before)-append_fields-{'unchecked_points','review_note','applicability'}:
+                self.assertEqual(after[field],before[field],id)
+            if before['applicability']!=after['applicability']:
+                self.assertEqual(before['applicability']['tax_law_years'],after['applicability']['tax_law_years'],id)
+                self.assertEqual(before['applicability']['year_note'],after['applicability']['year_note'],id)
+                self.assertTrue(after['applicability']['basis'].startswith(before['applicability']['basis']),id)
+            self.assertEqual(before['review_status'],after['review_status'])
+            notes[id]=before
+        upgrades={u['note_id']:u for u in a.get('source_upgrades',[])}
+        for id,h in a['baseline_hashes'].items():
+            if id in upgrades:
+                u=upgrades[id]
+                self.assertEqual(digest(u['before']),h,id)
+                self.assertEqual(digest(notes[id]),u['after_hash'],id)
+                self.assertEqual(u['before']['review_status'],'partial')
+                self.assertTrue(u['source_reads'] and u['reason'])
+                self.assertLessEqual(set(u['changed_fields']),{'sources','review_status','review_note',
+                                                            'unchecked_points','formulas','examples','pitfalls'})
+                for field in u['before']:
+                    if field not in u['changed_fields']:self.assertEqual(notes[id][field],u['before'][field],id)
+                for old,new in zip(u['before']['formulas'],notes[id]['formulas']):
+                    for key in ('name','expression','variables'):self.assertEqual(old[key],new[key],id)
+                for old,new in zip(u['before']['examples'],notes[id]['examples']):
+                    for key in old:
+                        if key!='unchecked_note':self.assertEqual(old[key],new[key],id)
+                self.assertTrue(all(s in notes[id]['sources'] for s in u['before']['sources']))
+            else:self.assertEqual(digest(notes[id]),h,id)
         for ref,h in a['baseline_source_hashes'].items():self.assertEqual(digest(self.c['sources'][ref]),h,ref)
+        amendments={u['note_id']:u for u in a.get('source_amendments',[])}
+        for id,h in a.get('followup_baseline_hashes',{}).items():
+            if id not in amendments:
+                self.assertEqual(digest(notes[id]),h,id)
+                continue
+            u=amendments[id];before=u['before'];after=notes[id]
+            self.assertEqual(digest(before),h,id);self.assertEqual(digest(after),u['after_hash'],id)
+            self.assertTrue(u['source_reads'] and u['reason'] and u['operations'],id)
+            self.assertEqual(before['review_status'],'partial');self.assertEqual(after['review_status'],'partial')
+            append_fields={'key_points','formulas','examples','pitfalls','sources'}
+            for field in append_fields:self.assertEqual(after[field][:len(before[field])],before[field],id)
+            for field in set(before)-append_fields-{'unchecked_points','review_note'}:
+                self.assertEqual(after[field],before[field],id)
+        for ref,h in a.get('followup_baseline_source_hashes',{}).items():self.assertEqual(digest(self.c['sources'][ref]),h,ref)
         self.assertEqual(a['registered_count'],len(notes))
         assigned=[id for b in a['jobs'] for id in b['assigned_part_ids']]
         self.assertEqual(len(assigned),len(set(assigned)))
