@@ -8,6 +8,8 @@
 
 과목·74개 파트별 기출 풀이, 파트별 핵심 개념 노트, 즉시 채점, 오답 노트, 즐겨찾기, 이어 풀기, 기록 백업·복원을 제공하는 정적 웹앱입니다. HTML/CSS/JavaScript만으로 실행되며 외부 API나 서버 애플리케이션, 프런트엔드 빌드가 필요하지 않습니다. 글꼴은 Pretendard 웹폰트(jsDelivr CDN)를 쓰며, 불러오지 못하면(오프라인 ZIP 등) 시스템 한글 글꼴로 대체됩니다.
 
+**문항 해설:** 과목별 10문항씩 총 30문항에 단계별 풀이·보기별 설명을 제공합니다. 홈의 '해설 30문항 풀기', 문제 목록의 '해설 있는 문제만', 채점 후 풀이, 오답 노트의 '해설'에서 확인할 수 있습니다. [해설 작성·검증 방법](EXPLANATIONS.md)을 참고하세요.
+
 ## 폴더
 
 | 경로 | 용도 |
@@ -61,6 +63,7 @@ python jaegyeong/scripts/build_bank.py --reextract
 python jaegyeong/scripts/test_bank.py
 python jaegyeong/scripts/test_parts.py
 python jaegyeong/scripts/test_concepts.py
+python jaegyeong/scripts/test_explanations.py
 
 # 브라우저 테스트용 추가 설치
 python -m pip install -r jaegyeong/requirements-dev.txt
@@ -69,6 +72,7 @@ python -m playwright install chromium
 # 위 HTTP 서버가 별도 터미널에서 실행 중일 때
 python jaegyeong/scripts/test_app.py
 python jaegyeong/scripts/test_browser.py
+python jaegyeong/scripts/test_explanations_app.py
 ```
 
 기본 테스트 주소는 `http://127.0.0.1:8000/jaegyeong/`입니다. 다른 포트나 앱 폴더를 직접 제공하는 경우 `APP_BASE_URL` 환경변수로 바꿉니다. 설치된 시스템 `chromium`을 우선 사용하며, 없으면 Playwright가 설치한 브라우저를 사용합니다. 테스트 스크린샷은 Git에서 제외한 `_artifacts/`에 저장합니다.
@@ -97,7 +101,7 @@ python jaegyeong/scripts/package_app.py
 
 세법 노트는 2024·2025·2026년 시행 판본을 비교했고, 연도별로 다른 수치는 `year_table`에 연도 열로 나눴습니다(예: 2026년 법인세율 1%p 인상, 배당가산율 11%는 2027년 지급분부터). 문제의 `taxYear`와 노트 대조 범위를 비교해 풀이 화면에 표시합니다. 출처·확인 방법은 파일의 `verification`, `sources`에 있습니다.
 
-개인 학습 기록은 `localStorage`의 `chagok.study.v1`에 저장합니다. 화면 설정(테마 `chagok.theme`, 다크 모드 원본 이미지 반전 `chagok.img`)은 별도 키라 학습 기록·백업에 영향을 주지 않습니다. GitHub에는 개인 오답·즐겨찾기 기록이 올라가지 않습니다. 브라우저나 기기를 바꾸기 전에 앱에서 백업하고 새 브라우저에서 복원하세요. 문항별 해설, 로그인, 자동 기기 동기화, 최신 법령에 따른 정답 재검증은 제공하지 않습니다.
+개인 학습 기록은 `localStorage`의 `chagok.study.v1`에 저장합니다. 화면 설정(테마 `chagok.theme`, 다크 모드 원본 이미지 반전 `chagok.img`)은 별도 키라 학습 기록·백업에 영향을 주지 않습니다. GitHub에는 개인 오답·즐겨찾기 기록이 올라가지 않습니다. 브라우저나 기기를 바꾸기 전에 앱에서 백업하고 새 브라우저에서 복원하세요. 해설은 현재 30문항만 작성했으며 나머지는 준비 중입니다. 로그인, 자동 기기 동기화, 최신 법령에 따른 전체 문항 정답 재검증은 제공하지 않습니다.
 
 ## 배포
 

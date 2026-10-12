@@ -1,0 +1,1976 @@
+{
+  "schema_version": 1,
+  "verification": {
+    "checked_on": "2026-10-12",
+    "method": "30개 원문 이미지를 직접 확인하고 공식 답안 배열과 비교. 세무는 적용 연도의 법령 보존본, 원가는 OpenStax 원문·수식 alt 텍스트, 재무는 기존 개념 노트를 대조했습니다. 재무 기준서 원문의 이번 직접 재대조는 미완료로 별도 표시합니다.",
+    "expert_reviewed": false
+  },
+  "sources": {
+    "NOTE_F04": {
+      "title": "차곡 기존 개념 노트 · F04",
+      "url": "data/concept-notes.json",
+      "checked_on": "2026-10-12",
+      "verification": "저장소의 해당 노트를 직접 읽어 대조. 노트에 기록된 외부 기준서는 이번 해설 작성에서 직접 재대조하지 않았습니다.",
+      "version": "main 74f13df",
+      "kind": "기존 개념 노트"
+    },
+    "NOTE_F15": {
+      "title": "차곡 기존 개념 노트 · F15",
+      "url": "data/concept-notes.json",
+      "checked_on": "2026-10-12",
+      "verification": "저장소의 해당 노트를 직접 읽어 대조. 노트에 기록된 외부 기준서는 이번 해설 작성에서 직접 재대조하지 않았습니다.",
+      "version": "main 74f13df",
+      "kind": "기존 개념 노트"
+    },
+    "NOTE_F21": {
+      "title": "차곡 기존 개념 노트 · F21",
+      "url": "data/concept-notes.json",
+      "checked_on": "2026-10-12",
+      "verification": "저장소의 해당 노트를 직접 읽어 대조. 노트에 기록된 외부 기준서는 이번 해설 작성에서 직접 재대조하지 않았습니다.",
+      "version": "main 74f13df",
+      "kind": "기존 개념 노트"
+    },
+    "CIT_LAW_2025": {
+      "title": "법인세법 · 2025년 대조 판본",
+      "url": "https://www.law.go.kr/법령/법인세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'20775' / 시행 2025-03-14",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/85baa33a2d6b200fd5a66df9efd6bca0344d6dfa/kr/법인세법/법률.md",
+      "commit": "85baa33a2d6b200fd5a66df9efd6bca0344d6dfa"
+    },
+    "CIT_LAW_2026": {
+      "title": "법인세법 · 2026년 대조 판본",
+      "url": "https://www.law.go.kr/법령/법인세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'21217' / 시행 2026-01-01",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/2250832915f95a947777b9ee052d0653073ff03e/kr/법인세법/법률.md",
+      "commit": "2250832915f95a947777b9ee052d0653073ff03e"
+    },
+    "CIT_DECREE_2025": {
+      "title": "법인세법 시행령 · 2025년 대조 판본",
+      "url": "https://www.law.go.kr/법령/법인세법시행령",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'35350' / 시행 2025-02-28",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/88c324d9e1ed024a9d6a81037628b35f2a1598c1/kr/법인세법/시행령.md",
+      "commit": "88c324d9e1ed024a9d6a81037628b35f2a1598c1"
+    },
+    "CIT_DECREE_2026": {
+      "title": "법인세법 시행령 · 2026년 대조 판본",
+      "url": "https://www.law.go.kr/법령/법인세법시행령",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'36130' / 시행 2026-02-27",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/d7de727473c0bf05431d2c3481858a6562871139/kr/법인세법/시행령.md",
+      "commit": "d7de727473c0bf05431d2c3481858a6562871139"
+    },
+    "PIT_LAW_2025": {
+      "title": "소득세법 · 2025년 대조 판본",
+      "url": "https://www.law.go.kr/법령/소득세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'20615' / 시행 2025-01-01",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/b002e16d9f3146e3c9d9173c4af8da78447c219e/kr/소득세법/법률.md",
+      "commit": "b002e16d9f3146e3c9d9173c4af8da78447c219e"
+    },
+    "PIT_LAW_2026": {
+      "title": "소득세법 · 2026년 대조 판본",
+      "url": "https://www.law.go.kr/법령/소득세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'21223' / 시행 2026-01-01",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/f8a96edbe7fe24f9654b6b2be553b7ea46b74c14/kr/소득세법/법률.md",
+      "commit": "f8a96edbe7fe24f9654b6b2be553b7ea46b74c14"
+    },
+    "VAT_LAW_2025": {
+      "title": "부가가치세법 · 2025년 대조 판본",
+      "url": "https://www.law.go.kr/법령/부가가치세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'20776' / 시행 2025-07-01",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/909267660ad96cbd9aa358e64718508a6ac45253/kr/부가가치세법/법률.md",
+      "commit": "909267660ad96cbd9aa358e64718508a6ac45253"
+    },
+    "VAT_LAW_2026": {
+      "title": "부가가치세법 · 2026년 대조 판본",
+      "url": "https://www.law.go.kr/법령/부가가치세법",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'21218' / 시행 2026-01-01",
+      "verification": "국가법령정보센터 OpenAPI 자료를 보존한 legalize-kr Git 저장소의 해당 판본을 직접 읽었습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/b968ff5a2e5390c4d7f799a7e32adac56f7b1142/kr/부가가치세법/법률.md",
+      "commit": "b968ff5a2e5390c4d7f799a7e32adac56f7b1142"
+    },
+    "m68071": {
+      "title": "OpenStax Managerial Accounting · 직접재료 가격·수량차이",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68071/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m71412": {
+      "title": "OpenStax Managerial Accounting · 제조간접원가 차이",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m71412/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m68116": {
+      "title": "OpenStax Managerial Accounting · 손익분기점",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68116/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m68081": {
+      "title": "OpenStax Managerial Accounting · 관련원가·매몰원가·기회원가",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68081/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m68082": {
+      "title": "OpenStax Managerial Accounting · 특별주문",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68082/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m68083": {
+      "title": "OpenStax Managerial Accounting · 자가제조·외부구입",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "m68084": {
+      "title": "OpenStax Managerial Accounting · 제품라인 유지·폐지",
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68084/index.cnxml",
+      "kind": "공개 교재 원문 · CC BY-NC-SA 4.0",
+      "version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "checked_on": "2026-10-12",
+      "verification": "CNXML 원문의 설명과 수식 이미지 alt 텍스트를 직접 읽어 대조했습니다. 원문을 복사하지 않고 문항 조건에 맞추어 풀이를 작성했습니다."
+    },
+    "PIT_DECREE_2025": {
+      "title": "소득세법 시행령 · 2025년 대조 판본",
+      "url": "https://www.law.go.kr/법령/소득세법시행령",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'35608' / 시행 2025-07-01",
+      "verification": "법령 Git 보존본에서 제116조의2 원문을 직접 읽어 이자·기타배당·가산배당 합산 순서를 대조했습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/9486ba3c096834ae68f240387f70757fecb61e8b/kr/소득세법/시행령.md",
+      "commit": "9486ba3c096834ae68f240387f70757fecb61e8b"
+    },
+    "PIT_DECREE_2026": {
+      "title": "소득세법 시행령 · 2026년 대조 판본",
+      "url": "https://www.law.go.kr/법령/소득세법시행령",
+      "checked_on": "2026-10-12",
+      "kind": "법령 보존본",
+      "version": "'36129' / 시행 2026-02-27",
+      "verification": "법령 Git 보존본에서 제116조의2 원문을 직접 읽어 이자·기타배당·가산배당 합산 순서를 대조했습니다.",
+      "mirror_url": "https://github.com/legalize-kr/legalize-kr/blob/a7f11021c556c266aab2135c19f21995df169f24/kr/소득세법/시행령.md",
+      "commit": "a7f11021c556c266aab2135c19f21995df169f24"
+    }
+  },
+  "items": [
+    {
+      "question_id": "2026-01-006",
+      "question_fingerprint": "c992b48647cfcfa8aa89d99a58ad52f863e3afc362ea58f00c0ad37862b65805",
+      "answers": [
+        4
+      ],
+      "part_id": "F04",
+      "title": "선입선출법의 기말재고",
+      "summary": "가장 최근에 매입한 1,600개가 남으므로 기말재고는 4,300,000원, 정답은 ④입니다.",
+      "steps": [
+        "총입고는 1,000 + 1,500 + 1,000 = 3,500개, 판매는 1,200 + 700 = 1,900개로 기말 1,600개와 일치합니다.",
+        "선입선출법은 먼저 매입한 재고를 먼저 판매한 것으로 봅니다. 9월 매입분 1,000개와 5월 매입분 중 600개가 기말에 남습니다.",
+        "기말재고 = 1,000 × 2,800 + 600 × 2,500 = 4,300,000원입니다. 기초 재고의 단가를 기말 수량에 적용하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "3,500,000원은 기말에 남은 최근 매입분의 원가 합계와 다릅니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "3,800,000원은 선입선출법으로 계산한 4,300,000원과 다릅니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "4,100,000원은 기말 1,600개의 실제 원가층 합계와 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": true,
+          "reason": "9월분 2,800,000원과 5월 잔여분 1,500,000원을 합친 금액입니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "기말재고",
+          "expr": "1000*2800+600*2500",
+          "expected": 4300000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F04",
+          "locator": "note-F04 · 재고자산 원가·저가법·선입선출"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-007",
+      "question_fingerprint": "e01778e95cc78b676340cf9795d96147a131c8229e6bd22eb866f9fddbd47ee1",
+      "answers": [
+        3
+      ],
+      "part_id": "F04",
+      "title": "재고자산 원가에서 제외하는 비용",
+      "summary": "후속 생산단계에 보관이 필요한 경우는 보관원가를 제외하는 일반 원칙의 예외이므로, 옳지 않은 설명은 ③입니다.",
+      "steps": [
+        "현재의 장소와 상태에 이르게 하는 데 필요한 원가를 재고자산에 포함합니다.",
+        "비정상적 낭비와 통상적인 보관원가는 기간비용입니다. 그러나 다음 생산단계 전에 반드시 필요한 보관원가는 포함할 수 있습니다.",
+        "③은 이러한 예외까지 포함할 수 없다고 단정하므로 틀렸습니다. 문제는 옳지 않은 설명을 고르는 문제입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "특정 고객을 위한 설계 등 현재의 상태에 이르게 하는 원가는 포함할 수 있으므로 옳습니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "비정상적 낭비는 원가에 포함하지 않는다는 옳은 설명입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "후속 생산단계에 필요한 보관원가의 예외를 부정하므로 정답입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "하자로 돌려받거나 할인받은 매입대금은 매입원가에서 차감하므로 옳습니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "NOTE_F04",
+          "locator": "note-F04 · 재고자산 원가·저가법·선입선출"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-008",
+      "question_fingerprint": "d748691d83730e4f29bddd4b699eb0997b1a65a84f63c4123fe4fe3754c08630",
+      "answers": [
+        1
+      ],
+      "part_id": "F04",
+      "title": "평가손실·감모손실과 매출원가",
+      "summary": "기말 금액에 손실이 이미 반영되어 있으므로 비정상감모 20,000원만 매출원가에서 제외합니다. 정답은 ① 1,050,000원입니다.",
+      "steps": [
+        "기말재고 330,000원은 평가손실과 모든 감모손실을 차감한 금액입니다.",
+        "기초 400,000 + 매입 1,000,000 - 기말 330,000 = 1,070,000원에는 평가손실·정상감모·비정상감모가 모두 포함되어 있습니다.",
+        "문제에서 비정상감모는 기타비용으로 분류합니다. 매출원가 = 1,070,000 - 20,000 = 1,050,000원입니다. 평가손실과 정상감모를 다시 더하면 중복입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "기말재고에 반영된 손실을 중복하지 않고 비정상감모만 제외한 금액입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "20,000원의 비정상감모까지 매출원가에 포함한 금액입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "평가손실·감모손실이 차감된 기말금액을 사용한 결과와 맞지 않습니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "손실을 중복 반영하지 않는 매출원가 계산 결과와 맞지 않습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "매출원가",
+          "expr": "400000+1000000-330000-20000",
+          "expected": 1050000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F04",
+          "locator": "note-F04 · 재고자산 원가·저가법·선입선출"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-023",
+      "question_fingerprint": "36b5703bd3b1c8bdc3bd093157e851dd07c08d48ad00c116769f3ec2f475ced3",
+      "answers": [
+        1
+      ],
+      "part_id": "F15",
+      "title": "한 시점과 기간에 걸친 수익인식",
+      "summary": "한 시점에 이행하는 수행의무에 기간에 걸친 진행률 기준을 적용한 ①이 옳지 않습니다.",
+      "steps": [
+        "수행의무는 기간에 걸쳐 이행하는 경우와 한 시점에 이행하는 경우를 구분합니다.",
+        "한 시점에 이행한다면 고객에게 통제가 이전되는 시점에 수익을 인식합니다. 진행률 측정은 기간에 걸친 이행에 사용합니다.",
+        "거래가격에서 제3자를 대신해 회수하는 금액을 제외하고, 유의적인 금융요소와 비현금대가를 고려한다는 나머지 설명은 옳습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "한 시점 이행과 진행률에 따른 기간 수익인식을 혼동했으므로 정답입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "부가가치세 등 제3자 대신 회수하는 금액을 거래가격에서 제외한다는 옳은 설명입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "유의적인 금융요소가 있으면 화폐의 시간가치를 반영한다는 옳은 설명입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "비현금대가를 공정가치로 측정한다는 옳은 설명입니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "NOTE_F15",
+          "locator": "note-F15 · 수행의무·거래가격·반품"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "제1115호 문단 38·47·60·66의 각 보기별 직접 재대조가 필요합니다. 기존 노트와 공식 정답은 확인했습니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-024",
+      "question_fingerprint": "8c618a243e28ac7a171fa52ce1fc0d2c6dd48a4935dc9c719586b5925c650eaa",
+      "answers": [
+        3
+      ],
+      "part_id": "F15",
+      "title": "라이선스 사용권과 접근권",
+      "summary": "사용권은 제공 시점의 지적재산을 사용할 권리이므로 한 시점에 수익을 인식합니다. 정답은 ③입니다.",
+      "steps": [
+        "사용권과 접근권을 구분합니다. 사용권은 라이선스 제공 시점에 존재하는 지적재산을 사용할 권리입니다.",
+        "사용권의 계약기간이 정해져 있다는 이유만으로 기간에 걸쳐 수익을 나누지 않습니다. 고객이 사용하고 효익을 얻을 수 있는 시점이 중요합니다.",
+        "반면 접근권은 기간 동안 변화하는 지적재산에 접근하는 권리로 기간에 걸쳐 수익을 인식합니다. ③은 두 경우를 혼동했습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "고객충성 보상점수에 상대적 개별판매가격으로 대가를 배분한다는 옳은 설명입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "용역유형 보증은 별도 수행의무로 처리한다는 옳은 설명입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "사용권을 무조건 기간에 걸쳐 인식한다고 설명했으므로 정답입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "예상 반품에 대해 수익을 제외하고 환불부채를 인식한다는 옳은 설명입니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "NOTE_F15",
+          "locator": "note-F15 · 수행의무·거래가격·반품"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "제1115호 B28~B32(보증), B58~B61(라이선스)의 직접 재대조가 필요합니다. 라이선스 구분은 AI 작성 설명이며 공식 답안과 일치합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-025",
+      "question_fingerprint": "746249fac7f56b666ccec77079e34bb2ce2bad102cfd38e3c74f0785831a7d56",
+      "answers": [
+        3
+      ],
+      "part_id": "F15",
+      "title": "고객에게 지급하는 판매장려금",
+      "summary": "딜러에게 지급한 판매장려금을 매출에서 차감하면 800,000원입니다. 정답은 ③입니다.",
+      "steps": [
+        "삼일의 고객은 본인으로 거래하는 딜러 용산입니다. 용산이 최종 고객에게 판매한 1,500,000원은 삼일의 매출이 아닙니다.",
+        "문제에 별도 구별되는 재화나 용역의 대가라는 조건이 없는 판매장려금은 고객에게 지급할 대가로 보아 거래가격을 차감합니다.",
+        "삼일의 매출 = 1,000,000 - 200,000 = 800,000원입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "삼일의 딜러 판매액에서 장려금을 차감한 금액과 다릅니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "최종 고객 판매액과 딜러 매입액의 차이 500,000원은 삼일의 매출이 아닙니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "딜러 판매액 1,000,000원에서 판매장려금 200,000원을 차감한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "고객에게 지급한 장려금의 매출 차감을 누락한 금액입니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "매출",
+          "expr": "1000000-200000",
+          "expected": 800000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F15",
+          "locator": "note-F15 · 수행의무·거래가격·반품"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "제1115호 문단 70~72(고객에게 지급할 대가)의 직접 재대조가 필요합니다. 기존 노트의 거래가격 원칙 및 공식 정답과 비교하고 계산은 검산했습니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-032",
+      "question_fingerprint": "e8d8f6195a65737faed46f87e073c1896e4941f8f911d63ba860e1f4bf1d8ffc",
+      "answers": [
+        1
+      ],
+      "part_id": "F21",
+      "title": "무상증자를 소급 반영한 기본주당이익",
+      "summary": "보통주 귀속이익 12,000,000원을 가중평균 24,000주로 나누면 500원, 정답은 ①입니다.",
+      "steps": [
+        "보통주 귀속이익 = 당기순이익 14,000,000 - 우선주배당 2,000,000 = 12,000,000원입니다.",
+        "유상증자 9,000주는 9월부터 4개월 반영합니다. 무상증자 20%는 대응 자원 증가가 없으므로 무상증자 이전 주식수에도 소급 적용합니다.",
+        "가중평균 주식수 = (17,000 × 8/12 + 26,000 × 4/12) × 1.2 = 24,000주입니다.",
+        "기본주당이익 = 12,000,000 ÷ 24,000 = 500원입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "우선주배당 차감과 무상증자 소급 반영을 모두 적용한 금액입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "무상증자를 소급 반영하지 않으면 20,000주로 나누어 600원이 됩니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "월할 가중평균과 우선주배당을 반영한 결과와 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "보통주 귀속이익과 가중평균 주식수로 계산한 결과와 다릅니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "가중평균주식수",
+          "expr": "(17000*8/12+26000*4/12)*1.2",
+          "expected": 24000
+        },
+        {
+          "label": "주당이익",
+          "expr": "(14000000-2000000)/24000",
+          "expected": 500
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F21",
+          "locator": "note-F21 · 기본주당이익·가중평균 주식수"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-005",
+      "question_fingerprint": "fb181148c8ff920b2d0fbaec48f20bff61a67142842a0bba9e4ad442d24cb65b",
+      "answers": [
+        3
+      ],
+      "part_id": "F04",
+      "title": "재고자산의 저가법과 보관원가",
+      "summary": "필요한 생산단계 보관을 제외한 보관원가는 취득원가에 포함하지 않으므로 정답은 ③입니다.",
+      "steps": [
+        "재고자산은 취득원가와 순실현가능가치 중 낮은 금액으로 측정합니다.",
+        "매입할인·리베이트 등은 매입원가에서 차감하고, 판매원가는 재고자산 원가에서 제외합니다.",
+        "통상적인 보관원가는 제외하되, 다음 생산단계 투입 전에 필요한 보관은 예외가 될 수 있습니다. 이를 정확히 설명한 보기는 ③입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "높은 금액이 아니라 낮은 금액으로 측정하므로 틀렸습니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "매입할인·리베이트는 차감하므로 틀렸습니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "필요한 생산단계 보관의 예외를 인정하고 통상 보관은 제외하므로 옳습니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "판매원가는 원가에 포함하지 않으므로 틀렸습니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "NOTE_F04",
+          "locator": "note-F04 · 재고자산 원가·저가법·선입선출"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-006",
+      "question_fingerprint": "33598d7fed367841551af80edf1b07592e23625fb0d85dfc7e74eebe770732f1",
+      "answers": [
+        4
+      ],
+      "part_id": "F04",
+      "title": "확정판매계약분의 순실현가능가치",
+      "summary": "계약분 1,500개에서 개당 100원의 손실이 발생하므로 평가손실은 150,000원, 정답은 ④입니다.",
+      "steps": [
+        "확정판매계약 이행용 1,500개는 계약가격 900원을 기준으로 순실현가능가치를 계산합니다. 계약분 판매비용은 없습니다.",
+        "계약분 평가손실 = 1,500 × (1,000 - 900) = 150,000원입니다.",
+        "나머지 300개의 순실현가능가치는 1,200 - 100 = 1,100원으로 원가 1,000원보다 높습니다. 이 부분은 평가손실도 평가이익도 인식하지 않습니다.",
+        "총평가손실은 150,000원입니다. 계약분 손실을 나머지 재고의 미실현 이익과 상계하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "계약가격이 원가보다 낮은 계약분의 손실을 누락했습니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "계약분 1,500개의 개당 100원 손실과 맞지 않습니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "계약분과 비계약분을 각각 저가법으로 계산한 결과와 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": true,
+          "reason": "계약분 손실 150,000원과 나머지 손실 0원을 합한 금액입니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "계약분평가손실",
+          "expr": "1500*max(1000-900,0)",
+          "expected": 150000
+        },
+        {
+          "label": "비계약분손실",
+          "expr": "300*max(1000-(1200-100),0)",
+          "expected": 0
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F04",
+          "locator": "note-F04 · 재고자산 원가·저가법·선입선출"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "기존 개념 노트의 기준서 근거를 사용했습니다. 이번 작성에서는 K-IFRS 원문을 직접 다시 읽지 못해 해설 전체의 기준서 재대조가 필요합니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-025",
+      "question_fingerprint": "c6a6958a8d9854ef5da88d86d77511e18c342400f31a00a13898f6a889bb011a",
+      "answers": [
+        1
+      ],
+      "part_id": "F15",
+      "title": "지원활동 없는 성숙기 제품의 라이선스",
+      "summary": "사용권을 20X1년에 이전하므로 20X2년 수익은 0원, 정답은 ①입니다.",
+      "steps": [
+        "성숙기 치료제이며 어떠한 지원활동도 하지 않는 조건에서, 제공 시점에 존재하는 지적재산을 사용하는 라이선스로 판단합니다.",
+        "계약기간이 2년이라도 접근권처럼 매년 절반씩 수익을 인식하지 않습니다. 고객이 사용할 수 있는 권리가 이전된 20X1년 초에 8억원을 인식합니다.",
+        "따라서 20X2년에 인식할 라이선스 수익은 없습니다. 금융요소는 문제 조건에 따라 고려하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "20X1년에 사용권을 이전하고 수익을 인식하므로 20X2년 수익은 0원입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "계약기간 2년으로 단순 균등 배분한 금액이며 사용권 조건에 맞지 않습니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "계약조건에 근거한 20X2년 수익 금액이 아닙니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "총거래가격 8억원을 이전 다음 해인 20X2년에 인식하는 것은 맞지 않습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "20X2수익",
+          "expr": "800000000-800000000",
+          "expected": 0
+        }
+      ],
+      "sources": [
+        {
+          "ref": "NOTE_F15",
+          "locator": "note-F15 · 수행의무·거래가격·반품"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "partial",
+      "review_note": "원문 이미지와 공식 답안 및 기존 개념 노트를 대조했습니다. 계산은 검산했으며 기준서 원문의 직접 재대조와 전문가 검수는 아직입니다.",
+      "unchecked_points": [
+        "제1115호 B58~B61의 사용권·접근권 판단에 대한 직접 재대조가 필요합니다. 공식 답안과 조건을 대조하고 계산은 검산했습니다."
+      ],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-054",
+      "question_fingerprint": "6cb9d3288cfc1f9dc3492bcc39ccef7946f463bd47dd8bf910b24f68fe7cb7dc",
+      "answers": [
+        2
+      ],
+      "part_id": "C08",
+      "title": "기업업무추진비 한도초과액",
+      "summary": "증빙 부적격 2,000,000원을 먼저 제외한 뒤 한도초과액을 계산합니다. 정답은 2번 12,800,000원입니다.",
+      "steps": [
+        "단순 영수증만 받은 1건 2,000,000원은 적격증빙 요건을 충족하지 않아 별도 손금불산입합니다.",
+        "한도 비교 대상은 52,000,000 - 2,000,000 = 50,000,000원입니다.",
+        "12개월 중소기업 기본한도 36,000,000원 + 수입금액 400,000,000 × 0.3% = 37,200,000원입니다.",
+        "문제에서 묻는 한도초과 손금불산입액은 50,000,000 - 37,200,000 = 12,800,000원입니다. 증빙 부적격까지 포함한 전체 손금불산입액 14,800,000원과 구분합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "한도초과액은 12,800,000원으로, 이 보기 금액과 다릅니다. 증빙 부적격 금액을 포함한 전체 손금불산입액을 묻는 문제가 아닙니다."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "한도초과액은 12,800,000원으로, 이 보기 금액과 일치합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "14,000,000원은 비교대상 50,000,000원에서 기본한도 36,000,000원만 빼고 매출액별 한도 1,200,000원을 누락한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "14,800,000원은 증빙 부적격 2,000,000원과 한도초과 12,800,000원을 합한 전체 손금불산입액입니다. 문제는 한도초과액만 묻습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "손금한도",
+          "expr": "36000000+400000000*.003",
+          "expected": 37200000.0
+        },
+        {
+          "label": "한도초과",
+          "expr": "52000000-2000000-(36000000+400000000*.003)",
+          "expected": 12800000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "CIT_LAW_2025",
+          "locator": "제25조 제2항·제4항: 증빙 제외·기본한도·수입금액별 한도"
+        },
+        {
+          "ref": "CIT_DECREE_2025",
+          "locator": "제41조 제1항: 경조금 외 3만원 기준; 제42조 제1항: 수입금액 기준"
+        }
+      ],
+      "tax_law_year": 2025,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-054",
+      "question_fingerprint": "5584f92e73ac796b112cf539edfb807d2d9c993931c9da423eb5df0659c98365",
+      "answers": [
+        1
+      ],
+      "part_id": "C08",
+      "title": "기업업무추진비 한도초과액",
+      "summary": "증빙 부적격 2,000,000원을 먼저 제외한 뒤 한도초과액을 계산합니다. 정답은 1번 1,000,000원입니다.",
+      "steps": [
+        "단순 영수증만 받은 1건 2,000,000원은 적격증빙 요건을 충족하지 않아 별도 손금불산입합니다.",
+        "한도 비교 대상은 42,000,000 - 2,000,000 = 40,000,000원입니다.",
+        "12개월 중소기업 기본한도 36,000,000원 + 수입금액 1,000,000,000 × 0.3% = 39,000,000원입니다.",
+        "문제에서 묻는 한도초과 손금불산입액은 40,000,000 - 39,000,000 = 1,000,000원입니다. 증빙 부적격까지 포함한 전체 손금불산입액 3,000,000원과 구분합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "한도초과액은 1,000,000원으로, 이 보기 금액과 일치합니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "3,000,000원은 증빙 부적격 2,000,000원과 한도초과 1,000,000원을 합한 전체 손금불산입액으로, 문제에서 묻는 한도초과액과 다릅니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "한도초과액은 1,000,000원으로, 이 보기 금액과 다릅니다. 증빙 부적격 금액을 포함한 전체 손금불산입액을 묻는 문제가 아닙니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "한도초과액은 1,000,000원으로, 이 보기 금액과 다릅니다. 증빙 부적격 금액을 포함한 전체 손금불산입액을 묻는 문제가 아닙니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "손금한도",
+          "expr": "36000000+1000000000*.003",
+          "expected": 39000000.0
+        },
+        {
+          "label": "한도초과",
+          "expr": "42000000-2000000-(36000000+1000000000*.003)",
+          "expected": 1000000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "CIT_LAW_2026",
+          "locator": "제25조 제2항·제4항: 증빙 제외·기본한도·수입금액별 한도"
+        },
+        {
+          "ref": "CIT_DECREE_2026",
+          "locator": "제41조 제1항: 경조금 외 3만원 기준; 제42조 제1항: 수입금액 기준"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-05-054",
+      "question_fingerprint": "3f3991be84ac8dc59a212f1a3da069b3f100b39f01899fabea7aac86058b1c73",
+      "answers": [
+        2
+      ],
+      "part_id": "C08",
+      "title": "특수관계인 매출의 기업업무추진비 한도",
+      "summary": "일반 매출과 특수관계인 매출을 구분하면 한도는 44,000,000원, 정답은 ②입니다.",
+      "steps": [
+        "비중소기업의 12개월 기본한도는 12,000,000원입니다. 특정법인이 아니므로 기본·수입금액 한도의 50% 축소는 적용하지 않습니다.",
+        "일반 매출 100억원에 대한 한도는 100억원 × 0.3% = 30,000,000원입니다.",
+        "총매출 200억원의 일반 한도는 30,000,000 + 100억원 × 0.2% = 50,000,000원입니다. 일반 매출 한도와의 차액 20,000,000원에 특수관계인 조정률 10%를 적용하면 2,000,000원입니다.",
+        "총한도 = 12,000,000 + 30,000,000 + 2,000,000 = 44,000,000원입니다. 특수관계인 매출을 처음 100억원 구간으로 따로 계산하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "일반 매출과 특수관계인 매출의 구간별 조정을 적용한 합계와 다릅니다."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "기본 12,000,000 + 일반 30,000,000 + 특수관계인 2,000,000원입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "특수관계인 조정 없이 총매출 한도 50,000,000원과 기본한도 12,000,000원을 합한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "일반 매출과 특수관계인 매출의 구간별 조정 결과와 다릅니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "총한도",
+          "expr": "12000000+30000000+((30000000+10000000000*.002)-30000000)*.1",
+          "expected": 44000000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "CIT_LAW_2026",
+          "locator": "제25조 제2항·제4항: 증빙 제외·기본한도·수입금액별 한도"
+        },
+        {
+          "ref": "CIT_DECREE_2026",
+          "locator": "제41조 제1항: 경조금 외 3만원 기준; 제42조 제1항: 수입금액 기준"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-062",
+      "question_fingerprint": "bed23abd86e8855de44dbb0d9fb3572537b18ad28d89ad6b1f4de4376895fef5",
+      "answers": [
+        3
+      ],
+      "part_id": "I02",
+      "title": "금융소득 총수입금액과 배당가산의 구분",
+      "summary": "분리과세 소득을 제외한 배당 15,000,000원과 이자 13,000,000원을 합하면 28,000,000원, 정답은 ③입니다.",
+      "steps": [
+        "직장공제회 초과반환금과 비실명 금융소득은 종합소득에 합산하지 않는 분리과세 소득입니다.",
+        "나머지 배당 15,000,000원과 예금이자 13,000,000원의 합계가 20,000,000원을 초과하므로 종합과세 대상입니다.",
+        "묻는 것은 금융소득의 총수입금액입니다. 배당가산액을 더하는 배당소득금액 계산과 구분하여 28,000,000원을 선택합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "예금이자 13,000,000원을 누락한 금액입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "종합과세 대상에 포함되는 이자·배당의 합계와 다릅니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "종합과세되는 배당 15,000,000원과 이자 13,000,000원의 합계입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "분리과세인 직장공제회 초과반환금 3,000,000원을 더한 금액입니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "총수입금액",
+          "expr": "15000000+13000000",
+          "expected": 28000000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "PIT_LAW_2025",
+          "locator": "제14조 제3항 제3호·제6호, 제17조 제3항: 분리·종합과세 및 배당가산"
+        }
+      ],
+      "tax_law_year": 2025,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-03-062",
+      "question_fingerprint": "e6ddbbf147311e22bc02d99242f135fa98ad73100e7bdccf3a4fe1306d125b92",
+      "answers": [
+        3
+      ],
+      "part_id": "I02",
+      "title": "종합과세 금융소득과 배당가산",
+      "summary": "금융소득 합계에 국내 배당의 가산액을 더하면 36,500,000원, 정답은 ③입니다.",
+      "steps": [
+        "이자·국내 배당·국외 배당의 합계는 15,000,000 + 15,000,000 + 5,000,000 = 35,000,000원입니다. 국내 원천징수 대상 금융소득도 2천만원을 초과합니다.",
+        "원천징수되지 않은 국외 배당은 종합과세하지만, 배당가산은 국내 법인 배당에 적용합니다. 국외 배당을 국내 배당가산 대상에 넣지 않습니다.",
+        "이자소득, 배당가산 대상이 아닌 국외 배당, 가산 대상 국내 배당 순으로 2천만원 기준을 채웁니다. 총 금융소득 중 기준금액 초과분 15,000,000원과 국내 배당 15,000,000원 중 작은 금액 15,000,000원이 가산 대상입니다. 여기에 지정한 10%를 곱하면 배당가산액은 1,500,000원입니다.",
+        "금융소득금액 = 35,000,000 + 1,500,000 = 36,500,000원입니다. 국외 배당에도 가산율을 적용하거나, 국외 배당을 기준금액 판단에서 빼면 안 됩니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "배당가산액 1,500,000원을 반영한 36,500,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "35,000,000원은 배당가산 전 이자·배당 합계입니다. 소득금액 계산에는 배당가산액 1,500,000원을 더해야 합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "이자·배당 합계 35,000,000원에 국내 배당가산액 1,500,000원을 더한 36,500,000원입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "배당가산액 1,500,000원을 반영한 36,500,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "배당가산",
+          "expr": "min(15000000,max(15000000+15000000+5000000-20000000,0))*.1",
+          "expected": 1500000
+        },
+        {
+          "label": "금융소득금액",
+          "expr": "35000000+1500000",
+          "expected": 36500000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "PIT_LAW_2025",
+          "locator": "제14조 제3항 제3호·제6호, 제17조 제3항: 분리·종합과세 및 배당가산"
+        },
+        {
+          "ref": "PIT_DECREE_2025",
+          "locator": "제116조의2: 이자소득·가산 제외 배당·가산 대상 배당 순서"
+        }
+      ],
+      "tax_law_year": 2025,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-05-062",
+      "question_fingerprint": "bcf6527c203e54c3807be40222886e7ff2eacfa88fa3174e82581016a5263492",
+      "answers": [
+        3
+      ],
+      "part_id": "I02",
+      "title": "종합과세 금융소득과 배당가산",
+      "summary": "금융소득 합계에 국내 배당의 가산액을 더하면 36,500,000원, 정답은 ③입니다.",
+      "steps": [
+        "이자·국내 배당·국외 배당의 합계는 10,000,000 + 20,000,000 + 5,000,000 = 35,000,000원입니다. 국내 원천징수 대상 금융소득도 2천만원을 초과합니다.",
+        "원천징수되지 않은 국외 배당은 종합과세하지만, 배당가산은 국내 법인 배당에 적용합니다. 국외 배당을 국내 배당가산 대상에 넣지 않습니다.",
+        "이자소득, 배당가산 대상이 아닌 국외 배당, 가산 대상 국내 배당 순으로 2천만원 기준을 채웁니다. 총 금융소득 중 기준금액 초과분 15,000,000원과 국내 배당 20,000,000원 중 작은 금액 15,000,000원이 가산 대상입니다. 여기에 지정한 10%를 곱하면 배당가산액은 1,500,000원입니다.",
+        "금융소득금액 = 35,000,000 + 1,500,000 = 36,500,000원입니다. 국외 배당에도 가산율을 적용하거나, 국외 배당을 기준금액 판단에서 빼면 안 됩니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "배당가산액 1,500,000원을 반영한 36,500,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "35,000,000원은 배당가산 전 이자·배당 합계입니다. 소득금액 계산에는 배당가산액 1,500,000원을 더해야 합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "이자·배당 합계 35,000,000원에 국내 배당가산액 1,500,000원을 더한 36,500,000원입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "배당가산액 1,500,000원을 반영한 36,500,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "배당가산",
+          "expr": "min(20000000,max(10000000+20000000+5000000-20000000,0))*.1",
+          "expected": 1500000
+        },
+        {
+          "label": "금융소득금액",
+          "expr": "35000000+1500000",
+          "expected": 36500000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "PIT_LAW_2026",
+          "locator": "제14조 제3항 제3호·제6호, 제17조 제3항: 분리·종합과세 및 배당가산; 부칙 법률 제21221호 제14조: 2026년까지 종전 가산율"
+        },
+        {
+          "ref": "PIT_DECREE_2026",
+          "locator": "제116조의2: 이자소득·가산 제외 배당·가산 대상 배당 순서"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-062",
+      "question_fingerprint": "8264d8367a358f174a310a5ed1110e4b65b80b184597bf7651d38aafd8693c5b",
+      "answers": [
+        3
+      ],
+      "part_id": "I02",
+      "title": "종합과세 금융소득과 배당가산",
+      "summary": "금융소득 합계에 국내 배당의 가산액을 더하면 36,000,000원, 정답은 ③입니다.",
+      "steps": [
+        "이자·국내 배당·국외 배당의 합계는 15,000,000 + 10,000,000 + 10,000,000 = 35,000,000원입니다. 국내 원천징수 대상 금융소득도 2천만원을 초과합니다.",
+        "원천징수되지 않은 국외 배당은 종합과세하지만, 배당가산은 국내 법인 배당에 적용합니다. 국외 배당을 국내 배당가산 대상에 넣지 않습니다.",
+        "이자소득, 배당가산 대상이 아닌 국외 배당, 가산 대상 국내 배당 순으로 2천만원 기준을 채웁니다. 총 금융소득 중 기준금액 초과분 15,000,000원과 국내 배당 10,000,000원 중 작은 금액 10,000,000원이 가산 대상입니다. 여기에 지정한 10%를 곱하면 배당가산액은 1,000,000원입니다.",
+        "금융소득금액 = 35,000,000 + 1,000,000 = 36,000,000원입니다. 국외 배당에도 가산율을 적용하거나, 국외 배당을 기준금액 판단에서 빼면 안 됩니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "배당가산액 1,000,000원을 반영한 36,000,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "35,000,000원은 배당가산 전 이자·배당 합계입니다. 소득금액 계산에는 배당가산액 1,000,000원을 더해야 합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "이자·배당 합계 35,000,000원에 국내 배당가산액 1,000,000원을 더한 36,000,000원입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "배당가산액 1,000,000원을 반영한 36,000,000원과 다릅니다. 국외 배당은 기준금액 판단에 포함하고 가산 대상에서는 제외합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "배당가산",
+          "expr": "min(10000000,max(15000000+10000000+10000000-20000000,0))*.1",
+          "expected": 1000000
+        },
+        {
+          "label": "금융소득금액",
+          "expr": "35000000+1000000",
+          "expected": 36000000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "PIT_LAW_2026",
+          "locator": "제14조 제3항 제3호·제6호, 제17조 제3항: 분리·종합과세 및 배당가산; 부칙 법률 제21221호 제14조: 2026년까지 종전 가산율"
+        },
+        {
+          "ref": "PIT_DECREE_2026",
+          "locator": "제116조의2: 이자소득·가산 제외 배당·가산 대상 배당 순서"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-03-077",
+      "question_fingerprint": "87f19f8329b52960fdd006ac198314b9978c7b18244767822a861dace4f77d40",
+      "answers": [
+        2
+      ],
+      "part_id": "V04",
+      "title": "면세 구분 후 부가세 포함금액 환산",
+      "summary": "과세 지출만 합산해 11로 나누면 6,000원, 정답은 ②입니다.",
+      "steps": [
+        "바나나와 도서는 면세, 생수와 프로축구 입장권은 과세입니다. 과세대상 분류를 먼저 합니다.",
+        "미가공 과일, 도서 및 일반 시내버스는 면세 범위입니다. 생수를 면세 수돗물과 혼동하거나 프로 운동경기를 면세 아마추어 운동경기와 혼동하지 않습니다.",
+        "부가세를 포함한 과세 지출은 22,000 + 44,000 = 66,000원입니다.",
+        "포함된 부가세 = (22,000 + 44,000) × 10/110 = 6,000원입니다. 포함금액에 10%를 직접 곱하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "과세 지출 66,000원을 11로 나눈 6,000원과 다릅니다. 면세 항목 제외와 포함금액 환산을 확인하세요."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "과세 지출 66,000원을 11로 나눈 6,000원과 일치합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "7,000원은 정답 6,000원에 면세 바나나 지출의 1/11인 1,000원을 추가한 금액입니다. 미가공 바나나는 과세 합계에서 제외합니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "9,000원은 정답 6,000원에 면세 도서 지출의 1/11인 3,000원을 추가한 금액입니다. 도서는 과세 합계에서 제외합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "포함부가세",
+          "expr": "(22000+44000)/11",
+          "expected": 6000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "VAT_LAW_2025",
+          "locator": "제26조 제1항 제1호·제2호·제7호·제8호·제16호, 제29조 제3항·제7항, 제30조: 면세 범위·공급가액·세율"
+        }
+      ],
+      "tax_law_year": 2025,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-05-077",
+      "question_fingerprint": "e5e3be24a053b0be6c3942eb355952d92795730cad2cc646fc66813600b869e1",
+      "answers": [
+        2
+      ],
+      "part_id": "V04",
+      "title": "면세 구분 후 부가세 포함금액 환산",
+      "summary": "과세 지출만 합산해 11로 나누면 6,000원, 정답은 ②입니다.",
+      "steps": [
+        "딸기와 시내버스는 면세, 맥주와 프로축구 입장권은 과세입니다. 과세대상 분류를 먼저 합니다.",
+        "미가공 과일, 도서 및 일반 시내버스는 면세 범위입니다. 생수를 면세 수돗물과 혼동하거나 프로 운동경기를 면세 아마추어 운동경기와 혼동하지 않습니다.",
+        "부가세를 포함한 과세 지출은 22,000 + 44,000 = 66,000원입니다.",
+        "포함된 부가세 = (22,000 + 44,000) × 10/110 = 6,000원입니다. 포함금액에 10%를 직접 곱하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "과세 지출 66,000원을 11로 나눈 6,000원과 다릅니다. 면세 항목 제외와 포함금액 환산을 확인하세요."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "과세 지출 66,000원을 11로 나눈 6,000원과 일치합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "7,000원은 정답 6,000원에 면세 딸기 지출의 1/11인 1,000원을 추가한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "10,000원은 면세인 딸기와 시내버스까지 포함해 전체 110,000원을 11로 나눈 금액입니다. 두 면세 항목을 먼저 제외해야 합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "포함부가세",
+          "expr": "(22000+44000)/11",
+          "expected": 6000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "VAT_LAW_2026",
+          "locator": "제26조 제1항 제1호·제2호·제7호·제8호·제16호, 제29조 제3항·제7항, 제30조: 면세 범위·공급가액·세율"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-077",
+      "question_fingerprint": "8fd1ae64f5b2c0e52ccfd428d2834e0ec4e793fbac7f1f50054c9a394a36fcff",
+      "answers": [
+        2
+      ],
+      "part_id": "V04",
+      "title": "면세 구분 후 부가세 포함금액 환산",
+      "summary": "과세 지출만 합산해 11로 나누면 7,000원, 정답은 ②입니다.",
+      "steps": [
+        "바나나와 도서는 면세, 생수와 프로축구 입장권은 과세입니다. 과세대상 분류를 먼저 합니다.",
+        "미가공 과일, 도서 및 일반 시내버스는 면세 범위입니다. 생수를 면세 수돗물과 혼동하거나 프로 운동경기를 면세 아마추어 운동경기와 혼동하지 않습니다.",
+        "부가세를 포함한 과세 지출은 22,000 + 55,000 = 77,000원입니다.",
+        "포함된 부가세 = (22,000 + 55,000) × 10/110 = 7,000원입니다. 포함금액에 10%를 직접 곱하지 않습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "과세 지출 77,000원을 11로 나눈 7,000원과 다릅니다. 면세 항목 제외와 포함금액 환산을 확인하세요."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "과세 지출 77,000원을 11로 나눈 7,000원과 일치합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "8,000원은 정답 7,000원에 면세 바나나 지출의 1/11인 1,000원을 추가한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "과세 지출 77,000원을 11로 나눈 7,000원과 다릅니다. 면세 항목 제외와 포함금액 환산을 확인하세요."
+        }
+      ],
+      "checks": [
+        {
+          "label": "포함부가세",
+          "expr": "(22000+55000)/11",
+          "expected": 7000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "VAT_LAW_2026",
+          "locator": "제26조 제1항 제1호·제2호·제7호·제8호·제16호, 제29조 제3항·제7항, 제30조: 면세 범위·공급가액·세율"
+        }
+      ],
+      "tax_law_year": 2026,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-01-094",
+      "question_fingerprint": "be30b3d9e7f37294ffc0df7f61f7ffa002afd1253e638e2b9f92828b56592828",
+      "answers": [
+        3
+      ],
+      "part_id": "M07",
+      "title": "직접재료 가격차이와 능률차이",
+      "summary": "가격차이는 13,500원 불리, 능률차이는 10,000원 유리이므로 정답은 3번입니다.",
+      "steps": [
+        "표준 재료단가는 100,000원 ÷ 50,000단위 = 2원입니다. 실제 생산도 50,000단위이므로 실제 생산량에 허용된 표준 재료량은 50,000단위입니다.",
+        "가격차이 = 실제 투입량 45,000 × (실제단가 2.3 - 표준단가 2) = 13,500원입니다. 실제단가가 더 높으므로 불리합니다.",
+        "능률차이 = (실제 투입량 45,000 - 표준 허용량 50,000) × 2 = -10,000원입니다. 재료를 덜 사용했으므로 10,000원 유리입니다.",
+        "가격차이에는 실제량, 능률차이에는 표준단가를 사용합니다. 음수 차이는 유리한 차이입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "가격 13,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "가격 13,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        },
+        {
+          "number": 3,
+          "is_answer": true,
+          "reason": "가격 13,500원 불리 / 능률 10,000원 유리와 일치합니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "가격 13,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        }
+      ],
+      "checks": [
+        {
+          "label": "가격차이",
+          "expr": "45000*(2.3-2)",
+          "expected": 13500
+        },
+        {
+          "label": "능률차이",
+          "expr": "(45000-50000)*2",
+          "expected": -10000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68071",
+          "locator": "Direct Materials Price Variance / Direct Materials Quantity Variance · 수식 alt 텍스트"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-094",
+      "question_fingerprint": "2ebb8ae4e2db6acc1409ce173ed411328745d6b2e4cd199478dd71849712a2af",
+      "answers": [
+        1
+      ],
+      "part_id": "M07",
+      "title": "직접재료 가격차이와 능률차이",
+      "summary": "가격차이는 4,500원 불리, 능률차이는 10,000원 유리이므로 정답은 1번입니다.",
+      "steps": [
+        "표준 재료단가는 100,000원 ÷ 50,000단위 = 2원입니다. 실제 생산도 50,000단위이므로 실제 생산량에 허용된 표준 재료량은 50,000단위입니다.",
+        "가격차이 = 실제 투입량 45,000 × (실제단가 2.1 - 표준단가 2) = 4,500원입니다. 실제단가가 더 높으므로 불리합니다.",
+        "능률차이 = (실제 투입량 45,000 - 표준 허용량 50,000) × 2 = -10,000원입니다. 재료를 덜 사용했으므로 10,000원 유리입니다.",
+        "가격차이에는 실제량, 능률차이에는 표준단가를 사용합니다. 음수 차이는 유리한 차이입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "가격 4,500원 불리 / 능률 10,000원 유리와 일치합니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "가격 4,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "가격 4,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "가격 4,500원 불리 / 능률 10,000원 유리와 다릅니다. 금액뿐 아니라 유리·불리 방향도 확인하세요."
+        }
+      ],
+      "checks": [
+        {
+          "label": "가격차이",
+          "expr": "45000*(2.1-2)",
+          "expected": 4500
+        },
+        {
+          "label": "능률차이",
+          "expr": "(45000-50000)*2",
+          "expected": -10000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68071",
+          "locator": "Direct Materials Price Variance / Direct Materials Quantity Variance · 수식 alt 텍스트"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-095",
+      "question_fingerprint": "241b2b2ecf923a457cb0ab5409d40f2d1ddb84125daefaa6b21a3d0e1fe90901",
+      "answers": [
+        2
+      ],
+      "part_id": "M07",
+      "title": "변동제조간접원가 소비차이",
+      "summary": "실제 변동원가 7,800원과 실제시간 허용원가 7,500원의 차이는 300원 불리, 정답은 ②입니다.",
+      "steps": [
+        "실제 변동제조간접원가 = 총 실제 제조간접원가 15,000 - 실제 고정제조간접원가 7,200 = 7,800원입니다.",
+        "실제 작업시간에 대한 표준 변동원가 = 3,000시간 × 2.5원 = 7,500원입니다.",
+        "소비차이 = 7,800 - 7,500 = 300원 불리입니다. 표준시간 3,500시간은 소비차이가 아닌 능률차이 계산에 사용합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "금액은 맞지만 실제원가가 허용원가보다 많아 불리한 차이입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "실제 변동원가가 실제시간 기준 허용원가를 300원 초과합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "1,250원 유리는 (3,000 - 3,500) × 2.5로 계산하는 능률차이입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "소비차이는 300원 불리이며 능률차이의 금액·방향과 혼동했습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "소비차이",
+          "expr": "(15000-7200)-3000*2.5",
+          "expected": 300
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m71412",
+          "locator": "Determination and Evaluation of Variable Overhead Rate Variance · 소비차이 수식"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-104",
+      "question_fingerprint": "bf7500290e440589aff7818174e8f49af43b03bda19315e15948e504811d6590",
+      "answers": [
+        1
+      ],
+      "part_id": "M11",
+      "title": "판매가격 인하 후 손익분기점",
+      "summary": "단위 공헌이익은 500원에서 400원으로 줄고 새 손익분기점은 10,000단위, 정답은 ①입니다.",
+      "steps": [
+        "판매량 10,000단위와 기존 손익분기점 8,000단위의 차이 2,000단위에서 1,000,000원의 이익이 발생합니다. 기존 단위 공헌이익 = 1,000,000 ÷ 2,000 = 500원입니다.",
+        "고정원가 = 기존 손익분기점 8,000 × 공헌이익 500 = 4,000,000원입니다.",
+        "판매가격이 단위당 100원 하락하고 변동원가가 같으므로 새 단위 공헌이익은 500 - 100 = 400원입니다.",
+        "새 손익분기점 = 4,000,000 ÷ 400 = 10,000단위입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "고정원가 4,000,000원을 새 단위 공헌이익 400원으로 나눈 값입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "새 단위 공헌이익과 고정원가로 계산한 손익분기점과 다릅니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "새 단위 공헌이익과 고정원가로 계산한 손익분기점과 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "새 단위 공헌이익과 고정원가로 계산한 손익분기점과 다릅니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "기존공헌이익",
+          "expr": "1000000/(10000-8000)",
+          "expected": 500
+        },
+        {
+          "label": "새손익분기점",
+          "expr": "8000*500/(500-100)",
+          "expected": 10000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68116",
+          "locator": "Basics of the Break-Even Point · 고정원가 / 단위공헌이익"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-112",
+      "question_fingerprint": "5248c55ec55f93f7b72d1058d60e457dd77dae3da972aad3557896dd8a6a40b8",
+      "answers": [
+        4
+      ],
+      "part_id": "M14",
+      "title": "추가가공과 매몰원가",
+      "summary": "추가가공의 증분수입 150,000원에서 추가비용 100,000원을 차감하면 50,000원 유리하므로 정답은 ④입니다.",
+      "steps": [
+        "이미 발생한 제조원가 200,000원은 두 대안에서 변하지 않는 매몰원가입니다.",
+        "즉시 처분하면 500 × 200 = 100,000원을 회수합니다. 추가가공하면 판매액 500 × 500 = 250,000원에서 추가비용 100,000원을 뺀 150,000원을 회수합니다.",
+        "추가가공이 즉시 처분보다 150,000 - 100,000 = 50,000원 유리합니다. 250,000원은 매출액이며 이익이 아닙니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "과거 제조원가 때문에 더 유리한 미래 회수액을 포기하는 주장이므로 틀렸습니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "250,000원은 매출액입니다. 추가비용과 과거 제조원가까지 고려한 회계손익은 -50,000원입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "즉시 처분의 회수액 100,000원보다 추가가공 순회수액 150,000원이 큽니다."
+        },
+        {
+          "number": 4,
+          "is_answer": true,
+          "reason": "추가가공의 증분수입 150,000원에서 추가비용 100,000원을 빼면 50,000원 유리합니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "증분이익",
+          "expr": "500*(500-200)-100000",
+          "expected": 50000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68081",
+          "locator": "Sunk Costs · 과거 원가 제외와 대안별 차액 비교"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-113",
+      "question_fingerprint": "1639cfa228aa09d3e3e6a0274bfcbc5677510cb6484324ab704e79b5b14600a2",
+      "answers": [
+        1
+      ],
+      "part_id": "M14",
+      "title": "자가제조와 외부구입의 비교",
+      "summary": "회피가능 제조원가가 외부구입원가보다 작으면 제조를 유지하는 것이 유리합니다. 반대로 설명한 ①이 정답입니다.",
+      "steps": [
+        "의사결정은 대안에 따라 달라지는 미래 수익·원가를 비교합니다. 회피불능 고정원가는 대안 간 동일하므로 제외합니다.",
+        "자가제조 회피가능원가 < 외부구입원가라면 외부구입으로 늘어나는 비용이 더 커 제조를 유지합니다.",
+        "추가 임차료, 유휴시설의 대체 사용 수익 등 대안에 따라 달라지는 항목은 관련원가 또는 기회원가로 고려합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "회피가능 제조원가가 더 작으면 제조 유지가 유리하므로 반대로 설명한 이 보기가 정답입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "능력이 부족해 발생하는 추가 임차료는 관련원가이므로 옳습니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "대안과 관계없이 계속 발생하는 고정원가는 비관련원가이므로 옳습니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "폐지 후 유휴시설을 이용한 수익은 대안의 효익으로 고려하므로 옳습니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "m68083",
+          "locator": "Fundamentals of the Decision to Make or to Buy"
+        },
+        {
+          "ref": "m68081",
+          "locator": "Relevant Costs / Opportunity Costs"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-114",
+      "question_fingerprint": "df07f4d1a4cff38c04138a7daa86b5500c831e3062ccbf45fd07870e489a3923",
+      "answers": [
+        2
+      ],
+      "part_id": "M14",
+      "title": "특별주문의 증분 영업이익",
+      "summary": "단위 변동원가 550원이 특별주문 가격 520원보다 높아 21,000원 감소합니다. 정답은 ②입니다.",
+      "steps": [
+        "기존 판매량 = 7,200,000 ÷ 1,200 = 6,000단위입니다.",
+        "변동 매출원가 = 3,200,000 × 3/4 = 2,400,000원, 변동 판매관리비 = 2,700,000 × 1/3 = 900,000원입니다.",
+        "단위 변동원가 = (2,400,000 + 900,000) ÷ 6,000 = 550원입니다. 변동 판매관리비도 제외하지 않습니다.",
+        "유휴능력이 있고 기존 주문과 고정비에 영향이 없으므로 증분이익 = (520 - 550) × 700 = -21,000원입니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "증분이익은 음수이므로 증가가 아닌 감소입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "특별주문 단위당 손실 30원 × 700단위 = 21,000원 감소입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "변동 매출원가와 변동 판매관리비를 모두 포함한 증분이익과 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "변동 매출원가와 변동 판매관리비를 모두 포함한 증분이익과 다릅니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "단위변동원가",
+          "expr": "(3200000*.75+2700000/3)/(7200000/1200)",
+          "expected": 550
+        },
+        {
+          "label": "증분이익",
+          "expr": "(520-550)*700",
+          "expected": -21000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68082",
+          "locator": "Fundamentals of the Decision to Accept or Reject a Special Order · 유휴능력과 증분원가"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-09-115",
+      "question_fingerprint": "4d10af490bcbab6815bea287ebba52da2e40a20545425028273520e0d4d46748",
+      "answers": [
+        1
+      ],
+      "part_id": "M14",
+      "title": "사업부 폐쇄와 회피불능 고정원가",
+      "summary": "B 폐쇄 후 전체손실은 1,100원입니다. 900원이라고 한 ①이 옳지 않습니다.",
+      "steps": [
+        "고정원가는 모두 회피불능입니다. 사업부를 폐쇄해도 전체 3,000원의 고정원가는 유지됩니다.",
+        "B만 폐쇄하면 남는 공헌이익 A 600 + C 1,300 = 1,900원, 전체손익 = 1,900 - 3,000 = -1,100원입니다.",
+        "B와 C를 폐쇄하면 600 - 3,000 = -2,400원, A와 C를 폐쇄하면 1,000 - 3,000 = -2,000원입니다.",
+        "모두 폐쇄하면 공헌이익 0 - 고정원가 3,000 = -3,000원입니다. 기존 사업부 손실만 보고 폐쇄의 효과를 판단하면 안 됩니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "B 폐쇄 후 손실은 900원이 아닌 1,100원이므로 정답입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "A 공헌이익 600원에서 고정원가 3,000원을 빼면 2,400원 손실로 옳습니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "B 공헌이익 1,000원에서 고정원가 3,000원을 빼면 2,000원 손실로 옳습니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "모든 공헌이익이 사라져 회피불능원가 3,000원만큼 손실이 발생하므로 옳습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "B폐쇄손익",
+          "expr": "600+1300-3000",
+          "expected": -1100
+        },
+        {
+          "label": "BC폐쇄손익",
+          "expr": "600-3000",
+          "expected": -2400
+        },
+        {
+          "label": "AC폐쇄손익",
+          "expr": "1000-3000",
+          "expected": -2000
+        },
+        {
+          "label": "전체폐쇄손익",
+          "expr": "0-3000",
+          "expected": -3000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68084",
+          "locator": "Fundamentals of the Decision to Keep or Discontinue a Segment or Product · 공헌이익과 계속 발생하는 고정원가"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-07-114",
+      "question_fingerprint": "8dd5608de9af7f5d8e51bd280cf9ce1bb979e6f280875b33fd0d8ecd83aa75d2",
+      "answers": [
+        2
+      ],
+      "part_id": "M14",
+      "title": "외부구입의 최대 허용가격",
+      "summary": "단위 변동원가 300원에 회피가능 고정원가 10원을 더한 310원, 정답은 ②입니다.",
+      "steps": [
+        "자가제조 단위 변동원가 = 직접재료 200 + 직접노무 50 + 변동제조간접원가 50 = 300원입니다.",
+        "외부구입 시 회피가능 고정원가 = 600,000 × 1/3 = 200,000원, 단위당 200,000 ÷ 20,000 = 10원입니다.",
+        "외부구입 최대 허용가격 = 300 + 10 = 310원입니다. 남는 고정원가 400,000원은 양 대안에 공통이므로 제외합니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": false,
+          "reason": "외부구입으로 회피할 수 있는 단위당 고정원가 10원을 누락했습니다."
+        },
+        {
+          "number": 2,
+          "is_answer": true,
+          "reason": "변동원가 300원과 회피가능 고정원가 10원의 합계입니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "회피가능 고정원가를 단위당 10원보다 크게 반영한 금액입니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "전체 고정원가 600,000원을 모두 회피하는 것으로 보아 단위당 30원을 더한 금액입니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "허용구입가격",
+          "expr": "200+50+50+(600000/3)/20000",
+          "expected": 310
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68083",
+          "locator": "Fundamentals of the Decision to Make or to Buy · 회피가능원가"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    },
+    {
+      "question_id": "2026-07-115",
+      "question_fingerprint": "3e0a1a54cc2403444869fcf92e706fabaa6de27f22e0d99b6137c0a90b541da6",
+      "answers": [
+        1
+      ],
+      "part_id": "M14",
+      "title": "사업부 폐지 시 잃는 공헌이익",
+      "summary": "잃는 공헌이익 180,000원에서 절약되는 고정원가 80,000원을 빼면 순이익이 100,000원 감소합니다. 정답은 ①입니다.",
+      "steps": [
+        "사업부 X의 공헌이익 = 매출 500,000 - 변동원가 320,000 = 180,000원입니다.",
+        "폐지하면 공헌이익 180,000원을 잃지만 회피가능 고정원가 80,000원은 절약합니다. 나머지 고정원가 40,000원은 계속 발생합니다.",
+        "전체 순이익 감소액 = 180,000 - 80,000 = 100,000원입니다. 기존 사업부 이익 60,000원만큼만 감소하는 것이 아닙니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "is_answer": true,
+          "reason": "잃는 공헌이익 180,000원에서 회피가능 고정원가 80,000원을 차감한 금액입니다."
+        },
+        {
+          "number": 2,
+          "is_answer": false,
+          "reason": "회피불능 고정원가까지 절약되거나 손익이 달라진다고 보는 계산과 구분해야 합니다."
+        },
+        {
+          "number": 3,
+          "is_answer": false,
+          "reason": "공헌이익 손실과 회피가능 고정원가 절약을 비교한 결과와 다릅니다."
+        },
+        {
+          "number": 4,
+          "is_answer": false,
+          "reason": "공헌이익 손실과 회피가능 고정원가 절약을 비교한 결과와 다릅니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "순이익감소",
+          "expr": "500000-320000-80000",
+          "expected": 100000
+        }
+      ],
+      "sources": [
+        {
+          "ref": "m68084",
+          "locator": "Fundamentals of the Decision to Keep or Discontinue a Segment or Product · 공헌이익과 회피가능 고정원가"
+        }
+      ],
+      "tax_law_year": null,
+      "review_status": "source_checked",
+      "review_note": "원문 이미지·공식 답안·아래 출처를 대조하고 수치 계산을 검산했습니다. 전문가 검수는 아직입니다.",
+      "unchecked_points": [],
+      "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+      "checked_on": "2026-10-12"
+    }
+  ]
+}

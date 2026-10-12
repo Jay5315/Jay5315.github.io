@@ -586,3 +586,31 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .status-cards{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Authored question explanations: reveal after grading, separate from part notes. */
+.question-explanation{margin:20px 0;border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}
+.question-explanation>summary{cursor:pointer;font-weight:700;padding:16px 20px;min-height:48px}
+.explanation-body{padding:16px 20px;line-height:1.8;overflow-wrap:anywhere}
+.question-explanation[open]>summary{border-bottom:1px solid var(--line)}
+.explanation-body h3{margin:12px 0}
+.explanation-body h4{font-size:16px;margin:12px 0}
+.solution-steps{padding-left:24px}
+.solution-steps li{padding-left:4px;margin:12px 0}
+.option-reasons{list-style:none;padding:0;margin:0}
+.option-reasons li{display:grid;grid-template-columns:105px 1fr;gap:12px;border-top:1px solid var(--line);padding:12px 0}
+.option-reasons .answer-option b{color:var(--accent)}
+.explanation-sources{border-top:1px solid var(--line);margin-top:20px;padding-top:12px}
+.explanation-sources summary{cursor:pointer;font-weight:600;min-height:40px}
+.explanation-sources small{display:block;color:var(--muted)}
+.explanation-tip-title{display:block;margin-top:18px}
+.view-toolbar{flex-wrap:wrap}
+.view-toolbar .explanation-filter{white-space:nowrap;margin:0}
+.view-toolbar .explanation-filter input{width:18px;height:18px;min-width:18px;padding:0;flex:0 0 auto}
+.list-actions{flex-wrap:wrap}
+@media(max-width:640px){
+ .tip-box.explanation-start{display:block}
+ .explanation-body{padding:14px}
+ .option-reasons li{grid-template-columns:1fr;gap:4px}
+ .explanation-filter{flex-basis:100%}
+ .view-toolbar .explanation-filter input{flex-basis:auto}
+}

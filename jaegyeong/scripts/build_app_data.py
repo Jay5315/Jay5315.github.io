@@ -1,6 +1,7 @@
 """Bundle local scripts so index.html also works via file:// without a server."""
 from pathlib import Path
 import json
+from explanation_data import validate_explanations
 R=Path(__file__).resolve().parents[1]
 def read(n):return json.loads((R/'data'/f'{n}.json').read_text())
 def main():
@@ -16,7 +17,8 @@ def main():
   if bad:raise SystemExit(f"{n['id']}: unknown part ids {bad}")
   missing=[s['ref'] for s in n['sources'] if s['ref'] not in concepts['sources']]
   if missing:raise SystemExit(f"{n['id']}: unknown source refs {missing}")
- data=dict(questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts)
+ explanations=validate_explanations(read('explanations'),qs,{e['id'] for e in entries},part_ids)
+ data=dict(questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
  out=R/'assets/bank-data.js';out.write_text('window.BANK_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
- print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes: {out.stat().st_size/1048576:.1f} MiB')
+ print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes, {len(explanations["items"])} explanations: {out.stat().st_size/1048576:.1f} MiB')
 if __name__=='__main__':main()
