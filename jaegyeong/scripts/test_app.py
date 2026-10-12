@@ -69,6 +69,17 @@ with sync_playwright() as pw:
   if page.locator('#replace-session').count():page.locator('#replace-session').click()
  goto('concepts');expect(page.locator('.concept-card')).to_have_count(74)
  notes=page.evaluate('BANK_DATA.concepts.notes.length');expect(page.locator('.concept-card:not(.pending)')).to_have_count(notes)
+ # Every registered note renders its actual examples and verified source locators.
+ before_notes=state()
+ for note in page.evaluate('BANK_DATA.concepts.notes'):
+  goto('concept/'+note['part_id'])
+  expect(page.locator('h1')).to_have_text(note['title'])
+  expect(page.locator('.note-summary')).to_have_text(note['summary'])
+  expect(page.locator('.note-page .example')).to_have_count(len(note['examples']))
+  for source in note['sources']:expect(page.locator('.source-box')).to_contain_text(source['locator'])
+  if note.get('unchecked_points'):expect(page.locator('.unchecked-box')).to_be_visible()
+ assert state()==before_notes,'Reading concept notes changed study records'
+ goto('concepts')
  page.locator('[data-action=concept-subject][data-subject="세무회계"]').click();expect(page.locator('.concept-card')).to_have_count(28)
  goto('concept/F01');expect(page.locator('.empty')).to_contain_text('준비 중')
  goto('concept/C11');expect(page.locator('.note-page h3').first).to_contain_text('핵심 개념')
@@ -141,7 +152,15 @@ with sync_playwright() as pw:
  m.locator('.question-card [data-action=concept-modal]').click();expect(m.locator('dialog')).to_be_visible();assert m.evaluate('document.documentElement.scrollWidth<=innerWidth')
  m.screenshot(path=str(ARTIFACTS/'app-concept-modal-mobile.png'));m.locator('dialog [data-action=close-modal]').first.click()
  m.goto(URL+'#concept/C11');expect(m.locator('.year-table')).to_be_visible();assert m.evaluate('document.documentElement.scrollWidth<=innerWidth')
- m.screenshot(path=str(ARTIFACTS/'app-concept-mobile.png'),full_page=True);m.goto(URL+'#quiz')
+ m.screenshot(path=str(ARTIFACTS/'app-concept-mobile.png'),full_page=True)
+ # New long formulas and immutable source versions must fit a phone screen too.
+ mobile_before=m.evaluate('localStorage.getItem("chagok.study.v1")')
+ for note in m.evaluate('BANK_DATA.concepts.notes'):
+  m.goto(URL+'#concept/'+note['part_id'])
+  expect(m.locator('h1')).to_have_text(note['title'])
+  assert m.evaluate('document.documentElement.scrollWidth<=innerWidth'),note['part_id']
+ assert m.evaluate('localStorage.getItem("chagok.study.v1")')==mobile_before
+ m.goto(URL+'#quiz')
  m.reload();expect(m.locator('.question-card')).to_be_visible()
  # New-session replacement is explicit and retains already graded records.
  m.locator('[data-action=home]').click();m.locator('[data-action=start]').click();expect(m.locator('dialog')).to_contain_text('진행 중인 학습')

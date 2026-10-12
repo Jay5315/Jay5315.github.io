@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-12",
+  "baseline_count": 15,
+  "baseline_hashes": {
+    "note-C11": "ea8b0850a57749754512b0a150387bd08bee7ee981c5f0db6f718b943fa812e3",
+    "note-C08": "9049060d2b5e2d602b16c05338347c482aa7d426d093093902fde4d08b804f66",
+    "note-C02": "15d93de6bb96abf9ce5ec6b1a4072a8cce010f7b12e700180bc612a01c022460",
+    "note-I02": "6ad2cecd5d3a9de877a9dc00a695b31e1904ca1be4fc2ac3fc6f2c13def2442b",
+    "note-V03": "945cb45e998fc94fa9cd3a7cfb4ff9ecd61ceb990843609b8be724ab417e4611",
+    "note-V04": "6e05aba1b48c69b92ce61425130cd77d529c97609160b2edb8645b8cdba86489",
+    "note-F04": "aad581ada103415c26cfcd113509e32f391d3b2a4fefe0a068b027e30aace209",
+    "note-F05": "9482704cebdc0831c28a643c3194151bde6b15966f381dec081246e2f765260c",
+    "note-F15": "fabd609f4433331b5d95a53108050ecf9116d00d55c9a4517a177d411a459505",
+    "note-F21": "4498efe3846e79eafd4feca0238edf670eb2899dc9e021f3bb248ae5ca81323b",
+    "note-M05": "4badf5b8157801a78f4acb0a85be691d20514bb743e70a766beb68f2908e0427",
+    "note-M07": "6ff46501379796a42c8a23b7436f784c09a5702692d00094ce55c5fc91a3bc9b",
+    "note-M08": "c9747bf826cea3682fdd1c47b756ebc5d1e0dd7373b4e210cb5e8577c1342588",
+    "note-M11": "a979da71338f8af29d2057e0e0ce0fd662abf987dc62073d2071dfd4eef4be12",
+    "note-M14": "262822c7c6b7a5be4632ebcf68726f6e759c93aad31617da26285191aded405e"
+  },
+  "baseline_source_hashes": {
+    "CIT_LAW": "c3b9d28578cad13d1df87ec36203caa1e30747ec1f5ebef5f372c1e9445603d5",
+    "CIT_DECREE": "e0e2c96badfe059c7a97ab7803e0d322e92ec0b6dbc0705b3794d1d302279cd3",
+    "PIT_LAW": "95309fc1ec979182b302fdade4ee78f93387fad95ba485d5deca347ce44cae3d",
+    "VAT_LAW": "f463e8a8250186e6f3753aff5fb81f4b10b4eed1c0b3beb2550a5ffa0cac31ec",
+    "VAT_DECREE": "9e5181166bec1ea6bc50aa4295e20733ecf3e38304f01f5b169479884fcd7731",
+    "OSX_MGR": "571a61628da90e38bf94fb93d306514352c97dcc64966c5de88c0d5ba834b9ff",
+    "OSX_FIN": "eca3e91096caa99ee518c1a5e4de8409a405de744ab3b8ed6700ef2ce5d79356",
+    "KIFRS_1002": "3a9cff484a8a1344b59e54cfc6f95b7aa7d15796eb12f56b3bdc783c41bef203",
+    "KIFRS_1016": "4a30e1c734ef2028789fee4cb077f60a48a1465972225b46ed65ca0cfa7ce591",
+    "KIFRS_1115": "bcfdfac6449d22f1f5ed48241cd5255bd5d75d031ccd5f06d645d98e3b904c4d",
+    "KIFRS_1033": "d88a07e4d91f6f5195f2e283a701b7859af45af1fc5449f8d98ab0bba0f00d94",
+    "SAYLOR_MGR": "f3443145db53f0c2f26d7804bbb481c139752a33e790e3bd86b3e8f4054f1c4d"
+  },
+  "jobs": [
+    {
+      "job_id": "concept_finance_b",
+      "assigned_part_ids": [
+        "C03",
+        "C07",
+        "I03",
+        "I07",
+        "V05"
+      ],
+      "accepted_part_ids": [
+        "C03",
+        "C07",
+        "I03",
+        "I07",
+        "V05"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assignment_coverage": "5/5 exact",
+        "source_versions": "9 actual January historical law versions, supplements directly inspected",
+        "arithmetic_checks": 17,
+        "unchanged_existing_notes": true,
+        "schema_tags_years_citations_checked": true
+      },
+      "output_hash": "7d9a938e04b411e3b03cd259c9e13d0ea3230424a7a79f18a1a31bd6b2f360e2"
+    },
+    {
+      "job_id": "concept_cost_a",
+      "assigned_part_ids": [
+        "M01",
+        "M03",
+        "M06",
+        "M10",
+        "M13",
+        "M16",
+        "M18",
+        "M20"
+      ],
+      "accepted_part_ids": [
+        "M01",
+        "M03",
+        "M06",
+        "M10",
+        "M13",
+        "M16",
+        "M18",
+        "M20"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assigned_count": 8,
+        "note_count": 8,
+        "deferred_count": 0,
+        "source_checked_count": 5,
+        "partial_count": 3,
+        "unique_coverage": true,
+        "schema_tags_links_sources_years": "필수 필드·기존 태그·동일 과목 링크·고유 출처키·null 연도·미확인 표시 검증 통과",
+        "arithmetic_checks": 31,
+        "arithmetic": "test_concepts.calc 전부 통과",
+        "source_image_checked": "Saylor s07-06 Figure 3.11 직접배분 그림 직접 확인",
+        "existing_notes_modified": false
+      },
+      "output_hash": "743dca3fc4830fa26fde1e34aa6756fe6d92e8a259d374c0f0b8c4d873743b8e"
+    },
+    {
+      "job_id": "concept_cost_b",
+      "assigned_part_ids": [
+        "M02",
+        "M04",
+        "M09",
+        "M12",
+        "M15",
+        "M17",
+        "M19"
+      ],
+      "accepted_part_ids": [
+        "M02",
+        "M04",
+        "M09",
+        "M12",
+        "M15",
+        "M17",
+        "M19"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assigned_count": 7,
+        "note_count": 7,
+        "deferred_count": 0,
+        "coverage": "exactly once",
+        "schema_required_fields": "passed",
+        "allowed_tags_and_related_parts": "passed",
+        "tax_law_years": "null preserved · non-tax principles",
+        "source_locators_and_unchecked_status": "passed",
+        "arithmetic_checks": 30,
+        "arithmetic": "passed · scripts.test_concepts.calc",
+        "checked_on": "2026-10-12"
+      },
+      "output_hash": "dca91a7ed9f281cc954fa6074ec09a6d609e83f6456f553689039cf71bc4a930"
+    },
+    {
+      "job_id": "concept_tax_b",
+      "assigned_part_ids": [
+        "C05",
+        "C10",
+        "I05",
+        "T02",
+        "V01",
+        "V07"
+      ],
+      "accepted_part_ids": [
+        "T02",
+        "C05",
+        "C10",
+        "I05",
+        "V01",
+        "V07"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assigned_parts": 6,
+        "notes": 6,
+        "deferred": 0,
+        "schema_unique_id_coverage": "passed",
+        "old_15_notes_not_copied_or_rewritten": "passed",
+        "tags_related_parts": "passed",
+        "source_years_effective_dates_and_addenda": "passed",
+        "arithmetic_checks": 16,
+        "source_status_scope": "passed",
+        "expert_review": "아직 미실시"
+      },
+      "output_hash": "2fe1c6e89d5c3c30ada7cc3eb1fd712908cdccaf28948db51001a9dcd0db8125"
+    },
+    {
+      "job_id": "concept_finance_a",
+      "assigned_part_ids": [
+        "C01",
+        "C06",
+        "I01",
+        "I06",
+        "V02"
+      ],
+      "accepted_part_ids": [
+        "C01",
+        "C06",
+        "I01",
+        "I06",
+        "V02"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assigned_count": 5,
+        "note_count": 5,
+        "deferred_count": 0,
+        "coverage_exact_once": true,
+        "schema_required_fields": "passed",
+        "taxonomy_same_subject_links": "passed",
+        "allowed_tags": "passed",
+        "source_registry_and_actual_years": "passed",
+        "year_table_shape": "passed",
+        "numeric_checks": 14,
+        "numeric_check_result": "test_concepts.calc 모두 통과",
+        "baseline_existing_15_notes_touched": false,
+        "source_scope": "각 연도 1월 31일 기준 Git 실제 판본·조문·부칙 대조; 노트에 명시한 일반 세법 범위",
+        "expert_reviewed": false
+      },
+      "output_hash": "19c24706b95a889ae8508b5b1b6cd7de4952c32d4abe865fdb3fc06511be1dce"
+    },
+    {
+      "job_id": "concept_tax_a",
+      "assigned_part_ids": [
+        "C04",
+        "C09",
+        "I04",
+        "I08",
+        "T01",
+        "V06"
+      ],
+      "accepted_part_ids": [
+        "T01",
+        "C04",
+        "C09",
+        "I04",
+        "I08",
+        "V06"
+      ],
+      "deferred_part_ids": [],
+      "worker_validation": {
+        "assigned_parts": 6,
+        "source_checked_notes": 6,
+        "deferred": 0,
+        "numeric_checks": 21,
+        "exact_coverage": true,
+        "schema_tags_related_parts": true,
+        "source_versions_and_effective_dates_read": true,
+        "unchecked_scope_explicit": true,
+        "original15_notes_untouched": true
+      },
+      "output_hash": "c011c52cff11ff363936bf3b8c42eaecec7a2dae084e2cf183ee62c758c33f19"
+    }
+  ],
+  "deferred": [],
+  "registered_count": 52,
+  "added_count": 37,
+  "prose_review": {
+    "checked_on": "2026-10-12",
+    "reason": "신규노트의 숫자 앞 간격·사용자용 출처 표현 정리 및 V02의 세금계산서 용어를 정확히 표시. 기존15개·계산식검증값·판본 내용 불변.",
+    "items": [
+      {
+        "note_id": "note-C03",
+        "before_hash": "16ee2e8823fdbea2d7ce149301664755fe7546ed914f9a326e9c23af79472378",
+        "after_hash": "ba30a30874861300511658205e6bfc53e4f00566764ecc309e5d946a627bef75",
+        "fields": [
+          "key_points",
+          "pitfalls",
+          "examples",
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-C07",
+        "before_hash": "284f8ff6365ecf6402199cb7ef91bdb6497c149e4b25a6573df89213ae88d88a",
+        "after_hash": "213dcabbee82ed20d2de23bf728fa4b84224b1af27c6a1e3835eaafdc90ca4ab",
+        "fields": [
+          "summary",
+          "key_points",
+          "examples"
+        ]
+      },
+      {
+        "note_id": "note-I03",
+        "before_hash": "94db521d87a2247504ef98bb9cc1f075a4c26d5093696e11e72a06f8e92e0cd8",
+        "after_hash": "ef1d54bc4ece9a5f3685060befe26264cbd6d9e1832266d0ac21945c86751853",
+        "fields": [
+          "key_points",
+          "examples"
+        ]
+      },
+      {
+        "note_id": "note-I07",
+        "before_hash": "a3e96d58db3b02580b89576f65ecd6c95a720dff247a1a7e64f5fac5e282c87c",
+        "after_hash": "82f43d6bfc967fa7d25ac39f6ba618d9b38b493685a3c9009c4ba4c17da4b20a",
+        "fields": [
+          "key_points",
+          "formulas",
+          "pitfalls",
+          "examples",
+          "sources",
+          "review_note"
+        ]
+      },
+      {
+        "note_id": "note-V05",
+        "before_hash": "8f755bfb15de551678a4bbf08e5f6dd7073f074e53e6d661c59eb6050395e477",
+        "after_hash": "536661773e075cef9a0c1ebc2f4cf8c956d092099db749553b168c1d7dc02ae7",
+        "fields": [
+          "key_points",
+          "pitfalls",
+          "examples",
+          "review_note"
+        ]
+      },
+      {
+        "note_id": "note-T02",
+        "before_hash": "225544b678609912c7056655ae10557cf2c65e4801eacd53e7ac26c702d73dd7",
+        "after_hash": "4e3e019d2cb854a988b286a83a9b990b68231b10976714822ee0dca1160720e3",
+        "fields": [
+          "key_points",
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-I05",
+        "before_hash": "038647ad11e0ad5ae60c01ca528c7c277a0b272687aa9b24067d8354d49f6028",
+        "after_hash": "5478da612fbc66b0892c8e36dcb30fd71c3a8e5d16b9c7ea4f4b06c076d40553",
+        "fields": [
+          "key_points",
+          "formulas",
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-C01",
+        "before_hash": "bd5c34c9652f65338dbd384a8f1a6811f5f9051f6a62fb8cc00d9b1c980e56d1",
+        "after_hash": "6a90c114cc151b04359980ab04fbdec73d7fb02aa7e9d6f573a2810c441077cd",
+        "fields": [
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-C06",
+        "before_hash": "73ed1fe452a6f37e9e7621cba0d0de44cf057d7124e6d694eaa7bd575dff88c5",
+        "after_hash": "c50938a3015bccc40490ef76c0fccb109297e889692ee5fd82627986c210eed0",
+        "fields": [
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-I01",
+        "before_hash": "95f01bd4ddaa42d4abaec061336fb5b320045ef21f6cc5288d22a5782e2f5352",
+        "after_hash": "ef5839086467817f5f95d6ed5c28e7fd57294ac96840b250902b7f143b1ce322",
+        "fields": [
+          "key_points",
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-I06",
+        "before_hash": "caae4dd697c81237a583654dba0fcd8d42afb460da86df5451462b743862293a",
+        "after_hash": "78c5a9fae7aa7ffef1dd78d92f3918322c4c11eed35deeb217a2a08627ce83a3",
+        "fields": [
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-V02",
+        "before_hash": "265fc7d2ad08f5cfbcd6b4ae221582b1b1fe171458d9277cb55fa3230aee8719",
+        "after_hash": "db9a8de874527d1a310f745b748fb8f0b6953504333c37d986304e16077fca7d",
+        "fields": [
+          "key_points",
+          "examples",
+          "sources"
+        ]
+      },
+      {
+        "note_id": "note-C09",
+        "before_hash": "cee2c74f375957023b69aeb2f6ead98b0e1a8e9dec344cd0c339ed70290f35d2",
+        "after_hash": "188f1a8642ceec28b9743e62f4383ea22d5a103dfd10ec89a78484d1faf58876",
+        "fields": [
+          "review_note"
+        ]
+      },
+      {
+        "note_id": "note-I08",
+        "before_hash": "b12e3907d2ca2ecef801e83946517e4a04f78ce565b61dc1a8401313a9a69158",
+        "after_hash": "3fd77ad7e4808d495561db164cb9fb3f81cfc2c48257a3131d6a741b1ee91273",
+        "fields": [
+          "key_points",
+          "sources"
+        ]
+      }
+    ]
+  },
+  "enrichments": [
+    {
+      "note_id": "note-M15",
+      "checked_on": "2026-10-12",
+      "before_hash": "91a33c332fa694d8a135ad4cd7624d2d94f2a7a3560f89e94b5fd48501a39251",
+      "after_hash": "bd78dbb468247c1d34dd42096ce4ab1bcd82a0c945214a2adfba74c8437438a3",
+      "reason": "2차 재검토의 추가 검산 결과를 개념 노트에 반영. 실제 읽은 OpenStax IRR=NPV0 정의와 독립 대수 적용을 구별하고 두 근 검산 예시 추가. 기존15개·기존출처·partial 상태 불변."
+    }
+  ],
+  "final_validation": {
+    "checked_on": "2026-10-12",
+    "test_concepts_cases_passed": 6,
+    "example_calculation_checks": 150,
+    "all_52_notes_desktop_and_mobile": "passed",
+    "baseline_15_notes_and_sources_unchanged": true,
+    "study_storage_unchanged": true
+  }
+}

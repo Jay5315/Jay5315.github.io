@@ -1,5 +1,5 @@
 """Concept-note data: structure, part links, source/status honesty, example arithmetic, bundle."""
-import ast, json, operator, unittest
+import ast, hashlib, json, operator, unittest
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];D=R/'data'
 def read(name):return json.loads((D/(name+'.json')).read_text())
@@ -52,7 +52,7 @@ class ConceptNotesTest(unittest.TestCase):
             if self.t[n['part_id']]['subject']=='세무회계':
                 self.assertEqual(s,'source_checked',f"{n['id']}: tax notes need checked law text")
                 self.assertTrue(years and all(isinstance(y,int) for y in years),n['id'])
-                self.assertTrue(all(x['ref'] in ('CIT_LAW','CIT_DECREE','PIT_LAW','VAT_LAW','VAT_DECREE') for x in n['sources']),n['id'])
+                self.assertTrue(all(self.c['sources'][x['ref']]['url'].startswith('https://www.law.go.kr/') for x in n['sources']),n['id'])
             else:self.assertIsNone(years,f"{n['id']}: non-tax notes must not claim a tax-law year")
             if n['part_id'].startswith('F') and s in ('source_checked','partial'):
                 self.assertTrue(any(x['ref'].startswith('KIFRS') for x in n['sources']),f"{n['id']}: financial notes must cite the K-IFRS standard they were checked against")
@@ -74,6 +74,27 @@ class ConceptNotesTest(unittest.TestCase):
         self.assertEqual(rates['rows'][0],['2억원 이하','9%','9%','10%'])
         gross=[r for r in n['I02']['year_table']['rows'] if r[0].startswith('배당가산율')][0]
         self.assertTrue(gross[1]=='10%' and gross[2]=='10%' and gross[3].startswith('10%'),'11% gross-up starts with 2027 payments')
+    def test_expansion_preserves_initial_notes_and_sources(self):
+        path=R/'reports/concept-expansion.json'
+        if not path.exists():self.skipTest('No concept expansion audit yet')
+        a=json.loads(path.read_text())
+        def digest(x):return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        notes={n['id']:n for n in self.notes}
+        for id,h in a['baseline_hashes'].items():self.assertEqual(digest(notes[id]),h,id)
+        for ref,h in a['baseline_source_hashes'].items():self.assertEqual(digest(self.c['sources'][ref]),h,ref)
+        self.assertEqual(a['registered_count'],len(notes))
+        assigned=[id for b in a['jobs'] for id in b['assigned_part_ids']]
+        self.assertEqual(len(assigned),len(set(assigned)))
+        accepted={id for b in a['jobs'] for id in b['accepted_part_ids']}
+        deferred={n['part_id'] for n in a['deferred']}
+        self.assertFalse(accepted&deferred)
+        self.assertEqual(set(assigned),accepted|deferred)
+        self.assertEqual({'note-'+p for p in accepted},set(notes)-set(a['baseline_hashes']))
+        for p in accepted:
+            n=notes['note-'+p]
+            for s in n['sources']:
+                source=self.c['sources'][s['ref']]
+                self.assertTrue(source.get('checked_on') and source.get('verification'),p)
     def test_bundle_contains_notes_and_keeps_questions(self):
         raw=(R/'assets/bank-data.js').read_text();b=json.loads(raw[len('window.BANK_DATA='):-2])
         self.assertEqual(b['concepts'],self.c)

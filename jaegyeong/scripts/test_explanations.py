@@ -1,6 +1,10 @@
 """Content regression and safety checks for authored question explanations."""
 import copy
+import calendar
+import datetime
+import hashlib
 import json
+import re
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -21,14 +25,17 @@ class ExplanationTests(unittest.TestCase):
         cls.entries = {e['id'] for e in read('entries')}
         cls.parts = {p['id'] for p in read('taxonomy')}
         cls.notes = {n['question_id']: n for n in cls.data['items']}
+        audit = R / 'reports/explanation-expansion.json'
+        cls.audit = json.loads(audit.read_text()) if audit.exists() else None
+        cls.baseline_ids = set(cls.audit['baseline_hashes']) if cls.audit else set(list(cls.notes)[:30])
 
     def validate(self, data=None, qs=None):
         return validate_explanations(data or self.data, qs or self.qs, self.entries, self.parts)
 
     def test_coverage_original_binding_and_four_options(self):
         self.validate()
-        self.assertEqual(len(self.notes), 30)
-        self.assertEqual(Counter(self.qs[id]['subject'] for id in self.notes),
+        self.assertGreaterEqual(len(self.notes), 30)
+        self.assertEqual(Counter(self.qs[id]['subject'] for id in self.baseline_ids),
                          {'재무회계': 10, '세무회계': 10, '원가관리회계': 10})
         self.assertNotIn('2024-09-063', self.notes)
         for id, n in self.notes.items():
@@ -59,19 +66,87 @@ class ExplanationTests(unittest.TestCase):
     def test_review_status_and_exact_source_years(self):
         self.assertFalse(self.data['verification']['expert_reviewed'])
         for id, n in self.notes.items():
-            if self.qs[id]['subject'] == '재무회계':
+            if id in self.baseline_ids and self.qs[id]['subject'] == '재무회계':
                 self.assertEqual(n['review_status'], 'partial')
                 self.assertTrue(n['unchecked_points'])
                 self.assertTrue(all(s['ref'].startswith('NOTE_') for s in n['sources']))
             else:
                 self.assertEqual(n['review_status'], 'source_checked')
             if self.qs[id]['subject'] == '세무회계':
-                self.assertTrue(all(s['ref'].endswith(str(n['tax_law_year'])) for s in n['sources']))
+                self.assertEqual(n['tax_law_year'], self.qs[id]['tax_law_year'])
             for s in n['sources']:
                 src = self.data['sources'][s['ref']]
                 self.assertTrue(src['checked_on'] and src['verification'] and src['version'])
         self.assertEqual(self.notes['2026-03-062']['tax_law_year'], 2025)
         self.assertEqual(self.notes['2026-09-062']['tax_law_year'], 2026)
+
+    def test_expansion_preserves_baseline_and_separates_reviews(self):
+        if not self.audit:
+            self.skipTest('No expansion audit yet')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        for id, hash in self.audit['baseline_hashes'].items():
+            self.assertEqual(digest(self.notes[id]), hash, id)
+        for ref, hash in self.audit['baseline_source_hashes'].items():
+            self.assertEqual(digest(self.data['sources'][ref]), hash, ref)
+        self.assertEqual(self.audit['registered_count'], len(self.notes))
+        assigned = [id for b in self.audit['batches'] for id in b['assigned_ids']]
+        self.assertEqual(len(assigned), len(set(assigned)))
+        accepted = {id for b in self.audit['batches'] for id in b['accepted_ids']}
+        reviews = {n['question_id'] for n in self.audit['review']}
+        pending = set(self.audit['unprocessed_ids'])
+        self.assertEqual(accepted, set(self.notes) - self.baseline_ids)
+        self.assertFalse(accepted & reviews or accepted & pending or reviews & pending)
+        self.assertEqual(set(assigned), accepted | reviews)
+        eligible = {id for id in self.entries if self.qs[id]['study_eligible']}
+        self.assertEqual(eligible, self.baseline_ids | accepted | reviews | pending)
+        for id in accepted:
+            self.assertEqual(self.notes[id]['review_status'], 'source_checked')
+            self.assertEqual(self.notes[id]['unchecked_points'], [])
+
+    def test_second_pass_review_transitions(self):
+        if not self.audit or not self.audit.get('rechecks'):
+            self.skipTest('No second-pass audit yet')
+        records = self.audit['rechecks']
+        ids = [id for b in records for id in b['assigned_ids']]
+        self.assertEqual(len(ids), len(set(ids)), 'second-pass assignments overlap')
+        self.assertEqual(self.audit['rechecked_count'], len(ids))
+        reviews = {n['question_id']: n for n in self.audit['review']}
+        resolved = {n['question_id']: n for n in self.audit['review_resolutions']
+                    if 'recheck_batch_id' in n}
+        for b in records:
+            self.assertTrue(20 <= len(b['assigned_ids']) <= 30)
+            prior = {n['question_id'] for n in b['previous_review']}
+            done, remaining = set(b['resolved_ids']), set(b['remaining_ids'])
+            self.assertFalse(done & remaining)
+            self.assertEqual(prior, set(b['assigned_ids']))
+            self.assertEqual(prior, done | remaining)
+            self.assertTrue(b['output_hash'] and b['worker_validation'])
+            for id in done:
+                self.assertIn(id, self.notes)
+                self.assertEqual(resolved[id]['recheck_batch_id'], b['batch_id'])
+                self.assertTrue(resolved[id]['previous_reason'])
+            for id in remaining:
+                self.assertEqual(reviews[id]['recheck_batch_id'], b['batch_id'])
+        self.assertEqual(self.audit['second_pass_added_count'], len(resolved))
+
+    def test_legal_source_effective_dates_do_not_follow_question_scope(self):
+        for id, n in self.notes.items():
+            q = self.qs[id]
+            latest = datetime.date(q['year'], q['month'],
+                                   calendar.monthrange(q['year'], q['month'])[1])
+            if q['tax_law_year']:
+                latest = min(latest, datetime.date(q['tax_law_year'], 12, 31))
+            for citation in n['sources']:
+                source = self.data['sources'][citation['ref']]
+                if 'law.go.kr' not in source['url']:
+                    continue
+                dates = re.findall(r'(\d{4})[-.](\d{1,2})[-.](\d{1,2})', source['version'])
+                if len(dates) == 1:
+                    effective = datetime.date(*map(int, dates[0]))
+                    self.assertLessEqual(effective, latest,
+                                         id + ': ' + citation['ref'] + ' · ' + source['version'])
 
     def test_stale_wording_options_answer_or_year_blocks_build(self):
         id = '2026-03-062'

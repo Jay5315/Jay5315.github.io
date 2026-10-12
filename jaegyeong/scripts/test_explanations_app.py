@@ -1,4 +1,4 @@
-"""Exercise all thirty explanations, answer reveal, review and mobile persistence."""
+"""Exercise registered explanations, answer reveal, review and mobile persistence."""
 import json
 import os
 import shutil
@@ -11,6 +11,15 @@ ARTIFACTS = Path(os.environ.get('TEST_ARTIFACT_DIR', str(R / '_artifacts')))
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 KEY = 'chagok.study.v1'
 items = json.loads((R / 'data/explanations.json').read_text())['items']
+# Render every explanation, then exercise actual grading for the original 30 and
+# both conceptual/calculation examples in each newly covered part.
+interactive = list(items[:30])
+covered = set()
+for n in items[30:]:
+    group = (n['part_id'], bool(n['checks']))
+    if group not in covered:
+        interactive.append(n)
+        covered.add(group)
 
 with sync_playwright() as pw:
     browser = pw.chromium.launch(headless=True, executable_path=shutil.which('chromium'))
@@ -20,13 +29,46 @@ with sync_playwright() as pw:
     page.on('pageerror', lambda e: errors.append(str(e)))
     page.goto(URL + '#library')
     page.locator('#library-explanations').check()
-    expect(page.locator('#library-results .sub').first).to_contain_text('30개 문제')
+    expect(page.locator('#library-results .sub').first).to_contain_text(f'{len(items):,}개 문제')
     page.locator('#library-subject').select_option('재무회계')
-    expect(page.locator('.library-card')).to_have_count(10)
+    finance_count = page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.subject==='재무회계'&&BANK_DATA.explanations.items.some(n=>n.question_id===q.id)).length")
+    expect(page.locator('.library-card')).to_have_count(min(20, finance_count))
     page.locator('#library-subject').select_option('')
     expect(page.locator('.library-card')).to_have_count(20)  # pagination, not a truncated data set
 
-    for i, n in enumerate(items):
+    rendered = page.evaluate("""() => {
+        const before = localStorage.getItem('chagok.study.v1');
+        const trigger = document.createElement('button');
+        trigger.dataset.action = 'explanation';
+        document.body.append(trigger);
+        let count = 0;
+        for (const n of BANK_DATA.explanations.items) {
+            trigger.dataset.id = n.question_id;
+            trigger.click();
+            const body = document.querySelector('dialog .explanation-body');
+            const fail = message => { throw Error(n.question_id + ': ' + message); };
+            if (!body || body.querySelector('h3').textContent !== n.title) fail('title');
+            const options = [...body.querySelectorAll('.option-reasons li')];
+            const steps = [...body.querySelectorAll('.solution-steps li')];
+            if (options.length !== 4 || steps.length !== n.steps.length) fail('coverage');
+            n.option_notes.forEach((o, i) => {
+                if (!options[i].textContent.includes(o.reason)) fail('option content');
+            });
+            n.steps.forEach((s, i) => {
+                if (steps[i].textContent !== s) fail('step content');
+            });
+            if (!body.textContent.includes('공식 해설 아님')) fail('authorship');
+            if (n.tax_law_year && !body.textContent.includes(`문항 적용 세법 ${n.tax_law_year}년`)) fail('tax year');
+            document.querySelector('dialog [data-action=close-modal]').click();
+            count++;
+        }
+        trigger.remove();
+        if (localStorage.getItem('chagok.study.v1') !== before) throw Error('Preview changed study records');
+        return count;
+    }""")
+    assert rendered == len(items)
+
+    for i, n in enumerate(interactive):
         page.goto(URL + '#library')
         page.locator('#library-query').fill(n['question_id'])
         page.locator('[data-action=preview]').click()
@@ -79,7 +121,8 @@ with sync_playwright() as pw:
 
     # No family-based fallback to a different numerical version of a question.
     page.goto(URL + '#library')
-    page.locator('#library-query').fill('2026-03-094')
+    pending = page.evaluate("BANK_DATA.questions.find(q=>q.eligible&&!BANK_DATA.explanations.items.some(n=>n.question_id===q.id)).id")
+    page.locator('#library-query').fill(pending)
     expect(page.locator('[data-action=explanation]')).to_have_count(0)
     page.locator('[data-action=preview]').click()
     page.locator('dialog [data-action=single]').click()
@@ -101,9 +144,9 @@ with sync_playwright() as pw:
     page.locator('[data-action=practice-explanations]').click()
     page.locator('#replace-session').click()
     state = page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))', KEY)
-    assert len(state['active']['ids']) == 30 and state['version'] == 1
+    assert len(state['active']['ids']) == len(items) and state['version'] == 1
     assert set(state['active']['ids']) == {n['question_id'] for n in items}
     assert state['results']['2026-01-006']['attempts'] == 1
     assert not errors, errors
     browser.close()
-    print('PASS: all 30 explanations, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
+    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
