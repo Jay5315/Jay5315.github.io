@@ -91,7 +91,7 @@ python jaegyeong/scripts/package_app.py
 | 상태 | 뜻 | 현재 |
 |---|---|---|
 | `source_checked` | 노트 내용 전체를 법령 조문·K-IFRS 기준서·공개 교재 원문과 대조 (전문가 검수 전) | 세무 6개 (C02·C08·C11·I02·V03·V04), 재무 3개 (F04·F15·F21), 원가 3개 (M07·M11·M14) |
-| `partial` | 핵심 원리는 원문과 대조, 대조하지 못한 문장은 `unchecked_points`·`unchecked` 표시로 분리 | F05(정률법·연수합계법 계산식), M05(공손), M08(초변동원가계산) |
+| `partial` (화면: 교재 일반 내용 포함) | 대부분 원문과 대조, 국내 교재의 일반 내용인 문장은 `unchecked_points`·`unchecked`로 분리해 회색 상자로 표시 | F05(정률법·연수합계법 계산식), M05(공손), M08(초변동원가계산) |
 
 원가 노트는 OpenStax *Principles of Accounting* 2권(CC BY-NC-SA 4.0, GitHub `openstax/osbooks-principles-accounting-bundle`)과 Saylor Academy *Managerial Accounting*(CC BY-NC-SA 3.0, GitHub `saylordotorg/text_managerial-accounting`) 원본과 대조했습니다. 재무 노트는 한국회계기준원 '시행 중 K-IFRS' 목록에서 공개로 받을 수 있는 기준서 PDF(제1002·1016·1115·1033호)의 문단과 대조했습니다. 기준서 원문은 IFRS 재단 저작권 자료라 저장소에 넣지 않고 문단 번호만 기록합니다.
 

@@ -557,3 +557,8 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .formula.unchecked{border-style:dashed}
 .warn-text{color:var(--warn)}
 .status-cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.chip.status-neutral{background:var(--surface-3);color:var(--ink-2)}
+.status-card.neutral{border-top-color:var(--line-strong)}
+.unchecked-box{background:var(--surface-2);border:1px solid var(--line)}
+.unchecked-box h3:before{background:var(--faint)}
+.unchecked-box .note-list li{color:var(--ink-2)}
