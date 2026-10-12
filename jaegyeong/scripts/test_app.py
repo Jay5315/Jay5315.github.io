@@ -64,6 +64,39 @@ with sync_playwright() as pw:
  page.locator('#backup-file').set_input_files(str(file));expect(page.locator('dialog')).to_contain_text('백업 기록을 복원할까요')
  assert not state()['bookmarks'];page.locator('#confirm-import').click();assert first in state()['bookmarks']
  file.unlink()
+ # Concept notes: index, written/pending parts, related links, part study, quiz/wrong/preview entry points.
+ def start_or_replace():
+  if page.locator('#replace-session').count():page.locator('#replace-session').click()
+ goto('concepts');expect(page.locator('.concept-card')).to_have_count(74)
+ notes=page.evaluate('BANK_DATA.concepts.notes.length');expect(page.locator('.concept-card:not(.pending)')).to_have_count(notes)
+ page.locator('[data-action=concept-subject][data-subject="세무회계"]').click();expect(page.locator('.concept-card')).to_have_count(28)
+ goto('concept/F01');expect(page.locator('.empty')).to_contain_text('준비 중')
+ goto('concept/C11');expect(page.locator('.note-page h3').first).to_contain_text('핵심 개념')
+ expect(page.locator('.year-table thead')).to_contain_text('2026년');expect(page.locator('.source-box')).to_contain_text('법인세법')
+ page.locator('.note-page [data-action=concept][data-id=C02]').click();expect(page.locator('h1')).to_contain_text('세무조정과 소득처분')
+ page.locator('.page-title [data-action=study-part]').click();start_or_replace();expect(page.locator('.question-card')).to_be_visible()
+ ids=state()['active']['ids'];assert ids and page.evaluate('(ids)=>ids.every(id=>BANK_DATA.questions.find(q=>q.id===id).part==="C02")',ids)
+ # Opening and closing the related-concept dialog keeps position and the ungraded selection.
+ page.get_by_role('button',name='1번 선택',exact=True).click();idx=state()['active']['index']
+ page.locator('.question-card [data-action=concept-modal]').click();expect(page.locator('dialog')).to_contain_text('이 문제의 해설이 아니라')
+ expect(page.locator('dialog .note-title')).to_contain_text('세무조정과 소득처분')
+ page.locator('dialog [data-action=close-modal]').first.click();expect(page.locator('dialog')).not_to_be_visible()
+ expect(page.get_by_role('button',name='1번 선택',exact=True)).to_have_attribute('aria-pressed','true');assert state()['active']['index']==idx
+ # A question with an explicit tax-law year highlights that year in the note table.
+ qid=page.evaluate('BANK_DATA.questions.find(q=>q.eligible&&q.part==="C11"&&q.taxYear===2025).id')
+ goto('library');page.locator('#library-query').fill(qid);page.locator('.library-card [data-action=concept-modal]').click()
+ expect(page.locator('dialog .notice.ok')).to_contain_text('2025년');expect(page.locator('dialog .year-table th.hi')).to_contain_text('2025년')
+ page.locator('dialog [data-action=close-modal]').first.click()
+ # Wrong-answer review links to the part note; pending parts still open safely.
+ page.locator('.library-card [data-action=preview]').click();page.locator('[data-action=single]').click();start_or_replace()
+ q=active_q();choose(next(n for n in [1,2,3,4] if n not in q['answers']))
+ goto('wrong');card=page.locator('.library-card').filter(has_text=q['exam'])
+ card.first.locator('[data-action=concept-modal]').click();expect(page.locator('dialog .note-title')).to_contain_text('과세표준')
+ page.locator('dialog a[data-action=close-modal-link]').click();expect(page.locator('h1')).to_contain_text('법인세 과세표준')
+ pending=page.evaluate('BANK_DATA.questions.find(q=>q.eligible&&q.part==="F01").id')
+ goto('library');page.locator('#library-query').fill(pending);page.locator('.library-card [data-action=concept-modal]').click()
+ expect(page.locator('dialog')).to_contain_text('준비 중');page.locator('dialog [data-action=close-modal]').first.click()
+ goto('home');page.locator('#setup-subject').select_option('');page.locator('#setup-part').select_option('F04');expect(page.locator('.setup-concept')).to_contain_text('핵심 개념')
  # Reload, dashboard, desktop and mobile layout, text/original switch, zoom.
  page.reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
  page.screenshot(path=str(ARTIFACTS/'app-home-desktop.png'),full_page=False)
@@ -79,10 +112,15 @@ with sync_playwright() as pw:
  expect(m.locator('.question-image')).to_have_js_property('complete',True)
  m.locator('.image-note [data-action=zoom]').click();expect(m.locator('dialog')).to_be_visible()
  assert m.evaluate('document.documentElement.scrollWidth<=innerWidth')
- m.locator('[data-action=close-modal]').click();m.reload();expect(m.locator('.question-card')).to_be_visible()
+ m.locator('[data-action=close-modal]').click()
+ m.locator('.question-card [data-action=concept-modal]').click();expect(m.locator('dialog')).to_be_visible();assert m.evaluate('document.documentElement.scrollWidth<=innerWidth')
+ m.screenshot(path=str(ARTIFACTS/'app-concept-modal-mobile.png'));m.locator('dialog [data-action=close-modal]').first.click()
+ m.goto(URL+'#concept/C11');expect(m.locator('.year-table')).to_be_visible();assert m.evaluate('document.documentElement.scrollWidth<=innerWidth')
+ m.screenshot(path=str(ARTIFACTS/'app-concept-mobile.png'),full_page=True);m.goto(URL+'#quiz')
+ m.reload();expect(m.locator('.question-card')).to_be_visible()
  # New-session replacement is explicit and retains already graded records.
  m.locator('[data-action=home]').click();m.locator('[data-action=start]').click();expect(m.locator('dialog')).to_contain_text('진행 중인 학습')
  m.locator('#keep-session').click();expect(m.locator('.question-card')).to_be_visible()
  assert not errors,errors
  browser.close()
- print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom; no browser errors')
+ print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept); no browser errors')
