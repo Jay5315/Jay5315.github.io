@@ -146,6 +146,15 @@ with sync_playwright() as pw:
     expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
     assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 20
+    # The wrong-answer notebook exposes the same note for a disputed item that has no explanation.
+    page.goto(URL + '#wrong')
+    page.locator('#library-query').fill(disputed)
+    expect(page.locator('[data-action=explanation]')).to_have_count(0)
+    page.locator('[data-action=answer-note]').click()
+    expect(page.locator('dialog .answer-dispute')).to_contain_text('공식 정답 이의 가능')
+    state_dispute = page.evaluate('(k)=>localStorage.getItem(k)', KEY)
+    page.locator('dialog [data-action=close-modal]').first.click()
+    assert page.evaluate('(k)=>localStorage.getItem(k)', KEY) == state_dispute
 
     page.set_viewport_size({'width': 375, 'height': 812})
     page.goto(URL + '#wrong')
