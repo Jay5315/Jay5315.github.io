@@ -16,7 +16,7 @@ R = Path(__file__).resolve().parents[1]
 
 
 # Registration ledgers, newest first; setUpClass reverses them in this order.
-REGISTRATION_LEDGERS = ['round14_registrations', 'round13_registrations']
+REGISTRATION_LEDGERS = ['round15_registrations', 'round14_registrations', 'round13_registrations']
 
 class ExplanationTests(unittest.TestCase):
     def test_round10_rejects_non_numeric_or_non_finite_checks(self):
@@ -1226,6 +1226,9 @@ class ExplanationTests(unittest.TestCase):
 
     def test_round14_registrations_resolve_blockers_with_independent_review(self):
         self.check_registrations('round14_registrations')
+
+    def test_round15_registrations_resolve_blockers_with_independent_review(self):
+        self.check_registrations('round15_registrations')
 
 
     def test_answer_option_never_shares_reason_with_other_options(self):
