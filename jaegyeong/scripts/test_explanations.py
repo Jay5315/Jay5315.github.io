@@ -289,12 +289,15 @@ class ExplanationTests(unittest.TestCase):
         # Historical protection checks run against the content before the recorded
         # post-review amendments; test_post_review_amendments verifies each before/after hash.
         cls.data = copy.deepcopy(cls.current_data)
-        amendments = (cls.audit or {}).get('post_review_amendments', {})
         items = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
-        for record in amendments.get('notes', []):
-            cls.data['items'][items[record['question_id']]] = copy.deepcopy(record['before'])
-        for record in amendments.get('sources', []):
-            cls.data['sources'][record['ref']] = copy.deepcopy(record['before'])
+        cls.stage_after = {}
+        for group in ('spacing_amendments', 'post_review_amendments'):  # newest first
+            cls.stage_after[group] = copy.deepcopy(cls.data)
+            amendments = (cls.audit or {}).get(group, {})
+            for record in reversed(amendments.get('notes', [])):
+                cls.data['items'][items[record['question_id']]] = copy.deepcopy(record['before'])
+            for record in reversed(amendments.get('sources', [])):
+                cls.data['sources'][record['ref']] = copy.deepcopy(record['before'])
         cls.notes = {n['question_id']: n for n in cls.data['items']}
         cls.current_notes = {n['question_id']: n for n in cls.current_data['items']}
         cls.baseline_ids = set(cls.audit['baseline_hashes']) if cls.audit else set(list(cls.notes)[:30])
@@ -681,7 +684,8 @@ class ExplanationTests(unittest.TestCase):
         ids = [r['question_id'] for r in amendments['notes']]
         self.assertEqual(len(ids), len(set(ids)))
         for r in amendments['notes']:
-            id, before, after = r['question_id'], r['before'], self.current_notes[r['question_id']]
+            stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
+            id, before, after = r['question_id'], r['before'], stage[r['question_id']]
             self.assertEqual(digest(before), r['before_hash'], id)
             self.assertEqual(digest(after), r['after_hash'], id)
             self.assertTrue(r['reason'] and r['source_reads'], id)
@@ -700,16 +704,53 @@ class ExplanationTests(unittest.TestCase):
                 self.assertEqual([{k: v for k, v in s.items() if k != 'locator'} for s in before['sources']],
                                  [{k: v for k, v in s.items() if k != 'locator'} for s in after['sources']], id)
         for r in amendments['sources']:
-            before, after = dict(r['before']), dict(self.current_data['sources'][r['ref']])
+            before, after = dict(r['before']), dict(self.stage_after['post_review_amendments']['sources'][r['ref']])
             self.assertEqual(digest(r['before']), r['before_hash'], r['ref'])
             self.assertEqual(digest(after), r['after_hash'], r['ref'])
             self.assertTrue(r['reason'] and r['verification'])
             self.assertTrue(after.pop(r['field']).startswith('https://github.com/openstax/'))
             before.pop(r['field'])
             self.assertEqual(before, after)
-        untouched = set(self.current_notes) - set(ids)
-        for id in untouched:
-            self.assertEqual(self.current_notes[id], self.notes[id], id)
+        stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
+        for id in set(stage) - set(ids):
+            self.assertEqual(stage[id], self.notes[id], id)
+
+    def test_spacing_amendments_change_only_whitespace(self):
+        amendments = (self.audit or {}).get('spacing_amendments')
+        if not amendments:
+            self.skipTest('No spacing amendments')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        def strip(x):
+            if isinstance(x, str):
+                return re.sub(r'\s', '', x)
+            if isinstance(x, list):
+                return [strip(v) for v in x]
+            if isinstance(x, dict):
+                return {k: strip(v) for k, v in x.items()}
+            return x
+        ids = [r['question_id'] for r in amendments['notes']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(amendments['count'], len(ids))
+        before_stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
+        for r in amendments['notes']:
+            id, after = r['question_id'], self.current_notes[r['question_id']]
+            self.assertEqual(digest(r['before']), r['before_hash'], id)
+            self.assertEqual(r['before'], before_stage[id], id)
+            self.assertEqual(digest(after), r['after_hash'], id)
+            self.assertNotEqual(r['before'], after, id)
+            self.assertEqual(strip(r['before']), strip(after), id)
+            self.assertTrue(set(r['changed_fields']) <= {'title', 'summary', 'steps', 'option_notes', 'unchecked_points'}, id)
+            for field in set(after) - set(r['changed_fields']):
+                self.assertEqual(after[field], r['before'][field], id + ': ' + field)
+            for text in [after['title'], after['summary'], *after['steps'], *(o['reason'] for o in after['option_notes'])]:
+                self.assertNotIn('  ', text, id)
+                self.assertEqual(text, text.strip(), id)
+        for id in set(self.current_notes) - set(ids):
+            self.assertEqual(self.current_notes[id], before_stage[id], id)
+        self.assertEqual(self.current_data['sources'], self.stage_after['post_review_amendments']['sources'])
+
 
     def test_answer_option_never_shares_reason_with_other_options(self):
         for id, n in self.current_notes.items():
