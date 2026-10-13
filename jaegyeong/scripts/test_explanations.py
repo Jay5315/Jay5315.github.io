@@ -280,17 +280,27 @@ class ExplanationTests(unittest.TestCase):
     def setUpClass(cls):
         def read(name):
             return json.loads((R / 'data' / (name + '.json')).read_text())
-        cls.data = read('explanations')
+        cls.current_data = read('explanations')
         cls.qs = {q['id']: q for q in read('questions')}
         cls.entries = {e['id'] for e in read('entries')}
         cls.parts = {p['id'] for p in read('taxonomy')}
-        cls.notes = {n['question_id']: n for n in cls.data['items']}
         audit = R / 'reports/explanation-expansion.json'
         cls.audit = json.loads(audit.read_text()) if audit.exists() else None
+        # Historical protection checks run against the content before the recorded
+        # post-review amendments; test_post_review_amendments verifies each before/after hash.
+        cls.data = copy.deepcopy(cls.current_data)
+        amendments = (cls.audit or {}).get('post_review_amendments', {})
+        items = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+        for record in amendments.get('notes', []):
+            cls.data['items'][items[record['question_id']]] = copy.deepcopy(record['before'])
+        for record in amendments.get('sources', []):
+            cls.data['sources'][record['ref']] = copy.deepcopy(record['before'])
+        cls.notes = {n['question_id']: n for n in cls.data['items']}
+        cls.current_notes = {n['question_id']: n for n in cls.current_data['items']}
         cls.baseline_ids = set(cls.audit['baseline_hashes']) if cls.audit else set(list(cls.notes)[:30])
 
     def validate(self, data=None, qs=None):
-        return validate_explanations(data or self.data, qs or self.qs, self.entries, self.parts)
+        return validate_explanations(data or self.current_data, qs or self.qs, self.entries, self.parts)
 
     def assert_preserved_or_source_upgraded(self, id, expected_hash):
         def digest(x):
@@ -661,10 +671,57 @@ class ExplanationTests(unittest.TestCase):
                 self.assertTrue(r['source_read'])
 
 
+    def test_post_review_amendments_keep_answers_and_record_hashes(self):
+        amendments = (self.audit or {}).get('post_review_amendments')
+        if not amendments:
+            self.skipTest('No post-review amendments')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        ids = [r['question_id'] for r in amendments['notes']]
+        self.assertEqual(len(ids), len(set(ids)))
+        for r in amendments['notes']:
+            id, before, after = r['question_id'], r['before'], self.current_notes[r['question_id']]
+            self.assertEqual(digest(before), r['before_hash'], id)
+            self.assertEqual(digest(after), r['after_hash'], id)
+            self.assertTrue(r['reason'] and r['source_reads'], id)
+            self.assertTrue(set(r['changed_fields']) <= {'summary', 'option_notes', 'sources'}, id)
+            for field in set(before) - set(r['changed_fields']):
+                self.assertEqual(after[field], before[field], id + ': ' + field)
+            self.assertEqual(after['answers'], self.qs[id]['answers'])
+            for old, new in zip(before['option_notes'], after['option_notes']):
+                self.assertEqual({k: v for k, v in old.items() if k != 'reason'},
+                                 {k: v for k, v in new.items() if k != 'reason'}, id)
+            changed = {o['number'] for o, n in zip(before['option_notes'], after['option_notes']) if o['reason'] != n['reason']}
+            self.assertEqual(changed, set(r['changed_options']), id)
+            reasons = [o['reason'] for o in after['option_notes']]
+            self.assertEqual(len(reasons), len(set(reasons)), id)
+            if 'sources' in r['changed_fields']:
+                self.assertEqual([{k: v for k, v in s.items() if k != 'locator'} for s in before['sources']],
+                                 [{k: v for k, v in s.items() if k != 'locator'} for s in after['sources']], id)
+        for r in amendments['sources']:
+            before, after = dict(r['before']), dict(self.current_data['sources'][r['ref']])
+            self.assertEqual(digest(r['before']), r['before_hash'], r['ref'])
+            self.assertEqual(digest(after), r['after_hash'], r['ref'])
+            self.assertTrue(r['reason'] and r['verification'])
+            self.assertTrue(after.pop(r['field']).startswith('https://github.com/openstax/'))
+            before.pop(r['field'])
+            self.assertEqual(before, after)
+        untouched = set(self.current_notes) - set(ids)
+        for id in untouched:
+            self.assertEqual(self.current_notes[id], self.notes[id], id)
+
+    def test_answer_option_never_shares_reason_with_other_options(self):
+        for id, n in self.current_notes.items():
+            answer = {o['reason'].strip() for o in n['option_notes'] if o['is_answer']}
+            others = {o['reason'].strip() for o in n['option_notes'] if not o['is_answer']}
+            self.assertFalse(answer & others, id)
+
+
     def test_bundle_has_exact_explanations_and_unchanged_question_rows(self):
         raw = (R / 'assets/bank-data.js').read_text()
         b = json.loads(raw[len('window.BANK_DATA='):-2])
-        self.assertEqual(b['explanations'], self.data)
+        self.assertEqual(b['explanations'], self.current_data)
         self.assertEqual(len(b['questions']), 4322)
         shown = {a['question_id'] for a in self.audit['answer_adjudication']['records']
                  if a['verdict'] in {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}

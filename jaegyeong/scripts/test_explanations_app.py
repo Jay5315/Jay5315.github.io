@@ -146,6 +146,22 @@ with sync_playwright() as pw:
     expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
     assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 20
+    # Source basis labels say what the explanation was actually compared against.
+    labels = {}
+    for key, basis, subject in [('domestic', 'domestic', '세무회계'), ('ifrs', 'ifrs', '재무회계'),
+                                ('weak', 'textbook', '재무회계'), ('cost', 'textbook', '원가관리회계')]:
+        qid = page.evaluate("([b,s])=>BANK_DATA.questions.find(q=>BANK_DATA.explanationBasis[q.id]===b&&q.subject===s).id", [basis, subject])
+        page.goto(URL + '#library')
+        page.locator('#library-query').fill(qid)
+        page.locator('[data-action=explanation]').first.click()
+        chip = page.locator('dialog .note-badges .chip').first
+        note = page.locator('dialog .basis-note')
+        labels[key] = [chip.inner_text(), chip.get_attribute('class'), note.inner_text() if note.count() else '']
+        page.locator('dialog [data-action=close-modal]').first.click()
+    assert labels['domestic'][0].startswith('국내 법령·기준서 대조') and 'status-ok' in labels['domestic'][1] and not labels['domestic'][2]
+    assert labels['ifrs'][0].startswith('IFRS 영문 원문 대조') and '한글 K-IFRS 원문 대조는 아니에요' in labels['ifrs'][2]
+    assert labels['weak'][0].startswith('공개 교재·강의 대조') and 'status-neutral' in labels['weak'][1] and '시험 기준은' in labels['weak'][2]
+    assert labels['cost'][0].startswith('공개 교재·강의 대조') and 'status-ok' in labels['cost'][1]
     # The wrong-answer notebook exposes the same note for a disputed item that has no explanation.
     page.goto(URL + '#wrong')
     page.locator('#library-query').fill(disputed)

@@ -26,7 +26,14 @@ def main():
   q=qs.get(a['question_id'])
   if not q or q['answers']!=a['official_answers']:raise SystemExit(f"{a['question_id']}: adjudication does not match official answer")
   answer_notes[a['question_id']]=dict(kind=a['verdict'],label=labels[a['verdict']],text=a['evidence'])
- data=dict(answerNotes=answer_notes,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
+ def source_basis(source):
+  u=' '.join(source.get(k) or '' for k in ('url','mirror_url','original_url')).lower()
+  if any(x in u for x in ('kasb.or.kr','law.go.kr','legalize-kr/legalize-kr','precedent-kr','nts.go.kr','gwanbo')):return 'domestic'
+  if any(x in u for x in ('ifrs.org','legalize-eu','tyefraser','agd-assb')):return 'ifrs'
+  return 'textbook'
+ rank={'domestic':0,'ifrs':1,'textbook':2}
+ explanation_basis={n['question_id']:min((source_basis(explanations['sources'][s['ref']]) for s in n['sources']),key=rank.get) for n in explanations['items']}
+ data=dict(answerNotes=answer_notes,explanationBasis=explanation_basis,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
  out=R/'assets/bank-data.js';out.write_text('window.BANK_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
  print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes, {len(explanations["items"])} explanations: {out.stat().st_size/1048576:.1f} MiB')
 if __name__=='__main__':main()

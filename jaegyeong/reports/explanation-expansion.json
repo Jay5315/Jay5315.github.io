@@ -211744,5 +211744,659 @@
         "source_read": null
       }
     ]
+  },
+  "post_review_amendments": {
+    "checked_on": "2026-10-13",
+    "notes": [
+      {
+        "question_id": "2023-11-120",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          1
+        ],
+        "before": {
+          "question_id": "2023-11-120",
+          "question_fingerprint": "b58e8aa57d114a562c634dcca5a1deefa9566140cdfa7ae5b0313cf61a4a7e94",
+          "answers": [
+            3
+          ],
+          "part_id": "M20",
+          "title": "BSC의 균형과 측정 한계",
+          "summary": "비재무 측정이 쉽게 객관화되거나 업종 공통으로 정형화된다는 3번이 틀립니다.",
+          "steps": [
+            "BSC는 재무·고객·내부 과정·학습성장의 네 관점을 전략과 연결합니다.",
+            "재무결과와 미래 활동을 함께 보지만 적절한 정성·정량 지표와 목표를 정하는 과정은 복잡합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "정성지표의 적절한 측정과 목표 설정은 어렵고 조직·업종에 맞춰 조정하므로 손쉽고 공통된 객관적 수단을 보장하지 않습니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "재무 측정과 고객·내부 과정·학습성장 비재무 측정을 함께 평가합니다."
+            },
+            {
+              "number": 3,
+              "is_answer": true,
+              "reason": "정성지표의 적절한 측정과 목표 설정은 어렵고 조직·업종에 맞춰 조정하므로 손쉽고 공통된 객관적 수단을 보장하지 않습니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "과거 성과결과와 교육 등 향후 성과를 유발하는 활동을 함께 봅니다."
+            }
+          ],
+          "sources": [
+            {
+              "ref": "m68099",
+              "locator": "fs-idm237164704·434021184·238384304·245795024: perspectives, past/future, tailored metrics and complexity"
+            }
+          ],
+          "checks": [],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12",
+          "review_note": "원문 문항 조건·선택지와 직접 읽은 공개 교재의 해당 원리를 대조했습니다. 수치·대수적 적용은 독립 검산했고 영문 개념을 국내 시험 용어로 옮겼습니다. 원문에 세법 연도가 지정되어 있지 않으며 일반 원가관리회계 원리를 대조했습니다. 전문가 검수는 아직 받지 않았습니다."
+        },
+        "before_hash": "052596abc7da834da87cc893a94da4c0d22df51be4ba1b080918a518aa493797",
+        "after_hash": "f5ff2a2f9a4e68a207cc10f94cfc40b113b1f2a3fd07328d748c73101eb2ec70",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "OpenStax m68099 BSC 관점·균형 설명(기존 출처) 재확인"
+      },
+      {
+        "question_id": "2023-07-120",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          3
+        ],
+        "before": {
+          "question_id": "2023-07-120",
+          "question_fingerprint": "6e652a021571218187785624eb23d5b3a2bf6524b78f7b7ad46862a9dd3ffe1a",
+          "answers": [
+            2
+          ],
+          "part_id": "M20",
+          "title": "BSC의 균형과 측정 한계",
+          "summary": "비재무 측정이 쉽게 객관화되거나 업종 공통으로 정형화된다는 2번이 틀립니다.",
+          "steps": [
+            "BSC는 재무·고객·내부 과정·학습성장의 네 관점을 전략과 연결합니다.",
+            "재무결과와 미래 활동을 함께 보지만 적절한 정성·정량 지표와 목표를 정하는 과정은 복잡합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "재무 측정과 고객·내부 과정·학습성장 비재무 측정을 함께 평가합니다."
+            },
+            {
+              "number": 2,
+              "is_answer": true,
+              "reason": "정성지표의 적절한 측정과 목표 설정은 어렵고 조직·업종에 맞춰 조정하므로 손쉽고 공통된 객관적 수단을 보장하지 않습니다."
+            },
+            {
+              "number": 3,
+              "is_answer": false,
+              "reason": "정성지표의 적절한 측정과 목표 설정은 어렵고 조직·업종에 맞춰 조정하므로 손쉽고 공통된 객관적 수단을 보장하지 않습니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "과거 성과결과와 교육 등 향후 성과를 유발하는 활동을 함께 봅니다."
+            }
+          ],
+          "sources": [
+            {
+              "ref": "m68099",
+              "locator": "fs-idm237164704·434021184·238384304·245795024: perspectives, past/future, tailored metrics and complexity"
+            }
+          ],
+          "checks": [],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12",
+          "review_note": "원문 문항 조건·선택지와 직접 읽은 공개 교재의 해당 원리를 대조했습니다. 수치·대수적 적용은 독립 검산했고 영문 개념을 국내 시험 용어로 옮겼습니다. 원문에 세법 연도가 지정되어 있지 않으며 일반 원가관리회계 원리를 대조했습니다. 전문가 검수는 아직 받지 않았습니다."
+        },
+        "before_hash": "2c8d2bacf6db61bf933178ce56a7f094359351bd32546e037e60aa010051fc43",
+        "after_hash": "4ea912623e63793b57d6cd47f246d441521875fc88311029e78b687e8d9b749e",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "OpenStax m68099 BSC 관점·균형 설명(기존 출처) 재확인"
+      },
+      {
+        "question_id": "2024-05-044",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          4
+        ],
+        "before": {
+          "question_id": "2024-05-044",
+          "question_fingerprint": "26e14a3762f6e78ce1e8d77a0783b00b851f9bf899df36f18feff4217fdb6187",
+          "answers": [
+            4
+          ],
+          "part_id": "T02",
+          "title": "가산세의 본세감면과 자진신고 감면",
+          "summary": "본세감면은가산세에자동적용하지않고, 자진신고감면은정해진가산세와기간·예외에적용합니다.",
+          "steps": [
+            "제47조제2항은가산세가본세세목에속하더라도본세감면대상에는포함하지않는다고정합니다.",
+            "제48조는정당한사유의미부과와 기한후 1개월신고시무신고가산세 50%감면을구분합니다. 미리경정을알고신고하는수정신고는감면하지않습니다.",
+            "영세율과소신고추가가산세는제47조의 3제2항제2호의 0.5%입니다. 각보기의비율·대상을대조해공식 4번을선택합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "가산세는본세세목에속하지만 본세감면시가산세는감면대상에포함하지않습니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "과세표준·세액경정을미리알고낸수정신고는자진수정감면대상에서제외됩니다.1개월이내라도이예외는적용합니다."
+            },
+            {
+              "number": 3,
+              "is_answer": false,
+              "reason": "의무불이행에정당한사유가있으면해당가산세를부과하지않습니다.90%만감면하는것은아닙니다."
+            },
+            {
+              "number": 4,
+              "is_answer": true,
+              "reason": "가산세는본세세목에속하지만 본세감면시가산세는감면대상에포함하지않습니다."
+            }
+          ],
+          "checks": [],
+          "sources": [
+            {
+              "ref": "KGB24",
+              "locator": "제47조제2항, 제47조의3제2항제2호, 제48조제1항·제2항제1·2호"
+            }
+          ],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "review_note": "원문 문항·공식답안 PDF 및 Git 역사 법령의 인용조문과 시행일·관련부칙을 직접 대조했습니다. 원문에 세법 연도가 지정되어 있지 않으며 출제월 이전 시행판본의 해당 규정 범위에서만 대조했습니다. 조문별 예외를 포함해 보기내용을 확인했으며 전문가 검수는 아직입니다.",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12"
+        },
+        "before_hash": "0550a35461fe65308a15bf130cd3adfad2cc054366de5140915840adb3aee405",
+        "after_hash": "1623cc23f36be6daec43ea8357774b92b1ff940c2b03e732ca06b7b1a77c0833",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-kr c76556ac7f 국세기본법 제47조제2항·제48조제2항 원문"
+      },
+      {
+        "question_id": "2024-12-072",
+        "changed_fields": [
+          "option_notes",
+          "summary",
+          "sources"
+        ],
+        "changed_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "before": {
+          "question_id": "2024-12-072",
+          "question_fingerprint": "a0d8ae69f5eb84ec49b1f93460683626e8f5f9445f20a73b5e239257f3bf7444",
+          "answers": [
+            3
+          ],
+          "part_id": "V01",
+          "title": "업종별 사업장·직매장·하치장의 구분",
+          "summary": "사업장은거래전부또는일부를행하는고정된장소입니다. 정답은 3번입니다.",
+          "steps": [
+            "법제6조는사업장의고정장소정의·각사업장납세지·미설치주소/거소·단위과세본점과 신고하치장/임시사업장특례를규정합니다.",
+            "시행령제8조표는제조완성장소·건설법인등기지점포함·임대부동산·무인판매기업무총괄장소를구분하고 직매장을사업장으로합니다.",
+            "임시사업장은기존에포함되고폐쇄신고는 10일입니다. 네보기의범위와원문공식 3번을대조합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "사업장은거래전부또는일부를행하는고정된장소입니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "사업장은거래전부또는일부를행하는고정된장소입니다."
+            },
+            {
+              "number": 3,
+              "is_answer": true,
+              "reason": "사업장은거래전부또는일부를행하는고정된장소입니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "사업장은거래전부또는일부를행하는고정된장소입니다."
+            }
+          ],
+          "checks": [],
+          "sources": [
+            {
+              "ref": "VAT24",
+              "locator": "제6조·제8조"
+            },
+            {
+              "ref": "VAD24",
+              "locator": "제8조제1항표·제3·5·6항·제10조제1·4항"
+            }
+          ],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "review_note": "원문·공식답PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git법령의 조문·부칙을 직접 대조했습니다. tax_law_year는원문null로유지하며 출제시점판본의해당규정범위로대조했습니다. 전문가검수는아직입니다.",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12"
+        },
+        "before_hash": "fcc43daea89ed1af49f4ca18deb2e6a9e8ec5dd3bde33283b8380d07ceb8e16c",
+        "after_hash": "0c8d6b97898108a08fc3215b5cd31458b4465243b5e3d075b15ac7361af5565e",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-kr 2c23d7c 부가가치세법 제2조·제39조·제48조·제51조 원문"
+      },
+      {
+        "question_id": "2024-06-071",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          1
+        ],
+        "before": {
+          "question_id": "2024-06-071",
+          "question_fingerprint": "ecf5cd2710db9c5005ae07fbdc5c742f2316b75c192f45743e67e559f104f33b",
+          "answers": [
+            2
+          ],
+          "part_id": "V01",
+          "title": "공급·수입 과세와 전단계 세액공제",
+          "summary": "부가가치세는사업자의일반재화·용역공급에과세하고법 26의열거된면세를제외합니다. 정답은 2번입니다.",
+          "steps": [
+            "법제2·3·4조에따라사업자의독립공급과재화수입을과세하며 사업자목적은영리·비영리무관입니다.",
+            "법제37조의매출세액−매입세액은각단계의세액공제방식입니다. 수입과세와제21조수출영세율은최종소비국부담방향을만듭니다.",
+            "제14조부수공급·제26조열거면세·제30조 10%일반세율을보기조건에맞춰대조한공식 2번을선택합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "부가가치세는사업자의일반재화·용역공급에과세하고법 26의열거된면세를제외합니다. 개별소비세가아닙니다."
+            },
+            {
+              "number": 2,
+              "is_answer": true,
+              "reason": "부가가치세는사업자의일반재화·용역공급에과세하고법 26의열거된면세를제외합니다. 개별소비세가아닙니다."
+            },
+            {
+              "number": 3,
+              "is_answer": false,
+              "reason": "법 37은매출세액에서매입세액을공제하는세액공제법입니다. 거래액차이를먼저구하는방법과구분합니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "수출은제21조의영세율 0%이고 면세와구분합니다. 영세율공급은관련매입세액공제·환급이가능합니다."
+            }
+          ],
+          "checks": [],
+          "sources": [
+            {
+              "ref": "VAT24",
+              "locator": "제2조제3호·제3조제1항·제4조·제14조·제21조·제26조제1항·제30조·제31조·제37조제1·2항·제39조제1항제7호"
+            }
+          ],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "review_note": "원문·공식답PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git법령의 조문·부칙을 직접 대조했습니다. tax_law_year는원문null로유지하며 출제시점판본의해당규정범위로대조했습니다. 전문가검수는아직입니다.",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12"
+        },
+        "before_hash": "8f23d82fdba7e1423af5e5c722d928428feb12e13f4f7192480c4c4abcce2e18",
+        "after_hash": "9df8cb5337c5d4e5d75d66d344987038c16c1ee179e298297642b0fda457be45",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-kr 2c23d7c 부가가치세법 제4조·제37조(기존 출처) 원문"
+      },
+      {
+        "question_id": "2024-12-014",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          2,
+          3
+        ],
+        "before": {
+          "question_id": "2024-12-014",
+          "question_fingerprint": "e982810d4eb21c445fe5f0fe51be7da5116c7fd41e73d6ed07f4b8343c1197d3",
+          "answers": [
+            3
+          ],
+          "part_id": "F08",
+          "title": "투자부동산의 모형 선택과 후속 측정",
+          "summary": "후속 공정가치 측정의 시장가격에서는 거래원가를 차감하지 않으므로 차감한다는③이 옳지 않습니다.",
+          "steps": [
+            "최초 취득원가에 포함하는 거래원가와 후속 공정가치 측정을 구별합니다.",
+            "공정가치에 사용하는 시장가격은 처분 거래원가로 조정하지 않습니다.",
+            "원가모형의 매각예정 분류는 IFRS5로, 공정가치모형의 후속 변동은 별도 감가상각 없이 당기손익으로 처리합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "원가모형 투자부동산이 매각예정 분류 요건을 충족하면 IAS40 56(a)에 따라 IFRS5를 적용합니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "원가모형 또는 공정가치모형을 회계정책으로 선택하며 원문의 일반 투자부동산 전체에 일관되게 적용합니다."
+            },
+            {
+              "number": 3,
+              "is_answer": true,
+              "reason": "원가모형 또는 공정가치모형을 회계정책으로 선택하며 원문의 일반 투자부동산 전체에 일관되게 적용합니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "공정가치모형에서는 기말 공정가치로 측정하고 변동을 당기손익에 반영하며 별도 감가상각은 하지 않습니다."
+            }
+          ],
+          "checks": [],
+          "sources": [
+            {
+              "ref": "R3_FA_EU_IAS40_2023",
+              "locator": "IAS40 5/20/30/33~35/56~63/72/76/79"
+            }
+          ],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "review_note": "실제 문항 이미지·해당 회차 PDF 공통조건·공식답과 locator의 영어 공통본문을 직접 대조했습니다. 고정EU미러는 비공식 재형식화로 원HTML/PDF 검증을 하지 않았으며 표제 일자 불일치를 기록했습니다. 한국어K-IFRS 직접 열람 주장이 아니며 명시된 일반 조건과 인용 기준의 내부 적용이력 범위입니다. 전문가 검수는 아직 받지 않았습니다.",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12"
+        },
+        "before_hash": "5e34c4262360735604e893c23dce9415ffaf8559676127cb1c0d3de190b0fbb1",
+        "after_hash": "baf28d20fba13987da75be8d0c468b7fc4f1096638cfbffdb2514f37250ef60a",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-eu 62b803d EU 2023/1803 IAS 40 문단 30·33·56, IFRS 13 문단 25 원문"
+      },
+      {
+        "question_id": "2023-11-020",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "before": {
+          "question_id": "2023-11-020",
+          "question_fingerprint": "b386c9f66e58dbe6bbde4a7f78ca1b5817c41867533e07cd5624323745591bf6",
+          "answers": [
+            2
+          ],
+          "part_id": "F13",
+          "title": "충당부채·우발 항목의 인식과 측정",
+          "summary": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 이 원리에 비추어 2번이 틀린 설명입니다.",
+          "steps": [
+            "먼저 과거사건에 따른 법적·의제 현재의무, 가능성이 높은 자원유출, 금액의 신뢰성 있는 추정이라는 세 인식조건을 확인합니다.",
+            "원문 정답 보기와 관련된 핵심은 다음과 같습니다. IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다.",
+            "인식한 충당부채는 보고일 최선추정치를 사용하고 위험·불확실성·중요한 시간가치를 반영합니다. 단순 잠재의무·잠재자산의 공시와 부채·자산 인식을 구별합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "IAS37 10·31·33~35에 따라 잠재적 자산인 우발자산은 인식하지 않고 유입가능성이 높으면 공시합니다. 실현이 거의 확실해지면 더 이상 우발자산이 아니므로 그 기간에 자산·이익을 인식합니다."
+            },
+            {
+              "number": 2,
+              "is_answer": true,
+              "reason": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다."
+            },
+            {
+              "number": 3,
+              "is_answer": false,
+              "reason": "IAS37 10·31·33~35에 따라 잠재적 자산인 우발자산은 인식하지 않고 유입가능성이 높으면 공시합니다. 실현이 거의 확실해지면 더 이상 우발자산이 아니므로 그 기간에 자산·이익을 인식합니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다."
+            }
+          ],
+          "sources": [
+            {
+              "ref": "R3_CA_EU_IAS37_2023",
+              "locator": "IAS37 10(부모 L8221), 14(부모 L8245), 15(부모 L8251), 16(부모 L8255), 17(부모 L8261), 18(부모 L8265), 19(부모 L8269), 20(부모 L8273), 21(부모 L8277), 22(부모 L8281), 23(부모 L8287), 24(부모 L8291), 25(부모 L8297), 26(부모 L8301), 27(부모 L8307), 28(부모 L8311), 31(부모 L8325), 32(부모 L8329), 33(부모 L8333), 34(부모 L8337), 35(부모 L8341), 36(부모 L8349), 39(부모 L8361), 42(부모 L8375), 45(부모 L8389), 48(부모 L8403), 51(부모 L8417), 63(부모 L8475), 64(부모 L8479), 66(부모 L8489), 68(부모 L8497), 69(부모 L8505), 72(부모 L8519), 78(부모 L8543), 91(부모 L8599), 92(부모 L8603), 94(부모 L8613), 95(부모 L8623), 96(부모 L8627), 97(부모 L8631), 98(부모 L8635), 99(부모 L8639), 100(부모 L8643), 101(부모 L8647), 102(부모 L8651), 103(부모 L8655), 104(부모 L8659), 105(부모 L8663); EU 2023 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            },
+            {
+              "ref": "R3_CA_EU_IAS37_2025",
+              "locator": "IAS37 95(부모 L9884), 96(부모 L9886), 97(부모 L9888), 98(부모 L9890), 99(부모 L9892), 100(부모 L9894), 101(부모 L9896), 102(부모 L9898), 103(부모 L9900), 104(부모 L9902), 105(부모 L9904); EU 2025 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            }
+          ],
+          "checks": [],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12",
+          "review_note": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다."
+        },
+        "before_hash": "609fc5447e885f0caea0d2403ae9b480fa4d7265caa71886a9e56bd7af7aede9",
+        "after_hash": "d97aeedfe1dbf8c6afbb5eec24d055c8a07a6ddaf4031a814dbc56f408842d11",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-eu 62b803d EU 2023/1803 IAS 37 문단 10·27·28·31·33~35 원문"
+      },
+      {
+        "question_id": "2024-01-020",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          3,
+          4
+        ],
+        "before": {
+          "question_id": "2024-01-020",
+          "question_fingerprint": "5a1292d3430ffa9db871ae5c779c5ceb8b7b796301c22f36e58c73bb014408f4",
+          "answers": [
+            4
+          ],
+          "part_id": "F13",
+          "title": "충당부채·우발 항목의 인식과 측정",
+          "summary": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 이 원리에 비추어 4번이 틀린 설명입니다.",
+          "steps": [
+            "먼저 과거사건에 따른 법적·의제 현재의무, 가능성이 높은 자원유출, 금액의 신뢰성 있는 추정이라는 세 인식조건을 확인합니다.",
+            "원문 정답 보기와 관련된 핵심은 다음과 같습니다. IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다.",
+            "인식한 충당부채는 보고일 최선추정치를 사용하고 위험·불확실성·중요한 시간가치를 반영합니다. 단순 잠재의무·잠재자산의 공시와 부채·자산 인식을 구별합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "IAS37 14에 따라 과거사건에서 생긴 법적·의제 현재의무, 가능성이 높은 자원유출 및 신뢰성 있는 추정을 모두 충족해야 충당부채로 인식합니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "IAS37 10·14는 법적의무뿐 아니라 과거관행·공개정책 등으로 상대방의 타당한 기대가 생긴 의제의무도 포함합니다. 법규나 계약으로만 제한하지 않습니다."
+            },
+            {
+              "number": 3,
+              "is_answer": false,
+              "reason": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다."
+            },
+            {
+              "number": 4,
+              "is_answer": true,
+              "reason": "IAS37 10·27·28은 잠재적 의무 또는 유출가능성·신뢰성추정 조건 미충족 현재의무를 우발부채로 구별합니다. 부채로 인식하지 않고 원칙적으로 공시하지만 유출가능성이 희박하면 공시를 생략합니다."
+            }
+          ],
+          "sources": [
+            {
+              "ref": "R3_CA_EU_IAS37_2023",
+              "locator": "IAS37 10(부모 L8221), 14(부모 L8245), 15(부모 L8251), 16(부모 L8255), 17(부모 L8261), 18(부모 L8265), 19(부모 L8269), 20(부모 L8273), 21(부모 L8277), 22(부모 L8281), 23(부모 L8287), 24(부모 L8291), 25(부모 L8297), 26(부모 L8301), 27(부모 L8307), 28(부모 L8311), 31(부모 L8325), 32(부모 L8329), 33(부모 L8333), 34(부모 L8337), 35(부모 L8341), 36(부모 L8349), 39(부모 L8361), 42(부모 L8375), 45(부모 L8389), 48(부모 L8403), 51(부모 L8417), 63(부모 L8475), 64(부모 L8479), 66(부모 L8489), 68(부모 L8497), 69(부모 L8505), 72(부모 L8519), 78(부모 L8543), 91(부모 L8599), 92(부모 L8603), 94(부모 L8613), 95(부모 L8623), 96(부모 L8627), 97(부모 L8631), 98(부모 L8635), 99(부모 L8639), 100(부모 L8643), 101(부모 L8647), 102(부모 L8651), 103(부모 L8655), 104(부모 L8659), 105(부모 L8663); EU 2023 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            },
+            {
+              "ref": "R3_CA_EU_IAS37_2025",
+              "locator": "IAS37 95(부모 L9884), 96(부모 L9886), 97(부모 L9888), 98(부모 L9890), 99(부모 L9892), 100(부모 L9894), 101(부모 L9896), 102(부모 L9898), 103(부모 L9900), 104(부모 L9902), 105(부모 L9904); EU 2025 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            }
+          ],
+          "checks": [],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12",
+          "review_note": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다."
+        },
+        "before_hash": "bc231d413ce3e7e1eeeb5d9421168e587ec4d3bbead4015246d06395c69fc2d9",
+        "after_hash": "e2f7d4fd63a6ce44fe6d1e0f64fea9c73962130341caef872fd242e3d9928ed9",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-eu 62b803d EU 2023/1803 IAS 37 문단 10·14·27·28 원문"
+      },
+      {
+        "question_id": "2024-12-020",
+        "changed_fields": [
+          "option_notes"
+        ],
+        "changed_options": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "before": {
+          "question_id": "2024-12-020",
+          "question_fingerprint": "c0d28b15debb1ffcba12918b7e0743646cbe0d3b9ce4ae9efec24c07905fa387",
+          "answers": [
+            3
+          ],
+          "part_id": "F13",
+          "title": "충당부채·우발 항목의 인식과 측정",
+          "summary": "IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 이 원리에 비추어 3번이 틀린 설명입니다.",
+          "steps": [
+            "먼저 과거사건에 따른 법적·의제 현재의무, 가능성이 높은 자원유출, 금액의 신뢰성 있는 추정이라는 세 인식조건을 확인합니다.",
+            "원문 정답 보기와 관련된 핵심은 다음과 같습니다. IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 회피불가 원가는 이행원가와 불이행 보상·위약금 중 작은 금액이고 확정매입계약도 조건을 충족하면 해당할 수 있습니다.",
+            "인식한 충당부채는 보고일 최선추정치를 사용하고 위험·불확실성·중요한 시간가치를 반영합니다. 단순 잠재의무·잠재자산의 공시와 부채·자산 인식을 구별합니다."
+          ],
+          "option_notes": [
+            {
+              "number": 1,
+              "is_answer": false,
+              "reason": "IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 회피불가 원가는 이행원가와 불이행 보상·위약금 중 작은 금액이고 확정매입계약도 조건을 충족하면 해당할 수 있습니다."
+            },
+            {
+              "number": 2,
+              "is_answer": false,
+              "reason": "IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 회피불가 원가는 이행원가와 불이행 보상·위약금 중 작은 금액이고 확정매입계약도 조건을 충족하면 해당할 수 있습니다."
+            },
+            {
+              "number": 3,
+              "is_answer": true,
+              "reason": "IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 회피불가 원가는 이행원가와 불이행 보상·위약금 중 작은 금액이고 확정매입계약도 조건을 충족하면 해당할 수 있습니다."
+            },
+            {
+              "number": 4,
+              "is_answer": false,
+              "reason": "IAS37 66·68에 따라 계약 의무의 회피불가 원가가 기대효익을 넘으면 충당부채로 인식합니다. 회피불가 원가는 이행원가와 불이행 보상·위약금 중 작은 금액이고 확정매입계약도 조건을 충족하면 해당할 수 있습니다."
+            }
+          ],
+          "sources": [
+            {
+              "ref": "R3_CA_EU_IAS37_2023",
+              "locator": "IAS37 10(부모 L8221), 14(부모 L8245), 15(부모 L8251), 16(부모 L8255), 17(부모 L8261), 18(부모 L8265), 19(부모 L8269), 20(부모 L8273), 21(부모 L8277), 22(부모 L8281), 23(부모 L8287), 24(부모 L8291), 25(부모 L8297), 26(부모 L8301), 27(부모 L8307), 28(부모 L8311), 31(부모 L8325), 32(부모 L8329), 33(부모 L8333), 34(부모 L8337), 35(부모 L8341), 36(부모 L8349), 39(부모 L8361), 42(부모 L8375), 45(부모 L8389), 48(부모 L8403), 51(부모 L8417), 63(부모 L8475), 64(부모 L8479), 66(부모 L8489), 68(부모 L8497), 69(부모 L8505), 72(부모 L8519), 78(부모 L8543), 91(부모 L8599), 92(부모 L8603), 94(부모 L8613), 95(부모 L8623), 96(부모 L8627), 97(부모 L8631), 98(부모 L8635), 99(부모 L8639), 100(부모 L8643), 101(부모 L8647), 102(부모 L8651), 103(부모 L8655), 104(부모 L8659), 105(부모 L8663); EU 2023 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            },
+            {
+              "ref": "R3_CA_EU_IAS37_2025",
+              "locator": "IAS37 95(부모 L9884), 96(부모 L9886), 97(부모 L9888), 98(부모 L9890), 99(부모 L9892), 100(부모 L9894), 101(부모 L9896), 102(부모 L9898), 103(부모 L9900), 104(부모 L9902), 105(부모 L9904); EU 2025 본문 실제 확인한 공통 단락·개별 시행일에 한정"
+            }
+          ],
+          "checks": [],
+          "tax_law_year": null,
+          "review_status": "source_checked",
+          "unchecked_points": [],
+          "authorship": "AI 작성 학습용 해설 · 삼일회계법인의 공식 해설 아님",
+          "checked_on": "2026-10-12",
+          "review_note": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다."
+        },
+        "before_hash": "e86237c24a030df2bb61612b535e83130f242ea675531c24a3b831260e237a26",
+        "after_hash": "72b5c3ee01e701e4edf17d297c5b8eafa574fece8a6d58e776364eec313fbe78",
+        "reason": "정답 보기와 오답 보기가 같은 이유 문구를 공유해 보기별 설명 역할을 하지 못함",
+        "source_reads": "legalize-eu 62b803d EU 2023/1803 IAS 37 문단 10·66~68 원문"
+      }
+    ],
+    "sources": [
+      {
+        "ref": "RC3_OSX_PROCESS",
+        "field": "mirror_url",
+        "before": {
+          "title": "OpenStax · process costing equivalent units",
+          "url": "https://openstax.org/books/principles-managerial-accounting/pages/5-3-explain-and-compute-equivalent-units-and-total-cost-of-production-in-an-initial-processing-stage",
+          "kind": "공개 교재",
+          "version": "원본 commit 2165bf6454c0279c1284e19ac7febc101f7956ad",
+          "checked_on": "2026-10-12",
+          "verification": "m68131의 수량×완성도·원가/EU·기말원가 절과 media alt, m68129의 평균법/FIFO 기본 차이를 직접 읽었습니다.",
+          "commit": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+          "mirror_url": "https://github.com/openstax/osbooks-accounts-v1/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68131/index.cnxml"
+        },
+        "before_hash": "6f378aff0f3390618b5682fedc084582b65f53f4d2b2b7f2d96195a27182670f",
+        "after_hash": "56feb6ba4acd9fe81432e1a35a7fa1ab687993d29a99c0fd7638dc0536fd368c",
+        "reason": "인용한 commit이 옛 저장소 이름에서는 열리지 않음; 같은 commit을 가진 현재 저장소 이름으로 교체",
+        "verification": "git ls-remote로 새 저장소 HEAD가 인용 commit과 같음을 확인하고 raw 파일 200 응답과 제목을 확인"
+      },
+      {
+        "ref": "RC3_OSX_INVENTORY",
+        "field": "mirror_url",
+        "before": {
+          "title": "OpenStax · inventory cost-flow methods",
+          "url": "https://openstax.org/books/principles-financial-accounting/pages/10-2-calculate-the-cost-of-goods-sold-and-ending-inventory-using-the-periodic-method",
+          "kind": "공개 교재",
+          "version": "원본 commit 2165bf6454c0279c1284e19ac7febc101f7956ad",
+          "checked_on": "2026-10-12",
+          "verification": "m67889의 재고원가 흐름 선택과 m67890의 재고FIFO 기본 정의를 직접 읽었으며 종합원가FIFO 상세를 이 절이 다룬다고 주장하지 않습니다.",
+          "commit": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+          "mirror_url": "https://github.com/openstax/osbooks-accounts-v1/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67889/index.cnxml"
+        },
+        "before_hash": "95aa092ca6143e2502d43aa124aacf061dc8654a7f16c659fefdcc15a908a3d9",
+        "after_hash": "fc894be5b0443f64a736955e4196e42ab4b7ce4312cff23396e77eb7a9598d6b",
+        "reason": "인용한 commit이 옛 저장소 이름에서는 열리지 않음; 같은 commit을 가진 현재 저장소 이름으로 교체",
+        "verification": "git ls-remote로 새 저장소 HEAD가 인용 commit과 같음을 확인하고 raw 파일 200 응답과 제목을 확인"
+      },
+      {
+        "ref": "OS_FIN_R019",
+        "field": "url",
+        "before": {
+          "title": "OpenStax Principles of Finance · 전환사채 정의",
+          "url": "https://github.com/openstax/osbooks-finance/blob/e3e5135ae36e21282d7afb4cccd5ce09f421d830/modules/m00111/index.cnxml",
+          "version": "e3e5135ae36e21282d7afb4cccd5ce09f421d830",
+          "kind": "공개 교재 원문 · CC BY 4.0",
+          "checked_on": "2026-10-12",
+          "verification": "m00111 para-00039~00043 및 glossary를 직접 읽고 전환사채의 사채→보통주 전환권 정의만 대조했습니다. IAS32 복합상품의 분리·측정 규칙은 확인한 범위가 아닙니다."
+        },
+        "before_hash": "a5b4cb4377b3af34e53142127e2f1624318fb8a64ff4588051f60016f5865985",
+        "after_hash": "1d9cdba34e8cee76adbc0fdec80cad44a3784f96abfd508131ef995db6cbd671",
+        "reason": "인용한 commit이 옛 저장소 이름에서는 열리지 않음; 같은 commit을 가진 현재 저장소 이름으로 교체",
+        "verification": "git ls-remote로 새 저장소 HEAD가 인용 commit과 같음을 확인하고 raw 파일 200 응답과 제목을 확인"
+      }
+    ],
+    "policy": "보호 해시는 변경 전 내용을 계속 검증하고, 이 기록의 before/after 해시로만 현재 내용을 허용"
   }
 }
