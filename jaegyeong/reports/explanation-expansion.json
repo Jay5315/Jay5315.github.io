@@ -13886,15 +13886,6 @@
       "extra_batch_id": "r7_finance_01"
     },
     {
-      "question_id": "2026-03-097",
-      "reason": "새 ICMAI P16 PDF304쪽은 전통회계가 비용절감에 매우강한 중점을 둔다고 명시하여ㄷ의 운영비용 중요성 간과를 반박할 새로운 비교문맥을 제공합니다. 다만 모든비용 절감과 국내에서 말한 운영비용 중요성이라는 평가를 자동같은 의미로 확정하지 않습니다. PDF308–309쪽은 material-only/다른원가당기OE와 committed-resource 모형을 함께 설명하여ㄱ의 생산량 영향에 모형구분이 여전히 필요합니다. 기간간 요소단가 불변은 원문그대로 지키되 미제시 DL/OE행태를 몰래 고정하지 않습니다. ㄴ 재고감소시 비재료가공원가 재고환입이 초변동/변동 이익차이를 만드는 원리와ㄹ 일반CVP 공헌이익 구분은 검토되나 공식③만의 정오집합을 모두 확인했다고 하지 않습니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_02",
-      "recheck_batch_id": "recheck_cost_008",
-      "round3_batch_id": "r3_cost_007",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
       "question_id": "2026-01-092",
       "reason": "새 ICMAI P12 PDF278쪽에서 Normal Standard의 미래 경기순환5/10년 평균과 Ideal/Expected/Basic 분류를 직접 확인하여③의 장기평균·미래방향 유형 근거는 크게 강화되었습니다. 새 한양L8도 이상적/달성가능한 표준 및 정상감손 허용을 직접 지지합니다. 다만 원문③의 과거실적을 통계적으로 평균하고 미래추세를 감안하는 정확한 절차와 한국 정상적/현실적 고유경계까지 모두 확인됐다고 표시하지 않습니다. 새로운 미래평균 정의를 과거통계의 직접 인용으로 바꾸지 않고 공식①를 보존합니다.",
       "category": "source_unverified",
@@ -13947,15 +13938,6 @@
       "recheck_batch_id": "recheck_cost_005",
       "round3_batch_id": "r3_cost_004",
       "extra_batch_id": "r7_cost_04"
-    },
-    {
-      "question_id": "2025-03-096",
-      "reason": "새 ICMAI P16 PDF304쪽 전통회계 비용절감 강한 중시, PDF308–309쪽 unit-level spending/기타원가 당기OE처리를 실제 읽었습니다. ㄴ 운영비 중요성 간과의 반박후보는 강화되었지만 원가부착의 원가통제 평가와 비용절감 강조의 정확한 범위가 같은지는 남습니다. ㄱ의 한국 초변동 이익 생산량효과도 단기고정 OE모형과 일반 기간비용행태를 구별해야 합니다. ㄷ 일반CVP는 모든변동비 차감 공헌이익표가 원리상 적합하나 공식②의 완전한 오답집합을 아직 확인하지 못해 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_05",
-      "recheck_batch_id": "recheck_cost_007",
-      "round3_batch_id": "r3_cost_006",
-      "extra_batch_id": "r7_cost_03"
     },
     {
       "question_id": "2025-01-054",
@@ -14030,15 +14012,6 @@
       "extra_batch_id": "r7_finance_01"
     },
     {
-      "question_id": "2022-11-024",
-      "reason": "공식 KASB1115호 B58/B59A/B62뿐 아니라 사례58(IE297–302,PDF189–190)을 이번에 실제 읽었습니다. 사례는 새로운 캐릭터의 잦은 등장·이미지 발전·최신 이미지 사용 의무·별도 재화용역 이전 없음 및 그 결과의 직접노출을 명시합니다. 원문은 현재·미래 캐릭터를 모두 사용할 권리를 줄 뿐 최신 이미지로 계속 교체할 의무를 정하지 않습니다. 4년 정액 접근권 모형이면50,000,000원(공식③)이지만 사례의 계약조건을 원문에 옮겨 B58세조건을 모두 확인했다고 할 수 없습니다. 계약상 활동/직접노출/별도이전의 조건 확인이 남습니다.",
-      "category": "source_unverified",
-      "batch_id": "finance_a_07",
-      "recheck_batch_id": "recheck_finance_022",
-      "round3_batch_id": "r3_finance_021",
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
       "question_id": "2023-11-060",
       "category": "answer_suspected",
       "reason": "달력·기본법5추론에더해 NTS2024신고안내PDF118(책96)쪽에서‘2023.12월종료법인의경우2024.4.1.’이라고법정신고기한을직접확인했습니다. 원문은성실확인/신고기한연장신청을배제하지만휴일법정특례를배제하지않습니다. 2024-03-31일요일로실제4월1일이고보기에없으므로공식②의3월31일을실제기한으로확정할수없습니다. 이당해신고공식안내는미확인예외를발명한근거가아니라해당날짜의직접대조입니다.",
@@ -14084,24 +14057,6 @@
       "extra_batch_id": "r7_tax_02"
     },
     {
-      "question_id": "2023-11-096",
-      "reason": "새 ICMAI P16 PDF304/308–309쪽의 전통비용중시/초변동unit-level/전액OE당기처리를 직접 읽었습니다. ㄴ은 재고증가시 초변동이 비재료 가공원가를 당기비용으로 더 인식하여 변동법보다 이익이 커진다고 하기 어려운 방향이며ㄹ은 일반CVP 공헌이익과 구별됩니다. 그러나ㄱ의 생산량 영향에 대한 한국모형과ㄷ 운영비 중요성 간과라는 특정평가는 새비교문맥만으로 완전히 확정하지 못했습니다. 전통회계가 비용절감을 중시한다는 말과 원가부착이 특정 운영비 통제의 중요성을 간과한다는 주장이 양립하는지 구별하여 공식④를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_08",
-      "recheck_batch_id": "recheck_cost_007",
-      "round3_batch_id": "r3_cost_006",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
-      "question_id": "2022-07-023",
-      "reason": "공식1115 사례58 IE297–302를 새로 깊게 대조했습니다. 예시는 새로운캐릭터/형식발전 외 고객의 최신이미지 사용의무와 다른수행의무없음까지 명시하고 B58 세조건을 각각 적용합니다. 원문의 현재·향후캐릭터사용은 계속활동을 시사하지만 그 자체가 고객직접노출/별도재화용역아님을 모두 규정하는 동일조건은 아닙니다. 접근권과 시간기준이라면100,000,000/4=25,000,000원이지만 사례의 추가조건을 원문에 이식하지 않고 공식②보존·보류합니다.",
-      "category": "source_unverified",
-      "batch_id": "finance_a_08",
-      "recheck_batch_id": "recheck_finance_022",
-      "round3_batch_id": "r3_finance_021",
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
       "question_id": "2026-05-081",
       "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 2만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
       "category": "source_unverified",
@@ -14129,15 +14084,6 @@
       "extra_batch_id": "r7_cost_03"
     },
     {
-      "question_id": "2024-12-081",
-      "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 1만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_001",
-      "recheck_batch_id": "recheck_cost_001",
-      "round3_batch_id": "r3_cost_002",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
       "question_id": "2024-07-081",
       "reason": "새 ICMAI P8 PDF22–23쪽은 Cost Accounting 정보유형=Quantitative, ManagementAccounting=QuantitativeandQualitative라고 직접 구별하여 정성정보 범위의 근거를 보강했습니다. 그러나 정량은 화폐성과 동의어가 아니며 같은교재는 작업시간·활동량도 사용합니다. 따라서 원가를 화폐로 측정한다는 정의 또는 정량중심이라는 표만으로 원문의 비화폐성 정보 전부 제공불가를 확정하지 않습니다. 새 범위구별을 기록하되 넓은 현대원가회계와 좁은 원가측정/원가보고도 구별하고 공식답을 보존합니다.",
       "category": "source_unverified",
@@ -14147,35 +14093,8 @@
       "extra_batch_id": "r7_cost_03"
     },
     {
-      "question_id": "2024-03-081",
-      "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 4만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_001",
-      "recheck_batch_id": "recheck_cost_001",
-      "round3_batch_id": "r3_cost_002",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
-      "question_id": "2022-12-081",
-      "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 2만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_001",
-      "recheck_batch_id": "recheck_cost_001",
-      "round3_batch_id": "r3_cost_002",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
       "question_id": "2022-12-083",
       "reason": "새 부산가톨릭2 PDF2쪽은 공장·본사건물 등 자원취득도 원가로 명시하고 자산장부가치와 취득원가를 구별합니다. 따라서ㅁ 구입시점에는 원가가 아니라 자산이라는 배타적 문구는 단순 자산인 것과 취득원가 없는 것을 구별해야 합니다. ㄱ인과배부·ㄷ행태는 확인되고ㄴ은 총제조/제품제조의 WIP조정을 뒤집었으며ㄹ은 미소멸/소멸과 관련/기회를 혼동했습니다. ㅁ의 범위를 발명하지 않고 공식②를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_001",
-      "recheck_batch_id": "recheck_cost_001",
-      "round3_batch_id": "r3_cost_002",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
-      "question_id": "2022-09-081",
-      "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 2만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
       "category": "source_unverified",
       "batch_id": "remaining_cost_001",
       "recheck_batch_id": "recheck_cost_001",
@@ -14426,15 +14345,6 @@
       "extra_batch_id": "r7_finance_02"
     },
     {
-      "question_id": "2022-05-025",
-      "reason": "공식 KASB1115호35–37·42/B18–19·45·95–98을실제재독했습니다.②미수행선급금의진행률포함은틀리지만①은기간수익요건을아직특정하지않았고④모든발생원가비용은95의미래이행자산가능성까지전면배제합니다. 구1011호명제나도급계약존재만으로현행1115의기간/원가조건을보충하지않습니다. 원문공식②와4보기조건미확인을보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_023",
-      "recheck_batch_id": "recheck_finance_024",
-      "round3_batch_id": "r3_finance_023",
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
       "question_id": "2022-01-025",
       "reason": "공식1115 B13/B15–B19로 기성금/선수금이 반드시 수행정도를 나타내지는 않음을 확인,43은 진행률변동을 추정변경으로 규정합니다. 그러나B28–B32는 하자보증의 확신/별도용역을 구별하고47/66은 거래가격/비현금공정가치를 구별합니다.②모든보증충당부채·③항상수령대가공정가치를 현행기준의 무조건명제로 보증하지 못합니다. C10의 구1011대체까지 확인해 구정의로 해결하지 않고 공식①보존합니다.",
       "category": "source_unverified",
@@ -14573,15 +14483,6 @@
     {
       "question_id": "2023-07-025",
       "reason": "공식 KASB1115호46–56을계약수익측정의기준으로재독했습니다.③청구액전면수익은틀리지만②수령대가공정가치일반표현과④변경/보상/장려금전액구성은거래가격의변동대가추정/제약·유의적금융요소등을따로평가해야합니다. 구1011호전체문장을현행1115승인으로바꾸지않고공식③외보기의정확조건범위를보류합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_022",
-      "recheck_batch_id": "recheck_finance_025",
-      "round3_batch_id": "r3_finance_023",
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
-      "question_id": "2023-06-026",
-      "reason": "공식1115 C10의1011대체,35의 기간인식조건,44–45의 측정곤란시 발생원가범위수익,95–98의 미래이행원가자산을 함께 대조했습니다.④수행을 나타내지못하는 투입은B19에 따라 틀립니다.②손실부담계약은1037 66–69로 지지되나①결과추정만으로기간인식·③발생원가전부즉시비용의 무조건범위는 현행기준 전체요건이 아닙니다. 공식④와 다른보기조건을 구별해보류합니다.",
       "category": "source_unverified",
       "batch_id": "remaining_finance_022",
       "recheck_batch_id": "recheck_finance_025",
@@ -14840,26 +14741,6 @@
       "round3_batch_id": "r3_tax_001",
       "final_quality_withdrawal": true,
       "extra_batch_id": "r7_tax_03"
-    },
-    {
-      "question_id": "2022-07-019",
-      "reason": "공식 KASB1032호28–32와AG31–32를재독했습니다. 전환권은부채를발행자자본으로바꾸는내재옵션이고확정수량보통주로의전환권부여를직접정의합니다. 그러나원문③은약정가격보통주발행청구권만말하여추가주식납입/사채존속을명시하지않습니다. 새공식정의도그포괄권리설명이전환권과반드시배타적인신주인수권임을증명하지않습니다. 공식②의유효이자상각과①/④오류는확인하되③을유일다른상품정의로추가정해등록하지않습니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_018",
-      "recheck_batch_id": "recheck_finance_019",
-      "round3_batch_id": "r3_finance_018",
-      "final_quality_withdrawal": true,
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
-      "question_id": "2022-11-019",
-      "reason": "공식1032 29/AG31은 사채의 채무를 자기자본으로전환하는 내재옵션을 직접정의하고AG27은 확정금액을대가로한 주식매입권을구별합니다. 그러나③보통주발행청구는 이차이를 지정하는 추가납입/사채존속을 명시하지 않아 전환권을배제하지못합니다. 새공식원문정의로 다른보기기본원리를 확인했지만③의넓은문언을신주인수권만이라고 좁힐 수는없습니다. 공식③불변·보류입니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_018",
-      "recheck_batch_id": "recheck_finance_019",
-      "round3_batch_id": "r3_finance_018",
-      "final_quality_withdrawal": true,
-      "extra_batch_id": "r7_finance_02"
     },
     {
       "question_id": "2024-05-031",
@@ -502835,6 +502716,1222 @@
             "2022-07-answers.pdf 세무회계 58번 정답 4 확인"
           ],
           "notes": "수정 불필요. 4번은 1% 미만 요건과 정면으로 어긋나 추가 가정이 필요 없으므로 source_checked가 타당함. 1번의 생략 요소(지배주주등 제외, 전세자금 범위)를 숨기지 않아 보류 사유가 해소됨."
+        }
+      }
+    ]
+  },
+  "round16_registrations": {
+    "checked_on": "2026-10-13",
+    "registered_count": 13,
+    "declined": [],
+    "skipped_ids": [],
+    "new_source_refs": [
+      "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+      "EXAM_KEYS_CB_BW_DEFINITION",
+      "EXAM_KEYS_CHARACTER_LICENSE",
+      "EXAM_KEYS_CONSTRUCTION_STATEMENTS"
+    ],
+    "policy": "여러 회차에 거의 같은 문장으로 출제된 보류 문항 묶음을 대상으로, 실제로 읽은 기준서·교재와 각 회차 공식 답안의 일관성을 함께 근거로 삼았습니다. 공식 답안에 기댄 부분은 교재 본문이 아니라 출제기관의 판단으로 밝히고 미확인 항목에 적었으며, 작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.",
+    "items": [
+      {
+        "question_id": "2022-09-081",
+        "previous_review": {
+          "question_id": "2022-09-081",
+          "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 2만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_001",
+          "recheck_batch_id": "recheck_cost_001",
+          "round3_batch_id": "r3_cost_002",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "6e2ae527f269d78e76c53063be46f5e53ba5e7dfbfa055f042625aa144fd1f17",
+        "question_row_sha256": "efd6ba28aba8ed390a8b171201d1584fc3d3f3b6cc19f3f6601c16f198320ab8",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "네 회차(2022-09·2022-12·2024-03·2024-12) 답안 PDF를 직접 읽어 정답이 2·2·4·1번임을 확인했고, 보기를 맞춰 보면 '구입만으로는 원가가 아니고 소비해야 원가', '경제적 가치가 있는 요소만 원가', '비정상 감소분 제외', '미사용분 자산·사용분 비용'을 일관되게 옳게 처리해 답안 간 모순이 없습니다. 비정상분 제외·경제적 가치·자산/비용 구분은 준칙 제4조와 IAS 2 문단 16·34의 문장으로 직접 뒷받침됩니다. 원가 일반을 취득 시점으로 보는 강의자료와의 범위 충돌은 출처 문장으로 해소하지 못해, 소비 개념으로 읽는 판단을 시험 주관처의 일관된 판단으로 밝히고 partial로 둡니다.",
+        "source_reads": [
+          {
+            "ref": "R7_COST03_KASB_OLD_COST",
+            "path_or_url": "https://www.kasb.or.kr/front/board/View3010.do?siteCd=002000000000000&gubun=3010&accstdSeq=3639",
+            "commit_or_version": "종전 원가계산준칙(제정 1998-04-01, 개정 1999-12-09, 2002-08-25) 2026-10-13 재다운로드. HTML 래퍼가 동적이라 카탈로그 기록 SHA(7ba34edc…)와 파일 SHA가 다릅니다; 저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일",
+            "what_was_read": "제1조·제2조(제조원가 정의), 제4조①②(소비된 경제적 자원의 가치만 포함, 비정상 소비 제외), 제9조①~③(재료비=기초재고+매입−기말재고, 소비수량·소비가격), 공손비 조항의 비정상 공손 영업외비용 처리, 원가차이 조항의 비정상 원가차이 처리",
+            "sha256": "492ab6633b32cf5827955d39209067854f9686a93e0b999f451ff3f21057cf76"
+          },
+          {
+            "ref": "R3_INITIAL_FINANCE_IAS2",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e/eu/1c/32023R1803.md",
+            "commit_or_version": "2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e",
+            "what_was_read": "IAS 2 문단 15·16(a)(비정상적인 낭비 재료·노무·기타 제조원가는 재고원가에서 제외하고 발생기간 비용), 문단 34(판매 시 재고 장부금액을 관련 수익 인식 기간의 비용으로 인식)",
+            "sha256": "1dab460ea523d152a8dedca26622a8d4c8a3d62b4b8706efa6450e123e1f5bcb"
+          },
+          {
+            "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+            "path_or_url": "jaegyeong/sources/2022-09-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2022-09 원가관리회계 81번 [2] (같은 클러스터의 다른 세 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-09-081",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "공식 답안상 옳은 진술로 처리되는 보기. 이유 자체는 무난하나 steps[0]·[1]이 소비 개념을 원가 일반의 사실로 단정하므로 공통 수정 필요(option_notes는 수정 후 유지 가능). [재확인] 수정 반영 확인 → pass."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "준칙 제4조②·IAS 2 문단 16(a)·34 확인. 정답 2와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제4조① '경제적 자원의 가치'에서 도출, 공식 답안상 옳은 진술."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "IAS 2 문단 34로 지지."
+            }
+          ],
+          "sources_checked": [
+            "원가 클러스터 4종 sha256 재계산 일치 — 2022-09 610cf912…(정답표 '● 원가관리회계' 81번 [2]), 2022-12 004689e5…(81번 [2]), 2024-03 8a9e2885…('3) 원가관리회계' 문항번호 1 [4]), 2024-12 37521e87…('3) 원가관리회계' 81 1). 보기 대조 결과 '구입만으로는 원가 아님/소비해야 원가'·'경제적 가치 있는 요소만'·'비정상분 제외'·'미사용분 자산·사용분 비용'을 네 회차 모두 일관되게 옳은 진술로, 반대 문장을 틀린 진술로 처리(2024-03 ①·②·③ 틀림, 2024-12 ①만 틀림) — 모순 없음.",
+            "R7_COST03_KASB_OLD_COST: 같은 URL(accstdSeq=3639)을 rv0dl/kasb.html로 재다운로드, sha256 e70eac1d3ced34c1376dac8471a0ef38a13ecc3c6d15dc7577f716fb7260559(저자 492ab663…, 카탈로그 7ba34edc…와 다름). 저자 파일과 diff 결과 jsessionid 문자열만 다르고 본문 동일. 제2조(제조원가 정의), 제4조①②, 제9조①~③(③ '재료의 소비가격은 취득원가에 의하여 계산'), 공손비 조항 단서(비정상 공손비 영업외비용), 제33조②, 부칙 시행 1998-04-01·개정 2002-08-25 문구 확인. 같은 문서·같은 조문이므로 ref 재사용은 타당하나, 카탈로그 verification이 '제4조의 제조원가 범위를 원가 일반 정의로 확대하지 않는다'고 한정한 점에 주의.",
+            "R3_INITIAL_FINANCE_IAS2: legalize-eu 2f2f94f7 32023R1803.md 재다운로드 sha256 1dab460e… 일치. IAS 2 문단 16(a) 'abnormal amounts of wasted materials, labour or other production costs', 문단 34 판매 시 비용 인식·재고 손실 비용 인식 확인.",
+            "KOCW 부산가톨릭대 원가개념 PDF(보류 사유의 충돌 자료): contents2.kocw.or.kr 1·2.pdf 재다운로드 시도 — TLS 인증서 불일치/연결 재설정으로 실패, 직접 읽지 못함(저자도 인용하지 않음).",
+            "원문 이미지 jaegyeong/images/2022-09-081.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[원가 클러스터 공통 판단] 공식 답안 4종은 sha256·문항번호·정답이 모두 맞고 서로 일관됩니다. 비정상분 제외·자산/비용 구분·경제적 가치는 준칙 제4조·IAS 2 문단 16(a)·34로 지지됩니다. 문제는 '구입만으로는 원가가 아님'입니다. 저자는 이를 unchecked_points와 review_note에서는 공식 답안의 판단이라고 정직하게 밝혔지만, 학습자가 읽는 steps[0]·steps[1]은 제조원가 범위 조문(제4조, 제2조가 '제조원가'로 정의)을 '원가회계에서 말하는 원가' 일반으로 넓혀 사실처럼 단정합니다. 카탈로그의 R7 verification도 이 확대를 명시적으로 금지하고, 같은 준칙 제9조③과 IAS 2도 구입가격을 '취득원가/cost of purchase'로 부릅니다. 규칙상 이런 전제는 steps 또는 summary에도 분명히 적어야 하므로 아래처럼 고쳐야 합니다(그 뒤에는 partial 등록이 타당하며 decline할 정도는 아님 — 네 회차 키가 이 판단을 직접 다루고 일관되기 때문). 필수 수정: steps[0] → \"이 문항의 '원가'는 원가회계에서 제품원가를 계산할 때 쓰는 소비 개념의 원가로 읽어야 합니다. 종전 원가계산준칙 제4조제1항은 제조원가가 제품의 생산과 관련하여 소비된 경제적 자원의 가치만을 포함한다고 정합니다. 다만 '원가'라는 말은 자산을 얻으려고 포기한 가치(취득원가)라는 넓은 뜻으로도 쓰여서, 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부릅니다.\" / steps[1] → \"재경관리사 공식 답안은 같은 보기를 쓴 네 회차 모두 '물품을 구입하는 것만으로는 원가가 되지 않고 소비해야 원가가 된다'를 옳은 진술로, '소비하지 않았어도 구입 시점에 원가가 된다'를 틀린 진술로 처리했습니다. 이 관점에서 사 오기만 한 재료는 원재료라는 자산으로 남고, 생산에 투입해 소비해야 원가가 됩니다. 준칙 제9조제1항이 재료비를 기초재료재고액에 당기매입액을 더하고 기말재료재고액을 빼서 계산하는 것도 쓰지 않은 재료를 재료비에 넣지 않는다는 뜻입니다.\" / unchecked_points[0]은 그대로 두되 끝에 다음 문장을 덧붙일 것: \" 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부르므로, '원가'라는 용어 자체가 취득 시점의 가치를 가리키는 쓰임이 있음을 해설 본문에도 밝혔습니다.\" 참고: source_reads의 R7 commit_or_version에 '저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일'을 기록하면 sha 불일치의 의미가 분명해집니다(선택). 이 문항 고유 수정 없음. 네 보기 이유는 서로 다름. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]·steps[1]이 지정 문구와 정확히 일치하고 unchecked_points[0]은 기존 문장 끝에 지정 문장만 덧붙여짐. source_reads R7의 commit_or_version에 검토자 재다운로드본(e70eac1d…) 본문 동일 기록 추가(그 외 필드 불변). 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2022-12-081",
+        "previous_review": {
+          "question_id": "2022-12-081",
+          "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 2만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_001",
+          "recheck_batch_id": "recheck_cost_001",
+          "round3_batch_id": "r3_cost_002",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "0903c75cb9ffd2fd6d80a1d81b9b0dbc9be1621848b39e7da759a8aeb8a55214",
+        "question_row_sha256": "417e0e2a78c8ad32521140827ffe8f579ad57bb71c7f3e9402a794847c876151",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "네 회차(2022-09·2022-12·2024-03·2024-12) 답안 PDF를 직접 읽어 정답이 2·2·4·1번임을 확인했고, 보기를 맞춰 보면 '구입만으로는 원가가 아니고 소비해야 원가', '경제적 가치가 있는 요소만 원가', '비정상 감소분 제외', '미사용분 자산·사용분 비용'을 일관되게 옳게 처리해 답안 간 모순이 없습니다. 비정상분 제외·경제적 가치·자산/비용 구분은 준칙 제4조와 IAS 2 문단 16·34의 문장으로 직접 뒷받침됩니다. 원가 일반을 취득 시점으로 보는 강의자료와의 범위 충돌은 출처 문장으로 해소하지 못해, 소비 개념으로 읽는 판단을 시험 주관처의 일관된 판단으로 밝히고 partial로 둡니다.",
+        "source_reads": [
+          {
+            "ref": "R7_COST03_KASB_OLD_COST",
+            "path_or_url": "https://www.kasb.or.kr/front/board/View3010.do?siteCd=002000000000000&gubun=3010&accstdSeq=3639",
+            "commit_or_version": "종전 원가계산준칙(제정 1998-04-01, 개정 1999-12-09, 2002-08-25) 2026-10-13 재다운로드. HTML 래퍼가 동적이라 카탈로그 기록 SHA(7ba34edc…)와 파일 SHA가 다릅니다; 저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일",
+            "what_was_read": "제1조·제2조(제조원가 정의), 제4조①②(소비된 경제적 자원의 가치만 포함, 비정상 소비 제외), 제9조①~③(재료비=기초재고+매입−기말재고, 소비수량·소비가격), 공손비 조항의 비정상 공손 영업외비용 처리, 원가차이 조항의 비정상 원가차이 처리",
+            "sha256": "492ab6633b32cf5827955d39209067854f9686a93e0b999f451ff3f21057cf76"
+          },
+          {
+            "ref": "R3_INITIAL_FINANCE_IAS2",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e/eu/1c/32023R1803.md",
+            "commit_or_version": "2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e",
+            "what_was_read": "IAS 2 문단 15·16(a)(비정상적인 낭비 재료·노무·기타 제조원가는 재고원가에서 제외하고 발생기간 비용), 문단 34(판매 시 재고 장부금액을 관련 수익 인식 기간의 비용으로 인식)",
+            "sha256": "1dab460ea523d152a8dedca26622a8d4c8a3d62b4b8706efa6450e123e1f5bcb"
+          },
+          {
+            "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2022-12 원가관리회계 81번 [2] (같은 클러스터의 다른 세 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-12-081",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "2022-09와 같은 이유로 공통 steps 수정 필요. option_notes[0] 문구 자체는 유지 가능. [재확인] 수정 반영 확인 → pass."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "준칙 제4조②로 지지, 정답 2와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "공식 답안상 옳은 진술, 이유 적절."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "IAS 2 문단 34로 지지."
+            }
+          ],
+          "sources_checked": [
+            "원가 클러스터 4종 sha256 재계산 일치 — 2022-09 610cf912…(정답표 '● 원가관리회계' 81번 [2]), 2022-12 004689e5…(81번 [2]), 2024-03 8a9e2885…('3) 원가관리회계' 문항번호 1 [4]), 2024-12 37521e87…('3) 원가관리회계' 81 1). 보기 대조 결과 '구입만으로는 원가 아님/소비해야 원가'·'경제적 가치 있는 요소만'·'비정상분 제외'·'미사용분 자산·사용분 비용'을 네 회차 모두 일관되게 옳은 진술로, 반대 문장을 틀린 진술로 처리(2024-03 ①·②·③ 틀림, 2024-12 ①만 틀림) — 모순 없음.",
+            "R7_COST03_KASB_OLD_COST: 같은 URL(accstdSeq=3639)을 rv0dl/kasb.html로 재다운로드, sha256 e70eac1d3ced34c1376dac8471a0ef38a13ecc3c6d15dc7577f716fb7260559(저자 492ab663…, 카탈로그 7ba34edc…와 다름). 저자 파일과 diff 결과 jsessionid 문자열만 다르고 본문 동일. 제2조(제조원가 정의), 제4조①②, 제9조①~③(③ '재료의 소비가격은 취득원가에 의하여 계산'), 공손비 조항 단서(비정상 공손비 영업외비용), 제33조②, 부칙 시행 1998-04-01·개정 2002-08-25 문구 확인. 같은 문서·같은 조문이므로 ref 재사용은 타당하나, 카탈로그 verification이 '제4조의 제조원가 범위를 원가 일반 정의로 확대하지 않는다'고 한정한 점에 주의.",
+            "R3_INITIAL_FINANCE_IAS2: legalize-eu 2f2f94f7 32023R1803.md 재다운로드 sha256 1dab460e… 일치. IAS 2 문단 16(a) 'abnormal amounts of wasted materials, labour or other production costs', 문단 34 판매 시 비용 인식·재고 손실 비용 인식 확인.",
+            "KOCW 부산가톨릭대 원가개념 PDF(보류 사유의 충돌 자료): contents2.kocw.or.kr 1·2.pdf 재다운로드 시도 — TLS 인증서 불일치/연결 재설정으로 실패, 직접 읽지 못함(저자도 인용하지 않음).",
+            "원문 이미지 jaegyeong/images/2022-12-081.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[원가 클러스터 공통 판단] 공식 답안 4종은 sha256·문항번호·정답이 모두 맞고 서로 일관됩니다. 비정상분 제외·자산/비용 구분·경제적 가치는 준칙 제4조·IAS 2 문단 16(a)·34로 지지됩니다. 문제는 '구입만으로는 원가가 아님'입니다. 저자는 이를 unchecked_points와 review_note에서는 공식 답안의 판단이라고 정직하게 밝혔지만, 학습자가 읽는 steps[0]·steps[1]은 제조원가 범위 조문(제4조, 제2조가 '제조원가'로 정의)을 '원가회계에서 말하는 원가' 일반으로 넓혀 사실처럼 단정합니다. 카탈로그의 R7 verification도 이 확대를 명시적으로 금지하고, 같은 준칙 제9조③과 IAS 2도 구입가격을 '취득원가/cost of purchase'로 부릅니다. 규칙상 이런 전제는 steps 또는 summary에도 분명히 적어야 하므로 아래처럼 고쳐야 합니다(그 뒤에는 partial 등록이 타당하며 decline할 정도는 아님 — 네 회차 키가 이 판단을 직접 다루고 일관되기 때문). 필수 수정: steps[0] → \"이 문항의 '원가'는 원가회계에서 제품원가를 계산할 때 쓰는 소비 개념의 원가로 읽어야 합니다. 종전 원가계산준칙 제4조제1항은 제조원가가 제품의 생산과 관련하여 소비된 경제적 자원의 가치만을 포함한다고 정합니다. 다만 '원가'라는 말은 자산을 얻으려고 포기한 가치(취득원가)라는 넓은 뜻으로도 쓰여서, 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부릅니다.\" / steps[1] → \"재경관리사 공식 답안은 같은 보기를 쓴 네 회차 모두 '물품을 구입하는 것만으로는 원가가 되지 않고 소비해야 원가가 된다'를 옳은 진술로, '소비하지 않았어도 구입 시점에 원가가 된다'를 틀린 진술로 처리했습니다. 이 관점에서 사 오기만 한 재료는 원재료라는 자산으로 남고, 생산에 투입해 소비해야 원가가 됩니다. 준칙 제9조제1항이 재료비를 기초재료재고액에 당기매입액을 더하고 기말재료재고액을 빼서 계산하는 것도 쓰지 않은 재료를 재료비에 넣지 않는다는 뜻입니다.\" / unchecked_points[0]은 그대로 두되 끝에 다음 문장을 덧붙일 것: \" 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부르므로, '원가'라는 용어 자체가 취득 시점의 가치를 가리키는 쓰임이 있음을 해설 본문에도 밝혔습니다.\" 참고: source_reads의 R7 commit_or_version에 '저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일'을 기록하면 sha 불일치의 의미가 분명해집니다(선택). 이 문항 고유 수정 없음. 2022-09와 보기 이유 문구가 구별됨. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]·steps[1]이 지정 문구와 정확히 일치하고 unchecked_points[0]은 기존 문장 끝에 지정 문장만 덧붙여짐. source_reads R7의 commit_or_version에 검토자 재다운로드본(e70eac1d…) 본문 동일 기록 추가(그 외 필드 불변). 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2024-03-081",
+        "previous_review": {
+          "question_id": "2024-03-081",
+          "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 4만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_001",
+          "recheck_batch_id": "recheck_cost_001",
+          "round3_batch_id": "r3_cost_002",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "3c8efb460338894de5759b463ade78178f441298c6f6026ce75e9283b0d701e4",
+        "question_row_sha256": "9d35896c797bfb5f53b502a647968d10f4b345ff7f3a3b4313ee54442f452f93",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "네 회차(2022-09·2022-12·2024-03·2024-12) 답안 PDF를 직접 읽어 정답이 2·2·4·1번임을 확인했고, 보기를 맞춰 보면 '구입만으로는 원가가 아니고 소비해야 원가', '경제적 가치가 있는 요소만 원가', '비정상 감소분 제외', '미사용분 자산·사용분 비용'을 일관되게 옳게 처리해 답안 간 모순이 없습니다. 비정상분 제외·경제적 가치·자산/비용 구분은 준칙 제4조와 IAS 2 문단 16·34의 문장으로 직접 뒷받침됩니다. 원가 일반을 취득 시점으로 보는 강의자료와의 범위 충돌은 출처 문장으로 해소하지 못해, 소비 개념으로 읽는 판단을 시험 주관처의 일관된 판단으로 밝히고 partial로 둡니다.",
+        "source_reads": [
+          {
+            "ref": "R7_COST03_KASB_OLD_COST",
+            "path_or_url": "https://www.kasb.or.kr/front/board/View3010.do?siteCd=002000000000000&gubun=3010&accstdSeq=3639",
+            "commit_or_version": "종전 원가계산준칙(제정 1998-04-01, 개정 1999-12-09, 2002-08-25) 2026-10-13 재다운로드. HTML 래퍼가 동적이라 카탈로그 기록 SHA(7ba34edc…)와 파일 SHA가 다릅니다; 저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일",
+            "what_was_read": "제1조·제2조(제조원가 정의), 제4조①②(소비된 경제적 자원의 가치만 포함, 비정상 소비 제외), 제9조①~③(재료비=기초재고+매입−기말재고, 소비수량·소비가격), 공손비 조항의 비정상 공손 영업외비용 처리, 원가차이 조항의 비정상 원가차이 처리",
+            "sha256": "492ab6633b32cf5827955d39209067854f9686a93e0b999f451ff3f21057cf76"
+          },
+          {
+            "ref": "R3_INITIAL_FINANCE_IAS2",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e/eu/1c/32023R1803.md",
+            "commit_or_version": "2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e",
+            "what_was_read": "IAS 2 문단 15·16(a)(비정상적인 낭비 재료·노무·기타 제조원가는 재고원가에서 제외하고 발생기간 비용), 문단 34(판매 시 재고 장부금액을 관련 수익 인식 기간의 비용으로 인식)",
+            "sha256": "1dab460ea523d152a8dedca26622a8d4c8a3d62b4b8706efa6450e123e1f5bcb"
+          },
+          {
+            "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+            "path_or_url": "jaegyeong/sources/2024-03-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2024-03 원가관리회계 1번 [4] (같은 클러스터의 다른 세 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-03-081",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "공식 답안(정답 4만 옳음)상 틀린 진술. 이유가 소비 개념을 사실로 단정하므로 option_notes[0] → \"원가회계의 소비 개념에서는 물품을 구입한 시점에 원재료 같은 자산을 취득한 것이고, 생산에 투입해 소비해야 원가가 됩니다. 소비하지 않았어도 구입 시점에 원가가 된다는 설명은 옳지 않습니다.\" [재확인] 수정 반영 확인 → pass."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "준칙 제4조②로 지지."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제4조①에서 도출, 공식 답안과 일치."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "IAS 2 문단 34로 지지, 정답 4와 일치."
+            }
+          ],
+          "sources_checked": [
+            "원가 클러스터 4종 sha256 재계산 일치 — 2022-09 610cf912…(정답표 '● 원가관리회계' 81번 [2]), 2022-12 004689e5…(81번 [2]), 2024-03 8a9e2885…('3) 원가관리회계' 문항번호 1 [4]), 2024-12 37521e87…('3) 원가관리회계' 81 1). 보기 대조 결과 '구입만으로는 원가 아님/소비해야 원가'·'경제적 가치 있는 요소만'·'비정상분 제외'·'미사용분 자산·사용분 비용'을 네 회차 모두 일관되게 옳은 진술로, 반대 문장을 틀린 진술로 처리(2024-03 ①·②·③ 틀림, 2024-12 ①만 틀림) — 모순 없음.",
+            "R7_COST03_KASB_OLD_COST: 같은 URL(accstdSeq=3639)을 rv0dl/kasb.html로 재다운로드, sha256 e70eac1d3ced34c1376dac8471a0ef38a13ecc3c6d15dc7577f716fb7260559(저자 492ab663…, 카탈로그 7ba34edc…와 다름). 저자 파일과 diff 결과 jsessionid 문자열만 다르고 본문 동일. 제2조(제조원가 정의), 제4조①②, 제9조①~③(③ '재료의 소비가격은 취득원가에 의하여 계산'), 공손비 조항 단서(비정상 공손비 영업외비용), 제33조②, 부칙 시행 1998-04-01·개정 2002-08-25 문구 확인. 같은 문서·같은 조문이므로 ref 재사용은 타당하나, 카탈로그 verification이 '제4조의 제조원가 범위를 원가 일반 정의로 확대하지 않는다'고 한정한 점에 주의.",
+            "R3_INITIAL_FINANCE_IAS2: legalize-eu 2f2f94f7 32023R1803.md 재다운로드 sha256 1dab460e… 일치. IAS 2 문단 16(a) 'abnormal amounts of wasted materials, labour or other production costs', 문단 34 판매 시 비용 인식·재고 손실 비용 인식 확인.",
+            "KOCW 부산가톨릭대 원가개념 PDF(보류 사유의 충돌 자료): contents2.kocw.or.kr 1·2.pdf 재다운로드 시도 — TLS 인증서 불일치/연결 재설정으로 실패, 직접 읽지 못함(저자도 인용하지 않음).",
+            "원문 이미지 jaegyeong/images/2024-03-081.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[원가 클러스터 공통 판단] 공식 답안 4종은 sha256·문항번호·정답이 모두 맞고 서로 일관됩니다. 비정상분 제외·자산/비용 구분·경제적 가치는 준칙 제4조·IAS 2 문단 16(a)·34로 지지됩니다. 문제는 '구입만으로는 원가가 아님'입니다. 저자는 이를 unchecked_points와 review_note에서는 공식 답안의 판단이라고 정직하게 밝혔지만, 학습자가 읽는 steps[0]·steps[1]은 제조원가 범위 조문(제4조, 제2조가 '제조원가'로 정의)을 '원가회계에서 말하는 원가' 일반으로 넓혀 사실처럼 단정합니다. 카탈로그의 R7 verification도 이 확대를 명시적으로 금지하고, 같은 준칙 제9조③과 IAS 2도 구입가격을 '취득원가/cost of purchase'로 부릅니다. 규칙상 이런 전제는 steps 또는 summary에도 분명히 적어야 하므로 아래처럼 고쳐야 합니다(그 뒤에는 partial 등록이 타당하며 decline할 정도는 아님 — 네 회차 키가 이 판단을 직접 다루고 일관되기 때문). 필수 수정: steps[0] → \"이 문항의 '원가'는 원가회계에서 제품원가를 계산할 때 쓰는 소비 개념의 원가로 읽어야 합니다. 종전 원가계산준칙 제4조제1항은 제조원가가 제품의 생산과 관련하여 소비된 경제적 자원의 가치만을 포함한다고 정합니다. 다만 '원가'라는 말은 자산을 얻으려고 포기한 가치(취득원가)라는 넓은 뜻으로도 쓰여서, 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부릅니다.\" / steps[1] → \"재경관리사 공식 답안은 같은 보기를 쓴 네 회차 모두 '물품을 구입하는 것만으로는 원가가 되지 않고 소비해야 원가가 된다'를 옳은 진술로, '소비하지 않았어도 구입 시점에 원가가 된다'를 틀린 진술로 처리했습니다. 이 관점에서 사 오기만 한 재료는 원재료라는 자산으로 남고, 생산에 투입해 소비해야 원가가 됩니다. 준칙 제9조제1항이 재료비를 기초재료재고액에 당기매입액을 더하고 기말재료재고액을 빼서 계산하는 것도 쓰지 않은 재료를 재료비에 넣지 않는다는 뜻입니다.\" / unchecked_points[0]은 그대로 두되 끝에 다음 문장을 덧붙일 것: \" 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부르므로, '원가'라는 용어 자체가 취득 시점의 가치를 가리키는 쓰임이 있음을 해설 본문에도 밝혔습니다.\" 참고: source_reads의 R7 commit_or_version에 '저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일'을 기록하면 sha 불일치의 의미가 분명해집니다(선택). 이 문항 추가 수정: option_notes[0](number 1) → 위 four_option_logic 1번 문구. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]·steps[1]이 지정 문구와 정확히 일치하고 unchecked_points[0]은 기존 문장 끝에 지정 문장만 덧붙여짐. source_reads R7의 commit_or_version에 검토자 재다운로드본(e70eac1d…) 본문 동일 기록 추가(그 외 필드 불변). option_notes[0] 지정 문구 반영. 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2024-12-081",
+        "previous_review": {
+          "question_id": "2024-12-081",
+          "reason": "새 공식 부산가톨릭 원가개념PDF2쪽은 원가=자원을 얻기 위해 포기한 가치, 원가는 취득시점(본사건물/상품구입), 비용은 사용시점이라고 직접 명시합니다. ICMAI P8 PDF25–26쪽도 일반 희생과 CAS생산/서비스 자원사용 범위를 구별합니다. 종전 KASB제4조의 정상 생산소비 제조원가/비정상 제외 및 새교안PDF6–7쪽 재고비용 흐름은 지지되나, 원문의 원가일반을 좁은 생산소비로 몰래 한정하거나 취득원가를 없다고 바꾸어 공식 1만의 정오를 강제할 수 없습니다. 이전 영어명칭 미확인의 문제가 아니라 새 국내 직접정의와 필수범위가 충돌하는 문제로 기록합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_001",
+          "recheck_batch_id": "recheck_cost_001",
+          "round3_batch_id": "r3_cost_002",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "f5d8dd497e11362b732bd6ea3dafbee28e9b2ebb335df4cc5d11d122be378428",
+        "question_row_sha256": "992cffa04afd7c393dc42112c58121ff7bb0c519e97d3935cf53c90bea8758c0",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "네 회차(2022-09·2022-12·2024-03·2024-12) 답안 PDF를 직접 읽어 정답이 2·2·4·1번임을 확인했고, 보기를 맞춰 보면 '구입만으로는 원가가 아니고 소비해야 원가', '경제적 가치가 있는 요소만 원가', '비정상 감소분 제외', '미사용분 자산·사용분 비용'을 일관되게 옳게 처리해 답안 간 모순이 없습니다. 비정상분 제외·경제적 가치·자산/비용 구분은 준칙 제4조와 IAS 2 문단 16·34의 문장으로 직접 뒷받침됩니다. 원가 일반을 취득 시점으로 보는 강의자료와의 범위 충돌은 출처 문장으로 해소하지 못해, 소비 개념으로 읽는 판단을 시험 주관처의 일관된 판단으로 밝히고 partial로 둡니다.",
+        "source_reads": [
+          {
+            "ref": "R7_COST03_KASB_OLD_COST",
+            "path_or_url": "https://www.kasb.or.kr/front/board/View3010.do?siteCd=002000000000000&gubun=3010&accstdSeq=3639",
+            "commit_or_version": "종전 원가계산준칙(제정 1998-04-01, 개정 1999-12-09, 2002-08-25) 2026-10-13 재다운로드. HTML 래퍼가 동적이라 카탈로그 기록 SHA(7ba34edc…)와 파일 SHA가 다릅니다; 저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일",
+            "what_was_read": "제1조·제2조(제조원가 정의), 제4조①②(소비된 경제적 자원의 가치만 포함, 비정상 소비 제외), 제9조①~③(재료비=기초재고+매입−기말재고, 소비수량·소비가격), 공손비 조항의 비정상 공손 영업외비용 처리, 원가차이 조항의 비정상 원가차이 처리",
+            "sha256": "492ab6633b32cf5827955d39209067854f9686a93e0b999f451ff3f21057cf76"
+          },
+          {
+            "ref": "R3_INITIAL_FINANCE_IAS2",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e/eu/1c/32023R1803.md",
+            "commit_or_version": "2f2f94f7f1719ce5024ae0e78d5ce3a7820e483e",
+            "what_was_read": "IAS 2 문단 15·16(a)(비정상적인 낭비 재료·노무·기타 제조원가는 재고원가에서 제외하고 발생기간 비용), 문단 34(판매 시 재고 장부금액을 관련 수익 인식 기간의 비용으로 인식)",
+            "sha256": "1dab460ea523d152a8dedca26622a8d4c8a3d62b4b8706efa6450e123e1f5bcb"
+          },
+          {
+            "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+            "path_or_url": "jaegyeong/sources/2024-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2024-12 원가관리회계 81번 1 (같은 클러스터의 다른 세 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-12-081",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "정답 보기. 정답의 근거가 바로 '구입만으로는 원가 아님'이므로 summary와 이유에 관점을 밝혀야 함. option_notes[0] → \"원가회계의 소비 개념에서는 구입만 하고 아직 소비하지 않은 물품은 원재료 같은 자산으로 남아 있을 뿐이고, 생산에 투입해 소비해야 원가가 됩니다. 공식 답안도 구입 시점에 원가가 된다는 이 설명을 옳지 않은 것으로 처리합니다.\" [재확인] 수정 반영 확인 → pass."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "준칙 제4조①② 문언과 거의 같음."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "공식 답안상 옳은 진술."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "IAS 2 문단 34로 지지."
+            }
+          ],
+          "sources_checked": [
+            "원가 클러스터 4종 sha256 재계산 일치 — 2022-09 610cf912…(정답표 '● 원가관리회계' 81번 [2]), 2022-12 004689e5…(81번 [2]), 2024-03 8a9e2885…('3) 원가관리회계' 문항번호 1 [4]), 2024-12 37521e87…('3) 원가관리회계' 81 1). 보기 대조 결과 '구입만으로는 원가 아님/소비해야 원가'·'경제적 가치 있는 요소만'·'비정상분 제외'·'미사용분 자산·사용분 비용'을 네 회차 모두 일관되게 옳은 진술로, 반대 문장을 틀린 진술로 처리(2024-03 ①·②·③ 틀림, 2024-12 ①만 틀림) — 모순 없음.",
+            "R7_COST03_KASB_OLD_COST: 같은 URL(accstdSeq=3639)을 rv0dl/kasb.html로 재다운로드, sha256 e70eac1d3ced34c1376dac8471a0ef38a13ecc3c6d15dc7577f716fb7260559(저자 492ab663…, 카탈로그 7ba34edc…와 다름). 저자 파일과 diff 결과 jsessionid 문자열만 다르고 본문 동일. 제2조(제조원가 정의), 제4조①②, 제9조①~③(③ '재료의 소비가격은 취득원가에 의하여 계산'), 공손비 조항 단서(비정상 공손비 영업외비용), 제33조②, 부칙 시행 1998-04-01·개정 2002-08-25 문구 확인. 같은 문서·같은 조문이므로 ref 재사용은 타당하나, 카탈로그 verification이 '제4조의 제조원가 범위를 원가 일반 정의로 확대하지 않는다'고 한정한 점에 주의.",
+            "R3_INITIAL_FINANCE_IAS2: legalize-eu 2f2f94f7 32023R1803.md 재다운로드 sha256 1dab460e… 일치. IAS 2 문단 16(a) 'abnormal amounts of wasted materials, labour or other production costs', 문단 34 판매 시 비용 인식·재고 손실 비용 인식 확인.",
+            "KOCW 부산가톨릭대 원가개념 PDF(보류 사유의 충돌 자료): contents2.kocw.or.kr 1·2.pdf 재다운로드 시도 — TLS 인증서 불일치/연결 재설정으로 실패, 직접 읽지 못함(저자도 인용하지 않음).",
+            "원문 이미지 jaegyeong/images/2024-12-081.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[원가 클러스터 공통 판단] 공식 답안 4종은 sha256·문항번호·정답이 모두 맞고 서로 일관됩니다. 비정상분 제외·자산/비용 구분·경제적 가치는 준칙 제4조·IAS 2 문단 16(a)·34로 지지됩니다. 문제는 '구입만으로는 원가가 아님'입니다. 저자는 이를 unchecked_points와 review_note에서는 공식 답안의 판단이라고 정직하게 밝혔지만, 학습자가 읽는 steps[0]·steps[1]은 제조원가 범위 조문(제4조, 제2조가 '제조원가'로 정의)을 '원가회계에서 말하는 원가' 일반으로 넓혀 사실처럼 단정합니다. 카탈로그의 R7 verification도 이 확대를 명시적으로 금지하고, 같은 준칙 제9조③과 IAS 2도 구입가격을 '취득원가/cost of purchase'로 부릅니다. 규칙상 이런 전제는 steps 또는 summary에도 분명히 적어야 하므로 아래처럼 고쳐야 합니다(그 뒤에는 partial 등록이 타당하며 decline할 정도는 아님 — 네 회차 키가 이 판단을 직접 다루고 일관되기 때문). 필수 수정: steps[0] → \"이 문항의 '원가'는 원가회계에서 제품원가를 계산할 때 쓰는 소비 개념의 원가로 읽어야 합니다. 종전 원가계산준칙 제4조제1항은 제조원가가 제품의 생산과 관련하여 소비된 경제적 자원의 가치만을 포함한다고 정합니다. 다만 '원가'라는 말은 자산을 얻으려고 포기한 가치(취득원가)라는 넓은 뜻으로도 쓰여서, 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부릅니다.\" / steps[1] → \"재경관리사 공식 답안은 같은 보기를 쓴 네 회차 모두 '물품을 구입하는 것만으로는 원가가 되지 않고 소비해야 원가가 된다'를 옳은 진술로, '소비하지 않았어도 구입 시점에 원가가 된다'를 틀린 진술로 처리했습니다. 이 관점에서 사 오기만 한 재료는 원재료라는 자산으로 남고, 생산에 투입해 소비해야 원가가 됩니다. 준칙 제9조제1항이 재료비를 기초재료재고액에 당기매입액을 더하고 기말재료재고액을 빼서 계산하는 것도 쓰지 않은 재료를 재료비에 넣지 않는다는 뜻입니다.\" / unchecked_points[0]은 그대로 두되 끝에 다음 문장을 덧붙일 것: \" 같은 준칙 제9조제3항도 구입한 재료의 가격을 '취득원가'라고 부르므로, '원가'라는 용어 자체가 취득 시점의 가치를 가리키는 쓰임이 있음을 해설 본문에도 밝혔습니다.\" 참고: source_reads의 R7 commit_or_version에 '저자 재다운로드본과 검토자 재다운로드본(e70eac1d…)은 jsessionid 외 본문 동일'을 기록하면 sha 불일치의 의미가 분명해집니다(선택). 이 문항 추가 수정: summary → \"원가회계의 소비 개념에서는 물품을 구입하는 것만으로는 원가가 되지 않고 소비해야 원가가 되므로, 구입 시점에 원가가 된다는 1번이 옳지 않습니다.\" / option_notes[0](number 1) → 위 four_option_logic 1번 문구. steps[4]는 유지 가능. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]·steps[1]이 지정 문구와 정확히 일치하고 unchecked_points[0]은 기존 문장 끝에 지정 문장만 덧붙여짐. source_reads R7의 commit_or_version에 검토자 재다운로드본(e70eac1d…) 본문 동일 기록 추가(그 외 필드 불변). summary·option_notes[0] 지정 문구 반영. 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2023-11-096",
+        "previous_review": {
+          "question_id": "2023-11-096",
+          "reason": "새 ICMAI P16 PDF304/308–309쪽의 전통비용중시/초변동unit-level/전액OE당기처리를 직접 읽었습니다. ㄴ은 재고증가시 초변동이 비재료 가공원가를 당기비용으로 더 인식하여 변동법보다 이익이 커진다고 하기 어려운 방향이며ㄹ은 일반CVP 공헌이익과 구별됩니다. 그러나ㄱ의 생산량 영향에 대한 한국모형과ㄷ 운영비 중요성 간과라는 특정평가는 새비교문맥만으로 완전히 확정하지 못했습니다. 전통회계가 비용절감을 중시한다는 말과 원가부착이 특정 운영비 통제의 중요성을 간과한다는 주장이 양립하는지 구별하여 공식④를 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_08",
+          "recheck_batch_id": "recheck_cost_007",
+          "round3_batch_id": "r3_cost_006",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "b30759a48a6c41a8004211674397f5135e2c83045bf32b5067ee3f830831ab09",
+        "question_row_sha256": "bb501361a151f5860e9bffc45e7299933538fce0690f916628ce466bcf280d81",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "세 회차(2023-11 16번 ④, 2025-03 96번 ②, 2026-03 97번 ③) 답안 PDF를 직접 읽었습니다. ㄱ(판매량·생산량)은 세 회차 모두 옳은 진술, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀린 진술로 처리되었고, 재고 증가 시 초변동 이익이 크다(2023-11, 틀림)와 재고 감소 시 초변동 이익이 크다(2026-03, 옳음)도 서로 일관되어 답안 간 모순이 없습니다. 재고 증감에 따른 이익 비교와 CVP 진술은 읽은 자료(OpenStax 재고원가 범위·CVP 적합성, ACCA의 throughput과 contribution 구별)로 설명되고, ㄱ의 생산량 효과와 원가부착 진술의 정오는 출처 문장이 아니라 시험 주관처의 일관된 판단에 근거함을 밝혀 partial로 등록합니다. 미제시된 원가행태를 고정하지 않고 국내 시험 모형의 전제를 unchecked_points에 적었습니다.",
+        "source_reads": [
+          {
+            "ref": "ACCA_COST_A_CROSS_1",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints1.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "throughput·inventory·operational expense 세 정의('operational expense is all the money that the system spends in order to turn inventory into throughput')와 '증가하는 처리량, 감소하는 재고·운영비용' 목표 문단",
+            "sha256": "b9daf09e293d866ce7ea207b1c262148adb656bb2220bdd88fbf845cbdf4e61d"
+          },
+          {
+            "ref": "ACCA_COST_A_CROSS_2",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "Limiting factor analysis and throughput accounting 문단: throughput = selling price less direct material cost, 노무원가·변동제조간접원가까지 차감하는 contribution과 구별, 직접재료 외 원가는 대체로 고정이라는 기본 가정",
+            "sha256": "dddde9d20484649625423ac674e2ecf5b53bf724c369529693b91bcd2e154fa4"
+          },
+          {
+            "ref": "m68139",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68139/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Suitability for Cost-Volume-Profit Analysis 문단, 'More useful for CVP analysis' 항목, 'Variable costing ... lends itself to cost-volume-profit analysis' 요약, Advocates of variable costing / Advocates of absorption costing 문단, 전부·변동 재고원가 범위 문단",
+            "sha256": "ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f"
+          },
+          {
+            "ref": "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-11-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2023-11 원가관리회계 16번 4 (같은 클러스터의 다른 두 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-11-096",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "ㄱ 옳음(키)·ㄴ·ㄷ·ㄹ 누락 지적 정확."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "ㄹ 누락 지적 정확."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "ㄴ 누락 지적 정확."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "정답 4와 일치. 다만 ㄴ 판단은 단위당 원가가 같은 일반적 경우에서 성립하므로 summary에 그 조건을 적어야 함(아래). [재확인] 수정 반영 확인 → pass."
+            }
+          ],
+          "sources_checked": [
+            "공식 답안 3종 sha256 재계산 일치 — 2023-11 c00139b6…('원가관리회계' 표 번호 16 정답 4, 이미지 96번=81+15), 2025-03 47288f98…('3) 원가관리회계' 96 2), 2026-03 5af2e21d…('3) 원가관리회계' 97 3). ㄱ은 세 회차 모두 옳음, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀림, 재고 증가 시 초변동>변동(2023-11) 틀림·재고 감소 시 초변동>변동(2026-03, 단가 불변) 옳음 — 모순 없음.",
+            "ACCA_COST_A_CROSS_1: 재다운로드 sha256 d38d9e314f38533d96b8cec6e61058cea590cd3b321321de176b3e722b71c61f(저자 b9daf09e…와 다름; diff는 Incapsula 캐시버스터·배너 style 2줄뿐), lastModDate 2018-07-11T15:57:38.930+01:00 카탈로그와 일치. 'increasing throughput whilst simultaneously reducing inventory and operational expense' 및 throughput·inventory·operational expense 정의 문장 확인.",
+            "ACCA_COST_A_CROSS_2: 재다운로드 sha256 0a193f7f4f3a63ff7e835aaa24cf5c16373fb5d70e53edf4348a0b78168f821d(저자 dddde9d2…와 다름; diff는 Incapsula 스크립트 1줄), lastModDate 2018-07-25T15:49:29.535+01:00 카탈로그와 일치. \"Throughput is calculated as 'selling price less direct material cost.' This is different from ... 'contribution', in which both labour costs and variable overheads are also deducted\" 및 'all costs except direct materials costs are largely fixed' 확인. 같은 기사 판본이므로 ref 재사용은 오해 소지 없음.",
+            "m68139: openstax 2165bf64 index.cnxml 재다운로드 sha256 ce41f603… 일치. 'Suitability for Cost-Volume-Profit Analysis', 'More useful for CVP analysis', 'Advocates of variable/absorption costing', 변동원가 제품원가 범위(direct material, direct labor, variable overhead) 확인.",
+            "원문 이미지 jaegyeong/images/2023-11-096.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[초변동 클러스터 공통 판단] 키 3종은 맞고 일관됩니다. 재사용 ref(ACCA 1·2)는 sha가 동적 래퍼 때문에 달라질 뿐 lastModDate와 인용 문장이 그대로 있어 재사용이 오해를 낳지 않습니다(source_reads commit_or_version에 lastModDate를 적어 두면 더 명확 — 선택). 문제는 원가행태 전제입니다. steps[1]은 '초변동원가계산에서는 생산에 따라 발생한 직접노무원가·변동제조간접원가가 ... 당기 운영비용이 되므로 역시 생산량이 이익에 영향을 줍니다'라고 사실처럼 쓰고, 이 전제(가공원가가 생산량에 비례)를 unchecked_points에만 적었습니다. 또 같은 전제가 ㄹ(재료처리량공헌이익이 CVP에 덜 적합) 판단에도 필요한데 — ACCA가 말하듯 직접재료 외 원가가 고정이라면 재료처리량공헌이익이 곧 CVP용 공헌이익이 됨 — 이것은 어디에도 적혀 있지 않습니다. 규칙상 steps에도 분명히 밝혀야 하므로 필수 수정: steps[0] 끝에 다음 문장을 덧붙일 것: \" 이 해설은 변동원가계산의 전제대로 직접노무원가와 변동제조간접원가가 생산량에 비례해 발생하는 변동원가라고 보고 설명합니다. 문제에 원가행태가 따로 제시되지는 않았으며, 처리량회계를 소개하는 자료 중에는 직접재료원가 외의 원가를 대체로 고정원가로 보는 것도 있습니다.\" / unchecked_points[0] → \"ㄱ에서 초변동원가계산의 이익이 생산량의 영향을 받는다는 판단과 ㄹ에서 재료처리량공헌이익이 일반적인 공헌이익보다 CVP 분석에 덜 적합하다는 판단은 직접노무원가·변동제조간접원가가 생산량에 따라 발생하는 변동원가라는 전제에 기댑니다. 읽은 ACCA 자료는 직접재료 외 원가가 대체로 고정이라고 가정하므로, 그 가정 아래에서는 생산량 효과가 작아지고 결론이 달라질 수 있습니다. ㄱ을 옳은 진술로, ㄹ을 틀린 진술로 보는 근거는 세 회차 공식 답안의 일관된 처리입니다.\" ㄷ(원가부착·운영비용)은 '시험 주관처는 ... 회차마다 틀린 것으로 처리했습니다'라고 판단 주체를 밝히고 이유가 정의에서 도출한 것임을 unchecked_points에 적어 정직합니다(유지). 이 수정 후 partial 등록이 타당하며 decline할 정도는 아닙니다. 이 문항 추가 수정: summary → \"기간 간 단위당 원가가 같은 일반적인 경우 재고가 늘면 변동원가계산 이익이 초변동원가계산 이익보다 크거나 같으므로 ㄴ이 틀리고, ㄷ·ㄹ도 틀려 정답은 4번입니다.\" / steps[2]의 '기간 간 단위당 원가가 크게 다르지 않다면'을 '기간 간 단위당 원가가 같다면'으로 바꿀 것(산식상 변동−초변동 = 재고증가수량×단위당 변동가공원가가 성립하는 조건을 정확히 표현). unchecked_points[2]는 유지. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]은 기존 문장 끝에 원가행태 전제 문장만 덧붙여졌고 unchecked_points[0]은 지정 문구로 정확히 교체됨. summary 지정 문구 반영, steps[2] '같다면'으로 교체(나머지 문장 동일). 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2026-03-097",
+        "previous_review": {
+          "question_id": "2026-03-097",
+          "reason": "새 ICMAI P16 PDF304쪽은 전통회계가 비용절감에 매우강한 중점을 둔다고 명시하여ㄷ의 운영비용 중요성 간과를 반박할 새로운 비교문맥을 제공합니다. 다만 모든비용 절감과 국내에서 말한 운영비용 중요성이라는 평가를 자동같은 의미로 확정하지 않습니다. PDF308–309쪽은 material-only/다른원가당기OE와 committed-resource 모형을 함께 설명하여ㄱ의 생산량 영향에 모형구분이 여전히 필요합니다. 기간간 요소단가 불변은 원문그대로 지키되 미제시 DL/OE행태를 몰래 고정하지 않습니다. ㄴ 재고감소시 비재료가공원가 재고환입이 초변동/변동 이익차이를 만드는 원리와ㄹ 일반CVP 공헌이익 구분은 검토되나 공식③만의 정오집합을 모두 확인했다고 하지 않습니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_02",
+          "recheck_batch_id": "recheck_cost_008",
+          "round3_batch_id": "r3_cost_007",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "9ccce0f95b07c8ad19ad1007974a56228920301f9b9f466f5dfd4b5091a3b137",
+        "question_row_sha256": "f7d9d5628348c853d55bb3a4039795ee5aa47e684ac4ebd4743d0b3f24ea50b7",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "세 회차(2023-11 16번 ④, 2025-03 96번 ②, 2026-03 97번 ③) 답안 PDF를 직접 읽었습니다. ㄱ(판매량·생산량)은 세 회차 모두 옳은 진술, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀린 진술로 처리되었고, 재고 증가 시 초변동 이익이 크다(2023-11, 틀림)와 재고 감소 시 초변동 이익이 크다(2026-03, 옳음)도 서로 일관되어 답안 간 모순이 없습니다. 재고 증감에 따른 이익 비교와 CVP 진술은 읽은 자료(OpenStax 재고원가 범위·CVP 적합성, ACCA의 throughput과 contribution 구별)로 설명되고, ㄱ의 생산량 효과와 원가부착 진술의 정오는 출처 문장이 아니라 시험 주관처의 일관된 판단에 근거함을 밝혀 partial로 등록합니다. 미제시된 원가행태를 고정하지 않고 국내 시험 모형의 전제를 unchecked_points에 적었습니다.",
+        "source_reads": [
+          {
+            "ref": "ACCA_COST_A_CROSS_1",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints1.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "throughput·inventory·operational expense 세 정의('operational expense is all the money that the system spends in order to turn inventory into throughput')와 '증가하는 처리량, 감소하는 재고·운영비용' 목표 문단",
+            "sha256": "b9daf09e293d866ce7ea207b1c262148adb656bb2220bdd88fbf845cbdf4e61d"
+          },
+          {
+            "ref": "ACCA_COST_A_CROSS_2",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "Limiting factor analysis and throughput accounting 문단: throughput = selling price less direct material cost, 노무원가·변동제조간접원가까지 차감하는 contribution과 구별, 직접재료 외 원가는 대체로 고정이라는 기본 가정",
+            "sha256": "dddde9d20484649625423ac674e2ecf5b53bf724c369529693b91bcd2e154fa4"
+          },
+          {
+            "ref": "m68139",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68139/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Suitability for Cost-Volume-Profit Analysis 문단, 'More useful for CVP analysis' 항목, 'Variable costing ... lends itself to cost-volume-profit analysis' 요약, Advocates of variable costing / Advocates of absorption costing 문단, 전부·변동 재고원가 범위 문단",
+            "sha256": "ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f"
+          },
+          {
+            "ref": "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2026-03-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2026-03 원가관리회계 97번 3 (같은 클러스터의 다른 두 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2026-03-097",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "ㄱ·ㄴ 모두 옳음(키 정답 3과 일치). 재고 감소 시 변동−초변동 = (기말−기초)×단위당 변동가공원가 < 0, 문제의 단가 불변 가정 원문대로 사용."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "ㄴ 옳음·ㄹ 누락 지적 정확."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "정답 3과 일치."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "ㄴ을 함께 고르면 안 된다는 이유 정확, 2023-11 보기 이유와 구별됨."
+            }
+          ],
+          "sources_checked": [
+            "공식 답안 3종 sha256 재계산 일치 — 2023-11 c00139b6…('원가관리회계' 표 번호 16 정답 4, 이미지 96번=81+15), 2025-03 47288f98…('3) 원가관리회계' 96 2), 2026-03 5af2e21d…('3) 원가관리회계' 97 3). ㄱ은 세 회차 모두 옳음, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀림, 재고 증가 시 초변동>변동(2023-11) 틀림·재고 감소 시 초변동>변동(2026-03, 단가 불변) 옳음 — 모순 없음.",
+            "ACCA_COST_A_CROSS_1: 재다운로드 sha256 d38d9e314f38533d96b8cec6e61058cea590cd3b321321de176b3e722b71c61f(저자 b9daf09e…와 다름; diff는 Incapsula 캐시버스터·배너 style 2줄뿐), lastModDate 2018-07-11T15:57:38.930+01:00 카탈로그와 일치. 'increasing throughput whilst simultaneously reducing inventory and operational expense' 및 throughput·inventory·operational expense 정의 문장 확인.",
+            "ACCA_COST_A_CROSS_2: 재다운로드 sha256 0a193f7f4f3a63ff7e835aaa24cf5c16373fb5d70e53edf4348a0b78168f821d(저자 dddde9d2…와 다름; diff는 Incapsula 스크립트 1줄), lastModDate 2018-07-25T15:49:29.535+01:00 카탈로그와 일치. \"Throughput is calculated as 'selling price less direct material cost.' This is different from ... 'contribution', in which both labour costs and variable overheads are also deducted\" 및 'all costs except direct materials costs are largely fixed' 확인. 같은 기사 판본이므로 ref 재사용은 오해 소지 없음.",
+            "m68139: openstax 2165bf64 index.cnxml 재다운로드 sha256 ce41f603… 일치. 'Suitability for Cost-Volume-Profit Analysis', 'More useful for CVP analysis', 'Advocates of variable/absorption costing', 변동원가 제품원가 범위(direct material, direct labor, variable overhead) 확인.",
+            "원문 이미지 jaegyeong/images/2026-03-097.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[초변동 클러스터 공통 판단] 키 3종은 맞고 일관됩니다. 재사용 ref(ACCA 1·2)는 sha가 동적 래퍼 때문에 달라질 뿐 lastModDate와 인용 문장이 그대로 있어 재사용이 오해를 낳지 않습니다(source_reads commit_or_version에 lastModDate를 적어 두면 더 명확 — 선택). 문제는 원가행태 전제입니다. steps[1]은 '초변동원가계산에서는 생산에 따라 발생한 직접노무원가·변동제조간접원가가 ... 당기 운영비용이 되므로 역시 생산량이 이익에 영향을 줍니다'라고 사실처럼 쓰고, 이 전제(가공원가가 생산량에 비례)를 unchecked_points에만 적었습니다. 또 같은 전제가 ㄹ(재료처리량공헌이익이 CVP에 덜 적합) 판단에도 필요한데 — ACCA가 말하듯 직접재료 외 원가가 고정이라면 재료처리량공헌이익이 곧 CVP용 공헌이익이 됨 — 이것은 어디에도 적혀 있지 않습니다. 규칙상 steps에도 분명히 밝혀야 하므로 필수 수정: steps[0] 끝에 다음 문장을 덧붙일 것: \" 이 해설은 변동원가계산의 전제대로 직접노무원가와 변동제조간접원가가 생산량에 비례해 발생하는 변동원가라고 보고 설명합니다. 문제에 원가행태가 따로 제시되지는 않았으며, 처리량회계를 소개하는 자료 중에는 직접재료원가 외의 원가를 대체로 고정원가로 보는 것도 있습니다.\" / unchecked_points[0] → \"ㄱ에서 초변동원가계산의 이익이 생산량의 영향을 받는다는 판단과 ㄹ에서 재료처리량공헌이익이 일반적인 공헌이익보다 CVP 분석에 덜 적합하다는 판단은 직접노무원가·변동제조간접원가가 생산량에 따라 발생하는 변동원가라는 전제에 기댑니다. 읽은 ACCA 자료는 직접재료 외 원가가 대체로 고정이라고 가정하므로, 그 가정 아래에서는 생산량 효과가 작아지고 결론이 달라질 수 있습니다. ㄱ을 옳은 진술로, ㄹ을 틀린 진술로 보는 근거는 세 회차 공식 답안의 일관된 처리입니다.\" ㄷ(원가부착·운영비용)은 '시험 주관처는 ... 회차마다 틀린 것으로 처리했습니다'라고 판단 주체를 밝히고 이유가 정의에서 도출한 것임을 unchecked_points에 적어 정직합니다(유지). 이 수정 후 partial 등록이 타당하며 decline할 정도는 아닙니다. 이 문항 추가 수정 없음(공통 steps[0]·unchecked_points[0] 수정만). unchecked_points[2]의 '변동가공원가 > 0' 전제는 공통 수정으로 steps에도 드러남. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]은 기존 문장 끝에 원가행태 전제 문장만 덧붙여졌고 unchecked_points[0]은 지정 문구로 정확히 교체됨. 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2025-03-096",
+        "previous_review": {
+          "question_id": "2025-03-096",
+          "reason": "새 ICMAI P16 PDF304쪽 전통회계 비용절감 강한 중시, PDF308–309쪽 unit-level spending/기타원가 당기OE처리를 실제 읽었습니다. ㄴ 운영비 중요성 간과의 반박후보는 강화되었지만 원가부착의 원가통제 평가와 비용절감 강조의 정확한 범위가 같은지는 남습니다. ㄱ의 한국 초변동 이익 생산량효과도 단기고정 OE모형과 일반 기간비용행태를 구별해야 합니다. ㄷ 일반CVP는 모든변동비 차감 공헌이익표가 원리상 적합하나 공식②의 완전한 오답집합을 아직 확인하지 못해 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_05",
+          "recheck_batch_id": "recheck_cost_007",
+          "round3_batch_id": "r3_cost_006",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "2e2436eeb02319473e4b1037ab2c1b7a8286b4c496d26e48b0916dbd8d35dddc",
+        "question_row_sha256": "fd309fa5c165aaa99534c9d5d2a0c7547c451ac4ac31229d0b210443265ca927",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b0",
+        "blocker_resolution": "세 회차(2023-11 16번 ④, 2025-03 96번 ②, 2026-03 97번 ③) 답안 PDF를 직접 읽었습니다. ㄱ(판매량·생산량)은 세 회차 모두 옳은 진술, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀린 진술로 처리되었고, 재고 증가 시 초변동 이익이 크다(2023-11, 틀림)와 재고 감소 시 초변동 이익이 크다(2026-03, 옳음)도 서로 일관되어 답안 간 모순이 없습니다. 재고 증감에 따른 이익 비교와 CVP 진술은 읽은 자료(OpenStax 재고원가 범위·CVP 적합성, ACCA의 throughput과 contribution 구별)로 설명되고, ㄱ의 생산량 효과와 원가부착 진술의 정오는 출처 문장이 아니라 시험 주관처의 일관된 판단에 근거함을 밝혀 partial로 등록합니다. 미제시된 원가행태를 고정하지 않고 국내 시험 모형의 전제를 unchecked_points에 적었습니다.",
+        "source_reads": [
+          {
+            "ref": "ACCA_COST_A_CROSS_1",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints1.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "throughput·inventory·operational expense 세 정의('operational expense is all the money that the system spends in order to turn inventory into throughput')와 '증가하는 처리량, 감소하는 재고·운영비용' 목표 문단",
+            "sha256": "b9daf09e293d866ce7ea207b1c262148adb656bb2220bdd88fbf845cbdf4e61d"
+          },
+          {
+            "ref": "ACCA_COST_A_CROSS_2",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html",
+            "commit_or_version": "2026-10-13 재다운로드 HTML(동적 래퍼라 카탈로그 기록 SHA와 다를 수 있음)",
+            "what_was_read": "Limiting factor analysis and throughput accounting 문단: throughput = selling price less direct material cost, 노무원가·변동제조간접원가까지 차감하는 contribution과 구별, 직접재료 외 원가는 대체로 고정이라는 기본 가정",
+            "sha256": "dddde9d20484649625423ac674e2ecf5b53bf724c369529693b91bcd2e154fa4"
+          },
+          {
+            "ref": "m68139",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68139/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Suitability for Cost-Volume-Profit Analysis 문단, 'More useful for CVP analysis' 항목, 'Variable costing ... lends itself to cost-volume-profit analysis' 요약, Advocates of variable costing / Advocates of absorption costing 문단, 전부·변동 재고원가 범위 문단",
+            "sha256": "ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f"
+          },
+          {
+            "ref": "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2025-03-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "공식 정답 2025-03 원가관리회계 96번 2 (같은 클러스터의 다른 두 회차 답안 PDF도 직접 읽고 각 SHA를 신규 출처 related_files에 기록)",
+            "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2025-03-096",
+          "reviewer": "independent-reviewer-r16-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "ㄱ 옳음, ㄷ 누락 지적 정확."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "정답 2와 일치. 이 문항의 ㄴ=원가부착, ㄷ=CVP 번호 재배치 반영 정확."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "ㄱ 옳음, ㄴ 누락 지적 정확."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "ㄱ까지 고르면 안 된다는 이유 정확."
+            }
+          ],
+          "sources_checked": [
+            "공식 답안 3종 sha256 재계산 일치 — 2023-11 c00139b6…('원가관리회계' 표 번호 16 정답 4, 이미지 96번=81+15), 2025-03 47288f98…('3) 원가관리회계' 96 2), 2026-03 5af2e21d…('3) 원가관리회계' 97 3). ㄱ은 세 회차 모두 옳음, 원가부착·운영비용 진술과 CVP·재료처리량 진술은 모두 틀림, 재고 증가 시 초변동>변동(2023-11) 틀림·재고 감소 시 초변동>변동(2026-03, 단가 불변) 옳음 — 모순 없음.",
+            "ACCA_COST_A_CROSS_1: 재다운로드 sha256 d38d9e314f38533d96b8cec6e61058cea590cd3b321321de176b3e722b71c61f(저자 b9daf09e…와 다름; diff는 Incapsula 캐시버스터·배너 style 2줄뿐), lastModDate 2018-07-11T15:57:38.930+01:00 카탈로그와 일치. 'increasing throughput whilst simultaneously reducing inventory and operational expense' 및 throughput·inventory·operational expense 정의 문장 확인.",
+            "ACCA_COST_A_CROSS_2: 재다운로드 sha256 0a193f7f4f3a63ff7e835aaa24cf5c16373fb5d70e53edf4348a0b78168f821d(저자 dddde9d2…와 다름; diff는 Incapsula 스크립트 1줄), lastModDate 2018-07-25T15:49:29.535+01:00 카탈로그와 일치. \"Throughput is calculated as 'selling price less direct material cost.' This is different from ... 'contribution', in which both labour costs and variable overheads are also deducted\" 및 'all costs except direct materials costs are largely fixed' 확인. 같은 기사 판본이므로 ref 재사용은 오해 소지 없음.",
+            "m68139: openstax 2165bf64 index.cnxml 재다운로드 sha256 ce41f603… 일치. 'Suitability for Cost-Volume-Profit Analysis', 'More useful for CVP analysis', 'Advocates of variable/absorption costing', 변동원가 제품원가 범위(direct material, direct labor, variable overhead) 확인.",
+            "원문 이미지 jaegyeong/images/2025-03-096.webp — brief 본문·보기와 일치"
+          ],
+          "notes": "[초변동 클러스터 공통 판단] 키 3종은 맞고 일관됩니다. 재사용 ref(ACCA 1·2)는 sha가 동적 래퍼 때문에 달라질 뿐 lastModDate와 인용 문장이 그대로 있어 재사용이 오해를 낳지 않습니다(source_reads commit_or_version에 lastModDate를 적어 두면 더 명확 — 선택). 문제는 원가행태 전제입니다. steps[1]은 '초변동원가계산에서는 생산에 따라 발생한 직접노무원가·변동제조간접원가가 ... 당기 운영비용이 되므로 역시 생산량이 이익에 영향을 줍니다'라고 사실처럼 쓰고, 이 전제(가공원가가 생산량에 비례)를 unchecked_points에만 적었습니다. 또 같은 전제가 ㄹ(재료처리량공헌이익이 CVP에 덜 적합) 판단에도 필요한데 — ACCA가 말하듯 직접재료 외 원가가 고정이라면 재료처리량공헌이익이 곧 CVP용 공헌이익이 됨 — 이것은 어디에도 적혀 있지 않습니다. 규칙상 steps에도 분명히 밝혀야 하므로 필수 수정: steps[0] 끝에 다음 문장을 덧붙일 것: \" 이 해설은 변동원가계산의 전제대로 직접노무원가와 변동제조간접원가가 생산량에 비례해 발생하는 변동원가라고 보고 설명합니다. 문제에 원가행태가 따로 제시되지는 않았으며, 처리량회계를 소개하는 자료 중에는 직접재료원가 외의 원가를 대체로 고정원가로 보는 것도 있습니다.\" / unchecked_points[0] → \"ㄱ에서 초변동원가계산의 이익이 생산량의 영향을 받는다는 판단과 ㄹ에서 재료처리량공헌이익이 일반적인 공헌이익보다 CVP 분석에 덜 적합하다는 판단은 직접노무원가·변동제조간접원가가 생산량에 따라 발생하는 변동원가라는 전제에 기댑니다. 읽은 ACCA 자료는 직접재료 외 원가가 대체로 고정이라고 가정하므로, 그 가정 아래에서는 생산량 효과가 작아지고 결론이 달라질 수 있습니다. ㄱ을 옳은 진술로, ㄹ을 틀린 진술로 보는 근거는 세 회차 공식 답안의 일관된 처리입니다.\" ㄷ(원가부착·운영비용)은 '시험 주관처는 ... 회차마다 틀린 것으로 처리했습니다'라고 판단 주체를 밝히고 이유가 정의에서 도출한 것임을 unchecked_points에 적어 정직합니다(유지). 이 수정 후 partial 등록이 타당하며 decline할 정도는 아닙니다. 이 문항 추가 수정 없음(공통 수정만). 재고 비교 진술이 없는 회차이므로 ㄴ에 원가행태 전제 문제는 없음. [재확인] out0.before_fix.json 대비 필드별 대조: steps[0]은 기존 문장 끝에 원가행태 전제 문장만 덧붙여졌고 unchecked_points[0]은 지정 문구로 정확히 교체됨. 그 밖의 필드·배열 항목은 변경 없음, review_status partial 유지. 필수 수정이 모두 반영되어 pass."
+        }
+      },
+      {
+        "question_id": "2022-07-019",
+        "previous_review": {
+          "question_id": "2022-07-019",
+          "reason": "공식 KASB1032호28–32와AG31–32를재독했습니다. 전환권은부채를발행자자본으로바꾸는내재옵션이고확정수량보통주로의전환권부여를직접정의합니다. 그러나원문③은약정가격보통주발행청구권만말하여추가주식납입/사채존속을명시하지않습니다. 새공식정의도그포괄권리설명이전환권과반드시배타적인신주인수권임을증명하지않습니다. 공식②의유효이자상각과①/④오류는확인하되③을유일다른상품정의로추가정해등록하지않습니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_018",
+          "recheck_batch_id": "recheck_finance_019",
+          "round3_batch_id": "r3_finance_018",
+          "final_quality_withdrawal": true,
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "ba1d28c69f8da9f5c304f9aa44f42a9e209339ab52b9746a07aff4da3fb4c7b6",
+        "question_row_sha256": "e2c59a05d4bada234230d3814e5619cb62b33cc8b719f9aaedbe334e27f66c5f",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유는 3번 문언이 추가 납입이나 사채 존속을 적지 않아 전환권을 기준서만으로 배제할 수 없다는 것이었습니다. 기준서로 이를 해소할 수는 없다는 점은 그대로 인정했습니다. 대신 같은 문장이 들어간 6개 회차(2022-03 18번, 2022-07 19번, 2022-11 19번, 2024-06 17번, 2025-06 19번, 2025-11 19번)의 답안 PDF를 직접 읽어, 시험 주관처가 이 문장을 신주인수권부사채의 설명으로는 옳게, 전환사채의 설명으로는 틀리게 예외 없이 처리했음을 확인했습니다. 이 판단을 교재 본문이 아닌 공식 답안의 판단으로 밝히고 partial로 등록합니다. 1·2·4번은 기준서·일반기업회계기준 본문으로 확인했습니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1032",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9873, fileSeq=2) → $S/dl1/k1032.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1032호_금융상품_표시(2014 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 28쪽 문단 28~31(복합금융상품 분리, 전환사채와 주식매입권 동시 발행·분리형 주식매입권 비교), PDF 57쪽 AG30~AG32(부채요소 현재가치, 전환권은 부채를 자본으로 전환하는 내재옵션, 만기 전환 시 부채 제거)",
+            "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd"
+          },
+          {
+            "ref": "R6_FIN02_IFRS9_2023",
+            "path_or_url": "/tmp/claude-0/dl/eu.md (EU Regulation 2023/1803, identifier 32023R1803, publication_date 2023-09-26 로컬 사본)",
+            "commit_or_version": "EU 2023/1803 2023-09-26 원문 Markdown 사본. 카탈로그 ref의 commit 62b803dc 파일과 같은 문서(32023R1803)이나 로컬 사본과 커밋 파일의 바이트 동일성은 별도로 대조하지 않았습니다.",
+            "what_was_read": "IFRS 9 Appendix A 'amortised cost of a financial asset or financial liability'(16163행)와 'effective interest method'(16171행) 정의, 4.2.1(금융부채 상각후원가 후속측정)",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          },
+          {
+            "ref": "R6_FIN02_GAAP15_COMPOUND",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=3852, fileSeq=2) → $S/dl1/kgaap15.pdf",
+            "commit_or_version": "일반기업회계기준 제15장 자본(2015-10-13 의결), 이번에 새로 내려받음(카탈로그에는 SHA 기록 없음)",
+            "what_was_read": "PDF 9~11쪽 실15.3~실15.6(전환사채·신주인수권부사채 상환할증금의 액면 부가, 전환권대가 자본 분류), PDF 15~17쪽 사례2(상환할증금이 있는 전환사채의 15% 유효이자 상각표와 재무상태표 표시)",
+            "sha256": "63028dc2dbe5da4bf537275d3776b6ad4f1c8aac860a3614bed986b90694b296"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-03-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "8ce49b72eb6513b8cc879724bd43e32e341fd7a86d56fdd610c3b79358e7628b"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2024-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2025-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2025-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-07-019",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "제1032호 문단 29: 금융부채 요소와 지분상품 요소로 구성. 자산요소라는 진술은 틀림. 2022-11-019 ①(자본요소, 옳음)과 대비되어 일관됨."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "IFRS 9 Appendix A 상각후원가와 유효이자율법 정의, 일반기업회계기준 사례2 상각표(이자비용 1,392 = 현금 700 + 상각 692)로 확인. 공식 답 2와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "6개 회차 답안이 일관됨을 직접 확인함. 기준서 문장이 아니라 공식 답안 판단에 근거한다는 점을 summary·steps·unchecked_points에 정직하게 적었으므로 partial 등록이 적절함. 다만 steps[4] 첫 문장의 '구별합니다'는 문단 29의 취지(두 거래의 경제적 효과가 실질적으로 같다)를 반대로 읽힐 수 있어 수정이 필요함(notes 참조)."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "실15.6 '사채상환할증금은 당해 전환사채 … 액면금액에 부가한다' 원문 확인. 차감 표시는 틀림."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9873/fileSeq=2 → 내 디렉터리 rv1/kasb/k1032.pdf 재다운로드, SHA256 79a6b1bc…7cd 카탈로그 일치. PDF 28~29쪽 문단 28~32, PDF 57쪽 AG30~AG32 재독",
+            "KASB POST fileNo=3852/fileSeq=2 → rv1/kasb/kgaap15.pdf, SHA256 63028dc2…b296(저자 기록과 일치). 실15.6(상환할증금 액면 부가), 사례2(15% 상각표, 재무상태표 '전환사채+사채상환할증금−사채할인발행차금') 재독",
+            "R6_FIN02_IFRS9_2023: 카탈로그 URL의 legalize-eu commit 62b803dc eu/1c/32023R1803.md를 raw로 새로 받아 SHA256 229f3371…ba9 확인. /tmp/claude-0/dl/eu.md와 바이트 동일. Appendix A 'amortised cost'·'effective interest method' 정의(16163·16171행) 재독",
+            "답안 PDF SHA256 6건 일치(2022-03 8ce49b72…, 2022-07 ac598b80…, 2022-11 348e2277…, 2024-06 da58eebf…, 2025-06 4d51b9f6…, 2025-11 8e3239c3…). 정답표: 2022-03 18번[3](㉡=신주인수권부사채), 2022-07 19번[2], 2022-11 19번[3], 2024-06 17번 4, 2025-06 19번 4, 2025-11 19번 2. questions.json 지문 대조: 2022-03-018 ㉡ 문장, 2024-06-017 ③, 2025-06-019 ③, 2025-11-019 ①이 모두 같은 '유가증권의 소유자가 사전에 약정된 가격으로 보통주의 발행을 청구할 수 있는 권리가 부여된 사채' 문장을 신주인수권부사채 주어로 쓰며 정답이 아님(=옳은 진술). 불일치 없음.",
+            "원문 이미지 2022-07-019.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "필수 수정 1건. steps[4]를 다음으로 교체: \"문단 29는 전환사채를 보유자가 사채를 확정 수량의 보통주로 '전환'할 수 있는 상품으로 설명하고, 사채와 주식매입권을 동시에 발행하는 거래는 이와 경제적 효과가 실질적으로 같은 별개의 거래 형태로 듭니다. 시험 주관처는 '약정된 가격으로 보통주의 발행을 청구할 수 있는 권리가 부여된 사채'라는 문장을 2022년 3월·2024년 6월·2025년 6월·2025년 11월 시험에서 신주인수권부사채의 설명으로 옳게 처리했고, 2022년 11월 시험에서는 전환사채의 설명으로 쓰인 같은 문장을 틀린 보기로, 이 회차에서는 정답이 아닌 보기로 처리했습니다. 3번에 대한 판단은 기준서 문장이 아니라 이 공식 답안의 판단에 근거합니다.\" (이유: 문단 29는 두 거래를 '구별'하는 것이 아니라 '실질적으로 같은 경제적 효과'라고 하므로 원래 문장은 기준서를 3번 오답의 근거처럼 오해하게 함. 또 이 회차 자신의 답은 '틀림'이 아니라 '정답에서 제외'만 보여 줌.) 참고: R6_FIN02_IFRS9_2023의 로컬 eu.md는 카탈로그 commit 62b803dc 파일과 SHA256이 같아 바이트 동일함을 검토자가 확인함. 저자 source_reads의 '대조하지 않았다'는 기재는 정직하므로 수정할 필요는 없음. 카탈로그 checked_on/verification에 이 사실을 덧붙이는 것은 선택. [재확인] out1.before_fix.json과 out1.json을 필드별로 직접 비교함. 바뀐 필드는 steps뿐임. steps[4]가 지정 문구와 글자 단위로 일치하고 steps[0~3]은 변경 없음. 필수 수정이 해소되어 pass로 변경함."
+        }
+      },
+      {
+        "question_id": "2022-11-019",
+        "previous_review": {
+          "question_id": "2022-11-019",
+          "reason": "공식1032 29/AG31은 사채의 채무를 자기자본으로전환하는 내재옵션을 직접정의하고AG27은 확정금액을대가로한 주식매입권을구별합니다. 그러나③보통주발행청구는 이차이를 지정하는 추가납입/사채존속을 명시하지 않아 전환권을배제하지못합니다. 새공식원문정의로 다른보기기본원리를 확인했지만③의넓은문언을신주인수권만이라고 좁힐 수는없습니다. 공식③불변·보류입니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_018",
+          "recheck_batch_id": "recheck_finance_019",
+          "round3_batch_id": "r3_finance_018",
+          "final_quality_withdrawal": true,
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "cf773e62d034607c2b5dd294e217b191a5abba9b7c681af4517fea26675765f0",
+        "question_row_sha256": "b81e12219277f3823627d6abf05c05905d0027c4c5378946867092f3958da801",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유는 3번의 '보통주 발행 청구'라는 넓은 문언을 기준서만으로 신주인수권에 한정할 수 없다는 것이었습니다. 이 한계는 해소되지 않았음을 unchecked_points에 그대로 적었습니다. 같은 문장이 쓰인 6개 회차 답안 PDF를 직접 읽어 시험 주관처가 이 문장을 신주인수권부사채의 정의로 예외 없이 다뤘음(불일치 없음)을 확인했고, 정답 판단의 근거를 공식 답안의 판단으로 명시하여 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1032",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9873, fileSeq=2) → $S/dl1/k1032.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1032호_금융상품_표시(2014 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 28쪽 문단 28~31(복합금융상품 분리, 전환사채와 주식매입권 동시 발행·분리형 주식매입권 비교), PDF 57쪽 AG30~AG32(부채요소 현재가치, 전환권은 부채를 자본으로 전환하는 내재옵션, 만기 전환 시 부채 제거)",
+            "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd"
+          },
+          {
+            "ref": "R6_FIN02_IFRS9_2023",
+            "path_or_url": "/tmp/claude-0/dl/eu.md (EU Regulation 2023/1803, identifier 32023R1803, publication_date 2023-09-26 로컬 사본)",
+            "commit_or_version": "EU 2023/1803 2023-09-26 원문 Markdown 사본. 카탈로그 ref의 commit 62b803dc 파일과 같은 문서(32023R1803)이나 로컬 사본과 커밋 파일의 바이트 동일성은 별도로 대조하지 않았습니다.",
+            "what_was_read": "IFRS 9 Appendix A 'amortised cost of a financial asset or financial liability'(16163행)와 'effective interest method'(16171행) 정의, 4.2.1(금융부채 상각후원가 후속측정)",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          },
+          {
+            "ref": "R6_FIN02_GAAP15_COMPOUND",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=3852, fileSeq=2) → $S/dl1/kgaap15.pdf",
+            "commit_or_version": "일반기업회계기준 제15장 자본(2015-10-13 의결), 이번에 새로 내려받음(카탈로그에는 SHA 기록 없음)",
+            "what_was_read": "PDF 9~11쪽 실15.3~실15.6(전환사채·신주인수권부사채 상환할증금의 액면 부가, 전환권대가 자본 분류), PDF 15~17쪽 사례2(상환할증금이 있는 전환사채의 15% 유효이자 상각표와 재무상태표 표시)",
+            "sha256": "63028dc2dbe5da4bf537275d3776b6ad4f1c8aac860a3614bed986b90694b296"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-03-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "8ce49b72eb6513b8cc879724bd43e32e341fd7a86d56fdd610c3b79358e7628b"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2024-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2025-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+          },
+          {
+            "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+            "path_or_url": "jaegyeong/sources/2025-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-11-019",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "제1032호 문단 28~29 부채요소·지분상품 요소 확인. 옳은 진술."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "IFRS 9 4.2.1·Appendix A, 일반기업회계기준 사례2 상각표로 확인. 2022-07-019 ②와 같은 문장이며 그 회차 정답임."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "공식 답 3. 6개 회차 답안의 일관성을 직접 확인함(불일치 없음). steps[1]은 문단 29를 '경제적 효과가 비슷한 거래로 따로 든다'고 정확히 서술함. 문언만으로는 전환권을 배제할 수 없다는 보류 사유를 unchecked_points에 그대로 남기고 공식 답안 판단임을 명시하였으므로 partial 등록이 정직함. 2022-07-019 ③ 해설과 문장이 달라 재사용 아님."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "실15.6 원문과 사례2 재무상태표 표시로 확인. 옳은 진술."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9873/fileSeq=2 → 내 디렉터리 rv1/kasb/k1032.pdf 재다운로드, SHA256 79a6b1bc…7cd 카탈로그 일치. PDF 28~29쪽 문단 28~32, PDF 57쪽 AG30~AG32 재독",
+            "KASB POST fileNo=3852/fileSeq=2 → rv1/kasb/kgaap15.pdf, SHA256 63028dc2…b296(저자 기록과 일치). 실15.6(상환할증금 액면 부가), 사례2(15% 상각표, 재무상태표 '전환사채+사채상환할증금−사채할인발행차금') 재독",
+            "R6_FIN02_IFRS9_2023: 카탈로그 URL의 legalize-eu commit 62b803dc eu/1c/32023R1803.md를 raw로 새로 받아 SHA256 229f3371…ba9 확인. /tmp/claude-0/dl/eu.md와 바이트 동일. Appendix A 'amortised cost'·'effective interest method' 정의(16163·16171행) 재독",
+            "답안 PDF SHA256 6건 일치(2022-03 8ce49b72…, 2022-07 ac598b80…, 2022-11 348e2277…, 2024-06 da58eebf…, 2025-06 4d51b9f6…, 2025-11 8e3239c3…). 정답표: 2022-03 18번[3](㉡=신주인수권부사채), 2022-07 19번[2], 2022-11 19번[3], 2024-06 17번 4, 2025-06 19번 4, 2025-11 19번 2. questions.json 지문 대조: 2022-03-018 ㉡ 문장, 2024-06-017 ③, 2025-06-019 ③, 2025-11-019 ①이 모두 같은 '유가증권의 소유자가 사전에 약정된 가격으로 보통주의 발행을 청구할 수 있는 권리가 부여된 사채' 문장을 신주인수권부사채 주어로 쓰며 정답이 아님(=옳은 진술). 불일치 없음.",
+            "원문 이미지 2022-11-019.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "수정 불필요. 2022-07-019와 같은 출처를 쓰며 R6_FIN02_IFRS9_2023 로컬 사본은 카탈로그 커밋 파일과 바이트 동일함(검토자 확인)."
+        }
+      },
+      {
+        "question_id": "2022-07-023",
+        "previous_review": {
+          "question_id": "2022-07-023",
+          "reason": "공식1115 사례58 IE297–302를 새로 깊게 대조했습니다. 예시는 새로운캐릭터/형식발전 외 고객의 최신이미지 사용의무와 다른수행의무없음까지 명시하고 B58 세조건을 각각 적용합니다. 원문의 현재·향후캐릭터사용은 계속활동을 시사하지만 그 자체가 고객직접노출/별도재화용역아님을 모두 규정하는 동일조건은 아닙니다. 접근권과 시간기준이라면100,000,000/4=25,000,000원이지만 사례의 추가조건을 원문에 이식하지 않고 공식②보존·보류합니다.",
+          "category": "source_unverified",
+          "batch_id": "finance_a_08",
+          "recheck_batch_id": "recheck_finance_022",
+          "round3_batch_id": "r3_finance_021",
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "f448649197ea14e2066ac53650b0c14c6ee0e22f5bf1ca463f4d9b4b0822142a",
+        "question_row_sha256": "bd1dc7d9aedd20e33a616bdd5d1725031f726ed91d638475986742e4055ec294",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유는 사례 58의 추가 조건(최신 이미지 사용 의무, 다른 수행의무 없음)을 지문에 옮겨 B58 세 조건을 모두 확인했다고 할 수 없다는 것이었습니다. 이 점은 해소되지 않았으므로 summary·steps·unchecked_points에 명시했습니다. 지문에 실제로 있는 '향후 방송에 나올 캐릭터'가 B59A⑴의 형식 변경 활동에 해당한다는 점까지만 기준서로 뒷받침했고, 대가만 다른 두 회차(2022-07 23번, 2022-11 24번) 공식 답안이 모두 '대가 ÷ 4년'으로 일치함을 직접 확인해 시험 주관처의 판단으로 제시했습니다. 금융요소 미고려 전제도 함께 밝혀 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1115",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9862, fileSeq=1) → $S/dl1/k1115.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 71~73쪽 B55~B62(접근권 세 기준, B59A 유의적 영향 활동, B60 기간 인식, B61 사용권 한 시점 인식, B62 고려하지 않는 요소), PDF 189~190쪽 사례 58 IE297~IE302, PDF 29~30쪽 문단 60~63(유의적인 금융요소)",
+            "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+          },
+          {
+            "ref": "EXAM_KEYS_CHARACTER_LICENSE",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 23번·24번의 정답을 읽고 questions.json의 지문·보기 금액과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CHARACTER_LICENSE",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 23번·24번의 정답을 읽고 questions.json의 지문·보기 금액과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-07-023",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "라이선스 기간이 20X1-01-01에 시작되고 현재 캐릭터는 즉시 사용할 수 있음. B60·B61 어느 쪽이든 20X1 수익이 0일 수 없다는 설명이 맞음."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "100000000/4=25000000 계산 확인. 공식 답 2와 일치. 접근권 판단의 전제가 summary·steps[2]·unchecked_points에 명시됨."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "2년 배분이라는 오답 원인을 구체적으로 짚음. 다른 보기와 이유가 다름."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "B61 한 시점 인식의 결과로 설명하고 '접근권으로 보면'이라는 조건부 표현을 써서 사용권 해석을 단정적으로 배제하지 않음. 정직함."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9862/fileSeq=1 → rv1/kasb/k1115.pdf 재다운로드, SHA256 b62f86b1…83f 카탈로그 일치. PDF 71~73쪽 B55~B62, PDF 189~190쪽 사례 58 IE297~IE302 재독(IE297 '최신 이미지 사용 의무', IE299 '다른 수행의무 없음', IE300⑵ 직접 노출 근거가 최신 이미지 사용 의무임을 확인)",
+            "답안 PDF SHA256 일치: 2022-07 ac598b80…(재무회계 23번 [2]), 2022-11 348e2277…(재무회계 24번 [3]). questions.json과 원문 이미지 대조 결과 두 지문은 대가(100,000,000원/200,000,000원)와 ④ 금액만 다르고 나머지가 같음. 두 정답 모두 '대가÷4'로 일관됨. 회차는 둘뿐이고 그중 하나가 이 문항 자신의 답이라는 점은 초안 verification에 정직하게 적혀 있음.",
+            "원문 이미지 2022-07-023.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "엄격 판단 결과 decline보다 partial 등록이 정직하고 유용하다고 봄. 이유: ① 지문 자체의 '현재 및 향후 방송에 나올 캐릭터를 모두 사용할 권리'는 사례에서 옮겨 온 사실이 아니라 원문에 있는 사실이며, B59A⑴(형식·콘텐츠를 유의적으로 바꾸는 활동)에 직접 대응함. ② 사례 58의 추가 조건(최신 이미지 사용 의무, 다른 수행의무 없음)을 지문에 있다고 쓰지 않고, 없다는 점과 그 때문에 B58⑵·⑶이 지문에서 직접 확인되지 않는다는 점을 summary·steps·unchecked_points에 모두 밝힘. ③ 공식 답 25,000,000원은 접근권·시간 기준 말고는 얻을 수 없으며, 사용권 해석(④)은 조건부로 설명되어 학습자가 판단 구조를 오해하지 않음. ④ 두 답안이 일관되지만 근거로서는 약하고 그중 하나가 자기 자신이라는 한계가 verification에 정직하게 적혀 있음. ⑤ 4년 선급에 따른 금융요소 미고려 전제도 명시함. 사실을 지어내지 않았으므로 AUTHOR 규칙의 decline 조건에 해당하지 않음. 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2022-11-024",
+        "previous_review": {
+          "question_id": "2022-11-024",
+          "reason": "공식 KASB1115호 B58/B59A/B62뿐 아니라 사례58(IE297–302,PDF189–190)을 이번에 실제 읽었습니다. 사례는 새로운 캐릭터의 잦은 등장·이미지 발전·최신 이미지 사용 의무·별도 재화용역 이전 없음 및 그 결과의 직접노출을 명시합니다. 원문은 현재·미래 캐릭터를 모두 사용할 권리를 줄 뿐 최신 이미지로 계속 교체할 의무를 정하지 않습니다. 4년 정액 접근권 모형이면50,000,000원(공식③)이지만 사례의 계약조건을 원문에 옮겨 B58세조건을 모두 확인했다고 할 수 없습니다. 계약상 활동/직접노출/별도이전의 조건 확인이 남습니다.",
+          "category": "source_unverified",
+          "batch_id": "finance_a_07",
+          "recheck_batch_id": "recheck_finance_022",
+          "round3_batch_id": "r3_finance_021",
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "ec1ea77e83e5d6400efaf17626d72c2fbd3e80ee6204cd8e148cd36024f1e067",
+        "question_row_sha256": "41a151e35ae2fa76b062b8f8c641f99a272828c100051642bf3fc9d6d3d14547",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유(최신 이미지 사용 의무 등 사례 58의 조건이 지문에 없어 B58⑵·⑶을 확인할 수 없음)는 기준서만으로 해소되지 않으므로 summary·steps·unchecked_points에 그대로 밝혔습니다. 지문의 '향후 방송 캐릭터'가 B59A⑴에 해당한다는 범위까지만 기준서로 뒷받침했고, 같은 지문의 2022-07 23번(25,000,000원)과 이 문항(50,000,000원)의 공식 답안이 모두 '대가 ÷ 4년'으로 일치함을 직접 확인해 시험 주관처의 판단으로 제시했습니다. 금융요소 미고려 전제도 밝혀 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1115",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9862, fileSeq=1) → $S/dl1/k1115.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 71~73쪽 B55~B62, PDF 189~190쪽 사례 58 IE297~IE302, PDF 29~30쪽 문단 60~63",
+            "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+          },
+          {
+            "ref": "EXAM_KEYS_CHARACTER_LICENSE",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 23번·24번의 정답을 읽고 questions.json의 지문·보기 금액과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CHARACTER_LICENSE",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 23번·24번의 정답을 읽고 questions.json의 지문·보기 금액과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-11-024",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "기간 시작과 즉시 사용 가능성을 근거로 0원을 배제함. 2022-07-023 ①과 다른 문장으로 서술함."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "200,000,000/8=25,000,000이라는 기간 배분 오류로 구체적으로 설명함. 2022-07-023 ③의 오답 원인 설명과도 다름."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "200000000/4=50000000 계산 확인. 공식 답 3과 일치."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "B61 사용권의 한 시점 인식으로 설명하고 접근권 전제를 조건부로 표현함."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9862/fileSeq=1 → rv1/kasb/k1115.pdf 재다운로드, SHA256 b62f86b1…83f 카탈로그 일치. PDF 71~73쪽 B55~B62, PDF 189~190쪽 사례 58 IE297~IE302 재독(IE297 '최신 이미지 사용 의무', IE299 '다른 수행의무 없음', IE300⑵ 직접 노출 근거가 최신 이미지 사용 의무임을 확인)",
+            "답안 PDF SHA256 일치: 2022-07 ac598b80…(재무회계 23번 [2]), 2022-11 348e2277…(재무회계 24번 [3]). questions.json과 원문 이미지 대조 결과 두 지문은 대가(100,000,000원/200,000,000원)와 ④ 금액만 다르고 나머지가 같음. 두 정답 모두 '대가÷4'로 일관됨. 회차는 둘뿐이고 그중 하나가 이 문항 자신의 답이라는 점은 초안 verification에 정직하게 적혀 있음.",
+            "원문 이미지 2022-11-024.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "2022-07-023과 같은 판단: partial 등록이 정직하고 유용하며 decline할 필요는 없음. B58⑵·⑶ 미확인, 시간 기준 진행률, 금융요소 미고려가 unchecked_points에 정확히 적혀 있음. 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2022-05-025",
+        "previous_review": {
+          "question_id": "2022-05-025",
+          "reason": "공식 KASB1115호35–37·42/B18–19·45·95–98을실제재독했습니다.②미수행선급금의진행률포함은틀리지만①은기간수익요건을아직특정하지않았고④모든발생원가비용은95의미래이행자산가능성까지전면배제합니다. 구1011호명제나도급계약존재만으로현행1115의기간/원가조건을보충하지않습니다. 원문공식②와4보기조건미확인을보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_023",
+          "recheck_batch_id": "recheck_finance_024",
+          "round3_batch_id": "r3_finance_023",
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "ac4544852f9eb36087f96313d6cfc57507da7f64143785e3eac6194f86fccb96",
+        "question_row_sha256": "5452f9f6aa6e9690640997d693c934dc15abff9634d6d00bb23d91b3c0f80f1c",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유는 2번이 틀렸다는 점은 확인되지만 1·4번의 구 제1011호식 표현이 현행 제1115호의 기간 인식 요건과 원가자산 가능성(문단 95)을 빠뜨린다는 것이었습니다. 정답 2번은 문단 42와 B19로 기준서 문장에 근거해 확인했습니다. 다른 보기는 문단 44·45·98⑶과 제1037호 66~68이 같은 방향임을 보이고, 남는 차이(문단 35 요건, 문단 95 자산화 예외, 손실 측정 세부)는 unchecked_points에 적었습니다. 같은 문장을 다룬 8개 문항의 공식 답안이 서로 모순 없이 일관됨을 직접 확인해 시험 주관처의 판단으로 제시하고 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1115",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9862, fileSeq=1) → $S/dl1/k1115.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 20~21쪽 문단 35~37(기간에 걸쳐 이행 요건), PDF 23~24쪽 문단 39~45(진행률, 통제 미이전 항목 제외, 합리적 측정 불가 시 발생원가 범위 수익), PDF 38~39쪽 문단 95~98(계약이행원가 자산 요건과 발생 시 비용 항목), PDF 58~59쪽 B18~B19(투입법과 제외할 투입물), PDF 86쪽 C10(제1011호 대체)",
+            "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+          },
+          {
+            "ref": "R10_FIN1_B03_KIFRS1037",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=-49993099, fileSeq=1) → $S/dl1/k1037.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1037호_충당부채_우발부채_우발자산(2020 개정·2021 타기준서 제정·수정목록 26-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 24~25쪽 문단 63~69(미래 영업손실 비인식, 손실부담계약의 현재의무 충당부채 인식, 회피 불가능 원가 = 이행원가와 위약금 중 적은 금액, 68A 직접 관련 원가, 69 자산손상 선인식)",
+            "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-05-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2024-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-09-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-05-025",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "구 기준 표현을 문단 39·44·98⑶에 대응시키고 '옳은 설명으로 봅니다'로 한정함. 문단 35 요건 미기재는 unchecked_points에 있음."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "문단 42와 B19 원문 확인. 공식 답 2와 일치. 기준서 문장으로 직접 확인되는 정답임."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제1037호 문단 66·68 확인. 측정 세부가 빠진 점은 unchecked_points에 있음."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "문단 45(발생원가 범위 수익)와 98⑶ 확인. 문단 95 자산화 예외는 unchecked_points에 있음."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9862/fileSeq=1 → rv1/kasb/k1115.pdf, SHA256 b62f86b1…83f 일치. 문단 35, 42, 44, 45, 95~98(97⑸ 하도급자 지급액 포함), B18~B19, C10(제1011호 '건설계약' 대체) 재독",
+            "KASB POST fileNo=-49993099/fileSeq=1 → rv1/kasb/k1037.pdf, SHA256 aef21b07…017d 카탈로그 일치. 문단 63~69(66 손실부담계약 충당부채, 68 회피 불가능 원가, 68A, 69) 재독",
+            "답안 PDF SHA256 8건 일치(2022-05 af953d7b…, 2022-07 ac598b80…, 2022-11 348e2277…, 2022-12 004689e5…, 2023-06 a9677770…, 2023-09 a09f593f…, 2023-11 c00139b6…, 2024-06 da58eebf…). 정답: 2022-05 25번[2], 2022-07 26번[3], 2022-11 25번[3], 2022-12 26번[4], 2023-06 26번 4, 2023-09 23번 3, 2023-11 26번 3, 2024-06 25번 3. questions.json 지문 대조 결과 서로 모순 없음. 다만 2022-11-025에는 '예상손실 즉시 당기비용'(③)만 같은 문장이고 '결과를 신뢰성 있게 추정할 수 있는/없는 경우' 정문 형태는 나오지 않음(④는 반대 취지 오답).",
+            "원문 이미지 2022-05-025.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "제1011호 서술 점검: summary·steps[2]·unchecked_points[0]가 모두 '제1115호가 대체한(C10) 제1011호의 표현'이라고 밝히고, 판단 근거는 현행 제1115호·제1037호 문단으로 제시하므로 제1011호가 아직 유효한 것처럼 오해하게 하지 않음. 필수 수정 2건. (1) steps[4]가 답안 일관성을 과장함: 2022-11-025에는 이 문항 1·4번과 같은 문장이 옳은 진술로 나오지 않음. steps[4]를 다음으로 교체: \"시험 주관처는 1·3·4번과 같은 문장을 2023년 6월 시험에서 옳은 진술로 처리했고, 3번과 같은 '예상손실 즉시 비용' 문장은 2022년 7월·11월·12월, 2023년 11월, 2024년 6월 시험에서도 옳은 진술(정답)로 처리했습니다. 하도급 선급금을 진행률에 포함한다는 문장은 2022년 11월 시험에서도 정답이 아닌 보기였습니다. 정답인 2번은 기준서 문단으로 확인되고, 다른 보기의 '옳음'은 일부 이 답안 판단에 기댑니다.\" (2) 저자는 제1011호 원문을 읽지 않았으므로 unchecked_points 끝(index 3)에 다음을 추가: \"보기 문장이 구 기업회계기준서 제1011호 '건설계약'의 문장이라는 설명은 제1115호 문단 C10(제1011호 대체)까지만 확인했으며, 제1011호 원문 자체는 직접 대조하지 않았습니다.\" [재확인] out1.before_fix.json과 out1.json을 필드별로 직접 비교함. 바뀐 필드는 steps·unchecked_points뿐임. steps[4]와 unchecked_points[3]이 지정 문구와 글자 단위로 일치하고, 나머지 steps·unchecked_points[0~2]는 변경 없음. 필수 수정이 해소되어 pass로 변경함."
+        }
+      },
+      {
+        "question_id": "2023-06-026",
+        "previous_review": {
+          "question_id": "2023-06-026",
+          "reason": "공식1115 C10의1011대체,35의 기간인식조건,44–45의 측정곤란시 발생원가범위수익,95–98의 미래이행원가자산을 함께 대조했습니다.④수행을 나타내지못하는 투입은B19에 따라 틀립니다.②손실부담계약은1037 66–69로 지지되나①결과추정만으로기간인식·③발생원가전부즉시비용의 무조건범위는 현행기준 전체요건이 아닙니다. 공식④와 다른보기조건을 구별해보류합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_022",
+          "recheck_batch_id": "recheck_finance_025",
+          "round3_batch_id": "r3_finance_023",
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "627a7cfac2655f4aaebe9cfbf8f27906ff7d6bf83d1dda15e7a995d15f9df1ff",
+        "question_row_sha256": "1abe94c922f51e0f5d80405534e5c5d14d69c36f22eb5e32bb2ad8abd1568626",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r16-b1",
+        "blocker_resolution": "보류 사유는 정답 4번이 B19로 틀린 것은 확인되지만 1·3번의 구 제1011호식 표현이 현행 기준의 기간 인식 요건(문단 35)과 원가자산 가능성(문단 95)을 빠뜨린다는 것이었습니다. 정답은 B19 문장으로 직접 확인했고, 다른 보기는 문단 44·45·98⑶과 제1037호 66~68이 같은 방향임을 보였으며, 남는 차이는 unchecked_points에 적었습니다. 같은 문장을 다룬 8개 문항(2023-09 23번의 투입물 제외 문장 포함)의 공식 답안이 서로 모순 없음을 직접 확인해 시험 주관처의 판단으로 제시하고 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "R10_FIN1_KIFRS1115",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=9862, fileSeq=1) → $S/dl1/k1115.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018 개정·2021 타기준서 제정·수정목록 23-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 20~21쪽 문단 35~37, PDF 23~24쪽 문단 39~45, PDF 38~39쪽 문단 95~98, PDF 58~59쪽 B18~B19, PDF 86쪽 C10",
+            "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+          },
+          {
+            "ref": "R10_FIN1_B03_KIFRS1037",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (POST fileNo=-49993099, fileSeq=1) → $S/dl1/k1037.pdf",
+            "commit_or_version": "시행중_K-IFRS_제1037호_충당부채_우발부채_우발자산(2020 개정·2021 타기준서 제정·수정목록 26-1·2020 구성양식 변경 반영), 이번에 새로 내려받아 카탈로그 SHA와 일치 확인",
+            "what_was_read": "PDF 24~25쪽 문단 63~69(미래 영업손실 비인식, 손실부담계약의 현재의무 충당부채 인식, 회피 불가능 원가 = 이행원가와 위약금 중 적은 금액, 68A 직접 관련 원가, 69 자산손상 선인식)",
+            "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-05-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-07-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-11-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2024-06-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+          },
+          {
+            "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+            "path_or_url": "jaegyeong/sources/2023-09-answers.pdf",
+            "commit_or_version": "저장소 보관 공식 답안 PDF(pdftotext 변환 후 재무회계 정답표 확인)",
+            "what_was_read": "각 PDF 재무회계 정답표에서 해당 번호의 정답을 읽고 questions.json의 지문과 대조",
+            "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-06-026",
+          "reviewer": "independent-reviewer-r16-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "문단 39·44에 대응시키고 '옳은 설명으로 봅니다'로 한정함. 2022-05-025 ①과 문장이 다름."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "제1037호 문단 66~68 확인. 2022-05-025 ③과 다른 서술."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "문단 45·98⑶ 확인. '초기 단계에는'은 문단 45의 예시('예: 계약 초기 단계')를 옮긴 것으로 허용 범위임."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "B19 원문 '수행 정도를 나타내지 못하는 투입물의 영향은 투입법에서 제외한다' 확인. 공식 답 4와 일치. 2023-09-023 ③(옳음)과 2023-11-026 지문('진행단계를 반영하지 못하는 계약원가를 제외')도 같은 취지임."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileNo=9862/fileSeq=1 → rv1/kasb/k1115.pdf, SHA256 b62f86b1…83f 일치. 문단 35, 42, 44, 45, 95~98(97⑸ 하도급자 지급액 포함), B18~B19, C10(제1011호 '건설계약' 대체) 재독",
+            "KASB POST fileNo=-49993099/fileSeq=1 → rv1/kasb/k1037.pdf, SHA256 aef21b07…017d 카탈로그 일치. 문단 63~69(66 손실부담계약 충당부채, 68 회피 불가능 원가, 68A, 69) 재독",
+            "답안 PDF SHA256 8건 일치(2022-05 af953d7b…, 2022-07 ac598b80…, 2022-11 348e2277…, 2022-12 004689e5…, 2023-06 a9677770…, 2023-09 a09f593f…, 2023-11 c00139b6…, 2024-06 da58eebf…). 정답: 2022-05 25번[2], 2022-07 26번[3], 2022-11 25번[3], 2022-12 26번[4], 2023-06 26번 4, 2023-09 23번 3, 2023-11 26번 3, 2024-06 25번 3. questions.json 지문 대조 결과 서로 모순 없음. 다만 2022-11-025에는 '예상손실 즉시 당기비용'(③)만 같은 문장이고 '결과를 신뢰성 있게 추정할 수 있는/없는 경우' 정문 형태는 나오지 않음(④는 반대 취지 오답).",
+            "원문 이미지 2023-06-026.webp(지문·보기가 brief와 일치)"
+          ],
+          "notes": "제1011호 서술은 대체 사실(C10)을 명시하여 오해 소지 없음. 필수 수정 2건. (1) steps[4]의 '1·2·3번과 같은 문장은 2022년 5월·11월 등'은 2022-11-025에 1·3번 형태가 없으므로 과장임. steps[4]를 다음으로 교체: \"시험 주관처는 2023년 9월 시험에서 '수행정도를 나타내지 못하는 투입물의 영향은 제외하고 진행률을 산정한다'를 옳은 진술로 처리했습니다. 1·3번과 같은 문장은 2022년 5월 시험에서 옳은 진술로 다뤘고, 2번과 같은 '예상손실 즉시 비용' 문장은 2022년 5월·7월·11월·12월, 2023년 11월, 2024년 6월 시험에서 일관되게 옳은 진술로 처리했습니다.\" (2) unchecked_points 끝(index 3)에 다음을 추가: \"보기 문장이 구 기업회계기준서 제1011호 '건설계약'의 문장이라는 설명은 제1115호 문단 C10(제1011호 대체)까지만 확인했으며, 제1011호 원문 자체는 직접 대조하지 않았습니다.\" [재확인] out1.before_fix.json과 out1.json을 필드별로 직접 비교함. 바뀐 필드는 steps·unchecked_points뿐임. steps[4]와 unchecked_points[3]이 지정 문구와 글자 단위로 일치하고, 나머지 steps·unchecked_points[0~2]는 변경 없음. 필수 수정이 해소되어 pass로 변경함."
         }
       }
     ]
