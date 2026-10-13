@@ -1,0 +1,110 @@
+{
+  "checked_at_utc": "2026-10-13T06:47:05.764147+00:00",
+  "application_commit": "784d395e22b83e5f1a6ed0f366fed59b5ffd75d4",
+  "pages": {
+    "conclusion": "success",
+    "databaseId": 38358422606,
+    "headSha": "784d395e22b83e5f1a6ed0f366fed59b5ffd75d4",
+    "name": "pages build and deployment",
+    "status": "completed",
+    "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38358422606"
+  },
+  "normal_https": true,
+  "tls_hostname_and_chain_verification": true,
+  "tls_verification_bypassed": false,
+  "files": [
+    {
+      "file": "assets/bank-data.js",
+      "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+      "final_url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+      "http_status": 200,
+      "bytes": 19584997,
+      "local_sha256": "fdca3c6364697d81e9172b7ea01b3c86097a27407e0d2659ee80910a209a9e8e",
+      "public_sha256": "fdca3c6364697d81e9172b7ea01b3c86097a27407e0d2659ee80910a209a9e8e",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-12ad7e5\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    },
+    {
+      "file": "data/explanations.json",
+      "url": "https://jay5315.github.io/jaegyeong/data/explanations.json",
+      "final_url": "https://jay5315.github.io/jaegyeong/data/explanations.json",
+      "http_status": 200,
+      "bytes": 14407190,
+      "local_sha256": "7f9218848dfb47d4e406013f4f77f5b3ef5d9518adbfcf7b3ed422e13a5ba617",
+      "public_sha256": "7f9218848dfb47d4e406013f4f77f5b3ef5d9518adbfcf7b3ed422e13a5ba617",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-dbd616\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    },
+    {
+      "file": "reports/explanation-expansion.json",
+      "url": "https://jay5315.github.io/jaegyeong/reports/explanation-expansion.json",
+      "final_url": "https://jay5315.github.io/jaegyeong/reports/explanation-expansion.json",
+      "http_status": 200,
+      "bytes": 30900314,
+      "local_sha256": "b7cc64dde2937d0eba95c62a89eff100dc67e0a3e8f29444c437beb929510c4f",
+      "public_sha256": "b7cc64dde2937d0eba95c62a89eff100dc67e0a3e8f29444c437beb929510c4f",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-1d7805a\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    },
+    {
+      "file": "reports/round10-validation.json",
+      "url": "https://jay5315.github.io/jaegyeong/reports/round10-validation.json",
+      "final_url": "https://jay5315.github.io/jaegyeong/reports/round10-validation.json",
+      "http_status": 200,
+      "bytes": 10241,
+      "local_sha256": "755d00908f46f3927fd7e8606a8437d832b47a5b642fa79881e9ee1e5724000d",
+      "public_sha256": "755d00908f46f3927fd7e8606a8437d832b47a5b642fa79881e9ee1e5724000d",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-2801\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    },
+    {
+      "file": "reports/round10-review.md",
+      "url": "https://jay5315.github.io/jaegyeong/reports/round10-review.md",
+      "final_url": "https://jay5315.github.io/jaegyeong/reports/round10-review.md",
+      "http_status": 200,
+      "bytes": 9200,
+      "local_sha256": "1900939356385846cd093f63ca56e1379a6bcc12f072f5f27c91c3546861683a",
+      "public_sha256": "1900939356385846cd093f63ca56e1379a6bcc12f072f5f27c91c3546861683a",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-23f0\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    },
+    {
+      "file": "HANDOFF.md",
+      "url": "https://jay5315.github.io/jaegyeong/HANDOFF.md",
+      "final_url": "https://jay5315.github.io/jaegyeong/HANDOFF.md",
+      "http_status": 200,
+      "bytes": 33965,
+      "local_sha256": "78da897ed48a199c18d006f6dab498e74a12668e84e51a9bc0b82aa58af93fbb",
+      "public_sha256": "78da897ed48a199c18d006f6dab498e74a12668e84e51a9bc0b82aa58af93fbb",
+      "matched": true,
+      "response_headers": {
+        "ETag": "\"6acdd36e-84ad\"",
+        "Last-Modified": "Tue, 13 Oct 2026 06:45:02 GMT",
+        "Cache-Control": "max-age=600"
+      }
+    }
+  ],
+  "all_hashes_matched": true,
+  "local_browser_scope": "HTTP localhost tests only; this is HTTPS byte verification, not public browser UI testing.",
+  "report_scope": "Actual application commit deployment verification. A subsequent documentation-only commit stores this evidence; application data and tested scripts remain byte-identical."
+}

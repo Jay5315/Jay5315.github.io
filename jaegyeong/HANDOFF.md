@@ -10,6 +10,8 @@
 - [현재 검토 범위·오류·근거·남은 쟁점](reports/round10-review.md), [독립 검수](reports/round10-quality-review.json), [실제 읽은 판본·SHA](reports/round10-source-acquisition.json), [7개 실제 테스트](reports/round10-validation.json), [남은145건 CSV](reports/해설추가검토목록.csv)를 먼저 읽으세요. 과거 스냅샷 숫자를 현재 집계로 쓰지 마세요.
 
 
+배포 확인: 앱 변경 커밋 `784d395e22b83e5f1a6ed0f366fed59b5ffd75d4`의 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38358422606)이 성공했고, 정상 HTTPS 공개 파일 6개의 SHA가 로컬과 일치했습니다. 실제 값은 [배포 확인 기록](reports/round10-deployment.json)에 있습니다. 이 확인 기록 저장을 위한 후속 문서 커밋은 앱 데이터·테스트 코드를 바꾸지 않습니다.
+
 ## 먼저 알아둘 것
 
 - 저장소: `Jay5315/Jay5315.github.io`, 기준 브랜치 `main`
