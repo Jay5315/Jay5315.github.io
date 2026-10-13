@@ -453,8 +453,19 @@ class ExplanationTests(unittest.TestCase):
         # Historical protection checks run against the content before the recorded
         # post-review amendments; test_post_review_amendments verifies each before/after hash.
         cls.data = copy.deepcopy(cls.current_data)
-        cls.current_audit = copy.deepcopy(cls.audit)
+        cls.file_audit = copy.deepcopy(cls.audit)
         cls.stage_after = {}
+        registrations13 = (cls.audit or {}).get('round13_registrations')
+        if registrations13:
+            # Newest stage: remove round-13 registrations and restore their review rows so
+            # every earlier ledger sees exactly the state it recorded.
+            cls.stage_after['round13_registrations'] = copy.deepcopy(cls.data)
+            added = {r['question_id'] for r in registrations13['items']}
+            cls.data['items'] = [n for n in cls.data['items'] if n['question_id'] not in added]
+            for ref in registrations13['new_source_refs']:
+                del cls.data['sources'][ref]
+            cls.audit['review'] = cls.audit['review'] + [r['previous_review'] for r in registrations13['items']]
+        cls.current_audit = copy.deepcopy(cls.audit)
         rewrites = (cls.audit or {}).get('round12_option_rewrites')
         if rewrites:
             cls.stage_after['round12_option_rewrites'] = copy.deepcopy(cls.data)
@@ -1072,7 +1083,7 @@ class ExplanationTests(unittest.TestCase):
         def digest(x):
             return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
                                              separators=(',', ':')).encode()).hexdigest()
-        current = {n['question_id']: n for n in self.current_data['items']}
+        current = {n['question_id']: n for n in self.stage_after['round12_option_rewrites']['items']}
         previous = {n['question_id']: n for n in self.stage_after['round11_corrections']['items']} \
             if 'round11_corrections' in self.stage_after else self.latest_notes
         ids = [r['question_id'] for r in group['notes']]
@@ -1155,6 +1166,52 @@ class ExplanationTests(unittest.TestCase):
                 self.assertEqual(self.qs[read['question_id']]['answers'], [read['official_answer']])
                 path = R / read['answer_pdf']
                 self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), read['answer_pdf_sha256'])
+
+
+    def test_round13_registrations_resolve_blockers_with_independent_review(self):
+        group = (self.file_audit or {}).get('round13_registrations')
+        if not group:
+            self.skipTest('No round-13 registrations')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        current = {n['question_id']: n for n in self.current_data['items']}
+        previous_stage = {n['question_id'] for n in self.stage_after['round12_option_rewrites']['items']} \
+            if 'round12_option_rewrites' in self.stage_after else set(self.latest_notes)
+        pending = {r['question_id'] for r in self.file_audit['review']}
+        ids = [r['question_id'] for r in group['items']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(group['registered_count'], len(ids))
+        self.assertEqual(set(current), previous_stage | set(ids))
+        self.assertFalse(set(ids) & previous_stage)
+        self.assertEqual(len(self.file_audit['review']) + len(ids), len(self.current_audit['review']))
+        for r in group['items']:
+            id, note = r['question_id'], current[r['question_id']]
+            self.assertNotIn(id, pending)
+            self.assertEqual(r['previous_review']['question_id'], id)
+            self.assertEqual(digest(note), r['explanation_sha256'], id)
+            self.assertEqual(r['question_row_sha256'], digest(self.qs[id]), id)
+            self.assertEqual(note['answers'], self.qs[id]['answers'])
+            self.assertEqual(r['official_answers'], self.qs[id]['answers'])
+            self.assertTrue(r['blocker_resolution'], id)
+            review = r['independent_review']
+            self.assertNotEqual(review['reviewer'], r['author'], id)
+            self.assertEqual(review['status'], 'pass', id)
+            self.assertEqual(sorted(x['number'] for x in review['four_option_logic']), [1, 2, 3, 4], id)
+            self.assertTrue(all(x['status'] == 'pass' for x in review['four_option_logic']), id)
+            self.assertTrue(r['source_reads'], id)
+            for read in r['source_reads']:
+                self.assertRegex(read['sha256'], r'^[0-9a-f]{64}$')
+            for check in note['checks']:
+                self.assertAlmostEqual(calc(check['expr']), check['expected'], places=6, msg=id)
+            self.assertEqual(len({o['reason'] for o in note['option_notes']}), 4, id)
+            if note['review_status'] == 'partial':
+                self.assertTrue(note['unchecked_points'], id)
+        for d in group['declined']:
+            self.assertIn(d['question_id'], pending)
+            self.assertTrue(d['reason'])
+        for ref in group['new_source_refs']:
+            self.assertIn(ref, self.current_data['sources'])
 
 
     def test_answer_option_never_shares_reason_with_other_options(self):
