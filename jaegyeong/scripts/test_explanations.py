@@ -455,7 +455,15 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.current_audit = copy.deepcopy(cls.audit)
         cls.stage_after = {}
-        cls.latest_notes = {n['question_id']: n for n in cls.current_data['items']}
+        corrections = (cls.audit or {}).get('round11_corrections')
+        if corrections:
+            # Newest stage first: restore the post-round-10 objects so every earlier
+            # ledger (round 10, round 9, spacing, post-review) is checked unchanged.
+            cls.stage_after['round11_corrections'] = copy.deepcopy(cls.data)
+            indices = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in reversed(corrections['notes']):
+                cls.data['items'][indices[record['question_id']]] = copy.deepcopy(record['before'])
+        cls.latest_notes = {n['question_id']: n for n in cls.data['items']}
         followups = (cls.audit or {}).get('round10_followups')
         if followups:
             # Undo the newest data stage before the unchanged round-9/spacing/
@@ -987,6 +995,66 @@ class ExplanationTests(unittest.TestCase):
         for ref in registrations['new_source_refs']:
             self.assertIn(ref, self.current_data['sources'])
             self.assertNotIn(ref, self.data['sources'])
+
+
+    def test_round11_corrections_change_only_recorded_text(self):
+        group = (self.current_audit or {}).get('round11_corrections')
+        if not group:
+            self.skipTest('No round-11 corrections')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        current = {n['question_id']: n for n in self.current_data['items']}
+        previous = self.latest_notes
+        ids = [r['question_id'] for r in group['notes']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(group['count'], len(ids))
+        self.assertEqual(group['rejected_spacing_keys'], [])
+        protected = ('question_id', 'question_fingerprint', 'answers', 'part_id', 'checks', 'sources',
+                     'tax_law_year', 'authorship')
+        kinds = {'spacing', 'wording', 'content', 'status'}
+        def value(note, field, index):
+            if field == 'option_notes':
+                return next(o for o in note['option_notes'] if o['number'] == index)['reason']
+            if index is None:
+                return note[field]
+            return note[field][index]
+        for r in group['notes']:
+            id, before, after = r['question_id'], r['before'], current[r['question_id']]
+            self.assertEqual(before, previous[id], id)
+            self.assertEqual(digest(before), r['before_hash'], id)
+            self.assertEqual(digest(after), r['after_hash'], id)
+            self.assertEqual(sorted({k for k in before if before[k] != after[k]}), r['changed_fields'], id)
+            for field in protected:
+                self.assertEqual(before[field], after[field], id + ': ' + field)
+            self.assertEqual([(o['number'], o['is_answer']) for o in before['option_notes']],
+                             [(o['number'], o['is_answer']) for o in after['option_notes']], id)
+            self.assertEqual(after['answers'], self.qs[id]['answers'])
+            reasons = [o['reason'] for o in after['option_notes']]
+            self.assertEqual(len(reasons), len(set(reasons)), id)
+            if after['review_status'] == 'partial':
+                self.assertTrue(after['unchecked_points'], id)
+            else:
+                self.assertEqual(after['unchecked_points'], [], id)
+            for change in r['changes']:
+                self.assertIn(change['change'], kinds, id)
+                if change['change'] == 'status':
+                    self.assertEqual(change['before'], before['review_status'])
+                    self.assertEqual(change['after'], after['review_status'])
+                    continue
+                self.assertEqual(value(before, change['field'], change['index']), change['before'], id)
+                if change['change'] == 'spacing':
+                    self.assertEqual(re.sub(r'\s', '', change['before']), re.sub(r'\s', '', change['after']), id)
+                    self.assertNotIn('  ', change['after'], id)
+            final = {}
+            for change in r['changes']:
+                if change['change'] != 'status':
+                    final[(change['field'], change['index'])] = change['after']
+            for (field, index), text in final.items():
+                self.assertEqual(value(after, field, index), text, id)
+        for id in set(current) - set(ids):
+            self.assertEqual(current[id], previous[id], id)
+        self.assertEqual(set(current), set(previous))
 
 
     def test_answer_option_never_shares_reason_with_other_options(self):
