@@ -14120,15 +14120,6 @@
       "extra_batch_id": "r7_cost_06"
     },
     {
-      "question_id": "2023-03-099",
-      "reason": "새 한양9 p6의 직접 공식은 전부−변동=기말고정MO−기초고정MO입니다. 단위 고정MO10원은 동일하게 지키고 기초100개×(변동1+고정10)=1,100원, 당기30개×(변동50+고정10)=1,800원, FIFO100개 판매 후 기말30개=1,800원으로 전체재고액은 증가하지만 고정MO 재고는1,000→300원으로 감소합니다. 따라서 변동이익이700원 더 커①가 가능하여 공식②와 반대입니다. ③항상동일도 아니며④상황차이를 배제할 수 없습니다. 재고액을 수량으로 바꾸거나 명시된 고정단가 동일을 모든 변동단가 동일로 확대하지 않습니다.",
-      "category": "answer_suspected",
-      "batch_id": "cost_b_10",
-      "recheck_batch_id": "recheck_cost_006",
-      "round3_batch_id": "r3_cost_001",
-      "extra_batch_id": "r7_cost_03"
-    },
-    {
       "question_id": "2023-01-114",
       "reason": "새 부산가톨릭10 PDF10쪽과 한양L10 PDF8–10쪽에서 비재무 품질/공급관계 고려, 유휴설비 기회원가 및 회피가능 고정원가를 직접 읽었습니다. 따라서①을 지지하고②③을 반박할 근거는 강화됐습니다. 그러나④ 특수지식·기술을 요구하면 외부품질유지 어려울 가능성이 높다는 독립 가능성 진술은 공급자의 전문성/내부 역량에 따라 달라집니다. 일반 전문가 외주의 장점을 근거로 위험 가능성 자체를 부정하거나 공급자가 반드시 더 우수하다는 조건을 추가하지 않습니다. 공식①을 보존하고 이 한 보기 범위만 남깁니다.",
       "category": "source_unverified",
@@ -14154,15 +14145,6 @@
       "recheck_batch_id": "recheck_finance_022",
       "round3_batch_id": "r3_finance_021",
       "extra_batch_id": "r7_finance_02"
-    },
-    {
-      "question_id": "2022-12-100",
-      "reason": "새 한양9 p6은 이익차이가 수량 자체가 아니라 재고에 포함된 고정제조간접비의 금액 증감임을 직접 명시하고 한양10은 같은 총고정비라도 생산량 변화로 단위배부 고정비가 달라지는 경우를 따로 설명합니다. 원문에는 전기/당기 원가요소 단가 동일 조건이 없습니다. 새 독립 원가흐름은 기초10,000개에 단위DM100/DL10/변동MO10/고정MO10, 당기20,000개에DM100/DL10/변동MO40/고정MO40, FIFO25,000개 판매이며 판매관리비200,000원 중 절반 변동입니다. 제조MO의 변동50%를 양기간 모두 지켜도 초변동500,000<변동550,000<전부650,000원②가 가능합니다. ①의 순서와③④의 동률을 원문수량만으로 확정할 수 없으며 공식①을 보존합니다. 임의의 동일단가 가정으로 이 실제 누락을 덮지 않습니다.",
-      "category": "answer_suspected",
-      "batch_id": "cost_b_11",
-      "recheck_batch_id": "recheck_cost_006",
-      "round3_batch_id": "r3_cost_005",
-      "extra_batch_id": "r7_cost_03"
     },
     {
       "question_id": "2026-05-081",
@@ -14397,35 +14379,8 @@
       "extra_batch_id": "r7_finance_01"
     },
     {
-      "question_id": "2026-06-018",
-      "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 기확보 공식한국어1109호3.3.1–3.3.4/5.1.1을 이번에 재독했습니다. 최초FV·FVTPL거래원가와 자기사채제거는 확인되지만③상환손익 원인 전체를 시장금리차이로 단정하는 설명은 실제상환대가−장부금액 원리보다 좁습니다. 계약상환/시장재매입 가격조건이 없는 원문에서③의 범위가 미확인입니다. 공식④ 및나머지원문은 유지합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_015",
-      "recheck_batch_id": "recheck_finance_018",
-      "round3_batch_id": "r3_finance_018",
-      "extra_batch_id": "r7_finance_02"
-    },
-    {
-      "question_id": "2026-01-018",
-      "reason": "공식 KASB1109호3.3.1–3.3.3은 실제 지급대가와 제거되는 부채 장부금액의 차액으로 손익을 계산하도록 합니다. 새로 확보했다고 하지않는 실제공식PDF재독에서도 시장금리상승이 계약상콜상환대가를 자동결정한다는 규정은 없습니다. ②는 시장재매입의잔여현금PV모형이라면성립하지만 원문은조기상환방식을특정하지않습니다. 공식④자기사채차감표시가 틀린 점과별개로②의시장가격조건은남습니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_015",
-      "recheck_batch_id": "recheck_finance_018",
-      "round3_batch_id": "r3_finance_018",
-      "extra_batch_id": "r7_finance_01"
-    },
-    {
       "question_id": "2025-11-017",
       "reason": "공식1109 3.3.3/3.3.4를 대조해 상환손익은 실제지급대가와 제거장부금액의 차이라는 직접정의를 확인했습니다. 사채발행비가 없다는 조건만으로 상환대가가 시장가격이라고 규정되지 않습니다. 원문③의 이자율만으로 설명하는 범위에는 시장재매입조건이 필요하며 KASB는 다른계약상 대가를 배제하지 않습니다.①/②의 최초공정가치/거래원가와④미래현금현가는5.1.1로 지지되지만③의 미제시상환모형은 보류, 공식②불변입니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_finance_015",
-      "recheck_batch_id": "recheck_finance_018",
-      "round3_batch_id": "r3_finance_018",
-      "extra_batch_id": "r7_finance_01"
-    },
-    {
-      "question_id": "2025-09-017",
-      "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 1109호5.1.1/3.3.3의 한국어공식본문은 거래원가 가감과 실제상환대가−장부금액 차이를 요구합니다. 시장금리상승이 남은 현금흐름PV를 줄이는 계산은 시장가격상환 모형이며,③조기상환이라는 말만으로 그 방식이 강제되지 않습니다.①높은시장률일 때 할인발행·②원가차감·④유효이자 원리와 별개로③의 미제시상환가격조건을 추가할 수 없어 공식①을 보존한 보류입니다.",
       "category": "source_unverified",
       "batch_id": "remaining_finance_015",
       "recheck_batch_id": "recheck_finance_018",
@@ -14520,15 +14475,6 @@
       "batch_id": "remaining_cost_015",
       "recheck_batch_id": "recheck_cost_009",
       "round3_batch_id": "r3_cost_008",
-      "extra_batch_id": "r7_cost_06"
-    },
-    {
-      "question_id": "2023-03-102",
-      "reason": "새 부산가톨릭7 PDF5–10쪽 및 ICMAI P8 PDF41쪽에서 계정분석 과거자료·주관분류, 공학적 과거자료 어려울때 사용, 산포도주관, 고저점두점, 최소자승전자료를 직접 확인했습니다. ①②③의 핵심은 실제본문에 지지됩니다. 그러나④의 회귀도 상대적으로 쉽고 시간비용 적다는 결합평가를 반박할 비교대상과 측정범위는 이본문에 없습니다. 자료점 수가 많다는 사실을 회귀전체비용이 항상높다는 정의로 바꾸지 않고 공식④를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_016",
-      "recheck_batch_id": "recheck_cost_008",
-      "round3_batch_id": "r3_cost_007",
       "extra_batch_id": "r7_cost_06"
     },
     {
@@ -14659,15 +14605,6 @@
       "extra_batch_id": "r7_finance_02"
     },
     {
-      "question_id": "2026-09-035",
-      "category": "source_unverified",
-      "reason": "이번에다른작업자가정상TLS확보한공식1105호PDF11–12의7–11을본인이실제읽었습니다. 신규취득은1년조건외나머지요건을빠른기간통상3개월내충족할가능성도필요합니다.1028호20과33–36은매각예정분류성립시지분법제외,동일보고일작성의실무불가/3개월조정예외와정책통일을각각규정합니다. 원문②12개월매각의도/탐색을모든분류요건으로바꾸거나③의예외를삭제하여공식②만을강제하지않습니다.",
-      "batch_id": "remaining_finance_029",
-      "recheck_batch_id": "recheck_finance_034",
-      "round3_batch_id": "r3_finance_032",
-      "extra_batch_id": "r7_finance_03"
-    },
-    {
       "question_id": "2024-12-036",
       "reason": "공식1109 6.5.4는 외화확정계약에 공정가치/현금흐름회피 양쪽을 직접허용합니다.6.5.8은 수단자체PL와 확정계약대상PL를 별도로 인식하고6.5.11은 효과OCI/비효과PL입니다. 전체선도이익1,000,000원과CF비효과PL200,000원①는 확인했으나80%효과라는 수치만으로 CF지정이 정해지지는 않습니다. FV대상과 상쇄후순손익을 수단평가손익이라고 바꾸지 않고 보류합니다.",
       "category": "source_unverified",
@@ -14740,15 +14677,6 @@
       "extra_batch_id": "r7_cost_06"
     },
     {
-      "question_id": "2026-07-120",
-      "reason": "새 ICMAI P16 PDF212–214쪽은 전수명 단계별 원가/수익을 추적하고 생산전R&D·설계에서 많은원가가 발생/확정되어 설계단계절감이 중요함을 직접 명시합니다. 따라서②단계관계·③장기원가관리·④제조이후대부분원가결정의 반박은 강화됩니다. 다만① 수명단축·제조기술급변이 LCC대두의 특정배경이라는 역사명제는 새본문에 직접 없습니다. 기술변화로제품쇠퇴한다는 설명을 해당역사명제로 바꾸지 않고 공식④를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_cost_028",
-      "recheck_batch_id": "recheck_cost_012",
-      "round3_batch_id": "r3_cost_010",
-      "extra_batch_id": "r7_cost_06"
-    },
-    {
       "question_id": "2023-07-025",
       "reason": "공식 KASB1115호46–56을계약수익측정의기준으로재독했습니다.③청구액전면수익은틀리지만②수령대가공정가치일반표현과④변경/보상/장려금전액구성은거래가격의변동대가추정/제약·유의적금융요소등을따로평가해야합니다. 구1011호전체문장을현행1115승인으로바꾸지않고공식③외보기의정확조건범위를보류합니다.",
       "category": "source_unverified",
@@ -14785,35 +14713,12 @@
       "extra_batch_id": "r7_finance_02"
     },
     {
-      "question_id": "2024-05-038",
-      "reason": "7차에는1007¶18–20의방법정의와¶31–35의개별공시요구를직접연계해읽었습니다.②순손익/영업현금차이조정은간접법이고①개별거래파악은직접법,④투자/재무방법차이는잘못입니다.하지만③은직접법이어도이자·배당수취/이자지급/세금납부별도표시가필요하다는문장이라31/35가방법과무관하게그내용을요구합니다.별도표시를직접법의영업하위분류명으로만바꾸어②만참이라고할정의는없습니다.공식②유지,②와③동시참해석을해소할보기③의범위정정이남습니다.",
-      "category": "answer_suspected",
-      "batch_id": "remaining_finance_037",
-      "recheck_batch_id": "recheck_finance_038",
-      "round3_batch_id": "r3_finance_035",
-      "question_fingerprint": "7f15af8198a5965b78e799071fa036faf34f29d2f9cdefe782fcb20da19200e1",
-      "preserved_answers": [
-        2
-      ],
-      "checks": [],
-      "extra_batch_id": "r7_finance_03"
-    },
-    {
       "question_id": "2022-05-058",
       "category": "parse_problem",
       "reason": "원본은 채권미회수에 따른 감소액9,000,000원이지 세무상 적격대손금이라고 하지 않습니다. 세무상 설정대상채권과 전기부인없음은 그대로 있지만 당기감소의 적격대손 여부는 미제시입니다. 표의38,000,000원도 원본과 일치합니다.",
       "batch_id": "remaining_tax_014",
       "recheck_batch_id": "recheck_tax_002",
       "round3_batch_id": "r3_tax_001",
-      "extra_batch_id": "r7_tax_02"
-    },
-    {
-      "question_id": "2024-03-057",
-      "reason": "새2024집행기준29-56및실제법29/32를읽어고유목적기본규정과보험회사해약환급금준비금을구분했습니다. 조특법상고유목적준비금특례가있는이상원문②근거라는표현을조특법만이라는배타문장으로바꾸지않습니다. 공식③유지합니다.",
-      "category": "source_unverified",
-      "batch_id": "remaining_tax_014",
-      "recheck_batch_id": "recheck_tax_002",
-      "round3_batch_id": "r3_tax_004",
       "extra_batch_id": "r7_tax_02"
     },
     {
@@ -14952,15 +14857,6 @@
       "extra_batch_id": "r7_tax_04"
     },
     {
-      "question_id": "2024-11-080",
-      "reason": "NTS2024PDF18의폐업다음달25일일반설명을실제읽고원본공통지시의휴일배제유무와기본법5①을별도로대조했습니다.2024-05-25는토요일로실제기한2024-05-27이며원문④는휴일특례전날짜를최종기한으로쓰고있습니다. 일반환급30/조기15에비추어공식2의기한오류는유지되나④도맞지않습니다. NTS일반예시의202＊를특정2024/25달력의휴일무시명령으로바꾸지않습니다.",
-      "category": "answer_suspected",
-      "batch_id": "remaining_tax_042",
-      "recheck_batch_id": "recheck_tax_007",
-      "round3_batch_id": "r3_tax_002",
-      "extra_batch_id": "r7_tax_04"
-    },
-    {
       "question_id": "2023-09-080",
       "reason": "새KOCW8PDF3은경정조사거래확인에따라매입합계표미제출분을공제하는경우불성실가산세가적용됨을직접교육합니다. 해당2023법60⑦2도.5%를직접명시합니다. 공식③전자발급의무자종이발급은60②2가1%로오류이나②매입합계표에는가산세전혀없음도다른오류입니다.2015강좌10의구세율을2023으로소급하지않고역사법정율을사용했습니다.",
       "category": "answer_suspected",
@@ -14968,15 +14864,6 @@
       "recheck_batch_id": "recheck_tax_007",
       "round3_batch_id": "r3_tax_002",
       "extra_batch_id": "r7_tax_04"
-    },
-    {
-      "question_id": "2024-06-057",
-      "reason": "원본①/③은 보험사업을 하는 내국법인이라 하고 영리/비영리 요건은 적지 않습니다. 원문에 보험사업이라는 업종명이 있는 것이 고유목적준비금의 법인요건을 특정한 것과 같지 않습니다.",
-      "category": "parse_problem",
-      "batch_id": "remaining_tax_013",
-      "recheck_batch_id": "recheck_tax_003",
-      "round3_batch_id": "r3_tax_004",
-      "extra_batch_id": "r7_tax_02"
     },
     {
       "question_id": "2022-09-064",
@@ -15060,15 +14947,6 @@
       "extra_batch_id": "r7_tax_04"
     },
     {
-      "question_id": "2023-06-057",
-      "reason": "원본①은 지배주주등 직원을 명시적으로 제외하지만④0.9% 출자임원은 지배주주의 특수관계인 여부를 적지 않습니다.0.9%라는 수치만 완성된 소액주주법률요건으로 바꾸지 않습니다.",
-      "category": "parse_problem",
-      "batch_id": "remaining_tax_015",
-      "recheck_batch_id": "recheck_tax_003",
-      "round3_batch_id": "r3_tax_004",
-      "extra_batch_id": "r7_tax_02"
-    },
-    {
       "question_id": "2023-01-068",
       "category": "parse_problem",
       "reason": "원본①은 임원전환/퇴직급여미수령이면 퇴직으로보지않는다고 단정하며④는 근속공제만 차감합니다. 선택규정과 환산공제 구조라는 법적 쟁점이며 누락된 문구가 PDF에 존재하지 않습니다.",
@@ -15084,15 +14962,6 @@
       "batch_id": "remaining_tax_021",
       "recheck_batch_id": "recheck_tax_003",
       "round3_batch_id": "r3_tax_004",
-      "extra_batch_id": "r7_tax_03"
-    },
-    {
-      "question_id": "2025-09-069",
-      "category": "parse_problem",
-      "reason": "원본③ 법원확정판결/신탁해지원인의 소유권이전에는 원소유자에게의 명의환원·실질귀속관계가 적혀있지 않습니다. 모든 신탁해지로 일반화하거나 원문의 신탁을 명의신탁으로 바꾸지 않습니다.",
-      "batch_id": "remaining_tax_025",
-      "recheck_batch_id": "recheck_tax_004",
-      "round3_batch_id": "r3_tax_005",
       "extra_batch_id": "r7_tax_03"
     },
     {
@@ -15130,15 +14999,6 @@
       "recheck_batch_id": "recheck_tax_003",
       "round3_batch_id": "r3_tax_004",
       "extra_batch_id": "r7_tax_03"
-    },
-    {
-      "question_id": "2024-05-071",
-      "reason": "원본③은 중소기업은 조기환급신청이 가능하다는 가능명제이며 규모만으로 무조건 가능하다고 쓰지 않습니다. 가능을 항상가능으로 바꾸어 공식③을 반박하지 않습니다.",
-      "category": "parse_problem",
-      "batch_id": "remaining_tax_035",
-      "recheck_batch_id": "recheck_tax_006",
-      "round3_batch_id": "r3_tax_002",
-      "extra_batch_id": "r7_tax_04"
     },
     {
       "question_id": "2023-05-061",
@@ -500612,6 +500472,1067 @@
             }
           ],
           "notes": ""
+        }
+      }
+    ]
+  },
+  "round13_registrations": {
+    "checked_on": "2026-10-13",
+    "registered_count": 15,
+    "declined": [
+      {
+        "question_id": "2026-09-049",
+        "author": "author-r13-b0",
+        "reason": "원본 이미지에서 본사와 건설본부 모두 '임원 갑'으로 표기되어 있어 같은 임원으로 읽힙니다. 법인세법 시행령 제43조제2항의 급여지급기준 초과액을 같은 임원에게 합산 적용하면 급여 250,000,000원 × 40% = 100,000,000원 대비 상여 120,000,000원으로 초과액이 20,000,000원이 되어 공식 정답 ③(30,000,000원)을 포함한 어떤 보기와도 맞지 않습니다. 부서별로 따로 한도를 적용해야 한다는 근거를 문제와 읽은 법령에서 찾지 못했으므로, 공식 정답을 정당화하려면 문제에 없는 조건(서로 다른 임원 또는 부서별 지급규정)을 덧붙여야 합니다. 형제 문항(2022-03-049, 2026-01-049)은 원본 표가 '임원'으로만 표기되어 있어 이 문항에 그대로 옮길 수 없습니다."
+      },
+      {
+        "question_id": "2022-01-052",
+        "author": "author-r13-b1",
+        "reason": "2022년 1월 시행 법인세법(법률 제18590호) 제24조제2항제1호바목과 시행령(대통령령 제32274호) 제38조제4항·제6항·제7항을 실제로 읽은 결과, 사회복지공동모금회 기부금이 법정기부금이 되려면 기획재정부장관의 지정·고시와 그 지정기간(고시 연도 1월 1일부터 6년)이 필요합니다. 2022년을 포함하는 사회복지공동모금회 지정 고시나 2011~2017년 시행규칙 별표 6의6(법정기부금단체 중 전문모금기관)의 본문을 확보하려 했으나 국가법령정보센터 첨부파일과 관보 원문 다운로드가 연결 재설정으로 실패했습니다. 2018년 시행령·시행규칙 부칙에서도 종전 지정을 고시로 간주하는 경과규정을 찾지 못했습니다. 2023~2028년 고시를 2022년에 소급할 수 없으므로 보기 ①의 당시 성격을 직접 확인하지 못해 등록하지 않습니다."
+      }
+    ],
+    "skipped_ids": [],
+    "new_source_refs": [
+      "EFAJ_2014_KUBANKOVA_LCC"
+    ],
+    "policy": "다른 회차의 같은 진술에 대한 출제기관 판단과 검증된 해설을 출발점으로 삼되, 각 문항의 보류 사유를 실제로 읽은 원문으로 해소하고 작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.",
+    "items": [
+      {
+        "question_id": "2024-11-080",
+        "previous_review": {
+          "question_id": "2024-11-080",
+          "reason": "NTS2024PDF18의폐업다음달25일일반설명을실제읽고원본공통지시의휴일배제유무와기본법5①을별도로대조했습니다.2024-05-25는토요일로실제기한2024-05-27이며원문④는휴일특례전날짜를최종기한으로쓰고있습니다. 일반환급30/조기15에비추어공식2의기한오류는유지되나④도맞지않습니다. NTS일반예시의202＊를특정2024/25달력의휴일무시명령으로바꾸지않습니다.",
+          "category": "answer_suspected",
+          "batch_id": "remaining_tax_042",
+          "recheck_batch_id": "recheck_tax_007",
+          "round3_batch_id": "r3_tax_002",
+          "extra_batch_id": "r7_tax_04"
+        },
+        "explanation_sha256": "52bbf6054b6d3a21af5c1d3e3102b2b2a3d38d83904115d8e1a8b15baed995dc",
+        "question_row_sha256": "b0b8b2c9839ccb51aae99b726bd104f1b73e5b61c965a0349517ccba62186519",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r13-b0",
+        "blocker_resolution": "④의 2024-05-25는 부가가치세법 제49조제1항이 정한 명목상 확정신고기한과 정확히 일치하며, 토요일이라는 사정은 국세기본법 제5조의 기한 특례로 실제 만료일만 5월 27일로 늦춥니다. 반면 ②는 조기환급 기간(15일)을 10일로 잘못 적어 법령 자체와 어긋나므로 공식 정답 ②의 판단에는 영향이 없습니다. ④의 문언상 엄밀성 문제는 숨기지 않고 partial 상태와 미확인 사항으로 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "VAT_LAW_2024",
+            "path_or_url": "D/law kr/부가가치세법/법률.md",
+            "commit_or_version": "2c23d7c33d892e6abc9437a230b5c3b6713a4cdd (제19931호, 시행 2024-01-01)",
+            "what_was_read": "메타데이터 시행일, 제49조, 제59조 전문",
+            "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7"
+          },
+          {
+            "ref": "VAT_DECREE_2024",
+            "path_or_url": "D/law kr/부가가치세법/시행령.md",
+            "commit_or_version": "2007eae272ede3997b5871a8b2274549960f86ed (시행 2024-05-17); 9d3f0fa18a(시행 2024-11-12)와 제106·107조 차이 없음 확인",
+            "what_was_read": "제106조, 제107조 전문",
+            "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5"
+          },
+          {
+            "ref": "NTB_LAW_2024",
+            "path_or_url": "D/law kr/국세기본법/법률.md",
+            "commit_or_version": "c76556ac7f0bde0c531a83032ba13ead32d5127a (제19926호, 시행 2024-01-01)",
+            "what_was_read": "제5조제1항",
+            "sha256": "989ae2df79f20861ae6b2e63f451353515ef471f51c4646f18e116266aebb14e"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-11-080",
+          "reviewer": "independent-reviewer-r13-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "부가가치세법(제19931호, 시행 2024-01-01) 제59조제1항 '확정신고기한이 지난 후 30일 이내'와 일치."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "제59조제1항 괄호(15일)와 시행령(제34488호, 시행 2024-05-17) 제107조제1항·제4항의 15일 확인. 10일은 틀림, 공식 정답 ②와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제59조제2항제2호와 시행령 제107조제2항(소득세법 시행령 제62조·법인세법 시행령 제24조 감가상각자산) 확인."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "제49조제1항 '폐업일이 속한 달의 다음 달 25일' 확인. 2024-05-25는 토요일, 국세기본법(제19926호) 제5조제1항 제1호 적용 시 실제 기한은 2024-05-27(월). 명목 기한으로서 출제 취지상 옳다고 하면서 실제 기한 연장을 숨기지 않고 unchecked_points에 남긴 처리가 적절함."
+            }
+          ],
+          "sources_checked": [
+            "law git 2c23d7c33d892e6abc9437a230b5c3b6713a4cdd kr/부가가치세법/법률.md (공포 19931, 시행 2024-01-01, sha256 274e9383…일치) 제49조·제59조",
+            "law git 2007eae272ede3997b5871a8b2274549960f86ed kr/부가가치세법/시행령.md (공포 34488, 시행 2024-05-17, sha256 245ce108…일치) 제107조; 9d3f0fa18a(시행 2024-11-12)와 제106~107조 동일함을 diff로 재확인",
+            "law git c76556ac7f0bde0c531a83032ba13ead32d5127a kr/국세기본법/법률.md (공포 19926, 시행 2024-01-01, sha256 989ae2df…일치) 제5조제1항",
+            "달력 계산: 2024-05-25 토요일, 2024-05-27 월요일",
+            "원본 이미지 jaegyeong/images/2024-11-080.webp 보기 문구 일치"
+          ],
+          "notes": "필수 수정 없음. 시험 시점(2024년 11월)에 시행 중인 판본이 맞고, 인용 조문이 모두 존재하며 주장과 일치합니다."
+        }
+      },
+      {
+        "question_id": "2025-09-069",
+        "previous_review": {
+          "question_id": "2025-09-069",
+          "category": "parse_problem",
+          "reason": "원본③ 법원확정판결/신탁해지원인의 소유권이전에는 원소유자에게의 명의환원·실질귀속관계가 적혀있지 않습니다. 모든 신탁해지로 일반화하거나 원문의 신탁을 명의신탁으로 바꾸지 않습니다.",
+          "batch_id": "remaining_tax_025",
+          "recheck_batch_id": "recheck_tax_004",
+          "round3_batch_id": "r3_tax_005",
+          "extra_batch_id": "r7_tax_03"
+        },
+        "explanation_sha256": "84ac2317901774889a9509fa8daf7fa17215fbeed78199a562f030df74f86306",
+        "question_row_sha256": "99f6ebf68f77df7724b7be0fe4b2ceced8fb3a72e42f265aa03102fd54497f46",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r13-b0",
+        "blocker_resolution": "보기 ③을 명의신탁이나 원소유자 명의환원으로 바꾸어 읽지 않았습니다. 제88조제1호가 양도를 '유상으로 사실상 이전'으로 한정하므로, 신탁해지를 원인으로 하는 소유권이전등기는 명의가 누구에게 돌아가든 대가가 없는 한 양도가 아닙니다. 따라서 ③의 '과세한다'는 일반 서술이 틀렸다는 판단은 명의환원 여부와 무관하게 성립합니다. 기본통칙 원문을 읽지 못한 점은 partial로 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "PIT_LAW_2025",
+            "path_or_url": "D/law kr/소득세법/법률.md",
+            "commit_or_version": "b002e16d9f3146e3c9d9173c4af8da78447c219e (제20615호, 시행 2025-01-01)",
+            "what_was_read": "메타데이터 시행일, 제88조 전문, 제94조제1항",
+            "sha256": "3db5b201e3df6e2132d56147e6bf2e468f2ed52dee1efc880d2c311c26e409d1"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2025-09-069",
+          "reviewer": "independent-reviewer-r13-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "재검토: 제94조제1항제3호나목 문언(대주주가 아닌 자, 한국금융투자협회 장외매매거래, 중소·중견기업 주식등)과 일치."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "제94조제1항제3호가목1) 확인."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제88조제1호의 '유상으로 사실상 이전' 정의에 근거하며, 보기를 명의신탁·원소유자 환원으로 바꾸어 읽지 않음. 대가가 따로 있는 특수한 경우와 기본통칙 미열람을 unchecked_points에 정직하게 남김. 제88조제1호다목 요약도 원문과 일치."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "재검토: 제88조제1호 유상 이전 요건과 같은 호 후단의 부담부증여 채무액 부분 양도 간주를 정확히 반영."
+            }
+          ],
+          "sources_checked": [
+            "law git b002e16d9f3146e3c9d9173c4af8da78447c219e kr/소득세법/법률.md (공포 20615, 시행 2025-01-01, sha256 3db5b201…일치) 제88조제1호 가~다목, 제94조제1항제3호; 다음 커밋 b7b30fb는 2025-10-01로 2025년 9월 시험 이후",
+            "원본 이미지 jaegyeong/images/2025-09-069.webp 보기 문구 일치"
+          ],
+          "notes": "선택 개선 사항이 반영되었고 필수 수정 없음."
+        }
+      },
+      {
+        "question_id": "2022-12-100",
+        "previous_review": {
+          "question_id": "2022-12-100",
+          "reason": "새 한양9 p6은 이익차이가 수량 자체가 아니라 재고에 포함된 고정제조간접비의 금액 증감임을 직접 명시하고 한양10은 같은 총고정비라도 생산량 변화로 단위배부 고정비가 달라지는 경우를 따로 설명합니다. 원문에는 전기/당기 원가요소 단가 동일 조건이 없습니다. 새 독립 원가흐름은 기초10,000개에 단위DM100/DL10/변동MO10/고정MO10, 당기20,000개에DM100/DL10/변동MO40/고정MO40, FIFO25,000개 판매이며 판매관리비200,000원 중 절반 변동입니다. 제조MO의 변동50%를 양기간 모두 지켜도 초변동500,000<변동550,000<전부650,000원②가 가능합니다. ①의 순서와③④의 동률을 원문수량만으로 확정할 수 없으며 공식①을 보존합니다. 임의의 동일단가 가정으로 이 실제 누락을 덮지 않습니다.",
+          "category": "answer_suspected",
+          "batch_id": "cost_b_11",
+          "recheck_batch_id": "recheck_cost_006",
+          "round3_batch_id": "r3_cost_005",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "ccb7d598ffdbad3c327c985b7f4bcb1ed8c8238bb1a7a2a7eba96621a243776a",
+        "question_row_sha256": "a96a117c9522d45832cfc3bb9868d383151397a34f905987e0917708ed36f567",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r13-b0",
+        "blocker_resolution": "검토자가 지적한 반례는 기초재고와 당기 생산분의 단위당 가공원가가 크게 다를 때만 성립하며, 문제는 단가를 제시하지 않고 '가장 옳은 것'을 묻습니다. 재고 감소 시 재고에 담는 원가가 적은 방법일수록 이익이 크다는 원리(OpenStax의 Sales greater than Production 문단, ACCA의 throughput 정의)를 직접 확인했고, 이 원리에 따른 순서가 ①입니다. 단가 변동 가능성은 숨기지 않고 partial과 미확인 사항으로 밝혔습니다.",
+        "source_reads": [
+          {
+            "ref": "m68139",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68139/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Production greater than Sales / Sales greater than Production 문단 및 제품원가 구성 설명",
+            "sha256": "ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f"
+          },
+          {
+            "ref": "ACCA_COST_A_CROSS_2",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html",
+            "commit_or_version": "2026-10-13 열람 HTML",
+            "what_was_read": "throughput 정의(판매가격 - 직접재료원가)와 나머지 원가가 대체로 고정이라는 문단, total factory cost = operational expense",
+            "sha256": "c0efd9a93254d9080f1ba4262921a87ce604160e13387a8146735db2ddcaa82e"
+          },
+          {
+            "ref": "ACCA_COST_A_CROSS_1",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints1.html",
+            "commit_or_version": "2026-10-13 열람 HTML",
+            "what_was_read": "throughput, inventory, operational expense 정의 문단",
+            "sha256": "8e3a0a259a4282c3b733c86600baf15f4b7c1d4588c9229207a10c7db6f0adff"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-12-100",
+          "reviewer": "independent-reviewer-r13-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "재고 5,000개 감소(10,000+20,000−25,000=5,000) 시 재고에 담는 원가가 적을수록 이익이 큼. 단위원가 불변 전제를 unchecked_points에 명시해 검토 반례를 숨기지 않음."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "재고 증가 시의 순서라는 설명이 정확."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "변동원가계산 재고에는 직접노무원가·변동제조간접원가가 포함되므로 초변동과 동률이 될 수 없음."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "제조간접비 50% 고정분이 전부원가계산 재고에 이연되므로 변동과 동률이 될 수 없음."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68139 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (sha256 ce41f603…일치) 'Sales greater than Production' 문단(141행)",
+            "ACCA throughput-constraints1/2 HTML 2026-10-13 재열람: 'Throughput is calculated as selling price less direct material cost', 'all costs except direct materials costs are largely fixed', 'total factory cost is simply the operational expense' 확인. 동적 HTML이라 이번 sha256(9f9c181a…, 8417da91…)은 초안 기록과 다르나 인용 문구는 동일",
+            "원본 이미지 jaegyeong/images/2022-12-100.webp 수량표·보기 일치"
+          ],
+          "notes": "필수 수정 없음. ACCA 페이지의 sha256은 열람 시점마다 바뀌는 동적 HTML이라 재현되지 않는다는 점만 참고하세요."
+        }
+      },
+      {
+        "question_id": "2026-06-018",
+        "previous_review": {
+          "question_id": "2026-06-018",
+          "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 기확보 공식한국어1109호3.3.1–3.3.4/5.1.1을 이번에 재독했습니다. 최초FV·FVTPL거래원가와 자기사채제거는 확인되지만③상환손익 원인 전체를 시장금리차이로 단정하는 설명은 실제상환대가−장부금액 원리보다 좁습니다. 계약상환/시장재매입 가격조건이 없는 원문에서③의 범위가 미확인입니다. 공식④ 및나머지원문은 유지합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_015",
+          "recheck_batch_id": "recheck_finance_018",
+          "round3_batch_id": "r3_finance_018",
+          "extra_batch_id": "r7_finance_02"
+        },
+        "explanation_sha256": "4c8df185de12b535687a16e0bb3273da2543b5e1b6da308cb860c91fa647b5e3",
+        "question_row_sha256": "7f599659b9a8ef000748c22bb1154f916ba77cfdac280c825c951d2ebbe3db6d",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r13-b0",
+        "blocker_resolution": "③의 범위 문제는 기준서 문단 3.3.3(지급대가와 장부금액의 차이)과 유효이자율 정의(장부금액 = 최초 유효이자율로 할인한 현재가치)를 직접 읽어, 시장가격 재매입이라는 일반적인 상황에서는 두 이자율의 차이가 상환손익의 원인이 된다는 출제 취지로 정리했습니다. 계약상 가격 상환 등 예외적 상황에서 ③이 좁다는 점은 partial과 미확인 사항으로 남겼고, ④는 문단 B3.3.2와 명백히 어긋나 공식 정답 판단에는 영향이 없습니다.",
+        "source_reads": [
+          {
+            "ref": "R3_CA_EU_IFRS9_2023",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/62b803dc39205a079fb51483029c6a6ddb0fec36/eu/1c/32023R1803.md",
+            "commit_or_version": "62b803dc39205a079fb51483029c6a6ddb0fec36",
+            "what_was_read": "IFRS 9 문단 3.3.1, 3.3.3, 5.1.1, B3.3.2, 부록 A 유효이자율 정의",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2026-06-018",
+          "reviewer": "independent-reviewer-r13-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "IFRS 9 5.1.1 확인."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "5.1.1이 FVTPL 항목에는 거래원가를 가감하지 않도록 하므로 당기비용 처리는 타당한 추론."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "재검토: 수정된 이유가 문단 3.3.3과 유효이자율 정의에 근거하고, 시장가격 재매입 전제에서 출제 취지상 옳은 설명(정답 아님)임을 분명히 함."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "B3.3.2 '재매입하면 시장조성자이거나 곧 재매각할 의도가 있더라도 부채는 소멸' 및 3.3.1 확인. 공식 정답 ④와 일치."
+            }
+          ],
+          "sources_checked": [
+            "/tmp/claude-0/dl/eu.md = legalize-eu 62b803dc39205a079fb51483029c6a6ddb0fec36 eu/1c/32023R1803.md (sha256 229f3371…일치): IFRS 9 3.3.1(15170행), 3.3.3(15178행), 5.1.1(15284행), B3.3.2(16389행)",
+            "원본 이미지 jaegyeong/images/2026-06-018.webp 보기 문구 일치"
+          ],
+          "notes": "재검토 결과 필수 수정이 반영되어 필수 수정 없음."
+        }
+      },
+      {
+        "question_id": "2026-09-035",
+        "previous_review": {
+          "question_id": "2026-09-035",
+          "category": "source_unverified",
+          "reason": "이번에다른작업자가정상TLS확보한공식1105호PDF11–12의7–11을본인이실제읽었습니다. 신규취득은1년조건외나머지요건을빠른기간통상3개월내충족할가능성도필요합니다.1028호20과33–36은매각예정분류성립시지분법제외,동일보고일작성의실무불가/3개월조정예외와정책통일을각각규정합니다. 원문②12개월매각의도/탐색을모든분류요건으로바꾸거나③의예외를삭제하여공식②만을강제하지않습니다.",
+          "batch_id": "remaining_finance_029",
+          "recheck_batch_id": "recheck_finance_034",
+          "round3_batch_id": "r3_finance_032",
+          "extra_batch_id": "r7_finance_03"
+        },
+        "explanation_sha256": "647eaf2265840c043b988b3a64408044f16bf4ba6f0908531c83ee874e29aa57",
+        "question_row_sha256": "10118071b8b00ff97296e8bd35a955e9fb3dd3ee7ba89139a0a29fbc0724e7af",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r13-b0",
+        "blocker_resolution": "제1028호 한국어 원문 문단 20·33·34와 IFRS 5 문단 6~8·11을 직접 읽었습니다. ②를 모든 분류 요건이 충족된 것으로 바꾸어 읽거나 ③의 예외를 지우지 않고, ②는 매각예정 분류의 전형적 사실관계에서 지분법을 계속 적용한다는 일반 서술이라 틀렸고 ③은 단서를 생략한 원칙 서술이라는 점을 구분해 밝혔습니다. 남는 해석 여지는 partial과 미확인 사항으로 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "R6_F04_K1028",
+            "path_or_url": "https://www.kasb.or.kr/commonFile/fileDownload.do (fileNo=-49990968, fileSeq=2)",
+            "commit_or_version": "시행중 제1028호(2018 개정·2021 타기준서 제정·수정목록 24-1 반영), 2026-10-13 내려받음",
+            "what_was_read": "문단 7·8, 15, 20, 33·34, 35·36",
+            "sha256": "171b8f0d9993b9f842b513489a599c5bf7b071af232a32ba2717dc1b5e8c6631"
+          },
+          {
+            "ref": "R3_CA_EU_IFRS5_2023",
+            "path_or_url": "https://raw.githubusercontent.com/legalize-dev/legalize-eu/62b803dc39205a079fb51483029c6a6ddb0fec36/eu/1c/32023R1803.md",
+            "commit_or_version": "62b803dc39205a079fb51483029c6a6ddb0fec36",
+            "what_was_read": "IFRS 5 문단 6, 7, 8, 11",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2026-09-035",
+          "reviewer": "independent-reviewer-r13-b0",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "제1028호 문단 7 '다른 기업이 보유한 잠재적 의결권을 포함하여 현재 행사할 수 있거나 전환할 수 있는 잠재적 의결권의 존재와 영향을 고려한다'와 일치."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "재검토: '기준을 충족하면 제1105호 적용(문단 20)'으로 조건부 서술하고 보기 사실을 '전형적인 상황'으로만 표현해, 모든 분류 요건 충족으로 단정하지 않음. 공식 정답 ②와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "재검토: 예외 단서를 문단 33, 유의적 거래 반영·3개월 이내 차이를 문단 34로 바르게 인용함(KASB 제1028호 원문과 일치)."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "제1028호 문단 36과 일치(36A 투자기업 예외는 보기와 무관)."
+            }
+          ],
+          "sources_checked": [
+            "KASB 제1028호 PDF POST fileNo=-49990968&fileSeq=2 (81쪽, sha256 171b8f0d…일치): 문단 7·8, 15, 20, 33·34, 35·36·36A",
+            "/tmp/claude-0/dl/eu.md (legalize-eu 62b803dc, sha256 229f3371…일치) IFRS 5 문단 6·7·8·11",
+            "원본 이미지 jaegyeong/images/2026-09-035.webp 보기 문구 일치"
+          ],
+          "notes": "재검토 결과 필수 수정 2건이 정확히 반영되어 필수 수정 없음."
+        }
+      },
+      {
+        "question_id": "2024-06-057",
+        "previous_review": {
+          "question_id": "2024-06-057",
+          "reason": "원본①/③은 보험사업을 하는 내국법인이라 하고 영리/비영리 요건은 적지 않습니다. 원문에 보험사업이라는 업종명이 있는 것이 고유목적준비금의 법인요건을 특정한 것과 같지 않습니다.",
+          "category": "parse_problem",
+          "batch_id": "remaining_tax_013",
+          "recheck_batch_id": "recheck_tax_003",
+          "round3_batch_id": "r3_tax_004",
+          "extra_batch_id": "r7_tax_02"
+        },
+        "explanation_sha256": "a852f0362c126b3a8be7963c51bc667a7227b9011297e9b9454caf6f0e445f91",
+        "question_row_sha256": "3dab2a447f74b4e389dd6e7b47ade2029fe7ece0d60f07ed990ff878dc5de7af",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r13-b1",
+        "blocker_resolution": "원본 이미지에서 보기 ①·③이 모두 '보험사업을 하는 내국법인'이라고만 적고 영리·비영리 요건을 적지 않았음을 확인했습니다. 보기 ①에 비영리라는 사실을 추가하지 않고, 법인세법 제29조제1항이 고유목적사업준비금의 주체를 업종이 아닌 비영리내국법인 지위로 정한다는 점을 근거로 판단했습니다. ②·③·④는 2024년 시행 법인세법·조세특례제한법 본문으로 옳음을 직접 확인했으므로 옳지 않은 보기는 ①뿐입니다. 비영리 보험사업 법인이라는 예외적 해석의 여지는 unchecked_points에 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "CIT_LAW_2024",
+            "path_or_url": "https://github.com/legalize-kr/legalize-kr/blob/269562cff8dc4f38d97ce777aa5145c4f4c75211/kr/법인세법/법률.md",
+            "commit_or_version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 (법률 제19930호, 시행 2024-01-01)",
+            "what_was_read": "메타데이터 시행일자, 제29조제1항~제10항, 제30조제1항~제4항, 제31조제1항~제4항, 제32조제1항",
+            "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71"
+          },
+          {
+            "ref": "STT_LAW_2024",
+            "path_or_url": "https://github.com/legalize-kr/legalize-kr/blob/898f1e2f18f0350d8e45fbce1896b255942dc2c3/kr/조세특례제한법/법률.md",
+            "commit_or_version": "898f1e2f18f0350d8e45fbce1896b255942dc2c3 (시행 2024-01-01)",
+            "what_was_read": "메타데이터 시행일자, 제74조 표제, 제104조의12제1항~제5항(2026년 12월 31일 이전 종료 사업연도 손실보전준비금)",
+            "sha256": "28cc403725637250d50233e2713983482a01b82ff0205f33d64442b86dbee5ec"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-06-057",
+          "reviewer": "independent-reviewer-r13-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "법인세법(법률 제19930호, 시행 2024-01-01) 제29조제1항의 주체는 '비영리내국법인'이며 업종 요건이 없습니다. 보험사업을 근거로 인정되는 준비금이 아니라는 해설은 정확하고, 영리·비영리 미기재에 따른 해석 여지를 unchecked_points에 정직하게 남겼습니다. 원문 이미지 문구 일치 확인."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "법인세법 제29조~제32조, 조세특례제한법(제19936호, 시행 2024-01-01) 제74조(고유목적사업준비금의 손금산입특례)·제104조의12(손실보전준비금, 2026.12.31 이전 종료 사업연도) 실재 확인. 2024-02-27 타법개정 판본(시행 2025-08-28)은 시험 후 시행이며 두 조문 동일."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제31조제1항: '보험사업을 하는 내국법인이 … 비상위험준비금을 손비로 계상한 경우 … 범위에서 … 손금에 산입한다' 그대로 지지됩니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "제30조제2항: 다음 사업연도 또는 손금산입 사업연도 종료일 이후 3년이 되는 날이 속하는 사업연도에 익금산입. 해설과 일치합니다."
+            }
+          ],
+          "sources_checked": [
+            "legalize-kr mirror 269562cff8dc4f38d97ce777aa5145c4f4c75211 kr/법인세법/법률.md (공포번호 19930, 시행 2024-01-01, sha256 fb99f639… 일치) 제29조①·제30조①②·제31조①·제32조①",
+            "legalize-kr mirror 898f1e2f18f0350d8e45fbce1896b255942dc2c3 kr/조세특례제한법/법률.md (공포번호 19936, 시행 2024-01-01, sha256 28cc4037… 일치) 제74조·제104조의12; 59f2e463f4(시행 2025-08-28)와 해당 조문 비교",
+            "원문 이미지 jaegyeong/images/2024-06-057.webp"
+          ],
+          "notes": "필수 수정 없음. 선택 사항: steps 2에서 제30조제1항이 '「보험업법」에 따른 보험회사는 제외한다'고 정한 점을 덧붙이면 더 정확합니다(예: '보험사업과 직접 연결된 준비금은 제30조의 책임준비금(보험업법상 보험회사는 제외)과 제31조의 비상위험준비금이며, …'). 블로커(영리·비영리 미기재)는 비영리라는 사실을 덧붙이지 않고 제29조제1항의 주체 요건으로 판단하여 해소되었고, 남는 해석 여지는 partial로 공개되었습니다."
+        }
+      },
+      {
+        "question_id": "2024-05-071",
+        "previous_review": {
+          "question_id": "2024-05-071",
+          "reason": "원본③은 중소기업은 조기환급신청이 가능하다는 가능명제이며 규모만으로 무조건 가능하다고 쓰지 않습니다. 가능을 항상가능으로 바꾸어 공식③을 반박하지 않습니다.",
+          "category": "parse_problem",
+          "batch_id": "remaining_tax_035",
+          "recheck_batch_id": "recheck_tax_006",
+          "round3_batch_id": "r3_tax_002",
+          "extra_batch_id": "r7_tax_04"
+        },
+        "explanation_sha256": "d0fd48b73da4d3c05f0728210814cdf44ea5458c47b4394b5a1ce1e9aaf2f262",
+        "question_row_sha256": "bee99a43f8feb6ed1e32f3fffea9af17ebb2739ad0cc174cdbe2b14214f63818",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r13-b1",
+        "blocker_resolution": "원본 이미지에서 보기 ③이 '중소기업은 부가가치세 조기환급 신청이 가능합니다'라는 문장 그대로임을 확인했습니다. '가능'을 '항상 가능'으로 바꾸지 않고, 2024년 시행 부가가치세법 제59조제2항이 조기환급 사유를 세 가지로 한정하고 기업 규모를 사유로 두지 않는다는 점을 근거로 삼았습니다. ①·②·④는 같은 판본 본문으로 옳음을 직접 확인했으므로 옳지 않은 주장은 ③뿐입니다. 사유를 갖춘 중소기업까지 포함하는 해석의 여지는 unchecked_points에 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "VAT_LAW_2024",
+            "path_or_url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+            "commit_or_version": "2c23d7c33d892e6abc9437a230b5c3b6713a4cdd (법률 제19931호, 시행 2024-01-01)",
+            "what_was_read": "메타데이터 시행일자, 제2조제3호, 제3조제1항, 제31조, 제32조제1항, 제39조제1항제2호, 제59조제1항·제2항, 제60조제2항제5호",
+            "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7"
+          },
+          {
+            "ref": "RT007_VAT_DECREE_2024",
+            "path_or_url": "https://github.com/legalize-kr/legalize-kr/blob/47c89e5a66f754bca5bd86ed59a92d0252641e65/kr/부가가치세법/시행령.md",
+            "commit_or_version": "47c89e5a66f754bca5bd86ed59a92d0252641e65 (대통령령 제34270호, 시행 2024-02-29); 2007eae2(시행 2024-05-17)와 제107조 동일 확인",
+            "what_was_read": "제107조제1항~제4항 조기환급 절차와 사업 설비 범위",
+            "sha256": "13840e35eea28aeac7279c2f44f8c9e7aa2932ce3b0afaa1fe4f313010c9018a"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-05-071",
+          "reviewer": "independent-reviewer-r13-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "부가가치세법(법률 제19931호, 시행 2024-01-01) 제2조제3호 문언과 동일합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "제31조 거래징수(공급받는 자로부터 징수) 구조로 납세의무자와 담세자 분리를 설명합니다. 정확합니다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제59조제2항 각 호(영세율, 사업 설비 신설·취득·확장·증축, 재무구조개선계획 이행)만 조기환급 사유이며 중소기업 요건은 없습니다. 시행령(제34270호, 시행 2024-02-29) 제107조도 사유를 추가하지 않고, 2024-05-07 개정본(2007eae2)과 제107조 동일 확인. '가능'을 '항상 가능'으로 바꾸지 않고 '중소기업이라는 이유만으로'로 판단했으며 해석 여지를 unchecked_points에 남겼습니다. 블로커는 정직하게 처리되었습니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "제39조제1항제2호(필요적 기재사항 누락·불일치 매입세액 불공제, 단서 있음)와 제60조제2항제5호(1% 가산세, 거래사실 확인 시 제외 단서) 실재. '원칙적으로' 표현과 단서 언급이 적절합니다."
+            }
+          ],
+          "sources_checked": [
+            "legalize-kr mirror 2c23d7c33d892e6abc9437a230b5c3b6713a4cdd kr/부가가치세법/법률.md (공포번호 19931, 시행 2024-01-01, sha256 274e9383… 일치; 다음 개정은 2024-12-31) 제2조제3호·제31조·제39조①2·제59조②·제60조②5",
+            "legalize-kr mirror 47c89e5a66f754bca5bd86ed59a92d0252641e65 kr/부가가치세법/시행령.md (제34270호, 시행 2024-02-29, sha256 13840e35… 일치) 제107조; 2007eae272와 제107조 diff 없음",
+            "원문 이미지 jaegyeong/images/2024-05-071.webp"
+          ],
+          "notes": "필수 수정 없음."
+        }
+      },
+      {
+        "question_id": "2023-03-102",
+        "previous_review": {
+          "question_id": "2023-03-102",
+          "reason": "새 부산가톨릭7 PDF5–10쪽 및 ICMAI P8 PDF41쪽에서 계정분석 과거자료·주관분류, 공학적 과거자료 어려울때 사용, 산포도주관, 고저점두점, 최소자승전자료를 직접 확인했습니다. ①②③의 핵심은 실제본문에 지지됩니다. 그러나④의 회귀도 상대적으로 쉽고 시간비용 적다는 결합평가를 반박할 비교대상과 측정범위는 이본문에 없습니다. 자료점 수가 많다는 사실을 회귀전체비용이 항상높다는 정의로 바꾸지 않고 공식④를 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_016",
+          "recheck_batch_id": "recheck_cost_008",
+          "round3_batch_id": "r3_cost_007",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "0e31c9f412b8487c996f1ffc319b8b6eea4dba2426d0ff6cc11cff80978e4bbd",
+        "question_row_sha256": "c09524b55ac3d76c4f4d1a68b3392076cb8b1490fa31e38758a3007df524f000",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r13-b1",
+        "blocker_resolution": "보기 ④의 회귀분석 부분을 반박할 비교 근거로 Saylor 5.2절(고저점법은 quick and easy, 회귀분석은 일련의 수학 방정식을 쓰며 손계산 대신 소프트웨어 사용)과 OpenStax 원가함수 단원(고저점법은 가장 간단한 방법 중 하나, 회귀분석은 통계적 기법으로 고급 과정에서 학습)을 실제로 읽었습니다. 두 자료가 고저점법과 회귀분석법을 적용 난이도에서 서로 대비하므로 두 방법을 함께 쉽다고 묶은 ④가 틀린 것으로 판단했습니다. ①·②·③은 같은 자료 본문으로 직접 지지됩니다. 시간·비용의 직접 비교 문장이 없다는 한계는 unchecked_points에 남겼습니다.",
+        "source_reads": [
+          {
+            "ref": "R6_COST07_SAYLOR_EST",
+            "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-02-cost-estimation-methods.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "Account Analysis 정의, High-Low Method의 quick and easy·more sophisticated methods 문장, Scattergraph의 best judgment and a bit of guesswork 문장, Regression Analysis의 mathematical equations·computer software·이상치 검토 문장, Key Takeaways",
+            "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285"
+          },
+          {
+            "ref": "R6_COST07_SAYLOR_ENG",
+            "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-02-standard-costs.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "표준수량의 제품 엔지니어 규격, 공급계약 단가, 엔지니어 시간동작연구와 노무계약 문단",
+            "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+          },
+          {
+            "ref": "m68111",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68111/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "세 가지 추정기법 소개와 회귀분석은 고급 과정에서 학습한다는 문장, high-low method가 가장 간단한 방법 중 하나라는 문장, least-squares regression이 통계적 기법이라는 문단",
+            "sha256": "87525f8205f0fdec23e0591138de24866eb9ab00f0342ea0a391f45d308c81ef"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-03-102",
+          "reviewer": "independent-reviewer-r13-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "Saylor 10.2(s14-02)는 표준원가 설정 맥락에서 '제품 엔지니어 규격', '엔지니어 시간동작연구', 공급·노무 계약을 과거자료의 대안으로 제시합니다. '공학적 방법'이라는 명칭을 직접 쓰지는 않으나 과거원가 없이 추정 가능하다는 결론은 타당합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "Saylor 5.2: 계정분석은 'experienced employee … determine whether the costs … are fixed or variable', 산포도는 'best judgment and a bit of guesswork'. 지지됩니다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "Saylor 5.2 'uses the high and low activity data points'; OpenStax m68111 'Using the highest and lowest levels of activity and their associated costs'. 지지됩니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "결론(회귀분석을 고저점법과 함께 '쉽고 저렴'으로 묶은 것이 틀림)은 Saylor 'quick and easy … other more sophisticated methods'와 OpenStax 'advanced managerial accounting courses'·'statistical technique'로 지지됩니다. 다만 Saylor는 'Rather than running these computations by hand, most companies use computer software'라고 하여 소프트웨어를 계산 부담을 덜어 주는 수단으로 제시합니다. 해설이 소프트웨어를 '필요한' 부담 요인처럼 근거로 든 것은 원문 취지와 어긋나고 '필요'는 과장입니다(원문: 'typically done using computer software'). [재확인] 수정된 option_notes 4와 steps 4가 요구 문안과 글자 그대로 일치하며, Saylor 원문('typically done using computer software', 'quick and easy … more sophisticated')과 맞습니다."
+            }
+          ],
+          "sources_checked": [
+            "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-02-cost-estimation-methods.html (독립 재다운로드 sha256 0367bb28… 일치)",
+            "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-02-standard-costs.html (sha256 aa641c15… 일치)",
+            "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68111/index.cnxml (sha256 87525f82… 일치)",
+            "원문 이미지 jaegyeong/images/2023-03-102.webp"
+          ],
+          "notes": "[재확인] 필수 수정(option_notes 4, steps 4)이 out1.json에 요구 문안 그대로 반영된 것을 확인했고, 남은 필수 수정은 없습니다. 선택: unchecked_points의 '소프트웨어가 필요한'은 '보통 소프트웨어로 계산하는'으로 맞추면 본문과 일관됩니다. 이전 지적 내용: 필수 수정(보기 4 및 steps 4): option_notes 4를 다음으로 교체하십시오. '쉽고 빠른 것은 고저점법의 장점입니다. 회귀분석법은 여러 수학 방정식으로 모든 자료점에 가장 잘 맞는 선을 구하는 통계 기법이어서 보통 소프트웨어로 계산하고 이상치도 먼저 검토해야 하는 정교한 방법입니다. 고저점법과 함께 적용이 쉬운 방법으로 묶은 설명은 옳지 않습니다.' steps 4는 다음으로 교체하십시오. '회귀분석법은 모든 자료점에 수학적으로 가장 잘 맞는 선을 구하는 통계적 기법으로, 손으로 계산하기보다 보통 컴퓨터 소프트웨어를 쓰며 먼저 이상치를 검토해야 합니다. 교재는 고저점법을 빠르고 쉬운 방법으로, 회귀분석법을 더 정교한 방법으로 대비하므로 두 방법을 함께 적용이 쉬운 방법으로 묶을 수 없습니다.' summary의 '수학적·통계적 계산이 필요한 정교한 방법'은 그대로 두어도 됩니다. unchecked_points의 시간·비용 직접 비교 부재 고지는 유지하십시오(정확함). 선택: Saylor 10.2는 표준원가 설정 절의 내용이므로 sources locator에 '표준원가 설정 근거(공학적 추정의 예)'라고 밝히면 더 정확합니다."
+        }
+      },
+      {
+        "question_id": "2026-01-018",
+        "previous_review": {
+          "question_id": "2026-01-018",
+          "reason": "공식 KASB1109호3.3.1–3.3.3은 실제 지급대가와 제거되는 부채 장부금액의 차액으로 손익을 계산하도록 합니다. 새로 확보했다고 하지않는 실제공식PDF재독에서도 시장금리상승이 계약상콜상환대가를 자동결정한다는 규정은 없습니다. ②는 시장재매입의잔여현금PV모형이라면성립하지만 원문은조기상환방식을특정하지않습니다. 공식④자기사채차감표시가 틀린 점과별개로②의시장가격조건은남습니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_015",
+          "recheck_batch_id": "recheck_finance_018",
+          "round3_batch_id": "r3_finance_018",
+          "extra_batch_id": "r7_finance_01"
+        },
+        "explanation_sha256": "45a1df60d3770b6c1a0968bcb4ac960287c6563101bb6199581ae8998545c988",
+        "question_row_sha256": "ba012c96421cb650f591a2a6be34cf6c225d67497dca2188f5fa27ab6a0524ae",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r13-b1",
+        "blocker_resolution": "IFRS 9 3.3.1·3.3.3을 다시 읽어 상환손익이 지급대가와 제거되는 부채 장부금액의 차이로 정해진다는 점을 확인했습니다. 보기 ②는 대가가 시장가격이라는 통상의 교재 전제에서만 성립한다고 해설과 unchecked_points에 명시했습니다. 반면 보기 ④는 B3.3.2(발행자가 재매입하면 재매도 의도가 있어도 부채 소멸)와 정면으로 어긋나 조건과 관계없이 틀리므로, ②의 전제 문제가 공식 정답 ④의 판단에 영향을 주지 않습니다.",
+        "source_reads": [
+          {
+            "ref": "R6_FIN02_IFRS9_2023",
+            "path_or_url": "/tmp/claude-0/dl/eu.md (legalize-eu 62b803dc 보존본, eu/1c/32023R1803.md)",
+            "commit_or_version": "62b803dc39205a079fb51483029c6a6ddb0fec36 · 2023-09-26 original",
+            "what_was_read": "IFRS 9 3.3.1(소멸 시 제거), 3.3.3(장부금액과 지급대가 차이 손익), 5.1.1(거래원가 가감), B3.3.2(발행자 재매입 시 소멸), B5.1.1(시장이자율로 할인한 현재가치), Appendix A effective interest rate 정의",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          },
+          {
+            "ref": "R3_FA_SFA14_5",
+            "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_financial-accounting/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s17-05-issuing-and-accounting-for-ser.html",
+            "commit_or_version": "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3",
+            "what_was_read": "연속상환사채의 계약 현금흐름 목록화, 협상된 유효이자율로 현재가치 계산, 할인·할증 발행 설명",
+            "sha256": "694958ea5e3b495e005bb7be428a13f9ebbfa3084e6e0156ae5d904367c876f9"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2026-01-018",
+          "reviewer": "independent-reviewer-r13-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "IFRS 9 5.1.1(FVTPL 아닌 금융부채는 공정가치에서 직접 거래원가 가감) 지지. '상각후원가로 측정하는 사채'로 한정한 것도 적절합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "3.3.3(장부금액과 지급대가 차액을 손익)과 B5.1.1(시장이자율 할인 현재가치)로 시장가격 상환 전제의 방향을 설명하고, 수의상환가격 상환 시 성립하지 않을 수 있음을 unchecked_points에 정직하게 밝혔습니다. 공식 정답(④)과 모순 없음."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "Saylor 14.5: 'cash flows required by the bond contract are listed … total present value … computed using the effective rate of interest negotiated' — 연속상환사채 각 회차 현금흐름 할인 합계로 지지됩니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "B3.3.2 'If an issuer of a debt instrument repurchases that instrument, the debt is extinguished even if … intends to resell it' 직접 지지. 한국어 K-IFRS 제1109호 B3.3.2('채무상품의 발행자가 해당 금융상품을 재매입한다면 … 해당 금융부채는 소멸한다')도 KASB 공개 PDF(sha256 6f215212…)에서 독립 확인했습니다. ②의 전제 문제와 무관하게 ④가 틀린다는 blocker_resolution은 타당합니다."
+            }
+          ],
+          "sources_checked": [
+            "/tmp/claude-0/dl/eu.md (sha256 229f3371… 일치) IFRS 9 3.3.1·3.3.3·5.1.1·B3.3.2·B5.1.1",
+            "https://raw.githubusercontent.com/saylordotorg/text_financial-accounting/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s17-05-issuing-and-accounting-for-ser.html (독립 재다운로드 sha256 694958ea… 일치)",
+            "KASB POST fileDownload.do fileNo=-49993105 fileSeq=1 K-IFRS 제1109호 PDF (sha256 6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444) B3.3.2",
+            "원문 이미지 jaegyeong/images/2026-01-018.webp"
+          ],
+          "notes": "필수 수정 없음. 선택: unchecked_points 두 번째 항목(한국어 K-IFRS 제1109호 미대조)은 KASB 공개 PDF(fileNo=-49993105, sha256 6f215212…)의 B3.3.2 한국어 문단으로 해소할 수 있습니다. 반영한다면 source_reads에 그 PDF를 추가하고 해당 항목을 삭제하십시오. steps 3의 '시장이자율이 오를수록'은 '상환일 시장이자율이 발행일 시장이자율보다 높으면'으로 바꾸면 보기 문언과 더 정확히 맞습니다(선택)."
+        }
+      },
+      {
+        "question_id": "2024-05-038",
+        "previous_review": {
+          "question_id": "2024-05-038",
+          "reason": "7차에는1007¶18–20의방법정의와¶31–35의개별공시요구를직접연계해읽었습니다.②순손익/영업현금차이조정은간접법이고①개별거래파악은직접법,④투자/재무방법차이는잘못입니다.하지만③은직접법이어도이자·배당수취/이자지급/세금납부별도표시가필요하다는문장이라31/35가방법과무관하게그내용을요구합니다.별도표시를직접법의영업하위분류명으로만바꾸어②만참이라고할정의는없습니다.공식②유지,②와③동시참해석을해소할보기③의범위정정이남습니다.",
+          "category": "answer_suspected",
+          "batch_id": "remaining_finance_037",
+          "recheck_batch_id": "recheck_finance_038",
+          "round3_batch_id": "r3_finance_035",
+          "question_fingerprint": "7f15af8198a5965b78e799071fa036faf34f29d2f9cdefe782fcb20da19200e1",
+          "preserved_answers": [
+            2
+          ],
+          "checks": [],
+          "extra_batch_id": "r7_finance_03"
+        },
+        "explanation_sha256": "f1c9e72c614ece3cb0e3df80df9ba1b7911dc7dd67ece230c880ac0b39696164",
+        "question_row_sha256": "8ccdd73338c1c3230d1164385421369939b5601a3cf1aaa314f384f82047c630",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r13-b1",
+        "blocker_resolution": "K-IFRS 제1007호 문단 18~21·31~35와 적용사례 A를 실제 PDF에서 다시 읽었습니다. ①·④는 틀리고 ②는 문단 20으로 참임을 확인했습니다. ③의 별도 표시 요구는 방법과 무관하게 참이라는 지적은 해소되지 않으므로, 보기 문장의 '간접법을 적용한 것처럼'이 방법을 뒤바꾼 서술이라는 해석의 근거(항목별 표시는 직접법의 정의, 예시의 간접법 표에서 이자지급·법인세 납부를 별도 행으로 표시)를 제시하고 복수 정답 가능성을 review_status partial과 unchecked_points에 그대로 밝혔습니다. 공식 정답은 바꾸지 않았습니다.",
+        "source_reads": [
+          {
+            "ref": "CROSS_FINANCE01_KASB_1007",
+            "path_or_url": "POST https://www.kasb.or.kr/commonFile/fileDownload.do (fileNo=-49992451, fileSeq=1)",
+            "commit_or_version": "시행중_K-IFRS_제1007호_현금흐름표 PDF(74쪽)",
+            "what_was_read": "문단 18~21(직접법·간접법 정의, 직접법 권장, 간접법 조정항목, 투자·재무활동 총액 표시), 문단 31~35(이자·배당금·법인세 별도 공시와 분류), 적용사례 A 간접법 현금흐름표의 이자지급·법인세의 납부 행",
+            "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-05-038",
+          "reviewer": "independent-reviewer-r13-b1",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "문단 18⑴·19: 주요 항목별 총현금유입·유출 표시는 직접법이며 간접법으로는 파악할 수 없는 정보를 제공합니다. 옳지 않다는 판단이 정확합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "문단 18⑵·20: 당기순손익에 비현금항목·운전자본 변동 등을 조정합니다. 공식 정답과 일치합니다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "논리 방향은 타당합니다. 문단 31·35는 방법과 무관하게 별도 공시를 요구하고, 적용사례 A의 '간접법에 의한 현금흐름표(문단 18⑵)'에서 이자지급(270)·법인세의 납부(900)가 별도 행으로 표시되므로, 바른 서술은 '간접법으로 작성하더라도 … 직접법을 적용한 것처럼 별도로 표시'이고 보기 ③은 두 방법을 뒤바꾼 것입니다. 그러나 현재 문장 '항목별 표시는 직접법의 방식이고 간접법에서 이 항목들을 직접법처럼 따로 표시하는 것입니다'는 주어가 빠져 무엇을 말하는지 불분명하고, '정답에서 제외합니다'는 왜 옳지 않은지를 직접 말하지 않습니다. 복수 정답 여지 고지는 정직합니다. [재확인] 수정된 option_notes 3이 요구 문안과 글자 그대로 일치하며, 문단 31·35와 적용사례 A로 지지됩니다. partial, unchecked_points, summary의 다툼 여지 고지가 유지된 것도 확인했습니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "문단 21: 투자·재무활동은 방법 선택과 관계없이 주요 항목별 총액 표시. 정확합니다."
+            }
+          ],
+          "sources_checked": [
+            "KASB POST fileDownload.do fileNo=-49992451 fileSeq=1 K-IFRS 제1007호 PDF (독립 재다운로드 sha256 2dd27f38… 일치) 문단 18~21, 31~35, 적용사례 A 간접법 현금흐름표(이자지급·법인세의 납부 행)",
+            "원문 이미지 jaegyeong/images/2024-05-038.webp"
+          ],
+          "notes": "[재확인] 필수 수정(option_notes 3)이 out1.json에 요구 문안 그대로 반영된 것을 확인했고, 남은 필수 수정은 없습니다. 이전 지적 내용: 필수 수정(보기 3): option_notes 3을 다음으로 교체하십시오. '이자·배당금의 수취와 지급, 법인세 현금흐름을 별도로 표시해야 한다는 점은 문단 31·35에 맞습니다. 그러나 항목별로 따로 보여 주는 것은 직접법의 방식이므로, 기준서 적용사례처럼 간접법으로 작성할 때 이 항목들을 직접법을 적용한 것처럼 따로 표시하는 것입니다. 보기는 직접법과 간접법을 뒤바꾸어 서술했으므로 옳은 설명으로 보지 않습니다.' 블로커(③ 동시 참 가능성)는 기준서만으로 완전히 배제되지 않으므로 review_status partial과 unchecked_points, summary의 '3번은 표현상 다툼의 여지가 있습니다'는 그대로 유지하십시오. 나머지 인용(문단 18~21, 31~35, 적용사례 A의 이자지급·법인세의 납부 행)은 실재하고 주장을 지지합니다."
+        }
+      },
+      {
+        "question_id": "2024-03-057",
+        "previous_review": {
+          "question_id": "2024-03-057",
+          "reason": "새2024집행기준29-56및실제법29/32를읽어고유목적기본규정과보험회사해약환급금준비금을구분했습니다. 조특법상고유목적준비금특례가있는이상원문②근거라는표현을조특법만이라는배타문장으로바꾸지않습니다. 공식③유지합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_tax_014",
+          "recheck_batch_id": "recheck_tax_002",
+          "round3_batch_id": "r3_tax_004",
+          "extra_batch_id": "r7_tax_02"
+        },
+        "explanation_sha256": "683995cee271f19a8ea9585f9c725a21267917283bc31cd803ddea843c5167c1",
+        "question_row_sha256": "a52b590404f461036fef9d204eb183d04e3e8e60a2c03122c235697400e062c5",
+        "official_answers": [
+          3
+        ],
+        "author": "author-r13-b2",
+        "blocker_resolution": "조세특례제한법 제74조 본문을 직접 읽어 이 조문이 '「법인세법」 제29조를 적용하는 경우' 열거 법인의 한도만 확대하는 특례임을 확인했습니다. 따라서 고유목적사업준비금의 근거 규정은 법인세법 제29조이고, 2번을 틀린 진술로 보는 데 '조세특례제한법만'이라는 배타적 해석을 덧붙일 필요가 없습니다. 해약환급금준비금(제32조, 보험회사)과 복구충당금 미열거도 시험 시점 판본에서 확인했습니다.",
+        "source_reads": [
+          {
+            "ref": "CIT_LAW_2024",
+            "path_or_url": "law git kr/법인세법/법률.md",
+            "commit_or_version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 (공포 2023-12-31, 시행 2024-01-01)",
+            "what_was_read": "제4관 목차와 제29조·제30조·제32조 본문, 전체 본문 '복구' 검색(결과 없음)",
+            "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71"
+          },
+          {
+            "ref": "RT001_ST_LAW_2024",
+            "path_or_url": "law git kr/조세특례제한법/법률.md",
+            "commit_or_version": "898f1e2f18f0350d8e45fbce1896b255942dc2c3 (공포 2023-12-31, 시행 2024-01-01)",
+            "what_was_read": "제74조 제1항~제4항 본문",
+            "sha256": "28cc403725637250d50233e2713983482a01b82ff0205f33d64442b86dbee5ec"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-03-057",
+          "reviewer": "independent-reviewer-r13-b2",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "2024-01-01 시행 법인세법(법률 제19930호, commit 269562c) 제32조제1항 설정 주체는 「보험업법」에 따른 보험회사로 확인. 증권회사가 아니므로 틀린 진술."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "조특법(법률 제19936호, commit 898f1e2, 2024-01-01 시행) 제74조제1항이 '「법인세법」 제29조를 적용하는 경우 같은 조 제1항제2호에도 불구하고' 열거 법인의 수익사업 소득을 손금산입하게 하는 특례임을 확인. 기본 근거는 법인세법 제29조라는 설명은 조문과 맞고, '조특법만'이라는 배타 해석을 추가하지 않아 보류 사유가 해소됨. 제74조제4항도 존재."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "제29조제3항(상계)·제5항(익금산입) 확인. 과세이연 설명이 공식 답 3과 일치."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "재검토: 수정된 해설이 제4관의 충당금(제33조~제35조), 준비금(제29조~제32조), 자산가액 손금산입(제36조~제38조)을 빠짐없이 구분하고 복구충당금 미열거를 정확히 서술함. 2024-01-01 시행 판본과 일치."
+            }
+          ],
+          "sources_checked": [
+            "law git 269562cff8dc4f38d97ce777aa5145c4f4c75211 kr/법인세법/법률.md (sha256 fb99f639… 일치, 시행 2024-01-01, 다음 판본 없음 ~2024-12): 제2장 제1절 제4관 제29조~제39조(제39조 삭제)",
+            "law git 898f1e2f18f0350d8e45fbce1896b255942dc2c3 kr/조세특례제한법/법률.md (sha256 28cc4037… 일치, 시행 2024-01-01, 다음 시행 2024-07-10): 제74조제1항·제4항",
+            "원문 이미지 2024-03-057.webp"
+          ],
+          "notes": "재검토 결과 지정 문구가 그대로 반영되어 필수 수정 사항이 해소됨. 추가 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2023-06-057",
+        "previous_review": {
+          "question_id": "2023-06-057",
+          "reason": "원본①은 지배주주등 직원을 명시적으로 제외하지만④0.9% 출자임원은 지배주주의 특수관계인 여부를 적지 않습니다.0.9%라는 수치만 완성된 소액주주법률요건으로 바꾸지 않습니다.",
+          "category": "parse_problem",
+          "batch_id": "remaining_tax_015",
+          "recheck_batch_id": "recheck_tax_003",
+          "round3_batch_id": "r3_tax_004",
+          "extra_batch_id": "r7_tax_02"
+        },
+        "explanation_sha256": "a218180b6de0f9b97586f128ae7ac77f6c9d8306fd5904a7494faf983d222097",
+        "question_row_sha256": "9423fdd14f8fb94f99284cb1739aadb8653bb98bcdfaedb1a9a779b5ad7a787b",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r13-b2",
+        "blocker_resolution": "이미지 대조로 지문 누락이 없음을 확인했습니다. 4번에 지배주주 특수관계 여부가 빠진 점은 소액주주등 정의(시행령 제50조제2항)를 직접 읽어 확인했으며, 0.9%만으로 요건이 완성된다고 단정하지 않고 '특수관계 사실이 없다는 전제'를 보기 해설에 명시한 뒤 partial로 남겼습니다. 정답 2번은 법 제52조제1항의 '조세부담을 부당하게 감소' 요건과 정면으로 어긋나므로 이 전제와 무관하게 성립합니다.",
+        "source_reads": [
+          {
+            "ref": "CIT_LAW_2023",
+            "path_or_url": "law git kr/법인세법/법률.md",
+            "commit_or_version": "1804121f9e1cfc1228914a8582605f5b543a41cc (시행 2023-01-01)",
+            "what_was_read": "제52조 제1항~제4항",
+            "sha256": "03fc88dc3841daca7af84289d0e2724aef06c65d7fcc8e8e88444a9b598316ae"
+          },
+          {
+            "ref": "CIT_DECREE_2023",
+            "path_or_url": "law git kr/법인세법/시행령.md",
+            "commit_or_version": "d8bf1b7da570e8738764ed83b425da02162d352c (시행 2023-02-28)",
+            "what_was_read": "제50조제2항, 제88조제1항제6호 가~다목·제2항, 제89조제5항",
+            "sha256": "dcac87443ee825830aa79c36202ba0a63783368e5ce91b378952da9a6cd5507e"
+          },
+          {
+            "ref": "CIT_RULE_2023",
+            "path_or_url": "law git kr/법인세법/시행규칙.md",
+            "commit_or_version": "78f4ab1d6d0bd8ac294006ad6ab5b8ba977ece5e (시행 2023-03-20)",
+            "what_was_read": "제44조 각 호",
+            "sha256": "f4146858516a23f247d58cda6a7273c6b7e3713501026409fcc8c15a9c53ded7"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-06-057",
+          "reviewer": "independent-reviewer-r13-b2",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "시행규칙(기획재정부령 제965호, 2023-03-20 시행, 다음 판본 2023-07-03) 제44조제7호의2 '중소기업에 근무하는 직원(지배주주등인 직원은 제외한다)에 대한 주택구입 또는 전세자금의 대여액'과 시행령 제89조제5항 단서 연결 확인."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "법 제52조제1항(법률 제19193호, 2023-01-01 시행) '조세의 부담을 부당하게 감소시킨 것으로 인정되는 경우' 요건 확인. 공식 답 2와 일치."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "법 제52조제1항 및 시행령 제88조제2항 '당해 법인과 특수관계인 간의 거래…에 대하여 이를 적용' 확인."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "시행령(대통령령 제33265호, 2023-02-28 시행, 다음 판본 2023-07-10) 제88조제1항제6호 나목 '주주등이나 출연자가 아닌 임원(소액주주등인 임원을 포함한다)', 제50조제2항 소액주주등 정의(1% 미달, 지배주주등의 특수관계인 제외; '이하 소액주주등'으로 후속 조문에 적용) 확인. 지배주주 특수관계 미기재를 전제로 명시하고 partial·unchecked_points로 남겨 보류 사유를 정직하게 처리함."
+            }
+          ],
+          "sources_checked": [
+            "law git 1804121f9e1cfc1228914a8582605f5b543a41cc kr/법인세법/법률.md (sha256 03fc88dc… 일치) 제52조",
+            "law git d8bf1b7da570e8738764ed83b425da02162d352c kr/법인세법/시행령.md (sha256 dcac8744… 일치) 제50조제2항, 제88조제1항제6호·제2항, 제89조제5항",
+            "law git 78f4ab1d6d0bd8ac294006ad6ab5b8ba977ece5e kr/법인세법/시행규칙.md (sha256 f4146858… 일치) 제44조"
+          ],
+          "notes": "수정 불필요. review_status partial 유지가 적절함."
+        }
+      },
+      {
+        "question_id": "2023-03-099",
+        "previous_review": {
+          "question_id": "2023-03-099",
+          "reason": "새 한양9 p6의 직접 공식은 전부−변동=기말고정MO−기초고정MO입니다. 단위 고정MO10원은 동일하게 지키고 기초100개×(변동1+고정10)=1,100원, 당기30개×(변동50+고정10)=1,800원, FIFO100개 판매 후 기말30개=1,800원으로 전체재고액은 증가하지만 고정MO 재고는1,000→300원으로 감소합니다. 따라서 변동이익이700원 더 커①가 가능하여 공식②와 반대입니다. ③항상동일도 아니며④상황차이를 배제할 수 없습니다. 재고액을 수량으로 바꾸거나 명시된 고정단가 동일을 모든 변동단가 동일로 확대하지 않습니다.",
+          "category": "answer_suspected",
+          "batch_id": "cost_b_10",
+          "recheck_batch_id": "recheck_cost_006",
+          "round3_batch_id": "r3_cost_001",
+          "extra_batch_id": "r7_cost_03"
+        },
+        "explanation_sha256": "950ea2bf90b0c0aa4e9d5e09ae7917f63f712a50f5fe14caf6bc8f2bd67a8e62",
+        "question_row_sha256": "41dee019272f5c713c8d188112f33ff830ea62ace0530b70336d7cc6a3c44db9",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r13-b2",
+        "blocker_resolution": "검토자의 반례(단위 고정원가 10원 유지, 변동원가 단가 1원→50원 변경 시 재고액은 늘고 고정원가 재고는 1,000원→300원 감소)는 지문 조건 안에서 성립합니다. 공식 정답을 바꿀 수 없으므로, 재고액 증가를 재고 수량 증가로 읽는 출제 관행과 OpenStax 조정식으로 2번을 설명하고 4번의 방어 여지를 보기 해설·unchecked_points에 명시해 partial로 등록합니다.",
+        "source_reads": [
+          {
+            "ref": "m68139",
+            "path_or_url": "scratchpad/osacc/modules/m68139/index.cnxml",
+            "commit_or_version": "openstax/osbooks-principles-accounting-bundle 2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Sales less than Production·Sales greater than Production 문단, 조정 방법 문단, Outdoor Nation 조정표 도표 alt",
+            "sha256": "ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-03-099",
+          "reviewer": "independent-reviewer-r13-b2",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "'재고 수량이 증가하는 통상적 상황에서는'으로 전제를 밝힘. 재검토: unchecked_points에 1번·3번 결과도 나올 수 있다는 점이 반영됨."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "OpenStax m68139(sha256 ce41f603… 일치) Key Concepts의 조정식(변동원가 이익 + 기말재고 고정원가 − 기초재고 고정원가)과 Sales less than Production 문단으로 확인. 공식 답 2."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "재검토: '재고 수량이 증가한 상황으로 읽으면'이라는 전제가 붙어 조건 없는 단정이 해소됨."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "방어 여지를 명시하고 partial로 등록하여 adjudication(ambiguous_wording)과 보류 사유를 정직하게 반영함."
+            }
+          ],
+          "sources_checked": [
+            "scratchpad/osacc/modules/m68139/index.cnxml (sha256 ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f): Sales less than Production·Key Concepts 조정식",
+            "원문 이미지 2023-03-099.webp",
+            "반례 수치 재계산: 기초재고 1,100원(고정 1,000원), 기말재고 1,800원(고정 300원), 변동원가 이익이 700원 더 큼"
+          ],
+          "notes": "재검토 결과 보기 3 해설과 unchecked_points가 지정 문구대로 반영되고 review_status partial이 유지됨. 추가 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2026-07-120",
+        "previous_review": {
+          "question_id": "2026-07-120",
+          "reason": "새 ICMAI P16 PDF212–214쪽은 전수명 단계별 원가/수익을 추적하고 생산전R&D·설계에서 많은원가가 발생/확정되어 설계단계절감이 중요함을 직접 명시합니다. 따라서②단계관계·③장기원가관리·④제조이후대부분원가결정의 반박은 강화됩니다. 다만① 수명단축·제조기술급변이 LCC대두의 특정배경이라는 역사명제는 새본문에 직접 없습니다. 기술변화로제품쇠퇴한다는 설명을 해당역사명제로 바꾸지 않고 공식④를 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_cost_028",
+          "recheck_batch_id": "recheck_cost_012",
+          "round3_batch_id": "r3_cost_010",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "f80e4960e34006a8b3b1a347df9f075962491a5f1418ce7b3b9ab7394e25112e",
+        "question_row_sha256": "de35b7a31d9e05ea407e3b319e0dbe75d14474417882fd1e36ec03c12fa1f16d",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r13-b2",
+        "blocker_resolution": "1번의 대두 배경 명제를 직접 뒷받침하는 공개 문헌을 찾아 읽었습니다. EFAJ 2014 논문은 'Rapid technological change and a shortened life cycle have made life cycle costing central to competitive advantage'라고 쓰고, 수명주기원가계산 등 제품수명주기 관리체계가 'ever-shorter product life cycles' 환경에서 전통적 원가계산의 한계에 대응해 나왔다고 설명합니다. 2~4번은 ACCA 본문을 다시 읽어 확인했습니다.",
+        "source_reads": [
+          {
+            "ref": "R6_COST07_ACCA_LIFECYCLE",
+            "path_or_url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/target-lifestyle.html",
+            "commit_or_version": "2026-10-13 내려받은 HTML",
+            "what_was_read": "도입부와 Life-cycle costing 절 본문 전체(네 가지 교훈, committed·incurred, 설계 단계 약 80% 확정)",
+            "sha256": "cb934167521506016e0ee7dc0bdbc53e06f534e117148e82bf44a2b2d4c63cae"
+          },
+          {
+            "ref": "EFAJ_2014_KUBANKOVA_LCC",
+            "path_or_url": "https://efaj.vse.cz/pdfs/efa/2014/03/01.pdf",
+            "commit_or_version": "EFAJ 2014 vol.9 no.3 PDF",
+            "what_was_read": "Introduction 첫 문단, 2.1 Key questions for R&D management, 2.2 Product life cycle management systems 첫 문단",
+            "sha256": "b7dd88c58b43aa47d154d73ca17a20140021d8ee2963c476bc15b88049132eb3"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2026-07-120",
+          "reviewer": "independent-reviewer-r13-b2",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "EFAJ PDF(sha256 b7dd88c5… 일치, 2014 vol.9 no.3 pp.4-24) Introduction 'Rapid technological change and a shortened life cycle have made life cycle costing central to competitive advantage (Dunk, 2012)' 및 2.2 'ever-shorter product life cycles' 문장 확인. 보류 사유(대두 배경 명제 미확인)가 해소됨. '기술 변화'가 제조기술에 한정되지 않는 점은 new_sources verification·review_note에 밝힘."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "ACCA 본문(acca.html sha256 cb934167… 일치) 'Many costs will be linked. For example, more attention to design can reduce manufacturing and warranty costs' 확인."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "ACCA 'total revenue ... exceeds total costs, whether these costs are incurred before, during or after' 및 'in the long-term' 서술로 장기 관점 확인."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "ACCA 'by the end of the design phase approximately 80% of costs are committed', 'The design phase locks the company in to most future costs' 확인. 공식 답 4와 일치."
+            }
+          ],
+          "sources_checked": [
+            "r13/web/acca.html·acca.txt (sha256 cb934167521506016e0ee7dc0bdbc53e06f534e117148e82bf44a2b2d4c63cae): Life-cycle costing 절, four principal lessons",
+            "r13/efaj/efaj.pdf·efaj.txt (sha256 b7dd88c58b43aa47d154d73ca17a20140021d8ee2963c476bc15b88049132eb3): Introduction 첫 문단, 2.1, 2.2"
+          ],
+          "notes": "필수 수정 없음. 재검토: 선택 개선 문구(4번째 단계)가 그대로 반영되어 EFAJ 2.2절의 주어(제품수명주기 관리 기법)와 일치함."
+        }
+      },
+      {
+        "question_id": "2025-09-017",
+        "previous_review": {
+          "question_id": "2025-09-017",
+          "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 1109호5.1.1/3.3.3의 한국어공식본문은 거래원가 가감과 실제상환대가−장부금액 차이를 요구합니다. 시장금리상승이 남은 현금흐름PV를 줄이는 계산은 시장가격상환 모형이며,③조기상환이라는 말만으로 그 방식이 강제되지 않습니다.①높은시장률일 때 할인발행·②원가차감·④유효이자 원리와 별개로③의 미제시상환가격조건을 추가할 수 없어 공식①을 보존한 보류입니다.",
+          "category": "source_unverified",
+          "batch_id": "remaining_finance_015",
+          "recheck_batch_id": "recheck_finance_018",
+          "round3_batch_id": "r3_finance_018",
+          "extra_batch_id": "r7_finance_01"
+        },
+        "explanation_sha256": "dd984b9ee399992721c14b6757965d4bce5df63407464392862a3d1fc0c2f845",
+        "question_row_sha256": "2997d3cc0d425fb355e3eb3033ab0858d67802c35bdc7d91637a9ea6250d7653",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r13-b2",
+        "blocker_resolution": "IFRS 9 문단 3.3.3을 다시 읽어 조기상환 손익이 '장부금액과 지급한 대가의 차이'임을 확인했습니다. 3번의 상환이익 방향은 대가가 상환일 시장이자율 기준 시장가격이라는 교과서 전제에서만 정해지므로, 그 전제를 보기 해설과 unchecked_points에 명시하고 partial로 등록합니다. 정답 1번(시장이자율이 높으면 할인발행)은 OpenStax 본문으로 확인되며 3번의 전제와 무관합니다.",
+        "source_reads": [
+          {
+            "ref": "EUIFRS_R3F005_IFRS9_2023",
+            "path_or_url": "/tmp/claude-0/dl/eu.md (raw.githubusercontent.com legalize-dev/legalize-eu 해당 commit 본과 SHA256 일치 확인)",
+            "commit_or_version": "62b803dc39205a079fb51483029c6a6ddb0fec36",
+            "what_was_read": "IFRS 9 문단 3.1.1, 3.3.3, 4.2.1, 5.1.1, 부록 A 정의",
+            "sha256": "229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9"
+          },
+          {
+            "ref": "m67913",
+            "path_or_url": "scratchpad/osacc/modules/m67913/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "할인발행 예시(표시 5%·시장 7%)와 Sale of Bonds before Maturity 문단",
+            "sha256": "6d14147c90d3ebb7ce03111ae113a81729e3d04a13137516880d76720b52709d"
+          },
+          {
+            "ref": "m67914",
+            "path_or_url": "scratchpad/osacc/modules/m67914/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Bonds Payable 문단의 할인·할증 상각과 이자비용 관계",
+            "sha256": "149561c8a24bb2adcda7ce2ecc1eee95efbd337258b0903e7beddc05230bbd4d"
+          },
+          {
+            "ref": "m67915",
+            "path_or_url": "scratchpad/osacc/modules/m67915/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "Issued at a Discount 문단, Interest Payment: Issued at a Discount 문단, Retirement of Bonds 문단",
+            "sha256": "bd8dd4453d607527d1c619cecaf021798103a1bb50bde7a64af2d250d87194ed"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2025-09-017",
+          "reviewer": "independent-reviewer-r13-b2",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "OpenStax m67913·m67915(5% 표시, 7% 시장 → 91.80 할인발행)와 m67914 'Stated Rate < Market Rate, Bond is issued at a discount' 확인. 시장이자율이 높으면 할인발행이므로 틀린 진술, 공식 답 1."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "eu.md(EU 2023/1803, sha256 229f3371… 일치) IFRS 9 문단 5.1.1 'plus or minus ... transaction costs' 확인. 부채는 차감."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "IFRS 9 문단 3.3.3 '장부금액과 지급한 대가의 차이' 확인. 상환대가가 상환일 시장가격이라는 전제를 해설에 명시하고 partial·unchecked_points로 남겨 보류 사유(상환가격 미제시)를 정직하게 처리함. 발행비 없을 때 장부금액=발행일 유효이자율 기준 현재가치라는 계산 논리도 맞음."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "m67914 'Amortization of the discounts increases the amount of interest expense' 및 유효이자율법 서술 확인."
+            }
+          ],
+          "sources_checked": [
+            "/tmp/claude-0/dl/eu.md = r13/eu/62b803dc39205a079fb51483029c6a6ddb0fec36.md (sha256 229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9): IFRS 9 3.1.1, 3.3.3, 4.2.1, 5.1.1",
+            "osacc m67913 (6d14147c…), m67914 (149561c8…), m67915 (bd8dd445…) sha256 일치"
+          ],
+          "notes": "필수 수정 없음. 참고: m67913의 'Sale of Bonds before Maturity' 문단은 발행자의 조기상환이 아니라 투자자의 만기 전 매도 관점이므로 3번 근거로 쓰지 않는 현재 서술을 유지하면 됨. review_status partial 유지."
         }
       }
     ]
