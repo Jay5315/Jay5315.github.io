@@ -20,6 +20,8 @@ def main():
  explanations=validate_explanations(read('explanations'),qs,{e['id'] for e in entries},part_ids)
  adjudication_log=json.loads((R/'reports/explanation-expansion.json').read_text()).get('answer_adjudication',{})
  adjudication=adjudication_log.get('records',[])+adjudication_log.get('explained_item_records',[])
+ resolved={r['question_id']:r for r in adjudication_log.get('resolutions',[])}
+ adjudication=[dict(a,verdict=resolved[a['question_id']]['verdict'],evidence=resolved[a['question_id']]['evidence']) if a['question_id'] in resolved else a for a in adjudication]
  labels={'official_conflict':'공식 정답 이의 가능','multiple_candidates':'정답 후보가 둘 이상','ambiguous_wording':'문항 표현이 모호','deferred':'근거 보완 필요'}
  answer_notes={}
  for a in adjudication:

@@ -147,13 +147,15 @@ with sync_playwright() as pw:
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
     adjudication_log = json.loads((R / 'reports/explanation-expansion.json').read_text())['answer_adjudication']
     adjudications = adjudication_log['records'] + adjudication_log.get('explained_item_records', [])
-    expected_notes = {r['question_id'] for r in adjudications if r['verdict'] in
+    resolved = {r['question_id']: r['verdict'] for r in adjudication_log.get('resolutions', [])}
+    expected_notes = {r['question_id'] for r in adjudications if resolved.get(r['question_id'], r['verdict']) in
                       {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
     assert set(page.evaluate("Object.keys(BANK_DATA.answerNotes)")) == expected_notes
     # Round 10 resolves the targeted interest ruling; the outsourcing question
     # still shows its explicit deferral. Official answers remain unchanged.
     if any(r['question_id'] == '2025-01-055' and r['verdict'] == 'official_supported' for r in adjudications):
-        assert '2025-01-055' not in expected_notes and '2023-06-112' in expected_notes
+        assert '2025-01-055' not in expected_notes
+        assert ('2023-06-112' in expected_notes) == ('2023-06-112' not in resolved)
         assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-01-055').answers.join()") == '2'
     # Source basis labels say what the explanation was actually compared against.
     labels = {}

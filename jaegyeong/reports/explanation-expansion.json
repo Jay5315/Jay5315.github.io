@@ -211731,7 +211731,64 @@
         "evidence": "사채를 20X1년 말에 상환했으므로 실제로 인식한 이자비용은 첫해 유효이자 8,412원(105,151원×8%)뿐입니다. ①의 \"3년 동안 사채의 총이자비용 8,412원\"을 실제 보유기간의 이자비용으로 읽으면 옳고, 만기까지 보유를 가정한 3년 총액(30,000원−5,151원=24,849원)으로 읽으면 틀립니다. 원문이 어느 쪽인지 정하지 않아 공식 ②와 함께 ①도 정답 후보가 될 수 있습니다. 공식 ②의 장부금액 103,563원은 검산됩니다."
       }
     ],
-    "explained_item_records_policy": "해설이 이미 등록된 문항에 대한 판정은 기존 51건(records)과 분리해 기록합니다. 공식 정답은 바꾸지 않습니다."
+    "explained_item_records_policy": "해설이 이미 등록된 문항에 대한 판정은 기존 51건(records)과 분리해 기록합니다. 공식 정답은 바꾸지 않습니다.",
+    "resolutions": [
+      {
+        "question_id": "2023-06-112",
+        "previous_verdict": "deferred",
+        "verdict": "official_supported",
+        "official_answers": [
+          4
+        ],
+        "official_answer_changed": false,
+        "basis": "consistent_official_answer_keys",
+        "checked_on": "2026-10-13",
+        "evidence": "같은 취지의 문장(\"외부구입 시 특별한 지식이나 기술이 요구되면 품질 유지가 어렵다/별도 관리가 필요하다\")이 다섯 회차에 출제되었고, 출제기관 공식 답안은 모두 이를 틀린 설명으로 처리했습니다(2022-12-115 ②·2023-06-112 ④·2024-05-112 ④는 옳지 않은 것의 정답, 2023-01-114와 2025-07-112는 옳은 것의 정답이 ①). 따라서 공식 ④를 오답으로 보는 것이 출제기관의 일관된 판단입니다. 다만 이 판단의 근거가 되는 교재 문장 자체는 읽지 못했으므로, 교재 원문 대조가 아니라 공식 답안의 일관성에 근거한 판정입니다.",
+        "official_answer_key_reads": [
+          {
+            "question_id": "2022-12-115",
+            "answer_pdf": "sources/2022-12-answers.pdf",
+            "answer_pdf_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+            "locator": "115번",
+            "official_answer": 2,
+            "actually_read": true
+          },
+          {
+            "question_id": "2023-06-112",
+            "answer_pdf": "sources/2023-06-answers.pdf",
+            "answer_pdf_sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64",
+            "locator": "원가관리회계 32번",
+            "official_answer": 4,
+            "actually_read": true
+          },
+          {
+            "question_id": "2024-05-112",
+            "answer_pdf": "sources/2024-05-answers.pdf",
+            "answer_pdf_sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+            "locator": "원가관리회계 32번",
+            "official_answer": 4,
+            "actually_read": true
+          },
+          {
+            "question_id": "2023-01-114",
+            "answer_pdf": "sources/2023-01-answers.pdf",
+            "answer_pdf_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+            "locator": "원가관리회계 34번",
+            "official_answer": 1,
+            "actually_read": true
+          },
+          {
+            "question_id": "2025-07-112",
+            "answer_pdf": "sources/2025-07-answers.pdf",
+            "answer_pdf_sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44",
+            "locator": "112번",
+            "official_answer": 1,
+            "actually_read": true
+          }
+        ]
+      }
+    ],
+    "resolutions_policy": "10차까지의 records는 그대로 두고, 이후 판정 변경은 이전 판정과 함께 resolutions에 덧붙입니다. 화면 검토 의견은 records(및 explained_item_records)에 resolutions를 덮어써 만듭니다."
   },
   "post_review_amendments": {
     "checked_on": "2026-10-13",

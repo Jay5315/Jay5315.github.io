@@ -1134,6 +1134,29 @@ class ExplanationTests(unittest.TestCase):
             self.assertTrue(current[id]['unchecked_points'], id)
 
 
+    def test_adjudication_resolutions_keep_answers_and_previous_verdicts(self):
+        log = self.current_audit['answer_adjudication']
+        resolutions = log.get('resolutions', [])
+        if not resolutions:
+            self.skipTest('No adjudication resolutions')
+        records = {r['question_id']: r for r in log['records'] + log.get('explained_item_records', [])}
+        ids = [r['question_id'] for r in resolutions]
+        self.assertEqual(len(ids), len(set(ids)))
+        for r in resolutions:
+            id = r['question_id']
+            self.assertIn(id, records)
+            self.assertEqual(r['previous_verdict'], records[id]['verdict'], id)
+            self.assertNotEqual(r['verdict'], r['previous_verdict'], id)
+            self.assertIs(r['official_answer_changed'], False)
+            self.assertEqual(r['official_answers'], self.qs[id]['answers'])
+            self.assertTrue(r['evidence'] and r['basis'])
+            for read in r.get('official_answer_key_reads', []):
+                self.assertIs(read['actually_read'], True)
+                self.assertEqual(self.qs[read['question_id']]['answers'], [read['official_answer']])
+                path = R / read['answer_pdf']
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), read['answer_pdf_sha256'])
+
+
     def test_answer_option_never_shares_reason_with_other_options(self):
         for id, n in self.current_notes.items():
             answer = {o['reason'].strip() for o in n['option_notes'] if o['is_answer']}
@@ -1146,9 +1169,11 @@ class ExplanationTests(unittest.TestCase):
         b = json.loads(raw[len('window.BANK_DATA='):-2])
         self.assertEqual(b['explanations'], self.current_data)
         self.assertEqual(len(b['questions']), 4322)
-        shown = {a['question_id'] for a in self.audit['answer_adjudication']['records']
-                 + self.audit['answer_adjudication'].get('explained_item_records', [])
-                 if a['verdict'] in {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
+        log = self.audit['answer_adjudication']
+        resolved = {r['question_id']: r['verdict'] for r in log.get('resolutions', [])}
+        shown = {a['question_id'] for a in log['records'] + log.get('explained_item_records', [])
+                 if resolved.get(a['question_id'], a['verdict']) in
+                 {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
         self.assertEqual(set(b['answerNotes']), shown)
         for id, note in b['answerNotes'].items():
             self.assertTrue(note['label'] and note['text'])
