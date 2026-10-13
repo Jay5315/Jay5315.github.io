@@ -744,9 +744,12 @@ class ExplanationTests(unittest.TestCase):
             self.assertTrue(set(r['changed_fields']) <= {'title', 'summary', 'steps', 'option_notes', 'unchecked_points'}, id)
             for field in set(after) - set(r['changed_fields']):
                 self.assertEqual(after[field], r['before'][field], id + ': ' + field)
-            for text in [after['title'], after['summary'], *after['steps'], *(o['reason'] for o in after['option_notes'])]:
-                self.assertNotIn('  ', text, id)
-                self.assertEqual(text, text.strip(), id)
+            def texts(x):
+                return [x['title'], x['summary'], *x['steps'], *(o['reason'] for o in x['option_notes']), *x['unchecked_points']]
+            for old, text in zip(texts(r['before']), texts(after)):
+                if old != text:
+                    self.assertNotIn('  ', text, id)
+                    self.assertEqual(text, text.strip(), id)
         for id in set(self.current_notes) - set(ids):
             self.assertEqual(self.current_notes[id], before_stage[id], id)
         self.assertEqual(self.current_data['sources'], self.stage_after['post_review_amendments']['sources'])
