@@ -1111,6 +1111,29 @@ class ExplanationTests(unittest.TestCase):
         for id, n in {n['question_id']: n for n in self.current_data['items']}.items():
             self.assertEqual(len({o['reason'].strip() for o in n['option_notes']}), 4, id)
 
+    def test_explained_item_adjudications_keep_answers_and_match_partial_explanations(self):
+        records = self.current_audit['answer_adjudication'].get('explained_item_records', [])
+        if not records:
+            self.skipTest('No adjudications for explained items')
+        main = {r['question_id'] for r in self.current_audit['answer_adjudication']['records']}
+        pending = {r['question_id'] for r in self.current_audit['review']}
+        current = {n['question_id']: n for n in self.current_data['items']}
+        ids = [r['question_id'] for r in records]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertFalse(set(ids) & main)
+        for r in records:
+            id = r['question_id']
+            self.assertIn(id, current)
+            self.assertNotIn(id, pending)
+            self.assertIn(r['verdict'], {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'})
+            self.assertIs(r['official_answer_changed'], False)
+            self.assertEqual(r['official_answers'], self.qs[id]['answers'])
+            self.assertEqual(current[id]['answers'], self.qs[id]['answers'])
+            self.assertTrue(r['evidence'] and r['basis'])
+            self.assertEqual(current[id]['review_status'], 'partial', id)
+            self.assertTrue(current[id]['unchecked_points'], id)
+
+
     def test_answer_option_never_shares_reason_with_other_options(self):
         for id, n in self.current_notes.items():
             answer = {o['reason'].strip() for o in n['option_notes'] if o['is_answer']}
@@ -1124,6 +1147,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(b['explanations'], self.current_data)
         self.assertEqual(len(b['questions']), 4322)
         shown = {a['question_id'] for a in self.audit['answer_adjudication']['records']
+                 + self.audit['answer_adjudication'].get('explained_item_records', [])
                  if a['verdict'] in {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
         self.assertEqual(set(b['answerNotes']), shown)
         for id, note in b['answerNotes'].items():

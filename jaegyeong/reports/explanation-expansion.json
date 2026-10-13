@@ -211715,7 +211715,23 @@
         "reviewer": "r6_tax_a",
         "independent_review_proposal_sha256": "b110a73250a774ebec10e6b4d49eb5dbd3bcc081f93386ef0952d4d28b89d8c2"
       }
-    ]
+    ],
+    "explained_item_records": [
+      {
+        "question_id": "2022-07-018",
+        "verdict": "multiple_candidates",
+        "official_answers": [
+          2
+        ],
+        "official_answer_changed": false,
+        "basis": "question_wording_and_recomputation",
+        "checked_on": "2026-10-13",
+        "has_explanation": true,
+        "origin": "round11_corrections.uncertainties의 multiple_candidates 검토 권고",
+        "evidence": "사채를 20X1년 말에 상환했으므로 실제로 인식한 이자비용은 첫해 유효이자 8,412원(105,151원×8%)뿐입니다. ①의 \"3년 동안 사채의 총이자비용 8,412원\"을 실제 보유기간의 이자비용으로 읽으면 옳고, 만기까지 보유를 가정한 3년 총액(30,000원−5,151원=24,849원)으로 읽으면 틀립니다. 원문이 어느 쪽인지 정하지 않아 공식 ②와 함께 ①도 정답 후보가 될 수 있습니다. 공식 ②의 장부금액 103,563원은 검산됩니다."
+      }
+    ],
+    "explained_item_records_policy": "해설이 이미 등록된 문항에 대한 판정은 기존 51건(records)과 분리해 기록합니다. 공식 정답은 바꾸지 않습니다."
   },
   "post_review_amendments": {
     "checked_on": "2026-10-13",

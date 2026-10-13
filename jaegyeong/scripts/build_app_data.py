@@ -18,7 +18,8 @@ def main():
   missing=[s['ref'] for s in n['sources'] if s['ref'] not in concepts['sources']]
   if missing:raise SystemExit(f"{n['id']}: unknown source refs {missing}")
  explanations=validate_explanations(read('explanations'),qs,{e['id'] for e in entries},part_ids)
- adjudication=json.loads((R/'reports/explanation-expansion.json').read_text()).get('answer_adjudication',{}).get('records',[])
+ adjudication_log=json.loads((R/'reports/explanation-expansion.json').read_text()).get('answer_adjudication',{})
+ adjudication=adjudication_log.get('records',[])+adjudication_log.get('explained_item_records',[])
  labels={'official_conflict':'공식 정답 이의 가능','multiple_candidates':'정답 후보가 둘 이상','ambiguous_wording':'문항 표현이 모호','deferred':'근거 보완 필요'}
  answer_notes={}
  for a in adjudication:

@@ -145,7 +145,8 @@ with sync_playwright() as pw:
     expect(page.locator('.question-card .answer-dispute')).to_contain_text('2012년')
     expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
-    adjudications = json.loads((R / 'reports/explanation-expansion.json').read_text())['answer_adjudication']['records']
+    adjudication_log = json.loads((R / 'reports/explanation-expansion.json').read_text())['answer_adjudication']
+    adjudications = adjudication_log['records'] + adjudication_log.get('explained_item_records', [])
     expected_notes = {r['question_id'] for r in adjudications if r['verdict'] in
                       {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
     assert set(page.evaluate("Object.keys(BANK_DATA.answerNotes)")) == expected_notes
