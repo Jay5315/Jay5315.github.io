@@ -21,6 +21,8 @@ from explanation_data import question_fingerprint, validate_explanations  # noqa
 
 R = Path(__file__).resolve().parents[1]
 CHECKED_ON = '2026-10-13'
+POLICY = ('다른 회차의 같은 진술에 대한 출제기관 판단과 검증된 해설을 출발점으로 삼되, 각 문항의 보류 사유를 '
+          '실제로 읽은 원문으로 해소하고 작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.')
 
 
 def digest(x):
@@ -28,12 +30,12 @@ def digest(x):
                                      separators=(',', ':')).encode()).hexdigest()
 
 
-def main(authored_path, reviews_path):
+def main(authored_path, reviews_path, ledger='round13_registrations', policy=POLICY):
     read = lambda name: json.loads((R / 'data' / (name + '.json')).read_text())
     data_path, audit_path = R / 'data/explanations.json', R / 'reports/explanation-expansion.json'
     data, audit = json.loads(data_path.read_text()), json.loads(audit_path.read_text())
-    if 'round13_registrations' in audit:
-        raise SystemExit('round13_registrations already applied')
+    if ledger in audit:
+        raise SystemExit(f'{ledger} already applied')
     qs = {q['id']: q for q in read('questions')}
     reviews = {r['question_id']: r for r in json.loads(Path(reviews_path).read_text())}
     pending = {r['question_id']: r for r in audit['review']}
@@ -74,12 +76,9 @@ def main(authored_path, reviews_path):
                             independent_review=review))
     registered = {r['question_id'] for r in records}
     audit['review'] = [r for r in audit['review'] if r['question_id'] not in registered]
-    audit['round13_registrations'] = dict(
+    audit[ledger] = dict(
         checked_on=CHECKED_ON, registered_count=len(records), declined=declined, skipped_ids=skipped,
-        new_source_refs=new_refs,
-        policy='다른 회차의 같은 진술에 대한 출제기관 판단과 검증된 해설을 출발점으로 삼되, 각 문항의 보류 사유를 '
-               '실제로 읽은 원문으로 해소하고 작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.',
-        items=records)
+        new_source_refs=new_refs, policy=policy, items=records)
     validate_explanations(data, qs, {e['id'] for e in read('entries')}, {p['id'] for p in read('taxonomy')})
     data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     audit_path.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
