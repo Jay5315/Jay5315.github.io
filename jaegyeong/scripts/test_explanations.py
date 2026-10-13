@@ -289,8 +289,17 @@ class ExplanationTests(unittest.TestCase):
         # Historical protection checks run against the content before the recorded
         # post-review amendments; test_post_review_amendments verifies each before/after hash.
         cls.data = copy.deepcopy(cls.current_data)
-        items = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+        cls.current_audit = copy.deepcopy(cls.audit)
         cls.stage_after = {}
+        registrations = (cls.audit or {}).get('round9_registrations', {})
+        if registrations:
+            cls.stage_after['round9_registrations'] = copy.deepcopy(cls.data)
+            registered = {r['question_id'] for r in registrations['items']}
+            cls.data['items'] = [n for n in cls.data['items'] if n['question_id'] not in registered]
+            for ref in registrations.get('new_source_refs', []):
+                del cls.data['sources'][ref]
+            cls.audit['review'] = cls.audit['review'] + [r['previous_review'] for r in registrations['items']]
+        items = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
         for group in ('spacing_amendments', 'post_review_amendments'):  # newest first
             cls.stage_after[group] = copy.deepcopy(cls.data)
             amendments = (cls.audit or {}).get(group, {})
@@ -735,7 +744,8 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(amendments['count'], len(ids))
         before_stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
         for r in amendments['notes']:
-            id, after = r['question_id'], self.current_notes[r['question_id']]
+            after_stage = {n['question_id']: n for n in self.stage_after['spacing_amendments']['items']}
+            id, after = r['question_id'], after_stage[r['question_id']]
             self.assertEqual(digest(r['before']), r['before_hash'], id)
             self.assertEqual(r['before'], before_stage[id], id)
             self.assertEqual(digest(after), r['after_hash'], id)
@@ -750,9 +760,53 @@ class ExplanationTests(unittest.TestCase):
                 if old != text:
                     self.assertNotIn('  ', text, id)
                     self.assertEqual(text, text.strip(), id)
-        for id in set(self.current_notes) - set(ids):
-            self.assertEqual(self.current_notes[id], before_stage[id], id)
-        self.assertEqual(self.current_data['sources'], self.stage_after['post_review_amendments']['sources'])
+        after_stage = {n['question_id']: n for n in self.stage_after['spacing_amendments']['items']}
+        for r in amendments['notes']:
+            self.assertEqual(after_stage[r['question_id']], self.current_notes[r['question_id']])
+        for id in set(after_stage) - set(ids):
+            self.assertEqual(after_stage[id], before_stage[id], id)
+        self.assertEqual(self.stage_after['spacing_amendments']['sources'], self.stage_after['post_review_amendments']['sources'])
+
+
+    def test_round9_registrations_follow_upheld_adjudication_and_independent_review(self):
+        registrations = (self.current_audit or {}).get('round9_registrations')
+        if not registrations:
+            self.skipTest('No round-9 registrations')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        verdicts = {a['question_id']: a['verdict'] for a in self.current_audit['answer_adjudication']['records']}
+        pending = {r['question_id'] for r in self.current_audit['review']}
+        ids = [r['question_id'] for r in registrations['items']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(registrations['registered_count'], len(ids))
+        self.assertEqual(set(self.current_notes), set(self.notes) | set(ids))
+        self.assertFalse(set(ids) & set(self.notes))
+        for r in registrations['items']:
+            id, note = r['question_id'], self.current_notes[r['question_id']]
+            self.assertNotIn(id, pending)
+            self.assertEqual(r['previous_review']['question_id'], id)
+            self.assertEqual(r['previous_review']['category'], 'answer_suspected')
+            self.assertIn(verdicts[id], {'official_supported', 'ambiguous_wording'})
+            self.assertEqual(digest(note), r['explanation_sha256'], id)
+            self.assertEqual(r['question_row_sha256'], digest(self.qs[id]), id)
+            self.assertEqual(note['answers'], self.qs[id]['answers'])
+            self.assertEqual(r['official_answers'], self.qs[id]['answers'])
+            self.assertNotEqual(r['author'], r['reviewer'], id)
+            review = r['independent_review']
+            self.assertEqual(review['status'], 'pass', id)
+            self.assertEqual({x['number'] for x in review['four_option_logic']}, {1, 2, 3, 4}, id)
+            self.assertTrue(all(x['status'] == 'pass' for x in review['four_option_logic']), id)
+            self.assertTrue(r['source_reads'], id)
+            for read in r['source_reads']:
+                self.assertRegex(read['sha256'], r'^[0-9a-f]{64}$')
+            for check in note['checks']:
+                self.assertAlmostEqual(calc(check['expr']), check['expected'], places=6, msg=id)
+            reasons = [o['reason'] for o in note['option_notes']]
+            self.assertEqual(len(reasons), len(set(reasons)), id)
+        for ref in registrations['new_source_refs']:
+            self.assertIn(ref, self.current_data['sources'])
+            self.assertNotIn(ref, self.data['sources'])
 
 
     def test_answer_option_never_shares_reason_with_other_options(self):

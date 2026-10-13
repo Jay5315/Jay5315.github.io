@@ -145,7 +145,7 @@ with sync_playwright() as pw:
     expect(page.locator('.question-card .answer-dispute')).to_contain_text('2012년')
     expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
-    assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 20
+    assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 21
     # Source basis labels say what the explanation was actually compared against.
     labels = {}
     for key, basis, subject in [('domestic', 'domestic', '세무회계'), ('ifrs', 'ifrs', '재무회계'),

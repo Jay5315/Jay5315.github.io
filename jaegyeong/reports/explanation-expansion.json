@@ -211174,12 +211174,12 @@
     "scope": "answer_suspected 51건",
     "policy": "공식 정답과 review 행은 변경·삭제하지 않고 판정만 별도 기록",
     "counts": {
-      "holiday_nominal_deadline": 4,
-      "deferred": 2,
-      "ambiguous_wording": 6,
-      "multiple_candidates": 4,
       "official_conflict": 8,
-      "official_supported": 27
+      "multiple_candidates": 4,
+      "ambiguous_wording": 7,
+      "deferred": 2,
+      "holiday_nominal_deadline": 4,
+      "official_supported": 26
     },
     "records": [
       {
@@ -211484,11 +211484,13 @@
         "official_answers": [
           4
         ],
-        "verdict": "official_supported",
+        "verdict": "ambiguous_wording",
         "official_answer_changed": false,
         "basis": "doctrine_or_elimination",
-        "evidence": "공식 정답이 표준 교재·법령·기준서 해석 또는 소거법으로 타당하다. 기존 answer_suspected 사유는 문구 쟁점에 그친다. 이 판정은 해당 항목 해설을 새로 쓰지 않으며 review 행은 이력 보존을 위해 유지한다.",
-        "source_read": null
+        "evidence": "발문은 옳은 것을 묻습니다. 20억원은 연구, 70억원 시제품 설계·제작·시험은 개발이므로 ①②③은 틀립니다. ④는 IAS 38 문단 57(2)의 \"사용하거나 판매하려는 의도\"에서 \"사용\"을 빠뜨려 내부 사용 목적 개발자산을 배제하는 불완전한 문장이지만, 나머지가 모두 틀려 소거법으로 공식 ④가 남습니다. 처음에는 official_supported로 기록했으나 문구 한계를 반영해 고쳤습니다.",
+        "source_read": null,
+        "previous_verdict": "official_supported",
+        "corrected_on": "2026-10-13"
       },
       {
         "question_id": "2025-06-085",
