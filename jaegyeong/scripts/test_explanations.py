@@ -641,6 +641,26 @@ class ExplanationTests(unittest.TestCase):
             elif mutate == 'check_number': d['items'][0]['checks'][0]['expected'] = float('inf')
             with self.assertRaises(ValueError, msg=mutate): self.validate(d)
 
+    def test_answer_adjudication_records_keep_official_answers_and_review_rows(self):
+        adj = self.audit['answer_adjudication']
+        records = adj['records']
+        ids = [r['question_id'] for r in records]
+        suspected = {r['question_id'] for r in self.audit['review'] if r['category'] == 'answer_suspected'}
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(set(ids), suspected)
+        self.assertEqual(adj['counts'], dict(Counter(r['verdict'] for r in records)))
+        allowed = {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred',
+                   'holiday_nominal_deadline', 'official_supported'}
+        for r in records:
+            self.assertIn(r['verdict'], allowed)
+            self.assertIs(r['official_answer_changed'], False)
+            self.assertEqual(r['official_answers'], self.qs[r['question_id']]['answers'])
+            self.assertTrue(r['evidence'] and r['basis'])
+            self.assertNotIn(r['question_id'], self.notes)
+            if r['basis'] == 'statute':
+                self.assertTrue(r['source_read'])
+
+
     def test_bundle_has_exact_explanations_and_unchanged_question_rows(self):
         raw = (R / 'assets/bank-data.js').read_text()
         b = json.loads(raw[len('window.BANK_DATA='):-2])
