@@ -13949,15 +13949,6 @@
       "extra_batch_id": "r7_cost_04"
     },
     {
-      "question_id": "2025-07-112",
-      "reason": "새 부산가톨릭10 PDF10쪽과 한양L10 PDF8–10쪽에서 비재무 품질/공급관계 고려, 유휴설비 기회원가 및 회피가능 고정원가를 직접 읽었습니다. 따라서①을 지지하고②③을 반박할 근거는 강화됐습니다. 그러나④ 특수지식·기술을 요구하면 외부품질유지 어려울 가능성이 높다는 독립 가능성 진술은 공급자의 전문성/내부 역량에 따라 달라집니다. 일반 전문가 외주의 장점을 근거로 위험 가능성 자체를 부정하거나 공급자가 반드시 더 우수하다는 조건을 추가하지 않습니다. 공식①을 보존하고 이 한 보기 범위만 남깁니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_04",
-      "recheck_batch_id": "recheck_cost_011",
-      "round3_batch_id": "r3_cost_009",
-      "extra_batch_id": "r7_cost_06"
-    },
-    {
       "question_id": "2025-03-096",
       "reason": "새 ICMAI P16 PDF304쪽 전통회계 비용절감 강한 중시, PDF308–309쪽 unit-level spending/기타원가 당기OE처리를 실제 읽었습니다. ㄴ 운영비 중요성 간과의 반박후보는 강화되었지만 원가부착의 원가통제 평가와 비용절감 강조의 정확한 범위가 같은지는 남습니다. ㄱ의 한국 초변동 이익 생산량효과도 단기고정 OE모형과 일반 기간비용행태를 구별해야 합니다. ㄷ 일반CVP는 모든변동비 차감 공헌이익표가 원리상 적합하나 공식②의 완전한 오답집합을 아직 확인하지 못해 보존합니다.",
       "category": "source_unverified",
@@ -14010,15 +14001,6 @@
       "recheck_batch_id": "recheck_cost_005",
       "round3_batch_id": "r3_cost_004",
       "extra_batch_id": "r7_cost_04"
-    },
-    {
-      "question_id": "2024-05-112",
-      "reason": "새 부산가톨릭10 PDF10–11쪽의 외주검수/안정성·품질, 한양L10 PDF10쪽의 내부품질통제 전략을 직접 확인했습니다. ①의존감소·②공급관계변화·③수요유연성의 일반 장점/위험은 검토됐으나④ 특별지식·기술이 요구되면 외부 품질관리 어렵다는 진술을 단순히 틀리다고 배제할 공급업자·내부 기술역량 조건은 없습니다. 외주검수 관리원가를 인정하는 새 국내 본문을 그 반대 근거로 바꾸지 않고 공식④를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_07",
-      "recheck_batch_id": "recheck_cost_011",
-      "round3_batch_id": "r3_cost_009",
-      "extra_batch_id": "r7_cost_06"
     },
     {
       "question_id": "2024-05-100",
@@ -14109,33 +14091,6 @@
       "recheck_batch_id": "recheck_cost_007",
       "round3_batch_id": "r3_cost_006",
       "extra_batch_id": "r7_cost_03"
-    },
-    {
-      "question_id": "2023-06-112",
-      "reason": "최우선 deferred를 재검토했습니다. 새 공식 부산가톨릭 교안PDF10쪽은 외주 납품업체선정/납품검사 관리원가,11쪽은 외부주문의 안정성·품질과 핵심부품 자체생산을 직접 설명합니다. 새 한양 교안PDF10쪽도 자가생산의 내부품질 통제 전략을 인정합니다. 따라서④ 특별지식·기술이 요구될 때 별도품질관리가 필요하다는 가능성을 오답으로 반박할 직접 정의를 얻지 못했습니다. 공급업자가 반드시 더 우수하다는 조건이나 외부 전문성 때문에 검수 불필요라는 조건을 추가하지 않고 deferred/공식④를 유지합니다.",
-      "category": "answer_suspected",
-      "batch_id": "cost_b_09",
-      "recheck_batch_id": "recheck_cost_011",
-      "round3_batch_id": "r3_cost_009",
-      "extra_batch_id": "r7_cost_06"
-    },
-    {
-      "question_id": "2023-01-114",
-      "reason": "새 부산가톨릭10 PDF10쪽과 한양L10 PDF8–10쪽에서 비재무 품질/공급관계 고려, 유휴설비 기회원가 및 회피가능 고정원가를 직접 읽었습니다. 따라서①을 지지하고②③을 반박할 근거는 강화됐습니다. 그러나④ 특수지식·기술을 요구하면 외부품질유지 어려울 가능성이 높다는 독립 가능성 진술은 공급자의 전문성/내부 역량에 따라 달라집니다. 일반 전문가 외주의 장점을 근거로 위험 가능성 자체를 부정하거나 공급자가 반드시 더 우수하다는 조건을 추가하지 않습니다. 공식①을 보존하고 이 한 보기 범위만 남깁니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_10",
-      "recheck_batch_id": "recheck_cost_011",
-      "round3_batch_id": "r3_cost_009",
-      "extra_batch_id": "r7_cost_06"
-    },
-    {
-      "question_id": "2022-12-115",
-      "reason": "새 부산가톨릭10 PDF10–11쪽과 한양L10 PDF10쪽은 외주 품질·안정성 관리 및 자가생산의 내부품질통제 전략을 직접 인정합니다. ①공급의존·③생산능력과조달관계·④내부통제 일반원리는 검토하되② 특수지식/기술일수록 외부품질유지가 더 어렵다는 절대비교를 반박하려면 공급자의 실제 전문성 조건이 필요합니다. 전문공급자가 항상 더 우수하다는 조건을 새로 넣지 않고 공식②를 보존합니다.",
-      "category": "source_unverified",
-      "batch_id": "cost_b_10",
-      "recheck_batch_id": "recheck_cost_011",
-      "round3_batch_id": "r3_cost_009",
-      "extra_batch_id": "r7_cost_06"
     },
     {
       "question_id": "2022-07-023",
@@ -14280,15 +14235,6 @@
       "recheck_batch_id": "recheck_finance_013",
       "round3_batch_id": "r3_finance_013",
       "extra_batch_id": "r7_finance_01"
-    },
-    {
-      "question_id": "2025-01-055",
-      "category": "answer_suspected",
-      "reason": "보기②의선순위차입금적수제외는2024법정서식본문으로직접해소되어official_supported판정제안입니다. 보기①유예기간생략을포함한전체해설등록은별도독립QA범위로남겼습니다.",
-      "batch_id": "remaining_tax_004",
-      "recheck_batch_id": "recheck_tax_001",
-      "round3_batch_id": "r3_tax_003",
-      "extra_batch_id": "r7_tax_05"
     },
     {
       "question_id": "2022-05-012",
@@ -501533,6 +501479,658 @@
             "osacc m67913 (6d14147c…), m67914 (149561c8…), m67915 (bd8dd445…) sha256 일치"
           ],
           "notes": "필수 수정 없음. 참고: m67913의 'Sale of Bonds before Maturity' 문단은 발행자의 조기상환이 아니라 투자자의 만기 전 매도 관점이므로 3번 근거로 쓰지 않는 현재 서술을 유지하면 됨. review_status partial 유지."
+        }
+      }
+    ]
+  },
+  "round14_registrations": {
+    "checked_on": "2026-10-13",
+    "registered_count": 6,
+    "declined": [],
+    "skipped_ids": [],
+    "new_source_refs": [
+      "SAYLOR_QUALITATIVE_7_9",
+      "EXAM_KEYS_MAKEBUY_EXPERTISE",
+      "SAYLOR_MAKEBUY_7_2"
+    ],
+    "policy": "공식 정답이 지지된 보류 문항과 같은 진술을 공유하는 문항만 대상으로, 각 문항의 보류 사유를 실제로 읽은 원문으로 해소하거나 남은 한계를 미확인 항목에 밝히고, 작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.",
+    "items": [
+      {
+        "question_id": "2023-06-112",
+        "previous_review": {
+          "question_id": "2023-06-112",
+          "reason": "최우선 deferred를 재검토했습니다. 새 공식 부산가톨릭 교안PDF10쪽은 외주 납품업체선정/납품검사 관리원가,11쪽은 외부주문의 안정성·품질과 핵심부품 자체생산을 직접 설명합니다. 새 한양 교안PDF10쪽도 자가생산의 내부품질 통제 전략을 인정합니다. 따라서④ 특별지식·기술이 요구될 때 별도품질관리가 필요하다는 가능성을 오답으로 반박할 직접 정의를 얻지 못했습니다. 공급업자가 반드시 더 우수하다는 조건이나 외부 전문성 때문에 검수 불필요라는 조건을 추가하지 않고 deferred/공식④를 유지합니다.",
+          "category": "answer_suspected",
+          "batch_id": "cost_b_09",
+          "recheck_batch_id": "recheck_cost_011",
+          "round3_batch_id": "r3_cost_009",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "4683091bd9f7233d0f46a8e3ea59d5ef27152ed3467a8598945af0ed8c4a760e",
+        "question_row_sha256": "7a88fe489f359fbd3e16341ee273bdf714707779b7b95c5b5ebb9fddbe911dde",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r14-mb",
+        "blocker_resolution": "보류 사유는 '특별한 지식·기술이 요구될 때 외부구입 시 별도 품질관리가 필요하다'는 4번을 틀렸다고 판단할 교재 근거가 없다는 점이었습니다. 이번에 OpenStax m68083의 장단점 표(fs-idm222597344)를 직접 읽어 '외부 전문성 활용, 사내 전문성 불필요'와 '생산·기술 위험의 공급업자 이전'이 외부구입의 장점으로 제시되고, 도입부(fs-idm245398320, fs-idm241245872)도 전문성이 필요한 일을 외부 전문가에게 맡기는 것을 외주의 이유로 설명함을 확인했습니다. 다만 같은 표가 '품질·생산 시기 통제 상실'을 단점으로도 들고, 4번 문장을 직접 부정하는 문장은 없으므로 완전히 해소된 것은 아닙니다. 최종 판단은 교재의 설명 방향과 다섯 회차 공식 답안의 일관성에 의존하므로 partial로 등록을 제안합니다. 공급업자가 항상 더 우수하다는 조건은 추가하지 않았습니다.",
+        "source_reads": [
+          {
+            "ref": "m68083",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352(정량·정성 분석), fs-idm235202032 목록·fs-idm233266896(공급업자 의존, 품질·납기, 생산능력, 공급업자 관계), fs-idm222597344 장단점 표(Utilizes external expertise, removes the need for in-house expertise / Transfers some production and technological risks to supplier / Takes away control over quality and timing of production)",
+            "sha256": "87e75ae300d465cc2ac0cbe260c1641b5d748dfb12f1254eaa9af0d325a69f0f"
+          },
+          {
+            "ref": "SAYLOR_QUALITATIVE_7_9",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-09-be-aware-of-qualitative-factor.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.9 본문 전체(수요 감소 시 외부구입의 유연성, 품질·공급자 재무안정성·종업원 사기, Review Problem 7.9)",
+            "sha256": "ef8bf24819564b0fc8821f3b4996dd3f61f535e277b448c2ddcb870ae80b1a80"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 115번 [2] (pdftotext 추출 표로 확인)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2024-05-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 34번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2025-07-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 112번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-06-112",
+          "reviewer": "independent-reviewer-r14-mb",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "m68083 fs-idm233266896의 외부구입 시 품질·납기·원가통제 의존에서 직접 이어짐. 옳은 진술 설명 적절."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "fs-idm233266896 '외부공급업자와의 관계에 영향' 근거. '상실'이 더 강한 표현이라는 점을 unchecked_points에 정직하게 기재함."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "'주문량을 늘리거나 줄이는 것만으로 수요 변동에 대응할 수 있어'는 근거 Saylor 7.9가 수요 감소 시 주문 축소만 서술하는 것보다 넓고, OpenStax 표의 단점 'May limit ability to upsize or downsize production'과도 정면으로 부딪힘('만으로'는 조건 추가성 단정). 감소 방향 서술로 좁혀야 함. 2024-05-112 ③ 해설은 이미 감소 방향으로 서술해 문제없음. [재확인] option_notes[2] reason이 지정 문구 그대로 교체되어 수요 감소 방향(Saylor 7.9)으로 좁혀졌고 OpenStax upsize/downsize 단점과의 충돌이 해소됨."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "공식 답 4 유지. 외부 전문성 활용을 외부구입 장점으로 든 m68083 표와 도입부 근거가 실제로 존재하며, '공급업자가 항상 우수'라는 조건은 추가하지 않음. 교재가 직접 부정하지 않는다는 점과 품질 통제 상실 단점을 summary·unchecked_points에 밝힘."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68083 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (raw 재다운로드 sha256 87e75ae3… 일치): fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352, fs-idm242846336($0.12 회피가능 고정원가), fs-idm235202032, fs-idm233266896(품질·납기·원가통제 의존, 여유 생산능력, 공급업자 관계), fs-idm212985312, table fs-idm222597344(장점 'Utilizes external expertise, removes the need for in-house expertise', 'Transfers some production and technological risks to supplier' / 단점 'Takes away control over quality and timing of production', 'May limit ability to upsize or downsize production') 모두 확인. 카탈로그 m68083 url·commit과 일치",
+            "Saylor 7.9 s11-09 @6b8ed09bd60909a2b170cfe16897266020b2968f (sha256 ef8bf248… 일치): 수요 감소 시 주문을 줄여 원가를 빨리 낮출 수 있다는 유연성(감소 방향만 서술), 품질·공급자 재무안정성·종업원 사기, 정성적 요소가 정량적 요소보다 중요할 수 있음 확인",
+            "공식 답안 PDF 5개 sha256 모두 일치(2022-12 004689e5…, 2023-06 a9677770…, 2024-05 5c3242b8…, 2023-01 e11a0696…, 2025-07 84e892fb…): 2022-12 원가관리회계 115번 [2], 2023-06·2024-05 원가관리회계 32번(=112번) 4, 2023-01 원가관리회계 34번(=114번) 1, 2025-07 112번 1",
+            "원문 이미지 2023-06-112.webp(본문·보기 brief와 일치)"
+          ],
+          "notes": "필수 수정 1건: option_notes[2](number 3)의 reason을 다음으로 교체합니다. \"외부구입은 수요가 줄면 공급업자에게 주문하는 양을 줄여 원가를 빠르게 낮출 수 있습니다. 고정원가 부담 때문에 생산 규모를 바로 줄이기 어려운 자가제조보다 주문량 변동에 유연하게 대응할 수 있다는 장점은 옳은 설명입니다.\" 그 밖에 partial 상태, unchecked_points(품질 통제 상실 단점, upsize/downsize 단점과 3번의 긴장, KOCW 미재확인, '상실' 표현 강도), summary의 단서 문장은 정직하고 과장이 없습니다. EXAM_KEYS_MAKEBUY_EXPERTISE 메타데이터는 kind에 '교재 본문 아님'을 밝히고 verification이 '정답 번호 처리 사실만 확인하는 자료'로 한정하여 정직합니다. 다섯 locator·sha256 모두 실제와 일치합니다. 참고: url은 2023-06 PDF 하나만 가리키고 나머지는 새 키 related_files에 있으므로, 등록 스크립트가 이 키를 보존·허용하는지는 등록 단계에서 확인이 필요합니다(필수 수정 아님). 새 SAYLOR_QUALITATIVE_7_9·SAYLOR_MAKEBUY_7_2 메타데이터(커밋·sha256·내용 요약)도 재다운로드본과 일치하고 항목 간 동일합니다. [재확인] 지정한 option_notes[2] 교체가 out_mb.json에 그대로 반영된 것을 확인했습니다. 추가 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2024-05-112",
+        "previous_review": {
+          "question_id": "2024-05-112",
+          "reason": "새 부산가톨릭10 PDF10–11쪽의 외주검수/안정성·품질, 한양L10 PDF10쪽의 내부품질통제 전략을 직접 확인했습니다. ①의존감소·②공급관계변화·③수요유연성의 일반 장점/위험은 검토됐으나④ 특별지식·기술이 요구되면 외부 품질관리 어렵다는 진술을 단순히 틀리다고 배제할 공급업자·내부 기술역량 조건은 없습니다. 외주검수 관리원가를 인정하는 새 국내 본문을 그 반대 근거로 바꾸지 않고 공식④를 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_07",
+          "recheck_batch_id": "recheck_cost_011",
+          "round3_batch_id": "r3_cost_009",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "676571e5bd17c415be659c9bb0a850bc3fb7f423def2f75834b458599cb0d536",
+        "question_row_sha256": "6820b9f8b049edffec56522de226e3c37e025ce96c56736612287ed5a6ac2ee2",
+        "official_answers": [
+          4
+        ],
+        "author": "author-r14-mb",
+        "blocker_resolution": "보류 사유는 '특별한 지식·기술이 요구될 때 외부구입 시 품질 유지 관리가 어렵다'는 4번을 틀렸다고 판단할 교재 근거가 없다는 점이었습니다. 이번에 OpenStax m68083의 장단점 표(fs-idm222597344)를 직접 읽어 '외부 전문성 활용, 사내 전문성 불필요'와 '생산·기술 위험의 공급업자 이전'이 외부구입의 장점으로 제시되고, 도입부(fs-idm245398320, fs-idm241245872)도 전문성이 필요한 일을 외부 전문가에게 맡기는 것을 외주의 이유로 설명함을 확인했습니다. 다만 같은 표가 '품질·생산 시기 통제 상실'을 단점으로도 들고, 4번 문장을 직접 부정하는 문장은 없으므로 완전히 해소된 것은 아닙니다. 최종 판단은 교재의 설명 방향과 다섯 회차 공식 답안의 일관성에 의존하므로 partial로 등록을 제안합니다. 공급업자가 항상 더 우수하다는 조건은 추가하지 않았습니다.",
+        "source_reads": [
+          {
+            "ref": "m68083",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352(정량·정성 분석), fs-idm235202032 목록·fs-idm233266896(공급업자 의존, 품질·납기, 생산능력, 공급업자 관계), fs-idm222597344 장단점 표(Utilizes external expertise, removes the need for in-house expertise / Transfers some production and technological risks to supplier / Takes away control over quality and timing of production)",
+            "sha256": "87e75ae300d465cc2ac0cbe260c1641b5d748dfb12f1254eaa9af0d325a69f0f"
+          },
+          {
+            "ref": "SAYLOR_QUALITATIVE_7_9",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-09-be-aware-of-qualitative-factor.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.9 본문 전체(수요 감소 시 외부구입의 유연성, 품질·공급자 재무안정성·종업원 사기, Review Problem 7.9)",
+            "sha256": "ef8bf24819564b0fc8821f3b4996dd3f61f535e277b448c2ddcb870ae80b1a80"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 115번 [2] (pdftotext 추출 표로 확인)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2024-05-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 34번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2025-07-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 112번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2024-05-112",
+          "reviewer": "independent-reviewer-r14-mb",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "fs-idm233266896 공급업자 의존 근거. 옳은 진술."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "fs-idm233266896 공급업자 관계 영향 근거. 표현 강도 차이를 unchecked_points에 밝힘."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "Saylor 7.9의 수요 감소 시 주문 축소로 원가를 빨리 낮춘다는 설명과 정확히 대응. OpenStax upsize/downsize 단점과의 긴장은 unchecked_points에 기재."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "공식 답 4 유지. '관리가 어렵다'는 문구에 맞춰 해설이 2023-06-112와 구분되게 작성됨. 근거와 한계(교재가 직접 부정하지 않음, 품질 통제 상실 단점)를 정직하게 기재."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68083 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (raw 재다운로드 sha256 87e75ae3… 일치): fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352, fs-idm242846336($0.12 회피가능 고정원가), fs-idm235202032, fs-idm233266896(품질·납기·원가통제 의존, 여유 생산능력, 공급업자 관계), fs-idm212985312, table fs-idm222597344(장점 'Utilizes external expertise, removes the need for in-house expertise', 'Transfers some production and technological risks to supplier' / 단점 'Takes away control over quality and timing of production', 'May limit ability to upsize or downsize production') 모두 확인. 카탈로그 m68083 url·commit과 일치",
+            "Saylor 7.9 s11-09 @6b8ed09bd60909a2b170cfe16897266020b2968f (sha256 ef8bf248… 일치): 수요 감소 시 주문을 줄여 원가를 빨리 낮출 수 있다는 유연성(감소 방향만 서술), 품질·공급자 재무안정성·종업원 사기, 정성적 요소가 정량적 요소보다 중요할 수 있음 확인",
+            "공식 답안 PDF 5개 sha256 모두 일치(2022-12 004689e5…, 2023-06 a9677770…, 2024-05 5c3242b8…, 2023-01 e11a0696…, 2025-07 84e892fb…): 2022-12 원가관리회계 115번 [2], 2023-06·2024-05 원가관리회계 32번(=112번) 4, 2023-01 원가관리회계 34번(=114번) 1, 2025-07 112번 1",
+            "원문 이미지 2024-05-112.webp(본문·보기 brief와 일치)"
+          ],
+          "notes": "수정 불필요. 네 보기 이유가 서로 다르고 문항 밖 조건을 추가하지 않았으며 partial 판정과 unchecked_points가 남은 의문을 정직하게 적고 있습니다. EXAM_KEYS_MAKEBUY_EXPERTISE 메타데이터는 kind에 '교재 본문 아님'을 밝히고 verification이 '정답 번호 처리 사실만 확인하는 자료'로 한정하여 정직합니다. 다섯 locator·sha256 모두 실제와 일치합니다. 참고: url은 2023-06 PDF 하나만 가리키고 나머지는 새 키 related_files에 있으므로, 등록 스크립트가 이 키를 보존·허용하는지는 등록 단계에서 확인이 필요합니다(필수 수정 아님). 새 SAYLOR_QUALITATIVE_7_9·SAYLOR_MAKEBUY_7_2 메타데이터(커밋·sha256·내용 요약)도 재다운로드본과 일치하고 항목 간 동일합니다."
+        }
+      },
+      {
+        "question_id": "2022-12-115",
+        "previous_review": {
+          "question_id": "2022-12-115",
+          "reason": "새 부산가톨릭10 PDF10–11쪽과 한양L10 PDF10쪽은 외주 품질·안정성 관리 및 자가생산의 내부품질통제 전략을 직접 인정합니다. ①공급의존·③생산능력과조달관계·④내부통제 일반원리는 검토하되② 특수지식/기술일수록 외부품질유지가 더 어렵다는 절대비교를 반박하려면 공급자의 실제 전문성 조건이 필요합니다. 전문공급자가 항상 더 우수하다는 조건을 새로 넣지 않고 공식②를 보존합니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_10",
+          "recheck_batch_id": "recheck_cost_011",
+          "round3_batch_id": "r3_cost_009",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "b57c2dcb95be997b343bee731b63b56cbfaafb38d86a78d5bfaaff58e3305cac",
+        "question_row_sha256": "0e39f03e2f698b965594648fe3cd08cebdae9c174049031a31ba2bddb60875a8",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r14-mb",
+        "blocker_resolution": "보류 사유는 '특수 지식·기술일수록 외부구입 시 품질 유지가 더 어렵다'는 2번을 반박하려면 공급자의 전문성 조건이 필요하다는 점이었습니다. OpenStax m68083 장단점 표(fs-idm222597344)를 직접 읽어 '외부 전문성 활용, 사내 전문성 불필요'와 '생산·기술 위험의 공급업자 이전'이 외부구입의 일반적 장점으로 제시됨을 확인했으므로, 문항에 없는 조건을 덧붙이지 않고도 2번이 교재의 설명 방향과 반대라는 점은 설명할 수 있습니다. 다만 같은 표가 품질 통제 상실을 단점으로도 들고 2번을 직접 부정하는 문장은 없으므로, 최종 판단은 다섯 회차 공식 답안의 일관성에 의존하며 partial로 둡니다.",
+        "source_reads": [
+          {
+            "ref": "m68083",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352(정량·정성 분석), fs-idm235202032 목록·fs-idm233266896(공급업자 의존, 품질·납기, 생산능력, 공급업자 관계), fs-idm222597344 장단점 표(Utilizes external expertise, removes the need for in-house expertise / Transfers some production and technological risks to supplier / Takes away control over quality and timing of production)",
+            "sha256": "87e75ae300d465cc2ac0cbe260c1641b5d748dfb12f1254eaa9af0d325a69f0f"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 115번 [2] (pdftotext 추출 표로 확인)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2024-05-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 34번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2025-07-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 112번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2022-12-115",
+          "reviewer": "independent-reviewer-r14-mb",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "fs-idm233266896 공급업자 의존 근거. 옳은 진술."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "공식 답 2 유지와 근거(외부 전문성 장점)는 타당하나, 같은 해설이 4번을 '외부구입은 품질 통제권을 넘긴다'는 근거로 옳다고 하면서 2번의 '외부구입 시 품질유지가 보다 어려워진다'를 틀리다고 하는 이유가 명시적으로 조정되어 있지 않아 학습자에게 모순으로 읽힐 수 있음. 일반적 통제 비교(4번)와 특별한 지식·기술이 필요한 상황(2번)을 구분하는 문장 필요. [재확인] steps[4]가 지정 문구로 교체되어 4번(일반적 통제 비교)과 2번(특별한 지식·기술 상황)의 구분이 명시되었고, 이 구분이 해석이라는 unchecked_points 항목이 끝에 추가됨. 모순 해소."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "생산능력 사용·공급업자 관계 영향에서 이어지는 추론임을 unchecked_points에 정직하게 기재."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "fs-idm222597344 'Takes away control over quality and timing of production'에 근거한 옳은 진술 설명은 정확함."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68083 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (raw 재다운로드 sha256 87e75ae3… 일치): fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352, fs-idm242846336($0.12 회피가능 고정원가), fs-idm235202032, fs-idm233266896(품질·납기·원가통제 의존, 여유 생산능력, 공급업자 관계), fs-idm212985312, table fs-idm222597344(장점 'Utilizes external expertise, removes the need for in-house expertise', 'Transfers some production and technological risks to supplier' / 단점 'Takes away control over quality and timing of production', 'May limit ability to upsize or downsize production') 모두 확인. 카탈로그 m68083 url·commit과 일치",
+            "공식 답안 PDF 5개 sha256 모두 일치(2022-12 004689e5…, 2023-06 a9677770…, 2024-05 5c3242b8…, 2023-01 e11a0696…, 2025-07 84e892fb…): 2022-12 원가관리회계 115번 [2], 2023-06·2024-05 원가관리회계 32번(=112번) 4, 2023-01 원가관리회계 34번(=114번) 1, 2025-07 112번 1",
+            "원문 이미지 2022-12-115.webp(본문·보기 brief와 일치)"
+          ],
+          "notes": "필수 수정 2건. (1) steps[4]를 다음으로 교체합니다. \"4번은 직접 생산하면 품질을 회사가 통제할 수 있다는 일반적인 비교이고, 2번은 제품에 특별한 지식이나 기술이 요구되는 상황을 따로 떼어 말한 것입니다. 교재는 이런 상황을 외부 전문성을 활용해 사내 전문성을 갖출 필요를 없애는 외부구입의 장점으로 다루므로, 그때 외부구입하면 품질 유지가 '보다 어려워진다'는 2번은 교재의 설명 방향과 반대입니다. 출제기관도 이 보기를 공식 정답(틀린 진술)으로 처리했습니다.\" (2) unchecked_points 끝에 다음 항목을 추가합니다. \"4번(자가제조 시 품질관리 용이)을 옳게 보면서 2번을 틀리게 보는 구분은 교재가 품질 통제 상실(단점)과 외부 전문성 활용(장점)을 함께 든다는 점과 공식 답안에 근거한 해석이며, 교재가 두 상황을 직접 구분해 설명한 것은 아닙니다.\" 그 밖의 메타데이터·출처는 정확합니다. EXAM_KEYS_MAKEBUY_EXPERTISE 메타데이터는 kind에 '교재 본문 아님'을 밝히고 verification이 '정답 번호 처리 사실만 확인하는 자료'로 한정하여 정직합니다. 다섯 locator·sha256 모두 실제와 일치합니다. 참고: url은 2023-06 PDF 하나만 가리키고 나머지는 새 키 related_files에 있으므로, 등록 스크립트가 이 키를 보존·허용하는지는 등록 단계에서 확인이 필요합니다(필수 수정 아님). 새 SAYLOR_QUALITATIVE_7_9·SAYLOR_MAKEBUY_7_2 메타데이터(커밋·sha256·내용 요약)도 재다운로드본과 일치하고 항목 간 동일합니다. [재확인] steps[4] 교체와 unchecked_points 추가 항목이 out_mb.json에 그대로 반영된 것을 확인했습니다. 추가 수정 불필요."
+        }
+      },
+      {
+        "question_id": "2023-01-114",
+        "previous_review": {
+          "question_id": "2023-01-114",
+          "reason": "새 부산가톨릭10 PDF10쪽과 한양L10 PDF8–10쪽에서 비재무 품질/공급관계 고려, 유휴설비 기회원가 및 회피가능 고정원가를 직접 읽었습니다. 따라서①을 지지하고②③을 반박할 근거는 강화됐습니다. 그러나④ 특수지식·기술을 요구하면 외부품질유지 어려울 가능성이 높다는 독립 가능성 진술은 공급자의 전문성/내부 역량에 따라 달라집니다. 일반 전문가 외주의 장점을 근거로 위험 가능성 자체를 부정하거나 공급자가 반드시 더 우수하다는 조건을 추가하지 않습니다. 공식①을 보존하고 이 한 보기 범위만 남깁니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_10",
+          "recheck_batch_id": "recheck_cost_011",
+          "round3_batch_id": "r3_cost_009",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "d3d438371ea95393fc00fdf1dbb4d45631cc1480faf6cc56d2728690dbaaa2a4",
+        "question_row_sha256": "71f1a01c16afb2366738468af31522ddafdd5e2f2bf3ec297b7e74d77e07ad57",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r14-mb",
+        "blocker_resolution": "보류 사유는 4번(특별한 지식·기술이 요구되면 외부구입 시 품질 유지가 어려울 가능성이 높다)을 정답에서 배제할 교재 근거가 없다는 점이었습니다. 1번 지지와 2·3번 반박은 OpenStax m68083과 Saylor 7.2·7.3·7.9 본문으로 직접 확인했습니다. 4번에 대해서는 OpenStax 장단점 표가 '외부 전문성 활용, 사내 전문성 불필요'를 외부구입의 장점으로 든다는 점을 확인했으나, 같은 표가 품질 통제 상실도 단점으로 들어 4번을 직접 부정하지는 않습니다. 이 문항은 옳은 것 하나를 고르는 문항이고 출제기관이 다섯 회차에서 같은 취지의 진술을 일관되게 틀린 것으로 처리했으므로, 이를 출제기관의 판단으로 밝히고 partial로 등록을 제안합니다.",
+        "source_reads": [
+          {
+            "ref": "m68083",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "fs-idm212628352, fs-idm242846336, fs-idm235202032, fs-idm233266896, fs-idm212985312, 표 fs-idm222597344, 도입부 fs-idm245398320·fs-idm241245872",
+            "sha256": "87e75ae300d465cc2ac0cbe260c1641b5d748dfb12f1254eaa9af0d325a69f0f"
+          },
+          {
+            "ref": "SAYLOR_MAKEBUY_7_2",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-02-make-or-buy-decisions.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.2 본문 전체(차이원가 판단, 감독자 급여의 회피가능성, avoidable cost 정의)",
+            "sha256": "eaa69da30546550ef7f22df1c0d41e8f3a655d7ae22ac2474141464bfc2525d4"
+          },
+          {
+            "ref": "R6_COST05_OPPORTUNITY",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-03-product-line-decisions.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.3 'Including Opportunity Costs in Differential Analysis' 절",
+            "sha256": "dafdfcb4a51b3a7c82f0eeb2a0fd52e2fa6d9daee81d9c80b1aef25d688367e8"
+          },
+          {
+            "ref": "SAYLOR_QUALITATIVE_7_9",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-09-be-aware-of-qualitative-factor.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.9 본문 전체",
+            "sha256": "ef8bf24819564b0fc8821f3b4996dd3f61f535e277b448c2ddcb870ae80b1a80"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 115번 [2] (pdftotext 추출 표로 확인)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2024-05-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 34번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2025-07-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 112번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2023-01-114",
+          "reviewer": "independent-reviewer-r14-mb",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "m68083 fs-idm212628352·fs-idm212985312(관련원가와 정성적 요소 함께 평가), Saylor 7.9(정성적 요소가 더 중요할 수 있음)로 직접 확인. 공식 답 1과 일치."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "fs-idm233266896(외부구입 시 남는 생산능력을 다른 제품에 활용)과 Saylor 7.3 기회원가 정의·유휴공간 임대료 반영으로 확인. 틀린 진술."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "Saylor 7.2 해고 가능한 감독자 급여=차이원가·avoidable cost 정의, m68083 fs-idm242846336 $0.12 회피가능 고정원가로 확인. 회피불가능 고정원가만 제외한다는 설명 정확."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "옳은 것을 고르는 문항에서 4번이 정답이 아닌 이유를 교재 설명 방향과 공식 답안의 일관성으로 정직하게 제시하고, 교재가 직접 부정하지 않음과 품질 통제 상실 단점을 unchecked_points에 기재. 다른 보기와 이유가 다름."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68083 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (raw 재다운로드 sha256 87e75ae3… 일치): fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352, fs-idm242846336($0.12 회피가능 고정원가), fs-idm235202032, fs-idm233266896(품질·납기·원가통제 의존, 여유 생산능력, 공급업자 관계), fs-idm212985312, table fs-idm222597344(장점 'Utilizes external expertise, removes the need for in-house expertise', 'Transfers some production and technological risks to supplier' / 단점 'Takes away control over quality and timing of production', 'May limit ability to upsize or downsize production') 모두 확인. 카탈로그 m68083 url·commit과 일치",
+            "Saylor 7.2 s11-02 @6b8ed09… (sha256 eaa69da3… 일치): 해고 가능한 감독자 급여는 차이원가, 리스료·장기계약 급여는 비차이원가, avoidable cost 정의 확인",
+            "Saylor 7.3 s11-03 @6b8ed09… (sha256 dafdfcb4… 일치, 카탈로그 R6_COST05_OPPORTUNITY url·commit 일치): 기회원가 정의와 유휴공간 임대료 반영 확인",
+            "Saylor 7.9 s11-09 @6b8ed09bd60909a2b170cfe16897266020b2968f (sha256 ef8bf248… 일치): 수요 감소 시 주문을 줄여 원가를 빨리 낮출 수 있다는 유연성(감소 방향만 서술), 품질·공급자 재무안정성·종업원 사기, 정성적 요소가 정량적 요소보다 중요할 수 있음 확인",
+            "공식 답안 PDF 5개 sha256 모두 일치(2022-12 004689e5…, 2023-06 a9677770…, 2024-05 5c3242b8…, 2023-01 e11a0696…, 2025-07 84e892fb…): 2022-12 원가관리회계 115번 [2], 2023-06·2024-05 원가관리회계 32번(=112번) 4, 2023-01 원가관리회계 34번(=114번) 1, 2025-07 112번 1",
+            "원문 이미지 2023-01-114.webp(본문·보기 brief와 일치)"
+          ],
+          "notes": "수정 불필요. 2023-01-114와 2025-07-112의 steps가 거의 같지만 같은 문항의 재출제이므로 문제없고, option_notes는 문항별로 다르게 작성되어 있습니다. 2023-01-114 보기 3에는 '모든'이 없으나 '고정원가를 제외한 변동원가만'은 모든 고정원가를 빼는 뜻이므로 steps[2]의 '고정원가를 모두 빼고' 표현은 정확합니다. EXAM_KEYS_MAKEBUY_EXPERTISE 메타데이터는 kind에 '교재 본문 아님'을 밝히고 verification이 '정답 번호 처리 사실만 확인하는 자료'로 한정하여 정직합니다. 다섯 locator·sha256 모두 실제와 일치합니다. 참고: url은 2023-06 PDF 하나만 가리키고 나머지는 새 키 related_files에 있으므로, 등록 스크립트가 이 키를 보존·허용하는지는 등록 단계에서 확인이 필요합니다(필수 수정 아님). 새 SAYLOR_QUALITATIVE_7_9·SAYLOR_MAKEBUY_7_2 메타데이터(커밋·sha256·내용 요약)도 재다운로드본과 일치하고 항목 간 동일합니다."
+        }
+      },
+      {
+        "question_id": "2025-07-112",
+        "previous_review": {
+          "question_id": "2025-07-112",
+          "reason": "새 부산가톨릭10 PDF10쪽과 한양L10 PDF8–10쪽에서 비재무 품질/공급관계 고려, 유휴설비 기회원가 및 회피가능 고정원가를 직접 읽었습니다. 따라서①을 지지하고②③을 반박할 근거는 강화됐습니다. 그러나④ 특수지식·기술을 요구하면 외부품질유지 어려울 가능성이 높다는 독립 가능성 진술은 공급자의 전문성/내부 역량에 따라 달라집니다. 일반 전문가 외주의 장점을 근거로 위험 가능성 자체를 부정하거나 공급자가 반드시 더 우수하다는 조건을 추가하지 않습니다. 공식①을 보존하고 이 한 보기 범위만 남깁니다.",
+          "category": "source_unverified",
+          "batch_id": "cost_b_04",
+          "recheck_batch_id": "recheck_cost_011",
+          "round3_batch_id": "r3_cost_009",
+          "extra_batch_id": "r7_cost_06"
+        },
+        "explanation_sha256": "076c9567a1acb13b2a9e09f0b3f02150b270e1187bceedb0a1fd5d5a436ae5d9",
+        "question_row_sha256": "d6f4f87d8d66836ec13e2c9d82918540f609a4503e05090a94492db96f31e267",
+        "official_answers": [
+          1
+        ],
+        "author": "author-r14-mb",
+        "blocker_resolution": "보류 사유는 4번(특별한 지식·기술이 요구되면 외부구입 시 품질 유지가 어려울 가능성이 높다)을 정답에서 배제할 교재 근거가 없다는 점이었습니다. 1번 지지와 2·3번 반박은 OpenStax m68083과 Saylor 7.2·7.3·7.9 본문으로 직접 확인했습니다. 4번에 대해서는 OpenStax 장단점 표가 '외부 전문성 활용, 사내 전문성 불필요'를 외부구입의 장점으로 든다는 점을 확인했으나, 같은 표가 품질 통제 상실도 단점으로 들어 4번을 직접 부정하지는 않습니다. 이 문항은 옳은 것 하나를 고르는 문항이고 출제기관이 다섯 회차에서 같은 취지의 진술을 일관되게 틀린 것으로 처리했으므로, 이를 출제기관의 판단으로 밝히고 partial로 등록을 제안합니다.",
+        "source_reads": [
+          {
+            "ref": "m68083",
+            "path_or_url": "https://raw.githubusercontent.com/openstax/osbooks-principles-accounting-bundle/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68083/index.cnxml",
+            "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+            "what_was_read": "fs-idm212628352, fs-idm242846336, fs-idm235202032, fs-idm233266896, fs-idm212985312, 표 fs-idm222597344, 도입부 fs-idm245398320·fs-idm241245872",
+            "sha256": "87e75ae300d465cc2ac0cbe260c1641b5d748dfb12f1254eaa9af0d325a69f0f"
+          },
+          {
+            "ref": "SAYLOR_MAKEBUY_7_2",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-02-make-or-buy-decisions.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.2 본문 전체(차이원가 판단, 감독자 급여의 회피가능성, avoidable cost 정의)",
+            "sha256": "eaa69da30546550ef7f22df1c0d41e8f3a655d7ae22ac2474141464bfc2525d4"
+          },
+          {
+            "ref": "R6_COST05_OPPORTUNITY",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-03-product-line-decisions.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.3 'Including Opportunity Costs in Differential Analysis' 절",
+            "sha256": "dafdfcb4a51b3a7c82f0eeb2a0fd52e2fa6d9daee81d9c80b1aef25d688367e8"
+          },
+          {
+            "ref": "SAYLOR_QUALITATIVE_7_9",
+            "path_or_url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-09-be-aware-of-qualitative-factor.html",
+            "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+            "what_was_read": "7.9 본문 전체",
+            "sha256": "ef8bf24819564b0fc8821f3b4996dd3f61f535e277b448c2ddcb870ae80b1a80"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 115번 [2] (pdftotext 추출 표로 확인)",
+            "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2024-05-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 32번 4 (pdftotext 추출 표로 확인)",
+            "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 34번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+          },
+          {
+            "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+            "path_or_url": "jaegyeong/sources/2025-07-answers.pdf",
+            "commit_or_version": "저장소 원본 PDF",
+            "what_was_read": "원가관리회계 112번 1 (pdftotext 추출 표로 확인)",
+            "sha256": "84e892fb1c4e4c3aa06e8378afeaf23047d9063f4e748c4617ba5d0d4e62db44"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2025-07-112",
+          "reviewer": "independent-reviewer-r14-mb",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "m68083 fs-idm212628352·fs-idm212985312(관련원가와 정성적 요소 함께 평가), Saylor 7.9(정성적 요소가 더 중요할 수 있음)로 직접 확인. 공식 답 1과 일치."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "fs-idm233266896(외부구입 시 남는 생산능력을 다른 제품에 활용)과 Saylor 7.3 기회원가 정의·유휴공간 임대료 반영으로 확인. 틀린 진술."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "Saylor 7.2 해고 가능한 감독자 급여=차이원가·avoidable cost 정의, m68083 fs-idm242846336 $0.12 회피가능 고정원가로 확인. 회피불가능 고정원가만 제외한다는 설명 정확."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "옳은 것을 고르는 문항에서 4번이 정답이 아닌 이유를 교재 설명 방향과 공식 답안의 일관성으로 정직하게 제시하고, 교재가 직접 부정하지 않음과 품질 통제 상실 단점을 unchecked_points에 기재. 다른 보기와 이유가 다름."
+            }
+          ],
+          "sources_checked": [
+            "OpenStax m68083 index.cnxml @2165bf6454c0279c1284e19ac7febc101f7956ad (raw 재다운로드 sha256 87e75ae3… 일치): fs-idm245398320·fs-idm241245872(전문성 때문에 외부 전문가에게 맡김), fs-idm212628352, fs-idm242846336($0.12 회피가능 고정원가), fs-idm235202032, fs-idm233266896(품질·납기·원가통제 의존, 여유 생산능력, 공급업자 관계), fs-idm212985312, table fs-idm222597344(장점 'Utilizes external expertise, removes the need for in-house expertise', 'Transfers some production and technological risks to supplier' / 단점 'Takes away control over quality and timing of production', 'May limit ability to upsize or downsize production') 모두 확인. 카탈로그 m68083 url·commit과 일치",
+            "Saylor 7.2 s11-02 @6b8ed09… (sha256 eaa69da3… 일치): 해고 가능한 감독자 급여는 차이원가, 리스료·장기계약 급여는 비차이원가, avoidable cost 정의 확인",
+            "Saylor 7.3 s11-03 @6b8ed09… (sha256 dafdfcb4… 일치, 카탈로그 R6_COST05_OPPORTUNITY url·commit 일치): 기회원가 정의와 유휴공간 임대료 반영 확인",
+            "Saylor 7.9 s11-09 @6b8ed09bd60909a2b170cfe16897266020b2968f (sha256 ef8bf248… 일치): 수요 감소 시 주문을 줄여 원가를 빨리 낮출 수 있다는 유연성(감소 방향만 서술), 품질·공급자 재무안정성·종업원 사기, 정성적 요소가 정량적 요소보다 중요할 수 있음 확인",
+            "공식 답안 PDF 5개 sha256 모두 일치(2022-12 004689e5…, 2023-06 a9677770…, 2024-05 5c3242b8…, 2023-01 e11a0696…, 2025-07 84e892fb…): 2022-12 원가관리회계 115번 [2], 2023-06·2024-05 원가관리회계 32번(=112번) 4, 2023-01 원가관리회계 34번(=114번) 1, 2025-07 112번 1",
+            "원문 이미지 2025-07-112.webp(본문·보기 brief와 일치)"
+          ],
+          "notes": "수정 불필요. 2023-01-114와 2025-07-112의 steps가 거의 같지만 같은 문항의 재출제이므로 문제없고, option_notes는 문항별로 다르게 작성되어 있습니다. 2023-01-114 보기 3에는 '모든'이 없으나 '고정원가를 제외한 변동원가만'은 모든 고정원가를 빼는 뜻이므로 steps[2]의 '고정원가를 모두 빼고' 표현은 정확합니다. EXAM_KEYS_MAKEBUY_EXPERTISE 메타데이터는 kind에 '교재 본문 아님'을 밝히고 verification이 '정답 번호 처리 사실만 확인하는 자료'로 한정하여 정직합니다. 다섯 locator·sha256 모두 실제와 일치합니다. 참고: url은 2023-06 PDF 하나만 가리키고 나머지는 새 키 related_files에 있으므로, 등록 스크립트가 이 키를 보존·허용하는지는 등록 단계에서 확인이 필요합니다(필수 수정 아님). 새 SAYLOR_QUALITATIVE_7_9·SAYLOR_MAKEBUY_7_2 메타데이터(커밋·sha256·내용 요약)도 재다운로드본과 일치하고 항목 간 동일합니다."
+        }
+      },
+      {
+        "question_id": "2025-01-055",
+        "previous_review": {
+          "question_id": "2025-01-055",
+          "category": "answer_suspected",
+          "reason": "보기②의선순위차입금적수제외는2024법정서식본문으로직접해소되어official_supported판정제안입니다. 보기①유예기간생략을포함한전체해설등록은별도독립QA범위로남겼습니다.",
+          "batch_id": "remaining_tax_004",
+          "recheck_batch_id": "recheck_tax_001",
+          "round3_batch_id": "r3_tax_003",
+          "extra_batch_id": "r7_tax_05"
+        },
+        "explanation_sha256": "8d3ac5014e4c66f463055fb8d004e93ebf3000d3be85ef1b96cd59b4c1f048a2",
+        "question_row_sha256": "6c22247d67d1a13f3b422caab74cd75fe0474fab8e5a0835df4f933d97e68693",
+        "official_answers": [
+          2
+        ],
+        "author": "author-r14-tax",
+        "blocker_resolution": "1번은 시행령 제49조제1항제1호 가목 본문과 단서를 직접 읽어, 유예기간(시행규칙 제26조제1항) 중인 부동산과 법령상 사용 금지·제한 부동산 등이 제외된다는 점을 확인했습니다. 따라서 1번을 완전한 진술이라고 단정하지 않고, 원칙을 요약한 출제 관행에 따라 옳은 진술로 읽되 예외를 보기 해설에 적고 정답 유일성 의문을 unchecked_points에 남겨 partial로 등록합니다. 정답 2번은 2024년 신고안내 266쪽 서식의 ⑱=⑩−⑬−⑯, ⑲=⑪−⑭−⑰과 시행령 제55조의 적용순위로 이 문제와 무관하게 성립하며 공식 정답을 바꾸지 않습니다.",
+        "source_reads": [
+          {
+            "ref": "CIT_LAW_2024",
+            "path_or_url": "law git kr/법인세법/법률.md",
+            "commit_or_version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 (공포 2023-12-31, 시행 2024-01-01, 2024년 중 후속 개정 없음)",
+            "what_was_read": "제28조 제1항~제4항 본문",
+            "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71"
+          },
+          {
+            "ref": "RT001_CIT_DECREE_2024",
+            "path_or_url": "law git kr/법인세법/시행령.md",
+            "commit_or_version": "a02adec3a1202551486387d29cda8c754b22df0d (대통령령 제34266호, 시행 2024-02-29). 2024년 중 후속 판본 6990afad·8b4efcee·0d2da531·4ad7e6cb와 제49조·제55조는 동일, 제53조는 산식 이미지 표기만 다름을 비교함",
+            "what_was_read": "제49조 제1항~제3항, 제53조 제1항~제4항(산식 포함), 제55조",
+            "sha256": "4d61351cb38668d46ac51b4094dbee8553f7b037140243bbc82b3102907999dd"
+          },
+          {
+            "ref": "CIT_RULE_2024",
+            "path_or_url": "law git kr/법인세법/시행규칙.md",
+            "commit_or_version": "280ade20dc7e669182e138e24ae5c9ffbef38aab (기획재정부령 제1041호, 시행 2024-03-22). 2024-11-11 판본 3bddd911과 제26조·제28조 동일",
+            "what_was_read": "제26조 제1항~제4항, 제28조 제1항·제2항",
+            "sha256": "2f940275cb04ad204afdb835245661135bf620aea9314e973501d9bd9ab55177"
+          },
+          {
+            "ref": "TA_NTS_CIT_GUIDE_2024",
+            "path_or_url": "/tmp/claude-0/dl/nts/g2024.pdf (페이지 이미지 p-266.png sha256 c0958ab6b16f27e4a6cc5809061f92c951260c3397ad770a615741e17cdaf1bc)",
+            "commit_or_version": "2024 법인세 신고안내, 별지 제26호서식(갑)(2006.3.14. 개정), 작성례 사업연도 2023",
+            "what_was_read": "PDF 266쪽 업무무관부동산등에 관련한 차입금이자조정명세서(갑) 표 전체(⑩~⑲, 합계행 27,800,000−5,000,000=22,800,000, 85,775,000,000−9,125,000,000=76,650,000,000)",
+            "sha256": "490ecc8128e3f8b07923e8857ce558682c897cf2dd11bafd9cd8473879af85e2"
+          },
+          {
+            "ref": "R10_tax_NTS_CIT_EXEC2024",
+            "path_or_url": "/tmp/claude-0/dl/nts/exec2024.pdf (pdftotext -layout)",
+            "commit_or_version": "2024년 10월 발간 법인세 집행기준",
+            "what_was_read": "27-49-1, 27-49-2, 28-0-1, 28-0-2(지급이자 포함·불포함 표), 28-53-1, 28-53-2 본문",
+            "sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea"
+          }
+        ],
+        "independent_review": {
+          "question_id": "2025-01-055",
+          "reviewer": "independent-reviewer-r14-tax",
+          "status": "pass",
+          "four_option_logic": [
+            {
+              "number": 1,
+              "status": "pass",
+              "note": "시행령(대통령령 제34266호, commit a02adec, 2024-02-29 시행) 제49조제1항제1호 가목 본문 '법인의 업무에 직접 사용하지 아니하는 부동산', 가목 단서(유예기간), 제1호 각 목 외의 부분 단서(법령상 사용 금지·제한 등 부득이한 사유) 확인. 시행규칙(제1041호, commit 280ade2) 제26조제1항 5년·5년·2년 확인. 원칙 요약으로 옳은 진술로 읽되 예외를 보기 해설에 적고 정답 유일성 의문을 unchecked_points에 남긴 처리는 정직함. 보기 해설 자체는 '같은 조문'으로 묶어 표현해 틀린 귀속은 없음."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "note": "2024 법인세 신고안내 PDF 266쪽(인쇄 244쪽) 별지 제26호서식(갑) ⑱(⑩−⑬−⑯)·⑲(⑪−⑭−⑰) 헤더와 합계행 22,800,000·76,650,000,000을 페이지 이미지로 직접 확인. 시행령 제55조 적용순위(채권자불분명→지급받은 자 불분명→건설자금→제53조제2항) 확인. 공식 답 2(답안 PDF 55번 2)와 일치하고 정답을 바꾸지 않음."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "note": "2024 집행기준(2024년 10월 발간, 9월 세법 기준) 28-0-2 표에서 '지급이자에 포함되는 것 2. 미지급이자', '포함되지 않는 것 2. 선급이자' 확인. '미경과이자'가 자료에 그대로 없어 선급이자로 대응시켰다는 점을 unchecked_points에 정직하게 밝힘."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "note": "법 제28조제1항제4호 나목 '특수관계인에게 해당 법인의 업무와 관련 없이 지급한 가지급금 등', 시행령 제53조제1항 '업무와 관련이 없는 자금의 대여액', 집행기준 28-53-2① '지급이자 손금불산입 대상은 특수관계인에 대한 대여금만 해당' 확인. 네 보기 이유가 서로 다르고 문제에 없는 조건을 추가하지 않음."
+            }
+          ],
+          "sources_checked": [
+            "law git 269562cff8dc4f38d97ce777aa5145c4f4c75211 kr/법인세법/법률.md (sha256 fb99f639… 일치, 법률 제19930호, 시행 2024-01-01, 다음 판본 3bcf43c·f9ee818은 2025-01-01 시행): 제28조제1항~제4항",
+            "law git a02adec3a1202551486387d29cda8c754b22df0d kr/법인세법/시행령.md (sha256 4d61351c… 일치, 시행 2024-02-29): 제49조, 제53조제1항~제4항, 제55조. 2024년 중 판본 6990afa·8b4efce·0d2da53·4ad7e6c와 제53조 차이는 산식 이미지 내 텍스트 표기뿐임을 diff로 확인. aeb8788은 2025-01-01 시행",
+            "law git 280ade20dc7e669182e138e24ae5c9ffbef38aab kr/법인세법/시행규칙.md (sha256 2f940275… 일치, 시행 2024-03-22): 제26조제1항·제5항, 제28조. 3bddd91 판본과 제26조~제28조 동일",
+            "/tmp/claude-0/dl/nts/g2024.pdf (sha256 490ecc81… 일치) PDF 266쪽=인쇄 244쪽, p-266.png (sha256 c0958ab6… 일치) 별지 제26호서식(갑)",
+            "/tmp/claude-0/dl/nts/exec2024.pdf (sha256 49338cfc… 일치): 27-49-1, 27-49-2, 28-0-1, 28-0-2, 28-53-1, 28-53-2 존재·내용 확인",
+            "jaegyeong/data/explanations.json sources: CIT_LAW_2024, RT001_CIT_DECREE_2024, CIT_RULE_2024, TA_NTS_CIT_GUIDE_2024, R10_tax_NTS_CIT_EXEC2024 모두 존재, commit 일치",
+            "원문 이미지 2025-01-055.webp(지문·보기 brief와 일치), 답안 PDF sources/2025-01-answers.pdf 55번=2",
+            "checks 재계산: 27800000 − 5000000 = 22800000, 85775000000 − 9125000000 = 76650000000 일치"
+          ],
+          "notes": "필수 수정 1건: steps 4번째 문장이 '법령에 따라 사용이 금지·제한된 부동산'의 제외 근거를 가목 단서로 귀속시키지만, 실제로는 시행령 제49조제1항제1호 각 목 외의 부분 단서(부득이한 사유)입니다. 가목 단서는 유예기간만 정합니다. steps[3]을 다음 문장으로 그대로 교체하세요: \"업무무관자산의 범위는 시행령 제49조제1항이 정합니다. 법인의 업무에 직접 사용하지 않는 부동산이 원칙적으로 업무무관자산이지만, 제1호 가목 단서에 따라 유예기간(시행규칙 제26조제1항: 신축용 토지·매매업 법인의 매매용 부동산은 취득일부터 5년, 그 밖의 부동산은 2년)이 지나기 전의 부동산은 제외됩니다. 또한 제1호 각 목 외의 부분 단서는 법령상 사용이 금지되거나 제한된 부동산 등 부득이한 사유가 있는 부동산도 제외합니다.\" 선택 개선: steps 1번째 문장의 '① 채권자가 … ④ 업무무관자산이나'의 원문자는 보기 번호와 혼동될 수 있으니 '제1호 채권자가 불분명한 사채의 이자, 제2호 …, 제3호 …, 제4호 …'처럼 호 번호로 바꾸는 것을 권합니다. 그 외 조문·쪽수·시행일·산식·산술·partial 처리와 unchecked_points(1번 예외 생략, 미경과이자/선급이자 대응)는 적절합니다. [재확인] 수정된 out_tax.json에서 steps[3]이 지정 문구 그대로 반영되어 유예기간은 시행령 제49조제1항제1호 가목 단서(시행규칙 제26조제1항), 법령상 사용 금지·제한 부동산은 제1호 각 목 외의 부분 단서로 올바르게 구분됨을 commit a02adec·280ade2 원문과 대조해 확인함. steps[0]의 제1호~제4호 표기도 법 제28조제1항(commit 269562c) 각 호 내용과 일치함. 필수 수정 사항이 해소되어 status를 pass로 변경함."
         }
       }
     ]
