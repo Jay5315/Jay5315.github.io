@@ -666,6 +666,12 @@ class ExplanationTests(unittest.TestCase):
         b = json.loads(raw[len('window.BANK_DATA='):-2])
         self.assertEqual(b['explanations'], self.data)
         self.assertEqual(len(b['questions']), 4322)
+        shown = {a['question_id'] for a in self.audit['answer_adjudication']['records']
+                 if a['verdict'] in {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
+        self.assertEqual(set(b['answerNotes']), shown)
+        for id, note in b['answerNotes'].items():
+            self.assertTrue(note['label'] and note['text'])
+            self.assertEqual(b['questions'][[q['id'] for q in b['questions']].index(id)]['answers'], self.qs[id]['answers'])
         for q in b['questions']:
             self.assertEqual(q['answers'], self.qs[q['id']]['answers'])
             self.assertEqual(q['text'], self.qs[q['id']]['text'])

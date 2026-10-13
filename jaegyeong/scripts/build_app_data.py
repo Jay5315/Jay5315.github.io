@@ -18,7 +18,15 @@ def main():
   missing=[s['ref'] for s in n['sources'] if s['ref'] not in concepts['sources']]
   if missing:raise SystemExit(f"{n['id']}: unknown source refs {missing}")
  explanations=validate_explanations(read('explanations'),qs,{e['id'] for e in entries},part_ids)
- data=dict(questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
+ adjudication=json.loads((R/'reports/explanation-expansion.json').read_text()).get('answer_adjudication',{}).get('records',[])
+ labels={'official_conflict':'공식 정답 이의 가능','multiple_candidates':'정답 후보가 둘 이상','ambiguous_wording':'문항 표현이 모호','deferred':'근거 보완 필요'}
+ answer_notes={}
+ for a in adjudication:
+  if a['verdict'] not in labels:continue
+  q=qs.get(a['question_id'])
+  if not q or q['answers']!=a['official_answers']:raise SystemExit(f"{a['question_id']}: adjudication does not match official answer")
+  answer_notes[a['question_id']]=dict(kind=a['verdict'],label=labels[a['verdict']],text=a['evidence'])
+ data=dict(answerNotes=answer_notes,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
  out=R/'assets/bank-data.js';out.write_text('window.BANK_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
  print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes, {len(explanations["items"])} explanations: {out.stat().st_size/1048576:.1f} MiB')
 if __name__=='__main__':main()

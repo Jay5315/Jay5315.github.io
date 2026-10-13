@@ -130,6 +130,23 @@ with sync_playwright() as pw:
     page.locator('[data-action=grade]').click()
     expect(page.locator('.question-card .explanation-pending')).to_contain_text('준비 중')
 
+    # Official-answer dispute notes appear only after grading and never change the official answer.
+    page.goto(URL + '#library')
+    disputed = '2025-09-080'
+    page.locator('#library-query').fill(disputed)
+    page.locator('[data-action=preview]').click()
+    expect(page.locator('dialog .answer-dispute')).to_contain_text('공식 정답 이의 가능')
+    page.locator('dialog [data-action=single]').click()
+    if page.locator('#replace-session').count():
+        page.locator('#replace-session').click()
+    expect(page.locator('.question-card .answer-dispute')).to_have_count(0)
+    page.get_by_role('button', name='1번 선택', exact=True).click()
+    page.locator('[data-action=grade]').click()
+    expect(page.locator('.question-card .answer-dispute')).to_contain_text('2012년')
+    expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
+    assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
+    assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 20
+
     page.set_viewport_size({'width': 375, 'height': 812})
     page.goto(URL + '#wrong')
     page.locator('#library-query').fill('2026-01-054')

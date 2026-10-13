@@ -616,3 +616,9 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .explanation-filter{flex-basis:100%}
  .view-toolbar .explanation-filter input{flex-basis:auto}
 }
+
+.answer-dispute{margin:14px 0;padding:12px 14px;border-radius:12px;border:1px solid var(--warn-line);background:var(--warn-bg);color:var(--warn);line-height:1.6}
+.answer-dispute b{display:block;font-weight:800;font-size:15px}
+.answer-dispute p{margin:6px 0 4px;font-size:15px}
+.answer-dispute small{display:block;font-size:13px;opacity:.85}
+.answer-dispute.deferred,.answer-dispute.ambiguous_wording{border-style:dashed}
