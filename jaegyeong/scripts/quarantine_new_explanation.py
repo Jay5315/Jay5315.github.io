@@ -18,6 +18,7 @@ def quarantine(path):
         return
     protected = set(audit['third_pass_baseline_hashes'])
     protected.update(audit.get('sixth_pass_snapshot', {}).get('baseline_hashes', {}))
+    protected.update(audit.get('seventh_pass_snapshot', {}).get('baseline_hashes', {}))
     if id in protected:
         raise ValueError('Existing explanations are protected')
     n = next(n for n in data['items'] if n['question_id'] == id)
@@ -52,11 +53,14 @@ def quarantine(path):
                  review_count=len(audit['review']),
                  third_pass_net_added_count=audit['third_pass_added_count'] - sum('third_pass_batch_id' in r for r in withdrawals),
                  extra_net_added_count=audit.get('extra_added_count', 0) - sum('extra_batch_id' in r for r in withdrawals))
-    if 'sixth_pass_snapshot' in audit:
-        snapshot = audit['sixth_pass_snapshot']
-        gross = sum(len(b['resolved_ids']) for b in audit.get('extra_rechecks', []) if b.get('extra_round',4)==6)
+    round_number = origin.get('extra_round', 4) if extra else None
+    snapshot_key = {6: 'sixth_pass_snapshot', 7: 'seventh_pass_snapshot', 8: 'seventh_pass_snapshot'}.get(round_number)
+    if snapshot_key in audit:
+        snapshot = audit[snapshot_key]
+        included_rounds = snapshot.get('included_extra_rounds', [round_number])
+        gross = sum(len(b['resolved_ids']) for b in audit.get('extra_rechecks', []) if b.get('extra_round',4) in included_rounds)
         snapshot.update(gross_added_count=gross,
-                        new_registered_count=gross-sum(r.get('extra_round')==6 for r in withdrawals),
+                        new_registered_count=gross-sum(r.get('extra_round') in included_rounds for r in withdrawals),
                         remaining_review_count=len(audit['review']))
     dp.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     ap.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')

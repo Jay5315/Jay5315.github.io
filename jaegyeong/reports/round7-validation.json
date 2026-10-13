@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-13",
+  "all_required_suites_passed": true,
+  "local_browser_url": "http://127.0.0.1:8005/jaegyeong/",
+  "browser_scope": "시스템 Chromium 로컬 HTTP 앱 검사. 공개 HTTPS 브라우저 검수라고 표현하지 않음.",
+  "baseline_commit": "a3a4f25a37b335f7706ce0fc265e11f1f49e04f4",
+  "registered_explanation_count": 4145,
+  "remaining_review_count": 176,
+  "baseline_explanations_preserved": 4090,
+  "question_ids_official_answers_tax_years_study_storage_unchanged": true,
+  "concept_notes": {
+    "count": 74,
+    "enriched": [
+      "M03"
+    ],
+    "other_notes_unchanged": 73,
+    "review_status_preserved": true
+  },
+  "actual_parallel_workers": 6,
+  "processed_unique_questions": 231,
+  "additional_followup_reviews": 62,
+  "qa_report": "round7-quality-review.json",
+  "suites": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.5,
+      "output_sha256": "da461309f5fbc9188e334cf2d9b19bdefc030c68f8f8adbb499d634218011cb8",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.285s\n\nOK\n"
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.49,
+      "output_sha256": "66b81bacacc76db3a9263665621a87fb373da074ec52a4f1d130dfbcd70237f6",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.308s\n\nOK\n"
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 0.4,
+      "output_sha256": "97583594441bec288554143e613e27f840da46a13ee3bf5f8ba9f1f638547c11",
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.318s\n\nOK\n"
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 3.8,
+      "output_sha256": "e636b96519b1529b13fcf9808bf34ca159bf92f84a6729be4bb35f75e76a0903",
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.609s\n\nOK\n"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 27.4,
+      "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n"
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 4.23,
+      "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n"
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_seconds": 93.92,
+      "output_sha256": "4523df47eca5b89c7c2530ae0a5f0b0a69a8b1904ede4bbd7eab83134032aadc",
+      "output": "PASS: all 4145 explanation bodies rendered; 167 grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n"
+    }
+  ],
+  "targeted_recheck": {
+    "suite": "test_explanations",
+    "initial_exit_code": 1,
+    "initial_output_sha256": "6726398affecd4df03c7f865ad9f2d19adab765f06982e2e311c1d6afb86f8c3",
+    "reason": "과거 보류 이력을 보존하되, 이후 실제 출처 및 독립 검수로 재등록한 2025-05-037의 검증된 전이를 검사하도록 보완. 데이터·답안은 변경하지 않음."
+  },
+  "original_file_byte_preservation": [
+    {
+      "file": "jaegyeong/data/questions.json",
+      "sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+      "unchanged": true
+    },
+    {
+      "file": "jaegyeong/data/entries.json",
+      "sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+      "unchanged": true
+    },
+    {
+      "file": "jaegyeong/data/source-manifest.json",
+      "sha256": "b711080668f60128016ba02f75535cc3754183eabeea0d15b482cc62871fb88b",
+      "unchanged": true
+    },
+    {
+      "file": "jaegyeong/data/taxonomy.json",
+      "sha256": "70eab55cbe22feb46f38f3d6ef54145ab29c344077b7568ff2a732b716a5ce1b",
+      "unchanged": true
+    },
+    {
+      "file": "jaegyeong/assets/app.js",
+      "sha256": "e0ca61d0f5f709a22a0f99b1b76bfe7020591bc3ed9c780ee2c58f1a299881f8",
+      "unchanged": true
+    },
+    {
+      "file": "jaegyeong/assets/app.css",
+      "sha256": "c8c6e9a70e6414c84a0db05f07f5dcc02b6e28a99ba691f423ef4198029254ed",
+      "unchanged": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "3fac6a6238a9c11ed7da4e37285273f1f4c4a1393753419d55dd2b21afd56323",
+      "unchanged": true
+    },
+    {
+      "file": "privacy.html",
+      "sha256": "48587d161eaff508985e858a7c73689f151993ced1d992f4a346e9018ae20e2a",
+      "unchanged": true
+    },
+    {
+      "file": "terms.html",
+      "sha256": "18c50fb7b9cd0e8c5462b9afd1c4a0d6852adc4b3ee75e38247c50a50a9ba18e",
+      "unchanged": true
+    },
+    {
+      "file": "style.css",
+      "sha256": "b193940a66391a73440e550f935cb30ffa226a392a332d499764ec439b2346ff",
+      "unchanged": true
+    }
+  ],
+  "test_script_sha256": {
+    "test_bank": "1c40dfb2125d2a1c9c41c9f8dea1cc9dc16a325abe2810c675492a010066bae4",
+    "test_parts": "52e13d8018f6c92f3a18ea678e7f32b7257ebf3696cd711534535339b52780ad",
+    "test_concepts": "e733009fb2d940aa8f4aeb05c705cc80cf670a8debdef82e0c27f0554b0699b2",
+    "test_explanations": "26fccceb9136b708dd5e90ac54bc158f575e7191a19d6d3b91cf0b85f5ff4c83",
+    "test_app": "8696d9e46c08c4b09663289fe614e819250fb5110cac3b178c240721d3e5711f",
+    "test_browser": "6f56f66845244f49a8846ed348e1dfb81c6a60f1e7b6c6af394999f4c3a18826",
+    "test_explanations_app": "974c627c1a5875573979cdbedaa6a9fe7c4f570765db980a99328ab2eb7da672"
+  },
+  "approved_batch_reimport_idempotent": true,
+  "historical_review_records_preserved": true
+}

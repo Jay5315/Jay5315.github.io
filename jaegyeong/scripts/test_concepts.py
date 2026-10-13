@@ -82,6 +82,9 @@ class ConceptNotesTest(unittest.TestCase):
                     'IFRSCF':'https://github.com/DhestyaSyafaAmanda/tugas-akhir-analisis-dan-desain-sistem-dhestya-syafa-amanda/blob/',
                     'COST':('https://www.accaglobal.com/','https://biz.libretexts.org/','https://ocw.mit.edu/'),
                     'EUIFRS':'https://github.com/legalize-dev/legalize-eu/blob/'}.get(k.split('_')[0],'https://www.law.go.kr/')
+            if k == 'R7_CONCEPT_M03_HANYANG_ALLOCATION':
+                prefix = 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf'
+                self.assertEqual(r['url'], prefix, k)
             self.assertTrue(r['url'].startswith(prefix),k)
             if k.startswith('EUIFRS'):
                 self.assertRegex(r['url'],r'/blob/[0-9a-f]{40}/eu/1c/32023R1803\.md')

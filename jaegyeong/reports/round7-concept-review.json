@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-13",
+  "complete": true,
+  "status": "pass",
+  "expert_reviewed": false,
+  "author": "root",
+  "reviewer": "/root/r6_finance_a",
+  "baseline_note_count": 74,
+  "enriched_note_ids": [
+    "note-M03"
+  ],
+  "unchanged_note_count": 73,
+  "review_statuses_preserved": true,
+  "source_objects_preserved": true,
+  "proposal_sha256": "490e5150b30cfc08479e4ca52b7e87196caf5dc811be721807063f3eedf6f4ba",
+  "before_hash": "66b88b5baa93098d3a50e4b65e5ef83280fdaa889d4acdfbeb2f5e77dc44272b",
+  "after_hash": "8582031cc8a8ef215db450d934c5c00d947ca19daf0bf749412d88a7c0a37462",
+  "raw_content_qa_sha256": "078015adb8fe1566dde426418d4adf5b0ecf0dc5f5dcfcdf54527d5321ba96c4",
+  "raw_followup_qa_sha256": "fb4d4050a7006ef8875284325987c6c00ab17af40356eb3a3b2fa7dfdb04f882",
+  "content_qa": {
+    "schema_version": 1,
+    "note_id": "note-M03",
+    "checked_on": "2026-10-13",
+    "reviewer": "/root/r6_finance_a",
+    "author": "root",
+    "reviewer_independent_of_author": true,
+    "expert_reviewed": false,
+    "status": "issue",
+    "content_review_status": "pass",
+    "issues": [
+      {
+        "code": "CURRENT_VALIDATOR_UNSUPPORTED_KOCW_SOURCE_PREFIX",
+        "severity": "validation_compatibility",
+        "location": "scripts/test_concepts.py:77–85",
+        "finding": "현재검증기는sourcekey 첫prefix R7을알지못하여법령URL 기본값 https://www.law.go.kr/를요구. 실제KOCW정상공개원본및URL/캐시SHA가일치하고내용은적절하지만 합성append 출처검사가실패한다.",
+        "required_resolution": "실제확인된 R7_CONCEPT_M03_HANYANG_ALLOCATION의KOCW공개URL을허용하도록검증기를좁게보강한뒤동일검사재실행. 원문또는URL을허위변경하거나검사를비활성화하지않음."
+      }
+    ],
+    "proposal_path": "concept-m03.proposal.json",
+    "proposal_sha256": "490e5150b30cfc08479e4ca52b7e87196caf5dc811be721807063f3eedf6f4ba",
+    "before_path": "concept-m03.before.json",
+    "before_file_sha256": "f3f959c7286e05892317722a66e21717c70c7d6eb1068e60cbff5bf3472bfc11",
+    "before_canonical_sha256": "66b88b5baa93098d3a50e4b65e5ef83280fdaa889d4acdfbeb2f5e77dc44272b",
+    "current_note_canonical_sha256_at_review": "66b88b5baa93098d3a50e4b65e5ef83280fdaa889d4acdfbeb2f5e77dc44272b",
+    "simulated_after_canonical_sha256": "8582031cc8a8ef215db450d934c5c00d947ca19daf0bf749412d88a7c0a37462",
+    "actual_source_reads": [
+      {
+        "ref": "R7_CONCEPT_M03_HANYANG_ALLOCATION",
+        "cache_path": "hanyang3.pdf",
+        "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+        "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+        "acquisition_status": 200,
+        "acquisition_bytes": 107667,
+        "acquisition_metadata_path": "further-kocw-log.json",
+        "actually_read": true,
+        "pdf_total_pages": 14,
+        "read_locator": "PDF1–13 추출본문 독립읽음; PDF6–9/10–13 원본이미지 직접확인. 핵심PDF6–7 원가배부목적/네기준, PDF8–9 직접/단계/상호와단일/이중의별도축, PDF10 실제량/최대량(예산사용량) 정의/표, PDF11–12 근처계산/표시오기, PDF13 이중배부식. PDF14 추출본문은공란.",
+        "image_evidence": [
+          "concept-m03-p6-9.png",
+          "concept-m03-p10-13.png"
+        ],
+        "text_evidence": "concept-m03.source-read.txt"
+      }
+    ],
+    "append_verification": {
+      "current_note_equals_before": true,
+      "before_canonical_matches_proposal": true,
+      "original_body_prefixes_preserved": true,
+      "appended_counts": {
+        "key_points": 3,
+        "formulas": 1,
+        "pitfalls": 1,
+        "examples": 1,
+        "sources": 1
+      },
+      "metadata_fields_preserved": [
+        "id",
+        "part_id",
+        "title",
+        "summary",
+        "related_part_ids",
+        "tags",
+        "applicability",
+        "review_status"
+      ],
+      "review_note_prefix_preserved": true,
+      "review_status_before": "partial",
+      "review_status_after": "partial",
+      "unchecked_count_before": 2,
+      "unchecked_count_after": 2,
+      "unchecked_first_verbatim_preserved": true,
+      "unchecked_second_narrowed_to_actual_confirmed_scope": true,
+      "source_addition_unique": true,
+      "shared_repository_modified": false
+    },
+    "scope_findings": [
+      {
+        "target": "네 배부기준",
+        "status": "pass",
+        "locator": "PDF6–7",
+        "finding": "인과관계=원가발생-대상관계, 수혜=제공받은경제적효익, 부담능력=매출/이익, 공정성=공정한배부 및 정부원가보상계약 예를 직접확인. 당사자의공정한수용이라는 문구는 공정성의 설명적 의역이며 PDF가모든당사자의실제동의절차를요구한다고 주장하지않는다."
+      },
+      {
+        "target": "단일/이중 및 직접/단계/상호의 구별",
+        "status": "pass",
+        "locator": "PDF8–10",
+        "finding": "교안이용역수수고려축과변동/고정집합축을별도로직접열거. 단일은구분없이하나의기준, 이중은분리후다른기준으로배부한다."
+      },
+      {
+        "target": "고정최대/변동실제 모형",
+        "status": "pass",
+        "locator": "PDF10/13",
+        "finding": "교안본문은변동실제사용, 고정최대사용량(예산사용량)으로명시하고 예제는최대공급시간700/500·실제500/500을직접사용한다. 제안식은고정원가전체에부문최대량/전체최대량을곱하는한정된모형과정확히일치. 최대량과예산량이별도제시될때같다고볼근거는이교안에서없으며제안은이한계를명시한다. 정상조업도와모든국내시험정책은확인했다고승격하지않는다."
+      },
+      {
+        "target": "추가예제 독립파생",
+        "status": "pass",
+        "locator": "PDF13원리와proposal setup",
+        "finding": "72000/48000, 실제300/300, 최대600/400은교안수치라고표현하지않은새파생조건. 전액배부120000, 단일각60000, 이중64800/55200 모두정확. 공급최대보다실제량이작은제시조건도성립한다."
+      },
+      {
+        "target": "교안표시오기 한계",
+        "status": "pass",
+        "locator": "PDF11–12",
+        "finding": "동력우선단계법최종행이120050/79050으로표시되지만자체80000/60000와배부행27500/16500·13000/3000을더하면120500/79500이고합200000. 상호법29,167×20%=5,833.4인데본문5,883은오기; 표5,833과구별. 반올림된X/Y의개별금액과정확연립해의차이도구별했다. 이오류수치를새예제에복사하지않는다."
+      },
+      {
+        "target": "기존상태/미확인영역",
+        "status": "pass",
+        "locator": "before/proposal status_delta",
+        "finding": "기존단계법규칙미확인문구1은완전히유지. 두번째미확인문구는실제로확인된단일/이중정의와최대량기본예제를분리하되별도기준우선순위/국내보편정책을유지. partial상태및전문가미검수표현을보존하고기존본문/메타데이터를다시검수완료로승격하지않는다."
+      }
+    ],
+    "numeric_checks": [
+      {
+        "scope": "existing_preserved",
+        "example": "상호 제공량을 제외한 직접배분",
+        "label": "배부율",
+        "expr": "120000/(30+70)",
+        "expected": 1200,
+        "safe_calc_actual": 1200.0,
+        "independent_fraction_actual": "1200",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "상호 제공량을 제외한 직접배분",
+        "label": "A 배부액",
+        "expr": "1200*30",
+        "expected": 36000,
+        "safe_calc_actual": 36000,
+        "independent_fraction_actual": "36000",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "상호 제공량을 제외한 직접배분",
+        "label": "B 배부액",
+        "expr": "1200*70",
+        "expected": 84000,
+        "safe_calc_actual": 84000,
+        "independent_fraction_actual": "84000",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "상호 제공량을 제외한 직접배분",
+        "label": "전액 배분 검산",
+        "expr": "36000+84000",
+        "expected": 120000,
+        "safe_calc_actual": 120000,
+        "independent_fraction_actual": "120000",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "정해진 순서의 단계법과 상호법",
+        "label": "단계 X",
+        "expr": "1000*0.3+(2000+1000*0.1)*0.5/(0.5+0.3)",
+        "expected": 1612.5,
+        "safe_calc_actual": 1612.5,
+        "independent_fraction_actual": "3225/2",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "정해진 순서의 단계법과 상호법",
+        "label": "단계 Y",
+        "expr": "1000*0.6+(2000+1000*0.1)*0.3/(0.5+0.3)",
+        "expected": 1387.5,
+        "safe_calc_actual": 1387.5,
+        "independent_fraction_actual": "2775/2",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "정해진 순서의 단계법과 상호법",
+        "label": "상호 X",
+        "expr": "0.3*((1000+0.2*2000)/(1-0.2*0.1))+0.5*(2000+0.1*((1000+0.2*2000)/(1-0.2*0.1)))",
+        "expected": 1500,
+        "safe_calc_actual": 1500.0,
+        "independent_fraction_actual": "1500",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "정해진 순서의 단계법과 상호법",
+        "label": "상호 Y",
+        "expr": "0.6*((1000+0.2*2000)/(1-0.2*0.1))+0.3*(2000+0.1*((1000+0.2*2000)/(1-0.2*0.1)))",
+        "expected": 1500,
+        "safe_calc_actual": 1500.0,
+        "independent_fraction_actual": "1500",
+        "passed": true
+      },
+      {
+        "scope": "existing_preserved",
+        "example": "정해진 순서의 단계법과 상호법",
+        "label": "상호 전액 배부",
+        "expr": "1500+1500",
+        "expected": 3000,
+        "safe_calc_actual": 3000,
+        "independent_fraction_actual": "3000",
+        "passed": true
+      },
+      {
+        "scope": "new_proposal",
+        "example": "단일과 이중배부의 기준 차이",
+        "label": "단일 A",
+        "expr": "120000*300/(300+300)",
+        "expected": 60000,
+        "safe_calc_actual": 60000.0,
+        "independent_fraction_actual": "60000",
+        "passed": true
+      },
+      {
+        "scope": "new_proposal",
+        "example": "단일과 이중배부의 기준 차이",
+        "label": "이중 A",
+        "expr": "72000*300/600+48000*600/1000",
+        "expected": 64800,
+        "safe_calc_actual": 64800.0,
+        "independent_fraction_actual": "64800",
+        "passed": true
+      },
+      {
+        "scope": "new_proposal",
+        "example": "단일과 이중배부의 기준 차이",
+        "label": "이중 B",
+        "expr": "72000*300/600+48000*400/1000",
+        "expected": 55200,
+        "safe_calc_actual": 55200.0,
+        "independent_fraction_actual": "55200",
+        "passed": true
+      },
+      {
+        "scope": "new_proposal",
+        "example": "단일과 이중배부의 기준 차이",
+        "label": "전액 배부",
+        "expr": "64800+55200",
+        "expected": 120000,
+        "safe_calc_actual": 120000,
+        "independent_fraction_actual": "120000",
+        "passed": true
+      },
+      {
+        "scope": "new_proposal",
+        "example": "단일과 이중배부의 기준 차이",
+        "label": "A 차이",
+        "expr": "64800-60000",
+        "expected": 4800,
+        "safe_calc_actual": 4800,
+        "independent_fraction_actual": "4800",
+        "passed": true
+      }
+    ],
+    "numeric_checks_count": 14,
+    "new_numeric_checks_count": 5,
+    "source_example_checks": [
+      {
+        "label": "PDF13 single assembly",
+        "expr": "90000*500/1000",
+        "expected": 45000,
+        "safe_calc_actual": 45000.0,
+        "independent_fraction_actual": "45000",
+        "passed": true
+      },
+      {
+        "label": "PDF13 single packing",
+        "expr": "90000*500/1000",
+        "expected": 45000,
+        "safe_calc_actual": 45000.0,
+        "independent_fraction_actual": "45000",
+        "passed": true
+      },
+      {
+        "label": "PDF13 variable assembly",
+        "expr": "60000*500/1000",
+        "expected": 30000,
+        "safe_calc_actual": 30000.0,
+        "independent_fraction_actual": "30000",
+        "passed": true
+      },
+      {
+        "label": "PDF13 variable packing",
+        "expr": "60000*500/1000",
+        "expected": 30000,
+        "safe_calc_actual": 30000.0,
+        "independent_fraction_actual": "30000",
+        "passed": true
+      },
+      {
+        "label": "PDF13 fixed assembly",
+        "expr": "30000*700/1200",
+        "expected": 17500,
+        "safe_calc_actual": 17500.0,
+        "independent_fraction_actual": "17500",
+        "passed": true
+      },
+      {
+        "label": "PDF13 fixed packing",
+        "expr": "30000*500/1200",
+        "expected": 12500,
+        "safe_calc_actual": 12500.0,
+        "independent_fraction_actual": "12500",
+        "passed": true
+      },
+      {
+        "label": "PDF13 total assembly",
+        "expr": "200000+30000+17500",
+        "expected": 247500,
+        "safe_calc_actual": 247500,
+        "independent_fraction_actual": "247500",
+        "passed": true
+      },
+      {
+        "label": "PDF13 total packing",
+        "expr": "100000+30000+12500",
+        "expected": 142500,
+        "safe_calc_actual": 142500,
+        "independent_fraction_actual": "142500",
+        "passed": true
+      },
+      {
+        "label": "PDF13 conservation",
+        "expr": "247500+142500",
+        "expected": 390000,
+        "safe_calc_actual": 390000,
+        "independent_fraction_actual": "390000",
+        "passed": true
+      },
+      {
+        "label": "PDF12 step actual assembly",
+        "expr": "80000+27500+13000",
+        "expected": 120500,
+        "safe_calc_actual": 120500,
+        "independent_fraction_actual": "120500",
+        "passed": true
+      },
+      {
+        "label": "PDF12 step actual packing",
+        "expr": "60000+16500+3000",
+        "expected": 79500,
+        "safe_calc_actual": 79500,
+        "independent_fraction_actual": "79500",
+        "passed": true
+      },
+      {
+        "label": "PDF12 step correct conservation",
+        "expr": "120500+79500",
+        "expected": 200000,
+        "safe_calc_actual": 200000,
+        "independent_fraction_actual": "200000",
+        "passed": true
+      },
+      {
+        "label": "PDF12 printed step sum",
+        "expr": "120050+79050",
+        "expected": 199100,
+        "safe_calc_actual": 199100,
+        "independent_fraction_actual": "199100",
+        "passed": true
+      },
+      {
+        "label": "PDF12 reciprocal X",
+        "expr": "(40000+0.2*20000)/(1-0.2*0.2)",
+        "expected": 45833.333333333336,
+        "safe_calc_actual": 45833.333333333336,
+        "independent_fraction_actual": "137500/3",
+        "passed": true
+      },
+      {
+        "label": "PDF12 reciprocal Y",
+        "expr": "20000+0.2*((40000+0.2*20000)/(1-0.2*0.2))",
+        "expected": 29166.666666666668,
+        "safe_calc_actual": 29166.666666666668,
+        "independent_fraction_actual": "87500/3",
+        "passed": true
+      },
+      {
+        "label": "PDF12 rounded Y return at20%",
+        "expr": "29167*0.2",
+        "expected": 5833.4,
+        "safe_calc_actual": 5833.400000000001,
+        "independent_fraction_actual": "29167/5",
+        "passed": true
+      },
+      {
+        "label": "PDF12 exact final assembly",
+        "expr": "80000+0.5*((40000+0.2*20000)/(1-0.2*0.2))+0.65*(20000+0.2*((40000+0.2*20000)/(1-0.2*0.2)))",
+        "expected": 121875,
+        "safe_calc_actual": 121875.0,
+        "independent_fraction_actual": "121875",
+        "passed": true
+      },
+      {
+        "label": "PDF12 exact final packing",
+        "expr": "60000+0.3*((40000+0.2*20000)/(1-0.2*0.2))+0.15*(20000+0.2*((40000+0.2*20000)/(1-0.2*0.2)))",
+        "expected": 78125,
+        "safe_calc_actual": 78125.0,
+        "independent_fraction_actual": "78125",
+        "passed": true
+      }
+    ],
+    "source_example_checks_count": 18,
+    "all_numeric_checks_passed": true,
+    "current_concept_validator_in_memory": {
+      "tests": [
+        "test_structure_and_part_links",
+        "test_sources_and_status_are_honest",
+        "test_example_arithmetic"
+      ],
+      "tests_run": 3,
+      "passed": false,
+      "passed_tests": 2,
+      "failed_tests": 1,
+      "failure_test": "test_sources_and_status_are_honest",
+      "failure_reason": "R7 source prefix falls back to law.go.kr URL in existing allowed-source mapping",
+      "scope": "current concept-note structure/source-status/example-arithmetic checks using simulated append; shared file not written"
+    },
+    "no_shared_repository_edits": true,
+    "no_subagents": true
+  },
+  "technical_followup": {
+    "schema_version": 1,
+    "note_id": "note-M03",
+    "checked_on": "2026-10-13",
+    "reviewer": "/root/r6_finance_a",
+    "author": "root",
+    "reviewer_independent_of_author": true,
+    "expert_reviewed": false,
+    "status": "pass",
+    "technical_issue_resolved": "CURRENT_VALIDATOR_UNSUPPORTED_KOCW_SOURCE_PREFIX",
+    "old_qa_path": "concept-m03.qa.json",
+    "old_qa_sha256": "078015adb8fe1566dde426418d4adf5b0ecf0dc5f5dcfcdf54527d5321ba96c4",
+    "old_done_path": "concept-m03.qa.done.json",
+    "old_done_sha256": "50b228ecc30d2731bb2d1a88d3f1bb5aa80aead1dce1944997d4dbc4803a9490",
+    "old_qa_and_done_preserved": true,
+    "proposal_path": "concept-m03.proposal.json",
+    "proposal_sha256": "490e5150b30cfc08479e4ca52b7e87196caf5dc811be721807063f3eedf6f4ba",
+    "before_canonical_sha256": "66b88b5baa93098d3a50e4b65e5ef83280fdaa889d4acdfbeb2f5e77dc44272b",
+    "simulated_after_canonical_sha256": "8582031cc8a8ef215db450d934c5c00d947ca19daf0bf749412d88a7c0a37462",
+    "same_completed_content_review_reused": true,
+    "source_review_not_repeated": true,
+    "actual_source_sha256_from_frozen_qa": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+    "validator_script_path": "test_concepts.py",
+    "validator_script_sha256": "e733009fb2d940aa8f4aeb05c705cc80cf670a8debdef82e0c27f0554b0699b2",
+    "validator_head_sha256": "b7f8cd92bbda87bcc4e0d1c44f6709f1e91e605180ad2b342ec4d5e0951caf1a",
+    "change_scope": {
+      "exactly_three_inserted_lines": [
+        "            if k == 'R7_CONCEPT_M03_HANYANG_ALLOCATION':",
+        "                prefix = 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf'",
+        "                self.assertEqual(r['url'], prefix, k)"
+      ],
+      "only_exact_source_key": "R7_CONCEPT_M03_HANYANG_ALLOCATION",
+      "strict_equal_url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+      "strict_equal_assert_present": true,
+      "removing_three_insertions_equals_head": true,
+      "all_existing_prefix_and_other_source_rules_preserved": true,
+      "original_startswith_assert_preserved": true,
+      "no_validation_disabled": true
+    },
+    "simulation": {
+      "shared_repository_write": false,
+      "original_current_note_equals_before": true,
+      "same_append_canonical_as_original_qa": true,
+      "partial_status_preserved": true,
+      "source_added_only_in_memory": true
+    },
+    "tests": [
+      {
+        "test": "test_structure_and_part_links",
+        "status": "pass",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "actual_runner_output": "test_structure_and_part_links (test_concepts.ConceptNotesTest.test_structure_and_part_links) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.048s\n\nOK\n"
+      },
+      {
+        "test": "test_sources_and_status_are_honest",
+        "status": "pass",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "actual_runner_output": "test_sources_and_status_are_honest (test_concepts.ConceptNotesTest.test_sources_and_status_are_honest) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+      },
+      {
+        "test": "test_example_arithmetic",
+        "status": "pass",
+        "tests_run": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "actual_runner_output": "test_example_arithmetic (test_concepts.ConceptNotesTest.test_example_arithmetic) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n"
+      }
+    ],
+    "tests_run": 3,
+    "passed": 3,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "all_requested_tests_passed": true,
+    "no_shared_repository_edits": true,
+    "no_subagents": true
+  }
+}
