@@ -455,6 +455,12 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.current_audit = copy.deepcopy(cls.audit)
         cls.stage_after = {}
+        rewrites = (cls.audit or {}).get('round12_option_rewrites')
+        if rewrites:
+            cls.stage_after['round12_option_rewrites'] = copy.deepcopy(cls.data)
+            indices = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in reversed(rewrites['notes']):
+                cls.data['items'][indices[record['question_id']]] = copy.deepcopy(record['before'])
         corrections = (cls.audit or {}).get('round11_corrections')
         if corrections:
             # Newest stage first: restore the post-round-10 objects so every earlier
@@ -1004,7 +1010,7 @@ class ExplanationTests(unittest.TestCase):
         def digest(x):
             return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
                                              separators=(',', ':')).encode()).hexdigest()
-        current = {n['question_id']: n for n in self.current_data['items']}
+        current = {n['question_id']: n for n in self.stage_after['round11_corrections']['items']}
         previous = self.latest_notes
         ids = [r['question_id'] for r in group['notes']]
         self.assertEqual(len(ids), len(set(ids)))
@@ -1057,6 +1063,48 @@ class ExplanationTests(unittest.TestCase):
         for id in set(current) - set(ids):
             self.assertEqual(current[id], previous[id], id)
         self.assertEqual(set(current), set(previous))
+
+
+    def test_round12_option_rewrites_change_only_duplicated_wrong_option_reasons(self):
+        group = (self.current_audit or {}).get('round12_option_rewrites')
+        if not group:
+            self.skipTest('No round-12 option rewrites')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        current = {n['question_id']: n for n in self.current_data['items']}
+        previous = {n['question_id']: n for n in self.stage_after['round11_corrections']['items']} \
+            if 'round11_corrections' in self.stage_after else self.latest_notes
+        ids = [r['question_id'] for r in group['notes']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(group['count'], len(ids))
+        for r in group['notes']:
+            id, before, after = r['question_id'], r['before'], current[r['question_id']]
+            self.assertEqual(before, previous[id], id)
+            self.assertEqual(digest(before), r['before_hash'], id)
+            self.assertEqual(digest(after), r['after_hash'], id)
+            count = Counter(o['reason'].strip() for o in before['option_notes'])
+            duplicated = sorted(o['number'] for o in before['option_notes'] if count[o['reason'].strip()] > 1)
+            self.assertEqual(r['rewritten_options'], duplicated, id)
+            self.assertEqual({k: v for k, v in before.items() if k != 'option_notes'},
+                             {k: v for k, v in after.items() if k != 'option_notes'}, id)
+            for old, new in zip(before['option_notes'], after['option_notes']):
+                self.assertEqual({k: v for k, v in old.items() if k != 'reason'},
+                                 {k: v for k, v in new.items() if k != 'reason'}, id)
+                if old['number'] not in r['rewritten_options']:
+                    self.assertEqual(old['reason'], new['reason'], id)
+                else:
+                    self.assertFalse(old['is_answer'], id)
+                    self.assertTrue(new['reason'] and new['reason'] == new['reason'].strip())
+                    self.assertNotIn('  ', new['reason'], id)
+            self.assertEqual(len({o['reason'] for o in after['option_notes']}), 4, id)
+            review = r['independent_review']
+            self.assertNotEqual(review['reviewer'], r['author'], id)
+            self.assertEqual(review['status'], 'pass', id)
+            self.assertEqual(sorted(o['number'] for o in review['options']), r['rewritten_options'], id)
+            self.assertTrue(all(o['status'] == 'pass' for o in review['options']), id)
+        for id in set(current) - set(ids):
+            self.assertEqual(current[id], previous[id], id)
 
 
     def test_answer_option_never_shares_reason_with_other_options(self):
