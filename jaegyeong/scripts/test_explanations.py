@@ -16,6 +16,170 @@ R = Path(__file__).resolve().parents[1]
 
 
 class ExplanationTests(unittest.TestCase):
+    def test_round10_rejects_non_numeric_or_non_finite_checks(self):
+        from apply_round10_followups import arithmetic
+        for expr, expected in [('True+1', 2), ('1e309-1e309', 0),
+                               ('1e309/1e309', 17), ('1e308*1e308', 0),
+                               ('2//1', 2), ('2==2', 1)]:
+            with self.subTest(expr=expr), self.assertRaises(ValueError):
+                arithmetic({'checks': [{'expr': expr, 'expected': expected}]}, restricted=True)
+        arithmetic({'checks': [{'expr': '(3+2)*4/2-1', 'expected': 9}]}, restricted=True)
+        arithmetic({'checks': [{'expr': '+1-(-2)', 'expected': 3}]}, restricted=True)
+
+    def test_round10_preserves_previous_stages_and_official_data(self):
+        group = (self.current_audit or {}).get('round10_followups')
+        if not group:
+            self.skipTest('No round-10 follow-ups recorded')
+        from apply_round10_followups import digest, arithmetic, ALLOWED_FIELDS, PROTECTED
+        before = {n['question_id']: n for n in self.before_round10_data['items']}
+        after = self.latest_notes
+        self.assertEqual(list(before), group['baseline_ids'])
+        self.assertEqual(len(before), group['baseline_count'])
+        self.assertEqual({id: digest(n) for id, n in before.items()}, group['baseline_hashes'])
+        self.assertEqual({ref: digest(s) for ref, s in self.before_round10_data['sources'].items()},
+                         group['baseline_source_hashes'])
+        for ref, expected in group['baseline_source_hashes'].items():
+            self.assertEqual(digest(self.current_data['sources'][ref]), expected, ref)
+        amended = [r['question_id'] for r in group['amendments']]
+        registered = [r['question_id'] for r in group['registrations']]
+        self.assertEqual(len(amended), len(set(amended)))
+        self.assertEqual(len(registered), len(set(registered)))
+        self.assertFalse(set(amended) & set(registered))
+        self.assertEqual(set(after), set(before) | set(registered))
+        self.assertEqual(list(after)[:len(before)], list(before))
+        self.assertEqual(group['amended_count'], len(amended))
+        self.assertEqual(group['registered_count'], len(registered))
+        self.assertEqual(group['current_registered_count'], len(after))
+        for row in group['amendments']:
+            id = row['question_id']
+            self.assertEqual(row['before'], before[id])
+            self.assertEqual(digest(before[id]), row['before_hash'])
+            self.assertEqual(digest(after[id]), row['after_hash'])
+            self.assertEqual(row['after'], after[id])
+            fields = {k for k in before[id] if before[id][k] != after[id][k]}
+            self.assertEqual(fields, set(row['changed_fields']))
+            self.assertTrue(fields and fields <= ALLOWED_FIELDS)
+            self.assertFalse(fields & PROTECTED)
+            self.assertEqual(set(before[id]), set(after[id]))
+            self.assertEqual(after[id]['sources'][:len(before[id]['sources'])], before[id]['sources'])
+            for old, new in zip(before[id]['option_notes'], after[id]['option_notes']):
+                self.assertEqual({k: v for k, v in old.items() if k != 'reason'},
+                                 {k: v for k, v in new.items() if k != 'reason'})
+            arithmetic(after[id])
+        for id in set(before) - set(amended):
+            self.assertEqual(after[id], before[id], id)
+        original_pending = {r['question_id']: r for r in group['original_review']}
+        pending = {r['question_id']: r for r in self.current_audit['review']}
+        self.assertEqual(set(pending), set(original_pending) - set(registered))
+        updates = {r['question_id']: r for r in group['review_updates']}
+        self.assertEqual(len(updates), len(group['review_updates']))
+        for id, row in updates.items():
+            self.assertEqual(row['before'], original_pending[id])
+            self.assertEqual(row['after'], pending[id])
+            self.assertEqual(row['before_hash'], digest(row['before']))
+            self.assertEqual(row['after_hash'], digest(row['after']))
+            self.assertEqual({k: v for k, v in row['before'].items() if k != 'reason'},
+                             {k: v for k, v in row['after'].items() if k != 'reason'})
+        for id in set(pending) - set(updates):
+            self.assertEqual(pending[id], original_pending[id])
+        for row in group['registrations']:
+            id, note = row['question_id'], after[row['question_id']]
+            self.assertEqual(row['previous_review'], original_pending[id])
+            self.assertEqual(digest(note), row['explanation_sha256'])
+            self.assertEqual(digest(self.qs[id]), row['question_row_sha256'])
+            self.assertEqual(row['official_answers'], self.qs[id]['answers'])
+            self.assertTrue(self.qs[id]['study_eligible'])
+            self.assertEqual(note['review_status'], 'source_checked')
+            self.assertEqual(note['unchecked_points'], [])
+            self.assertEqual(len({o['reason'] for o in note['option_notes']}), 4)
+            arithmetic(note, restricted=True)
+        original_verdicts = {r['question_id']: r for r in group['original_adjudication']['records']}
+        verdicts = {r['question_id']: r for r in self.current_audit['answer_adjudication']['records']}
+        changes = {r['question_id']: r for r in group['adjudication_amendments']}
+        self.assertEqual(len(changes), len(group['adjudication_amendments']))
+        self.assertEqual(set(verdicts), set(original_verdicts))
+        for id, row in changes.items():
+            self.assertEqual(row['before'], original_verdicts[id])
+            self.assertEqual(row['after'], verdicts[id])
+            self.assertEqual(row['before_hash'], digest(row['before']))
+            self.assertEqual(row['after_hash'], digest(row['after']))
+            self.assertEqual(verdicts[id]['previous_verdict'], original_verdicts[id]['verdict'])
+            self.assertTrue(verdicts[id]['corrected_on'] and verdicts[id]['evidence'])
+            self.assertEqual(verdicts[id]['official_answers'], self.qs[id]['answers'])
+            self.assertIs(verdicts[id]['official_answer_changed'], False)
+        for id in set(verdicts) - set(changes):
+            self.assertEqual(verdicts[id], original_verdicts[id])
+        self.assertEqual(self.current_audit['answer_adjudication']['counts'],
+                         dict(Counter(v['verdict'] for v in verdicts.values())))
+        uncertainties = group['adjudication_uncertainties']
+        self.assertEqual(self.current_audit['answer_adjudication']['followup_uncertainties'],
+                         group['original_adjudication'].get('followup_uncertainties', []) + uncertainties)
+        partial_changes = {r['question_id']: r for r in group['amendments']
+                           if r['before']['review_status'] != 'partial' and r['after']['review_status'] == 'partial'}
+        self.assertEqual({r['question_id'] for r in uncertainties}, set(partial_changes))
+        self.assertEqual(len(uncertainties), len(partial_changes))
+        for notice in uncertainties:
+            id = notice['question_id']
+            self.assertEqual(notice['verdict'], 'deferred')
+            self.assertIs(notice['official_answer_changed'], False)
+            self.assertEqual(notice['official_answers'], self.qs[id]['answers'])
+            self.assertEqual(notice['evidence'], after[id]['unchecked_points'])
+            self.assertEqual(notice['explanation_after_hash'], digest(after[id]))
+            self.assertEqual(notice['independent_review_proposal_sha256'],
+                             partial_changes[id]['independent_review']['proposal_sha256'])
+            self.assertNotEqual(notice['author'], notice['reviewer'])
+        self.assertEqual(group['remaining_review_count'], len(pending))
+
+    def test_round10_independent_reviews_bind_actual_sources_and_four_options(self):
+        group = (self.current_audit or {}).get('round10_followups')
+        if not group:
+            self.skipTest('No round-10 follow-ups recorded')
+        self.assertFalse(group['expert_reviewed'])
+        self.assertRegex(group['proposal_sha256'], r'^[0-9a-f]{64}$')
+        self.assertRegex(group['review_sha256'], r'^[0-9a-f]{64}$')
+        for key, kind in [('amendments', 'amendment'), ('registrations', 'registration'),
+                          ('adjudication_amendments', 'adjudication')]:
+            for row in group[key]:
+                qa = row['independent_review']
+                self.assertEqual(qa['target_kind'], kind)
+                self.assertEqual(qa['question_id'], row['question_id'])
+                self.assertEqual(qa['status'], 'pass')
+                self.assertEqual(qa['author'], row['author'])
+                self.assertNotEqual(qa['reviewer'], row['author'])
+                self.assertEqual(qa['proposal_sha256'], row['proposal_record_sha256'])
+                if kind in {'amendment', 'adjudication'}:
+                    self.assertEqual(qa.get('before_hash', qa.get('before_hash_checked')), row['before_hash'])
+                    self.assertEqual(qa.get('after_hash', qa.get('after_hash_checked')), row['after_hash'])
+                else:
+                    self.assertEqual(qa.get('explanation_sha256', qa.get('note_sha256')), row['explanation_sha256'])
+                self.assertEqual(len(qa['four_option_logic']), 4)
+                self.assertEqual({x['number'] for x in qa['four_option_logic']}, {1, 2, 3, 4})
+                allowed_statuses = {'pass'}
+                if kind == 'adjudication':
+                    self.assertIs(qa['adjudication_scope_checked'], True)
+                    self.assertTrue(qa['limits'])
+                    allowed_statuses.add('outside_adjudicated_scope')
+                    if row['after']['verdict'] == 'deferred':
+                        allowed_statuses.add('deferred_not_proven_wrong')
+                    if row['after']['verdict'] == 'official_supported':
+                        self.assertTrue(all(x['status'] == 'pass' for x in qa['four_option_logic']
+                                            if x['number'] in row['after']['official_answers']))
+                self.assertTrue(all(x['status'] in allowed_statuses and x['finding']
+                                    for x in qa['four_option_logic']))
+                self.assertTrue(all(qa[k] for k in ('original_pdf_checked', 'original_image_checked',
+                                                  'subject_instructions_checked', 'official_answers_checked')))
+                for reads in [row['source_reads'], qa['source_reads']]:
+                    self.assertTrue(reads)
+                    for read in reads:
+                        self.assertTrue(read['url'].startswith('https://'))
+                        self.assertRegex(read['sha256'], r'^[0-9a-f]{64}$')
+                        self.assertTrue(read['version'] and read['read_locator'])
+                        self.assertIs(read['actually_read'], True)
+        for id, note in self.latest_notes.items():
+            answers = {o['reason'].strip() for o in note['option_notes'] if o['is_answer']}
+            other = {o['reason'].strip() for o in note['option_notes'] if not o['is_answer']}
+            self.assertFalse(answers & other, id)
+
     def active_quality_withdrawals(self):
         """Keep historical withdrawals and verify any subsequent re-registration."""
         active = set()
@@ -291,6 +455,22 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.current_audit = copy.deepcopy(cls.audit)
         cls.stage_after = {}
+        cls.latest_notes = {n['question_id']: n for n in cls.current_data['items']}
+        followups = (cls.audit or {}).get('round10_followups')
+        if followups:
+            # Undo the newest data stage before the unchanged round-9/spacing/
+            # post-review checks. Current verdicts remain visible to the existing
+            # bundle assertion; their complete before/after ledger is checked below.
+            cls.stage_after['round10_followups'] = copy.deepcopy(cls.data)
+            indices = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in reversed(followups['amendments']):
+                cls.data['items'][indices[record['question_id']]] = copy.deepcopy(record['before'])
+            registered = {r['question_id'] for r in followups['registrations']}
+            cls.data['items'] = [n for n in cls.data['items'] if n['question_id'] not in registered]
+            for ref in followups['new_source_refs']:
+                del cls.data['sources'][ref]
+            cls.audit['review'] = copy.deepcopy(followups['original_review'])
+        cls.before_round10_data = copy.deepcopy(cls.data)
         registrations = (cls.audit or {}).get('round9_registrations', {})
         if registrations:
             cls.stage_after['round9_registrations'] = copy.deepcopy(cls.data)
@@ -308,7 +488,7 @@ class ExplanationTests(unittest.TestCase):
             for record in reversed(amendments.get('sources', [])):
                 cls.data['sources'][record['ref']] = copy.deepcopy(record['before'])
         cls.notes = {n['question_id']: n for n in cls.data['items']}
-        cls.current_notes = {n['question_id']: n for n in cls.current_data['items']}
+        cls.current_notes = {n['question_id']: n for n in cls.before_round10_data['items']}
         cls.baseline_ids = set(cls.audit['baseline_hashes']) if cls.audit else set(list(cls.notes)[:30])
 
     def validate(self, data=None, qs=None):

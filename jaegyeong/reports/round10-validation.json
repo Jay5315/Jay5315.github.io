@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-13",
+  "baseline_commit": "170b68267ca917420f2cfab4608f624cc50dcbe6",
+  "scope_summary": {
+    "schema_version": 1,
+    "checked_on": "2026-10-13",
+    "baseline_commit": "170b68267ca917420f2cfab4608f624cc50dcbe6",
+    "study_entries_including_quarantine": 4322,
+    "study_eligible": 4321,
+    "exclusive_inspections": 555,
+    "baseline_explanations": 4172,
+    "new_explanations": 4,
+    "current_explanations": 4176,
+    "pending_reviews": 145,
+    "pending_categories": {
+      "source_unverified": 90,
+      "answer_suspected": 24,
+      "parse_problem": 29,
+      "calculation_unresolved": 2
+    },
+    "existing_amendments": 394,
+    "existing_prose_corrections": 9,
+    "baseline_explanations_unchanged": 3778,
+    "finance_textbook_rechecked": 428,
+    "finance_basis_after": {
+      "domestic": 381,
+      "textbook": 47
+    },
+    "new_partial_uncertainties": 5,
+    "primary_adjudications": 51,
+    "primary_verdict_counts": {
+      "official_conflict": 8,
+      "multiple_candidates": 4,
+      "ambiguous_wording": 7,
+      "deferred": 1,
+      "official_supported": 27,
+      "holiday_nominal_deadline": 4
+    },
+    "shown_answer_notes": 20,
+    "actual_parallel_workers": 6,
+    "worker_names": [
+      "r6_finance_a",
+      "r6_finance_b",
+      "r6_tax_a",
+      "r6_tax_b",
+      "r6_cost_a",
+      "r6_cost_b"
+    ],
+    "recursive_agent_creation": false,
+    "expert_reviewed": false,
+    "concept_file_unchanged": true,
+    "proposal_sha256": "8d8bac586150fae01e1ab66a5e8cf422a8bbe6e114bda5051e1b3232f2c8df7a",
+    "review_sha256": "957284f82fd103218114493314058307ff143f13963377ab65a1182abe9a758e",
+    "root_site_and_question_assets_unchanged": true
+  },
+  "required_suite_count": 7,
+  "final_failed_suite_count": 0,
+  "tests": {
+    "base_url": "http://127.0.0.1:8005/jaegyeong/",
+    "chromium": "/usr/bin/chromium",
+    "suites": [
+      {
+        "suite": "test_bank",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_bank.py",
+        "started_at_utc": "2026-10-13T06:34:04.866674+00:00",
+        "elapsed_seconds": 0.49,
+        "exit_code": 0,
+        "output_sha256": "cfcb1ef2c7835f0af02f86e10fa07efe3ca3f909dec9f3cb8a3c4804abb0be0f",
+        "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.303s\n\nOK\n"
+      },
+      {
+        "suite": "test_parts",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_parts.py",
+        "started_at_utc": "2026-10-13T06:34:04.867139+00:00",
+        "elapsed_seconds": 0.385,
+        "exit_code": 0,
+        "output_sha256": "cb7955d97fa0977897eeebf1107c046e83a2fc749eafd6ce88c8bd39b707db34",
+        "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.248s\n\nOK\n"
+      },
+      {
+        "suite": "test_concepts",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_concepts.py",
+        "started_at_utc": "2026-10-13T06:34:04.867385+00:00",
+        "elapsed_seconds": 0.284,
+        "exit_code": 0,
+        "output_sha256": "95586f75f79dbc13b639f0c374f5456f6dd47764f835e9ac3a943132f2f61768",
+        "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.219s\n\nOK\n"
+      },
+      {
+        "suite": "test_explanations",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_explanations.py",
+        "started_at_utc": "2026-10-13T06:34:04.867581+00:00",
+        "elapsed_seconds": 7.823,
+        "exit_code": 0,
+        "output_sha256": "82f56a2e79a849277c6d0241cbf47cdd3cdb7ea8b1f46a2ccb6fbc5fd2f98f90",
+        "output": "..........................\n----------------------------------------------------------------------\nRan 26 tests in 7.264s\n\nOK\n"
+      },
+      {
+        "suite": "test_app",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_app.py",
+        "started_at_utc": "2026-10-13T06:34:05.151875+00:00",
+        "elapsed_seconds": 27.668,
+        "exit_code": 0,
+        "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+        "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n"
+      },
+      {
+        "suite": "test_browser",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_browser.py",
+        "started_at_utc": "2026-10-13T06:34:05.252402+00:00",
+        "elapsed_seconds": 4.025,
+        "exit_code": 0,
+        "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+        "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n"
+      },
+      {
+        "suite": "test_explanations_app",
+        "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_explanations_app.py",
+        "started_at_utc": "2026-10-13T06:34:05.357192+00:00",
+        "elapsed_seconds": 95.706,
+        "exit_code": 0,
+        "output_sha256": "7e66b9ae9d7adc7d646498fa90f9ff5bb310663dc2bf3c225214715cee6abb7a",
+        "output": "PASS: all 4176 explanation bodies rendered; 167 grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n"
+      }
+    ],
+    "all_passed": true
+  },
+  "integrity": {
+    "original_questions_checked": 4560,
+    "original_question_hashes_preserved": true,
+    "immutable_files_byte_equal": [
+      "data/questions.json",
+      "data/entries.json",
+      "data/families.json",
+      "data/taxonomy.json",
+      "data/concept-notes.json",
+      "assets/app.js",
+      "assets/app.css",
+      "index.html"
+    ],
+    "root_site_untouched": true,
+    "original_test_bodies_ast_unchanged": 26,
+    "pending_csv_exact_rows": 145,
+    "baseline_explanation_hashes_exact": 4172,
+    "baseline_source_hashes_exact": true,
+    "prior_audit_groups_unchanged": true,
+    "concept_file_sha256": "140154cb407ddd4703c55c96c775ad421643b3c9a18881cfd40e3462fca2d9e3"
+  },
+  "verified_file_sha256": {
+    "data/explanations.json": "7f9218848dfb47d4e406013f4f77f5b3ef5d9518adbfcf7b3ed422e13a5ba617",
+    "reports/explanation-expansion.json": "b7cc64dde2937d0eba95c62a89eff100dc67e0a3e8f29444c437beb929510c4f",
+    "assets/bank-data.js": "fdca3c6364697d81e9172b7ea01b3c86097a27407e0d2659ee80910a209a9e8e",
+    "scripts/apply_round10_followups.py": "df2dcb1cef5cc3ddadc7fdf622124a362adad128233bfb4174a40804e69d71d8",
+    "scripts/test_explanations.py": "a58833529e641061c54e71fb80db8cc02d3552243662a39db54a1447fb075516",
+    "scripts/test_explanations_app.py": "dd19018d320a6db75c72b033465b89d15775a80ab2f14f5388232fecb465119f",
+    "reports/round10-quality-review.json": "e86981e48f3676becabc01e371f9f36cedd0a1fa135d19c737687590635f6f5e",
+    "reports/round10-source-acquisition.json": "e8f1e3150502227148bc291edafc653a50fcbc2818954f882b68fab8ad55b657"
+  },
+  "pre_integration_validation": {
+    "baseline_explanation_tests": 23,
+    "isolated_real_data_smoke_tests": 25,
+    "negative_boundary_reproductions": "NaN/boolean acceptance and stale-after approval were reproduced before correction and rejected after correction. Negative checks intentionally produce failures; final regression suite passes."
+  },
+  "review_failures": {
+    "initial_QA_issues": 9,
+    "resolved_existing_issues": 8,
+    "withheld_new_drafts": 1,
+    "model_capacity_failed_assignment": 1,
+    "replacement_QA_completed": true
+  },
+  "non_app_checks": {
+    "initial_csv_diff_check": "CRLF created by CSV writer was flagged as trailing whitespace; changed to LF, parsed 145 rows and final git diff --check passed.",
+    "stale_document_counts_corrected": true
+  },
+  "deployment_plan": {
+    "branch": "main",
+    "workflow": "pages build and deployment",
+    "normal_https_public_bundle": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+    "expected_bundle_sha256": "fdca3c6364697d81e9172b7ea01b3c86097a27407e0d2659ee80910a209a9e8e",
+    "result_report": "round10-deployment.json is written after the app commit is actually deployed and checked."
+  }
+}

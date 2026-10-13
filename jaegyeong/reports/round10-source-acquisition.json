@@ -1,0 +1,2504 @@
+{
+  "checked_on": "2026-10-13",
+  "normal_tls": true,
+  "tls_verification_bypassed": false,
+  "source_scope": "Actual reader records and cached-body SHA verified; reuse is separated from new downloads. External PDFs/bodies are not redistributed.",
+  "external_body_count": 97,
+  "sources": [
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "versions": [
+        "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF11쪽 문단9;15–20쪽22–34;21–25쪽35–49;29–33쪽60–76;38–42쪽91–108;57–59쪽B13–B19;61–62쪽B28–B32;71–73쪽B55–B62;82쪽C1/C1B;86쪽C10;189–190쪽IE297–302. 라이선스사례58 조건과 원문차이까지 실제 재독.",
+        "PDF61–62쪽B28–B32 실제 재독. 확신유형결함수선과별도용역보증구별. 원문확신유형또는제조결함수선보증의지정범위를사용하고모든보증에강제확대하지않음.",
+        "PDF61–62쪽B28–B32 실제 재독. 확신유형결함수선과별도용역보증구별. 원문확신유형또는제조결함수선보증의지정범위를사용하고모든보증에강제확대하지않음. 검수자는공식캐시의해당PDF본문을독립재독했습니다.",
+        "PDF11문단9;15문단22;19–23문단31–39;25문단46–49;29–31문단60–65;32–33문단73–76;41–42문단105–108"
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "9862",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        },
+        {
+          "read_method": "이미확보된KASB공식공개PDF캐시독립재독;이번신규다운로드라고표시하지않음",
+          "limits": "기간에 걸친35세기준/한시점38과1년간편법63의범위를구별. 라이선스/로열티 등 이번18개에사용하지않은전체문단을확인했다고표시하지않음."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "versions": [
+        "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF26–27쪽3.3.1–3.3.4;34–36쪽5.1.1–5.1.3/5.2.1/5.4.1–5.4.3;55–58쪽6.5.3–6.5.11;168–169쪽B5.1.1–B5.1.2A 실제 재독. 2025 후속개정 전체를 2022문항에 적용하지 않고 지속된 핵심 최초측정/유효이자/위험회피만 대조.",
+        "PDF34–36쪽5.1.1/5.1.3/5.4.1–5.4.4 및37쪽5.4.4 마지막문장,93쪽부록A상각후원가/손실충당정의,97쪽부록A유효이자율/유효이자율법 실제읽음. 미회수채권제각의비현금성과복합부채누적이자대수의핵심근거.",
+        "공식캐시PDF36쪽5.4.4와37쪽끝문장,93쪽부록A 총장부금액/상각후원가·손실충당 정의의 이번직독범위재사용. 제각은금융자산제거사건이며현금유입과구별. 계산은원문매출/총채권/충당/대손상각비의독립잔액대사;기준서에국내결산분개수식이그대로있다고주장하지않음.",
+        "PDF34–36쪽5.1.1/5.1.3/5.4.1–5.4.4 및37쪽5.4.4 마지막문장,93쪽부록A상각후원가/손실충당정의,97쪽부록A유효이자율/유효이자율법 실제읽음. 미회수채권제각의비현금성과복합부채누적이자대수의핵심근거. 검수자는공식캐시의해당PDF본문을독립재독했습니다.",
+        "PDF34–36문단5.1.1/5.1.3/5.4.1–5.4.3 · 최초측정/금융요소간편법/유효이자와신용손상예외"
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993105",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        },
+        {
+          "read_method": "이미확보된KASB공식공개PDF캐시독립재독;이번신규다운로드라고표시하지않음",
+          "limits": "2025개정판전체를과거2022문항에소급하지않음. 장기채권의공정가치/유효이자핵심은EU2023이전보존본문과추가대조. 신용손상/거래원가/재협상조건을새로추가하지않음."
+        },
+        {
+          "read_method": "동일검수자가앞배치에서실제독립재독한동일SHA공식캐시문단의검토범위재사용;신규다운로드/새판본/재독증거를발명하지않음",
+          "limits": "1007.31기간간일관성/33–35이자배당선택과세금예외;2024공급자금융공시개정및미래1118분류를소급추정하지않음.1109제각정의는대사식원리로사용하며국내결산수식이본문에직접있다고주장하지않음."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "versions": [
+        "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF28–29쪽28–32;42쪽AG6;54쪽AG27;57쪽AG30–32의 만기전환 도입부 실제 재독. 주식매입권과 채무전환 구분, 영구채 명칭과 전환권의 별도속성 확인.",
+        "PDF28–29쪽28–32/33,54쪽AG27,57쪽AG31 실제재독. 복합부채/자본분리,주식옵션자본대가,자기지분발행손익PL미인식.",
+        "PDF28–29문단28–32;42AG6;54AG27;57AG30–32 · 전환권/주식매입권/영구채와전환시부채소멸",
+        "PDF28–29쪽28–32/33,54쪽AG27,57쪽AG31 실제재독. 복합부채/자본분리,주식옵션자본대가,자기지분발행손익PL미인식. 검수자는공식캐시의해당PDF본문을독립재독했습니다."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "9873",
+          "fileSeq": "2"
+        },
+        {
+          "read_method": "이미확보된KASB공식공개PDF캐시독립재독;이번신규다운로드라고표시하지않음",
+          "limits": "사채의주식전환권을가진상품명구분에한정. 모든전환사채의전환조건/자본분류요건을새로충족한다고주장하지않음."
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d",
+      "versions": [
+        "시행중_K-IFRS_제1016호_유형자산(2020_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영)_토지공시지가개정사항반영.pdf"
+      ],
+      "actual_read_locations": [
+        "PDF14–17쪽16–25 실제 재독. 자산직접대가와 금융상품 추가대가의 인식기준 구별. 강제 공채조건을 기준서 일반규칙으로 추가하지 않음.",
+        "PDF11–19쪽7–30(7인식조건,10증설/수선평가,12일상수선비용,13–14대체,16–17취득원가·장소준비,20A 가동전생산품손익,24–26 교환);23–29쪽48–72(50–55상각기초/시점,58 토지건물별도,61추정변경,62상각방법,63손상연결,67–72처분손익). 실제이번범위재독.",
+        "공식캐시PDF19쪽30/23–26쪽50–55/62 및28–29쪽67–72 이번직독범위재사용. 취득/처분없는지정조건·원가/감가누계대사와순처분대가−장부손익의직접원리.",
+        "PDF11–19쪽7–30;23–29쪽48–72. 인식7/10,취득가산·할인차감16–17,사용준비이후20,교환24–26,원가모형30,상각50–55,추정51/61,방법62,손상연계63,처분67–72 실제 독립 재독."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993243",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        },
+        {
+          "read_method": "동일검수자가앞배치에서실제독립재독한동일SHA공식캐시문단의검토범위재사용;신규다운로드/새판본/재독증거를발명하지않음",
+          "limits": "1007.31기간간일관성/33–35이자배당선택과세금예외;2024공급자금융공시개정및미래1118분류를소급추정하지않음.1109제각정의는대사식원리로사용하며국내결산수식이본문에직접있다고주장하지않음."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "versions": [
+        "시행중_K-IFRS_제1040호_투자부동산(2017_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "신규 정상공개PDF9–14쪽5–24 실제 읽음. 용도미정토지8(2)와미사용건물8(4),경미부수용역11,자가사용9(3) 구분. 부동산 전체를 토지로 좁히지 않음."
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49990970",
+          "fileSeq": "2"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+      "versions": [
+        "시행중_K-IFRS_제1007호_현금흐름표(2024_개정_2021_타기준서_제정_수정목록_19-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF9–10쪽3–7 실제 재독. 현금/요구불예금/현금성자산의 기간·위험·목적을 구별. 1118호 후속 현금분류를 소급·조기적용하지 않음.",
+        "PDF10–15쪽6–20,18쪽31–35,26–27쪽한53.1/54–63 실제재독. 현금흐름분류·발생기록조정·직접/간접법·이자배당분류. 공식캐시2024공급자금융공시개정의범위와미래IFRS18후속규정구별; 2022–2026에새후속분류조기적용추정안함.",
+        "동일공식캐시PDF10–15쪽6–20,18쪽31–35,26–27쪽시행/경과한53.1 및54–63의 이번직접읽음범위 재사용. 핵심14–17 활동별·소유주거래,19 직접법발생/비현금조정,20 간접법운전자본/손익조정,31 일관분류,33–35 이자배당·세금. 최신1118호후속개정을2022–2026에조기적용한다고추정하지않음.",
+        "PDF10–15쪽6–20,18쪽31–35,26–27쪽한53.1/54–63 실제재독. 현금흐름분류·발생기록조정·직접/간접법·이자배당분류. 공식캐시2024공급자금융공시개정의범위와미래IFRS18후속규정구별; 2022–2026에새후속분류조기적용추정안함. 검수자는공식캐시의해당PDF본문을독립재독했습니다."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49992451",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        },
+        {
+          "read_method": "동일검수자가앞배치에서실제독립재독한동일SHA공식캐시문단의검토범위재사용;신규다운로드/새판본/재독증거를발명하지않음",
+          "limits": "1007.31기간간일관성/33–35이자배당선택과세금예외;2024공급자금융공시개정및미래1118분류를소급추정하지않음.1109제각정의는대사식원리로사용하며국내결산수식이본문에직접있다고주장하지않음."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "versions": [
+        "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF11–12쪽5–7 및14–15쪽9–12 실제 재독. 자산부채 미인식항목의 미래공제 일시적차이와 이월세액공제 등 별도DTA범주를 구별. 한국 한도초과기부금의 구체세법분류를 이 문단만으로 확정하지 않음."
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993095",
+          "fileSeq": "1"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d",
+      "versions": [
+        "시행중_K-IFRS_제1037호_충당부채_우발부채_우발자산(2020_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF24–25쪽66–69 실제 재독. 손실부담계약 현재의무, 회피불가능원가, 자산손상 우선의 한정범위 확인.",
+        "PDF12–20쪽11–43(14인식3조건/23가능성/25–28추정불가/36–39기댓값과제품보증직접사례),23–24쪽59–62 재추정·충당사용,29쪽84 사용액조정표, 실제 재독.",
+        "PDF12–20쪽11–43(14인식3조건/23가능성/25–28추정불가/36–39기댓값과제품보증직접사례),23–24쪽59–62 재추정·충당사용,29쪽84 사용액조정표, 실제 재독. 검수자는공식캐시의해당PDF본문을독립재독했습니다."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993099",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "8c76b33bf9afd8f2d897ff7cc490f0b5af46c6fd23897bcc1ec11d303696df2f",
+      "versions": [
+        "시행중_K-IFRS_제1105호_매각예정비유동자산과_중단영업(2015_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "신규 정상공개PDF11–14쪽7–22 실제 읽음. 핵심7–8 즉시매각가능/매각매우높음,11 신규취득시 통상3개월 추가조건. 공개 영문미러가 아니라 이번 실제 공식한국어PDF로 대조."
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49990975",
+          "fileSeq": "1"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "171b8f0d9993b9f842b513489a599c5bf7b071af232a32ba2717dc1b5e8c6631",
+      "versions": [
+        "시행중_K-IFRS_제1028호_관계기업과_공동기업에_대한_투자(2018_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF10–11쪽5–9 및15–16쪽20–21 실제 재독. 의결권/이사회참여와 매각예정 분류조건 충족여부 구별."
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49990968",
+          "fileSeq": "2"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "7cb9c94d11c846ef7d882d03ab50d625564954dd6609176f5e858218c540b6f6",
+      "versions": [
+        "시행중_K-IFRS_제1036호_자산손상(2015_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "이번신규공식PDF12–13쪽6 정의,18–19쪽18–23 회수가능액max/개별산정,29–30쪽58–67 손상금액/손익/후속상각/현금창출단위 경계 실제본문읽음. 제시된개별사용가치와순공정가치만으로계산하며 비독립CGU사실을꾸며추가하지않음.",
+        "PDF12–13쪽6정의;18–19쪽18–23회수가능액/개별산정경계;29–30쪽58–67손상금액/손익/후속상각/CGU 실제 독립 재독."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993098",
+          "fileSeq": "2"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "0c5c8f80dbb07e9e4b25293d1c7f0a77509a6b1d2031cc5fed9f47d89efbf3cc",
+      "versions": [
+        "시행중_K-IFRS_제1038호_무형자산(2014_개정_2021_타기준서_제정_수정목록_25-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "공식캐시PDF37–42쪽95–113 실제본문재독.97–98 유한내용연수/상각,100–101 잔존과상각기초,104추정변경,111 자산손상1036 적용. 정액법은문항명시조건이며기준서가모든무형자산을정액강제한다고하지않음.",
+        "PDF37–42쪽95–113. 95경제적/법적연수,97–98상각,100–101잔존/상각기초,104추정변경,111자산손상연계 실제 독립 재독."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49992031",
+          "fileSeq": "2"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "4b0d52157d50caf7d5d22874c63ef16693146cfe68b3b6035d1146485545117e",
+      "versions": [
+        "시행중_K-IFRS_제1001호_재무제표_표시(2023_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF12쪽7 주석정의,15–16쪽9–10 및한1) 광의수익해석,48–51쪽106–117 자본변동·주석구조·비재무적공시/중요한회계정책 실제 재독. 미래1118호표시/후속현금분류소급안함.",
+        "PDF12쪽7 주석정의,15–16쪽9–10 및한1) 광의수익해석,48–51쪽106–117 자본변동·주석구조·비재무적공시/중요한회계정책 실제 재독. 미래1118호표시/후속현금분류소급안함. 검수자는공식캐시의해당PDF본문을독립재독했습니다."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49993094",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833",
+      "versions": [
+        "시행중_K-IFRS_재무보고를_위한_개념체계(2018_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF58쪽4.67–4.72 실제재독. 출자/분배제외의수익/비용직접정의. 개념체계를기준서우위규칙으로주장하지않음.",
+        "PDF58쪽4.67–4.72 실제재독. 출자/분배제외의수익/비용직접정의. 개념체계를기준서우위규칙으로주장하지않음. 검수자는공식캐시의해당PDF본문을독립재독했습니다."
+      ],
+      "readers": [
+        "r6_finance_a",
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "request_method": "POST",
+          "fileNo": "-49990963",
+          "fileSeq": "1"
+        },
+        {
+          "read_method": "다른작성자가확보한KASB공식공개PDF캐시의본문을독립재독;이번검수자가신규다운로드했다고표시하지않음",
+          "limits": "인용한문항조건과기준서문단에한정;전체판본의모든규칙또는미래개정소급을확인했다고주장하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "versions": [
+        "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+        "시행중공개한국어PDF"
+      ],
+      "actual_read_locations": [
+        "¶9–18·23–38·한40.1/40C–40G; PDF10–19쪽",
+        "PDF15¶27·17¶34",
+        "공식PDF9–19쪽: ¶6–18,23–38,한40.1/40C–40G 실제 독립 재독. 핵심PDF10쪽6/9(NRV 및저가),14–15쪽25/27(FIFO/평균),15쪽29(항목별평가),17쪽34(모든감모/평가 당기비용),18쪽38(재고비용).",
+        "PDF15 ¶27,PDF17 ¶34,PDF18 한40.1",
+        "PDF14–15 ¶25/27 FIFO·총평균 및 PDF17¶34",
+        "PDF10¶9/11¶11/12–13¶16 발생기간비용",
+        "공식PDF9–19쪽 ¶6–18/23–38 및시행경과. 저가/감모·FIFO/기간평균 핵심 직접읽음의같은캐시재사용"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a",
+        "r6_tax_a",
+        "r6_tax_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "9837",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9837",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-official-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "read_method": "다른작성자의정상TLS공개POST캐시를독립재독;이번QA신규다운로드로표현하지않음",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "fileNo": "9837",
+          "fileSeq": "1",
+          "request_method": "POST",
+          "limits": "이10문항의핵심원리와수량/원가대사만검증. 재고평가정책변경의소급절차나새기준조기적용을추정하지않음."
+        },
+        {},
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9837",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-official-downloads.json",
+          "acquisition_metadata_sha256": "54a67c71de8a674deba69603b1b5c00701a8b90935dea13aef0e7cfb7c1a882e",
+          "acquisition_kind": "다른작업자가이번정상TLS로다운로드한기존공식공개캐시를본인이독립재독;본인의새다운로드아님",
+          "limits": "FIFO/총평균 정의에서 원가층 비교와 등호를 독립도출; partial2행의미확인유일성을해소했다고표시하지않음. 비용기간은¶16만직접확인. 전체기준서/전문가검수/미래개정조기적용아님."
+        },
+        {
+          "read_method": "다른작성자의정상TLS공개POST캐시를독립재독;이번QA신규다운로드로표현하지않음",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "fileNo": "9837",
+          "fileSeq": "1",
+          "request_method": "POST",
+          "limits": "이21문항의핵심원리와수량/원가대사만검증. 재고평가정책변경의소급절차나새기준조기적용을추정하지않음."
+        },
+        {
+          "fileNo": "9837",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이24문항의관련원리만검증;월할은명시조건및¶20합리적근사. 참여우선주/반희석/미제시발행조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833",
+      "versions": [
+        "시행중_K-IFRS_재무보고를_위한_개념체계(2018_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶4.56–4.58·5.1–5.25; PDF55/61–68쪽",
+        "¶1.2–1.23·2.4–2.39·3.1–3.14·4.1–4.13/4.18/4.26–4.46/4.63/4.68–4.72; PDF12–18/20–30/33–36/40–43/45/47–51/57–58쪽",
+        "PDF55 4.56–4.58 미이행계약;62 5.4/5.5 요소연계;63–65/68 5.6–5.13/5.24–5.25의충분조건범위",
+        "공식PDF12–17쪽1.1–1.20;20–23쪽2.1–2.15 및2.16첫부분;33–34쪽3.1–3.6;40–41쪽4.1–4.7첫부분;45쪽4.18–4.20;47–51쪽4.26–4.46첫부분;57쪽4.63–4.66첫부분 이번직접독립읽음. 특히4.18무상권리/증여명시."
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49990963",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49990963",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "CF-download.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "fileNo": "-49990963",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이16문항의관련원리만검증;월할은명시조건. 공식개념체계/KIFRS필요범위만확인하며미제시사실을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "ca638efce7b29e6c7bccea017f36627be9fe32cb281b3f1b3ee815aa71f5b792",
+      "versions": [
+        "다운로드 하려면 클릭하세요  시행중_K-IFRS_제1106호_광물자원의_탐사와_평가(2009_개정_2018_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶5–9·15–16; PDF9–11쪽"
+      ],
+      "readers": [
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49990976",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "0c5c8f80dbb07e9e4b25293d1c7f0a77509a6b1d2031cc5fed9f47d89efbf3cc",
+      "versions": [
+        "시행중_K-IFRS_제1038호_무형자산(2014_개정_2021_타기준서_제정_수정목록_25-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶18–24·33–35·54–64; PDF16–17/20/25–27쪽",
+        "PDF24¶48/25–26¶54–57/27¶63/28¶65/30–32¶68/71/74/37–40¶97–100",
+        "PDF40 ¶100 잔존가치0원과 예외",
+        "PDF25–26¶54/57·28¶65·30–32¶68/71/74·37–38¶95/97",
+        "PDF25–26 ¶54/57 연구·개발, PDF28 ¶65, PDF30–32 ¶68/71/74, PDF37–40 ¶97–100 사용가능 시점·상각·잔존가치; PDF24 ¶48/PDF27 ¶63 내부 영업권·브랜드",
+        "PDF25–26 ¶54/57 연구·개발, PDF28 ¶65, PDF30–32 ¶68/71/74, PDF37–40 ¶95/97–100 경제적·법적 수명 중 짧은 기간, 사용가능 시점·상각·잔존가치"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49992031",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49992031",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49992031",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "5923bf7b8c8b60ca456136e2850f99a0ba7f8f95a31c0618f192bc12fa15883a",
+          "read_method": "기확보 공식 공개 PDF 캐시의 해당 본문을 독립 재독; 신규 다운로드 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "versions": [
+        "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "3.3.1–3.3.4·5.1.1·6.5.3/6.5.8–6.5.11; PDF26–27/34/55–58쪽",
+        "¶3.2.3/3.2.12·5.1.1/5.2.1/5.4.1–4/5.5.1–8/5.7.1–5·한7.1.1·부록A·B5.1.1; PDF19/22/34–40/45–47/74–75/93–98/168–169쪽",
+        "1109호 4.2.1/5.1.1/5.3.1 및 부록A 상각후원가·유효이자율·유효이자율법(PDF29/34–35/93/97); B5.1.1(PDF168) 최초 현금흐름 현재가치; PDF26–27 3.3.1–3.3.3",
+        "PDF26–27 3.3.1/3.3.3 채무제거·상환손익;PDF93/97 부록A 상각후원가·유효이자법;제거후 가상3년과 실제보유기간 차이",
+        "1109호 4.2.1/5.1.1/5.3.1 및 부록A 상각후원가·유효이자율·유효이자율법(PDF29/34–35/93/97); B5.1.1(PDF168);3.3.1–3.3.3 PDF26–27",
+        "PDF26–27 3.3.1–3.3.3;28 4.1.2A;29 4.2.1;34 5.1.1;35 5.3.1;47 5.7.5;196 B5.7.1A",
+        "공식PDF19쪽3.2.3;22쪽3.2.12;34–40쪽5.1.1/5.2.1/5.4.1–4/5.5.1–8;45–47쪽5.7.1–5;93부록A거래원가/총장부/상각후원가;97유효이자율법정의;168–169B5.1.1–2A 실제독립읽음. 핵심PL기간대사/거래대가/이자상각/충당제각. 이자율개혁/신용손상특수규칙/2025개정전체를과거에소급검수한것아님.",
+        "PDF26–27 ¶3.3.1–3.3.3;PDF29–30 ¶4.2.1;PDF34–35 ¶5.1.1/5.3.1;PDF93/97 부록A상각후원가·유효이자율·유효이자율법;PDF168–169 B5.1.1;PDF74–77 한7.1.1/7.1.4/7.1.9/7.1.12–15;PDF560 BC5.10A–B",
+        "PDF26–27 3.3.1/3.3.3 소멸채무제거와 대가손익;PDF93/97 부록A 상각후원가·유효이자율법 관련기간. 가상3년 보유를 실제원문에 추가하지 않음"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_finance_a",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49993105",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993105",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "1109-download.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "fileNo": "-49993105",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이21문항의관련원리만검증;문항제시조건의정량모형만확인. 모든실무예외/미제시계약조건을추가하지않음. 전체기준서전문검수아님."
+        },
+        {},
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993105",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "1109-download.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "ba48c25448885dd383b23bdcaf521a1cc3ddaeb8a3f5daa5035e82bc88603c00",
+          "scope": "본인이 위 핵심본문만 독립 재독; 배당분배계산의 국내기준서 직접승격 안함; 최신기준 조기적용 안함"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993105",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "1109-download.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "read_method": "해당공식공개PDF cache 본문 독립재독;writer읽기표시 복사만으로확인하지않음;신규다운로드 아님",
+          "acquisition_metadata_sha256": "ba48c25448885dd383b23bdcaf521a1cc3ddaeb8a3f5daa5035e82bc88603c00"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "versions": [
+        "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶35–49·91–98·B28–32·C1/C10; PDF20–25/38–39/61–62/82/86쪽",
+        "¶B77–B78; PDF77–78쪽 및 기존 확인 C1/C10",
+        "PDF23–24¶39–43/58–59 B18–19",
+        "PDF20–21 ¶35–37 기간수익요건;PDF23–24 ¶39–43 진행률/산출·투입;PDF58–59 B18–19 원가기준투입법의범위",
+        "PDF15¶22·17–19¶27–31·79–80 B84–85",
+        "PDF20–21 ¶35–37;24 ¶42–45;25–27 ¶46–56;38–39 ¶95–98;71–73 B58/B59A/B60/B61/B62;189–190 사례58 IE297–302의최신이미지사용조건",
+        "PDF15 ¶22,PDF17–19 ¶27–31,PDF79–80 B84–85,PDF82 C1/C1B",
+        "PDF20–21 ¶35–37 기간수익 충족요건;PDF23–24 ¶39–43 방법선택;PDF58–59 B18–19 투입법·원가조정. 모든빌딩공사 자동원가진행을 보장하지 않음",
+        "PDF20–22 ¶35–38 기간수익 선택요건과 한시점 대안; PDF23–24 ¶39–43 진행률; PDF58–59 B18–19 원가투입법 및 제외항목",
+        "공식PDF77–78쪽 B77–B78. 위탁인도만으로수익인식않음/최종판매전통제유지 핵심독립읽음"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_tax_a",
+        "r6_finance_a",
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "9862",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9862",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9862",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "read_method": "해당공식공개PDF cache 본문 독립재독;writer읽기표시 복사만으로확인하지않음;신규다운로드 아님",
+          "acquisition_metadata_sha256": "5923bf7b8c8b60ca456136e2850f99a0ba7f8f95a31c0618f192bc12fa15883a"
+        },
+        {},
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9862",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "5923bf7b8c8b60ca456136e2850f99a0ba7f8f95a31c0618f192bc12fa15883a",
+          "scope": "본인이 위 핵심본문만 독립 재독; 배당분배계산의 국내기준서 직접승격 안함; 최신기준 조기적용 안함"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9862",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "5923bf7b8c8b60ca456136e2850f99a0ba7f8f95a31c0618f192bc12fa15883a",
+          "read_method": "기확보 공식 공개 PDF 캐시의 해당 본문을 독립 재독; 신규 다운로드 아님"
+        },
+        {
+          "fileNo": "9862",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이24문항의관련원리만검증;월할은명시조건및¶20합리적근사. 참여우선주/반희석/미제시발행조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+      "versions": [
+        "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶30–33D·IG18–19/IG사례12·12A; PDF20–22/99–102쪽"
+      ],
+      "readers": [
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49990973",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+      "versions": [
+        "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영"
+      ],
+      "actual_read_locations": [
+        "¶19–21; PDF13–14쪽",
+        "¶5–50·64–73·한74A.1/74B–74E·A1–A2; PDF10–21/25–32쪽",
+        "공식PDF9–18쪽 ¶5–39 및40첫부분. 핵심10/12–14/19–21/26–28/31–36: 귀속이익,우선주,유통기간가중,무상요소구분,희석조정 독립읽음",
+        "공식PDF9–18쪽¶5–39. 직전QA독립읽은같은캐시범위재사용;10/12–14/19–21/26–28 EPS/귀속이익/유통기간가중"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "9874",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "fileNo": "9874",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이24문항의관련원리만검증;월할은명시조건및¶20합리적근사. 참여우선주/반희석/미제시발행조건을추가하지않음. 전체기준서전문검수아님."
+        },
+        {
+          "fileNo": "9874",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이16문항의관련원리만검증;월할은명시조건. 공식개념체계/KIFRS필요범위만확인하며미제시사실을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d",
+      "versions": [
+        "시행중_K-IFRS_제1016호_유형자산(2020_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영)_토지공시지가개정사항반영.pdf"
+      ],
+      "actual_read_locations": [
+        "¶48–55·60–62; PDF23–24/26쪽",
+        "PDF26¶60–62",
+        "공식PDF23–24/26쪽¶48–55/60–62; 원가−잔존의기간배분과정액상각및당기비용 실제독립읽음",
+        "PDF26 ¶60–62,PDF34 한81B.1,PDF36 81N/한81N.1(토지공시미래시행배제)",
+        "공식PDF23–24/26쪽¶48–55/60–62;정액연상각/당기비용 직전독립QA같은읽음범위재사용"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_finance_a",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49993243",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993243",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "fileNo": "-49993243",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이16문항의관련원리만검증;월할은명시조건. 공식개념체계/KIFRS필요범위만확인하며미제시사실을추가하지않음. 전체기준서전문검수아님."
+        },
+        {},
+        {
+          "fileNo": "-49993243",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이21문항의관련원리만검증;문항제시조건의정량모형만확인. 모든실무예외/미제시계약조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "versions": [
+        "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶34–38; PDF19–20쪽",
+        "PDF21–22 ¶41–46 전기오류",
+        "PDF21–22 ¶41–46",
+        "PDF14¶19/22·20¶36–38·21–22¶41–46",
+        "PDF14–15 ¶19/22/23/26,PDF20 ¶36–38,PDF21–22 ¶41–46;PDF25 한54.1/27 54I",
+        "PDF21–22 ¶41–46,PDF25–27 한54.1/54H/54I"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49993093",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993093",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-official-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {},
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993093",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-official-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "read_method": "해당공식공개PDF cache 본문 독립재독;writer읽기표시 복사만으로확인하지않음;신규다운로드 아님",
+          "acquisition_metadata_sha256": "54a67c71de8a674deba69603b1b5c00701a8b90935dea13aef0e7cfb7c1a882e"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+      "versions": [
+        "시행중_K-IFRS_제1007호_현금흐름표(2024_개정_2021_타기준서_제정_수정목록_19-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶43–44; PDF21쪽"
+      ],
+      "readers": [
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49992451",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "versions": [
+        "시행중 PDF · 2014 개정·2021 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+        "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶33; PDF29쪽",
+        "PDF29–30 ¶33/35;PDF53 AG25–26",
+        "PDF30 ¶35 지분소유자 분배 자본직접인식만; D/E 상승 조건은 해당조문이 정하지 않음",
+        "PDF29–30¶33/35·PDF53 AG25–26",
+        "PDF28–30 ¶28–35;57–58 AG31–36 부채자본분리/자기주식자본/전환권",
+        "PDF30쪽 ¶35 지분분배 자본직접인식;PDF53쪽 AG25–26 특정권리별 부채/지분분류. 누적·참가 배분산식 아님",
+        "공식PDF29쪽 ¶33. 자기주식매입대가는자본차감/당기손익미인식 독립읽음"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_tax_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "9873",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9873",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9873",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "6b591ebd8010d9ef3e8bd0c2eba818c88bd6dfe28bd398c8593a708e3fba5cdf",
+          "scope": "본인이 위 핵심본문만 독립 재독; 배당분배계산의 국내기준서 직접승격 안함; 최신기준 조기적용 안함"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "9873",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "read_method": "해당공식공개PDF cache 본문 독립재독;writer읽기표시 복사만으로확인하지않음;신규다운로드 아님",
+          "acquisition_metadata_sha256": "6b591ebd8010d9ef3e8bd0c2eba818c88bd6dfe28bd398c8593a708e3fba5cdf"
+        },
+        {
+          "fileNo": "9873",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이24문항의관련원리만검증;월할은명시조건및¶20합리적근사. 참여우선주/반희석/미제시발행조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "479dbb065ac4dda91a1b66419287605536c89797736b477ef990dd28991a0839",
+      "versions": [
+        "시행중_K-IFRS_제1023호_차입원가(2018_개정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶5–25·28A/한29A.1/29B–29D; PDF9–16쪽",
+        "공식PDF9–16쪽¶5–25/26–28A/한29A.1/29B–29D 실제독립읽음. 핵심12특정차입/17개시3조건/18평균지출근사/19필요활동;제시중단없음조건과월할대수."
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "9861",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "fileNo": "9861",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이16문항의관련원리만검증;월할은명시조건. 공식개념체계/KIFRS필요범위만확인하며미제시사실을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "versions": [
+        "다운로드 하려면 클릭하세요  시행중_K-IFRS_제1040호_투자부동산(2017_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶56·한85.1/85F–85H; PDF22–23/33–34쪽",
+        "공식PDF22–23쪽¶56 원가모형에서일반건물의IAS16적용 핵심실제독립읽음",
+        "공식PDF22–23쪽¶56(3)투자부동산원가모형IAS16 적용 직전독립QA같은읽음범위재사용"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49990970",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "fileNo": "-49990970",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이16문항의관련원리만검증;월할은명시조건. 공식개념체계/KIFRS필요범위만확인하며미제시사실을추가하지않음. 전체기준서전문검수아님."
+        },
+        {
+          "fileNo": "-49990970",
+          "fileSeq": "2",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이21문항의관련원리만검증;문항제시조건의정량모형만확인. 모든실무예외/미제시계약조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "a8b01c656fb6680e57ec47ec03e33c2411db6a088ae464bfb7a3b943e9f7123c",
+      "versions": [
+        "시행중_K-IFRS_제1116호_리스(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶22–38·부록A 증분차입/내재이자율·C1–C1C; PDF14–18/41–42/64쪽",
+        "공식PDF14–18쪽22–38;41–42부록A내재/증분차입정의;64C1–C1C첫부분 실제독립읽음. 핵심26미지급현재가치/36–37일정이율이자와지급감액. 전체리스분류/할인율정책/미제시계약특성을검증하지않고단일제시율·지급시점정량모형한정."
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49993107",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "fileNo": "-49993107",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이21문항의관련원리만검증;문항제시조건의정량모형만확인. 모든실무예외/미제시계약조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d",
+      "versions": [
+        "시행중_K-IFRS_제1037호_충당부채_우발부채_우발자산(2020_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "¶45–47·60·한96.1; PDF21/24/32쪽",
+        "공식PDF21쪽45–47;24쪽60;32쪽한96.1 실제독립읽음. 인식조건은원문이직접충족지정,할인및기간경과측정만검증"
+      ],
+      "readers": [
+        "r6_finance_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "fileNo": "-49993099",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do"
+        },
+        {
+          "fileNo": "-49993099",
+          "fileSeq": "1",
+          "public_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "read_method": "QA검수자가정상공식캐시를직접독립재독. 신규다운로드주장하지않음",
+          "limits": "이21문항의관련원리만검증;문항제시조건의정량모형만확인. 모든실무예외/미제시계약조건을추가하지않음. 전체기준서전문검수아님."
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "4b0d52157d50caf7d5d22874c63ef16693146cfe68b3b6035d1146485545117e",
+      "versions": [
+        "시행중_K-IFRS_제1001호_재무제표_표시(2023_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF39–40/48–49 ¶78–79/81A/106–109",
+        "PDF18 ¶18부적절한정책의주석공시대체불가",
+        "PDF39쪽 ¶79 종류별 권리·우선권·제한 공시. 배당수치배분 규정 아님"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_finance_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993094",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993094",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "6b591ebd8010d9ef3e8bd0c2eba818c88bd6dfe28bd398c8593a708e3fba5cdf",
+          "scope": "본인이 위 핵심본문만 독립 재독; 배당분배계산의 국내기준서 직접승격 안함; 최신기준 조기적용 안함"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993094",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "read_method": "해당공식공개PDF cache 본문 독립재독;writer읽기표시 복사만으로확인하지않음;신규다운로드 아님",
+          "acquisition_metadata_sha256": "6b591ebd8010d9ef3e8bd0c2eba818c88bd6dfe28bd398c8593a708e3fba5cdf"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67917/index.cnxml",
+      "sha256": "5ebdd0de3bb35fa233f9007828687a62e516df84a92e873f20bd86d955df2236",
+      "versions": [
+        "fixed commit 2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm268334128"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_textbook_cache_reused_no_new_download",
+          "role": "일반 배당절차 및 부채비율 교육 정의; K-IFRS가 부채비율의 무조건 상승을 직접 규정한다는 근거 아님"
+        },
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "D/E정의와 선언/지급/주식배당 또는 조건부 공사진행 교육원리만. US분류를 한국 고유규칙으로 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67919/index.cnxml",
+      "sha256": "f724918047a021c6dc6cb11d93fbc8ca1ac1936432e517b3dc49860631c2fc74",
+      "versions": [
+        "fixed commit 2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm345699984, fs-idm360311728, fs-idm358461568, fs-idm368243216, fs-idm367280656",
+        "fs-idm345699984,fs-idm360311728,fs-idm358461568,fs-idm368243216,fs-idm367280656"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_textbook_cache_reused_no_new_download",
+          "role": "일반 배당절차 및 부채비율 교육 정의; K-IFRS가 부채비율의 무조건 상승을 직접 규정한다는 근거 아님"
+        },
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "D/E정의와 선언/지급/주식배당 또는 조건부 공사진행 교육원리만. US분류를 한국 고유규칙으로 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "171b8f0d9993b9f842b513489a599c5bf7b071af232a32ba2717dc1b5e8c6631",
+      "versions": [
+        "시행중_K-IFRS_제1028호_관계기업과_공동기업에_대한_투자(2018_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF8–12¶3/5/10·PDF19¶32",
+        "PDF12 ¶10 연속부분 배당차감/OCI;PDF19 ¶32 영업권비상각",
+        "PDF9¶3·11–12¶10",
+        "PDF10 ¶7잠재의결권;15 ¶20매각예정;19–20 ¶33–36실무불가/3개월차이및정책통일",
+        "PDF8–10 ¶3/5–9 유의적 영향력, PDF10–12 ¶10–12 지분법 원가·손익·OCI·배당, PDF19 ¶32 영업권 비상각",
+        "PDF9 ¶3,PDF11–12 ¶10(지분손익/OCI/분배액);PDF24 ¶45의2013시행"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_cost_a",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49990968",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49990968",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download",
+          "acquisition_metadata_sha256": "7e7ef44e63c31efeed8398496027a45d8fdf8823840fc2b01a0c48c7d61873a3",
+          "read_method": "기확보 공식 공개 PDF 캐시의 해당 본문을 독립 재독; 신규 다운로드 아님"
+        },
+        {}
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "versions": [
+        "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF11–12¶5–6·16–17¶16–17·34¶47/49·42–43¶58–60",
+        "PDF11 ¶5일시적차이와미사용공제별도범주;14 ¶9재무상태표비인식비용의세무기준액",
+        "PDF11–12 ¶5–6,PDF16–17 ¶16–17,PDF34 ¶47/49,PDF42–43 ¶58–60;PDF57 한92.1"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49993095",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {}
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "39d309772c470e8361d5ce1d602f801299a7682b0fab910031619b4354e26f11",
+      "versions": [
+        "시행중_K-IFRS_제1019호_종업원급여(2018_개정_2021_타기준서_제정_수정목록_25-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF13/15¶8 정의·62–63¶140–141",
+        "PDF11 ¶8예상결제;16–17 ¶11–15누적유급휴가;97 BC20예상결제와단순지급기일구별",
+        "PDF13/15 ¶8의사외적립자산/실제수익,PDF62–63 ¶140–141기초기말조정,PDF75 ¶172"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49992028",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {}
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "65bed02e3b4db12114525dd5fab2d83b4015ae8161d07c4afff09db1e238dc1a",
+      "versions": [
+        "시행중_K-IFRS_제1021호_환율변동효과(2023_개정_2018_타기준서_개정_수정목록_23-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF11¶8·14–15¶16",
+        "PDF11 ¶8,PDF14–15 ¶16,PDF27 한60A.1"
+      ],
+      "readers": [
+        "r6_tax_b",
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49991568",
+            "fileSeq": "2"
+          },
+          "acquisition_metadata_cache": "downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        },
+        {}
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "sha256": "8c76b33bf9afd8f2d897ff7cc490f0b5af46c6fd23897bcc1ec11d303696df2f",
+      "versions": [
+        "시행중_K-IFRS_제1105호_매각예정비유동자산과_중단영업(2015_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf"
+      ],
+      "actual_read_locations": [
+        "PDF11–12 ¶7–12매각예정전조건/신규취득3개월충족"
+      ],
+      "readers": [
+        "r6_tax_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "publication_list_url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "download_method": "POST",
+          "download_parameters": {
+            "fileNo": "-49990975",
+            "fileSeq": "1"
+          },
+          "acquisition_metadata_cache": "new-downloads.json",
+          "original_acquisition_status": 200,
+          "acquisition_kind": "existing_official_cache_reused_no_new_download"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/e004a2437ea850a6ea3dbd7fbb79797c3e51c573/kr/법인세법/시행령.md",
+      "sha256": "2462b898ec0e0c7750137c0075dc42febaa622a3b23f6ed6a761e71d6834a29d",
+      "versions": [
+        "법인세법 시행령 35879호; 시행2025-11-28; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제35조/106조①1다·2·3;35879호부칙1–3조",
+        "머리말35879호/2025-11-28; 제35조; 제106조①1다(소득구성 단서)·2·3;35879호부칙1–3"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/169dedc6dba4874844679ec7d73914262b230490/kr/법인세법/법률.md",
+      "sha256": "5660285a14faf83605793130d9e903549ba26baa9b55cc54ca623e2938dbf6d8",
+      "versions": [
+        "법인세법 법률 21065호; 시행2025-10-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제24조①/④;정부조직법21065호부칙1조(재정경제부 변경2026.1.2일 별도시행 확인)",
+        "머리말21065호/2025-10-01; 제24조①·④;20613호부칙1·3;정부조직법21065호부칙1·7(2026-01-02 부처명칭 미래부분 제외)"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000001058565&fleSn=932291",
+      "sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea",
+      "versions": [
+        "2024년10월 발간; 일러두기2024년9월 세법 기준; 공식연도목록 plcnDt20241031"
+      ],
+      "actual_read_locations": [
+        "일러두기, 28-0-1/2 인쇄81–82쪽; 28-53-1 인쇄83쪽(PDF105쪽),28-53-2 인쇄84쪽;24-35-1①/24-36-2① 인쇄63쪽(PDF85);67-106-1/13⑤ 인쇄162/168쪽(PDF184/190);7-0-1④ 인쇄8쪽",
+        "PDF3·5 발간/2024-09 기준;PDF85/인쇄63 24-35-1①;PDF103–106 28-0-1/2·28-53-1/2;PDF184/190 소득처분·67-106-13⑤3"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        },
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=880a3b880ba459cda60ce3e4d693266c",
+      "sha256": "490ecc8128e3f8b07923e8857ce558682c897cf2dd11bafd9cd8473879af85e2",
+      "versions": [
+        "2024 법인세 신고안내; 예시사업연도2023, 별지26호서식(갑)2006.3.14개정"
+      ],
+      "actual_read_locations": [
+        "PDF265–266쪽/인쇄243–244쪽; 제2구역⑱⑲; 원본표이미지 nts2024-p265.png,p266.png",
+        "PDF265–266/인쇄243–244; 법정별지26갑 제2구역⑱⑲와 원본표 이미지266 실제 독립 열람"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/4ad7e6cbdd2d3c53280e1aefc9046f6741214679/kr/법인세법/시행령.md",
+      "sha256": "e0b36c2d85dc9f873d7d1f7515188951e0a253c577ad2ba4abe4a121f9453858",
+      "versions": [
+        "대통령령34991호,2024.11.12시행; Git 국가법령공개보존판",
+        "법인세법 시행령 34991호; 시행2024-11-12; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제49조①1가·단서,제53조①–④,제55조; 해당조문개정표시2011.6.3/2012.2.2/2006.2.9",
+        "제49조①1가단서,52조①–⑦,53조①–④,55조;34991호부칙 시행일",
+        "머리말34991호/2024-11-12;49①1가·부득이사유/유예기간;53①–④;55순위;34991호부칙 시행일"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/3bddd9116950944a23000ad3553c226328a6a94b/kr/법인세법/시행규칙.md",
+      "sha256": "f1000c5e196725cb86b05b3695e9d462d83f47315464cb13ba94cae530588875",
+      "versions": [
+        "기획재정부령1085호,2024.11.11시행; MST266387; Git 보존판"
+      ],
+      "actual_read_locations": [
+        "제82조①26 및 첨부파일 서식0026 메타,1041호부칙1·2조/1085호부칙1·2조",
+        "머리말1085호/2024-11-11;82①26 및 첨부26갑을 표시;1041호부칙1–2/1085호부칙1–2"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.law.go.kr/flDownload.do?flSeq=22001085",
+      "sha256": "39e1fa5852d97957e52ac0062edf11b1f9a044bd0bd5e143306f4aae1bf27039",
+      "versions": [
+        "2024 시행령53②가 링크한 동일산식 그림"
+      ],
+      "actual_read_locations": [
+        "384×81 GIF 전체 실제 이미지",
+        "384×81 원본GIF 전체 산식: 지급이자×자산가액 합계/총차입금(상한); 선순위 적수 제외 직접 근거로는 사용하지 않음"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=e309f999984fe8bd6ac676b30de21519",
+      "sha256": "d3002c90324245469cc044f01190c92b80ae3ad37965219bc9a364fcd771ac22",
+      "versions": [
+        "2026년판 후속설명,2024동시대직접근거아님"
+      ],
+      "actual_read_locations": [
+        "PDF283쪽/인쇄261쪽 첫문단과 이자·적수 차감도표",
+        "PDF283/인쇄261 첫문단의 이자/적수 함께 차감 및 부동산 예외;2024 동시대 근거는 아니며 후속 대조만"
+      ],
+      "readers": [
+        "r6_tax_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/162d3e8afed72abc076eaf028d5f35ecdf3598a9/kr/법인세법/법률.md",
+      "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+      "versions": [
+        "법인세법 법률 18590호; 시행2022-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제7조①–③,18조3·4호,20·21조,24조①/②1다·라·바/③·④,28조①–④;18590호부칙1·2조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+      "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+      "versions": [
+        "법인세법 시행령 32449호; 시행2022-02-18; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제43조②;53조①–④/55조;61조②1–28호,70조①1/④,76조①–④,88조①6/③,111조①1–18호;32449호부칙1·2조 일부"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/881734f50357bc761947d469e0b8ecf06c994281/kr/법인세법/시행령.md",
+      "sha256": "b1c3c118534f5c85a9645d45d78fd93c6f068808fe37ed5682bcbeb3df2f54c6",
+      "versions": [
+        "법인세법 시행령 32965호; 시행2022-10-27; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제36조③,73조3–5호;32965호부칙1·2조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/269562cff8dc4f38d97ce777aa5145c4f4c75211/kr/법인세법/법률.md",
+      "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+      "versions": [
+        "법인세법 법률 19930호; 시행2024-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제29조①·③·⑤,32조①;19930호부칙1–4조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/d7de727473c0bf05431d2c3481858a6562871139/kr/법인세법/시행령.md",
+      "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+      "versions": [
+        "법인세법 시행령 36130호; 시행2026-02-27; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제52조①–⑦,53조③,55조;36130호부칙1–4조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/ef79896a0866b1d4c1320ad79fcf4bafb005502b/kr/소득세법/법률.md",
+      "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+      "versions": [
+        "소득세법 법률 18578호; 시행2022-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제16조①12/17조①9/19조①21/20조①3/20조의3①3/43조③/127조①/⑤/129조①3·6가/②2/156조③/156조의7①·②;18578호부칙1조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/dabbefdc5e80064a692368487491dc788e659c68/kr/소득세법/시행령.md",
+      "sha256": "e4e3f50d92df2972d1bcd779776950df55939e34b1f6e3f83d0be0d4fb59a3c7",
+      "versions": [
+        "소득세법 시행령 32830호; 시행2022-08-02; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제38조①2·9·10/184조①·③;32830호부칙1·2조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/48e39d420f66a381d6b3dfd9e06fc08fd7c7bf2c/kr/소득세법/법률.md",
+      "sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6",
+      "versions": [
+        "소득세법 법률 19196호; 시행2023-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제16조①12/17조①9/19조①21/20조의3①3/43조③/127조①/⑤/156조③;19196호부칙1조1–3호"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/eb179592c3942a852894b296d4e78860940f7ff9/kr/소득세법/법률.md",
+      "sha256": "02f3bd07f7438bc35ebbd256daf3a22ce9f32401941963ce5739383da3b7624f",
+      "versions": [
+        "소득세법 법률 19933호; 시행2024-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제4조①종합·퇴직·양도(금융투자소득은부칙에따라적용제외)/16조①12/17조①9/19조①21/20조의3①3/43조③;19933호부칙1조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/b002e16d9f3146e3c9d9173c4af8da78447c219e/kr/소득세법/법률.md",
+      "sha256": "3db5b201e3df6e2132d56147e6bf2e468f2ed52dee1efc880d2c311c26e409d1",
+      "versions": [
+        "소득세법 법률 20615호; 시행2025-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제4조①,16조①12/17조①9/19조①21/20조의3①3/43조③;20615호부칙1조1–3호"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/10b5bcc2526adc34a3bb0bc5677468c48e23c240/kr/부가가치세법/법률.md",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "versions": [
+        "부가가치세법 법률 18577호; 시행2022-01-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제2조3/3조①/8조①/26조①12·14/29조⑧/39조①7/54조⑤;18577호부칙1–4조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/f0ab89feb5d74d54fa46d3106fa26654a169ce3c/kr/부가가치세법/시행령.md",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "versions": [
+        "부가가치세법 시행령 32734호; 시행2022-07-01; 국가법령공개Git보존판"
+      ],
+      "actual_read_locations": [
+        "제63조①–③,99조1호;32734호부칙1–3조"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000000839554&fleSn=701364",
+      "sha256": "48aa5a27f4a2e36d29c2cf118d99d9938f95e9838df2780a398df19c9fcd3fe8",
+      "versions": [
+        "2022년10월 발간; 공식연도목록plcnDt20221028"
+      ],
+      "actual_read_locations": [
+        "28-52-1,28-53-1/2 인쇄85–87쪽"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000000839574&fleSn=702542",
+      "sha256": "775b460989b8acdb0db10e0e73cd5f7341121b7f025f3c892ead06749fbbedae",
+      "versions": [
+        "2022년10월 발간; 실제일러두기2022년9월기준"
+      ],
+      "actual_read_locations": [
+        "PDF58–60쪽/인쇄34–36쪽의20-38근로소득범위 표와사례"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000000840581&fleSn=707501",
+      "sha256": "db901f160994dabade24a612677c814ce00bd072b21b1b3a184e960e5ea7d714",
+      "versions": [
+        "2022년10월 발간; 실제일러두기2022년9월기준"
+      ],
+      "actual_read_locations": [
+        "PDF22–24쪽/인쇄6–8쪽3-0납세의무·계속반복,PDF89쪽/인쇄73쪽29-63-1,PDF112–113쪽/인쇄96–97쪽40-81-2/4/5"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000059881",
+      "sha256": "2c450aecffcedcc9595c7e0b295423ff1659f09ef778f6d0076ca243db79d8cf",
+      "versions": [
+        "제도46013-343,2000.11.13"
+      ],
+      "actual_read_locations": [
+        "data.ASIQTB002PR01.dcmDVO.ntstDcmCntn 전체"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000108168",
+      "sha256": "8cf26ac26adb869f757950c6b18c2d24abb69b1fb51fa5c8dd0abc954ad43a6b",
+      "versions": [
+        "법인22601-1054,1991.5.28; 첨부인용소득1264-2443,1984.7.25"
+      ],
+      "actual_read_locations": [
+        "data.ASIQTB002PR01.dcmDVO.ntstDcmCntn 및 dcmHwpEditorDVOList[html].dcmFleByte 전체"
+      ],
+      "readers": [
+        "r6_tax_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/3.pdf",
+      "sha256": "1d6bcb57c660391a6a976aff69d4bf8d86672fa340f9eb5e40b31b643818598c",
+      "versions": [
+        "공식 강의첨부2019"
+      ],
+      "actual_read_locations": [
+        "PDF2–3쪽 개별작업 직접원가/간접배부·작업원가표; PDF4쪽 인과관계 가장타당한기준 직접우열 및 검사시간, 광고효과 수혜, 매출/이익 부담능력, 주관 공정성 직접 사례",
+        "PDF2–4; 특히4쪽 인과관계 가장 타당한 기준 및 네 기준/사례"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+      "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "versions": [
+        "공식 강의첨부2014 · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "PDF6–7쪽 제품원가/재고평가 목적 및 인과/수혜/부담능력/정부계약 공정성; PDF9–10/13쪽 단일과 이중의 두 기준 직접 예제",
+        "PDF6–7 배부정의·재고/COGS 목적·네 기준·정부 원가보상계약"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2010/silla/jungjaeeul1018/04.pdf",
+      "sha256": "b88de22b7856e4b1b7b6e5ce23f89140a5654323d493026c52f7ae1886025328",
+      "versions": [
+        "공식 강의첨부2010 · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "PDF3쪽 주로 간접원가인 개별 원가항목 집합의 정의",
+        "PDF3 원가집합=개별원가항목(주로간접원가)의 집합"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/P12_0904_2026.pdf",
+      "sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+      "versions": [
+        "revisedJuly2024/reprintJan2026",
+        "Syllabus2022 · revisedJuly2024/reprintJanuary2026 · 실제판권2쪽"
+      ],
+      "actual_read_locations": [
+        "PDF315–319/373쪽 Value=Price+Volume; Volume=Mix+Quantity의 좁은Quantity 직접정의; PDF344쪽 판매이익차이의 표준원가 사용은CostVariance제거라는 직접이유; PDF525–530쪽 판매가격/촉진/제품배합 책임과 표준/예산 비교",
+        "PDF278–281쪽 Current/Ideal/Expected/Basic/Normal 직접 유형정의, Normal의 미래5/10년 경기순환 평균 기준; PDF359/361/364쪽 표준종류 문제와 normal의 정상휴식 허용 용어맥락 확인",
+        "PDF74쪽 Illustration16 activity rate33/invoice를 fixed30+variable3으로 직접분리; PDF46쪽 고정간접비 유발활동·ABC 비교",
+        "PDF1–3 판본표시;315–319/373 Price·Volume·Mix·좁은Quantity;344 표준원가로원가차이제거;525/529–530 통제권/판매가격·제품배합/예산성과"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://contents.kocw.or.kr/KOCW/document/2015/hufs/sonsoohyun/11.pdf",
+      "sha256": "5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455",
+      "versions": [
+        "공식 강의첨부2015 · 실제 표지 산업경영공학과"
+      ],
+      "actual_read_locations": [
+        "PDF3–6쪽 책임회계/표준·통제가능항목 책임; PDF5쪽 출판업체 판매부문 이익중심점 직접예시와 공헌이익접근 성과측정 광범위 사용",
+        "PDF3–6 책임회계/통제가능 항목;5쪽 판매부문 이익중심 사례·공헌이익 성과접근"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "재사용: 동일 검수자가 앞선 qa_tax_cost에서 실제 읽은 해당 원본문 범위/이미지에 근거함. 이번은 형식 delta 검수이며 새 다운로드·새 판본 독립읽음으로 주장하지 않음; 현재 파일 SHA는 다시 실제 확인함.",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://drive.google.com/file/d/13jQZGRrCRAY2PyuYslhauZArqqbGOXMT/view?usp=drive_link",
+      "sha256": "9eb4952c025a83568e9abba7db10f009254a8f904427b317badd4a4714af8136",
+      "versions": [
+        "Syllabus2022 · FirstAugust2022/reprintJuly2026 · 실제판권2쪽",
+        "FirstAug2022/reprintJuly2026"
+      ],
+      "actual_read_locations": [
+        "PDF212–214쪽 제품수명주기 단계/기술변화로 쇠퇴·LCC 단계별 추적/장기·설계원가 절감; PDF304–310쪽 super-variable material-only, unit-level spending, Throughput/OperatingExpense 정의·전통회계 비용절감 중시·모든 기타원가 당기처리·장기 계획/가격 비교",
+        "PDF94–95쪽 공헌이익=매출−전체변동비·Profit=CM−F·관련범위 내 고정총액 및 매출증가/이익변화 직접모형",
+        "PDF64–65쪽 TQM/품질원가; PDF191–194쪽 고객요구파악→목표가격→목표이익/원가 및 설계; PDF212–214쪽 LCC 전수명 비용/수익·기술발전 쇠퇴·생산전원가/설계절감"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints1.html",
+      "sha256": "dd8c2bf6d9853dfeb4f1a10762407b6375bae92c7c8ba1aaff84a0523141ae7c",
+      "versions": [
+        "공식 보존HTML · 2018lastModDate · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "Goal 정의 · throughput/inventory/operationalexpense 직접 정의, 재고누적/납기/JIT 감소 맥락"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html",
+      "sha256": "4e31e045462712043539da9d17006d02684d7bdc8443fb687471d6ad1e3a4502",
+      "versions": [
+        "공식 보존HTML · 2018lastModDate · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "Limiting factor and throughput 분석 · 판매가−직접재료와 다른 단기원가 largely fixed/operationalexpense; factoryhour"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/leeseonguk/8.pdf",
+      "sha256": "b0375dcf95e928587f4ddf528626bfaae903f30367a402d000e588d8d2006bf4",
+      "versions": [
+        "공식 강의첨부2014"
+      ],
+      "actual_read_locations": [
+        "PDF1–2쪽 이상적/달성가능한 표준의 직접 정의·정상감손/고장/여유시간 허용과 관리효과"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_managerial-accounting/blob/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-09-appendix-recording-standard-co.html",
+      "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7",
+      "versions": [
+        "보존commit6b8ed09bd60909a2b170cfe16897266020b2968f · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "10.9 RecordingCOGS/ClosingManufacturingOverheadandVarianceAccounts/KeyTakeaway 전체 · 재고 표준 유지와 COGS차이 마감"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2021/shinhan/hongsuhee0118/14.pdf",
+      "sha256": "1ab4df6b3060b0e003dd9d0b815ae3b9c4f25b934cfc482c47238adb9092ee06",
+      "versions": [
+        "실제 표지2021학년도2학기"
+      ],
+      "actual_read_locations": [
+        "PDF5–10쪽 모든 제조원가 표준측정·정상 감손/휴식 허용·일반 표준설정 및 예외관리/차이분석"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/10.pdf",
+      "sha256": "b2a73f2c99cab31ee6549f4aaaeaee4195884bf5934735db814452f1f58303d5",
+      "versions": [
+        "공식 강의첨부2019"
+      ],
+      "actual_read_locations": [
+        "PDF3/7–11쪽 장기 총원가 고려, 회피가능 고정비, 외주 납품선정/납품검사 관리원가, 외주의 안정성·품질 및 핵심부품 자체생산, 외주 수요변동에 따른 원가유연성",
+        "PDF7–11;10쪽 외주 납품업체선정/납품검사 관리원가;11쪽 외주 품질·안정성·핵심부품 자체생산·수요변동 유연성"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/leeseonguk/10.pdf",
+      "sha256": "f6175f13ce27339aa4afd2e4f210b6ec03e54b86258427465f56116dd6c02e9e",
+      "versions": [
+        "공식 강의첨부2014 · 실제58쪽"
+      ],
+      "actual_read_locations": [
+        "PDF8–10쪽 자가생산/외부구매·유휴시설 기회원가·회피가능 고정비·내부 품질통제 전략; PDF29–30쪽 분권화 동기/신속성·준최적화 및 책임회계/전통적 제품원가회계 차이, 수익/이익중심 통제범위",
+        "PDF8–10/인쇄36–38 자가생산/외부구매·기회원가 및 내부품질통제 비계량 전략"
+      ],
+      "readers": [
+        "r6_cost_a",
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {},
+        {
+          "read_method": "본 검수자가 기존 공개캐시 핵심본문을 직접 독립 재독/이미지 열람; 이전 검수자 읽기표시를 본인 실제읽음으로 복사하지 않음; 이번 신규 다운로드 아님",
+          "limits": "기재한 범위만 확인; 전체 기준/교재의 검증 또는 한국어 용어 대응을 확인했다고 확대하지 않음"
+        }
+      ]
+    },
+    {
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/2.pdf",
+      "sha256": "3ffbe5993f08e022a352f84784584fd24e7a63f060c9aec1c310af45944abdfd",
+      "versions": [
+        "공식 강의첨부2019"
+      ],
+      "actual_read_locations": [
+        "PDF2쪽 취득시점 원가/사용시점 비용·자산가치와 취득원가 구분; PDF3/6–7쪽 제조원가와 제조원가명세서 흐름"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/P8_0904_2026.pdf",
+      "sha256": "e95b519b3d36de923f0e87d8adc3dee1266d8392e483c2d027a3f6230c82a40d",
+      "versions": [
+        "Syllabus2022 · revisedOctober2024/reprintJanuary2026 · 실제판권2쪽",
+        "revisedOct2024/reprintJan2026"
+      ],
+      "actual_read_locations": [
+        "PDF22–23쪽 Cost Accounting 정량/Management Accounting 정량·정성 정보 비교; PDF25–26쪽 Cost 정의·CAS1 생산/서비스 자원사용 범위; PDF31쪽 cost allocation/apportionment 및 ability to bear",
+        "PDF305–310쪽 SpecificOrder/JobCosting·작업표·JobRegister 착수일·specialrequirement·직접재료/노무 trace와 간접배부",
+        "PDF41쪽 GraphicalMethod 모든역사자료·눈으로bestfit 주관/오류·HighLow 최고/최저output 및 SimpleRegression 실제 정의"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://www.kasb.or.kr/front/board/View3010.do?siteCd=002000000000000&gubun=3010&accstdSeq=3639",
+      "sha256": "7ba34edc14ab91aba6ab037f75a518f4b305eccc6456676be861732ab74dcb7f",
+      "versions": [
+        "본문1998-04-01시행/게시2001-05-10 · 종전보존본문 캐시재독"
+      ],
+      "actual_read_locations": [
+        "제4조 정상 생산소비 제조원가/비정상 제외; 제6조 인과와효익/목적별 배부; 제9조 생산투입 재료원가"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/7.pdf",
+      "sha256": "e3606d9884ebecf394b48650952de15e7dce7349c4d5b650262afcc31b026344",
+      "versions": [
+        "공식 강의첨부2019"
+      ],
+      "actual_read_locations": [
+        "PDF5–10쪽 과거계정분석·고저점·전자료최소자승·공학적 설계/시간동작 추정 및 과거자료 어려울때 사용"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/8.pdf",
+      "sha256": "ce87a7baef349cb1ac3a0674fbf1ea757669ea799cd283a6291735e50ba0278c",
+      "versions": [
+        "2018년2학기 공식 강의첨부 · 기존 캐시 재독"
+      ],
+      "actual_read_locations": [
+        "PDF1–3쪽 품질프로그램 성과평가·고객기대/설계품질·예방/평가/내부실패/외부실패 직접표"
+      ],
+      "readers": [
+        "r6_cost_a"
+      ],
+      "acquisition_provenance": [
+        {}
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67897/index.cnxml",
+      "sha256": "6ecec36764c1028102a92ffd45837db97ec602936b6390c1bbd1dbe24da5494f",
+      "versions": [
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm376793904/387091552/380204416/397912128 · 기초장부×정률/잔존미리차감아님/잔존하한;Straight-line/Partial-Year"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재CNXML의관련본문독립재독",
+          "limits": "미국계산사례를K-IFRS전체와동일시하지않음;0.451/0.40상각률은문항이지정한정률이며교재2배율을임의대입하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67900/index.cnxml",
+      "sha256": "8d66e10c14f728f12e4e46a6004648409d15211fecc99d24c68cf842ee3ef1d2",
+      "versions": [
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm390225856/383562272/380879392 · 남은상각대상잔액/새잔여기간/처분일까지상각"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재CNXML의관련본문독립재독",
+          "limits": "미국계산사례를K-IFRS전체와동일시하지않음;0.451/0.40상각률은문항이지정한정률이며교재2배율을임의대입하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67896/index.cnxml",
+      "sha256": "7c17090a1ba2c9ee7690e18f3e70b9f98dfaec9dc8831685b73d2776b070cc6d",
+      "versions": [
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm258218352 · 기능향상/사용기간연장 자본화"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재CNXML의관련본문독립재독",
+          "limits": "미국계산사례를K-IFRS전체와동일시하지않음;0.451/0.40상각률은문항이지정한정률이며교재2배율을임의대입하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_financial-accounting/blob/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s19-03-issuing-and-accounting-for-pre.html",
+      "sha256": "08a33d81f3d5a404ae08c423db11426e30f6b572d0f3335fc982bbf887301028",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "§16.3 stipulated preferred dividend/par×rate, contractual rights and common residual"
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "일반 교육모형에 한정; 한국 강행법규/맞춤정관 전체를 확인한 자료 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_financial-accounting/blob/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s19-04-the-issuance-of-cash-and-stock.html",
+      "sha256": "a050d0fa39f6d6c52513951d38f19e575ed056220ea89ffc37e74a3ac4f22a3f",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "§16.4 Wington 누적/비누적·arrears; 선언부채/주식배당 내부대체"
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "일반 교육모형에 한정; 한국 강행법규/맞춤정관 전체를 확인한 자료 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://biz.libretexts.org/Bookshelves/Accounting/Intermediate_Financial_Accounting_2_(Arnold_and_Kyle)/19%3A_Shareholders'_Equity/19.04%3A_Dividends",
+      "sha256": "458178c3553cf3a8fe8c962d420655fc2b75ff29a445a9576e2fd7c18de599e6",
+      "versions": [
+        "공개 HTML 본문 · 2026-10-13 확보"
+      ],
+      "actual_read_locations": [
+        "19.4 본문 Preferred Share Dividends(본문표시는18.4.1): 비누적·누적·fully participating 종류별장부/자본비례 표; 최종정관조건 제한"
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "일반 교육모형에 한정; 한국 강행법규/맞춤정관 전체를 확인한 자료 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://biz.libretexts.org/Bookshelves/Accounting/Financial_Accounting_1e_(Lumen)/14%3A_Stockholders_Equity_Earnings_and_Dividends/14.02%3A_Entries_for_Cash_Dividends",
+      "sha256": "d27e83d74f47fa6b429e91d7417d1981bf2ff1a605b040e77eb9a90c24f88aea",
+      "versions": [
+        "공개 HTML 본문 · 2026-10-13 확보"
+      ],
+      "actual_read_locations": [
+        "14.2 누적/비누적 우선주 정의 및 par×rate×years 예제"
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "일반 교육모형에 한정; 한국 강행법규/맞춤정관 전체를 확인한 자료 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://biz.libretexts.org/Bookshelves/Accounting/Intermediate_Financial_Accounting_2_(Arnold_and_Kyle)/19%3A_Shareholders'_Equity/19.09%3A_Exercises",
+      "sha256": "d24cf31266f9e7c76cd5504e8e34dd226d6c3a941a00bcb5af0e2f1662737af7",
+      "versions": [
+        "공개 HTML 본문 · 2026-10-13 확보"
+      ],
+      "actual_read_locations": [
+        "19.9 Exercises 중19.8: $100par/$3dividend와 종류별자본, 누적완전참가 문제. 해답 확인 아님"
+      ],
+      "readers": [
+        "r6_finance_a"
+      ],
+      "acquisition_provenance": [
+        {
+          "acquisition_kind": "existing_public_cache_independent_reread",
+          "limits": "일반 교육모형에 한정; 한국 강행법규/맞춤정관 전체를 확인한 자료 아님"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m67881/index.cnxml",
+      "sha256": "1832e520b2fad19ff41d13415a7e384c30d37d80300fd8c5a462cc81e74152b7",
+      "versions": [
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm178466800 및 뒤의5단계목록 · 수행의무식별→거래가격산정→배분→이행",
+        "fs-idm209179072 · annualrealestatetax 기간비용"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존교재캐시재독;K-IFRS본문과구별"
+        },
+        {
+          "read_method": "보존공개교재CNXML의관련본문독립재독",
+          "limits": "미국계산사례를K-IFRS전체와동일시하지않음;0.451/0.40상각률은문항이지정한정률이며교재2배율을임의대입하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1803/oj",
+      "sha256": "5b25ccb309d78e5740091e5d9362dc857b28b6fff460ca19586538a5894bc242",
+      "versions": [
+        "EU Regulation2023/1803原版保존IFRS9본문",
+        "EU Regulation2023/1803原版IFRS9 section cached; 실제3개핵심문단역사비교",
+        "EU Regulation2023/1803原版보존IFRS9본문"
+      ],
+      "actual_read_locations": [
+        "5.4.4 제각 직접감액/제거;AppendixA상각후원가정의 exactrows 독립재독",
+        "5.1.1/5.1.3/5.4.1 exact table rows · currentKoreanKASB의기본측정/이자원리와비교",
+        "5.4.4제각및AppendixA상각후원가정의 exactrows;앞QA03에서실제읽은범위재사용"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "기존공식EU공통IFRS캐시의현재한국기준서핵심문장역사비교;신규다운로드아님",
+          "limits": "2025KASB새개정전체를2022에소급하지않음. 2022대손제각의기본규칙이2023보존본문과동일함을확인;2026복합사채는원문이자본요소/계약현금흐름을직접지정."
+        },
+        {
+          "read_method": "기존EU공통IFRS본문캐시재독;한국공식본문과별개",
+          "limits": "5.1.3의구표현transaction price와현행determinedamount문구를구별하며새개정전체를소급하지않음"
+        },
+        {
+          "read_method": "같은검수자의앞캐시독립재독결과재사용",
+          "limits": "2025KASB새개정전체를2022문항에소급하지않음. 핵심제각규칙의보존본문대조에한정."
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_financial-accounting/blob/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s13-06-reporting-land-improvements-an.html",
+      "sha256": "33c713db98110c7c9ce9a50d9daf4ba1d88865ff77c9d42f3803e479e2548e70",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "hoyle-ch10_s06_p19 · explicitIFRScomparison중두회수금액큰값/최초손상에한정"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재HTML의관련본문독립재독",
+          "limits": "교재의fairvalue라는느슨한표현은KASB회수가능액정의로직접대조. 교재의환입문장/USGAAP손상검사를이번원가모형의최초손상계산에사용하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_financial-accounting/blob/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s14-01-identifying-and-accounting-for.html",
+      "sha256": "86536ba1a97ddefa19a41d133ad42431d92e8332a71cfd2f0f417ae1f1043f8e",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "hoyle-ch11_s01_p06/13–15/22 · finite-life상각·명시IAS38비교"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재HTML의관련본문독립재독",
+          "limits": "교재의fairvalue라는느슨한표현은KASB회수가능액정의로직접대조. 교재의환입문장/USGAAP손상검사를이번원가모형의최초손상계산에사용하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/openstax/osbooks-principles-accounting-bundle/blob/2165bf6454c0279c1284e19ac7febc101f7956ad/modules/m68092/index.cnxml",
+      "sha256": "d75ccde99e0c1174cb54c2e8645e0f35b62d0f366d19a5aa58927b6565e1a792",
+      "versions": [
+        "2165bf6454c0279c1284e19ac7febc101f7956ad"
+      ],
+      "actual_read_locations": [
+        "fs-idm200581552/174915072/179542992/172503424 · 보통연금현재가치 및 연초현금시점 구별"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존교재캐시재독;K-IFRS본문과구별"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/saylordotorg/text_financial-accounting/blob/bb98a99cfec2c349d05a9d3bdb17e5cf917046a3/s13-05-recording-asset-exchanges-and-.html",
+      "sha256": "398f7143ac9b56c8a8a01aa65bd3e91e5eecbcc64c5d31b87c179d9e4364dc47",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "hoyle-ch10_s05_p03–08 · 제공FV와현금;일반교환계산만. 기준서26의더명백한취득FV예외와구별"
+      ],
+      "readers": [
+        "r6_cost_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재HTML의관련본문독립재독",
+          "limits": "교재의fairvalue라는느슨한표현은KASB회수가능액정의로직접대조. 교재의환입문장/USGAAP손상검사를이번원가모형의최초손상계산에사용하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://saylordotorg.github.io/text_financial-accounting/s17-04-pricing-and-reporting-term-bon.html",
+      "sha256": "7f0254978740a027782116c3ced3ad497d906cb18c8a37bbf2258cb8930e64da",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "§14.4 contractual coupon/principal·PV negotiated marketrate·EIR compounding"
+      ],
+      "readers": [
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재cache 독립재독;한국공식기준서로 표시하지않음"
+        }
+      ]
+    },
+    {
+      "url": "https://saylordotorg.github.io/text_financial-accounting/s17-05-issuing-and-accounting-for-ser.html",
+      "sha256": "694958ea5e3b495e005bb7be428a13f9ebbfa3084e6e0156ae5d904367c876f9",
+      "versions": [
+        "bb98a99cfec2c349d05a9d3bdb17e5cf917046a3"
+      ],
+      "actual_read_locations": [
+        "§14.5 serial cashflows unpaidfacecoupon+periodicprincipal and PV/EIR"
+      ],
+      "readers": [
+        "r6_finance_b"
+      ],
+      "acquisition_provenance": [
+        {
+          "read_method": "보존공개교재cache 독립재독;한국공식기준서로 표시하지않음"
+        }
+      ]
+    }
+  ],
+  "original_documents": "Original question PDFs, images and answer PDFs are preserved at baseline commit 170b68267ca917420f2cfab4608f624cc50dcbe6; per-question SHA and read locations are recorded in round10_followups.inspection_records.",
+  "tax_editions_note": "Question 2025-01-055 explicitly applies 2024 tax law. The 2024 NTS form is primary evidence; 2026 wording is comparison only. Law mirror commits and effective supplements were checked, not selected by date alone."
+}

@@ -145,7 +145,15 @@ with sync_playwright() as pw:
     expect(page.locator('.question-card .answer-dispute')).to_contain_text('2012년')
     expect(page.locator('.question-card .answer-dispute small')).to_contain_text('공식 정답은 바꾸지 않았고')
     assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-09-080').answers.join()") == '2'
-    assert page.evaluate("Object.keys(BANK_DATA.answerNotes).length") == 21
+    adjudications = json.loads((R / 'reports/explanation-expansion.json').read_text())['answer_adjudication']['records']
+    expected_notes = {r['question_id'] for r in adjudications if r['verdict'] in
+                      {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
+    assert set(page.evaluate("Object.keys(BANK_DATA.answerNotes)")) == expected_notes
+    # Round 10 resolves the targeted interest ruling; the outsourcing question
+    # still shows its explicit deferral. Official answers remain unchanged.
+    if any(r['question_id'] == '2025-01-055' and r['verdict'] == 'official_supported' for r in adjudications):
+        assert '2025-01-055' not in expected_notes and '2023-06-112' in expected_notes
+        assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-01-055').answers.join()") == '2'
     # Source basis labels say what the explanation was actually compared against.
     labels = {}
     for key, basis, subject in [('domestic', 'domestic', '세무회계'), ('ifrs', 'ifrs', '재무회계'),
