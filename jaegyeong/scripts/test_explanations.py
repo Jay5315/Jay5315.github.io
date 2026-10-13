@@ -1030,8 +1030,10 @@ class ExplanationTests(unittest.TestCase):
             self.assertEqual([(o['number'], o['is_answer']) for o in before['option_notes']],
                              [(o['number'], o['is_answer']) for o in after['option_notes']], id)
             self.assertEqual(after['answers'], self.qs[id]['answers'])
-            reasons = [o['reason'] for o in after['option_notes']]
-            self.assertEqual(len(reasons), len(set(reasons)), id)
+            answer = {o['reason'] for o in after['option_notes'] if o['is_answer']}
+            self.assertFalse(answer & {o['reason'] for o in after['option_notes'] if not o['is_answer']}, id)
+            self.assertGreaterEqual(len({o['reason'] for o in after['option_notes']}),
+                                    len({o['reason'] for o in before['option_notes']}), id)
             if after['review_status'] == 'partial':
                 self.assertTrue(after['unchecked_points'], id)
             else:

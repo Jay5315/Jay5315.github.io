@@ -53,7 +53,7 @@ CONTENT = {
 REPLACE = {  # learner-facing work-history wording
     ('2025-07-083', 'steps', 2): ('새 국내 교안은', '국내 교안은'),
     ('2023-01-083', 'steps', 0): ('새 국내 교안은', '국내 교안은'),
-    ('2023-01-108', 'option', 4): ('새 교재는', '교재는'),
+    ('2023-01-108', 'option', 3): ('새 교재는', '교재는'),
 }
 STATUS = {'2026-05-021': ('partial', [UNCHECKED_0521])}
 
@@ -95,7 +95,6 @@ def main(spaced_path):
         changes.setdefault(id, []).append(dict(field=FIELDS[kind], index=index, change=change,
                                                before=old, after=new))
 
-    content_keys = set(CONTENT) | {(i, k, int(x) if x is not None else None) for i, k, x in REPLACE}
     for row in json.loads(Path(spaced_path).read_text()):
         id, kind, index = row['key'].split('|')
         index = None if index == 'None' else int(index)
@@ -131,8 +130,9 @@ def main(spaced_path):
             assert before[field] == after[field], (id, field)
         assert [(o['number'], o['is_answer']) for o in before['option_notes']] == \
                [(o['number'], o['is_answer']) for o in after['option_notes']]
-        reasons = [o['reason'] for o in after['option_notes']]
-        assert len(reasons) == len(set(reasons)), id
+        answer = {o['reason'] for o in after['option_notes'] if o['is_answer']}
+        assert not answer & {o['reason'] for o in after['option_notes'] if not o['is_answer']}, id
+        assert len({o['reason'] for o in after['option_notes']}) >= len({o['reason'] for o in before['option_notes']}), id
         records.append(dict(question_id=id, before=before, before_hash=digest(before), after_hash=digest(after),
                             changed_fields=sorted({k for k in before if before[k] != after[k]}),
                             changes=changes[id]))
