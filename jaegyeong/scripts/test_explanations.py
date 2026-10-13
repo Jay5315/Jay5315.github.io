@@ -1107,6 +1107,10 @@ class ExplanationTests(unittest.TestCase):
             self.assertEqual(current[id], previous[id], id)
 
 
+    def test_every_current_explanation_has_four_distinct_option_reasons(self):
+        for id, n in {n['question_id']: n for n in self.current_data['items']}.items():
+            self.assertEqual(len({o['reason'].strip() for o in n['option_notes']}), 4, id)
+
     def test_answer_option_never_shares_reason_with_other_options(self):
         for id, n in self.current_notes.items():
             answer = {o['reason'].strip() for o in n['option_notes'] if o['is_answer']}
