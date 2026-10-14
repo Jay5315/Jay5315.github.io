@@ -121,6 +121,28 @@
     "scripts/test_explanations_app.py": "d233110d8d43edf2202727222169d54af4c73d7b0e440eabb48bfc7f3005972b"
   },
   "deployment": {
-    "status": "pending_push"
+    "checked_at": "2026-10-14T05:36:25.858079+00:00",
+    "status": "verified",
+    "verified_commit": "5044a85a34f1ece8a972ab658e47ac7477366249",
+    "run": {
+      "conclusion": "success",
+      "databaseId": 38517318978,
+      "headSha": "5044a85a34f1ece8a972ab658e47ac7477366249",
+      "name": "pages build and deployment",
+      "status": "completed",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38517318978"
+    },
+    "remote_refs": {
+      "refs/heads/claude/practical-allen-zjsicv": "5044a85a34f1ece8a972ab658e47ac7477366249",
+      "refs/heads/main": "5044a85a34f1ece8a972ab658e47ac7477366249"
+    },
+    "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+    "final_url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+    "http_status": 200,
+    "normal_tls_certificate_verification": true,
+    "downloaded_bytes": 20160949,
+    "local_bank_sha256": "1474b376098552dae87491b1c680afc145db63073fc7b6e4d1630035752dde98",
+    "public_bank_sha256": "1474b376098552dae87491b1c680afc145db63073fc7b6e4d1630035752dde98",
+    "sha256_matches": true
   }
 }

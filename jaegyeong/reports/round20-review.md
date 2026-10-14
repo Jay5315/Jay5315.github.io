@@ -61,3 +61,5 @@
 실제7개 테스트의 전체 출력·종료코드·시간·해시와 Pages 결과·정상HTTPS 공개 bank-data.js SHA 비교는 [검증 기록](round20-validation.json)을 확인하세요. 수치 검산, 기존 보호 원장, 신규 입력 결속, 브라우저 신규 등록 채점·18개 개념 페이지/펼친 예제·학습기록 불변을 확인합니다. 실패가 있으면 그 출력도 보존합니다.
 
 실행 결과: test_bank10·test_parts5·test_concepts7·test_explanations38개 검사 모두 성공했습니다. test_app·test_browser·test_explanations_app도 종료코드0이며 해설4,274개 전체 렌더링,169개 채점,18개 개념 페이지와 추가 예제의 실제 화면을 확인했습니다. 브라우저 오류와7개 테스트 실패는0건입니다. 추가 무결성 점검에서 Git의 한국어 파일명 표시 인용을 경로로 잘못 읽은 검사1회는 NUL 구분 경로로 정정했으며 데이터 불일치는 없었습니다.
+
+배포 확인: main과 작업 브랜치 모두 앱 변경 커밋 `5044a85a34f1ece8a972ab658e47ac7477366249`에 도달했고 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38517318978)이 성공했습니다. 정상 HTTPS 공개 파일의 SHA-256은 `1474b376098552dae87491b1c680afc145db63073fc7b6e4d1630035752dde98`이며 로컬과 같습니다. 상세 시각·HTTP 상태·파일 크기는 validation에 있습니다.

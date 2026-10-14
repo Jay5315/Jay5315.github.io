@@ -13,6 +13,8 @@
 - 실제7개 테스트 모두 통과: bank10·parts5·concepts7·explanations38 검사, 앱/브라우저 기능, 해설4,274개 전체 렌더·169개 채점·18개 개념 페이지/새 예제·학습기록 불변 확인. 실패0건이며 출력·시간·SHA는 validation에 있습니다.
 - 근거·남은 쟁점: [20차 검토 보고서](reports/round20-review.md). 최종 입력은 [작성 결과](reports/round20-proposals.json)와 [독립 검수](reports/round20-independent-reviews.json), 원문 판본·파일SHA는 각 source_reads, 수정 이력은 [검수 수정 이력](reports/round20-revisions.json), 사전검증은 [20차 preflight](reports/round20-preflight.json), 실제 테스트·배포 결과는 [20차 validation](reports/round20-validation.json)을 보존합니다.
 
+배포 확인: 앱 변경 커밋 `5044a85a34f1ece8a972ab658e47ac7477366249`의 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38517318978)이 성공했고, 정상 HTTPS 공개 `assets/bank-data.js`의 SHA-256 `1474b376098552dae87491b1c680afc145db63073fc7b6e4d1630035752dde98`이 로컬과 일치했습니다. 확인 기록을 저장하는 후속 문서 커밋은 앱 데이터·테스트를 바꾸지 않습니다.
+
 ## 2026-10-14 남은 보류 문항 77건 독립 검토 (19차)
 
 - 작업 브랜치 `claude/practical-allen-zjsicv`의 기존 초안 38건을 보존하고, 새 초안 39건을 작성했습니다. 실제 하위 에이전트 6명을 사용했으며 재귀 생성은 없습니다. 작성자와 다른 검수자가 77건·보기 308개를 확인했습니다.
