@@ -97,4 +97,4 @@
 
 ## 배포 확인
 
-사용자가 지정한 `main` 및 `claude/practical-allen-zjsicv` 양쪽 브랜치에 같은 결과를 푸시합니다. 최종 GitHub Pages 실행의 성공 여부와 `https://jay5315.github.io/jaegyeong/assets/bank-data.js`를 정상 HTTPS로 받은 SHA 비교는 [검증 기록](round19-validation.json)에 실제 결과로 기록합니다. HTTP 성공만으로 배포 확인을 완료하지 않습니다.
+데이터 적용 커밋 `15caaadb3ef38d9573c855832cd1304b53e3d0c8`을 `main` 및 `claude/practical-allen-zjsicv` 양쪽에 푸시했고, [GitHub Pages 실행 38506581173](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38506581173)이 성공했습니다. 2026-10-14T03:32:00.043483+00:00에 지정된 공개 URL을 인증서 검증을 유지한 정상 HTTPS로 받아 HTTP 200·20,078,253바이트를 확인했습니다. 로컬/공개 SHA-256은 모두 `3136714de1f8c9f615093edf02a58f079a5e3610a4e6303ec2af92eaa0558496`로 같습니다. [실제 검증 기록](round19-validation.json)에 커밋·양쪽 원격 ref·실행 URL·다운로드 결과를 보존합니다. 결과를 저장하는 후속 문서 커밋은 앱 데이터와 코드를 바꾸지 않습니다.

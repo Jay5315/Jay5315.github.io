@@ -88,8 +88,29 @@
   ],
   "all_seven_passed": true,
   "deployment": {
-    "status": "pending",
-    "reason": "테스트 확인 후 커밋·양쪽 브랜치 푸시 및 Pages SHA 검증 예정"
+    "checked_at": "2026-10-14T03:32:00.043483+00:00",
+    "status": "verified",
+    "verified_commit": "15caaadb3ef38d9573c855832cd1304b53e3d0c8",
+    "run": {
+      "conclusion": "success",
+      "databaseId": 38506581173,
+      "headSha": "15caaadb3ef38d9573c855832cd1304b53e3d0c8",
+      "name": "pages build and deployment",
+      "status": "completed",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38506581173"
+    },
+    "remote_refs": {
+      "refs/heads/claude/practical-allen-zjsicv": "15caaadb3ef38d9573c855832cd1304b53e3d0c8",
+      "refs/heads/main": "15caaadb3ef38d9573c855832cd1304b53e3d0c8"
+    },
+    "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+    "final_url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+    "http_status": 200,
+    "normal_tls_certificate_verification": true,
+    "downloaded_bytes": 20078253,
+    "local_bank_sha256": "3136714de1f8c9f615093edf02a58f079a5e3610a4e6303ec2af92eaa0558496",
+    "public_bank_sha256": "3136714de1f8c9f615093edf02a58f079a5e3610a4e6303ec2af92eaa0558496",
+    "sha256_matches": true
   },
   "integrity": {
     "checked_on": "2026-10-14",
@@ -226,5 +247,7 @@
       "failures": 0,
       "skips": 0
     }
-  ]
+  ],
+  "tested_data_commit": "15caaadb3ef38d9573c855832cd1304b53e3d0c8",
+  "documentation_policy": "이 검증 결과를 저장하는 후속 커밋은 문서만 바꾸며 데이터·코드·테스트 입력은 그대로입니다."
 }

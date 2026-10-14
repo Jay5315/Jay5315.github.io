@@ -10,7 +10,7 @@
 - 사용자 지정 원장 이름 **`round17_registrations`**을 유지합니다. 19차와 원장 번호 17은 같은 작업입니다. `scripts/register_round17_explanations.py`로 등록했고 해당 단계의 적용일만 2026-10-14로 지정했습니다. 이전 등록 스크립트와 감사 이력·보호 테스트는 바꾸지 않았습니다.
 - 최종 입력: [AUTHORED](handoff/r17/AUTHORED.json)·[REVIEWS](handoff/r17/REVIEWS.json), 전후 객체·초기/재검수 이력: [quality-history](handoff/r17/quality-history.json), 실제 출처·검산 사전검증: [round19-preflight](reports/round19-preflight.json), [상세 보고서](reports/round19-review.md).
 - 기존 4,221개 해설·출처 정의·공식 답안·문항 ID·`chagok.study.v1`·루트 사이트를 보존했습니다. 정답 의심 18건과 이전 제외 문항은 이번에 등록하거나 판정을 바꾸지 않았습니다. 보류 26건의 최신 사유는 `round17_registrations.declined`이며 이전 `review` 행을 유지합니다.
-- 실제 테스트·배포 결과는 [검증 기록](reports/round19-validation.json)을 확인하세요. 미확인 내용이 있는 `partial`을 전부 검증 완료로 해석하지 마세요.
+- 요구 테스트 7개가 모두 통과했고(실패·생략 0), 전체 해설 4,272개 렌더링 및 채점 흐름 167개를 확인했습니다. 데이터 적용 커밋 `15caaad`의 Pages 배포 성공·양쪽 브랜치 푸시·정상 HTTPS 공개 번들의 SHA 일치를 [검증 기록](reports/round19-validation.json)에 보존했습니다. 미확인 내용이 있는 `partial`을 전부 검증 완료로 해석하지 마세요.
 
 ## 2026-10-13 여러 회차 반복 보류 문항 묶음 13개 등록 (18차)
 
