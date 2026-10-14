@@ -134,6 +134,44 @@
     "record": "round23-revisions.json"
   },
   "deployment": {
-    "status": "pending"
+    "status": "verified",
+    "application_commit": "29adcfe18829388263ec24b74e6e7d5c27c60e92",
+    "verified_branches": [
+      "main",
+      "claude/practical-allen-zjsicv"
+    ],
+    "pages_run": {
+      "conclusion": "success",
+      "createdAt": "2026-10-14T12:06:41Z",
+      "databaseId": 38561378670,
+      "headSha": "29adcfe18829388263ec24b74e6e7d5c27c60e92",
+      "name": "pages build and deployment",
+      "status": "completed",
+      "updatedAt": "2026-10-14T12:07:27Z",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38561378670"
+    },
+    "public_asset": {
+      "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+      "http_status": 200,
+      "checked_at": "2026-10-14T12:07:48.502634+00:00",
+      "normal_tls_certificate_verification": true,
+      "local_sha256": "108aea7053938cffefb5617feda5c9bbb09c53618cee164a6d0e4f082bcee31f",
+      "public_sha256": "108aea7053938cffefb5617feda5c9bbb09c53618cee164a6d0e4f082bcee31f",
+      "sha256_matches": true,
+      "bytes": 20186717,
+      "response_headers": {
+        "ETag": "\"6acf7076-134065d\"",
+        "Last-Modified": "Wed, 14 Oct 2026 12:07:18 GMT",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Content-Length": "20186717",
+        "Cache-Control": "max-age=600",
+        "Age": "0"
+      },
+      "question_count": 4322,
+      "explanation_count": 4277,
+      "concept_count": 74,
+      "displayed_review_notes": 23
+    },
+    "receipt_commit_changes_only_documentation": true
   }
 }
