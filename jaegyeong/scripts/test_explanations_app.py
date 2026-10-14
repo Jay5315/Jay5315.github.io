@@ -11,7 +11,9 @@ ARTIFACTS = Path(os.environ.get('TEST_ARTIFACT_DIR', str(R / '_artifacts')))
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 KEY = 'chagok.study.v1'
 items = json.loads((R / 'data/explanations.json').read_text())['items']
-round20 = json.loads((R / 'reports/explanation-expansion.json').read_text()).get('round20_followups',{})
+audit = json.loads((R / 'reports/explanation-expansion.json').read_text())
+round20 = audit.get('round20_followups',{})
+round21 = audit.get('round21_inspections',{})
 concept_changes = round20.get('concept_amendments',[])
 # Render every explanation, then exercise actual grading for the original 30 and
 # both conceptual/calculation examples in each newly covered part.
@@ -184,6 +186,38 @@ with sync_playwright() as pw:
         assert '2025-01-055' not in expected_notes
         assert ('2023-06-112' in expected_notes) == ('2023-06-112' not in resolved)
         assert page.evaluate("BANK_DATA.questions.find(q=>q.id==='2025-01-055').answers.join()") == '2'
+    # Every newly approved opinion reaches previews verbatim. Previewing must
+    # not mutate study records; subsequent grading still uses the official key.
+    opinion_changes = [dict(r, text=r['after_evidence']) for r in round21.get('evidence_amendments',[])]
+    opinion_changes += [dict(r, text=r['evidence']) for r in round21.get('resolutions',[])]
+    for change in opinion_changes:
+        qid = change['question_id']
+        page.goto(URL + '#library')
+        before_preview = page.evaluate('(k)=>localStorage.getItem(k)', KEY)
+        page.locator('#library-query').fill(qid)
+        page.locator('[data-action=preview]').click()
+        expect(page.locator('dialog .answer-dispute p')).to_have_text(change['text'])
+        assert page.evaluate('(k)=>localStorage.getItem(k)', KEY) == before_preview
+        page.locator('dialog [data-action=close-modal]').click()
+    for change in round21.get('resolutions',[]):
+        qid = change['question_id']
+        page.goto(URL + '#library')
+        page.locator('#library-query').fill(qid)
+        page.locator('[data-action=preview]').click()
+        page.locator('dialog [data-action=single]').click()
+        if page.locator('#replace-session').count():
+            page.locator('#replace-session').click()
+        expect(page.locator('.question-card .answer-dispute')).to_have_count(0)
+        official = change['official_answers'][0]
+        page.get_by_role('button', name=f'{official}번 선택', exact=True).click()
+        page.locator('[data-action=grade]').click()
+        expect(page.locator('.question-card .answer-dispute p')).to_have_text(change['evidence'])
+        result = page.evaluate('([k,id])=>JSON.parse(localStorage.getItem(k)).results[id]',[KEY,qid])
+        assert result['lastCorrect'] is True and result['lastAnswer'] == official,qid
+        assert page.evaluate('(id)=>BANK_DATA.questions.find(q=>q.id===id).answers',qid) == change['official_answers']
+        page.reload()
+        expect(page.locator('.question-card .answer-dispute p')).to_have_text(change['evidence'])
+        assert page.evaluate('([k,id])=>JSON.parse(localStorage.getItem(k)).results[id]',[KEY,qid]) == result
     # Source basis labels say what the explanation was actually compared against.
     labels = {}
     for key, basis, subject in [('domestic', 'domestic', '세무회계'), ('ifrs', 'ifrs', '재무회계'),
@@ -229,4 +263,4 @@ with sync_playwright() as pw:
     assert state['results']['2026-01-006']['attempts'] == 1
     assert not errors, errors
     browser.close()
-    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), {len(concept_changes)} enriched concept pages and new examples, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
+    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), {len(concept_changes)} enriched concept pages and new examples, {len(opinion_changes)} revised opinion previews and {len(round21.get("resolutions",[]))} official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')

@@ -4,6 +4,19 @@ import json
 from explanation_data import validate_explanations
 R=Path(__file__).resolve().parents[1]
 def read(n):return json.loads((R/'data'/f'{n}.json').read_text())
+def amend_adjudication_evidence(records, amendments):
+ """Replay approved text-only changes without mutating historical records."""
+ result=[dict(record) for record in records]
+ by_id={record['question_id']:record for record in result};seen=set()
+ for amendment in amendments:
+  id=amendment['question_id'];record=by_id.get(id)
+  if id in seen or not record:
+   raise ValueError(f'{id}: duplicate/unknown evidence correction')
+  seen.add(id)
+  if record['verdict']!=amendment['verdict'] or record['evidence']!=amendment['before_evidence'] or not amendment['after_evidence']:
+   raise ValueError(f'{id}: stale/empty evidence correction')
+  record['evidence']=amendment['after_evidence']
+ return result
 def main():
  qs={q['id']:q for q in read('questions')};entries=read('entries');families=read('families')
  representatives={f['representative_entry_id'] for f in families}
@@ -18,8 +31,13 @@ def main():
   missing=[s['ref'] for s in n['sources'] if s['ref'] not in concepts['sources']]
   if missing:raise SystemExit(f"{n['id']}: unknown source refs {missing}")
  explanations=validate_explanations(read('explanations'),qs,{e['id'] for e in entries},part_ids)
- adjudication_log=json.loads((R/'reports/explanation-expansion.json').read_text()).get('answer_adjudication',{})
- adjudication=adjudication_log.get('records',[])+adjudication_log.get('explained_item_records',[])
+ audit=json.loads((R/'reports/explanation-expansion.json').read_text())
+ adjudication_log=audit.get('answer_adjudication',{})
+ # Evidence corrections preserve original records. Apply them before later
+ # resolutions, whose independently reviewed verdict/evidence takes priority.
+ adjudication=amend_adjudication_evidence(
+  adjudication_log.get('records',[])+adjudication_log.get('explained_item_records',[]),
+  audit.get('round21_inspections',{}).get('evidence_amendments',[]))
  resolved={r['question_id']:r for r in adjudication_log.get('resolutions',[])}
  adjudication=[dict(a,verdict=resolved[a['question_id']]['verdict'],evidence=resolved[a['question_id']]['evidence']) if a['question_id'] in resolved else a for a in adjudication]
  labels={'official_conflict':'공식 정답 이의 가능','multiple_candidates':'정답 후보가 둘 이상','ambiguous_wording':'문항 표현이 모호','deferred':'근거 보완 필요'}

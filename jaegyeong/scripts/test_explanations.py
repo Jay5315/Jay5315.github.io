@@ -460,6 +460,14 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        round21 = (cls.audit or {}).get('round21_inspections')
+        if round21:
+            # Reverse the newest adjudication-only stage before round20 and all
+            # older protected snapshots. Completed study data was not edited.
+            cls.stage_after['round21_inspections'] = copy.deepcopy(cls.data)
+            cls.audit_after['round21_inspections'] = copy.deepcopy(cls.audit)
+            cls.audit['answer_adjudication'] = copy.deepcopy(round21['before_adjudication'])
+            del cls.audit['round21_inspections']
         cls.before_round20_concepts = json.loads((R / 'data/concept-notes.json').read_text())
         round20 = (cls.audit or {}).get('round20_followups')
         if round20:
@@ -1369,6 +1377,110 @@ class ExplanationTests(unittest.TestCase):
         with self.assertRaises(ValueError):protect_concept(concept,changed,concept['id'])
 
 
+    def test_round21_complete_inspections_preserve_data_and_bind_independent_reviews(self):
+        from apply_round10_followups import digest,public_record
+        stage=self.stage_after.get('round21_inspections')
+        if stage is None:self.skipTest('No round21 inspection yet')
+        after=self.audit_after['round21_inspections'];group=after['round21_inspections']
+        proposal_path=R/'reports/round21-proposals.json';qa_path=R/'reports/round21-independent-reviews.json'
+        self.assertEqual(hashlib.sha256(proposal_path.read_bytes()).hexdigest(),group['proposal_sha256'])
+        self.assertEqual(hashlib.sha256(qa_path.read_bytes()).hexdigest(),group['review_sha256'])
+        proposal=json.loads(proposal_path.read_text());qa=json.loads(qa_path.read_text());baseline=group['baseline']
+        self.assertEqual(baseline,proposal['baseline'])
+        self.assertEqual({n['question_id']:digest(n) for n in stage['items']},baseline['explanation_hashes'])
+        self.assertEqual({ref:digest(meta) for ref,meta in stage['sources'].items()},baseline['source_hashes'])
+        for name,sha in baseline['immutable_files'].items():
+            self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+        for key,sha in baseline['audit_key_hashes'].items():
+            if key!='answer_adjudication':self.assertEqual(digest(after[key]),sha,key)
+        self.assertEqual(digest(group['before_adjudication']),baseline['audit_key_hashes']['answer_adjudication'])
+        previous=group['before_adjudication'];expected=copy.deepcopy(previous)
+        expected['resolutions']+=group['resolutions']
+        self.assertEqual(after['answer_adjudication'],expected)
+        self.assertEqual(after['review'],group['original_review'])
+        pending={r['question_id']:r for r in group['original_review']};seen=set();authored={}
+        recorded={r['question_id']:r for r in group['inspections']}
+        self.assertEqual(len(recorded),len(group['inspections']))
+        for category,count in [('parse_problem',11),('answer_suspected',18),('source_unverified',16),('calculation_unresolved',2)]:
+            rows=proposal['inspections'][category];approved={r['question_id']:r for r in qa[category]}
+            self.assertEqual(len(rows),count);self.assertEqual(len(approved),len(qa[category]))
+            self.assertEqual({r['question_id'] for r in rows},set(approved))
+            for row in rows:
+                id=row['question_id'];review=approved[id]
+                authored[id]=row
+                self.assertNotIn(id,seen);seen.add(id)
+                self.assertEqual(pending[id]['category'],category)
+                self.assertEqual(row['previous_review'],pending[id])
+                self.assertEqual(row['question_row_sha256'],digest(self.qs[id]))
+                self.assertEqual(review['status'],'pass');self.assertNotEqual(review['reviewer'],row['author'])
+                self.assertEqual(review['proposal_sha256'],digest(row))
+                self.assertEqual(recorded[id],public_record(dict(
+                    row,category=category,proposal_record_sha256=digest(row),independent_review=review)))
+                self.assertEqual(sorted(r['number'] for r in review['four_option_logic']),[1,2,3,4])
+                self.assertTrue(all(r['status']=='pass' and r['note'] for r in review['four_option_logic']))
+                for read in row['source_reads']+review['source_reads']:
+                    self.assertRegex(read['sha256'],r'^[0-9a-f]{64}$')
+                    self.assertIs(read['actually_read'],True)
+                    self.assertTrue(read['url'].startswith('https://') and read['version'] and read['read_locator'])
+        self.assertEqual(seen,set(pending));self.assertEqual(group['inspected_count'],47)
+        self.assertEqual(set(recorded),seen)
+        self.assertEqual(group['registered_count'],0);self.assertEqual(group['original_corrections'],0)
+        self.assertEqual({r['question_id'] for r in group['resolutions']},
+                         {id for id,row in authored.items() if row['decision']=='resolve'})
+        self.assertEqual({r['question_id'] for r in group['evidence_amendments']},
+                         {id for id,row in authored.items() if row.get('evidence_update_required')})
+        self.assertEqual(len(group['resolutions']),group['resolution_count'])
+        self.assertEqual(len(group['evidence_amendments']),group['evidence_amendment_count'])
+        self.assertEqual(len(group['resolutions']),len({r['question_id'] for r in group['resolutions']}))
+        self.assertEqual(len(group['evidence_amendments']),len({r['question_id'] for r in group['evidence_amendments']}))
+        original={r['question_id']:r for r in previous['records']+previous.get('explained_item_records',[])}
+        for amendment in group['evidence_amendments']:
+            id=amendment['question_id'];self.assertEqual(amendment['before_evidence'],original[id]['evidence'])
+            self.assertEqual(amendment['verdict'],original[id]['verdict'])
+            self.assertEqual(amendment['before_hash'],digest(amendment['before_evidence']))
+            self.assertEqual(amendment['after_hash'],digest(amendment['after_evidence']))
+            self.assertEqual(amendment['after_evidence'],authored[id]['proposed_evidence'])
+            self.assertEqual(amendment['proposal_record_sha256'],digest(authored[id]))
+            self.assertFalse(amendment['official_answer_changed'])
+        for resolution in group['resolutions']:
+            id=resolution['question_id'];self.assertEqual(resolution['previous_verdict'],original[id]['verdict'])
+            self.assertNotEqual(resolution['verdict'],resolution['previous_verdict'])
+            self.assertEqual(resolution['verdict'],authored[id]['proposed_verdict'])
+            self.assertEqual(resolution['evidence'],authored[id]['proposed_evidence'])
+            self.assertEqual(resolution['proposal_record_sha256'],digest(authored[id]))
+            self.assertEqual(resolution['official_answers'],self.qs[id]['answers'])
+            self.assertFalse(resolution['official_answer_changed'])
+
+    def test_round21_evidence_replay_rejects_stale_duplicate_and_unknown_changes(self):
+        from build_app_data import amend_adjudication_evidence
+        original=[{'question_id':'sample','verdict':'official_conflict','evidence':'old','official_answers':[3]}]
+        change={'question_id':'sample','verdict':'official_conflict','before_evidence':'old','after_evidence':'corrected'}
+        corrected=amend_adjudication_evidence(original,[change])
+        self.assertEqual(original[0]['evidence'],'old')
+        self.assertEqual(corrected[0]['evidence'],'corrected')
+        self.assertEqual(corrected[0]['official_answers'],[3])
+        for key,value in [('verdict','official_supported'),('before_evidence','stale'),('question_id','missing'),('after_evidence','')]:
+            invalid=dict(change);invalid[key]=value
+            with self.assertRaises(ValueError):amend_adjudication_evidence(original,[invalid])
+        with self.assertRaises(ValueError):amend_adjudication_evidence(original,[change,change])
+
+    def test_round21_diagnostics_reject_unsupported_operators_and_false_results(self):
+        from apply_round21_inspections import diagnostic_arithmetic
+        diagnostic_arithmetic({'checks':[{'expression':'(10 + 2) / 3','expected':4,'computed':4}]})
+        diagnostic_arithmetic({'checks':[{'expression':'922687*1.12-50000','expected':983409.44,
+                                          'computed':983409.4400000001}]})
+        for expression in ('10 // 3','10 > 3','10 ** 2','float("nan")'):
+            with self.assertRaises((ValueError,SyntaxError)):
+                diagnostic_arithmetic({'checks':[{'expression':expression,'expected':3}]})
+        for check in ({'expression':'10 / 2','expected':4},
+                      {'expression':'10 / 2','expected':5,'computed':4},
+                      {'expression':'1','expected':1,'computed':True},
+                      {'expression':'1','expected':True},
+                      {'expression':'1','expected':float('nan')}):
+            with self.assertRaises(ValueError):diagnostic_arithmetic({'checks':[check]})
+
     def test_answer_option_never_shares_reason_with_other_options(self):
         for id, n in self.current_notes.items():
             answer = {o['reason'].strip() for o in n['option_notes'] if o['is_answer']}
@@ -1381,14 +1493,21 @@ class ExplanationTests(unittest.TestCase):
         b = json.loads(raw[len('window.BANK_DATA='):-2])
         self.assertEqual(b['explanations'], self.current_data)
         self.assertEqual(len(b['questions']), 4322)
-        log = self.audit['answer_adjudication']
+        # The bundle shows current approved opinions; historical protection
+        # tests above use the separately reconstructed earlier audit snapshots.
+        live_audit = json.loads((R / 'reports/explanation-expansion.json').read_text())
+        log = live_audit['answer_adjudication']
         resolved = {r['question_id']: r['verdict'] for r in log.get('resolutions', [])}
         shown = {a['question_id'] for a in log['records'] + log.get('explained_item_records', [])
                  if resolved.get(a['question_id'], a['verdict']) in
                  {'official_conflict', 'multiple_candidates', 'ambiguous_wording', 'deferred'}}
         self.assertEqual(set(b['answerNotes']), shown)
+        expected_text={r['question_id']:r['evidence'] for r in log['records']+log.get('explained_item_records',[])}
+        expected_text.update({r['question_id']:r['after_evidence'] for r in live_audit.get('round21_inspections',{}).get('evidence_amendments',[])})
+        expected_text.update({r['question_id']:r['evidence'] for r in log.get('resolutions',[])})
         for id, note in b['answerNotes'].items():
             self.assertTrue(note['label'] and note['text'])
+            self.assertEqual(note['text'],expected_text[id],id)
             self.assertEqual(b['questions'][[q['id'] for q in b['questions']].index(id)]['answers'], self.qs[id]['answers'])
         for q in b['questions']:
             self.assertEqual(q['answers'], self.qs[q['id']]['answers'])
