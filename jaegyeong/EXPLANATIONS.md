@@ -1,6 +1,12 @@
 # 문항별 정답 해설 · 풀이
 
-현재 4281개 해설을 등록했으며(24차 부분 확인 해설 4개 추가), 해설 미등록 검토 필요는 40개입니다. 정답 이유·단계별 풀이·네 보기 설명·실제 출처를 제공합니다. 현재 집계와 문항별 근거는 [감사 기록](reports/explanation-expansion.json)과 [최신 검토 결과](reports/round24-review.md)를 확인하세요. partial은 미확인 조건과 정답 유일성의 한계를 명시한 부분 해설입니다.
+현재 4281개 해설을 등록했으며(24차 부분 확인 해설 4개 추가), 해설 미등록 검토 필요는 40개입니다. 정답 이유·단계별 풀이·네 보기 설명·실제 출처를 제공합니다. 현재 집계와 문항별 근거는 [감사 기록](reports/explanation-expansion.json)과 [최신 검토 결과](reports/round25-review.md)를 확인하세요. partial은 미확인 조건과 정답 유일성의 한계를 명시한 부분 해설입니다.
+
+## 2026-10-15 25차 추가 조사
+
+남은 40건을 실제 하위 에이전트 6명이 조사하고, 작성자와 다른 담당자가 160개 보기를 교차 검수했습니다. 최근 부분 해설 7개도 별도로 대조했습니다. **신규 해설·기존 해설 수정·정답 판정 변경은 모두 0건**입니다. 현재 해설 **4,281개**(출처 확인 4,159·부분 확인 122), 미등록 **40건**(출처 10·원문 10·정답 의심 18·계산 2)을 유지합니다.
+
+[상세 보고](reports/round25-review.md)·[작성 결과](reports/round25-proposals.json)·[독립 검수](reports/round25-independent-reviews.json)·[실제 조사](reports/round25-research.json)·[사전 대조](reports/round25-preflight.json)·[남은 문항](reports/round25-remaining.csv)·[테스트·배포](reports/round25-validation.json)
 
 ## 2026-10-14 24차 후속 조사
 

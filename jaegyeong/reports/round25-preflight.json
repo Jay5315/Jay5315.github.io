@@ -1,0 +1,1304 @@
+{
+  "checked_on": "2026-10-15",
+  "baseline_commit": "71b24a29d7a905d13a27fcce6f1f5efd3e917d26",
+  "new_explanations": 0,
+  "amendments": 0,
+  "inspections": 40,
+  "independent_reviews": 40,
+  "option_assessments": 160,
+  "existing_partials_reviewed": 7,
+  "existing_partials_independently_reviewed": 7,
+  "actual_read_records": 97,
+  "distinct_url_sha_pairs": 49,
+  "all_body_hashes_recomputed": true,
+  "frozen_files": [
+    {
+      "path": "worker0/freeze-v1/drafts.json",
+      "sha256": "012c03dc1de88e4d159128a7ea26e0debbea9d3394fd310e43e7a1321df291b4"
+    },
+    {
+      "path": "review0/freeze-v1/reviews.json",
+      "sha256": "8805716998d400d6a521310bb2f7f10e3df027692608a98aa2a58d462ba976e7"
+    },
+    {
+      "path": "worker0/freeze-v1/partial-review.json",
+      "sha256": "ff1791a1ed85e95698b31f031eb5f3301fab1408f322724f6a1ff2a9e65c5504"
+    },
+    {
+      "path": "review0/freeze-v1/partial-reviews.json",
+      "sha256": "935366e73266b282bcac6af0cbae9dadb03bc613ffc5f153dc63c254751e7967"
+    },
+    {
+      "path": "worker1/freeze-v1/drafts.json",
+      "sha256": "506c2c03ff55f793af6037700a94432a117ad2dd1a086d84e43c95892ff9bb9e"
+    },
+    {
+      "path": "review1/freeze-v1/reviews.json",
+      "sha256": "7f84a7d5c00747b57e33b0dfc9e9608e91eb8d43fa0e076a1118823103ce5bf2"
+    },
+    {
+      "path": "worker1/freeze-v1/partial-review.json",
+      "sha256": "e249ce23db8ffdf23e6857ab39c27f1278ed045e76f88b57ea8353748e1d68a0"
+    },
+    {
+      "path": "review1/freeze-v1/partial-reviews.json",
+      "sha256": "26bd82cbf0c16556ca6214db8e3a3ac7cfe417166767baf284def4777dc7b448"
+    },
+    {
+      "path": "worker2/freeze-v1/drafts.json",
+      "sha256": "f24c9e51c26f33c3ab2261248ee4b76739c7a3289725b14b2e9ab1cfcade9b61"
+    },
+    {
+      "path": "review2/freeze-v1/reviews.json",
+      "sha256": "49063f4b7ca7c8ca50c5ff75532167a519035fbe4996b29fcf2ee876eedff4e0"
+    },
+    {
+      "path": "worker2/freeze-v1/partial-review.json",
+      "sha256": "c2c2c924df13eb842b8d6b0c5e2ad7d006c1060e42029456c4ae6f89d51eb60c"
+    },
+    {
+      "path": "review2/freeze-v1/partial-reviews.json",
+      "sha256": "0b1a24104016da64bae477a73d60ebab287acb7c90b4267fc06d1a246e619274"
+    },
+    {
+      "path": "worker3/freeze-v1/drafts.json",
+      "sha256": "306fbaae0591fbd10333ad38b48354f628e2924340488716be7f25cf35f07311"
+    },
+    {
+      "path": "review3/freeze-v1/reviews.json",
+      "sha256": "abcd36e2b483bfe2c512604e9a06c4a9f66041298c7f3d73740c720a2e01082b"
+    },
+    {
+      "path": "worker4/freeze-v2/drafts.json",
+      "sha256": "4ea908d7785feb066910a04b8bb8af93201c7b7a772c8ab141d442c2c8b86514"
+    },
+    {
+      "path": "review4/freeze-v2/reviews.json",
+      "sha256": "15fccaae3b8c58c57fe9523d5efebd03a347c96de016a98a723ebda7a91e3c8d"
+    },
+    {
+      "path": "worker5/freeze-v1/drafts.json",
+      "sha256": "4de67a119e322652a37c910df09350efa402d9edcb7a98e7452dad639ce5fdcd"
+    },
+    {
+      "path": "review5/freeze-v1/reviews.json",
+      "sha256": "f33d772b552d59a37d374687cf5a34f6d1069ec50ef50633857ed75fc1ded154"
+    },
+    {
+      "path": "worker5/freeze-v1/partial-review.json",
+      "sha256": "eebe9224a36cebb0bb97b225ed57238165a6a7c20d345a3dbcc56fd2cd3fc994"
+    },
+    {
+      "path": "review5/freeze-v1/partial-reviews.json",
+      "sha256": "6b53d974ef0e919c23961b7d89e2b023e57ebc29c3cd36091f11fb103fff91ae"
+    }
+  ],
+  "source_reads": [
+    {
+      "ref": "R25_W0_IFRIC_DEMAND_DEPOSIT_2022_KO",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2022/ko-demand-deposits-with-restrictions-on-use-arising-from-a-contract-with-a-third-party-apr-2022.pdf",
+      "version": "IFRS 해석위원회 논의 결과 2022년4월 · KASB 한국어 번역 공개본",
+      "read_locator": "PDF1–3쪽 전체: 질의 사실관계 a/b, 현금 정의, 사용제한과 인출가능성, 표시·공시, 번역 주의문",
+      "sha256": "a9a4664714082032094f26d3db89cb2afac9912c15f822c608356dc26a67c4e0",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2022년4월 논의 결과의 KASB 한국어 번역입니다. 계약상 즉시 인출 가능한 요구불예금에 관한 사실관계이며, 양도성예금증서가 요구불예금 또는 현금성자산이라는 근거가 아닙니다. 영어 2026 개정본을 소급하지 않습니다."
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2013_05",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2013/ias-7-may-2013.pdf",
+      "version": "IFRIC 공식 agenda decision · May 2013",
+      "read_locator": "PDF1쪽 전체: 취득일부터 짧은 만기·단기 현금수요 목적",
+      "sha256": "9edf7409a4a86328aacf13aadfdeb1fa7108a8507acfa2d3822939914daa5493",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "24차에서 확보한 동일 문서의 재독입니다. 새 정정이나 CD 실제 취득일·만기를 확인한 자료가 아닙니다."
+    },
+    {
+      "ref": "R25_W0_IFRIC_DEMAND_DEPOSIT_2022_KO",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2022/ko-demand-deposits-with-restrictions-on-use-arising-from-a-contract-with-a-third-party-apr-2022.pdf",
+      "version": "IFRS 해석위원회 논의 결과 2022년4월 · KASB 한국어 번역 공개본",
+      "read_locator": "PDF1–3쪽 전체: 질의 사실관계 a/b, 현금 정의, 사용제한과 인출가능성, 표시·공시, 번역 주의문",
+      "sha256": "a9a4664714082032094f26d3db89cb2afac9912c15f822c608356dc26a67c4e0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 2022년4월 논의 결과의 KASB 한국어 번역입니다. 계약상 즉시 인출 가능한 요구불예금에 관한 사실관계이며, 양도성예금증서가 요구불예금 또는 현금성자산이라는 근거가 아닙니다. 영어 2026 개정본을 소급하지 않습니다."
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2013_05",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2013/ias-7-may-2013.pdf",
+      "version": "IFRIC 공식 agenda decision · May 2013",
+      "read_locator": "PDF1쪽 전체: 취득일부터 짧은 만기·단기 현금수요 목적",
+      "sha256": "9edf7409a4a86328aacf13aadfdeb1fa7108a8507acfa2d3822939914daa5493",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 24차에서 확보한 동일 문서의 재독입니다. 새 정정이나 CD 실제 취득일·만기를 확인한 자료가 아닙니다."
+    },
+    {
+      "ref": "R6_F04_K1102",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영)",
+      "read_locator": "PDF17–24쪽 ¶23–37: 특히17쪽¶24 지분상품의 내재가치 예외와20–22쪽¶30–33D 현금결제형 의무를 직접 대조",
+      "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존 본문 재독입니다. ¶24 예외의 적용범위를 추가 검토했지만 문서 자체는 신규가 아닙니다. 원문의 기말 권리공정가치를 발견하거나 주식가격을 권리공정가치로 치환하지 않았습니다."
+    },
+    {
+      "ref": "R6_F04_K1102",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영)",
+      "read_locator": "PDF17–24쪽 ¶23–37: 특히17쪽¶24 지분상품의 내재가치 예외와20–22쪽¶30–33D 현금결제형 의무를 직접 대조",
+      "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 보존 본문 재독입니다. ¶24 예외의 적용범위를 추가 검토했지만 문서 자체는 신규가 아닙니다. 원문의 기말 권리공정가치를 발견하거나 주식가격을 권리공정가치로 치환하지 않았습니다."
+    },
+    {
+      "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+      "version": "IFRIC IAS12 agenda decision · June 2005",
+      "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+      "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+      "version": "IFRIC IAS12 agenda decision · June 2005",
+      "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+      "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+      "version": "IFRIC IAS12 agenda decision · June 2005",
+      "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+      "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+      "version": "IFRIC IAS12 agenda decision · June 2005",
+      "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+      "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R6_F03_K1033",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+      "read_locator": "PDF11·13–14쪽 ¶10·19–21: 기간가중, 회계기간 총일수, 발행 대가 받을 권리 발생 시점",
+      "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 PDF 재독입니다. 신설일을1월1일로 보거나 기말2,000주가 전기간 유통되었다고 보장하는 특례를 확인하지 못했습니다."
+    },
+    {
+      "ref": "R6_F03_K1033",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+      "read_locator": "PDF11·13–14쪽 ¶10·19–21: 기간가중, 회계기간 총일수, 발행 대가 받을 권리 발생 시점",
+      "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 PDF 재독입니다. 신설일을1월1일로 보거나 기말2,000주가 전기간 유통되었다고 보장하는 특례를 확인하지 못했습니다."
+    },
+    {
+      "ref": "P20_FINANCE_EURLEX_IAS11_2008",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R1126",
+      "version": "Commission Regulation (EC)1126/2008 원본 OJ L320 2008-11-29 · 현재 대체된 IAS11 역사 본문",
+      "read_locator": "PDF48–49쪽 IAS11¶16–20: 급여 준비·사무처리 공통원가, 임차/감가상각 직접원가, 판매원가 제외",
+      "sha256": "6d4c22ebeaeeefbd9dcc6679427435d9db9f748af0f5cd8645f8749f27c43c00",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 대체된 구IAS11 역사 본문 재독입니다. 현재 자산화 의무가 아니라 지문에 제시된 세 그룹 모형 대응만 확인합니다."
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP16",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "제16장 수익 · 2019-09-27 의결·수정목록20-1 반영 · fileNo5340,fileSeq2",
+      "read_locator": "PDF11–13쪽 ¶16.32–16.36: 공사원가 세 그룹·임차/감가상각·판매원가 제외",
+      "sha256": "98274ddd131af57eed2084050bcef8eeaa1596987e38a2e61d90eb4211cd5118",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 일반기업회계기준 본문 재독입니다. K-IFRS 적용회사의 직접 강제규정이 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF38–39쪽 ¶91–98와86쪽 C10: 계약원가 인식요건·구1011 대체",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 본문 재독입니다. 현행 규정을 구IAS11 세 그룹 분류의 의무 근거로 쓰지 않습니다."
+    },
+    {
+      "ref": "P20_FINANCE_EURLEX_IAS11_2008",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R1126",
+      "version": "Commission Regulation (EC)1126/2008 원본 OJ L320 2008-11-29 · 현재 대체된 IAS11 역사 본문",
+      "read_locator": "PDF48–49쪽 IAS11¶16–20: 급여 준비·사무처리 공통원가, 임차/감가상각 직접원가, 판매원가 제외",
+      "sha256": "6d4c22ebeaeeefbd9dcc6679427435d9db9f748af0f5cd8645f8749f27c43c00",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 이미 대체된 구IAS11 역사 본문 재독입니다. 현재 자산화 의무가 아니라 지문에 제시된 세 그룹 모형 대응만 확인합니다."
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP16",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "제16장 수익 · 2019-09-27 의결·수정목록20-1 반영 · fileNo5340,fileSeq2",
+      "read_locator": "PDF11–13쪽 ¶16.32–16.36: 공사원가 세 그룹·임차/감가상각·판매원가 제외",
+      "sha256": "98274ddd131af57eed2084050bcef8eeaa1596987e38a2e61d90eb4211cd5118",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 일반기업회계기준 본문 재독입니다. K-IFRS 적용회사의 직접 강제규정이 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF38–39쪽 ¶91–98와86쪽 C10: 계약원가 인식요건·구1011 대체",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 본문 재독입니다. 현행 규정을 구IAS11 세 그룹 분류의 의무 근거로 쓰지 않습니다."
+    },
+    {
+      "ref": "R6_F03_GAAP15",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "의결2015-10-13 공개 PDF",
+      "read_locator": "PDF3–4쪽 ¶15.8–15.9: 자기주식 취득원가·앞선 처분손실과 후속 처분이익 우선상계",
+      "sha256": "63028dc2dbe5da4bf537275d3776b6ad4f1c8aac860a3614bed986b90694b296",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "일반기업회계기준 본문 재독이며 K-IFRS 직접 의무로 확대하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1032_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF29–30쪽 ¶33–35: 자기주식 자본 차감·재발행 대가의 직접 자본 인식",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 K-IFRS 본문 재독입니다. 세부 자기주식처분손실/이익 계정 우선상계순서를 직접 명시한 문단이 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1008_BATCH01",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–13쪽 ¶7–16: 구체적 적용기준 우선, 없는 경우 판단, 타 기준·문헌 고려 가능성과 일관성",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존본문 재독입니다. ¶12의 고려할 수 있음은 일반기업회계기준15.9 우선상계가 K-IFRS에 자동 의무화된다는 뜻이 아닙니다."
+    },
+    {
+      "ref": "R6_F03_GAAP15",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "의결2015-10-13 공개 PDF",
+      "read_locator": "PDF3–4쪽 ¶15.8–15.9: 자기주식 취득원가·앞선 처분손실과 후속 처분이익 우선상계",
+      "sha256": "63028dc2dbe5da4bf537275d3776b6ad4f1c8aac860a3614bed986b90694b296",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 일반기업회계기준 본문 재독이며 K-IFRS 직접 의무로 확대하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1032_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF29–30쪽 ¶33–35: 자기주식 자본 차감·재발행 대가의 직접 자본 인식",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 K-IFRS 본문 재독입니다. 세부 자기주식처분손실/이익 계정 우선상계순서를 직접 명시한 문단이 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1008_BATCH01",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11–13쪽 ¶7–16: 구체적 적용기준 우선, 없는 경우 판단, 타 기준·문헌 고려 가능성과 일관성",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 보존본문 재독입니다. ¶12의 고려할 수 있음은 일반기업회계기준15.9 우선상계가 K-IFRS에 자동 의무화된다는 뜻이 아닙니다."
+    },
+    {
+      "ref": "R6_FIN02_KASB1040",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "2017개정·2021타기준서제정·수정목록24-1 반영",
+      "read_locator": "PDF9–12쪽 ¶5·7·8(2)/(4)·9(3)·11–14: 토지/미사용건물·미래자가사용·경미용역",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 본문 재독입니다. 용도미정 토지의 예를 모든 부동산으로 확대할 새 근거가 아닙니다."
+    },
+    {
+      "ref": "R6_FIN02_KASB1040",
+      "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+      "version": "2017개정·2021타기준서제정·수정목록24-1 반영",
+      "read_locator": "PDF9–12쪽 ¶5·7·8(2)/(4)·9(3)·11–14: 토지/미사용건물·미래자가사용·경미용역",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 보존 PDF의 지정 면 본문을 PyMuPDF 텍스트로 직접 읽었습니다. 이번 검수자의 신규 다운로드는 아닙니다. 기존 본문 재독입니다. 용도미정 토지의 예를 모든 부동산으로 확대할 새 근거가 아닙니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000048258",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000048258",
+      "version": "서면인터넷방문상담1팀-390 / 20080321",
+      "read_locator": "회신 전체, 질의내용의 2007년 정기예금·보통예금 이자와 업태 금융업/외국환중개업 인가 사실, 첨부 제111조",
+      "sha256": "c9fe1be40d4977bb565b6cb2ff1895acdbeeeb502d2c674c4038b43df97460a7",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2008-02-22 개정 전 시행령에 따른 외국환중개법인의 예금 이자 원천징수 회신입니다. 실제 정기예금을 다루지만 2022년 원문의 회사종류를 외국환중개법인으로 확정하지 않으며 2022년 법정 금융회사 범위를 대신하지 않습니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000058767",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000058767",
+      "version": "법인46012-193 / 20030321",
+      "read_locator": "회신, 질의의 개정 전 미수이자, 관련법령 제70조·제111조 및 2001/2002년 개정 해설",
+      "sha256": "3ad51db81543fe6f4a61883f0b223ad4ed5a416cd8c7c495bbeb6a19d206e5a6",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년 말 이전 미수이자에 대한 경과적 익금귀속이 질문입니다. 첨부는 2003년부터 금융보험업 범위를 열거한 이유를 설명하지만 2022년 금융업이라는 지문만으로 법정 집단을 정하지 않습니다."
+    },
+    {
+      "ref": "RT001_CIT_DECREE_2022",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+      "version": "대통령령 제32449호 / 시행 2022-02-18 / c7c58eb7623b4192bf424be265a82991ac7e5540",
+      "read_locator": "판본 머리말, 제61조제2항의 법인 목록, 제70조제1항제1호, 제76조 전체, 제111조제1항의 금융회사 목록과 원천징수대상채권등 예외",
+      "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 읽은 21차 보존본문의 재독입니다. 새 법령 또는 새 직접근거로 세지 않습니다. 법정 집단의 교집합을 대조했으며 금융업 일반을 은행으로 간주하지 않습니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000048258",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000048258",
+      "version": "서면인터넷방문상담1팀-390 / 20080321",
+      "read_locator": "회신 전체, 질의내용의 2007년 정기예금·보통예금 이자와 업태 금융업/외국환중개업 인가 사실, 첨부 제111조",
+      "sha256": "c9fe1be40d4977bb565b6cb2ff1895acdbeeeb502d2c674c4038b43df97460a7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 2008-02-22 개정 전 시행령에 따른 외국환중개법인의 예금 이자 원천징수 회신입니다. 실제 정기예금을 다루지만 2022년 원문의 회사종류를 외국환중개법인으로 확정하지 않으며 2022년 법정 금융회사 범위를 대신하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000058767",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000058767",
+      "version": "법인46012-193 / 20030321",
+      "read_locator": "회신, 질의의 개정 전 미수이자, 관련법령 제70조·제111조 및 2001/2002년 개정 해설",
+      "sha256": "3ad51db81543fe6f4a61883f0b223ad4ed5a416cd8c7c495bbeb6a19d206e5a6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 2001년 말 이전 미수이자에 대한 경과적 익금귀속이 질문입니다. 첨부는 2003년부터 금융보험업 범위를 열거한 이유를 설명하지만 2022년 금융업이라는 지문만으로 법정 집단을 정하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "RT001_CIT_DECREE_2022",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+      "version": "대통령령 제32449호 / 시행 2022-02-18 / c7c58eb7623b4192bf424be265a82991ac7e5540",
+      "read_locator": "판본 머리말, 제61조제2항의 법인 목록, 제70조제1항제1호, 제76조 전체, 제111조제1항의 금융회사 목록과 원천징수대상채권등 예외",
+      "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 이미 읽은 21차 보존본문의 재독입니다. 새 법령 또는 새 직접근거로 세지 않습니다. 법정 집단의 교집합을 대조했으며 금융업 일반을 은행으로 간주하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "RT001_CIT_DECREE_2022",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+      "version": "대통령령 제32449호 / 시행 2022-02-18 / c7c58eb7623b4192bf424be265a82991ac7e5540",
+      "read_locator": "검수자 추가 재독:2022-02-18 시행판본 머리말과 제76조①–⑦, 특히②의신고방법·미신고취득일평가 및⑥의평가방법신고서",
+      "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 이미 읽은 21차 보존본문의 재독입니다. 새 법령 또는 새 직접근거로 세지 않습니다. 법정 집단의 교집합을 대조했으며 금융업 일반을 은행으로 간주하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000109064",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000109064",
+      "version": "법인22601-271 / 19910209",
+      "read_locator": "회신 1·2 및 질의내용 (1) 지급기준·(2)나 형평과세원칙 주장",
+      "sha256": "a4ec0ed34981cd87ef7914e9bdf7353984f584b9995f8abd5bfd7e6252d5574b",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "회신은 현금 출퇴근·출장 여비 중 출장 실비만 비과세라고 답합니다. 차량 제공 이익을 과세소득으로 보지 않는다는 문장은 질의자의 주장으로서 국세청 답변이 아닙니다. 1991년 규정은 2022년 현물 통근차량 운임의 직접 근거가 아닙니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000088305",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000088305",
+      "version": "법인46013-1686 / 19950620",
+      "read_locator": "회신 1·2 및 질의1의 매월 7만원 정액 시내교통비·질의2의 업무교통비",
+      "sha256": "3a465e828c7927b6d9b446ac3addbeaa82e7dd3ae342d4d4331dd621aad751b1",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1995년 월정액 현금 출장교통비와 실비 입증에 관한 회신입니다. 직접 제공된 통근차량의 운임은 다루지 않으며 현물 차량제공을 현금수당으로 바꾸어 적용하지 않습니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000109064",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000109064",
+      "version": "법인22601-271 / 19910209",
+      "read_locator": "회신 1·2 및 질의내용 (1) 지급기준·(2)나 형평과세원칙 주장",
+      "sha256": "a4ec0ed34981cd87ef7914e9bdf7353984f584b9995f8abd5bfd7e6252d5574b",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 회신은 현금 출퇴근·출장 여비 중 출장 실비만 비과세라고 답합니다. 차량 제공 이익을 과세소득으로 보지 않는다는 문장은 질의자의 주장으로서 국세청 답변이 아닙니다. 1991년 규정은 2022년 현물 통근차량 운임의 직접 근거가 아닙니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000088305",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000088305",
+      "version": "법인46013-1686 / 19950620",
+      "read_locator": "회신 1·2 및 질의1의 매월 7만원 정액 시내교통비·질의2의 업무교통비",
+      "sha256": "3a465e828c7927b6d9b446ac3addbeaa82e7dd3ae342d4d4331dd621aad751b1",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 1995년 월정액 현금 출장교통비와 실비 입증에 관한 회신입니다. 직접 제공된 통근차량의 운임은 다루지 않으며 현물 차량제공을 현금수당으로 바꾸어 적용하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000070179",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000070179",
+      "version": "부가46015-2124 / 19980921",
+      "read_locator": "회신 및 첨부 부가1265-980·간세1235-1805·부가1265.1-2712",
+      "sha256": "65c184eaf7eab3c12721dc65675b518d986da305049d9b568de20e835dba3ade",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "수출 영세율·국내 면세에 공통사용한 선박의 매각 안분을 확인하지만 농산물 기계의 30,000,000원에 부가세가 포함되는지 정하지 않습니다. 1984년 소액기준 20만원을 2022년에 소급하지 않습니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000085823",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085823",
+      "version": "부가46015-1697 / 19960824",
+      "read_locator": "회신 전체와 원양선박·선용품·수리비의 별도 정산 사실관계 및 질의 갑·을·병설",
+      "sha256": "2cf9368f78dc6d7d036ae3ee79a7e3d31e3ba62775ec3bba4d3bd65b718c90cc",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "과세표준 안분 후 10%를 거래징수하는 회신이지만 선박과 선용품 별도 정산 사례입니다. 2022년 기계 매각금액의 부가세 포함 여부를 판정하는 문서가 아니며 질의자의 병설(10%부가세 포함)을 회신으로 인용하지 않습니다."
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000070179",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000070179",
+      "version": "부가46015-2124 / 19980921",
+      "read_locator": "회신 및 첨부 부가1265-980·간세1235-1805·부가1265.1-2712",
+      "sha256": "65c184eaf7eab3c12721dc65675b518d986da305049d9b568de20e835dba3ade",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 수출 영세율·국내 면세에 공통사용한 선박의 매각 안분을 확인하지만 농산물 기계의 30,000,000원에 부가세가 포함되는지 정하지 않습니다. 1984년 소액기준 20만원을 2022년에 소급하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R25_W1_NTS_010000000000085823",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085823",
+      "version": "부가46015-1697 / 19960824",
+      "read_locator": "회신 전체와 원양선박·선용품·수리비의 별도 정산 사실관계 및 질의 갑·을·병설",
+      "sha256": "2cf9368f78dc6d7d036ae3ee79a7e3d31e3ba62775ec3bba4d3bd65b718c90cc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가25차 작성자의 보존본문을 독립 재독하고 파일SHA를 검산했습니다. 검수자의 새 외부 다운로드가 아닙니다. 과세표준 안분 후 10%를 거래징수하는 회신이지만 선박과 선용품 별도 정산 사례입니다. 2022년 기계 매각금액의 부가세 포함 여부를 판정하는 문서가 아니며 질의자의 병설(10%부가세 포함)을 회신으로 인용하지 않습니다.",
+      "reader": "r25_review1_finance_worker0"
+    },
+    {
+      "ref": "R22_W0_CUP2023_FULLCOST_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "06-1.mp4 파일1630초의 보존 프레임 fullcost-1630.png: PDF6쪽 손익계산서·직접재료·운영비용·재고 감소 유인. 1685초는 강좌 종료 화면으로 쟁점 근거가 아닙니다.",
+      "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "22차 정상 TLS로 확보한 같은 영상의 지정 보존 프레임을 직접 재독했습니다. 이번 신규 다운로드·새로운 내용 또는 전체 영상·오디오 시청이 아닙니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_VARIABLE_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "06-2.mp4 파일90초의 보존 프레임 variable-90.png: PDF11쪽 방법별 비교표의 제품원가·기간비용·장단기 활용·이익 결정요인 판매량과 생산량.",
+      "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "22차 정상 TLS로 확보한 같은 영상의 지정 보존 프레임을 직접 재독했습니다. 이번 신규 다운로드·새로운 내용 또는 전체 영상·오디오 시청이 아닙니다."
+    },
+    {
+      "ref": "R20_P1_COST_BUFS12",
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2020/bufs/yukgeunhyo0216/12.pdf",
+      "version": "KOCW 2020년 2학기 부산외국어대학교 육근효 전략원가관리 제12주 현금창출회계",
+      "read_locator": "PDF1~13쪽 추출 텍스트: 특히 PDF8~10쪽 쓰루풋·총재고·운영비 관계, PDF12쪽 수정/단순화 쓰루풋 구별, PDF13쪽 이익·현금흐름식. 도표 좌표나 시각 형상은 이번 신규 검증 범위가 아닙니다.",
+      "sha256": "7bec8bf678caf051fb380a7c249e170dd9935e8954b5b8b2b1571e7675ec93c7",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "이번 정상 TLS로 재다운로드했지만 SHA가 20·21차 보존 문서와 같습니다. 기존 ref를 재사용하며 새 직접근거로 세지 않습니다. 수요변동이 심한 산업에 대한 특정 비교는 이 읽기 범위에 없습니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_FULLCOST_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: 06-1.mp4 1630초의 보존 프레임 전체: 직접재료원가, 운영비용, 재고 감소 유인 설명",
+      "sha256": "c35b2301ebea2991c04dae3e1df86d5d75dd97fda3be4c1f8815bcb0635eaa4f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "cup2023-fullcost.mp4",
+      "parent_media_sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799"
+    },
+    {
+      "ref": "R22_W0_CUP2023_VARIABLE_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: 06-2.mp4 90초의 보존 프레임 전체: 방법별 비교표 PDF11쪽, 초변동의 이익 결정요인 판매량과 생산량",
+      "sha256": "8a19d144523378a9eba3a2be828ce4829f6ac53b3f4a4468286c3ccf2b09e4f6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "cup2023-variable.mp4",
+      "parent_media_sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0"
+    },
+    {
+      "ref": "R20_P1_COST_BUFS12",
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2020/bufs/yukgeunhyo0216/12.pdf",
+      "version": "KOCW 2020년 2학기 부산외국어대학교 육근효 전략원가관리 제12주 현금창출회계",
+      "read_locator": "검수자가 PyMuPDF로 PDF1~13쪽 전체 추출 텍스트를 직접 읽었습니다. 특히 8~10쪽 쓰루풋·총재고·운영비, 12쪽 수정/단순화 모형, 13쪽 지표식. 도표 배치 검증은 아닙니다.",
+      "sha256": "7bec8bf678caf051fb380a7c249e170dd9935e8954b5b8b2b1571e7675ec93c7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 범위를 독립 재독했습니다. 작성자의 정상 TLS 재다운로드와 구별하며 검수자 신규 다운로드는 없습니다."
+    },
+    {
+      "ref": "R20_P1_COST_BUFS_TARGET2018",
+      "url": "https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/9.pdf",
+      "version": "KOCW 2018년 2학기 부산외국어대학교 육근효 원가회계 Target Costing 과 관리회계; 표지 ALTA Management & 부산외대 육근효",
+      "read_locator": "PDF1~7쪽 추출 텍스트: PDF2쪽 전수명원가/장기이익 목적, PDF3쪽 통합·장단기 관리, PDF5쪽 사전기획, PDF7쪽 판매가−이익=목표원가. 도표의 시각 배치는 이번 신규 검증으로 세지 않습니다.",
+      "sha256": "1e8529dfe54b1a33c65abb8df797dd867ab3365f905efd47d958586f46b731b4",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "이번 정상 TLS로 재다운로드했지만 SHA가 20·21차 보존 문서와 같습니다. 기존 ref를 재사용하며 새 직접근거로 세지 않습니다. PDF6쪽 재무회계/IFRS 관련 광범위한 주장은 따로 검증하지 않았으며 이 문항 근거로 채택하지 않습니다."
+    },
+    {
+      "ref": "R20_P1_COST_BUFS_TARGET2018",
+      "url": "https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/9.pdf",
+      "version": "KOCW 2018년 2학기 부산외국어대학교 육근효 원가회계 Target Costing 과 관리회계; 표지 ALTA Management & 부산외대 육근효",
+      "read_locator": "검수자가 PyMuPDF로 PDF1~7쪽 전체 추출 텍스트를 직접 읽었습니다. 2쪽 전수명원가와 장기이익, 5쪽 사전기획, 7쪽 목표원가식을 확인했습니다. 6쪽 IFRS 광범위한 주장은 이 문항 근거로 사용하지 않습니다.",
+      "sha256": "1e8529dfe54b1a33c65abb8df797dd867ab3365f905efd47d958586f46b731b4",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 범위를 독립 재독했습니다. 작성자의 정상 TLS 재다운로드와 구별하며 검수자 신규 다운로드는 없습니다."
+    },
+    {
+      "ref": "ORIGINAL_2026-01-085_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2026-01-085.webp",
+      "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+      "read_locator": "이번 view_image로 문항 및 네 보기 전체를 직접 읽음. 공식 답안·공통지시 PDF는 이전 확인기록을 재사용합니다.",
+      "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf; 전체영상 SHA256 fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+      "read_locator": "파일1650초 보존 확대 프레임 department-1650-detail.png의 배분기준 수, 단일법·이중법 설명 전체. 1600초를 이번에 별도로 읽었다고 주장하지 않습니다.",
+      "sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "R21_COST_CAU2023_09",
+      "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+      "version": "KOCW 중앙대학교 황명철 원가회계 2023년 제공 강좌의 실제 첨부 09.pdf; 표지/본문을 직접 확인",
+      "read_locator": "PDF21쪽 기존 렌더 cau09-p21.png: 고정/변동의 분리배부, 최대사용가능량 축소보고 유인과 서비스 부족 문제.",
+      "sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "ORIGINAL_2026-01-085_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2026-01-085.webp",
+      "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+      "read_locator": "검수자가 view_image로 원문 이미지의 지문과 네 보기 전체를 독립 판독했습니다. 문제 PDF·공식 키·공통 지시의 이전 확인은 재사용합니다.",
+      "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 범위를 독립 재독했습니다. 작성자의 정상 TLS 재다운로드와 구별하며 검수자 신규 다운로드는 없습니다."
+    },
+    {
+      "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf; 전체영상 SHA256 fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: 02-2.mp4 1650초의 보존 확대 프레임 전체: 단일법의 목표 불일치 단점과 이중법의 분리배분·합리성",
+      "sha256": "965f103858bd412cbecd0d913adca1f3a68e427a719bc75e13f2febb50eec4bf",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "cup2023-department.mp4",
+      "parent_media_sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7"
+    },
+    {
+      "ref": "R21_COST_CAU2023_09",
+      "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+      "version": "KOCW 중앙대학교 황명철 원가회계 2023년 제공 강좌의 실제 첨부 09.pdf; 표지/본문을 직접 확인; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: PDF21쪽 보존 렌더 전체: 이중배부율, 최대사용가능량 축소보고와 서비스능력 과소준비",
+      "sha256": "66916cd5f01bc3d245ce4f78036f477a2ac6e425d4f29a83829a2fe176aa3949",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "new-CAU2023-09.pdf",
+      "parent_media_sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3"
+    },
+    {
+      "ref": "ORIGINAL_2025-09-081_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2025-09-081.webp",
+      "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+      "read_locator": "이번 view_image로 문항 및 네 보기 전체를 직접 읽음. 공식 답안·공통지시 PDF는 이전 확인기록을 재사용합니다.",
+      "sha256": "76179675f28c3ee66fea133d23f5f1c036c6270dda134b5c97c7b753f5709cfa",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "read_locator": "파일15·420초 보존 확대 프레임: 원가의 개념 세 문단과 그림1-5. 구입금액의 원가 포함과 자산·비용·손실의 교재상 분류.",
+      "sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "R10_FIN2_K1002",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF11~12·17~19쪽 추출 텍스트: 문단11·12·13·16·34·38·39·한40.1 및40C~40G. 매입원가, 비정상 제조원가의 재고원가 제외, 감모손실 비용처리와 매출원가의 폭넓은 구성.",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09-081_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2025-09-081.webp",
+      "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+      "read_locator": "검수자가 view_image로 원문 이미지의 지문과 네 보기 전체를 독립 판독했습니다. 문제 PDF·공식 키·공통 지시의 이전 확인은 재사용합니다.",
+      "sha256": "76179675f28c3ee66fea133d23f5f1c036c6270dda134b5c97c7b753f5709cfa",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 범위를 독립 재독했습니다. 작성자의 정상 TLS 재다운로드와 구별하며 검수자 신규 다운로드는 없습니다."
+    },
+    {
+      "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: 01-2.mp4 15초의 보존 확대 프레임: 원가 개념 세 문단, 구입·제조 지출금액 포함",
+      "sha256": "e72674c78b68cd30a2fe051c000452ea195fa68633b853dbd8db1635d6887580",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "cup01-2.mp4",
+      "parent_media_sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496"
+    },
+    {
+      "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496; 이 기록의 SHA는 실제 읽은 파생 PNG 파일의 해시",
+      "read_locator": "검수자가 view_image로 직접 판독: 01-2.mp4 420초의 보존 확대 프레임: 원가 개념 세 문단과 그림1-5 자산·비용·손실 분류",
+      "sha256": "6d037314fa9ad5a926865ed475ab26642195489ca61e7f937d8e1debab853c03",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 보존된 지정 프레임 또는 페이지 렌더만 직접 읽었습니다. 전체 영상·음성·전체 PDF를 읽었다는 뜻이 아닙니다. 신규 다운로드나 새로운 본문으로 세지 않습니다. 원 매체 파일의 존재와 SHA도 별도 확인했습니다.",
+      "parent_media_path": "cup01-2.mp4",
+      "parent_media_sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496"
+    },
+    {
+      "ref": "R10_FIN2_K1002",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "검수자가 PyMuPDF로 PDF11·12·17·18·19쪽을 직접 읽었습니다. 문단11~16, 34·38·39·한40.1, 40C~40G의 해당 표시 범위를 확인했습니다.",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 범위를 독립 재독했습니다. 작성자의 정상 TLS 재다운로드와 구별하며 검수자 신규 다운로드는 없습니다."
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000152658",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000152658",
+      "version": "서면법규과-1341 · 회신일 2013-12-10 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 제7기~제12기 개시일 표; 구 법인세법 제13조제1항의 개시일 전 5년 문구; 관련 국세기본법 제4조·민법 제157조·제160조",
+      "sha256": "c5ff1133890c3dd52aa3036a052919aab804e3c3203bf89cc3f37ed337fcf4fe",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2013년 회신은 2009년 이전 발생 결손금의 구법 5년 규정과 사업연도 개시일 경계를 다룹니다. 이 구법 5년을 2013년 발생 결손금에 적용하지 않으며, 2023년 문항에서 2013년분 6,000,000원을 배제할 사실을 제공하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000152658"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000152658",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000152658",
+      "version": "서면법규과-1341 · 회신일 2013-12-10 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 제7기~제12기 개시일 표; 구 법인세법 제13조제1항의 개시일 전 5년 문구; 관련 국세기본법 제4조·민법 제157조·제160조",
+      "sha256": "c5ff1133890c3dd52aa3036a052919aab804e3c3203bf89cc3f37ed337fcf4fe",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 2013년 회신은 2009년 이전 발생 결손금의 구법 5년 규정과 사업연도 개시일 경계를 다룹니다. 이 구법 5년을 2013년 발생 결손금에 적용하지 않으며, 2023년 문항에서 2013년분 6,000,000원을 배제할 사실을 제공하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000152658"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000001068",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000001068",
+      "version": "법인46012-1168 · 회신일 1999-03-30 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문과 질의 전체; 정기상여 800%·부서별 차등 0~400% 및 다음 사업연도 4월 지급, 지급의무 확정일 판단",
+      "sha256": "52be36b092f4682454b06c19c6db879252fcf2973f79e23ae96d19fb416cc360",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1999년 회신은 부서별 영업실적에 따라 지급액을 결정하는 사규와 손금 귀속시기 사례입니다. 동일한 임원의 본사·건설본부 상여에 별도 손금 한도를 적용하는 회신이 아니며 원문에 없는 부서별 차등지급규정을 추가하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000001068"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000001068",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000001068",
+      "version": "법인46012-1168 · 회신일 1999-03-30 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문과 질의 전체; 정기상여 800%·부서별 차등 0~400% 및 다음 사업연도 4월 지급, 지급의무 확정일 판단",
+      "sha256": "52be36b092f4682454b06c19c6db879252fcf2973f79e23ae96d19fb416cc360",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 1999년 회신은 부서별 영업실적에 따라 지급액을 결정하는 사규와 손금 귀속시기 사례입니다. 동일한 임원의 본사·건설본부 상여에 별도 손금 한도를 적용하는 회신이 아니며 원문에 없는 부서별 차등지급규정을 추가하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000001068"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000150909",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000150909",
+      "version": "서면법규과-494 · 회신일 2013-04-26 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 사실관계·질의요지; 소득세법 제81조제3항 및 당시 부가가치세법 제22조제5항·시행령 제60조제1항제2호; 인용 심사부가99-1030의 공제받은 매입세액 범위",
+      "sha256": "14bcba03c670a2a0b924aac4f830a22fbe2fafcac6f35bfdb435316c660126bd",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2013년 회신은 부가가치세법상 매입합계표 가산세가 적용될 때 소득세법 보고불성실가산세를 중복 적용하지 않는 사례입니다. 부가가치세 가산세 자체가 없다는 회신이 아니며 구법 조문·세율을 2023년에 대입하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000150909"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000150909",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000150909",
+      "version": "서면법규과-494 · 회신일 2013-04-26 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 사실관계·질의요지; 소득세법 제81조제3항 및 당시 부가가치세법 제22조제5항·시행령 제60조제1항제2호; 인용 심사부가99-1030의 공제받은 매입세액 범위",
+      "sha256": "14bcba03c670a2a0b924aac4f830a22fbe2fafcac6f35bfdb435316c660126bd",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 2013년 회신은 부가가치세법상 매입합계표 가산세가 적용될 때 소득세법 보고불성실가산세를 중복 적용하지 않는 사례입니다. 부가가치세 가산세 자체가 없다는 회신이 아니며 구법 조문·세율을 2023년에 대입하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000150909"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000464813",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000464813",
+      "version": "기준-2020-법령해석부가-0280 · 회신일 2020-11-25 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 2008~2009년 공급·2011년 파산·2020년 환가종결 사실관계; 시행령 제87조제2항 및 대통령령 제30397호 부칙 제5조; 파산절차참가의 시효중단 인용",
+      "sha256": "ba3baaec86e26dc8661f1817a1e82d30ced68b13286e1800507abc90c706edab",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2020-11-25 회신은 2008~2009년 공급·2011년 파산선고·2020년 배당가능성 소멸 사례에 대하여 10년 기한과 2020년 적용례를 직접 다룹니다. 2025년 문항의 공급 연도나 파산 사실을 정정한 자료가 아닙니다. 기존 기간 충돌을 보조 확인하며 원문에 없는 소송·시효중단을 가정하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000464813"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000464813",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000464813",
+      "version": "기준-2020-법령해석부가-0280 · 회신일 2020-11-25 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문; 2008~2009년 공급·2011년 파산·2020년 환가종결 사실관계; 시행령 제87조제2항 및 대통령령 제30397호 부칙 제5조; 파산절차참가의 시효중단 인용",
+      "sha256": "ba3baaec86e26dc8661f1817a1e82d30ced68b13286e1800507abc90c706edab",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 2020-11-25 회신은 2008~2009년 공급·2011년 파산선고·2020년 배당가능성 소멸 사례에 대하여 10년 기한과 2020년 적용례를 직접 다룹니다. 2025년 문항의 공급 연도나 파산 사실을 정정한 자료가 아닙니다. 기존 기간 충돌을 보조 확인하며 원문에 없는 소송·시효중단을 가정하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000464813"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+      "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+      "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+      "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 정상TLS로 확보된 보존 raw JSON의 회신·첨부 지정본문을 독립 재독했습니다. 별도 신규 네트워크 다운로드는 아닙니다. 1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000131030"
+          }
+        },
+        "http_status": 200,
+        "normal_tls_verification": true
+      }
+    },
+    {
+      "ref": "R7_COST03_HANYANG3",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+      "version": "2014 공식 공개 강의첨부 · SHA256 58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "read_locator": "검수자가 이번에 직접 읽은 PDF10~11쪽 추출 텍스트: 이중배부율의 실제/최대 사용량 기준과 수선부터 단계배부한 동력부문28,000원의 조립22,750·포장5,250배부표.",
+      "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS로 보존된 교안 지정 본문만 이번에 독립 재독했습니다. 신규 외부 본문 확보 또는 전체문서 검수로 세지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_SCHOOL_20200526",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서면-2019-법인-4024 · 2020-05-26; ntstDcmId010000000000435223",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용·법인세법 제19조·제40조, 시행령 제45조, 소득세법 시행령 제38조제1항제2호",
+      "sha256": "3279236b25653630074332d826d2a431f75701012004daae1c17fd47ba6c4127",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "단체협약·사내규정에 따라 임직원 본인·자녀 학자금을 지급한 별도 사례의 손금 귀속 회신입니다. 대표이사 자녀의 유학자금 지출을 대여금 또는 비용으로 확정하거나 260일 잔액을 입증하지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_SCHOOL_20200526",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서면-2019-법인-4024 · 2020-05-26; ntstDcmId010000000000435223",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용·법인세법 제19조·제40조, 시행령 제45조, 소득세법 시행령 제38조제1항제2호",
+      "sha256": "3279236b25653630074332d826d2a431f75701012004daae1c17fd47ba6c4127",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 단체협약·사내규정에 따라 임직원 본인·자녀 학자금을 지급한 별도 사례의 손금 귀속 회신입니다. 대표이사 자녀의 유학자금 지출을 대여금 또는 비용으로 확정하거나 260일 잔액을 입증하지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CONVERSION_20191210",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+      "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CONVERSION_20191210",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+      "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CAR_19980921",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46013-2681 · 1998-09-21; ntstDcmId010000000000505199",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 질의내용·소득세법 시행령 제12조제3호·유사사례 법인46013-1505",
+      "sha256": "94420d214b3b34e0781ac039b2379b7b5e595fc870a0f649f15bdffebb686605",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "자가운전보조금이라는 이름으로 지급해도 실제 출장비를 별도로 받는 경우에는 근로소득이라는 1998년 회신입니다. 2022년 임차차량 확대 등 후속 개정 전체를 증명하거나 이 문항의 실제 여비 지급 여부를 정하는 근거가 아닙니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CAR_19980921",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46013-2681 · 1998-09-21; ntstDcmId010000000000505199",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 질의내용·소득세법 시행령 제12조제3호·유사사례 법인46013-1505",
+      "sha256": "94420d214b3b34e0781ac039b2379b7b5e595fc870a0f649f15bdffebb686605",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 자가운전보조금이라는 이름으로 지급해도 실제 출장비를 별도로 받는 경우에는 근로소득이라는 1998년 회신입니다. 2022년 임차차량 확대 등 후속 개정 전체를 증명하거나 이 문항의 실제 여비 지급 여부를 정하는 근거가 아닙니다."
+    },
+    {
+      "ref": "R7_TAX03_소득세법_시행령_20221027",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/76bfa049d3d101643a2212869bb7b993ed413a60/kr/소득세법/시행령.md",
+      "version": "제32964호 · 시행2022-10-27",
+      "read_locator": "메타데이터 시행2022-10-27 및 제38조제1항 도입부·제1호부터 제14호의 범위",
+      "sha256": "4b0ba45693a6db6a1e7fd80dfd823a1300b9392fee10f83f55cc4e810bdfca5f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존 Git 본문의 해당 발췌만 재독했습니다. 사보 원고료의 개별 고용관계를 증명하는 규정으로 사용하지 않습니다."
+    },
+    {
+      "ref": "R7_TAX03_소득세법_시행령_20221027",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/76bfa049d3d101643a2212869bb7b993ed413a60/kr/소득세법/시행령.md",
+      "version": "제32964호 · 시행2022-10-27",
+      "read_locator": "메타데이터 시행2022-10-27 및 제38조제1항 도입부·제1호부터 제14호의 범위",
+      "sha256": "4b0ba45693a6db6a1e7fd80dfd823a1300b9392fee10f83f55cc4e810bdfca5f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 보존 Git 본문의 해당 발췌만 재독했습니다. 사보 원고료의 개별 고용관계를 증명하는 규정으로 사용하지 않습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CONVERSION_20191210",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+      "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+    },
+    {
+      "ref": "VAT_LAW_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+      "version": "'19194' / 시행 2023-01-01",
+      "read_locator": "메타데이터 시행2023-01-01 및 제10조 전체·제12조 전체",
+      "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존 Git 본문을 재독했습니다. 신규 다운로드나 출제기관 원문확인이 아닙니다."
+    },
+    {
+      "ref": "VAT_DECREE_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+      "version": "'33271' / 시행 2023-02-28",
+      "read_locator": "메타데이터 시행2023-02-28 및 제19조의2·제20조 전체",
+      "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존 Git 본문을 재독했습니다. 신규 다운로드가 아니며 실제 적용부분만 대조했습니다."
+    },
+    {
+      "ref": "R23_W0_NTS_VAT_BASIC_2020",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2020 선택판; ntstBscId100000000000001571; 별도 부칙목록 응답없음",
+      "read_locator": "ASISTD001MR02 10-0-4 광고선전물의 배포, ntstExrBaseSn2020041, 1998.8.1 개정 표시",
+      "sha256": "f538e2e0e55db1eeade7dd97630980abf0ea110625e1d6dde75248127b1e80f3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "23차 보존2020 선택판의 지정 항목만 재독했습니다. 새 판본을 확보한 것이 아니며 별도 부칙의 미확인 한계를 해소하지 않았습니다."
+    },
+    {
+      "ref": "R25_W5_NTS_CONVERSION_20191210",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+      "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+      "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+    },
+    {
+      "ref": "VAT_LAW_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+      "version": "'19194' / 시행 2023-01-01",
+      "read_locator": "메타데이터 시행2023-01-01 및 제10조 전체·제12조 전체",
+      "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 보존 Git 본문을 재독했습니다. 신규 다운로드나 출제기관 원문확인이 아닙니다."
+    },
+    {
+      "ref": "VAT_DECREE_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+      "version": "'33271' / 시행 2023-02-28",
+      "read_locator": "메타데이터 시행2023-02-28 및 제19조의2·제20조 전체",
+      "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 보존 Git 본문을 재독했습니다. 신규 다운로드가 아니며 실제 적용부분만 대조했습니다."
+    },
+    {
+      "ref": "R23_W0_NTS_VAT_BASIC_2020",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2020 선택판; ntstBscId100000000000001571; 별도 부칙목록 응답없음",
+      "read_locator": "ASISTD001MR02 10-0-4 광고선전물의 배포, ntstExrBaseSn2020041, 1998.8.1 개정 표시",
+      "sha256": "f538e2e0e55db1eeade7dd97630980abf0ea110625e1d6dde75248127b1e80f3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 기록된 보존본문의 지정 범위를 직접 읽었습니다. 이 검수에서 새 네트워크 다운로드나 새 원본 판독을 한 것은 아닙니다. 23차 보존2020 선택판의 지정 항목만 재독했습니다. 새 판본을 확보한 것이 아니며 별도 부칙의 미확인 한계를 해소하지 않았습니다."
+    }
+  ],
+  "official_site_access": [
+    {
+      "url": "https://www.samilexam.com/support?tab=pastexam",
+      "requested_at": "2026-10-14T15:43:54.334181+00:00",
+      "normal_tls": true,
+      "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+      "content_verified": false
+    },
+    {
+      "url": "https://www.samilexam.com/robots.txt",
+      "requested_at": "2026-10-14T15:43:54.335046+00:00",
+      "normal_tls": true,
+      "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+      "content_verified": false
+    },
+    {
+      "url": "https://www.samilexam.com/sitemap.xml",
+      "requested_at": "2026-10-14T15:43:54.335591+00:00",
+      "normal_tls": true,
+      "error": "HTTP Error 301: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Permanently",
+      "content_verified": false
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "jaegyeong/data/explanations.json",
+      "sha256": "901671ff6cd74065f37de32051ed368ba835329e7adb5527ff723be3f0fa6cbd"
+    },
+    {
+      "path": "jaegyeong/reports/explanation-expansion.json",
+      "sha256": "542f95af81a5bb535527c0c4420020b390990c2a44a9642eb3fd1e12b454c82f"
+    },
+    {
+      "path": "jaegyeong/data/concept-notes.json",
+      "sha256": "3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81"
+    },
+    {
+      "path": "jaegyeong/assets/bank-data.js",
+      "sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03"
+    },
+    {
+      "path": "jaegyeong/scripts/test_explanations.py",
+      "sha256": "0c456d62d65e8124ece95993174aa9c48d617ae150e5ea75ba4b1ceee333fa99"
+    },
+    {
+      "path": "jaegyeong/scripts/test_explanations_app.py",
+      "sha256": "ce1b081060e89ef6e964ca1ee0e85a6c47ee04807a20e57f9575c80a78f9285c"
+    },
+    {
+      "path": "jaegyeong/reports/해설추가검토목록.csv",
+      "sha256": "46f17e1c2864006b2e48891c0ee1b8c898709568e36b5f5c066639277e7bf2ad"
+    },
+    {
+      "path": "index.html",
+      "sha256": "3fac6a6238a9c11ed7da4e37285273f1f4c4a1393753419d55dd2b21afd56323"
+    },
+    {
+      "path": "privacy.html",
+      "sha256": "48587d161eaff508985e858a7c73689f151993ced1d992f4a346e9018ae20e2a"
+    }
+  ],
+  "limitation": "읽기 수는 새 문헌 수가 아니며, 검색 실패와 기존 원문 재사용은 실제 본문 읽기와 구별합니다. 보류 유지 검수는 공식 정답을 인증하지 않습니다."
+}

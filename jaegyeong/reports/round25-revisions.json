@@ -1,0 +1,836 @@
+{
+  "scope": "이번 추가 조사용 진단 검산의 라벨 1필드 수정이며 기존 학습 해설·수식·기대값은 변경하지 않습니다.",
+  "receipt_sha256": "7c41752a22e8f177834b816e5914f7a479272b5395887a8fd1d7e3d7c56dc87f",
+  "receipt": {
+    "author": "r25_worker4_numeric_logic",
+    "requested_by": "r25_cost independent reviewer",
+    "reason": "한양대 3.pdf PDF11쪽에서 28,000×15/80의 수취부문은 제조부문인 포장부문이라는 독립검수 지적을 반영합니다.",
+    "changes": [
+      {
+        "question_id": "2023-03-083",
+        "path": "checks[2].label",
+        "before": "다른 보조부문에 배분되는 단계배부액",
+        "after": "제조부문인 포장부문에 배분되는 단계배부액"
+      }
+    ],
+    "before_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+    "before_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+    "after_file": "/tmp/chagok-round25/worker4/freeze-v2/drafts.json",
+    "after_file_sha256": "4ea908d7785feb066910a04b8bb8af93201c7b7a772c8ab141d442c2c8b86514",
+    "preserved": "expr, expected, decline 및 다른 필드·7행 모두 보존",
+    "source_read_limit": "새 원문 본문을 직접 읽었다고 계상하지 않으며 검수자의 정확 문구 교체 요청을 반영합니다.",
+    "before_object": {
+      "question_id": "2023-03-083",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-03-083",
+        "reason": "새 한양3 PDF9–10/13쪽에 따라②는 변동실제/고정최대 기준을 뒤집어 틀리고, 부문별로 배부액이 달라지므로③도 틀립니다. 총공장원가는 내부 재배분으로 변하지 않아①은 지지됩니다. 그러나④의 단계법 총원가=자기발생원가+선행부문에서 받은 원가도 새 한양3 PDF11쪽 직접 예제에 일치합니다. 수선40,000원 중 동력8,000원을 먼저 배부하면 동력의 총배부원가는 자체20,000+수취8,000=28,000원입니다. 이를 제조부문에22,750/5,250원으로 배부하여 전체보조원가60,000원을 보존하는 독립 검산도 통과했습니다. 다른 부문이라는 원문을 모든 보조부문의 완전 상호수취로 몰래 바꾸어④를 배제하지 않습니다. 가장 옳다는 우열도 새 본문만으로 확정하지 못하므로 공식①을 보존하고 완료 처리하지 않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_cost_005",
+        "recheck_batch_id": "recheck_cost_001",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_05"
+      },
+      "question_row_sha256": "c51f82199d2af61f92b80b32d86710ebb161a56a0f1aed4a0d8f7b4aff12a996",
+      "reason": "①의 공장 전체 배부율 설명과 ④의 단계배부 총원가 설명이 동시에 성립할 수 있다는 기존 보류 논리를 재검토했습니다. 첫 단계 보조부문의 수취원가가 0이어도 자기원가와 수취원가 합계라는 ④의 설명은 성립하므로, 첫 단계의 존재가 ④를 반박하지 않습니다. 같은 회차 84번의 자체원가와 수취원가 합산 계산을 대조한 24차 기록도 이 결론을 지지합니다. 새 정정 답안을 확보하지 못해 복수 후보 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "단계배부 대상 자체원가와 수취원가의 합계",
+          "expr": "20000+8000",
+          "expected": 28000
+        },
+        {
+          "label": "생산부문에 배분되는 단계배부액",
+          "expr": "28000*65/80",
+          "expected": 22750
+        },
+        {
+          "label": "다른 보조부문에 배분되는 단계배부액",
+          "expr": "28000*15/80",
+          "expected": 5250
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 수취원가",
+          "expr": "69000*300/(1200+800+300)",
+          "expected": 9000.0
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 배부총액",
+          "expr": "48000+69000*300/(1200+800+300)",
+          "expected": 57000.0
+        },
+        {
+          "label": "수취원가를 제외할 때 생산부문 배부액 차이",
+          "expr": "(48000+69000*300/(1200+800+300))*1600/(2400+1600)-48000*1600/(2400+1600)",
+          "expected": 3600.0
+        },
+        {
+          "label": "첫 단계 수취원가가 없는 경우의 배부총액",
+          "expr": "20000+0",
+          "expected": 20000
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "공장 전체에 배부할 제조간접원가 총액과 공장 전체 배부기준량이 같으면 보조부문 간 배부방법은 그 단일 배부율을 바꾸지 않습니다. 공식 ①의 내용은 다른 옳은 보기의 부존재까지 입증하지 않습니다."
+        },
+        {
+          "number": 2,
+          "note": "변동원가는 실제 사용량, 고정원가는 장기 사용능력 등의 기준으로 나누는 이중배부 설명과 반대로 적혀 있습니다. 이 보기를 맞추려고 배부기준을 뒤집지 않습니다."
+        },
+        {
+          "number": 3,
+          "note": "부문별 배부원가와 배부율은 보조부문 원가배분방법에 따라 달라질 수 있으므로 영향을 받지 않는다는 설명은 일반적으로 성립하지 않습니다."
+        },
+        {
+          "number": 4,
+          "note": "앞 단계에서 받은 원가와 해당 보조부문 자체원가를 더해 다음 단계에 배부하는 구조는 ④와 맞습니다. 첫 단계의 수취원가가 0인 경우에도 합계식이 성립하므로 첫 단계만으로 ④를 배제할 수 없습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6b7f2cd5a7429cec5045d1874753c5103f8293837663d44ae16f7b6fa411a3c2",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "④의 단계배부 설명을 부정할 출제기관의 구체적 해석 또는 복수 정답을 인정한 해당 회차 정정 답안이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "multiple_candidates",
+      "proposed_verdict": "multiple_candidates"
+    },
+    "after_object": {
+      "question_id": "2023-03-083",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-03-083",
+        "reason": "새 한양3 PDF9–10/13쪽에 따라②는 변동실제/고정최대 기준을 뒤집어 틀리고, 부문별로 배부액이 달라지므로③도 틀립니다. 총공장원가는 내부 재배분으로 변하지 않아①은 지지됩니다. 그러나④의 단계법 총원가=자기발생원가+선행부문에서 받은 원가도 새 한양3 PDF11쪽 직접 예제에 일치합니다. 수선40,000원 중 동력8,000원을 먼저 배부하면 동력의 총배부원가는 자체20,000+수취8,000=28,000원입니다. 이를 제조부문에22,750/5,250원으로 배부하여 전체보조원가60,000원을 보존하는 독립 검산도 통과했습니다. 다른 부문이라는 원문을 모든 보조부문의 완전 상호수취로 몰래 바꾸어④를 배제하지 않습니다. 가장 옳다는 우열도 새 본문만으로 확정하지 못하므로 공식①을 보존하고 완료 처리하지 않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_cost_005",
+        "recheck_batch_id": "recheck_cost_001",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_05"
+      },
+      "question_row_sha256": "c51f82199d2af61f92b80b32d86710ebb161a56a0f1aed4a0d8f7b4aff12a996",
+      "reason": "①의 공장 전체 배부율 설명과 ④의 단계배부 총원가 설명이 동시에 성립할 수 있다는 기존 보류 논리를 재검토했습니다. 첫 단계 보조부문의 수취원가가 0이어도 자기원가와 수취원가 합계라는 ④의 설명은 성립하므로, 첫 단계의 존재가 ④를 반박하지 않습니다. 같은 회차 84번의 자체원가와 수취원가 합산 계산을 대조한 24차 기록도 이 결론을 지지합니다. 새 정정 답안을 확보하지 못해 복수 후보 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "단계배부 대상 자체원가와 수취원가의 합계",
+          "expr": "20000+8000",
+          "expected": 28000
+        },
+        {
+          "label": "생산부문에 배분되는 단계배부액",
+          "expr": "28000*65/80",
+          "expected": 22750
+        },
+        {
+          "label": "제조부문인 포장부문에 배분되는 단계배부액",
+          "expr": "28000*15/80",
+          "expected": 5250
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 수취원가",
+          "expr": "69000*300/(1200+800+300)",
+          "expected": 9000.0
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 배부총액",
+          "expr": "48000+69000*300/(1200+800+300)",
+          "expected": 57000.0
+        },
+        {
+          "label": "수취원가를 제외할 때 생산부문 배부액 차이",
+          "expr": "(48000+69000*300/(1200+800+300))*1600/(2400+1600)-48000*1600/(2400+1600)",
+          "expected": 3600.0
+        },
+        {
+          "label": "첫 단계 수취원가가 없는 경우의 배부총액",
+          "expr": "20000+0",
+          "expected": 20000
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "공장 전체에 배부할 제조간접원가 총액과 공장 전체 배부기준량이 같으면 보조부문 간 배부방법은 그 단일 배부율을 바꾸지 않습니다. 공식 ①의 내용은 다른 옳은 보기의 부존재까지 입증하지 않습니다."
+        },
+        {
+          "number": 2,
+          "note": "변동원가는 실제 사용량, 고정원가는 장기 사용능력 등의 기준으로 나누는 이중배부 설명과 반대로 적혀 있습니다. 이 보기를 맞추려고 배부기준을 뒤집지 않습니다."
+        },
+        {
+          "number": 3,
+          "note": "부문별 배부원가와 배부율은 보조부문 원가배분방법에 따라 달라질 수 있으므로 영향을 받지 않는다는 설명은 일반적으로 성립하지 않습니다."
+        },
+        {
+          "number": 4,
+          "note": "앞 단계에서 받은 원가와 해당 보조부문 자체원가를 더해 다음 단계에 배부하는 구조는 ④와 맞습니다. 첫 단계의 수취원가가 0인 경우에도 합계식이 성립하므로 첫 단계만으로 ④를 배제할 수 없습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6b7f2cd5a7429cec5045d1874753c5103f8293837663d44ae16f7b6fa411a3c2",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "④의 단계배부 설명을 부정할 출제기관의 구체적 해석 또는 복수 정답을 인정한 해당 회차 정정 답안이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "multiple_candidates",
+      "proposed_verdict": "multiple_candidates"
+    },
+    "before_object_sha256": "6f52595d6e753b0f02e1144dd174742b2fbe7c24d0dc33aa2ccddc7870f3cca1",
+    "after_object_sha256": "978f30dca014d3a723a580d7e9220290b4e32d4c1b09e12afe923a238b4c11a6"
+  },
+  "initial_independent_reviews": [
+    {
+      "question_id": "2024-05-100",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "91dc579d026d31ec3c6bfef31d7a4ce006e928a80abeca066782f0060d917b20",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "재고액 2,000→1,000원이고 수량100→50인 모형에서는 전부이익−변동이익이−500원이므로①은 가능한 결과입니다. 이를 모든 재고액 감소에 일반화하지 않은 판단이 타당합니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "재고액11,000→4,000원과 수량100→200개가 양립하면 고정단가10원에서 전부이익이1,000원 더 큽니다. 원문의 같은 고정단가만으로②를 배제할 수 없습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "수량100개가 같고 변동단가만100→10원이면 재고액은 감소해도 이익차이는0입니다.③도 원문 조건만으로 배제할 수 없습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "세 모형이 모두 재고액 감소와 동일 고정단가를 충족하므로④의 가능성을 남긴 보류는 적절합니다. 모형은 정답 맞추기를 위한 실제 거래사실 추가가 아닙니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "반례의 기초 전부원가 재고액",
+          "expr": "100*(100+10)",
+          "expected": 11000
+        },
+        {
+          "label": "반례의 기말 전부원가 재고액",
+          "expr": "200*(10+10)",
+          "expected": 4000
+        },
+        {
+          "label": "반례의 전부원가이익과 변동원가이익 차이",
+          "expr": "200*10-100*10",
+          "expected": 1000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 기초재고액",
+          "expr": "100*(10+10)",
+          "expected": 2000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 기말재고액",
+          "expr": "50*(10+10)",
+          "expected": 1000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 두 이익 차이",
+          "expr": "50*10-100*10",
+          "expected": -500
+        },
+        {
+          "label": "두 이익이 같은 모형의 기말재고액",
+          "expr": "100*(10+10)",
+          "expected": 2000
+        },
+        {
+          "label": "두 이익이 같은 모형의 고정원가 재고액 차이",
+          "expr": "100*10-100*10",
+          "expected": 0
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "a72e9b2a1b290da7ea98ea218149136340d8793cdda162771e41d77e76c4dc0b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2023-11-024",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "6ea8fd0221dcd6fedea967768bbf4057e867eafa25824a6844321beade4136e3",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "20X1년1월1일의2년 후는20X3년1월1일이므로20X2년 매출0의 읽기가 남습니다. 다른 회차 복수답을 이 회차에 붙이지 않았습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "5,000원은 최초 선수금입니다. 해당 금액 자체는20X2년 제품 이전을 뜻하지 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "5,250원은5000×1.05의 한 기간 값입니다. 원문의2년 후를1년 후로 바꾸지 않았습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "5000×1.05×1.05=5512.5를 반올림한5513은 공식④를 설명하나 수익 기간 충돌을 해결하지 않습니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "선수금의 두 기간 금융효과 반영액",
+          "expr": "5000*1.05*1.05",
+          "expected": 5512.5
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "0171da9c060958ecba71948237cb900a373dd7ddb3fd2e6774eacd1b1e24d020",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2023-03-083",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "changes_requested",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "6f52595d6e753b0f02e1144dd174742b2fbe7c24d0dc33aa2ccddc7870f3cca1",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "보류판정과 네 보기 논리는 유지할 수 있으나 검산 라벨1개가 실제 수취부문을 보조부문으로 잘못 표시합니다. 한양대PDF11쪽 직접본문에 따라 포장 제조부문으로 수정해야 합니다.",
+      "exact_changes": [
+        {
+          "path": "/checks/2/label",
+          "before": "다른 보조부문에 배분되는 단계배부액",
+          "after": "제조부문인 포장부문에 배분되는 단계배부액",
+          "reason": "한양대PDF11쪽은 동력부문28,000×15/80=5,250의 수취부문을 제조부문인 포장부문으로 명시합니다."
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "공장전체 원가와 전체 배부기준량이 같으면 내부 보조원가 재배분은 공장전체 배부율을 바꾸지 않는다는①의 판단을 유지합니다. 이것이④를 자동 배제하지는 않습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "직접 재독한 한양대PDF10쪽은 변동비 실제사용량·고정비 최대사용량을 적습니다.②가 이 기준을 뒤집는다는 분석은 타당합니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "부문별 제조간접원가 배부율은 각 제조부문에 배분된 보조원가의 차이로 달라질 수 있습니다.③의 무영향 일반화를 채택하지 않았습니다."
+        },
+        {
+          "number": 4,
+          "status": "changes_requested",
+          "note": "④의 자기발생원가+선행수취원가 구조는PDF11쪽20,000+8,000=28,000과 맞습니다. 다만 28,000×15/80=5,250은 제조부문인 포장부문 배부액이므로 checks[2].label의 다른 보조부문 표기는 고쳐야 합니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R7_COST03_HANYANG3",
+          "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+          "version": "2014 공식 공개 강의첨부 · SHA256 58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+          "read_locator": "검수자가 이번에 직접 읽은 PDF10~11쪽 추출 텍스트: 이중배부율의 실제/최대 사용량 기준과 수선부터 단계배부한 동력부문28,000원의 조립22,750·포장5,250배부표.",
+          "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+          "private_path": "/tmp/chagok-round21/answer_author2/bodycache/hanyang3.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS로 보존된 교안 지정 본문만 이번에 독립 재독했습니다. 신규 외부 본문 확보 또는 전체문서 검수로 세지 않습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "단계배부 대상 자체원가와 수취원가의 합계",
+          "expr": "20000+8000",
+          "expected": 28000
+        },
+        {
+          "label": "생산부문에 배분되는 단계배부액",
+          "expr": "28000*65/80",
+          "expected": 22750
+        },
+        {
+          "label": "다른 보조부문에 배분되는 단계배부액",
+          "expr": "28000*15/80",
+          "expected": 5250
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 수취원가",
+          "expr": "69000*300/(1200+800+300)",
+          "expected": 9000.0
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 배부총액",
+          "expr": "48000+69000*300/(1200+800+300)",
+          "expected": 57000.0
+        },
+        {
+          "label": "수취원가를 제외할 때 생산부문 배부액 차이",
+          "expr": "(48000+69000*300/(1200+800+300))*1600/(2400+1600)-48000*1600/(2400+1600)",
+          "expected": 3600.0
+        },
+        {
+          "label": "첫 단계 수취원가가 없는 경우의 배부총액",
+          "expr": "20000+0",
+          "expected": 20000
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6b7f2cd5a7429cec5045d1874753c5103f8293837663d44ae16f7b6fa411a3c2",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2022-06-019",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "807cd40bbe4a8bef72784070fd25c1ea53f248563ab1ced53d14dbc30e03158a",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "3년 쿠폰50000×3=150000에는 발행할인차금77313이 포함되지 않습니다.①을 전체 비용으로 채택하지 않았습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "240000은1,000,000×8%×3의 단순값이며 실제 장부금액별 유효이자법 총비용의 결과가 아닙니다.②에 맞추기 위한 금리 교체를 하지 않았습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "원금1000000+쿠폰150000−발행가922687=227313은 공식③과 맞지만12% 조건과는 일치하지 않습니다. 보류가 타당합니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "제시12%로 계산한 총이자354901.801536도④317313과 다릅니다. 원문 금리나 가격을 임의로 수정하지 않았습니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "원금과 쿠폰에서 발행대가를 뺀 총금융비용",
+          "expr": "1000000+50000*3-922687",
+          "expected": 227313
+        },
+        {
+          "label": "연 8퍼센트로 할인한 계약현금흐름",
+          "expr": "50000/1.08+50000/(1.08*1.08)+1050000/(1.08*1.08*1.08)",
+          "expected": 922687.0903825635
+        },
+        {
+          "label": "연 12퍼센트로 할인한 계약현금흐름",
+          "expr": "50000/1.12+50000/(1.12*1.12)+1050000/(1.12*1.12*1.12)",
+          "expected": 831871.8112244896
+        },
+        {
+          "label": "제시한 12퍼센트로 상각한 만기 장부금액",
+          "expr": "((922687*1.12-50000)*1.12-50000)*1.12-50000",
+          "expected": 1127588.8015360003
+        },
+        {
+          "label": "제시한 12퍼센트로 상각한 세 기간 이자비용 합계",
+          "expr": "((922687*1.12-50000)*1.12-50000)*1.12-50000+150000-922687",
+          "expected": 354901.80153600033
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "1c672bcd64641527375f9343d87fd103d2ae87e75d3f2646482004b3d25cf27b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2023-09-085",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "4fe3e3e6a7bf2b6d80a4fced4967813ba4b6c44ac4a11c56d8f7d4def10276d0",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "A310000·B220000의 작업별 계산과①270000·260000은 다릅니다. 합계530000만 같다고 배분액까지 같다고 하지 않았습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "시간당 예정배부율50원과 작업별 원가로②가 재현되지만 재료합계+20000과 노무합계−20000의 모순은 남습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "B는 미완성으로 제시되므로 B220000까지 합한530000 전부를 완성품 원가로 처리한③은 이 계산과 맞지 않습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "A완성 조건에서 A310000을 포함한530000 전부를 재공품으로 처리할 수 없다는④의 판단은 타당합니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "작업별 직접재료원가 합계",
+          "expr": "130000+90000",
+          "expected": 220000
+        },
+        {
+          "label": "작업별 직접노무원가 합계",
+          "expr": "60000+50000",
+          "expected": 110000
+        },
+        {
+          "label": "작업별 직접노동시간 합계",
+          "expr": "2400+1600",
+          "expected": 4000
+        },
+        {
+          "label": "시간당 제조간접원가 예정배부율",
+          "expr": "2000000/40000",
+          "expected": 50
+        },
+        {
+          "label": "작업 A에 예정배부한 제조간접원가",
+          "expr": "2400*50",
+          "expected": 120000
+        },
+        {
+          "label": "작업 B에 예정배부한 제조간접원가",
+          "expr": "1600*50",
+          "expected": 80000
+        },
+        {
+          "label": "작업 A의 제품제조원가",
+          "expr": "130000+60000+120000",
+          "expected": 310000
+        },
+        {
+          "label": "작업 B의 기말재공품원가",
+          "expr": "90000+50000+80000",
+          "expected": 220000
+        },
+        {
+          "label": "표의 합계란을 사용한 전체원가",
+          "expr": "240000+90000+4000*50",
+          "expected": 530000
+        },
+        {
+          "label": "작업별 원가를 합산한 전체원가",
+          "expr": "310000+220000",
+          "expected": 530000
+        },
+        {
+          "label": "재료 합계란과 작업별 합계 차이",
+          "expr": "240000-(130000+90000)",
+          "expected": 20000
+        },
+        {
+          "label": "노무 합계란과 작업별 합계 차이",
+          "expr": "90000-(60000+50000)",
+          "expected": -20000
+        },
+        {
+          "label": "두 합계 오류의 상쇄 금액",
+          "expr": "20000-20000",
+          "expected": 0
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6504b15c9a92078fdb9d1cf0c22fc985c80fad88b2c8dfae41486fcaf6cd874a",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2022-11-018",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "895f4707736971d95732155777f7f75134d36e2378302573fcaf5aedd1d137bb",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "8815800은 제공계수 계산9732500이나2년실제현가9816660.733357과 다르다는 대조를 확인했습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "제공계수를 쓰면②9732500이나 해당계수는6%3년값입니다.2년 만기와 함께 옳다고 설명하지 않은 보류가 타당합니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "9999800은 제공계수 결과와 실제2년현재가치 어느 쪽도 아닙니다. 오타 수정으로 이를 만들지 않았습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "표시이율5%가 시장6%보다 낮은 현금흐름에서 원금액10000000을 발행가액으로 단정하지 않았습니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "문제에서 제공한 두 계수를 적용한 발행가액",
+          "expr": "10000000*0.8396+500000*2.673",
+          "expected": 9732500.0
+        },
+        {
+          "label": "연 6퍼센트 두 기간의 단일금액 현가계수",
+          "expr": "1/(1.06*1.06)",
+          "expected": 0.8899964400142398
+        },
+        {
+          "label": "연 6퍼센트 두 기간의 연금현가계수",
+          "expr": "1/1.06+1/(1.06*1.06)",
+          "expected": 1.833392666429334
+        },
+        {
+          "label": "연 6퍼센트 세 기간의 단일금액 현가계수",
+          "expr": "1/(1.06*1.06*1.06)",
+          "expected": 0.8396192830323016
+        },
+        {
+          "label": "연 6퍼센트 세 기간의 연금현가계수",
+          "expr": "1/1.06+1/(1.06*1.06)+1/(1.06*1.06*1.06)",
+          "expected": 2.673011949461636
+        },
+        {
+          "label": "실제 두 기간 계약현금흐름의 현재가치",
+          "expr": "500000/1.06+10500000/(1.06*1.06)",
+          "expected": 9816660.733357064
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "769727a5ad6f66d211858acc8e023d3ae2620626fa1f9dcf06ee215b2f055581",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2022-01-022",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "122f006b2a5a162f61dcc41dda40b6d23c97d363008f24104435af81d011d342",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "회사 자신의 발행주식을 재취득한다는①의 정의를 이번 신규근거 없이 뒤집지 않았습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "공식②의 선택을 유지하되 K-IFRS 자본 직접인식으로 매각·소각손실의 같은 계정 우선상계를 강제하지 않았습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "시험 당시 상법 일반취득 허용과 특별한 경우만이라는③의 충돌을 기록한24차검증을 재사용합니다. 새 본문 재독으로 주장하지 않았습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④의 상세 상계순서를 K-IFRS 필수규정으로 확정하지 못한 한계를 유지하고, 미확인을 곧 거짓으로 바꾸지 않았습니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "a1559001b6ea76ff893ecc27700bbae52bb3aabda2da97e226521d72d775d98a",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    },
+    {
+      "question_id": "2025-06-117",
+      "reviewer": "r25_worker2_independent_numeric_QA",
+      "author": "r25_worker4_numeric_logic",
+      "status": "pass",
+      "proposal_file": "/tmp/chagok-round25/worker4/freeze-v1/drafts.json",
+      "proposal_file_sha256": "f09b26221224179867ef575f2e70213ec480c947830a4c7ef6a0127188cf561c",
+      "proposal_sha256": "09031df923d0cec18a1c8a62ce93fffea6ee8bbe2f8ffaf97d13bdc4416d5fdb",
+      "approved_decision": "decline",
+      "registration_approved": false,
+      "reason": "원문 전사와24차검증 재사용 범위를 대조하고 모든 검산식을 독립 계산했습니다. 조건이나 공식키를 바꾸지 않은 보류논리를 승인합니다. 공식답의 유일성 또는 신규해설 등록 승인은 아닙니다.",
+      "exact_changes": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "8000을 세전 현금유입으로 보면6800세후현금과20000/6800=2.941176으로 공식①을 재현합니다. 세전순이익으로 보면9600현금과2.083333이 되는 표현혼용을 보존했습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②3.2년은 두 해석의2.941176 또는2.083333과 다릅니다. 미제시 조건으로 값을 만들지 않았습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③3.5년도 두 계산 결과와 다릅니다. 감가상각의 중복 차감을 하지 않았습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④4.0년도 제시투자액과 두현금기준에서 나오지 않습니다. 공식① 재현만으로 해석유일성을 확정하지 않았습니다."
+        }
+      ],
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "연간 정액법 감가상각비",
+          "expr": "20000/5",
+          "expected": 4000
+        },
+        {
+          "label": "세전 현금유입으로 해석한 연간 세후현금흐름",
+          "expr": "8000-(8000-4000)*0.3",
+          "expected": 6800
+        },
+        {
+          "label": "세전순이익으로 해석한 연간 세후현금흐름",
+          "expr": "8000*(1-0.3)+4000",
+          "expected": 9600
+        },
+        {
+          "label": "세전 현금유입 해석의 회수기간",
+          "expr": "20000/6800",
+          "expected": 2.9411764705882355
+        },
+        {
+          "label": "세전순이익 해석의 회수기간",
+          "expr": "20000/9600",
+          "expected": 2.0833333333333335
+        },
+        {
+          "label": "비교 회차의 명시적인 현금유입 조건에서 계산한 회수기간",
+          "expr": "10000/(5000-(5000-10000/5)*0.4)",
+          "expected": 2.6315789473684212
+        }
+      ],
+      "original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6aa782662c5024ee7297110569ae09d7e71aa4e0fe1ee1c86ae40d7489a1603b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "inspection_scope": "대상 문제·답안·공통 지시는24차실제확인기록과 이번 brief전사를 재사용합니다. 이번 원본 이미지/PDF 신규직접읽기로 계상하지 않습니다. 외부본문 직접읽기는 source_reads에 지정한 한양대PDF10~11쪽뿐이며 나머지는 빈목록으로 명시합니다."
+    }
+  ],
+  "final_independent_reviews_sha256": "15fccaae3b8c58c57fe9523d5efebd03a347c96de016a98a723ebda7a91e3c8d"
+}

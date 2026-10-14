@@ -1,0 +1,3743 @@
+{
+  "checked_on": "2026-10-15",
+  "kind": "research_only_no_study_data_changes",
+  "baseline_commit": "71b24a29d7a905d13a27fcce6f1f5efd3e917d26",
+  "baseline_explanations_sha256": "901671ff6cd74065f37de32051ed368ba835329e7adb5527ff723be3f0fa6cbd",
+  "baseline_audit_sha256": "542f95af81a5bb535527c0c4420020b390990c2a44a9642eb3fd1e12b454c82f",
+  "actual_workers": 6,
+  "max_concurrent_subagents": 6,
+  "recursive_spawns": 0,
+  "worker_sessions": [
+    "r25_finance",
+    "r25_tax_sources",
+    "r25_cost",
+    "r25_tax_verdicts",
+    "r25_numeric",
+    "r25_tax_originals"
+  ],
+  "review_assignment": {
+    "0": 3,
+    "1": 0,
+    "2": 4,
+    "3": 5,
+    "4": 2,
+    "5": 1
+  },
+  "inspections": [
+    {
+      "question_id": "2022-09-015",
+      "author": "r25_worker0_finance",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-09-015",
+        "reason": "공식1007 문단6–7의 현금/요구불예금과 적격투자기간·현금수요목적·경미위험을 직접 재독했습니다. 양도성예금증서라는 명칭만으로 요구불예금이나 취득시잔여만기를 정하지 않습니다. 배당금지급통지표·당좌230,000원에 적격CD100,000원을 더하면③330,000원이지만 CD 조건은 원문에 없습니다.120일RP와 같은목록에 있다는 이유로 CD에3개월요건을 추가하지 않습니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_finance_014",
+        "recheck_batch_id": "recheck_finance_015",
+        "round3_batch_id": "r3_finance_014",
+        "extra_batch_id": "r7_finance_01"
+      },
+      "question_row_sha256": "39e9230fa65d4c47da34174647ffc18820a3b1a5fd37feb3d0fa47a83665d61b",
+      "reason": "새로 읽은 IFRIC2022 요구불예금 결정은 요청 즉시 인출할 수 있는 예금이라는 사실관계를 명시합니다. 양도성예금증서라는 명칭만으로 그 조건을 옮겨올 수 없습니다. 기존 IFRIC2013의 취득일부터 짧은 만기·현금수요 목적도 그대로 필요합니다. 원문의 CD100,000원 적격조건을 새로 확인하지 못하여 공식③330,000원을 만드는 조건부 합계를 실제 정답의 확정근거로 사용하지 않습니다.",
+      "reason_type": "unresolved_missing_source_or_fact",
+      "new_evidence": {
+        "kind": "IFRIC2022 요구불예금 사실관계와 CD 구별",
+        "resolves_previous_blocker": false,
+        "fresh_decisive_source_count": 0,
+        "scope": "새로 직접 읽은 본문과 기존 본문 재독을 구별했습니다. 원문 밖 조건을 추가하거나 공식키를 수정할 근거는 확보하지 못했습니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W0_IFRIC_DEMAND_DEPOSIT_2022_KO",
+          "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2022/ko-demand-deposits-with-restrictions-on-use-arising-from-a-contract-with-a-third-party-apr-2022.pdf",
+          "version": "IFRS 해석위원회 논의 결과 2022년4월 · KASB 한국어 번역 공개본",
+          "read_locator": "PDF1–3쪽 전체: 질의 사실관계 a/b, 현금 정의, 사용제한과 인출가능성, 표시·공시, 번역 주의문",
+          "sha256": "a9a4664714082032094f26d3db89cb2afac9912c15f822c608356dc26a67c4e0",
+          "private_path": "/tmp/chagok-round25/worker0/cache/cash_demand_2022_ko.pdf",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2022년4월 논의 결과의 KASB 한국어 번역입니다. 계약상 즉시 인출 가능한 요구불예금에 관한 사실관계이며, 양도성예금증서가 요구불예금 또는 현금성자산이라는 근거가 아닙니다. 영어 2026 개정본을 소급하지 않습니다."
+        },
+        {
+          "ref": "R24_W0_IFRIC_IAS7_2013_05",
+          "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2013/ias-7-may-2013.pdf",
+          "version": "IFRIC 공식 agenda decision · May 2013",
+          "read_locator": "PDF1쪽 전체: 취득일부터 짧은 만기·단기 현금수요 목적",
+          "sha256": "9edf7409a4a86328aacf13aadfdeb1fa7108a8507acfa2d3822939914daa5493",
+          "private_path": "/tmp/chagok-round24/worker0/cache/cash2013.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "24차에서 확보한 동일 문서의 재독입니다. 새 정정이나 CD 실제 취득일·만기를 확인한 자료가 아닙니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "배당금지급통지표와 당좌예금 합계",
+          "expr": "130000+100000",
+          "expected": 230000
+        },
+        {
+          "label": "CD가 적격일 때의 조건부 합계",
+          "expr": "130000+100000+100000",
+          "expected": 330000
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 원문 전사·네 보기·공통지시·24차 작성/독립검수 기록을 대조하고 source_reads의 실제 지정 본문을 읽었습니다. 이번 원문 이미지·문항/키 PDF면을 새로 열람하지 않았으며21차 직접 확인을24차가 재사용한 기록을 다시 재사용했습니다. 신규 등록/판정변경 제안이 아닙니다.",
+      "original_verification_reused": {
+        "round": 21,
+        "reused_without_claiming_new_read": true,
+        "reused_via_round24": true,
+        "round24_record": {
+          "round": 21,
+          "reused_without_claiming_new_read": true,
+          "record": {
+            "image": "2022-09-015.webp",
+            "image_sha256": "114c24ecb6e0470eadb6f54adaf182b7b29bc99fc23e9558eb3d98ae5b834f79",
+            "original_pdf": "2022-09-questions.pdf",
+            "original_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+            "question_page": 7,
+            "answer_pdf": "2022-09-answers.pdf",
+            "answer_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+            "official_answers_read": [
+              3
+            ],
+            "subject_instructions_checked": true,
+            "subject_instruction_page": 1,
+            "findings": "원본 이미지·PDF 문항쪽의 본문·표·네 보기 및 공식 답안을 직접 대조했습니다. 원본은 양도성예금증서의 취득일·만기·현금수요 목적 및 위험 조건을 제시하지 않습니다. 제1007호6–7과 추가 공개 검색을 대조해도 상품 명칭만으로 현금성자산 요건을 충족한다는 근거를 확인하지 못했습니다. 공식③330,000원은 배당금지급통지표와 당좌예금230,000원에 적격 CD100,000원을 더하는 조건부 계산입니다. 누락된 CD 조건을 만들어 넣지 않아 보류합니다. 공통지시는 본 시험은 현행 기준인 한국채택국제회계기준(K-IFRS)에 따라 출제되었습니다."
+          }
+        },
+        "round25_brief": "/tmp/chagok-round25/brief0.json",
+        "round25_brief_sha256": "9f4f5a06dfed8137b22ee27740a58e570180ef7bb2f795ef93fd29a3875bf0c8"
+      },
+      "official_answers_changed": false
+    },
+    {
+      "question_id": "2025-01-027",
+      "author": "r25_worker0_finance",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-01-027",
+        "category": "source_unverified",
+        "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 1102호30/33 및IG사례12·12A의 공식한국어 표는 권리공정가치와 행사내재가치를 별도열로 둡니다. 원문은 기말 주식FV를 주고 권리FV를 주지 않아 주가−행사가격을 권리FV로 자동대체할 수 없습니다. 그 대체에서만 당기276,666.67원③이고 기말표가권리FV라는 다른읽기에서는743,333.33원으로보기없음입니다. 실제기말권리FV 또는표정정 확인이 남습니다.",
+        "batch_id": "remaining_finance_025",
+        "recheck_batch_id": "recheck_finance_027",
+        "round3_batch_id": "r3_finance_001",
+        "extra_batch_id": "r7_finance_03"
+      },
+      "question_row_sha256": "159c395171205f49bac2becde4e61bc4bcda2312261098e02594d598c5ac0f82",
+      "reason": "1102호 문단24의 내재가치 측정 예외를 추가 검토했습니다. 이는 부여한 지분상품의 공정가치를 신뢰성 있게 측정할 수 없는 드문 경우에 관한 규정이며, 문단30–33의 현금결제형 주가차액보상권을 단순 주가−행사가격으로 측정하게 하는 일반 예외가 아닙니다. 원문은 기말 주식의 공정가치를 주고 권리공정가치를 주지 않습니다. 기말 권리공정가치 또는 출제기관 정정본문을 새로 확보하지 못해 보류합니다.",
+      "reason_type": "unresolved_missing_source_or_fact",
+      "new_evidence": {
+        "kind": "기존1102호¶24 내재가치 예외의 적용범위 추가 검토",
+        "resolves_previous_blocker": false,
+        "fresh_decisive_source_count": 0,
+        "scope": "새로 직접 읽은 본문과 기존 본문 재독을 구별했습니다. 원문 밖 조건을 추가하거나 공식키를 수정할 근거는 확보하지 못했습니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R6_F04_K1102",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영)",
+          "read_locator": "PDF17–24쪽 ¶23–37: 특히17쪽¶24 지분상품의 내재가치 예외와20–22쪽¶30–33D 현금결제형 의무를 직접 대조",
+          "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+          "private_path": "/tmp/chagok-round21/source_author2/bodycache/1102.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "보존 본문 재독입니다. ¶24 예외의 적용범위를 추가 검토했지만 문서 자체는 신규가 아닙니다. 원문의 기말 권리공정가치를 발견하거나 주식가격을 권리공정가치로 치환하지 않았습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "내재가치 대체 모형의 전기 누적액",
+          "expr": "100*0.9*10*(2500-2000)/3",
+          "expected": 150000
+        },
+        {
+          "label": "내재가치 대체 모형의 당기 누적액",
+          "expr": "100*0.8*10*(2800-2000)*2/3",
+          "expected": 426666.6666666667
+        },
+        {
+          "label": "내재가치 대체 모형의 당기비용",
+          "expr": "100*0.8*10*(2800-2000)*2/3-100*0.9*10*(2500-2000)/3",
+          "expected": 276666.6666666667
+        },
+        {
+          "label": "표를 권리공정가치로 바꿔 읽었을 때의 조건부 당기비용",
+          "expr": "100*0.8*10*2800*2/3-100*0.9*10*2500/3",
+          "expected": 743333.3333333333
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 원문 전사·네 보기·공통지시·24차 작성/독립검수 기록을 대조하고 source_reads의 실제 지정 본문을 읽었습니다. 이번 원문 이미지·문항/키 PDF면을 새로 열람하지 않았으며21차 직접 확인을24차가 재사용한 기록을 다시 재사용했습니다. 신규 등록/판정변경 제안이 아닙니다.",
+      "original_verification_reused": {
+        "round": 21,
+        "reused_without_claiming_new_read": true,
+        "reused_via_round24": true,
+        "round24_record": {
+          "from_round": 22,
+          "record_origin_round": 21,
+          "author": "r22_worker1_finance",
+          "record": {
+            "image": "2025-01-027.webp",
+            "image_sha256": "d8d969c46fe4613c8355e47f0eba47110d66254460396846f1453e03795ec6ab",
+            "original_pdf": "2025-01-questions.pdf",
+            "original_pdf_sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+            "question_page": 11,
+            "answer_pdf": "2025-01-answers.pdf",
+            "answer_pdf_sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+            "official_answers_read": [
+              3
+            ],
+            "subject_instructions_checked": true,
+            "subject_instruction_page": 1,
+            "findings": "원본 이미지·PDF 문항쪽의 본문·표·네 보기 및 공식 답안을 직접 대조했습니다. 제1102호30·33과 IG사례12는 매기 주가차액보상권 공정가치를 요구하고 공정가치와 행사 내재가치를 구분합니다. 원본의 기말 표는 회사 주식 공정가치이며 권리 공정가치가 아닙니다. 주가에서 행사가격을 뺀 금액을 권리 공정가치로 대체할 때만 공식③276,666원에 근접합니다. 추가 검색도 자동 대체 근거를 제공하지 않아 평가액·행사 조건을 지어내지 않고 보류합니다. 공통지시는 ü 특별한 언급이 없는 한 기업의 보고기간(회계기간)은 매년 1 월 1 일부터 12 월 31 일까지이다. ü 자료에서 제시한 것 외의 사항은 고려하지 않고 답한다. 예를 들어, 법인세에 대한 언급이 없으면 법인세 효과는 고려하지 않는다. ü 기업은 주권상장법인으로 계속해서 한국채택국제회계기준(K-IFRS)을 적용해오고 있다고 가정한다."
+          },
+          "reviewer_new_original_read": false
+        },
+        "round25_brief": "/tmp/chagok-round25/brief0.json",
+        "round25_brief_sha256": "9f4f5a06dfed8137b22ee27740a58e570180ef7bb2f795ef93fd29a3875bf0c8"
+      },
+      "official_answers_changed": false
+    },
+    {
+      "question_id": "2024-05-029",
+      "author": "r25_worker0_finance",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2024-05-029",
+        "reason": "공식 KASB1012호5와9의범위를재독했습니다.5는차감일시적차이/미사용결손금/미사용세액공제이월을구분하고9는이미비용처리된금액이후기세무공제되면장부0/세무기준액으로일시적차이를초래할수있다고합니다. 기부금한도초과를언제나영구차이라고하거나미래공제가능성만으로재무상태표자산부채일시적차이라고일괄판정하지않습니다. 해당국내기부금이월의분류경계를직접확인하지못해공식②를유일제외항목으로완료하지않습니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_finance_027",
+        "recheck_batch_id": "recheck_finance_029",
+        "round3_batch_id": "r3_finance_027",
+        "question_fingerprint": "d65f9eed4ff3e4be704dbd0ba6f6df796fdcd1cbb7c6ca51c0631d48218b22ce",
+        "preserved_answers": [
+          2
+        ],
+        "checks": [],
+        "extra_batch_id": "r7_finance_03"
+      },
+      "question_row_sha256": "5a2efd39af1df7c2e8aec2131d0e9e0aca7cb33f16243face5014de2cc8c298b",
+      "reason": "새로 읽은 IFRIC2005 결정은 미사용 세무상결손금·세액공제 이월액의 인식 가능성 판단을 전체액 또는 부분액에 적용하는 문제만 다룹니다. 국내 이월기부금을 어느 범주로 분류하는지 답하지 않습니다. 1012호5·9의 정의를 재대조해도 미래공제 가능성만으로 무조건 일시적차이 또는 무조건 별도 이월공제라고 정할 수 없습니다. 별도 공개 강좌와 회사 직접 공시 경로에서도 해당 국내 분류 본문을 확보하지 못하여 공식②의 유일성은 보류합니다.",
+      "reason_type": "unresolved_missing_source_or_fact",
+      "new_evidence": {
+        "kind": "IFRIC2005 직접본문 새 확보 및 별도 교육·회사공시 경로 확인",
+        "resolves_previous_blocker": false,
+        "fresh_decisive_source_count": 0,
+        "scope": "새로 직접 읽은 본문과 기존 본문 재독을 구별했습니다. 원문 밖 조건을 추가하거나 공식키를 수정할 근거는 확보하지 못했습니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+          "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+          "version": "IFRIC IAS12 agenda decision · June 2005",
+          "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+          "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+          "private_path": "/tmp/chagok-round25/worker0/cache/ias12_carry_2005.pdf",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+        },
+        {
+          "ref": "CROSS_FINANCE01_KASB_1012",
+          "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+          "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+          "private_path": "/tmp/chagok-round21/source_author2/bodycache/1012.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+        }
+      ],
+      "checks": [],
+      "inspection_scope": "25차 배정 brief의 원문 전사·네 보기·공통지시·24차 작성/독립검수 기록을 대조하고 source_reads의 실제 지정 본문을 읽었습니다. 이번 원문 이미지·문항/키 PDF면을 새로 열람하지 않았으며21차 직접 확인을24차가 재사용한 기록을 다시 재사용했습니다. 신규 등록/판정변경 제안이 아닙니다.",
+      "original_verification_reused": {
+        "round": 21,
+        "reused_without_claiming_new_read": true,
+        "reused_via_round24": true,
+        "round24_record": {
+          "round": 21,
+          "reused_without_claiming_new_read": true,
+          "record": {
+            "image": "2024-05-029.webp",
+            "image_sha256": "c14257c2cfffc8bb72fa84e8e2994b27d83db59923087868d63d2fdb1bb302c0",
+            "original_pdf": "2024-05-questions.pdf",
+            "original_pdf_sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+            "question_page": 12,
+            "answer_pdf": "2024-05-answers.pdf",
+            "answer_pdf_sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+            "official_answers_read": [
+              2
+            ],
+            "subject_instructions_checked": true,
+            "subject_instruction_page": 1,
+            "findings": "원본 이미지·PDF 문항쪽의 본문·표·네 보기 및 공식 답안을 직접 대조했습니다. 기부금 한도초과액의 현행 K-IFRS 분류를 특정할 직접 적용 근거가 남습니다. 제1012호5·9는 차감일시적차이와 별도 이월액을 구분하며 이미 비용으로 인식한 항목에도 미래공제 세무기준액이 있을 수 있다고 합니다. 법인세법24(5)는 해당 기부금의10년 이월공제를 규정합니다. 일반기업회계기준22장의 예시는 다른 회계체계 및 과거 사례이고 추가 제1008호나 공개 검색도 이를 K-IFRS의 일괄 분류로 강제하지 않습니다. 기부금 종류나 공제 조건을 추가하여 공식②를 확정하지 않고 보류합니다. 공통지시는 ü 특별한 언급이 없는 한 기업의 보고기간(회계기간)은 매년 1 월 1 일부터 12 월 31 일까지이다. ü 자료에서 제시한 것 외의 사항은 고려하지 않고 답한다. 예를 들어, 법인세에 대한 언급이 없으면 법인세 효과는 고려하지 않는다. ü 기업은 주권상장법인으로 계속해서 한국채택국제회계기준(K-IFRS)을 적용해오고 있다고 가정한다."
+          }
+        },
+        "round25_brief": "/tmp/chagok-round25/brief0.json",
+        "round25_brief_sha256": "9f4f5a06dfed8137b22ee27740a58e570180ef7bb2f795ef93fd29a3875bf0c8"
+      },
+      "official_answers_changed": false
+    },
+    {
+      "question_id": "2023-12-029",
+      "author": "r25_worker0_finance",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-12-029",
+        "reason": "공식1012 문단5의 차감일시적차이/미사용결손금/미사용세액공제 분리와9의 비인식비용미래공제 세무기준액을 직접대조했습니다. 미래공제 가능성만으로 전부영구차이나 전부별도이월공제라고 정할 수 없고 국내기부금한도초과 이월이 어떤범주인지 기준서일반정의만으로 확정되지 않습니다.④감가상각 한도초과의 장부/세무차이는7예시로 지지되지만②분류를 특정하는 국내세법/교육의 추가범위가 남아 공식④보존합니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_finance_027",
+        "recheck_batch_id": "recheck_finance_029",
+        "round3_batch_id": "r3_finance_027",
+        "question_fingerprint": "6c48cacba6d2fa40459637d79b78e76cf0cb1beb7f902f5a9e6d5e75fd26e7eb",
+        "preserved_answers": [
+          4
+        ],
+        "checks": [],
+        "extra_batch_id": "r7_finance_03"
+      },
+      "question_row_sha256": "df63b01dc698cc450181d96a172d51f925c37497f5318337084ce060d4d60bf8",
+      "reason": "IFRIC2005 미사용 결손금·세액공제 결정은 이월기부금 분류의 직접 근거가 아닙니다. 감가상각 한도초과의 장부/세무기준액 차이는1012호7 예시로 설명할 수 있으나, 원문의 기부금 한도초과를 일률적으로 일시적차이에서 배제할 국내 K-IFRS 직접 근거가 새로 확보되지 않았습니다. 공식④를 보존하고 등록을 보류합니다.",
+      "reason_type": "unresolved_missing_source_or_fact",
+      "new_evidence": {
+        "kind": "IFRIC2005 직접본문 새 확보 및 별도 교육·회사공시 경로 확인",
+        "resolves_previous_blocker": false,
+        "fresh_decisive_source_count": 0,
+        "scope": "새로 직접 읽은 본문과 기존 본문 재독을 구별했습니다. 원문 밖 조건을 추가하거나 공식키를 수정할 근거는 확보하지 못했습니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W0_IFRIC_IAS12_CARRY_2005",
+          "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2005/ias-12-carryforward-of-unused-tax-losses-and-tax-credits-june-2005.pdf",
+          "version": "IFRIC IAS12 agenda decision · June 2005",
+          "read_locator": "PDF1쪽 전체: 미사용 세무상결손금·세액공제 이월액의 인식 가능성 기준을 전체액/부분액에 적용하는 질문과 결정",
+          "sha256": "1f2826d190950153d7358a3b207b4625c8fe8b4c2c2a6ffe6dec99d7180fd564",
+          "private_path": "/tmp/chagok-round25/worker0/cache/ias12_carry_2005.pdf",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "직접본문을 새 확보했지만 인식 가능성 기준의 적용단위만 다룹니다. 한국의 기부금 한도초과 이월액을 명명하거나 일시적차이와 별도 이월공제로 분류하지 않습니다."
+        },
+        {
+          "ref": "CROSS_FINANCE01_KASB_1012",
+          "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF11–14쪽 ¶5·7–9: DTA 세 범주, 감가상각·미수이자 예시, 비인식 연구원가 세무기준액",
+          "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+          "private_path": "/tmp/chagok-round21/source_author2/bodycache/1012.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 공식 PDF 재독입니다. 이 일반정의가 국내 이월기부금을 직접 특정한다고 주장하지 않습니다."
+        }
+      ],
+      "checks": [],
+      "inspection_scope": "25차 배정 brief의 원문 전사·네 보기·공통지시·24차 작성/독립검수 기록을 대조하고 source_reads의 실제 지정 본문을 읽었습니다. 이번 원문 이미지·문항/키 PDF면을 새로 열람하지 않았으며21차 직접 확인을24차가 재사용한 기록을 다시 재사용했습니다. 신규 등록/판정변경 제안이 아닙니다.",
+      "original_verification_reused": {
+        "round": 21,
+        "reused_without_claiming_new_read": true,
+        "reused_via_round24": true,
+        "round24_record": {
+          "round": 21,
+          "reused_without_claiming_new_read": true,
+          "record": {
+            "image": "2023-12-029.webp",
+            "image_sha256": "84a1cd80ebc9d7e2ee0f06b3dedd0d46a62e83c27b1f0eacfbb0e0e2a86b427b",
+            "original_pdf": "2023-12-questions.pdf",
+            "original_pdf_sha256": "438d17eced34f979cd64a56d3ed0f8cd77025bcbf2ea2040ec19aeb4ce0ab274",
+            "question_page": 12,
+            "answer_pdf": "2023-12-answers.pdf",
+            "answer_pdf_sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8",
+            "official_answers_read": [
+              4
+            ],
+            "subject_instructions_checked": true,
+            "subject_instruction_page": 1,
+            "findings": "원본 이미지·PDF 문항쪽의 본문·표·네 보기 및 공식 답안을 직접 대조했습니다. ④감가상각비 한도초과액의 장부금액과 세무기준액 차이는 제1012호7의 기계 예시와 대응하지만, ②기부금 한도초과 이월액의 국내 적용 분류를 직접 확인하지 못했습니다. 법인세법24(5)의10년 이월공제와 제1012호5·9를 함께 대조해도 모든 기부금을 영구차이 또는 일시적차이 밖의 별도 공제로 단정할 수 없습니다. 일반기업회계기준22장 예시 및 추가 검색·제1008호는 적용체계의 한계를 해소하지 않아 공식④의 유일성을 확정하지 않고 보류합니다. 공통지시는 ü 특별한 언급이 없는 한 기업의 보고기간(회계기간)은 매년 1 월 1 일부터 12 월 31 일까지이다. ü 자료에서 제시한 것 외의 사항은 고려하지 않고 답한다. 예를 들어, 법인세에 대한 언급이 없으면 법인세 효과는 고려하지 않는다. ü 기업은 주권상장법인으로 계속해서 한국채택국제회계기준(K-IFRS)을 적용해오고 있다고 가정한다."
+          }
+        },
+        "round25_brief": "/tmp/chagok-round25/brief0.json",
+        "round25_brief_sha256": "9f4f5a06dfed8137b22ee27740a58e570180ef7bb2f795ef93fd29a3875bf0c8"
+      },
+      "official_answers_changed": false
+    },
+    {
+      "question_id": "2023-09-022",
+      "author": "r25_worker0_finance",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-09-022",
+        "category": "source_unverified",
+        "reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 공식1033호19–21은 기간가중유통주식수를 분모로 요구합니다. 자본금/액면으로 기말2,000주는 구해도 전기간유통·설립일·증자시점 및 RE기타변동을 확정하지 못합니다.2,000주전기간/순이익1백만원 모형의EPS500원은 조건부이고 원문신설/무배당만으로③·④의 단정 전체를 확인하지 않습니다. 공식④를 바꾸지 않습니다.",
+        "batch_id": "remaining_finance_020",
+        "recheck_batch_id": "recheck_finance_021",
+        "round3_batch_id": "r3_finance_020",
+        "extra_batch_id": "r7_finance_02"
+      },
+      "question_row_sha256": "1dd7b7d037d72b2fb5619ef56deba690903a4344863c554c0a046a5745ad723d",
+      "reason": "IAS33 공식 구현지원 목록의 실제 공개 의제들을 새로 확인했으나 신설법인의 미제시 설립·발행일을 보충하는 직접 자료는 찾지 못했습니다. 기존1033호19–21은 해당 회계기간 총일수 대비 유통일수로 기간가중하도록 합니다. 신설법인의 회계기간이1년보다 짧을 수 있다는 사실도 기말주식수의 기간내 변동이 없다는 사실을 보장하지 않습니다. 원문에 없는 설립일·증자부재·이익잉여금 기타변동 부재를 추가하지 않고 공식④를 보존합니다.",
+      "reason_type": "unresolved_missing_source_or_fact",
+      "new_evidence": {
+        "kind": "IAS33 구현지원 의제 목록 신규 탐색 및 기간가중 보류논리 재검토",
+        "resolves_previous_blocker": false,
+        "fresh_decisive_source_count": 0,
+        "scope": "새로 직접 읽은 본문과 기존 본문 재독을 구별했습니다. 원문 밖 조건을 추가하거나 공식키를 수정할 근거는 확보하지 못했습니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R6_F03_K1033",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+          "read_locator": "PDF11·13–14쪽 ¶10·19–21: 기간가중, 회계기간 총일수, 발행 대가 받을 권리 발생 시점",
+          "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+          "private_path": "/tmp/chagok-round21/source_author2/bodycache/1033.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 PDF 재독입니다. 신설일을1월1일로 보거나 기말2,000주가 전기간 유통되었다고 보장하는 특례를 확인하지 못했습니다."
+        }
+      ],
+      "checks": [
+        {
+          "label": "명시된 자본금과 액면금액의 기말 발행주식수",
+          "expr": "1000000/500",
+          "expected": 2000
+        },
+        {
+          "label": "순이익100만원과 전기간2천주를 가정한 조건부 주당이익",
+          "expr": "1000000/2000",
+          "expected": 500
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 원문 전사·네 보기·공통지시·24차 작성/독립검수 기록을 대조하고 source_reads의 실제 지정 본문을 읽었습니다. 이번 원문 이미지·문항/키 PDF면을 새로 열람하지 않았으며21차 직접 확인을24차가 재사용한 기록을 다시 재사용했습니다. 신규 등록/판정변경 제안이 아닙니다.",
+      "original_verification_reused": {
+        "round": 21,
+        "reused_without_claiming_new_read": true,
+        "reused_via_round24": true,
+        "round24_record": {
+          "from_round": 22,
+          "record_origin_round": 21,
+          "author": "r22_worker1_finance",
+          "record": {
+            "image": "2023-09-022.webp",
+            "image_sha256": "91edd7f1aa97260db00afd4afd6c3f386f2685b88037cbd0586024eacc18b4dc",
+            "original_pdf": "2023-09-questions.pdf",
+            "original_pdf_sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+            "question_page": 9,
+            "answer_pdf": "2023-09-answers.pdf",
+            "answer_pdf_sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+            "official_answers_read": [
+              4
+            ],
+            "subject_instructions_checked": true,
+            "subject_instruction_page": 1,
+            "findings": "원본 이미지·PDF 문항쪽의 본문·표·네 보기 및 공식 답안을 직접 대조했습니다. 자본금1,000,000원과 액면500원으로 기말 발행주식2,000주는 계산하지만 제1033호10·19–21은 해당 회계기간의 기간가중 유통주식수를 요구합니다. 신설·무배당만으로 증자일·유통기간·이익잉여금의 다른 직접 변동을 확정하지 못합니다. 추가 검색에서 이를 보완하는 개별 회신 본문도 확인하지 못해 전기간2,000주와 순이익1,000,000원을 임의로 넣어 공식④가 반드시 틀리다고 설명하지 않고 보류합니다. 공통지시는 본 시험은 현행 기준인 한국채택국제회계기준(K-IFRS)에 따라 출제되었습니다."
+          },
+          "reviewer_new_original_read": false
+        },
+        "round25_brief": "/tmp/chagok-round25/brief0.json",
+        "round25_brief_sha256": "9f4f5a06dfed8137b22ee27740a58e570180ef7bb2f795ef93fd29a3875bf0c8"
+      },
+      "official_answers_changed": false
+    },
+    {
+      "question_id": "2022-05-046",
+      "author": "r25_worker1_tax_sources",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-05-046",
+        "category": "source_unverified",
+        "reason": "2022영61②/70①1/76①②/111①를대조했습니다. 새지급이자집행기준의본문범위로이금융회사정의차이를추가해소하지않습니다. 외화평가강제군1–7,원천징수예외군1–28등,표준산업분류금융보험업을동일시할수없습니다. 원문의금융업만으로두군을정하지않고공식②를유지합니다.",
+        "batch_id": "tax_a_06",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "2a43d83efd5bb632136ca5b07e687134993b056c1f660a2be24a7dd48e113299",
+      "reason": "새로 읽은 서면인터넷방문상담1팀-390은 금융업으로 등록하고 외국환중개업 인가를 받은 법인의 실제 정기예금·보통예금 이자에도 원천징수가 적용된 2007년 사실관계를 다룹니다. 법인46012-193의 첨부 개정 설명은 한국표준산업분류상 금융보험업과 열거된 원천징수 제외 법인을 구별한 이유를 보여 줍니다. 두 문서를 2022년 회사종류 또는 외화평가 신고 사실로 바꿀 수 없습니다. 2022년 제76조 강제평가군을 가정하면 제111조의 예금 이자 원천징수 제외와 제70조의 미수이자 귀속까지 함께 검토해야 하므로, 금융업이라는 말만으로 ②만 틀리고 ③은 옳다고 확정하지 않습니다. 새 자료는 보류를 보강하지만 등록 장애를 해소하지 못했습니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": [
+        {
+          "ref": "R25_W1_NTS_010000000000048258",
+          "added_scope": "회신 전체, 질의내용의 2007년 정기예금·보통예금 이자와 업태 금융업/외국환중개업 인가 사실, 첨부 제111조",
+          "limit": "2008-02-22 개정 전 시행령에 따른 외국환중개법인의 예금 이자 원천징수 회신입니다. 실제 정기예금을 다루지만 2022년 원문의 회사종류를 외국환중개법인으로 확정하지 않으며 2022년 법정 금융회사 범위를 대신하지 않습니다."
+        },
+        {
+          "ref": "R25_W1_NTS_010000000000058767",
+          "added_scope": "회신, 질의의 개정 전 미수이자, 관련법령 제70조·제111조 및 2001/2002년 개정 해설",
+          "limit": "2001년 말 이전 미수이자에 대한 경과적 익금귀속이 질문입니다. 첨부는 2003년부터 금융보험업 범위를 열거한 이유를 설명하지만 2022년 금융업이라는 지문만으로 법정 집단을 정하지 않습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R25_W1_NTS_010000000000048258",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000048258",
+          "version": "서면인터넷방문상담1팀-390 / 20080321",
+          "read_locator": "회신 전체, 질의내용의 2007년 정기예금·보통예금 이자와 업태 금융업/외국환중개업 인가 사실, 첨부 제111조",
+          "sha256": "c9fe1be40d4977bb565b6cb2ff1895acdbeeeb502d2c674c4038b43df97460a7",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000048258.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2008-02-22 개정 전 시행령에 따른 외국환중개법인의 예금 이자 원천징수 회신입니다. 실제 정기예금을 다루지만 2022년 원문의 회사종류를 외국환중개법인으로 확정하지 않으며 2022년 법정 금융회사 범위를 대신하지 않습니다."
+        },
+        {
+          "ref": "R25_W1_NTS_010000000000058767",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000058767",
+          "version": "법인46012-193 / 20030321",
+          "read_locator": "회신, 질의의 개정 전 미수이자, 관련법령 제70조·제111조 및 2001/2002년 개정 해설",
+          "sha256": "3ad51db81543fe6f4a61883f0b223ad4ed5a416cd8c7c495bbeb6a19d206e5a6",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000058767.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2001년 말 이전 미수이자에 대한 경과적 익금귀속이 질문입니다. 첨부는 2003년부터 금융보험업 범위를 열거한 이유를 설명하지만 2022년 금융업이라는 지문만으로 법정 집단을 정하지 않습니다."
+        },
+        {
+          "ref": "RT001_CIT_DECREE_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+          "version": "대통령령 제32449호 / 시행 2022-02-18 / c7c58eb7623b4192bf424be265a82991ac7e5540",
+          "read_locator": "판본 머리말, 제61조제2항의 법인 목록, 제70조제1항제1호, 제76조 전체, 제111조제1항의 금융회사 목록과 원천징수대상채권등 예외",
+          "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+          "private_path": "/tmp/chagok-round21/source_review0/cache/RT001_CIT_DECREE_2022.md",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이미 읽은 21차 보존본문의 재독입니다. 새 법령 또는 새 직접근거로 세지 않습니다. 법정 집단의 교집합을 대조했으며 금융업 일반을 은행으로 간주하지 않습니다."
+        }
+      ],
+      "checks": [],
+      "inspection_scope": {
+        "current": "25차 brief1의 원문행·24차 작성/독립검수 및 이 행에 적은 실제 출처 본문을 읽었습니다. 검색 요약과 질의자의 주장을 회신으로 간주하지 않습니다.",
+        "originals": "등록 또는 판정변경 후보가 아닙니다. 24차 원본확인 재사용 기록을 이어받으며 25차에 문항 이미지·문제 PDF·공통지시·답안을 새로 판독했다고 주장하지 않습니다.",
+        "unchanged_official_answer": [
+          2
+        ],
+        "new_original_download": false
+      },
+      "prior_original_verification_reused": {}
+    },
+    {
+      "question_id": "2022-11-048",
+      "author": "r25_worker1_tax_sources",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-11-048",
+        "category": "source_unverified",
+        "reason": "새2024집행기준24-36-2①은미지급기부금지출전불인정을직접설명하고2022영36③과같습니다. 그러나2022영76②의외화평가선택·신고조건때문에④의환산이익무조정까지원문만으로확정할수없습니다. 공식③유지합니다.",
+        "batch_id": "remaining_tax_012",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_003",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "537bfef003fc60c83a43835fbd06b0b480fc2e461835dfea26f1a2de87b17683",
+      "reason": "이번에 회계상 외화환산이익 계상이 제76조의 평가방법 신고를 대신한다는 새로운 직접 회신·규정을 확보하지 못했습니다. 신규 검색에 나온 해외지점 재무제표 환산이나 외국주식 양도환산은 원문의 외화매출채권 평가방법을 다루지 않아 출처로 붙이지 않았습니다. 원문에 없는 금융회사 종류나 평가방법 신고를 추가해야 ④의 무조정을 확정할 수 있다는 이전 보류가 유지됩니다. ③의 미지급기부금 소득처분 오류만으로 다른 보기가 모두 옳다고 만들지 않으며 공식③을 유지합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": [],
+      "source_reads": [],
+      "checks": [],
+      "inspection_scope": {
+        "current": "25차 brief1의 원문행·24차 작성/독립검수 및 이 행에 적은 실제 출처 본문을 읽었습니다. 검색 요약과 질의자의 주장을 회신으로 간주하지 않습니다.",
+        "originals": "등록 또는 판정변경 후보가 아닙니다. 24차 원본확인 재사용 기록을 이어받으며 25차에 문항 이미지·문제 PDF·공통지시·답안을 새로 판독했다고 주장하지 않습니다.",
+        "unchanged_official_answer": [
+          3
+        ],
+        "new_original_download": false
+      },
+      "prior_original_verification_reused": {}
+    },
+    {
+      "question_id": "2022-09-064",
+      "author": "r25_worker1_tax_sources",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-09-064",
+        "reason": "신규법인22601-1054의첨부HTML원문인소득1264-2443을직접읽었습니다. 등록근로복지기금의무주택자주택보조금이근로/기타소득아니라는직접문장이있어ㄹ의기존부족근거를보완합니다. 다만1991회신/1984원문등록요건과2022체계연결,ㄷ차량제공운임의현금통근수당과별개분류는남습니다. 공식④유지합니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_tax_020",
+        "recheck_batch_id": "recheck_tax_003",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_03"
+      },
+      "question_row_sha256": "1e302aa21e066944fbbf5b790e34a30ec5a82b14f7da64636732540c47f0d5b1",
+      "reason": "새 법인22601-271의 질의내용에는 출퇴근 차량제공에 따른 교통비 절감액을 과세소득으로 보지 않는다는 문장이 있으나, 이는 국세청 회신이 아니라 질의자가 제시한 형평과세 주장입니다. 국세청의 실제 답변은 현금으로 받는 출퇴근·시내출장 여비 중 시내출장 실비만 비과세라는 내용입니다. 법인46013-1686도 현금 월정액 출장교통비와 실비 입증의 구별이며 현물 통근차량 운임을 다루지 않습니다. ㄹ의 기금 주택보조금에 관한 24차 확인은 유지하지만 ㄷ을 제외할 직접 근거는 새로 확보하지 못했습니다. ㄱ·ㄴ·ㅁ을 선택한 공식④는 유지하며 모든 항목을 고르는 문제의 완전성을 소거법으로 확정하지 않습니다.",
+      "reason_type": "source_unverified",
+      "new_evidence": [
+        {
+          "ref": "R25_W1_NTS_010000000000109064",
+          "added_scope": "회신 1·2 및 질의내용 (1) 지급기준·(2)나 형평과세원칙 주장",
+          "limit": "회신은 현금 출퇴근·출장 여비 중 출장 실비만 비과세라고 답합니다. 차량 제공 이익을 과세소득으로 보지 않는다는 문장은 질의자의 주장으로서 국세청 답변이 아닙니다. 1991년 규정은 2022년 현물 통근차량 운임의 직접 근거가 아닙니다."
+        },
+        {
+          "ref": "R25_W1_NTS_010000000000088305",
+          "added_scope": "회신 1·2 및 질의1의 매월 7만원 정액 시내교통비·질의2의 업무교통비",
+          "limit": "1995년 월정액 현금 출장교통비와 실비 입증에 관한 회신입니다. 직접 제공된 통근차량의 운임은 다루지 않으며 현물 차량제공을 현금수당으로 바꾸어 적용하지 않습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R25_W1_NTS_010000000000109064",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000109064",
+          "version": "법인22601-271 / 19910209",
+          "read_locator": "회신 1·2 및 질의내용 (1) 지급기준·(2)나 형평과세원칙 주장",
+          "sha256": "a4ec0ed34981cd87ef7914e9bdf7353984f584b9995f8abd5bfd7e6252d5574b",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000109064.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "회신은 현금 출퇴근·출장 여비 중 출장 실비만 비과세라고 답합니다. 차량 제공 이익을 과세소득으로 보지 않는다는 문장은 질의자의 주장으로서 국세청 답변이 아닙니다. 1991년 규정은 2022년 현물 통근차량 운임의 직접 근거가 아닙니다."
+        },
+        {
+          "ref": "R25_W1_NTS_010000000000088305",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000088305",
+          "version": "법인46013-1686 / 19950620",
+          "read_locator": "회신 1·2 및 질의1의 매월 7만원 정액 시내교통비·질의2의 업무교통비",
+          "sha256": "3a465e828c7927b6d9b446ac3addbeaa82e7dd3ae342d4d4331dd621aad751b1",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000088305.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "1995년 월정액 현금 출장교통비와 실비 입증에 관한 회신입니다. 직접 제공된 통근차량의 운임은 다루지 않으며 현물 차량제공을 현금수당으로 바꾸어 적용하지 않습니다."
+        }
+      ],
+      "checks": [],
+      "inspection_scope": {
+        "current": "25차 brief1의 원문행·24차 작성/독립검수 및 이 행에 적은 실제 출처 본문을 읽었습니다. 검색 요약과 질의자의 주장을 회신으로 간주하지 않습니다.",
+        "originals": "등록 또는 판정변경 후보가 아닙니다. 24차 원본확인 재사용 기록을 이어받으며 25차에 문항 이미지·문제 PDF·공통지시·답안을 새로 판독했다고 주장하지 않습니다.",
+        "unchanged_official_answer": [
+          4
+        ],
+        "new_original_download": false
+      },
+      "prior_original_verification_reused": {
+        "round": 21,
+        "record_location": "/tmp/chagok-round22/brief2.json latest_inspection.2022-09-064",
+        "author": "/root/r21_parse_author0",
+        "originals": {
+          "image": "2022-09-064.webp",
+          "image_sha256": "5a11fe82633fa5196f32a7121be58df18acd7e32bcfa511fa2a1e41c987ae01d",
+          "original_pdf": "2022-09-questions.pdf",
+          "original_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+          "question_page": 26,
+          "answer_pdf": "2022-09-answers.pdf",
+          "answer_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+          "official_answers_read": {
+            "pdf_page": 49,
+            "numbering": "전체번호",
+            "question_number": 64,
+            "answers": [
+              4
+            ]
+          },
+          "subject_instructions_checked": true,
+          "findings": "원본 이미지와 PDF 문항쪽의 본문·보기·숫자/기호가 데이터와 일치하고 공식답4을PDF49쪽에서 확인했습니다. PDF17쪽 과목시작에는 세법 적용연도 공통지시가 없으며 전체PDF의 세법 적용 지시 검색에서도 연도 대체 근거를 찾지 못해 tax_law_year null을 유지합니다. ㄷ은 차량제공의 운임이며 현금 통근수당이라고 명시하지 않습니다. ㄹ은 기금의 무주택자 주택보조금입니다."
+        }
+      }
+    },
+    {
+      "question_id": "2026-09-097",
+      "author": "r25_worker2_cost",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2026-09-097",
+        "reason": "새 ICMAI P16 PDF304/308쪽은 super-variable material-only와 unit-level spending(i.e.material) 및 생산증대로 평균배부원가를 낮추는 유인 제거를 직접 명시합니다. PDF309쪽 기타원가의 전액OE당기처리도 확인됐습니다. 따라서 기존 단순영문명칭 부재의 한계는 줄었으나ㄴ 수요변동 산업에서 특히유용이라는 특정비교와ㄷ 장기가격의 전부법 비교우위,ㄹ의 판매/생산 이익관계가 한국 초변동의 실제비용행태와 어떤 모형으로 대응하는지는 완전히 확정되지 않았습니다. P16은 장기계획/가격의 throughput 장점도 별도로 주장하므로 다른 비교대상을 같은명제로 바꾸지 않습니다. ①1/②2/③3/④4개의 공식③을 유지합니다.",
+        "category": "source_unverified",
+        "batch_id": "cost_b_01",
+        "recheck_batch_id": "recheck_cost_008",
+        "round3_batch_id": "r3_cost_007",
+        "extra_batch_id": "r7_cost_03"
+      },
+      "question_row_sha256": "06effbaaeaa76ce53f76a20123879ef8fc89be183ef1fb7d3d4f8d6382a20bf8",
+      "reason_type": "no_new_direct_evidence_after_targeted_discovery",
+      "checks": [],
+      "originals_reused_from_round24": {
+        "image": "2026-09-097.webp",
+        "image_sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+        "original_pdf": "2026-09-questions.pdf",
+        "original_pdf_sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c",
+        "question_page": 39,
+        "answer_pdf": "2026-09-answers.pdf",
+        "answer_pdf_sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+        "answer_page": 1,
+        "official_answers_read": "원가관리회계 97번=3 (전체 문항97번)",
+        "subject_instructions_checked": true,
+        "findings": "원문 이미지와 PDF 대상쪽의 모든 진술·표·네 보기를 직접 대조하여 추출 문항과 일치함을 확인했습니다. 원가관리회계 97번=3 (전체 문항97번)를 공식 표에서 읽었습니다. 원가과목 시작33쪽에 별도 공통 지시는 없습니다. PDF1쪽의 재무과목 K-IFRS 지시 위치도 읽었으나 원가 일반을 좁은 제조 소비 개념으로 바꾸거나 특정 국내 표준유형·원가행태를 추가하는 지시로 해석하지 않습니다. 기존 subject_instructions 및 tax_law_year=null을 유지합니다."
+      },
+      "reason": "기존 국내 교재의 실제 비교표는 초변동원가계산의 이익 결정요인을 판매량과 생산량으로 표시합니다. 이번 정상 TLS로 다시 확보한 부산외대 현금창출회계 PDF는 20·21차와 동일한 본문이며 수요변동이 심한 산업에서 특히 유용하다는 ㄴ을 입증하거나 반박하지 않습니다. 재고 감소 유인만으로 특정 산업 비교를 참으로 확정하거나, 미확인을 거짓으로 바꾸어 공식 ③의 3개를 역산할 수 없어 보류합니다.",
+      "new_evidence": [
+        "이번 새 직접근거는 없습니다. 정확 용어 검색으로 별도 삼육대 초변동원가계산 차시의 공식 재생 경로를 확인했지만, 직전 실패한 vod3 호스트여서 다운로드를 반복하거나 다른 호스트로 변형하지 않았습니다. 경로 응답은 강의 본문이 아닙니다.",
+        "새로 다운로드한 2020년 12.pdf의 SHA는 20·21차 문서와 동일합니다. 쓰루풋·운영비와 수정/단순화 모형 구별은 재독 사항이며 ㄴ의 수요변동 산업 비교를 해소하지 않습니다."
+      ],
+      "source_reads": [
+        {
+          "ref": "R22_W0_CUP2023_FULLCOST_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+          "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+          "read_locator": "06-1.mp4 파일1630초의 보존 프레임 fullcost-1630.png: PDF6쪽 손익계산서·직접재료·운영비용·재고 감소 유인. 1685초는 강좌 종료 화면으로 쟁점 근거가 아닙니다.",
+          "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+          "private_path": "/tmp/chagok-round22/worker0/cup2023-fullcost.mp4",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "22차 정상 TLS로 확보한 같은 영상의 지정 보존 프레임을 직접 재독했습니다. 이번 신규 다운로드·새로운 내용 또는 전체 영상·오디오 시청이 아닙니다."
+        },
+        {
+          "ref": "R22_W0_CUP2023_VARIABLE_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+          "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+          "read_locator": "06-2.mp4 파일90초의 보존 프레임 variable-90.png: PDF11쪽 방법별 비교표의 제품원가·기간비용·장단기 활용·이익 결정요인 판매량과 생산량.",
+          "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+          "private_path": "/tmp/chagok-round22/worker0/cup2023-variable.mp4",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "22차 정상 TLS로 확보한 같은 영상의 지정 보존 프레임을 직접 재독했습니다. 이번 신규 다운로드·새로운 내용 또는 전체 영상·오디오 시청이 아닙니다."
+        },
+        {
+          "ref": "R20_P1_COST_BUFS12",
+          "url": "https://contents2.kocw.or.kr/KOCW/data/document/2020/bufs/yukgeunhyo0216/12.pdf",
+          "version": "KOCW 2020년 2학기 부산외국어대학교 육근효 전략원가관리 제12주 현금창출회계",
+          "read_locator": "PDF1~13쪽 추출 텍스트: 특히 PDF8~10쪽 쓰루풋·총재고·운영비 관계, PDF12쪽 수정/단순화 쓰루풋 구별, PDF13쪽 이익·현금흐름식. 도표 좌표나 시각 형상은 이번 신규 검증 범위가 아닙니다.",
+          "sha256": "7bec8bf678caf051fb380a7c249e170dd9935e8954b5b8b2b1571e7675ec93c7",
+          "private_path": "/tmp/chagok-round25/worker2/bufs2020-throughput12.pdf",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "이번 정상 TLS로 재다운로드했지만 SHA가 20·21차 보존 문서와 같습니다. 기존 ref를 재사용하며 새 직접근거로 세지 않습니다. 수요변동이 심한 산업에 대한 특정 비교는 이 읽기 범위에 없습니다."
+        }
+      ],
+      "option_analysis": [
+        {
+          "number": 1,
+          "finding": "① 1개를 지지하는 진술별 정오 조합을 확인하지 못했습니다. 직접재료·장단기 활용 등 이미 읽은 설명을 무시하여 개수를 줄이지 않습니다."
+        },
+        {
+          "number": 2,
+          "finding": "② 2개를 확정하지 않습니다. 특히 실제 국내 표에 있는 ㄹ의 판매량·생산량 표시를 삭제하여 2개로 만들지 않습니다."
+        },
+        {
+          "number": 3,
+          "finding": "③ 공식 3개는 보존합니다. ㄴ의 산업 비교가 미확인인 상태를 거짓으로 처리하거나 공식 개수에서 진술의 정오를 역산하지 않습니다."
+        },
+        {
+          "number": 4,
+          "finding": "④ 4개라는 대체 정답도 확정하지 않습니다. 재고 감소 유인과 특정 산업에서의 유용성 비교는 별개의 명제입니다."
+        }
+      ],
+      "external_evidence_needed": [
+        "ㄴ의 수요변동 산업 비교와 초변동원가계산의 적용 범위를 직접 설명하는 출제기관 교재 해당 본문 또는 공식 해설·정오표.",
+        "공식 ③에 대응하는 ㄱ~ㅁ 진술별 정오 근거. 국내 교재가 명시한 ㄹ의 판매량·생산량을 보존한 상태에서 확인해야 합니다."
+      ],
+      "inspection_scope": "이번 실제 외부 본문 읽기는 source_reads에 적힌 재다운로드한 기존 PDF와 지정 보존 프레임에 한정합니다. 문항·공식 키·공통 지시는 brief2.json에 포함된 24차 및 그 이전의 원본 확인기록을 재사용했으며 이번 신규 직접 원본 판독이라고 주장하지 않습니다. 새 등록·판정 변경 후보는 없습니다."
+    },
+    {
+      "question_id": "2023-09-120",
+      "author": "r25_worker2_cost",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-09-120",
+        "reason": "새 ICMAI P16 PDF191–194쪽 고객요구파악→목표가격→목표원가/설계의 순서를 직접 읽어③의 고객파악 순서 혼동을 보강했습니다. PDF64–65쪽 품질프로그램/품질원가와 PDF212–214쪽 전수명 원가를 대조하여②는 목표원가 목적과 다르고④의 네품질원가범주 핵심은 기존 국내교재와 부합합니다. 그러나① 수명단축/기술급변에 대응하여 대두된 원가시스템이 어떤 것이라는 특정배경은 새LCC본문에서도 기술발전으로제품쇠퇴/단계별비용추적으로 설명할뿐 해당도입명제를 직접 명시하지 않습니다. 중요성과 역사적 대두를 몰래 동일시하지 않고 공식④를 유지합니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_cost_028",
+        "recheck_batch_id": "recheck_cost_012",
+        "round3_batch_id": "r3_cost_010",
+        "extra_batch_id": "r7_cost_06"
+      },
+      "question_row_sha256": "7841029cbf343fde3ee065ccdcb16f04969dcdf18d69e03aa159465b9aee20fb",
+      "reason_type": "no_new_direct_evidence_after_targeted_discovery",
+      "checks": [],
+      "originals_reused_from_round24": {
+        "image": "2023-09-120.webp",
+        "image_sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+        "original_pdf": "2023-09-questions.pdf",
+        "original_pdf_sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "question_page": 48,
+        "answer_pdf": "2023-09-answers.pdf",
+        "answer_pdf_sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "answer_page": 1,
+        "official_answers_read": "원가관리회계 40번=4 (전체 문항120번)",
+        "subject_instructions_checked": true,
+        "findings": "원문 이미지와 PDF 대상쪽의 모든 진술·표·네 보기를 직접 대조하여 추출 문항과 일치함을 확인했습니다. 원가관리회계 40번=4 (전체 문항120번)를 공식 표에서 읽었습니다. 원가과목 시작33쪽에 별도 공통 지시는 없습니다. PDF1쪽의 재무과목 K-IFRS 지시 위치도 읽었으나 원가 일반을 좁은 제조 소비 개념으로 바꾸거나 특정 국내 표준유형·원가행태를 추가하는 지시로 해석하지 않습니다. 기존 subject_instructions 및 tax_law_year=null을 유지합니다."
+      },
+      "reason": "이번에 정상 TLS로 다시 확보한 국내 목표원가 PDF는 20·21차와 같은 문서이며 판매가에서 필요이익을 뺀 목표원가 및 사전기획을 설명할 뿐, 원문 ③의 잠재고객 요구를 충족하는 제품 개발 시점을 직접 확정하지 않습니다. 원문의 제품 개발을 고객요구 조사로 바꾸어 거짓이라고 하는 논리는 24차에서 이미 배제했습니다. ①의 특정 역사적 대두와 ③의 개발 국면을 해소하는 새 직접근거가 없으므로 공식 ④를 보존하고 보류합니다.",
+      "new_evidence": [
+        "이번 새 직접근거는 없습니다. 새 품질원가 검색에서 국내 강좌 첨부 2018년 9.pdf를 다시 확보했지만 SHA가 20·21차 문서와 동일함을 확인했습니다.",
+        "원장 previous_review의 「③의 고객파악 순서 혼동」 표현은 원문의 제품 개발과 고객요구 조사를 구별하지 못하는 표현입니다. 이는 이번 새로운 발견이 아니라 23·24차 기록에서 이미 교정해 보류한 논점임을 재확인했습니다."
+      ],
+      "source_reads": [
+        {
+          "ref": "R20_P1_COST_BUFS_TARGET2018",
+          "url": "https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/9.pdf",
+          "version": "KOCW 2018년 2학기 부산외국어대학교 육근효 원가회계 Target Costing 과 관리회계; 표지 ALTA Management & 부산외대 육근효",
+          "read_locator": "PDF1~7쪽 추출 텍스트: PDF2쪽 전수명원가/장기이익 목적, PDF3쪽 통합·장단기 관리, PDF5쪽 사전기획, PDF7쪽 판매가−이익=목표원가. 도표의 시각 배치는 이번 신규 검증으로 세지 않습니다.",
+          "sha256": "1e8529dfe54b1a33c65abb8df797dd867ab3365f905efd47d958586f46b731b4",
+          "private_path": "/tmp/chagok-round25/worker2/bufs2018-target09.pdf",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "이번 정상 TLS로 재다운로드했지만 SHA가 20·21차 보존 문서와 같습니다. 기존 ref를 재사용하며 새 직접근거로 세지 않습니다. PDF6쪽 재무회계/IFRS 관련 광범위한 주장은 따로 검증하지 않았으며 이 문항 근거로 채택하지 않습니다."
+        }
+      ],
+      "option_analysis": [
+        {
+          "number": 1,
+          "finding": "제품 수명 단축·기술 변화가 다른 관리기법과 관련된다는 사실만으로 품질원가계산의 대두에 관한 이 특정 진술을 배타적으로 거짓이라 확정하지 않습니다."
+        },
+        {
+          "number": 2,
+          "finding": "목표원가의 목표는 사전 원가기획과 필요이익 확보라는 이번 재독 내용과 부합합니다. 품질프로그램 전반적 유효성 평가를 목표원가의 고유 목적이라고 확정하지 않습니다."
+        },
+        {
+          "number": 3,
+          "finding": "원문은 잠재고객 요구를 충족하는 제품을 개발한다고 했습니다. 이를 요구 조사 단계로 바꾸지 않으며, 새 본문은 목표가격 후 개발인지 여부를 직접 해소하지 않습니다."
+        },
+        {
+          "number": 4,
+          "finding": "예방·평가·내부실패·외부실패 네 범주에 대한 기존 검증과 공식 ④는 보존합니다. 그 사실만으로 ①·③이 자동으로 틀렸다고 하지 않습니다."
+        }
+      ],
+      "external_evidence_needed": [
+        "목표가격 설정 전후의 제품개발 국면을 원문 표현과 직접 대응시키는 출제기관 교재 또는 공식 해설.",
+        "①의 제도명과 역사적 대두 배경을 직접 대응시키는 출제기관 본문 또는 정오표."
+      ],
+      "inspection_scope": "이번 실제 외부 본문 읽기는 source_reads에 적힌 재다운로드한 기존 PDF와 지정 보존 프레임에 한정합니다. 문항·공식 키·공통 지시는 brief2.json에 포함된 24차 및 그 이전의 원본 확인기록을 재사용했으며 이번 신규 직접 원본 판독이라고 주장하지 않습니다. 새 등록·판정 변경 후보는 없습니다."
+    },
+    {
+      "question_id": "2026-06-054",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2026-06-054",
+        "reason": "7차에서는 해당 적용연도 법25②/④·영106①1과①3나 및 NTS2026신고안내PDF392쪽 소득처분 표를 각각 읽었습니다. 표는 기업업무추진비/법인명의신용카드미사용액을 기타사외유출로 직접분류하며, 같은 안내의 원가과다·업무외지출 상여사례는 법19의 다른 사실관계입니다. 원문의 증빙미수취 실제기업업무추진비를 그 가공/사적지출로 바꾸지 않습니다. 30,000원은3만원초과가 아니고 비교대상29,500,000−한도27,000,000=2,500,000원으로 공식③ 금액은 맞지만 증빙불비500,000원 상여처분은 영106①3나의 법25 특별규칙과 충돌합니다. 귀속자불분명 명시도 제1호에 우선하는 제3호특별분류를 없애지 않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "tax_a_01",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "1aaacd29526d7bcd2653f74974d492886727ece40751a802d59fa9408c9758fc",
+      "reason": "증빙불비액 500,000원을 제외한 한도초과액은 2,500,000원으로 공식 ③의 금액은 맞습니다. 그러나 실제 기업업무추진비의 증빙불비액을 상여로 처분한 충돌이 남습니다. 귀속자가 불분명하다는 조건으로 법 제25조 부인액의 특별처분을 배제하지 않습니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "30000000-500000-27000000",
+          "expected": 2500000,
+          "label": "증빙불비 제외 후 한도초과액"
+        },
+        {
+          "expr": "500000+2500000",
+          "expected": 3000000,
+          "label": "전체 손금불산입액"
+        }
+      ],
+      "required_external_evidence": "출제기관이 증빙 미수취·귀속자 불분명인 500,000원을 가공/사적 지출이라고 정정한 문서 또는 보기 ③의 상여 표기를 바로잡은 정오표가 필요합니다. ②의 3,000,000원은 전체 부인액과 한도초과액을 구별하여 함께 확인해야 합니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "a38c9ca498042a12050d566a57120c896af799e5c52558f240b2460d168e26dc",
+        "round24_review_row_sha256": "0671ea50203075efcfd114599a9d1e658229fb5d17464c9388dadc59cb4ca8ac",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "c226e1a3c6ad65f251d741401c8df5ed91aba89244d6e867c8c832d90924db61",
+          "round23_review_row_sha256": "919d637c3a6f3f63b299d0ebe4b3c41a70610cf0cdc25bd2b728e3ad5cf115c5",
+          "round22_author_row_sha256": "b3b04765a7b29496a9634bf90387d221fc93bb965905294951faf92695b883f4",
+          "round22_review_row_sha256": "19369e7604705b0c94ccf1eec5bd087b80706036e922457d6b4fec05f42b29e7",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2025-11-054",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-11-054",
+        "reason": "7차에서는 해당 적용연도 법25②/④·영106①1과①3나 및 NTS2025신고안내PDF396쪽 소득처분 표를 각각 읽었습니다. 표는 기업업무추진비/법인명의신용카드미사용액을 기타사외유출로 직접분류하며, 같은 안내의 원가과다·업무외지출 상여사례는 법19의 다른 사실관계입니다. 원문의 증빙미수취 실제기업업무추진비를 그 가공/사적지출로 바꾸지 않습니다. 30,000원은3만원초과가 아니고 비교대상22,500,000−한도21,500,000=1,000,000원으로 공식③ 금액은 맞지만 증빙불비500,000원 상여처분은 영106①3나의 법25 특별규칙과 충돌합니다.",
+        "category": "answer_suspected",
+        "batch_id": "tax_a_02",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "2aaccf2a85bf078e87412e55004498de9deb23b7e6c747df1bc2a58d14684899",
+      "reason": "증빙불비액 500,000원을 제외한 한도초과액은 1,000,000원입니다. 금액이 맞는 공식 ③도 증빙불비액의 상여 처분이 기존 확인 법령과 충돌하므로 보류합니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "23000000-500000-21500000",
+          "expected": 1000000,
+          "label": "증빙불비 제외 후 한도초과액"
+        },
+        {
+          "expr": "500000+1000000",
+          "expected": 1500000,
+          "label": "전체 손금불산입액"
+        }
+      ],
+      "required_external_evidence": "거래처 실제 기업업무추진비 500,000원의 상여 처분을 변경하는 공식 정오표 또는 해당 비용의 법적 성질을 정정한 원문이 필요합니다. 한도초과액은 1,000,000원이고 30,000원 영수증을 증빙불비액에 더하지 않습니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "e2dc9c41930f90072f00719b173c1e7e799c3f91802aec9b2f0a06c3e4ecfaea",
+        "round24_review_row_sha256": "b069c205a644bf1436fdfce9f863a985b79a619d8413db47a8a2fdee4e29da0c",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "089f454e951df5cfac95d014f1e04edd51024ff61b873fcb26705c3c01fd08a0",
+          "round23_review_row_sha256": "47df61df1bda7f10c071ebe68b9b6f852e7afda49cec42f8d5964c71bf9edea1",
+          "round22_author_row_sha256": "d5705c5d55dfa78c30c6d91a7cc7b397c1e8d7369aeb76986328785e605998d1",
+          "round22_review_row_sha256": "549782375d60539897d99ee31f13e5c1469bae01d32a72110390746788b6eb76",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2025-01-054",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-01-054",
+        "reason": "7차에서는 해당 적용연도 법25②/④·영106①1과①3나 및 NTS2024신고안내PDF368쪽 소득처분 표를 각각 읽었습니다. 표는 기업업무추진비/법인명의신용카드미사용액을 기타사외유출로 직접분류하며, 같은 안내의 원가과다·업무외지출 상여사례는 법19의 다른 사실관계입니다. 원문의 증빙미수취 실제기업업무추진비를 그 가공/사적지출로 바꾸지 않습니다. 30,000원은3만원초과가 아니고 비교대상25,030,000−한도20,000,000=5,030,000원으로 공식③ 금액은 맞지만 증빙불비500,000원 상여처분은 영106①3나의 법25 특별규칙과 충돌합니다.",
+        "category": "answer_suspected",
+        "batch_id": "tax_a_03",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "97dcab3a8af0f69bd037587f3a7dc2d952b6170cb311d45d89a4b4f5e1151d2d",
+      "reason": "한도비교액 25,030,000원에서 20,000,000원을 차감한 5,030,000원은 맞습니다. 실제 거래처 기업업무추진비 500,000원을 상여로 처분하는 공식 ③의 기존 법령 충돌을 해소할 새 본문을 확보하지 못했습니다. 공식 정답과 기존 판정을 유지하고 신규 해설 등록을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "25530000-500000-20000000",
+          "expected": 5030000,
+          "label": "증빙불비 제외 후 한도초과액"
+        },
+        {
+          "expr": "500000+5030000",
+          "expected": 5530000,
+          "label": "전체 손금불산입액"
+        }
+      ],
+      "required_external_evidence": "실제 거래처 기업업무추진비의 증빙 미수취와 가공 지출을 구별하는 출제기관 정정이 필요합니다. 공식 ③의 5,030,000원 한도초과액과 증빙불비 500,000원 상여 처분을 따로 판단해야 합니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "45175c9ab60118b61292fba8d7d8e5a98e7e52b622ed5f5dbcc1f296c1f83d42",
+        "round24_review_row_sha256": "c4f8a9af193805765c5412a10105defe2d1d59da231ac46337840dc4963a658b",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "ff1df2d70295c74e92ca68e8fa2c363c13ef56b2854ceb75e07df99d780a453c",
+          "round23_review_row_sha256": "853d7ebaa69899b951e8071a3d3467008833282d48e7c70fe392c7cc8e9b4eb9",
+          "round22_author_row_sha256": "5ea72fd01e0bf44cc2850d3f620d9f97fd437cc4a56ceb94663b1512aacf6f86",
+          "round22_review_row_sha256": "9d8b7f5905ec86d4ee08f58cd3f099664f3e1e3e85babd90c99c36db084eeba0",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2024-07-054",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2024-07-054",
+        "reason": "추가단계에서21문항 원본이미지·공식답·과목조건을 다시 대조했습니다. 새 관보원본은 특정모금기관의2023~2028 지정과 기부금유형만 직접 확인하므로 이 문항의 증빙불비 비용의 상여와 시행령106 기타사외유출 충돌을 새로 정하지 못합니다. 원문 증빙유형과1건금액·네소득처분을 재대조했습니다. 소액영수증/법정경조금은 별도증빙부인하지 않아 증빙불비450,000원을 먼저 제외한 한도초과액은2,320,000원입니다. 산술은 공식③와 맞지만③가 증빙불비액을 상여로 처분한 점이 시행령106①3나의 법25 부인액 기타사외유출과 충돌합니다. 신규 공익법인 영수증/지원금 자료는 이를 대표자의 사적/가공 지출로 바꾸는 근거가 아닙니다. 금액검산만으로 source_checked하지 않고 공식③를 유지합니다.",
+        "category": "answer_suspected",
+        "batch_id": "tax_a_03",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "229023cfc6f6b2e6eb11ef3fc3816a352e7ab306560a1e8251f94175d952296f",
+      "reason": "증빙불비 450,000원을 먼저 제외하면 한도초과액은 2,320,000원입니다. 공식 ③의 금액 일치만으로 상여 처분의 충돌을 없애지 않습니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "22770000-450000-20000000",
+          "expected": 2320000,
+          "label": "증빙불비 제외 후 한도초과액"
+        },
+        {
+          "expr": "450000+2320000",
+          "expected": 2770000,
+          "label": "전체 손금불산입액"
+        },
+        {
+          "expr": "2770000-2750000",
+          "expected": 20000,
+          "label": "전체 부인액과 2,750,000원의 차이"
+        }
+      ],
+      "required_external_evidence": "450,000원의 실제 지출 성질 또는 보기 ③의 상여 처분을 바로잡는 공식 정정이 필요합니다. 소액 영수증 20,000원을 배제해 답을 맞출 수 없습니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "bb28cb38a8ce5aefe352a28404a85b23552174d3ebaeec555e6a948910540cd1",
+        "round24_review_row_sha256": "4a35e1044c41a6e7daad38276c522d113ca7d6c1f209a1f6da2cefa0acc18c27",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "390250b34e2c74c1a38b129c9d2dc76daf89d758d126c535c7e0010e0d5f772b",
+          "round23_review_row_sha256": "707ccb38dd08095bac9234be7a532f4d635fecbf30e8a1f4758a92b6de027b68",
+          "round22_author_row_sha256": "16e2dfee2e3ee23d5c6e66dbb5619513a6557a8eb67119c1f4cdd882190d7379",
+          "round22_review_row_sha256": "996a13359548879feb3f8d3acd9655ef9c54f133880c47840014b8d36e4a3275",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2023-11-060",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-11-060",
+        "category": "answer_suspected",
+        "reason": "달력·기본법5추론에더해 NTS2024신고안내PDF118(책96)쪽에서‘2023.12월종료법인의경우2024.4.1.’이라고법정신고기한을직접확인했습니다. 원문은성실확인/신고기한연장신청을배제하지만휴일법정특례를배제하지않습니다. 2024-03-31일요일로실제4월1일이고보기에없으므로공식②의3월31일을실제기한으로확정할수없습니다. 이당해신고공식안내는미확인예외를발명한근거가아니라해당날짜의직접대조입니다.",
+        "batch_id": "tax_a_04",
+        "recheck_batch_id": "recheck_tax_003",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "4677d565d58e9948bee6186494915aa16be390342051efaab59e17dd2ccda15d",
+      "reason": "기존 직접 확인된 국세청 신고안내 및 휴일 특례에 따르면 실제 기한은 2024-04-01입니다. 공식 ②의 2024-03-31을 마지막 신고일로 확정할 새 출제기관 정정이나 휴일 배제 지시를 확보하지 못했습니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 징세01254-998 회신의 신고·신청·기타 서류제출에 대한 공휴일 다음날 규칙을 읽었습니다. 신고기한 연장신청을 하지 않았다는 문장이 법정 휴일특례를 배제한다는 근거는 제공하지 않습니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+          "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+          "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000131030.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000131030"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [],
+      "required_external_evidence": "정답 또는 보기에 실제 신고기한 2024-04-01을 반영한 출제기관 정정, 혹은 원본에 적용되는 명시적인 휴일 특례 제외 지시가 필요합니다. 신고기한 연장신청을 하지 않았다는 문장은 법정 휴일 특례를 제외하지 않습니다.",
+      "research_queries": [
+        {
+          "query": "법정신고기한 공휴일",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-05.json",
+          "sha256": "3438e8f034c9f5f4760a77a9f72a04992f73f7098172962df04fa45891a275f4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "4885bab2629aee55d906e3c78a8044db036a3a351edb84cf6faeb84e1d24a3f0",
+        "round24_review_row_sha256": "db1fd1a001c1e8c295a7d20f75333bce3cc9d1f9a41ff27d5af0ce5d8dcb4a76",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "ae92d3e800ad0901461ca314ea372875ca1c88aa4c34e1f5571256d68a561375",
+          "round23_review_row_sha256": "f7ba2030ef4a29bdfb89f86fb7b952a0e7bcfd18a142a955429cc058b27ca0f0",
+          "round22_author_row_sha256": "7ed1629b96fd7376be50fa40df11436dba3ac0b1813aed3b8124e70bde26dd67",
+          "round22_review_row_sha256": "d4de884807572ced86de7f989394122433a9b5ec70359346f3cebfecffcf0ed7",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2023-05-059",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-05-059",
+        "category": "answer_suspected",
+        "reason": "추가실제NTS2024PDF376쪽의이월결손공제그림은당해사업연도2023.1.1~12.31에2013.1.1부터공제대상으로표시합니다. 법17652부칙4도15년연장은2020-01-01이후발생분에만적용하여이전2013분의10년규칙을유지합니다. 법2023제13/55와이도표를대조하면세무결손6m+4m+5m=15m공제,과표215m·세액20.85m(②)입니다. 공식④21.99m은2013분6m까지제외한과표221m으로계산되지만그제외의새조건은없습니다. 후속안내를과거법개정으로소급하지않고같은기간규칙의명시적도표만보조확인했습니다.",
+        "batch_id": "tax_a_05",
+        "recheck_batch_id": "recheck_tax_003",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "b5fc8c74f799294e72f438fd04cb39c61d9dc088432454404bce0d2bfa567efa",
+      "reason": "기존 확인 판본의 적용례 및 이월결손금 기간 판단을 유지합니다. 2013년분을 포함하여 세무상 결손금 15,000,000원을 공제하면 과세표준 215,000,000원, 산출세액 20,850,000원(②)입니다. 공식 ④를 위해 2013년분을 제외할 새로운 사실이나 정정 근거는 없습니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 서면법규과-1341은 사업연도 개시일을 기준으로 공제기간의 경계를 판정합니다. 5년 규정 당시의 2006-09-30 시작 사업연도와 2011-10-01 시작 사업연도 사례여서, 2023-01-01 개시 문항의 2013년 결손금을 제외할 근거가 아닙니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000152658",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000152658",
+          "version": "서면법규과-1341 · 회신일 2013-12-10 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문; 제7기~제12기 개시일 표; 구 법인세법 제13조제1항의 개시일 전 5년 문구; 관련 국세기본법 제4조·민법 제157조·제160조",
+          "sha256": "c5ff1133890c3dd52aa3036a052919aab804e3c3203bf89cc3f37ed337fcf4fe",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000152658.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2013년 회신은 2009년 이전 발생 결손금의 구법 5년 규정과 사업연도 개시일 경계를 다룹니다. 이 구법 5년을 2013년 발생 결손금에 적용하지 않으며, 2023년 문항에서 2013년분 6,000,000원을 배제할 사실을 제공하지 않습니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000152658"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [
+        {
+          "expr": "6000000+4000000+5000000",
+          "expected": 15000000,
+          "label": "공제 대상 세무상 이월결손금 합계"
+        },
+        {
+          "expr": "230000000-15000000",
+          "expected": 215000000,
+          "label": "이월결손금 공제 후 과세표준"
+        },
+        {
+          "expr": "200000000*0.09+15000000*0.19",
+          "expected": 20850000,
+          "label": "과세표준에 따른 산출세액"
+        }
+      ],
+      "required_external_evidence": "2013년 세무상 이월결손금 6,000,000원이 당기 공제 대상에서 제외되어야 하는 사실을 명시한 공식 원문 정정 또는 정답 ②로의 수정 확정답안이 필요합니다.",
+      "research_queries": [
+        {
+          "query": "이월결손금 2009 2013",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-04.json",
+          "sha256": "1186c272f37dd166a3ef582daab4b5f7730194b255d7017fd85109e022723711",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "86b95474aebdf1c1dbc1df47c8f242ceec63b6d3c2cf1c5c3e8ec9a20848c1cc",
+        "round24_review_row_sha256": "f522897fb744d1d5d9f179f69e450badd4f54614203c8eecde8bd4be32c3578d",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "7c0a47eb7acfbff6906604d0505544aa7231539a49752ab4b197d6e124afca27",
+          "round23_review_row_sha256": "1b37ca6ac720c5bc6ba9f768ceb7ea7a34de91f263397c185de0339525a94c42",
+          "round22_author_row_sha256": "98916c9a8984edbfdf762a8ebdff69fd659e1057a1dfd374629c44d5c1d3b2e0",
+          "round22_review_row_sha256": "871f8d06ff66d10e8cfcaf16a11ceeec33204b82bb9168becdee3d45fc00d1b8",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2022-11-049",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-11-049",
+        "category": "answer_suspected",
+        "reason": "2022NTS신고안내PDF26의 원가과다/사적지출상여와355의 접대비부인기타사외유출 표를 직접나누어대조했습니다. ①실제접대비증빙없음은 법25/영106①3나이고 가공경비는법19/106①1이므로 공식답②에맞추어①을가공경비로변경할수없습니다. ②직원이업무수행중교통범칙금도제재손금불산입과업무외개인귀속처분의경계를법21/106으로구별해야합니다. ③비업무용자산수선비와④업무미사용차량비의통상처분을확인해도①충돌은남아공식②를보존합니다.",
+        "batch_id": "tax_a_05",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "ecac68bc565f12510ec3212ed47a24a79f18fda0dd1c47e009f05598b38e6ee8",
+      "reason": "보기 ①이 실제 접대비라면 법 제25조의 증빙불비 처분과 상여 표기가 충돌한다는 기존 판정을 유지합니다. 24차에 확인한 조합장 사적 판공비 사례를 이 문항의 가공 지출 증거로 바꾸지 않습니다. 보기 ②도 영업사원이라는 직책만으로 범칙금의 업무 관련성을 확정하지 않습니다. 새 직접 근거를 확보하지 못해 신규 해설과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [],
+      "required_external_evidence": "보기 ①의 접대비가 가공/사적 지출이라는 공식 정정 또는 적법한 소득처분으로 고친 원문이 필요합니다. 보기 ②는 영업사원이라는 직책만으로 범칙금의 업무 관련성까지 새로 가정할 수 없습니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "732dcf5567286a0418c7f3510cb5026e0023dd08ff999030e1046dcd02824302",
+        "round24_review_row_sha256": "40f8f0a341605561cb4bae6cc1000681fe5fac4065981a81146465546f5a93bf",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "61a26daa9f97e1bf924ccabba55a86cd5d3833bd67e2d2d803dc9b3674060506",
+          "round23_review_row_sha256": "c53b914e8e90eddadf2b1381590d7469af85ad5e8cef776062d0600637bd11f8",
+          "round22_author_row_sha256": "1c6ad7c32a9da283876bbbddbc56376a01852bc3c0b566d4c210707906f262b2",
+          "round22_review_row_sha256": "bf761082e74f7b33c0047ee3a533a2bf9ddcc97ebfea7f7220d044f5f7e06344",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2022-01-055",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-01-055",
+        "reason": "추가단계에서21문항 원본이미지·공식답·과목조건을 다시 대조했습니다. 새 관보원본은 특정모금기관의2023~2028 지정과 기부금유형만 직접 확인하므로 이 문항의 증빙불비 비용의 상여와 시행령106 기타사외유출 충돌을 새로 정하지 못합니다. 원문 증빙유형과1건금액·네소득처분을 재대조했습니다. 소액영수증/법정경조금은 별도증빙부인하지 않아 증빙불비500,000원을 먼저 제외한 한도초과액은2,500,000원입니다. 산술은 공식③와 맞지만③가 증빙불비액을 상여로 처분한 점이 시행령106①3나의 법25 부인액 기타사외유출과 충돌합니다. 신규 공익법인 영수증/지원금 자료는 이를 대표자의 사적/가공 지출로 바꾸는 근거가 아닙니다. 금액검산만으로 source_checked하지 않고 공식③를 유지합니다.",
+        "category": "answer_suspected",
+        "batch_id": "tax_a_06",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "ec86ec89e7d8ed0d292d7e88931651ab236bbcbf0a5f6ec6abe508badd9cb419",
+      "reason": "소액 영수증과 경조금을 별도 증빙불비액에 더하지 않으면 500,000원의 증빙불비와 2,500,000원의 한도초과가 계산됩니다. 공식 ③의 상여 처분을 정당화할 새 근거가 없어 법령 충돌 판정을 유지합니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "no_new_direct_resolution",
+        "findings": "24차와 다른 검색문구인 접대비 증빙불비 소득처분, 접대비 현금 기타사외유출 및 정확 문구 세 가지를 탐색했습니다. 실제 거래처 접대비의 증빙 미수취를 가공·사적 지출로 바꾸거나 법 제25조에 관한 특별 소득처분을 배제하는 새 회신 본문은 이번 조사에서 확보하지 못했습니다. 검색 무결과는 해당 회신이나 정오표의 부존재를 뜻하지 않습니다.",
+        "newly_read_body_count": 0,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "23000000-500000-20000000",
+          "expected": 2500000,
+          "label": "증빙불비 제외 후 한도초과액"
+        },
+        {
+          "expr": "500000+2500000",
+          "expected": 3000000,
+          "label": "전체 손금불산입액"
+        }
+      ],
+      "required_external_evidence": "증빙 없는 500,000원의 실제 지출 성질 또는 상여 표시를 정정한 공식 자료가 필요합니다. 건당 20,000원 영수증과 경조금 200,000원은 별도 증빙불비액으로 더하지 않습니다.",
+      "research_queries": [
+        {
+          "query": "접대비 증빙불비 소득처분",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-00.json",
+          "sha256": "6f1196cece4dfa03317991e188e26345d64e8630bf87819b073b912138646df1",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "접대비 현금 기타사외유출",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-01.json",
+          "sha256": "522685361f43f50f16d1a04e8a0d1d7f9e93a46cb7e57f8d890fe320aab833dd",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"증빙불비 접대비\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-00.json",
+          "sha256": "8c5f1ef69fe08939a60fb0d9c851fdc6d09ca221bffb49108b854d7f7740c49a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"실지지출\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-01.json",
+          "sha256": "e1d158292236e9fdf4e0de8026a5777b5438ba81aca477ee6bb593be6b6625e2",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"접대비\" \"지출증빙서류\" \"처분\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-02.json",
+          "sha256": "c30d793689fb1969674f1b5f0539ba4629a7ec0408afc37eadb1cfcb57c517d4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "83594bc336761d655171a2edd0e2b28ba4df2b29227a7f5c8eea9fe88de27e4f",
+        "round24_review_row_sha256": "078f8bd33346d581cc0e9507cbb4fe07d258e1f812cfba20dd89da0f7bdcb5aa",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "466e24f3b94a98ade013aa1fe195965138a3dc2f81c7cdb00ee5e51fd88ef055",
+          "round23_review_row_sha256": "337af3892307fd50ea282afdfdcec397b8be12dacfbd4fec183313adf6face7d",
+          "round22_author_row_sha256": "fd0a7c50c437fa2151e6c783661df5734bc1b7ac4fc6b76345e84f08b79d207a",
+          "round22_review_row_sha256": "db746f2ed8d717e9369c8b7f17f3363fec08604918bf3a644abbeaccc180370c",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2024-06-045",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2024-06-045",
+        "category": "answer_suspected",
+        "reason": "NTS2024신고안내PDF118쪽은2023.12월종료법인 신고기한을2024.4.1.로 직접표기하므로3월31일주장을 휴일특례전 기한이라고 보정할 수 없습니다. 사업연도변경신고에도 기본법5①의 일요일특례가 실제적용되어2024-04-01까지입니다.④변경전 세무서가아니라변경후세무서 신고라는 법11①오류와 별개로②절대날짜도남습니다. 과목지시는2024휴일규정을배제하지않았으며 두보기를한오류로강제하지않습니다.",
+        "batch_id": "remaining_tax_001",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "07780ca8b5506391f60a98d927428acd42d670c3fb11f8b91a5c6484facd4e42",
+      "reason": "변경 후 관할 세무서에 신고해야 하므로 공식 ④의 오류는 유지됩니다. 다만 보기 ②의 절대 날짜 2024-03-31도 일요일 특례를 반영하지 않아 추가 오답 후보가 남습니다. 새 법정 특례 배제 근거는 없습니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "multiple_candidates",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 징세01254-998은 신청·서류제출 기한에도 공휴일 다음날 규칙을 명시합니다. 2024-03-31을 최종 신고기한으로 인정하는 특례나 출제기관의 휴일 배제 지시는 확보하지 못했습니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+          "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+          "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000131030.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000131030"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [],
+      "required_external_evidence": "보기 ②의 2024-03-31을 2024-04-01로 고친 원문, 명시적 휴일 배제 지시 또는 복수정답 인정 자료가 필요합니다. 보기 ④의 변경 전/후 관할 세무서 오류와는 별개입니다.",
+      "research_queries": [
+        {
+          "query": "법정신고기한 공휴일",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-05.json",
+          "sha256": "3438e8f034c9f5f4760a77a9f72a04992f73f7098172962df04fa45891a275f4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "사업연도변경신고 일요일",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-06.json",
+          "sha256": "7cff447b2670f10270dd0c11c12f0a7af258fce8077a6b21ddcf49c0a7ea8d4f",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "4aeae6746333a76823502228807eda26d0d6aa14e9732e4ba32962ef3b50dd6c",
+        "round24_review_row_sha256": "73bc309ac9dd6748fa00e29bb4d974180064c8db62d0e82bfaa041c7d8255b25",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "0081d358d6ca03a4afdb85f1c8df349d00baf22852170d34cf805f99a5cab259",
+          "round23_review_row_sha256": "6b19640a51acc63412c9a6ba07deae1d70c2b1b8451d5fdf3ef4c43c27e4ddf3",
+          "round22_author_row_sha256": "facb86ed39b77a988f08337af33dc872a352408d00e11ae7c0f028c49be2ac0a",
+          "round22_review_row_sha256": "172fec8d6ec4bf5dd89c5320fc9dd03eecf88a29c1914c73244f3c162c7471c3",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2026-09-049",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2026-09-049",
+        "category": "answer_suspected",
+        "reason": "추가단계에서21문항 원본이미지·공식답·과목조건을 다시 대조했습니다. 새 관보원본은 특정모금기관의2023~2028 지정과 기부금유형만 직접 확인하므로 이 문항의 동일임원의 지급단위/규정 적용을 새로 정하지 못합니다. 원문 표를 새로 시각확인하면 본사와 건설본부 모두 임원 갑이고 지급규정40%가 같습니다. 합산급여250,000,000원/상여120,000,000원에 적용하면 초과20,000,000원이며 건설본부만 별도적용하면30,000,000원입니다. 두 방식의 계산을 독립검산했습니다. 신규 공익법인 인건비/지원금 작성자료에는 동일임원의 이 지급규정을 부서별 별도한도로 나누어 적용한다는 근거가 없습니다. 시행령43의 기준초과부인에 따라 어느 지급단위를 적용하는지가 남아 있으며 다른임원이나 부서별새규정을 가정하지 않고 공식③를 보존합니다.",
+        "batch_id": "remaining_tax_003",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "6923695e3cf3f2eb5ca3cac99bdae216dede17017301396eb085ead80d2fe9f8",
+      "reason": "원문은 두 부서 모두 동일한 임원 갑입니다. 합산 급여 250,000,000원에 40%를 적용하면 상여 초과액은 20,000,000원이며 건설본부만 따로 계산하면 30,000,000원입니다. 새 부서별 상여 회신은 손금 귀속시기만 다루므로 공식 ③에 맞춰 별도 한도를 만드는 근거가 되지 않습니다. 공식 정답과 기존 문구 모호 판정을 유지하고 신규 해설 등록을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "ambiguous_wording",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 법인46012-1168을 회신과 질의 전체에서 대조했습니다. 부서별 영업실적에 따라 상여를 다르게 정하는 사규는 그 회신의 명시적 사실이며 손금 귀속시기만 판정합니다. 현재 원문의 동일 임원 갑에게 서로 다른 한도를 적용할 근거로 옮길 수 없습니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000001068",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000001068",
+          "version": "법인46012-1168 · 회신일 1999-03-30 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문과 질의 전체; 정기상여 800%·부서별 차등 0~400% 및 다음 사업연도 4월 지급, 지급의무 확정일 판단",
+          "sha256": "52be36b092f4682454b06c19c6db879252fcf2973f79e23ae96d19fb416cc360",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000001068.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "1999년 회신은 부서별 영업실적에 따라 지급액을 결정하는 사규와 손금 귀속시기 사례입니다. 동일한 임원의 본사·건설본부 상여에 별도 손금 한도를 적용하는 회신이 아니며 원문에 없는 부서별 차등지급규정을 추가하지 않습니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000001068"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [
+        {
+          "expr": "(50000000+70000000)-(150000000+100000000)*0.4",
+          "expected": 20000000,
+          "label": "같은 임원의 상여를 합산한 초과액"
+        },
+        {
+          "expr": "70000000-100000000*0.4",
+          "expected": 30000000,
+          "label": "건설본부 상여만 따로 계산한 초과액"
+        }
+      ],
+      "required_external_evidence": "동일한 임원 갑에게 본사와 건설본부의 지급규정을 별도로 적용해야 하는 구체 규정 또는 표의 임원 이름 정정이 필요합니다. 하나의 40% 규정과 같은 임원이라는 현재 원문만으로 부서별 독립 한도를 가정하지 않습니다.",
+      "research_queries": [
+        {
+          "query": "임원 상여금 본점 지점",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-02.json",
+          "sha256": "7d916627e72037367ec019d3a9f9d3b4d4444c64b425b1f37ce58892080f81be",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "임원 상여금 건설중인자산",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-03.json",
+          "sha256": "930732ff553508b0c81fb78502d9b3e6ecab0678a8cb0d4087c3c97bfb81e303",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"상여금\" \"부서별\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-03.json",
+          "sha256": "5811c03b3588104f82038494c4b28bb4ba0509e72e7319156c8dd154f79fa82e",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        },
+        {
+          "query": "\"임원\" \"겸직\" \"급여지급기준\"",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-targeted-04.json",
+          "sha256": "d5f77b315f780a5d161b448435f820b9c55a94fea51e6f7c0377fd5964993b46",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "151726dde1da1b7d91e79e5257bf6e3b2cd37296dc276bc680024ea8e3d50ace",
+        "round24_review_row_sha256": "2393cf6673b76e9374c0799756d9b804a08b0063632a512e529cbea20cec17d7",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "bc1fcb5be376715ae3c5a652ecb40312b3685f404e0d80cf5e8d034ee392763c",
+          "round23_review_row_sha256": "a95988cd9e98b5250aefbe8545b7f9cb3045f3a4782731ef00c39ef4d6eaea0a",
+          "round22_author_row_sha256": "f75f13a81274d3edb66c9bf613066e7145a27b9b9f2e17e4e477145b8ecb70b9",
+          "round22_review_row_sha256": "ee2f30f6665b575151169e9399e9664935355c47c78cf0cdb983e38d5e6a8f98",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2023-09-080",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-09-080",
+        "reason": "새KOCW8PDF3은경정조사거래확인에따라매입합계표미제출분을공제하는경우불성실가산세가적용됨을직접교육합니다. 해당2023법60⑦2도.5%를직접명시합니다. 공식③전자발급의무자종이발급은60②2가1%로오류이나②매입합계표에는가산세전혀없음도다른오류입니다.2015강좌10의구세율을2023으로소급하지않고역사법정율을사용했습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_tax_042",
+        "recheck_batch_id": "recheck_tax_007",
+        "round3_batch_id": "r3_tax_002",
+        "extra_batch_id": "r7_tax_04"
+      },
+      "question_row_sha256": "6c5b5c8ce95b0b4f9b4c3aab447ccfdffd74b5c2dfac0c4961daa4aff4531912",
+      "reason": "공식 ③의 전자 발급 의무자가 종이 세금계산서를 발급한 경우와 별개로 보기 ②의 매입합계표 미제출 가산세가 전혀 없다는 설명에도 기존 오류가 남습니다. 새 회신은 부가가치세 가산세의 적용을 전제로 소득세 가산세를 중복 부과하지 않는 내용입니다. 이를 부가가치세 가산세의 면제로 바꾸지 않으며 기존 복수 후보 판정과 공식 정답을 유지합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "multiple_candidates",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 서면법규과-494는 매입합계표 미제출에 따른 부가가치세 가산세를 전제로 소득세 가산세의 중복 적용을 배제합니다. 가산세가 없다는 검색요지를 부가가치세 자체의 면제로 해석할 수 없으며, 2023년 문항 보기 ②를 무조건 옳게 만들지 않습니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000150909",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000150909",
+          "version": "서면법규과-494 · 회신일 2013-04-26 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문; 사실관계·질의요지; 소득세법 제81조제3항 및 당시 부가가치세법 제22조제5항·시행령 제60조제1항제2호; 인용 심사부가99-1030의 공제받은 매입세액 범위",
+          "sha256": "14bcba03c670a2a0b924aac4f830a22fbe2fafcac6f35bfdb435316c660126bd",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000150909.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2013년 회신은 부가가치세법상 매입합계표 가산세가 적용될 때 소득세법 보고불성실가산세를 중복 적용하지 않는 사례입니다. 부가가치세 가산세 자체가 없다는 회신이 아니며 구법 조문·세율을 2023년에 대입하지 않습니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000150909"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [],
+      "required_external_evidence": "보기 ②의 가산세가 없다는 표현에 적용 범위를 제한하거나 복수정답을 인정하는 공식 정정이 필요합니다. 경정기관 확인에 따라 매입세액을 공제하는 경우를 무조건 제외할 근거는 원문에 없습니다.",
+      "research_queries": [
+        {
+          "query": "매입처별세금계산서합계표 미제출 공제받지",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-08.json",
+          "sha256": "4065f32b124f29f93876cf02a329fbc64abc0b76db85006b084f5e9b09b68fed",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "7bfcdfeda843ca161bef8008d2c7190b9ab201770e12bb602128ab751a7ab784",
+        "round24_review_row_sha256": "8d604d0cc9ecedc9bc390fc5a8f9b4e72ffd0fceee3a1ef39f9addeff7f9ecdc",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "9a0f576b0320559c9adf0d9a57803dae22c496e38b067525897d92b5b1bcf3f4",
+          "round23_review_row_sha256": "47e06025111e1bec7af6532cc3ef9e2040b24ea5ddbfd8ea12d1a3058832f2fc",
+          "round22_author_row_sha256": "74bbf70232dfd878700c4aa286f000b2ea7355286a84bdcfde1b128107902fd0",
+          "round22_review_row_sha256": "bc06126b765280edaa97568eae603a12d3d4025e3fd198d46a6843db23f7da90",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2025-09-080",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-09-080",
+        "reason": "7차는2012매출/2025대손이라는원본연도를다시확인하고2025영87②10년및부칙30397(2020.2.11)제5조를직접읽었습니다. 해당적용례는2020시행과세기간대손확정분에개정10년을적용할뿐2012공급의10년만료를연장하지않습니다. 따라서2012.6공급은2022.7.25까지대손확정이어야하여2025파산공제는0입니다.600m/330m÷1.1=300m/내국신용장400m은공식②앞3칸과일치하지만−8m은시간요건을빠뜨린금액입니다. 정확한네칸은600m/300m/400m/0으로보기에없으며원매출연도를고치지않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_tax_041",
+        "recheck_batch_id": "recheck_tax_007",
+        "round3_batch_id": "r3_tax_002",
+        "extra_batch_id": "r7_tax_04"
+      },
+      "question_row_sha256": "ec76ecd6a9eac67dbc8dbe24febd5cf75db8444221c4223dea29887acd7409de",
+      "reason": "앞의 세 과세표준 600,000,000원·300,000,000원·400,000,000원은 맞지만 2012년 6월 공급에 대한 2025년 파산은 기존 확인한 공제기간 밖입니다. 새 2020년 회신은 파산절차참가로 소멸시효가 중단되어도 공급일 기준 10년 기한을 넘겨 대손이 확정되면 공제할 수 없다고 명시합니다. 원문의 공급연도 정정이나 기간 특례를 확보하지 못해 공식 정답과 기존 판정을 유지하고 해설 등록을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "official_conflict",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 기준-2020-법령해석부가-0280은 공급일부터 10년이 지난 과세기간의 확정신고기한 경과 후 대손 확정 시 공제할 수 없다고 직접 회신하고 2020년 개정 적용례도 인용합니다. 파산절차참가의 시효중단이 있어도 결론이 같으므로 이전 구법 회신보다 직접적인 보조 근거입니다. 다만 문항을 해결할 새 기간 특례나 2012년 공급연도 정정은 아닙니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000464813",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000464813",
+          "version": "기준-2020-법령해석부가-0280 · 회신일 2020-11-25 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문; 2008~2009년 공급·2011년 파산·2020년 환가종결 사실관계; 시행령 제87조제2항 및 대통령령 제30397호 부칙 제5조; 파산절차참가의 시효중단 인용",
+          "sha256": "ba3baaec86e26dc8661f1817a1e82d30ced68b13286e1800507abc90c706edab",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000464813.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "2020-11-25 회신은 2008~2009년 공급·2011년 파산선고·2020년 배당가능성 소멸 사례에 대하여 10년 기한과 2020년 적용례를 직접 다룹니다. 2025년 문항의 공급 연도나 파산 사실을 정정한 자료가 아닙니다. 기존 기간 충돌을 보조 확인하며 원문에 없는 소송·시효중단을 가정하지 않습니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000464813"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [
+        {
+          "expr": "330000000/1.1",
+          "expected": 300000000,
+          "label": "부가가치세 포함 신용카드 매출의 과세표준"
+        },
+        {
+          "expr": "88000000*10/110",
+          "expected": 8000000,
+          "label": "기간 요건을 제외한 대손세액 산식"
+        }
+      ],
+      "required_external_evidence": "2012년 공급 연도의 오기 정정 또는 대손세액 공제의 기간 특례를 직접 적용하는 공식 자료가 필요합니다. 2025년 파산 사실만으로 이미 지난 공급일 기준 한도를 새로 시작하지 않습니다.",
+      "research_queries": [
+        {
+          "query": "대손세액 10년 경과",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-07.json",
+          "sha256": "d783d0ba688f929263e4cbb451365e9d413fcd132c642d108410715293dab68a",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "bdd01fa6a4723017e302d0649a8c26deed5b46fe9462ca0f31f4a3ad6be98e61",
+        "round24_review_row_sha256": "384d60379dade7e8ac7538b8ad2b22592c7202df417329102e4c4b6f194bc3c3",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "5e44609ae10fdb4c8aa3ef7b8d7c4799786b145739e20238f12256d7eb8659a1",
+          "round23_review_row_sha256": "ca05befa60b1bc0a00f20f030106d59ce289e0a401b2ff675bf0b0d745d7decc",
+          "round22_author_row_sha256": "9f904cc4d4ebab672301098428b75f211cf6b34bdc6a66208ebd5e8a8540d0cf",
+          "round22_review_row_sha256": "63f509c45993bda6d0d57e201e18c67079534f948acfb323d83e531c57c583aa",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2025-06-080",
+      "author": "r25_worker3_tax_keys",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-06-080",
+        "reason": "NTS2024PDF18의폐업다음달25일일반설명을실제읽고원본공통지시의휴일배제유무와기본법5①을별도로대조했습니다.2025-05-25는일요일로실제기한2025-05-26이며원문④는휴일특례전날짜를최종기한으로쓰고있습니다. 일반환급30/조기15에비추어공식1의기한오류는유지되나④도맞지않습니다. NTS일반예시의202＊를특정2024/25달력의휴일무시명령으로바꾸지않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_tax_041",
+        "recheck_batch_id": "recheck_tax_007",
+        "round3_batch_id": "r3_tax_002",
+        "extra_batch_id": "r7_tax_04"
+      },
+      "question_row_sha256": "a9080ecabaf9105df3ba667ee8a7bb90fbb55b205fc51ddd9b0725359397bd48",
+      "reason": "일반환급의 법정 기간과 다른 20일이라는 보기 ① 외에도, 보기 ④의 2025-05-25는 일요일이라 실제 기한 2025-05-26과 다릅니다. 특정 날짜에 대한 새 휴일 배제 지시나 수정 답안을 확보하지 못해 복수 후보를 유지합니다. 공식 정답은 유지하고 신규 해설 등록과 판정 변경을 보류합니다.",
+      "reason_type": "existing_adjudication_not_resolved",
+      "current_verdict": "multiple_candidates",
+      "new_evidence": {
+        "result": "supplementary_primary_case_no_resolution",
+        "findings": "새 징세01254-998은 공휴일 다음날 기한을 설명하지만 2025-05-25라는 특정 날짜의 공식 정정은 아닙니다. 일반환급 20일의 오류와 별개인 보기 ④의 일요일 기한 문제를 해소하지 못했습니다.",
+        "newly_read_body_count": 1,
+        "publisher_correction_obtained": false
+      },
+      "source_reads": [
+        {
+          "ref": "R25_TAX_KEYS_NTS_010000000000131030",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000131030",
+          "version": "징세01254-998 · 회신일 1990-03-07 · 국세청 상세 API 응답 UTC 2026-10-14 (사용자 날짜 2026-10-15)",
+          "read_locator": "회신 전문 및 질의 요약; 공휴일로 연장된 신고·납부기한과 분납 기산점 질의",
+          "sha256": "7313c45d231bc1f1279deade7d3d17123d77770376f54808ddc5ca2142417128",
+          "private_path": "/tmp/chagok-round25/worker3/case-010000000000131030.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "1990년 회신은 공휴일에 해당하는 신고·신청·서류제출·납부 기한의 일반 규칙을 설명합니다. 2024~2025년 특정 달력이나 시험 지시를 새로 확인한 자료가 아니므로 당시 법령과 원본 확인은 기존 기록을 재사용합니다.",
+          "retrieval": {
+            "url": "https://taxlaw.nts.go.kr/action.do",
+            "action_id": "ASIQTB002PR01",
+            "params": {
+              "dcmDVO": {
+                "ntstDcmId": "010000000000131030"
+              }
+            },
+            "http_status": 200,
+            "normal_tls_verification": true
+          }
+        }
+      ],
+      "checks": [],
+      "required_external_evidence": "보기 ④의 2025-05-25를 2025-05-26으로 고친 원문, 명시적 휴일 배제 지시 또는 복수정답 인정 자료가 필요합니다. 일반환급 20일이 잘못이라는 사실이 보기 ④의 달력 오류를 없애지 않습니다.",
+      "research_queries": [
+        {
+          "query": "법정신고기한 공휴일",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "actionId": "ASEISA001MR01",
+          "http_status": 200,
+          "private_path": "/tmp/chagok-round25/worker3/search-05.json",
+          "sha256": "3438e8f034c9f5f4760a77a9f72a04992f73f7098172962df04fa45891a275f4",
+          "normal_tls_verification": true,
+          "evidentiary_status": "탐색 응답; 상세 회신 본문과 구별하며 부존재의 증거로 사용하지 않습니다."
+        }
+      ],
+      "inspection_scope": "25차 배정 brief의 문항 전사·보기·공식 키와 24차 작성·독립 검수 기록을 대조했습니다. 원문 이미지·PDF 문항면·공통지시·답안면은 기존 21차 확인 기록을 재사용하며 이번 신규 판독으로 계상하지 않습니다. 실제 신규 읽기는 source_reads의 회신 및 지정 범위와 research_queries의 탐색 응답입니다. 기존 법령 원문을 새로 읽었다고 주장하지 않으며 checks는 보존 진단식의 산술 검산입니다.",
+      "prior_inspection_reused": {
+        "source_container": "/tmp/chagok-round25/brief3.json",
+        "source_container_sha256": "e3302de8096834e6b12d9d224afb76c90fa21dde7626fa5366210662cb01771a",
+        "round24_author_row_sha256": "eccfa7952138d5c35df236edeac588f913c04d186f8e830b122548d52b3a8840",
+        "round24_review_row_sha256": "c5c2b72fbf013473b170c15ad37d81411d32fc53e2c9c3b941adf02108d53016",
+        "original_review_round": 21,
+        "current_round_original_view": false,
+        "current_round_original_download": false,
+        "round24_original_reuse": {
+          "source_container": "/tmp/chagok-round24/brief3.json",
+          "source_container_sha256": "c2589bd606f80c7de9e808a36d64fba0d9ab12b57833eca560c86dc41933358a",
+          "round23_author_row_sha256": "abeba01ac7accfba3d618bb3271b5c90ef1eeaa940cb5717ddaf78600d7c7649",
+          "round23_review_row_sha256": "44ea409417885ff0e5ad751924252d6586d9b552b807cf0fadec9b3aacc08a11",
+          "round22_author_row_sha256": "08d0e0d62bf46aa75e9b36b1a98846b5363f1f69371f46c149eec94acebf09dc",
+          "round22_review_row_sha256": "bbe0259b843311c91136f05f801741924f80b119739715331d436b219f4e7063",
+          "original_review_round": 21,
+          "current_round_original_view": false,
+          "reuse_limit": "원문은 앞선 원본 판독 기록의 재사용입니다. 이번 신규 원문 검증으로 계상하지 않습니다."
+        },
+        "reuse_limit": "24차에 보존한 21차 원본 확인의 재사용입니다. 새 등록이나 판정 변경을 제안하지 않아 원문 면을 새로 열지 않았습니다."
+      },
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2024-05-100",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2024-05-100",
+        "reason": "새 한양9 p6 직접 이익차이공식으로 재고액/수량 구분을 재검산했습니다. 단위 고정MO10원을 같게 두고 기초100개×(변동100+고정10)=11,000원, 당기200개×(변동10+고정10), FIFO100개 판매 후 기말200개=4,000원입니다. 전체재고액은 감소하지만 고정MO는1,000→2,000원으로 증가하여 전부이익이1,000원 더 큰②가 가능합니다. ①항상 변동이익 우위와③항상동률은 성립하지 않으며④상황차이를 배제할 수 없습니다. 원문이 동일하다고 한 고정단가 외에 변동단가 동일을 추가하지 않습니다. 공식①을 보존합니다.",
+        "category": "answer_suspected",
+        "batch_id": "cost_b_07",
+        "recheck_batch_id": "recheck_cost_007",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_03"
+      },
+      "question_row_sha256": "8e912d2c91f051514cc385b04d09d0bcedec1f2fa9d499f8520c090a020c1df0",
+      "reason": "재고액 감소와 단위당 고정제조간접원가 동일만으로는 재고에 포함된 고정원가의 증감을 확정할 수 없습니다. 이번에는 변동단가를 달리하는 허용 가능한 모형에서 전부원가이익이 더 작은 경우, 더 큰 경우, 같은 경우를 각각 계산했습니다. 기말수량을 기초수량보다 작게 만드는 추가 조건이나 변동단가 동일 조건을 넣지 않으면 공식 ①의 유일성을 확인할 수 없습니다. 정오표나 새로운 직접 교재 근거를 확보하지 못해 기존 표현 모호 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "반례의 기초 전부원가 재고액",
+          "expr": "100*(100+10)",
+          "expected": 11000
+        },
+        {
+          "label": "반례의 기말 전부원가 재고액",
+          "expr": "200*(10+10)",
+          "expected": 4000
+        },
+        {
+          "label": "반례의 전부원가이익과 변동원가이익 차이",
+          "expr": "200*10-100*10",
+          "expected": 1000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 기초재고액",
+          "expr": "100*(10+10)",
+          "expected": 2000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 기말재고액",
+          "expr": "50*(10+10)",
+          "expected": 1000
+        },
+        {
+          "label": "변동원가이익이 큰 모형의 두 이익 차이",
+          "expr": "50*10-100*10",
+          "expected": -500
+        },
+        {
+          "label": "두 이익이 같은 모형의 기말재고액",
+          "expr": "100*(10+10)",
+          "expected": 2000
+        },
+        {
+          "label": "두 이익이 같은 모형의 고정원가 재고액 차이",
+          "expr": "100*10-100*10",
+          "expected": 0
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "기초 100개와 기말 50개, 두 시점 단위 변동원가 10원과 고정원가 10원이면 재고액은 2,000원에서 1,000원으로 줄고 변동원가이익이 500원 더 큽니다. ①이 가능한 경우이지 모든 허용 조건에서 유일한 결론은 아닙니다."
+        },
+        {
+          "number": 2,
+          "note": "기초 100개에 변동원가 100원, 기말 200개에 변동원가 10원, 고정단가 모두 10원이면 재고액은 11,000원에서 4,000원으로 줄지만 전부원가이익이 1,000원 더 큽니다. 원문이 ②를 배제하지 못합니다."
+        },
+        {
+          "number": 3,
+          "note": "기초·기말 수량을 모두 100개로 하고 변동단가를 100원에서 10원으로 낮추면 재고액은 11,000원에서 2,000원으로 줄고 고정원가 재고액은 같아 두 이익이 같습니다. 원문이 ③도 배제하지 못합니다."
+        },
+        {
+          "number": 4,
+          "note": "재고액 감소와 고정단가 동일을 지키면서 ①·②·③의 경우를 모두 만들 수 있어 ④를 틀렸다고 확정할 수 없습니다. 이 반례는 문제의 실제 거래사실을 대신 정하는 가정이 아니라 보편적 결론의 성립 여부를 검사하는 모형입니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "a72e9b2a1b290da7ea98ea218149136340d8793cdda162771e41d77e76c4dc0b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "재고액을 재고수량으로 고치거나 단위당 변동원가 동일 조건을 명시하는 해당 회차 공식 정정문 또는 원문 범위를 명확히 하는 출제기관 해설이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "ambiguous_wording",
+      "proposed_verdict": "ambiguous_wording"
+    },
+    {
+      "question_id": "2023-11-024",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-11-024",
+        "category": "answer_suspected",
+        "reason": "원본은X1년1월1일 선수5,000원,2년 후X3년1월1일 제품인도이나 묻는 기간은X2년이고 공식④는5,513원입니다.1115호31·60–65·106을 대조하면 인도 전 금융효과는 이자비용/계약부채 증가이며 제품수익과 구분됩니다.5,000×1.05×1.05=5,512.5원은X3 인도 시 금융요소 조정 모형의 반올림액입니다. 새 일반 도급 자료도 이 제품 인도날짜와 수익기간의 모순을 바꾸지 못합니다. 원문X2를X3으로 고치지 않습니다.",
+        "batch_id": "finance_a_06",
+        "recheck_batch_id": "recheck_finance_023",
+        "round3_batch_id": "r3_finance_001",
+        "extra_batch_id": "r7_finance_02"
+      },
+      "question_row_sha256": "d9f716b6f870d6bc9532aa3abb8abe36b11a2150dd6c123dcec11aab56f0ea2a",
+      "reason": "선수금 5,000원에 두 기간 5퍼센트 금융효과를 반영하면 5,512.5원이지만, 금융효과 계산 자체는 제품 이전 시점의 수익인식을 앞당기는 근거가 아닙니다. 20X1년 1월 1일의 2년 후와 질문한 20X2년 매출 사이의 기간 충돌을 해결할 출제기관 설명을 확보하지 못했습니다. 24차에 확인한 다른 회차 복수 답안을 대상 회차의 정정으로 적용하지 않고 기존 공식 충돌 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "선수금의 두 기간 금융효과 반영액",
+          "expr": "5000*1.05*1.05",
+          "expected": 5512.5
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "제품을 20X3년 1월 1일 이전하는 것으로 읽으면 20X2년에 수행의무 이행에 따른 매출은 0원입니다. 해당 회차 공식 키가 ①로 수정됐다고 주장하지 않습니다."
+        },
+        {
+          "number": 2,
+          "note": "5,000원은 최초 수취대가입니다. 유의적 금융요소의 두 기간 조정이나 제품 이전 시점 쟁점을 해소하는 금액이 아닙니다."
+        },
+        {
+          "number": 3,
+          "note": "5,250원은 한 기간의 5퍼센트 증액입니다. 두 기간 후 이전이라는 조건을 한 기간으로 교체할 근거가 없습니다."
+        },
+        {
+          "number": 4,
+          "note": "5,513원은 두 기간 증액을 원 단위로 반올림한 공식 금액입니다. 이 계산이 20X2년 중 제품 이전을 입증하지 않으므로 공식 ④의 기간 충돌은 남습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "0171da9c060958ecba71948237cb900a373dd7ddb3fd2e6774eacd1b1e24d020",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "제품 이전일 또는 매출을 묻는 연도를 명시적으로 교정한 해당 회차 공식 문제·답안 정정문이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "official_conflict",
+      "proposed_verdict": "official_conflict"
+    },
+    {
+      "question_id": "2023-03-083",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-03-083",
+        "reason": "새 한양3 PDF9–10/13쪽에 따라②는 변동실제/고정최대 기준을 뒤집어 틀리고, 부문별로 배부액이 달라지므로③도 틀립니다. 총공장원가는 내부 재배분으로 변하지 않아①은 지지됩니다. 그러나④의 단계법 총원가=자기발생원가+선행부문에서 받은 원가도 새 한양3 PDF11쪽 직접 예제에 일치합니다. 수선40,000원 중 동력8,000원을 먼저 배부하면 동력의 총배부원가는 자체20,000+수취8,000=28,000원입니다. 이를 제조부문에22,750/5,250원으로 배부하여 전체보조원가60,000원을 보존하는 독립 검산도 통과했습니다. 다른 부문이라는 원문을 모든 보조부문의 완전 상호수취로 몰래 바꾸어④를 배제하지 않습니다. 가장 옳다는 우열도 새 본문만으로 확정하지 못하므로 공식①을 보존하고 완료 처리하지 않습니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_cost_005",
+        "recheck_batch_id": "recheck_cost_001",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_05"
+      },
+      "question_row_sha256": "c51f82199d2af61f92b80b32d86710ebb161a56a0f1aed4a0d8f7b4aff12a996",
+      "reason": "①의 공장 전체 배부율 설명과 ④의 단계배부 총원가 설명이 동시에 성립할 수 있다는 기존 보류 논리를 재검토했습니다. 첫 단계 보조부문의 수취원가가 0이어도 자기원가와 수취원가 합계라는 ④의 설명은 성립하므로, 첫 단계의 존재가 ④를 반박하지 않습니다. 같은 회차 84번의 자체원가와 수취원가 합산 계산을 대조한 24차 기록도 이 결론을 지지합니다. 새 정정 답안을 확보하지 못해 복수 후보 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "단계배부 대상 자체원가와 수취원가의 합계",
+          "expr": "20000+8000",
+          "expected": 28000
+        },
+        {
+          "label": "생산부문에 배분되는 단계배부액",
+          "expr": "28000*65/80",
+          "expected": 22750
+        },
+        {
+          "label": "제조부문인 포장부문에 배분되는 단계배부액",
+          "expr": "28000*15/80",
+          "expected": 5250
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 수취원가",
+          "expr": "69000*300/(1200+800+300)",
+          "expected": 9000.0
+        },
+        {
+          "label": "같은 회차 84번의 공장관리 배부총액",
+          "expr": "48000+69000*300/(1200+800+300)",
+          "expected": 57000.0
+        },
+        {
+          "label": "수취원가를 제외할 때 생산부문 배부액 차이",
+          "expr": "(48000+69000*300/(1200+800+300))*1600/(2400+1600)-48000*1600/(2400+1600)",
+          "expected": 3600.0
+        },
+        {
+          "label": "첫 단계 수취원가가 없는 경우의 배부총액",
+          "expr": "20000+0",
+          "expected": 20000
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "공장 전체에 배부할 제조간접원가 총액과 공장 전체 배부기준량이 같으면 보조부문 간 배부방법은 그 단일 배부율을 바꾸지 않습니다. 공식 ①의 내용은 다른 옳은 보기의 부존재까지 입증하지 않습니다."
+        },
+        {
+          "number": 2,
+          "note": "변동원가는 실제 사용량, 고정원가는 장기 사용능력 등의 기준으로 나누는 이중배부 설명과 반대로 적혀 있습니다. 이 보기를 맞추려고 배부기준을 뒤집지 않습니다."
+        },
+        {
+          "number": 3,
+          "note": "부문별 배부원가와 배부율은 보조부문 원가배분방법에 따라 달라질 수 있으므로 영향을 받지 않는다는 설명은 일반적으로 성립하지 않습니다."
+        },
+        {
+          "number": 4,
+          "note": "앞 단계에서 받은 원가와 해당 보조부문 자체원가를 더해 다음 단계에 배부하는 구조는 ④와 맞습니다. 첫 단계의 수취원가가 0인 경우에도 합계식이 성립하므로 첫 단계만으로 ④를 배제할 수 없습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6b7f2cd5a7429cec5045d1874753c5103f8293837663d44ae16f7b6fa411a3c2",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "④의 단계배부 설명을 부정할 출제기관의 구체적 해석 또는 복수 정답을 인정한 해당 회차 정정 답안이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "multiple_candidates",
+      "proposed_verdict": "multiple_candidates"
+    },
+    {
+      "question_id": "2022-06-019",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-06-019",
+        "category": "calculation_unresolved",
+        "reason": "발행가격922,687원과 유효이자율12%가 모두 원본에 있어 추출오독이 아닙니다. 원금+3년쿠폰−발행가격은227,313원(공식③)이나12%상각의3년말잔액1,127,588.801536원은 액면을 초과합니다. 금리 또는가격의 발행자 정오 확인이 필요합니다.",
+        "batch_id": "remaining_finance_017",
+        "recheck_batch_id": "recheck_finance_017",
+        "round3_batch_id": "r3_finance_001",
+        "extra_batch_id": "r7_finance_01"
+      },
+      "question_row_sha256": "9e63c0af335bf914de29fec66953ccbe5a64618608bc32cffee46d438e85fcdd",
+      "reason": "상환원금과 세 기간 쿠폰에서 발행대가를 빼면 공식 ③의 227,313원을 재현할 수 있습니다. 그러나 제시된 12퍼센트가 실제 유효이자율이라는 조건까지 만족하는 상각표는 만들 수 없습니다. 마지막 기간 장부금액을 원금에 강제로 맞추거나 8퍼센트로 바꾸는 조정은 원문 조건을 교체합니다. 이번에 새 정정 원본을 확보하지 못했으므로 공식 키를 설명하는 산술과 전체 수치의 일관성을 구별하여 보류합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "원금과 쿠폰에서 발행대가를 뺀 총금융비용",
+          "expr": "1000000+50000*3-922687",
+          "expected": 227313
+        },
+        {
+          "label": "연 8퍼센트로 할인한 계약현금흐름",
+          "expr": "50000/1.08+50000/(1.08*1.08)+1050000/(1.08*1.08*1.08)",
+          "expected": 922687.0903825635
+        },
+        {
+          "label": "연 12퍼센트로 할인한 계약현금흐름",
+          "expr": "50000/1.12+50000/(1.12*1.12)+1050000/(1.12*1.12*1.12)",
+          "expected": 831871.8112244896
+        },
+        {
+          "label": "제시한 12퍼센트로 상각한 만기 장부금액",
+          "expr": "((922687*1.12-50000)*1.12-50000)*1.12-50000",
+          "expected": 1127588.8015360003
+        },
+        {
+          "label": "제시한 12퍼센트로 상각한 세 기간 이자비용 합계",
+          "expr": "((922687*1.12-50000)*1.12-50000)*1.12-50000+150000-922687",
+          "expected": 354901.80153600033
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "150,000원은 3년 쿠폰 합계로 할인액 77,313원을 포함하지 않습니다."
+        },
+        {
+          "number": 2,
+          "note": "240,000원은 원금에 8퍼센트와 3년을 단순 곱한 값과 같지만, 제시 유효이율이나 장부금액별 유효이자법에서 도출된 총비용이 아닙니다."
+        },
+        {
+          "number": 3,
+          "note": "227,313원은 총상환액과 발행대가 차액이라 공식 키를 재현합니다. 12퍼센트 유효이자율과 발행가액 사이의 모순은 이 산술만으로 사라지지 않습니다."
+        },
+        {
+          "number": 4,
+          "note": "317,313원은 원문 쿠폰과 발행대가로 계산한 227,313원과 다르고 12퍼센트 상각의 354,901.80원과도 다릅니다. 어떤 제시 조건을 바꿔야 하는지 임의로 정하지 않습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "1c672bcd64641527375f9343d87fd103d2ae87e75d3f2646482004b3d25cf27b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "발행가격 또는 유효이자율 중 어느 값을 교정하는지 명시한 해당 회차 공식 정오표가 필요합니다.",
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2023-09-085",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-09-085",
+        "reason": "작업별 재료130,000+90,000=220,000인데 원본 계는240,000, 노무60,000+50,000=110,000인데 원본 계는90,000입니다. 두 행오차가 상쇄되어 총530,000원이라는 사실도 원문모순을 해소하지 않습니다.",
+        "category": "parse_problem",
+        "batch_id": "remaining_cost_013",
+        "recheck_batch_id": "recheck_cost_005",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_04"
+      },
+      "question_row_sha256": "e6e8222df5a59a998aa2233b269d0e529c45b2fa5780005b87d9533d8f42e701",
+      "reason": "작업별 재료·노무원가와 시간당 예정배부율을 사용하면 공식 ②의 310,000원과 220,000원이 나옵니다. 하지만 표의 재료 합계는 작업별 합계보다 20,000원 크고 노무 합계는 20,000원 작습니다. 두 오류가 전체원가에서 상쇄되는 사실은 각 합계가 옳다는 근거가 아닙니다. 어느 칸을 정정해야 하는지 결정할 출제기관 자료를 확보하지 못해 원문 수치 모순을 그대로 보류합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "작업별 직접재료원가 합계",
+          "expr": "130000+90000",
+          "expected": 220000
+        },
+        {
+          "label": "작업별 직접노무원가 합계",
+          "expr": "60000+50000",
+          "expected": 110000
+        },
+        {
+          "label": "작업별 직접노동시간 합계",
+          "expr": "2400+1600",
+          "expected": 4000
+        },
+        {
+          "label": "시간당 제조간접원가 예정배부율",
+          "expr": "2000000/40000",
+          "expected": 50
+        },
+        {
+          "label": "작업 A에 예정배부한 제조간접원가",
+          "expr": "2400*50",
+          "expected": 120000
+        },
+        {
+          "label": "작업 B에 예정배부한 제조간접원가",
+          "expr": "1600*50",
+          "expected": 80000
+        },
+        {
+          "label": "작업 A의 제품제조원가",
+          "expr": "130000+60000+120000",
+          "expected": 310000
+        },
+        {
+          "label": "작업 B의 기말재공품원가",
+          "expr": "90000+50000+80000",
+          "expected": 220000
+        },
+        {
+          "label": "표의 합계란을 사용한 전체원가",
+          "expr": "240000+90000+4000*50",
+          "expected": 530000
+        },
+        {
+          "label": "작업별 원가를 합산한 전체원가",
+          "expr": "310000+220000",
+          "expected": 530000
+        },
+        {
+          "label": "재료 합계란과 작업별 합계 차이",
+          "expr": "240000-(130000+90000)",
+          "expected": 20000
+        },
+        {
+          "label": "노무 합계란과 작업별 합계 차이",
+          "expr": "90000-(60000+50000)",
+          "expected": -20000
+        },
+        {
+          "label": "두 합계 오류의 상쇄 금액",
+          "expr": "20000-20000",
+          "expected": 0
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "작업별 직접원가와 예정배부율을 쓰면 A 310,000원·B 220,000원이므로 270,000원·260,000원은 이 계산과 다릅니다."
+        },
+        {
+          "number": 2,
+          "note": "310,000원·220,000원은 작업별 칸으로 재현되는 공식 값입니다. 재료 합계와 노무 합계가 각각 틀린 방향으로 20,000원씩 어긋나는 원문 모순은 여전히 남습니다."
+        },
+        {
+          "number": 3,
+          "note": "530,000원은 전체 작업원가 합계이지만 미완성 B의 원가도 포함하므로 전부를 제품제조원가로 처리할 수 없습니다."
+        },
+        {
+          "number": 4,
+          "note": "A만 완성했다는 조건에서 전체 530,000원을 기말재공품으로 처리할 수 없습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6504b15c9a92078fdb9d1cf0c22fc985c80fad88b2c8dfae41486fcaf6cd874a",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "각 작업별 원가와 합계 중 어느 칸이 정정 대상인지 명시한 해당 회차 공식 정오표가 필요합니다.",
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2022-11-018",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-11-018",
+        "category": "calculation_unresolved",
+        "reason": "원본 만기20X2.12.31과 기간2년,6%계수0.8396/2.673이 모두 확인됩니다. 이 계수는3년6%계수에 가깝고2년계수0.88999644/1.83339267과 다릅니다. 제공계수 산술9,732,500원(공식②)은 보존하되 기간과 계수가 동시에 맞는다고 설명하지 않습니다.",
+        "batch_id": "remaining_finance_016",
+        "recheck_batch_id": "recheck_finance_017",
+        "round3_batch_id": "r3_finance_001",
+        "extra_batch_id": "r7_finance_01"
+      },
+      "question_row_sha256": "fc097d5575b08bda4fd102ad4031e40dce4632db368f1cc63e623697a3875a2f",
+      "reason": "제공된 계수를 그대로 곱하면 공식 ②의 9,732,500원이 나오지만, 6퍼센트와 두 기간이라는 표기에서 그 계수가 도출되지 않습니다. 원문의 발행일과 만기일에 맞는 두 기간 현금흐름은 약 9,816,660.73원이며 어느 보기에도 없습니다. 제공 계수 우선이라는 계산 관행은 두 기간 계수라는 잘못된 수치 설명을 교정하지 못합니다. 새 정오표를 확보하지 못해 보류합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "문제에서 제공한 두 계수를 적용한 발행가액",
+          "expr": "10000000*0.8396+500000*2.673",
+          "expected": 9732500.0
+        },
+        {
+          "label": "연 6퍼센트 두 기간의 단일금액 현가계수",
+          "expr": "1/(1.06*1.06)",
+          "expected": 0.8899964400142398
+        },
+        {
+          "label": "연 6퍼센트 두 기간의 연금현가계수",
+          "expr": "1/1.06+1/(1.06*1.06)",
+          "expected": 1.833392666429334
+        },
+        {
+          "label": "연 6퍼센트 세 기간의 단일금액 현가계수",
+          "expr": "1/(1.06*1.06*1.06)",
+          "expected": 0.8396192830323016
+        },
+        {
+          "label": "연 6퍼센트 세 기간의 연금현가계수",
+          "expr": "1/1.06+1/(1.06*1.06)+1/(1.06*1.06*1.06)",
+          "expected": 2.673011949461636
+        },
+        {
+          "label": "실제 두 기간 계약현금흐름의 현재가치",
+          "expr": "500000/1.06+10500000/(1.06*1.06)",
+          "expected": 9816660.733357064
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "8,815,800원은 주어진 현가·연금현가계수를 모두 사용한 합계도, 6퍼센트 두 기간 계약현금흐름의 현재가치도 아닙니다."
+        },
+        {
+          "number": 2,
+          "note": "9,732,500원은 주어진 계수를 적용한 공식 값입니다. 두 계수는 실제로 6퍼센트 세 기간 값에 가까우므로 원문 두 기간이라는 조건과의 모순이 남습니다."
+        },
+        {
+          "number": 3,
+          "note": "9,999,800원은 두 기간의 실제 현재가치 약 9,816,660.73원이나 제공 계수 계산값과 다릅니다."
+        },
+        {
+          "number": 4,
+          "note": "10,000,000원은 액면금액입니다. 표시이자율 5퍼센트와 시장이자율 6퍼센트가 다른 조건에서 액면발행이라고 처리할 근거가 없습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "769727a5ad6f66d211858acc8e023d3ae2620626fa1f9dcf06ee215b2f055581",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "만기 또는 현가계수의 기간을 바로잡은 해당 회차 공식 정정문이 필요합니다.",
+      "official_answer_changed": false
+    },
+    {
+      "question_id": "2022-01-022",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-01-022",
+        "category": "answer_suspected",
+        "reason": "공식②와 원문4보기를 재대조했습니다. 일반기업회계기준15.9와15.11은 처분/소각 손실 계정을 달리하여②의 혼합을 반박하지만 시험 공통지시는K-IFRS입니다. 더 결정적으로 당시 시행 상법341조는 배당가능이익·취득방법·결의 요건 하 일반취득을 허용하므로③의 특별한 경우에 한하여라는 설명도 맞지 않습니다. 새 우선주 교재는 이 한국법 문제를 해소하지 않으며 단일 공식답의 나머지3보기 확정을 보류합니다.",
+        "batch_id": "remaining_finance_021",
+        "recheck_batch_id": "recheck_finance_020",
+        "round3_batch_id": "r3_finance_001",
+        "extra_batch_id": "r7_finance_02"
+      },
+      "question_row_sha256": "f15281b9956894eaa13d61dd4f51cb4b0a9ce5c88fb97527c4685b44a19d6368",
+      "reason": "자기주식 취득을 특별한 경우에만 허용한다는 ③의 법적 제한은 시험 당시 상법의 일반 취득 허용과 충돌한다는 기존 검토를 유지합니다. K-IFRS의 자기주식 거래 자본 직접 인식 원리만으로 ②와 ④의 구체적 상계 순서까지 강제된다고 단정할 수도 없습니다. 과거 법률 제한을 현재 원문에 넣거나 공식 ②를 근거로 ③을 옳다고 처리할 새 근거를 확보하지 못했습니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "자사가 발행한 주식을 그 회사가 재취득한 주식이라는 정의 자체는 이번 추가 조사에서 반박할 새 근거가 없습니다."
+        },
+        {
+          "number": 2,
+          "note": "공식 오답인 ②의 매각·소각 손실을 함께 자기주식처분이익으로 상계한다는 표현은 자본 직접 인식 원리만으로 필수 처리라고 증명할 수 없습니다. 법률상 취득 제한을 말한 ③의 별도 문제를 소거하지 않습니다."
+        },
+        {
+          "number": 3,
+          "note": "시험 당시 상법 제341조의 일반 취득 허용을 확인한 기존 기록에 비추어 특별한 경우에 한한다는 제한을 옳다고 확정할 수 없습니다. 새 출제기관 정정이나 해석을 확보하지 못했습니다."
+        },
+        {
+          "number": 4,
+          "note": "자기주식처분손실의 특정 상계 순서를 K-IFRS가 의무화한다는 직접 근거는 이번에도 확보하지 못했습니다. 미확인을 곧바로 틀렸다는 판정으로 바꾸지 않습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "a1559001b6ea76ff893ecc27700bbae52bb3aabda2da97e226521d72d775d98a",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "시험 당시 적용 법률 및 자기주식 처리기준과 ②·③의 정오를 설명하는 해당 회차 공식 정정 답안·해설이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "multiple_candidates",
+      "proposed_verdict": "multiple_candidates"
+    },
+    {
+      "question_id": "2025-06-117",
+      "author": "r25_worker4_numeric_logic",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-06-117",
+        "reason": "8단계 새 국내 KOCW CapitalBudgetingp5–9/한국외대 회수기간본문도 투자원금÷현금흐름이라는 정의를 확인합니다. 원문은8000원을 법인세차감전순이익 기준 현금유입이라 써 두 기준을 섞었습니다. 상각4000원, 현금수입기초8000이면 세후현금6800원/회수2.941→2.9년으로 공식①이지만 명시된 세전순이익8000이면 세후이익5600+상각4000=9600원/회수2.083→2.1년으로 보기없습니다. 새 원리본문은 원문의 기준을 교정하지 못하므로 두 해석과 공식①을 보존합니다.",
+        "category": "answer_suspected",
+        "batch_id": "remaining_cost_024",
+        "recheck_batch_id": "recheck_cost_012",
+        "round3_batch_id": "r3_cost_001",
+        "extra_batch_id": "r7_cost_06"
+      },
+      "question_row_sha256": "406af6715100987b800153135ff72426f5daea6d65a6c06890bc313c58a6f983",
+      "reason": "8,000원을 세전 현금유입으로 읽으면 세후현금흐름 6,800원과 회수기간 약 2.9년이 나와 공식 ①을 재현합니다. 반대로 원문의 세전순이익 기준을 그대로 쓰면 감가상각비 4,000원을 더한 세후현금흐름은 9,600원, 회수기간은 약 2.1년입니다. 순이익과 현금유입이 섞인 표현을 출제기관이 어느 뜻으로 사용했는지 확인할 새 자료가 없어 표현 모호 판정을 유지합니다.",
+      "reason_type": "no_new_direct_evidence_blocker_not_resolved",
+      "new_evidence": "새로운 직접 외부 본문이나 공식 정정본을 확보하지 못했습니다. 회차와 해당 특이 문구를 결합한 신규 검색 및 출판사·발행기관의 다른 직접 경로 탐색은 연결 단계에서 실패했습니다. 이번 추가 검토는 제공된 원문 전사와 24차 원본·독립검수 기록에 대한 논리·산술 분석입니다.",
+      "source_reads": [],
+      "checks": [
+        {
+          "label": "연간 정액법 감가상각비",
+          "expr": "20000/5",
+          "expected": 4000
+        },
+        {
+          "label": "세전 현금유입으로 해석한 연간 세후현금흐름",
+          "expr": "8000-(8000-4000)*0.3",
+          "expected": 6800
+        },
+        {
+          "label": "세전순이익으로 해석한 연간 세후현금흐름",
+          "expr": "8000*(1-0.3)+4000",
+          "expected": 9600
+        },
+        {
+          "label": "세전 현금유입 해석의 회수기간",
+          "expr": "20000/6800",
+          "expected": 2.9411764705882355
+        },
+        {
+          "label": "세전순이익 해석의 회수기간",
+          "expr": "20000/9600",
+          "expected": 2.0833333333333335
+        },
+        {
+          "label": "비교 회차의 명시적인 현금유입 조건에서 계산한 회수기간",
+          "expr": "10000/(5000-(5000-10000/5)*0.4)",
+          "expected": 2.6315789473684212
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "note": "약 2.9년은 8,000원을 감가상각 전 세전 현금유입으로 읽을 때 재현됩니다. 원문의 세전순이익 기준 표현을 이 해석 하나로 확정할 자료는 없습니다."
+        },
+        {
+          "number": 2,
+          "note": "약 3.2년은 세전 현금유입 해석의 2.941176년이나 세전순이익 해석의 2.083333년과 일치하지 않습니다."
+        },
+        {
+          "number": 3,
+          "note": "약 3.5년도 두 해석 중 어느 쪽 계산에서 나오지 않습니다. 감가상각비를 현금지출로 이중 차감하여 보기 금액을 만들지 않습니다."
+        },
+        {
+          "number": 4,
+          "note": "약 4.0년은 제시 투자액과 두 기준의 회수기간 계산에서 확인되지 않습니다. 공식 ①과의 비교만으로 원문의 이익·현금 기준 혼용이 해소되지는 않습니다."
+        }
+      ],
+      "inspection_scope": "brief4.json의 대상 원문 전사와 24차 작성·독립검수 기록을 실제 읽고 네 보기에 대한 논리와 숫자를 재검산했습니다. 25차에 원본 이미지·문제 PDF·답안 PDF·외부 기준서 본문을 새로 열어 읽은 것으로 계상하지 않습니다. 이전 원본 직접확인 기록을 재사용합니다. 새 출처 본문을 확보하지 못해 source_reads는 빈 목록입니다.",
+      "previous_original_verification_reused": {
+        "round": 24,
+        "author_record_path": "/tmp/chagok-round24/worker4/freeze-v1/drafts.json",
+        "author_record_file_sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8",
+        "author_row_sha256": "6aa782662c5024ee7297110569ae09d7e71aa4e0fe1ee1c86ae40d7489a1603b",
+        "independent_reviewer": "r24_worker2_independent_numeric_originals_QA",
+        "independent_review_status": "pass",
+        "new_original_read_in_round25": false
+      },
+      "external_material_needed": "8,000원이 감가상각 차감 전 현금유입인지 차감 후 세전순이익인지 명시하는 해당 회차 공식 정정문이 필요합니다.",
+      "official_answer_changed": false,
+      "current_verdict": "ambiguous_wording",
+      "proposed_verdict": "ambiguous_wording"
+    },
+    {
+      "question_id": "2025-01-077",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-01-077",
+        "category": "parse_problem",
+        "reason": "원본 표의 의료항목은 피부과 레이저시술뿐이며 미용/질병치료 목적이 없습니다. 적정 거래징수라는 단서는 목적을 추가하지 않습니다. 비행기표30,000원과 미용일 때40,000원이라는 두 경우를 구별하며③맞추기용 시술목적 추가를 제안하지 않습니다.",
+        "batch_id": "tax_b_02",
+        "recheck_batch_id": "recheck_tax_007",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_04"
+      },
+      "question_row_sha256": "33b65e2d04df5a5e5da8d944039eaf11957b6152995b3bc30a15abf4b61f9276",
+      "reason": "피부과 레이저라는 명칭만으로 미용 목적이나 질병 치료 목적을 확정할 수 없습니다. 이번 피부과·면세 및 레이저·질병 검색에서 관련 판정의 검색결과를 확인했으나, 해당 원문의 시술명·목적을 보완하는 새 직접 본문이나 정정표를 확보하지 못했습니다. 검색 제목은 치료 또는 미용 사실의 증거가 아니며, 기존 두 조건부 금액을 구별하여 보류합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "laser-treatment-tax",
+          "medical-laser",
+          "surgeon-laser"
+        ],
+        "required_external_material": "시술명·미용/질병치료 목적과 시행령 제35조의 해당 진료용역 여부가 명시된 출제기관 원문·정오표",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "330000*10/110",
+          "expected": 30000,
+          "label": "항공권에 포함된 세액"
+        },
+        {
+          "expr": "330000*10/110+110000*10/110",
+          "expected": 40000,
+          "label": "레이저시술까지 과세하는 경우의 조건부 세액"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          3
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2025-01-077/round24_author",
+        "author_record_sha256": "a0a00807721ffb1020c540d718d614797abe0ec78355986a8bee86a76e0df844",
+        "independent_review_record_sha256": "8dcd59cc9e83cb8c47b2b251abcd39fc77950aaa65b6868fa23552a0b7dcead7",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2023-01-048",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2023-01-048",
+        "category": "parse_problem",
+        "reason": "원본4행은 폐수배출부담금1,500,000원이며 기본배출/허용기준초과/제재 조건은 없습니다. 벌과금500,000원과 부담금의 법적 성격 구분이 남고, 공식①2,000,000원을 근거로 위반사실을 만들지 않습니다.",
+        "batch_id": "remaining_tax_006",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "d15654739457f48130e3e5cb65439de0ee4361a2431edbb45bf45d6130685662",
+      "reason": "폐수배출부담금 1,500,000원의 기본·초과 또는 위반 제재 성격을 특정하는 새 직접 회신·정정 원문을 확보하지 못했습니다. 이번 수질 초과부과금과 폐수배출부과금 검색은 관련 본문 확보로 이어지지 않았습니다. 벌과금 500,000원과 공식①에 대응하는 합계 2,000,000원을 구별하며, 이전 제외 결정을 유지합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "wastewater-penalty",
+          "water-one"
+        ],
+        "required_external_material": "폐수부담금의 부과 법령, 기본·초과 구분 또는 제재 성격을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "500000+1500000",
+          "expected": 2000000,
+          "label": "부담금을 전액 부인하는 경우의 조건부 합계"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          1
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2023-01-048/round24_author",
+        "author_record_sha256": "e434c361744b56023879ad9428120888afa3cfd13f5d18eafb9a4b4669d0c37e",
+        "independent_review_record_sha256": "67b6b56dd9371d256b470262e6fdefdd8296b99b35bd267361dc4f434ec42a62",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2022-09-048",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-09-048",
+        "category": "parse_problem",
+        "reason": "원본보조원장03/10은 폐수배출부담금1,000,000원만 적고 제재성 구분은 없습니다. 사택3,000,000/이익처분상여2,000,000 외 부담금 포함여부가 쟁점이며 표와 네 보기는 온전합니다.",
+        "batch_id": "remaining_tax_006",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "45a4c0e2a1ca77a7f2c2485079438c90a7914d20ca5d524c3acfcb4ef9fb579c",
+      "reason": "대주주 임원 사택유지비와 이익처분 상여금의 부인액은 5,000,000원이며, 공식④ 6,000,000원은 폐수배출부담금 1,000,000원을 더한 값입니다. 이번 수질 관련 검색으로 부담금의 제재 성격을 증명하는 본문을 확보하지 못했습니다. 새 직접 근거가 없으므로 원문에 제재 조건을 넣지 않고 이전 제외 결정을 유지합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "wastewater-penalty",
+          "water-one"
+        ],
+        "required_external_material": "폐수부담금의 부과 법령, 기본·초과 구분 또는 제재 성격을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "3000000+2000000",
+          "expected": 5000000,
+          "label": "명시된 사택유지비와 이익처분 상여금의 합계"
+        },
+        {
+          "expr": "3000000+2000000+1000000",
+          "expected": 6000000,
+          "label": "부담금을 전액 부인하는 경우의 조건부 합계"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          4
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2022-09-048/round24_author",
+        "author_record_sha256": "55136bf8fb84cdec7a409657cfb2f1b8d9fe11964c3541c1f0fd4ee8f151f318",
+        "independent_review_record_sha256": "a12caf02d324a7183d7a3dc8580a258ad72cfc2eac19b1f3fde9f84b4d156985",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2026-03-055",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2026-03-055",
+        "category": "parse_problem",
+        "reason": "원본은 대표이사 자녀 유학자금32,850,000원을 지출하였다고 표현하며 대여/회수의무/가지급금 잔액이나 상환 여부를 말하지 않습니다. 대여로 분류한 경우의3,960,000원 산술은 확인하지만 지출을 자동채권으로 바꿔 완성해설로 등록하지 않습니다. 공통2025세법과 거래2026연도도 그대로 유지합니다.",
+        "batch_id": "remaining_tax_003",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "2ffbce2a545a179b6dfc88e74b2cf5b84a40a0f5c35e7c9607d1de5c3a40a592",
+      "reason": "새로 읽은 서면-2019-법인-4024는 사내규정에 따른 임직원 본인·자녀 학자금 지급의 손금 귀속을 다룬 별도 사례입니다. 대표이사 자녀의 유학자금 지출을 대여로 보라는 회신이 아니며 이 문항의 회수의무·260일 잔액을 확인하지 못합니다. 정확 금액을 겨냥한 정정 검색은 접근403으로 본문을 읽지 못했습니다. 대여잔액 유지 조건을 추가하지 않아 3,960,000원은 조건부 진단값으로만 남깁니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [
+          {
+            "ref": "R25_W5_NTS_SCHOOL_20200526",
+            "limit": "단체협약·사내규정에 따라 임직원 본인·자녀 학자금을 지급한 별도 사례의 손금 귀속 회신입니다. 대표이사 자녀의 유학자금 지출을 대여금 또는 비용으로 확정하거나 260일 잔액을 입증하지 않습니다."
+          }
+        ],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "student-expense",
+          "school-child",
+          "publisher-google-055"
+        ],
+        "required_external_material": "유학자금이 대여액인지와 회수의무·잔액 유지기간을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W5_NTS_SCHOOL_20200526",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서면-2019-법인-4024 · 2020-05-26; ntstDcmId010000000000435223",
+          "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용·법인세법 제19조·제40조, 시행령 제45조, 소득세법 시행령 제38조제1항제2호",
+          "sha256": "3279236b25653630074332d826d2a431f75701012004daae1c17fd47ba6c4127",
+          "private_path": "/tmp/chagok-round25/worker5/cache/school-retroactive.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "단체협약·사내규정에 따라 임직원 본인·자녀 학자금을 지급한 별도 사례의 손금 귀속 회신입니다. 대표이사 자녀의 유학자금 지출을 대여금 또는 비용으로 확정하거나 260일 잔액을 입증하지 않습니다."
+        }
+      ],
+      "checks": [
+        {
+          "expr": "32850000*260",
+          "expected": 8541000000,
+          "label": "유학자금이260일 대여잔액이라는 조건부 적수"
+        },
+        {
+          "expr": "22000000*(32850000*260)/47450000000",
+          "expected": 3960000,
+          "label": "대여잔액 유지 조건하의 지급이자 부인액"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          1
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2026-03-055/round24_author",
+        "author_record_sha256": "fe6ccb07ef1829b647fc952bc6e7b346afe8df292e33b6bda30cf8df9a1c3ab5",
+        "independent_review_record_sha256": "7799f7cf887d25f21a61d9561e33e20d2a3b11ebebd8586c32227dd24455c8e0",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2025-12-052",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-12-052",
+        "category": "parse_problem",
+        "reason": "원본 재무상태표의100,000,000−49,000,000은51,000,000인데 표시순액은60,000,000입니다. 두 회계기초로 계산한 추인액191,900/2,522,900원이 다릅니다. 순액 또는누계를 임의 선택/교정하지 않습니다.",
+        "batch_id": "remaining_tax_008",
+        "recheck_batch_id": "recheck_tax_002",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_02"
+      },
+      "question_row_sha256": "c59607cb2c6c096c879c2021f346da84fd59b2a34b1610c8c50c51c4cb4be045",
+      "reason": "취득원가 100,000,000원에서 감가상각누계액 49,000,000원을 빼면 51,000,000원인데 원문 표시순액은 60,000,000원이라는 기존 원본 확인을 재사용합니다. 정확한 두 금액을 함께 넣은 정정 검색은 접근403으로 본문을 읽지 못했고, 어느 수치를 고쳐야 하는지 새 공식 근거를 확보하지 못했습니다. 누계액 기준 추인191,900원과 표시순액 기준2,522,900원을 구별하며 보류합니다.",
+      "reason_type": "numeric_contradiction",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "depreciation-error",
+          "publisher-google-052"
+        ],
+        "required_external_material": "기계 취득원가·감가상각누계액·순액 중 오기를 특정하는 출제기관 정정표",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "100000000-49000000",
+          "expected": 51000000,
+          "label": "취득원가에서 누계액을 차감한 순액"
+        },
+        {
+          "expr": "49000000-19000000",
+          "expected": 30000000,
+          "label": "누계액 기준 전기말 회계 누계액"
+        },
+        {
+          "expr": "100000000-30000000+4100000",
+          "expected": 74100000,
+          "label": "누계액 기준 기초 세무장부가액"
+        },
+        {
+          "expr": "74100000*0.259",
+          "expected": 19191900,
+          "label": "누계액 기준 상각범위액"
+        },
+        {
+          "expr": "19191900-19000000",
+          "expected": 191900,
+          "label": "누계액 기준 시인부족액"
+        },
+        {
+          "expr": "60000000+19000000+4100000",
+          "expected": 83100000,
+          "label": "표시순액 기준 기초 세무장부가액"
+        },
+        {
+          "expr": "83100000*0.259",
+          "expected": 21522900,
+          "label": "표시순액 기준 상각범위액"
+        },
+        {
+          "expr": "21522900-19000000",
+          "expected": 2522900,
+          "label": "표시순액 기준 시인부족액"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          1
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2025-12-052/round24_author",
+        "author_record_sha256": "ffa558eaccc6aac019fbd0fa3ac807d360a3abb8a31b182b1953679acd26465d",
+        "independent_review_record_sha256": "bd6bb38ce2232d541bbe2f48825cebeeca97d92574d64daef57bd18511679f6d",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2024-06-048",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2024-06-048",
+        "category": "parse_problem",
+        "reason": "원본목록4번 폐수배출부담금3,000,000원에는 기본/위반제재 성격이 없습니다. 그 밖의 명시항목만8,000,000원과 부담금을부인할 때11,000,000원을 구별하며 공식③으로 제재조건을 추가하지 않습니다.",
+        "batch_id": "remaining_tax_005",
+        "recheck_batch_id": "recheck_tax_001",
+        "round3_batch_id": "r3_tax_001",
+        "extra_batch_id": "r7_tax_05"
+      },
+      "question_row_sha256": "78cbecbdf17d6e96ba24b948e952371bbf910a1bc4b66b9447a4bd2d255b5995",
+      "reason": "주식할인발행차금·뇌물·법인지방소득세의 부인액 합계8,000,000원과 폐수배출부담금까지 포함한11,000,000원을 구별합니다. 이번 수질 초과부과금·폐수배출부과금 검색으로 원문 부담금의 법적 성격을 특정하는 새 직접 근거를 확보하지 못했습니다. 공식③에 맞추어 전액 제재로 단정하지 않고 이전 제외 결정을 유지합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "wastewater-penalty",
+          "water-one"
+        ],
+        "required_external_material": "폐수부담금의 부과 법령, 기본·초과 구분 또는 제재 성격을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [],
+      "checks": [
+        {
+          "expr": "1000000+5000000+2000000",
+          "expected": 8000000,
+          "label": "폐수부담금을 제외한 명시 부인액"
+        },
+        {
+          "expr": "1000000+5000000+2000000+3000000",
+          "expected": 11000000,
+          "label": "폐수부담금을 전액 부인하는 경우의 조건부 합계"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          3
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2024-06-048/round24_author",
+        "author_record_sha256": "8bb68e086890893b1d4a04fdf33b58a8e8a798fc28ae10e6a21696370e1c8ae7",
+        "independent_review_record_sha256": "380db1883555575541702b3c828e8236f8cddd5119d6a6b8a61981321b1fb1c7",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2025-01-078",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2025-01-078",
+        "reason": "원본 건물취득가300,000,000원/2019.3.10/폐업2025.10.10은 확인되지만 취득매입세액 공제범위가 없습니다. 전액공제 모형의135,000,000원 산술은 남기고 공제사실을 새로추가하지 않습니다. 명시2024세법 적용과 거래연도2025를 각각 유지합니다.",
+        "category": "parse_problem",
+        "batch_id": "remaining_tax_039",
+        "recheck_batch_id": "recheck_tax_007",
+        "round3_batch_id": "r3_tax_002",
+        "extra_batch_id": "r7_tax_04"
+      },
+      "question_row_sha256": "b49b95ba9a5a583d53b7bf1d7a80dd52df55c37691ae63fff8a7d37782f4449e",
+      "reason": "새로 읽은 사전-2019-법령해석부가-0686은 실제 매입세액을 공제받은 건물의 일부 면세전용 사례이며, 첨부 시행령 제66조제4항도 취득가액을 공제받은 재화의 가액으로 정합니다. 그러나 해당2019 사례는 이 문항의2019년 취득 건물에 실제 공제가 있었는지나 공제받은 가액을 증명하지 않습니다. 2024세법을 적용하는 기존 검토를 대체하지 않고135,000,000원은 공제 가액을 전액으로 읽은 조건부 산술로 유지합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [
+          {
+            "ref": "R25_W5_NTS_CONVERSION_20191210",
+            "limit": "본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+          }
+        ],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "conversion-credit",
+          "self-goods",
+          "convert-one"
+        ],
+        "required_external_material": "취득 건물의 실제 매입세액 공제 사실과 공제받은 가액을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W5_NTS_CONVERSION_20191210",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+          "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+          "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+          "private_path": "/tmp/chagok-round25/worker5/cache/conversion-head-office.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+        }
+      ],
+      "checks": [
+        {
+          "expr": "300000000*(1-0.05*13)",
+          "expected": 105000000,
+          "label": "전액공제 가액과13과세기간을 적용한 건물가액"
+        },
+        {
+          "expr": "300000000*(1-0.05*13)+30000000",
+          "expected": 135000000,
+          "label": "전액공제 가액을 전제로 한 폐업잔존재화 과세표준"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          2
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2025-01-078/round24_author",
+        "author_record_sha256": "13c37c00bfbb79200c2f092ce58a61f433fd7b5558ff23fe5a0b5052bc474348",
+        "independent_review_record_sha256": "efcca23bb80c88b2aec7f84dab9feed84ae5d529b8a355cbb760495125005091",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2022-06-064",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-06-064",
+        "reason": "원본 자가운전보조금은 연3,000,000원/월250,000원으로 확인되나 차량소유·임차/직접운전/업무출장여비대신 지급 등 요건은 없습니다. 지원금명칭으로 그 사실을 만들어 총급여35,100,000원만 확정하지 않습니다.",
+        "category": "parse_problem",
+        "batch_id": "remaining_tax_020",
+        "recheck_batch_id": "recheck_tax_003",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_03"
+      },
+      "question_row_sha256": "22da58e8d769c6ff069f9c3f9cc003578ac2a1243731b53bf2c15f2c0954cac2",
+      "reason": "새로 읽은 법인46013-2681은 자가운전보조금이라는 항목으로 지급받아도 실제 시내출장비를 별도로 받으면 근로소득이라고 구별합니다. 1998회신이 이 문항의2022년 차량·운전·실비 대체 요건을 입증하는 것은 아니며 임차차량 관련 후속 개정 전체를 대체하지 않습니다. 명칭만으로 비과세를 확정하는 논리가 성립하지 않아 공식③35,100,000원은 요건 충족 때의 조건부 금액으로 남기고 보류합니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [
+          {
+            "ref": "R25_W5_NTS_CAR_19980921",
+            "limit": "자가운전보조금이라는 이름으로 지급해도 실제 출장비를 별도로 받는 경우에는 근로소득이라는 1998년 회신입니다. 2022년 임차차량 확대 등 후속 개정 전체를 증명하거나 이 문항의 실제 여비 지급 여부를 정하는 근거가 아닙니다."
+          }
+        ],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "personal-car-label",
+          "car-direct"
+        ],
+        "required_external_material": "차량 소유·본인명의 임차, 직접 업무 운전, 실제 여비 대신 사규에 따른 지급 요건을 밝힌 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R25_W5_NTS_CAR_19980921",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "법인46013-2681 · 1998-09-21; ntstDcmId010000000000505199",
+          "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 질의내용·소득세법 시행령 제12조제3호·유사사례 법인46013-1505",
+          "sha256": "94420d214b3b34e0781ac039b2379b7b5e595fc870a0f649f15bdffebb686605",
+          "private_path": "/tmp/chagok-round25/worker5/cache/car-actual-expenses.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "자가운전보조금이라는 이름으로 지급해도 실제 출장비를 별도로 받는 경우에는 근로소득이라는 1998년 회신입니다. 2022년 임차차량 확대 등 후속 개정 전체를 증명하거나 이 문항의 실제 여비 지급 여부를 정하는 근거가 아닙니다."
+        }
+      ],
+      "checks": [
+        {
+          "expr": "2000000*12+2000000*4+2000000+500000+3000000-200000*12",
+          "expected": 35100000,
+          "label": "자가운전보조금 비과세 요건을 충족한 조건부 총급여"
+        },
+        {
+          "expr": "2000000*12+2000000*4+2000000+500000+3000000",
+          "expected": 37500000,
+          "label": "자가운전보조금 비과세 요건을 충족하지 않은 조건부 총급여"
+        }
+      ],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          3
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2022-06-064/round24_author",
+        "author_record_sha256": "dd21e8c3c8d17e13c57d688b335da57e63f293e5b814df2400806353648f38b8",
+        "independent_review_record_sha256": "7c77c8d774536fb698188d1a3da7aa7303b4b354287cea55898baa18cab5d842",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    },
+    {
+      "question_id": "2022-11-065",
+      "author": "/root/r25_tax_originals",
+      "decision": "decline",
+      "previous_review": {
+        "question_id": "2022-11-065",
+        "reason": "원본ㄱ 고용관계없는강연에는 일시성/반복성,ㄹ 업무관련 사보원고료에는 고용과직무대가 관계가 없습니다. 네 조합선택지는 모두 온전하지만 소득분류의 중요사실을 새로넣지 않습니다.",
+        "category": "parse_problem",
+        "batch_id": "remaining_tax_021",
+        "recheck_batch_id": "recheck_tax_003",
+        "round3_batch_id": "r3_tax_004",
+        "extra_batch_id": "r7_tax_03"
+      },
+      "question_row_sha256": "130a51ebaf6fcf2fde23466059e404151f29cfa5debfd113503f842d97ad470f",
+      "reason": "이번 사보·원고료·업무관계 검색으로 ㄱ강연의 일시성·반복성이나 ㄹ사보 원고료의 고용·직무대가 관계를 특정하는 새 직접 본문을 확보하지 못했습니다. 소득세법 시행령 제38조의 근로소득 범위 발췌 재독도 이 개별 사실을 보충하지 않습니다. 기존22·24차 검토와21차 원본확인 기록을 재사용하며, 모든 해당 항목을 고르는 공식①의 유일성을 새 가정으로 확보하지 않습니다.",
+      "reason_type": "missing_condition",
+      "new_evidence": {
+        "actual_new_body_reads": [],
+        "new_publisher_correction": false,
+        "new_registration_ground": false,
+        "attempt_ids": [
+          "newsletter-business",
+          "newsletter-one",
+          "newsletter-only"
+        ],
+        "required_external_material": "강연의 일시성 및 사보 원고료가 고용관계의 직무대가인지 확인 가능한 출제기관 보완",
+        "scope_limit": "검색결과와403실패는 원문 사실 또는 정오표 부존재의 증거가 아닙니다. 신규 본문·보존본문 재독·이전 원본확인 재사용을 구별합니다."
+      },
+      "source_reads": [
+        {
+          "ref": "R7_TAX03_소득세법_시행령_20221027",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/76bfa049d3d101643a2212869bb7b993ed413a60/kr/소득세법/시행령.md",
+          "version": "제32964호 · 시행2022-10-27",
+          "read_locator": "메타데이터 시행2022-10-27 및 제38조제1항 도입부·제1호부터 제14호의 범위",
+          "sha256": "4b0ba45693a6db6a1e7fd80dfd823a1300b9392fee10f83f55cc4e810bdfca5f",
+          "private_path": "/tmp/chagok-round21/parse_review2/cache/income2022-effective-decree.md",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "보존 Git 본문의 해당 발췌만 재독했습니다. 사보 원고료의 개별 고용관계를 증명하는 규정으로 사용하지 않습니다."
+        }
+      ],
+      "checks": [],
+      "inspection_scope": {
+        "current": "25차brief의 원문전사·네 보기·공식키·24차 작성/독립검수 및 명시한 새 회신·발췌만 대조했습니다.",
+        "originals": "24차 작성·독립검수의 원본확인 재사용을 따릅니다. 그 기록이 연결하는21차 실제 이미지·문제PDF·공통지시·공식답안 확인을 재사용했으며 이번에 새로 원본을 열었다고 주장하지 않습니다.",
+        "new_original_view": false,
+        "new_original_download": false,
+        "official_answer_unchanged": [
+          1
+        ],
+        "arithmetic": "checks는 이전 조건부 진단값의 산술만 다시 계산했으며 누락사실·원문 숫자 충돌의 해결을 인증하지 않습니다."
+      },
+      "prior_verification_reused": {
+        "round": 24,
+        "source_container": "/tmp/chagok-round25/brief5.json",
+        "source_container_sha256": "38d93fe633d48a9afcbb2ec999d4129ed677f06b6e332db964fc9ee489dad9f7",
+        "record_locator": "2022-11-065/round24_author",
+        "author_record_sha256": "b93a0e5abc4836ec4c5f7e9fd8f4beb5c19cb7717bee8ed107e5e6a35d66295e",
+        "independent_review_record_sha256": "d614e07b5fae34019b5b91139840c400610bd4ec48b54088f6380715176ca3aa",
+        "upstream_original_verification_round": 21,
+        "no_new_original_view": true
+      }
+    }
+  ],
+  "existing_partial_reviews": [
+    {
+      "question_id": "2022-07-025",
+      "author": "r25_worker0_finance",
+      "decision": "keep",
+      "current_note_sha256": "57e2ad8b85a3db03efba5ff72a6c0c9e127b7ff06101ea4f58b2c523578a4f5c",
+      "reason": "구IAS11¶18의 급여 준비·사무처리 예시는 기존③ 설명을 직접 지지합니다. 현행1115¶91–98과C10은 별도 인식체계·대체 사실을 보여 줍니다. 기존 해설은 역사적 세 그룹 모형에 한정하고 현행 인식 의무와 국내 일반기준의 적용범위를 구별합니다. 이를 source_checked로 올리거나 미확인란을 삭제할 새 근거가 없어 keep합니다.",
+      "source_reads": [
+        {
+          "ref": "P20_FINANCE_EURLEX_IAS11_2008",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32008R1126",
+          "version": "Commission Regulation (EC)1126/2008 원본 OJ L320 2008-11-29 · 현재 대체된 IAS11 역사 본문",
+          "read_locator": "PDF48–49쪽 IAS11¶16–20: 급여 준비·사무처리 공통원가, 임차/감가상각 직접원가, 판매원가 제외",
+          "sha256": "6d4c22ebeaeeefbd9dcc6679427435d9db9f748af0f5cd8645f8749f27c43c00",
+          "private_path": "/tmp/chagok-round20/p1_finance_review/sources/eurlex2008-pdf.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이미 대체된 구IAS11 역사 본문 재독입니다. 현재 자산화 의무가 아니라 지문에 제시된 세 그룹 모형 대응만 확인합니다."
+        },
+        {
+          "ref": "P20_FINANCE_KASB_GAAP16",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "제16장 수익 · 2019-09-27 의결·수정목록20-1 반영 · fileNo5340,fileSeq2",
+          "read_locator": "PDF11–13쪽 ¶16.32–16.36: 공사원가 세 그룹·임차/감가상각·판매원가 제외",
+          "sha256": "98274ddd131af57eed2084050bcef8eeaa1596987e38a2e61d90eb4211cd5118",
+          "private_path": "/tmp/chagok-round20/p1_finance/cache/GAAP16.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 일반기업회계기준 본문 재독입니다. K-IFRS 적용회사의 직접 강제규정이 아닙니다."
+        },
+        {
+          "ref": "R10_FIN3_KASB_1115_BATCH03",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF38–39쪽 ¶91–98와86쪽 C10: 계약원가 인식요건·구1011 대체",
+          "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+          "private_path": "/tmp/chagok-round20/p2_author1/cache/1115.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 본문 재독입니다. 현행 규정을 구IAS11 세 그룹 분류의 의무 근거로 쓰지 않습니다."
+        }
+      ],
+      "proposals": [],
+      "inspection_scope": "지정된 현재 partial 해설의 요약·단계·네 보기·미확인란 및 source_reads의 기준서 본문을 대조했습니다. 원문 이미지/공식키를 이번 새로 읽었다고 주장하지 않으며, 해당 해설의 기존 원본검증 기록을 재사용합니다.",
+      "current_review_status": "partial"
+    },
+    {
+      "question_id": "2026-09-022",
+      "author": "r25_worker0_finance",
+      "decision": "keep",
+      "current_note_sha256": "02399035b945a42b381e61941792aca4022da1c53634aba9ca288744208756ae",
+      "reason": "일반기준15.9의 우선상계와1032¶33의 자본 직접인식을 대조했습니다. 추가로1008¶7–12는 적용기준이 없는 경우의 경영진 판단과 다른 기준·문헌 고려 가능성을 규정하며 특정 타 기준의 자동 강제적용을 요구하지 않습니다. 기존 해설은①의 분개를 K-IFRS 자체에서 반드시 금지된다고 단정하지 않아 범위를 적절히 제한합니다. 실제 해당 기업 회계정책을 확보한 것은 아니므로 keep합니다.",
+      "source_reads": [
+        {
+          "ref": "R6_F03_GAAP15",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "의결2015-10-13 공개 PDF",
+          "read_locator": "PDF3–4쪽 ¶15.8–15.9: 자기주식 취득원가·앞선 처분손실과 후속 처분이익 우선상계",
+          "sha256": "63028dc2dbe5da4bf537275d3776b6ad4f1c8aac860a3614bed986b90694b296",
+          "private_path": "/tmp/chagok-round20/p1_finance/cache/GAAP15.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "일반기업회계기준 본문 재독이며 K-IFRS 직접 의무로 확대하지 않습니다."
+        },
+        {
+          "ref": "R10_FIN3_KASB_1032_BATCH03",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF29–30쪽 ¶33–35: 자기주식 자본 차감·재발행 대가의 직접 자본 인식",
+          "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+          "private_path": "/tmp/chagok-round20/p1_finance_review/sources/1032.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 K-IFRS 본문 재독입니다. 세부 자기주식처분손실/이익 계정 우선상계순서를 직접 명시한 문단이 아닙니다."
+        },
+        {
+          "ref": "R10_FIN3_KASB_1008_BATCH01",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF11–13쪽 ¶7–16: 구체적 적용기준 우선, 없는 경우 판단, 타 기준·문헌 고려 가능성과 일관성",
+          "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+          "private_path": "/tmp/chagok-round20/p2_author1/cache/1008.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 보존본문 재독입니다. ¶12의 고려할 수 있음은 일반기업회계기준15.9 우선상계가 K-IFRS에 자동 의무화된다는 뜻이 아닙니다."
+        }
+      ],
+      "proposals": [],
+      "inspection_scope": "지정된 현재 partial 해설의 요약·단계·네 보기·미확인란 및 source_reads의 기준서 본문을 대조했습니다. 원문 이미지/공식키를 이번 새로 읽었다고 주장하지 않으며, 해당 해설의 기존 원본검증 기록을 재사용합니다.",
+      "current_review_status": "partial"
+    },
+    {
+      "question_id": "2025-09-014",
+      "author": "r25_worker0_finance",
+      "decision": "keep",
+      "current_note_sha256": "a1b152d0b5f83e6916d19f6530ed48e835656c15569243a2e4a6ce679de42598",
+      "reason": "1040¶8(2)의 용도미정 토지와¶8(4)의 임대목적 미사용 건물은 조건이 다릅니다. 기존 해설은①의 넓은 부동산 표현을 토지로 바꾸지 않고④ 공장부지의 미래자가사용 근거만 확정합니다. source_checked 승격·정답유일성 확정의 새 근거가 없어 keep합니다.",
+      "source_reads": [
+        {
+          "ref": "R6_FIN02_KASB1040",
+          "url": "https://www.kasb.or.kr/front/board/ingAccountingList.do",
+          "version": "2017개정·2021타기준서제정·수정목록24-1 반영",
+          "read_locator": "PDF9–12쪽 ¶5·7·8(2)/(4)·9(3)·11–14: 토지/미사용건물·미래자가사용·경미용역",
+          "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+          "private_path": "/tmp/chagok-round20/p1_finance_review/sources/1040.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 본문 재독입니다. 용도미정 토지의 예를 모든 부동산으로 확대할 새 근거가 아닙니다."
+        }
+      ],
+      "proposals": [],
+      "inspection_scope": "지정된 현재 partial 해설의 요약·단계·네 보기·미확인란 및 source_reads의 기준서 본문을 대조했습니다. 원문 이미지/공식키를 이번 새로 읽었다고 주장하지 않으며, 해당 해설의 기존 원본검증 기록을 재사용합니다.",
+      "current_review_status": "partial"
+    },
+    {
+      "question_id": "2022-12-076",
+      "author": "r25_worker1_tax_sources",
+      "decision": "keep",
+      "current_note_sha256": "89e801425af2435b0282d661c1e4cca1c0e88ec42d9b7e96f4de1d093e8542b2",
+      "reason": "새 부가46015-2124는 수출 영세율·국내 면세에 공통사용한 선박의 매각가액 안분을, 부가46015-1697은 명목별 별도 정산액을 포함한 과세표준 안분 후 10% 거래징수를 설명합니다. 둘 다 제시된 기계 매각금액 30,000,000원의 부가세 포함 여부를 결정하지 않습니다. 판매금액이라는 말만으로 부가세 별도라는 사실을 추가하지 않고, 기존 partial의 조건부 12,000,000원 설명과 미확인 표시를 유지합니다. 새로운 수정 제안은 없습니다.",
+      "source_reads": [
+        {
+          "ref": "R25_W1_NTS_010000000000070179",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000070179",
+          "version": "부가46015-2124 / 19980921",
+          "read_locator": "회신 및 첨부 부가1265-980·간세1235-1805·부가1265.1-2712",
+          "sha256": "65c184eaf7eab3c12721dc65675b518d986da305049d9b568de20e835dba3ade",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000070179.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "수출 영세율·국내 면세에 공통사용한 선박의 매각 안분을 확인하지만 농산물 기계의 30,000,000원에 부가세가 포함되는지 정하지 않습니다. 1984년 소액기준 20만원을 2022년에 소급하지 않습니다."
+        },
+        {
+          "ref": "R25_W1_NTS_010000000000085823",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085823",
+          "version": "부가46015-1697 / 19960824",
+          "read_locator": "회신 전체와 원양선박·선용품·수리비의 별도 정산 사실관계 및 질의 갑·을·병설",
+          "sha256": "2cf9368f78dc6d7d036ae3ee79a7e3d31e3ba62775ec3bba4d3bd65b718c90cc",
+          "private_path": "/tmp/chagok-round25/worker1/case-010000000000085823.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "과세표준 안분 후 10%를 거래징수하는 회신이지만 선박과 선용품 별도 정산 사례입니다. 2022년 기계 매각금액의 부가세 포함 여부를 판정하는 문서가 아니며 질의자의 병설(10%부가세 포함)을 회신으로 인용하지 않습니다."
+        }
+      ],
+      "proposals": [],
+      "checks": [
+        {
+          "expr": "30000000*200000000/(200000000+300000000)",
+          "expected": 12000000,
+          "label": "매각금액을 부가세 별도 공급가액으로 읽은 농산물 관련 과세표준"
+        },
+        {
+          "expr": "30000000*50000000/(50000000+50000000)",
+          "expected": 15000000,
+          "label": "오답 ③과 일치하는 수산물 과세 비율 적용값"
+        },
+        {
+          "expr": "30000000*(50000000+200000000)/(50000000+50000000+200000000+300000000)",
+          "expected": 12500000,
+          "label": "기계와 무관한 수산물 공급가액을 포함한 비교 계산"
+        }
+      ],
+      "inspection_scope": "현재 부분해설 전체와 새 국세청 2회신 본문을 읽었습니다. 원문·공식키·기존해설은 변경하지 않으며 24차 원본 판독을 이번의 새 판독이라고 주장하지 않습니다."
+    },
+    {
+      "question_id": "2026-01-085",
+      "author": "r25_worker2_cost",
+      "decision": "keep",
+      "current_note_sha256": "60a464bf3ead6c8f5c35fa5dcdaeb16270d41cb0db7e2d226809e1a205d7b09c",
+      "reason": "단일법 단락에 배치된 목표 불일치 문구와 이중법의 축소보고 유인은 각각 실제 교재와 중앙대 PDF에 있습니다. 현재 partial은 이 구별 및 ㄹ의 일반 가능성을 정확히 보존하며, 원문 「옳은 것을 모두」에 대한 공식 ②의 유일성이 미확인이라고 명시합니다. 새로운 범위 해소 근거가 없으므로 변경하지 않습니다.",
+      "source_reads": [
+        {
+          "ref": "ORIGINAL_2026-01-085_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2026-01-085.webp",
+          "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+          "read_locator": "이번 view_image로 문항 및 네 보기 전체를 직접 읽음. 공식 답안·공통지시 PDF는 이전 확인기록을 재사용합니다.",
+          "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/images/2026-01-085.webp",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        },
+        {
+          "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+          "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf; 전체영상 SHA256 fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+          "read_locator": "파일1650초 보존 확대 프레임 department-1650-detail.png의 배분기준 수, 단일법·이중법 설명 전체. 1600초를 이번에 별도로 읽었다고 주장하지 않습니다.",
+          "sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+          "private_path": "/tmp/chagok-round23/worker4/cup2023-department.mp4",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        },
+        {
+          "ref": "R21_COST_CAU2023_09",
+          "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+          "version": "KOCW 중앙대학교 황명철 원가회계 2023년 제공 강좌의 실제 첨부 09.pdf; 표지/본문을 직접 확인",
+          "read_locator": "PDF21쪽 기존 렌더 cau09-p21.png: 고정/변동의 분리배부, 최대사용가능량 축소보고 유인과 서비스 부족 문제.",
+          "sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3",
+          "private_path": "/tmp/chagok-round21/source_author1/cache/new-CAU2023-09.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        }
+      ],
+      "checks": [],
+      "proposals": [],
+      "original_scope": "이번 원문 이미지는 직접 재독했습니다. 문제 PDF·공식 키·공통 안내는 이전 검증 기록을 재사용하며 이번 신규 판독으로 주장하지 않습니다.",
+      "new_direct_evidence": false,
+      "review_status_before": "partial",
+      "review_status_proposed": "partial"
+    },
+    {
+      "question_id": "2025-09-081",
+      "author": "r25_worker2_cost",
+      "decision": "keep",
+      "current_note_sha256": "71265566576c29e9403839f29982fbacf41ca41e1c43909d9f37c5d33174a8fd",
+      "reason": "실제 교재는 구입금액도 원가에 포함하면서 자산·비용·손실을 구별합니다. 제1002호 문단16·34·38도 재고원가 제외와 비용 표시를 구별합니다. 현재 partial은 ①의 소비 한정과 ④의 표시 범위 충돌을 요약·보기·미확인란 모두에 보존합니다. 새 정의 한정이나 정답 유일성 근거가 없어 변경하지 않습니다.",
+      "source_reads": [
+        {
+          "ref": "ORIGINAL_2025-09-081_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/71b24a2/jaegyeong/images/2025-09-081.webp",
+          "version": "저장소 기준 71b24a2에서 보존된 사용자 제공 문항 파생 이미지",
+          "read_locator": "이번 view_image로 문항 및 네 보기 전체를 직접 읽음. 공식 답안·공통지시 PDF는 이전 확인기록을 재사용합니다.",
+          "sha256": "76179675f28c3ee66fea133d23f5f1c036c6270dda134b5c97c7b753f5709cfa",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/images/2025-09-081.webp",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        },
+        {
+          "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+          "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+          "read_locator": "파일15·420초 보존 확대 프레임: 원가의 개념 세 문단과 그림1-5. 구입금액의 원가 포함과 자산·비용·손실의 교재상 분류.",
+          "sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+          "private_path": "/tmp/chagok-round24/worker2/cup01-2.mp4",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        },
+        {
+          "ref": "R10_FIN2_K1002",
+          "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+          "version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+          "read_locator": "PDF11~12·17~19쪽 추출 텍스트: 문단11·12·13·16·34·38·39·한40.1 및40C~40G. 매입원가, 비정상 제조원가의 재고원가 제외, 감모손실 비용처리와 매출원가의 폭넓은 구성.",
+          "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+          "private_path": "/tmp/chagok-round21/source_review1/cache/K1002.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 정상 TLS 확보 파일의 지정 본문만 재독했습니다. 신규 근거·전체 문서 또는 영상 시청으로 세지 않습니다."
+        }
+      ],
+      "checks": [],
+      "proposals": [],
+      "original_scope": "이번 원문 이미지는 직접 재독했습니다. 문제 PDF·공식 키·공통 안내는 이전 검증 기록을 재사용하며 이번 신규 판독으로 주장하지 않습니다.",
+      "new_direct_evidence": false,
+      "review_status_before": "partial",
+      "review_status_proposed": "partial"
+    },
+    {
+      "question_id": "2023-11-075",
+      "author": "/root/r25_tax_originals",
+      "decision": "keep",
+      "current_note_sha256": "f91c809a5130c34e8a8dbf523f967b40f399e588828fc24cfc3c84fbbbcc93f4",
+      "reason": "새2019면세전용 회신은 실제 매입세액 공제를 전제로 하므로③에 빠진 자기생산·취득재화 요건을 없애지 않습니다. 2023법 제10조제1항의 정의·제4항 개인적공급과 예외·제12조제3항을 재독했고, 2020선택판 기본통칙10-0-4의 불특정다수 광고선전물 제외를 재확인했습니다. 현partial은①의 근거와③의 미제시 요건을 이미 명확히 구별하므로 이번에 문구·상태를 바꿀 새 근거는 없습니다.",
+      "source_reads": [
+        {
+          "ref": "R25_W5_NTS_CONVERSION_20191210",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "사전-2019-법령해석부가-0686 · 2019-12-10; ntstDcmId010000000000414986",
+          "read_locator": "dcmDVO 회신·문서번호·회신일 및 첨부 사실관계·질의내용, 부가가치세법 제10조제1항 및 시행령 제66조제2항부터 제5항",
+          "sha256": "3bc825529027ebc3dc771e02bfa3688bf23e96fda06019bb80dacbae767305e5",
+          "private_path": "/tmp/chagok-round25/worker5/cache/conversion-head-office.json",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "본점의 실제 매입세액 공제 사실을 전제로 한 2019년 건물 일부 면세전용 사례입니다. 2023년 기계 전용이나 2024 적용법의 폐업 건물에 공제 사실을 추가하지 않습니다. 시행령 제66조제4항은 공제받은 재화의 가액을 취득가액으로 정의하지만 해당 문항의 실제 공제액은 증명하지 않습니다."
+        },
+        {
+          "ref": "VAT_LAW_2023",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+          "version": "'19194' / 시행 2023-01-01",
+          "read_locator": "메타데이터 시행2023-01-01 및 제10조 전체·제12조 전체",
+          "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+          "private_path": "/tmp/chagok-round21/answer_author1/cache/VAT_LAW_2023.md",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "보존 Git 본문을 재독했습니다. 신규 다운로드나 출제기관 원문확인이 아닙니다."
+        },
+        {
+          "ref": "VAT_DECREE_2023",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+          "version": "'33271' / 시행 2023-02-28",
+          "read_locator": "메타데이터 시행2023-02-28 및 제19조의2·제20조 전체",
+          "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+          "private_path": "/tmp/chagok-round21/answer_author1/cache/VAT_DECREE_2023.md",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "보존 Git 본문을 재독했습니다. 신규 다운로드가 아니며 실제 적용부분만 대조했습니다."
+        },
+        {
+          "ref": "R23_W0_NTS_VAT_BASIC_2020",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "rgtYr=2020 선택판; ntstBscId100000000000001571; 별도 부칙목록 응답없음",
+          "read_locator": "ASISTD001MR02 10-0-4 광고선전물의 배포, ntstExrBaseSn2020041, 1998.8.1 개정 표시",
+          "sha256": "f538e2e0e55db1eeade7dd97630980abf0ea110625e1d6dde75248127b1e80f3",
+          "private_path": "/tmp/chagok-round23/worker0/cache/basic-vat2020.json",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "23차 보존2020 선택판의 지정 항목만 재독했습니다. 새 판본을 확보한 것이 아니며 별도 부칙의 미확인 한계를 해소하지 않았습니다."
+        }
+      ],
+      "proposals": [],
+      "review_status_preserved": "partial",
+      "official_answers_preserved": [
+        1
+      ],
+      "unchecked_points_preserved": [
+        "③은 과세사업용 기계장치의 취득만 명시하고 법 제10조제1항의 매입세액 공제 등 자기생산·취득재화 요건을 직접 제시하지 않습니다. 해당 조건을 사실로 추가하지 않으며 공식 정답 ①의 유일성은 완전히 확인되지 않았습니다.",
+        "②는 법정 실비변상·복리후생 예외에 관한 사실을 제시하지 않습니다. 개인적 공급의 원칙을 설명하되 모든 무상 지급이 일률적으로 과세된다고 확대하지 않습니다.",
+        "기본통칙은 2020 선택판의 10-0-4와 같은 문구가 유지된 2024 선택판을 대조했습니다. 2024 선택판의 시행일은 2024년 3월 15일이며, 이를 2023년 시험에 소급한 근거로 삼지 않습니다."
+      ],
+      "inspection_scope": "24차 원문이미지·문항PDF·공통지시·공식답안 확인을 재사용합니다. 이번에는 기존해설과 법령·기본통칙의 지정 본문 및 새2019회신을 읽었으며 출제기관 원문을 다시 열지 않았습니다."
+    }
+  ]
+}
