@@ -11,6 +11,8 @@
 - [상세 보고](reports/round24-review.md)·[작성 입력](reports/round24-proposals.json)·[독립 검수](reports/round24-independent-reviews.json)·[실제 조사](reports/round24-research.json)·[사전검증](reports/round24-preflight.json)·[초안 수정 이력](reports/round24-revisions.json)·[테스트·배포](reports/round24-validation.json).
 
 
+배포 확인: 앱 변경 커밋 `68e81853569a86c756cab261c586c57465b5f9b0`을 main과 작업 브랜치에 함께 저장했고, [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38590609926)이 성공했습니다. 정상 TLS로 공개 `assets/bank-data.js`를 내려받아 확인한 SHA-256 `78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03`이 테스트한 로컬 파일과 일치합니다. 공개 데이터는 문제 4,322개·해설 4,281개·개념 74개·검토 의견 23개입니다. 확인 기록을 저장하는 후속 문서 커밋은 앱 데이터·테스트를 바꾸지 않습니다.
+
 ## 2026-10-14 남은 문항 추가 조사 (23차 · 당시 상태)
 
 남은 45건을 실제 하위 에이전트 6명에게 중복 없이 나누고 작성자와 다른 담당자가 교차 검수했습니다. **`2026-01-085`의 부분 확인 해설 1개**를 등록했습니다. 현재 해설 **4,277개**(source_checked 4,159·partial 118), 미등록 **44건**(출처 13·원문 11·정답 의심 18·계산 2)입니다. 새 해설은 국내 교재의 방법별 분류로 공식 ②를 설명하지만, 원문의 넓은 가능성 진술에 대한 정답 유일성은 미확인이라고 요약·② 설명·미확인란에 명시합니다. 기존 4,276개 해설·공식 키·문항 ID·학습 기록·개념 74개는 그대로입니다.
