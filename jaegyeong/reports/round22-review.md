@@ -48,4 +48,4 @@
 
 ## 배포
 
-코드·검증 결과를 main과 작업 브랜치에 저장한 뒤 해당 커밋의 Pages 결과와 공개 bank-data.js SHA를 실제 확인하여 덧붙입니다.
+배포 확인: 앱 변경 커밋 `8134a05b6245c202fe51ca46e60372ee772e4fdc`을 main과 작업 브랜치에 함께 푸시했고, [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38543562211)이 성공했습니다. 정상 TLS 공개 `assets/bank-data.js`의 SHA-256 `7fd3b4521e94d063ccc0b3617a52ce839a14dd6d222da86de2f2d93eec053f56`이 테스트한 로컬과 일치합니다. 공개 데이터는 문제 4,322개·해설 4,276개·개념 74개·검토 의견 23개입니다. 확인 기록을 저장하는 후속 문서 커밋은 앱 데이터·테스트를 바꾸지 않습니다.
