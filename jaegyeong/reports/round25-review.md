@@ -45,4 +45,4 @@
 
 ## 배포 확인
 
-문서 저장 후 해당 커밋의 Pages 결과와 공개 bank-data.js의 동일 SHA를 확인해 기록합니다.
+추가 조사 문서 커밋 `c94341efd20234168c8de061fc1ffebda6e4b546`을 main과 작업 브랜치에 함께 저장했고, [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38593975889)이 성공했습니다. 정상 TLS로 공개 `assets/bank-data.js`를 내려받아 확인한 SHA-256 `78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03`이 테스트한 로컬 파일과 일치합니다. 공개 데이터는 문제 4,322개·해설 4,281개·개념 74개·검토 의견 23개입니다. 확인 기록을 저장하는 후속 문서 커밋은 학습 데이터·앱·테스트를 바꾸지 않습니다.

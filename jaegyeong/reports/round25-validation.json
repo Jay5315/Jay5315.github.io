@@ -333,5 +333,46 @@
       "shared_repository_writes": false
     },
     "subsequent_changes": "이 검수 영수증을 첨부하고 실제 배포 결과만 추가합니다. 학습 데이터·앱·테스트는 변경하지 않습니다."
+  },
+  "deployment": {
+    "checked_at_utc": "2026-10-14T15:59:11.016845+00:00",
+    "review_commit": "c94341efd20234168c8de061fc1ffebda6e4b546",
+    "remote_refs": {
+      "refs/heads/claude/practical-allen-zjsicv": "c94341efd20234168c8de061fc1ffebda6e4b546",
+      "refs/heads/main": "c94341efd20234168c8de061fc1ffebda6e4b546"
+    },
+    "workflow": {
+      "conclusion": "success",
+      "createdAt": "2026-10-14T15:58:00Z",
+      "databaseId": 38593975889,
+      "headSha": "c94341efd20234168c8de061fc1ffebda6e4b546",
+      "name": "pages build and deployment",
+      "status": "completed",
+      "updatedAt": "2026-10-14T15:58:45Z",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38593975889"
+    },
+    "public_bundle": {
+      "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+      "http_status": 200,
+      "checked_at": "2026-10-14T15:59:01.866103+00:00",
+      "normal_tls_certificate_verification": true,
+      "local_sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03",
+      "public_sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03",
+      "sha256_matches": true,
+      "bytes": 20214703,
+      "response_headers": {
+        "ETag": "\"6acfa6af-13473af\"",
+        "Last-Modified": "Wed, 14 Oct 2026 15:58:39 GMT",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Content-Length": "20214703",
+        "Cache-Control": "max-age=600",
+        "Age": "1"
+      },
+      "question_count": 4322,
+      "explanation_count": 4281,
+      "concept_count": 74,
+      "displayed_review_notes": 23
+    },
+    "followup_scope": "배포 확인 기록만 추가하며 테스트한 앱 데이터와 코드는 변경하지 않습니다."
   }
 }

@@ -10,6 +10,8 @@
 - [상세 보고](reports/round25-review.md)·[작성 결과](reports/round25-proposals.json)·[독립 검수](reports/round25-independent-reviews.json)·[실제 조사](reports/round25-research.json)·[사전 대조](reports/round25-preflight.json)·[남은 문항](reports/round25-remaining.csv)·[테스트·배포](reports/round25-validation.json)
 
 
+배포 확인: 추가 조사 문서 커밋 `c94341efd20234168c8de061fc1ffebda6e4b546`을 main과 작업 브랜치에 함께 저장했고, [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38593975889)이 성공했습니다. 정상 TLS로 공개 `assets/bank-data.js`를 내려받아 확인한 SHA-256 `78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03`이 테스트한 로컬 파일과 일치합니다. 공개 데이터는 문제 4,322개·해설 4,281개·개념 74개·검토 의견 23개입니다. 확인 기록을 저장하는 후속 문서 커밋은 학습 데이터·앱·테스트를 바꾸지 않습니다.
+
 ## 2026-10-14 남은 문항 병렬 후속 조사 (24차 · 당시 상태)
 
 남은 44건을 실제 하위 에이전트 6명에게 나누어 조사하고 작성자와 다른 담당자가 176개 보기를 교차 검수했습니다. **부분 확인 해설 4개**를 추가했습니다. 현재 해설 **4,281개**(source_checked 4,159·partial 122), 미등록 **40건**(출처 10·원문 10·정답 의심 18·계산 2)입니다. 새 4개는 조건 해석·정답 유일성의 한계를 본문에 명시하며, 모든 쟁점을 완전히 해결한 해설로 표시하지 않습니다. 기존 4,277개 해설·공식 정답·문항 ID·학습 기록·개념 74개는 보존했습니다.
