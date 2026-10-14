@@ -1,0 +1,560 @@
+{
+  "first_candidate": [
+    {
+      "question_id": "2026-01-085",
+      "author": "r23_worker4_cost",
+      "decision": "register",
+      "previous_review": {
+        "question_id": "2026-01-085",
+        "reason": "재독 한양3 PDF9–10/13쪽의 두방법 정의와 새 ICMAI P8 PDF31쪽 배부원칙을 확인하여ㄱ분류/ㄴ 단일법최대량단정오류/ㄷ 행태별합리적배부의 근거는 확보됐습니다. 다만 새 한양L10 PDF29쪽은 분권화 일반의 준최적화 가능성을 실제 명시합니다. 따라서 이중법의 합리성 증가만으로ㄹ 부문/전체 최적불일치가 생길 수 있다는 독립가능성을 배타적으로 없다고 할 수 없습니다. 옳은것모두라는 요구를 그대로 지켜 공식②는 보존하고 이 한 진술만 남깁니다.",
+        "category": "source_unverified",
+        "batch_id": "remaining_cost_004",
+        "recheck_batch_id": "recheck_cost_003",
+        "round3_batch_id": "r3_cost_004",
+        "extra_batch_id": "r7_cost_05"
+      },
+      "question_row_sha256": "0d8a487bd6942d52d077e931434e8ff410ede25721c76e5e5997a54136e5fcbb",
+      "reason": "공개 재경관리사 강의에 표시된 국내 교재는 ㄹ과 거의 동일한 부문/전체 최적 불일치 문구를 단일배분율법 단락에 직접 배치합니다. 원문과 같은 문구의 방법별 분류로 공식②를 설명하되, 이중법의 모든 목표불일치 가능성을 부정하지 않는 partial 후보입니다. 기존 이중법 축소보고 유인도 보존합니다.",
+      "reason_type": "new_direct_domestic_method_classification_with_scope_limit",
+      "new_evidence": [
+        "02-2 영상1600/1650초: 단일법은 원가행태별 정확배분이 되지 않으므로 부문의 최적의사결정이 조직전체 차원에서는 최적의사결정이 되지 않을 수 있다는 문제점이 있다고 직접 서술합니다.",
+        "같은 화면은 이중법을 행태에 따라 고정/변동으로 나누어 별도기준(최대사용가능량/실제사용량)으로 배분하는 방법으로 정의하고 고정설비와 실제용역 소비의 발생원인 차이 때문에 합리적이라고 설명합니다.",
+        "기존 중앙대PDF21의 이중법 최대량 축소보고→배분액감소/능력과소준비/서비스부족 본문을 이번에도 실제 재독하여 보존하였습니다."
+      ],
+      "source_reads": [
+        {
+          "ref": "ORIGINAL_2026-01_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-questions.pdf",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF34쪽 대상85번 전체, PDF33쪽 원가과목 시작 및 PDF1쪽 재무과목 공통지시를 실제본문과 렌더화면으로 대조",
+          "sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-questions.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-01_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-answers.pdf",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 공식표 원가관리회계 전체85번=2 실제 렌더 읽기",
+          "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-answers.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-01-085_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2026-01-085.webp",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "문항 전체·ㄱ~ㄹ·네 조합 보기를 실제view_image 대조",
+          "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/images/2026-01-085.webp",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+        },
+        {
+          "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+          "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf",
+          "read_locator": "파일1600·1650초 교재 (2)배분기준 수, ①단일배분율법 및 ②이중배분율법 전체 단락; 실제1650초 오른쪽 교재 화면을 프레임/확대 crop로 직접 읽음",
+          "sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+          "private_path": "/tmp/chagok-round23/worker4/cup2023-department.mp4",
+          "actually_read": true,
+          "read_method": "fresh_download_normal_TLS",
+          "provenance_limit": "공식 KOCW 강좌가 제시한 공개 재생 HTTPS 경로의 MP4 전체파일을 Python urllib 기본 TLS검증으로 받았습니다. 직접 읽은 범위는 명시한 시점의 실제교재화면이며 전체영상/오디오시청을 주장하지 않습니다. 이중법에서 모든 부문/전체 목표불일치가 불가능하다고 확대하지 않습니다. 출판사/교재판본은 화면만으로 확정하지 않습니다."
+        },
+        {
+          "ref": "R21_COST_CAU2023_09",
+          "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+          "version": "KOCW 중앙대 황명철 원가회계2023 부문별원가계산 실제 보존본문",
+          "read_locator": "PDF21쪽 이중배부율: 고정/변동 별도배부와 최대사용가능량 축소보고→고정배부액감소→서비스능력과소준비→서비스부족 전체 본문 재독",
+          "sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3",
+          "private_path": "/tmp/chagok-round21/source_author1/cache/new-CAU2023-09.pdf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "21차 저장 실제본문을 재독하였습니다. 최대사용가능량 축소보고 유인과 서비스부족이라는 명시내용을 보존하고 이를 이중법에서는 불가능하다고 바꾸지 않습니다."
+        }
+      ],
+      "originals": {
+        "image": "images/2026-01-085.webp",
+        "image_sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+        "original_pdf": "sources/2026-01-questions.pdf",
+        "original_pdf_sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+        "question_page": 34,
+        "answer_pdf": "sources/2026-01-answers.pdf",
+        "answer_pdf_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+        "official_answers_read": "공식답안 PDF1쪽 원가관리회계 전체85번=2",
+        "subject_instructions_checked": true,
+        "findings": "원본 이미지 및 PDF34쪽의ㄱ~ㄹ과 네 보기 조합을 모두 직접 대조했습니다. 원가과목 첫33쪽에 추가 유형/의사결정 전제 지시가 없음을 확인했습니다. PDF1쪽 재무과목의 회계기간/추가자료 배제/K-IFRS 안내 위치도 직접 보았고 이를 원가의 ㄹ 일반가능성을 배제하는 지시로 확대하지 않습니다. 공식답안표는85=2입니다."
+      },
+      "checks": [],
+      "inspection_scope": "새 국내 영상의 방법별 분류 본문 직접읽기, 기존 중앙대 이중법 유인 본문 재독, 이번 원본이미지/PDF문항면·공통지시/공식키 직접대조.22차 원본확인만 재사용했다고 표시하지 않습니다.",
+      "draft_note": {
+        "title": "단일배분율법과 이중배분율법의 구별",
+        "summary": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. ㄹ은 교재가 단일배분율법에 배치한 단점이라는 문맥에서 구별합니다.",
+        "steps": [
+          "단일배분율법은 보조부문원가를 고정원가와 변동원가로 구분하지 않고 하나의 기준으로 배분합니다. 이중배분율법은 원가행태를 구분하여 각기 다른 배분기준을 사용하므로 ㄱ이 옳습니다.",
+          "이 문맥에서 단일배분율법의 기준은 용역의 실제 사용량입니다. 이중배분율법에서는 변동원가를 실제 사용량, 고정원가를 제조부문이 사용할 수 있는 최대사용가능량으로 배분합니다. ㄴ은 고정원가에 사용하는 기준을 단일배분율법 전체의 기준이라고 하므로 옳지 않습니다.",
+          "설비 보유에 따른 고정원가와 용역 사용에 따른 변동원가를 구분하면 발생 원인에 맞게 배분할 수 있습니다. 원가배분의 합리성을 높인다는 ㄷ이 이 취지를 설명합니다.",
+          "교재는 원가행태를 구분하지 못하여 부문 최적과 조직 전체 최적이 달라질 수 있다는 단점을 단일배분율법의 설명에 붙입니다. 공식 답안의 ㄹ 제외는 이 문구가 가리키는 방법을 구별하는 문맥에서 설명합니다.",
+          "이중배분율법에서도 최대사용가능량을 줄여 보고하면 고정원가 배분액을 줄일 유인이 생기고, 서비스 제공능력을 적게 준비하는 문제가 생길 수 있습니다. 따라서 ㄹ의 제외를 이중배분율법에서는 어떠한 목표 불일치도 일어날 수 없다는 뜻으로 일반화할 수는 없습니다."
+        ],
+        "option_notes": [
+          {
+            "number": 1,
+            "reason": "ㄱ의 원가행태 구분은 옳지만, ㄴ의 최대사용가능량은 이 문맥에서 이중배분율법의 고정원가에 적용하는 기준입니다. ㄴ을 포함한 1번은 공식 답안의 조합이 아닙니다."
+          },
+          {
+            "number": 2,
+            "reason": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류로 ㄹ을 읽는 문맥에서 ㄱ·ㄷ을 선택한 2번이 공식 정답입니다."
+          },
+          {
+            "number": 3,
+            "reason": "ㄷ의 합리성 향상이라는 취지는 옳지만, ㄴ은 단일배분율법의 기준을 최대사용가능량으로 잘못 설명합니다. 또한 옳은 분류 설명인 ㄱ을 빠뜨린 조합입니다."
+          },
+          {
+            "number": 4,
+            "reason": "ㄴ의 기준 설명이 틀리고, ㄹ의 단점 문구는 교재에서 단일배분율법에 배치되어 있습니다. 다만 이 분류가 이중배분율법에서의 모든 부문·전체 목표 불일치 가능성을 부정하는 것은 아닙니다."
+          }
+        ],
+        "checks": [],
+        "sources": [
+          {
+            "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+            "locator": "02-2.mp4 파일1600·1650초: 배분기준 수, 단일배분율법의 부문·전체 최적 불일치 단점 및 이중배분율법의 분리배분·합리성"
+          },
+          {
+            "ref": "R21_COST_CAU2023_09",
+            "locator": "PDF21쪽 이중배부율과 최대사용가능량 축소보고 유인·서비스능력 과소준비 문제"
+          }
+        ],
+        "review_status": "partial",
+        "unchecked_points": [
+          "ㄹ을 모든 이중배분율법에서 부문 최적과 조직 전체 최적이 불일치할 가능성이 없다는 보편 명제로 읽으면 배타적인 거짓 판정은 확인되지 않습니다. 해설은 원문과 거의 같은 단점 문구를 단일배분율법에 배치한 교재의 분류에 따라 공식 답안을 설명합니다.",
+          "이중배분율법에서도 최대사용가능량 축소보고에 따른 고정원가 배분액 감소 유인과 서비스능력 과소준비 가능성이 교안에 명시되어 있습니다. 이러한 보고 유인을 없다고 가정하지 않으며, 특정 의사결정의 수학적 최적성까지 증명한 것은 아닙니다."
+        ],
+        "review_note": "원문 이미지·문항 PDF·원가과목 공통 안내와 공식 답안을 직접 대조했습니다. 국내 재경관리사 공개강의 영상의 실제 교재 본문과 이중배부율의 보고 유인을 다룬 대학 교안을 읽었습니다. ㄹ의 일반적 가능성에 관한 한계가 남아 부분 확인으로 표시합니다. 전문가 검수는 아직입니다.",
+        "blocker_resolution": "국내 실제 교재는 원문의 부문 최적/조직 전체 최적 불일치 단점 문구를 단일배분율법 단락에 직접 배치하고, 이중법은 행태별 합리적인 분리배분으로 구별합니다. 이를 확인하지 못했던 방법별 분류 근거는 확보되었습니다. 다만 이중법의 일반적 유인 문제를 모두 배제할 수는 없으므로, 기존21차의 최대사용가능량 축소보고 근거를 보존하고 공식②를 이 교재상 분류의 범위에 묶은 partial 후보입니다."
+      }
+    }
+  ],
+  "first_independent_review": [
+    {
+      "question_id": "2026-01-085",
+      "reviewer": "r23_worker5_independent_cost_QA",
+      "author": "r23_worker4_cost",
+      "status": "changes_requested",
+      "proposal_sha256": "304ab3ecb1114b7e4916c6e8659967304f18f70b29e06fd71ff3a32d41d4e103",
+      "proposal_file_sha256": "e2a27ec7bf8a166ba6bff44ba806297832ce12161b555c7b87f9d03f1126a4c5",
+      "proposal_path": "/tmp/chagok-round23/worker4/085-first.json",
+      "approved_decision": "register",
+      "registration_approved": false,
+      "reason": "새 영상에서 원문 ㄹ과 같은 단점 문구가 단일배분율법의 설명에 놓인 사실과 ㄱ·ㄴ·ㄷ의 근거를 독립 확인했습니다. 초안이 이중법의 축소보고 유인을 보존하고 보편적 목표일치 보장으로 확대하지 않은 점은 타당합니다. 다만 unchecked_points[0]는 ㄹ의 논리적 극성을 잘못 재서술하며, 원문은 특정 교재 분류로 읽으라는 지시 없이 「옳은 것을 모두」 요구하므로 요약과②설명에 정답 유일성 미확인을 명시해야 합니다. 정확한 세 문구 수정 후 새 raw 행을 재검수해야 하며 현재 SHA에 등록 승인은 하지 않습니다.",
+      "exact_changes": [
+        {
+          "field": "draft_note.unchecked_points[0]",
+          "before": "ㄹ을 모든 이중배분율법에서 부문 최적과 조직 전체 최적이 불일치할 가능성이 없다는 보편 명제로 읽으면 배타적인 거짓 판정은 확인되지 않습니다. 해설은 원문과 거의 같은 단점 문구를 단일배분율법에 배치한 교재의 분류에 따라 공식 답안을 설명합니다.",
+          "replacement": "원문의 ㄹ은 이중배분율법에서도 부문 최적과 조직 전체 최적이 불일치할 수 있다는 가능성을 말합니다. 교재가 같은 단점 문구를 단일배분율법에 배치했다는 사실만으로 이중배분율법에서는 그런 일이 일어날 수 없다고 단정하거나 ㄹ을 배타적으로 거짓이라고 확인하지 못했습니다. 따라서 「옳은 것을 모두」라는 원문 요구에 대한 공식 ②의 정답 유일성은 미확인입니다.",
+          "why": "현재 문구는 실제 ㄹ의 가능성 진술을 「가능성이 없다는 보편명제」로 뒤집어 재서술합니다. 실제 ㄹ과 그 부정명제를 정확히 구분해야 합니다."
+        },
+        {
+          "field": "draft_note.summary",
+          "before": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. ㄹ은 교재가 단일배분율법에 배치한 단점이라는 문맥에서 구별합니다.",
+          "replacement": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. 교재는 ㄹ과 같은 단점 문구를 단일배분율법에 배치합니다. 다만 원문의 ㄹ을 이중배분율법에서 목표 불일치가 생길 수 있다는 일반적 가능성으로 읽을 때는 정답 유일성이 확인되지 않았습니다.",
+          "why": "원문에는 해당 교재의 방법별 단점 분류만 적용하라는 지시가 없습니다. 확인한 분류를 공식키의 설명 근거로 제시하되, 원문이 요구하는 정답 유일성까지 해결한 것으로 읽히지 않도록 요약에 실질 한계를 명시해야 합니다."
+        },
+        {
+          "field": "draft_note.option_notes[1].reason",
+          "before": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류로 ㄹ을 읽는 문맥에서 ㄱ·ㄷ을 선택한 2번이 공식 정답입니다.",
+          "replacement": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류는 공식 답안 2번의 ㄱ·ㄷ 선택을 설명합니다. 다만 ㄹ의 일반적 가능성을 배타적으로 반박하지 못했으므로, 원문의 「옳은 것을 모두」라는 요구에 대한 정답 유일성을 확인한 것은 아닙니다.",
+          "why": "공식 ②가 실제 키임은 직접 확인했지만 ㄹ이 어떤 이중법에서도 불가능하다는 근거는 없습니다.②의 보기별 설명에도 남은 유일성 한계를 명시합니다."
+        }
+      ],
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①은 ㄱ·ㄴ 조합입니다. ㄱ의 행태구분 여부는 영상1650 단락 첫 문장에 직접 있고 ㄴ의 단일법 최대량 단정은 같은 화면 단일법의 실제용역사용량 설명과 어긋납니다.①을 공식대안으로 만들지 않은 설명이 맞습니다."
+        },
+        {
+          "number": 2,
+          "status": "changes_requested",
+          "note": "②의 ㄱ·ㄷ은 영상1650의 분류와 고정설비/실제사용 발생원인 설명이 직접 뒷받침하고 답안PDF에서85=2를 읽었습니다. 그러나 옳은 것을 모두라는 원문과 일반가능성 ㄹ의 남은 참거짓을 함께 보면 특정 교재 단락의 귀속만으로 정답 유일성은 확정되지 않습니다.②설명에 exact_changes의 유일성 미확인 문장을 반영해야 합니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③은 ㄴ·ㄷ입니다.ㄷ의 분리배부 합리성은 영상1650의 이중법 하단 본문이 지지하지만 ㄴ의 기준 단정은 단일법 실제사용량 설명과 맞지 않고 옳은 ㄱ도 빠집니다. 이 조합을 배제한 이유는 확인됩니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④는 ㄴ·ㄹ입니다.ㄴ 오류만으로 이 조합을 선택할 수 없고, ㄹ과 같은 문구의 교재상 위치는 단일법 단락입니다. 다만 이중법 축소보고 유인/능력과소준비를 중앙대PDF21에서 직접 재독하여 ㄹ의 일반가능성을 보편적으로 부정할 수 없음도 확인했습니다. 초안④는 그 한계를 이미 명시하므로 통과합니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "ORIGINAL_2026-01_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-questions.pdf",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF34쪽 대상85번 전체, PDF33쪽 원가과목 시작 및 PDF1쪽 재무과목 공통지시를 실제본문과 렌더화면으로 대조",
+          "sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-questions.pdf",
+          "actually_read": true,
+          "read_method": "independent_reread_preserved_original",
+          "provenance_limit": "이번 독립검수에서 repo 보존 원본 이미지 및 자체 PDF 렌더를 직접 읽었습니다.21/22차의 판독 결과만 재사용한 것이 아닙니다. 출제기관 신규 다운로드/정오표/수정공식키는 확인하지 않았습니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-01_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-answers.pdf",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 공식표 원가관리회계 전체85번=2 실제 렌더 읽기",
+          "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-answers.pdf",
+          "actually_read": true,
+          "read_method": "independent_reread_preserved_original",
+          "provenance_limit": "이번 독립검수에서 repo 보존 원본 이미지 및 자체 PDF 렌더를 직접 읽었습니다.21/22차의 판독 결과만 재사용한 것이 아닙니다. 출제기관 신규 다운로드/정오표/수정공식키는 확인하지 않았습니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-01-085_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2026-01-085.webp",
+          "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "문항 전체·ㄱ~ㄹ·네 조합 보기를 실제view_image 대조",
+          "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+          "private_path": "/workspace/Jay5315.github.io/jaegyeong/images/2026-01-085.webp",
+          "actually_read": true,
+          "read_method": "independent_reread_preserved_original",
+          "provenance_limit": "이번 독립검수에서 repo 보존 원본 이미지 및 자체 PDF 렌더를 직접 읽었습니다.21/22차의 판독 결과만 재사용한 것이 아닙니다. 출제기관 신규 다운로드/정오표/수정공식키는 확인하지 않았습니다."
+        },
+        {
+          "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+          "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf",
+          "read_locator": "본 reviewer가 원영상에서 직접 추출한1550/1600/1650/1700초 전체프레임을 view_image로 읽음;1600/1650의 단일/이중 소제목 및 교재본문,1650의 reviewer 자체 crop 확대본문을 직접 대조",
+          "sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+          "private_path": "/tmp/chagok-round23/worker4/cup2023-department.mp4",
+          "actually_read": true,
+          "read_method": "independent_fresh_frame_extraction_from_preserved_video",
+          "provenance_limit": "작성자의 프레임 이미지를 재사용하지 않고 같은 SHA의 보존 원영상에서 새 프레임을 추출했습니다. 직접 읽은 범위는 영상 화면이며 오디오 및 전체 영상 시청은 하지 않았습니다. 신규 HTTPS 다운로드는 작성자의 확보 기록을 재사용하며 reviewer 신규 다운로드로 세지 않습니다. 교재 출판사·판본 및 출제기관 정정근거로 주장하지 않습니다."
+        },
+        {
+          "ref": "R21_COST_CAU2023_09",
+          "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+          "version": "KOCW 중앙대 황명철 원가회계2023 부문별원가계산 실제 보존본문",
+          "read_locator": "PDF21쪽 전체를 이번 reviewer가 pdftotext와 자체 렌더 view_image로 직접 재독: 고정/변동 분리, 실제량/최대가능량, 축소보고→배부감소→능력과소준비→서비스부족",
+          "sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3",
+          "private_path": "/tmp/chagok-round21/source_author1/cache/new-CAU2023-09.pdf",
+          "actually_read": true,
+          "read_method": "independent_reread_preserved_body",
+          "provenance_limit": "21차 보존 본문을 이번 reviewer가 새로 직접 재독했습니다. 신규 원격 다운로드나 특정 최적화 문제의 수학적 증명이라고 주장하지 않습니다."
+        }
+      ],
+      "originals": {
+        "image": "images/2026-01-085.webp",
+        "image_sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+        "original_pdf": "sources/2026-01-questions.pdf",
+        "original_pdf_sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+        "question_page": 34,
+        "answer_pdf": "sources/2026-01-answers.pdf",
+        "answer_pdf_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+        "official_answers_read": "공식답안 PDF1쪽 원가관리회계 전체85번=2",
+        "subject_instructions_checked": true,
+        "findings": "이번 reviewer가 원본이미지와 자체 렌더 PDF34쪽의 ㄱ~ㄹ 및 네 조합을 직접 대조하여 추출문항과 일치함을 확인했습니다. 원가 시작PDF33쪽에는 공통지시가 없고 PDF1쪽 지시는 재무과목에 놓여 있습니다. 원문은 「옳은 것을 모두」이며 특정 교재의 방법별 단점분류만 적용하라는 한정은 없습니다. 답안PDF1쪽 원가85번=2를 직접 읽었습니다. 공식키·원문은 바꾸지 않습니다."
+      },
+      "registration_review_scope": "현재는 changes_requested이며 등록 불승인입니다. 수정 후에도 승인 범위는 특정 국내 교재의 방법별 분류를 정확히 설명하고 유일성 한계를 공개한 partial의 정확성에 한정되어야 합니다. ㄹ의 보편적 거짓이나 공식②의 무조건 유일성을 인증하지 않습니다."
+    }
+  ],
+  "author_change_receipt": {
+    "author": "r23_worker4_cost",
+    "question_id": "2026-01-085",
+    "review_path": "/tmp/chagok-round23/review4/085-first-review.json",
+    "review_file_sha256": "256eacc6a62aa66e22a2f66faaccffd4fd425fddef411af4a18a9f800c5e8d53",
+    "review_status": "changes_requested",
+    "operation": "Only the three exact requested field replacements were applied to a new frozen packet. Existing frozen files are unchanged.",
+    "row_hash_serialization": "UTF-8 json.dumps(ensure_ascii=False,sort_keys=True,separators=(comma,colon))",
+    "before_row_sha256": "304ab3ecb1114b7e4916c6e8659967304f18f70b29e06fd71ff3a32d41d4e103",
+    "after_row_sha256": "e0e4e4d4825ef3d4387c4a822a7af98269092bf0c7f3d31b2ad160d1ef78d55e",
+    "exact_changes": [
+      {
+        "field": "draft_note.unchecked_points[0]",
+        "before": "ㄹ을 모든 이중배분율법에서 부문 최적과 조직 전체 최적이 불일치할 가능성이 없다는 보편 명제로 읽으면 배타적인 거짓 판정은 확인되지 않습니다. 해설은 원문과 거의 같은 단점 문구를 단일배분율법에 배치한 교재의 분류에 따라 공식 답안을 설명합니다.",
+        "replacement": "원문의 ㄹ은 이중배분율법에서도 부문 최적과 조직 전체 최적이 불일치할 수 있다는 가능성을 말합니다. 교재가 같은 단점 문구를 단일배분율법에 배치했다는 사실만으로 이중배분율법에서는 그런 일이 일어날 수 없다고 단정하거나 ㄹ을 배타적으로 거짓이라고 확인하지 못했습니다. 따라서 「옳은 것을 모두」라는 원문 요구에 대한 공식 ②의 정답 유일성은 미확인입니다.",
+        "why": "현재 문구는 실제 ㄹ의 가능성 진술을 「가능성이 없다는 보편명제」로 뒤집어 재서술합니다. 실제 ㄹ과 그 부정명제를 정확히 구분해야 합니다."
+      },
+      {
+        "field": "draft_note.summary",
+        "before": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. ㄹ은 교재가 단일배분율법에 배치한 단점이라는 문맥에서 구별합니다.",
+        "replacement": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. 교재는 ㄹ과 같은 단점 문구를 단일배분율법에 배치합니다. 다만 원문의 ㄹ을 이중배분율법에서 목표 불일치가 생길 수 있다는 일반적 가능성으로 읽을 때는 정답 유일성이 확인되지 않았습니다.",
+        "why": "원문에는 해당 교재의 방법별 단점 분류만 적용하라는 지시가 없습니다. 확인한 분류를 공식키의 설명 근거로 제시하되, 원문이 요구하는 정답 유일성까지 해결한 것으로 읽히지 않도록 요약에 실질 한계를 명시해야 합니다."
+      },
+      {
+        "field": "draft_note.option_notes[1].reason",
+        "before": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류로 ㄹ을 읽는 문맥에서 ㄱ·ㄷ을 선택한 2번이 공식 정답입니다.",
+        "replacement": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류는 공식 답안 2번의 ㄱ·ㄷ 선택을 설명합니다. 다만 ㄹ의 일반적 가능성을 배타적으로 반박하지 못했으므로, 원문의 「옳은 것을 모두」라는 요구에 대한 정답 유일성을 확인한 것은 아닙니다.",
+        "why": "공식 ②가 실제 키임은 직접 확인했지만 ㄹ이 어떤 이중법에서도 불가능하다는 근거는 없습니다.②의 보기별 설명에도 남은 유일성 한계를 명시합니다."
+      }
+    ],
+    "verified_changed_fields": [
+      "draft_note.summary",
+      "draft_note.option_notes[1].reason",
+      "draft_note.unchecked_points[0]"
+    ],
+    "checks": {
+      "all_three_before_strings_matched": true,
+      "all_three_replacements_match_review_exactly": true,
+      "other_three_rows_unchanged": true,
+      "other_085_fields_unchanged": true,
+      "source_file_bytes_unchanged": true,
+      "provenance_file_bytes_unchanged": true,
+      "original_frozen_files_unchanged": true
+    },
+    "files": [
+      {
+        "filename": "drafts.json",
+        "before_path": "/tmp/chagok-round23/worker4/drafts.json",
+        "before_sha256": "3c40df14ec6e156a8ce0fa562bc76b5d1b71bb8691273fec693b3efabcdaf4f9",
+        "after_path": "/tmp/chagok-round23/worker4/freeze-v2/drafts.json",
+        "after_sha256": "090147071cdc3a4d2191eb09652ac83a7947afdcc039aba114dbf5fba9e51387"
+      },
+      {
+        "filename": "sources.json",
+        "before_path": "/tmp/chagok-round23/worker4/sources.json",
+        "before_sha256": "dfbb2568a912902e3e9ef11f5afae915c416dcd8a98b19c1b141c1696f210c76",
+        "after_path": "/tmp/chagok-round23/worker4/freeze-v2/sources.json",
+        "after_sha256": "dfbb2568a912902e3e9ef11f5afae915c416dcd8a98b19c1b141c1696f210c76"
+      },
+      {
+        "filename": "provenance.json",
+        "before_path": "/tmp/chagok-round23/worker4/provenance.json",
+        "before_sha256": "c07ddceb8c7b375cc7a7adffbb92054ef0c0304eba16fd1c97e02f8229e9f6d3",
+        "after_path": "/tmp/chagok-round23/worker4/freeze-v2/provenance.json",
+        "after_sha256": "c07ddceb8c7b375cc7a7adffbb92054ef0c0304eba16fd1c97e02f8229e9f6d3"
+      },
+      {
+        "filename": "085-first.json",
+        "before_path": "/tmp/chagok-round23/worker4/085-first.json",
+        "before_sha256": "e2a27ec7bf8a166ba6bff44ba806297832ce12161b555c7b87f9d03f1126a4c5",
+        "after_path": "/tmp/chagok-round23/worker4/freeze-v2/085-first.json",
+        "after_sha256": "09d3c1311e45f712b00ce02d245d427d0ee7001a2c021f8d3ecb5ecd1cf6398d"
+      }
+    ],
+    "other_row_sha256": [
+      {
+        "question_id": "2026-09-097",
+        "sha256": "78ffca38fcc6eda0141b2f40054c15d641616397667305f741c85f306f12f40e"
+      },
+      {
+        "question_id": "2025-09-081",
+        "sha256": "6f107c41aa07b38979ebb247a3e63a34f9e084c7bce24d12acf36456a09d5c7f"
+      },
+      {
+        "question_id": "2023-09-120",
+        "sha256": "8ee9fe2085fceba2063d4604bd3162736c5f2e6a61699c4fcfd8e008769c96c6"
+      }
+    ],
+    "reason": "The review correctly distinguishes the actual ㄹ possibility statement from its negation. The summary and answer-option reason now explicitly disclose that uniqueness under the question request to select all true statements remains unverified."
+  },
+  "corrected_candidate": {
+    "question_id": "2026-01-085",
+    "author": "r23_worker4_cost",
+    "decision": "register",
+    "previous_review": {
+      "question_id": "2026-01-085",
+      "reason": "재독 한양3 PDF9–10/13쪽의 두방법 정의와 새 ICMAI P8 PDF31쪽 배부원칙을 확인하여ㄱ분류/ㄴ 단일법최대량단정오류/ㄷ 행태별합리적배부의 근거는 확보됐습니다. 다만 새 한양L10 PDF29쪽은 분권화 일반의 준최적화 가능성을 실제 명시합니다. 따라서 이중법의 합리성 증가만으로ㄹ 부문/전체 최적불일치가 생길 수 있다는 독립가능성을 배타적으로 없다고 할 수 없습니다. 옳은것모두라는 요구를 그대로 지켜 공식②는 보존하고 이 한 진술만 남깁니다.",
+      "category": "source_unverified",
+      "batch_id": "remaining_cost_004",
+      "recheck_batch_id": "recheck_cost_003",
+      "round3_batch_id": "r3_cost_004",
+      "extra_batch_id": "r7_cost_05"
+    },
+    "question_row_sha256": "0d8a487bd6942d52d077e931434e8ff410ede25721c76e5e5997a54136e5fcbb",
+    "reason": "공개 재경관리사 강의에 표시된 국내 교재는 ㄹ과 거의 동일한 부문/전체 최적 불일치 문구를 단일배분율법 단락에 직접 배치합니다. 원문과 같은 문구의 방법별 분류로 공식②를 설명하되, 이중법의 모든 목표불일치 가능성을 부정하지 않는 partial 후보입니다. 기존 이중법 축소보고 유인도 보존합니다.",
+    "reason_type": "new_direct_domestic_method_classification_with_scope_limit",
+    "new_evidence": [
+      "02-2 영상1600/1650초: 단일법은 원가행태별 정확배분이 되지 않으므로 부문의 최적의사결정이 조직전체 차원에서는 최적의사결정이 되지 않을 수 있다는 문제점이 있다고 직접 서술합니다.",
+      "같은 화면은 이중법을 행태에 따라 고정/변동으로 나누어 별도기준(최대사용가능량/실제사용량)으로 배분하는 방법으로 정의하고 고정설비와 실제용역 소비의 발생원인 차이 때문에 합리적이라고 설명합니다.",
+      "기존 중앙대PDF21의 이중법 최대량 축소보고→배분액감소/능력과소준비/서비스부족 본문을 이번에도 실제 재독하여 보존하였습니다."
+    ],
+    "source_reads": [
+      {
+        "ref": "ORIGINAL_2026-01_QUESTIONS",
+        "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-questions.pdf",
+        "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+        "read_locator": "PDF34쪽 대상85번 전체, PDF33쪽 원가과목 시작 및 PDF1쪽 재무과목 공통지시를 실제본문과 렌더화면으로 대조",
+        "sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+        "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-questions.pdf",
+        "actually_read": true,
+        "read_method": "reread_preserved_body",
+        "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+      },
+      {
+        "ref": "ORIGINAL_2026-01_ANSWERS",
+        "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-01-answers.pdf",
+        "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+        "read_locator": "PDF1쪽 공식표 원가관리회계 전체85번=2 실제 렌더 읽기",
+        "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+        "private_path": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-01-answers.pdf",
+        "actually_read": true,
+        "read_method": "reread_preserved_body",
+        "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+      },
+      {
+        "ref": "ORIGINAL_2026-01-085_IMAGE",
+        "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2026-01-085.webp",
+        "version": "사용자제공 원본·commit7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+        "read_locator": "문항 전체·ㄱ~ㄹ·네 조합 보기를 실제view_image 대조",
+        "sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+        "private_path": "/workspace/Jay5315.github.io/jaegyeong/images/2026-01-085.webp",
+        "actually_read": true,
+        "read_method": "reread_preserved_body",
+        "provenance_limit": "이번 후보 작성을 위해 보존 원문을 새로 직접 읽었습니다. 출제기관 신규 다운로드나 수정답안 확인으로 표시하지 않습니다."
+      },
+      {
+        "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+        "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/02-2.mp4",
+        "version": "KOCW 부산가톨릭대 신성욱 자격증세미나 2023년1학기 02-2.mp4; 영상표시 원가관리회계2장.pdf",
+        "read_locator": "파일1600·1650초 교재 (2)배분기준 수, ①단일배분율법 및 ②이중배분율법 전체 단락; 실제1650초 오른쪽 교재 화면을 프레임/확대 crop로 직접 읽음",
+        "sha256": "fd825a0e7545b6ca563b12f946a980dfd0f8441d6f59f12c35aa1a0130a6d3e7",
+        "private_path": "/tmp/chagok-round23/worker4/cup2023-department.mp4",
+        "actually_read": true,
+        "read_method": "fresh_download_normal_TLS",
+        "provenance_limit": "공식 KOCW 강좌가 제시한 공개 재생 HTTPS 경로의 MP4 전체파일을 Python urllib 기본 TLS검증으로 받았습니다. 직접 읽은 범위는 명시한 시점의 실제교재화면이며 전체영상/오디오시청을 주장하지 않습니다. 이중법에서 모든 부문/전체 목표불일치가 불가능하다고 확대하지 않습니다. 출판사/교재판본은 화면만으로 확정하지 않습니다."
+      },
+      {
+        "ref": "R21_COST_CAU2023_09",
+        "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2023/cau/hwangmyungcheol0714/09.pdf",
+        "version": "KOCW 중앙대 황명철 원가회계2023 부문별원가계산 실제 보존본문",
+        "read_locator": "PDF21쪽 이중배부율: 고정/변동 별도배부와 최대사용가능량 축소보고→고정배부액감소→서비스능력과소준비→서비스부족 전체 본문 재독",
+        "sha256": "571a3a3acb70071642d3a8d0678ac302ccb035eb1a6b22beefd3f965fc9856b3",
+        "private_path": "/tmp/chagok-round21/source_author1/cache/new-CAU2023-09.pdf",
+        "actually_read": true,
+        "read_method": "reread_preserved_body",
+        "provenance_limit": "21차 저장 실제본문을 재독하였습니다. 최대사용가능량 축소보고 유인과 서비스부족이라는 명시내용을 보존하고 이를 이중법에서는 불가능하다고 바꾸지 않습니다."
+      }
+    ],
+    "originals": {
+      "image": "images/2026-01-085.webp",
+      "image_sha256": "98e68fc320800f5d73fd53304c345aab610e674543efa1bdc4119c54f3c91441",
+      "original_pdf": "sources/2026-01-questions.pdf",
+      "original_pdf_sha256": "ede9ef4afc453ebb872efc711a6df2719956990c9ffe2f1608ba251019d72652",
+      "question_page": 34,
+      "answer_pdf": "sources/2026-01-answers.pdf",
+      "answer_pdf_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+      "official_answers_read": "공식답안 PDF1쪽 원가관리회계 전체85번=2",
+      "subject_instructions_checked": true,
+      "findings": "원본 이미지 및 PDF34쪽의ㄱ~ㄹ과 네 보기 조합을 모두 직접 대조했습니다. 원가과목 첫33쪽에 추가 유형/의사결정 전제 지시가 없음을 확인했습니다. PDF1쪽 재무과목의 회계기간/추가자료 배제/K-IFRS 안내 위치도 직접 보았고 이를 원가의 ㄹ 일반가능성을 배제하는 지시로 확대하지 않습니다. 공식답안표는85=2입니다."
+    },
+    "checks": [],
+    "inspection_scope": "새 국내 영상의 방법별 분류 본문 직접읽기, 기존 중앙대 이중법 유인 본문 재독, 이번 원본이미지/PDF문항면·공통지시/공식키 직접대조.22차 원본확인만 재사용했다고 표시하지 않습니다.",
+    "draft_note": {
+      "title": "단일배분율법과 이중배분율법의 구별",
+      "summary": "공식 답안은 ㄱ·ㄷ을 고른 2번입니다. 교재는 ㄹ과 같은 단점 문구를 단일배분율법에 배치합니다. 다만 원문의 ㄹ을 이중배분율법에서 목표 불일치가 생길 수 있다는 일반적 가능성으로 읽을 때는 정답 유일성이 확인되지 않았습니다.",
+      "steps": [
+        "단일배분율법은 보조부문원가를 고정원가와 변동원가로 구분하지 않고 하나의 기준으로 배분합니다. 이중배분율법은 원가행태를 구분하여 각기 다른 배분기준을 사용하므로 ㄱ이 옳습니다.",
+        "이 문맥에서 단일배분율법의 기준은 용역의 실제 사용량입니다. 이중배분율법에서는 변동원가를 실제 사용량, 고정원가를 제조부문이 사용할 수 있는 최대사용가능량으로 배분합니다. ㄴ은 고정원가에 사용하는 기준을 단일배분율법 전체의 기준이라고 하므로 옳지 않습니다.",
+        "설비 보유에 따른 고정원가와 용역 사용에 따른 변동원가를 구분하면 발생 원인에 맞게 배분할 수 있습니다. 원가배분의 합리성을 높인다는 ㄷ이 이 취지를 설명합니다.",
+        "교재는 원가행태를 구분하지 못하여 부문 최적과 조직 전체 최적이 달라질 수 있다는 단점을 단일배분율법의 설명에 붙입니다. 공식 답안의 ㄹ 제외는 이 문구가 가리키는 방법을 구별하는 문맥에서 설명합니다.",
+        "이중배분율법에서도 최대사용가능량을 줄여 보고하면 고정원가 배분액을 줄일 유인이 생기고, 서비스 제공능력을 적게 준비하는 문제가 생길 수 있습니다. 따라서 ㄹ의 제외를 이중배분율법에서는 어떠한 목표 불일치도 일어날 수 없다는 뜻으로 일반화할 수는 없습니다."
+      ],
+      "option_notes": [
+        {
+          "number": 1,
+          "reason": "ㄱ의 원가행태 구분은 옳지만, ㄴ의 최대사용가능량은 이 문맥에서 이중배분율법의 고정원가에 적용하는 기준입니다. ㄴ을 포함한 1번은 공식 답안의 조합이 아닙니다."
+        },
+        {
+          "number": 2,
+          "reason": "ㄱ은 고정·변동 원가행태 구분 여부에 따른 분류이고, ㄷ은 발생 원인에 맞추어 배분하려는 이중배분율법의 취지입니다. 교재의 방법별 단점 분류는 공식 답안 2번의 ㄱ·ㄷ 선택을 설명합니다. 다만 ㄹ의 일반적 가능성을 배타적으로 반박하지 못했으므로, 원문의 「옳은 것을 모두」라는 요구에 대한 정답 유일성을 확인한 것은 아닙니다."
+        },
+        {
+          "number": 3,
+          "reason": "ㄷ의 합리성 향상이라는 취지는 옳지만, ㄴ은 단일배분율법의 기준을 최대사용가능량으로 잘못 설명합니다. 또한 옳은 분류 설명인 ㄱ을 빠뜨린 조합입니다."
+        },
+        {
+          "number": 4,
+          "reason": "ㄴ의 기준 설명이 틀리고, ㄹ의 단점 문구는 교재에서 단일배분율법에 배치되어 있습니다. 다만 이 분류가 이중배분율법에서의 모든 부문·전체 목표 불일치 가능성을 부정하는 것은 아닙니다."
+        }
+      ],
+      "checks": [],
+      "sources": [
+        {
+          "ref": "R23_W4_CUP2023_DEPARTMENT_VIDEO",
+          "locator": "02-2.mp4 파일1600·1650초: 배분기준 수, 단일배분율법의 부문·전체 최적 불일치 단점 및 이중배분율법의 분리배분·합리성"
+        },
+        {
+          "ref": "R21_COST_CAU2023_09",
+          "locator": "PDF21쪽 이중배부율과 최대사용가능량 축소보고 유인·서비스능력 과소준비 문제"
+        }
+      ],
+      "review_status": "partial",
+      "unchecked_points": [
+        "원문의 ㄹ은 이중배분율법에서도 부문 최적과 조직 전체 최적이 불일치할 수 있다는 가능성을 말합니다. 교재가 같은 단점 문구를 단일배분율법에 배치했다는 사실만으로 이중배분율법에서는 그런 일이 일어날 수 없다고 단정하거나 ㄹ을 배타적으로 거짓이라고 확인하지 못했습니다. 따라서 「옳은 것을 모두」라는 원문 요구에 대한 공식 ②의 정답 유일성은 미확인입니다.",
+        "이중배분율법에서도 최대사용가능량 축소보고에 따른 고정원가 배분액 감소 유인과 서비스능력 과소준비 가능성이 교안에 명시되어 있습니다. 이러한 보고 유인을 없다고 가정하지 않으며, 특정 의사결정의 수학적 최적성까지 증명한 것은 아닙니다."
+      ],
+      "review_note": "원문 이미지·문항 PDF·원가과목 공통 안내와 공식 답안을 직접 대조했습니다. 국내 재경관리사 공개강의 영상의 실제 교재 본문과 이중배부율의 보고 유인을 다룬 대학 교안을 읽었습니다. ㄹ의 일반적 가능성에 관한 한계가 남아 부분 확인으로 표시합니다. 전문가 검수는 아직입니다.",
+      "blocker_resolution": "국내 실제 교재는 원문의 부문 최적/조직 전체 최적 불일치 단점 문구를 단일배분율법 단락에 직접 배치하고, 이중법은 행태별 합리적인 분리배분으로 구별합니다. 이를 확인하지 못했던 방법별 분류 근거는 확보되었습니다. 다만 이중법의 일반적 유인 문제를 모두 배제할 수는 없으므로, 기존21차의 최대사용가능량 축소보고 근거를 보존하고 공식②를 이 교재상 분류의 범위에 묶은 partial 후보입니다."
+    }
+  },
+  "code_review": {
+    "reviewer": "r22_corporate_keys",
+    "status": "pass",
+    "mandatory_changes": [],
+    "scope": "Read-only short review of round23 mutation boundaries, approval gates, reversal order and regression/browser test additions.",
+    "reviewed_files": [
+      {
+        "path": "apply_round23_followups.py",
+        "sha256": "f6241ef78fded0e2fbe00b73d187d286cb458cfc659ad505ac74ff6137c87053"
+      },
+      {
+        "path": "prepare_code.py",
+        "sha256": "0fcbc4c0a3d9c82831939083573dda93dc7503674034c0fe99227a2bd1c163b8"
+      },
+      {
+        "path": "apply_round22_followups.py",
+        "sha256": "180ca7b40c124955bb94df289711061096f6f851a7436108eb774c1f02ebfbbc"
+      },
+      {
+        "path": "apply_round20_followups.py",
+        "sha256": "dd2759069f2a915a934fd0a481cb929022e12af0b0e20b5cc0be8c40970dd225"
+      },
+      {
+        "path": "test_explanations.py",
+        "sha256": "6f677177870a16ad9b329c4290d5c7b72d0adc5a8e839dff29ae4d6b699d8410"
+      },
+      {
+        "path": "test_explanations_app.py",
+        "sha256": "929381c222ab70daec45d6660cd1b463ca19932f0639f20483f594faf02ba6ad"
+      },
+      {
+        "path": "baseline.json",
+        "sha256": "c7f81dfff010e4d0d6ff379cd48ad3ca0a8feed1c318c586f932e1beabeedae6"
+      }
+    ],
+    "verified": {
+      "baseline_note_count": 4276,
+      "baseline_source_count": 1855,
+      "baseline_raw_explanation_audit_concept_hashes_match": true,
+      "protected_file_hashes_match": true,
+      "existing_test_methods_preserved": 43,
+      "new_test_methods": 1,
+      "old_test_methods_modified": 0,
+      "reversal_order": [
+        "round23_followups",
+        "round22_followups",
+        "round21_inspections"
+      ],
+      "approval_gates": "Imports existing apply_round22_followups.approve and check_originals; apply calls approve for every row and original checks for author and reviewer before registration. Explicit registration approval, actual source reads, independent reviewer and exact row digest gates remain enforced.",
+      "preservation": "Full input/baseline hashes bind current data; prior note and source objects plus audit keys are protected; originals/concepts are read-only and protected; authored_note binds official answers and classifications from original question.",
+      "browser_targets": "Adds round23 registrations after existing round20/round22 targets without removing targets or changing rendering/grading checks.",
+      "syntax": "All four prospective Python texts compiled in memory."
+    },
+    "limits": [
+      "No prepare/apply script executed.",
+      "No actual data writes or full tests executed.",
+      "No shared repository files written.",
+      "Private template path resolution was assessed for its intended repo/scripts installation."
+    ]
+  }
+}

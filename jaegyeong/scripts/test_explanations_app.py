@@ -15,6 +15,7 @@ audit = json.loads((R / 'reports/explanation-expansion.json').read_text())
 round20 = audit.get('round20_followups',{})
 round21 = audit.get('round21_inspections',{})
 round22 = audit.get('round22_followups',{})
+round23 = audit.get('round23_followups',{})
 concept_changes = round20.get('concept_amendments',[])
 # Render every explanation, then exercise actual grading for the original 30 and
 # both conceptual/calculation examples in each newly covered part.
@@ -27,7 +28,7 @@ for n in items[30:]:
         covered.add(group)
 interactive_ids={n['question_id'] for n in interactive}
 by_id={n['question_id']:n for n in items}
-for registration in round20.get('registrations',[]) + round22.get('registrations',[]):
+for registration in round20.get('registrations',[]) + round22.get('registrations',[]) + round23.get('registrations',[]):
     if registration['question_id'] not in interactive_ids:
         interactive.append(by_id[registration['question_id']])
         interactive_ids.add(registration['question_id'])
