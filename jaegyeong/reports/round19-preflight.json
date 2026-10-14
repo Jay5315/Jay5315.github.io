@@ -1,0 +1,2180 @@
+{
+  "checked_on": "2026-10-14",
+  "baseline_commit": "9ddaad3bd80fe20abd33445e7033c00da4082508",
+  "target_count": 77,
+  "previous_explanation_count": 4221,
+  "registered_count": 51,
+  "declined_count": 26,
+  "remaining_count": 49,
+  "remaining_categories": {
+    "source_unverified": 18,
+    "answer_suspected": 18,
+    "parse_problem": 11,
+    "calculation_unresolved": 2
+  },
+  "new_review_statuses": {
+    "partial": 49,
+    "source_checked": 2
+  },
+  "total_review_statuses": {
+    "source_checked": 4157,
+    "partial": 115
+  },
+  "independent_review_count": 77,
+  "four_option_findings": 308,
+  "calculations_verified": 34,
+  "source_reads_verified": 217,
+  "new_source_refs": [
+    "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+    "EXAM_KEYS_R17B0_CONSTRUCTION_INTEREST_SCOPE",
+    "EXAM_KEYS_R17B0_PIT_FEATURES",
+    "EXAM_KEYS_R17B0_UNFAIR_TX_STATEMENTS",
+    "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+    "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+    "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+    "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+    "EXAM_KEYS_R17B2_VAT_BUSINESS_REPETITION",
+    "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+    "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+    "EXAM_KEYS_R17B3_VAT_CLOSURE_REMAINING",
+    "EXAM_KEYS_R17B4_COST_ESTIMATION",
+    "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+    "EXAM_KEYS_R17B5_RECOGNITION_STATEMENTS",
+    "EXAM_KEYS_R17B5_RESPONSIBILITY_FINAL_STAGE",
+    "EXAM_KEYS_R17B5_SALES_VARIANCE_HIERARCHY",
+    "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+    "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+    "R17B2_SC_92NU5225",
+    "R17B3_SAYLOR_COST_BEHAVIOR",
+    "R17B3_SAYLOR_DIFF_TERMS",
+    "R17B3_SAYLOR_JOB_SHEET",
+    "R17B3_SAYLOR_MA_CHARACTERISTICS",
+    "R19_B7_KASB1105"
+  ],
+  "actual_spawned_agents": 6,
+  "recursive_agents": 0,
+  "protected_existing_explanations": 4221,
+  "protected_source_refs": 1822,
+  "skipped_expected": [],
+  "protected_immutable_files": {
+    "data/questions.json": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+    "data/entries.json": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+    "data/families.json": "df59d4d5d509b732c6d14e63699796db3465080c52f3f66a0ddfccb872b3f367",
+    "data/taxonomy.json": "70eab55cbe22feb46f38f3d6ef54145ab29c344077b7568ff2a732b716a5ce1b",
+    "data/concept-notes.json": "140154cb407ddd4703c55c96c775ad421643b3c9a18881cfd40e3462fca2d9e3",
+    "assets/app.js": "252c6dbb81e9b3f53eed5354dec5ee7d7f58965feb3fc2e0d18b552dc9e5408d",
+    "assets/app.css": "72ea3ddc5c8a7a834b2f19bfe14f22bfa7b1aa293255d5b8b5d4b15b48b8b942",
+    "index.html": "803ffda69c5daa8a8fc161d00afae2cd1184156ae549b822be51e617f31627be"
+  },
+  "source_evidence": [
+    {
+      "question_id": "2022-05-045",
+      "ref": "CIT_LAW_2022",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "162d3e8afed72abc076eaf028d5f35ecdf3598a9 (공포 2021-12-21, 시행 2022-01-01)",
+      "what_was_read": "제6조제1항, 제7조 전문",
+      "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+      "verified_body_sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e"
+    },
+    {
+      "question_id": "2022-05-045",
+      "ref": "CIT_LAW_2024",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 (공포 2023-12-31, 시행 2024-01-01)",
+      "what_was_read": "제7조 전문(2022년 판본과 동일함을 diff로 확인)",
+      "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+      "verified_body_sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71"
+    },
+    {
+      "question_id": "2022-05-045",
+      "ref": "R10_tax_NTS_CIT_EXEC2024",
+      "path_or_url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000001058565&fleSn=932291 (로컬 사본 /tmp/claude-0/dl/nts/exec2024.pdf)",
+      "commit_or_version": "2024년 10월 발간 법인세 집행기준",
+      "what_was_read": "집행기준 7-0-1 ①~④ 본문",
+      "sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea",
+      "verified_body_sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea"
+    },
+    {
+      "question_id": "2022-06-056",
+      "ref": "CIT_LAW_2022",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "162d3e8afed72abc076eaf028d5f35ecdf3598a9 (공포 2021-12-21, 시행 2022-01-01)",
+      "what_was_read": "제19조의2, 제28조, 제34조, 제52조 본문",
+      "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+      "verified_body_sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e"
+    },
+    {
+      "question_id": "2022-06-056",
+      "ref": "RT001_CIT_DECREE_2022",
+      "path_or_url": "law git kr/법인세법/시행령.md",
+      "commit_or_version": "c7c58eb7623b4192bf424be265a82991ac7e5540 (공포 2022-02-17, 시행 2022-02-18)",
+      "what_was_read": "제53조, 제88조, 제89조 본문",
+      "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+      "verified_body_sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5"
+    },
+    {
+      "question_id": "2022-06-056",
+      "ref": "R10_tax_NTS_CIT_EXEC2024",
+      "path_or_url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000001058565&fleSn=932291 (로컬 사본 /tmp/claude-0/dl/nts/exec2024.pdf)",
+      "commit_or_version": "2024년 10월 발간 법인세 집행기준",
+      "what_was_read": "28-53-1, 28-53-2, 차입금이자 포함·불포함 예시표, 52-88-1(3억원·5% 기준 적용 유형), 52-89-6",
+      "sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea",
+      "verified_body_sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea"
+    },
+    {
+      "question_id": "2022-06-056",
+      "ref": "CIT_RULE_2022",
+      "path_or_url": "law git kr/법인세법/시행규칙.md",
+      "commit_or_version": "18d7ff5a9a76c94bb1304164a0d1d88b7b81effc (공포·시행 2022-03-18)",
+      "what_was_read": "제44조 각 호",
+      "sha256": "5aa395f80a0772cb73bde9de1211b76048c1bcab0efc897660370eccf2f42f31",
+      "verified_body_sha256": "5aa395f80a0772cb73bde9de1211b76048c1bcab0efc897660370eccf2f42f31"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "CIT_LAW_2026",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "2250832915f95a947777b9ee052d0653073ff03e (공포 2025-12-23, 시행 2026-01-01)",
+      "what_was_read": "제28조 전문",
+      "sha256": "71b37268c2313c0eadff2d35da06b0ff98a8eb7ac48c8147e38501755c11c1b8",
+      "verified_body_sha256": "71b37268c2313c0eadff2d35da06b0ff98a8eb7ac48c8147e38501755c11c1b8"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "CIT_DECREE_2026",
+      "path_or_url": "law git kr/법인세법/시행령.md",
+      "commit_or_version": "d7de727473c0bf05431d2c3481858a6562871139 (공포·시행 2026-02-27)",
+      "what_was_read": "제52조, 제53조, 제55조 본문",
+      "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+      "verified_body_sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "R10_tax_NTS_CIT_EXEC2024",
+      "path_or_url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000001058565&fleSn=932291 (로컬 사본 /tmp/claude-0/dl/nts/exec2024.pdf)",
+      "commit_or_version": "2024년 10월 발간 법인세 집행기준",
+      "what_was_read": "28-52-1(건설자금이자의 계산) 제1호~제6호",
+      "sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea",
+      "verified_body_sha256": "49338cfc6bea62a3e06cf5a18bc17f83fbc0a3f41169cc168b967a230e55a7ea"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "EXAM_KEYS_R17B0_CONSTRUCTION_INTEREST_SCOPE",
+      "path_or_url": "sources/2026-06-answers.pdf",
+      "commit_or_version": "2026-06 공식 답안 PDF",
+      "what_was_read": "세무회계 55번 정답 3",
+      "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+      "verified_body_sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "EXAM_KEYS_R17B0_CONSTRUCTION_INTEREST_SCOPE",
+      "path_or_url": "sources/2024-12-answers.pdf",
+      "commit_or_version": "2024-12 공식 답안 PDF",
+      "what_was_read": "세무회계 55번 정답 1 (문항 본문은 문제은행 이미지 2024-12-055로 확인)",
+      "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e",
+      "verified_body_sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "EXAM_KEYS_R17B0_CONSTRUCTION_INTEREST_SCOPE",
+      "path_or_url": "sources/2025-11-answers.pdf",
+      "commit_or_version": "2025-11 공식 답안 PDF",
+      "what_was_read": "세무회계 55번 정답 4 (문항 본문은 문제은행 이미지 2025-11-055로 확인)",
+      "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8",
+      "verified_body_sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+    },
+    {
+      "question_id": "2026-06-055",
+      "ref": "EXAM_KEYS_R17B0_CONSTRUCTION_INTEREST_SCOPE",
+      "path_or_url": "sources/2024-05-answers.pdf",
+      "commit_or_version": "2024-05 공식 답안 PDF",
+      "what_was_read": "세무회계 15번(=55번) 정답 2 (문항 본문은 문제은행 이미지 2024-05-055로 확인)",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "verified_body_sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "CIT_LAW_2022",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "162d3e8afed72abc076eaf028d5f35ecdf3598a9 (공포 2021-12-21, 시행 2022-01-01)",
+      "what_was_read": "제52조 본문",
+      "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+      "verified_body_sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "R6_TAX03_법인세법_시행령_20221027",
+      "path_or_url": "law git kr/법인세법/시행령.md",
+      "commit_or_version": "881734f50357bc761947d469e0b8ecf06c994281 (공포·시행 2022-10-27)",
+      "what_was_read": "제2조제5항, 제50조제2항, 제88조, 제89조제5항 본문",
+      "sha256": "b1c3c118534f5c85a9645d45d78fd93c6f068808fe37ed5682bcbeb3df2f54c6",
+      "verified_body_sha256": "b1c3c118534f5c85a9645d45d78fd93c6f068808fe37ed5682bcbeb3df2f54c6"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "CIT_RULE_2022",
+      "path_or_url": "law git kr/법인세법/시행규칙.md",
+      "commit_or_version": "18d7ff5a9a76c94bb1304164a0d1d88b7b81effc (공포·시행 2022-03-18)",
+      "what_was_read": "제44조 각 호",
+      "sha256": "5aa395f80a0772cb73bde9de1211b76048c1bcab0efc897660370eccf2f42f31",
+      "verified_body_sha256": "5aa395f80a0772cb73bde9de1211b76048c1bcab0efc897660370eccf2f42f31"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "EXAM_KEYS_R17B0_UNFAIR_TX_STATEMENTS",
+      "path_or_url": "sources/2022-12-answers.pdf",
+      "commit_or_version": "2022-12 공식 답안 PDF",
+      "what_was_read": "세무회계 58번 문항 본문과 정답 [2]",
+      "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+      "verified_body_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "EXAM_KEYS_R17B0_UNFAIR_TX_STATEMENTS",
+      "path_or_url": "sources/2022-07-answers.pdf",
+      "commit_or_version": "2022-07 공식 답안 PDF",
+      "what_was_read": "세무회계 58번 문항 본문과 정답 [4]",
+      "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa",
+      "verified_body_sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "EXAM_KEYS_R17B0_UNFAIR_TX_STATEMENTS",
+      "path_or_url": "sources/2025-09-answers.pdf",
+      "commit_or_version": "2025-09 공식 답안 PDF",
+      "what_was_read": "세무회계 58번 정답 2 (문항 본문은 문제은행 이미지 2025-09-058로 확인)",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "verified_body_sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+    },
+    {
+      "question_id": "2022-12-058",
+      "ref": "EXAM_KEYS_R17B0_UNFAIR_TX_STATEMENTS",
+      "path_or_url": "sources/2025-12-answers.pdf",
+      "commit_or_version": "2025-12 공식 답안 PDF",
+      "what_was_read": "세무회계 58번 정답 2",
+      "sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac",
+      "verified_body_sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "CIT_LAW_2024",
+      "path_or_url": "law git kr/법인세법/법률.md",
+      "commit_or_version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 (공포 2023-12-31, 시행 2024-01-01)",
+      "what_was_read": "제60조, 제60조의2, 제63조, 제64조 본문",
+      "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+      "verified_body_sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "R3T004_CIT_DEC_20240731",
+      "path_or_url": "law git kr/법인세법/시행령.md",
+      "commit_or_version": "0d2da53137093da70d99c0f39da09492af669dce (공포 2024-07-23, 시행 2024-07-31)",
+      "what_was_read": "제101조",
+      "sha256": "3bf1cc2efa067afa85364973e164b6cba919d17e5ad3ff4aa52bc96b58e18302",
+      "verified_body_sha256": "3bf1cc2efa067afa85364973e164b6cba919d17e5ad3ff4aa52bc96b58e18302"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "TA_CROSS01_CIT_DEC_20241112",
+      "path_or_url": "law git kr/법인세법/시행령.md",
+      "commit_or_version": "4ad7e6cbdd2d3c53280e1aefc9046f6741214679 (공포·시행 2024-11-12)",
+      "what_was_read": "제101조",
+      "sha256": "e0b36c2d85dc9f873d7d1f7515188951e0a253c577ad2ba4abe4a121f9453858",
+      "verified_body_sha256": "e0b36c2d85dc9f873d7d1f7515188951e0a253c577ad2ba4abe4a121f9453858"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+      "path_or_url": "sources/2024-11-answers.pdf",
+      "commit_or_version": "2024-11 공식 답안 PDF",
+      "what_was_read": "세무회계 60번 정답 4",
+      "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4",
+      "verified_body_sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+      "path_or_url": "sources/2024-05-answers.pdf",
+      "commit_or_version": "2024-05 공식 답안 PDF",
+      "what_was_read": "세무회계 20번(=60번) 정답 2 (문항 본문은 문제은행 이미지 2024-05-060으로 확인)",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "verified_body_sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185"
+    },
+    {
+      "question_id": "2024-11-060",
+      "ref": "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+      "path_or_url": "sources/2023-03-answers.pdf",
+      "commit_or_version": "2023-03 공식 답안 PDF",
+      "what_was_read": "세무회계 20번(=60번) 정답 2",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "verified_body_sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "PIT_LAW_2022",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "ef79896a0866b1d4c1320ad79fcf4bafb005502b (공포 2021-12-08, 시행 2022-01-01)",
+      "what_was_read": "제2조, 제2조의2, 제4조, 제14조, 제16조제1항, 제17조제1항, 제19조제1항",
+      "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+      "verified_body_sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "EXAM_KEYS_R17B0_PIT_FEATURES",
+      "path_or_url": "sources/2022-11-answers.pdf",
+      "commit_or_version": "2022-11 공식 답안 PDF",
+      "what_was_read": "세무회계 61번 문항 본문과 정답 [1]",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "verified_body_sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "EXAM_KEYS_R17B0_PIT_FEATURES",
+      "path_or_url": "sources/2022-05-answers.pdf",
+      "commit_or_version": "2022-05 공식 답안 PDF",
+      "what_was_read": "세무회계 61번 문항 본문과 정답 [3]",
+      "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+      "verified_body_sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "EXAM_KEYS_R17B0_PIT_FEATURES",
+      "path_or_url": "sources/2023-12-answers.pdf",
+      "commit_or_version": "2023-12 공식 답안 PDF",
+      "what_was_read": "세무회계 21번(=61번) 정답 3 (문항 본문은 문제은행 이미지 2023-12-061로 확인)",
+      "sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8",
+      "verified_body_sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "EXAM_KEYS_R17B0_PIT_FEATURES",
+      "path_or_url": "sources/2025-11-answers.pdf",
+      "commit_or_version": "2025-11 공식 답안 PDF",
+      "what_was_read": "세무회계 61번 정답 1 (문항 본문은 문제은행 이미지 2025-11-061로 확인)",
+      "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8",
+      "verified_body_sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8"
+    },
+    {
+      "question_id": "2022-11-061",
+      "ref": "EXAM_KEYS_R17B0_PIT_FEATURES",
+      "path_or_url": "sources/2026-01-answers.pdf",
+      "commit_or_version": "2026-01 공식 답안 PDF",
+      "what_was_read": "세무회계 61번 정답 3 (문항 본문은 문제은행 이미지 2026-01-061로 확인)",
+      "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+      "verified_body_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8"
+    },
+    {
+      "question_id": "2023-05-061",
+      "ref": "PIT_LAW_2023",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "48e39d420f66a381d6b3dfd9e06fc08fd7c7bf2c (법률 제19196호, 시행 2023-01-01)",
+      "what_was_read": "제1조, 제2조제1항, 제14조제3항, 제16조제1항, 제17조제1항, 제19조제1항제21호, 제50조제1항, 제51조제1항, 제70조제1항",
+      "sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6",
+      "verified_body_sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6"
+    },
+    {
+      "question_id": "2023-05-061",
+      "ref": "NTB_LAW_2023",
+      "path_or_url": "law git kr/국세기본법/법률.md",
+      "commit_or_version": "dcafa85cd26193ecc9cd33591d40641e68ebe05b (법률 제19189호, 시행 2023-01-01)",
+      "what_was_read": "제22조제1항·제2항",
+      "sha256": "a16f53112b0add62bf12b46e97a2811765c7c838bc5cfccca19cc37889eb2223",
+      "verified_body_sha256": "a16f53112b0add62bf12b46e97a2811765c7c838bc5cfccca19cc37889eb2223"
+    },
+    {
+      "question_id": "2023-05-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2023-05-answers.pdf",
+      "commit_or_version": "2023-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 4",
+      "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+      "verified_body_sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+    },
+    {
+      "question_id": "2023-05-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+      "commit_or_version": "2023-06 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 1",
+      "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64",
+      "verified_body_sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+    },
+    {
+      "question_id": "2023-05-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2024-01-answers.pdf",
+      "commit_or_version": "2024-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 4",
+      "sha256": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086",
+      "verified_body_sha256": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+    },
+    {
+      "question_id": "2023-06-061",
+      "ref": "PIT_LAW_2023",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "48e39d420f66a381d6b3dfd9e06fc08fd7c7bf2c (법률 제19196호, 시행 2023-01-01)",
+      "what_was_read": "제1조, 제2조제1항, 제16조제1항, 제17조제1항, 제19조제1항제21호, 제43조제1항~제3항, 제50조제1항, 제51조제1항",
+      "sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6",
+      "verified_body_sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6"
+    },
+    {
+      "question_id": "2023-06-061",
+      "ref": "NTB_LAW_2023",
+      "path_or_url": "law git kr/국세기본법/법률.md",
+      "commit_or_version": "dcafa85cd26193ecc9cd33591d40641e68ebe05b (법률 제19189호, 시행 2023-01-01)",
+      "what_was_read": "제22조제2항",
+      "sha256": "a16f53112b0add62bf12b46e97a2811765c7c838bc5cfccca19cc37889eb2223",
+      "verified_body_sha256": "a16f53112b0add62bf12b46e97a2811765c7c838bc5cfccca19cc37889eb2223"
+    },
+    {
+      "question_id": "2023-06-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2023-06-answers.pdf",
+      "commit_or_version": "2023-06 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 1",
+      "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64",
+      "verified_body_sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+    },
+    {
+      "question_id": "2023-06-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2023-05-answers.pdf",
+      "commit_or_version": "2023-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 4",
+      "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+      "verified_body_sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+    },
+    {
+      "question_id": "2023-06-061",
+      "ref": "EXAM_KEYS_R17B1_PIT_ENUMERATION",
+      "path_or_url": "jaegyeong/sources/2024-01-answers.pdf",
+      "commit_or_version": "2024-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 21번 정답 4",
+      "sha256": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086",
+      "verified_body_sha256": "f2d6c9231f6edbc308342e0c0b4eabcf89a252e94cfcb8d14acd0b87291c2086"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "PIT_LAW_2023",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "48e39d420f66a381d6b3dfd9e06fc08fd7c7bf2c (법률 제19196호, 시행 2023-01-01)",
+      "what_was_read": "제14조제6항, 제20조의3제1항, 제22조제1항~제4항, 제48조제1항, 제146조제1항·제2항",
+      "sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6",
+      "verified_body_sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "PID2023",
+      "path_or_url": "law git kr/소득세법/시행령.md",
+      "commit_or_version": "17dabbc75143ec215ac2a56c225359c8027df27a (대통령령 제33207호, 시행 2023-01-01)",
+      "what_was_read": "제43조제1항·제2항, 제50조제2항",
+      "sha256": "8fa5536e66f48de0742e3b53f1ff4cfb863e7de0fc01a8154247626e4c0986fe",
+      "verified_body_sha256": "8fa5536e66f48de0742e3b53f1ff4cfb863e7de0fc01a8154247626e4c0986fe"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "path_or_url": "jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 28번 정답 4",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "path_or_url": "jaegyeong/sources/2023-09-answers.pdf",
+      "commit_or_version": "2023-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 28번 정답 4",
+      "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+      "verified_body_sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "path_or_url": "jaegyeong/sources/2024-12-answers.pdf",
+      "commit_or_version": "2024-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 68번 정답 3",
+      "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e",
+      "verified_body_sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+    },
+    {
+      "question_id": "2023-01-068",
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "path_or_url": "jaegyeong/sources/2025-05-answers.pdf",
+      "commit_or_version": "2025-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 68번 정답 1",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "verified_body_sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+    },
+    {
+      "question_id": "2022-06-068",
+      "ref": "PIT_LAW_2022",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "ef79896a0866b1d4c1320ad79fcf4bafb005502b (법률 제18578호, 시행 2022-01-01)",
+      "what_was_read": "제127조 전문, 제129조제1항·제2항, 제156조제1항 본문, 제156조의7",
+      "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+      "verified_body_sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f"
+    },
+    {
+      "question_id": "2022-06-068",
+      "ref": "PID2022",
+      "path_or_url": "law git kr/소득세법/시행령.md",
+      "commit_or_version": "bc26ac9c2b00526bb9cdf213377ca12bca3293af (대통령령 제32654호, 시행 2022-05-31)",
+      "what_was_read": "제184조제1항·제3항",
+      "sha256": "4e813f7f3c9ee428fb6756e9055473413a8a3a662a24fcf485e1da604b869592",
+      "verified_body_sha256": "4e813f7f3c9ee428fb6756e9055473413a8a3a662a24fcf485e1da604b869592"
+    },
+    {
+      "question_id": "2022-11-068",
+      "ref": "PIT_LAW_2022",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "ef79896a0866b1d4c1320ad79fcf4bafb005502b (법률 제18578호, 시행 2022-01-01)",
+      "what_was_read": "제127조 전문, 제129조제1항·제2항, 제156조의7",
+      "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+      "verified_body_sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "PIT_LAW_2023",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "48e39d420f66a381d6b3dfd9e06fc08fd7c7bf2c (법률 제19196호, 시행 2023-01-01)",
+      "what_was_read": "제2조제1항·제2항, 제14조제3항, 제127조, 제156조의7",
+      "sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6",
+      "verified_body_sha256": "60f0fe178dd2a40f833af3ababcc166c628b872b49640ce5c06cb2274b5268d6"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "path_or_url": "jaegyeong/sources/2023-07-answers.pdf",
+      "commit_or_version": "2023-07 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 28번 정답 3",
+      "sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a",
+      "verified_body_sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "path_or_url": "jaegyeong/sources/2022-06-answers.pdf",
+      "commit_or_version": "2022-06 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "PDF 49쪽 세무회계 68번 정답 [1]",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "verified_body_sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "path_or_url": "jaegyeong/sources/2022-11-answers.pdf",
+      "commit_or_version": "2022-11 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "PDF 49쪽 세무회계 68번 정답 [4]",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "verified_body_sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "path_or_url": "jaegyeong/sources/2025-01-answers.pdf",
+      "commit_or_version": "2025-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 68번 정답 2",
+      "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+      "verified_body_sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b"
+    },
+    {
+      "question_id": "2023-07-068",
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "path_or_url": "jaegyeong/sources/2025-09-answers.pdf",
+      "commit_or_version": "2025-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 68번 정답 3",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "verified_body_sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "PIT_LAW_2024",
+      "path_or_url": "law git kr/소득세법/법률.md",
+      "commit_or_version": "eb179592c3942a852894b296d4e78860940f7ff9 (법률 제19933호, 시행 2024-01-01)",
+      "what_was_read": "제2조의2제1항, 제4조제1항, 제16조제1항제12호, 제17조제1항제9호, 제19조제1항제21호, 제43조, 제55조제1항 본문",
+      "sha256": "02f3bd07f7438bc35ebbd256daf3a22ce9f32401941963ce5739383da3b7624f",
+      "verified_body_sha256": "02f3bd07f7438bc35ebbd256daf3a22ce9f32401941963ce5739383da3b7624f"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2022-05-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 61번 [3] (④ 이자·배당 유형별 포괄주의 진술은 정답 아님)",
+      "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+      "verified_body_sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2022-11-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 61번 [1] (④ 이자·배당 유형별 포괄주의 진술은 정답 아님)",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "verified_body_sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2023-06-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 표 21번(전체 61번) 1 (③ '이자 및 배당소득에 한하여' 진술은 정답 아님)",
+      "sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64",
+      "verified_body_sha256": "a9677770452b12a921832c3421893541b39fcd09551f03eb2cd41a9de2b75d64"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2024-06-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 표 21번(전체 61번) 3 (① '이자 및 배당소득에 한하여' 진술은 정답 아님)",
+      "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+      "verified_body_sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2025-01-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 61번 2 (④ '이자 및 배당소득에 한하여' 진술은 정답 아님)",
+      "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+      "verified_body_sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b"
+    },
+    {
+      "question_id": "2025-01-061",
+      "ref": "EXAM_KEYS_R17B2_PIT_TYPE_INCLUSIVE",
+      "path_or_url": "sources/2025-09-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 61번 3 (① '이자 및 배당소득에 한하여' 진술은 정답 아님)",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "verified_body_sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+    },
+    {
+      "question_id": "2022-03-073",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제5조, 제48조, 제49조 본문",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-03-073",
+      "ref": "VAT_DECREE_2022",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "029b77bca5728a7ccdaf9032ad9358e7518a9c4f (대통령령 제32449호, 시행 2022-02-18)",
+      "what_was_read": "제90조제4항(예정고지 대상 법인사업자 1억5천만원 미만)",
+      "sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140",
+      "verified_body_sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140"
+    },
+    {
+      "question_id": "2022-03-073",
+      "ref": "TA_NTS_VAT_OVERVIEW",
+      "path_or_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2272&cntntsId=7693",
+      "commit_or_version": "2026-10-13 curl 열람 현재 본문(카탈로그 기록 SHA와 동일)",
+      "what_was_read": "'과세기간 및 신고납부' 표와 주석",
+      "sha256": "8cf8511463e8cfde50a002c832acb8e511804364de9b2c05f3cd37f7917ff537",
+      "verified_body_sha256": "8cf8511463e8cfde50a002c832acb8e511804364de9b2c05f3cd37f7917ff537"
+    },
+    {
+      "question_id": "2022-05-072",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제2조제3호, 제26조제1항, 제32조제1항, 제39조제1항제7호, 제54조제5항",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-05-072",
+      "ref": "VAT_DECREE_2022",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "029b77bca5728a7ccdaf9032ad9358e7518a9c4f (대통령령 제32449호, 시행 2022-02-18)",
+      "what_was_read": "제99조(매입처별 세금계산서합계표 제출의무자)",
+      "sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140",
+      "verified_body_sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140"
+    },
+    {
+      "question_id": "2022-05-072",
+      "ref": "R17B2_SC_92NU5225",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_review23/10_precInfoP.do",
+      "commit_or_version": "국가법령정보센터 판례 본문 HTML, 2026-10-14 열람 · 독립 검수 보존 HTML 직접 재독",
+      "what_was_read": "판시사항, 판결요지, 이유 2항 · 기존 참조를 재사용하며 지금 실제 읽은 전체 HTML의 SHA를 기록합니다. 이전 저자 HTML 해시 일치로 주장하지 않습니다.",
+      "sha256": "fd507174c2aea06567672d6b842c1ffc3917a9a76bee5188c36a3875eb0b8735",
+      "previous_author_read_sha256": "35961061f05fdcc268c83e3793a984d7f6f0d971bd369fef57d1b5f9b16a36a8",
+      "reader": "root-r19-html-provenance",
+      "verified_body_sha256": "fd507174c2aea06567672d6b842c1ffc3917a9a76bee5188c36a3875eb0b8735"
+    },
+    {
+      "question_id": "2022-05-072",
+      "ref": "EXAM_KEYS_R17B2_VAT_BUSINESS_REPETITION",
+      "path_or_url": "sources/2022-05-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 72번 [2]",
+      "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+      "verified_body_sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+    },
+    {
+      "question_id": "2022-05-072",
+      "ref": "EXAM_KEYS_R17B2_VAT_BUSINESS_REPETITION",
+      "path_or_url": "sources/2022-07-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 73번 [3]",
+      "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa",
+      "verified_body_sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+    },
+    {
+      "question_id": "2022-07-073",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제2조, 제3조제1항, 제8조제1항, 제21조제1항",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-07-073",
+      "ref": "TA_NTS_VAT_OVERVIEW",
+      "path_or_url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2272&cntntsId=7693",
+      "commit_or_version": "2026-10-13 curl 열람 현재 본문(카탈로그 기록 SHA와 동일)",
+      "what_was_read": "'부가가치세 납세의무자' 문단(면세사업만 영위하는 경우 신고·납부 의무 없음)",
+      "sha256": "8cf8511463e8cfde50a002c832acb8e511804364de9b2c05f3cd37f7917ff537",
+      "verified_body_sha256": "8cf8511463e8cfde50a002c832acb8e511804364de9b2c05f3cd37f7917ff537"
+    },
+    {
+      "question_id": "2022-07-073",
+      "ref": "R17B2_SC_92NU5225",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_review23/10_precInfoP.do",
+      "commit_or_version": "국가법령정보센터 판례 본문 HTML, 2026-10-14 열람 · 독립 검수 보존 HTML 직접 재독",
+      "what_was_read": "판시사항, 판결요지, 이유 2항 · 기존 참조를 재사용하며 지금 실제 읽은 전체 HTML의 SHA를 기록합니다. 이전 저자 HTML 해시 일치로 주장하지 않습니다.",
+      "sha256": "fd507174c2aea06567672d6b842c1ffc3917a9a76bee5188c36a3875eb0b8735",
+      "previous_author_read_sha256": "35961061f05fdcc268c83e3793a984d7f6f0d971bd369fef57d1b5f9b16a36a8",
+      "reader": "root-r19-html-provenance",
+      "verified_body_sha256": "fd507174c2aea06567672d6b842c1ffc3917a9a76bee5188c36a3875eb0b8735"
+    },
+    {
+      "question_id": "2022-07-073",
+      "ref": "EXAM_KEYS_R17B2_VAT_BUSINESS_REPETITION",
+      "path_or_url": "sources/2022-05-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 72번 [2]",
+      "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+      "verified_body_sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf"
+    },
+    {
+      "question_id": "2022-07-073",
+      "ref": "EXAM_KEYS_R17B2_VAT_BUSINESS_REPETITION",
+      "path_or_url": "sources/2022-07-answers.pdf",
+      "commit_or_version": "저장소 원본 답안 PDF",
+      "what_was_read": "세무회계 73번 [3]",
+      "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa",
+      "verified_body_sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+    },
+    {
+      "question_id": "2022-05-075",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제10조 전문",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-05-075",
+      "ref": "VAT_DECREE_2022",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "029b77bca5728a7ccdaf9032ad9358e7518a9c4f (대통령령 제32449호, 시행 2022-02-18)",
+      "what_was_read": "제20조, 제71조제1항",
+      "sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140",
+      "verified_body_sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140"
+    },
+    {
+      "question_id": "2022-11-077",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제21조제1항, 제26조제1항, 제32조제1항, 제38조제1항, 제39조제1항제7호, 제54조제5항",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-11-077",
+      "ref": "VAT_DECREE_EARLY_2023",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "f0ab89feb5d74d54fa46d3106fa26654a169ce3c (대통령령 제32734호, 시행 2022-07-01)",
+      "what_was_read": "제99조(매입처별 세금계산서합계표 제출의무자)",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "verified_body_sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740"
+    },
+    {
+      "question_id": "2022-09-073",
+      "ref": "VAT_LAW_2022",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (법률 제18577호, 시행 2022-01-01)",
+      "what_was_read": "제12조, 제29조 전문",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-09-073",
+      "ref": "VAT_DECREE_EARLY_2023",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "f0ab89feb5d74d54fa46d3106fa26654a169ce3c (대통령령 제32734호, 시행 2022-07-01)",
+      "what_was_read": "제26조(특수관계인에 대한 사업용 부동산 임대용역)",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "verified_body_sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "FA_VAT_법률_18577",
+      "path_or_url": "law git kr/부가가치세법/법률.md",
+      "commit_or_version": "10b5bcc2526adc34a3bb0bc5677468c48e23c240 (공포 2021-12-08, 시행 2022-01-01)",
+      "what_was_read": "제5조, 제10조제1항~제9항, 제26조제1항 각 호, 제29조제3항·제11항",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "verified_body_sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "FA_VAT_시행령_32352",
+      "path_or_url": "law git kr/부가가치세법/시행령.md",
+      "commit_or_version": "5da386e33951df42231aaae0b6884ace4f41459f (공포번호 32352, 시행 2022-01-21)",
+      "what_was_read": "제66조제1항~제5항",
+      "sha256": "fe4e501f7d3473296b445189f0aaa9b60c602ab500328cab5d2346e2b502ff2b",
+      "verified_body_sha256": "fe4e501f7d3473296b445189f0aaa9b60c602ab500328cab5d2346e2b502ff2b"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "EXAM_KEYS_R17B3_VAT_CLOSURE_REMAINING",
+      "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+      "commit_or_version": "2022-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "세무회계 77번 문항 본문과 정답표 77번 [3]",
+      "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+      "verified_body_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "EXAM_KEYS_R17B3_VAT_CLOSURE_REMAINING",
+      "path_or_url": "jaegyeong/sources/2025-01-answers.pdf",
+      "commit_or_version": "2025-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "2) 세무회계 정답표 78번 2",
+      "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+      "verified_body_sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "EXAM_KEYS_R17B3_VAT_CLOSURE_REMAINING",
+      "path_or_url": "jaegyeong/sources/2025-05-answers.pdf",
+      "commit_or_version": "2025-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "2) 세무회계 정답표 78번 2",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "verified_body_sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+    },
+    {
+      "question_id": "2022-12-077",
+      "ref": "EXAM_KEYS_R17B3_VAT_CLOSURE_REMAINING",
+      "path_or_url": "jaegyeong/sources/2026-09-answers.pdf",
+      "commit_or_version": "2026-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "2) 세무회계 정답표 78번 3",
+      "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+      "verified_body_sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "R7_COST03_KASB_OLD_COST",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_review23/18_View3010.do",
+      "commit_or_version": "2026-10-14 내려받은 게시 HTML(본문: 1998-04-01 제정, 1999-12-09 개정, 2002-08-25 기업회계기준서 제10호로 대체 표시) · 독립 검수 보존 HTML 직접 재독",
+      "what_was_read": "제1조~제11조, 제25조, 제33조 본문(특히 제4조, 제6조, 제9조) · 기존 참조를 재사용하며 지금 실제 읽은 전체 HTML의 SHA를 기록합니다. 이전 저자 HTML 해시 일치로 주장하지 않습니다.",
+      "sha256": "fe1b835ac238170cb38a666e5c7926cd996cc43fbc441562454371ab0cc9e5cf",
+      "previous_author_read_sha256": "9f892f8d54208bb8c983ee24da7fc8376b74bd4dcd919d2fd164e5d640b10ac7",
+      "reader": "root-r19-html-provenance",
+      "verified_body_sha256": "fe1b835ac238170cb38a666e5c7926cd996cc43fbc441562454371ab0cc9e5cf"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "SAYLOR_FLOW_EQ",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-08-income-statements-for-manufact.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "Inventory Cost Flow Equation 문답, 원재료 사용액·당기제품제조원가·매출원가 정의 문단",
+      "sha256": "9d5ec306ec0244633b2e38483ddad9c9c2a45e13e0f856e16056bb20be97a754",
+      "verified_body_sha256": "9d5ec306ec0244633b2e38483ddad9c9c2a45e13e0f856e16056bb20be97a754"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "SAYLOR_FLOW",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-07-how-product-costs-flow-through.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "제품원가의 자산 계정 기록과 판매 시 매출원가 대체 문답, Table 1.4",
+      "sha256": "49a97df7299e4c80c47119963153e4fceaaed904fd2362ffcaccac9fed67c5d4",
+      "verified_body_sha256": "49a97df7299e4c80c47119963153e4fceaaed904fd2362ffcaccac9fed67c5d4"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "SAYLOR_COST_TERMS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-06-cost-terminology.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "제조간접원가 항목 예시(공장 건물 감가상각 포함)",
+      "sha256": "df82ec0a2485d447dcbbf2c08abe1d7768e76d1274dfc6cdb930baa88c2308c1",
+      "verified_body_sha256": "df82ec0a2485d447dcbbf2c08abe1d7768e76d1274dfc6cdb930baa88c2308c1"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "R17B3_SAYLOR_COST_BEHAVIOR",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-01-cost-behavior-patterns.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "5.1 도입 문답",
+      "sha256": "13c12f12e859a2208d0886fa41b93a68357d9ff843bfa81a398b44631b459a7d",
+      "verified_body_sha256": "13c12f12e859a2208d0886fa41b93a68357d9ff843bfa81a398b44631b459a7d"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "R17B3_SAYLOR_DIFF_TERMS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-05-review-of-cost-terms-used-in-d.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "7.5 본문 전체",
+      "sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc",
+      "verified_body_sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+      "commit_or_version": "2022-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번·83번 문항 본문과 정답표 81번 [2], 83번 [2]",
+      "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+      "verified_body_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2022-09-answers.pdf",
+      "commit_or_version": "2022-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번 문항 본문과 정답표 81번 [2]",
+      "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+      "verified_body_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2024-03-answers.pdf",
+      "commit_or_version": "2024-03 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 1번 [4]",
+      "sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a",
+      "verified_body_sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2024-12-answers.pdf",
+      "commit_or_version": "2024-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 1",
+      "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e",
+      "verified_body_sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "path_or_url": "jaegyeong/sources/2025-09-answers.pdf",
+      "commit_or_version": "2025-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 4",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "verified_body_sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+    },
+    {
+      "question_id": "2022-12-083",
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "path_or_url": "jaegyeong/sources/2026-05-answers.pdf",
+      "commit_or_version": "2026-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 2",
+      "sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf",
+      "verified_body_sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "R17B3_SAYLOR_MA_CHARACTERISTICS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-01-characteristics-of-managerial-.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "본문 전체(재무·비재무 정보, 비재무 측정치 예시, 비교표)",
+      "sha256": "2dd094170f4958ce8022b988ec7c2ab4ea5f19430a5dd21ef170408f49c86a02",
+      "verified_body_sha256": "2dd094170f4958ce8022b988ec7c2ab4ea5f19430a5dd21ef170408f49c86a02"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "R17B3_SAYLOR_DIFF_TERMS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-05-review-of-cost-terms-used-in-d.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "7.5 본문 전체",
+      "sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc",
+      "verified_body_sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "SAYLOR_COST_TERMS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-06-cost-terminology.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "제조·비제조원가 구분 문단과 '원가를 의사결정에 도움이 되는 방식으로 조직할 수 있다'는 문단",
+      "sha256": "df82ec0a2485d447dcbbf2c08abe1d7768e76d1274dfc6cdb930baa88c2308c1",
+      "verified_body_sha256": "df82ec0a2485d447dcbbf2c08abe1d7768e76d1274dfc6cdb930baa88c2308c1"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번 문항 본문과 정답표 81번 [2]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2023-03-answers.pdf",
+      "commit_or_version": "2023-03 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 정답표 1번 2",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "verified_body_sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2023-11-answers.pdf",
+      "commit_or_version": "2023-11 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 정답표 1번 2",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "verified_body_sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2024-07-answers.pdf",
+      "commit_or_version": "2024-07 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 4",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "verified_body_sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+    },
+    {
+      "question_id": "2024-07-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2026-01-answers.pdf",
+      "commit_or_version": "2026-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 1",
+      "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+      "verified_body_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "R7_COST04_SAYLOR_ABC",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-03-using-activity-based-costing-t.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "3.3 도입 문답, ABC의 효익과 한계 문단(도입·유지 원가, 효익이 원가를 넘는지 판단)",
+      "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+      "verified_body_sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "R17B3_SAYLOR_DIFF_TERMS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s11-05-review-of-cost-terms-used-in-d.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "7.5 본문 전체",
+      "sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc",
+      "verified_body_sha256": "60d8babc379350aa1765128f14f4888fc3bd329f770dd703b3997c0393a293cc"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "R17B3_SAYLOR_MA_CHARACTERISTICS",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-01-characteristics-of-managerial-.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "본문 전체(재무·비재무 정보, 비재무 측정치 예시)",
+      "sha256": "2dd094170f4958ce8022b988ec7c2ab4ea5f19430a5dd21ef170408f49c86a02",
+      "verified_body_sha256": "2dd094170f4958ce8022b988ec7c2ab4ea5f19430a5dd21ef170408f49c86a02"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번 문항 본문과 정답표 81번 [2]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2023-03-answers.pdf",
+      "commit_or_version": "2023-03 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 정답표 1번 2",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "verified_body_sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2023-11-answers.pdf",
+      "commit_or_version": "2023-11 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 정답표 1번 2",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "verified_body_sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2024-07-answers.pdf",
+      "commit_or_version": "2024-07 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 4",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "verified_body_sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+    },
+    {
+      "question_id": "2026-01-081",
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "path_or_url": "jaegyeong/sources/2026-01-answers.pdf",
+      "commit_or_version": "2026-01 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 1",
+      "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+      "verified_body_sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "R7_COST03_KASB_OLD_COST",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_review23/18_View3010.do",
+      "commit_or_version": "2026-10-14 내려받은 게시 HTML(본문: 1998-04-01 제정, 1999-12-09 개정, 2002-08-25 기업회계기준서 제10호로 대체 표시) · 독립 검수 보존 HTML 직접 재독",
+      "what_was_read": "제1조~제11조 본문(특히 제4조, 제9조) · 기존 참조를 재사용하며 지금 실제 읽은 전체 HTML의 SHA를 기록합니다. 이전 저자 HTML 해시 일치로 주장하지 않습니다.",
+      "sha256": "fe1b835ac238170cb38a666e5c7926cd996cc43fbc441562454371ab0cc9e5cf",
+      "previous_author_read_sha256": "9f892f8d54208bb8c983ee24da7fc8376b74bd4dcd919d2fd164e5d640b10ac7",
+      "reader": "root-r19-html-provenance",
+      "verified_body_sha256": "fe1b835ac238170cb38a666e5c7926cd996cc43fbc441562454371ab0cc9e5cf"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "SAYLOR_FLOW",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s05-07-how-product-costs-flow-through.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "제품원가의 자산 계정 기록과 판매 시 매출원가 대체 문답, Table 1.4",
+      "sha256": "49a97df7299e4c80c47119963153e4fceaaed904fd2362ffcaccac9fed67c5d4",
+      "verified_body_sha256": "49a97df7299e4c80c47119963153e4fceaaed904fd2362ffcaccac9fed67c5d4"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2022-09-answers.pdf",
+      "commit_or_version": "2022-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번 문항 본문과 정답표 81번 [2]",
+      "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+      "verified_body_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2022-12-answers.pdf",
+      "commit_or_version": "2022-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "원가관리회계 81번 문항 본문과 정답표 81번 [2]",
+      "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+      "verified_body_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2024-03-answers.pdf",
+      "commit_or_version": "2024-03 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 1번 [4]",
+      "sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a",
+      "verified_body_sha256": "8a9e28857677251e4531a57d6b0c95c5e36370d0e00465748dc3542b1e116a6a"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_COST_GENERAL_CHARACTERISTICS",
+      "path_or_url": "jaegyeong/sources/2024-12-answers.pdf",
+      "commit_or_version": "2024-12 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 1",
+      "sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e",
+      "verified_body_sha256": "37521e8749694a0a9a3b73b879a1940b2a663f58a0a1acd734ddb5671506220e"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "path_or_url": "jaegyeong/sources/2025-09-answers.pdf",
+      "commit_or_version": "2025-09 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 4",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "verified_body_sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a"
+    },
+    {
+      "question_id": "2026-05-081",
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "path_or_url": "jaegyeong/sources/2026-05-answers.pdf",
+      "commit_or_version": "2026-05 공식 답안 PDF(저장소 보존본)",
+      "what_was_read": "3) 원가관리회계 정답표 81번 2",
+      "sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf",
+      "verified_body_sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf"
+    },
+    {
+      "question_id": "2026-06-085",
+      "ref": "R17B3_SAYLOR_JOB_SHEET",
+      "path_or_url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s06-02-how-a-job-costing-system-works.html",
+      "commit_or_version": "saylordotorg/text_managerial-accounting 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "Assigning Direct Material Costs to Jobs, Using a Job Cost Sheet, 직접노무원가 기록 문답, Key Takeaway, Review Problem 2.2 해답",
+      "sha256": "f645d136cdf278a82cbbbd65d26e32f4835e4c47a1914aa0551696a313ad9a92",
+      "verified_body_sha256": "f645d136cdf278a82cbbbd65d26e32f4835e4c47a1914aa0551696a313ad9a92"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "CROSS_C03_SAYLOR109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+      "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7",
+      "verified_body_sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "m68006",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68006.cnxml",
+      "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "what_was_read": "m68006 본문: underapplied/overapplied 결산조정의 매출원가 증가·감소와 큰 차이의 재공품·제품·매출원가 3계정 배분",
+      "sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e",
+      "verified_body_sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+      "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 1",
+      "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4",
+      "verified_body_sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+      "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+      "verified_body_sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+    },
+    {
+      "question_id": "2023-01-093",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+      "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "verified_body_sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+    },
+    {
+      "question_id": "2024-11-095",
+      "ref": "CROSS_C03_SAYLOR109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+      "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7",
+      "verified_body_sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+    },
+    {
+      "question_id": "2024-11-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2024-11-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+      "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 1",
+      "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4",
+      "verified_body_sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+    },
+    {
+      "question_id": "2024-11-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+      "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+      "verified_body_sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+    },
+    {
+      "question_id": "2024-11-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+      "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "verified_body_sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "CROSS_C03_SAYLOR109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+      "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7",
+      "verified_body_sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "m68006",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68006.cnxml",
+      "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "what_was_read": "m68006 본문: underapplied/overapplied 결산조정의 매출원가 증가·감소와 큰 차이의 재공품·제품·매출원가 3계정 배분",
+      "sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e",
+      "verified_body_sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+      "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 1",
+      "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4",
+      "verified_body_sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+      "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+      "verified_body_sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+    },
+    {
+      "question_id": "2025-06-095",
+      "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+      "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 95 정답 2",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "verified_body_sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+    },
+    {
+      "question_id": "2026-01-092",
+      "ref": "R6_COST07_SAYLOR_ENG",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_ENG.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§10.2 Standard Costs: 표준의 가격·수량 구성, 재료 소요량·단가의 규격/계약/역사자료, 노무 시간동작연구·휴식/고장 허용, Ideal Standards and Attainable Standards 전체",
+      "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770",
+      "verified_body_sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+    },
+    {
+      "question_id": "2026-01-092",
+      "ref": "R10_cost_ICMAI_P12_SALES",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R10_cost_ICMAI_P12_SALES.pdf",
+      "commit_or_version": "revisedJuly2024/reprintJan2026 · SHA256 70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+      "what_was_read": "PDF 1–2쪽 표지·판권(2024년 7월 개정/2026년 1월 재인쇄), PDF 278–279쪽 Types of Standards 및 Standard Costs and Estimated Costs",
+      "sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+      "verified_body_sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1"
+    },
+    {
+      "question_id": "2022-09-101",
+      "ref": "R7_COST04_SAYLOR_ABC",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST04_SAYLOR_ABC.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§3.3 Step 3 원가동인 정의, Step 4 활동별 예정배부율, Step 5 제품별 활동소비량 배부, Product Costs Using the Activity-Based Costing Approach",
+      "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+      "verified_body_sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050"
+    },
+    {
+      "question_id": "2022-09-101",
+      "ref": "R7_COST03_SAYLOR67",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST03_SAYLOR67.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f · SHA256 a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+      "what_was_read": "§6.7 도입부 전부·변동원가 정의, Impact of Absorption Costing and Variable Costing on Profit, Month 1–3 비교, Key Takeaway의 고정제조간접원가 재고/기간비용 처리",
+      "sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+      "verified_body_sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f"
+    },
+    {
+      "question_id": "2022-09-101",
+      "ref": "m68115",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68115.cnxml",
+      "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "what_was_read": "본문 도입부 Fixed/Variable costs·Contribution margin 정의, Unit Contribution Margin 본문 및 수식 media alt: 단위판매가격−단위변동원가",
+      "sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a",
+      "verified_body_sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a"
+    },
+    {
+      "question_id": "2022-11-101",
+      "ref": "R7_COST04_SAYLOR_ABC",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST04_SAYLOR_ABC.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§3.3 Step 3 원가동인 정의, Step 4 활동별 예정배부율, Step 5 제품별 활동소비량 배부, Product Costs Using the Activity-Based Costing Approach",
+      "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+      "verified_body_sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050"
+    },
+    {
+      "question_id": "2022-11-101",
+      "ref": "R7_COST03_SAYLOR67",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST03_SAYLOR67.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f · SHA256 a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+      "what_was_read": "§6.7 도입부 전부·변동원가 정의, Impact of Absorption Costing and Variable Costing on Profit, Month 1–3 비교, Key Takeaway의 고정제조간접원가 재고/기간비용 처리",
+      "sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+      "verified_body_sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f"
+    },
+    {
+      "question_id": "2022-11-101",
+      "ref": "m68115",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68115.cnxml",
+      "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "what_was_read": "본문 도입부 Fixed/Variable costs·Contribution margin 정의, Unit Contribution Margin 본문 및 수식 media alt: 단위판매가격−단위변동원가",
+      "sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a",
+      "verified_body_sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a"
+    },
+    {
+      "question_id": "2023-01-102",
+      "ref": "R6_COST07_SAYLOR_EST",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_EST.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§5.2 Account Analysis의 과거계정/경험판단, High-Low Method의 최고·최저조업도 두 점과 대표성 한계, Scattergraph Method의 시각적 직선·주관·이상치 예비 검토",
+      "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285",
+      "verified_body_sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285"
+    },
+    {
+      "question_id": "2023-01-102",
+      "ref": "R6_COST07_SAYLOR_ENG",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_ENG.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "§10.2 Standard Costs: 표준의 가격·수량 구성, 재료 소요량·단가의 규격/계약/역사자료, 노무 시간동작연구·휴식/고장 허용, Ideal Standards and Attainable Standards 전체",
+      "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770",
+      "verified_body_sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+    },
+    {
+      "question_id": "2023-01-102",
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 22 정답 2(은행 ID 102)",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2023-01-102",
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-07-answers.pdf",
+      "commit_or_version": "2026-07 재경관리사 공식 답안 PDF",
+      "what_was_read": "원가관리회계 문항번호 102 정답 4",
+      "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+      "verified_body_sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+    },
+    {
+      "question_id": "2026-07-102",
+      "ref": "R3_CA_EST_008",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/s09-02-cost-estimation-methods.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "Account Analysis 도입·과거 June 자료; High-Low 두 점 한계; Scattergraph 예비 이상치 검토·best judgment 단락",
+      "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285",
+      "verified_body_sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285"
+    },
+    {
+      "question_id": "2026-07-102",
+      "ref": "R3_CA_EST_008",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/s14-02-standard-costs.html",
+      "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "Direct Materials Standard Quantity/Price 및 Direct Labor Standard Hours/Rate의 제품규격·현행 계약·시간동작 연구",
+      "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770",
+      "verified_body_sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+    },
+    {
+      "question_id": "2026-07-102",
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 공식 답안 PDF",
+      "what_was_read": "원가관리회계 22번(전체 102번) 2: 계정분석법 무과거자료 진술은 틀린 보기, 공학적 방법 정확성·시간·비용 진술은 정답 제외",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2026-07-102",
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-07-answers.pdf",
+      "commit_or_version": "2026-07 공식 답안 PDF",
+      "what_was_read": "원가관리회계 102번 4: 계정분석법 무과거자료 진술은 틀린 보기, 공학적 방법 정확성·시간·비용 진술은 정답 제외",
+      "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+      "verified_body_sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+    },
+    {
+      "question_id": "2023-12-105",
+      "ref": "m68120",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/m68120.cnxml",
+      "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+      "what_was_read": "DOL 정의와 두 공식의 media alt, 두 기업에 동일한 매출 증가·감소율을 적용하는 본문; 예시 본문 수치와 표 alt의 불일치는 복사하지 않음",
+      "sha256": "b0c483a062c6f81a1d5271e30d9214fc206224e71a97478a5ae6b8f984f39e90",
+      "verified_body_sha256": "b0c483a062c6f81a1d5271e30d9214fc206224e71a97478a5ae6b8f984f39e90"
+    },
+    {
+      "question_id": "2022-12-107",
+      "ref": "R6_COST05_DECENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R6_COST05_DECENT.html",
+      "commit_or_version": "공개 Git 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "11.1 분권화 정의와 Quicker Decisions·Motivation of Local Managers",
+      "sha256": "576fe1e5cca30ea31d7bdbdf71ccd72b690e1ac4862eaf00de2b023f1ad41fa5",
+      "verified_body_sha256": "576fe1e5cca30ea31d7bdbdf71ccd72b690e1ac4862eaf00de2b023f1ad41fa5"
+    },
+    {
+      "question_id": "2022-12-107",
+      "ref": "R10_cost_HUFS11",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_cost_HUFS11.pdf",
+      "commit_or_version": "공식 강의첨부2015 · 실제 표지 산업경영공학과 · SHA256 5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455",
+      "what_was_read": "PDF1 표지 산업경영공학과; PDF3–6 책임회계 정의·통제가능항목·이익중심점",
+      "sha256": "5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455",
+      "verified_body_sha256": "5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455"
+    },
+    {
+      "question_id": "2022-12-107",
+      "ref": "R10_cost_ICMAI_P12_SALES",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_cost_ICMAI_P12_SALES.pdf",
+      "commit_or_version": "Syllabus 2022 · Revised July 2024 · Reprint January 2026",
+      "what_was_read": "PDF1–2 실제 표지·판권(Revised July 2024/Reprint January 2026), PDF525–527 책임회계 정의·계획과 실적·성과보고",
+      "sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+      "verified_body_sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1"
+    },
+    {
+      "question_id": "2022-12-107",
+      "ref": "EXAM_KEYS_R17B5_RESPONSIBILITY_FINAL_STAGE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-12-answers.pdf",
+      "commit_or_version": "2022-12 공식 답안 PDF",
+      "what_was_read": "원가관리회계 107번 [3]: 제품원가·재무보고 목적은 틀린 보기, 관리통제시스템 최종단계 진술은 정답 제외",
+      "sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4",
+      "verified_body_sha256": "004689e5f103754e7dcbf30af60fd087c4654f27a6ffd670e0bbfd6e2da4deb4"
+    },
+    {
+      "question_id": "2022-12-107",
+      "ref": "EXAM_KEYS_R17B5_RESPONSIBILITY_FINAL_STAGE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-06-answers.pdf",
+      "commit_or_version": "2026-06 공식 답안 PDF",
+      "what_was_read": "원가관리회계 107번 2: 제품원가·재무보고 목적은 틀린 보기, 관리통제시스템 최종단계 진술은 정답 제외",
+      "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+      "verified_body_sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "R10_cost_ICMAI_P12_SALES",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_cost_ICMAI_P12_SALES.pdf",
+      "commit_or_version": "Syllabus 2022 · Revised July 2024 · Reprint January 2026",
+      "what_was_read": "PDF1–2 판본, PDF315–319·373 차이 계층, PDF344 원가차이 제거, PDF525–530 책임중심점·수익 및 원가 통제",
+      "sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+      "verified_body_sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "R10_cost_HUFS11",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_cost_HUFS11.pdf",
+      "commit_or_version": "공식 강의첨부2015 · 실제 표지 산업경영공학과 · SHA256 5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455",
+      "what_was_read": "PDF1 표지; PDF4–6 통제권한과 평가, 판매부문 이익중심점 예시",
+      "sha256": "5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455",
+      "verified_body_sha256": "5e1b7806255a24a14571ccb5e9127a91baa51e523f0f238edcb7412b1be2e455"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "R6_COST05_RESP",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R6_COST05_RESP.html",
+      "commit_or_version": "공개 Git 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "what_was_read": "11.2 도입 및 Profit Center: 유형은 개별 통제범위에 따라 판단",
+      "sha256": "44cda16d59cdb943cc1b97845102a5aa3fe2f211bf729352845b1cbe4f0a39d0",
+      "verified_body_sha256": "44cda16d59cdb943cc1b97845102a5aa3fe2f211bf729352845b1cbe4f0a39d0"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "EXAM_KEYS_R17B5_SALES_VARIANCE_HIERARCHY",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+      "commit_or_version": "2023-01 공식 답안 PDF",
+      "what_was_read": "원가관리회계 28번(전체 108번) 4: 총차이=가격+조업도 보기는 정답 제외",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "verified_body_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "EXAM_KEYS_R17B5_SALES_VARIANCE_HIERARCHY",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-07-answers.pdf",
+      "commit_or_version": "2024-07 공식 답안 PDF",
+      "what_was_read": "원가관리회계 111번 4: 총차이=가격+조업도 보기는 정답 제외",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "verified_body_sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "EXAM_KEYS_R17B5_SALES_VARIANCE_HIERARCHY",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-03-answers.pdf",
+      "commit_or_version": "2025-03 공식 답안 PDF",
+      "what_was_read": "원가관리회계 108번 4: 총차이=가격+조업도 보기는 정답 제외",
+      "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73",
+      "verified_body_sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73"
+    },
+    {
+      "question_id": "2026-09-110",
+      "ref": "EXAM_KEYS_R17B5_SALES_VARIANCE_HIERARCHY",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-09-answers.pdf",
+      "commit_or_version": "2026-09 공식 답안 PDF",
+      "what_was_read": "원가관리회계 110번 4: 총차이=가격+수량 보기는 틀린 보기",
+      "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+      "verified_body_sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae"
+    },
+    {
+      "question_id": "2022-07-003",
+      "ref": "R6_FIN01_KASBCF",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R6_FIN01_KASBCF.pdf",
+      "commit_or_version": "2018 개정·2019 타기준서 개정·수정목록24-1 반영; 실제 표지 의결 2019.4.19",
+      "what_was_read": "PDF1 실제 표지 2019.4.19 의결; PDF9 SP1.2; PDF54–56 미이행계약; PDF58 비용 정의; PDF61–69 인식 및 유용성 기준",
+      "sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833",
+      "verified_body_sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833"
+    },
+    {
+      "question_id": "2022-07-003",
+      "ref": "R10_FIN3_KASB_1008_BATCH06",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_FIN3_KASB_1008_BATCH06.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF25 한54.1 및 PDF26 54F의 개념체계 참조 개정 시행일",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "verified_body_sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91"
+    },
+    {
+      "question_id": "2022-07-003",
+      "ref": "EXAM_KEYS_R17B5_RECOGNITION_STATEMENTS",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-07-answers.pdf",
+      "commit_or_version": "2022-07 공식 답안 PDF",
+      "what_was_read": "재무회계 3번 [2]: 인식 대신 주석공시 진술은 틀린 보기, 높은 효익 가능성·신뢰성 측정 진술은 정답 제외",
+      "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa",
+      "verified_body_sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+    },
+    {
+      "question_id": "2022-07-003",
+      "ref": "EXAM_KEYS_R17B5_RECOGNITION_STATEMENTS",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-11-answers.pdf",
+      "commit_or_version": "2022-11 공식 답안 PDF",
+      "what_was_read": "재무회계 2번 [4]: 비용은 부채 증가만으로 인식한다는 진술은 틀린 보기, 높은 효익 가능성·신뢰성 측정 진술은 정답 제외",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "verified_body_sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+    },
+    {
+      "question_id": "2022-07-003",
+      "ref": "R6_FIN01_KASB1001",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R6_FIN01_KASB1001.pdf",
+      "commit_or_version": "시행중 제1001호 · 2023개정 포함, 2024부채분류 개정 시행문단139U/W 확인",
+      "what_was_read": "PDF18 문단18; PDF61 한139.1 및 공개 목록의 2023 개정·수정목록26-1 판본",
+      "sha256": "4b0d52157d50caf7d5d22874c63ef16693146cfe68b3b6035d1146485545117e",
+      "verified_body_sha256": "4b0d52157d50caf7d5d22874c63ef16693146cfe68b3b6035d1146485545117e"
+    },
+    {
+      "question_id": "2022-11-002",
+      "ref": "R6_FIN01_KASBCF",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R6_FIN01_KASBCF.pdf",
+      "commit_or_version": "2018 개정·2019 타기준서 개정·수정목록24-1 반영; 실제 표지 의결 2019.4.19",
+      "what_was_read": "PDF1 실제 표지 2019.4.19 의결; PDF9 SP1.2; PDF54–56 미이행계약; PDF58 비용 정의; PDF61–69 인식 및 유용성 기준",
+      "sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833",
+      "verified_body_sha256": "c17242853e3d5629eba566d573013434b8e69e92839051eb1fd96049871a2833"
+    },
+    {
+      "question_id": "2022-11-002",
+      "ref": "R10_FIN3_KASB_1008_BATCH06",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_FIN3_KASB_1008_BATCH06.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF25 한54.1 및 PDF26 54F의 개념체계 참조 개정 시행일",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "verified_body_sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91"
+    },
+    {
+      "question_id": "2022-11-002",
+      "ref": "EXAM_KEYS_R17B5_RECOGNITION_STATEMENTS",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-07-answers.pdf",
+      "commit_or_version": "2022-07 공식 답안 PDF",
+      "what_was_read": "재무회계 3번 [2]: 인식 대신 주석공시 진술은 틀린 보기, 높은 효익 가능성·신뢰성 측정 진술은 정답 제외",
+      "sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa",
+      "verified_body_sha256": "ac598b8025b8fcc23d439a6c5303284d540a2cc4de252ae1fada821da20d25aa"
+    },
+    {
+      "question_id": "2022-11-002",
+      "ref": "EXAM_KEYS_R17B5_RECOGNITION_STATEMENTS",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-11-answers.pdf",
+      "commit_or_version": "2022-11 공식 답안 PDF",
+      "what_was_read": "재무회계 2번 [4]: 비용은 부채 증가만으로 인식한다는 진술은 틀린 보기, 높은 효익 가능성·신뢰성 측정 진술은 정답 제외",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "verified_body_sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201"
+    },
+    {
+      "question_id": "2023-05-006",
+      "ref": "R10_FIN2_K1002",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_FIN2_K1002.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF10–13 매입원가·기타원가·필요 보관·관리간접원가·후불금융요소; PDF18–19 시행 및 개정 목록",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "verified_body_sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813"
+    },
+    {
+      "question_id": "2024-05-031",
+      "ref": "CROSS_FINANCE01_KASB_1016",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/CROSS_FINANCE01_KASB_1016.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1016호_유형자산(2020_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영)_토지공시지가개정사항반영.pdf",
+      "what_was_read": "PDF14 문단16; PDF23–26 문단48–53·60–62; PDF33–36 시행 규정 및 2026-12-31 이후 종료 적용 토지 공시지가 개정의 구별",
+      "sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d",
+      "verified_body_sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d"
+    },
+    {
+      "question_id": "2024-05-031",
+      "ref": "R10_FIN3_KASB_1008_BATCH06",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/R10_FIN3_KASB_1008_BATCH06.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1008호_회계정책_회계추정치_변경과_오류(2021_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF19–20 문단34–38; PDF25–26 기본 시행일과 개념체계 참조 개정 시행일",
+      "sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91",
+      "verified_body_sha256": "1e50b02a4297239c9f550aae8911a79bfe9bb533d83fb094e26a869d4e65bb91"
+    },
+    {
+      "question_id": "2024-05-031",
+      "ref": "CROSS_FINANCE01_KASB_1007",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/CROSS_FINANCE01_KASB_1007.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1007호_현금흐름표(2024_개정_2021_타기준서_제정_수정목록_19-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF21 문단43–44; PDF26–28 한53.1·후속 공시개정 시행일. 2026 적용 문단37 개정을 2024 문항에 소급하지 않음",
+      "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+      "verified_body_sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c"
+    },
+    {
+      "question_id": "2024-05-031",
+      "ref": "R3_CA_SYD_010",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/SYD.md",
+      "commit_or_version": "MicrosoftDocs/VBA-Docs 4a944c587afa362c5bc2490211f50736181cfc62 · ms.date 2019-05-25",
+      "what_was_read": "공식 Markdown 본문 SYD·cost/salvage/life/per 및 per와 life의 동일 단위 조건",
+      "sha256": "77535fff8b8269472036740cc23a3e2f3ae3027030f65705d92eca043869fd30",
+      "verified_body_sha256": "77535fff8b8269472036740cc23a3e2f3ae3027030f65705d92eca043869fd30"
+    },
+    {
+      "question_id": "2024-05-031",
+      "ref": "R3_CA_SYD_010",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/awfsyd_ZA06051253.gif",
+      "commit_or_version": "MicrosoftDocs/VBA-Docs 4a944c587afa362c5bc2490211f50736181cfc62",
+      "what_was_read": "실제 GIF 수식: (cost-salvage)*(life-per+1)*2/(life*(life+1))",
+      "sha256": "a00436d8957218831ad11843e2e2c0f5af814b0fbd8da3b98dd9a3f5662f3e56",
+      "verified_body_sha256": "a00436d8957218831ad11843e2e2c0f5af814b0fbd8da3b98dd9a3f5662f3e56"
+    },
+    {
+      "question_id": "2026-09-010",
+      "ref": "CROSS_FINANCE01_KASB_1109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/CROSS_FINANCE01_KASB_1109.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF168–169 B5.1.1–B5.1.2A; PDF74–77 한7.1.1/7.1.12/7.1.14/7.1.15 시행일. 실제 공개목록 2025 개정 PDF와 SHA 일치",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "verified_body_sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444"
+    },
+    {
+      "question_id": "2026-09-010",
+      "ref": "CROSS_FINANCE01_KASB_1016",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author5/CROSS_FINANCE01_KASB_1016.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1016호_유형자산(2020_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영)_토지공시지가개정사항반영.pdf",
+      "what_was_read": "PDF14 문단16; PDF23–26 문단50·53·55·60–62; PDF36 한81N.1의 2026-12-31 이후 종료 적용 사항은 사용하지 않음",
+      "sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d",
+      "verified_body_sha256": "9659eabc4c9d866c43becee8040a5236f2764dcd5a14adf4aa06286daabb690d"
+    },
+    {
+      "question_id": "2026-07-026",
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author6/1115.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "¶31–47,60–66,B13–B19,B28–B32,B44,C1,C10; PDF19–25,29–31,57–59,61–62,68,82–83,86 · 2026-10-14 정상 TLS POST로 새로 내려받은 파일을 직접 읽었습니다. 핵심 문단과 시행·개정 범위를 대조했으며 최신 판본 전체를 과거에 소급하지 않습니다.",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "verified_body_sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+    },
+    {
+      "question_id": "2022-01-025",
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author6/1115.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "¶31–47,60–66,B13–B19,B28–B32,B44,C1,C10; PDF19–25,29–31,57–59,61–62,68,82–83,86 · 2026-10-14 정상 TLS POST로 새로 내려받은 파일을 직접 읽었습니다. 핵심 문단과 시행·개정 범위를 대조했으며 최신 판본 전체를 과거에 소급하지 않습니다.",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "verified_body_sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+    },
+    {
+      "question_id": "2022-01-025",
+      "ref": "CROSS_FINANCE01_KASB_1037",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author6/1037.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1037호_충당부채_우발부채_우발자산(2020_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "¶14–15,36; 한96.1/100; PDF13–15,18,32 · 2026-10-14 정상 TLS POST로 새로 내려받은 파일을 직접 읽었습니다. 핵심 문단과 시행·개정 범위를 대조했으며 최신 판본 전체를 과거에 소급하지 않습니다.",
+      "sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d",
+      "verified_body_sha256": "aef21b07a8d0fc554b75b33eb6cf9c12575ccb0f27d794ede47b6bb5f944017d"
+    },
+    {
+      "question_id": "2022-01-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 재경관리사 공식 답안 PDF",
+      "what_was_read": "재무회계 25번 [1]; ③ 공정가치 진술은 틀린 보기로 선택되지 않음 · 답안표와 해당 회차 원본 문항의 동일 진술을 직접 대조",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2022-01-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-05-answers.pdf",
+      "commit_or_version": "2023-05 재경관리사 공식 답안 PDF",
+      "what_was_read": "재무회계 26번 1; ① 동일 공정가치 진술이 옳은 보기 · 답안표와 해당 회차 원본 문항의 동일 진술을 직접 대조",
+      "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+      "verified_body_sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+    },
+    {
+      "question_id": "2022-01-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-07-answers.pdf",
+      "commit_or_version": "2023-07 재경관리사 공식 답안 PDF",
+      "what_was_read": "재무회계 25번 3; ② 동일 공정가치 진술은 틀린 보기로 선택되지 않음 · 답안표와 해당 회차 원본 문항의 동일 진술을 직접 대조",
+      "sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a",
+      "verified_body_sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+    },
+    {
+      "question_id": "2022-06-026",
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author6/1115.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "¶31–47,60–66,B13–B19,B28–B32,B44,C1,C10; PDF19–25,29–31,57–59,61–62,68,82–83,86 · 2026-10-14 정상 TLS POST로 새로 내려받은 파일을 직접 읽었습니다. 핵심 문단과 시행·개정 범위를 대조했으며 최신 판본 전체를 과거에 소급하지 않습니다.",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "verified_body_sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+    },
+    {
+      "question_id": "2023-05-026",
+      "ref": "R6_F04_K1115",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1115.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 23–28쪽 문단 39–59, 38–39쪽 문단 91–98, 61–62쪽 B28–B32, 82쪽 C1–C1C, 86쪽 C10",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "verified_body_sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+    },
+    {
+      "question_id": "2023-05-026",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 25번 [1]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2023-05-026",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-05-answers.pdf",
+      "commit_or_version": "2023-05 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 26번 [1]",
+      "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+      "verified_body_sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+    },
+    {
+      "question_id": "2023-05-026",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-07-answers.pdf",
+      "commit_or_version": "2023-07 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 25번 [3]",
+      "sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a",
+      "verified_body_sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+    },
+    {
+      "question_id": "2023-07-025",
+      "ref": "R6_F04_K1115",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1115.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 23–28쪽 문단 39–59, 38–39쪽 문단 91–98, 61–62쪽 B28–B32, 82쪽 C1–C1C, 86쪽 C10",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "verified_body_sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f"
+    },
+    {
+      "question_id": "2023-07-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 25번 [1]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2023-07-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-05-answers.pdf",
+      "commit_or_version": "2023-05 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 26번 [1]",
+      "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+      "verified_body_sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36"
+    },
+    {
+      "question_id": "2023-07-025",
+      "ref": "EXAM_KEYS_R17B6_CONSTRUCTION_FAIR_VALUE",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-07-answers.pdf",
+      "commit_or_version": "2023-07 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 25번 [3]",
+      "sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a",
+      "verified_body_sha256": "d8d0237ff52fed39d97667daf5fd3c6aa813fa7c39e4471b398d0d133ffcbc6a"
+    },
+    {
+      "question_id": "2024-06-027",
+      "ref": "R6_F04_K1019",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1019.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1019호_종업원급여(2018_개정_2021_타기준서_제정_수정목록_25-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 11쪽 문단 8, 16–19쪽 문단 9–20, 75쪽 문단 172–175, 96–97쪽 BC19–BC20",
+      "sha256": "39d309772c470e8361d5ce1d602f801299a7682b0fab910031619b4354e26f11",
+      "verified_body_sha256": "39d309772c470e8361d5ce1d602f801299a7682b0fab910031619b4354e26f11"
+    },
+    {
+      "question_id": "2024-01-032",
+      "ref": "R6_F04_K1028",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1028.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1028호_관계기업과_공동기업에_대한_투자(2018_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 10쪽 문단 5–6, 15쪽 문단 20, 24쪽 문단 44–45A",
+      "sha256": "171b8f0d9993b9f842b513489a599c5bf7b071af232a32ba2717dc1b5e8c6631",
+      "verified_body_sha256": "171b8f0d9993b9f842b513489a599c5bf7b071af232a32ba2717dc1b5e8c6631"
+    },
+    {
+      "question_id": "2024-01-032",
+      "ref": "R19_B7_KASB1105",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1105.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1105호_매각예정비유동자산과_중단영업(2015_개정_2021_타기준서_제정_수정목록_24-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 10–12쪽 문단 6–12, 22쪽 한44A.1–44C",
+      "sha256": "8c76b33bf9afd8f2d897ff7cc490f0b5af46c6fd23897bcc1ec11d303696df2f",
+      "verified_body_sha256": "8c76b33bf9afd8f2d897ff7cc490f0b5af46c6fd23897bcc1ec11d303696df2f"
+    },
+    {
+      "question_id": "2022-01-036",
+      "ref": "CROSS_FINANCE01_KASB_1109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1109.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 45쪽 5.7.1, 47쪽 5.7.5, 55–58쪽 6.5.3–6.5.11, 74–77쪽 한7.1.1 및 7.1.2–7.1.15",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "verified_body_sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444"
+    },
+    {
+      "question_id": "2022-01-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 36번 [3]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2022-01-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-06-answers.pdf",
+      "commit_or_version": "2022-06 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 36번 [3]",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "verified_body_sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+    },
+    {
+      "question_id": "2022-01-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-11-answers.pdf",
+      "commit_or_version": "2023-11 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 36번 [1]",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "verified_body_sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+    },
+    {
+      "question_id": "2022-06-036",
+      "ref": "CROSS_FINANCE01_KASB_1109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1109.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 45쪽 5.7.1, 47쪽 5.7.5, 55–58쪽 6.5.3–6.5.11, 74–77쪽 한7.1.1 및 7.1.2–7.1.15",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "verified_body_sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444"
+    },
+    {
+      "question_id": "2022-06-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-01-answers.pdf",
+      "commit_or_version": "2022-01 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 36번 [3]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "verified_body_sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142"
+    },
+    {
+      "question_id": "2022-06-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2022-06-answers.pdf",
+      "commit_or_version": "2022-06 공식 확정답안 PDF",
+      "what_was_read": "PDF 49쪽 공식 정답표: 재무회계 36번 [3]",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "verified_body_sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812"
+    },
+    {
+      "question_id": "2022-06-036",
+      "ref": "EXAM_KEYS_R17B7_HEDGE_TREATMENT",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-11-answers.pdf",
+      "commit_or_version": "2023-11 공식 확정답안 PDF",
+      "what_was_read": "PDF 1쪽 공식 정답표: 재무회계 36번 [1]",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "verified_body_sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585"
+    },
+    {
+      "question_id": "2024-12-036",
+      "ref": "CROSS_FINANCE01_KASB_1109",
+      "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author7/1109.pdf",
+      "commit_or_version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "what_was_read": "PDF 45쪽 5.7.1, 47쪽 5.7.5, 55–58쪽 6.5.3–6.5.11, 74–77쪽 한7.1.1 및 7.1.2–7.1.15",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "verified_body_sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444"
+    }
+  ],
+  "input_review_files": [
+    {
+      "path": "r19_review01/reviews0.json",
+      "sha256": "494256ce6f26da0db0974e11d82f62c76bbafbd307438313d92c6bd1d8823ac0"
+    },
+    {
+      "path": "r19_review01/reviews1.json",
+      "sha256": "ab5dcb0e2324e6d46a8fb8196f6c0ec0fe55f0127694af66ae24aa1ab488c17d"
+    },
+    {
+      "path": "r19_review23/reviews2.v2.json",
+      "sha256": "8e68d0184786e4c00e46b0d170644499f007cbb2a883a6b7b02d9886411bc618"
+    },
+    {
+      "path": "r19_review23/reviews3.v2.json",
+      "sha256": "6eb473fb44a3801d958f1f178e4fbc2ff4737e114cc0e21f8342ab82307a2476"
+    },
+    {
+      "path": "r19_review4/reviews.json",
+      "sha256": "b389dd1d3e791380734ae2c009fc8da6ddc1e6ce67a4b5463b7ece97be4475d2"
+    },
+    {
+      "path": "r19_review5/reviews.json",
+      "sha256": "86d6f37792f0ba9492ea9bd9b1d9e4e1704fb12f4c40ab7b37793ef156f387b5"
+    },
+    {
+      "path": "r19_review6/reviews.v2.json",
+      "sha256": "9ddc30d1d2ad3bd5081bd2989ce8928b5ade197cf0ab1a8b5c9ca30170778dfe"
+    },
+    {
+      "path": "r19_review7/reviews.json",
+      "sha256": "2cf0d6e1ea1c78ee5ba10a224f3c5432aba37f98a8aea1ced7c7849481a142ef"
+    },
+    {
+      "path": "r19_review01/followup-reviews.json",
+      "sha256": "76cc3e8462af5e850aad4d60b9fced12d2272e007d21e8f598df285dc088b14d"
+    },
+    {
+      "path": "r19_review23/followup-reviews.json",
+      "sha256": "595ee9bff8bbc6aa1b20410a071f1630cb2bb62081d17f0aff3991b1a1d45830"
+    },
+    {
+      "path": "r19_review5/binding-reviews.json",
+      "sha256": "904fcead84dbcadb57958f12ba257ce869004f3c02140726eea5b56108dc6b22"
+    },
+    {
+      "path": "r19_review5/source-ref-reviews.json",
+      "sha256": "dfa8b0a1e0b0aeffad4a4c78dc5bd441e321a7c5fe00b1ea2fdefa75638d7935"
+    },
+    {
+      "path": "r19_review6/source-ref-reviews.json",
+      "sha256": "b822f39f567125f4e3fd937f3eb27f88568941de495d4ab0671cf00166d0fda6"
+    },
+    {
+      "path": "r19_review7/source-ref-reviews.json",
+      "sha256": "8aaf1736f87c8a50bcb5c7b6294af8a1d916c931a381d5c348e9812a45cd4af8"
+    },
+    {
+      "path": "r19_review23/html-provenance-reviews.json",
+      "sha256": "4071d69a043cff7d5409ebfdeee5f15a3274a5f4ee6d212db949fe3df0f4db94"
+    },
+    {
+      "path": "r19_review23/html-date-reviews.json",
+      "sha256": "12bae4713b7ec6e02a023d5161eb457f731d64529de136c6beec1c083ff4e38b"
+    }
+  ],
+  "authored_sha256": "afad4ba459356bf0eb17ab5869aa22cbf9fba97025a918e73b6cddc27bfdaabe",
+  "reviews_sha256": "63af1d66c23649090b4742c6d895568819a5a448bc2f4cb4b06743ffecb90eda",
+  "quality_history_sha256": "ea967706ce396d60d00c515fd5d9115b678a3a5cc967f88a80eeec7c8efe70ed",
+  "private_provenance_files": [
+    {
+      "path": "r19_author4/provenance.json",
+      "sha256": "16415d75292459609810faf08e971c7a2d65ade56f73ea15c6f3630f4f38ddf2"
+    },
+    {
+      "path": "r19_author5/provenance.json",
+      "sha256": "ee72a0dde93bcd7ec08672d34f4d7d0890f64f8451078d66c4ffc4274099600c"
+    },
+    {
+      "path": "r19_author6/provenance.json",
+      "sha256": "4b881d3f0b37f74a57aad6d22ea749c816f574fb0b909badf0cf9a3cf1923950"
+    },
+    {
+      "path": "r19_author7/provenance.json",
+      "sha256": "2400a9a690840c551f2cd41aa1d0c0eb0f8bc66dd63c3cd30c109412108c306d"
+    },
+    {
+      "path": "r19_review01/provenance.json",
+      "sha256": "aa1107dbfad832f78f4cfd94853c490a41bc4c68a97f6d3bdcab021e21c67659"
+    },
+    {
+      "path": "r19_review01/followup-provenance.json",
+      "sha256": "f16e5daa313ed503ade1b395715fb0ea0d47a2cc944d29cbb9cd7c73df0f459d"
+    },
+    {
+      "path": "r19_review23/provenance.v2.json",
+      "sha256": "f10d04f3644ba535c6a31ff5cd0a28c0ffd46d157de58f3f25a50a6bcdf0a809"
+    },
+    {
+      "path": "r19_review23/followup-provenance.json",
+      "sha256": "7f725897081a6aceaffefeee70d2776ed33a0d6d2617382e83c049af9aee599c"
+    },
+    {
+      "path": "r19_review4/provenance.json",
+      "sha256": "8decfa6cb2705651c6f5addc96f017ff63c5b32aa90635f0f05633a71bcce38b"
+    },
+    {
+      "path": "r19_review5/provenance.json",
+      "sha256": "90c866e0d7afeec88c264931ef7a5d97e53a97e7353f2950fb769bf8064edb27"
+    },
+    {
+      "path": "r19_review5/source-ref-provenance.json",
+      "sha256": "fc74445e81723225127c11e865a6a621d778fc759f18481db87bc310216617c5"
+    },
+    {
+      "path": "r19_review5/binding-provenance.json",
+      "sha256": "33d162bc983489a191f002fb70b7e78b4a6090d1c73c500a80aed547525128a3"
+    },
+    {
+      "path": "r19_review6/provenance.json",
+      "sha256": "b18b3ff13d028ecbdc6ec62f95b68ce9e22bece17ce0662e3bc9a7e07c73e316"
+    },
+    {
+      "path": "r19_review6/source-ref-provenance.json",
+      "sha256": "9e2800694887228a829e75ea821df8ebe6dfd9c48000f7c69fe7e6c4b7a6eb1c"
+    },
+    {
+      "path": "r19_review7/provenance.json",
+      "sha256": "1fb6172a1c153cc94c7f9669f47c4781d05f433dc089dcae153e3c402ca5f508"
+    },
+    {
+      "path": "r19_review7/source-ref-provenance.json",
+      "sha256": "91d5c9bbae49a94f3150403ae7c71fc490bc3d4858c9cff56991900075dfd435"
+    },
+    {
+      "path": "r19_review23/html-provenance-qa-provenance.json",
+      "sha256": "7d15968ae12896ed60da07de296a8abe9be1de9e00cc0d4a360e96fc9a6d07c4"
+    },
+    {
+      "path": "r19_review23/html-date-qa-provenance.json",
+      "sha256": "081bf373cbb623e58edbefd636711bbc780f09ebcd684ee1fef5e24e5d30f151"
+    },
+    {
+      "path": "r19_review01/provenance_supplement.json",
+      "sha256": "2d7c3d7d61e54bfbfeda63ff00803aa19a3f4cfa57db15b21d6e7143399c3985"
+    }
+  ],
+  "body_policy": "실제로 읽은 원본과 독립 검수 보존 파일의 단일 SHA·판본·읽은 범위를 기록합니다. 외부 PDF/HTML 및 전문은 배포하지 않습니다. 역사 HTML 해시 일치를 확인하지 못한 4건은 실제 보존 HTML 재독 기록으로 분리했습니다."
+}

@@ -1,0 +1,668 @@
+[
+  {
+    "question_id": "2023-09-085",
+    "author": "r19_author4",
+    "decision": "decline",
+    "decline_reason": "원본 이미지와 PDF의 재료 행에서 130,000원+90,000원=220,000원이지만 계는 240,000원이고, 노무 행에서 60,000원+50,000원=110,000원이지만 계는 90,000원입니다. 작업별 금액을 택하면 공식 답안 ②의 완성품 310,000원·재공품 220,000원이 되지만, 계 금액과의 모순을 해결하려면 어느 자료를 버릴지 선택해야 합니다. 두 행의 오차가 상쇄된다는 사실은 모순을 해소하지 않으므로 등록을 보류합니다."
+  },
+  {
+    "question_id": "2023-01-093",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "원가차이의 비배분법과 비례배분법",
+    "summary": "기타손익법은 재고와 매출원가에 차이를 비례 배분하는 방법이 아니므로 2번이 옳지 않습니다. 기타손익법이라는 국내 명칭의 분류는 관련 회차 공식 답안의 일관된 판단을 따릅니다.",
+    "steps": [
+      "매출원가조정법은 원가차이를 전액 매출원가에 반영합니다. 불리한 차이는 표준보다 실제 원가가 크므로 매출원가에 더하고, 유리한 차이는 실제 원가가 작으므로 뺍니다. 재공품과 제품의 잔액은 표준원가로 유지합니다.",
+      "2024년 11월 같은 주제의 ②는 기타손익법을 비배분법으로 설명하고, 공식 정답은 다른 보기인 ①입니다. 2023년 1월 공식 답안은 기타손익법을 비례배분법이라고 한 ②를 정답으로 지정합니다. 두 회차의 판단은 일치하며, 차이를 별도 손익에 처리하면 재공품과 제품에 차이가 배분되지 않는 계정 구조와도 맞습니다.",
+      "총원가 비례배분법은 재공품·제품·매출원가의 총원가 잔액 비율로 차이를 나눕니다. 원가요소별 비례배분법은 각 계정에 포함된 해당 원가요소의 금액 비율로 그 요소의 차이를 나눕니다. 두 기준은 관련 공식 답안에서 모두 옳은 보기로 처리합니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "불리한 차이를 매출원가에 가산하면 과소 계상된 비용을 늘리고, 유리한 차이를 차감하면 과대 계상된 비용을 줄이므로 옳습니다."
+      },
+      {
+        "number": 2,
+        "reason": "재공품과 제품을 표준원가로 유지한다는 후반은 맞지만, 기타손익법을 비례배분법이라고 한 앞부분이 틀립니다. 관련 공식 답안은 이 방법을 비배분법으로 분류합니다."
+      },
+      {
+        "number": 3,
+        "reason": "총원가 잔액을 기준으로 각 계정에 같은 비율의 차이를 배분하는 방법을 설명하므로 옳습니다. 해당 정의를 관련 회차 답안도 옳은 보기로 처리합니다."
+      },
+      {
+        "number": 4,
+        "reason": "원가요소별로 배분 기준을 구분하여 해당 재료·노무·간접원가 차이를 배분하는 방법을 설명하므로 옳습니다. 총원가 잔액 하나로 배분하는 ③과 구별합니다."
+      }
+    ],
+    "checks": [],
+    "sources": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "locator": "§10.9 재고의 표준원가 기록과 차이계정의 매출원가 마감"
+      },
+      {
+        "ref": "m68006",
+        "locator": "본문의 과소·과대배부 결산조정 및 큰 차이의 3계정 배분"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "locator": "2023-01 093(원가 13) ②, 2024-11 095 ①, 2025-05 095 ②, 2025-06 095 ②; 보기 내용별 일관성"
+      }
+    ],
+    "new_sources": {
+      "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION": {
+        "title": "재경관리사 공식 답안 · 원가차이 처리방법 4개 회차",
+        "url": "sources/2023-01-answers.pdf",
+        "kind": "시험 주관처 공식 답안(판단 근거) · 교재 본문 아님",
+        "version": "2023-01·2024-11·2025-06·2025-05 공식 답안 PDF",
+        "checked_on": "2026-10-14",
+        "related_files": {
+          "sources/2023-01-answers.pdf": {
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+            "locator": "원가관리회계 문항번호 13 정답 2(은행 ID 093)"
+          },
+          "sources/2024-11-answers.pdf": {
+            "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4",
+            "locator": "원가관리회계 문항번호 95 정답 1"
+          },
+          "sources/2025-06-answers.pdf": {
+            "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+            "locator": "원가관리회계 문항번호 95 정답 2"
+          },
+          "sources/2025-05-answers.pdf": {
+            "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+            "locator": "원가관리회계 문항번호 95 정답 2"
+          }
+        },
+        "verification": "네 문항의 원본 보기와 네 답안 PDF의 해당 번호를 직접 읽었습니다. 매출원가조정법은 재고를 표준원가로 유지하고 불리한 차이를 매출원가에 더하며, 기타손익법은 비배분법으로 기타수익·비용에 처리한다는 판단이 일치합니다. 2025-06 공식 답안은 영업이익에 영향을 미칠 수 있다는 진술을 정답에서 제외합니다. 이것은 국내 시험 용어와 표시의 판단 자료이며, 영업외손익으로 분류하는 이유를 설명한 교재 본문이나 K-IFRS 표시 규정이 아닙니다. 총원가·원가요소별 비례배분의 정의도 관련 회차에서 옳은 보기로 처리합니다."
+      }
+    },
+    "review_status": "partial",
+    "unchecked_points": [
+      "기타손익법의 국내 명칭·비배분법 분류와 총원가/원가요소별 비례배분의 정확한 국내 정의는 관련 공식 답안의 판단을 근거로 합니다. 읽은 공개 교재는 기타손익법이라는 명칭과 세분된 두 배분 기준을 직접 정의하지 않습니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+        "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+      },
+      {
+        "ref": "m68006",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68006.cnxml",
+        "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "what_was_read": "m68006 본문: underapplied/overapplied 결산조정의 매출원가 증가·감소와 큰 차이의 재공품·제품·매출원가 3계정 배분",
+        "sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+        "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+        "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 1",
+        "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+        "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+        "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+      }
+    ],
+    "blocker_resolution": "재고 표준원가 유지·차이 마감 구조를 Saylor에서 읽고, 국내 기타손익법 및 세분된 배분법의 판단은 실제 원문과 답안 4개 회차에서 일관성을 확인했습니다. 교재의 직접 정의로 가장하지 않고 partial로 한계를 남깁니다."
+  },
+  {
+    "question_id": "2024-05-091",
+    "author": "r19_author4",
+    "decision": "decline",
+    "decline_reason": "공식 답안은 ④ 정상적 표준입니다. 직접 읽은 ICMAI Paper 12 PDF 278쪽의 Normal Standard는 장기 경기순환을 포함하는 미래 기간의 평균을 설명하고, Saylor §10.2는 이상적 표준과 달성 가능한 표준을 구분합니다. 그러나 원문의 정상 조업·능률 및 이상·우발 상황 제거라는 정의를 국내 현실적·중간적·정상적 표준의 경계와 연결하는 직접 본문을 확인하지 못했습니다. 이상적 표준을 제외할 수 있어도 나머지 세 보기의 구별을 임의로 만들어 등록할 수 없어 보류합니다."
+  },
+  {
+    "question_id": "2024-11-095",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "매출원가조정법의 재고 평가",
+    "summary": "매출원가에 차이를 전액 반영해도 재공품과 제품은 표준원가로 남으므로 1번이 옳지 않습니다. 기타손익법과 세분된 배분 기준의 국내 정의는 관련 회차 공식 답안의 일관된 판단을 따릅니다.",
+    "steps": [
+      "표준원가계산에서는 재공품과 제품을 표준원가로 기록하고 실제 원가와의 차이를 별도 차이계정에 모읍니다. 매출원가조정법으로 차이계정을 마감할 때 수정하는 계정은 매출원가이며 재공품과 제품에 그 차이를 배분하지 않습니다.",
+      "따라서 ①의 모든 차이를 매출원가에 가감한다는 앞부분은 맞지만, 재공품과 제품을 실제원가로 기록한다는 후반은 틀립니다. 2025년 5월 095번은 같은 방법에서 재공품과 제품이 표준원가로 남는다는 진술을 옳은 보기로 처리합니다.",
+      "②의 기타손익법은 차이를 기타수익·기타비용에 처리하는 비배분법이라는 이 회차의 판단입니다. 2023년 1월 093번은 이 방법을 비례배분법이라고 한 진술을 틀린 보기로 처리합니다. 이 국내 명칭의 직접 교재 정의를 확인한 것은 아닙니다.",
+      "③은 계정별 총원가 잔액, ④는 각 계정의 해당 원가요소 금액을 배분 기준으로 합니다. 이 회차와 2023년 1월 답안은 두 정의를 모두 옳은 보기로 처리합니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "매출원가조정법은 매출원가만 차이 금액으로 수정하므로 재공품·제품까지 실제원가가 되지는 않습니다. 앞부분의 전액 조정과 후반의 재고 평가를 구별해야 합니다."
+      },
+      {
+        "number": 2,
+        "reason": "차이를 재고에 나누어 넣지 않고 별도의 기타비용 또는 기타수익에 반영한다는 시험상 비배분법 설명입니다. 이 회차와 관련 회차 공식 답안이 일관되게 옳은 취지로 처리합니다."
+      },
+      {
+        "number": 3,
+        "reason": "재공품·제품·매출원가의 총원가 기말잔액 비율을 사용하는 배분법의 정의이며, 원가요소를 따로 나누어 기준으로 삼는 방법과 구별하므로 옳습니다."
+      },
+      {
+        "number": 4,
+        "reason": "재료 차이는 재료원가 잔액, 노무 차이는 노무원가 잔액처럼 차이에 대응하는 원가요소를 기준으로 배분하는 설명이므로 옳습니다. 국내 세부 정의의 판단은 관련 답안에 근거합니다."
+      }
+    ],
+    "checks": [],
+    "sources": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "locator": "§10.9 도입부·완성품 이동·매출원가 마감·Key Takeaway"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "locator": "2024-11 095 ①, 2023-01 093 ②, 2025-05 095 ②, 2025-06 095 ②"
+      }
+    ],
+    "new_sources": {},
+    "review_status": "partial",
+    "unchecked_points": [
+      "② 기타손익법의 국내 표시·명칭과 ③·④의 국내 세부 배분 기준은 공식 답안에서 옳게 처리한 판단을 따릅니다. 이 정의들을 직접 서술한 국내 교재 본문은 확인하지 못했습니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+        "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+        "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+        "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 1",
+        "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+        "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+        "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+      }
+    ],
+    "blocker_resolution": "① 재고 실제원가 주장은 Saylor의 표준재고 유지와 차이 매출원가 마감 본문으로 반박합니다. 나머지 국내 분류는 원본 보기와 여러 회차 답안의 일관성을 판단 근거로 밝히고 partial로 남깁니다."
+  },
+  {
+    "question_id": "2025-06-095",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "원가차이 비례배분과 당기 손익",
+    "summary": "원가차이를 매출원가와 재고자산 금액에 비례해 나누는 2번이 옳습니다. 기타손익법이 영업이익에 영향을 주지 않는다는 판단은 영업외손익에 차이를 처리하는 시험상 정의를 전제로 하며, 그 정의의 교재 본문은 확인하지 못했습니다.",
+    "steps": [
+      "비례배분법은 차이의 일부를 재공품·제품 재고에 남기고 나머지를 매출원가에 반영합니다. 전액을 매출원가에 넣는 방법과 달리 재고 금액에도 차이를 반영하므로 ②가 옳습니다.",
+      "재고에 배분할 몫이 있는 불리한 차이를 전액 매출원가에 넣으면 비례배분할 때보다 당기 비용이 커지고 이익이 작아집니다. 유리한 차이면 방향이 반대입니다. 따라서 매출원가조정법의 순이익이 항상 더 크지는 않습니다.",
+      "OpenStax는 차이가 클 때 재공품·제품·매출원가의 세 계정에 나누어 조정하는 방법을 설명합니다. 중요한 차이에 반드시 전액 매출원가조정법을 써야 한다는 ③은 성립하지 않습니다.",
+      "2024년 11월 095번은 기타손익법이 차이를 기타비용·기타수익으로 처리한다고 하고, 이 문항의 공식 답안은 영업이익에 영향을 미칠 수 있다는 ④를 옳은 보기에서 제외합니다. 영업외손익 처리라는 시험상 정의를 전제로 이 판단을 설명하며, 기타수익·기타비용이라는 계정 명칭 자체가 언제나 영업외손익이라는 일반 회계규칙을 뜻하지는 않습니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "불리한 차이를 전액 비용에 반영하면 재고에 일부 남기는 경우보다 이익이 작아질 수 있습니다. 유리한 차이에서는 반대이므로 항상 순이익이 크다는 단정은 틀립니다."
+      },
+      {
+        "number": 2,
+        "reason": "매출원가와 재공품·제품 재고의 배분 기준 금액에 비례하여 차이를 나누는 것이 비례배분법이므로 옳습니다."
+      },
+      {
+        "number": 3,
+        "reason": "차이가 큰 경우 재공품·제품·매출원가로 나누어 조정하는 방법도 사용합니다. 중요하다는 이유로 전액 매출원가조정법만 반드시 적용해야 하는 것은 아닙니다."
+      },
+      {
+        "number": 4,
+        "reason": "공식 답안은 차이를 영업외손익에 반영하는 기타손익법의 시험상 정의를 전제로 이 진술을 정답에서 제외합니다. 그 정의에서는 영업이익 아래에서 순이익을 조정하므로 영업이익에는 영향을 주지 않습니다. 국내 교재의 직접 표시 정의는 확인하지 못했습니다."
+      }
+    ],
+    "checks": [],
+    "sources": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "locator": "§10.9 차이계정의 전액 매출원가 마감"
+      },
+      {
+        "ref": "m68006",
+        "locator": "큰 차이의 재공품·제품·매출원가 3계정 조정 문단"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "locator": "2025-06 095 ②와 2024-11 095 ①, 2023-01 093 ②, 2025-05 095 ②"
+      }
+    ],
+    "new_sources": {},
+    "review_status": "partial",
+    "unchecked_points": [
+      "④의 판단은 기타손익법의 원가차이를 영업외손익에 처리한다는 국내 시험상 정의를 전제로 합니다. 공식 답안에서 해당 진술을 정답에서 제외한 사실과 다른 회차의 기타수익·비용 처리는 확인했지만, 영업외손익 분류를 직접 정한 교재 본문은 확인하지 못했습니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "CROSS_C03_SAYLOR109",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/CROSS_C03_SAYLOR109.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§10.9 도입부, Recording Finished Goods Transactions, Recording Cost of Goods Sold Transactions, Closing Manufacturing Overhead and Variance Accounts, Key Takeaway",
+        "sha256": "739060424bcf99a0073be3f85834afef2bf735371193e61dfea2b3b14352fda7"
+      },
+      {
+        "ref": "m68006",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68006.cnxml",
+        "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "what_was_read": "m68006 본문: underapplied/overapplied 결산조정의 매출원가 증가·감소와 큰 차이의 재공품·제품·매출원가 3계정 배분",
+        "sha256": "3b5e9188d3d3a276494f54e162704ad7df006b4795eeb846f5a134b718ebf61e"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+        "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 13 정답 2(은행 ID 093)",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2024-11-answers.pdf",
+        "commit_or_version": "2024-11 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 1",
+        "sha256": "ca20abe65a55bf7175c8cc0d8d9986e6be135de6e7f203618e928dbb4f2d5fb4"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-06-answers.pdf",
+        "commit_or_version": "2025-06 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_VARIANCE_DISPOSITION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2025-05-answers.pdf",
+        "commit_or_version": "2025-05 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 95 정답 2",
+        "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56"
+      }
+    ],
+    "blocker_resolution": "①·③은 실제 읽은 교재의 차이 마감·큰 차이 배분과 이익 비교로 반박합니다. ④의 미확인 국내 표시 정의는 추정 규칙을 일반화하지 않고 시험상 전제와 답안 판단이라고 summary/steps/unchecked에 밝힙니다."
+  },
+  {
+    "question_id": "2026-01-092",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "이상적 표준과 현실적 표준",
+    "summary": "이상적 표준은 완벽한 생산 조건을 가정하므로 실제 원가와의 차이가 가장 적다는 1번이 옳지 않습니다. 정상적 표준의 장기 평균이라는 취지는 교재와 맞지만, 3번의 국내 설정 절차 전체는 직접 확인하지 못했습니다.",
+    "steps": [
+      "이상적 표준은 기계 고장·재료 낭비·종업원 질병 같은 비효율이 전혀 없는 조건을 가정합니다. 통상 실제 작업에서는 그런 조건을 그대로 달성하기 어려우므로 실제 원가와 차이가 가장 적고 매출원가 산정에 가장 적합하다는 ①은 틀립니다.",
+      "달성이 어려운 이상적 표준은 불리한 차이를 반복해서 발생시켜 동기부여에 부정적인 영향을 줄 수 있습니다. 현실적인 달성 가능 표준은 정상적인 휴식·기계 중단·재료 손실 등을 허용하며, Saylor는 대다수 관리자가 이를 사용한다고 설명합니다.",
+      "ICMAI Paper 12의 Normal Standard는 경기순환을 포함할 만큼 긴 미래 기간의 평균 판매·생산 조건을 반영합니다. ③의 장기 평균과 미래 전망이라는 취지는 이 설명과 부합하지만, 과거 실적을 통계적으로 평균화하는 정확한 국내 설정 절차는 읽은 본문에 없습니다. 그 세부 분류는 이 문항의 공식 답안 판단을 따릅니다.",
+      "④의 현실적 표준은 정상 생산 조건에서 달성 가능한 수준이라는 의미로 읽습니다. 실제 원가와의 차이는 통제·분석할 대상이며, 원인을 확인할 때에는 수량·능률뿐 아니라 가격 등 차이의 성격도 구별합니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "고장·손실 등이 없는 완벽한 조건의 기준은 실제 조건과 차이가 작아지는 기준이 아닙니다. 정상적인 생산 문제를 허용하는 달성 가능 표준과 혼동한 설명이므로 옳지 않습니다."
+      },
+      {
+        "number": 2,
+        "reason": "이상적 표준은 달성하기 어려워 불리한 차이가 자주 나타날 수 있고, 교재도 종업원에게 부정적 영향을 줄 수 있다고 설명하므로 옳은 취지입니다."
+      },
+      {
+        "number": 3,
+        "reason": "장기 평균 조건과 미래 전망을 고려한다는 취지는 교재의 Normal Standard와 맞습니다. 과거 실적의 통계적 평균이라는 세부 절차까지 직접 확인한 것은 아니며, 이를 정상적 표준으로 분류하는 것은 공식 답안의 판단입니다."
+      },
+      {
+        "number": 4,
+        "reason": "현실적 표준을 정상 생산 조건에서 달성 가능한 표준으로 읽으면 대다수 관리자가 이를 사용한다는 교재와 맞습니다. 실제와의 차이를 정상에서 벗어난 사항의 통제·분석 대상으로 본다는 취지이며, 모든 차이를 작업자의 능률 저하로만 단정하지 않습니다."
+      }
+    ],
+    "checks": [],
+    "sources": [
+      {
+        "ref": "R6_COST07_SAYLOR_ENG",
+        "locator": "§10.2 Ideal Standards and Attainable Standards, Controlling Operations through Standards"
+      },
+      {
+        "ref": "R10_cost_ICMAI_P12_SALES",
+        "locator": "PDF 278쪽(인쇄 268쪽) Types of Standards: Ideal·Expected·Normal Standard"
+      }
+    ],
+    "new_sources": {},
+    "review_status": "partial",
+    "unchecked_points": [
+      "③의 과거 실적치를 통계적으로 평균화하고 미래 예상 추세를 감안하는 정상적 표준의 정확한 국내 절차와 현실적 표준과의 국내 세분 경계는 직접 확인하지 못했습니다. 장기 평균·미래 조건이라는 일반 취지는 ICMAI 본문으로 확인하며, 해당 국내 분류는 이 문항 공식 답안의 판단을 따릅니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "R6_COST07_SAYLOR_ENG",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_ENG.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§10.2 Standard Costs: 표준의 가격·수량 구성, 재료 소요량·단가의 규격/계약/역사자료, 노무 시간동작연구·휴식/고장 허용, Ideal Standards and Attainable Standards 전체",
+        "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+      },
+      {
+        "ref": "R10_cost_ICMAI_P12_SALES",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R10_cost_ICMAI_P12_SALES.pdf",
+        "commit_or_version": "revisedJuly2024/reprintJan2026 · SHA256 70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1",
+        "what_was_read": "PDF 1–2쪽 표지·판권(2024년 7월 개정/2026년 1월 재인쇄), PDF 278–279쪽 Types of Standards 및 Standard Costs and Estimated Costs",
+        "sha256": "70b5e66fd4035ce24dd49dd6dc6cbef99e577e9f6e68c38e529d7c8e2e172ec1"
+      }
+    ],
+    "blocker_resolution": "이상적 표준과 달성 가능 표준은 Saylor 실제 본문으로 구별해①을 반박합니다.③의 장기 미래평균 취지는 ICMAI에서 확인했지만 과거통계 절차까지 같은 본문에서 확인했다고 하지 않고 부분 확인 한계를 명시합니다."
+  },
+  {
+    "question_id": "2026-09-097",
+    "author": "r19_author4",
+    "decision": "decline",
+    "decline_reason": "공식 답안은 ③ 3개입니다. 직접 읽은 ICMAI Paper 16 PDF 304·308·309쪽은 직접재료만 제품원가로 삼고 다른 원가를 당기 운영비용으로 처리하며 과잉생산 유인을 없앤다고 설명합니다. 그러나 ㄴ의 수요 변동이 심한 산업에서 특히 유용하다는 비교, ㄷ의 장기 가격결정에서 전부원가계산이 우월하다는 비교는 확인하지 못했습니다. PDF 310쪽은 다른 맥락에서 장기 계획·가격설정의 throughput 장점도 주장하므로 이를 ㄷ의 직접 근거로 바꾸지 않습니다. ㄹ도 운영비용을 고정으로 둘지 실제 생산량에 따라 변하게 둘지에 따라 판단이 달라져, 미확인 진술을 임의로 참·거짓에 배치하여 3개에 맞출 수 없습니다."
+  },
+  {
+    "question_id": "2022-09-101",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "활동별 배부액과 공헌이익의 전제",
+    "summary": "재료원가와 세 활동의 단위당 배부액을 모두 변동원가로 보는 전제에서 단위당 잔액은 1,210원이며 정답은 3번입니다. 또한 추가 변동 판매관리비가 없다고 전제합니다.",
+    "steps": [
+      "활동별 배부율은 연간 가공원가를 연간 원가동인 수로 나눕니다. 세척은 200,000÷100,000=2원/리터, 압착은 900,000÷45,000=20원/시간, 분쇄는 546,000÷21,000=26원/시간입니다.",
+      "X 제품의 단위당 배부액은 세척 30×2=60원, 압착 10×20=200원, 분쇄 5×26=130원으로 합계 390원입니다.",
+      "공헌이익은 매출에서 변동원가를 차감합니다. 재료원가와 세 활동의 단위당 배부액을 모두 변동원가로 보는 전제에서 2,000−400−390=1,210원입니다. 또한 추가 변동 판매관리비가 없다고 전제합니다.",
+      "ABC는 활동 원가를 제품에 배부하는 방법이므로 배부액 전체가 변동원가라고 단정할 수 없습니다. 고정원가가 포함되거나 별도 변동비가 있으면 공헌이익이 달라지며, 이 계산은 위 전제로 공식 답이 어떻게 산출되는지 설명합니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "390원은 세 활동에 배부되는 가공원가의 합계입니다. 판매가격에서 재료원가와 가공원가를 빼서 구하는 잔액과 구별해야 합니다."
+      },
+      {
+        "number": 2,
+        "reason": "800원은 전제에 따른 계산값 1,210원보다 410원 작습니다. 지문에는 추가로 차감할 원가나 이 금액으로 바꿀 배부 기준이 주어져 있지 않습니다."
+      },
+      {
+        "number": 3,
+        "reason": "모든 제시 원가를 변동원가로 보는 전제에서 2,000원−400원−390원=1,210원이므로 공식 답과 일치합니다. 활동 배부 자체가 원가의 변동성을 입증하는 것은 아닙니다."
+      },
+      {
+        "number": 4,
+        "reason": "1,600원은 판매가격 2,000원에서 재료원가 400원만 뺀 금액입니다. 모든 가공원가를 변동원가로 보는 전제에서는 가공원가 390원도 차감해야 합니다."
+      }
+    ],
+    "checks": [
+      {
+        "label": "활동별 가공원가 합계",
+        "expr": "200000/100000*30+900000/45000*10+546000/21000*5",
+        "expected": 390
+      },
+      {
+        "label": "명시한 전제에서의 단위당 잔액",
+        "expr": "2000-400-(200000/100000*30+900000/45000*10+546000/21000*5)",
+        "expected": 1210
+      }
+    ],
+    "sources": [
+      {
+        "ref": "R7_COST04_SAYLOR_ABC",
+        "locator": "§3.3 Step 4 활동별 배부율과 Step 5 제품 활동소비량 배부"
+      },
+      {
+        "ref": "R7_COST03_SAYLOR67",
+        "locator": "§6.7 변동원가·공헌이익 손익계산서와 고정원가 기간비용"
+      },
+      {
+        "ref": "m68115",
+        "locator": "본문 Contribution margin 정의·Unit Contribution Margin 및 수식 media alt"
+      }
+    ],
+    "new_sources": {},
+    "review_status": "partial",
+    "unchecked_points": [
+      "활동기준원가계산은 배부 방법이며 고정·변동 원가행태를 자동으로 결정하지 않습니다. 세 활동의 가공원가와 재료원가를 모두 단위당 변동원가로 보는 가정은 원문에 명시되어 있지 않으므로, 계산한 잔액을 공헌이익으로 부르는 것은 이 전제에 한정됩니다.",
+      "이 문항은 판매관리비 유무를 명시하지 않습니다. 공식 답의 잔액을 구할 때 추가 변동 판매관리비가 없다는 전제를 사용하며, 별도 변동 판매관리비가 있으면 공헌이익은 달라집니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "R7_COST04_SAYLOR_ABC",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST04_SAYLOR_ABC.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§3.3 Step 3 원가동인 정의, Step 4 활동별 예정배부율, Step 5 제품별 활동소비량 배부, Product Costs Using the Activity-Based Costing Approach",
+        "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050"
+      },
+      {
+        "ref": "R7_COST03_SAYLOR67",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST03_SAYLOR67.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f · SHA256 a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+        "what_was_read": "§6.7 도입부 전부·변동원가 정의, Impact of Absorption Costing and Variable Costing on Profit, Month 1–3 비교, Key Takeaway의 고정제조간접원가 재고/기간비용 처리",
+        "sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f"
+      },
+      {
+        "ref": "m68115",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68115.cnxml",
+        "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "what_was_read": "본문 도입부 Fixed/Variable costs·Contribution margin 정의, Unit Contribution Margin 본문 및 수식 media alt: 단위판매가격−단위변동원가",
+        "sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a"
+      }
+    ],
+    "blocker_resolution": "실제 읽은 ABC 배부율·제품별 활동소비량 본문으로 배부액을 독립 계산했습니다. 배부원가와 변동원가를 동일시하는 전제를 추가 사실로 숨기지 않고 summary·steps·unchecked에 명시하며 partial로 한정합니다."
+  },
+  {
+    "question_id": "2022-11-101",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "활동별 배부액과 공헌이익의 전제",
+    "summary": "재료원가와 세 활동의 단위당 배부액을 모두 변동원가로 보는 전제에서 단위당 잔액은 800원이며 정답은 2번입니다. 판매관리비가 없다는 조건은 지문에 명시되어 있습니다.",
+    "steps": [
+      "활동별 배부율은 연간 가공원가를 연간 원가동인 수로 나눕니다. 세척은 300,000÷100,000=3원/리터, 압착은 1,800,000÷90,000=20원/시간, 분쇄는 600,000÷24,000=25원/시간입니다.",
+      "X 제품의 단위당 배부액은 세척 100×3=300원, 압착 30×20=600원, 분쇄 8×25=200원으로 합계 1,100원입니다.",
+      "공헌이익은 매출에서 변동원가를 차감합니다. 재료원가와 세 활동의 단위당 배부액을 모두 변동원가로 보는 전제에서 2,400−500−1,100=800원입니다. 판매관리비가 없다는 조건은 지문에 명시되어 있습니다.",
+      "ABC는 활동 원가를 제품에 배부하는 방법이므로 배부액 전체가 변동원가라고 단정할 수 없습니다. 고정원가가 포함되거나 별도 변동비가 있으면 공헌이익이 달라지며, 이 계산은 위 전제로 공식 답이 어떻게 산출되는지 설명합니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "700원은 전제에 따른 계산값 800원보다 100원 작습니다. 지문에는 추가로 차감할 원가나 이 금액으로 바꿀 배부 기준이 주어져 있지 않습니다."
+      },
+      {
+        "number": 2,
+        "reason": "모든 제시 원가를 변동원가로 보는 전제에서 2,400원−500원−1,100원=800원이므로 공식 답과 일치합니다. 활동 배부 자체가 원가의 변동성을 입증하는 것은 아닙니다."
+      },
+      {
+        "number": 3,
+        "reason": "900원은 전제에 따른 계산값 800원보다 100원 큽니다. 제시한 세 활동소비량을 모두 반영한 가공원가 합계 1,100원을 차감하면 이 금액이 나오지 않습니다."
+      },
+      {
+        "number": 4,
+        "reason": "1,000원은 전제에 따른 계산값 800원보다 200원 큽니다. 제시한 세 활동소비량을 모두 반영한 가공원가 합계 1,100원을 차감하면 이 금액이 나오지 않습니다."
+      }
+    ],
+    "checks": [
+      {
+        "label": "활동별 가공원가 합계",
+        "expr": "300000/100000*100+1800000/90000*30+600000/24000*8",
+        "expected": 1100
+      },
+      {
+        "label": "명시한 전제에서의 단위당 잔액",
+        "expr": "2400-500-(300000/100000*100+1800000/90000*30+600000/24000*8)",
+        "expected": 800
+      }
+    ],
+    "sources": [
+      {
+        "ref": "R7_COST04_SAYLOR_ABC",
+        "locator": "§3.3 Step 4 활동별 배부율과 Step 5 제품 활동소비량 배부"
+      },
+      {
+        "ref": "R7_COST03_SAYLOR67",
+        "locator": "§6.7 변동원가·공헌이익 손익계산서와 고정원가 기간비용"
+      },
+      {
+        "ref": "m68115",
+        "locator": "본문 Contribution margin 정의·Unit Contribution Margin 및 수식 media alt"
+      }
+    ],
+    "new_sources": {},
+    "review_status": "partial",
+    "unchecked_points": [
+      "활동기준원가계산은 배부 방법이며 고정·변동 원가행태를 자동으로 결정하지 않습니다. 세 활동의 가공원가와 재료원가를 모두 단위당 변동원가로 보는 가정은 원문에 명시되어 있지 않으므로, 계산한 잔액을 공헌이익으로 부르는 것은 이 전제에 한정됩니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "R7_COST04_SAYLOR_ABC",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST04_SAYLOR_ABC.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§3.3 Step 3 원가동인 정의, Step 4 활동별 예정배부율, Step 5 제품별 활동소비량 배부, Product Costs Using the Activity-Based Costing Approach",
+        "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050"
+      },
+      {
+        "ref": "R7_COST03_SAYLOR67",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R7_COST03_SAYLOR67.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f · SHA256 a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f",
+        "what_was_read": "§6.7 도입부 전부·변동원가 정의, Impact of Absorption Costing and Variable Costing on Profit, Month 1–3 비교, Key Takeaway의 고정제조간접원가 재고/기간비용 처리",
+        "sha256": "a1b9b68e8cbcadd9dee7e7908b0046f16f4d3a339605c03ac044c7da54b87a5f"
+      },
+      {
+        "ref": "m68115",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/m68115.cnxml",
+        "commit_or_version": "2165bf6454c0279c1284e19ac7febc101f7956ad",
+        "what_was_read": "본문 도입부 Fixed/Variable costs·Contribution margin 정의, Unit Contribution Margin 본문 및 수식 media alt: 단위판매가격−단위변동원가",
+        "sha256": "fd1166aa1b65319f86f35a9379a847586167e416b2d1cfc5883a90a4e2e6b74a"
+      }
+    ],
+    "blocker_resolution": "실제 읽은 ABC 배부율·제품별 활동소비량 본문으로 배부액을 독립 계산했습니다. 배부원가와 변동원가를 동일시하는 전제를 추가 사실로 숨기지 않고 summary·steps·unchecked에 명시하며 partial로 한정합니다."
+  },
+  {
+    "question_id": "2023-01-102",
+    "author": "r19_author4",
+    "decision": "register",
+    "title": "원가추정방법의 자료와 판단",
+    "summary": "계정분석법은 과거 원가계정 자료를 분석하므로 자료가 없어도 적용할 수 있다는 2번이 옳지 않습니다. 공학적 방법의 정확성·시간·비용 비교는 두 회차의 일관된 공식 답안 판단을 근거로 합니다.",
+    "steps": [
+      "계정분석법은 경험 있는 담당자가 원가계정을 검토하여 고정·변동 부분을 구분합니다. 분석할 과거 계정 자료가 전제이므로, 자료가 전혀 없는 경우에도 적용할 수 있다는 ②는 틀립니다.",
+      "공학적 방법은 제품 규격의 투입량, 현장 시간동작연구와 계약 단가 등 물리적 투입·산출 관계를 분석합니다. 정확성이 높지만 시간·비용이 많다는 상대 비교는 읽은 Saylor 본문에서 직접 제시하지 않습니다. 순서만 바뀐 2026년 7월 102번과 이 문항의 공식 답안은 모두 이 진술을 옳은 보기로 처리합니다.",
+      "산포도법은 활동량과 원가의 자료점을 그려 관계와 이상치를 먼저 살펴볼 수 있습니다. 눈으로 선을 맞추는 과정에 분석자의 판단이 들어가므로 예비 검토에 유용하되 주관이 개입할 수 있습니다.",
+      "고저점법은 최고조업도와 최저조업도의 두 자료점만으로 원가함수를 추정합니다. 두 점이 전체 자료의 대표성을 갖지 못하면 추정치가 왜곡될 수 있습니다."
+    ],
+    "option_notes": [
+      {
+        "number": 1,
+        "reason": "제품 규격과 시간동작연구를 통해 투입량을 분석하는 절차는 교재에서 확인합니다. 높은 정확성과 많은 시간·비용이라는 비교는 두 회차의 공식 답안이 옳게 처리한 판단을 따르며, 이를 직접 설명한 교재 문장은 확인하지 못했습니다."
+      },
+      {
+        "number": 2,
+        "reason": "과거 원가계정을 검토하여 원가행태를 구분하는 방법이므로 분석할 계정 자료 없이도 적용할 수 있다는 주장은 옳지 않습니다."
+      },
+      {
+        "number": 3,
+        "reason": "자료점 전체를 그려 관계·이상치를 예비적으로 검토할 수 있지만 직선을 눈으로 맞추므로 분석자의 주관적 판단이 개입합니다."
+      },
+      {
+        "number": 4,
+        "reason": "최고·최저조업도의 두 점만 사용하므로 두 점이 비정상적인 기간의 자료라면 전체 자료를 대표하지 못하고 추정치가 왜곡될 수 있습니다."
+      }
+    ],
+    "checks": [],
+    "sources": [
+      {
+        "ref": "R6_COST07_SAYLOR_EST",
+        "locator": "§5.2 Account Analysis·High-Low Method·Scattergraph Method"
+      },
+      {
+        "ref": "R6_COST07_SAYLOR_ENG",
+        "locator": "§10.2 제품규격·시간동작연구·계약 단가"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+        "locator": "2023-01 102(원가 22) ②, 2026-07 102 ④; 순서만 다른 네 보기 비교"
+      }
+    ],
+    "new_sources": {
+      "EXAM_KEYS_R17B4_COST_ESTIMATION": {
+        "title": "재경관리사 공식 답안 · 원가추정방법 장단점 2개 회차",
+        "url": "sources/2023-01-answers.pdf",
+        "kind": "시험 주관처 공식 답안(판단 근거) · 교재 본문 아님",
+        "version": "2023-01·2026-07 공식 답안 PDF",
+        "checked_on": "2026-10-14",
+        "related_files": {
+          "sources/2023-01-answers.pdf": {
+            "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+            "locator": "원가관리회계 문항번호 22 정답 2(은행 ID 102)"
+          },
+          "sources/2026-07-answers.pdf": {
+            "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+            "locator": "원가관리회계 문항번호 102 정답 4"
+          }
+        },
+        "verification": "두 회차의 네 보기는 순서만 다르고 같은 내용입니다. 공식 답안은 모두 과거 원가자료가 없어도 계정분석법을 적용할 수 있다는 진술을 틀린 보기로, 공학적 방법의 높은 정확성과 많은 시간·비용을 옳은 보기로 처리합니다. 해당 비교를 입증한 교재 본문이 아니라 시험 주관처의 일관된 판단 자료입니다."
+      }
+    },
+    "review_status": "partial",
+    "unchecked_points": [
+      "① 공학적 방법의 높은 정확성과 많은 시간·비용이라는 상대 비교를 직접 서술한 교재 본문은 확인하지 못했습니다. 두 회차에서 같은 진술을 옳게 처리한 시험 주관처의 판단으로 설명하며, 절차를 읽었다는 사실을 비용·정확성 비교의 직접 검증으로 확대하지 않습니다."
+    ],
+    "review_note": "원본 문항 이미지·회차 원본 PDF의 원가관리회계 과목 머리와 공식 답안을 대조했습니다. 실제 읽은 공개 교재와 답안에서 확인한 범위만 설명하며, 교재에서 확인하지 못한 판단과 모형 전제는 별도로 표시합니다. 전문가 검수는 아직입니다.",
+    "source_reads": [
+      {
+        "ref": "R6_COST07_SAYLOR_EST",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_EST.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§5.2 Account Analysis의 과거계정/경험판단, High-Low Method의 최고·최저조업도 두 점과 대표성 한계, Scattergraph Method의 시각적 직선·주관·이상치 예비 검토",
+        "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285"
+      },
+      {
+        "ref": "R6_COST07_SAYLOR_ENG",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/handoff/r17/.r19-cache/r19_author4/R6_COST07_SAYLOR_ENG.html",
+        "commit_or_version": "6b8ed09bd60909a2b170cfe16897266020b2968f",
+        "what_was_read": "§10.2 Standard Costs: 표준의 가격·수량 구성, 재료 소요량·단가의 규격/계약/역사자료, 노무 시간동작연구·휴식/고장 허용, Ideal Standards and Attainable Standards 전체",
+        "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2023-01-answers.pdf",
+        "commit_or_version": "2023-01 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 22 정답 2(은행 ID 102)",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7"
+      },
+      {
+        "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+        "path_or_url": "/workspace/Jay5315.github.io/jaegyeong/sources/2026-07-answers.pdf",
+        "commit_or_version": "2026-07 재경관리사 공식 답안 PDF",
+        "what_was_read": "원가관리회계 문항번호 102 정답 4",
+        "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0"
+      }
+    ],
+    "blocker_resolution": "②의 필수 과거자료는 교재 계정분석 정의로 반박하고③·④도 실제 본문으로 확인합니다.①의 비교 명제는 원본과 두 공식 답안의 일관성으로 판단하며 교재 직접확인과 구별해 partial로 남깁니다."
+  }
+]

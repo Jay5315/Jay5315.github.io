@@ -10,11 +10,16 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from register_round13_explanations import main  # noqa: E402
+import register_round13_explanations as registration  # noqa: E402
+
+CHECKED_ON = '2026-10-14'
 
 POLICY = ('정답 이의 판정이 걸린 문항과 이미 등록하지 않기로 한 문항을 뺀 나머지 보류 문항을 하나씩 다시 검토했습니다. '
           '실제로 읽은 원문과 비슷한 문항·공식 답안을 근거로 삼되 원문에 없는 사실을 만들어야 하는 문항은 등록하지 않았고, '
           '작성자와 다른 검수자가 네 보기를 모두 통과시킨 경우에만 등록했습니다.')
 
 if __name__ == '__main__':
-    main(*sys.argv[1:3], ledger='round17_registrations', policy=POLICY)
+    # The shared implementation retains its historical round-13 date. Set the
+    # current stage's date in this process without modifying the older script.
+    registration.CHECKED_ON = CHECKED_ON
+    registration.main(*sys.argv[1:3], ledger='round17_registrations', policy=POLICY)

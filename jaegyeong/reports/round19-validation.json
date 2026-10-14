@@ -1,0 +1,230 @@
+{
+  "checked_on": "2026-10-14",
+  "http_server": "http://127.0.0.1:8000/jaegyeong/",
+  "venv": "jaegyeong/.venv",
+  "chromium": "/usr/bin/chromium",
+  "tests": [
+    {
+      "name": "test_bank",
+      "command": "python3 scripts/test_bank.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.541,
+      "output_sha256": "cfcb1ef2c7835f0af02f86e10fa07efe3ca3f909dec9f3cb8a3c4804abb0be0f",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.303s\n\nOK\n",
+      "summary": [
+        "Ran 10 tests in 0.303s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_parts",
+      "command": "python3 scripts/test_parts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.57,
+      "output_sha256": "bfa8f8fb59870181cd0bf53b01031117bc2437cc5afe00d2a0d1a9b923a4fd90",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.341s\n\nOK\n",
+      "summary": [
+        "Ran 5 tests in 0.341s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_concepts",
+      "command": "python3 scripts/test_concepts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.377,
+      "output_sha256": "b5f3f02f737aa75a9bc3470f356b0f316a530cd44374446fbd5125d72c848d48",
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.290s\n\nOK\n",
+      "summary": [
+        "Ran 7 tests in 0.290s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_explanations",
+      "command": "python3 scripts/test_explanations.py",
+      "exit_code": 0,
+      "elapsed_seconds": 9.475,
+      "output_sha256": "45ff3979d91fbf44da4da396094b44a9b343662227179a14e3fd56644ef38900",
+      "output": "....................................\n----------------------------------------------------------------------\nRan 36 tests in 8.378s\n\nOK\n",
+      "summary": [
+        "Ran 36 tests in 8.378s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_app",
+      "command": "python3 scripts/test_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 24.271,
+      "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "summary": [
+        "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors"
+      ]
+    },
+    {
+      "name": "test_browser",
+      "command": "python3 scripts/test_browser.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.491,
+      "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n",
+      "summary": [
+        "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors."
+      ]
+    },
+    {
+      "name": "test_explanations_app",
+      "command": "python3 scripts/test_explanations_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 93.794,
+      "output_sha256": "53555b8277d681b823972339e93959b6d6717f86eca696b1b8657070eb942f2d",
+      "output": "PASS: all 4272 explanation bodies rendered; 167 grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n",
+      "summary": [
+        "PASS: all 4272 explanation bodies rendered; 167 grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors"
+      ]
+    }
+  ],
+  "all_seven_passed": true,
+  "deployment": {
+    "status": "pending",
+    "reason": "테스트 확인 후 커밋·양쪽 브랜치 푸시 및 Pages SHA 검증 예정"
+  },
+  "integrity": {
+    "checked_on": "2026-10-14",
+    "baseline_commit": "9ddaad3bd80fe20abd33445e7033c00da4082508",
+    "main_baseline": "f77814ae9072b657a65796857134666828a5af71",
+    "existing_explanations_unchanged": 4221,
+    "existing_sources_unchanged": 1822,
+    "prior_audit_groups_unchanged": [
+      "schema_version",
+      "started_on",
+      "baseline_count",
+      "baseline_hashes",
+      "baseline_sources_hash",
+      "baseline_source_hashes",
+      "batches",
+      "target_count",
+      "registered_count",
+      "added_count",
+      "processed_count",
+      "review_count",
+      "unprocessed_ids",
+      "targeted_corrections",
+      "numeric_option_reviews",
+      "review_resolutions",
+      "first_pass_registered_count",
+      "first_pass_added_count",
+      "second_pass_target_count",
+      "rechecks",
+      "rechecked_count",
+      "second_pass_added_count",
+      "validation_progress",
+      "submission_amendments",
+      "final_quality_review",
+      "prose_review",
+      "execution",
+      "final_validation",
+      "third_pass_batches",
+      "third_pass_target_count",
+      "third_pass_baseline_hashes",
+      "third_pass_baseline_source_hashes",
+      "third_pass_processed_count",
+      "third_pass_added_count",
+      "baseline_source_upgrades",
+      "third_pass_unprocessed_ids",
+      "third_pass_complete",
+      "third_pass_workers",
+      "source_url_corrections",
+      "third_pass_prose_amendments",
+      "applied_prose_delta_hashes",
+      "extra_rechecks",
+      "extra_rechecked_count",
+      "extra_added_count",
+      "final_quality_withdrawals",
+      "third_pass_net_added_count",
+      "review_source_supplements",
+      "final_source_locator_amendments",
+      "extra_rechecked_unique_count",
+      "followup_final_validation",
+      "followup_execution",
+      "sixth_pass_snapshot",
+      "sixth_pass_parent_checks",
+      "extra_net_added_count",
+      "sixth_pass_audit_amendments",
+      "sixth_pass_independent_quality_review",
+      "sixth_pass_source_metadata_amendments",
+      "sixth_pass_locator_amendments",
+      "sixth_pass_prose_amendments",
+      "sixth_pass_final_validation",
+      "seventh_pass_snapshot",
+      "seventh_pass_parent_checks",
+      "seventh_pass_concept_delta_hashes",
+      "seventh_pass_concept_review",
+      "seventh_pass_prose_amendments",
+      "seventh_pass_independent_quality_review",
+      "answer_adjudication",
+      "post_review_amendments",
+      "spacing_amendments",
+      "round9_registrations",
+      "round10_followups",
+      "round11_corrections",
+      "round12_option_rewrites",
+      "round13_registrations",
+      "round14_registrations",
+      "round15_registrations",
+      "round16_registrations"
+    ],
+    "adjudication_records_and_resolutions_unchanged": true,
+    "initial_briefs_and_drafts_unchanged": true,
+    "protection_tests_unchanged": true,
+    "question_ids_answers_and_study_storage_unchanged": true,
+    "root_site_unchanged": true,
+    "total_entries": 4322,
+    "study_eligible_entries": 4321,
+    "quarantined_entries": 1,
+    "explanations": 4272,
+    "pending": 49,
+    "unaccounted_study_eligible_ids": [],
+    "registered": 51,
+    "declined": 26,
+    "skipped_ids": [],
+    "current_review_categories": {
+      "source_unverified": 18,
+      "answer_suspected": 18,
+      "parse_problem": 11,
+      "calculation_unresolved": 2
+    },
+    "original_review_rows_preserved_for_every_registration": true,
+    "csv_exact_lf": true,
+    "bundle_matches_source": true,
+    "bank_data_sha256": "3136714de1f8c9f615093edf02a58f079a5e3610a4e6303ec2af92eaa0558496"
+  },
+  "preflight_events": [
+    {
+      "check": "input paths",
+      "result": "initial checker failed",
+      "reason": "baseline brief/draft names were relative to handoff directory",
+      "resolution": "Resolved exact paths; initial files SHA all matched."
+    },
+    {
+      "check": "source body provenance",
+      "result": "initial checker failed",
+      "reason": "4 historical author HTML hashes had no matching retained body",
+      "resolution": "Actually reread independent HTML; preserved previous author SHA separately, corrected exact read date and received independent QA4+dateQA2."
+    },
+    {
+      "check": "changed path scope",
+      "result": "initial checker failed",
+      "reason": "git quoted Korean CSV filename in newline output",
+      "resolution": "Used git --name-only -z; every changed file is under jaegyeong/."
+    },
+    {
+      "check": "required seven suites",
+      "result": "all passed",
+      "failures": 0,
+      "skips": 0
+    }
+  ]
+}
