@@ -11,6 +11,8 @@ ARTIFACTS = Path(os.environ.get('TEST_ARTIFACT_DIR', str(R / '_artifacts')))
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 KEY = 'chagok.study.v1'
 items = json.loads((R / 'data/explanations.json').read_text())['items']
+round20 = json.loads((R / 'reports/explanation-expansion.json').read_text()).get('round20_followups',{})
+concept_changes = round20.get('concept_amendments',[])
 # Render every explanation, then exercise actual grading for the original 30 and
 # both conceptual/calculation examples in each newly covered part.
 interactive = list(items[:30])
@@ -20,6 +22,12 @@ for n in items[30:]:
     if group not in covered:
         interactive.append(n)
         covered.add(group)
+interactive_ids={n['question_id'] for n in interactive}
+by_id={n['question_id']:n for n in items}
+for registration in round20.get('registrations',[]):
+    if registration['question_id'] not in interactive_ids:
+        interactive.append(by_id[registration['question_id']])
+        interactive_ids.add(registration['question_id'])
 
 with sync_playwright() as pw:
     browser = pw.chromium.launch(headless=True, executable_path=shutil.which('chromium'))
@@ -67,6 +75,25 @@ with sync_playwright() as pw:
         return count;
     }""")
     assert rendered == len(items)
+
+    # Approved concept additions must reach the learner, including expandable
+    # example solutions, while browsing remains read-only for study records.
+    concept_state = page.evaluate('(k)=>localStorage.getItem(k)', KEY)
+    for change in concept_changes:
+        n, previous = change['after'], change['before']
+        page.goto(URL + '#concept/' + n['part_id'])
+        expect(page.locator('.note-page')).to_be_visible()
+        for field in ('key_points','pitfalls'):
+            for text in n[field][len(previous[field]):]:
+                expect(page.locator('.note-page')).to_contain_text(text)
+        for index, example in enumerate(n['examples'][len(previous['examples']):],start=len(previous['examples'])):
+            box=page.locator('.note-page .example').nth(index)
+            expect(box.locator('strong')).to_have_text(example['title'])
+            expect(box).to_contain_text(example['setup'])
+            box.locator('details summary').click()
+            expect(box.locator('details li')).to_have_text(example['steps'])
+            expect(box.locator('.example-answer')).to_have_text(example['answer'])
+        assert page.evaluate('(k)=>localStorage.getItem(k)', KEY) == concept_state,n['id']
 
     for i, n in enumerate(interactive):
         page.goto(URL + '#library')
@@ -202,4 +229,4 @@ with sync_playwright() as pw:
     assert state['results']['2026-01-006']['attempts'] == 1
     assert not errors, errors
     browser.close()
-    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
+    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), {len(concept_changes)} enriched concept pages and new examples, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
