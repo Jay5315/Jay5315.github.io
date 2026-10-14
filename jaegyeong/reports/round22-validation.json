@@ -1,0 +1,116 @@
+{
+  "checked_on": "2026-10-14",
+  "http_server": "http://127.0.0.1:8000/jaegyeong/",
+  "venv": "jaegyeong/.venv",
+  "chromium": "/usr/bin/chromium",
+  "tests": [
+    {
+      "name": "test_bank",
+      "command": "python3 scripts/test_bank.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.575,
+      "output_sha256": "9f098f0b7c7284860fada469d5f1d33e67be795e3c4820ca7d63e100923c780d",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.403s\n\nOK\n",
+      "summary": [
+        "Ran 10 tests in 0.403s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_parts",
+      "command": "python3 scripts/test_parts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.44,
+      "output_sha256": "3d10a7a162556d1de58bde6e85807e8f1e4a17a8ab25221364ba67578dad3ccd",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.306s\n\nOK\n",
+      "summary": [
+        "Ran 5 tests in 0.306s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_concepts",
+      "command": "python3 scripts/test_concepts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.321,
+      "output_sha256": "e04a93cae552732e483bf42460d7ebfb179b0d81e541bfc208228c23fd35e8f6",
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.244s\n\nOK\n",
+      "summary": [
+        "Ran 7 tests in 0.244s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_explanations",
+      "command": "python3 scripts/test_explanations.py",
+      "exit_code": 0,
+      "elapsed_seconds": 13.005,
+      "output_sha256": "0bb7730ffe3b1da2916c54592f63769bd10d9561f7b6b5a44dcaa02ca62b8ec8",
+      "output": "...........................................\n----------------------------------------------------------------------\nRan 43 tests in 11.457s\n\nOK\n",
+      "summary": [
+        "Ran 43 tests in 11.457s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_app",
+      "command": "python3 scripts/test_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 25.802,
+      "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "summary": [
+        "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors"
+      ]
+    },
+    {
+      "name": "test_browser",
+      "command": "python3 scripts/test_browser.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.535,
+      "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n",
+      "summary": [
+        "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors."
+      ]
+    },
+    {
+      "name": "test_explanations_app",
+      "command": "python3 scripts/test_explanations_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 100.34,
+      "output_sha256": "3201e048faff0d18f01037bb1f5c27b7a05bca306827732576734facf972b61f",
+      "output": "PASS: all 4276 explanation bodies rendered; 171 grading flows (original 30 + new part/concept/calculation coverage), 18 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n",
+      "summary": [
+        "PASS: all 4276 explanation bodies rendered; 171 grading flows (original 30 + new part/concept/calculation coverage), 18 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors"
+      ]
+    }
+  ],
+  "all_seven_passed": true,
+  "tested_bank_data_sha256": "7fd3b4521e94d063ccc0b3617a52ce839a14dd6d222da86de2f2d93eec053f56",
+  "counts": {
+    "questions": 4322,
+    "eligible_questions": 4321,
+    "prior_explanations": 4274,
+    "new_explanations": 2,
+    "explanations": 4276,
+    "source_checked": 4159,
+    "partial": 117,
+    "pending": 45,
+    "pending_categories": {
+      "source_unverified": 14,
+      "answer_suspected": 18,
+      "parse_problem": 11,
+      "calculation_unresolved": 2
+    },
+    "concept_notes": 74,
+    "displayed_answer_notes": 23
+  },
+  "actual_child_agents": 6,
+  "maximum_simultaneous_child_agents": 6,
+  "failed_test_runs": [],
+  "preflight_corrections_report": "round22-revisions.json",
+  "deployment": {
+    "status": "pending"
+  }
+}

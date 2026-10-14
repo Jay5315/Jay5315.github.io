@@ -460,6 +460,16 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        round22 = (cls.audit or {}).get('round22_followups')
+        if round22:
+            cls.stage_after['round22_followups'] = copy.deepcopy(cls.data)
+            cls.audit_after['round22_followups'] = copy.deepcopy(cls.audit)
+            registered = {r['question_id'] for r in round22['registrations']}
+            cls.data['items'] = [n for n in cls.data['items'] if n['question_id'] not in registered]
+            for ref in round22['new_source_refs']:
+                del cls.data['sources'][ref]
+            cls.audit['review'] = copy.deepcopy(round22['original_review'])
+            del cls.audit['round22_followups']
         round21 = (cls.audit or {}).get('round21_inspections')
         if round21:
             # Reverse the newest adjudication-only stage before round20 and all
@@ -1376,6 +1386,94 @@ class ExplanationTests(unittest.TestCase):
         changed=copy.deepcopy(concept);changed['examples'].append({'checks':[{'expr':'9//2','expected':4}]})
         with self.assertRaises(ValueError):protect_concept(concept,changed,concept['id'])
 
+
+    def test_round22_append_only_registrations_preserve_originals_and_earlier_audits(self):
+        from apply_round10_followups import digest,public_record
+        from apply_round20_followups import authored_note
+        stage=self.stage_after.get('round22_followups')
+        if stage is None:self.skipTest('No round22 followup yet')
+        after=self.audit_after['round22_followups'];group=after['round22_followups'];baseline=group['baseline']
+        proposal_path=R/'reports/round22-proposals.json';qa_path=R/'reports/round22-independent-reviews.json'
+        self.assertEqual(hashlib.sha256(proposal_path.read_bytes()).hexdigest(),group['proposal_sha256'])
+        self.assertEqual(hashlib.sha256(qa_path.read_bytes()).hexdigest(),group['review_sha256'])
+        proposal=json.loads(proposal_path.read_text());qa=json.loads(qa_path.read_text())
+        self.assertEqual(proposal['baseline'],baseline)
+        rows={r['question_id']:r for r in proposal['inspections']};reviews={r['question_id']:r for r in qa}
+        self.assertEqual(len(rows),len(proposal['inspections']));self.assertEqual(len(reviews),len(qa))
+        pending={r['question_id']:r for r in group['original_review']}
+        self.assertEqual(set(rows),set(pending));self.assertEqual(set(reviews),set(rows))
+        previous={r['question_id']:r for r in after['round21_inspections']['inspections']}
+        self.assertEqual(group['previous_inspection_hashes'],{id:digest(previous[id]) for id in rows})
+        self.assertEqual(proposal['previous_inspection_hashes'],group['previous_inspection_hashes'])
+        recorded={r['question_id']:r for r in group['inspections']}
+        self.assertEqual(len(recorded),len(group['inspections']));self.assertEqual(set(recorded),set(rows))
+        for id,row in rows.items():
+            q=reviews[id]
+            self.assertEqual(row['previous_review'],pending[id]);self.assertEqual(row['question_row_sha256'],digest(self.qs[id]))
+            self.assertEqual(q['status'],'pass');self.assertNotEqual(q['reviewer'],row['author'])
+            self.assertEqual(q['proposal_sha256'],digest(row))
+            self.assertEqual(sorted(o['number'] for o in q['four_option_logic']),[1,2,3,4])
+            self.assertTrue(all(o['status']=='pass' and o['note'] for o in q['four_option_logic']))
+            self.assertEqual(recorded[id],public_record(dict(row,proposal_record_sha256=digest(row),independent_review=q)))
+            if row['decision']=='register':
+                self.assertTrue(row['source_reads']);self.assertTrue(q['source_reads'])
+                self.assertIs(row['originals']['subject_instructions_checked'],True)
+                self.assertIs(q['originals']['subject_instructions_checked'],True)
+            else:self.assertEqual(row['decision'],'decline')
+            for read in row.get('source_reads',[])+q.get('source_reads',[]):
+                self.assertRegex(read['sha256'],r'^[0-9a-f]{64}$');self.assertIs(read['actually_read'],True)
+                self.assertTrue(read['url'].startswith('https://') and read['version'] and read['read_locator'])
+        current={n['question_id']:n for n in stage['items']}
+        self.assertEqual({id:digest(current[id]) for id in baseline['explanation_hashes']},baseline['explanation_hashes'])
+        registered={r['question_id']:r for r in group['registrations']}
+        self.assertEqual(set(registered),{id for id,row in rows.items() if row['decision']=='register'})
+        self.assertEqual(set(current),set(baseline['explanation_hashes'])|set(registered))
+        self.assertEqual(len(registered),len(group['registrations']));self.assertEqual(len(registered),group['registered_count'])
+        for id,registration in registered.items():
+            note=authored_note(self.qs[id],rows[id]['draft_note'],group['checked_on'])
+            self.assertEqual(current[id],note);self.assertEqual(registration['note'],note)
+            self.assertEqual(registration['explanation_sha256'],digest(note))
+            self.assertEqual(registration['proposal_record_sha256'],digest(rows[id]))
+            self.assertEqual(registration['official_answers'],self.qs[id]['answers'])
+            self.assertFalse(registration['official_answer_changed'])
+            self.assertEqual(len({o['reason'] for o in note['option_notes']}),4)
+        self.assertEqual({ref:digest(stage['sources'][ref]) for ref in baseline['source_hashes']},baseline['source_hashes'])
+        self.assertEqual(set(stage['sources']),set(baseline['source_hashes'])|set(group['new_source_refs']))
+        for ref in group['new_source_refs']:self.assertEqual(stage['sources'][ref],proposal['sources'][ref])
+        self.assertEqual(after['review'],[r for r in group['original_review'] if r['question_id'] not in registered])
+        self.assertEqual(group['remaining_review_count'],len(after['review']))
+        for key,sha in baseline['audit_key_hashes'].items():
+            if key!='review':self.assertEqual(digest(after[key]),sha,key)
+        for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+
+    def test_round22_rejects_self_review_stale_approval_and_unread_registration(self):
+        import tempfile
+        from apply_round10_followups import digest
+        from apply_round22_followups import approve
+        row={'question_id':'sample','author':'writer','decision':'decline','source_reads':[],'checks':[]}
+        qa={'reviewer':'reader','status':'pass','proposal_sha256':digest(row),
+            'four_option_logic':[{'number':i,'status':'pass','note':f'original option {i}'} for i in (1,2,3,4)]}
+        approve(row,qa)
+        for key,value in [('reviewer','writer'),('status','issue'),('proposal_sha256','0'*64)]:
+            invalid=dict(qa);invalid[key]=value
+            with self.assertRaises(ValueError):approve(row,invalid)
+        register=dict(row,decision='register')
+        registration_review=dict(qa,proposal_sha256=digest(register),approved_decision='register',registration_approved=True)
+        with self.assertRaisesRegex(ValueError,'actual independent source reads'):approve(register,registration_review)
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'actual-body.txt';path.write_text('actual validation fixture body')
+            read={'url':'https://example.test/source','private_path':str(path),'actually_read':True,
+                  'version':'test fixture','read_locator':'body','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+            register=dict(row,decision='register',source_reads=[read])
+            registration_review=dict(qa,proposal_sha256=digest(register),source_reads=[read],
+                                     approved_decision='register',registration_approved=True)
+            approve(register,registration_review)
+            for fields in ({'approved_decision':'decline'}, {'registration_approved':False},
+                           {'approved_decision':'decline','registration_approved':False}):
+                invalid=dict(registration_review,**fields)
+                with self.assertRaises(ValueError):approve(register,invalid)
 
     def test_round21_complete_inspections_preserve_data_and_bind_independent_reviews(self):
         from apply_round10_followups import digest,public_record

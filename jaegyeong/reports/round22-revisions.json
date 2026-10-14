@@ -1,0 +1,2291 @@
+{
+  "original_review2": [
+    {
+      "question_id": "2025-01-077",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "2fd3b0180858c7b71fbb322a033257ad86fbd065ddb7bdcaed82fb084bde2c80",
+      "question_row_sha256": "33b65e2d04df5a5e5da8d944039eaf11957b6152995b3bc30a15abf4b61f9276",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①10,000원은 김포~제주 항공권330,000원의 포함세액30,000원보다 작습니다. 의료항목을 면세로 보아도①은 재현되지 않습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②30,000원은 국내 항공권만 과세하고 레이저를 면세 진료로 볼 때 재현됩니다. 장비명만 있는 원문으로 이 의료행위의 면세 여부까지 확정하지 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③40,000원은 항공권30,000원+레이저시술10,000원의 조건부 합입니다. 영35조의 열거된 진료용역·요양급여 제외 사실이 있어야 하며 새 스컬트라 사건의 차트·미용목적을 원문에 추가하지 않습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④41,000원은 전쟁기념관11,000원까지 과세하여1,000원을 더한 경우의 값입니다. 면세 입장용역을 과세하는 근거가 없고 레이저의 미확인 조건도 해소하지 않습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "VAT_LAW_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+          "version": "제19931호 / 시행 2024-01-01 / fixed commit 2c23d7c33d892e6abc9437a230b5c3b6713a4cdd",
+          "read_locator": "메타데이터 시행2024-01-01; 제10조제1·4·5·6항; 제26조제1항제1·5·7·12·14·17호",
+          "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "VAT_DECREE_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2007eae272ede3997b5871a8b2274549960f86ed/kr/부가가치세법/시행령.md",
+          "version": "제34488호 / 시행 2024-05-17 / fixed commit 2007eae272ede3997b5871a8b2274549960f86ed",
+          "read_locator": "메타데이터 시행2024-05-17; 제35조제1호 본문·가·나; 제44조제2호(전쟁기념관); 제66조제1~5항 및 산식의 텍스트 전사",
+          "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_MEDICAL_20160801",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "심사-부가-2016-0074 / 20160801; ntstDcmId 000000000000235339",
+          "read_locator": "dcmDVO 사건명·회신; HTML첨부 처분개요1·처분청의견2나·쟁점3가·관련법령3나의 영35",
+          "sha256": "190fd358b908dce9041b1fa2a571138bb8343f10ea8a0367e92983b2ba983a1b",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 레이저가 아닌 스컬트라·필러 및2012~2014 과세기간의 사건입니다. 실제 시술부위·차트·미용목적 판단이 있는 다른 사건으로, 원문의 레이저 목적을 입증하지 않습니다."
+        }
+      ],
+      "independent_checks": [
+        {
+          "expr": "330000*10/110",
+          "expected": 30000,
+          "computed": 30000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        },
+        {
+          "expr": "330000*10/110+110000*10/110",
+          "expected": 40000,
+          "computed": 40000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        }
+      ],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-05-046",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "d180229b7949f28baa400fa87a8e834d4622789d8bdebc04921375ab71001c9a",
+      "question_row_sha256": "2a43d83efd5bb632136ca5b07e687134993b056c1f660a2be24a7dd48e113299",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①급여지급기준을 초과한 임원상여금1,500,000원 손금불산입은 영43②와 맞습니다. 지급한 임원 귀속의 상여 처분을 외화 평가 쟁점과 섞지 않습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②외화매출채권의 결산환산손실500,000원 부인은 영76①의 강제평가 금융회사군 또는 영76②의 종료일환율 신고방법이면 잘못됩니다. 금융업이라는 명칭만으로 제61②1~7호와 동일시하지 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③미수이자1,000,000원은 영70①1호 단서의 원천징수 제외 여부가 중요합니다. 영111의 원천징수 제외군은 영76 강제평가군보다 넓어, 금융회사군을 특정하면③도 잘못될 수 있음을 숨기지 않습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④전기 법인세환급액을 회계상 수익으로 인식한400,000원 익금불산입은 법18제3호와 맞습니다.②를 공식답으로 보유하되②만 유일한 오류라는 사실은 새 회신으로 입증되지 않았습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "TA04_CIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/162d3e8afed72abc076eaf028d5f35ecdf3598a9/kr/법인세법/법률.md",
+          "version": "공포번호 18590; 시행 2022-01-01; commit 162d3e8afed72abc076eaf028d5f35ecdf3598a9",
+          "read_locator": "메타데이터 시행2022-01-01; 제17조제1항제1호, 제18조제1·3·4호, 제42조제1·2항, 제67조",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "RT001_CIT_DECREE_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/c7c58eb7623b4192bf424be265a82991ac7e5540/kr/법인세법/시행령.md",
+          "version": "공포번호 32449; 시행 2022-02-18; commit c7c58eb7623b4192bf424be265a82991ac7e5540",
+          "read_locator": "메타데이터 시행2022-02-18; 제43조제1~4항; 제61조제2항제1~7호; 제70조제1항제1호; 제76조제1~7항; 제111조제1항 본문과1~18호",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "327f098567fb06dec52e052f29f5249343a5411c451d14d2e9334c7a65ca34d5",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FX_DERIVATIVES_20230830",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서면-2022-법규법인-2982 / 20230830; ntstDcmId 010000000000575115",
+          "read_locator": "dcmDVO 회신; HTML첨부1·2 사실관계, 3의2010.12.30 개정 영73·76과 종전규정 인용",
+          "sha256": "6f2ff828c0abd32476c14b365c2a5210bd0802de06b7be7487924d3f7191a54e",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 2022 시험 이후 회신이고 통화선도·통화스왑 평가방법의 변경 사례입니다. 외화매출채권의 금융회사 종류나 원문의 신고 사실을 추가하지 않습니다."
+        }
+      ],
+      "independent_checks": [],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-11-048",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "1ee6dfba838c4fb4878bc40a2e838b4f6da714bf9b1c72bd8f5e526d6bb0eac2",
+      "question_row_sha256": "537bfef003fc60c83a43835fbd06b0b480fc2e461835dfea26f1a2de87b17683",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①주식발행초과금300,000원을 자본잉여금으로 처리한 경우 법17①1호의 자본거래 익금불산입과 회계처리가 일치하여 무조정 설명과 맞습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②지방세 과오납 환급이자50,000원은 법18제4호의 익금불산입 대상입니다. 회계수익에서 빼는 기타 처분을 외화환산 유보와 혼동하지 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③미지급기부금400,000원은 영36③에 따라 실제 지출 전 기부금 손금으로 보지 않으며, 미지급부채가 남은 차이는 영106①2호의 유보 대상입니다. 이미 지출한 기부금 한도초과의 기타사외유출과 다릅니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④외화매출채권의 환산이익600,000원 무조정은 영76①의 강제평가군 또는②의 종료일환율 방법 신고일 때 성립할 수 있습니다. 취득·발생일 방법에서는 익금불산입 필요성이 있어, 미명시 신고사실을 가정하여③ 유일성을 보장할 수 없습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "TA04_CIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/162d3e8afed72abc076eaf028d5f35ecdf3598a9/kr/법인세법/법률.md",
+          "version": "공포번호 18590; 시행 2022-01-01; commit 162d3e8afed72abc076eaf028d5f35ecdf3598a9",
+          "read_locator": "메타데이터 시행2022-01-01; 제17조제1항제1호, 제18조제1·3·4호, 제42조제1·2항, 제67조",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R6_TAX03_법인세법_시행령_20221027",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/881734f50357bc761947d469e0b8ecf06c994281/kr/법인세법/시행령.md",
+          "version": "공포번호 32965; 시행 2022-10-27; commit 881734f50357bc761947d469e0b8ecf06c994281",
+          "read_locator": "메타데이터 시행2022-10-27; 제36조제2·3항, 제76조제1~7항; 제106조제1항제1~3호",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "b1c3c118534f5c85a9645d45d78fd93c6f068808fe37ed5682bcbeb3df2f54c6",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FX_DERIVATIVES_20230830",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서면-2022-법규법인-2982 / 20230830; ntstDcmId 010000000000575115",
+          "read_locator": "dcmDVO 회신; HTML첨부1·2 사실관계, 3의2010.12.30 개정 영73·76과 종전규정 인용",
+          "sha256": "6f2ff828c0abd32476c14b365c2a5210bd0802de06b7be7487924d3f7191a54e",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 2022 시험 이후 회신이고 통화선도·통화스왑 평가방법의 변경 사례입니다. 외화매출채권의 금융회사 종류나 원문의 신고 사실을 추가하지 않습니다."
+        }
+      ],
+      "independent_checks": [],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2023-11-075",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "e7df0666f8255104932ac057309609e9d3cf43ef58593ccd16b0297fce8dfad6",
+      "question_row_sha256": "7d61cfcc83cf001e858dc8c8a3e537ca95b0fcbd56716d2295181d1b17e945c3",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①영20제1호의 견본품 공급 제외는 다른 사업자에게 인도·양도하는 경우입니다. 불특정다수라는 문구만으로 수령자가 다른 사업자인지 확정되지 않으며, 새 법인세 광고선전비 회신은 VAT 수령자 사실을 보충하지 않습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②자기생산·취득재화라는 법정 범위의 재화를 사용인의 개인목적으로 무상 사용시키는 것은 법10④의 간주공급 원칙과 맞습니다. 복리후생 목적의 별도 예외를 개인목적에 임의 적용하지 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③면세전용은 법10①의 범위에 해당하는 재화일 때 간주공급됩니다. 원문에 별도 매입세액 공제 사실이 쓰이지 않은 점도 있어, 이 보기를 모든 취득재화에 관한 무조건 명제로 확대하지 않습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④고용관계에 따라 근로를 제공하는 것은 법12③에 따라 용역공급으로 보지 않습니다. 이 규정으로①의 빠진 수령자 조건을 해결할 수 없습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "VAT_LAW_2023",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+          "version": "'19194' / 시행 2023-01-01 / fixed commit fab0ff3a01f8a277b795d22ec5f7484cc40b40ad",
+          "read_locator": "메타데이터 시행2023-01-01; 제10조제1·4·5항 및 제12조제3항",
+          "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "VAT_DECREE_2023",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+          "version": "'33271' / 시행 2023-02-28 / fixed commit 14e8cede44db063243866e5c1213962e02eb7ee6",
+          "read_locator": "메타데이터 시행2023-02-28; 제20조제1호",
+          "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_SAMPLE_CIT_19941014",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "법인46012-2859 / 19941014; ntstDcmId 010000000000091449",
+          "read_locator": "dcmDVO 회신·요지, HTML첨부 질의1: 도소매업자·대리점·소매점에 견본품 배포",
+          "sha256": "f01e150bd11e99f1768e4ccbe2c339c3e0fe919afd400ee3965000df343e5166",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 법인세 광고선전비 손금산입 회신입니다. 부가가치세 공급 제외 또는 원문에 없는 수령자 사실을 입증하지 않습니다."
+        }
+      ],
+      "independent_checks": [],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2025-01-078",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "527527993f5899471c5410f34b7028752d3ad05616cd84ec4f10dad1b632911a",
+      "question_row_sha256": "b49b95ba9a5a583d53b7bf1d7a80dd52df55c37691ae63fff8a7d37782f4449e",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①30,000,000원은 제품의 시가만 포함한 값입니다. 건물이 법10①의 자기생산·취득재화가 아니면 가능할 수 있으나 원문에는 그 분류를 확정하는 매입세액 공제 사실이 없습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②135,000,000원은 건물 전액공제 가액300,000,000원에13개 과세기간을 적용한105,000,000원과 제품시가30,000,000원의 합입니다. 영66④의 공제받은 가액 조건을 진단계산으로 남긴 점이 적절합니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③430,000,000원은 제품30,000,000원과 건물시가400,000,000원을 더한 값입니다. 감가상각자산의 잔존재화에는 영66의 별도 계산이 있으므로 단순시가 합계를 정답으로 삼을 수 없습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④630,000,000원은③에 토지시가200,000,000원까지 더한 값입니다. 토지는 법26①14호 면세이고, 이 값도 건물 매입세액 공제 사실의 누락을 해결하지 않습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "VAT_LAW_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+          "version": "제19931호 / 시행 2024-01-01 / fixed commit 2c23d7c33d892e6abc9437a230b5c3b6713a4cdd",
+          "read_locator": "메타데이터 시행2024-01-01; 제10조제1·4·5·6항; 제26조제1항제1·5·7·12·14·17호",
+          "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "VAT_DECREE_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/2007eae272ede3997b5871a8b2274549960f86ed/kr/부가가치세법/시행령.md",
+          "version": "제34488호 / 시행 2024-05-17 / fixed commit 2007eae272ede3997b5871a8b2274549960f86ed",
+          "read_locator": "메타데이터 시행2024-05-17; 제35조제1호 본문·가·나; 제44조제2호(전쟁기념관); 제66조제1~5항 및 산식의 텍스트 전사",
+          "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_CLOSING_20190304",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "사전-2019-법령해석부가-0087 / 20190304; ntstDcmId 010000000000374672",
+          "read_locator": "dcmDVO 사전-2019-법령해석부가-0087 회신; HTML첨부 사실관계·관련법령 법10조1항1호·6항",
+          "sha256": "083c71e13508f6e4cdf5646569781a92970042166be62cc3d7aba580e1a693a8",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 매입세액을 공제받은 인테리어 시설을 폐업 전 파쇄·멸실한 사례입니다. 원문 건물의 매입세액 공제나 시설 철거 사실을 추정하지 않습니다."
+        }
+      ],
+      "independent_checks": [
+        {
+          "expr": "300000000*(1-0.05*13)",
+          "expected": 105000000,
+          "computed": 105000000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        },
+        {
+          "expr": "300000000*(1-0.05*13)+30000000",
+          "expected": 135000000,
+          "computed": 135000000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        }
+      ],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-12-076",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "b834cfc2581e53ea19a2b046b3964508dd70461b0fefd8739407844f94c12cf1",
+      "question_row_sha256": "61557bb025109b93e3f0806c5dbbcc9806861511ca134afd101d307a272a0767",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①0원은 수출이 영세율이라는 이유로 매각을 전액 면세·무과세화할 수 없어 직접 뒷받침되지 않습니다. 기계는 과세·면세 농산물 포장에 공통 사용된 사실이 있습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②12,000,000원은30,000,000×농산물과세200,000,000/농산물총500,000,000입니다. 사업부문 분모로 농산물만 쓰는 조건을 새 집행기준의 사옥 예시나2001회신이 직접 확정하지는 않습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③15,000,000원은50%를 적용한 값이며 농산물 비율40%와 회사 전체 비율250/600 어느 것과도 다릅니다. 수산물의50%를 농산물 포장기계에 적용할 근거가 없습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④30,000,000원은 전액과세 값입니다. 영63③의 면세비중5%미만·거래50만원미만·직전기간 없는 신규사업 조건과 제시자료는 맞지 않습니다. 회사전체분모 조건부 값12,500,000원도 보기에 없으며, 이로 공식②의 틀림을 단정하지 않습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "VAT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/10b5bcc2526adc34a3bb0bc5677468c48e23c240/kr/부가가치세법/법률.md",
+          "version": "공포번호 18577; 시행 2022-01-01; commit 10b5bcc2526adc34a3bb0bc5677468c48e23c240",
+          "read_locator": "메타데이터 시행2022-01-01; 제29조제8항",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "VAT_DECREE_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/029b77bca5728a7ccdaf9032ad9358e7518a9c4f/kr/부가가치세법/시행령.md",
+          "version": "제32449호 / 시행2022-02-18",
+          "read_locator": "메타데이터 시행2022-02-18; 제63조제1~3항 및 산식 텍스트 전사",
+          "sha256": "b4409b8f649fb7435482e2fdd32c8c86cb8c1de59067cc9a5717deb4489f1140",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog의 동일 ref/commit 법령 보존본문의 추가범위 재독입니다."
+        },
+        {
+          "ref": "P20_P4_NTS_VAT_EXEC2020",
+          "url": "https://taxlaw.nts.go.kr/downloadFile.do?fleId=300000000000840591&fleSn=708307",
+          "version": "국세청 부가가치세 집행기준 · 2020년10월 발간",
+          "read_locator": "물리PDF90쪽·인쇄74쪽 집행기준29-63-1①~③, 사옥 매각 거래사례·토지건물 안분 및 직전 과세기간 과면세 안분",
+          "sha256": "59293a0ebcc07abd53f887c889bd3b9aab191941ee6286b5fb08c5d2aa91a3be",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 같은 2020년10월 집행기준의 새 범위 재독입니다. 직전 과세기간 공식·사옥 매각 예시가 있으며 농산물/수산물 사업부문 분모 구분은 직접 설명하지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_COMMON_SALE_20010703",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "부가46015-979 / 20010703; ntstDcmId 010000000000066024",
+          "read_locator": "dcmDVO 부가46015-979 회신·요지: 공통사용재화 매각 과세표준의 구 영48조의2제1항 연결",
+          "sha256": "c364f65c3bcf983fdb035d34bfc14e9219eeacfa1f2defb84f0b612bc10feae9",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 공통사용재화 매각 회신이지만 재화에 관련된 사업부문별 공급가액 분모의 범위를 설명하지 않습니다."
+        }
+      ],
+      "independent_checks": [
+        {
+          "expr": "30000000*200000000/(200000000+300000000)",
+          "expected": 12000000,
+          "computed": 12000000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        },
+        {
+          "expr": "30000000*(50000000+200000000)/(50000000+50000000+200000000+300000000)",
+          "expected": 12500000,
+          "computed": 12500000.0,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        }
+      ],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-09-064",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "3561ea636ba416b70f0cda09bb40d410f64f46a2b47d11e820b8bc06ab3284e7",
+      "question_row_sha256": "1e302aa21e066944fbbf5b790e34a30ec5a82b14f7da64636732540c47f0d5b1",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①ㄱ·ㄴ만 고르면 법20①3호의 인정상여와 영38①10호의 연·월액 여비는 포함하지만, 영38①2호의 공로금ㅁ을 빠뜨립니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②ㄱ·ㄷ·ㄹ은 확인된 연·월액 여비ㄴ과 공로금ㅁ을 빠뜨립니다. 현금 통근보조금 과세규정을 차량제공 운임ㄷ에 바꾸어 적용하거나 기금 주택보조ㄹ을 임금으로 곧바로 단정할 수 없습니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③ㄴ·ㄷ·ㅁ은 법20①3호에서 직접 포함하는 인정상여ㄱ을 빠뜨립니다. ㄷ의 포함여부에 대한 실제 답변은 여전히 확인하지 못했습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④ㄱ·ㄴ·ㅁ의 포함은 법20/영38로 확인됩니다. 다만 ㄷ 제외의 직접본문은 미확보이고, ㄹ도 인가된 기금 용도사업 보조금·주택저당이자보조 회신을 일반 주택보조 전부에 확대하지 않아 모두고르기의 완전성은 미확인입니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "PIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/ef79896a0866b1d4c1320ad79fcf4bafb005502b/kr/소득세법/법률.md",
+          "version": "제18578호 · 시행2022-01-01 · fixed commit ef79896a0866b1d4c1320ad79fcf4bafb005502b",
+          "read_locator": "메타데이터 시행2022-01-01; 제12조제3호아·러목; 제19조제1항제21호; 제20조제1~2항; 제21조제1항제10·15·19·20호",
+          "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "RCB_T027_소득세법_시행령_dabbefdc",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/dabbefdc5e80064a692368487491dc788e659c68/kr/소득세법/시행령.md",
+          "version": "공포번호 32830; 시행 2022-08-02; commit dabbefdc5e80064a692368487491dc788e659c68",
+          "read_locator": "메타데이터 시행2022-08-02; 제38조제1항제2·5·7·9·10호",
+          "read_method": "reread_preserved_body",
+          "actually_read": true,
+          "sha256": "e4e3f50d92df2972d1bcd779776950df55939e34b1f6e3f83d0be0d4fb59a3c7",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FUND_ALLOWED_20100429",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "원천세과-363 / 20100429; ntstDcmId 010000000000150716",
+          "read_locator": "dcmDVO 원천세과-363 회신, HTML첨부 사실관계1·관련법령2 및 관련예규: 인가된 기금 용도사업의 보조금과 소관부처 판단",
+          "sha256": "eb5e89fd4747c2ace681564b7e007d78b64660f18e76c318c82387b9e101f070",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 법정 기금의 인가된 용도사업 보조금에 관한 회신입니다. 모든 명목의 기금지급액을 일괄 제외하는 근거로 쓰지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FUND_INTEREST_20121106",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서면법규-1302 / 20121106; ntstDcmId 010000000000149657",
+          "read_locator": "dcmDVO 회신, HTML첨부 사실관계1(근로복지기본법52조에 따른 설립), 신청내용2: 장기주택저당차입금 이자상환액 보조",
+          "sha256": "9e1026b6562dc5b1038c2b97b6ecf45618471e9654d706dd0e45f8225eba5adf",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 주택보조금 전체가 아닌 주택저당차입금 이자상환 보조 사례입니다. 기금의 법인격과 지급자를 확인하는 보조자료로 한정합니다."
+        },
+        {
+          "ref": "R22_W2_WELFARE_LAW_20220218",
+          "url": "https://raw.githubusercontent.com/legalize-kr/legalize-kr/65643e97278d6c798a87711803838e73b0ad9190/kr/%EA%B7%BC%EB%A1%9C%EB%B3%B5%EC%A7%80%EA%B8%B0%EB%B3%B8%EB%B2%95/%EB%B2%95%EB%A5%A0.md",
+          "version": "법률18424호,2022.02.18 시행",
+          "read_locator": "메타데이터 법률18424호·시행2022-02-18; 제52조제1·4·7항, 제61조, 제62조제1~3항; 부칙10361호 제1·2·6조",
+          "sha256": "10f572f6814c171812455b1c0c0cc3d3d8301cc43c8476969fb3bdcfc36edaf3",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 국가법령정보센터 자료의 legalize-kr 역사 Git 보존본문입니다. 공식 사이트에서 새로 받은 법령이 아니며,2022.02.18 시행판본과2010기금 경과조치를 구별했습니다."
+        },
+        {
+          "ref": "R22_W2_WELFARE_DECREE_20220218",
+          "url": "https://raw.githubusercontent.com/legalize-kr/legalize-kr/e64b3bd94c4a9208ebf7807e348a3a0540f9f592/kr/%EA%B7%BC%EB%A1%9C%EB%B3%B5%EC%A7%80%EA%B8%B0%EB%B3%B8%EB%B2%95/%EC%8B%9C%ED%96%89%EB%A0%B9.md",
+          "version": "대통령령32448호,2022.02.18 시행",
+          "read_locator": "메타데이터 대통령령32448호·시행2022-02-18; 제46조제1~3·8항(제4~7항도 문맥 대조)",
+          "sha256": "786c20008bc85d6a8183f506a162f424e92c1456e2f2abd2e426a825466a98f5",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 국가법령정보센터 자료의 legalize-kr 역사 Git 보존본문입니다. 공식 사이트에서 새로 받은 법령이 아니며,2022.02.18 시행판본과2010기금 경과조치를 구별했습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FUND_CHILD_20100601",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "원천세과-450 / 20100601; ntstDcmId 010000000000140905",
+          "read_locator": "dcmDVO 원천세과-450 회신, HTML첨부 질의요지·기금법14조 인용",
+          "sha256": "1e3e986b2fd651baeefeed62fa83d2572e966337e3a5c159f29e60f496281550",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기금의 자녀양육비와 회사가 지급하는 보육비의 구분 사례입니다. 주택보조금이나 2022 한도에 직접 확대하지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_FUND_SUPPORT_20260408",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서면-2025-서면-4517 / 20260408; ntstDcmId 200000000000020547",
+          "read_locator": "dcmDVO 회신 및 HTML첨부4·5: 법정 기금사업·수혜대상 지원금의 근로소득 제외와 고용노동부 소관 판단",
+          "sha256": "a1579727e4f58f45c060606956d532fdd24277acf1a6dbc9bfa098d0ffbe5639",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 2022.09 시험 이후의 후행 회신입니다. 2022 당시 법령 또는 개별 주택지원금의 적법성을 대신 입증하지 않습니다."
+        }
+      ],
+      "independent_checks": [],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-06-064",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "df7df0de26b28c217eda17d83f3822a63d2bcb688cdac8620e7f8329e464f153",
+      "question_row_sha256": "22da58e8d769c6ff069f9c3f9cc003578ac2a1243731b53bf2c15f2c0954cac2",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①34,500,000원은24,000,000+8,000,000+2,000,000+500,000으로 자가운전보조금3,000,000원 전부를 제외한 값입니다. 요건충족시에도 월20만원 초과600,000원은 남습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②34,600,000원은 확인된 기본 과세급여34,500,000원에100,000원만 더한 값으로, 자가운전보조금의 월250,000원·연3,000,000원과 월20만원 한도를 적용한 계산과 다릅니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③35,100,000원은 자가운전 비과세요건 충족시34,500,000+600,000원입니다. 시행령12제3호는 차량 소유·본인명의임차·직접운전·업무이용·실제여비 대신 지급기준에 따른 지급을 요구하며 이름만으로 충족을 추정하지 않습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④36,100,000원은 위 조건부 계산35,100,000원과 다릅니다. 자가운전요건 미충족시에는37,500,000원이므로④도 미충족 상황의 답이 되지 않습니다. 식사 미제공 월10만원 식사대는 당시 영17의2로 제외합니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "PIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/ef79896a0866b1d4c1320ad79fcf4bafb005502b/kr/소득세법/법률.md",
+          "version": "제18578호 · 시행2022-01-01 · fixed commit ef79896a0866b1d4c1320ad79fcf4bafb005502b",
+          "read_locator": "메타데이터 시행2022-01-01; 제12조제3호아·러목; 제19조제1항제21호; 제20조제1~2항; 제21조제1항제10·15·19·20호",
+          "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "TA_CROSS01_PIT_DEC_20220531",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/bc26ac9c2b00526bb9cdf213377ca12bca3293af/kr/소득세법/시행령.md",
+          "version": "대통령령 제32654호 · 시행2022-05-31 / fixed commit bc26ac9c2b00526bb9cdf213377ca12bca3293af",
+          "read_locator": "메타데이터 시행2022-05-31; 제11조, 제12조제3호, 제17조의2제2호",
+          "sha256": "4e813f7f3c9ee428fb6756e9055473413a8a3a662a24fcf485e1da604b869592",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_CAR_20091001",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "원천세과-818 / 20091001; ntstDcmId 010000000000514895",
+          "read_locator": "dcmDVO 원천세과-818 회신; HTML첨부1 사실관계·2의 영12조3호·기본통칙12-3 및 관련사례",
+          "sha256": "61259efdeaa03f7066c1c372e5519aa8b2618abba8195978d61e24160be8f076",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 자가운전보조금은 사실판단 사항이며 실제 출장여비와 별도 지급되는 보조금 또는 출퇴근 보조비의 사례입니다. 원문의 비과세 요건 충족 사실을 추가하지 않습니다."
+        }
+      ],
+      "independent_checks": [
+        {
+          "expr": "2000000*12+2000000*4+2000000+500000+3000000-200000*12",
+          "expected": 35100000,
+          "computed": 35100000,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        },
+        {
+          "expr": "2000000*12+2000000*4+2000000+500000+3000000",
+          "expected": 37500000,
+          "computed": 37500000,
+          "status": "pass",
+          "scope": "조건부 산술이며 미확인 사실을 보충하는 계산이 아닙니다."
+        }
+      ],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    },
+    {
+      "question_id": "2022-11-065",
+      "reviewer": "r22_review2_by_worker3",
+      "author": "/root/r22_tax_conditions",
+      "status": "pass",
+      "proposal_file": "drafts.json",
+      "proposal_file_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+      "proposal_record_sha256": "ecb8e13192b9d01bf5480af6c5110cb7da2b1504e12586fa09d7e60366288c58",
+      "question_row_sha256": "130a51ebaf6fcf2fde23466059e404151f29cfa5debfd113503f842d97ad470f",
+      "decision_reviewed": "decline",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "status": "pass",
+          "note": "①ㄱ·ㄴ·ㄷ 중 ㄴ위약금은 법21①10호, ㄷ법인세법상기타소득처분은 같은항20호로 확인됩니다. ㄱ은 일시적으로 제공한 강연이어야 하며 새2002회신은 반복 강연의 사업소득을 보여 줄 뿐 당해 원문의 일시성을 추가하지 않습니다."
+        },
+        {
+          "number": 2,
+          "status": "pass",
+          "note": "②ㄱ·ㄷ·ㄹ은 직접 열거된 위약금ㄴ을 빠뜨립니다. ㄹ의 업무관계라는 표현만으로 고용관계·근로대가성을 확정할 수 없으며, 고용근로대가면 근로소득입니다."
+        },
+        {
+          "number": 3,
+          "status": "pass",
+          "note": "③ㄱ·ㄴ·ㄷ·ㄹ을 모두 고르는 것은 ㄱ의 반복성·일시성과 ㄹ의 고용·근로대가 관계를 확인해야 합니다. 모든 미명시 사실을 기타소득 쪽으로 보충하여③을 확정할 수 없습니다."
+        },
+        {
+          "number": 4,
+          "status": "pass",
+          "note": "④ㄱ·ㄴ·ㄹ은 법21①20호에서 직접 기타소득으로 규정한 ㄷ을 빠뜨립니다. 사보 원고료ㄹ의 법적 분류를 새 강연사례로 확정할 수 없습니다."
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "PIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/ef79896a0866b1d4c1320ad79fcf4bafb005502b/kr/소득세법/법률.md",
+          "version": "제18578호 · 시행2022-01-01 · fixed commit ef79896a0866b1d4c1320ad79fcf4bafb005502b",
+          "read_locator": "메타데이터 시행2022-01-01; 제12조제3호아·러목; 제19조제1항제21호; 제20조제1~2항; 제21조제1항제10·15·19·20호",
+          "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 기존 source-catalog ref와 cache-index의 동일 SHA 원문을 이번에 재독했습니다. 새로운 법령 또는 최초 읽기로 세지 않습니다."
+        },
+        {
+          "ref": "R22_W2_NTS_LECTURE_20020910",
+          "url": "https://taxlaw.nts.go.kr/action.do",
+          "version": "서이46013-11692 / 20020910; ntstDcmId 010000000000057170",
+          "read_locator": "dcmDVO 서이46013-11692 회신; HTML첨부1·2 및 관련사례 소득46011-1888",
+          "sha256": "87e830a9d4b6a6e4d563e344e9b47bfbf36fa44caf54b53b7b14bed328d7a1e5",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자 보존 실제 파일의 지정 범위를 재독했습니다. 이번 검수에서 신규 다운로드를 하지는 않았습니다. 독립적·계속반복 강연은 사업소득이라는 구 회신입니다. 당해 문항 강연의 반복성·사보 원고료의 고용관계를 입증하지 않습니다."
+        }
+      ],
+      "independent_checks": [],
+      "all_unchecked_resolved": false,
+      "required_changes": [],
+      "prior_original_verification_reuse": {
+        "round": 21,
+        "independent_original_reread_this_review": false,
+        "reference": "brief2.json latest_inspection",
+        "note": "문항 이미지·PDF·공통지시·공식답안의21차 직접확인기록을 재사용했습니다. 검수에서 새로 원본을 열어보았다는 주장이나 출제기관 정정본 확보 주장은 없습니다."
+      },
+      "notes": "pass는 신규 본문의 적용범위와 decline 유지의 타당성을 승인합니다. 공식답안의 정답 유일성·미확인 조건 해소·source_checked 승격을 승인하지 않습니다.",
+      "inspection_scope": "원문은brief2의 보존 텍스트와21차 원본 확인기록으로 대조하고, 각 네 보기와 source_reads의 실제 본문 지정범위를 독립 재독했습니다. 작성자의11개 신규 사건JSON은 검수자에게는 보존본문 재독입니다."
+    }
+  ],
+  "normalization": {
+    "reviewer": "/root/r22_originals",
+    "operation": "review_hash_field_mapping_normalization_only",
+    "reason": "원 검수파일은 proposal_sha256에 작성파일 전체rawSHA를 잘못 넣었고 각 작성행의 올바른canonicalSHA는 proposal_record_sha256에 저장했습니다. 게이트를 약화하지 않고 proposal_sha256만 작성행canonicalSHA로 정형화합니다.",
+    "source_review_file": "reviews.json",
+    "source_review_file_sha256": "dbf73e88e492c691885e9324777aa550a240b1426e457fcbb12d1cd22bc3652a",
+    "source_review_provenance_file": "provenance.json",
+    "source_review_provenance_file_sha256": "1f4cf81490fd6a5008e6104cd09cfc7c3c49d8c54ecd8c930c2e13d34f8d4074",
+    "authored_file": "drafts.json",
+    "authored_file_raw_sha256": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+    "normalized_review_file": "reviews-normalized.json",
+    "normalized_review_file_sha256": "a62cfcb1e872e753d303def1d06918c47b6a96b82060b536ebc3cd69f743ab51",
+    "row_count": 9,
+    "bindings": [
+      {
+        "question_id": "2025-01-077",
+        "authored_row_canonical_sha256": "2fd3b0180858c7b71fbb322a033257ad86fbd065ddb7bdcaed82fb084bde2c80",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "2fd3b0180858c7b71fbb322a033257ad86fbd065ddb7bdcaed82fb084bde2c80",
+        "proposal_record_sha256_unchanged": "2fd3b0180858c7b71fbb322a033257ad86fbd065ddb7bdcaed82fb084bde2c80",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "634f203ad22a0e54ca4ad2bec3a0ee4bb9db5ca1c35ab899b22656b83f9c9a6e",
+        "review_row_canonical_sha256_after": "dfc4f09b2229bd5f4c76c5cffd859cfa725bf13363d3a07ea671af7084e95488",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-05-046",
+        "authored_row_canonical_sha256": "d180229b7949f28baa400fa87a8e834d4622789d8bdebc04921375ab71001c9a",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "d180229b7949f28baa400fa87a8e834d4622789d8bdebc04921375ab71001c9a",
+        "proposal_record_sha256_unchanged": "d180229b7949f28baa400fa87a8e834d4622789d8bdebc04921375ab71001c9a",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "021c59bf23005a1461ef17368923c19a5530623f7491d40259afd0b51ec94b24",
+        "review_row_canonical_sha256_after": "75d8d2c43ae883d93bc0f3a6330fefeb871b7fcb721fa9f1500027f0a1f8cd80",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-11-048",
+        "authored_row_canonical_sha256": "1ee6dfba838c4fb4878bc40a2e838b4f6da714bf9b1c72bd8f5e526d6bb0eac2",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "1ee6dfba838c4fb4878bc40a2e838b4f6da714bf9b1c72bd8f5e526d6bb0eac2",
+        "proposal_record_sha256_unchanged": "1ee6dfba838c4fb4878bc40a2e838b4f6da714bf9b1c72bd8f5e526d6bb0eac2",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "f42474a9c2ac3821c19828511703248ef377c6b461dc71365daef6f32598601c",
+        "review_row_canonical_sha256_after": "b99b152426aa3a571ec1d0951465fca1f9bb067a49e2c3e4506a608bd96c716c",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2023-11-075",
+        "authored_row_canonical_sha256": "e7df0666f8255104932ac057309609e9d3cf43ef58593ccd16b0297fce8dfad6",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "e7df0666f8255104932ac057309609e9d3cf43ef58593ccd16b0297fce8dfad6",
+        "proposal_record_sha256_unchanged": "e7df0666f8255104932ac057309609e9d3cf43ef58593ccd16b0297fce8dfad6",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "634c4973ade9655a2ca208e94c2c2ad186f6033496e0c222185da20f34ebec0d",
+        "review_row_canonical_sha256_after": "7ed5eb43b964b12d792d09d49bea64dd480bfcc98ee973b0a30bcf1b7cf7d7ac",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2025-01-078",
+        "authored_row_canonical_sha256": "527527993f5899471c5410f34b7028752d3ad05616cd84ec4f10dad1b632911a",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "527527993f5899471c5410f34b7028752d3ad05616cd84ec4f10dad1b632911a",
+        "proposal_record_sha256_unchanged": "527527993f5899471c5410f34b7028752d3ad05616cd84ec4f10dad1b632911a",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "1aaddc50a6b552e835189011710cff4958ceb9f2775e8a0e98c179a9f6bcc560",
+        "review_row_canonical_sha256_after": "199d27e1bc127b06c0be95ed89f0684d0ee7be875c94d80a5e0afa24c55bb3ef",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-12-076",
+        "authored_row_canonical_sha256": "b834cfc2581e53ea19a2b046b3964508dd70461b0fefd8739407844f94c12cf1",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "b834cfc2581e53ea19a2b046b3964508dd70461b0fefd8739407844f94c12cf1",
+        "proposal_record_sha256_unchanged": "b834cfc2581e53ea19a2b046b3964508dd70461b0fefd8739407844f94c12cf1",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "bfdd0d00d4beabfdc2662eb3a98b5f14065ed6979df19b433c08d4731f0f96ab",
+        "review_row_canonical_sha256_after": "60d22500f09f53325885aaf8cb883cb4926ac27657796976a59a4f1f25176cfe",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-09-064",
+        "authored_row_canonical_sha256": "3561ea636ba416b70f0cda09bb40d410f64f46a2b47d11e820b8bc06ab3284e7",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "3561ea636ba416b70f0cda09bb40d410f64f46a2b47d11e820b8bc06ab3284e7",
+        "proposal_record_sha256_unchanged": "3561ea636ba416b70f0cda09bb40d410f64f46a2b47d11e820b8bc06ab3284e7",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "662f2fcdfc76123fa3524f1eda0cc6404a90975dd0f5058dd246548516383d79",
+        "review_row_canonical_sha256_after": "bfe07f5ebe5c8d3fcdf4ca80f6c9fa142c4a4673fe2178230831ceabd5ae0f14",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-06-064",
+        "authored_row_canonical_sha256": "df7df0de26b28c217eda17d83f3822a63d2bcb688cdac8620e7f8329e464f153",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "df7df0de26b28c217eda17d83f3822a63d2bcb688cdac8620e7f8329e464f153",
+        "proposal_record_sha256_unchanged": "df7df0de26b28c217eda17d83f3822a63d2bcb688cdac8620e7f8329e464f153",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "f0981c6fe6484f236a37474d8471a6b18d8879d37723e3867318687db153ddb6",
+        "review_row_canonical_sha256_after": "73f54959dca0dd7e40e3b56a60e9ad754738a27ac901f0dac62ecc3b03f070b5",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      },
+      {
+        "question_id": "2022-11-065",
+        "authored_row_canonical_sha256": "ecb8e13192b9d01bf5480af6c5110cb7da2b1504e12586fa09d7e60366288c58",
+        "proposal_sha256_before": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "proposal_sha256_after": "ecb8e13192b9d01bf5480af6c5110cb7da2b1504e12586fa09d7e60366288c58",
+        "proposal_record_sha256_unchanged": "ecb8e13192b9d01bf5480af6c5110cb7da2b1504e12586fa09d7e60366288c58",
+        "proposal_file_sha256_unchanged": "a501df7e8cf75f84d1935dea09652efb63fabbe163a69f3533dea4bb707d6804",
+        "review_row_canonical_sha256_before": "dba2cde759ff175c0288e9fa88086eb5c5cbceb1c298c9aad9b849844ab21ffe",
+        "review_row_canonical_sha256_after": "10ae50b203b5f441011f5451367e2fb1b61f9f79e87bfd42ad3351b65b907faa",
+        "changed_fields": [
+          "proposal_sha256"
+        ]
+      }
+    ],
+    "content_decisions_reads_authored_raw_changed": false,
+    "unchanged_fields": "모든 행에서 proposal_sha256 외의 모든 키/값을 원 검수행과 완전동일 비교했습니다. proposal_file_sha256, proposal_record_sha256, 작성자/검수자, 판정, 네보기논리, actual source_reads와본문SHA, 계산, 원본재사용범위는 그대로입니다.",
+    "original_review_file_preserved": true,
+    "authored_raw_preserved": true,
+    "original_and_normalized_decisions": {
+      "2025-01-077": "pass",
+      "2022-05-046": "pass",
+      "2022-11-048": "pass",
+      "2023-11-075": "pass",
+      "2025-01-078": "pass",
+      "2022-12-076": "pass",
+      "2022-09-064": "pass",
+      "2022-06-064": "pass",
+      "2022-11-065": "pass"
+    },
+    "review_gate_weakened": false,
+    "new_source_reads_or_original_inspections_claimed": false,
+    "frozen_read_only": true
+  },
+  "original_review3": [
+    {
+      "question_id": "2023-01-048",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "903e621ff3d6391c8ba2a086643db374e2dcadab86acaef6dba37750dce4d385",
+      "exact_row_sha256": "903e621ff3d6391c8ba2a086643db374e2dcadab86acaef6dba37750dce4d385",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "d15654739457f48130e3e5cb65439de0ee4361a2431edbb45bf45d6130685662",
+      "summary": "부담금의 법적 성질 누락을 유지한 decline이 타당합니다.1101은 당시에 실제 초과배출을 규정한 구법19조에 연결되고5095 확장·유예와 현대41조를 구별했습니다. 직장체육비 및 소액주주 사택유지비도 추가 조문으로 대조했습니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": true,
+          "reason": "①2,000,000원은 벌과금500,000원에 폐수배출부담금1,500,000원을 전액 더한 값입니다. 공식키와 일치하지만 부담금의 제재성 확인을 대신하지 못합니다."
+        },
+        {
+          "number": 2,
+          "official_answer": false,
+          "reason": "②2,500,000원은 벌과금과 부담금 전액 합계2,000,000원보다500,000원 큽니다. 직장체육비·소액주주 임원 사택유지비를 추가 부인할 원문 사유는 없습니다."
+        },
+        {
+          "number": 3,
+          "official_answer": false,
+          "reason": "③3,500,000원은 부담금까지 전액 부인하는 조건부 합계보다1,500,000원 큽니다. 법정 복리후생비나 소액주주 사택유지비를 부인하여 이 금액을 맞추지 않습니다."
+        },
+        {
+          "number": 4,
+          "official_answer": false,
+          "reason": "④4,000,000원은 직장체육비와 사택유지비의 합과 같지만 이 두 항목은 이 자료의 일반 손금 항목이고, 벌과금500,000원의 부인은 별도입니다. 부담금 성질 미확인도 그대로 남습니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "500000+1500000",
+          "expected": 2000000
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R22_NTS_CIT_19920520_1101",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000111383",
+          "version": "법인22601-1101 · 1992-05-20",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 본문 및 dcmHwpEditorDVOList 질의내용",
+          "sha256": "82630c71495c8de0622d008403f8fcb7eac889f06f0abeb50262e33013e58643",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 1992년 수질환경보전법 제19조에 관한 회신입니다. 당시 구법 구조는 별도 역사 조문으로 대조했으며, 2022~2024 시험의 부담금 유형을 확정하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_19910531",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59645&efYd=19910531&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제4388호 · 시행1991-05-31 (1992-05-20 당시 판본)",
+          "read_locator": "제19조(배출부과금) 제1~4항; 법령 제목·시행일",
+          "sha256": "865cedd3601d65723e25240afaf90188c6040eba83132198f07ccfd27bcaa65a",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_5095",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59763&efYd=19960701&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제5095호 · 1995-12-29 개정; 일반시행1996-07-01, 제19조제1~3항은 부칙상1997/2000 분리 시행",
+          "read_locator": "제19조(배출부과금) 제1~8항; 부칙<법률 제5095호,1995-12-29> 제1항(시행일)",
+          "sha256": "3346bb71aa6d12d5d914c3743a21cfa0d5fde05f455bdcff4c2d25c985c9f581",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19980808_2215",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000062931",
+          "version": "법인46012-2215 · 1998-08-08",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 및 질의내용",
+          "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 대기환경보전법의 기본·초과 배출부과금 회신입니다. 수질 규정 또는 시험의 폐수배출부담금에 자동 대입하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "CIT_LAW_2023",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/1804121f9e1cfc1228914a8582605f5b543a41cc/kr/법인세법/법률.md",
+          "version": "1804121f9e1cfc1228914a8582605f5b543a41cc / '19193' / 시행 2023-01-01",
+          "read_locator": "제21조 제3~5호",
+          "sha256": "03fc88dc3841daca7af84289d0e2724aef06c65d7fcc8e8e88444a9b598316ae",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "R21_WATER_LAW_20220325",
+          "url": "https://raw.githubusercontent.com/legalize-kr/legalize-kr/bf078a5c58d927153ddb1555454d414cd556b2f6/kr/%EB%AC%BC%ED%99%98%EA%B2%BD%EB%B3%B4%EC%A0%84%EB%B2%95/%EB%B2%95%EB%A5%A0.md",
+          "version": "법률 제18469호 / 공포 2021-09-24 / 시행 2022-03-25 / commit bf078a5c58d927153ddb1555454d414cd556b2f6",
+          "read_locator": "제41조 제1~3항",
+          "sha256": "75ca8302ae34c6c9c27699d1c9f916935664ef037d08dd98af0dc755eac47606",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "R6_TAX03_법인세법_시행령_20221027",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/881734f50357bc761947d469e0b8ecf06c994281/kr/법인세법/시행령.md",
+          "version": "제32965호 · 시행2022-10-27",
+          "read_locator": "판본 시행일 및 제45조,제50조",
+          "sha256": "b1c3c118534f5c85a9645d45d78fd93c6f068808fe37ed5682bcbeb3df2f54c6",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 catalog의 동일 역사판본·동일 ref를 독립검수자가 git보존본문에서 추가 재독했습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19920520_1102_EXCLUDED",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000122515",
+          "version": "법인22601-1102 · 1992-05-20",
+          "read_locator": "dcmDVO 제목·요지·실제 회신 및 첨부 질의내용",
+          "sha256": "6632ff7d9b527c5f2cbcb573d82ab02a2b2512250176a8bfb965d7cf74298cd0",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 제목·요지·실제회신과 첨부질의를 직접 재독해 불일치를 확인하고 제외했습니다. 공식 DB 제목·요지는 배출부과금이나 실제 회신과 첨부질의는 복지회관의 국가기증입니다. 문서 불일치가 있으므로 배출부과금 근거로 제외했습니다."
+        },
+        {
+          "ref": "ORIGINAL_2023-01_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2023-01-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF19쪽 문항48 및 과목시작17쪽 공통지시 실제 텍스트 재독",
+          "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2023-01_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2023-01-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 세무회계 과목8번=전체48번 공식답1; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2023-01-048_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2023-01-048.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "877b57cbd005a249234b98ebbd95db4bd7386c5702579f59610bea4874de0ac7",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2023-01-048.webp",
+        "image_sha256": "877b57cbd005a249234b98ebbd95db4bd7386c5702579f59610bea4874de0ac7",
+        "original_pdf": "2023-01-questions.pdf",
+        "original_pdf_sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+        "question_page": 19,
+        "answer_pdf": "2023-01-answers.pdf",
+        "answer_pdf_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+        "answer_page": 1,
+        "official_answers_read": [
+          1
+        ],
+        "subject_instruction_page": 17,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 문항 이미지와 원본 PDF의 본문·목록·금액·네 보기를 직접 대조하여 일치를 확인했습니다. 세무회계 8번=1 (전체 문항48번)를 실제 답안 표에서 읽었습니다. 세무회계 첫 페이지 17쪽에 별도의 공통 세법연도·추가 조건 지시는 없습니다. 기존 tax_law_year=null을 유지합니다. 부담금 종류·위반 제재에 관한 단서도 없습니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      },
+      "specific_source_scope_checks": {
+        "1992_1101": "실제회신은 구 수질법19조 배출부과금 손금불산입입니다.1991.5.31시행19조1항은 초과한 실제배출과 무허가/변경시설을 규정합니다. 현대 전체 부과금에 확장하지 않았습니다.",
+        "law5095": "개정19조1~3항의 범위확장과 부칙의 일반1996.7.1/해당규모1997.1.1/그외2000.1.1 분리시행을 실제본문에서 확인했습니다.",
+        "modern41": "2022/2024 제41조1항1호는 배출허용기준 이하이되 방류수기준초과 등의 기본부과금도 규정합니다. 기본=무위반·항상손금이라고 단정하지 않았습니다.",
+        "1102_exclusion": "제목·요지는 배출부과금이나 실제회신은 기부금 정의/국가·지자체 기부, 첨부는 석유비축공사의 복지회관 국가기증입니다. 배출부과금 근거에서 제외한 것이 적절합니다.",
+        "1998_air": "법인46012-2215 실제본문은 대기법19조/영15조의 기본·초과배출부과금입니다. 수질 명제로 자동전환하지 않았습니다."
+      }
+    },
+    {
+      "question_id": "2022-09-048",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "f83c6618b7185f5604caea43b0ed8baeb54c9202c3eeaa88185ffae6bf1b73a4",
+      "exact_row_sha256": "f83c6618b7185f5604caea43b0ed8baeb54c9202c3eeaa88185ffae6bf1b73a4",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "45a4c0e2a1ca77a7f2c2485079438c90a7914d20ca5d524c3acfcb4ef9fb579c",
+      "summary": "5,000,000원 확인합계와 부담금 전액 부인의6,000,000원을 구별했습니다. 새 구수질법·대기법 회신을 현대 모든 폐수부담금에 적용하지 않았으므로 decline 유지에 동의합니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": false,
+          "reason": "①3,000,000원은 대주주 임원 사택유지비만의 금액이며, 별도로 부인되는 이익처분 상여금2,000,000원을 누락합니다."
+        },
+        {
+          "number": 2,
+          "official_answer": false,
+          "reason": "②5,000,000원은 사택3,000,000원+이익처분 상여2,000,000원으로 확인되는 합계입니다. 부담금이 손금인지 미확인이므로 이를 곧바로 최종 정답으로 바꿀 수 없습니다."
+        },
+        {
+          "number": 3,
+          "official_answer": false,
+          "reason": "③5,500,000원은 확인된5,000,000원에500,000원을 추가한 값입니다. 건강검진비500,000원을 부인할 자료는 없고, 부담금 중500,000원만 부인할 사실도 원문에 없습니다."
+        },
+        {
+          "number": 4,
+          "official_answer": true,
+          "reason": "④6,000,000원은 확인된5,000,000원에 폐수배출부담금1,000,000원을 전액 더한 공식답입니다. 그 전액 부인 전제를1992 구법 회신이나1998 대기 회신만으로 확정하지 않습니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "3000000+2000000",
+          "expected": 5000000
+        },
+        {
+          "expr": "3000000+2000000+1000000",
+          "expected": 6000000
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R22_NTS_CIT_19920520_1101",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000111383",
+          "version": "법인22601-1101 · 1992-05-20",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 본문 및 dcmHwpEditorDVOList 질의내용",
+          "sha256": "82630c71495c8de0622d008403f8fcb7eac889f06f0abeb50262e33013e58643",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 1992년 수질환경보전법 제19조에 관한 회신입니다. 당시 구법 구조는 별도 역사 조문으로 대조했으며, 2022~2024 시험의 부담금 유형을 확정하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_19910531",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59645&efYd=19910531&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제4388호 · 시행1991-05-31 (1992-05-20 당시 판본)",
+          "read_locator": "제19조(배출부과금) 제1~4항; 법령 제목·시행일",
+          "sha256": "865cedd3601d65723e25240afaf90188c6040eba83132198f07ccfd27bcaa65a",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_5095",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59763&efYd=19960701&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제5095호 · 1995-12-29 개정; 일반시행1996-07-01, 제19조제1~3항은 부칙상1997/2000 분리 시행",
+          "read_locator": "제19조(배출부과금) 제1~8항; 부칙<법률 제5095호,1995-12-29> 제1항(시행일)",
+          "sha256": "3346bb71aa6d12d5d914c3743a21cfa0d5fde05f455bdcff4c2d25c985c9f581",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19980808_2215",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000062931",
+          "version": "법인46012-2215 · 1998-08-08",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 및 질의내용",
+          "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 대기환경보전법의 기본·초과 배출부과금 회신입니다. 수질 규정 또는 시험의 폐수배출부담금에 자동 대입하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "CIT_LAW_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/162d3e8afed72abc076eaf028d5f35ecdf3598a9/kr/법인세법/법률.md",
+          "version": "162d3e8afed72abc076eaf028d5f35ecdf3598a9 / 제18590호 / 시행 2022-01-01",
+          "read_locator": "제21조 제3~5호",
+          "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "R21_WATER_LAW_20220325",
+          "url": "https://raw.githubusercontent.com/legalize-kr/legalize-kr/bf078a5c58d927153ddb1555454d414cd556b2f6/kr/%EB%AC%BC%ED%99%98%EA%B2%BD%EB%B3%B4%EC%A0%84%EB%B2%95/%EB%B2%95%EB%A5%A0.md",
+          "version": "법률 제18469호 / 공포 2021-09-24 / 시행 2022-03-25 / commit bf078a5c58d927153ddb1555454d414cd556b2f6",
+          "read_locator": "제41조 제1~3항",
+          "sha256": "75ca8302ae34c6c9c27699d1c9f916935664ef037d08dd98af0dc755eac47606",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "CIT_DECREE_2022",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/fd0d07c3b8d39d4cde201c24619874370ade153c/kr/법인세법/시행령.md",
+          "version": "제32447호 / 시행 2022-02-18",
+          "read_locator": "판본 시행일 및 제43조,제45조,제50조",
+          "sha256": "ddf64ea215a264910249d7c18c8ae36484e3c055d9d087537e51f3ae015bed12",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 catalog의 동일 역사판본·동일 ref를 독립검수자가 git보존본문에서 추가 재독했습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19920520_1102_EXCLUDED",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000122515",
+          "version": "법인22601-1102 · 1992-05-20",
+          "read_locator": "dcmDVO 제목·요지·실제 회신 및 첨부 질의내용",
+          "sha256": "6632ff7d9b527c5f2cbcb573d82ab02a2b2512250176a8bfb965d7cf74298cd0",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 제목·요지·실제회신과 첨부질의를 직접 재독해 불일치를 확인하고 제외했습니다. 공식 DB 제목·요지는 배출부과금이나 실제 회신과 첨부질의는 복지회관의 국가기증입니다. 문서 불일치가 있으므로 배출부과금 근거로 제외했습니다."
+        },
+        {
+          "ref": "ORIGINAL_2022-09_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2022-09-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF20쪽 문항48 및 과목시작17쪽 공통지시 실제 텍스트 재독",
+          "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2022-09_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2022-09-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF49쪽 전체번호48 공식답4; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2022-09-048_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2022-09-048.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "31b7edfeac52eb61c76eb0cda23ea650812f3321f2df8393b08694339374d6da",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2022-09-048.webp",
+        "image_sha256": "31b7edfeac52eb61c76eb0cda23ea650812f3321f2df8393b08694339374d6da",
+        "original_pdf": "2022-09-questions.pdf",
+        "original_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "question_page": 20,
+        "answer_pdf": "2022-09-answers.pdf",
+        "answer_pdf_sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "answer_page": 49,
+        "official_answers_read": [
+          4
+        ],
+        "subject_instruction_page": 17,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 문항 이미지와 원본 PDF의 본문·목록·금액·네 보기를 직접 대조하여 일치를 확인했습니다. 세무회계 전체 문항48번=[4]를 실제 답안 표에서 읽었습니다. 세무회계 첫 페이지 17쪽에 별도의 공통 세법연도·추가 조건 지시는 없습니다. 기존 tax_law_year=null을 유지합니다. 부담금 종류·위반 제재에 관한 단서도 없습니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      },
+      "specific_source_scope_checks": {
+        "1992_1101": "실제회신은 구 수질법19조 배출부과금 손금불산입입니다.1991.5.31시행19조1항은 초과한 실제배출과 무허가/변경시설을 규정합니다. 현대 전체 부과금에 확장하지 않았습니다.",
+        "law5095": "개정19조1~3항의 범위확장과 부칙의 일반1996.7.1/해당규모1997.1.1/그외2000.1.1 분리시행을 실제본문에서 확인했습니다.",
+        "modern41": "2022/2024 제41조1항1호는 배출허용기준 이하이되 방류수기준초과 등의 기본부과금도 규정합니다. 기본=무위반·항상손금이라고 단정하지 않았습니다.",
+        "1102_exclusion": "제목·요지는 배출부과금이나 실제회신은 기부금 정의/국가·지자체 기부, 첨부는 석유비축공사의 복지회관 국가기증입니다. 배출부과금 근거에서 제외한 것이 적절합니다.",
+        "1998_air": "법인46012-2215 실제본문은 대기법19조/영15조의 기본·초과배출부과금입니다. 수질 명제로 자동전환하지 않았습니다."
+      }
+    },
+    {
+      "question_id": "2026-03-055",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "97ebfe00b3133fba524efa64bfdf81716948883f138fc13ce0ca2484e451ea55",
+      "exact_row_sha256": "97ebfe00b3133fba524efa64bfdf81716948883f138fc13ce0ca2484e451ea55",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "2ffbce2a545a179b6dfc88e74b2cf5b84a40a0f5c35e7c9607d1de5c3a40a592",
+      "summary": "실제 원문에 대여·회수의무·미상환잔액 표현이 없습니다.2001회신은 무이자 융자·대여가 명시된 사용인 자녀 사례입니다. 작성자는 이를 대표이사 자녀에게 확대하거나 지출을 채권으로 바꾸지 않았습니다.2025 적용 공통지시도 확인했습니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": true,
+          "reason": "①3,960,000원은32,850,000원이260일간 업무무관 대여잔액이라는 전제에서22,000,000×32,850,000×260÷47,450,000,000으로 재현됩니다. 원문은 지출만 명시하여 대여·미상환 조건은 입증되지 않았습니다."
+        },
+        {
+          "number": 2,
+          "official_answer": false,
+          "reason": "②5,559,230원은 원문260일을 쓴 조건부 계산3,960,000원보다1,599,230원 큽니다. 제시되지 않은 기간이나 잔액을 추가하여 이 보기와 연결하지 않습니다."
+        },
+        {
+          "number": 3,
+          "official_answer": false,
+          "reason": "③15,230,769원은 동일한 금액·260일·차입금적수를 반영한 조건부 계산과 다릅니다. 이 보기를 지지할 추가 업무무관자산 적수도 제시되지 않았습니다."
+        },
+        {
+          "number": 4,
+          "official_answer": false,
+          "reason": "④22,000,000원은 지급이자 전액입니다. 제시 금액을 대여로 가정해도 해당 적수비율은0.18이므로 전액 부인이 되지 않으며, 가정 없이도 전액 부인을 확정할 근거는 없습니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "32850000*260",
+          "expected": 8541000000
+        },
+        {
+          "expr": "22000000*(32850000*260)/47450000000",
+          "expected": 3960000
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R22_NTS_CIT_20010904_10091",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055674",
+          "version": "서이46012-10091 · 2001-09-04",
+          "read_locator": "POST action.do ASIQTB002PR01: 회신 본문·질의내용·첨부 인용 시행령53①/시행규칙28①",
+          "sha256": "ed63edb67eb8e24ec9aafc3e895f04bbb2532bde00b4b06db61700f63fcf0656",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 사용인(사용인의 자녀 포함)의 학자금 대여에 관한 회신입니다. 대표이사의 자녀에게 지출했다는 시험 사실을 대여 또는 사용인 학자금으로 바꾸는 근거가 아닙니다. 과거 회신을 2025년 시행 조문의 대체자료로 사용하지 않습니다."
+        },
+        {
+          "ref": "CIT_LAW_2025",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/85baa33a2d6b200fd5a66df9efd6bca0344d6dfa/kr/법인세법/법률.md",
+          "version": "85baa33a2d6b200fd5a66df9efd6bca0344d6dfa / '20775' / 시행 2025-03-14",
+          "read_locator": "제28조 제1항 제4호",
+          "sha256": "d3985c156bde0ccd02a1d7c6b23fcff01670a9e592b1e5929654e8340ad13fa8",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "CIT_DECREE_2025",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/88c324d9e1ed024a9d6a81037628b35f2a1598c1/kr/법인세법/시행령.md",
+          "version": "'35350' / 시행 2025-02-28",
+          "read_locator": "판본 시행일 및 제26조,제32조; 제53조 제1~3항",
+          "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 catalog의 동일 역사판본·동일 ref를 독립검수자가 git보존본문에서 추가 재독했습니다. 영53조도 기존 작성자 보존파일의 같은 SHA본문에서 실제 재독했습니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-03_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-03-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF23쪽 문항55 및 과목시작17쪽 공통지시 실제 텍스트 재독",
+          "sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-03_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2026-03-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 전체번호55 공식답1; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2026-03-055_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2026-03-055.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "05a2fe38bd88a376e5f2b92bc4425aec34aee480b17467898a3369c3d5c7c010",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2026-03-055.webp",
+        "image_sha256": "05a2fe38bd88a376e5f2b92bc4425aec34aee480b17467898a3369c3d5c7c010",
+        "original_pdf": "2026-03-questions.pdf",
+        "original_pdf_sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55",
+        "question_page": 23,
+        "answer_pdf": "2026-03-answers.pdf",
+        "answer_pdf_sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77",
+        "answer_page": 1,
+        "official_answers_read": [
+          1
+        ],
+        "subject_instruction_page": 17,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 문항 이미지와 원본 PDF의 본문·목록·금액·네 보기를 직접 대조하여 일치를 확인했습니다. 세무회계 전체 문항55번=1를 실제 답안 표에서 읽었습니다. 과목 첫 페이지 17쪽은 제시한 것 외의 사항을 고려하지 않으며 2025년 세법을 적용한다고 명시합니다. 거래연도 2026년과 tax_law_year=2025를 구별하여 유지합니다. 대여·회수의무·잔액 유지 조건은 문항에도 공통 지시에도 없습니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      }
+    },
+    {
+      "question_id": "2025-12-052",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "7554bc17d1f693256a8228aa0509cc43128c39e5fcf1f6cae0578f7fcc6664fa",
+      "exact_row_sha256": "7554bc17d1f693256a8228aa0509cc43128c39e5fcf1f6cae0578f7fcc6664fa",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "c59607cb2c6c096c879c2021f346da84fd59b2a34b1610c8c50c51c4cb4be045",
+      "summary": "원본에서100,000,000−49,000,000≠60,000,000을 직접 확인했습니다. 두 기초의 조건부 계산을 독립 재계산했고, 공식①을 위해 순액을 버리지 않은 decline이 타당합니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": true,
+          "reason": "①손금산입191,900원은 누계액49,000,000원에서 당기19,000,000원을 빼 전기말 누계30,000,000원으로 계산할 때 재현됩니다. 이 계산은 표 순액60,000,000원과 충돌하므로 공식키를 숫자교정 근거로 쓰지 않습니다."
+        },
+        {
+          "number": 2,
+          "official_answer": false,
+          "reason": "②손금불산입191,900원은 누계액기초 계산에서 발생한 시인부족액의 추인 방향과 반대입니다. 표시 순액기초 계산의 추인액2,522,900원과도 금액이 다릅니다."
+        },
+        {
+          "number": 3,
+          "official_answer": false,
+          "reason": "③손금산입4,000,000원은 누계액기초191,900원이나 표시 순액기초2,522,900원 어느 조건부 추인액과도 같지 않습니다."
+        },
+        {
+          "number": 4,
+          "official_answer": false,
+          "reason": "④손금불산입4,000,000원은 두 기초의 조건부 계산 모두에서 발생하는 시인부족액 손금산입 방향 및 금액과 일치하지 않습니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "100000000-49000000",
+          "expected": 51000000
+        },
+        {
+          "expr": "49000000-19000000",
+          "expected": 30000000
+        },
+        {
+          "expr": "100000000-30000000+4100000",
+          "expected": 74100000
+        },
+        {
+          "expr": "74100000*0.259",
+          "expected": 19191900
+        },
+        {
+          "expr": "19191900-19000000",
+          "expected": 191900
+        },
+        {
+          "expr": "60000000+19000000+4100000",
+          "expected": 83100000
+        },
+        {
+          "expr": "83100000*0.259",
+          "expected": 21522900
+        },
+        {
+          "expr": "21522900-19000000",
+          "expected": 2522900
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "CIT_DECREE_2025",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/88c324d9e1ed024a9d6a81037628b35f2a1598c1/kr/법인세법/시행령.md",
+          "version": "'35350' / 시행 2025-02-28",
+          "read_locator": "판본 시행일 및 제26조,제32조; 제53조 제1~3항",
+          "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 catalog의 동일 역사판본·동일 ref를 독립검수자가 git보존본문에서 추가 재독했습니다. 영53조도 기존 작성자 보존파일의 같은 SHA본문에서 실제 재독했습니다."
+        },
+        {
+          "ref": "EXAM_2025-12_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2025-12-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF22쪽 문항52 및 과목시작17쪽 공통지시 실제 텍스트 재독",
+          "sha256": "6a37603f836f12dd387a8522e87fef8b1ad6e25c2f0580482ab2b96544d89411",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "EXAM_2025-12_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2025-12-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 전체번호52 공식답1; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "IMAGE_2025-12-052",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2025-12-052.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "20f6a1030ecf5bca53549a813adaca4a39c4e0f23d1b0569687c13c1d876c6fe",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2025-12-052.webp",
+        "image_sha256": "20f6a1030ecf5bca53549a813adaca4a39c4e0f23d1b0569687c13c1d876c6fe",
+        "original_pdf": "2025-12-questions.pdf",
+        "original_pdf_sha256": "6a37603f836f12dd387a8522e87fef8b1ad6e25c2f0580482ab2b96544d89411",
+        "question_page": 22,
+        "answer_pdf": "2025-12-answers.pdf",
+        "answer_pdf_sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac",
+        "answer_page": 1,
+        "official_answers_read": [
+          1
+        ],
+        "subject_instruction_page": 17,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 금액 100,000,000 / (49,000,000) / 순액60,000,000, 당기19,000,000·전기상각부인4,100,000·0.259와 네 보기 모두 이미지와 PDF에서 동일합니다. 공통지시는 추가 사항을 고려하지 않으며 2025년 세법을 적용합니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      }
+    },
+    {
+      "question_id": "2023-09-085",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "22f67e73a332ab67eb200143fb64a46ee48be083b6c4ac9f3ce73b6fb48f8967",
+      "exact_row_sha256": "22f67e73a332ab67eb200143fb64a46ee48be083b6c4ac9f3ce73b6fb48f8967",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "e6e8222df5a59a998aa2233b269d0e529c45b2fa5780005b87d9533d8f42e701",
+      "summary": "원본의 재료합계와 노무합계 모순을 실제 이미지/PDF에서 확인했습니다. 예정배부율50원, 작업별310,000원/220,000원과 총액오차 상쇄를 각각 재계산했으며, 공식②로 합계행을 고치지 않았습니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": false,
+          "reason": "①완성품270,000원·재공품260,000원은 원문 작업별 직접원가와 시간당50원 배부를 적용한310,000원·220,000원과 각각40,000원씩 다릅니다. 모순된 합계행의 오차를 작업별로 재배분할 근거는 없습니다."
+        },
+        {
+          "number": 2,
+          "official_answer": true,
+          "reason": "②완성품310,000원·재공품220,000원은 작업별 금액과 각각2,400시간·1,600시간을 사용하면 재현됩니다. 그러나 재료계240,000원·노무계90,000원은 각 작업 합계와 모순되어 원문 전체가 일관된 답은 아닙니다."
+        },
+        {
+          "number": 3,
+          "official_answer": false,
+          "reason": "③완성품530,000원·재공품0원은 미완성#B에 직접원가와1,600시간이 있는 사실과 맞지 않습니다. 총원가530,000원 일치는 재료계와 노무계의 반대오차 상쇄일 뿐입니다."
+        },
+        {
+          "number": 4,
+          "official_answer": false,
+          "reason": "④완성품0원·재공품530,000원은#A만 완성했다는 사실과#A의 직접원가·2,400시간을 반영하지 않습니다. 총액 일치만으로 전액 재공품 처리를 지지할 수 없습니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "130000+90000",
+          "expected": 220000
+        },
+        {
+          "expr": "60000+50000",
+          "expected": 110000
+        },
+        {
+          "expr": "2400+1600",
+          "expected": 4000
+        },
+        {
+          "expr": "2000000/40000",
+          "expected": 50
+        },
+        {
+          "expr": "2400*50",
+          "expected": 120000
+        },
+        {
+          "expr": "1600*50",
+          "expected": 80000
+        },
+        {
+          "expr": "130000+60000+120000",
+          "expected": 310000
+        },
+        {
+          "expr": "90000+50000+80000",
+          "expected": 220000
+        },
+        {
+          "expr": "240000+90000+4000*50",
+          "expected": 530000
+        },
+        {
+          "expr": "310000+220000",
+          "expected": 530000
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "EXAM_2023-09_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2023-09-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF35쪽 문항85 및 과목시작33쪽 공통지시 실제 텍스트 재독",
+          "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "EXAM_2023-09_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2023-09-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 원가관리회계 과목5번=전체85번 공식답2; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "IMAGE_2023-09-085",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2023-09-085.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2023-09-085.webp",
+        "image_sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+        "original_pdf": "2023-09-questions.pdf",
+        "original_pdf_sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "question_page": 35,
+        "answer_pdf": "2023-09-answers.pdf",
+        "answer_pdf_sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "answer_page": 1,
+        "official_answers_read": [
+          2
+        ],
+        "subject_instruction_page": 33,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 표 재료130,000·90,000·계240,000, 노무60,000·50,000·계90,000, 시간2,400·1,600·계4,000이 이미지와 PDF에서 동일합니다. 월초재공품 없음/#A만 완성 및 네 보기 모두 존재하며 과목 머리에 별도 공통지시가 없습니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      }
+    },
+    {
+      "question_id": "2024-06-048",
+      "author": "r22_worker3",
+      "reviewer": "/root/r22_tax_conditions",
+      "status": "pass",
+      "author_decision": "decline",
+      "review_conclusion": "decline 유지 적정; 등록 승인 아님",
+      "proposal_sha256": "43a35455e832c7762eb22e958ec73d2122c990b1d9d87d11c1e6aa3a8d2e0ba0",
+      "exact_row_sha256": "43a35455e832c7762eb22e958ec73d2122c990b1d9d87d11c1e6aa3a8d2e0ba0",
+      "target_file_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "question_row_sha256": "78cbecbdf17d6e96ba24b948e952371bbf910a1bc4b66b9447a4bd2d255b5995",
+      "summary": "확인된8,000,000원과 부담금 전액부인11,000,000원을 분리했습니다.1992회신·5095시행유예·현대기본부과금 조건을 구별하여 제재사실을 원문에 추가하지 않았습니다.",
+      "four_option_logic": [
+        {
+          "number": 1,
+          "official_answer": false,
+          "reason": "①6,500,000원은 주식할인발행차금1,000,000원+뇌물5,000,000원+법인지방소득세2,000,000원이라는 확인된 부인 합계8,000,000원에도1,500,000원 미달합니다."
+        },
+        {
+          "number": 2,
+          "official_answer": false,
+          "reason": "②8,000,000원은 부담금을 제외한 세 항목의 부인 합계입니다. 폐수배출부담금의 손금 여부가 미확인이므로 이를 최종 정답으로 단정할 수 없습니다."
+        },
+        {
+          "number": 3,
+          "official_answer": true,
+          "reason": "③11,000,000원은 세 항목8,000,000원에 부담금3,000,000원을 전액 더한 공식키입니다. 새 구법 회신이 현대의 모든 물환경 부과금에 적용된다고 확대하지 않습니다."
+        },
+        {
+          "number": 4,
+          "official_answer": false,
+          "reason": "④15,000,000원은 다섯 지출을 전부 부인한 합계입니다. 직장어린이집운영비4,000,000원까지 부인할 사유가 원문에 없으며 영제45조제1항제6호의 항목과 구별해야 합니다."
+        }
+      ],
+      "required_changes": [],
+      "checks": [
+        {
+          "expr": "1000000+5000000+2000000",
+          "expected": 8000000
+        },
+        {
+          "expr": "1000000+5000000+2000000+3000000",
+          "expected": 11000000
+        }
+      ],
+      "source_reads": [
+        {
+          "ref": "R22_NTS_CIT_19920520_1101",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000111383",
+          "version": "법인22601-1101 · 1992-05-20",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 본문 및 dcmHwpEditorDVOList 질의내용",
+          "sha256": "82630c71495c8de0622d008403f8fcb7eac889f06f0abeb50262e33013e58643",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 1992년 수질환경보전법 제19조에 관한 회신입니다. 당시 구법 구조는 별도 역사 조문으로 대조했으며, 2022~2024 시험의 부담금 유형을 확정하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_19910531",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59645&efYd=19910531&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제4388호 · 시행1991-05-31 (1992-05-20 당시 판본)",
+          "read_locator": "제19조(배출부과금) 제1~4항; 법령 제목·시행일",
+          "sha256": "865cedd3601d65723e25240afaf90188c6040eba83132198f07ccfd27bcaa65a",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_WATER_LAW_5095",
+          "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=59763&efYd=19960701&chrClsCd=010202&efGubun=Y&ancYnChk=&nwJoYnInfo=1",
+          "version": "법률 제5095호 · 1995-12-29 개정; 일반시행1996-07-01, 제19조제1~3항은 부칙상1997/2000 분리 시행",
+          "read_locator": "제19조(배출부과금) 제1~8항; 부칙<법률 제5095호,1995-12-29> 제1항(시행일)",
+          "sha256": "3346bb71aa6d12d5d914c3743a21cfa0d5fde05f455bdcff4c2d25c985c9f581",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 국가법령정보센터 역사 법령 실제 본문을 읽었습니다. 표제 일반시행일만으로 유예된 제19조의 시행일을 단일화하지 않습니다. 뒤에 붙은 현대 연락처·위헌주석은 당시 조문으로 보지 않았습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19980808_2215",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000062931",
+          "version": "법인46012-2215 · 1998-08-08",
+          "read_locator": "POST action.do ASIQTB002PR01: dcmDVO.ntstDcmCntn 및 질의내용",
+          "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 대기환경보전법의 기본·초과 배출부과금 회신입니다. 수질 규정 또는 시험의 폐수배출부담금에 자동 대입하지 않습니다. 응답의 관련 사건 목록 전체를 읽었다고 주장하지 않습니다."
+        },
+        {
+          "ref": "CIT_LAW_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/269562cff8dc4f38d97ce777aa5145c4f4c75211/kr/법인세법/법률.md",
+          "version": "269562cff8dc4f38d97ce777aa5145c4f4c75211 / 제19930호 / 시행 2024-01-01",
+          "read_locator": "판본 시행일 및 제20조(주식할인발행차금 포함), 제21조제1~5호 실제본문",
+          "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "R21_WATER_LAW_20240130",
+          "url": "https://raw.githubusercontent.com/legalize-kr/legalize-kr/bdd291f4692690f616c6f515d60db058854d3ecf/kr/%EB%AC%BC%ED%99%98%EA%B2%BD%EB%B3%B4%EC%A0%84%EB%B2%95/%EB%B2%95%EB%A5%A0.md",
+          "version": "법률 제20172호 / 공포 2024-01-30 / 시행 2024-01-30 / commit bdd291f4692690f616c6f515d60db058854d3ecf",
+          "read_locator": "제41조 제1~3항",
+          "sha256": "45392c7a59cfc2c9c3373b047ed0acc7c6ed636cd84823462e076f9636ab542f",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 작성자/21차 보존 실제본문을 재독했습니다. 이번 검수의 신규 다운로드가 아닙니다. 21차 및 기존 법령 보존본문을 같은 SHA로 재독했습니다. 신규 법령 확보나 출제기관 정정본으로 표현하지 않습니다. 국가법령정보센터 자료를 보존한 기존 미러 판본입니다."
+        },
+        {
+          "ref": "CIT_DECREE_2024",
+          "url": "https://github.com/legalize-kr/legalize-kr/blob/6990afad9df31eb309be0333c08c3f72ea66463d/kr/법인세법/시행령.md",
+          "version": "제34488호 / 시행 2024-05-17",
+          "read_locator": "판본 시행일 및 제19조,제45조",
+          "sha256": "6e156f0b4b02ab7c85d1566638185241c4967b74481e0447fa3c1ca8ccbcd65c",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "기존 catalog의 동일 역사판본·동일 ref를 독립검수자가 git보존본문에서 추가 재독했습니다."
+        },
+        {
+          "ref": "R22_NTS_CIT_19920520_1102_EXCLUDED",
+          "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000122515",
+          "version": "법인22601-1102 · 1992-05-20",
+          "read_locator": "dcmDVO 제목·요지·실제 회신 및 첨부 질의내용",
+          "sha256": "6632ff7d9b527c5f2cbcb573d82ab02a2b2512250176a8bfb965d7cf74298cd0",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "독립검수자가 제목·요지·실제회신과 첨부질의를 직접 재독해 불일치를 확인하고 제외했습니다. 공식 DB 제목·요지는 배출부과금이나 실제 회신과 첨부질의는 복지회관의 국가기증입니다. 문서 불일치가 있으므로 배출부과금 근거로 제외했습니다."
+        },
+        {
+          "ref": "ORIGINAL_2024-06_QUESTIONS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2024-06-questions.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF19쪽 문항48 및 과목시작17쪽 공통지시 실제 텍스트 재독",
+          "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2024-06_ANSWERS",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/sources/2024-06-answers.pdf",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "PDF1쪽 세무회계 과목8번=전체48번 공식답3; 현재 검수에서 렌더링 후 view_image 직접보기",
+          "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        },
+        {
+          "ref": "ORIGINAL_2024-06-048_IMAGE",
+          "url": "https://github.com/Jay5315/Jay5315.github.io/blob/7a52cfca39facd7bfbc9b3c42798622d22d036e9/jaegyeong/images/2024-06-048.webp",
+          "version": "사용자 제공 repository commit 7a52cfca39facd7bfbc9b3c42798622d22d036e9 보존본",
+          "read_locator": "현재 검수에서 실제 view_image로 본문·표·금액·네보기 재독",
+          "sha256": "e57c373ea7252c2c6537ca53acf6f985c181ba33ee256a594b9a8f949c6b55ba",
+          "actually_read": true,
+          "read_method": "reread_preserved_body",
+          "provenance_limit": "이 독립검수에서 실제 재독한 저장소 보존본입니다. 출제기관에서 이번에 신규 다운로드한 원문 또는 정오표가 아닙니다."
+        }
+      ],
+      "originals": {
+        "image": "2024-06-048.webp",
+        "image_sha256": "e57c373ea7252c2c6537ca53acf6f985c181ba33ee256a594b9a8f949c6b55ba",
+        "original_pdf": "2024-06-questions.pdf",
+        "original_pdf_sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+        "question_page": 19,
+        "answer_pdf": "2024-06-answers.pdf",
+        "answer_pdf_sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+        "answer_page": 1,
+        "official_answers_read": [
+          3
+        ],
+        "subject_instruction_page": 17,
+        "subject_instructions_checked": true,
+        "read_in_this_independent_review": true,
+        "methods": "PyMuPDF 문항/공통/답안 텍스트 재독;6개 원본webp view_image;6개 답안면 렌더링 view_image",
+        "findings": "원문행의 본문·표·숫자·네보기와 공식키가 brief와 일치합니다. 작성자의21차 원본확인 재사용과 별개로 이번 독립검수에서 실제 확인했습니다. 문항 이미지와 원본 PDF의 본문·목록·금액·네 보기를 직접 대조하여 일치를 확인했습니다. 세무회계 8번=3 (전체 문항48번)를 실제 답안 표에서 읽었습니다. 세무회계 첫 페이지 17쪽에 별도의 공통 세법연도·추가 조건 지시는 없습니다. 기존 tax_law_year=null을 유지합니다. 부담금 종류·위반 제재에 관한 단서도 없습니다."
+      },
+      "inspection_scope": {
+        "author_original_handling": "작성자는21차 실제원본확인기록 재사용을 명시했고 신규 원문 다운로드·새 view를 주장하지 않았습니다.",
+        "reviewer_original_handling": "이번 독립검수에서6개 webp·PDF문항면·과목공통지시·답안면을 실제 재독했습니다. 정상보존본문 재독이며 출제기관 신규 다운로드는 없습니다.",
+        "textbook_scope": "새 교재본문을 확보하거나 사라진 교재 근거를 복구했다고 주장하지 않습니다.",
+        "adjudication_scope": "현재판정 None이며 새로운 판정변경 후보가 없습니다. 정확한 frozen행의 decline 근거만 검수했습니다."
+      },
+      "specific_source_scope_checks": {
+        "1992_1101": "실제회신은 구 수질법19조 배출부과금 손금불산입입니다.1991.5.31시행19조1항은 초과한 실제배출과 무허가/변경시설을 규정합니다. 현대 전체 부과금에 확장하지 않았습니다.",
+        "law5095": "개정19조1~3항의 범위확장과 부칙의 일반1996.7.1/해당규모1997.1.1/그외2000.1.1 분리시행을 실제본문에서 확인했습니다.",
+        "modern41": "2022/2024 제41조1항1호는 배출허용기준 이하이되 방류수기준초과 등의 기본부과금도 규정합니다. 기본=무위반·항상손금이라고 단정하지 않았습니다.",
+        "1102_exclusion": "제목·요지는 배출부과금이나 실제회신은 기부금 정의/국가·지자체 기부, 첨부는 석유비축공사의 복지회관 국가기증입니다. 배출부과금 근거에서 제외한 것이 적절합니다.",
+        "1998_air": "법인46012-2215 실제본문은 대기법19조/영15조의 기본·초과배출부과금입니다. 수질 명제로 자동전환하지 않았습니다."
+      }
+    }
+  ],
+  "review3_normalization": {
+    "normalizer": "/root/r22_tax_conditions",
+    "operation": "기존 검수 규칙의 정형필드 보충만 수행했습니다. gate 또는 실질 검수판정을 변경하지 않았습니다.",
+    "source": {
+      "path": "reviews.json",
+      "sha256": "7104025e1cff720003b28d979403a56cd0b39ed79582c82adad7dd45a561d5bb",
+      "preserved_byte_for_byte": true
+    },
+    "normalized": {
+      "path": "reviews-normalized.json",
+      "sha256": "9f275775488907f48c00834509e751a3de4a53fc4a5188b887ca42b33fad7419",
+      "row_count": 6,
+      "option_count": 24
+    },
+    "fields_added_per_option": {
+      "status": "pass",
+      "note": "해당 항목의 기존 reason 문자열을 글자 그대로 복사"
+    },
+    "review_meaning": "four_option_logic[].status=pass는 그 보기와 관련된 보류 판단의 논리 검수가 통과했음을 뜻합니다. 해당 보기가 정답이거나 법률상 옳은 보기라는 뜻이 아닙니다. 정답 여부는 보존된 official_answer에만 표시되어 있습니다.",
+    "preserved_fields": [
+      "작성 raw proposal_sha256",
+      "question_row_sha256",
+      "source_reads와 실제본문 sha256",
+      "reason(각 보기 포함)",
+      "official_answer",
+      "status(기존 행 판정)",
+      "review_conclusion",
+      "required_changes",
+      "그 밖의 기존 모든 필드"
+    ],
+    "row_bindings": [
+      {
+        "question_id": "2023-01-048",
+        "before_row_sha256": "7f194b6ef70aa32e5c2cd293f588013fa987e9015e21ac8d24a9ee5142940fdd",
+        "after_row_sha256": "b1ec00fb4b8407b87c81b316672d73f95bc67f6c7dde190f88da7f1198bd71b7",
+        "author_raw_proposal_sha256_unchanged": "903e621ff3d6391c8ba2a086643db374e2dcadab86acaef6dba37750dce4d385",
+        "question_row_sha256_unchanged": "d15654739457f48130e3e5cb65439de0ee4361a2431edbb45bf45d6130685662",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "01a9e51bf26421bc0757fb510239732c73493d2ad8bf6b64f276da83847b604f",
+            "after_reason_sha256": "01a9e51bf26421bc0757fb510239732c73493d2ad8bf6b64f276da83847b604f",
+            "added_note_sha256": "01a9e51bf26421bc0757fb510239732c73493d2ad8bf6b64f276da83847b604f",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "e0c57192f3634ef9988518c1ede11b4c3c2711fd49411ee2af4738e932c77c0a",
+            "after_reason_sha256": "e0c57192f3634ef9988518c1ede11b4c3c2711fd49411ee2af4738e932c77c0a",
+            "added_note_sha256": "e0c57192f3634ef9988518c1ede11b4c3c2711fd49411ee2af4738e932c77c0a",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "2e46ee4dc150120a2bb6789d3a7a6b4b2dd4d9cbbbce2ffc334ff2c03bf530e5",
+            "after_reason_sha256": "2e46ee4dc150120a2bb6789d3a7a6b4b2dd4d9cbbbce2ffc334ff2c03bf530e5",
+            "added_note_sha256": "2e46ee4dc150120a2bb6789d3a7a6b4b2dd4d9cbbbce2ffc334ff2c03bf530e5",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "c583d3e4d5929b7f41a13dc26890ba36bb46cd37056afbdcb355fa4648ddbe0a",
+            "after_reason_sha256": "c583d3e4d5929b7f41a13dc26890ba36bb46cd37056afbdcb355fa4648ddbe0a",
+            "added_note_sha256": "c583d3e4d5929b7f41a13dc26890ba36bb46cd37056afbdcb355fa4648ddbe0a",
+            "official_answer_preserved": true
+          }
+        ]
+      },
+      {
+        "question_id": "2022-09-048",
+        "before_row_sha256": "2ec549cdb0b492e16b820b01bf5b9cbbe01d43f13f8e45b19e1d4c43526720ed",
+        "after_row_sha256": "b28ec463eca42282342bca78d0536374dddca1a67f0403130c9ef00cd99d567b",
+        "author_raw_proposal_sha256_unchanged": "f83c6618b7185f5604caea43b0ed8baeb54c9202c3eeaa88185ffae6bf1b73a4",
+        "question_row_sha256_unchanged": "45a4c0e2a1ca77a7f2c2485079438c90a7914d20ca5d524c3acfcb4ef9fb579c",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "3eebda059b5709107f720514518eada385c5c88cc11f0b7e4bde7c9552df8a6a",
+            "after_reason_sha256": "3eebda059b5709107f720514518eada385c5c88cc11f0b7e4bde7c9552df8a6a",
+            "added_note_sha256": "3eebda059b5709107f720514518eada385c5c88cc11f0b7e4bde7c9552df8a6a",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "99af8e9fc6d64e1b2901b7bd20d3f1abdbb08472f287010628401aeeecad12e1",
+            "after_reason_sha256": "99af8e9fc6d64e1b2901b7bd20d3f1abdbb08472f287010628401aeeecad12e1",
+            "added_note_sha256": "99af8e9fc6d64e1b2901b7bd20d3f1abdbb08472f287010628401aeeecad12e1",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "5e88b0fda5fc8c53d7516ebc8fa092565f28f17b3d891ddd766b2305b1608491",
+            "after_reason_sha256": "5e88b0fda5fc8c53d7516ebc8fa092565f28f17b3d891ddd766b2305b1608491",
+            "added_note_sha256": "5e88b0fda5fc8c53d7516ebc8fa092565f28f17b3d891ddd766b2305b1608491",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "3ad734e75b9731e47857f0821d79782b87d7383bdf456331af7aeb2c50b59a6b",
+            "after_reason_sha256": "3ad734e75b9731e47857f0821d79782b87d7383bdf456331af7aeb2c50b59a6b",
+            "added_note_sha256": "3ad734e75b9731e47857f0821d79782b87d7383bdf456331af7aeb2c50b59a6b",
+            "official_answer_preserved": true
+          }
+        ]
+      },
+      {
+        "question_id": "2026-03-055",
+        "before_row_sha256": "162b0d9d556fd317a4f15cba4988f7ca8d65ee1825ab4d2b648d0b13c0b008dc",
+        "after_row_sha256": "d42acae13730972f2525ec2477279436267da2f9beb3574fddc16805669fa0dd",
+        "author_raw_proposal_sha256_unchanged": "97ebfe00b3133fba524efa64bfdf81716948883f138fc13ce0ca2484e451ea55",
+        "question_row_sha256_unchanged": "2ffbce2a545a179b6dfc88e74b2cf5b84a40a0f5c35e7c9607d1de5c3a40a592",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "2e286d35e92f21c403c1f7c38f09c482f9f91d9317920857c383a46d7696607d",
+            "after_reason_sha256": "2e286d35e92f21c403c1f7c38f09c482f9f91d9317920857c383a46d7696607d",
+            "added_note_sha256": "2e286d35e92f21c403c1f7c38f09c482f9f91d9317920857c383a46d7696607d",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "944dabdad5f9ad17e25bd2758f2bb5ffc6d7439b789b0819f7eea1be2c9d68cb",
+            "after_reason_sha256": "944dabdad5f9ad17e25bd2758f2bb5ffc6d7439b789b0819f7eea1be2c9d68cb",
+            "added_note_sha256": "944dabdad5f9ad17e25bd2758f2bb5ffc6d7439b789b0819f7eea1be2c9d68cb",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "1bcc4e3e8be43cfc56d249221927151230a942c21f8713e121cff9925184eeb7",
+            "after_reason_sha256": "1bcc4e3e8be43cfc56d249221927151230a942c21f8713e121cff9925184eeb7",
+            "added_note_sha256": "1bcc4e3e8be43cfc56d249221927151230a942c21f8713e121cff9925184eeb7",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "919ff4b454ad38cc8921b44011d4082518681e3aff275fe2a683c20a04222daa",
+            "after_reason_sha256": "919ff4b454ad38cc8921b44011d4082518681e3aff275fe2a683c20a04222daa",
+            "added_note_sha256": "919ff4b454ad38cc8921b44011d4082518681e3aff275fe2a683c20a04222daa",
+            "official_answer_preserved": true
+          }
+        ]
+      },
+      {
+        "question_id": "2025-12-052",
+        "before_row_sha256": "5d1ced52cbbe4941f93a982202d71fa6a5f487fa5fb2137bcdc82dfe4e151e87",
+        "after_row_sha256": "1977573feec2a2edb25c3a646710caf38f0ca8e85ef8eb72f9d174d456e11bc5",
+        "author_raw_proposal_sha256_unchanged": "7554bc17d1f693256a8228aa0509cc43128c39e5fcf1f6cae0578f7fcc6664fa",
+        "question_row_sha256_unchanged": "c59607cb2c6c096c879c2021f346da84fd59b2a34b1610c8c50c51c4cb4be045",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "bbbdcf81184dd58242e5e48b5e417e53f834075d28d31539f788f04a626b52ab",
+            "after_reason_sha256": "bbbdcf81184dd58242e5e48b5e417e53f834075d28d31539f788f04a626b52ab",
+            "added_note_sha256": "bbbdcf81184dd58242e5e48b5e417e53f834075d28d31539f788f04a626b52ab",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "c48097e70a89e7bb1914e31ba8db3a6f2f524feaa312af6da27bb6f0e240f335",
+            "after_reason_sha256": "c48097e70a89e7bb1914e31ba8db3a6f2f524feaa312af6da27bb6f0e240f335",
+            "added_note_sha256": "c48097e70a89e7bb1914e31ba8db3a6f2f524feaa312af6da27bb6f0e240f335",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "89549a4dfd45d83308b4d884a17c04536df6b825da0ec2dad1caafd3757421c1",
+            "after_reason_sha256": "89549a4dfd45d83308b4d884a17c04536df6b825da0ec2dad1caafd3757421c1",
+            "added_note_sha256": "89549a4dfd45d83308b4d884a17c04536df6b825da0ec2dad1caafd3757421c1",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "806a923245cd98170f3bd548404dbb593d87ffb4cc6b4bfe06492176785402e5",
+            "after_reason_sha256": "806a923245cd98170f3bd548404dbb593d87ffb4cc6b4bfe06492176785402e5",
+            "added_note_sha256": "806a923245cd98170f3bd548404dbb593d87ffb4cc6b4bfe06492176785402e5",
+            "official_answer_preserved": true
+          }
+        ]
+      },
+      {
+        "question_id": "2023-09-085",
+        "before_row_sha256": "84a6692abd0350a2353cc67de47adb67d5290465cc7f92d95f957d60b864d7f8",
+        "after_row_sha256": "aae7b88fce20c677158ad11bd02e50e642a31c822d18e6c7e30debf7e88f4e20",
+        "author_raw_proposal_sha256_unchanged": "22f67e73a332ab67eb200143fb64a46ee48be083b6c4ac9f3ce73b6fb48f8967",
+        "question_row_sha256_unchanged": "e6e8222df5a59a998aa2233b269d0e529c45b2fa5780005b87d9533d8f42e701",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "a9533890cd637be8cb1fba63bb697bb6f3f3ddecc72678c1f3be7c1e281037ac",
+            "after_reason_sha256": "a9533890cd637be8cb1fba63bb697bb6f3f3ddecc72678c1f3be7c1e281037ac",
+            "added_note_sha256": "a9533890cd637be8cb1fba63bb697bb6f3f3ddecc72678c1f3be7c1e281037ac",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "d7623cda629fbb666143d252ba5b9fd8768b3a14d5846bf430f45828931a4a91",
+            "after_reason_sha256": "d7623cda629fbb666143d252ba5b9fd8768b3a14d5846bf430f45828931a4a91",
+            "added_note_sha256": "d7623cda629fbb666143d252ba5b9fd8768b3a14d5846bf430f45828931a4a91",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "4026c3b218fa6e5641b16bfce2c88597aa4682a4f9997c9037a819a6a8c4dd44",
+            "after_reason_sha256": "4026c3b218fa6e5641b16bfce2c88597aa4682a4f9997c9037a819a6a8c4dd44",
+            "added_note_sha256": "4026c3b218fa6e5641b16bfce2c88597aa4682a4f9997c9037a819a6a8c4dd44",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "702447577c7903f272e616727538128a9fbf53d990bb6129dbedf6dd445ef557",
+            "after_reason_sha256": "702447577c7903f272e616727538128a9fbf53d990bb6129dbedf6dd445ef557",
+            "added_note_sha256": "702447577c7903f272e616727538128a9fbf53d990bb6129dbedf6dd445ef557",
+            "official_answer_preserved": true
+          }
+        ]
+      },
+      {
+        "question_id": "2024-06-048",
+        "before_row_sha256": "f384271ddaaefac8aef19919b8613b558f640bbdb7ea5f230b550f6867f34dcc",
+        "after_row_sha256": "ad06f594115231708653e6852403ddfc41e9d011dbee79288398969fa23bee1b",
+        "author_raw_proposal_sha256_unchanged": "43a35455e832c7762eb22e958ec73d2122c990b1d9d87d11c1e6aa3a8d2e0ba0",
+        "question_row_sha256_unchanged": "78cbecbdf17d6e96ba24b948e952371bbf910a1bc4b66b9447a4bd2d255b5995",
+        "original_fields_exactly_preserved": true,
+        "option_bindings": [
+          {
+            "number": 1,
+            "before_reason_sha256": "60a1509c817e5b104b67f88ecb4cb2ff570becea23c18e17b2d08106fd75c739",
+            "after_reason_sha256": "60a1509c817e5b104b67f88ecb4cb2ff570becea23c18e17b2d08106fd75c739",
+            "added_note_sha256": "60a1509c817e5b104b67f88ecb4cb2ff570becea23c18e17b2d08106fd75c739",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 2,
+            "before_reason_sha256": "0917934e24cd89072b6e389b3252b748c084ddf4d4a9df3eed8d48868549f2ad",
+            "after_reason_sha256": "0917934e24cd89072b6e389b3252b748c084ddf4d4a9df3eed8d48868549f2ad",
+            "added_note_sha256": "0917934e24cd89072b6e389b3252b748c084ddf4d4a9df3eed8d48868549f2ad",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 3,
+            "before_reason_sha256": "c90ee683e81da79e23653fccde5263d4e153eee6540b20cf27c68a42df01a23a",
+            "after_reason_sha256": "c90ee683e81da79e23653fccde5263d4e153eee6540b20cf27c68a42df01a23a",
+            "added_note_sha256": "c90ee683e81da79e23653fccde5263d4e153eee6540b20cf27c68a42df01a23a",
+            "official_answer_preserved": true
+          },
+          {
+            "number": 4,
+            "before_reason_sha256": "b164ba3ff14ae6d06c0d5810b331388181cf7cbb7b244ace6d7f71dbfe347e18",
+            "after_reason_sha256": "b164ba3ff14ae6d06c0d5810b331388181cf7cbb7b244ace6d7f71dbfe347e18",
+            "added_note_sha256": "b164ba3ff14ae6d06c0d5810b331388181cf7cbb7b244ace6d7f71dbfe347e18",
+            "official_answer_preserved": true
+          }
+        ]
+      }
+    ],
+    "validation": {
+      "only_additions_are_status_and_note": true,
+      "existing_reasons_exactly_preserved": true,
+      "existing_official_answers_preserved": true,
+      "original_review_conclusions_preserved": true,
+      "author_frozen_drafts_sha256": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "author_frozen_drafts_sha256_expected": "856c89f3808b757714ea79f59ca642417baa37dda69d30b59d29f13b2fa65715",
+      "original_reviews_still_same_sha256": "7104025e1cff720003b28d979403a56cd0b39ed79582c82adad7dd45a561d5bb"
+    }
+  },
+  "code_review": {
+    "reviewer": "/root/r22_originals",
+    "mode": "read_only_independent_code_review",
+    "reviewed_files": [
+      {
+        "path": "apply_round22_followups.py",
+        "sha256": "6aca8c609716f812da6f55dc61c811a1a9ab334bc8281f56bb2cc71fb517209e"
+      },
+      {
+        "path": "test_explanations.py",
+        "sha256": "6f677177870a16ad9b329c4290d5c7b72d0adc5a8e839dff29ae4d6b699d8410"
+      },
+      {
+        "path": "test_explanations_app.py",
+        "sha256": "929381c222ab70daec45d6660cd1b463ca19932f0639f20483f594faf02ba6ad"
+      }
+    ],
+    "repository_modified_by_reviewer": false,
+    "findings": [
+      {
+        "id": "R22_CODE_1",
+        "severity": "P2",
+        "status": "resolved_by_parent_and_reverified",
+        "path": "apply_round22_followups.py",
+        "line": 35,
+        "title": "register 행에서 명시 등록거부 QA를 허용하던 승인 게이트",
+        "why": "수정 전 approve는 status=pass, 서로 다른 작성자/검수자, exact row SHA 및 유효 source_reads만 검사하여 approved_decision=decline, registration_approved=False인 QA도 register 행에서 통과시켰습니다. 보류 승인이 실제 등록 승인으로 바뀔 수 있었습니다.",
+        "reproduction": "유효 보존본문 파일 SHA와 네 보기 pass를 가진 register 행으로 approve를 호출하여 수정 전 통과를 실제 확인했습니다.",
+        "minimal_fix": "register에는 approved_decision==register 및 registration_approved is True를 요구하고, 제공된 approved_decision이 어느 행이든 decision과 다르면 거절합니다.",
+        "resolution": "부모가35~39행에 적용했습니다. 동일 유효 보존본문으로 명시 등록승인 성공 및 approved_decision 단독거부/registration_approved 단독False/양쪽거부의3개실패를 독립 재현했습니다."
+      },
+      {
+        "id": "R22_CODE_2",
+        "severity": "P3",
+        "status": "open_test_input_fix",
+        "path": "test_explanations.py",
+        "line": 1462,
+        "title": "읽기 누락 등록 테스트가 새 승인필드 누락에서 먼저 실패합니다",
+        "why": "test_round22_rejects_self_review_stale_approval_and_unread_registration의 빈 source_reads 케이스는 registration_review에 approved_decision/registration_approved를 주지 않아 현재35행의 명시승인 검사에서 실패합니다. 읽기 누락 방어를 제거해도 이 assertion은 계속 통과하므로 원래 읽기누락 회귀검사를 하지 못합니다.",
+        "reproduction": "동일 빈 source_reads 입력으로 기존 QA는 explicit independent registration approval 오류, 승인필드를 채운 QA는 actual independent source reads 오류가 나는 것을 실제 호출하여 구분했습니다.",
+        "minimal_fix": "1462행 registration_review=dict(qa,proposal_sha256=digest(register),approved_decision='register',registration_approved=True)로 입력만 보완합니다. 새 테스트는 필요 없습니다."
+      }
+    ],
+    "review_checks": [
+      {
+        "topic": "기존4274 해설/1852sources/21차 원장",
+        "result": "현재 baseline 숫자4274/1852/held47을 직접 확인했습니다. 파일 전체SHA, 기존source 메타데이터 복사·불변검사, 기존 해설 개별digest 및 기존audit key digest 검사가 있습니다."
+      },
+      {
+        "topic": "47건 정확 배정·누락·중복",
+        "result": "unique_rows가 author/QA 중복을 거부하고 pending과author와QA의 exact set 동등성을 검사합니다. 현재 보호된 baseline pending은47건입니다."
+      },
+      {
+        "topic": "원본과 실제 근거",
+        "result": "source_evidence가 HTTPS·판본·locator·actually_read 및 파일 실측SHA를 확인하고, check_originals가 원문의 image/source_pdf/answer_pdf 경로·SHA·문항쪽·공통지시/키확인 표지를 묶습니다."
+      },
+      {
+        "topic": "제한 연산",
+        "result": "diagnostic_arithmetic 및 신규 note의 arithmetic(restricted=True)가 허용AST·유한숫자·계산결과를 확인합니다."
+      },
+      {
+        "topic": "두 파일 쓰기 및 rollback",
+        "result": "검사 완료 후 두 임시 파일을 먼저 쓰고 replace하며 일반 Exception에서 두 원본bytes를 복원하고 finally에서 임시파일을 제거합니다. 실제 통합 또는 실패주입 테스트는 수행하지 않았습니다."
+      },
+      {
+        "topic": "22차 역사 rollback 테스트",
+        "result": "setUpClass가22차 등록note와new source ref를 먼저 제거하고 original_review를 복원한 뒤21차부터 역순으로 복원합니다. 기존 자료의 보호 snapshot을 바꾸는 경로는 보이지 않았습니다."
+      },
+      {
+        "topic": "신규등록2건 앱 채점",
+        "result": "round22 registrations를 interactive_ids에 없는 경우 직접 append하여 status별 화면/실제채점/reload 경로에 진입시킵니다. 앱 브라우저 테스트 자체는 이번 검수에서 실행하지 않았습니다."
+      }
+    ],
+    "validation_scope": "유효 source cache를 이용한 approve 함수의 성공·거부 경로를 실행했습니다. 저장소 통합·전체 unittest·브라우저 테스트는 부모 담당이며 실행했다고 주장하지 않습니다.",
+    "open_runtime_defects": 0,
+    "open_test_defects": 1
+  },
+  "code_review_followup": {
+    "reviewer": "/root/r22_originals",
+    "kind": "followup_status_only",
+    "previous_report": "code-review.json",
+    "previous_report_sha256": "032b6c719a622dcb7f317d8d182e6a9d553178d26e067da12a0e3bf8f79b955c",
+    "finding_id": "R22_CODE_2",
+    "status": "resolved_by_parent_and_reverified",
+    "path": "test_explanations.py",
+    "read_locator": "test_round22_rejects_self_review_stale_approval_and_unread_registration: empty-source registration_review construction and assertRaisesRegex",
+    "current_file_sha256": "6f677177870a16ad9b329c4290d5c7b72d0adc5a8e839dff29ae4d6b699d8410",
+    "verification": "실제 테스트 입력에 approved_decision=register, registration_approved=True가 포함되며 assertRaisesRegex가 actual independent source reads 오류를 지정하는 것을 재독했습니다. 같은 입력으로 approve를 독립 호출하여 해당 읽기누락 오류를 확인했습니다.",
+    "observed_error": "sample: a registration needs actual independent source reads",
+    "new_findings": [],
+    "open_runtime_defects": 0,
+    "open_test_defects": 0,
+    "full_test_suite_run_by_reviewer": false,
+    "repository_modified_by_reviewer": false,
+    "previous_report_preserved": true
+  }
+}
