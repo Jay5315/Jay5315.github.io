@@ -193,7 +193,43 @@
   "original_answers_changed": false,
   "old_explanations_and_concepts_changed": false,
   "deployment": {
-    "status": "pending",
-    "reason": "Code/tests complete; verify exact pushed commit Pages run and public SHA before marking success"
+    "status": "success",
+    "code_commit": "2ba5deb33bd8b49408b75cd3033b8b17d8914c74",
+    "branches_pushed": [
+      "main",
+      "claude/practical-allen-zjsicv"
+    ],
+    "pages_run": {
+      "conclusion": "success",
+      "createdAt": "2026-10-14T08:19:19Z",
+      "databaseId": 38534279701,
+      "headSha": "2ba5deb33bd8b49408b75cd3033b8b17d8914c74",
+      "status": "completed",
+      "updatedAt": "2026-10-14T08:20:03Z",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38534279701"
+    },
+    "public_bank_data": {
+      "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js",
+      "http_status": 200,
+      "checked_at": "2026-10-14T08:21:00.053938+00:00",
+      "normal_tls_certificate_verification": true,
+      "local_sha256": "09c64b4f1e00560dc172657ca2db7943eaae89bb7f600d99354fb497ee76e089",
+      "public_sha256": "09c64b4f1e00560dc172657ca2db7943eaae89bb7f600d99354fb497ee76e089",
+      "sha256_matches": true,
+      "bytes": 20168500,
+      "response_headers": {
+        "ETag": "\"6acf3b29-133bf34\"",
+        "Last-Modified": "Wed, 14 Oct 2026 08:19:53 GMT",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Content-Length": "20168500",
+        "Cache-Control": "max-age=600",
+        "Age": "0"
+      },
+      "question_count": 4322,
+      "explanation_count": 4274,
+      "concept_count": 74,
+      "displayed_review_notes": 23
+    },
+    "documentation_followup": "다음 문서 커밋은 배포 확인 영수증만 추가하며 앱 데이터와 검증한 코드를 변경하지 않습니다."
   }
 }

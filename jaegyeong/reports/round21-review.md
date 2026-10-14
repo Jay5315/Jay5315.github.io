@@ -67,4 +67,8 @@
 - `test_browser`: exit 0; 2.503초; PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.
 - `test_explanations_app`: exit 0; 99.942초; PASS: all 4274 explanation bodies rendered; 169 grading flows (original 30 + new part/concept/calculation coverage), 18 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors
 
-명령·전체 출력·시간·출력 SHA와 배포 결과는 [21차 validation](round21-validation.json)에 기록합니다. 배포 결과는 해당 커밋의 Pages 성공과 공개 `assets/bank-data.js`의 로컬 SHA 일치를 실제 확인한 뒤 덧붙입니다.
+명령·전체 출력·시간·출력 SHA와 배포 결과는 [21차 validation](round21-validation.json)에 기록합니다.
+
+## 배포 확인
+
+배포 확인: 앱 변경 커밋 `2ba5deb33bd8b49408b75cd3033b8b17d8914c74`의 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38534279701)이 성공했습니다. 정상 TLS 공개 `assets/bank-data.js`의 SHA-256 `09c64b4f1e00560dc172657ca2db7943eaae89bb7f600d99354fb497ee76e089`이 로컬과 일치하고, 공개 데이터는 문제 4,322개·해설 4,274개·개념 74개·검토 의견 23개입니다. 이 확인 기록을 저장하는 후속 문서 커밋은 앱 데이터·테스트를 바꾸지 않습니다.
