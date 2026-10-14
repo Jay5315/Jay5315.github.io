@@ -1,0 +1,469 @@
+{
+  "checked_on": "2026-10-14",
+  "http_server": "http://127.0.0.1:8000/jaegyeong/",
+  "venv": "jaegyeong/.venv",
+  "chromium": "/usr/bin/chromium",
+  "tests": [
+    {
+      "name": "test_bank",
+      "command": "python3 scripts/test_bank.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.507,
+      "output_sha256": "2c77719b1ebd9c214964aa6732712d1297740f7dd7f91a488c9602ad08438204",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.347s\n\nOK\n",
+      "summary": [
+        "Ran 10 tests in 0.347s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_parts",
+      "command": "python3 scripts/test_parts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.491,
+      "output_sha256": "2e4c0bc03928d168643fcf22ec74ea5af5e8213dd3c2b38588d666014e1b91a2",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.316s\n\nOK\n",
+      "summary": [
+        "Ran 5 tests in 0.316s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_concepts",
+      "command": "python3 scripts/test_concepts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.384,
+      "output_sha256": "4914c60d6227dff52288580b98ecd0fed2d8ecd5775905908ed5c8c45b8740ef",
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.288s\n\nOK\n",
+      "summary": [
+        "Ran 7 tests in 0.288s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_explanations",
+      "command": "python3 scripts/test_explanations.py",
+      "exit_code": 0,
+      "elapsed_seconds": 16.407,
+      "output_sha256": "baef3f529fce523f7d6b6785fd187ebf4d847ac7e6801619aafae5e03cee790d",
+      "output": ".............................................\n----------------------------------------------------------------------\nRan 45 tests in 14.501s\n\nOK\n",
+      "summary": [
+        "Ran 45 tests in 14.501s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_app",
+      "command": "python3 scripts/test_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 26.131,
+      "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "summary": [
+        "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors"
+      ]
+    },
+    {
+      "name": "test_browser",
+      "command": "python3 scripts/test_browser.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.58,
+      "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n",
+      "summary": [
+        "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors."
+      ]
+    },
+    {
+      "name": "test_explanations_app",
+      "command": "python3 scripts/test_explanations_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 104.747,
+      "output_sha256": "1014960a1493bc3249e993c2b355b0d6a73911ebd5931b9aeefe8c0f1031d0ac",
+      "output": "PASS: all 4281 explanation bodies rendered; 176 grading flows (original 30 + new part/concept/calculation coverage), 18 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n",
+      "summary": [
+        "PASS: all 4281 explanation bodies rendered; 176 grading flows (original 30 + new part/concept/calculation coverage), 18 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors"
+      ]
+    }
+  ],
+  "all_seven_passed": true,
+  "data_integrity": {
+    "baseline_commit": "c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+    "old_explanations_preserved": 4277,
+    "old_sources_preserved": 1857,
+    "new_registrations": [
+      "2022-12-076",
+      "2023-11-075",
+      "2025-09-014",
+      "2025-09-081"
+    ],
+    "new_source_refs": [
+      "R23_W0_NTS_VAT_BASIC_2020",
+      "R24_W1_NTS_VAT_RELATED_ASSET_20041222",
+      "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "R24_W5_NTS_AD_GIFT_20020527",
+      "R24_W5_NTS_VAT_BASIC_2024"
+    ],
+    "all_prior_audit_keys_except_current_review_unchanged": true,
+    "original_review_preserved": true,
+    "current_review_exactly_pruned_for_registrations": true,
+    "protected_question_id_official_answers_and_app_files_unchanged": true,
+    "concepts_and_concept_audit_unchanged": true,
+    "root_site_unchanged": true,
+    "generated_bank_changed_sections": [
+      "explanationBasis",
+      "explanations"
+    ],
+    "tested_bank_sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03"
+  },
+  "csv_pruning": {
+    "removed_ids": [
+      "2025-09-081",
+      "2025-09-014",
+      "2023-11-075",
+      "2022-12-076"
+    ],
+    "before_sha256": "fcab0fdca7ba54faaf2f8beac0bf555da01f27bf9a1790638cd2691a35aaa16e",
+    "after_sha256": "46f17e1c2864006b2e48891c0ee1b8c898709568e36b5f5c066639277e7bf2ad",
+    "all_other_raw_lines_and_bom_lf_preserved": true
+  },
+  "registration_attempts": [
+    {
+      "stage": "registration validation before writing data",
+      "observed_error": "ValueError: 2022-12-076: incomplete arithmetic check",
+      "cause": "New authored note checks lacked the existing required nonempty label field on three arithmetic items. Expressions and expected results passed arithmetic checks.",
+      "data_file_sha256": "6aceda1c58d36c10d13134de399f3ff1c6dbe87e4c0a8d4d09b3a7359b8db01b",
+      "audit_file_sha256": "225ae61affd5ecfd090e554a632402513ddd87b93ecb5ab3917149b3046a7bce",
+      "data_and_audit_baseline_preserved": true,
+      "required_test_suites_started": false,
+      "action": "Author adds labels only in frozen-v3, same independent reviewer checks exact delta, complete schema validation repeated before retry.",
+      "dependent_commands_observed": "The shell continued to build unchanged baseline 4277 explanations; subsequent integrity checker reported KeyError round24_followups. No new data was applied.",
+      "rejected_inputs": {
+        "round24-proposals.json": "b9a23e46236cdb82409ae088854d11db22eac65dcd7629df9399f268e0d4d964",
+        "round24-independent-reviews.json": "5fcadecbe65e8cd1228e0164a0f2653f954d7a4669226355e66e407123ab7ae8"
+      }
+    },
+    {
+      "stage": "registration after exact label correction and reapproval",
+      "result": "success",
+      "registered_count": 4,
+      "remaining_count": 40,
+      "full_schema_preflight_passed": true,
+      "integrity": {
+        "baseline_commit": "c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+        "old_explanations_preserved": 4277,
+        "old_sources_preserved": 1857,
+        "new_registrations": [
+          "2022-12-076",
+          "2023-11-075",
+          "2025-09-014",
+          "2025-09-081"
+        ],
+        "new_source_refs": [
+          "R23_W0_NTS_VAT_BASIC_2020",
+          "R24_W1_NTS_VAT_RELATED_ASSET_20041222",
+          "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+          "R24_W5_NTS_AD_GIFT_20020527",
+          "R24_W5_NTS_VAT_BASIC_2024"
+        ],
+        "all_prior_audit_keys_except_current_review_unchanged": true,
+        "original_review_preserved": true,
+        "current_review_exactly_pruned_for_registrations": true,
+        "protected_question_id_official_answers_and_app_files_unchanged": true,
+        "concepts_and_concept_audit_unchanged": true,
+        "root_site_unchanged": true,
+        "generated_bank_changed_sections": [
+          "explanationBasis",
+          "explanations"
+        ],
+        "tested_bank_sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03"
+      }
+    }
+  ],
+  "parallel_execution": {
+    "new_subagents": 6,
+    "max_concurrent_subagents": 6,
+    "recursive_spawns": 0,
+    "assignments": 44,
+    "independent_reviews": 44,
+    "option_assessments": 176
+  },
+  "content_review_corrections": {
+    "candidates": 2,
+    "content_fields": 11,
+    "required_check_labels_added": 3,
+    "expressions_and_expected_values_unchanged": true
+  },
+  "mandatory_test_failures": 0,
+  "registration_validation_failures_before_success": 1,
+  "code_review": {
+    "reviewer": "r24_worker4_numeric_originals",
+    "date": "2026-10-14",
+    "scope": "Private staged round24 integration and regression additions; no repository mutations; synthetic gate checks are not content reviews.",
+    "files": [
+      {
+        "file": "/tmp/chagok-round24/apply_round24_followups.py",
+        "sha256": "3e19a037752f4210900ad79abc4bc784d2e1a6d3bb0ff25ef2d0a8b5ab9cecb7",
+        "compile": "pass"
+      },
+      {
+        "file": "/tmp/chagok-round24/test_explanations.py",
+        "sha256": "0c456d62d65e8124ece95993174aa9c48d617ae150e5ea75ba4b1ceee333fa99",
+        "compile": "pass"
+      },
+      {
+        "file": "/tmp/chagok-round24/test_explanations_app.py",
+        "sha256": "ce1b081060e89ef6e964ca1ee0e85a6c47ee04807a20e57f9575c80a78f9285c",
+        "compile": "pass"
+      }
+    ],
+    "required_changes": [],
+    "prior_test_methods": 44,
+    "new_test_methods": [
+      "test_round24_append_only_registrations_preserve_originals_and_earlier_audits"
+    ],
+    "prior_test_method_AST_unchanged": true,
+    "negative_gate_results": [
+      {
+        "case": "same author and reviewer",
+        "result": "rejected",
+        "error": "synthetic-gate-control: stale or non-independent approval"
+      },
+      {
+        "case": "stale row digest",
+        "result": "rejected",
+        "error": "synthetic-gate-control: stale or non-independent approval"
+      },
+      {
+        "case": "failed reviewer result",
+        "result": "rejected",
+        "error": "synthetic-gate-control: stale or non-independent approval"
+      },
+      {
+        "case": "unnamed reviewer",
+        "result": "rejected",
+        "error": "synthetic-gate-control: stale or non-independent approval"
+      },
+      {
+        "case": "missing fourth option",
+        "result": "rejected",
+        "error": "synthetic-gate-control: four specific original-option findings must pass"
+      },
+      {
+        "case": "registration without explicit grant",
+        "result": "rejected",
+        "error": "synthetic-gate-control: an explicit independent registration approval is required"
+      },
+      {
+        "case": "registration with no independent actual reads",
+        "result": "rejected",
+        "error": "synthetic-gate-control: a registration needs actual independent source reads"
+      }
+    ],
+    "findings": [
+      "24차 그룹을 23→22→21 및 기존 원장보다 먼저 되돌립니다. 기존 44개 test 메서드 AST는 모두 같습니다.",
+      "질문·기존 review 행 SHA 결합, 전 입력 파일 SHA, 기존 해설·출처·개념·불변 파일·과거 원장 해시 보호를 유지합니다. 현재 review만 등록 행을 제거하며 original_review에 변경 전 목록을 보존합니다.",
+      "작성자와 검수자 구별, 정확한 승인 행 SHA, 네 보기의 pass, register 명시 승인, 실제 읽은 출처 파일 SHA 및 원본 문항/답안/공통 지시 확인을 등록 전에 검사합니다.",
+      "새 출처는 실제 새 해설에서 인용한 ref만 수용하므로 보류 조사용 source metadata는 통합 proposal.sources에서 제외해야 합니다.",
+      "기존 앱 채점 대상에 24차 등록 문항만 더하며 공식 키나 사용자 저장 형식을 바꾸는 코드가 없습니다.",
+      "동일 승인 입력 재적용은 no-op이고 다른 입력은 거부합니다. 2개 데이터 파일 저장 중 예외에는 원본 바이트를 복원합니다."
+    ],
+    "limitations": [
+      "아직 전체 승인 입력을 대상으로 적용하거나 필수 7개 회귀 테스트를 실행한 검수가 아닙니다. 이는 메인 에이전트가 통합 후 실행해야 합니다.",
+      "private 위치의 apply 파일은 R이 /tmp로 계산되므로 실제 적용 전에 repo/scripts로 옮기거나 격리된 테스트 루트로 명시적으로 결합해야 합니다. 정식 배치 경로를 전제로 검수했습니다.",
+      "코드상 게이트 확인은 해설 내용의 사실적 타당성을 대신하지 않습니다. 별도 작성자와 내용 검수자의 원문 대조가 필요합니다."
+    ]
+  },
+  "final_document_review": {
+    "input_sha256": "acd31ee9c04d70a8500dddb3b699d7935dfe13c9d91d29b6473f5a35247064ca",
+    "receipt": {
+      "checked_at_utc": "2026-10-14T15:34:18.428611+00:00",
+      "reviewer": "r24_docs_final_review",
+      "actual_reviewer_session": "/root/r24_tax_keys",
+      "status": "pass",
+      "required_changes": [],
+      "scope": "최종 문서의 최신 절, 실제 집계·작성/독립 검수 원장·회귀 출력·적용 실패 및 수정 이력·기존 데이터 보존·보류 CSV를 대조한 문서 검수입니다. 이 문서 검수만으로 다른 작업자가 읽은 외부 본문 전체를 재독했다고 주장하지 않습니다.",
+      "baseline_commit": "c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "actual_current_counts": {
+        "explanations": 4281,
+        "source_checked": 4159,
+        "partial": 122,
+        "new_partial_explanations": 4,
+        "new_source_checked_explanations": 0,
+        "remaining_unregistered": 40,
+        "remaining_categories": {
+          "source_unverified": 10,
+          "answer_suspected": 18,
+          "parse_problem": 10,
+          "calculation_unresolved": 2
+        },
+        "sources": 1862,
+        "new_source_definitions": 5
+      },
+      "independent_review_checks": {
+        "authored_rows": 44,
+        "review_rows": 44,
+        "unique_review_ids": 44,
+        "all_proposal_hashes_match": true,
+        "all_authors_differ_from_reviewers": true,
+        "passed_option_assessments": 176,
+        "new_subagents": 6,
+        "max_concurrent_subagents": 6,
+        "recursive_spawns": 0
+      },
+      "corrections_and_failures": {
+        "corrected_candidates": 2,
+        "content_fields": 11,
+        "additional_required_check_labels": 3,
+        "total_requested_fields": 14,
+        "registration_schema_rejections_before_success": 1,
+        "first_rejection_before_data_write": true,
+        "initial_data_and_audit_hashes_preserved": true,
+        "registration_retry_success": true,
+        "mandatory_test_failures": 0,
+        "distinction": "076의 첫 등록 게이트는 필수 checks.label 3개 누락으로 실패했습니다. 독립 검수 후 라벨만 추가해 성공했으며 필수 테스트 7개는 이후 모두 종료 코드 0으로 통과했습니다."
+      },
+      "data_integrity": {
+        "independent_baseline_object_comparison": true,
+        "old_explanations_preserved": 4277,
+        "old_sources_preserved": 1857,
+        "all_prior_audit_keys_except_current_review_preserved": true,
+        "old_review_44_rows_preserved_in_original_review": true,
+        "current_review_only_four_registered_rows_removed": true,
+        "csv_ids_and_order_match_current_review": true,
+        "latest_remaining_csv_40_ids_and_reasons_match_authored_declines": true,
+        "csv_lf_preserved": true,
+        "tested_bank_hash_matches_current_file": true,
+        "tested_bank_sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03",
+        "protected_question_id_answers_app_root_and_concepts": "integrity.json 및 최종 validation의 실제 비교 결과가 보존을 확인합니다."
+      },
+      "source_claim_review": {
+        "new_source_definitions_are_not_new_literature_count": true,
+        "existing_2020_vat_ref_reuse_explicit": true,
+        "actual_reads_230_and_distinct_url_sha_pairs_94_are_not_claimed_as_new_documents": true,
+        "new_external_documents_vs_rereads_vs_old_original_reuse_distinguished": true,
+        "new_notes_all_partial_limitations_explicit": true
+      },
+      "tests": [
+        {
+          "name": "test_bank",
+          "exit_code": 0,
+          "output_sha256": "2c77719b1ebd9c214964aa6732712d1297740f7dd7f91a488c9602ad08438204"
+        },
+        {
+          "name": "test_parts",
+          "exit_code": 0,
+          "output_sha256": "2e4c0bc03928d168643fcf22ec74ea5af5e8213dd3c2b38588d666014e1b91a2"
+        },
+        {
+          "name": "test_concepts",
+          "exit_code": 0,
+          "output_sha256": "4914c60d6227dff52288580b98ecd0fed2d8ecd5775905908ed5c8c45b8740ef"
+        },
+        {
+          "name": "test_explanations",
+          "exit_code": 0,
+          "output_sha256": "baef3f529fce523f7d6b6785fd187ebf4d847ac7e6801619aafae5e03cee790d"
+        },
+        {
+          "name": "test_app",
+          "exit_code": 0,
+          "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8"
+        },
+        {
+          "name": "test_browser",
+          "exit_code": 0,
+          "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236"
+        },
+        {
+          "name": "test_explanations_app",
+          "exit_code": 0,
+          "output_sha256": "1014960a1493bc3249e993c2b355b0d6a73911ebd5931b9aeefe8c0f1031d0ac"
+        }
+      ],
+      "all_seven_output_hashes_match_saved_logs": true,
+      "deployment": {
+        "status": "pending",
+        "success_certified": false,
+        "reviewed_statement": "현재 보고서의 배포 확인 대기 문구는 정확합니다. 이번 검수는 저장·Pages 성공·공개 SHA 일치를 확인하지 않았습니다. 이후 실제 배포 증거가 필요합니다."
+      },
+      "document_checks": {
+        "current_counts_consistent_across_four_docs": true,
+        "historical_round23_counts_not_misreported_as_round24": true,
+        "preservation_exception_for_current_review_explicit": true,
+        "newest_first_audit_order_includes_round21": true,
+        "reviewed_taxable_related_agricultural_sales_ratio_wording": true,
+        "mandatory_tests_and_registration_gate_failure_distinguished": true
+      },
+      "nonblocking_copyedit_observation": "최초 읽기에서 관찰한 24차 최신 문서의 숫자·영문 식별자 앞 띄어쓰기는 docs-spacing-receipt.json에 기록된 문서 교정으로 반영 완료됐습니다. 교정한 실제 최종 본문을 다시 읽었고 관련 사업의 과세 매출 비율 표현, 법령명, 집계와 보류 한계가 정확합니다. 내용 오류나 남은 필수 수정은 없습니다.",
+      "files_reviewed": [
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-review.md",
+          "sha256": "295af185dfb513e380bf835c173a5db9a6cc0685bcc3f46f5380de30c4d6be8a"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/HANDOFF.md",
+          "sha256": "9b13f186428b8f3f1cd055680a1c820c05c057bfc7830c38cd6749b720ae9130"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/README.md",
+          "sha256": "d70879cc23d82304aed90d510765282d4b5645524d47e36d88790b2093a54915"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/EXPLANATIONS.md",
+          "sha256": "cc357eff7159c32fa86780686988f2f853e555097efc5bd84e8d3efa99d5b5ff"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-validation.json",
+          "sha256": "bc74ad50ae4f42b01e8c6f2fad76b8959707dbbd74d19745383eb787c666ee9a"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-revisions.json",
+          "sha256": "e8d0096875d6bd4f72e401eef0c5c58caa4eb3752987060367a252b3a7f39a1a"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-proposals.json",
+          "sha256": "40256a3ad436668f711d8bb7f14bd3ba7b09a445558da44bce43e06fb7c50328"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-independent-reviews.json",
+          "sha256": "eda305b22b1a88c05e150c04012f10d02c72d898535ea38b731707f51794531d"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round24-preflight.json",
+          "sha256": "a969782661430dabdcca5213e9c128332549440071af14d2f48f4d406a7740fa"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/해설추가검토목록.csv",
+          "sha256": "46f17e1c2864006b2e48891c0ee1b8c898709568e36b5f5c066639277e7bf2ad"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/남은40건_확인사항.csv",
+          "sha256": "3a96ac723949bbdeb3051c0456615a8298275c08162cf59049645416041da4b9"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/data/explanations.json",
+          "sha256": "901671ff6cd74065f37de32051ed368ba835329e7adb5527ff723be3f0fa6cbd"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/reports/explanation-expansion.json",
+          "sha256": "542f95af81a5bb535527c0c4420020b390990c2a44a9642eb3fd1e12b454c82f"
+        },
+        {
+          "path": "/workspace/Jay5315.github.io/jaegyeong/assets/bank-data.js",
+          "sha256": "78496f7c5a13c4a80f4c7db489167704d8dfccfde737bba8b0d6ebd885c65e03"
+        }
+      ],
+      "repository_mutations_by_reviewer": false,
+      "final_spacing_review": {
+        "receipt_path": "/tmp/chagok-round24/docs-spacing-receipt.json",
+        "receipt_sha256": "aea648a7c5d0fdc6ee6a01ca7e328593765cfe6204b961e4ce9e3bdb20e76ce3",
+        "all_after_hashes_match_current_files": true,
+        "actual_reread_latest_sections": true,
+        "required_changes": [],
+        "data_and_test_reports_unchanged": true
+      }
+    },
+    "subsequent_changes": "이 검수 결과를 validation에 첨부하며, 이후 실제 배포 확인 결과만 문서에 추가합니다. 앱 데이터와 테스트 코드는 그대로입니다."
+  }
+}

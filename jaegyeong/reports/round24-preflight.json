@@ -1,0 +1,2922 @@
+{
+  "checked_on": "2026-10-14",
+  "baseline_commit": "c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+  "actual_workers": 6,
+  "newly_spawned_workers": 6,
+  "max_concurrent_subagents": 6,
+  "inspected_count": 44,
+  "independent_reviews": 44,
+  "registered_candidates": [
+    "2025-09-014",
+    "2022-12-076",
+    "2025-09-081",
+    "2023-11-075"
+  ],
+  "candidate_statuses": {
+    "2025-09-014": "partial",
+    "2022-12-076": "partial",
+    "2025-09-081": "partial",
+    "2023-11-075": "partial"
+  },
+  "continued_hold_count": 40,
+  "new_cited_source_refs": [
+    "R23_W0_NTS_VAT_BASIC_2020",
+    "R24_W1_NTS_VAT_RELATED_ASSET_20041222",
+    "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+    "R24_W5_NTS_AD_GIFT_20020527",
+    "R24_W5_NTS_VAT_BASIC_2024"
+  ],
+  "actual_author_and_reviewer_read_records": 230,
+  "distinct_url_file_sha_pairs": 94,
+  "all_actual_body_hashes_recomputed": true,
+  "new_notes_full_schema_checked": true,
+  "all_candidate_originals_images_pdf_pages_instructions_keys_bound": true,
+  "all_raw_rows_have_exact_distinct_author_approvals": true,
+  "frozen_files": [
+    {
+      "path": "worker0/freeze-v1/drafts.json",
+      "sha256": "b8e69e25ac893ecf447ea6b4ab47eec399704ab07f4c42cd805cda5798bfa3c2"
+    },
+    {
+      "path": "review0/freeze-v1/reviews.json",
+      "sha256": "fa56f0da0666cdc8e4ac601af20117b99fd902ff17ed4314443fbfde020add1f"
+    },
+    {
+      "path": "worker1/freeze-v3/drafts.json",
+      "sha256": "201201955c718ee224d95df929c0bbbe19177f0ce9b2adf2cd5763b2a28d37bc"
+    },
+    {
+      "path": "review1/freeze-v2/reviews.json",
+      "sha256": "e5cfe1e28db1b0fad849d56338f9469886bbcb529393ab6192df83af80566278"
+    },
+    {
+      "path": "worker2/freeze-v2/drafts.json",
+      "sha256": "882800a5ffa1810f1c7127bdfc4c3d7c74d3d8ada55dbca82b8f626458a6a8f8"
+    },
+    {
+      "path": "review2/freeze-v1/reviews.json",
+      "sha256": "c4184348e79d7d058b769d855d33463e4b491079b4bd4d6d886ca4710937f563"
+    },
+    {
+      "path": "worker3/freeze-v1/drafts.json",
+      "sha256": "62a33cb998c7d46973d756c24ebcebe166ef4904626e4aeb823d732f7de8a51e"
+    },
+    {
+      "path": "review3/freeze-v1/reviews.json",
+      "sha256": "5e1da2bc3bcf3e1b20101e7feaa4c1d13ec36fdd749c1f5d10daf60ad670c169"
+    },
+    {
+      "path": "worker4/freeze-v1/drafts.json",
+      "sha256": "b9e583013cb107ec2271c664a87a571721e669522dd85aafa5cd9e052a45c8c8"
+    },
+    {
+      "path": "review4/freeze-v2/reviews.json",
+      "sha256": "e04e247c8b45adb7fa80cf01c4bdb8934298a2763b8d2b3d52c3f83f4c719690"
+    },
+    {
+      "path": "worker5/freeze-v1/drafts.json",
+      "sha256": "2a3faff063ce77a0e34ecd673867db73878ad2a8c3cfeb4ea97c069bb545e41a"
+    },
+    {
+      "path": "review5/freeze-v1/reviews.json",
+      "sha256": "9e83d742da34c26c6a888d0970bf9a226a429b767db2b25142d2db1f9d167f33"
+    }
+  ],
+  "approved_input_sha256": {
+    "round24-proposals.json": "40256a3ad436668f711d8bb7f14bd3ba7b09a445558da44bce43e06fb7c50328",
+    "round24-independent-reviews.json": "eda305b22b1a88c05e150c04012f10d02c72d898535ea38b731707f51794531d"
+  },
+  "source_reads": [
+    {
+      "ref": "ORIGINAL_2025-09_QUESTIONS",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-questions.pdf",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 5쪽 14번 본문·4개 보기와 PDF 1쪽 과목 공통지시를 PyMuPDF 텍스트로 직접 읽었습니다.",
+      "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09_ANSWERS",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-answers.pdf",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 재무회계 14번=4를 텍스트와 렌더링 이미지로 직접 확인했습니다.",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09-014_IMAGE",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-09-014.webp",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "원본 문항 이미지를 view_image로 직접 읽었고, ①은 토지가 아니라 부동산임을 확인했습니다.",
+      "sha256": "919a37b09b99c314af3c708ca79f3df96afce45e8b84365974f18abb9cc8c008",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다."
+    },
+    {
+      "ref": "R6_FIN02_KASB1040",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "제1040호 투자부동산 · 2017 개정·2021 타기준서 제정·수정목록24-1·2020 구성양식 변경 반영; 표지 2021.4.23 의결",
+      "read_locator": "PDF 1쪽 표지, 9~12쪽 문단5·7·8(2)/(4)·9(3)·11~14, 33~34쪽 한85.1·85C~H 시행일을 실제 텍스트로 재독했습니다.",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 PDF를 재독했습니다. 새로운 기준서 판본이나 ①의 모든 부동산을 토지로 취급하는 근거를 얻었다는 주장이 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09_QUESTIONS",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-questions.pdf",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 PDF 1쪽 공통지시와 5쪽 14번 본문·네 보기를 PyMuPDF 텍스트로 직접 읽고 문항 이미지와 대조했습니다.",
+      "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 지정된 원파일과 본문을 직접 재독했습니다. 작성자의 판독을 재사용한 것으로 표시하지 않습니다. 신규 외부 다운로드나 출제기관 정정본 확보는 아닙니다. 보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다.",
+      "reader": "r24_worker3_tax_keys_independent_reviewer"
+    },
+    {
+      "ref": "ORIGINAL_2025-09_ANSWERS",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-answers.pdf",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 PDF 1쪽 재무회계 14번=4를 텍스트로 읽고 별도 생성한 answer-1.png를 view_image로 직접 확인했습니다.",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 지정된 원파일과 본문을 직접 재독했습니다. 작성자의 판독을 재사용한 것으로 표시하지 않습니다. 신규 외부 다운로드나 출제기관 정정본 확보는 아닙니다. 보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다.",
+      "reader": "r24_worker3_tax_keys_independent_reviewer"
+    },
+    {
+      "ref": "ORIGINAL_2025-09-014_IMAGE",
+      "url": "https://raw.githubusercontent.com/Jay5315/Jay5315.github.io/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-09-014.webp",
+      "version": "사용자 보관 2025년 9월 기출·확정답안, 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 저장소 원본 문항 이미지를 view_image로 직접 읽었습니다. ① 부동산, ④ 공장 건설 부지, 제조업 보유자 조건을 확인했습니다.",
+      "sha256": "919a37b09b99c314af3c708ca79f3df96afce45e8b84365974f18abb9cc8c008",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 지정된 원파일과 본문을 직접 재독했습니다. 작성자의 판독을 재사용한 것으로 표시하지 않습니다. 신규 외부 다운로드나 출제기관 정정본 확보는 아닙니다. 보관된 출제기관 문항·답안을 이번 작성자가 직접 재독했습니다. 출제기관 정오표나 수정본을 새로 내려받은 것은 아닙니다.",
+      "reader": "r24_worker3_tax_keys_independent_reviewer"
+    },
+    {
+      "ref": "R6_FIN02_KASB1040",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "제1040호 투자부동산 · 2017 개정·2021 타기준서 제정·수정목록24-1·2020 구성양식 변경 반영; 표지 2021.4.23 의결",
+      "read_locator": "검수자가 PDF 1쪽 표지, 9~12쪽 문단5·7·8(2)/(4)·9(3)·11~14, 33~34쪽 한85.1·85C~H를 실제 텍스트로 읽었습니다. 기존 출처 메타데이터의 내려받기 번호·판본도 별도 대조했습니다.",
+      "sha256": "71b9c44806404be2cb57a5ed396c7855389daa4f88e5dcc7c2d128fc49fb51a3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 지정된 원파일과 본문을 직접 재독했습니다. 작성자의 판독을 재사용한 것으로 표시하지 않습니다. 신규 외부 다운로드나 출제기관 정정본 확보는 아닙니다. 기존 공식 PDF를 재독했습니다. 새로운 기준서 판본이나 ①의 모든 부동산을 토지로 취급하는 근거를 얻었다는 주장이 아닙니다.",
+      "reader": "r24_worker3_tax_keys_independent_reviewer"
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2009_07",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2009/ias-7-july-2009.pdf",
+      "version": "IFRIC 공식 agenda decision · July 2009",
+      "read_locator": "PDF 1쪽 전체: 단기 현금수요 목적·최초 투자 당시 알려진 회수액·경미한 가치변동위험, 임의 시점 시장가격 전환 가능성만으로는 분류 불충분",
+      "sha256": "00b69cb7acc98c28ed958fd867e459ea45eb977375ed993ce79bede5e7cbd87c",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "공식 해석위원회의 agenda decision을 새로 정상 TLS 다운로드하여 직접 읽었습니다. CD 개별 상품의 미제시 취득일·만기·보유 목적·위험을 채우는 자료가 아닙니다."
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2013_05",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2013/ias-7-may-2013.pdf",
+      "version": "IFRIC 공식 agenda decision · May 2013",
+      "read_locator": "PDF 1쪽 전체: 결산일 잔여만기와 취득일부터 만기의 구별, 단기 현금수요 목적과 취득일부터 짧은 만기",
+      "sha256": "9edf7409a4a86328aacf13aadfdeb1fa7108a8507acfa2d3822939914daa5493",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "공식 해석위원회의 agenda decision을 새로 정상 TLS 다운로드하여 직접 읽었습니다. CD 개별 상품의 미제시 취득일·만기·보유 목적·위험을 채우는 자료가 아닙니다."
+    },
+    {
+      "ref": "R24_W0_IFRS_IAS7_OVERVIEW",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/",
+      "version": "IFRS Foundation IAS7 개요 · 2026-10-14 현재 공개 페이지",
+      "read_locator": "About 중 cash on hand/demand deposits와 cash equivalents 정의, Standard history의 2023·2024 후속 개정 표제를 읽었습니다.",
+      "sha256": "1a7439cdfcefe295a6e9be6a8904b3591cd2fc3de40d646c161d27a90578a07c",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "현재 개요이며 2024 IFRS18 후속 개정을 2022 문항에 소급하지 않습니다. 연구 배경으로만 사용합니다."
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2009_07",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2009/ias-7-july-2009.pdf",
+      "version": "IFRIC 공식 agenda decision · July 2009",
+      "read_locator": "PDF 1쪽 전체: 단기 현금수요 목적·최초 투자 당시 알려진 회수액·경미한 가치변동위험, 임의 시점 시장가격 전환 가능성만으로는 분류 불충분",
+      "sha256": "00b69cb7acc98c28ed958fd867e459ea45eb977375ed993ce79bede5e7cbd87c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 공식 해석위원회의 agenda decision을 새로 정상 TLS 다운로드하여 직접 읽었습니다. CD 개별 상품의 미제시 취득일·만기·보유 목적·위험을 채우는 자료가 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R24_W0_IFRIC_IAS7_2013_05",
+      "url": "https://www.ifrs.org/content/dam/ifrs/supporting-implementation/agenda-decisions/2013/ias-7-may-2013.pdf",
+      "version": "IFRIC 공식 agenda decision · May 2013",
+      "read_locator": "PDF 1쪽 전체: 결산일 잔여만기와 취득일부터 만기의 구별, 단기 현금수요 목적과 취득일부터 짧은 만기",
+      "sha256": "9edf7409a4a86328aacf13aadfdeb1fa7108a8507acfa2d3822939914daa5493",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 공식 해석위원회의 agenda decision을 새로 정상 TLS 다운로드하여 직접 읽었습니다. CD 개별 상품의 미제시 취득일·만기·보유 목적·위험을 채우는 자료가 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R24_W0_IFRS_IAS7_OVERVIEW",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/",
+      "version": "IFRS Foundation IAS7 개요 · 2026-10-14 현재 공개 페이지",
+      "read_locator": "About 중 cash on hand/demand deposits와 cash equivalents 정의, Standard history의 2023·2024 후속 개정 표제를 읽었습니다.",
+      "sha256": "1a7439cdfcefe295a6e9be6a8904b3591cd2fc3de40d646c161d27a90578a07c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 현재 개요이며 2024 IFRS18 후속 개정을 2022 문항에 소급하지 않습니다. 연구 배경으로만 사용합니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R6_F04_K1102",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영)",
+      "read_locator": "PDF1쪽 표지, 20~21쪽 문단30~33, 40~43쪽 부록B1~B8(특히B6의 6개 평가요소), 99~101쪽 IG18/19·사례12의 공정가치/내재가치 별도열을 직접 재독했습니다.",
+      "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 PDF 재독이며 새 판본이 아닙니다. 부록B의 옵션 평가요소를 참고하되 원문에 없는 변수나 SAR의 시간가치를 만들어 넣지 않습니다."
+    },
+    {
+      "ref": "R6_F04_K1102",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1102호_주식기준보상(2016_개정_2019_타기준서_개정_수정목록_24-1_2020_구성양식_변경_반영)",
+      "read_locator": "검수자가 PDF1쪽 표지,20~21쪽 문단30~33,41~43쪽 부록B1~B8의 지정 범위(B8 도입부 포함),99~101쪽 IG18/19 및 사례12의 공정가치/내재가치 표를 실제 재독했습니다.",
+      "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 기존 공식 PDF 재독이며 새 판본이 아닙니다. 부록B의 옵션 평가요소를 참고하되 원문에 없는 변수나 SAR의 시간가치를 만들어 넣지 않습니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP22",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "2023-09-15 의결 · 기존 공식 공개PDF 보존본",
+      "read_locator": "PDF43~44쪽 공시 예시의 기부금 한도초과·법인세비용; PDF46~47쪽 사례6 기부금 한도초과 별표의 일시적차이 미발생, PDF58쪽 사례7의 같은 별표를 직접 재독했습니다.",
+      "sha256": "5a6e55ca2727d9fdda5a944ca005a8e09d3e9a47eca53bf4aa25616e3c52e704",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "21·22차에 이미 읽은 일반기업회계기준 사례의 재독입니다. K-IFRS 적용 국내 기부금 이월공제의 분류를 직접 확정하는 신규 근거가 아닙니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "전체 텍스트에서 기부금 용어 위치 검색 후 PDF75~76·81쪽(인쇄76~77·82쪽)의 자선기부금 명시 조건과 공제불가 세효과 표를 직접 읽었습니다.",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 K-IFRS PDF 사례입니다. 자선기부금은 세무상 공제되지 않는다는 가정이 명시되어 있어, 이월공제 대상 국내 기부금 한도초과로 자동 확장하지 않습니다. 이 문서는 이번 신규 발견이 아닙니다."
+    },
+    {
+      "ref": "R24_W0_KASB_LOSS40606",
+      "url": "https://www.kasb.or.kr/front/board/View016005.do?seq=40606&ctgCd=016005",
+      "version": "한국회계기준원 K-IFRS 신속처리질의 · 회신2024-03-14·공개2025-03-18",
+      "read_locator": "질의·회신·제1012호5/29 인용·신속처리 개인견해 유의문 전체를 읽었습니다. CU1,000의 차감일시차이가 소멸한 뒤 CU400 세무상결손금으로 이월되는 계산을 구별합니다.",
+      "sha256": "5e49795cec28a3a7f3096e6c67424f251f7de03619a925532b4ba9e2d9a7a99c",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "정상 TLS로 이번 다시 내려받았으나 같은 문서는 22차 kifrs_loss_carry에 이미 있습니다. 새 발견으로 세지 않습니다. 신속처리 연구원 개인견해이며 정규 공식 의견과 다를 수 있습니다. 2023~2024 기출에 미래 공개 회신을 소급하는 근거가 아니고 기부금을 명명하지 않습니다."
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP22",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "2023-09-15 의결 · 기존 공식 공개PDF 보존본",
+      "read_locator": "PDF43~44쪽 공시 예시의 기부금 한도초과·법인세비용; PDF46~47쪽 사례6 기부금 한도초과 별표의 일시적차이 미발생, PDF58쪽 사례7의 같은 별표를 직접 재독했습니다.",
+      "sha256": "5a6e55ca2727d9fdda5a944ca005a8e09d3e9a47eca53bf4aa25616e3c52e704",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 21·22차에 이미 읽은 일반기업회계기준 사례의 재독입니다. K-IFRS 적용 국내 기부금 이월공제의 분류를 직접 확정하는 신규 근거가 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "전체 텍스트에서 기부금 용어 위치 검색 후 PDF75~76·81쪽(인쇄76~77·82쪽)의 자선기부금 명시 조건과 공제불가 세효과 표를 직접 읽었습니다. 검수자는 PDF11~14쪽 문단5·7~9 및 PDF47쪽 문단68B도 직접 읽어 비인식 비용의 세무기준액을 대조했습니다.",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 기존 공식 K-IFRS PDF 사례입니다. 자선기부금은 세무상 공제되지 않는다는 가정이 명시되어 있어, 이월공제 대상 국내 기부금 한도초과로 자동 확장하지 않습니다. 이 문서는 이번 신규 발견이 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R24_W0_KASB_LOSS40606",
+      "url": "https://www.kasb.or.kr/front/board/View016005.do?seq=40606&ctgCd=016005",
+      "version": "한국회계기준원 K-IFRS 신속처리질의 · 회신2024-03-14·공개2025-03-18",
+      "read_locator": "질의·회신·제1012호5/29 인용·신속처리 개인견해 유의문 전체를 읽었습니다. CU1,000의 차감일시차이가 소멸한 뒤 CU400 세무상결손금으로 이월되는 계산을 구별합니다.",
+      "sha256": "5e49795cec28a3a7f3096e6c67424f251f7de03619a925532b4ba9e2d9a7a99c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 정상 TLS로 이번 다시 내려받았으나 같은 문서는 22차 kifrs_loss_carry에 이미 있습니다. 새 발견으로 세지 않습니다. 신속처리 연구원 개인견해이며 정규 공식 의견과 다를 수 있습니다. 2023~2024 기출에 미래 공개 회신을 소급하는 근거가 아니고 기부금을 명명하지 않습니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP22",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "2023-09-15 의결 · 기존 공식 공개PDF 보존본",
+      "read_locator": "PDF43~44쪽 공시 예시의 기부금 한도초과·법인세비용; PDF46~47쪽 사례6 기부금 한도초과 별표의 일시적차이 미발생, PDF58쪽 사례7의 같은 별표를 직접 재독했습니다.",
+      "sha256": "5a6e55ca2727d9fdda5a944ca005a8e09d3e9a47eca53bf4aa25616e3c52e704",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "21·22차에 이미 읽은 일반기업회계기준 사례의 재독입니다. K-IFRS 적용 국내 기부금 이월공제의 분류를 직접 확정하는 신규 근거가 아닙니다."
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "전체 텍스트에서 기부금 용어 위치 검색 후 PDF75~76·81쪽(인쇄76~77·82쪽)의 자선기부금 명시 조건과 공제불가 세효과 표를 직접 읽었습니다.",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 K-IFRS PDF 사례입니다. 자선기부금은 세무상 공제되지 않는다는 가정이 명시되어 있어, 이월공제 대상 국내 기부금 한도초과로 자동 확장하지 않습니다. 이 문서는 이번 신규 발견이 아닙니다."
+    },
+    {
+      "ref": "R24_W0_KASB_LOSS40606",
+      "url": "https://www.kasb.or.kr/front/board/View016005.do?seq=40606&ctgCd=016005",
+      "version": "한국회계기준원 K-IFRS 신속처리질의 · 회신2024-03-14·공개2025-03-18",
+      "read_locator": "질의·회신·제1012호5/29 인용·신속처리 개인견해 유의문 전체를 읽었습니다. CU1,000의 차감일시차이가 소멸한 뒤 CU400 세무상결손금으로 이월되는 계산을 구별합니다.",
+      "sha256": "5e49795cec28a3a7f3096e6c67424f251f7de03619a925532b4ba9e2d9a7a99c",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "정상 TLS로 이번 다시 내려받았으나 같은 문서는 22차 kifrs_loss_carry에 이미 있습니다. 새 발견으로 세지 않습니다. 신속처리 연구원 개인견해이며 정규 공식 의견과 다를 수 있습니다. 2023~2024 기출에 미래 공개 회신을 소급하는 근거가 아니고 기부금을 명명하지 않습니다."
+    },
+    {
+      "ref": "P20_FINANCE_KASB_GAAP22",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "2023-09-15 의결 · 기존 공식 공개PDF 보존본",
+      "read_locator": "PDF43~44쪽 공시 예시의 기부금 한도초과·법인세비용; PDF46~47쪽 사례6 기부금 한도초과 별표의 일시적차이 미발생, PDF58쪽 사례7의 같은 별표를 직접 재독했습니다.",
+      "sha256": "5a6e55ca2727d9fdda5a944ca005a8e09d3e9a47eca53bf4aa25616e3c52e704",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 21·22차에 이미 읽은 일반기업회계기준 사례의 재독입니다. K-IFRS 적용 국내 기부금 이월공제의 분류를 직접 확정하는 신규 근거가 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "CROSS_FINANCE01_KASB_1012",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1012호_법인세(2023_개정_2018_타기준서_개정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "전체 텍스트에서 기부금 용어 위치 검색 후 PDF75~76·81쪽(인쇄76~77·82쪽)의 자선기부금 명시 조건과 공제불가 세효과 표를 직접 읽었습니다. 검수자는 PDF11~14쪽 문단5·7~9 및 PDF47쪽 문단68B도 직접 읽어 비인식 비용의 세무기준액을 대조했습니다.",
+      "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 기존 공식 K-IFRS PDF 사례입니다. 자선기부금은 세무상 공제되지 않는다는 가정이 명시되어 있어, 이월공제 대상 국내 기부금 한도초과로 자동 확장하지 않습니다. 이 문서는 이번 신규 발견이 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R24_W0_KASB_LOSS40606",
+      "url": "https://www.kasb.or.kr/front/board/View016005.do?seq=40606&ctgCd=016005",
+      "version": "한국회계기준원 K-IFRS 신속처리질의 · 회신2024-03-14·공개2025-03-18",
+      "read_locator": "질의·회신·제1012호5/29 인용·신속처리 개인견해 유의문 전체를 읽었습니다. CU1,000의 차감일시차이가 소멸한 뒤 CU400 세무상결손금으로 이월되는 계산을 구별합니다.",
+      "sha256": "5e49795cec28a3a7f3096e6c67424f251f7de03619a925532b4ba9e2d9a7a99c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 정상 TLS로 이번 다시 내려받았으나 같은 문서는 22차 kifrs_loss_carry에 이미 있습니다. 새 발견으로 세지 않습니다. 신속처리 연구원 개인견해이며 정규 공식 의견과 다를 수 있습니다. 2023~2024 기출에 미래 공개 회신을 소급하는 근거가 아니고 기부금을 명명하지 않습니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R6_F03_K1033",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+      "read_locator": "PDF1쪽 표지 및 PDF13~14쪽 문단19~21의 가중평균 유통보통주식수·유통기간 비율·발행거래별 기산일을 직접 재독했습니다.",
+      "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 공식 기준서 재독이며 새 판본이나 신설법인 자동 전기간 기산 특례의 발견이 아닙니다."
+    },
+    {
+      "ref": "R6_F03_K1033",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중 PDF · 2007 제정·2015 타기준서 제정·수정목록23-1·2020 구성양식 변경 반영",
+      "read_locator": "검수자가 PDF1쪽 표지,11쪽 문단10,13~14쪽 문단19~21의 기간가중 분모·기산일을 실제 재독했습니다.",
+      "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "독립 검수자가 원파일의 명시된 본문을 직접 재독했습니다. 검수자 신규 외부 다운로드는 아닙니다. 기존 공식 기준서 재독이며 새 판본이나 신설법인 자동 전기간 기산 특례의 발견이 아닙니다.",
+      "reader": "r24_review0"
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000085502",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085502",
+      "version": "법인46013-2385 / 19960827; ntstDcmId010000000000085502",
+      "read_locator": "회신 전체와 질의내용1의 사업자등록상 금융·팩토링업 및 관련 시행규칙50조13호",
+      "sha256": "5957bcee61c85106dec35a38d03690768d51b217705a1d4fba8f14a73cdf7a00",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 사례로서 2022년 금융회사 범위의 직접 확정 근거가 아닙니다. 업태 명칭만으로 해당 법정 금융회사 집단을 결정할 수 없다는 기존 보류의 구별을 보강합니다."
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000004519",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000004519",
+      "version": "서이46012-10039 / 20010828; ntstDcmId010000000000004519",
+      "read_locator": "회신 전체 및 질의의 후순위채권 이자·결산 미수이자 사실관계",
+      "sha256": "6bf5e58110299a6d8579b99b0bb8434eb21f0736bff44de78fe562a5d3e0897c",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년 유동화전문회사 후순위채권 사례입니다. 2022년 원문의 국내 정기예금과 다른 거래이므로 이 결론으로 원문의 미수이자 처리를 확정하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000085502",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085502",
+      "version": "법인46013-2385 / 19960827; ntstDcmId010000000000085502",
+      "read_locator": "회신 전체와 질의내용1의 사업자등록상 금융·팩토링업 및 관련 시행규칙50조13호",
+      "sha256": "5957bcee61c85106dec35a38d03690768d51b217705a1d4fba8f14a73cdf7a00",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자의 정상TLS 보존 API본문을 직접 독립 읽었습니다. 검수자 신규다운로드가 아닙니다. 1996년 사례로서 2022년 금융회사 범위의 직접 확정 근거가 아닙니다. 업태 명칭만으로 해당 법정 금융회사 집단을 결정할 수 없다는 기존 보류의 구별을 보강합니다.",
+      "author_acquisition_method": "fresh_download_normal_TLS"
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000004519",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000004519",
+      "version": "서이46012-10039 / 20010828; ntstDcmId010000000000004519",
+      "read_locator": "회신 전체 및 질의의 후순위채권 이자·결산 미수이자 사실관계",
+      "sha256": "6bf5e58110299a6d8579b99b0bb8434eb21f0736bff44de78fe562a5d3e0897c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자의 정상TLS 보존 API본문을 직접 독립 읽었습니다. 검수자 신규다운로드가 아닙니다. 2001년 유동화전문회사 후순위채권 사례입니다. 2022년 원문의 국내 정기예금과 다른 거래이므로 이 결론으로 원문의 미수이자 처리를 확정하지 않습니다.",
+      "author_acquisition_method": "fresh_download_normal_TLS"
+    },
+    {
+      "ref": "VAT_LAW_2022",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/10b5bcc2526adc34a3bb0bc5677468c48e23c240/kr/부가가치세법/법률.md",
+      "version": "제18577호 · 시행 2022-01-01; git show 10b5bcc2526adc34a3bb0bc5677468c48e23c240:kr/부가가치세법/법률.md",
+      "read_locator": "시행일 메타데이터, 제29조제3·7·8항, 부칙 제1·2조",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다."
+    },
+    {
+      "ref": "VAT_DECREE_EARLY_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/f0ab89feb5d74d54fa46d3106fa26654a169ce3c/kr/부가가치세법/시행령.md",
+      "version": "제32734호 · 시행 2022-07-01; git show f0ab89feb5d74d54fa46d3106fa26654a169ce3c:kr/부가가치세법/시행령.md",
+      "read_locator": "시행일 메타데이터, 제63조제1~3항, 부칙 제32734호 제1~3조",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20040317",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/eb51e315ef5e973bdb03f59ecc11bbae9ffd70d8/kr/부가가치세법/시행령.md",
+      "version": "제18312호 · 시행 2004-03-17; git show eb51e315ef5e973bdb03f59ecc11bbae9ffd70d8:kr/부가가치세법/시행령.md",
+      "read_locator": "시행일 메타데이터, 제48조의2제1항 산식, 제3항, 부칙 시행일",
+      "sha256": "18202719525688c2d69bf91cf10f8bf230977465ad24dfcc46c2b5391ba6da68",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20130323",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/289fefebce999f0a33417e2f9558e191f2c32751/kr/부가가치세법/시행령.md",
+      "version": "제24441호 · 시행 2013-03-23; git show 289fefebce999f0a33417e2f9558e191f2c32751:kr/부가가치세법/시행령.md",
+      "read_locator": "제48조의2제1항 산식과 면세사업 범위, 메타데이터 시행일",
+      "sha256": "d6370fe3030cc77b8ae6f06ce27c16bcf3358011eb82d51716dcdeb958313cea",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20130701",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/b8cea9abded4bfd114cfbfd01143362f15157ae0/kr/부가가치세법/시행령.md",
+      "version": "제24638호 · 시행 2013-07-01; git show b8cea9abded4bfd114cfbfd01143362f15157ae0:kr/부가가치세법/시행령.md",
+      "read_locator": "제63조제1항 산식 및 제3항, 부칙 제1·2·8조",
+      "sha256": "aad84c23f7b497ae721d58167ef7df8c8bae00394df6c951663c9d74d523027d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_NTS_VAT_RELATED_ASSET_20041222",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000038251",
+      "version": "서면인터넷방문상담3팀-2610 · 2004-12-22; ntstDcmId010000000000038251",
+      "read_locator": "dcmDVO 회신 전체 및 첨부1 질의 사실관계, 첨부2 구 시행령 제48조의2제1항과 산식",
+      "sha256": "519659ed98a782d86940d3ad93508df75e0edfc119b3d734de23dccc73387814",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "공식 전체 회신입니다. 당해 재화와 관련된 과세·면세 공급가액만 사용한다는 명시 문장을 확인했습니다. 2004 회신이므로 2022년 조문 및 2013년 전부개정 전후를 별도로 대조했습니다."
+    },
+    {
+      "ref": "VAT_LAW_2022",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/10b5bcc2526adc34a3bb0bc5677468c48e23c240/kr/부가가치세법/법률.md",
+      "version": "제18577호 · 시행 2022-01-01; git show 10b5bcc2526adc34a3bb0bc5677468c48e23c240:kr/부가가치세법/법률.md",
+      "read_locator": "법률2022년판 메타데이터·제29조 전항(특히③·⑦·⑧)과 부칙18577호 제1·2조 실제 독립 재독",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다.",
+      "author_acquisition_method": "reread_preserved_body"
+    },
+    {
+      "ref": "VAT_DECREE_EARLY_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/f0ab89feb5d74d54fa46d3106fa26654a169ce3c/kr/부가가치세법/시행령.md",
+      "version": "제32734호 · 시행 2022-07-01; git show f0ab89feb5d74d54fa46d3106fa26654a169ce3c:kr/부가가치세법/시행령.md",
+      "read_locator": "시행일 메타데이터, 제63조제1~3항, 부칙 제32734호 제1~3조",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다.",
+      "author_acquisition_method": "reread_preserved_body"
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20040317",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/eb51e315ef5e973bdb03f59ecc11bbae9ffd70d8/kr/부가가치세법/시행령.md",
+      "version": "제18312호 · 시행 2004-03-17; git show eb51e315ef5e973bdb03f59ecc11bbae9ffd70d8:kr/부가가치세법/시행령.md",
+      "read_locator": "시행일 메타데이터, 제48조의2제1항 산식, 제3항, 부칙 시행일",
+      "sha256": "18202719525688c2d69bf91cf10f8bf230977465ad24dfcc46c2b5391ba6da68",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다.",
+      "author_acquisition_method": "reread_preserved_body"
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20130323",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/289fefebce999f0a33417e2f9558e191f2c32751/kr/부가가치세법/시행령.md",
+      "version": "제24441호 · 시행 2013-03-23; git show 289fefebce999f0a33417e2f9558e191f2c32751:kr/부가가치세법/시행령.md",
+      "read_locator": "제48조의2제1항 산식과 면세사업 범위, 메타데이터 시행일",
+      "sha256": "d6370fe3030cc77b8ae6f06ce27c16bcf3358011eb82d51716dcdeb958313cea",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다.",
+      "author_acquisition_method": "reread_preserved_body"
+    },
+    {
+      "ref": "R24_W1_VAT_DECREE_20130701",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/b8cea9abded4bfd114cfbfd01143362f15157ae0/kr/부가가치세법/시행령.md",
+      "version": "제24638호 · 시행 2013-07-01; git show b8cea9abded4bfd114cfbfd01143362f15157ae0:kr/부가가치세법/시행령.md",
+      "read_locator": "제63조제1항 산식 및 제3항, 부칙 제1·2·8조",
+      "sha256": "aad84c23f7b497ae721d58167ef7df8c8bae00394df6c951663c9d74d523027d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 역사 Git 보존본문의 실제 git show 출력입니다. 전부개정 전후 산식과 시행일을 직접 비교했으며, 2004년 금액 기준 등 바뀐 예외를 2022년에 적용하지 않습니다.",
+      "author_acquisition_method": "reread_preserved_body"
+    },
+    {
+      "ref": "R24_W1_NTS_VAT_RELATED_ASSET_20041222",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000038251",
+      "version": "서면인터넷방문상담3팀-2610 · 2004-12-22; ntstDcmId010000000000038251",
+      "read_locator": "dcmDVO 회신 전체 및 첨부1 질의 사실관계, 첨부2 구 시행령 제48조의2제1항과 산식",
+      "sha256": "519659ed98a782d86940d3ad93508df75e0edfc119b3d734de23dccc73387814",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존 본문을 독립 재독하고 Git 법령5개는 지정 커밋의 git show 출력 SHA까지 대조했습니다. 공식 전체 회신입니다. 당해 재화와 관련된 과세·면세 공급가액만 사용한다는 명시 문장을 확인했습니다. 2004 회신이므로 2022년 조문 및 2013년 전부개정 전후를 별도로 대조했습니다.",
+      "author_acquisition_method": "fresh_download_normal_TLS"
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000062471",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000062471",
+      "version": "법인46013-1812 / 19980704; ntstDcmId010000000000062471",
+      "read_locator": "회신 및 첨부의 소득1264-2443(1984.7.25), 소득1264-1985(1984.6.15), 소득46011-1220(1993.5.3) 전체",
+      "sha256": "78e4fdc49a55d8113ec4ec4e7780c7eb2ab8f12290797b57ada0842c0f9be535",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1998 회신의 직접 질문은 휴가보조비입니다. 첨부의 과거 회신은 등록된 기금의 무주택자 주택보조금을 명시하지만, 1993 학자금은 수익금과 출연금에 따른 구별도 있으므로 모든 명목 지급금을 일괄 비과세로 확대하지 않습니다."
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000036733",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000036733",
+      "version": "서면인터넷방문상담4팀-254 / 20050215; ntstDcmId010000000000036733",
+      "read_locator": "회신 전체와 첨부 재산46300-2032(1999.11.29)의 인가된 용도사업·무주택자 주택취득·임차보조금 문구",
+      "sha256": "3c266900a084870a6085304363edba50db69615b6bc72b95fc3396debc0f77cc",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2005 증여세 질의회신입니다. 법정 기금의 인가된 용도사업 보조금은 근로소득 제외, 증여세는 별도 요건이라는 구별입니다. 통근차량 운임의 근로소득 제외를 확인한 자료는 아닙니다."
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000062471",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000062471",
+      "version": "법인46013-1812 / 19980704; ntstDcmId010000000000062471",
+      "read_locator": "회신 및 첨부의 소득1264-2443(1984.7.25), 소득1264-1985(1984.6.15), 소득46011-1220(1993.5.3) 전체",
+      "sha256": "78e4fdc49a55d8113ec4ec4e7780c7eb2ab8f12290797b57ada0842c0f9be535",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자의 정상TLS 보존 API본문을 직접 독립 읽었습니다. 검수자 신규다운로드가 아닙니다. 1998 회신의 직접 질문은 휴가보조비입니다. 첨부의 과거 회신은 등록된 기금의 무주택자 주택보조금을 명시하지만, 1993 학자금은 수익금과 출연금에 따른 구별도 있으므로 모든 명목 지급금을 일괄 비과세로 확대하지 않습니다.",
+      "author_acquisition_method": "fresh_download_normal_TLS"
+    },
+    {
+      "ref": "R24_W1_NTS_010000000000036733",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000036733",
+      "version": "서면인터넷방문상담4팀-254 / 20050215; ntstDcmId010000000000036733",
+      "read_locator": "회신 전체와 첨부 재산46300-2032(1999.11.29)의 인가된 용도사업·무주택자 주택취득·임차보조금 문구",
+      "sha256": "3c266900a084870a6085304363edba50db69615b6bc72b95fc3396debc0f77cc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자의 정상TLS 보존 API본문을 직접 독립 읽었습니다. 검수자 신규다운로드가 아닙니다. 2005 증여세 질의회신입니다. 법정 기금의 인가된 용도사업 보조금은 근로소득 제외, 증여세는 별도 요건이라는 구별입니다. 통근차량 운임의 근로소득 제외를 확인한 자료는 아닙니다.",
+      "author_acquisition_method": "fresh_download_normal_TLS"
+    },
+    {
+      "ref": "ORIGINAL_2026-09-097_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2026-09-097.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "이번에 view_image로 질문·진술·네 보기 전체를 직접 대조",
+      "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 지정한 부분만 읽었습니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_FULLCOST_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "파일1630초의 실제 교재PDF6쪽 재료처리량공헌이익 식 및 직접재료/운영비/재고감소 유인 문단. 이전 추출 프레임 fullcost-1630.png를 이번에 직접 view_image로 재독.",
+      "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS로 확보된 전체영상의 보존 SHA를 재계산했습니다. 이번 직접 읽기는 지정한 이전 추출 프레임이며 신규 다운로드 또는 전체 영상·오디오 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_VARIABLE_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "파일90초의 실제 교재PDF11쪽 방법별 차이점 표; 초변동 이익 결정요인 판매량과 생산량, 장기/단기 활용을 이번에 variable-90.png로 직접 재독.",
+      "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 정상 TLS로 확보된 전체영상의 보존 SHA를 재계산했습니다. 이번 직접 읽기는 지정한 이전 추출 프레임이며 신규 다운로드 또는 전체 영상·오디오 시청으로 세지 않습니다."
+    },
+    {
+      "ref": "ORIGINAL_2026-09-097_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2026-09-097.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "이번에 view_image로 질문·진술·네 보기 전체를 직접 대조",
+      "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 내용을 독립 재독했습니다. 신규 다운로드나 전체 영상 시청을 주장하지 않습니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_FULLCOST_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "검수자가 원본 MP4에서 독립 추출한 1630초 실제 교재 PDF 6쪽 직접재료·운영비용·재고 감소 유인 문단과 손익계산서",
+      "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 내용을 독립 재독했습니다. 신규 다운로드나 전체 영상 시청을 주장하지 않습니다."
+    },
+    {
+      "ref": "R22_W0_CUP2023_VARIABLE_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "version": "KOCW 부산가톨릭대 신성욱 자격증세미나2023년1학기 공개영상",
+      "read_locator": "검수자가 원본 MP4에서 독립 추출한 90초 실제 교재 PDF 11쪽 방법별 표: 장기/단기 활용과 초변동 이익 결정요인 판매량·생산량",
+      "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 내용을 독립 재독했습니다. 신규 다운로드나 전체 영상 시청을 주장하지 않습니다."
+    },
+    {
+      "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "read_locator": "파일 15·300·360·420초: 02 원가의 의의 / 1 원가의 개념 세 문단 및 그림 1-5 원가의 분류",
+      "sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "정상 TLS로 MP4 전체 파일을 새로 받아 파일 15·300·360·420초의 원가 개념과 그림 1-5를 프레임 추출 및 확대해 읽었습니다. 특정 물품·서비스의 구입금액도 원가라는 정의와, 판매된 제품 원가(매출원가) 및 수익획득에 기여하지 못한 원가(손실)의 교재상 구별을 함께 확인했습니다. 전체 영상·오디오를 시청했다고 주장하지 않으며, 교재 출판사·판본은 화면만으로 확정하지 않습니다. 교재의 비용·손실 분류를 K-IFRS 표시 규정과 동일시하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN2_K1002",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF 11~12쪽 문단11·12·13·16; PDF17~19쪽 문단34·38·39·한40.1 및40C~40G 직접 텍스트 재독. 매입원가와 비정상 제조원가 제외, 모든 감모손실의 비용처리 및 매출원가의 폭넓은 구성을 함께 읽음.",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 명시한 범위만 읽었으며 전체 문서 검증을 주장하지 않습니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-questions.pdf",
+      "version": "사용자 제공 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF1쪽 재무회계 공통지시 텍스트, PDF33쪽 원가 과목 시작과81번 전체. 2025-09는 두 페이지 모두 렌더 이미지도 직접 확인, 2026-05는33쪽 렌더 이미지 직접 확인.",
+      "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 명시한 범위만 읽었으며 전체 문서 검증을 주장하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-answers.pdf",
+      "version": "공식 확정답안 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF1쪽 원가관리회계 81번: 4; 텍스트와 실제 렌더 표를 모두 직접 확인.",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "공식키의 선택 사실이며 해설 교재 본문이 아닙니다. 2026-05 원문은 구입 시점 원가 문장을 오답으로 처리했지만, 이는 취득원가라는 넓은 용법의 반증이 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2026-05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-05-questions.pdf",
+      "version": "사용자 제공 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF1쪽 재무회계 공통지시 텍스트, PDF33쪽 원가 과목 시작과81번 전체. 2025-09는 두 페이지 모두 렌더 이미지도 직접 확인, 2026-05는33쪽 렌더 이미지 직접 확인.",
+      "sha256": "acc304d920dda3680501167a7598e591d2d43fb2e7d4ca71e83b8e18572c677a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 명시한 범위만 읽었으며 전체 문서 검증을 주장하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-05-answers.pdf",
+      "version": "공식 확정답안 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF1쪽 원가관리회계 81번: 2; 텍스트와 실제 렌더 표를 모두 직접 확인.",
+      "sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "공식키의 선택 사실이며 해설 교재 본문이 아닙니다. 2026-05 원문은 구입 시점 원가 문장을 오답으로 처리했지만, 이는 취득원가라는 넓은 용법의 반증이 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09-081_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-09-081.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 전체 및 네 보기 직접 view_image.",
+      "sha256": "76179675f28c3ee66fea133d23f5f1c036c6270dda134b5c97c7b753f5709cfa",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 명시한 범위만 읽었으며 전체 문서 검증을 주장하지 않습니다."
+    },
+    {
+      "ref": "R24_W2_CUP2023_COST_CONCEPT_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "version": "2023년 1학기 01-2.mp4; 표시 문서 원가관리회계1장.pdf; 전체 영상 SHA256 874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "read_locator": "검수자가 원본 MP4에서 직접 추출한 15·300·360·420초 화면과 300초 본문 확대: 원가의 개념 세 문단, 그림 1-5",
+      "sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다. 전체 영상·오디오를 시청했다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN2_K1002",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1002호_재고자산(2007_제정_2017_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF 11~12쪽 문단11·12·13·16; PDF17~19쪽 문단34·38·39·한40.1 및40C~40G 직접 텍스트 재독. 매입원가와 비정상 제조원가 제외, 모든 감모손실의 비용처리 및 매출원가의 폭넓은 구성을 함께 읽음.",
+      "sha256": "548974dac406fc4689c25ba9d4da22385e531f0c3a29ea3976c2456a27a4c813",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-questions.pdf",
+      "version": "사용자 제공 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 공통 지시와 33쪽 해당 81번 지문·네 보기·과목 머리의 실제 텍스트 직접 대조",
+      "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-09-answers.pdf",
+      "version": "공식 확정답안 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 81번 공식 정답: 4; 실제 PDF 표 텍스트 직접 대조",
+      "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2026-05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-05-questions.pdf",
+      "version": "사용자 제공 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 공통 지시와 33쪽 해당 81번 지문·네 보기·과목 머리의 실제 텍스트 직접 대조",
+      "sha256": "acc304d920dda3680501167a7598e591d2d43fb2e7d4ca71e83b8e18572c677a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_CHARACTERISTICS_2025_2026",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-05-answers.pdf",
+      "version": "공식 확정답안 원본; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 81번 공식 정답: 2; 실제 PDF 표 텍스트 직접 대조",
+      "sha256": "19438c11908475f5eb5b3befcd3a20f51e87d15890b63fdbb5abe40aa4401ccf",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2025-09-081_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-09-081.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 전체 및 네 보기 직접 view_image.",
+      "sha256": "76179675f28c3ee66fea133d23f5f1c036c6270dda134b5c97c7b753f5709cfa",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일을 독립 재독했습니다. 작성자의 신규 다운로드와 구별되며 이번 검수자의 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "ORIGINAL_2023-09-120_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-09-120.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "이번에 view_image로 질문·진술·네 보기 전체를 직접 대조",
+      "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "실제 지정한 부분만 읽었습니다."
+    },
+    {
+      "ref": "ORIGINAL_2023-09-120_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-09-120.webp",
+      "version": "사용자 제공 원본 파생 이미지; 저장소 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "이번에 view_image로 질문·진술·네 보기 전체를 직접 대조",
+      "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 이 보존 파일의 지정 내용을 독립 재독했습니다. 신규 다운로드나 전체 영상 시청을 주장하지 않습니다."
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000055392",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000055392",
+      "version": "제도46012-10610 · 회신일 2001-04-17 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 질의내용 요약의 판공비·업무추진비·접대비 분리 및 사비충당 추정 사실관계, 관련 법인세법 제25조 발췌",
+      "sha256": "126f557aa541e2862f445bb0fbf96f53f5fa875c89f7f19838423a9839b428e2",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2001년의 조합장 판공비 사례입니다. 대표자 개인이 부담할 비용 및 업무사용이 불분명한 급여를 다루므로 2022~2026년 문항의 실제 거래처 접대비를 사적 지출로 바꾸는 근거가 아닙니다. 당시 금액 기준·가산세율을 시험 연도로 옮기지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000055392"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000085282",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000085282",
+      "version": "법인46012-3168 · 회신일 1996-11-13 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 및 질의내용 요약 전체; 당시 법 제18조의2·시행령 제44조의2 기밀비 인용",
+      "sha256": "68f9d3c43baa615cd350158630aa2ffaf03322333ba940fd2478dacf52337400",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1996년 기밀비 제도에 관한 회신으로 당시 한도초과 상여 처분을 언급합니다. 이 과거 제도와 조문을 2022~2026년 법 제25조·시행령 제106조에 대체 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000085282"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000364779",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000364779",
+      "version": "서면-2017-법인-2851 · 회신일 2018-06-21 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 사실관계·질의내용, 법인세법 제116조·시행령 제158조 발췌와 객관적 지급사실 확인 관련 예규 인용",
+      "sha256": "b3ae030328ccc8f2ad87c37ff937ac761771bf6fb91b9ee03218299e2a914397",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2018년 신탁 위탁자/수탁자 세금계산서 발행 관련 사례이며 구 부가가치세법 판본을 명시합니다. 거래 입증과 적격증빙의 구별에만 참고합니다. 접대비 손금 인정이나 대표자 상여 처분을 직접 판정한 회신은 아닙니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000364779"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000147928",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000147928",
+      "version": "국제세원관리담당관실-38 · 회신일 2012-01-25 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 외국인 단독주주 대표이사의 매월 매출총이익 연동 보수 사실관계, 관련 시행령 제43조제1~3항",
+      "sha256": "e174e9071d9ff6d99e073821995de75aa8f9a725fed7e8386068846151991d55",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2012년의 단독주주 대표이사 보수 사례입니다. 지급기준 범위와 가장 이익처분의 구별은 설명하지만, 동일 임원에 대한 두 부서의 급여·상여를 반드시 별도 한도로 평가하라는 회신은 아닙니다. 외국인 단일세율 등 당시 제도는 이번 문제에 사용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000147928"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000445271",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000445271",
+      "version": "서면-2019-법인-1754 · 회신일 2020-04-20 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 비영리법인 직원의 노사화합격려금 사실관계, 관련 법 제19조·제26조와 시행령 제43조",
+      "sha256": "bf4ed7e041530693d9f0a1c490ed6aa9f12382bd37a5b7e177929660695a879e",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2020년 직원에 대한 지급규정·노사합의 인건비 회신입니다. 임원 지급기준 초과 제한을 직원 전체 상여에 기계적으로 확대하지 않는 구별만 참고합니다. 동일 임원의 부서별 한도를 결정하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000445271"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000147928",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000147928",
+      "version": "국제세원관리담당관실-38 · 회신일 2012-01-25 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 외국인 단독주주 대표이사의 매월 매출총이익 연동 보수 사실관계, 관련 시행령 제43조제1~3항",
+      "sha256": "e174e9071d9ff6d99e073821995de75aa8f9a725fed7e8386068846151991d55",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2012년의 단독주주 대표이사 보수 사례입니다. 지급기준 범위와 가장 이익처분의 구별은 설명하지만, 동일 임원에 대한 두 부서의 급여·상여를 반드시 별도 한도로 평가하라는 회신은 아닙니다. 외국인 단일세율 등 당시 제도는 이번 문제에 사용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000147928"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000445271",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000445271",
+      "version": "서면-2019-법인-1754 · 회신일 2020-04-20 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 비영리법인 직원의 노사화합격려금 사실관계, 관련 법 제19조·제26조와 시행령 제43조",
+      "sha256": "bf4ed7e041530693d9f0a1c490ed6aa9f12382bd37a5b7e177929660695a879e",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2020년 직원에 대한 지급규정·노사합의 인건비 회신입니다. 임원 지급기준 초과 제한을 직원 전체 상여에 기계적으로 확대하지 않는 구별만 참고합니다. 동일 임원의 부서별 한도를 결정하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000445271"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000134581",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000134581",
+      "version": "부가46015-3304 · 회신일 2000-09-23 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문 및 유사사례 목록; 경정청구 시 합계표 제출과 경정기관 확인을 거친 세금계산서 공제 구별",
+      "sha256": "3f88b1685ef83f7aec74ec468e7d26f3b2f6c2dc121cf56354198e99fd742eb0",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2000년 회신입니다. 매입합계표 미제출 가산세가 무조건 없다는 명제를 옹호할 자료가 아님을 확인합니다. 옛 조문번호·가산세율을 2023년 법 제60조로 대체하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000134581"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000070290",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000070290",
+      "version": "부가46015-2353 · 회신일 1998-10-16 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전체, 별도 HWP [회신]에 이어지는 매입합계표/신고납부 가산세 병과 문장",
+      "sha256": "4cd7d0ea0effc3fa043ad4409cd07895c8b8bdedc37958941855c92b41df22d7",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "1998년 회신입니다. 매입합계표 가산세의 존재와 유형 구분을 역사적 보조자료로만 사용하며 당시 조문번호나 세율을 2023년 문제에 소급 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000070290"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000134581",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000134581",
+      "version": "부가46015-3304 · 회신일 2000-09-23 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문 및 유사사례 목록; 경정청구 시 합계표 제출과 경정기관 확인을 거친 세금계산서 공제 구별",
+      "sha256": "3f88b1685ef83f7aec74ec468e7d26f3b2f6c2dc121cf56354198e99fd742eb0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2000년 회신입니다. 매입합계표 미제출 가산세가 무조건 없다는 명제를 옹호할 자료가 아님을 확인합니다. 옛 조문번호·가산세율을 2023년 법 제60조로 대체하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000134581"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000070290",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000070290",
+      "version": "부가46015-2353 · 회신일 1998-10-16 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "dcmDVO에서 잘린 회신의 앞부분과 같은 JSON의 dcmHwpEditorDVOList에 포함된 변환 HTML [회신] 후속 문장; 별도 HWP 바이너리 파일을 읽은 것은 아닙니다.",
+      "sha256": "4cd7d0ea0effc3fa043ad4409cd07895c8b8bdedc37958941855c92b41df22d7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 1998년 회신입니다. 매입합계표 가산세의 존재와 유형 구분을 역사적 보조자료로만 사용하며 당시 조문번호나 세율을 2023년 문제에 소급 적용하지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000070290"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000314969",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000314969",
+      "version": "서면-2016-부가-3938 · 회신일 2016-11-30 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 2009/2011년 공급과 지급명령의 사실관계·질의내용, 당시 시행령 제87조제1~4항",
+      "sha256": "25408330dd8aa6631e6969760b36d2e3743d098fa2bb7f0c7aa797c6706ea2dc",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2016년 회신은 당시 공급일 기준 5년 공제기간과 판결채권의 10년 소멸시효를 구별합니다. 5년 규정을 2025년 문항에 적용하거나 판결 사실을 새로 가정하지 않습니다. 2025년의 10년 공제기간 판정은 이전 검증 기록을 유지합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000314969"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000037845",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000037845",
+      "version": "서면인터넷방문상담3팀-1208 · 회신일 2004-06-25 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 1998년 공급·2000년 지급판결·압류불능 사실관계, 당시 시행령 제63조의2 발췌",
+      "sha256": "15ac8dea6ffb2c5dbb0dbaa24a7e143acbaf1c9aacb208e775924ad0dcf758d3",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2004년 회신으로 압류불능 및 판결채권 소멸시효 사례입니다. 회수불능 사유와 공급일 기준 공제기간이 별개라는 보조 대조이며, 2025년 파산 문항에 과거 5년 한도나 미기재 소송을 넣지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000037845"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000314969",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000314969",
+      "version": "서면-2016-부가-3938 · 회신일 2016-11-30 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 2009/2011년 공급과 지급명령의 사실관계·질의내용, 당시 시행령 제87조제1~4항",
+      "sha256": "25408330dd8aa6631e6969760b36d2e3743d098fa2bb7f0c7aa797c6706ea2dc",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2016년 회신은 당시 공급일 기준 5년 공제기간과 판결채권의 10년 소멸시효를 구별합니다. 5년 규정을 2025년 문항에 적용하거나 판결 사실을 새로 가정하지 않습니다. 2025년의 10년 공제기간 판정은 이전 검증 기록을 유지합니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000314969"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_TAX_KEYS_NTS_010000000000037845",
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=010000000000037845",
+      "version": "서면인터넷방문상담3팀-1208 · 회신일 2004-06-25 · 국세청 공개 상세 API 응답 2026-10-14",
+      "read_locator": "회신 전문, 1998년 공급·2000년 지급판결·압류불능 사실관계, 당시 시행령 제63조의2 발췌",
+      "sha256": "15ac8dea6ffb2c5dbb0dbaa24a7e143acbaf1c9aacb208e775924ad0dcf758d3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 작성자 보존 실제 JSON의 회신 및 명시된 첨부 HTML 범위를 직접 재독했습니다. 새 다운로드가 아니며 구법 회신을 시험 당시 법령 대신 적용하지 않습니다. 2004년 회신으로 압류불능 및 판결채권 소멸시효 사례입니다. 회수불능 사유와 공급일 기준 공제기간이 별개라는 보조 대조이며, 2025년 파산 문항에 과거 5년 한도나 미기재 소송을 넣지 않습니다.",
+      "retrieval": {
+        "url": "https://taxlaw.nts.go.kr/action.do",
+        "action_id": "ASIQTB002PR01",
+        "params": {
+          "dcmDVO": {
+            "ntstDcmId": "010000000000037845"
+          }
+        },
+        "http_status": 200
+      }
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_100_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-05-100.webp",
+      "version": "사용자 제공 보존 원본 · 2024-05-100 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2024-05-100 전체 이미지 직접 시각 판독",
+      "sha256": "158811fe9fc1e325b80a7fc0b62110e2245980fb00cf2312c149dc27da04775c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 40쪽 문항 100; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 100 (과목 번호 20) 공식 키 [1]",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_05_097_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-05-097.webp",
+      "version": "사용자 제공 보존 원본 · 2025-05-097 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2025-05-097 전체 이미지 직접 시각 판독",
+      "sha256": "27da0fabdcacea21897932f839bb31c9adff0cd45e6755b76f86d40027df5170",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 39쪽 문항 97; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "f445101c34fcaf9351de3c69ad0ebed9450890753a4d0873b5fd2a1e83183541",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 97 (과목 번호 17) 공식 키 [2]",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R7_COST03_HANYANG9",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/9.pdf",
+      "version": "2014 공식 공개 강의첨부 · SHA256 08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+      "read_locator": "PDF 6쪽 전부·변동 이익 조정식",
+      "sha256": "08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. "
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_100_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-05-100.webp",
+      "version": "사용자 제공 보존 원본 · 2024-05-100 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "158811fe9fc1e325b80a7fc0b62110e2245980fb00cf2312c149dc27da04775c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 40쪽 문항 100; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 100 (과목 번호 20) 공식 키 [1]",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_05_097_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-05-097.webp",
+      "version": "사용자 제공 보존 원본 · 2025-05-097 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "27da0fabdcacea21897932f839bb31c9adff0cd45e6755b76f86d40027df5170",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 39쪽 문항 97; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "f445101c34fcaf9351de3c69ad0ebed9450890753a4d0873b5fd2a1e83183541",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B1_RETIREMENT_EXEC_CONVERSION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 97 (과목 번호 17) 공식 키 [2]",
+      "sha256": "bdeb87e5531aed26048bba7b06c0e327b7acb0d5c309ee462c16826320ac9d56",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R7_COST03_HANYANG9",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/9.pdf",
+      "version": "2014 공식 공개 강의첨부 · SHA256 08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 6쪽 전부·변동 이익 조정식",
+      "sha256": "08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_11_024_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-11-024.webp",
+      "version": "사용자 제공 보존 원본 · 2023-11-024 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2023-11-024 전체 이미지 직접 시각 판독",
+      "sha256": "0232e2651347d4c779b794b2888b3c0d5af949fadac05ed0774039a6c6840ed6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_11_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-11-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-11-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 10쪽 문항 24; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-11-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-11-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 재무회계 문항 24 (과목 번호 24) 공식 키 [4]",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2026_07_026_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2026-07-026.webp",
+      "version": "사용자 제공 보존 원본 · 2026-07-026 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2026-07-026 전체 이미지 직접 시각 판독",
+      "sha256": "b7185f118f517868d1eed80e90c8f611dd18c775e4697420f4eeaa1855de25c6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2026_07_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-07-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2026-07-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 10쪽 문항 26; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "6e68f3564059ac47d0f7a554a1281dc9981d54d80976f0139aa1d2e205419603",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-07-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2026-07-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 재무회계 문항 26 (과목 번호 26) 공식 키 [1, 4]",
+      "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF 19쪽 문단 31 및 PDF 29~31쪽 문단 60~65",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. 2018 적용 및 2021 개정 보존판의 지정 문단만 재독했습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_11_024_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-11-024.webp",
+      "version": "사용자 제공 보존 원본 · 2023-11-024 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "0232e2651347d4c779b794b2888b3c0d5af949fadac05ed0774039a6c6840ed6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_11_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-11-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-11-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 10쪽 문항 24; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_SUPERVARIABLE_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-11-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-11-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 재무회계 문항 24 (과목 번호 24) 공식 키 [4]",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2026_07_026_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2026-07-026.webp",
+      "version": "사용자 제공 보존 원본 · 2026-07-026 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "b7185f118f517868d1eed80e90c8f611dd18c775e4697420f4eeaa1855de25c6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2026_07_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-07-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2026-07-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 10쪽 문항 26; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "6e68f3564059ac47d0f7a554a1281dc9981d54d80976f0139aa1d2e205419603",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B4_COST_ESTIMATION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2026-07-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2026-07-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 재무회계 문항 26 (과목 번호 26) 공식 키 [1, 4]",
+      "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1115_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1115호_고객과의_계약에서_생기는_수익(2018_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 19쪽 문단 31 및 PDF 29~31쪽 문단 60~65",
+      "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_083_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-03-083.webp",
+      "version": "사용자 제공 보존 원본 · 2023-03-083 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2023-03-083 전체 이미지 직접 시각 판독",
+      "sha256": "661605cad4e446432b106deb0d2703d24f1136fcf83553f4ba29aaba4d05cfef",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-03-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-03-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 34쪽 문항 83; 1쪽 공통 지시; 과목 첫 면 33쪽; PDF 34쪽 문항 84; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "10c7cb960dbda7f35ef8445207a875cfd6c98392edbb4670a77fba6c748d6c13",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-03-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-03-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 83 (과목 번호 3) 공식 키 [1]; PDF 1쪽 원가관리회계 문항 84 (과목 번호 4) 공식 키 [4]",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_084_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-03-084.webp",
+      "version": "사용자 제공 보존 원본 · 2023-03-084 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2023-03-084 전체 이미지 직접 시각 판독",
+      "sha256": "aeebbd5da5e38e16e80738a06c6728900ed962389b0313e2860178ddf2c2237d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R7_COST03_HANYANG3",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+      "version": "2014 공식 공개 강의첨부 · SHA256 58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "read_locator": "PDF 10쪽 이중배부율 기준, 11쪽 단계별배부 자체원가+수취원가 예제",
+      "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. "
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_083_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-03-083.webp",
+      "version": "사용자 제공 보존 원본 · 2023-03-083 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "661605cad4e446432b106deb0d2703d24f1136fcf83553f4ba29aaba4d05cfef",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-03-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-03-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 34쪽 문항 83; 1쪽 공통 지시; 과목 첫 면 33쪽; PDF 34쪽 문항 84; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "10c7cb960dbda7f35ef8445207a875cfd6c98392edbb4670a77fba6c748d6c13",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B0_CIT_FILING_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-03-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-03-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 83 (과목 번호 3) 공식 키 [1]; PDF 1쪽 원가관리회계 문항 84 (과목 번호 4) 공식 키 [4]",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_03_084_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-03-084.webp",
+      "version": "사용자 제공 보존 원본 · 2023-03-084 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "aeebbd5da5e38e16e80738a06c6728900ed962389b0313e2860178ddf2c2237d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R7_COST03_HANYANG3",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf",
+      "version": "2014 공식 공개 강의첨부 · SHA256 58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 10쪽 이중배부율 기준, 11쪽 단계별배부 자체원가+수취원가 예제",
+      "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_06_019_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-06-019.webp",
+      "version": "사용자 제공 보존 원본 · 2022-06-019 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2022-06-019 전체 이미지 직접 시각 판독",
+      "sha256": "d37dee173536b31c2c22758b2f269e3c148c2d5a7efcbf1ebe4d5c824a5aca3a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_06_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-06-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-06-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 8쪽 문항 19; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-06-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-06-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 49쪽 재무회계 문항 19 (과목 번호 19) 공식 키 [3]",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1109_BATCH01",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF 97쪽 부록 A 유효이자율 및 유효이자율법 정의",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. 2025 개정 등이 반영된 보존판입니다. 2022년 원본의 수치 진단 보조로만 읽었고, 2022년 판본 전체의 동일성을 확인했다고 주장하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_06_019_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-06-019.webp",
+      "version": "사용자 제공 보존 원본 · 2022-06-019 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "d37dee173536b31c2c22758b2f269e3c148c2d5a7efcbf1ebe4d5c824a5aca3a",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_06_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-06-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-06-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 8쪽 문항 19; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B1_WITHHOLDING_SCOPE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-06-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-06-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 49쪽 재무회계 문항 19 (과목 번호 19) 공식 키 [3]",
+      "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1109_BATCH01",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1109호_금융상품(2025_개정_2021_타기준서_제정_수정목록_26-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 97쪽 부록 A 유효이자율 및 유효이자율법 정의",
+      "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_09_085_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-09-085.webp",
+      "version": "사용자 제공 보존 원본 · 2023-09-085 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2023-09-085 전체 이미지 직접 시각 판독",
+      "sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_09_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-09-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-09-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 35쪽 문항 85; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-09-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-09-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 85 (과목 번호 5) 공식 키 [2]",
+      "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_086_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-05-086.webp",
+      "version": "사용자 제공 보존 원본 · 2024-05-086 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2024-05-086 전체 이미지 직접 시각 판독",
+      "sha256": "18c7fa490b86f2c30c08ea1c20c988f4ed6d08f40f8b27e5f1389becf1d3bfe4",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 35쪽 문항 86; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 86 (과목 번호 6) 공식 키 [1]",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_09_085_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2023-09-085.webp",
+      "version": "사용자 제공 보존 원본 · 2023-09-085 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2023_09_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-09-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-09-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 35쪽 문항 85; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CONSTRUCTION_STATEMENTS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2023-09-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2023-09-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 85 (과목 번호 5) 공식 키 [2]",
+      "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_086_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-05-086.webp",
+      "version": "사용자 제공 보존 원본 · 2024-05-086 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "18c7fa490b86f2c30c08ea1c20c988f4ed6d08f40f8b27e5f1389becf1d3bfe4",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_05_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 35쪽 문항 86; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_MAKEBUY_EXPERTISE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-05-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-05-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 86 (과목 번호 6) 공식 키 [1]",
+      "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_11_018_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-11-018.webp",
+      "version": "사용자 제공 보존 원본 · 2022-11-018 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2022-11-018 전체 이미지 직접 시각 판독",
+      "sha256": "69fde6a8c2e2f63cdaf301f7b76f0e24e97734105a6ce61bbaf2498859ccdb27",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_11_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-11-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-11-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 7쪽 문항 18; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-11-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-11-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 49쪽 재무회계 문항 18 (과목 번호 18) 공식 키 [2]",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_11_018_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-11-018.webp",
+      "version": "사용자 제공 보존 원본 · 2022-11-018 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "69fde6a8c2e2f63cdaf301f7b76f0e24e97734105a6ce61bbaf2498859ccdb27",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_11_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-11-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-11-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 7쪽 문항 18; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-11-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-11-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 49쪽 재무회계 문항 18 (과목 번호 18) 공식 키 [2]",
+      "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_01_022_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-01-022.webp",
+      "version": "사용자 제공 보존 원본 · 2022-01-022 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2022-01-022 전체 이미지 직접 시각 판독",
+      "sha256": "e634f7b538275f85184f48dfcec1dfe6db461f6d8974a68cc859ad804909b775",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_01_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-01-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-01-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 9쪽 문항 22; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-01-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-01-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 49쪽 재무회계 문항 22 (과목 번호 22) 공식 키 [2]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "RF20_COMMERCIAL",
+      "url": "https://www.law.go.kr/법령/상법",
+      "version": "제17764호 / 시행 2020-12-29 · commit 8c85e0adf497cb75141f80d76c64bcb799888345",
+      "read_locator": "제341조제1~4항, 제341조의2, 제17764호(2020.12.29) 부칙 제1조 시행일",
+      "sha256": "8dd19bf251e4446b344e742b189b1974bb0dc7002f1323b269007ab6db26c980",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. 기존 git show 출력 보존 파일의 재독이며 이번 신규 git 조회가 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1032_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "PDF 29쪽 문단 33 자기지분상품 자본차감·자본 직접 인식",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. 문단 33A를 2022년에 소급 적용하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_01_022_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2022-01-022.webp",
+      "version": "사용자 제공 보존 원본 · 2022-01-022 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "e634f7b538275f85184f48dfcec1dfe6db461f6d8974a68cc859ad804909b775",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2022_01_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-01-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-01-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 9쪽 문항 22; 1쪽 공통 지시; 과목 첫 면 1쪽",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2022-01-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2022-01-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 49쪽 재무회계 문항 22 (과목 번호 22) 공식 키 [2]",
+      "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "RF20_COMMERCIAL",
+      "url": "https://www.law.go.kr/법령/상법",
+      "version": "제17764호 / 시행 2020-12-29 · commit 8c85e0adf497cb75141f80d76c64bcb799888345",
+      "read_locator": "검수자가 이번에 직접 재독: 제341조제1~4항, 제341조의2, 제17764호(2020.12.29) 부칙 제1조 시행일",
+      "sha256": "8dd19bf251e4446b344e742b189b1974bb0dc7002f1323b269007ab6db26c980",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R10_FIN3_KASB_1032_BATCH03",
+      "url": "https://www.kasb.or.kr/commonFile/fileDownload.do",
+      "version": "시행중_K-IFRS_제1032호_금융상품_표시(2014_개정_2021_타기준서_제정_수정목록_23-1_2020_구성양식_변경_반영).pdf",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 29쪽 문단 33 자기지분상품 자본차감·자본 직접 인식",
+      "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_06_117_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-06-117.webp",
+      "version": "사용자 제공 보존 원본 · 2025-06-117 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2025-06-117 전체 이미지 직접 시각 판독",
+      "sha256": "43a65a042014bbed7f04c2e5af326aef73e61de79275ad47c5278839a78de31c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_06_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-06-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-06-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 47쪽 문항 117; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-06-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-06-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 117 (과목 번호 37) 공식 키 [1]",
+      "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_07_118_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-07-118.webp",
+      "version": "사용자 제공 보존 원본 · 2024-07-118 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "문항 2024-07-118 전체 이미지 직접 시각 판독",
+      "sha256": "838a871fb9b1b179e0ebdbbde52fc85a93ca566937135fc6c0499198db88c22f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_07_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-07-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-07-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 48쪽 문항 118; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "e7ff73319b2b88e155937534bf2757ea675337bc2a215fb5262a35a8521a7354",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-07-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-07-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "PDF 1쪽 원가관리회계 문항 118 (과목 번호 38) 공식 키 [2]",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이미 저장된 사용자 제공 파일의 이번 직접 재독입니다. 출제기관 사이트 신규 다운로드·최신 정오표 확인으로 계상하지 않습니다."
+    },
+    {
+      "ref": "R7_COST06_KOCW_NPV",
+      "url": "https://contents2.kocw.or.kr/KOCW/document/2017/koreasejong/jeongjinho081/3.pdf",
+      "version": "2017년2학기 KOCW 공식 강의PDF 52쪽; 실제 확보본문 SHA256 c36acdc0cdbe1aa025ed6ede1641eff276413171aaea63637ad679c3b8e14091",
+      "read_locator": "PDF 5~6쪽 회수기간 정의와 현금흐름 예제",
+      "sha256": "c36acdc0cdbe1aa025ed6ede1641eff276413171aaea63637ad679c3b8e14091",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "기존 보존 본문을 지정한 위치에서 실제 재독했습니다. 신규 다운로드가 아닙니다. 원문의 이익·현금 기준을 고쳐 주는 자료가 아닙니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_06_117_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2025-06-117.webp",
+      "version": "사용자 제공 보존 원본 · 2025-06-117 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "43a65a042014bbed7f04c2e5af326aef73e61de79275ad47c5278839a78de31c",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2025_06_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-06-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-06-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 47쪽 문항 117; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_CB_BW_DEFINITION",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2025-06-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2025-06-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 117 (과목 번호 37) 공식 키 [1]",
+      "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_07_118_IMAGE",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/images/2024-07-118.webp",
+      "version": "사용자 제공 보존 원본 · 2024-07-118 · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 해당 문항 이미지 전체를 view_image로 직접 읽음.",
+      "sha256": "838a871fb9b1b179e0ebdbbde52fc85a93ca566937135fc6c0499198db88c22f",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R24_ORIGINAL_2024_07_QUESTIONS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-07-questions.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-07-questions · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 48쪽 문항 118; 1쪽 공통 지시; 과목 첫 면 33쪽",
+      "sha256": "e7ff73319b2b88e155937534bf2757ea675337bc2a215fb5262a35a8521a7354",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "EXAM_KEYS_R17B3_COST_ACCOUNTING_LIMITS",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/blob/c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a/jaegyeong/sources/2024-07-answers.pdf",
+      "version": "사용자 제공 보존 원본 · 2024-07-answers · 저장소 커밋 c3f0e75463d1ff8b61c13ebf2f1c7077c8e3684a",
+      "read_locator": "검수자가 이번에 직접 읽음: PDF 1쪽 원가관리회계 문항 118 (과목 번호 38) 공식 키 [2]",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "검수자가 보존된 실제 파일의 지정 범위를 독립 재독했습니다. 신규 다운로드가 아닙니다. 원본 이미지 13건, 문제 PDF 해당 문항·공통 지시·과목 머리, 답안 PDF 해당 표 텍스트를 직접 읽었습니다. 2023-03·2023-09·2024-05·2026-07 답안은 렌더 이미지도 직접 확인했습니다. 전체 문서 검증이나 공식 정답 유일성 승인을 뜻하지 않습니다."
+    },
+    {
+      "ref": "R7_COST06_KOCW_NPV",
+      "url": "https://contents2.kocw.or.kr/KOCW/document/2017/koreasejong/jeongjinho081/3.pdf",
+      "version": "2017년2학기 KOCW 공식 강의PDF 52쪽; 실제 확보본문 SHA256 c36acdc0cdbe1aa025ed6ede1641eff276413171aaea63637ad679c3b8e14091",
+      "read_locator": "검수자가 이번에 직접 재독: PDF 5~6쪽 회수기간 정의와 현금흐름 예제",
+      "sha256": "c36acdc0cdbe1aa025ed6ede1641eff276413171aaea63637ad679c3b8e14091",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "이전 확보된 실제 본문의 지정 문단을 이번에 독립 재독했습니다. 신규 다운로드 또는 기준서 전체의 시험 당시 판본 확인으로 세지 않습니다. 상법은 보존 git show 출력 SHA와 제17764호 시행 부칙을 함께 읽었으며 신규 git 조회는 아닙니다."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "독립 검수자가 같은 보존본문을 직접 재독했습니다. 새다운로드 아님."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "독립 검수자가 같은 보존본문을 직접 재독했습니다. 새다운로드 아님."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다."
+    },
+    {
+      "ref": "R22_NTS_CIT_19980808_2215",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "법인46012-2215, 19980808; ntstDcmId010000000000062931",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "65cfcb2ccbf11c395f88a52040265c305de825ccec128d6c748f6e810164c282",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "22차 이미 읽은 동일1998 회신을 정상TLS로 다시 받았습니다. API 응답의 시간 메타데이터가 달라 SHA는 이번 응답에 묶습니다. 대기환경보전법 사례로서 물환경법 원문에 기본·초과 구분이 없는 사실을 보충하지 않습니다. 신규 문서 발견이 아닙니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "독립 검수자가 같은 보존본문을 직접 재독했습니다. 새다운로드 아님."
+    },
+    {
+      "ref": "VAT_LAW_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+      "version": "'19194' / 시행 2023-01-01 / fixed commit fab0ff3a01f8a277b795d22ec5f7484cc40b40ad",
+      "read_locator": "메타데이터 시행 2023-01-01, 제10조제1항·제4항·제5항·제6항과 제12조제3항",
+      "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존된 git show 실제 본문을 이번 작성자가 직접 재독했습니다. 신규 법령 다운로드가 아닙니다."
+    },
+    {
+      "ref": "VAT_DECREE_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+      "version": "'33271' / 시행 2023-02-28 / fixed commit 14e8cede44db063243866e5c1213962e02eb7ee6",
+      "read_locator": "메타데이터 시행 2023-02-28, 제19조의2 및 제20조제1호",
+      "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존된 git show 실제 본문을 이번 작성자가 직접 재독했습니다. 신규 법령 다운로드가 아닙니다."
+    },
+    {
+      "ref": "R23_W0_NTS_VAT_BASIC_2020",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2020 선택판; ntstBscId100000000000001571; 별도 부칙목록 응답없음",
+      "read_locator": "ASISTD001MR02 bscExrDVOList의 10-0-4 광고선전물의 배포, ntstExrBaseSn2020041; 1998.08.01 개정 표시",
+      "sha256": "f538e2e0e55db1eeade7dd97630980abf0ea110625e1d6dde75248127b1e80f3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "23차 확보한 동일 JSON에서 이번 쟁점에 해당하는 10-0-4를 새로 읽었습니다. 기존 ref를 재사용하며 새 문서 확보로 세지 않습니다. 2020 선택판의 별도 부칙 응답은 비어 있습니다."
+    },
+    {
+      "ref": "R24_W5_NTS_AD_GIFT_20020527",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서삼46015-10881, 2002.05.27; ntstDcmId010000000000050829",
+      "read_locator": "dcmDVO 회신; 첨부 질의내용 1, 기본통칙 6-16-2, 부가46015-100(1994.01.15), 국심92서1010, 간세1265.1-3954",
+      "sha256": "5788c256f795a6b5419082da53a740a307d285a7aac2f94f770cad0c2d036e99",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2002년 회신을 2023년 신설 규정으로 사용하지 않습니다. 불특정 다수 광고선전물과 특정 고객·예비고객 증여를 구별하는 해석입니다."
+    },
+    {
+      "ref": "R24_W5_NTS_VAT_BASIC_2024",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2024; 부칙 시행 2024.03.15; ntstBscId100000000000001571",
+      "read_locator": "ASISTD001MR02 10-0…4(ntstExrBaseSn2024041) 본문과 1998.08.01 개정 표시; 부칙 2024.03.15 시행",
+      "sha256": "c9cd4c01873fc8d1cc91e4c76176994a81c22d5461d0e404be1c4e545ec4dde4",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "시험 이후 판본입니다. 2020 선택판의 해당 문구와 같은지를 대조한 보조 자료이며 2024년 새 규정을 2023년에 소급 적용하지 않습니다."
+    },
+    {
+      "ref": "VAT_LAW_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/fab0ff3a01f8a277b795d22ec5f7484cc40b40ad/kr/부가가치세법/법률.md",
+      "version": "'19194' / 시행 2023-01-01 / fixed commit fab0ff3a01f8a277b795d22ec5f7484cc40b40ad",
+      "read_locator": "메타데이터 시행 2023-01-01, 제10조제1항·제4항·제5항·제6항과 제12조제3항; 검수자가 같은 커밋의 git show 출력을 새로 생성해 동일 SHA를 확인함",
+      "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존된 git show 실제 본문을 이번 작성자가 직접 재독했습니다. 신규 법령 다운로드가 아닙니다.",
+      "author_read_method": "reread_preserved_body",
+      "reviewer_read_method": "검수자가 보존된 실제 본문 파일을 독립적으로 다시 읽었습니다. 검수자 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "VAT_DECREE_2023",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/14e8cede44db063243866e5c1213962e02eb7ee6/kr/부가가치세법/시행령.md",
+      "version": "'33271' / 시행 2023-02-28 / fixed commit 14e8cede44db063243866e5c1213962e02eb7ee6",
+      "read_locator": "메타데이터 시행 2023-02-28, 제19조의2 및 제20조제1호; 검수자가 같은 커밋의 git show 출력을 새로 생성해 동일 SHA를 확인함",
+      "sha256": "55b76d4889b09b57bcb56a07013644a944072fc65744f44fed069e00cdef30c9",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "보존된 git show 실제 본문을 이번 작성자가 직접 재독했습니다. 신규 법령 다운로드가 아닙니다.",
+      "author_read_method": "reread_preserved_body",
+      "reviewer_read_method": "검수자가 보존된 실제 본문 파일을 독립적으로 다시 읽었습니다. 검수자 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "R23_W0_NTS_VAT_BASIC_2020",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2020 선택판; ntstBscId100000000000001571; 별도 부칙목록 응답없음",
+      "read_locator": "ASISTD001MR02 bscExrDVOList의 10-0-4 광고선전물의 배포, ntstExrBaseSn2020041; 1998.08.01 개정 표시",
+      "sha256": "f538e2e0e55db1eeade7dd97630980abf0ea110625e1d6dde75248127b1e80f3",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "23차 확보한 동일 JSON에서 이번 쟁점에 해당하는 10-0-4를 새로 읽었습니다. 기존 ref를 재사용하며 새 문서 확보로 세지 않습니다. 2020 선택판의 별도 부칙 응답은 비어 있습니다.",
+      "author_read_method": "reread_preserved_body",
+      "reviewer_read_method": "검수자가 보존된 실제 본문 파일을 독립적으로 다시 읽었습니다. 검수자 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "R24_W5_NTS_AD_GIFT_20020527",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서삼46015-10881, 2002.05.27; ntstDcmId010000000000050829",
+      "read_locator": "dcmDVO 회신; 첨부 질의내용 1, 기본통칙 6-16-2, 부가46015-100(1994.01.15), 국심92서1010, 간세1265.1-3954",
+      "sha256": "5788c256f795a6b5419082da53a740a307d285a7aac2f94f770cad0c2d036e99",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "2002년 회신을 2023년 신설 규정으로 사용하지 않습니다. 불특정 다수 광고선전물과 특정 고객·예비고객 증여를 구별하는 해석입니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "검수자가 보존된 실제 본문 파일을 독립적으로 다시 읽었습니다. 검수자 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "R24_W5_NTS_VAT_BASIC_2024",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "rgtYr=2024; 부칙 시행 2024.03.15; ntstBscId100000000000001571",
+      "read_locator": "ASISTD001MR02 10-0…4(ntstExrBaseSn2024041) 본문과 1998.08.01 개정 표시; 부칙 2024.03.15 시행",
+      "sha256": "c9cd4c01873fc8d1cc91e4c76176994a81c22d5461d0e404be1c4e545ec4dde4",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "시험 이후 판본입니다. 2020 선택판의 해당 문구와 같은지를 대조한 보조 자료이며 2024년 새 규정을 2023년에 소급 적용하지 않습니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "검수자가 보존된 실제 본문 파일을 독립적으로 다시 읽었습니다. 검수자 신규 다운로드가 아닙니다."
+    },
+    {
+      "ref": "R24_W5_NTS_CLOSING_20050930",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서면인터넷방문상담3팀-1658, 20050930; ntstDcmId010000000000034180",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "62c306690c6a9d628ce527ca611a9a93f3cc9c26c46fc91f6e482113712dbbad",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2005년 당시 부가가치세법 제6조제4항 회신입니다. 매입세액 공제 여부와 무관하다는 옛 규칙을 2024년 법제10조의 자기생산·취득재화 범위로 대체하여 적용할 수 없습니다."
+    },
+    {
+      "ref": "R24_W5_NTS_CLOSING_20231025",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2023-법규부가-0699, 20231025; ntstDcmId200000000000001498",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "90a0dc74a6d479e41b1dbc57f1d6ecb785d4f52b171e660f83b1703567564df6",
+      "actually_read": true,
+      "read_method": "fresh_download_normal_TLS",
+      "provenance_limit": "2023년 음식점업 면세농산물 의제매입세액의 환입 회신입니다. 실제 공제 사실이 명시된 사례이고 일반 제조업 건물의 공제 사실을 보충하지 않습니다."
+    },
+    {
+      "ref": "R24_W5_NTS_CLOSING_20050930",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "서면인터넷방문상담3팀-1658, 20050930; ntstDcmId010000000000034180",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "62c306690c6a9d628ce527ca611a9a93f3cc9c26c46fc91f6e482113712dbbad",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "2005년 당시 부가가치세법 제6조제4항 회신입니다. 매입세액 공제 여부와 무관하다는 옛 규칙을 2024년 법제10조의 자기생산·취득재화 범위로 대체하여 적용할 수 없습니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "독립 검수자가 같은 보존본문을 직접 재독했습니다. 새다운로드 아님."
+    },
+    {
+      "ref": "R24_W5_NTS_CLOSING_20231025",
+      "url": "https://taxlaw.nts.go.kr/action.do",
+      "version": "사전-2023-법규부가-0699, 20231025; ntstDcmId200000000000001498",
+      "read_locator": "dcmDVO 문서번호·일자·회신 및 실제 첨부 본문 질의내용·관련 법령·유사 사례",
+      "sha256": "90a0dc74a6d479e41b1dbc57f1d6ecb785d4f52b171e660f83b1703567564df6",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "2023년 음식점업 면세농산물 의제매입세액의 환입 회신입니다. 실제 공제 사실이 명시된 사례이고 일반 제조업 건물의 공제 사실을 보충하지 않습니다.",
+      "author_read_method": "fresh_download_normal_TLS",
+      "reviewer_read_method": "독립 검수자가 같은 보존본문을 직접 재독했습니다. 새다운로드 아님."
+    },
+    {
+      "ref": "VAT_LAW_2024",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/2c23d7c33d892e6abc9437a230b5c3b6713a4cdd/kr/부가가치세법/법률.md",
+      "version": "제19931호 / 시행 2024-01-01 / fixed commit 2c23d7c33d892e6abc9437a230b5c3b6713a4cdd",
+      "read_locator": "검수자 실제 git show 출력의 메타데이터·법10조1·6항",
+      "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "2025-01 문항에 명시된 별도언급없는한2024세법 적용 지시와 대응하며, 구2005회신을 현재공제요건에 덮어쓰지 않습니다."
+    },
+    {
+      "ref": "VAT_DECREE_2024",
+      "url": "https://github.com/legalize-kr/legalize-kr/blob/2007eae272ede3997b5871a8b2274549960f86ed/kr/부가가치세법/시행령.md",
+      "version": "제34488호 / 시행 2024-05-17 / fixed commit 2007eae272ede3997b5871a8b2274549960f86ed",
+      "read_locator": "검수자 실제 git show 출력의 메타데이터·영66조2·4·5항",
+      "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+      "actually_read": true,
+      "read_method": "reread_preserved_body",
+      "provenance_limit": "2025-01 문항에 명시된 별도언급없는한2024세법 적용 지시와 대응하며, 구2005회신을 현재공제요건에 덮어쓰지 않습니다."
+    }
+  ],
+  "limits": [
+    "독립 검수 pass는 보류 유지 또는 해당 범위 해설을 승인한 것이며 부분 해설의 정답 유일성을 인증하지 않습니다.",
+    "원문 새 판독과 기존 판독 재사용 범위는 각 inspection_scope/source_reads/originals를 따릅니다.",
+    "본문 읽기 기록 수에는 같은 문서 재독·원문 PDF/이미지·영상이 포함되며 새 문헌 수가 아닙니다.",
+    "출제기관 접근 실패는 정오표가 없다는 증거가 아닙니다."
+  ]
+}
