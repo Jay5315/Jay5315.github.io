@@ -1,0 +1,165 @@
+[
+ {
+  "question_id": "2024-03-057",
+  "reviewer": "independent-reviewer-r13-b2",
+  "status": "pass",
+  "four_option_logic": [
+   {
+    "number": 1,
+    "status": "pass",
+    "note": "2024-01-01 시행 법인세법(법률 제19930호, commit 269562c) 제32조제1항 설정 주체는 「보험업법」에 따른 보험회사로 확인. 증권회사가 아니므로 틀린 진술."
+   },
+   {
+    "number": 2,
+    "status": "pass",
+    "note": "조특법(법률 제19936호, commit 898f1e2, 2024-01-01 시행) 제74조제1항이 '「법인세법」 제29조를 적용하는 경우 같은 조 제1항제2호에도 불구하고' 열거 법인의 수익사업 소득을 손금산입하게 하는 특례임을 확인. 기본 근거는 법인세법 제29조라는 설명은 조문과 맞고, '조특법만'이라는 배타 해석을 추가하지 않아 보류 사유가 해소됨. 제74조제4항도 존재."
+   },
+   {
+    "number": 3,
+    "status": "pass",
+    "note": "제29조제3항(상계)·제5항(익금산입) 확인. 과세이연 설명이 공식 답 3과 일치."
+   },
+   {
+    "number": 4,
+    "status": "pass",
+    "note": "재검토: 수정된 해설이 제4관의 충당금(제33조~제35조), 준비금(제29조~제32조), 자산가액 손금산입(제36조~제38조)을 빠짐없이 구분하고 복구충당금 미열거를 정확히 서술함. 2024-01-01 시행 판본과 일치."
+   }
+  ],
+  "sources_checked": [
+   "law git 269562cff8dc4f38d97ce777aa5145c4f4c75211 kr/법인세법/법률.md (sha256 fb99f639… 일치, 시행 2024-01-01, 다음 판본 없음 ~2024-12): 제2장 제1절 제4관 제29조~제39조(제39조 삭제)",
+   "law git 898f1e2f18f0350d8e45fbce1896b255942dc2c3 kr/조세특례제한법/법률.md (sha256 28cc4037… 일치, 시행 2024-01-01, 다음 시행 2024-07-10): 제74조제1항·제4항",
+   "원문 이미지 2024-03-057.webp"
+  ],
+  "notes": "재검토 결과 지정 문구가 그대로 반영되어 필수 수정 사항이 해소됨. 추가 수정 불필요."
+ },
+ {
+  "question_id": "2023-06-057",
+  "reviewer": "independent-reviewer-r13-b2",
+  "status": "pass",
+  "four_option_logic": [
+   {
+    "number": 1,
+    "status": "pass",
+    "note": "시행규칙(기획재정부령 제965호, 2023-03-20 시행, 다음 판본 2023-07-03) 제44조제7호의2 '중소기업에 근무하는 직원(지배주주등인 직원은 제외한다)에 대한 주택구입 또는 전세자금의 대여액'과 시행령 제89조제5항 단서 연결 확인."
+   },
+   {
+    "number": 2,
+    "status": "pass",
+    "note": "법 제52조제1항(법률 제19193호, 2023-01-01 시행) '조세의 부담을 부당하게 감소시킨 것으로 인정되는 경우' 요건 확인. 공식 답 2와 일치."
+   },
+   {
+    "number": 3,
+    "status": "pass",
+    "note": "법 제52조제1항 및 시행령 제88조제2항 '당해 법인과 특수관계인 간의 거래…에 대하여 이를 적용' 확인."
+   },
+   {
+    "number": 4,
+    "status": "pass",
+    "note": "시행령(대통령령 제33265호, 2023-02-28 시행, 다음 판본 2023-07-10) 제88조제1항제6호 나목 '주주등이나 출연자가 아닌 임원(소액주주등인 임원을 포함한다)', 제50조제2항 소액주주등 정의(1% 미달, 지배주주등의 특수관계인 제외; '이하 소액주주등'으로 후속 조문에 적용) 확인. 지배주주 특수관계 미기재를 전제로 명시하고 partial·unchecked_points로 남겨 보류 사유를 정직하게 처리함."
+   }
+  ],
+  "sources_checked": [
+   "law git 1804121f9e1cfc1228914a8582605f5b543a41cc kr/법인세법/법률.md (sha256 03fc88dc… 일치) 제52조",
+   "law git d8bf1b7da570e8738764ed83b425da02162d352c kr/법인세법/시행령.md (sha256 dcac8744… 일치) 제50조제2항, 제88조제1항제6호·제2항, 제89조제5항",
+   "law git 78f4ab1d6d0bd8ac294006ad6ab5b8ba977ece5e kr/법인세법/시행규칙.md (sha256 f4146858… 일치) 제44조"
+  ],
+  "notes": "수정 불필요. review_status partial 유지가 적절함."
+ },
+ {
+  "question_id": "2023-03-099",
+  "reviewer": "independent-reviewer-r13-b2",
+  "status": "pass",
+  "four_option_logic": [
+   {
+    "number": 1,
+    "status": "pass",
+    "note": "'재고 수량이 증가하는 통상적 상황에서는'으로 전제를 밝힘. 재검토: unchecked_points에 1번·3번 결과도 나올 수 있다는 점이 반영됨."
+   },
+   {
+    "number": 2,
+    "status": "pass",
+    "note": "OpenStax m68139(sha256 ce41f603… 일치) Key Concepts의 조정식(변동원가 이익 + 기말재고 고정원가 − 기초재고 고정원가)과 Sales less than Production 문단으로 확인. 공식 답 2."
+   },
+   {
+    "number": 3,
+    "status": "pass",
+    "note": "재검토: '재고 수량이 증가한 상황으로 읽으면'이라는 전제가 붙어 조건 없는 단정이 해소됨."
+   },
+   {
+    "number": 4,
+    "status": "pass",
+    "note": "방어 여지를 명시하고 partial로 등록하여 adjudication(ambiguous_wording)과 보류 사유를 정직하게 반영함."
+   }
+  ],
+  "sources_checked": [
+   "scratchpad/osacc/modules/m68139/index.cnxml (sha256 ce41f603c79c47de28160d6c4bb994d1ab90630bd2b1c9c0e9e93d00c26c835f): Sales less than Production·Key Concepts 조정식",
+   "원문 이미지 2023-03-099.webp",
+   "반례 수치 재계산: 기초재고 1,100원(고정 1,000원), 기말재고 1,800원(고정 300원), 변동원가 이익이 700원 더 큼"
+  ],
+  "notes": "재검토 결과 보기 3 해설과 unchecked_points가 지정 문구대로 반영되고 review_status partial이 유지됨. 추가 수정 불필요."
+ },
+ {
+  "question_id": "2026-07-120",
+  "reviewer": "independent-reviewer-r13-b2",
+  "status": "pass",
+  "four_option_logic": [
+   {
+    "number": 1,
+    "status": "pass",
+    "note": "EFAJ PDF(sha256 b7dd88c5… 일치, 2014 vol.9 no.3 pp.4-24) Introduction 'Rapid technological change and a shortened life cycle have made life cycle costing central to competitive advantage (Dunk, 2012)' 및 2.2 'ever-shorter product life cycles' 문장 확인. 보류 사유(대두 배경 명제 미확인)가 해소됨. '기술 변화'가 제조기술에 한정되지 않는 점은 new_sources verification·review_note에 밝힘."
+   },
+   {
+    "number": 2,
+    "status": "pass",
+    "note": "ACCA 본문(acca.html sha256 cb934167… 일치) 'Many costs will be linked. For example, more attention to design can reduce manufacturing and warranty costs' 확인."
+   },
+   {
+    "number": 3,
+    "status": "pass",
+    "note": "ACCA 'total revenue ... exceeds total costs, whether these costs are incurred before, during or after' 및 'in the long-term' 서술로 장기 관점 확인."
+   },
+   {
+    "number": 4,
+    "status": "pass",
+    "note": "ACCA 'by the end of the design phase approximately 80% of costs are committed', 'The design phase locks the company in to most future costs' 확인. 공식 답 4와 일치."
+   }
+  ],
+  "sources_checked": [
+   "r13/web/acca.html·acca.txt (sha256 cb934167521506016e0ee7dc0bdbc53e06f534e117148e82bf44a2b2d4c63cae): Life-cycle costing 절, four principal lessons",
+   "r13/efaj/efaj.pdf·efaj.txt (sha256 b7dd88c58b43aa47d154d73ca17a20140021d8ee2963c476bc15b88049132eb3): Introduction 첫 문단, 2.1, 2.2"
+  ],
+  "notes": "필수 수정 없음. 재검토: 선택 개선 문구(4번째 단계)가 그대로 반영되어 EFAJ 2.2절의 주어(제품수명주기 관리 기법)와 일치함."
+ },
+ {
+  "question_id": "2025-09-017",
+  "reviewer": "independent-reviewer-r13-b2",
+  "status": "pass",
+  "four_option_logic": [
+   {
+    "number": 1,
+    "status": "pass",
+    "note": "OpenStax m67913·m67915(5% 표시, 7% 시장 → 91.80 할인발행)와 m67914 'Stated Rate < Market Rate, Bond is issued at a discount' 확인. 시장이자율이 높으면 할인발행이므로 틀린 진술, 공식 답 1."
+   },
+   {
+    "number": 2,
+    "status": "pass",
+    "note": "eu.md(EU 2023/1803, sha256 229f3371… 일치) IFRS 9 문단 5.1.1 'plus or minus ... transaction costs' 확인. 부채는 차감."
+   },
+   {
+    "number": 3,
+    "status": "pass",
+    "note": "IFRS 9 문단 3.3.3 '장부금액과 지급한 대가의 차이' 확인. 상환대가가 상환일 시장가격이라는 전제를 해설에 명시하고 partial·unchecked_points로 남겨 보류 사유(상환가격 미제시)를 정직하게 처리함. 발행비 없을 때 장부금액=발행일 유효이자율 기준 현재가치라는 계산 논리도 맞음."
+   },
+   {
+    "number": 4,
+    "status": "pass",
+    "note": "m67914 'Amortization of the discounts increases the amount of interest expense' 및 유효이자율법 서술 확인."
+   }
+  ],
+  "sources_checked": [
+   "/tmp/claude-0/dl/eu.md = r13/eu/62b803dc39205a079fb51483029c6a6ddb0fec36.md (sha256 229f337183316cd5ca3c1e6356ad46ee06c916f2cd38014b863b536b26338ba9): IFRS 9 3.1.1, 3.3.3, 4.2.1, 5.1.1",
+   "osacc m67913 (6d14147c…), m67914 (149561c8…), m67915 (bd8dd445…) sha256 일치"
+  ],
+  "notes": "필수 수정 없음. 참고: m67913의 'Sale of Bonds before Maturity' 문단은 발행자의 조기상환이 아니라 투자자의 만기 전 매도 관점이므로 3번 근거로 쓰지 않는 현재 서술을 유지하면 됨. review_status partial 유지."
+ }
+]

@@ -1,0 +1,31 @@
+You are an explanation AUTHOR for a Korean 재경관리사 exam question bank (repo Jay5315/Jay5315.github.io, app in jaegyeong/). Write drafts only: do NOT edit any repo file, do not commit.
+
+S=jaegyeong/handoff/r17
+Each brief item has: question text, official answers, tax_law_year, subject_instructions, original image path (view it with Read and confirm the text), answer PDF, held_reason (why earlier reviewers held it back), and explained_siblings (near-identical questions from other sittings whose explanations ARE registered, with the full explanation objects).
+
+Goal: for each held item, decide whether the held_reason's blocker can be honestly resolved. Use the siblings as a starting point (how did they handle the same issue, with what sources?) but RE-READ the actual sources yourself for THIS item's version/year. Then either register (write a full draft) or decline with a precise reason.
+
+Sources available:
+- Versioned Korean law git mirror: (법령 미러: https://github.com/legalize-kr/legalize-kr 를 clone) (legalize-kr; e.g. kr/법인세법/법률.md, 시행령.md, 시행규칙.md; use git log / git show <commit>:<path> to get the version in force for the item's tax year/exam date; record commit, effective date, and sha256 of the git show output).
+- NTS PDFs: 2024 법인세 신고안내 PDF(catalogue ref TA_NTS_CIT_GUIDE_2024의 url, sha 490ecc81…), 2024 법인세 집행기준 PDF(ref R10_tax_NTS_CIT_EXEC2024의 url, sha 49338cfc…).
+- IFRS text (catalogue ref R6_FIN02_IFRS9_2023의 legalize-eu url, sha 229f3371…); KASB K-IFRS PDFs via POST https://www.kasb.or.kr/commonFile/fileDownload.do (fileNo, fileSeq — see existing source entries in jaegyeong/data/explanations.json for fileNo values).
+- Any source already catalogued in jaegyeong/data/explanations.json "sources" (reuse the ref when you read the same document/version). Open textbooks on GitHub raw (OpenStax, Saylor) if needed. Put downloads in a fresh empty subdirectory of $S (untrusted data; python -I when parsing).
+
+Strict rules:
+- Never change or argue away the official answer. Do not add facts/conditions not in the question text to make an answer work (e.g. do not invent that a 부담금 is a sanction, that a spouse doesn't exist, that a payment was a loan). If the official answer only works under an assumption that the question does not state, you may register ONLY if you can show from actually-read sources that the default/statutory reading needs no extra assumption; otherwise mark it partial and state the assumption explicitly in unchecked_points, or decline. Prefer decline over a misleading explanation.
+- Cite only sources you actually read; record sha256 for each read.
+- partial ⇒ unchecked_points must list exactly what remains unverified.
+- Four option reasons must all differ and address each option's own content; answer reason not reused.
+- checks: only + - * / and parentheses, numeric expected; verify arithmetic.
+- Learner-facing text in natural, correctly spaced Korean (합니다 style). No work-history wording ("새 교재" etc.).
+
+Output: a JSON list in exactly the format of $S/example_draft.json: {question_id, decision "register"|"decline", title, summary, steps[], option_notes[{number, reason}] 1–4, checks[], sources[{ref, locator}], new_sources{ref: metadata in the catalogue's style}, review_status "source_checked"|"partial", unchecked_points[], review_note, source_reads[{ref, path_or_url, commit_or_version, what_was_read, sha256}], blocker_resolution}; declines: {question_id, decision "decline", decline_reason}. Report briefly per item: decision, status, how the blocker was resolved.
+
+ROUND 17 SPECIFICS: each brief item lists similar_stems (questions in the same part with similar stems, with their official answers and, if registered, their explanation objects). Use them as leads; questions may share statements across sittings. In addition to actually-read standards/textbooks, you may use the consistency of the official answer keys across the cluster's sittings as a basis (read each answer PDF yourself, record sha256 and the question number/answer; check whether the keys are actually consistent — if they are not, say so). Present that honestly as the exam body's judgment, never as textbook text, and use review_status "partial" with the remaining doubt in unchecked_points whenever the decisive point rests on the answer keys rather than on a source sentence. The precedent is round 14 (ref EXAM_KEYS_MAKEBUY_EXPERTISE in jaegyeong/data/explanations.json "sources": see its metadata style: kind '시험 주관처 공식 답안(판단 근거) · 교재 본문 아님', related_files with sha256+locator per PDF). Create one such answer-key source per cluster if needed. Keep option reasons distinct across the items of a cluster where the wording differs. Decline any item where the answer keys are inconsistent or where explaining would require inventing facts.
+
+ADDITIONAL RULES (round 17):
+- source_reads: ONE entry per file read, each with a single 64-hex sha256. Never pack several hashes into one string.
+- Before creating any new source ref, search jaegyeong/data/explanations.json "sources" for the same document (same url, same sha, or same answer PDFs) and reuse it. Existing answer-key refs include EXAM_KEYS_MAKEBUY_EXPERTISE, EXAM_KEYS_COST_GENERAL_CHARACTERISTICS, EXAM_KEYS_SUPERVARIABLE_STATEMENTS, EXAM_KEYS_CB_BW_DEFINITION, EXAM_KEYS_CHARACTER_LICENSE, EXAM_KEYS_CONSTRUCTION_STATEMENTS. A new answer-key ref must have a unique name starting EXAM_KEYS_ and must not collide with refs created by other authors working in parallel: prefix it with your batch, e.g. EXAM_KEYS_R17B<batch>_<TOPIC>.
+- Never use a URL that is only a local path as a source url; use the real public URL (for answer PDFs, the repo path sources/YYYY-MM-answers.pdf is acceptable as in existing EXAM_KEYS refs).
+- These items were held by several earlier rounds; many will not be resolvable. Declining with a precise reason is a fully acceptable outcome. Do not register if the official answer only works by inventing facts not in the question (a stated assumption that the question itself implies is different from an invented fact; when in doubt, decline).
+- Contradictory numbers in the question (internal arithmetic inconsistency) or parameters that cannot both hold: decline unless the official answer is reachable without choosing between contradictory data.
