@@ -227,7 +227,7 @@ document.addEventListener('click',e=>{
  else if(a==='question-view'){questionView=b.dataset.view;render(false);}
  else if(a==='choose')choose(Number(b.dataset.answer));else if(a==='grade')grade();else if(a==='previous')move(state.active.index-1);else if(a==='jump')move(Number(b.dataset.index));else if(a==='next'){if(state.active.index===state.active.ids.length-1)finish();else move(state.active.index+1);}
  else if(a==='finish')finish();else if(a==='finish-now')finish(true);
- else if(a==='page'){list.page=Number(b.dataset.page);$('library-results').innerHTML=libraryRows();scrollTo(0,0);}
+ else if(a==='page'){list.page=Number(b.dataset.page);const r=$('library-results');r.innerHTML=libraryRows();scrollTo(0,0);r.tabIndex=-1;r.focus({preventScroll:true});}
  else if(a==='practice-list')startSession(shuffled(listPool()),route==='wrong'?'오답 다시 익히기':route==='library'?'해설 있는 문제 풀기':'즐겨찾기 복습');
  else if(a==='single'){closeModal();startSession([byId.get(id)],parts.get(byId.get(id).part).name);}
  else if(a==='retry'||a==='unanswered'||a==='retry-all'){const s=state.sessions.find(s=>s.id===b.dataset.session);if(s)startSession(s.ids.filter(id=>a==='retry-all'||(a==='unanswered'?!s.answers[id]:s.answers[id]&&!byId.get(id).answers.includes(s.answers[id]))).map(id=>byId.get(id)),a==='retry'?'틀린 문제 다시 익히기':a==='retry-all'?`${s.title} 다시 풀기`.slice(0,100):'남은 문제 이어 풀기');}

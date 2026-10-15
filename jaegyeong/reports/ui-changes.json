@@ -490,6 +490,16 @@
           "after": "728dc936cbbb94003c5401b3f6c41674d79e1404773b01c60ff4512429abbbcb"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "목록 페이지 넘김 후 포커스를 결과 목록(#library-results)으로 옮겨 키보드·화면낭독기 사용자가 새 목록부터 읽게 함",
+      "files": {
+        "assets/app.js": {
+          "before": "728dc936cbbb94003c5401b3f6c41674d79e1404773b01c60ff4512429abbbcb",
+          "after": "ca1ab90d7799d33074d667adc10089e3b52376fcb2020e4b4d3ed2c71c044c85"
+        }
+      }
     }
   ]
 }
