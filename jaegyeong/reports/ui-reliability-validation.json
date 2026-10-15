@@ -165,10 +165,49 @@
     "20.4MB 단일 bank-data.js의 과목별 지연 로딩은 후속 설계 과제로 남깁니다."
   ],
   "deployment": {
-    "status": "pending",
+    "status": "success",
+    "app_commit": "40be92728f0422563abb2b427fbc5e963e6dc600",
+    "pages_run": {
+      "conclusion": "success",
+      "headSha": "40be92728f0422563abb2b427fbc5e963e6dc600",
+      "status": "completed",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38826755011"
+    },
+    "checked_at": "2026-10-16T08:59:43+09:00",
     "target_branches": [
       "main",
       "claude/practical-allen-zjsicv"
-    ]
+    ],
+    "public_asset_checks": [
+      {
+        "file": "assets/app.js",
+        "url": "https://jay5315.github.io/jaegyeong/assets/app.js?verify=40be927",
+        "http_status": 200,
+        "sha256": "15ba928fe08fdea5ec910bd967fd897a01845c45d529bbaaf0a56698cb0f83ca",
+        "matches_local": true
+      },
+      {
+        "file": "assets/offline.js",
+        "url": "https://jay5315.github.io/jaegyeong/assets/offline.js?verify=40be927",
+        "http_status": 200,
+        "sha256": "48c967ecc0d67352acbdee780ce748680a5e0e5e80f487e8ef99c25684ac42ea",
+        "matches_local": true
+      },
+      {
+        "file": "sw.js",
+        "url": "https://jay5315.github.io/jaegyeong/sw.js?verify=40be927",
+        "http_status": 200,
+        "sha256": "96e5020088c908c7d5eab17dcec72ebf86e6ae890f4dc2c13475947005ed4fe3",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank-data.js",
+        "url": "https://jay5315.github.io/jaegyeong/assets/bank-data.js?verify=40be927",
+        "http_status": 200,
+        "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "matches_local": true
+      }
+    ],
+    "note": "이 배포 확인 기록을 저장하는 후속 문서 커밋은 앱·데이터·테스트를 변경하지 않습니다."
   }
 }

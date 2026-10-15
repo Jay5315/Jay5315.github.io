@@ -10,6 +10,7 @@
 - 기존 서비스 워커의 업데이트·필수 파일 다운로드 실패·HTTP 503 시 캐시 사용을 별도 검사합니다. 저장 실패를 준비 완료로 표시하지 않으며, 이전 정상 저장본을 보존합니다. 후속 필수 파일 변경 때 서비스 워커의 캐시 버전도 갱신하세요.
 - UI 변경의 전후 해시는 기존 `reports/ui-changes.json` 체인에 추가했습니다. 문항 ID·공식 정답·문제/해설/개념 데이터·`assets/bank-data.js`·루트 사이트·기존 감사 이력과 보호 검사는 보존했습니다.
 - 회귀 검사: `scripts/test_ui_regressions.py`를 `test_app.py`에서 실행하며, 첫 방문 오프라인·실패·업데이트 검사는 `scripts/test_offline.py`로 별도 실행합니다. 필수 7개 검사 및 실제 결과는 [UI 안정성 개선 검증](reports/ui-reliability-validation.json)에 기록합니다.
+- 배포 확인: 앱 커밋 `40be927`을 두 브랜치에 저장했고 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38826755011)이 성공했습니다. 공개 `app.js`·`offline.js`·`sw.js`·`bank-data.js`의 SHA-256이 모두 로컬과 일치합니다. 후속 문서 커밋은 이 검증 기록만 저장합니다.
 - 20.4MB 단일 데이터의 과목별 지연 로딩은 이번 수정 범위에 포함하지 않았습니다. 파일 직접 열기·오프라인 저장·데이터 보호 구조를 함께 설계할 후속 개선입니다.
 
 
