@@ -704,3 +704,12 @@ a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decora
 }
 :root[data-size=l] :is(.question-text,.feedback,.question-explanation,.note-page){zoom:1.12}
 :root[data-size=xl] :is(.question-text,.feedback,.question-explanation,.note-page){zoom:1.25}
+.note-toc{display:none}
+@media(min-width:1101px){
+ .note-layout{display:grid;grid-template-columns:minmax(0,860px) 220px;gap:32px;align-items:start}
+ .note-toc{display:grid;gap:2px;position:sticky;top:calc(var(--appbar) + 24px);padding:14px 10px;border-left:2px solid var(--line)}
+ .note-toc p{margin:0 0 6px 10px;font-size:13px;font-weight:800;color:var(--accent)}
+ .note-toc button{text-align:left;padding:6px 10px;border-radius:8px;font-size:14px;font-weight:650;color:var(--ink-2);line-height:1.45}
+ .note-toc button:hover{background:var(--surface-2);color:var(--ink)}
+}
+.note-sec>h3{scroll-margin-top:calc(var(--appbar) + 16px)}

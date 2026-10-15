@@ -348,6 +348,20 @@
           "after": "78ca15c1a77e144c9be7a4cf688b1c5863a2bce91385f8e362d2a8c59f5c3aa1"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "개념 노트 페이지: 1101px 이상 화면에서 오른쪽 빈 칸에 고정 목차(노트 섹션 제목) 추가. 해시 라우팅을 건드리지 않도록 버튼으로 해당 섹션까지 스크롤",
+      "files": {
+        "assets/app.js": {
+          "before": "78ca15c1a77e144c9be7a4cf688b1c5863a2bce91385f8e362d2a8c59f5c3aa1",
+          "after": "6bd39139f72aa37756ebd92724d5f0886c36afd8ee5e6deeea36383148aaf1f5"
+        },
+        "assets/app.css": {
+          "before": "ab8c8f420f1be4a64bc782d539bc6fab6af8af816f620c7a9cc059f64583117a",
+          "after": "9bd3c8ed6d9a855f9fb312f2e9d0effe189962fbcbcdd68bba27a42d63583bb4"
+        }
+      }
     }
   ]
 }

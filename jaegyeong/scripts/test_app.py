@@ -168,6 +168,11 @@ with sync_playwright() as pw:
  page.locator('[data-action="grade"]').focus();page.keyboard.press('Enter')
  assert page.evaluate("document.activeElement.dataset.action")=='next'
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');page.reload()
+ # Wide screens get a sticky table of contents for concept notes; it scrolls to the section without changing the route.
+ goto('concept/C11');expect(page.locator('.note-toc button')).to_have_count(page.locator('.note-page > section.note-sec > h3').count())
+ page.locator('.note-toc button',has_text='자주 틀리는 포인트').click();page.wait_for_timeout(800)
+ assert page.evaluate("location.hash")=='#concept/C11'
+ top=page.evaluate("[...document.querySelectorAll('.note-page > section.note-sec > h3')].find(h=>h.textContent==='자주 틀리는 포인트').getBoundingClientRect().top");assert 0<=top<200,top
  # Printing hides app chrome and uses light colours whatever the theme.
  goto('concept/C11');page.emulate_media(media='print',color_scheme='dark')
  assert page.evaluate("[getComputedStyle(document.querySelector('.appbar')).display,getComputedStyle(document.body).backgroundColor,getComputedStyle(document.querySelector('.note-page')).color]")==['none','rgb(255, 255, 255)','rgb(17, 17, 17)']
