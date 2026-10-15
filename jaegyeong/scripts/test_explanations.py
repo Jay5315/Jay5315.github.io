@@ -486,7 +486,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
-        # Newest stage: the round-2 spacing fix only changed whitespace; restore the before objects
+        # Newest stage: round-3 wording fixes (particles, contaminated common-instruction quotes).
+        wording3 = (cls.audit or {}).get('wording_round3')
+        if wording3:
+            cls.stage_after['wording_round3'] = copy.deepcopy(cls.data)
+            cls.audit_after['wording_round3'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in wording3['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['wording_round3']
+        cls.before_wording3 = copy.deepcopy(cls.data)
+        # Next: the round-2 spacing fix only changed whitespace; restore the before objects
         # so every earlier ledger (round 26 and older) is checked against what it recorded.
         spacing2 = (cls.audit or {}).get('spacing_round2')
         if spacing2:
@@ -1055,6 +1065,31 @@ class ExplanationTests(unittest.TestCase):
         stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
         for id in set(stage) - set(ids):
             self.assertEqual(stage[id], self.notes[id], id)
+
+    def test_wording_round3_applies_only_listed_fixes(self):
+        group = (self.audit_after.get('wording_round3') or {}).get('wording_round3')
+        if not group:
+            self.skipTest('No round-3 wording fix')
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('wording3', R / 'scripts/apply_wording_round3.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        after_stage = {n['question_id']: n for n in self.stage_after['wording_round3']['items']}
+        before_stage = {n['question_id']: n for n in self.before_wording3['items']}
+        self.assertEqual(group['particle_fixes'], [list(x) for x in module.PARTICLE_FIXES])
+        ids = {r['question_id'] for r in group['notes']}
+        self.assertEqual(group['count'], len(ids))
+        for id, before in before_stage.items():
+            # Re-applying the listed fixes to the stage before must give exactly the recorded result.
+            self.assertEqual(module.fix_note(before, self.qs[id]), after_stage[id], id)
+            self.assertEqual(id in ids, before != after_stage[id], id)
+        for r in group['notes']:
+            self.assertEqual(r['before'], before_stage[r['question_id']])
+            self.assertEqual(digest(r['before']), r['before_hash'])
+            self.assertEqual(digest(after_stage[r['question_id']]), r['after_hash'])
 
     def test_spacing_round2_changes_only_whitespace(self):
         group = (self.audit_after.get('spacing_round2') or {}).get('spacing_round2')
