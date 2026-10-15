@@ -486,7 +486,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
-        # Newest stage: round-3 wording fixes (particles, contaminated common-instruction quotes).
+        # Newest stage: round-3 spacing (whitespace only, Hangul followed by an English word).
+        spacing3 = (cls.audit or {}).get('spacing_round3')
+        if spacing3:
+            cls.stage_after['spacing_round3'] = copy.deepcopy(cls.data)
+            cls.audit_after['spacing_round3'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in spacing3['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['spacing_round3']
+        cls.before_spacing3 = copy.deepcopy(cls.data)
+        # Next: round-3 wording fixes (particles, contaminated common-instruction quotes).
         wording3 = (cls.audit or {}).get('wording_round3')
         if wording3:
             cls.stage_after['wording_round3'] = copy.deepcopy(cls.data)
@@ -1091,10 +1101,10 @@ class ExplanationTests(unittest.TestCase):
             self.assertEqual(digest(r['before']), r['before_hash'])
             self.assertEqual(digest(after_stage[r['question_id']]), r['after_hash'])
 
-    def test_spacing_round2_changes_only_whitespace(self):
-        group = (self.audit_after.get('spacing_round2') or {}).get('spacing_round2')
+    def check_whitespace_ledger(self, key, before_snapshot):
+        group = (self.audit_after.get(key) or {}).get(key)
         if not group:
-            self.skipTest('No round-2 spacing fix')
+            self.skipTest(f'No {key}')
         def digest(x):
             return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
                                              separators=(',', ':')).encode()).hexdigest()
@@ -1106,8 +1116,8 @@ class ExplanationTests(unittest.TestCase):
             if isinstance(x, dict):
                 return {k: strip(v) for k, v in x.items()}
             return x
-        after_stage = {n['question_id']: n for n in self.stage_after['spacing_round2']['items']}
-        before_stage = {n['question_id']: n for n in self.before_spacing2['items']}
+        after_stage = {n['question_id']: n for n in self.stage_after[key]['items']}
+        before_stage = {n['question_id']: n for n in before_snapshot['items']}
         ids = [r['question_id'] for r in group['notes']]
         self.assertEqual(len(ids), len(set(ids)))
         self.assertEqual(group['count'], len(ids))
@@ -1125,6 +1135,12 @@ class ExplanationTests(unittest.TestCase):
                     self.assertEqual(r['before'][k], after[k], (id, k))
             self.assertEqual([(o['number'], o['is_answer']) for o in r['before']['option_notes']],
                              [(o['number'], o['is_answer']) for o in after['option_notes']], id)
+
+    def test_spacing_round2_changes_only_whitespace(self):
+        self.check_whitespace_ledger('spacing_round2', self.before_spacing2)
+
+    def test_spacing_round3_changes_only_whitespace(self):
+        self.check_whitespace_ledger('spacing_round3', self.before_spacing3)
 
     def test_spacing_amendments_change_only_whitespace(self):
         amendments = (self.audit or {}).get('spacing_amendments')
