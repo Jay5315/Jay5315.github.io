@@ -687,3 +687,10 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .list-actions .btn.primary{padding:8px 14px;margin-left:auto}
 }
 .library-copy h3 mark{background:var(--accent-soft);color:inherit;border-radius:3px;padding:0 1px;margin:0 -1px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.part-results{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:28px}
+.part-result{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(56px,1fr) 7.5em;gap:12px;align-items:center;font-size:15px}
+.part-result-name{font-weight:700;color:var(--ink);overflow-wrap:anywhere}
+a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px}
+.part-result-bar{height:8px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.part-result-bar i{display:block;height:100%;background:var(--brand)}
+.part-result-num{text-align:right;font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}

@@ -58,6 +58,12 @@ with sync_playwright() as pw:
   page.locator('[data-action=next]').click()
  assert state()['results']['2026-07-026']['correct']==2
  goto('library');page.locator('#library-query').fill('2024-09-063');expect(page.locator('.library-card')).to_have_count(0)
+ # A finished session spanning several parts shows a per-part breakdown, weakest part first.
+ page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative);const a=qs.find(q=>q.part==='F03'),b=qs.find(q=>q.part==='F04');
+  s.sessions.unshift({id:'parts-test',title:'parts',ids:[a.id,b.id],answers:{[a.id]:a.answers[0],[b.id]:b.answers[0]%4+1},index:1,startedAt:Date.now(),finishedAt:Date.now()});localStorage.setItem(k,JSON.stringify(s));}""",KEY)
+ goto('result/parts-test');page.reload();expect(page.locator('.part-result')).to_have_count(2)
+ expect(page.locator('.part-result').first).to_contain_text('0/1');expect(page.locator('.part-result').last).to_contain_text('1/1 · 100%')
+ page.evaluate("k=>{const s=JSON.parse(localStorage.getItem(k));s.sessions=s.sessions.filter(x=>x.id!=='parts-test');localStorage.setItem(k,JSON.stringify(s));}",KEY);goto('library');page.reload()
  # Search terms are highlighted in result previews (whitespace-insensitive, special characters escaped).
  page.locator('#library-query').fill('보고기간 후사건');expect(page.locator('.library-card h3 mark').first).to_be_visible()
  assert all(''.join(t.split()) in {'보고기간','후사건','보고기간후사건'} for t in page.locator('.library-card h3 mark').all_inner_texts())

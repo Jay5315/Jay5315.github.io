@@ -280,6 +280,20 @@
           "after": "cc4551da558529027162dbd0100c537ba91598b32d78f964821433ec8fc03d60"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 결과에 '파트별 결과' 추가: 2개 이상 파트가 섞인 세션에서 파트마다 정답/응답 수·정답률 막대를 정답률 낮은 순으로 보여 주고, 개념 노트가 있는 파트는 노트로 연결",
+      "files": {
+        "assets/app.js": {
+          "before": "6c915c9de98147be2347a978ffe2d7dc6078e3fbfc2e41fb71b56388e27b44e6",
+          "after": "1c78effdabf7fc5d45c97d79c4b1fcc97cc99a57395ffdd8d3a5dd53a9b7c53f"
+        },
+        "assets/app.css": {
+          "before": "cc4551da558529027162dbd0100c537ba91598b32d78f964821433ec8fc03d60",
+          "after": "35b075b13890d56fc5b7e1aa16a409e12ed00c828129f341967d307c669af433"
+        }
+      }
     }
   ]
 }
