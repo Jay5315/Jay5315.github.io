@@ -505,7 +505,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
-        # Newest stage: round-5 spacing (space before a circled option number after Hangul).
+        # Newest stage: round-4 wording clean-up (double spaces, comma spacing, doubled periods).
+        wording4 = (cls.audit or {}).get('wording_round4')
+        if wording4:
+            cls.stage_after['wording_round4'] = copy.deepcopy(cls.data)
+            cls.audit_after['wording_round4'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in wording4['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['wording_round4']
+        cls.before_wording4 = copy.deepcopy(cls.data)
+        # Next: round-5 spacing (space before a circled option number after Hangul).
         spacing5 = (cls.audit or {}).get('spacing_round5')
         if spacing5:
             cls.stage_after['spacing_round5'] = copy.deepcopy(cls.data)
@@ -1122,6 +1132,29 @@ class ExplanationTests(unittest.TestCase):
         stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
         for id in set(stage) - set(ids):
             self.assertEqual(stage[id], self.notes[id], id)
+
+    def test_wording_round4_reapplies_to_recorded_result(self):
+        group = (self.audit_after.get('wording_round4') or {}).get('wording_round4')
+        if not group:
+            self.skipTest('No round-4 wording clean-up')
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('wording4', R / 'scripts/apply_wording_round4.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        after_stage = {n['question_id']: n for n in self.stage_after['wording_round4']['items']}
+        before_stage = {n['question_id']: n for n in self.before_wording4['items']}
+        ids = {r['question_id'] for r in group['notes']}
+        self.assertEqual(group['count'], len(ids))
+        for id, before in before_stage.items():
+            self.assertEqual(module.fix_note(before), after_stage[id], id)
+            self.assertEqual(id in ids, before != after_stage[id], id)
+        for r in group['notes']:
+            self.assertEqual(r['before'], before_stage[r['question_id']])
+            self.assertEqual(digest(r['before']), r['before_hash'])
+            self.assertEqual(digest(after_stage[r['question_id']]), r['after_hash'])
 
     def test_wording_round3_applies_only_listed_fixes(self):
         group = (self.audit_after.get('wording_round3') or {}).get('wording_round3')
