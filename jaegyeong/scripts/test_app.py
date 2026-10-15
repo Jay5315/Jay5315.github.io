@@ -48,7 +48,11 @@ with sync_playwright() as pw:
   goto('library');page.locator('#library-query').fill('2026-07-026');expect(page.locator('.library-card')).to_have_count(1)
   page.locator('[data-action=preview]').click();page.locator('[data-action=single]').click();expect(page.locator('.question-card')).to_be_visible()
   assert active_q()['id']=='2026-07-026'
+  expect(page.locator('.question-text[data-correct]')).to_have_count(0)
   page.locator('#main').focus();page.keyboard.press(str(answer));page.keyboard.press('Enter')
+  expect(page.locator('.question-text')).to_have_attribute('data-correct','1 4');expect(page.locator('.question-text')).to_have_attribute('data-picked',str(answer))
+  marked=page.evaluate("[...document.querySelectorAll('.question-text .q-choice')].map(e=>getComputedStyle(e).backgroundColor)")
+  assert marked[0]==marked[3]!=marked[1]==marked[2],marked
   expect(page.locator('.feedback')).to_contain_text('정답이에요')
   assert '복수 정답' in page.locator('.feedback').inner_text()
   page.locator('[data-action=next]').click()

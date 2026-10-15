@@ -198,6 +198,20 @@
           "after": "bb273de3d8a0d4b7715db8629634e6f3b2c8b8b1be77cbafbaafb103516c9377"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "채점 후 문제 본문 보기 목록에서 공식 정답 보기는 초록, 내가 고른 오답 보기는 빨강 테두리·배경으로 표시(.question-text data-correct/data-picked, .q-choice data-n). 채점 전에는 표시 없음",
+      "files": {
+        "assets/app.js": {
+          "before": "5d1cdff5c6a581a2bd1ead95c5bdb81b78066363cfe1b721fff30cf79752be2c",
+          "after": "291dcce2551448326d6dec54fcd16a6ca1c28574e6cdcd26a0c69cfd79547517"
+        },
+        "assets/app.css": {
+          "before": "bb273de3d8a0d4b7715db8629634e6f3b2c8b8b1be77cbafbaafb103516c9377",
+          "after": "72e6f2046b196caff88a5048677a3588df98d4569df9387fa380612920d1c166"
+        }
+      }
     }
   ]
 }

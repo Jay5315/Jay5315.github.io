@@ -673,3 +673,7 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .question-text .q-wide .q-choice .q-cols span::before{content:attr(data-label);color:var(--muted);font-size:.85em;overflow-wrap:anywhere}
 }
 .library-card .meta .wrong-pick{color:var(--bad);font-weight:650}
+.question-text[data-correct~="1"] .q-choice[data-n="1"],.question-text[data-correct~="2"] .q-choice[data-n="2"],.question-text[data-correct~="3"] .q-choice[data-n="3"],.question-text[data-correct~="4"] .q-choice[data-n="4"]{background:var(--ok-bg);border-color:var(--ok);box-shadow:inset 0 0 0 1px var(--ok)}
+.question-text[data-correct~="1"] .q-choice[data-n="1"] b,.question-text[data-correct~="2"] .q-choice[data-n="2"] b,.question-text[data-correct~="3"] .q-choice[data-n="3"] b,.question-text[data-correct~="4"] .q-choice[data-n="4"] b{color:var(--ok)}
+.question-text[data-picked="1"]:not([data-correct~="1"]) .q-choice[data-n="1"],.question-text[data-picked="2"]:not([data-correct~="2"]) .q-choice[data-n="2"],.question-text[data-picked="3"]:not([data-correct~="3"]) .q-choice[data-n="3"],.question-text[data-picked="4"]:not([data-correct~="4"]) .q-choice[data-n="4"]{background:var(--bad-bg);border-color:var(--bad);box-shadow:inset 0 0 0 1px var(--bad)}
+.question-text[data-picked="1"]:not([data-correct~="1"]) .q-choice[data-n="1"] b,.question-text[data-picked="2"]:not([data-correct~="2"]) .q-choice[data-n="2"] b,.question-text[data-picked="3"]:not([data-correct~="3"]) .q-choice[data-n="3"] b,.question-text[data-picked="4"]:not([data-correct~="4"]) .q-choice[data-n="4"] b{color:var(--bad)}
