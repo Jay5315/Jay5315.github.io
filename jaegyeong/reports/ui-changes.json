@@ -392,6 +392,16 @@
           "after": "0bd37b0710a51f976a21bf44a1ea890d6d56effada013678c45366508ea76fdd"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "접근성: 확대 보기 창의 넘치는 원본 이미지 영역(.zoom-scroll)도 키보드로 스크롤할 수 있게 tabindex·role=region 부여(axe 모바일 검사 위반 0건)",
+      "files": {
+        "assets/app.js": {
+          "before": "0bd37b0710a51f976a21bf44a1ea890d6d56effada013678c45366508ea76fdd",
+          "after": "ec2ed2dd587ae0b1bdeb3c8793d2adaf53b41d56a3828a59f20f52c4cc8687f2"
+        }
+      }
     }
   ]
 }

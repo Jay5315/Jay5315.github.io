@@ -6,6 +6,7 @@
   - 진행 막대 `.progress-track`: `role=progressbar`와 `aria-valuemin/max/now/valuetext`.
   - 문제 목록·개념 노트 목록·개념 노트 본문: 시각적으로 숨긴 `h2`(`.sr-only`)로 h1→h3 건너뜀 보정.
   - 가로로 넘치는 표(`.table-scroll`, `.q-table-wrap`): 렌더·모달 열기 뒤 `scrollables()`가 실제로 넘치는 것만 `tabindex=0`·`role=region`·`aria-label`을 붙여 키보드로 스크롤 가능.
+  - 확대 보기·미리보기 창의 넘치는 원본 이미지 영역(`.zoom-scroll`)도 같은 방식으로 처리합니다. 미리보기·개념 노트 창·확대 보기·학습 마치기 창·파트별 결과까지 두 너비·두 테마에서 위반 0건입니다.
 
 ## 2026-10-15 메뉴 배지 읽기 (UI)
 
