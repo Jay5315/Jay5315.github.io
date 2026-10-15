@@ -231,8 +231,8 @@ document.addEventListener('change',e=>{
  if(e.target.id==='library-subject'){list.subject=e.target.value;list.page=0;$('library-results').innerHTML=libraryRows();}
 });
 document.addEventListener('input',e=>{if(e.target.id==='library-query'){list.query=e.target.value;list.page=0;$('library-results').innerHTML=libraryRows();}});
-document.addEventListener('keydown',e=>{if(route!=='quiz'||!state.active||$('modal').open||['INPUT','SELECT','TEXTAREA','BUTTON','A','SUMMARY'].includes(e.target.tagName))return;if(['1','2','3','4'].includes(e.key)){e.preventDefault();choose(Number(e.key));}if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(state.active.index+(e.key==='ArrowRight'?1:-1));}
- if(e.key==='Enter'){e.preventDefault();const s=state.active;if(s.answers[s.ids[s.index]]){if(s.index===s.ids.length-1)finish();else move(s.index+1);}else grade();}});
+document.addEventListener('keydown',e=>{if(route!=='quiz'||!state.active||$('modal').open||e.ctrlKey||e.metaKey||e.altKey||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||e.target.isContentEditable)return;if(['1','2','3','4'].includes(e.key)){e.preventDefault();choose(Number(e.key));}if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(state.active.index+(e.key==='ArrowRight'?1:-1));}
+ if(e.key==='Enter'&&!['BUTTON','A','SUMMARY'].includes(e.target.tagName)){e.preventDefault();const s=state.active;if(s.answers[s.ids[s.index]]){if(s.index===s.ids.length-1)finish();else move(s.index+1);}else grade();}});
 $('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();}});
 window.addEventListener('hashchange',()=>{draft=null;list={subject:'',query:'',page:0,explanationsOnly:false};render();scrollTo(0,0);});
 window.addEventListener('storage',e=>{if(e.key===KEY){try{state=e.newValue?cleanState(JSON.parse(e.newValue)):fresh();draft=null;render(false);toast('다른 창의 최신 기록을 반영했어요.');}catch(err){toast('다른 창의 기록을 읽지 못했어요. 기록 백업을 확인해 주세요.');}}});

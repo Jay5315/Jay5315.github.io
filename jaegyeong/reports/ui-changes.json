@@ -168,6 +168,16 @@
           "after": "4dfa77f393f250cc31cf99c61a2d086d9bdcb11743f27507a3e392f06c309d4b"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 풀이 단축키: 보기·버튼을 클릭해 포커스가 버튼에 있어도 1~4·좌우 화살표가 동작(입력칸·Ctrl/Alt/Meta 조합은 제외). Enter(채점·다음)는 버튼·링크·접기 제목에서는 원래 동작을 유지",
+      "files": {
+        "assets/app.js": {
+          "before": "4dfa77f393f250cc31cf99c61a2d086d9bdcb11743f27507a3e392f06c309d4b",
+          "after": "9799ef6da3d93b32fb1d6a3aae66d95a803cdd7f0ff67774c9fd1ed2c5bad5c2"
+        }
+      }
     }
   ]
 }

@@ -131,6 +131,9 @@ with sync_playwright() as pw:
  page.evaluate("([k,ids])=>{const s=JSON.parse(localStorage.getItem(k));s.active={id:'arrow',title:'arrow',ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null};localStorage.setItem(k,JSON.stringify(s));}",[KEY,retry_ids])
  goto('quiz');page.reload();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
+ # Shortcuts still work after clicking a choice (focus sits on a button).
+ page.locator('[data-action="choose"]').first.click();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
+ page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
  # Returning learners get next steps; parts are grouped so each chapter heading appears once.
  goto('home');expect(page.locator('.next-steps')).to_be_visible();expect(page.locator('.hero')).to_have_count(0)
  page.locator('[data-action=subject][data-subject="재무회계"]').click()
