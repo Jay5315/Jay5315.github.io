@@ -646,3 +646,5 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .parts-fold>summary::-webkit-details-marker{display:none}
 .parts-fold>summary::after{content:'▾';color:var(--muted)}
 .parts-fold[open]>summary::after{content:'▴'}
+.instruction-list{margin:8px 0 0;padding-left:20px;line-height:1.75;max-height:240px;overflow:auto}
+.instruction-list li{margin:4px 0}

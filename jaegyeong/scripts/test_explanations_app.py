@@ -320,6 +320,19 @@ with sync_playwright() as pw:
     expect(mobile.locator('.parts-fold')).not_to_have_attribute('open', '')
     mobile.locator('.parts-fold > summary').click()
     expect(mobile.locator('.parts-fold .part-row').first).to_be_visible()
+    # Display helpers, on a fresh profile: units attach to numbers except where they start another
+    # word, and the common instructions' 'ü' items become a list.
+    fresh = browser.new_context(viewport={'width': 390, 'height': 844}).new_page()
+    fresh.on('pageerror', lambda e: errors.append(str(e)))
+    fresh.goto(URL + '#library')
+    fresh.locator('#library-query').fill('2024-01-029')
+    fresh.locator('[data-action=preview]').first.click()
+    fresh.locator('dialog [data-action=single]').click()
+    box = fresh.locator('.question-card details.instructions').first
+    box.locator('summary').click()
+    expect(box.locator('.instruction-list li')).to_have_count(3)
+    expect(box.locator('.instruction-list li').first).to_contain_text('매년 1월 1일부터 12월 31일까지')
+    fresh.context.close()
     # The PDF bullet glyph Ÿ is shown as • in the question text and in list previews.
     mobile.goto(URL + '#library')
     mobile.locator('#library-query').fill('2022-06-013')
