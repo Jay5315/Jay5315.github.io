@@ -178,6 +178,26 @@
           "after": "9799ef6da3d93b32fb1d6a3aae66d95a803cdd7f0ff67774c9fd1ed2c5bad5c2"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 기록 카드 시각에서 초 단위를 빼고 '2026. 10. 15. 오전 4:22' 형식으로 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "9799ef6da3d93b32fb1d6a3aae66d95a803cdd7f0ff67774c9fd1ed2c5bad5c2",
+          "after": "5d1cdff5c6a581a2bd1ead95c5bdb81b78066363cfe1b721fff30cf79752be2c"
+        }
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제·보기 본문을 단어 단위로 줄바꿈(word-break:keep-all, 긴 토큰은 overflow-wrap:anywhere로 계속 줄바꿈). 360px에서 4,321문항 가로 넘침 없음",
+      "files": {
+        "assets/app.css": {
+          "before": "a378771212525e86594aa98fce92b59cb7082f2032f7e0e40f0f41a14e257ac8",
+          "after": "bb273de3d8a0d4b7715db8629634e6f3b2c8b8b1be77cbafbaafb103516c9377"
+        }
+      }
     }
   ]
 }

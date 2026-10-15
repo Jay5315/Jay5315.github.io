@@ -127,10 +127,14 @@ with sync_playwright() as pw:
  shown,orig=page.evaluate("(id)=>[document.querySelector('.question-text').textContent,BANK_DATA.questions.find(q=>q.id===id).text]",qid)
  assert ''.join(shown.split())==''.join(orig.split()),'text view must keep the original wording'
  page.locator('[data-action=finish]').click();page.locator('[data-action=finish-now]').click()
+ goto('history');stamp=page.locator('.history-card .sub').first.inner_text().split('\n')[0]
+ assert __import__('re').search(r'\d:\d\d$',stamp) and not __import__('re').search(r'\d:\d\d:\d\d',stamp),stamp
  retry_ids=[q['id'] for q in page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.part==='F03'&&q.representative).slice(0,3)")]
  page.evaluate("([k,ids])=>{const s=JSON.parse(localStorage.getItem(k));s.active={id:'arrow',title:'arrow',ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null};localStorage.setItem(k,JSON.stringify(s));}",[KEY,retry_ids])
  goto('quiz');page.reload();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
+ # Korean text wraps between words, not inside them.
+ assert page.evaluate("getComputedStyle(document.querySelector('.question-text')).wordBreak")=='keep-all'
  # Shortcuts still work after clicking a choice (focus sits on a button).
  page.locator('[data-action="choose"]').first.click();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
