@@ -510,6 +510,20 @@
           "after": "88fb4adaf558638b40a1366a2ae1c629b2d054e512d8ac5fec52440a87b0b8c6"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 홈 '아직 풀고 있는 문제가 있어요' 카드에 진행 막대 추가",
+      "files": {
+        "assets/app.js": {
+          "before": "88fb4adaf558638b40a1366a2ae1c629b2d054e512d8ac5fec52440a87b0b8c6",
+          "after": "b60b7e1a53dc336adc9739eb6eedf0996f2bd69e262b914d1f787a348c9a2dcd"
+        },
+        "assets/app.css": {
+          "before": "b4c10bd82237f5fde22ee0dc82262c17d01793967d1a1d64058d6a4eb5800190",
+          "after": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb"
+        }
+      }
     }
   ]
 }

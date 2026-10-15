@@ -729,3 +729,6 @@ a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decora
 .note-toc-fold button{border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:650;color:var(--ink-2);background:var(--surface);min-height:36px}
 @media(min-width:1101px){.note-toc-fold{display:none}}
 @media print{.note-toc-fold{display:none}}
+.resume>div{flex:1;min-width:0}
+.resume-bar{display:block;height:6px;max-width:320px;margin-top:10px;border-radius:99px;background:color-mix(in srgb,var(--bg) 22%,transparent);overflow:hidden}
+.resume-bar i{display:block;height:100%;border-radius:99px;background:var(--bg)}

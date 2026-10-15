@@ -32,6 +32,7 @@ with sync_playwright() as pw:
  page.reload();expect(page.locator('.feedback')).to_be_visible();assert state()['results'][first]['attempts']==1
  page.locator('[data-action=next]').click();second=active_q();choose(second['answers'][0])
  page.locator('[data-action=home]').click();expect(page.locator('.resume')).to_be_visible()
+ a=state()['active'];w=float(page.locator('.resume-bar i').get_attribute('style').split(':')[1].rstrip('%'));assert abs(w-len(a['answers'])/len(a['ids'])*100)<0.01,w
  page.locator('[data-action=resume]').click();assert state()['active']['index']==1
  page.locator('[data-action=finish]').click();expect(page.locator('dialog')).to_contain_text('8문제가 남았어요')
  page.locator('[data-action=finish-now]').click();expect(page.locator('.result-hero')).to_be_visible()
