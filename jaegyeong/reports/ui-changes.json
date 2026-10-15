@@ -534,6 +534,16 @@
           "after": "aa858f578d9dda4dd76a29904cff0eed77cac33dfaeb0ad2ed55fde941db9bbf"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "즐겨찾기를 최근에 담은 순(state.bookmarks 뒤쪽 먼저)으로 정렬하고 '최근에 담은 순' 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "aa858f578d9dda4dd76a29904cff0eed77cac33dfaeb0ad2ed55fde941db9bbf",
+          "after": "b16ebd361330cf225df2ee9e27fc1df126a19213dc34dcae080cd5a4ab5bbc4d"
+        }
+      }
     }
   ]
 }

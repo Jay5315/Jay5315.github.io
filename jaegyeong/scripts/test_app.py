@@ -84,6 +84,12 @@ with sync_playwright() as pw:
  expect(page.locator('#nav a[href="#home"]')).to_have_attribute('aria-label','학습 홈');expect(page.locator('#nav a[href="#home"]')).to_have_attribute('title','학습 홈');page.set_viewport_size({'width':1440,'height':1000})
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==old_new
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');page.reload()
+ # Bookmarks list the most recently starred question first.
+ saved_bm=page.evaluate("k=>localStorage.getItem(k)",KEY)
+ order=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const ids=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).map(q=>q.id).sort().slice(0,3);s.bookmarks=ids.slice().reverse();localStorage.setItem(k,JSON.stringify(s));return ids;}""",KEY)
+ goto('bookmarks');page.reload();expect(page.locator('.section-head .sub').first).to_contain_text('최근에 담은 순')
+ assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==order
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_bm]);goto('library');page.reload()
  # Part filter follows the subject filter and narrows the list.
  page.locator('#library-subject').select_option('세무회계');n_sub=page.locator('#library-part option').count()-1
  assert n_sub==page.evaluate("BANK_DATA.parts.filter(p=>p.subject==='세무회계').length")
