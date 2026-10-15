@@ -402,6 +402,16 @@
           "after": "ec2ed2dd587ae0b1bdeb3c8793d2adaf53b41d56a3828a59f20f52c4cc8687f2"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "접근성: 태블릿 너비(메뉴 글자 숨김)에서 이름 없는 아이콘 링크가 되던 메뉴에 항상 aria-label·title 부여(820px axe 위반 0건)",
+      "files": {
+        "assets/app.js": {
+          "before": "ec2ed2dd587ae0b1bdeb3c8793d2adaf53b41d56a3828a59f20f52c4cc8687f2",
+          "after": "36c0cc6897a44a5bf4316ec4584d46fee97bc285f8bf5ba769bd88d2b613f17d"
+        }
+      }
     }
   ]
 }
