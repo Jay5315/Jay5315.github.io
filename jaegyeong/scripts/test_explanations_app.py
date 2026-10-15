@@ -320,6 +320,10 @@ with sync_playwright() as pw:
     expect(mobile.locator('.parts-fold')).not_to_have_attribute('open', '')
     mobile.locator('.parts-fold > summary').click()
     expect(mobile.locator('.parts-fold .part-row').first).to_be_visible()
+    # The PDF bullet glyph Ÿ is shown as • in the question text and in list previews.
+    mobile.goto(URL + '#library')
+    mobile.locator('#library-query').fill('2022-06-013')
+    expect(mobile.locator('.library-card h3').first).not_to_contain_text('Ÿ')
     # Search ignores spaces and PDF line breaks, and every query word must match.
     mobile.goto(URL + '#library')
     mobile.locator('#library-query').fill('비재무적 자가제조')

@@ -11,7 +11,7 @@ import re
 from collections import Counter
 
 CHOICE = re.compile(r'^\s*[①②③④]')
-STRUCTURAL = re.compile(r'^\s*([ㄱ-ㅎ][.)]|[<(]|\d+[.)]|[-•·※]|[A-Za-z][.)])')
+STRUCTURAL = re.compile(r'^\s*([ㄱ-ㅎ][.)]|[<(]|\d+[.)]|[-•·※Ÿ]|[A-Za-z][.)])')  # Ÿ: PDF bullet glyph
 TABLE = re.compile(r'\S\s{2,}\S|\t')  # column gaps in table-like lines
 PARTICLES = {'은', '는', '이', '가', '을', '를', '에', '의', '로', '와', '과', '도', '만', '에서', '으로', '에게',
              '이다', '이며', '이고', '으로서', '로서', '에는', '에도', '까지', '부터', '보다'}
