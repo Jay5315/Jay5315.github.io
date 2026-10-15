@@ -564,6 +564,16 @@
           "after": "18dc9e4309e58381f847060e3a757fefd7aae2cdcff5838625ad0e029af408b4"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 둘러보기 안내 문구·검색 placeholder에 회차(예: 2024-11) 검색과 회차 순서 풀기 안내 추가",
+      "files": {
+        "assets/app.js": {
+          "before": "18dc9e4309e58381f847060e3a757fefd7aae2cdcff5838625ad0e029af408b4",
+          "after": "e842b83018cdfbb7ab2a67ee093738c17620e11ad8371a952e1eeb67aae7c504"
+        }
+      }
     }
   ]
 }
