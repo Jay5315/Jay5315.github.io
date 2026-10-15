@@ -505,7 +505,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
-        # Newest stage: round-4 spacing (rejoins counters/suffixes split off English words).
+        # Newest stage: round-5 spacing (space before a circled option number after Hangul).
+        spacing5 = (cls.audit or {}).get('spacing_round5')
+        if spacing5:
+            cls.stage_after['spacing_round5'] = copy.deepcopy(cls.data)
+            cls.audit_after['spacing_round5'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in spacing5['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['spacing_round5']
+        cls.before_spacing5 = copy.deepcopy(cls.data)
+        # Next: round-4 spacing (rejoins counters/suffixes split off English words).
         spacing4 = (cls.audit or {}).get('spacing_round4')
         if spacing4:
             cls.stage_after['spacing_round4'] = copy.deepcopy(cls.data)
@@ -1181,6 +1191,9 @@ class ExplanationTests(unittest.TestCase):
 
     def test_spacing_round4_changes_only_whitespace(self):
         self.check_whitespace_ledger('spacing_round4', self.before_spacing4)
+
+    def test_spacing_round5_changes_only_whitespace(self):
+        self.check_whitespace_ledger('spacing_round5', self.before_spacing5)
 
     def test_spacing_amendments_change_only_whitespace(self):
         amendments = (self.audit or {}).get('spacing_amendments')

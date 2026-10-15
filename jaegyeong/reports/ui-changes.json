@@ -48,6 +48,16 @@
           "after": "70f43e9c726017a503aa4bf33a438a8325cbb156efe5053ce83922ee9fc130c9"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 목록 미리보기도 지문 줄바꿈 결정(stemBreaks)을 따라 단어 중간 줄바꿈은 붙여 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "70f43e9c726017a503aa4bf33a438a8325cbb156efe5053ce83922ee9fc130c9",
+          "after": "3c3163b4928103295e998cf1bffde4f0c1ec391241af1b009ea153f0afffe272"
+        }
+      }
     }
   ]
 }
