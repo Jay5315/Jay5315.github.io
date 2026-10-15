@@ -2,10 +2,10 @@
    Body 16px, small text ≥ 13px. Light/dark share tokens; dark follows the device unless data-theme is set. */
 :root{
  --bg:#f6f4ef;--surface:#fffdf9;--surface-2:#f1eee7;--surface-3:#e8e4da;
- --ink:#1b1a17;--ink-2:#3b3833;--muted:#625d54;--faint:#7a7469;
+ --ink:#1b1a17;--ink-2:#3b3833;--muted:#625d54;--faint:#6b655b;
  --line:#e3ded3;--line-strong:#cfc8ba;
  --brand:#1f5e4a;--brand-hover:#174a3a;--brand-ink:#fff;--brand-soft:#e3eee7;--brand-text:#1b5743;
- --accent:#b0611a;--accent-soft:#f8ead8;
+ --accent:#9c5414;--accent-soft:#f8ead8;
  --ok:#21703f;--ok-bg:#e5f2e8;--ok-line:#b5d8bf;
  --bad:#b03a2a;--bad-bg:#fbeae6;--bad-line:#eec3ba;
  --warn:#7a5310;--warn-bg:#fbf2de;--warn-line:#eadaa9;
@@ -20,7 +20,7 @@
  --bg:#141311;--surface:#1c1a17;--surface-2:#24221e;--surface-3:#2e2b26;
  --ink:#f1ede5;--ink-2:#d8d2c7;--muted:#aea697;--faint:#968e80;
  --line:#2f2c27;--line-strong:#423e37;
- --brand:#3a8a6c;--brand-hover:#46a07e;--brand-ink:#fff;--brand-soft:#1d3329;--brand-text:#94d6b6;
+ --brand:#33805f;--brand-hover:#2c7054;--brand-ink:#fff;--brand-soft:#1d3329;--brand-text:#94d6b6;
  --accent:#e3a15f;--accent-soft:#3a2b1b;
  --ok:#8fd5a6;--ok-bg:#1a2a20;--ok-line:#2e4a37;
  --bad:#f0a092;--bad-bg:#2c1d1a;--bad-line:#563530;
@@ -32,7 +32,7 @@
  --bg:#141311;--surface:#1c1a17;--surface-2:#24221e;--surface-3:#2e2b26;
  --ink:#f1ede5;--ink-2:#d8d2c7;--muted:#aea697;--faint:#968e80;
  --line:#2f2c27;--line-strong:#423e37;
- --brand:#3a8a6c;--brand-hover:#46a07e;--brand-ink:#fff;--brand-soft:#1d3329;--brand-text:#94d6b6;
+ --brand:#33805f;--brand-hover:#2c7054;--brand-ink:#fff;--brand-soft:#1d3329;--brand-text:#94d6b6;
  --accent:#e3a15f;--accent-soft:#3a2b1b;
  --ok:#8fd5a6;--ok-bg:#1a2a20;--ok-line:#2e4a37;
  --bad:#f0a092;--bad-bg:#2c1d1a;--bad-line:#563530;

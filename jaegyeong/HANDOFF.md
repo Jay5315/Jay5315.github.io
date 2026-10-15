@@ -1,6 +1,10 @@
 # 다른 AI를 위한 인수인계
 
-## 2026-10-15 이중 공백·쉼표·마침표 정리 (wording_round4 · 가장 최근)
+## 2026-10-15 글자 대비 보정 (UI · 가장 최근)
+
+- WCAG AA(본문 4.5:1)에 못 미치던 색을 조정했습니다: 라이트 `--faint` #7a7469→#6b655b(4.0→4.98), `--accent` #b0611a→#9c5414('관련 개념' 버튼 3.88→4.81), 다크 `--brand` #3a8a6c→#33805f(흰 글자 버튼 4.17→4.78), `--brand-hover` #46a07e→#2c7054. `test_theme_text_colours_meet_wcag_contrast`가 라이트·다크·강제 다크 테마의 주요 글자/배경 쌍을 계산해 4.5:1 이상인지 확인합니다. `reports/ui-changes.json`에 기록했습니다.
+
+## 2026-10-15 이중 공백·쉼표·마침표 정리 (wording_round4)
 
 - 해설 154개: 인용한 원문 보기(「…」) 밖의 이중 공백과 앞뒤 공백 정리, 한글 사이 쉼표 뒤 공백("차감,기말"→"차감, 기말"), 마침표 중복("명시합니다.."→"명시합니다."). 「…」 안의 원문 표 간격은 그대로 둡니다. 기록 `wording_round4`, 스크립트 `scripts/apply_wording_round4.py`, 테스트는 같은 함수를 다시 적용해 결과를 확인합니다. setUpClass 되돌리기 순서: wording_round4 → spacing_round5 → 4 → 3 → wording_round3 → spacing_round2 → 26차.
 

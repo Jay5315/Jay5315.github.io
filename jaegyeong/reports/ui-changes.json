@@ -58,6 +58,16 @@
           "after": "3c3163b4928103295e998cf1bffde4f0c1ec391241af1b009ea153f0afffe272"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "글자 대비 보정(WCAG 4.5:1): 라이트 --faint #7a7469→#6b655b, --accent #b0611a→#9c5414, 다크 --brand #3a8a6c→#33805f(흰 글자 4.78:1), --brand-hover #46a07e→#2c7054",
+      "files": {
+        "assets/app.css": {
+          "before": "aa471121ce61c6e24e40382b00373db668fd8b6ed03e1774ff82ea83c3d52f00",
+          "after": "4a662c35b8709dc9fb4204bdfcef7b984881b6fb999a19083446f21b51a70a8c"
+        }
+      }
     }
   ]
 }

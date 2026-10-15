@@ -478,6 +478,32 @@ class ExplanationTests(unittest.TestCase):
             sb = stem_breaks(row['text'], words, pairs)
             self.assertEqual(b['stemBreaks'].get(row['id'], ''), sb if set(sb) - {'k'} else '', row['id'])
 
+    def test_theme_text_colours_meet_wcag_contrast(self):
+        css = (R / 'assets/app.css').read_text()
+        def theme(block):
+            found = re.findall(r'--([a-z0-9-]+):#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b', block)
+            return {k: '#' + (v if len(v) == 6 else ''.join(c * 2 for c in v)) for k, v in found}
+        def block(start):
+            i = css.index(start)
+            return css[i:css.index('}', i)]
+        light = theme(block(':root{'))
+        dark = {**light, **theme(block('@media(prefers-color-scheme:dark){:root:not([data-theme=light]){'))}
+        forced_dark = {**light, **theme(block(':root[data-theme=dark]{'))}
+        def lum(h):
+            c = [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+            c = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in c]
+            return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+        def ratio(a, b):
+            hi, lo = sorted((lum(a), lum(b)), reverse=True)
+            return (hi + 0.05) / (lo + 0.05)
+        # Body-size text pairs used across the app must reach WCAG AA (4.5:1).
+        pairs = [('ink', 'bg'), ('ink-2', 'surface'), ('muted', 'bg'), ('muted', 'surface-2'), ('faint', 'bg'),
+                 ('faint', 'surface-2'), ('accent', 'accent-soft'), ('ok', 'ok-bg'), ('bad', 'bad-bg'),
+                 ('warn', 'warn-bg'), ('brand-text', 'surface'), ('brand-ink', 'brand'), ('brand-ink', 'brand-hover')]
+        for name, colours in (('light', light), ('dark', dark), ('forced dark', forced_dark)):
+            for fg, bg in pairs:
+                self.assertGreaterEqual(ratio(colours[fg], colours[bg]), 4.5, (name, fg, bg))
+
     def test_ui_change_log_is_a_chain_ending_at_current_files(self):
         log = json.loads((R / 'reports/ui-changes.json').read_text())
         for name in UI_FILES:
