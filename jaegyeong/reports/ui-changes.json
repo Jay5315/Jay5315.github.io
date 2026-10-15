@@ -362,6 +362,16 @@
           "after": "9bd3c8ed6d9a855f9fb312f2e9d0effe189962fbcbcdd68bba27a42d63583bb4"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 결과 제목 아래에 소요 시간('· 12분 소요') 표시. 시작~완료가 3시간을 넘으면(나중에 이어 푼 세션) 표시하지 않음",
+      "files": {
+        "assets/app.js": {
+          "before": "6bd39139f72aa37756ebd92724d5f0886c36afd8ee5e6deeea36383148aaf1f5",
+          "after": "7d2eba5a1b19c5050f34750719b6e2292c9c31e02fa440f1a5ff9434bc260f27"
+        }
+      }
     }
   ]
 }
