@@ -58,6 +58,12 @@ with sync_playwright() as pw:
   page.locator('[data-action=next]').click()
  assert state()['results']['2026-07-026']['correct']==2
  goto('library');page.locator('#library-query').fill('2024-09-063');expect(page.locator('.library-card')).to_have_count(0)
+ # Search terms are highlighted in result previews (whitespace-insensitive, special characters escaped).
+ page.locator('#library-query').fill('보고기간 후사건');expect(page.locator('.library-card h3 mark').first).to_be_visible()
+ assert all(''.join(t.split()) in {'보고기간','후사건','보고기간후사건'} for t in page.locator('.library-card h3 mark').all_inner_texts())
+ for q in ['(주)','a+b','[1]','<b>']:
+  page.locator('#library-query').fill(q);assert page.locator('.library-card h3 b').count()==0
+ page.locator('#library-query').fill('')
  # Backup download is actual JSON, restore requires explicit confirmation.
  page.locator('.avatar').click()
  with page.expect_download() as download:page.locator('[data-action=export]').click()

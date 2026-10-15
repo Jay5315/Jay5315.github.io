@@ -686,3 +686,4 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .list-actions .btn:not(.primary){padding:6px 8px}
  .list-actions .btn.primary{padding:8px 14px;margin-left:auto}
 }
+.library-copy h3 mark{background:var(--accent-soft);color:inherit;border-radius:3px;padding:0 1px;margin:0 -1px;box-decoration-break:clone;-webkit-box-decoration-break:clone}

@@ -266,6 +266,20 @@
           "after": "f870207acdd732f2dec94802e776515254a439c51f849a85911a42468812fec8"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 둘러보기·오답 노트·즐겨찾기 목록 미리보기에서 검색어를 <mark>로 강조(띄어쓰기 무시, 여러 단어 각각, 특수문자 이스케이프)",
+      "files": {
+        "assets/app.js": {
+          "before": "f870207acdd732f2dec94802e776515254a439c51f849a85911a42468812fec8",
+          "after": "6c915c9de98147be2347a978ffe2d7dc6078e3fbfc2e41fb71b56388e27b44e6"
+        },
+        "assets/app.css": {
+          "before": "d05892c77a10611ede3178877427776b42aac5f30d10cac41efc5630599f4f98",
+          "after": "cc4551da558529027162dbd0100c537ba91598b32d78f964821433ec8fc03d60"
+        }
+      }
     }
   ]
 }
