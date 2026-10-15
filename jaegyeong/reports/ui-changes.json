@@ -226,6 +226,16 @@
           "after": "f4a21495244120c344f1f6d831067db178052ebbf8bf9431119032571f2b0994"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "가로로 넘치는 표(.table-scroll, .q-table-wrap)에 스크롤 가장자리 그림자를 넣어 옆으로 더 볼 내용이 있음을 표시(끝까지 밀면 사라짐)",
+      "files": {
+        "assets/app.css": {
+          "before": "f4a21495244120c344f1f6d831067db178052ebbf8bf9431119032571f2b0994",
+          "after": "0f129c2cdbea8d64f1bbb98471135b7198c86be57529b3bcacc9eed3f498317b"
+        }
+      }
     }
   ]
 }
