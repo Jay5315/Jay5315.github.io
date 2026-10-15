@@ -1,0 +1,1618 @@
+{
+  "checked_on": "2026-10-15",
+  "rows": [
+    {
+      "id": "2025-06-007",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "de5506d98e078b536aa219167e34eda08e95b5495d8402af2ccce255ee6118d5",
+      "public_proposal_sha256": "a775383af380d669072444783ceb1a0ea28dbb2ac2dd02ccd61c396344d69fec",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-12-006",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "911631c6e046209443adfb9ab0444135da578a96de3761b6acb183ac2c76e554",
+      "public_proposal_sha256": "70f7757c25434d891011b4c857efac9deb0b22a31e0c5951ac822f7f9e1fda81",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-05-021",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "449d841070736de8d66afa92880390640c85993c976c974d229f1a99619a8ce2",
+      "public_proposal_sha256": "b46795bf206143953cb38ac950ae7e92191dd89833a27bfcd4966b411b098c66",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-01-026",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "0e6256d3f76c83d281b30393910b986602a3bd9177fa36f017bee047a73f242f",
+      "public_proposal_sha256": "8af3ae98b114cde7d2e8be9b118dde7a226339be5dbe213b35799783938dae5c",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-07-018",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "307ad38cd8213c6795b8d55d357c78b390dd0d8fc5d6a1dafba5e7ab556e9cf2",
+      "public_proposal_sha256": "82ca50e47f3962b4f875daaeebafb06bf320472ddc9382560fe96821db81121f",
+      "changed_fields": [
+        "checked_on",
+        "review_note",
+        "sources",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-07-031",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "7e2ea986d84213922d99f35ec352d668876019cd6478b593be865d881f667702",
+      "public_proposal_sha256": "090c7ba5c640da2208e3f48eefd3f9be1438a7d45bfcf8ae09c196ef59c3a0b9",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-01-009",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "22d1d6ce5c9c0fd21528b55abdf7c5f263fc31ed47e8f7813712e1f59f1ef733",
+      "public_proposal_sha256": "e8087df6f0e5144c5fdb8e0e3aaad9f1d9943f4dabd0fa54ae837ba08ce029cb",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-05-004",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "6036da0a08fcc7309de1baf1b0ef9f10542809d823a6b246a48daaecedd2174d",
+      "public_proposal_sha256": "77d2d4d9ba253f6d26443c45a40a4b9468e4384c8ff2207a660abe20bbdabfb4",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-06-012",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "ccfe1e30e0a4cd8048a2049a5ec55af3e9be4a8cfd3d160c88abd0a4b57af545",
+      "public_proposal_sha256": "ea0f6e947d64c447de182b407904dd336447e6ea16ee280a53d88c12153cad82",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-09-016",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "ebde8ee65febc3bb01a05c84fd1133f5180cbce1f543c547e9dc42ad6997d3bd",
+      "public_proposal_sha256": "f60dd4a80cf2fed8be9640c4847a4c012172b7a88b1dbcec58a74eec43780416",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-07-038",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "57e793474c69d541dc63a1de8f523c7ff5ff0bdbadb99589167b3ae1815d5a9e",
+      "public_proposal_sha256": "098b8c55aba232b81f7fed02c00f0d06948d8a61fa41ca7a28e378a3faf5b5df",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2026-01-035",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "778a8c7450bff48f67ec5abd8f044ddd99e04f66e488f178c28f9443b3f2b972",
+      "public_proposal_sha256": "9a23b32a42be31ac56ff1ad49be0edc6e619ba9dda1af6eee43c64d94e60f5c6",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "summary"
+      ]
+    },
+    {
+      "id": "2026-06-018",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "683552b9a9382061160be7bfeb9a21858eb1f3e1a9d0a428f03bc86e2f1bdd43",
+      "public_proposal_sha256": "795b5559fcdfa452b3c69b9dd2b51b331f725fffd440029e26db49672ee1e1a1",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "steps"
+      ]
+    },
+    {
+      "id": "2026-09-035",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "02a68b4f1dec85b8af0be56c2ab6d9d09c3bcf9bb97553912a2b2a048e9adf65",
+      "public_proposal_sha256": "1d2abd6e7308e35f371876784ae4878e2c70c33a75f9a5d6974f0af799c1b888",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "steps",
+        "summary",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2026-01-018",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "805001a394604ee3a9a86e427ce93b119d1902166605d85e00b383d15cc401a5",
+      "public_proposal_sha256": "2da878e0903ccd2bf171a117af1b0145c20f0415f6f80b7581672db81611f6a0",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-05-038",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "caa9cd2490c576379d638494709d9454a182c2af62c83feb5f72f4e4698333ed",
+      "public_proposal_sha256": "f8b55a013bd983a5539d60b436534f212e4104db2de2360e833859644fcd05d1",
+      "changed_fields": [
+        "checked_on",
+        "review_note",
+        "steps",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2025-09-017",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "596a44c2c41a737f50471f25779853f35c6f8179b9ba0fcd2553a0e9193d1b3b",
+      "public_proposal_sha256": "bdf0dd1ceabc96d8801f3bc5dc894ea5edc51197e8e335da8d368588eb447819",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-11-017",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "c212225ed8573c5dc61b35f8165d75917126654526e649250eba7267d528b2f7",
+      "public_proposal_sha256": "2aafe27986f03189db0b00c681e057f0d5353193d14844d203e09e3f2d98143b",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-03-015",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "5c6f8c680f814fbe1465386f8f0a588f83758100ab64134737cef36d2d8db895",
+      "public_proposal_sha256": "9c30f784e9459748639413bfadeadaef970cf00baaa8b592fedc59db3526dd8f",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "steps"
+      ]
+    },
+    {
+      "id": "2022-05-012",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "81819fa60d067c14381b980355b8f977339bdc712da3e8ad350b465f538bb560",
+      "public_proposal_sha256": "c526dbc98e8cfacd06166d76993e80b98bf765bb8833252b265304135c02b48d",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-07-019",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "384140688a7d1119156ca40c40e5766fdaeee3ddba549428e947132e8f0acfb2",
+      "public_proposal_sha256": "80dd21e1dc34401a76e19c0c22a45336b559655a775e6fa27192481ae8aaaf48",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-11-019",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "9be6519cc2abb31e82425a3fb5f6a39b4c68920a87a8e455cdab12ed03346e0a",
+      "public_proposal_sha256": "9db0748f8f1ef1bb3b022208e5059c7fbcc48dc3ed5b51ccf9297570300f046b",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-07-023",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "8486052082a6daefe80095272b3a32caa95fa158508598ebd98332119b34d5c5",
+      "public_proposal_sha256": "5b3e031141984a8011b2fa52f39850189f3c797a6ac96d48630f437cc25c7c3f",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-11-024",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "2dc3d4f10a342d7b2f375bbe667398980f57ceb41d9907c2a29c8c3b1b05b753",
+      "public_proposal_sha256": "3e0c3f5c25c0f82854f7b2b7698a8afd809e5aa03e4b0262f2a81962185427f8",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-05-025",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "bb0fee614d7637d23d62bc3a413ffaae0639ffb4cadf2ce15e366619cceb73c1",
+      "public_proposal_sha256": "bacfc5aa2668815302532667dfc12494faa5982f474d54b0444040922950293c",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "steps",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2023-06-026",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "aac2aafb4074c57244b6b0fa462dd14b9fe34c33d5dd5b2d8fbee28e25bf2201",
+      "public_proposal_sha256": "66d1f1b2ce08aa340c362b92c6f758bb155d593feaf307663530c5cafb1dcc57",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "steps",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2022-07-003",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "6db890ca68c3e5aac7337036e5d984770cd5174b73994084359b99db100487f7",
+      "public_proposal_sha256": "5f0753cc8c5c1ca079abf4fde17f2730f63fd3e67f18662f63d335edc0376184",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-11-002",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "bd9a71339e97319ae9fd38d0ea92b674b686964575cca591f431d9889f155b49",
+      "public_proposal_sha256": "c60fa8cd9288e6a28f20bb2ec37479dd5fa76733d4dddf825fb63a88d7419a57",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-05-006",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "c81f68f166ab6cf76da59e4c990364a3d115037e6d0ce432a2b0d2b3265818b7",
+      "public_proposal_sha256": "ad0ec205b9648a422b75ebd7d77c4893cd9ac960e6eac71bb78cafbc72cbf867",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-05-031",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "51512352429cad8cd0a0d9f8ef7323a3fff76b4ccc66d84d2e5dd96963a67f89",
+      "public_proposal_sha256": "53f6aa35dd68e99978d78d0bc02ce53d2743a35c5a83bb9bf3ec270a5ae37231",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-09-010",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "a70e5ee2dd19f805fbd29c0275a85299ff7bc7d3f44c39760c4b1f92883a3b87",
+      "public_proposal_sha256": "41214d7fb96268be8db24f5f312e8c18bd1c282a6d98ef8586b7ac2617f7b6f0",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-07-026",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "e39e4818e6b4add7407022449036317964913aed95407fda74901f9855bb9346",
+      "public_proposal_sha256": "7b17ded318519b67d7e270aac9cb5bf632d4b72d0caa2b3617ac74ac95ae58f0",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-01-025",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "700dee28aad463699234cf043a9d56410282c30fc0634a95ebc80d5a3239dbae",
+      "public_proposal_sha256": "360ed779b4fbbf5be44296de27fce0e39275caa069405f8062dd5b298304eace",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-06-026",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "f5e0cb1f3e643ae0860b33ca8ca77613cb8d92af37e3433b3dc1b5f7c6fa493f",
+      "public_proposal_sha256": "7fcb9c5de4102c3035c839f00c0218a9674ce6b16751756af76eac534ca88c6e",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-05-026",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "64c3afb09a40e5c0ea5e2c1c5dafecc940dc61e978c28d320c1662f7c66a5468",
+      "public_proposal_sha256": "ffaa09823496f14104da2a30dcaaa832a2f86dd3ee26c4a23c44a351bf1cde26",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-07-025",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "f7faef78346390d24bf0c3ab03c76dd4a4fd7a94dba32217d9f5cc39ad14e9d8",
+      "public_proposal_sha256": "9bb65d3435b976c20534f8653e16840288fe7161c6f4fdf4d74ebaf552c1570e",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-06-027",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "07954ff2e6692c8c11b1e1d9e223e642d95cedd34f10dc3272334d42dbc6c608",
+      "public_proposal_sha256": "03d1b0a90e91c4c1f800c95da9896df78ed01d766480c3b9388e4087b3a414f4",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-01-032",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "038b484529859aba2f260362554540f9c054a62c3ff9fbba8f5f2b0cb848d0cb",
+      "public_proposal_sha256": "f6d865869128bd46d4c03432fc0ff526e334a68d1fff6321b00bb6b41ac94ddf",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-01-036",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "a65359a8d7e53f20b413182db1486e6e57636c535dd6e523eed088cadaa3684b",
+      "public_proposal_sha256": "8e86ef91e41d65f00ad88fbdbd0bc840ff64071d5f878bfbd15a1d5cb03d7f8a",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-06-036",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "34814f6b8c62a8dbe7ab2c55a515262eaea1892d1a6a7f30e97ad9d70f91a8c1",
+      "public_proposal_sha256": "41715edd2695327daae1c8c42b0d50e2216d2de97c0c1dda19d7f0983fddca18",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-12-036",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "56045032b40ef656f217efe2567473e6276f8db30159d0ff6be96066650d847e",
+      "public_proposal_sha256": "81b80bb0a481716607a43840ba65c46f396c81e41668b1263a62ba0fc89aebd7",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-07-025",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "c9f28be5fc6ce1c42a688785495a0e0171df6673eaad96677219dda4f2c71bd5",
+      "public_proposal_sha256": "a41e37feb910cb127a220ca4639cff6e23a44219d4d6079d2eb0fabd5e1aaa5f",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-09-022",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "77a55ad7630b3cb02671b98c5df7c5f6f315465d820ca9f4b948e30d43971f08",
+      "public_proposal_sha256": "4e6dfee170832a646ae65ee0b84349a0d0a078720ec798c2d914ccf2708737f1",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-09-014",
+      "kind": "partial",
+      "author": "r26_finance",
+      "reviewer": "r26_tax",
+      "status": "pass",
+      "proposal_sha256": "bf976db96eb020dc9936f04995140d515cb581a48680b9d2c53edc66f5d1a373",
+      "public_proposal_sha256": "811d193622ea5c8787a68c41ef3372ca81237a180cf919681a8748a3a4f10590",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-09-057",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "08b3af17a31b1964f669689f037e7cd8a6b1bee42543af58d864368f5fc20b0b",
+      "public_proposal_sha256": "ea9dea7ca1db57191587f8a795873d42f48a2a0451f7bd735fefe3d091e2ba2b",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-09-054",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "ce4a4341842915b7d237adcde18871e40294903ea79a4ab27d438836e8e0feee",
+      "public_proposal_sha256": "002546d69197d41465b162728fd1f74d117dfbffddd26be982df450b607abbab",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2024-11-080",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "2d03ce869b080ea339ccb96204ea1bd4ec824d548a8ac5b0446656335c557fe0",
+      "public_proposal_sha256": "32babfb4ff4f9fa362588dcc2293fb12ec153a137d407427a09d0f9b5a721cdc",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2025-09-069",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "092818fcc7c3a68a902322d9b7275f7d579990e133f7e4718dd1959f8a23bacc",
+      "public_proposal_sha256": "8eb932860dbef50dd52ef0a7f7d0595313059cdf8797b872c8f8388940c4216f",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2024-06-057",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "0d9d46c557730ea860f6c14596f97565af56caaebecb56f8a395ff0b173225bd",
+      "public_proposal_sha256": "5af2784ee6254bdb7d381bba807d44bd8077de991ca008ff4d09a5784f7cf37b",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-05-071",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "3b18932b9394b919b83de60b946d6452b1a1ecbb906e7e12f99b8e9d836148c8",
+      "public_proposal_sha256": "43d609ad07a432f23f69da34ddc34f38c6c6a16894280f50af717016ba307a79",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-06-057",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "2da2e0cdbe5eb866aa70b4b6381d34bc235bdec13c011d656f22cbcc9d6d5ecf",
+      "public_proposal_sha256": "becb3068b37c92f7a168cb10c2ecfbca281afd7f99b09bc5df3ab7aa0a14dbb9",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-01-055",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "b870741e40e89111388d100dd3de0aefe2f7374f5c563b9678f73e0797b434a7",
+      "public_proposal_sha256": "fc8d91652028f52048cd2903508e65bcc1b72cfaa23e2179d7cf8241fe04c0d7",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-05-058",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "0c119d89c9b4af7818a9d6c0ffacd799e51d5fc4aad62769a1546053bb74f3e7",
+      "public_proposal_sha256": "9fc0c2cab8c96fc84aa066eec31ec84f863cd49ce4d306e611a970ebfaa0f3aa",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-01-055",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "001d5062ba72b037c02b9961adaf34641e52809d144028e139af0a0a77c13ca6",
+      "public_proposal_sha256": "7e8992e454b002abc89a911503d32bf03dead482fea5d9e315b55c11c1be6c3f",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2022-09-072",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "5e054a48dac0eac80061b3e5abd4afdc667a474c71bdd58b1e7199ae6f1c5013",
+      "public_proposal_sha256": "1b9f7441a923c33c250702170eca730d4e9839cd620ed697d8e05a42e98dee96",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps"
+      ]
+    },
+    {
+      "id": "2024-01-066",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "501be4bfb992098702fd068285b4786a0bcf26d2018a0f17418a24502ff00803",
+      "public_proposal_sha256": "895b3d90ea067dd9d77ef25f430c150103599fed641e5ff3fb3b51bc90ca7940",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2024-03-066",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "f3a17d7c23d79793c1e5c4fd269c6024b449e0a49250e02e64746c79cbafa68e",
+      "public_proposal_sha256": "ea8a009735f633ff4b212a7563748701f593da6f81c914bbd03c44303a8993d0",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-11-069",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "0d57a18560b18b3bbeb9245cfa82367cbac976d20bbf16a573bb66fb73593658",
+      "public_proposal_sha256": "d45538044078c0f3d373fe5193dc0eecec4a0b6bb795b2e424af6d8bf54ba6db",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2025-09-061",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "2b01f821f1c4cb85a0f7513be730405d47722a9a74b1f9c97f7497b08f02f81f",
+      "public_proposal_sha256": "66322aadce40b0c4b80f4be465ececedd559276a472b922ee3797f48fd66d322",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-05-045",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "8d5fd91289536691281bc5d1f9a00b69ad06d4ae825cdef8f833d396f964c5c3",
+      "public_proposal_sha256": "98c909a60535615a341c2b60b2e5d6aaf27a9d4802f6a1b0c38c552aed146cc2",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-06-056",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "310512365d32f20429e2384f10089e8f4a2250a1627f98c14653eed48b9315d2",
+      "public_proposal_sha256": "e61a7a403efa4ff9e576f461b744402a77b00620195862a56feca8e79e96d3a4",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-06-055",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "b0921e28b0b7c2b2a874a93ae764dff579c47f22c3a01c788e8463e450427afa",
+      "public_proposal_sha256": "96f26c3a2cd951d7d5e48cc456eefdf14faaa0f6ba96534446f1b7db1b054d40",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-12-058",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "f58cd5c0fd4b4dc874b8aa7dd0054513126611064b79f2c50bcdece6e66f97ee",
+      "public_proposal_sha256": "2239422888056d74c4e429f815074deb435192b3aaa717f0fbffdf14395d63d2",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-11-060",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "9adeaa888798b9e8cf2a3b12d6b3054fc9cedb9925e53340c463512f03b0f45b",
+      "public_proposal_sha256": "2ef0a2ea48c2860e9b36ddf30e18e0e05701896271bf0a15ea28304f5cb5d16e",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-11-061",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "57e407311013fe145bec9ea8f0c8b36781bebff9901380444b31f07c4207e143",
+      "public_proposal_sha256": "d90662996447dcb82b1cb85e5d8dd695394c5248816bdb50ec211d9312fea1fe",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-05-061",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "9008bb943f5d449d47ffab1b9c6188b3c56460400f86d0f80c2e8e56192fee4e",
+      "public_proposal_sha256": "1ea07f6a97fa3be34ece155d68b9c7c9d04a0180daf973d605192af0cabfe24d",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-06-061",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "49be89147a95353189f00519eb52cb86fe5879907759b2fcb14be55740bcba3f",
+      "public_proposal_sha256": "7f33111970eb3221510d601f175346c40bec99ce005694f143ae61bf39d2dd6a",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-01-068",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "e0ae31fc0f3dc839c6a1a75441ee02e2ac000b51de275a5663d74a02571e0d9c",
+      "public_proposal_sha256": "81ce2bd4e53ae9539d158e63becbcc10c050716641fa4c6e4b759dc0ddb32655",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-06-068",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "6bba086feab9edf2d1a6ae0f7c24dcbe17b7bad8b40b33576d00cb7085fc0009",
+      "public_proposal_sha256": "24611b61435bd4e0152cd9f6705970110b1255f2c474d761e73a393038ce7744",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-07-068",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "282d20d8b402188625c67d8b542dde84401acaa90a0fc796cf137beaaea06833",
+      "public_proposal_sha256": "f69308e220e52df62a2bffe34f7c478f75edd8d92ea0457b87c814e8c4a913b6",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-01-061",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "53f5c86018303c1179d9cf7e1271a713755bdb023096d4512460c9487b74d98c",
+      "public_proposal_sha256": "20408133d61866d66fcde4e71f8ed25b2f64648b7061bb4728b57602022f265a",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-05-072",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "5e8a38fe805117c9dcec2f0ca1d3ed95eda88780c8c191c02beea823355fa09a",
+      "public_proposal_sha256": "82fbbbc73393f398f94e8ecb26a859bc055e0ceb2df58929cbd8a25bf875ef3c",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-07-073",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "68bc48392dff5feaceb90ff0d4a7518b8b57d9ab7f18f43656928de7f7b1d0fb",
+      "public_proposal_sha256": "39799238a3bfdeeeff7fb2f1b50e476107fa5ed7376aaaa6fd2db17244324c2d",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-05-075",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "15429a33f09a209c860269bbb8b776dbb7c556a7f544afe035c35698515bb2a7",
+      "public_proposal_sha256": "b7473dd6e31ecd6e0d35aa307bc7a0f1651c04afd8fc1e1bb89b7a6242eefb35",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-11-077",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "91763d39b04be00e91ebba1554dcdeab59d35648d031097c3fb59fa37843fa62",
+      "public_proposal_sha256": "468b536e27b6f46565a015e745b9b0c399a8c745b9941f8f48ccf4a69ae6e449",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-09-073",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "0593de9fd8d261a39eec04a7dbf7c8db51e75fe3c16f2a9ced29d781483d5a58",
+      "public_proposal_sha256": "9555a26d6a70c1ea01001e95aba8a21f8a3825b32f566f16de81f4462bd40fdb",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-12-077",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "65411622ad83f84da9946d7e56e7f878484d581dacdedb8974d7f782b0d70424",
+      "public_proposal_sha256": "0bdd8a08358910c5f21db0c255fb82c98133484ff232f73cd4ea8b0c647c5dd8",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-12-076",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "b981f19ee98f6044a12e309731d78a21926d3b9bcf44f7fdcc275665ccd3652f",
+      "public_proposal_sha256": "e80c1d91995d1a01ca97f2198ee6b67d6e3eeb0fd85aaca2e78275751adf4d4c",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-11-075",
+      "kind": "partial",
+      "author": "r26_tax",
+      "reviewer": "r26_finance",
+      "status": "pass",
+      "proposal_sha256": "c74703f85195a817fe10232fc68b47611fc209c3ae2fdcbe34f7be7d3bd7de65",
+      "public_proposal_sha256": "1962256407f01d2d6111a104ba6ba58070ce186e5c6b3eb27491f94ed7ab277c",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-06-092",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "0589089b4b3fba3e5280a77bdb47b07cb7ace2acbe30d417bfef8fad1820b485",
+      "public_proposal_sha256": "e2707c3e5df040eb36a9f93c8fbf8f97cbe9cb4dc4b4027e6a1e85083670b5e8",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "sources",
+        "steps",
+        "summary",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2025-06-085",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "ebb12d794899b34b722a4947156ad9458506dd9426bd808c02b2ebcd92f2cf55",
+      "public_proposal_sha256": "cae6c23c194a019031f5050114e1eef86831249e5b7b617ca6dca813e0340927",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2024-05-088",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "58efe49ca1f25a714a8d8c41f16cd2fd88b9dfe801318e1c0e5b72a6e5d62798",
+      "public_proposal_sha256": "ffaec17d7b3b42b15ae790ea8eca91d9b7336f4fd33d76e439ffe002beca3c67",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-05-091",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "7fcbed37cd7f5e0b7ada3333d66c24dfbbbbe2a1d9b5bb294abaa6a22a444950",
+      "public_proposal_sha256": "c81f7c18c802ffcb1924db177d5c2404daed3db1425a35fc18ed48e5715797f9",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-03-095",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "e26ab32796ebd9fc1ee91d55326e36b9a7ed4dcd692db22de9a0c00d00fb2124",
+      "public_proposal_sha256": "2e9d76a20dfcd776183d18fe8f8d29e526f16b50d044f5b955adafef24cd2cf6",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-03-101",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "52520de0e231429942b150be71f31cc1cb1b25a0fdd44543159c19bfee0c5cbf",
+      "public_proposal_sha256": "1a66ac636e47546b7a727fb13b8e77ea2758585724e559c604ca818ad654b52b",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2024-06-101",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "91d9c0926cc4f107cc06b187d9714c1bb2cec860b15c75fc5c9e38d874d1f2cc",
+      "public_proposal_sha256": "f6a85c16ce72d294ef6bdc7e3289128876f207193e1ee062a2c9d9030c0668b7",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2022-06-101",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "1f0bf260ddad7c8de290629952f5e0fb53570745585a1295d00ba59eed5c71b6",
+      "public_proposal_sha256": "227c6d75913c636b1c3cc4b16b1be6bd5e14d149729157dc1ef62c860fe8cab6",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-11-110",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "659ac52f3e918536a0f97cc657410347205bb97cfef4250704c59bbc0a44276a",
+      "public_proposal_sha256": "1dae6a320fb14947a54bfdf846d2a2a1889dd41081fe2526c097e5164d742a4d",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2024-11-119",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "5b32c3677505a3b601bb7818884fe59c1ffd6e41fbeed98107513827e8895a57",
+      "public_proposal_sha256": "1eecab6edb3a24e331cee7700048760301f3ffd3ede66c15cb00b42c13ab69b4",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-12-100",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "d8841a5f4f33379b4316b8ad260a792e0e6613d395f61f092a367c706255fdcc",
+      "public_proposal_sha256": "a2b17e095481a781affddea8dfd876ea8f1bffb27769c36ecffb6fbfd043e224",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2023-03-102",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "179434e20adbf44f106fc35eb2e3cebcc81e7ab5950a287dd0575d452a10e247",
+      "public_proposal_sha256": "7adb5a3d4bf54d84d82f87a5248500529475c6a1378cabfe810e1f176396ffb7",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-03-099",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "aca0e0575558e51c08ea0ca3c60c06e881572f91c1683aaf3ac37607af4fb7d0",
+      "public_proposal_sha256": "850b473896b8164d1ee0c3042c4fe0fdcfe1d49a390cf3d048cc4045a090e51b",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-06-112",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "f51a3acc23e24538aedcd53c9c15d7b8245b0c45b0711fa36c03905396bb7ce4",
+      "public_proposal_sha256": "f8b842f3d329154d08d251635ebfa7b0ec069f8d477afba59d427f4f67e4208f",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-05-112",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "a84f4c0fb045bb31e0c56ccf668e177ee547df0b08d0f6bc4f69bf4a5f8461cc",
+      "public_proposal_sha256": "a275c9172b5536ecf53d575a51c25dc1cb1a80ed67693dabc56d064e765152c9",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-12-115",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "cd8a9d1ff87c5d7a57327192160225b325a36196af83b41ea0e154901bf3d8ef",
+      "public_proposal_sha256": "a473ca6fbb91fe1e3c00fbb0d09ec651ef5274d7a0743f93d4219f9599dffb63",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-01-114",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "4cc18eabdbdb04fa4e410c61086795a3dce0a074ba4584892c37137cf07a76dc",
+      "public_proposal_sha256": "9afe4ed537b06bca204439860e4b028c439a5c96543ce72b22ddfc141291ffd6",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-07-112",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "71be161804f0d8342499130d8bb581a671821673052fb6f92fc7789bacd5dd72",
+      "public_proposal_sha256": "f107cd983197134779538d5e856d48ce4f6a9b1766828a56bf1a2843ab61b14a",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-09-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "7f2dc60b0bbd7da4a32f0848d4d0b55dbe44057b85a89beca7b94d73fec5bd0e",
+      "public_proposal_sha256": "f7ffe188e0f263ad84771007f39d603ffe0bfbf8471de9d1eb13eda9130bba0c",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-12-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "01fd2cc7ee6b13b7fdff80fc42d07e61d95b983ab6be68303beb2dc22cea5bc9",
+      "public_proposal_sha256": "75ff4e46d0448e785b545cb834159a5d493f5b5e32d782f107be7576e3d969c3",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2024-03-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "7e3f1e340414a7733580d453be878406180a44efc166b6e08496f40525c7ae11",
+      "public_proposal_sha256": "8206447de691f94b84c92db07e24914b8a7ed84747d2639d9cc54159f7c60ff5",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2024-12-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_a",
+      "status": "pass",
+      "proposal_sha256": "6f157659176bf18970306628f026cb972b9530edd4cc43f696851cd688c3bbce",
+      "public_proposal_sha256": "daf9715d1ed2e9724ea691d3aa01f5f7125308e5343ce41b457b127d59a19a71",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2023-11-096",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "f2f0febd6d154b7dcafaef40fd6399a66ce91892e95db0732ba8dda538a306d2",
+      "public_proposal_sha256": "6e60ab29d8cd3f5efd5cd7f5a8a634ae646b02267be5666a59bacf49bb57bbf2",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2026-03-097",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "4e6ac6c5c5037153a02af694cefbb2ccdae67c7830bc54853909c578a3f9df25",
+      "public_proposal_sha256": "80ed7e8cb7335dd9de9652e9595490c31db45c3c523fb46f6cd4e6b26800f5d3",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2025-03-096",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "68fd5f9307bddc126c3198ca6dd7d389bd77c0ac037fe49ea9fe361d88e5ff14",
+      "public_proposal_sha256": "62af9fb2a8ea781f08beeb03f31385655d3a9014d372a028420834faeba4c005",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2022-12-083",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "ff2843ce61862f425d2139b04f736160964c5b8b7f042f38fcf2e27bb820c2b6",
+      "public_proposal_sha256": "7ccc3b7bfa721f13b4bb8f1b6cdbf4681b42ffbcfcd6eb5bb27056a4c897761d",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2024-07-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "baf4a7f1d47979ec6fd5d68ed8cb909209bc8b8ccaf3125a240d78ec0e3fd53a",
+      "public_proposal_sha256": "3774742730b5e32c4ba8cd185e5d5ecde2f1cdf37523287066c682ead52c3fdd",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-01-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "0f2905f5d9e6f96355331c49af3face3d12de09b1a5c9135d94b25ac590a9645",
+      "public_proposal_sha256": "77286c15b87057bff202b2a217d3645d2fb14e8547a892197e1340d9c8bf11c2",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-05-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "a9d54d73a30268a854c407e01f94fbf154a75dde5fa642e0a1e64074925a3dc6",
+      "public_proposal_sha256": "14f3fc504d3c2c08e8d3daab79b4326fe618fc94e83ad04266e917b8b1eae52d",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "steps",
+        "summary"
+      ]
+    },
+    {
+      "id": "2026-06-085",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "f4622d25c89f1eb3fdc6d1de31a37f9e3e94903e52a493a2d6b89ca63eaa43fd",
+      "public_proposal_sha256": "f921fdb330b1b4e3ab184941981f3dc4672cb276d6ff10f89fa41c7a83cfd022",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-01-093",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "64d8e24082c6dd250492b2347ad4b540a4603a7afee20feb9ceb2ebe3fe8ec81",
+      "public_proposal_sha256": "2a3ee016b563eba547af2485f1e297de45dc88885e17c9259c0d914576fa0cb3",
+      "changed_fields": []
+    },
+    {
+      "id": "2024-11-095",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "04eeb97ebd6022b8d16e151e87ad74a25c3e6e88a5b9bb53b2122fe690298ce7",
+      "public_proposal_sha256": "4f17f84d69a85d9004860bdf7e84740dfde6a7692f816b1c2a65db783e406d88",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-06-095",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "c60d8076e5ec187d1eb9899841b4afc7b5221bb6610e4de9919323e5b3c9f95f",
+      "public_proposal_sha256": "43ab02afb0fc9b67885692cb9e9a883fa4349387aed87e2dbee436ecc2628c87",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-01-092",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "b3cfe410041845f1829be4eedaff2339054f5fa09e7c6ab48430462c247de8a7",
+      "public_proposal_sha256": "50610f5ac097e0dcacc222c889db72318f45cf2f73b52b9b34b5f91fc04ab0da",
+      "changed_fields": [
+        "checked_on",
+        "option_notes",
+        "review_note",
+        "review_status",
+        "sources",
+        "steps",
+        "summary",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "2022-09-101",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "df2491cf72f83b1d2a12b146d9773b1b2e06ecfe79d40f7f9d9f2126a87f224d",
+      "public_proposal_sha256": "35fd8983e8bd4c53863b1846bfc368073d5811729d5187b24db9cc2774432638",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-11-101",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "434bc5c9262f5ed1d07a95aeeb8fdc158a95d9f028431e62b2a8d6fd942c7cd5",
+      "public_proposal_sha256": "0a81365837387ca9c0a3baa04c05b67e019dab2d33b73965d62c170b190a6bab",
+      "changed_fields": [
+        "checked_on",
+        "option_notes"
+      ]
+    },
+    {
+      "id": "2023-01-102",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "a4060aa9efe298b3b6dad9e276ccf8b99d056ba2e1fa41e2a1ee4d0d09f34c7b",
+      "public_proposal_sha256": "201f64c14380108ea2061584b56db206d3f44f4c953fe98a0f2157a8edcf679b",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-07-102",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "a69a9eb6b2619a1e21bdb5816de9ea20e91f1880a166080e4846b626d73e30c2",
+      "public_proposal_sha256": "019c74b8ebd2c04b82d8bb9e15927178209f248e06a3b010faf28b1c8ee32fd4",
+      "changed_fields": []
+    },
+    {
+      "id": "2023-12-105",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "de4638535ecd78aeb21eeced1b8d7b633fafb85af7d47384d710fbf756c698de",
+      "public_proposal_sha256": "ea12a0a5e211d64d1ceb4fdbcf3662dd2a4c2d995a881528295f50735ca5861d",
+      "changed_fields": []
+    },
+    {
+      "id": "2022-12-107",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "a648d3689f6867ff332a2613044ce8897af64faeaa329ec75b3886dd6fa6aad6",
+      "public_proposal_sha256": "62f749472a4df71b5d4d8fa1299be9ae894742a422cb6e59fd9f14b494c28ac7",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-09-110",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "5e445a4c64a089498cd993a328b041f2dcb2b401bca46ad45fcb4bd9458a035a",
+      "public_proposal_sha256": "0edea38c9e0b3771f00d011f06b659a8631a206dff9e3b3a2ee8879fd9968528",
+      "changed_fields": []
+    },
+    {
+      "id": "2026-01-085",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "030b487c3b622a7787668f4893c74d148d515c8d38c25340f7df05a519c88393",
+      "public_proposal_sha256": "3ff06e561d0b06310d1d7b3d3afcd518754bb131de8fb4c106829854e585207b",
+      "changed_fields": []
+    },
+    {
+      "id": "2025-09-081",
+      "kind": "partial",
+      "author": "r26_cost",
+      "reviewer": "r26_concept_b",
+      "status": "pass",
+      "proposal_sha256": "da6de1440d607f53d62a73c4d753bf9e8b5ab4aaeb8e8049c07ab51bc543a810",
+      "public_proposal_sha256": "f6f8393369d6240ae8611fe255f6dc6a2a9f1094d57b50d3855458f83d694076",
+      "changed_fields": []
+    },
+    {
+      "id": "note-M03",
+      "kind": "concept",
+      "author": "r26_concept_a",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "eb6d206b69aa5ed2c6b2c16d97d9a6857607ae70637f9184583fdc4ea6597349",
+      "public_proposal_sha256": "af03be222d6e9b195aa8ae8e4564462b8473d305b8e14c3e466766c7e3c2332d",
+      "changed_fields": [
+        "examples",
+        "key_points",
+        "pitfalls",
+        "sources"
+      ]
+    },
+    {
+      "id": "note-M04",
+      "kind": "concept",
+      "author": "r26_concept_a",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "239f050ec5d0c946f7e91b2d61ae4eef460b2d08533a4bf7d40bb1bf7eac43d0",
+      "public_proposal_sha256": "cd9aa132b0c6a11ae876152366488a0d2ceb12ead83bd77fa6f3531de55182e3",
+      "changed_fields": [
+        "examples",
+        "formulas",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "note-M05",
+      "kind": "concept",
+      "author": "r26_concept_a",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "0b5d081797bbba2269d56378684b1cd12f8bf7d91aa716646ee3e5594df512f6",
+      "public_proposal_sha256": "b3e355e8d9d32102d015a8814e367431944de7448eeb0dc637634905833a084f",
+      "changed_fields": [
+        "examples",
+        "key_points",
+        "pitfalls",
+        "sources"
+      ]
+    },
+    {
+      "id": "note-M06",
+      "kind": "concept",
+      "author": "r26_concept_a",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "45f9d9ec96e174f65d5b47a7bdd074c938eb12d447524824e4fd179bc980469c",
+      "public_proposal_sha256": "5e5dfdc60e3e37108b8b98a58ee92f7318c03f03d37379a914f2c245e4dc3f30",
+      "changed_fields": [
+        "examples",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "note-M08",
+      "kind": "concept",
+      "author": "r26_concept_b",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "43d06c4cc793cbb2a846187cf4bb43f74b771fbb870afb7ad72160303c9de4c4",
+      "public_proposal_sha256": "27bc25e55d4f729b4d5f99e480a6e2809a8fff156cef1426ea7eca9ddf56b5f9",
+      "changed_fields": [
+        "examples",
+        "formulas",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "note-M15",
+      "kind": "concept",
+      "author": "r26_concept_b",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "27c85669723630b61f476d5eeef1cbf53c676cb13adeb4773f26ab30a2478f52",
+      "public_proposal_sha256": "75ccf9dfe728c8d309bc212297494ee306ba65a6998c95020da12e564bb272b9",
+      "changed_fields": [
+        "examples",
+        "formulas",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources"
+      ]
+    },
+    {
+      "id": "note-M18",
+      "kind": "concept",
+      "author": "r26_concept_b",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "e2f40b8d61db75dc765720b4722a8b3c062b89fffe91f7653f7ca690fec5fd4d",
+      "public_proposal_sha256": "04c29b646d9d21fc562441b7311bffb3527e2dbb187b48920162fc65523b8661",
+      "changed_fields": [
+        "examples",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources",
+        "unchecked_points"
+      ]
+    },
+    {
+      "id": "note-M19",
+      "kind": "concept",
+      "author": "r26_concept_b",
+      "reviewer": "r26_cost",
+      "status": "pass",
+      "proposal_sha256": "b431fab988274d41df6284a11b426e472e4e5a0fc2c5598501ddcf92d669a405",
+      "public_proposal_sha256": "96a30e155870189a811aea6d782250e9373995d27b5e2afc6d5a06e6c02579d2",
+      "changed_fields": [
+        "examples",
+        "formulas",
+        "key_points",
+        "pitfalls",
+        "review_note",
+        "sources",
+        "unchecked_points"
+      ]
+    }
+  ],
+  "all_passed": true,
+  "partial_count": 122,
+  "concept_count": 8,
+  "source_body_hashes_verified": true,
+  "independent_row_bindings_verified": true,
+  "author_input_sha256": "223daeca986697854dfd7230af610cf8097fd870fa8a68a7e1693ae6957073af",
+  "review_input_sha256": "79a822a7fbe2116d280db8bf1faa7f3dfcb64b081f417f63831484601e5420d0"
+}

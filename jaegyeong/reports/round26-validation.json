@@ -1,0 +1,113 @@
+{
+  "checked_on": "2026-10-15",
+  "http_server": "http://127.0.0.1:8000/jaegyeong/",
+  "venv": "jaegyeong/.venv",
+  "chromium": "/usr/bin/chromium",
+  "tests": [
+    {
+      "name": "test_bank",
+      "command": "python3 scripts/test_bank.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.576,
+      "output_sha256": "e5043866cf4cca9dcd22a7ea31e952b9d3c91ad59e970ebed3fd5915635c032e",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.343s\n\nOK\n",
+      "summary": [
+        "Ran 10 tests in 0.343s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_parts",
+      "command": "python3 scripts/test_parts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.533,
+      "output_sha256": "a0e21c673c895ceb094796197a555ab2741e52aaae885c67a0622d9612af466f",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.295s\n\nOK\n",
+      "summary": [
+        "Ran 5 tests in 0.295s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_concepts",
+      "command": "python3 scripts/test_concepts.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.392,
+      "output_sha256": "592cdf61574955fe02a4cd57373269abca9d871ba83f2a1d6d9fe16ad36200e1",
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.304s\n\nOK\n",
+      "summary": [
+        "Ran 7 tests in 0.304s",
+        "OK"
+      ]
+    },
+    {
+      "name": "test_explanations",
+      "command": "python3 scripts/test_explanations.py",
+      "exit_code": 0,
+      "elapsed_seconds": 17.779,
+      "output_sha256": "2e47fa8b4c8339b25bb4ff137310887632c57894a0db1e00bf0afac2fbeb2b06",
+      "output": ".................................................\n----------------------------------------------------------------------\nRan 49 tests in 17.779s\n\nOK\n",
+      "summary": [
+        "Ran 49 tests in 17.779s",
+        "OK"
+      ],
+      "rerun_reason": "Preserve the original 21–24 concept/audit file hashes by comparing reconstructed pre-26 JSON bytes. Expected hashes and assertions retained.",
+      "executed_by": "r26_integration"
+    },
+    {
+      "name": "test_app",
+      "command": "python3 scripts/test_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 26.171,
+      "output_sha256": "b6b1b8e44b6e45107c548531c05b8c3ddf7d6819b910dc12eb7e3f2a1f5b91e8",
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "summary": [
+        "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors"
+      ]
+    },
+    {
+      "name": "test_browser",
+      "command": "python3 scripts/test_browser.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.425,
+      "output_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n",
+      "summary": [
+        "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors."
+      ]
+    },
+    {
+      "name": "test_explanations_app",
+      "command": "python3 scripts/test_explanations_app.py",
+      "exit_code": 0,
+      "elapsed_seconds": 123.581,
+      "output_sha256": "e8ce0df6cf9d63d7884f4c2f22453d756f1d494e8644afe1bde2c1ee883130fd",
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calculation coverage), 26 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors\n",
+      "summary": [
+        "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calculation coverage), 26 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors"
+      ]
+    }
+  ],
+  "all_seven_passed": true,
+  "initial_failures": [
+    {
+      "name": "test_explanations",
+      "command": "python3 scripts/test_explanations.py",
+      "exit_code": 1,
+      "elapsed_seconds": 17.818,
+      "output_sha256": "13ae5b98a2316fc08110a895ec22899e97a8a4c429d054c54ac5349434359293",
+      "output": "...........................F..F.FF...............\n======================================================================\nFAIL: test_round21_complete_inspections_preserve_data_and_bind_independent_reviews (__main__.ExplanationTests.test_round21_complete_inspections_preserve_data_and_bind_independent_reviews)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py\", line 1882, in test_round21_complete_inspections_preserve_data_and_bind_independent_reviews\n    self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])\nAssertionError: '14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54' != '3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81'\n- 14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54\n+ 3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81\n\n\n======================================================================\nFAIL: test_round22_append_only_registrations_preserve_originals_and_earlier_audits (__main__.ExplanationTests.test_round22_append_only_registrations_preserve_originals_and_earlier_audits)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py\", line 1838, in test_round22_append_only_registrations_preserve_originals_and_earlier_audits\n    self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])\nAssertionError: '14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54' != '3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81'\n- 14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54\n+ 3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81\n\n\n======================================================================\nFAIL: test_round23_append_only_registrations_preserve_originals_and_earlier_audits (__main__.ExplanationTests.test_round23_append_only_registrations_preserve_originals_and_earlier_audits)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py\", line 1777, in test_round23_append_only_registrations_preserve_originals_and_earlier_audits\n    self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])\nAssertionError: '14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54' != '3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81'\n- 14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54\n+ 3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81\n\n\n======================================================================\nFAIL: test_round24_append_only_registrations_preserve_originals_and_earlier_audits (__main__.ExplanationTests.test_round24_append_only_registrations_preserve_originals_and_earlier_audits)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py\", line 1714, in test_round24_append_only_registrations_preserve_originals_and_earlier_audits\n    self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])\nAssertionError: '14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54' != '3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81'\n- 14627510ad3b9a36b355b76b5acf4be6d288113589d11f1dc8cb3f34c3a6ea54\n+ 3c448954a969fc9911c3ab0b3e0ff159f221c67a032e76c01d885721ea1c9a81\n\n\n----------------------------------------------------------------------\nRan 49 tests in 15.647s\n\nFAILED (failures=4)\n",
+      "summary": [
+        "Ran 49 tests in 15.647s",
+        "FAILED (failures=4)"
+      ]
+    }
+  ],
+  "completed_at": "2026-10-15T00:22:39.980587+00:00",
+  "bundle_sha256": "ddcffdd9ffbaa0a8ebdef7fe766997cc3570c466854ec6a7a6420141835fa93e",
+  "source_and_row_preflight": "round26-preflight.json",
+  "deployment": {
+    "status": "pending_exact_commit_push",
+    "verification": "Exact Pages run and public bank SHA will be checked after this report is committed; no extra receipt-only deployment commit."
+  }
+}

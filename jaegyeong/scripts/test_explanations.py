@@ -460,6 +460,28 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Reverse round 26 first; every earlier ledger keeps its original checks.
+        cls.before_round26_concepts = read('concept-notes')
+        cls.before_round26_concept_audit = json.loads((R/'reports/concept-expansion.json').read_text())
+        round26 = (cls.audit or {}).get('round26_followups')
+        if round26:
+            cls.stage_after['round26_followups'] = copy.deepcopy(cls.data)
+            cls.audit_after['round26_followups'] = copy.deepcopy(cls.audit)
+            indices = {n['question_id']:i for i,n in enumerate(cls.data['items'])}
+            for record in reversed(round26['amendments']):
+                cls.data['items'][indices[record['question_id']]] = copy.deepcopy(record['before'])
+            for ref in round26['new_source_refs']:
+                del cls.data['sources'][ref]
+            ci = {n['id']:i for i,n in enumerate(cls.before_round26_concepts['notes'])}
+            for record in reversed(round26['concept_amendments']):
+                cls.before_round26_concepts['notes'][ci[record['note_id']]] = copy.deepcopy(record['before'])
+                # Exact appended audit rows are verified by the dedicated test.
+                cls.before_round26_concept_audit['followup_note_amendments'].pop()
+            for ref in round26['new_concept_source_refs']:
+                del cls.before_round26_concepts['sources'][ref]
+            del cls.audit['round26_followups']
+        cls.before_round26_data = copy.deepcopy(cls.data)
+        cls.before_round26_audit = copy.deepcopy(cls.audit)
         round24 = (cls.audit or {}).get('round24_followups')
         if round24:
             cls.stage_after['round24_followups'] = copy.deepcopy(cls.data)
@@ -498,7 +520,7 @@ class ExplanationTests(unittest.TestCase):
             cls.audit_after['round21_inspections'] = copy.deepcopy(cls.audit)
             cls.audit['answer_adjudication'] = copy.deepcopy(round21['before_adjudication'])
             del cls.audit['round21_inspections']
-        cls.before_round20_concepts = json.loads((R / 'data/concept-notes.json').read_text())
+        cls.before_round20_concepts = copy.deepcopy(cls.before_round26_concepts)
         round20 = (cls.audit or {}).get('round20_followups')
         if round20:
             # Restore this newest stage before the unchanged registration-ledger
@@ -1375,7 +1397,7 @@ class ExplanationTests(unittest.TestCase):
             self.assertEqual(row['question_row_sha256'],digest(self.qs[id]),id)
         self.assertEqual(self.audit_after['round20_followups']['review'],
                          [r for r in group['original_review'] if r['question_id'] not in registered])
-        concepts=json.loads((R/'data/concept-notes.json').read_text())
+        concepts=copy.deepcopy(self.before_round26_concepts)
         self.assertEqual({n['id']:digest(n) for n in self.before_round20_concepts['notes']},group['baseline_concept_hashes'])
         self.assertEqual({ref:digest(meta) for ref,meta in self.before_round20_concepts['sources'].items()},group['baseline_concept_source_hashes'])
         for ref,meta in self.before_round20_concepts['sources'].items():
@@ -1405,6 +1427,228 @@ class ExplanationTests(unittest.TestCase):
             protect_concept(concept,changed,concept['id'])
         changed=copy.deepcopy(concept);changed['examples'].append({'checks':[{'expr':'9//2','expected':4}]})
         with self.assertRaises(ValueError):protect_concept(concept,changed,concept['id'])
+
+
+    def test_round26_all_inspections_and_append_only_concept_evidence(self):
+        from apply_round10_followups import digest, public_record
+        from apply_round20_followups import four_options_pass
+        from apply_round26_followups import validate_concept, validate_partial, validate_coverage
+        after = self.stage_after.get('round26_followups')
+        if after is None:
+            self.skipTest('No round-26 follow-up applied')
+        audit = self.audit_after['round26_followups']
+        group = audit['round26_followups']
+        proposal = json.loads((R/'reports/round26-proposals.json').read_text())
+        reviews = json.loads((R/'reports/round26-independent-reviews.json').read_text())
+        self.assertEqual(digest(proposal),group['public_proposal_sha256'])
+        self.assertEqual(digest(reviews),group['public_review_sha256'])
+        self.assertEqual(proposal,public_record(proposal))
+        self.assertEqual(reviews,public_record(reviews))
+        self.assertEqual(proposal['baseline_audit_sha256'],
+                         group['baseline_file_sha256']['reports/explanation-expansion.json'])
+        self.assertEqual(proposal['baseline_commit'],group['baseline_commit'])
+        self.assertEqual(proposal['checked_on'],group['checked_on'])
+        self.assertEqual(proposal['worker_sessions'],group['worker_sessions'])
+        self.assertEqual(proposal['actual_parallel_workers'],group['actual_parallel_workers'])
+        for field in ('proposal_sha256','review_sha256'):
+            self.assertRegex(group[field],r'^[0-9a-f]{64}$')
+        for filename,expected in group['protected_file_sha256'].items():
+            self.assertEqual(hashlib.sha256((R/filename).read_bytes()).hexdigest(),expected,filename)
+        self.assertEqual(set(audit)-{'round26_followups'},set(self.before_round26_audit))
+        for key,value in self.before_round26_audit.items():
+            self.assertEqual(audit[key],value,key)
+            if key != 'review':self.assertEqual(digest(value),group['baseline_audit_key_hashes'][key])
+        for key,value in [('explanations',self.before_round26_data),('concepts',self.before_round26_concepts),
+                          ('audit',self.before_round26_audit),('concept_audit',self.before_round26_concept_audit)]:
+            self.assertEqual(digest(value),group['baseline_content_hashes'][key],key)
+        self.assertEqual(audit['review'],group['original_review'])
+        self.assertEqual(len(audit['review']),40)
+        self.assertEqual(group['remaining_review_count'],40)
+        before = {n['question_id']:n for n in self.before_round26_data['items']}
+        current = {n['question_id']:n for n in after['items']}
+        cbefore = {n['id']:n for n in self.before_round26_concepts['notes']}
+        concepts=json.loads((R/'data/concept-notes.json').read_text())
+        cafter={n['id']:n for n in concepts['notes']}
+        self.assertEqual(len(current),4281)
+        self.assertEqual(group['baseline_count'],4281)
+        self.assertEqual(set(current),set(before))
+        self.assertEqual(set(cafter),set(cbefore))
+        self.assertEqual({k:digest(v) for k,v in before.items()},group['baseline_hashes'])
+        self.assertEqual({k:digest(v) for k,v in cbefore.items()},group['baseline_concept_hashes'])
+        pmap={r['question_id']:r for r in proposal['partial_reviews']}
+        cmap={r['note_id']:r for r in proposal['concept_amendments']}
+        validate_coverage(pmap,cmap,{k for k,v in before.items() if v['review_status']=='partial'},
+                          {k for k,v in cbefore.items() if v['review_status']=='partial'})
+        self.assertEqual(group['partial_target_count'],122)
+        self.assertEqual(group['concept_target_count'],8)
+        for kind,rows,ledger,identifier in (
+                ('partial',proposal['partial_reviews'],group['partial_inspections'],'question_id'),
+                ('concept',proposal['concept_amendments'],group['concept_amendments'],'note_id')):
+            approvals={r[identifier]:r for r in reviews[kind]}
+            records={r[identifier]:r for r in ledger}
+            ids=[r[identifier] for r in rows]
+            self.assertEqual(len(ids),len(set(ids)))
+            self.assertEqual(len(approvals),len(reviews[kind]))
+            self.assertEqual(len(records),len(ledger))
+            self.assertEqual(set(ids),set(approvals))
+            self.assertEqual(set(ids),set(records))
+            for row in rows:
+                id=row[identifier];qa=approvals[id];record=records[id]
+                self.assertEqual(qa['status'],'pass',id)
+                self.assertTrue(row['author'] and qa['reviewer'],id)
+                self.assertNotEqual(row['author'],qa['reviewer'],id)
+                self.assertEqual(qa['proposal_sha256'],record['proposal_record_sha256'],id)
+                self.assertEqual(digest(row),record['public_proposal_record_sha256'],id)
+                self.assertEqual(record['independent_review'],qa,id)
+                metadata={'independent_review','proposal_record_sha256','public_proposal_record_sha256'}
+                if kind=='concept':metadata.update({'output_hash','stage'})
+                self.assertEqual({k:v for k,v in record.items() if k not in metadata},row,id)
+                self.assertTrue(row['source_reads'] and qa['source_reads'],id)
+                for read in row['source_reads']+qa['source_reads']:
+                    self.assertRegex(read['sha256'],r'^[0-9a-f]{64}$')
+                    self.assertIs(read['actually_read'],True)
+                    self.assertTrue(read['url'].startswith('https://') and read['version'] and read['read_locator'])
+                    self.assertNotIn('private_path',read)
+                self.assertEqual(digest(row['before']),row['before_hash'],id)
+                self.assertEqual(digest(row['after']),row['after_hash'],id)
+                if kind=='partial':
+                    four_options_pass(qa,id)
+                    self.assertEqual(row['changed_fields'],validate_partial(row,qa,id))
+                    self.assertEqual(row['before'],before[id],id)
+                    self.assertEqual(row['after'],current[id],id)
+                else:
+                    self.assertTrue(qa['addition_findings'] and qa['arithmetic_findings'],id)
+                    self.assertEqual(row['changed_fields'],validate_concept(row,qa,id))
+                    self.assertEqual(row['before'],cbefore[id],id)
+                    self.assertEqual(row['after'],cafter[id],id)
+                    self.assertEqual(record['output_hash'],record['proposal_record_sha256'])
+        amended=[r for r in group['partial_inspections'] if r['changed_fields']]
+        self.assertEqual(group['amendments'],amended)
+        self.assertEqual(group['amended_count'],len(amended))
+        self.assertEqual(group['concept_amended_count'],8)
+        amendments={r['question_id']:r for r in amended}
+        for id,note in before.items():
+            self.assertEqual(current[id],amendments[id]['after'] if id in amendments else note,id)
+        for id,note in cbefore.items():
+            self.assertEqual(cafter[id],cmap[id]['after'] if id in cmap else note,id)
+        for previous,result,key,added in (
+                (self.before_round26_data,after,'baseline_source_hashes','new_source_refs'),
+                (self.before_round26_concepts,concepts,'baseline_concept_source_hashes','new_concept_source_refs')):
+            self.assertEqual({k:digest(v) for k,v in previous['sources'].items()},group[key])
+            self.assertEqual(set(result['sources'])-set(previous['sources']),set(group[added]))
+            for ref,meta in previous['sources'].items():self.assertEqual(result['sources'][ref],meta,ref)
+            self.assertEqual({k:v for k,v in previous.items() if k not in {'items','notes','sources'}},
+                             {k:v for k,v in result.items() if k not in {'items','notes','sources'}})
+        concept_audit=json.loads((R/'reports/concept-expansion.json').read_text())
+        reconstructed=copy.deepcopy(self.before_round26_concept_audit)
+        reconstructed['followup_note_amendments']+=group['concept_amendments']
+        self.assertEqual(concept_audit,reconstructed)
+
+    def test_round26_guards_reject_missing_coverage_protected_edits_and_unproven_upgrades(self):
+        from apply_round10_followups import digest
+        from apply_round20_followups import four_options_pass, unique_rows, verified_review
+        from apply_round26_followups import validate_concept, validate_partial, validate_coverage
+        with self.assertRaises(ValueError):validate_coverage({'a':{}},{},{'a','b'},set())
+        with self.assertRaises(ValueError):unique_rows([{'id':'a'},{'id':'a'}],'id')
+        for numbers in ([1,2,3],[1,1,3,4]):
+            with self.assertRaises(ValueError):
+                four_options_pass({'four_option_logic':[dict(number=n,status='pass',note='specific') for n in numbers]},'bad')
+        with self.assertRaises(ValueError):
+            four_options_pass({'four_option_logic':[dict(number=n,status='pass',note='') for n in range(1,5)]},'bad')
+        row={'author':'author','source_reads':[]}
+        for qa in ({'reviewer':'author','status':'pass','proposal_sha256':digest(row)},
+                   {'reviewer':'independent','status':'pass','proposal_sha256':'0'*64}):
+            with self.assertRaises(ValueError):verified_review(row,qa,'bad')
+        note=next(n for n in self.before_round26_data['items'] if n['review_status']=='partial')
+        row=dict(before=copy.deepcopy(note),after=copy.deepcopy(note),decision='keep',changed_fields=[],reason='retain limitation')
+        for field,value in [('answers',[0]),('checks',[{'expr':'1+1','expected':2}]),
+                            ('question_id','wrong-original')]:
+            bad=copy.deepcopy(row);bad['after'][field]=value
+            with self.assertRaises(ValueError):validate_partial(bad,{},note['question_id'])
+        bad=copy.deepcopy(row);bad['decision']='upgrade';bad['after']['review_status']='source_checked'
+        bad['after']['unchecked_points']=[];bad['changed_fields']=sorted(k for k in note if note[k]!=bad['after'][k])
+        with self.assertRaises(ValueError):validate_partial(bad,{},note['question_id'])
+        concept=next(n for n in self.before_round26_concepts['notes'] if n['review_status']=='partial')
+        crow=dict(before=copy.deepcopy(concept),after=copy.deepcopy(concept),source_reads=[])
+        bad=copy.deepcopy(crow);bad['after']['key_points'][0]='overwrite protected content'
+        with self.assertRaises(ValueError):validate_concept(bad,{'source_reads':[]},concept['id'])
+        bad=copy.deepcopy(crow);bad['after']['unchecked_points']=[]
+        with self.assertRaises(ValueError):validate_concept(bad,{'source_reads':[]},concept['id'])
+        bad=copy.deepcopy(crow);bad['after']['examples'].append({'checks':[{'expr':'9//2','expected':4}]})
+        with self.assertRaises(ValueError):validate_concept(bad,{'source_reads':[]},concept['id'])
+
+
+    def test_round26_concept_resolution_requires_exact_citation_and_both_approvals(self):
+        from apply_round26_followups import validate_concept
+        note=next(n for n in self.before_round26_concepts['notes']
+                  if n['review_status']=='partial' and not any(f.get('unchecked') for f in n['formulas']))
+        ref=note['sources'][0]['ref']
+        row=dict(before=copy.deepcopy(note),after=copy.deepcopy(note),source_reads=[{'ref':ref}],
+                 all_unchecked_resolved=True,
+                 resolved_unchecked_points=[dict(before_text=text,evidence_ref=ref,locator='direct passage',
+                                                  reason='passage resolves this specific warning')
+                                            for text in note['unchecked_points']])
+        row['after']['unchecked_points']=[]
+        row['after']['review_status']='source_checked'
+        qa=dict(source_reads=[{'ref':ref}],resolved_unchecked_points_checked=True,all_unchecked_resolved=True)
+        self.assertEqual(validate_concept(row,qa,note['id']),['review_status','unchecked_points'])
+        # Resolving one warning while another remains must preserve partial status.
+        partial=copy.deepcopy(row);partial['after']['review_status']='partial'
+        partial['after']['unchecked_points']=['A separate limitation remains.']
+        partial['all_unchecked_resolved']=False
+        self.assertEqual(validate_concept(partial,qa,note['id']),['unchecked_points'])
+        for field in ('resolved_unchecked_points_checked','all_unchecked_resolved'):
+            bad=copy.deepcopy(qa);bad[field]=False
+            with self.assertRaises(ValueError):validate_concept(row,bad,note['id'])
+        for side in ('author','reviewer','citation','evidence'):
+            badrow,badqa=copy.deepcopy(row),copy.deepcopy(qa)
+            if side=='author':badrow['source_reads']=[]
+            elif side=='reviewer':badqa['source_reads']=[]
+            elif side=='citation':badrow['after']['sources']=[]
+            else:badrow['resolved_unchecked_points'][0]['evidence_ref']='unread-reference'
+            with self.assertRaises(ValueError):validate_concept(badrow,badqa,note['id'])
+        bad=copy.deepcopy(row);bad['resolved_unchecked_points'].append(copy.deepcopy(bad['resolved_unchecked_points'][0]))
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+        bad=copy.deepcopy(row);bad['resolved_unchecked_points'][0]['before_text']='invented warning'
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+        bad=copy.deepcopy(row);bad['all_unchecked_resolved']=False
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+
+
+    def test_round26_text_corrections_require_exact_targets_sources_and_approval(self):
+        from apply_round26_followups import validate_concept
+        note=next(n for n in self.before_round26_concepts['notes'] if n['review_status']=='partial')
+        ref=note['sources'][0]['ref']
+        row=dict(before=copy.deepcopy(note),after=copy.deepcopy(note),source_reads=[{'ref':ref}],
+                 text_amendments=[dict(field='pitfalls',index=0,before=note['pitfalls'][0],
+                                      after='직접 확인한 근거의 적용 조건을 구분합니다.',
+                                      evidence_ref=ref,locator='specific passage',reason='correct an obsolete limitation')])
+        row['after']['pitfalls'][0]=row['text_amendments'][0]['after']
+        qa=dict(source_reads=[{'ref':ref}],text_amendments_checked=True)
+        self.assertEqual(validate_concept(row,qa,note['id']),['pitfalls'])
+        # An audited correction can coexist with an ordinary append-only tip.
+        extra=copy.deepcopy(row);extra['after']['pitfalls'].append('새 예제에서는 주어진 조건을 먼저 확인합니다.')
+        self.assertEqual(validate_concept(extra,qa,note['id']),['pitfalls'])
+        for field,value in [('field','examples'),('field','unknown'),('index',-1),
+                            ('index',len(note['pitfalls'])),('index',True),
+                            ('before','wrong old text'),('after','  '),
+                            ('after',note['pitfalls'][0]),('evidence_ref','unread-reference'),
+                            ('locator',''),('reason','')]:
+            bad=copy.deepcopy(row);bad['text_amendments'][0][field]=value
+            with self.subTest(field=field,value=value),self.assertRaises(ValueError):
+                validate_concept(bad,qa,note['id'])
+        bad=copy.deepcopy(row);bad['text_amendments']*=2
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+        bad=copy.deepcopy(row);bad['text_amendments']=[]
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+        bad=copy.deepcopy(row);bad['after']['key_points'][0]='unlisted change'
+        with self.assertRaises(ValueError):validate_concept(bad,qa,note['id'])
+        for side in ('author','reviewer','approval'):
+            bad,badqa=copy.deepcopy(row),copy.deepcopy(qa)
+            if side=='author':bad['source_reads']=[]
+            elif side=='reviewer':badqa['source_reads']=[]
+            else:badqa['text_amendments_checked']=False
+            with self.assertRaises(ValueError):validate_concept(bad,badqa,note['id'])
 
 
     def test_round24_append_only_registrations_preserve_originals_and_earlier_audits(self):
@@ -1467,8 +1711,8 @@ class ExplanationTests(unittest.TestCase):
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
         for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
-        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
-        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
     def test_round23_append_only_registrations_preserve_originals_and_earlier_audits(self):
         from apply_round10_followups import digest,public_record
@@ -1530,8 +1774,8 @@ class ExplanationTests(unittest.TestCase):
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
         for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
-        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
-        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
     def test_round22_append_only_registrations_preserve_originals_and_earlier_audits(self):
         from apply_round10_followups import digest,public_record
@@ -1591,8 +1835,8 @@ class ExplanationTests(unittest.TestCase):
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
         for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
-        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
-        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
     def test_round22_rejects_self_review_stale_approval_and_unread_registration(self):
         import tempfile
@@ -1635,8 +1879,8 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual({ref:digest(meta) for ref,meta in stage['sources'].items()},baseline['source_hashes'])
         for name,sha in baseline['immutable_files'].items():
             self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
-        self.assertEqual(hashlib.sha256((R/'data/concept-notes.json').read_bytes()).hexdigest(),baseline['concepts_file_sha256'])
-        self.assertEqual(hashlib.sha256((R/'reports/concept-expansion.json').read_bytes()).hexdigest(),baseline['concept_audit_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
+        self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='answer_adjudication':self.assertEqual(digest(after[key]),sha,key)
         self.assertEqual(digest(group['before_adjudication']),baseline['audit_key_hashes']['answer_adjudication'])

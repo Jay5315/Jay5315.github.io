@@ -17,7 +17,10 @@ round21 = audit.get('round21_inspections',{})
 round22 = audit.get('round22_followups',{})
 round23 = audit.get('round23_followups',{})
 round24 = audit.get('round24_followups',{})
-concept_changes = round20.get('concept_amendments',[])
+round26 = audit.get('round26_followups',{})
+concept_changes = round20.get('concept_amendments',[]) + round26.get('concept_amendments',[])
+concept_text_corrections = {(r['note_id'],a['field'],a['index']):a
+    for r in round26.get('concept_amendments',[]) for a in r.get('text_amendments',[])}
 # Render every explanation, then exercise actual grading for the original 30 and
 # both conceptual/calculation examples in each newly covered part.
 interactive = list(items[:30])
@@ -29,7 +32,7 @@ for n in items[30:]:
         covered.add(group)
 interactive_ids={n['question_id'] for n in interactive}
 by_id={n['question_id']:n for n in items}
-for registration in round20.get('registrations',[]) + round22.get('registrations',[]) + round23.get('registrations',[]) + round24.get('registrations',[]):
+for registration in round20.get('registrations',[]) + round22.get('registrations',[]) + round23.get('registrations',[]) + round24.get('registrations',[]) + round26.get('amendments',[]):
     if registration['question_id'] not in interactive_ids:
         interactive.append(by_id[registration['question_id']])
         interactive_ids.add(registration['question_id'])
@@ -70,6 +73,9 @@ with sync_playwright() as pw:
             n.steps.forEach((s, i) => {
                 if (steps[i].textContent !== s) fail('step content');
             });
+            if (!body.textContent.includes(n.summary)) fail('summary');
+            if (!body.textContent.includes(n.review_note)) fail('review note');
+            n.unchecked_points.forEach(text => { if (!body.textContent.includes(text)) fail('unchecked point'); });
             if (!body.textContent.includes('공식 해설 아님')) fail('authorship');
             if (n.tax_law_year && !body.textContent.includes(`문항 적용 세법 ${n.tax_law_year}년`)) fail('tax year');
             document.querySelector('dialog [data-action=close-modal]').click();
@@ -89,7 +95,10 @@ with sync_playwright() as pw:
         page.goto(URL + '#concept/' + n['part_id'])
         expect(page.locator('.note-page')).to_be_visible()
         for field in ('key_points','pitfalls'):
-            for text in n[field][len(previous[field]):]:
+            for index,text in enumerate(n[field][len(previous[field]):],start=len(previous[field])):
+                correction=concept_text_corrections.get((n['id'],field,index))
+                if correction and text == correction['before']:
+                    text=correction['after']
                 expect(page.locator('.note-page')).to_contain_text(text)
         for index, example in enumerate(n['examples'][len(previous['examples']):],start=len(previous['examples'])):
             box=page.locator('.note-page .example').nth(index)
@@ -98,6 +107,16 @@ with sync_playwright() as pw:
             box.locator('details summary').click()
             expect(box.locator('details li')).to_have_text(example['steps'])
             expect(box.locator('.example-answer')).to_have_text(example['answer'])
+        if change.get('stage') == 'round26_followups':
+            for amendment in change.get('text_amendments',[]):
+                expect(page.locator('.note-page')).to_contain_text(amendment['after'])
+            expect(page.locator('.note-page')).to_contain_text(n['review_note'])
+            for formula in n['formulas'][len(previous['formulas']):]:
+                expect(page.locator('.note-page')).to_contain_text(formula['expression'])
+            for text in n['unchecked_points']:
+                expect(page.locator('.note-page .unchecked-box')).to_contain_text(text)
+            if not n['unchecked_points']:
+                expect(page.locator('.note-page .unchecked-box')).to_have_count(0)
         assert page.evaluate('(k)=>localStorage.getItem(k)', KEY) == concept_state,n['id']
 
     for i, n in enumerate(interactive):

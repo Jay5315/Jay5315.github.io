@@ -82,8 +82,17 @@ class ConceptNotesTest(unittest.TestCase):
                     'IFRSCF':'https://github.com/DhestyaSyafaAmanda/tugas-akhir-analisis-dan-desain-sistem-dhestya-syafa-amanda/blob/',
                     'COST':('https://www.accaglobal.com/','https://biz.libretexts.org/','https://ocw.mit.edu/'),
                     'EUIFRS':'https://github.com/legalize-dev/legalize-eu/blob/'}.get(k.split('_')[0],'https://www.law.go.kr/')
-            if k == 'R7_CONCEPT_M03_HANYANG_ALLOCATION':
-                prefix = 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf'
+            domestic_course_sources = {
+                'R7_CONCEPT_M03_HANYANG_ALLOCATION': 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/3.pdf',
+                'R7_COST03_HANYANG4': 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/4.pdf',
+                'R26_CONCEPT_HANYANG5': 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/5.pdf',
+                'R26_CONCEPT_HANYANG2_10': 'https://contents.kocw.or.kr/KOCW/document/2014/hanyang/leeseonguk/10.pdf',
+                'R7_COST06_KOCW_QUALITY2018': 'https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/8.pdf',
+                'R7_COST06_KOCW_LCC2018': 'https://contents2.kocw.or.kr/KOCW/document/2018/bufs/yukgeunhyo0123/7.pdf',
+                'R26_CONCEPT_CUP8': 'https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/8.pdf',
+            }
+            if k in domestic_course_sources:
+                prefix = domestic_course_sources[k]
                 self.assertEqual(r['url'], prefix, k)
             self.assertTrue(r['url'].startswith(prefix),k)
             if k.startswith('EUIFRS'):
@@ -128,6 +137,12 @@ class ConceptNotesTest(unittest.TestCase):
             self.assertEqual(digest(after),u['after_hash'],id)
             self.assertEqual(digest(before),u['before_hash'],id)
             self.assertTrue(u['source_reads'] and u['reason'] and u['output_hash'],id)
+            if u.get('stage') == 'round26_followups':
+                from apply_round26_followups import validate_concept
+                self.assertEqual(u['after'], after, id)
+                self.assertEqual(validate_concept(u, u['independent_review'], id), u['changed_fields'], id)
+                notes[id]=before
+                continue
             append_fields={'key_points','formulas','examples','pitfalls','sources'}
             for field in append_fields:self.assertEqual(after[field][:len(before[field])],before[field],id)
             for field in set(before)-append_fields-{'unchecked_points','review_note','applicability'}:
