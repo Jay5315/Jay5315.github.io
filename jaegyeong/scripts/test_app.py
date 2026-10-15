@@ -194,6 +194,9 @@ with sync_playwright() as pw:
  expect(m.locator('.subject-card')).to_have_count(3)
  # List cards keep their actions on one row at phone width.
  m.goto(URL+'#library');m.wait_for_timeout(200)
+ # Phone previews follow the quiz text view; the original image sits in a toggle.
+ m.locator('[data-action=preview]').first.click();expect(m.locator('dialog .question-text')).to_be_visible()
+ expect(m.locator('dialog details.instructions summary').first).to_have_text('원본 이미지 보기');m.keyboard.press('Escape')
  assert m.evaluate("[...document.querySelectorAll('.list-actions')].every(a=>new Set([...a.children].map(c=>{const k=c.getBoundingClientRect();return Math.round((k.top+k.bottom)/20)})).size===1)")
  m.goto(URL);m.wait_for_timeout(200)
  # Section numbers follow the on-screen order (mobile moves study setup above the part list).
