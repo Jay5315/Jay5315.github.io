@@ -77,6 +77,7 @@ with sync_playwright() as pw:
   s.results={[a.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:a.answers[0]%4+1,updatedAt:2000},[b.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:b.answers[0]%4+1,updatedAt:1000}};localStorage.setItem(k,JSON.stringify(s));return [a.id,b.id];}""",KEY)
  goto('wrong');page.reload();expect(page.locator('.library-card')).to_have_count(2);expect(page.locator('.section-head .sub').first).to_contain_text('최근에 틀린 순')
  expect(page.locator('#nav a[href="#wrong"]')).to_have_attribute('aria-label','오답 노트 2문제')
+ assert sum(int(x.split('(')[1].rstrip(')')) for x in page.locator('#library-subject option').all_inner_texts()[1:])==2
  # Tablet widths stack short labels under nav icons; links also keep an accessible name and tooltip.
  page.set_viewport_size({'width':820,'height':1000});expect(page.locator('#nav a[href="#home"] .nav-label')).to_be_visible()
  assert page.evaluate("document.querySelector('#nav').getBoundingClientRect().right<=document.querySelector('.top-right').getBoundingClientRect().left")

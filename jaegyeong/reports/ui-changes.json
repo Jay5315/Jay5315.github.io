@@ -524,6 +524,16 @@
           "after": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "오답 노트·즐겨찾기의 과목 필터에 과목별 문제 수 표시(예: 세무회계 (3))",
+      "files": {
+        "assets/app.js": {
+          "before": "b60b7e1a53dc336adc9739eb6eedf0996f2bd69e262b914d1f787a348c9a2dcd",
+          "after": "aa858f578d9dda4dd76a29904cff0eed77cac33dfaeb0ad2ed55fde941db9bbf"
+        }
+      }
     }
   ]
 }
