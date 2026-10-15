@@ -466,6 +466,20 @@
           "after": "53f737909d5a5cf36d3424ca4251056a0291b86aaaee3c15078112384e4105e5"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "개념 노트 1100px 이하: 노트 위에 접을 수 있는 '목차'(섹션 이름 버튼) 추가. 누르면 해당 섹션으로 스크롤하고 목차는 닫힘. 인쇄 시 숨김",
+      "files": {
+        "assets/app.js": {
+          "before": "53f737909d5a5cf36d3424ca4251056a0291b86aaaee3c15078112384e4105e5",
+          "after": "c67d34819082fc443788854cfe95db78238036495b30249478eb9f1758984d80"
+        },
+        "assets/app.css": {
+          "before": "9c15ed3bea0c6e64abc868b98b8471f5cb228dea1f6b453be33e2d21fe122bdb",
+          "after": "b4c10bd82237f5fde22ee0dc82262c17d01793967d1a1d64058d6a4eb5800190"
+        }
+      }
     }
   ]
 }

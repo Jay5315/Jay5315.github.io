@@ -228,6 +228,9 @@ with sync_playwright() as pw:
  # List cards keep their actions on one row at phone width.
  m.goto(URL+'#library');m.wait_for_timeout(200)
  # Accessibility: overflowing tables are focusable regions; list pages keep h1 > h2 > h3 order.
+ m.goto(URL+'#concept/C11');m.wait_for_timeout(200);expect(m.locator('.note-toc')).to_be_hidden();m.locator('.note-toc-fold summary').click()
+ m.locator('.note-toc-fold button',has_text='자주 틀리는 포인트').click();m.wait_for_timeout(800);assert m.evaluate("[location.hash,document.querySelector('.note-toc-fold').open]")==['#concept/C11',False]
+ assert 0<=m.evaluate("[...document.querySelectorAll('.note-page > section.note-sec > h3')].find(h=>h.textContent==='자주 틀리는 포인트').getBoundingClientRect().top")<200
  m.goto(URL+'#concept/C11');m.wait_for_timeout(200);expect(m.locator('.table-scroll').first).to_have_attribute('tabindex','0');expect(m.locator('.table-scroll').first).to_have_attribute('role','region')
  m.goto(URL+'#library');m.wait_for_timeout(200);assert m.evaluate("[...document.querySelectorAll('#main h1,#main h2,#main h3')].map(h=>h.tagName).slice(0,3)")==['H1','H2','H3']
  # Phone previews follow the quiz text view; the original image sits in a toggle.
