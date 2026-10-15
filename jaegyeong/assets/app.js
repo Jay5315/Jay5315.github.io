@@ -246,7 +246,7 @@ document.addEventListener('keydown',e=>{if(route!=='quiz'||!state.active||$('mod
 $('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();}});
 window.addEventListener('hashchange',()=>{draft=null;list={subject:'',query:'',page:0,explanationsOnly:false};render();scrollTo(0,0);});
 window.addEventListener('storage',e=>{if(e.key===KEY){try{state=e.newValue?cleanState(JSON.parse(e.newValue)):fresh();draft=null;render(false);toast('다른 창의 최신 기록을 반영했어요.');}catch(err){toast('다른 창의 기록을 읽지 못했어요. 기록 백업을 확인해 주세요.');}}});
-applySize(lsGet('chagok.size'));applyTheme(themeName());matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>applyTheme(themeName()));render(false);if(!storageOK)setTimeout(()=>toast('브라우저 저장소를 사용할 수 없어요. 기록 백업 기능을 이용해 주세요.'),500);
+applySize(lsGet('chagok.size'));matchMedia('(max-width:640px)').addEventListener?.('change',()=>{if(route==='home'&&!$('modal').open)render(false);});applyTheme(themeName());matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>applyTheme(themeName()));render(false);if(!storageOK)setTimeout(()=>toast('브라우저 저장소를 사용할 수 없어요. 기록 백업 기능을 이용해 주세요.'),500);
 // Offline copy (sw.js, network first). Not available when opened from a local file.
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 })();

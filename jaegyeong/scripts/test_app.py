@@ -239,6 +239,8 @@ with sync_playwright() as pw:
  assert m.evaluate("[...document.querySelectorAll('.list-actions')].every(a=>new Set([...a.children].map(c=>{const k=c.getBoundingClientRect();return Math.round((k.top+k.bottom)/20)})).size===1)")
  m.goto(URL);m.wait_for_timeout(200)
  # Section numbers follow the on-screen order (mobile moves study setup above the part list).
+ m.set_viewport_size({'width':900,'height':844});m.wait_for_timeout(200);assert m.evaluate("[...document.querySelectorAll('.step')].map(e=>e.textContent)")==['01','02','03'] and m.locator('.parts-fold').count()==0
+ m.set_viewport_size({'width':390,'height':844});m.wait_for_timeout(200);expect(m.locator('.parts-fold')).to_have_count(1)
  assert m.evaluate("[...document.querySelectorAll('.step')].map(e=>[e.getBoundingClientRect().top,e.textContent]).sort((a,b)=>a[0]-b[0]).map(x=>x[1])")==['01','02','03']
  m.screenshot(path=str(ARTIFACTS/'app-home-mobile.png'),full_page=True)
  m.locator('#setup-part').select_option('F03');m.locator('[data-action=start]').click()
