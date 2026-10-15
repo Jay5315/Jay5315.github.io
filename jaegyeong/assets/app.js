@@ -237,4 +237,6 @@ $('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('mod
 window.addEventListener('hashchange',()=>{draft=null;list={subject:'',query:'',page:0,explanationsOnly:false};render();scrollTo(0,0);});
 window.addEventListener('storage',e=>{if(e.key===KEY){try{state=e.newValue?cleanState(JSON.parse(e.newValue)):fresh();draft=null;render(false);toast('다른 창의 최신 기록을 반영했어요.');}catch(err){toast('다른 창의 기록을 읽지 못했어요. 기록 백업을 확인해 주세요.');}}});
 applyTheme(themeName());matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>applyTheme(themeName()));render(false);if(!storageOK)setTimeout(()=>toast('브라우저 저장소를 사용할 수 없어요. 기록 백업 기능을 이용해 주세요.'),500);
+// Offline copy (sw.js, network first). Not available when opened from a local file.
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 })();

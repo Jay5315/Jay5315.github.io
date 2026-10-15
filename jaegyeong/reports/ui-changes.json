@@ -158,6 +158,16 @@
           "after": "a378771212525e86594aa98fce92b59cb7082f2032f7e0e40f0f41a14e257ac8"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "오프라인 지원: app.js가 sw.js(네트워크 우선, 실패 시 저장본)를 등록. 파일로 연 경우는 등록하지 않음",
+      "files": {
+        "assets/app.js": {
+          "before": "03c4c826d71c1f081f7215c1f30ac311276b5cd2bbbf84ad1e6313dc51dd1cc9",
+          "after": "4dfa77f393f250cc31cf99c61a2d086d9bdcb11743f27507a3e392f06c309d4b"
+        }
+      }
     }
   ]
 }
