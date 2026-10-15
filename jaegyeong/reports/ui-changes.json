@@ -236,6 +236,16 @@
           "after": "0f129c2cdbea8d64f1bbb98471135b7198c86be57529b3bcacc9eed3f498317b"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 홈 구역 번호를 화면 순서에 맞춤: 640px 이하에서 '오늘의 학습'이 파트 목록 위로 오므로 02/03 번호를 바꿔 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "487485615c9311c9157a988a04ccb9a5651e4bec4b79b58d516a7a22af35b310",
+          "after": "6bf7666edd2c217bf076c2bb7578d567cffd8c06bf7ecd4e96fe2da74395922f"
+        }
+      }
     }
   ]
 }

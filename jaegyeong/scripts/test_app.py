@@ -165,9 +165,12 @@ with sync_playwright() as pw:
  # Reload, dashboard, desktop and mobile layout, text/original switch, zoom.
  page.reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
  page.screenshot(path=str(ARTIFACTS/'app-home-desktop.png'),full_page=False)
+ assert page.evaluate("[...document.querySelectorAll('.step')].map(e=>e.textContent)")==['01','02','03']
  mobile=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
  m=mobile.new_page();m.on('pageerror',lambda e:errors.append(str(e)));m.goto(URL)
  expect(m.locator('.subject-card')).to_have_count(3)
+ # Section numbers follow the on-screen order (mobile moves study setup above the part list).
+ assert m.evaluate("[...document.querySelectorAll('.step')].map(e=>[e.getBoundingClientRect().top,e.textContent]).sort((a,b)=>a[0]-b[0]).map(x=>x[1])")==['01','02','03']
  m.screenshot(path=str(ARTIFACTS/'app-home-mobile.png'),full_page=True)
  m.locator('#setup-part').select_option('F03');m.locator('[data-action=start]').click()
  expect(m.locator('.question-text')).to_be_visible()
