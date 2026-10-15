@@ -303,8 +303,23 @@ with sync_playwright() as pw:
     footer = mobile.locator('.question-footer').bounding_box()
     assert footer['y'] + footer['height'] <= 844 + 1, footer
     expect(mobile.locator('.source-links')).to_be_visible()
+    # Option reasons mark the chosen wrong option and the official answer with colour bands.
+    mobile.get_by_role('button', name='1번 선택', exact=True).click()
+    mobile.locator('[data-action=grade]').click()
+    expect(mobile.locator('.question-card .option-reasons li.picked-option:not(.answer-option)')).to_have_count(1)
+    expect(mobile.locator('.question-card .option-reasons li.answer-option')).to_have_count(1)
     mobile.goto(URL + '#home')
     expect(mobile.locator('nav#nav')).to_be_visible()
+    # Mobile home folds the long part list; it opens on demand.
+    expect(mobile.locator('.parts-fold')).not_to_have_attribute('open', '')
+    mobile.locator('.parts-fold > summary').click()
+    expect(mobile.locator('.parts-fold .part-row').first).to_be_visible()
+    # Library preview drops formula-font private-use glyphs; '문제 보기' is the one primary action.
+    mobile.goto(URL + '#library')
+    mobile.locator('#library-query').fill('2026-09-118')
+    title = mobile.locator('.library-card h3').first.inner_text()
+    assert not any('\ue000' <= ch <= '\uf8ff' for ch in title), title
+    expect(mobile.locator('.library-card .list-actions .btn.primary')).to_have_text('문제 보기')
     mobile.close()
     assert not errors, errors
     browser.close()
