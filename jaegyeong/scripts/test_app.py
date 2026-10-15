@@ -82,6 +82,12 @@ with sync_playwright() as pw:
  expect(page.locator('#nav a[href="#home"]')).to_have_attribute('aria-label','학습 홈');expect(page.locator('#nav a[href="#home"]')).to_have_attribute('title','학습 홈');page.set_viewport_size({'width':1440,'height':1000})
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==old_new
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');page.reload()
+ # Part filter follows the subject filter and narrows the list.
+ page.locator('#library-subject').select_option('세무회계');n_sub=page.locator('#library-part option').count()-1
+ assert n_sub==page.evaluate("BANK_DATA.parts.filter(p=>p.subject==='세무회계').length")
+ pid=page.evaluate("BANK_DATA.parts.find(p=>p.subject==='세무회계').id");page.locator('#library-part').select_option(pid)
+ assert page.evaluate("id=>[...document.querySelectorAll('.library-card [data-action=preview]')].every(b=>BANK_DATA.questions.find(q=>q.id===b.dataset.id).part===id)",pid)
+ page.locator('#library-subject').select_option('');assert page.locator('#library-part').input_value()==''
  # Search terms are highlighted in result previews (whitespace-insensitive, special characters escaped).
  page.locator('#library-query').fill('보고기간 후사건');expect(page.locator('.library-card h3 mark').first).to_be_visible()
  assert all(''.join(t.split()) in {'보고기간','후사건','보고기간후사건'} for t in page.locator('.library-card h3 mark').all_inner_texts())

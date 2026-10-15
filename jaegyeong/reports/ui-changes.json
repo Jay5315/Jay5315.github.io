@@ -500,6 +500,16 @@
           "after": "ca1ab90d7799d33074d667adc10089e3b52376fcb2020e4b4d3ed2c71c044c85"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 둘러보기·오답 노트·즐겨찾기에 파트 필터 추가(과목 선택에 따라 파트 목록이 바뀌고 장별 optgroup으로 묶음, 과목을 바꾸면 파트 선택 초기화)",
+      "files": {
+        "assets/app.js": {
+          "before": "ca1ab90d7799d33074d667adc10089e3b52376fcb2020e4b4d3ed2c71c044c85",
+          "after": "88fb4adaf558638b40a1366a2ae1c629b2d054e512d8ac5fec52440a87b0b8c6"
+        }
+      }
     }
   ]
 }
