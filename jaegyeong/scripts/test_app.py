@@ -64,6 +64,13 @@ with sync_playwright() as pw:
  goto('result/parts-test');page.reload();expect(page.locator('.part-result')).to_have_count(2)
  expect(page.locator('.part-result').first).to_contain_text('0/1');expect(page.locator('.part-result').last).to_contain_text('1/1 · 100%')
  page.evaluate("k=>{const s=JSON.parse(localStorage.getItem(k));s.sessions=s.sessions.filter(x=>x.id!=='parts-test');localStorage.setItem(k,JSON.stringify(s));}",KEY);goto('library');page.reload()
+ # Wrong-answer notes list the most recently missed question first.
+ saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
+ old_new=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).sort((a,b)=>a.id.localeCompare(b.id));const a=qs[0],b=qs[qs.length-1];
+  s.results={[a.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:a.answers[0]%4+1,updatedAt:2000},[b.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:b.answers[0]%4+1,updatedAt:1000}};localStorage.setItem(k,JSON.stringify(s));return [a.id,b.id];}""",KEY)
+ goto('wrong');page.reload();expect(page.locator('.library-card')).to_have_count(2);expect(page.locator('.section-head .sub').first).to_contain_text('최근에 틀린 순')
+ assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==old_new
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');page.reload()
  # Search terms are highlighted in result previews (whitespace-insensitive, special characters escaped).
  page.locator('#library-query').fill('보고기간 후사건');expect(page.locator('.library-card h3 mark').first).to_be_visible()
  assert all(''.join(t.split()) in {'보고기간','후사건','보고기간후사건'} for t in page.locator('.library-card h3 mark').all_inner_texts())

@@ -328,6 +328,16 @@
           "after": "ab8c8f420f1be4a64bc782d539bc6fab6af8af816f620c7a9cc059f64583117a"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "오답 노트를 최근에 틀린 순(학습 기록 updatedAt 내림차순, 같으면 문항 ID 내림차순)으로 정렬하고 목록 위에 '최근에 틀린 순' 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "3833928261bda0efdab4d489b78cbb41899f10980a8518d82c0e5a34496e80cb",
+          "after": "f2fd982010395c690fcdb1515b55514b40dc36c9cc289563338fcd6c0bcfbf75"
+        }
+      }
     }
   ]
 }
