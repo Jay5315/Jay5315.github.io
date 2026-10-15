@@ -412,6 +412,16 @@
           "after": "36c0cc6897a44a5bf4316ec4584d46fee97bc285f8bf5ba769bd88d2b613f17d"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "641~1100px 상단 메뉴: 아이콘만 보이던 것을 아이콘 아래 작은 글자 이름을 함께 표시(641px에서도 오른쪽 버튼과 겹치지 않음)",
+      "files": {
+        "assets/app.css": {
+          "before": "9bd3c8ed6d9a855f9fb312f2e9d0effe189962fbcbcdd68bba27a42d63583bb4",
+          "after": "2dc27e5ea21a8c3900edb57d59507e444eb22db3df02d17c6fffdc7e29f4903b"
+        }
+      }
     }
   ]
 }
