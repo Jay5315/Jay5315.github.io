@@ -654,6 +654,21 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .question-text .q-table{display:table;border-collapse:collapse;font-size:.92em;line-height:1.6}
 .question-text .q-row{display:table-row}
 .question-text .q-cell{display:table-cell;padding:4px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.question-text .q-cell:not(:first-child){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.question-text .q-cell.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .question-text .q-head .q-cell{font-weight:700}
 .question-text .q-cell:first-child{word-break:keep-all}
+/* Answer tables: column header from the stem above choices split into the same columns. */
+.question-text .q-cols{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:4px 10px;font-variant-numeric:tabular-nums}
+.question-text .q-grid .q-choice .q-cols{font-size:.86em;letter-spacing:-.01em}
+.question-text .q-grid .q-choice .q-cols span.num{white-space:nowrap}
+.question-text .q-grid .q-choice .q-cols span:not(.num){overflow-wrap:anywhere;word-break:keep-all}
+.question-text .q-colhead .q-cols span{overflow-wrap:anywhere}
+.question-text .q-colhead{display:grid;grid-template-columns:30px 1fr;gap:6px;padding:0 14px;font-size:.85em;font-weight:700;color:var(--muted)}
+.question-text .q-colhead .q-cols{line-height:1.5}
+@media(max-width:640px){
+ /* Three or more answer columns do not fit side by side: stack each cell under its column name. */
+ .question-text .q-wide .q-colhead{display:none}
+ .question-text .q-wide .q-choice .q-cols{grid-template-columns:1fr;gap:2px;font-size:.9em}
+ .question-text .q-wide .q-choice .q-cols span{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:baseline;white-space:normal}
+ .question-text .q-wide .q-choice .q-cols span::before{content:attr(data-label);color:var(--muted);font-size:.85em;overflow-wrap:anywhere}
+}

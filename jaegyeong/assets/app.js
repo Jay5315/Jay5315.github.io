@@ -44,7 +44,12 @@ function noteBody(n,q=null){
 }
 // breaks / stemBreaks: one character per PDF line wrap in the choices / the stem (j = join, s = join with a space, k = keep), from scripts/choice_breaks.py.
 function questionTextHtml(t,breaks='',stemBreaks=''){const lines=String(t||'').replace(/Ÿ(?=\s)/g,'•').split('\n'),stem=[],choices=[];let k=0,sk=0;for(const line of lines){const m=line.match(/^\s*([①②③④])\s*(.*)$/);if(m)choices.push([m[1],[m[2]]]);else if(choices.length){const ls=choices[choices.length-1][1],d=breaks[k++]||'k';if(d==='k')ls.push(line);else ls[ls.length-1]=ls[ls.length-1].replace(/\s+$/,'')+(d==='s'?' ':'')+line.replace(/^\s+/,'');}else{const d=stem.length?(stemBreaks[sk++]||'k'):'k';if(d==='k')stem.push(line);else stem[stem.length-1]=stem[stem.length-1].replace(/\s+$/,'')+(d==='s'?' ':'')+line.replace(/^\s+/,'');}}
- if(choices.length<2)return esc(tidyUnits(t));return `<span class="q-stem">${stemHtml(stem)}</span><span class="q-choices">${choices.map(([n,ls])=>`<span class="q-choice"><b>${n}</b><span>${esc(tidyUnits(ls.join('\n').replace(/\n+$/,'')))}</span></span>`).join('')}</span>`;}
+ if(choices.length<2)return esc(tidyUnits(t));
+ // Answer tables: the last stem line names the columns and every one-line choice has the same number of cells.
+ const cut=s=>s.trim().split(/\s{2,}/);while(stem.length&&!stem[stem.length-1].trim())stem.pop();const head=stem.length?stem[stem.length-1]:'',cols=ROW.test(head)&&!/\d/.test(head)?cut(head):[];
+ const grid=cols.length>=2&&choices.every(([,ls])=>ls.length===1&&cut(ls[0]).length===cols.length);if(grid)stem.pop();
+ const cells=(xs,labels)=>`<span class="q-cols" style="--cols:${cols.length}">${xs.map((x,i)=>`<span${labels?` data-label="${esc(labels[i])}"`:''}${NUMERIC.test(x)?' class="num"':''}>${esc(tidyUnits(x))}</span>`).join('')}</span>`;
+ return `<span class="q-stem">${stemHtml(stem)}</span><span class="q-choices${grid?' q-grid':''}${grid&&cols.length>2?' q-wide':''}">${grid?`<span class="q-colhead" aria-hidden="true"><b></b>${cells(cols)}</span>`:''}${choices.map(([n,ls])=>`<span class="q-choice"><b>${n}</b>${grid?cells(cut(ls[0]),cols):`<span>${esc(tidyUnits(ls.join('\n').replace(/\n+$/,'')))}</span>`}</span>`).join('')}</span>`;}
 const THEMES={system:['auto','자동 (기기 설정)'],light:['sun','라이트'],dark:['moon','다크']};
 function lsGet(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function lsSet(k,v){try{v==null?localStorage.removeItem(k):localStorage.setItem(k,v);}catch(e){}}
@@ -144,9 +149,10 @@ function tidyUnits(s){return String(s).replace(UNIT_GAP,(m,d,u,n)=>UNIT_SKIP.has
 // Stem lines with column gaps (two or more spaces) are PDF table rows. Consecutive rows, with short
 // label lines between them (e.g. a row-group name), are shown as a table so the columns line up.
 const ROW=/\S\s{2,}\S/;
+const NUMERIC=/^[\s\d,.%()△▲\-+원개단위년월일시간주]+$/;  // cells that should not wrap
 function stemHtml(lines){const out=[];let i=0;const isRow=l=>ROW.test(l),isLabel=l=>l.trim().length>0&&l.trim().length<=10&&!/[.?]$/.test(l.trim());
  while(i<lines.length){if(isRow(lines[i])){let j=i;while(j<lines.length&&(isRow(lines[j])||(isLabel(lines[j])&&j+1<lines.length&&isRow(lines[j+1]))))j++;const rows=lines.slice(i,j);
-  if(rows.filter(isRow).length>=2){out.push(`<span class="q-table-wrap"><span class="q-table" role="table">${rows.map((r,k)=>`<span class="q-row${k===0&&!/\d/.test(r)?' q-head':''}" role="row">${r.trim().split(/\s{2,}/).map(c=>`<span class="q-cell" role="cell">${esc(tidyUnits(c))}</span>`).join('')}</span>`).join('')}</span></span>`);i=j;continue;}}
+  if(rows.filter(isRow).length>=2){out.push(`<span class="q-table-wrap"><span class="q-table" role="table">${rows.map((r,k)=>`<span class="q-row${k===0&&!/\d/.test(r)?' q-head':''}" role="row">${r.trim().split(/\s{2,}/).map(c=>`<span class="q-cell${NUMERIC.test(c)?' num':''}" role="cell">${esc(tidyUnits(c))}</span>`).join('')}</span>`).join('')}</span></span>`);i=j;continue;}}
   out.push(esc(tidyUnits(lines[i]))+(i<lines.length-1?'\n':''));i++;}
  return out.join('').replace(/\n+$/,'');}
 function listPool(){const ids=route==='wrong'?new Set(wrongIds()):route==='bookmarks'?new Set(state.bookmarks):null;const terms=list.query.toLowerCase().split(/\s+/).filter(Boolean);return Q.filter(q=>(!ids||ids.has(q.id))&&(!list.subject||q.subject===list.subject)&&(!list.explanationsOnly||explanationsById.has(q.id))&&(!terms.length||terms.every(x=>searchText(q).includes(x)))).sort((a,b)=>b.id.localeCompare(a.id));}

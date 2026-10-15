@@ -344,6 +344,17 @@ with sync_playwright() as pw:
     expect(table.locator('.q-head .q-cell')).to_have_count(3)
     expect(table.locator('.q-row').last).to_contain_text('800,000,000원')
     assert fresh.evaluate('document.documentElement.scrollWidth<=innerWidth')
+    # Answer tables: the stem's column header sits above choices split into the same columns.
+    fresh.goto(URL + '#library')
+    fresh.locator('#library-query').fill('2024-03-090')
+    fresh.locator('[data-action=preview]').first.click()
+    fresh.locator('dialog [data-action=single]').click()
+    if fresh.locator('#replace-session').count():
+        fresh.locator('#replace-session').click()
+    expect(fresh.locator('.question-card .q-grid .q-colhead .q-cols span')).to_have_count(2)
+    expect(fresh.locator('.question-card .q-grid .q-choice')).to_have_count(4)
+    expect(fresh.locator('.question-card .q-grid .q-choice').first.locator('.q-cols span')).to_have_count(2)
+    assert fresh.evaluate('document.documentElement.scrollWidth<=innerWidth')
     fresh.context.close()
     # The PDF bullet glyph Ÿ is shown as • in the question text and in list previews.
     mobile.goto(URL + '#library')
