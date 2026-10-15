@@ -163,6 +163,7 @@ with sync_playwright() as pw:
  assert ('준비 중' in page.locator('.concept-intro strong').inner_text())==(page.evaluate('BANK_DATA.parts.length')>page.evaluate('(BANK_DATA.concepts||{notes:[]}).notes.length'))
  page.locator('.status-list summary').first.click();expect(page.locator('.status-parts a').first).to_be_visible()
  goto('quiz')
+ expect(page.locator('.progress-track')).to_have_attribute('role','progressbar')
  # Keyboard focus survives re-renders: choosing keeps the option focused, grading moves to the next button.
  saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
  page.locator('[data-action="choose"][data-answer="1"]').focus();page.keyboard.press('Enter')
@@ -213,6 +214,9 @@ with sync_playwright() as pw:
  expect(m.locator('.subject-card')).to_have_count(3)
  # List cards keep their actions on one row at phone width.
  m.goto(URL+'#library');m.wait_for_timeout(200)
+ # Accessibility: overflowing tables are focusable regions; list pages keep h1 > h2 > h3 order.
+ m.goto(URL+'#concept/C11');m.wait_for_timeout(200);expect(m.locator('.table-scroll').first).to_have_attribute('tabindex','0');expect(m.locator('.table-scroll').first).to_have_attribute('role','region')
+ m.goto(URL+'#library');m.wait_for_timeout(200);assert m.evaluate("[...document.querySelectorAll('#main h1,#main h2,#main h3')].map(h=>h.tagName).slice(0,3)")==['H1','H2','H3']
  # Phone previews follow the quiz text view; the original image sits in a toggle.
  m.locator('[data-action=preview]').first.click();expect(m.locator('dialog .question-text')).to_be_visible()
  expect(m.locator('dialog details.instructions summary').first).to_have_text('원본 이미지 보기');m.keyboard.press('Escape')

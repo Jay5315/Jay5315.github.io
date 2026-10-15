@@ -382,6 +382,16 @@
           "after": "00d390c00e48c4bdaae5c8c13bc18fbfd2bbe3f97d5da60dd406bd533018c4cf"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "접근성(axe 검사 위반 0건): 진행 막대에 role=progressbar·값 속성, 목록·개념 노트 화면에 숨은 h2로 제목 순서 보정, 가로로 넘치는 표에 tabindex=0·role=region 부여",
+      "files": {
+        "assets/app.js": {
+          "before": "00d390c00e48c4bdaae5c8c13bc18fbfd2bbe3f97d5da60dd406bd533018c4cf",
+          "after": "0bd37b0710a51f976a21bf44a1ea890d6d56effada013678c45366508ea76fdd"
+        }
+      }
     }
   ]
 }
