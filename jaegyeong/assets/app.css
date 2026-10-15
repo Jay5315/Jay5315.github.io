@@ -672,3 +672,4 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .question-text .q-wide .q-choice .q-cols span{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:baseline;white-space:normal}
  .question-text .q-wide .q-choice .q-cols span::before{content:attr(data-label);color:var(--muted);font-size:.85em;overflow-wrap:anywhere}
 }
+.library-card .meta .wrong-pick{color:var(--bad);font-weight:650}

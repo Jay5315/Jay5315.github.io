@@ -144,6 +144,20 @@
           "after": "d59f07de077f275be305aab0201e5b45d80171d570c780be5041005ee9798803"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "오답 노트 카드에 내가 고른 답과 공식 정답을 함께 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "d59f07de077f275be305aab0201e5b45d80171d570c780be5041005ee9798803",
+          "after": "03c4c826d71c1f081f7215c1f30ac311276b5cd2bbbf84ad1e6313dc51dd1cc9"
+        },
+        "assets/app.css": {
+          "before": "3f51df827201c0220d405370374671e24623675fc101d5788d55911f38488a18",
+          "after": "a378771212525e86594aa98fce92b59cb7082f2032f7e0e40f0f41a14e257ac8"
+        }
+      }
     }
   ]
 }

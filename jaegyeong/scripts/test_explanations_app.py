@@ -355,6 +355,12 @@ with sync_playwright() as pw:
     expect(fresh.locator('.question-card .q-grid .q-choice')).to_have_count(4)
     expect(fresh.locator('.question-card .q-grid .q-choice').first.locator('.q-cols span')).to_have_count(2)
     assert fresh.evaluate('document.documentElement.scrollWidth<=innerWidth')
+    # Wrong-answer notes show the chosen option next to the official answer.
+    fresh.get_by_role('button', name='2번 선택', exact=True).click()
+    fresh.locator('[data-action=grade]').click()
+    fresh.goto(URL + '#wrong')
+    fresh.locator('#library-query').fill('2024-03-090')
+    expect(fresh.locator('.library-card .wrong-pick')).to_contain_text('내가 고른 답 ② / 정답 ①')
     fresh.context.close()
     # The PDF bullet glyph Ÿ is shown as • in the question text and in list previews.
     mobile.goto(URL + '#library')
