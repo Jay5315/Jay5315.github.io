@@ -137,6 +137,11 @@ with sync_playwright() as pw:
  page.evaluate("([k,ids])=>{const s=JSON.parse(localStorage.getItem(k));s.active={id:'arrow',title:'arrow',ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null};localStorage.setItem(k,JSON.stringify(s));}",[KEY,retry_ids])
  goto('quiz');page.reload();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
+ # Concept index keeps the per-status part list folded and hides a zero pending count.
+ goto('concepts');expect(page.locator('.status-list').first).not_to_have_attribute('open','');expect(page.locator('.status-parts a').first).to_be_hidden()
+ assert ('준비 중' in page.locator('.concept-intro strong').inner_text())==(page.evaluate('BANK_DATA.parts.length')>page.evaluate('(BANK_DATA.concepts||{notes:[]}).notes.length'))
+ page.locator('.status-list summary').first.click();expect(page.locator('.status-parts a').first).to_be_visible()
+ goto('quiz')
  # Korean text wraps between words, not inside them.
  assert page.evaluate("getComputedStyle(document.querySelector('.question-text')).wordBreak")=='keep-all'
  # Shortcuts still work after clicking a choice (focus sits on a button).
