@@ -1,0 +1,174 @@
+{
+  "checked_at": "2026-10-16T08:58:19+09:00",
+  "base_commit": "411dcb14a0ddecb9d086c3c609a7e4112188352e",
+  "scope": "jaegyeong/의 회차 검색·오프라인·검증 표시·진도·출제 회차 표시 수정",
+  "counts": {
+    "question_entries": 4322,
+    "study_eligible": 4321,
+    "explanations": 4281,
+    "concept_notes": 74
+  },
+  "actual_subagents": 3,
+  "fixes": [
+    "회차·출제 ID·과목별 1~40번 문항 번호 정확 검색, 텍스트 검색은 공백 무시·AND 유지",
+    "요청 회차와 대표 원문 병기, 기존 title로 이어 풀기·재풀이 회차 유지",
+    "출처 대조와 checks 기반 계산 검산 별도 표시, partial과 실제 미확인 사항 유지",
+    "같은 변형·분류 필터로 파트 진도 분자·분모와 정답률 집계",
+    "첫 방문 필수 7개 파일 저장 확인 후 오프라인 준비 완료, 기존 v1 업데이트와 실패 처리"
+  ],
+  "tests": [
+    {
+      "name": "test_bank",
+      "exit_code": 0,
+      "seconds": 0.64,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_bank.py",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.395s\n\nOK\n"
+    },
+    {
+      "name": "test_parts",
+      "exit_code": 0,
+      "seconds": 0.46,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_parts.py",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.291s\n\nOK\n"
+    },
+    {
+      "name": "test_concepts",
+      "exit_code": 0,
+      "seconds": 0.41,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_concepts.py",
+      "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.324s\n\nOK\n"
+    },
+    {
+      "name": "test_explanations",
+      "exit_code": 0,
+      "seconds": 34.76,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py",
+      "output": "..........................................................\n----------------------------------------------------------------------\nRan 58 tests in 31.016s\n\nOK\n"
+    },
+    {
+      "name": "test_browser",
+      "exit_code": 0,
+      "seconds": 6.36,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_browser.py",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n"
+    },
+    {
+      "name": "test_explanations_app",
+      "exit_code": 0,
+      "seconds": 137.13,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python /workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations_app.py",
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calculation coverage), 26 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice, chosen-option reasons first, joined choice wraps, quiz bottom bar; no browser errors\n"
+    },
+    {
+      "name": "test_app",
+      "exit_code": 0,
+      "seconds": null,
+      "command": "PATH=jaegyeong/.venv/bin:$PATH jaegyeong/.venv/bin/python jaegyeong/scripts/test_app.py",
+      "output": "PASS: exact sitting/number/occurrence search, requested vs representative metadata, source/calculation badges, partial warnings, filtered progress, unchanged study schema\nPASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "timing_note": "담당자가 실행 시간을 별도 측정하지 않았습니다."
+    },
+    {
+      "name": "test_offline",
+      "exit_code": 0,
+      "output": "PASS: first visit → ready → first offline reload; text/explanations, saved image, limited-media notice, study storage, v1 migration, mobile layout.\nPASS: failed essential download never announces offline readiness.\nPASS: active legacy v1 worker upgrades to the complete v2 cache; obsolete status probes do not overwrite readiness.\nPASS: HTTP 503 cache fallback; failed update reports unavailable while preserving the previous offline app.\nPASS: offline browser regressions complete.\n",
+      "command": "PATH=jaegyeong/.venv/bin:$PATH jaegyeong/.venv/bin/python jaegyeong/scripts/test_offline.py"
+    }
+  ],
+  "additional_checks": [
+    {
+      "name": "mobile_requested_provenance",
+      "result": "PASS",
+      "detail": "360px 목록·풀이에서 요청 회차/대표 원문 표시 및 가로 넘침 없음"
+    },
+    {
+      "name": "four_status_calculation_combinations",
+      "result": "PASS",
+      "detail": "source_checked/partial × checks 비어 있음/있음 4조합 표시 확인"
+    },
+    {
+      "name": "independent_compatibility",
+      "result": "PASS",
+      "reviewer": "/root/review_compat",
+      "detail": "단일 문제 시작·일반/복수 회차/존재하지 않는 회차 세션 제목의 대표 표시·유효 회차 이어 풀기·세션 필드 7개·브라우저 오류 0개"
+    },
+    {
+      "name": "negative_control_original_code",
+      "result": "EXPECTED_FAILURE",
+      "detail": "수정 전 app.js에서 2024-11 1번 검색이 3개 대신 12개를 반환해 새 검사가 예상대로 실패"
+    }
+  ],
+  "intermediate_failures": [
+    {
+      "scope": "최초 UI 회귀 검사",
+      "detail": "동시 app.js 수정 중 초기 화면의 .subject-card가 예상 3개 대신 0개여서 실패했습니다. 안정된 코드 재실행·전체 test_app는 통과했습니다. 별도 파일 로그는 없으며 담당자 실행 출력에 기록했습니다."
+    },
+    {
+      "scope": "오프라인 업데이트 회귀 검사",
+      "detail": "독립 담당자의 v1→v2 검사에서 워커 활성화 정리가 끝나기 전 준비 완료를 표시하는 타이밍 문제를 발견했습니다. 활성화 완료 대기와 이전 워커 응답 무시를 반영한 뒤 전체 오프라인 검사를 다시 통과했습니다."
+    }
+  ],
+  "integrity": {
+    "study_storage_key": "chagok.study.v1",
+    "schema_unchanged": true,
+    "official_answers_and_question_ids_unchanged": true,
+    "root_site_unchanged": true,
+    "protected_files": {
+      "index.html": {
+        "before_sha256": "803ffda69c5daa8a8fc161d00afae2cd1184156ae549b822be51e617f31627be",
+        "after_sha256": "803ffda69c5daa8a8fc161d00afae2cd1184156ae549b822be51e617f31627be",
+        "unchanged": true
+      },
+      "assets/bank-data.js": {
+        "before_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "after_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "unchanged": true
+      },
+      "data/questions.json": {
+        "before_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "after_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "unchanged": true
+      },
+      "data/entries.json": {
+        "before_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "after_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "unchanged": true
+      },
+      "data/explanations.json": {
+        "before_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "after_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "unchanged": true
+      },
+      "data/concept-notes.json": {
+        "before_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "after_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "unchanged": true
+      },
+      "reports/explanation-expansion.json": {
+        "before_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "after_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "unchanged": true
+      }
+    },
+    "modified_file_sha256": {
+      "assets/app.js": "15ba928fe08fdea5ec910bd967fd897a01845c45d529bbaaf0a56698cb0f83ca",
+      "sw.js": "96e5020088c908c7d5eab17dcec72ebf86e6ae890f4dc2c13475947005ed4fe3",
+      "assets/offline.js": "48c967ecc0d67352acbdee780ce748680a5e0e5e80f487e8ef99c25684ac42ea",
+      "scripts/test_app.py": "d4fb866dcacf10475af69304551c740087fa4bc16b4b302843334cc5f44895e4",
+      "scripts/test_ui_regressions.py": "b18ab5bda022ebd7d877f73ac64320bf64303dbcc3affeb97ff01c1a0f938003",
+      "scripts/test_explanations_app.py": "20e204acae99e4825ac19529e0fb244e8265b5b870ae5887cd7440b51418c37d",
+      "scripts/test_offline.py": "bb0089ee34d04683695cf17635b411489c0b32075ae8f88e97f3df54ef2c8d60"
+    }
+  },
+  "limitations": [
+    "준비 완료는 문제 텍스트·해설·앱 필수 파일 저장을 뜻합니다. 이미지 전용 문항의 원본과 PDF 전체 저장을 보장하지 않습니다.",
+    "원본 이미지·PDF는 온라인으로 연 자료 중 파일당 5MiB 이하, 최대 40개를 저장합니다. 브라우저의 저장소 삭제·회수 이후에는 재접속이 필요합니다.",
+    "20.4MB 단일 bank-data.js의 과목별 지연 로딩은 후속 설계 과제로 남깁니다."
+  ],
+  "deployment": {
+    "status": "pending",
+    "target_branches": [
+      "main",
+      "claude/practical-allen-zjsicv"
+    ]
+  }
+}

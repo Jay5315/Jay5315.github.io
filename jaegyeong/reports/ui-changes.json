@@ -574,6 +574,16 @@
           "after": "e842b83018cdfbb7ab2a67ee093738c17620e11ad8371a952e1eeb67aae7c504"
         }
       }
+    },
+    {
+      "date": "2026-10-16",
+      "summary": "회차·과목별 문항 번호 정확 검색, 요청 회차와 대표 원문 병기 및 이어 풀기 유지, 출처 대조·계산 검산·부분 확인 표시 분리, 선택 범위에 맞춘 파트 진도, 첫 방문 오프라인 지원 스크립트 로드",
+      "files": {
+        "assets/app.js": {
+          "before": "e842b83018cdfbb7ab2a67ee093738c17620e11ad8371a952e1eeb67aae7c504",
+          "after": "15ba928fe08fdea5ec910bd967fd897a01845c45d529bbaaf0a56698cb0f83ca"
+        }
+      }
     }
   ]
 }

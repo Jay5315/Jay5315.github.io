@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,shutil,os
 from playwright.sync_api import sync_playwright,expect
+from test_ui_regressions import run_ui_regressions
 R=Path(__file__).resolve().parents[1]
 URL=os.environ.get('APP_BASE_URL','http://127.0.0.1:8000/jaegyeong/').rstrip('/')+'/'
 ARTIFACTS=Path(os.environ.get('TEST_ARTIFACT_DIR',str(R/'_artifacts')))
@@ -91,7 +92,7 @@ with sync_playwright() as pw:
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==order
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_bm]);goto('library');page.reload()
  # Search also matches subject names and "N번" question numbers.
- page.locator('#library-query').fill('2024-11 40번');expect(page.locator('.library-card')).to_have_count(page.evaluate("BANK_DATA.questions.filter(q=>q.exam==='2024-11'&&q.number===40).length"))
+ page.locator('#library-query').fill('2024-11 40번');expect(page.locator('.library-card')).to_have_count(page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.occurrences.some(o=>o.startsWith('2024-11-')&&((Number(o.slice(-3))-1)%40)+1===40)).length"))
  page.locator('#library-query').fill('')
  # A filtered library list (e.g. one exam sitting) can be practised in question order.
  saved_pl=page.evaluate("k=>localStorage.getItem(k)",KEY)
@@ -99,7 +100,7 @@ with sync_playwright() as pw:
  n=int(page.locator('.section-head .sub').first.inner_text().split('개')[0].replace(',',''));expect(page.locator('[data-action=practice-list]')).to_contain_text(f'이 목록 {n}문제 풀기')
  page.locator('[data-action=practice-list]').click()
  if page.locator('#replace-session').count():page.locator('#replace-session').click()
- a=state()['active'];nums=[page.evaluate("id=>BANK_DATA.questions.find(q=>q.id===id).number",i) for i in a['ids']]
+ a=state()['active'];nums=[page.evaluate("id=>{const o=BANK_DATA.questions.find(q=>q.id===id).occurrences.find(o=>o.startsWith('2024-11-'));return ((Number(o.slice(-3))-1)%40)+1;}",i) for i in a['ids']]
  assert a['title']=='2024-11 · 원가관리회계' and nums==sorted(nums) and len(nums)==n,(a['title'],nums)
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_pl]);goto('library');page.reload();page.locator('#library-query').fill('');page.locator('#library-subject').select_option('')
  # Part filter follows the subject filter and narrows the list.
@@ -296,5 +297,6 @@ with sync_playwright() as pw:
  m.locator('[data-action=home]').click();m.locator('[data-action=start]').click();expect(m.locator('dialog')).to_contain_text('진행 중인 학습')
  m.locator('#keep-session').click();expect(m.locator('.question-card')).to_be_visible()
  assert not errors,errors
+ print('PASS: '+run_ui_regressions(browser,URL))
  browser.close()
  print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors')

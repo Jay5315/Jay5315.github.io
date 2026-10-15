@@ -150,7 +150,7 @@ with sync_playwright() as pw:
             expect(page.locator('.question-card .pick-reason.wrong')).to_contain_text(reasons[answer])
         expect(page.locator('.question-card .solution-steps li')).to_have_count(len(n['steps']))
         if n['review_status'] == 'partial':
-            expect(page.locator('.question-card .explanation-body')).to_contain_text('기준서 재대조 필요')
+            expect(page.locator('.question-card .explanation-body')).to_contain_text('부분 확인')
         if n['tax_law_year']:
             expect(page.locator('.question-card .explanation-body')).to_contain_text(f"문항 적용 세법 {n['tax_law_year']}년")
         if i == 0:
@@ -362,15 +362,13 @@ with sync_playwright() as pw:
     fresh.locator('#library-query').fill('2024-03-090')
     expect(fresh.locator('.library-card .wrong-pick')).to_contain_text('내가 고른 답 ② / 정답 ①')
     fresh.context.close()
-    # Offline: after one online visit the service worker serves the kept copy (network first online).
+    # Offline: the first visit prepares all essential files without an extra online reload.
     offline_ctx = browser.new_context(viewport={'width': 390, 'height': 844})
     off = offline_ctx.new_page()
     off.on('pageerror', lambda e: errors.append(str(e)))
     off.goto(URL + '#home')
-    off.evaluate('navigator.serviceWorker.ready.then(()=>true)')
-    off.reload()
+    off.locator('#offline-status[data-state=ready]').wait_for(timeout=60000)
     expect(off.locator('.home-head')).to_be_visible()
-    off.wait_for_function("caches.open('chagok-offline-v1').then(c=>c.keys()).then(k=>k.some(r=>r.url.endsWith('bank-data.js')))", timeout=60000)
     offline_ctx.set_offline(True)
     off.reload()
     expect(off.locator('.home-head')).to_be_visible()
