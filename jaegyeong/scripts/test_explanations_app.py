@@ -332,6 +332,18 @@ with sync_playwright() as pw:
     box.locator('summary').click()
     expect(box.locator('.instruction-list li')).to_have_count(3)
     expect(box.locator('.instruction-list li').first).to_contain_text('매년 1월 1일부터 12월 31일까지')
+    # PDF table rows in a stem (column gaps of two or more spaces) are shown as a table.
+    fresh.goto(URL + '#library')
+    fresh.locator('#library-query').fill('2026-09-049')
+    fresh.locator('[data-action=preview]').first.click()
+    fresh.locator('dialog [data-action=single]').click()
+    if fresh.locator('#replace-session').count():
+        fresh.locator('#replace-session').click()
+    table = fresh.locator('.question-card .q-stem .q-table')
+    expect(table).to_have_count(1)
+    expect(table.locator('.q-head .q-cell')).to_have_count(3)
+    expect(table.locator('.q-row').last).to_contain_text('800,000,000원')
+    assert fresh.evaluate('document.documentElement.scrollWidth<=innerWidth')
     fresh.context.close()
     # The PDF bullet glyph Ÿ is shown as • in the question text and in list previews.
     mobile.goto(URL + '#library')

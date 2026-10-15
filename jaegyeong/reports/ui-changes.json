@@ -92,6 +92,34 @@
           "after": "27d937a84c7696b57eca0d3bfd4bf01f46cfe52da92c64b1ab7e9cab9893930a"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 본문의 PDF 표(열 사이 두 칸 이상 공백인 줄이 이어지는 부분)를 표로 표시하고, 숫자 열은 오른쪽 정렬",
+      "files": {
+        "assets/app.js": {
+          "before": "6684a70c481a1ac28409badce78c82478f9f0d6f2aa723c2cb89fd2f990e7c71",
+          "after": "f4cbbcc2aced4b66b7bcfacb1404a2c9005bb2c9f38b9d49ab9d6900cc4c4dcf"
+        },
+        "assets/app.css": {
+          "before": "27d937a84c7696b57eca0d3bfd4bf01f46cfe52da92c64b1ab7e9cab9893930a",
+          "after": "29c6c7d38edf03ab8934ee1fdeb482260818f36fd49cf29dc43b9ae133dd76f4"
+        }
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "표가 넓을 때 표 안에서만 가로 스크롤되도록 q-table-wrap과 question-card min-width:0 추가",
+      "files": {
+        "assets/app.js": {
+          "before": "f4cbbcc2aced4b66b7bcfacb1404a2c9005bb2c9f38b9d49ab9d6900cc4c4dcf",
+          "after": "3cb8afcb5e137a37c4cd9312a7279f3e87a4cfaa765c1de23219d225eda6dbbc"
+        },
+        "assets/app.css": {
+          "before": "29c6c7d38edf03ab8934ee1fdeb482260818f36fd49cf29dc43b9ae133dd76f4",
+          "after": "6526a817618013a8c3fd53567f51c638d87145a893f8ad185b8661384eb735f6"
+        }
+      }
     }
   ]
 }

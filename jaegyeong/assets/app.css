@@ -648,3 +648,12 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .parts-fold[open]>summary::after{content:'▴'}
 .instruction-list{margin:8px 0 0;padding-left:20px;line-height:1.75;max-height:240px;overflow:auto}
 .instruction-list li{margin:4px 0}
+/* PDF tables in question stems (rows split on column gaps). */
+.question-card,.question-text{min-width:0}
+.question-text .q-table-wrap{display:block;max-width:100%;overflow-x:auto;margin:10px 0;white-space:normal}
+.question-text .q-table{display:table;border-collapse:collapse;font-size:.92em;line-height:1.6}
+.question-text .q-row{display:table-row}
+.question-text .q-cell{display:table-cell;padding:4px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.question-text .q-cell:not(:first-child){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.question-text .q-head .q-cell{font-weight:700}
+.question-text .q-cell:first-child{word-break:keep-all}
