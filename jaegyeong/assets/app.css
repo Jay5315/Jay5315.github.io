@@ -274,7 +274,7 @@ kbd{font:inherit;font-size:13px;border:1px solid var(--line-strong);border-botto
 .choices-label{font-size:15px;font-weight:750;color:var(--ink);margin:26px 0 10px}
 .choice-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .choice{border:1.5px solid var(--line-strong);border-radius:16px;padding:12px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:18px;font-weight:750;color:var(--ink-2);min-height:62px;background:var(--surface);transition:border-color .12s,background-color .12s,transform .1s}
-.choice:not(:disabled):hover{border-color:var(--ink);background:var(--surface-2)}
+@media(hover:hover){.choice:not(:disabled):not(.selected):hover{border-color:var(--ink);background:var(--surface-2)}}
 .choice:not(:disabled):active{transform:translateY(1px)}
 .choice span{width:32px;height:32px;display:grid;place-items:center;border-radius:50%;border:1.5px solid var(--line-strong);font-size:18px}
 .choice span.choice-word{width:auto;height:auto;border:0;border-radius:0;font-size:16px}

@@ -446,6 +446,16 @@
           "after": "39149be1b7c19ba058dc813b8e3e8c9e5613e133b4d05b8187eb0e806b65f378"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "버그 수정: 선택한 보기에 마우스를 올리거나 터치 후 hover가 남으면 배경이 밝아져 흰 글자가 안 보이던 문제. 보기 hover 효과를 선택 안 된 보기와 hover 가능한 기기로 한정",
+      "files": {
+        "assets/app.css": {
+          "before": "39149be1b7c19ba058dc813b8e3e8c9e5613e133b4d05b8187eb0e806b65f378",
+          "after": "9c15ed3bea0c6e64abc868b98b8471f5cb228dea1f6b453be33e2d21fe122bdb"
+        }
+      }
     }
   ]
 }

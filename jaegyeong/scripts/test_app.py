@@ -172,6 +172,10 @@ with sync_playwright() as pw:
  saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
  page.locator('[data-action="choose"][data-answer="1"]').focus();page.keyboard.press('Enter')
  assert page.evaluate("document.activeElement.dataset.action+document.activeElement.dataset.answer")=='choose1'
+ # Hovering the selected choice keeps its selected colours (text stays readable).
+ sel=page.locator('[data-action="choose"][data-answer="1"]');sel.hover()
+ assert sel.evaluate("e=>{const c=getComputedStyle(e);return c.backgroundColor!==getComputedStyle(document.body).backgroundColor&&c.backgroundColor!==c.color}")
+ bg=sel.evaluate("e=>getComputedStyle(e).backgroundColor");page.mouse.move(0,0);assert sel.evaluate("e=>getComputedStyle(e).backgroundColor")==bg,'hover must not change the selected background'
  page.locator('[data-action="grade"]').focus();page.keyboard.press('Enter')
  assert page.evaluate("document.activeElement.dataset.action")=='next'
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');page.reload()
