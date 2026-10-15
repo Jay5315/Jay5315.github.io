@@ -422,6 +422,16 @@
           "after": "2dc27e5ea21a8c3900edb57d59507e444eb22db3df02d17c6fffdc7e29f4903b"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "해설 '보기별 설명' 모바일 배치: 일반 보기는 번호를 설명 옆에 두고(번호만 있는 줄 제거), 정답·내가 고른 보기만 이름 줄을 따로 둠",
+      "files": {
+        "assets/app.css": {
+          "before": "2dc27e5ea21a8c3900edb57d59507e444eb22db3df02d17c6fffdc7e29f4903b",
+          "after": "518bd2b547cf71eba75947571e7cbe6523ba6ed402e5a4250311730b6552d55e"
+        }
+      }
     }
   ]
 }
