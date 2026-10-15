@@ -169,6 +169,10 @@ with sync_playwright() as pw:
  mobile=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
  m=mobile.new_page();m.on('pageerror',lambda e:errors.append(str(e)));m.goto(URL)
  expect(m.locator('.subject-card')).to_have_count(3)
+ # List cards keep their actions on one row at phone width.
+ m.goto(URL+'#library');m.wait_for_timeout(200)
+ assert m.evaluate("[...document.querySelectorAll('.list-actions')].every(a=>new Set([...a.children].map(c=>{const k=c.getBoundingClientRect();return Math.round((k.top+k.bottom)/20)})).size===1)")
+ m.goto(URL);m.wait_for_timeout(200)
  # Section numbers follow the on-screen order (mobile moves study setup above the part list).
  assert m.evaluate("[...document.querySelectorAll('.step')].map(e=>[e.getBoundingClientRect().top,e.textContent]).sort((a,b)=>a[0]-b[0]).map(x=>x[1])")==['01','02','03']
  m.screenshot(path=str(ARTIFACTS/'app-home-mobile.png'),full_page=True)

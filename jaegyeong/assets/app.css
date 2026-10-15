@@ -681,3 +681,8 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .status-list summary{cursor:pointer;font-size:14px;font-weight:700;color:var(--brand-text);padding:6px 0;min-height:24px}
 .status-list[open] summary{margin-bottom:6px}
 .table-scroll,.question-text .q-table-wrap{background:linear-gradient(to right,var(--surface) 30%,transparent) left center/32px 100% no-repeat local,linear-gradient(to left,var(--surface) 30%,transparent) right center/32px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,var(--line-strong),transparent) left center/12px 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,var(--line-strong),transparent) right center/12px 100% no-repeat scroll;background-color:var(--surface)}
+@media(max-width:640px){
+ .list-actions{gap:2px}
+ .list-actions .btn:not(.primary){padding:6px 8px}
+ .list-actions .btn.primary{padding:8px 14px;margin-left:auto}
+}

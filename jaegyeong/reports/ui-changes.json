@@ -246,6 +246,16 @@
           "after": "6bf7666edd2c217bf076c2bb7578d567cffd8c06bf7ecd4e96fe2da74395922f"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "목록 카드(문제 둘러보기·오답 노트·즐겨찾기) 동작 줄을 640px 이하에서 좁게 해 390px 화면에서 별·개념·해설·문제 보기가 한 줄에 들어가게 함(더 좁으면 줄바꿈)",
+      "files": {
+        "assets/app.css": {
+          "before": "0f129c2cdbea8d64f1bbb98471135b7198c86be57529b3bcacc9eed3f498317b",
+          "after": "d05892c77a10611ede3178877427776b42aac5f30d10cac41efc5630599f4f98"
+        }
+      }
     }
   ]
 }
