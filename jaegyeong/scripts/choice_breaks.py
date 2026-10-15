@@ -12,7 +12,23 @@ from collections import Counter
 
 CHOICE = re.compile(r'^\s*[①②③④]')
 STRUCTURAL = re.compile(r'^\s*([ㄱ-ㅎ][.)]|[<(]|\d+[.)]|[-•·※Ÿ]|[A-Za-z][.)])')  # Ÿ: PDF bullet glyph
-TABLE = re.compile(r'\S\s{2,}\S|\t')  # column gaps in table-like lines
+_TABLE_GAP = re.compile(r'\S\s{2,}\S|\t')  # column gaps in table-like lines
+
+
+def tidy_gaps(line):
+    """Collapse double spaces that are not column gaps (mirrors tidyGaps in assets/app.js)."""
+    line = re.sub(r'\(\s+([^()\s]{0,3})\s+\)', r'(\1)', line)
+    line = re.sub(r'^(\s*(?:[ㄱ-ㅎ가-하]\.|\(\d+\)|[ⓐ-ⓩ]))\s+', r'\1 ', line)
+    return re.sub(r'(년|월)\s{2,}(?=\d)', r'\1 ', line)
+
+
+class _Table:
+    @staticmethod
+    def search(line):
+        return _TABLE_GAP.search(tidy_gaps(line))
+
+
+TABLE = _Table()
 PARTICLES = {'은', '는', '이', '가', '을', '를', '에', '의', '로', '와', '과', '도', '만', '에서', '으로', '에게',
              '이다', '이며', '이고', '으로서', '로서', '에는', '에도', '까지', '부터', '보다'}
 HANGUL = re.compile(r'^[가-힣]+$')
