@@ -372,6 +372,16 @@
           "after": "7d2eba5a1b19c5050f34750719b6e2292c9c31e02fa440f1a5ff9434bc260f27"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "메뉴의 오답 노트·즐겨찾기 개수 배지를 화면낭독기가 '오답 노트 2문제'로 읽도록 링크에 aria-label을 주고 배지는 aria-hidden 처리",
+      "files": {
+        "assets/app.js": {
+          "before": "7d2eba5a1b19c5050f34750719b6e2292c9c31e02fa440f1a5ff9434bc260f27",
+          "after": "00d390c00e48c4bdaae5c8c13bc18fbfd2bbe3f97d5da60dd406bd533018c4cf"
+        }
+      }
     }
   ]
 }

@@ -70,6 +70,7 @@ with sync_playwright() as pw:
  old_new=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).sort((a,b)=>a.id.localeCompare(b.id));const a=qs[0],b=qs[qs.length-1];
   s.results={[a.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:a.answers[0]%4+1,updatedAt:2000},[b.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:b.answers[0]%4+1,updatedAt:1000}};localStorage.setItem(k,JSON.stringify(s));return [a.id,b.id];}""",KEY)
  goto('wrong');page.reload();expect(page.locator('.library-card')).to_have_count(2);expect(page.locator('.section-head .sub').first).to_contain_text('최근에 틀린 순')
+ expect(page.locator('#nav a[href="#wrong"]')).to_have_attribute('aria-label','오답 노트 2문제')
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==old_new
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');page.reload()
  # Search terms are highlighted in result previews (whitespace-insensitive, special characters escaped).
