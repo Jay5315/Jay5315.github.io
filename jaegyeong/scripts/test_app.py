@@ -90,6 +90,9 @@ with sync_playwright() as pw:
  goto('bookmarks');page.reload();expect(page.locator('.section-head .sub').first).to_contain_text('최근에 담은 순')
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==order
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_bm]);goto('library');page.reload()
+ # Search also matches subject names and "N번" question numbers.
+ page.locator('#library-query').fill('2024-11 40번');expect(page.locator('.library-card')).to_have_count(page.evaluate("BANK_DATA.questions.filter(q=>q.exam==='2024-11'&&q.number===40).length"))
+ page.locator('#library-query').fill('')
  # Part filter follows the subject filter and narrows the list.
  page.locator('#library-subject').select_option('세무회계');n_sub=page.locator('#library-part option').count()-1
  assert n_sub==page.evaluate("BANK_DATA.parts.filter(p=>p.subject==='세무회계').length")
