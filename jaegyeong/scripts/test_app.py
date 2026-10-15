@@ -93,6 +93,15 @@ with sync_playwright() as pw:
  # Search also matches subject names and "N번" question numbers.
  page.locator('#library-query').fill('2024-11 40번');expect(page.locator('.library-card')).to_have_count(page.evaluate("BANK_DATA.questions.filter(q=>q.exam==='2024-11'&&q.number===40).length"))
  page.locator('#library-query').fill('')
+ # A filtered library list (e.g. one exam sitting) can be practised in question order.
+ saved_pl=page.evaluate("k=>localStorage.getItem(k)",KEY)
+ page.locator('#library-query').fill('2024-11');page.locator('#library-subject').select_option('원가관리회계')
+ n=int(page.locator('.section-head .sub').first.inner_text().split('개')[0].replace(',',''));expect(page.locator('[data-action=practice-list]')).to_contain_text(f'이 목록 {n}문제 풀기')
+ page.locator('[data-action=practice-list]').click()
+ if page.locator('#replace-session').count():page.locator('#replace-session').click()
+ a=state()['active'];nums=[page.evaluate("id=>BANK_DATA.questions.find(q=>q.id===id).number",i) for i in a['ids']]
+ assert a['title']=='2024-11 · 원가관리회계' and nums==sorted(nums) and len(nums)==n,(a['title'],nums)
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_pl]);goto('library');page.reload();page.locator('#library-query').fill('');page.locator('#library-subject').select_option('')
  # Part filter follows the subject filter and narrows the list.
  page.locator('#library-subject').select_option('세무회계');n_sub=page.locator('#library-part option').count()-1
  assert n_sub==page.evaluate("BANK_DATA.parts.filter(p=>p.subject==='세무회계').length")
