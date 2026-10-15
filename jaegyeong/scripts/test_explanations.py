@@ -486,6 +486,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Newest stage: the round-2 spacing fix only changed whitespace; restore the before objects
+        # so every earlier ledger (round 26 and older) is checked against what it recorded.
+        spacing2 = (cls.audit or {}).get('spacing_round2')
+        if spacing2:
+            cls.stage_after['spacing_round2'] = copy.deepcopy(cls.data)
+            cls.audit_after['spacing_round2'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in spacing2['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['spacing_round2']
+        cls.before_spacing2 = copy.deepcopy(cls.data)
         # Reverse round 26 first; every earlier ledger keeps its original checks.
         cls.before_round26_concepts = read('concept-notes')
         cls.before_round26_concept_audit = json.loads((R/'reports/concept-expansion.json').read_text())
@@ -1044,6 +1055,41 @@ class ExplanationTests(unittest.TestCase):
         stage = {n['question_id']: n for n in self.stage_after['post_review_amendments']['items']}
         for id in set(stage) - set(ids):
             self.assertEqual(stage[id], self.notes[id], id)
+
+    def test_spacing_round2_changes_only_whitespace(self):
+        group = (self.audit_after.get('spacing_round2') or {}).get('spacing_round2')
+        if not group:
+            self.skipTest('No round-2 spacing fix')
+        def digest(x):
+            return hashlib.sha256(json.dumps(x, ensure_ascii=False, sort_keys=True,
+                                             separators=(',', ':')).encode()).hexdigest()
+        def strip(x):
+            if isinstance(x, str):
+                return re.sub(r'\s', '', x)
+            if isinstance(x, list):
+                return [strip(v) for v in x]
+            if isinstance(x, dict):
+                return {k: strip(v) for k, v in x.items()}
+            return x
+        after_stage = {n['question_id']: n for n in self.stage_after['spacing_round2']['items']}
+        before_stage = {n['question_id']: n for n in self.before_spacing2['items']}
+        ids = [r['question_id'] for r in group['notes']]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertEqual(group['count'], len(ids))
+        self.assertEqual(set(after_stage), set(before_stage))
+        for id in set(after_stage) - set(ids):
+            self.assertEqual(after_stage[id], before_stage[id], id)
+        for r in group['notes']:
+            id, after = r['question_id'], after_stage[r['question_id']]
+            self.assertEqual(digest(r['before']), r['before_hash'], id)
+            self.assertEqual(digest(after), r['after_hash'], id)
+            self.assertNotEqual(r['before'], after, id)
+            self.assertEqual(strip(r['before']), strip(after), id)
+            for k in after:
+                if k not in ('title', 'summary', 'review_note', 'steps', 'option_notes', 'unchecked_points'):
+                    self.assertEqual(r['before'][k], after[k], (id, k))
+            self.assertEqual([(o['number'], o['is_answer']) for o in r['before']['option_notes']],
+                             [(o['number'], o['is_answer']) for o in after['option_notes']], id)
 
     def test_spacing_amendments_change_only_whitespace(self):
         amendments = (self.audit or {}).get('spacing_amendments')
