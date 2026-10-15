@@ -181,7 +181,10 @@ with sync_playwright() as pw:
  page.reload();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
  assert page.evaluate("getComputedStyle(document.body).backgroundColor")!='rgb(245, 246, 243)'
  page.locator('.avatar').click();page.locator('#img-invert').uncheck();assert page.evaluate("localStorage.getItem('chagok.img')")=='original'
- page.locator('#img-invert').check();page.locator('[data-action=theme-set][data-theme=system]').click();page.keyboard.press('Escape')
+ page.locator('#img-invert').check();page.locator('[data-action=theme-set][data-theme=system]').click()
+ # Text size is a per-browser display preference kept outside the study record.
+ page.locator('[data-action=size-set][data-size=xl]').click();assert page.evaluate("[document.documentElement.dataset.size,localStorage.getItem('chagok.size')]")==['xl','xl']
+ page.locator('[data-action=size-set][data-size=""]').click();assert page.evaluate("[document.documentElement.dataset.size||'',localStorage.getItem('chagok.size')]")==['',None];page.keyboard.press('Escape')
  assert page.evaluate("document.documentElement.dataset.theme") is None and page.evaluate("localStorage.getItem('chagok.theme')") is None
  assert json.dumps(state(),sort_keys=True)==before,'theme settings must not touch chagok.study.v1'
  goto('home');page.locator('#setup-subject').select_option('');page.locator('#setup-part').select_option('F04');expect(page.locator('.setup-concept')).to_contain_text('핵심 개념')

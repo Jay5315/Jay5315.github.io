@@ -314,6 +314,20 @@
           "after": "320cba342d6715a3b5eb65833aa611e33e1231c923f6289edc76f815cf350e11"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "설정에 '글자 크기'(보통/크게/아주 크게) 추가: 문제·보기·채점 피드백·해설·개념 노트 본문을 1.12/1.25배로 확대. 학습 기록과 별도인 chagok.size 키에 저장. 360px에서 아주 크게로 4,321문항 가로 넘침 없음",
+      "files": {
+        "assets/app.js": {
+          "before": "320cba342d6715a3b5eb65833aa611e33e1231c923f6289edc76f815cf350e11",
+          "after": "3833928261bda0efdab4d489b78cbb41899f10980a8518d82c0e5a34496e80cb"
+        },
+        "assets/app.css": {
+          "before": "596382fbcecd35489d593a02c41a17994bb7277da300deed90f686061cf36012",
+          "after": "ab8c8f420f1be4a64bc782d539bc6fab6af8af816f620c7a9cc059f64583117a"
+        }
+      }
     }
   ]
 }

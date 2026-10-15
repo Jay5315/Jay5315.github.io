@@ -702,3 +702,5 @@ a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decora
  .box,.question-card,.note-page,.library-card,.result-table,.part-results,.history-card{box-shadow:none;break-inside:avoid-page}
  a{color:inherit}
 }
+:root[data-size=l] :is(.question-text,.feedback,.question-explanation,.note-page){zoom:1.12}
+:root[data-size=xl] :is(.question-text,.feedback,.question-explanation,.note-page){zoom:1.25}
