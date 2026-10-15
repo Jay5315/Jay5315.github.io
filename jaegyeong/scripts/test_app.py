@@ -142,6 +142,13 @@ with sync_playwright() as pw:
  assert ('준비 중' in page.locator('.concept-intro strong').inner_text())==(page.evaluate('BANK_DATA.parts.length')>page.evaluate('(BANK_DATA.concepts||{notes:[]}).notes.length'))
  page.locator('.status-list summary').first.click();expect(page.locator('.status-parts a').first).to_be_visible()
  goto('quiz')
+ # Keyboard focus survives re-renders: choosing keeps the option focused, grading moves to the next button.
+ saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
+ page.locator('[data-action="choose"][data-answer="1"]').focus();page.keyboard.press('Enter')
+ assert page.evaluate("document.activeElement.dataset.action+document.activeElement.dataset.answer")=='choose1'
+ page.locator('[data-action="grade"]').focus();page.keyboard.press('Enter')
+ assert page.evaluate("document.activeElement.dataset.action")=='next'
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');page.reload()
  # Korean text wraps between words, not inside them.
  assert page.evaluate("getComputedStyle(document.querySelector('.question-text')).wordBreak")=='keep-all'
  # Shortcuts still work after clicking a choice (focus sits on a button).

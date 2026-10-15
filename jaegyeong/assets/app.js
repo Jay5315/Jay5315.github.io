@@ -193,9 +193,11 @@ function render(resetFocus=true){
  route=decodeURIComponent(location.hash.slice(1)||'home');const base=route.split('/')[0];if(!['home','library','wrong','bookmarks','history','quiz','result','concepts','concept'].includes(base)||(base==='result'&&!route.startsWith('result/'))||(base==='concept'&&!route.startsWith('concept/')))route='home';
  nav();const names={concepts:'개념 노트',concept:'개념 노트',home:'학습 대시보드',library:'문제 둘러보기',wrong:'오답 노트',bookmarks:'즐겨찾기',history:'학습 기록',quiz:'집중 학습',result:'학습 결과'};$('breadcrumb').textContent=names[route.split('/')[0]];document.title=`${names[route.split('/')[0]]} · 차곡`;
  document.body.dataset.route=route.split('/')[0];
+ const was=document.activeElement,keep=!resetFocus&&was&&was!==$('main')&&$('main').contains(was)&&(was.dataset.action||was.id)?[was.dataset.action,was.dataset.answer,was.dataset.id,was.id]:null;
  $('main').innerHTML=route==='concepts'?conceptsIndex():route.startsWith('concept/')?conceptPage():route==='home'?home():route==='quiz'?quiz():route.startsWith('result/')?result():route==='history'?history():library();
  document.querySelectorAll('.question-image').forEach(img=>{img.onerror=()=>{img.alt='문제 이미지를 불러오지 못했습니다. ZIP 전체를 압축 해제했는지 확인해 주세요.';};});
  if(resetFocus)$('main').focus({preventScroll:true});
+ else if(keep){const same=keep[3]?document.getElementById(keep[3]):$('main').querySelector(`[data-action="${keep[0]}"]${keep[1]?`[data-answer="${keep[1]}"]`:''}${keep[2]?`[data-id="${CSS.escape(keep[2])}"]`:''}`),el=same&&!same.disabled?same:$('main').querySelector('[data-action="next"]');if(el)el.focus({preventScroll:true});}
 }
 document.addEventListener('click',e=>{
  if(e.target.closest('.skip')){e.preventDefault();$('main').focus();return;}
