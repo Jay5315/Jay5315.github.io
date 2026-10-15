@@ -1,0 +1,19 @@
+{
+  "policy": "assets/app.js·app.css는 해설 등록 회차(21~24차)에서 바뀌지 않은 파일로 해시가 고정되어 있습니다. 이후의 의도된 화면 변경은 여기에 변경 전후 SHA-256을 기록하고, 테스트는 고정 해시에서 이 기록을 따라 이어지는 해시만 현재 파일로 인정합니다. 기록되지 않은 변경과 data/·index.html 변경은 여전히 실패합니다.",
+  "changes": [
+    {
+      "date": "2026-10-15",
+      "summary": "풀이 화면 가독성 개선: 보기 안 PDF 줄바꿈을 화면에서만 이어 붙임, 모바일 풀이 화면 하단 메뉴 대신 답안 버튼 줄 고정, 채점 후 고른 보기·정답 보기 설명 우선 표시",
+      "files": {
+        "assets/app.js": {
+          "before": "252c6dbb81e9b3f53eed5354dec5ee7d7f58965feb3fc2e0d18b552dc9e5408d",
+          "after": "4d88e770de9204c74cf6d0d01e737dc38a5a75a3adf4a358875f18ce92826bca"
+        },
+        "assets/app.css": {
+          "before": "72ea3ddc5c8a7a834b2f19bfe14f22bfa7b1aa293255d5b8b5d4b15b48b8b942",
+          "after": "c28b28606967da87c5c54b7794b0d0455040bb7705853c366424e1929b8b760e"
+        }
+      }
+    }
+  ]
+}

@@ -15,6 +15,9 @@ from test_concepts import calc
 R = Path(__file__).resolve().parents[1]
 
 
+# UI files may change after an audit baseline only along reports/ui-changes.json.
+UI_FILES = {'assets/app.js', 'assets/app.css'}
+
 # Registration ledgers, newest first; setUpClass reverses them in this order.
 REGISTRATION_LEDGERS = ['round17_registrations', 'round16_registrations', 'round15_registrations', 'round14_registrations', 'round13_registrations']
 
@@ -444,6 +447,29 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(new, candidates - set(withdrawals))
         self.assertEqual(report['registered_pass_count'], len(new))
         self.assertEqual(report['withdrawn_issue_count'], len(withdrawals))
+
+    def assert_protected_file(self, name, sha):
+        """A file pinned by an audit baseline must still have that hash. Only the app's UI files
+        may move on, and only along the before/after chain recorded in reports/ui-changes.json."""
+        current = hashlib.sha256((R / name).read_bytes()).hexdigest()
+        if name in UI_FILES:
+            for change in json.loads((R / 'reports/ui-changes.json').read_text())['changes']:
+                step = change['files'].get(name)
+                if step and step['before'] == sha:
+                    sha = step['after']
+        self.assertEqual(current, sha, name)
+
+    def test_ui_change_log_is_a_chain_ending_at_current_files(self):
+        log = json.loads((R / 'reports/ui-changes.json').read_text())
+        for name in UI_FILES:
+            steps = [c['files'][name] for c in log['changes'] if name in c['files']]
+            for prev, nxt in zip(steps, steps[1:]):
+                self.assertEqual(prev['after'], nxt['before'], name)
+            if steps:
+                self.assertEqual(hashlib.sha256((R / name).read_bytes()).hexdigest(), steps[-1]['after'], name)
+        for change in log['changes']:
+            self.assertTrue(change['summary'] and change['date'])
+            self.assertTrue(set(change['files']) <= UI_FILES)
 
     @classmethod
     def setUpClass(cls):
@@ -1710,7 +1736,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(group['remaining_review_count'],len(after['review']))
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
-        for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+        for name,sha in baseline['immutable_files'].items():self.assert_protected_file(name,sha)
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
@@ -1773,7 +1799,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(group['remaining_review_count'],len(after['review']))
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
-        for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+        for name,sha in baseline['immutable_files'].items():self.assert_protected_file(name,sha)
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
@@ -1834,7 +1860,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual(group['remaining_review_count'],len(after['review']))
         for key,sha in baseline['audit_key_hashes'].items():
             if key!='review':self.assertEqual(digest(after[key]),sha,key)
-        for name,sha in baseline['immutable_files'].items():self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+        for name,sha in baseline['immutable_files'].items():self.assert_protected_file(name,sha)
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
 
@@ -1878,7 +1904,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual({n['question_id']:digest(n) for n in stage['items']},baseline['explanation_hashes'])
         self.assertEqual({ref:digest(meta) for ref,meta in stage['sources'].items()},baseline['source_hashes'])
         for name,sha in baseline['immutable_files'].items():
-            self.assertEqual(hashlib.sha256((R/name).read_bytes()).hexdigest(),sha,name)
+            self.assert_protected_file(name,sha)
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concepts,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concepts_file_sha256'])
         self.assertEqual(hashlib.sha256((json.dumps(self.before_round26_concept_audit,ensure_ascii=False,indent=2)+'\n').encode()).hexdigest(),baseline['concept_audit_file_sha256'])
         for key,sha in baseline['audit_key_hashes'].items():

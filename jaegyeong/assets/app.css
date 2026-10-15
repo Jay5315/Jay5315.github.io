@@ -294,7 +294,7 @@ kbd{font:inherit;font-size:12.5px;border:1px solid var(--line-strong);border-bot
 .question-footer{border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;align-items:center;margin-top:26px;padding-top:20px;gap:12px}
 .question-footer>.btn:not(.primary){grid-column:1;grid-row:1}
 .question-footer>.btn.primary{grid-column:3;grid-row:1;min-width:170px;min-height:52px;font-size:16px}
-.source-links{grid-column:1/-1;grid-row:2;font-size:14px;color:var(--muted);display:flex;gap:16px;justify-content:flex-end}
+.source-links{font-size:14px;color:var(--muted);display:flex;gap:16px;justify-content:flex-end;margin-top:10px}
 .source-links a{text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:3px}
 .source-links a:hover{color:var(--brand-text);text-decoration-color:currentColor}
 details.instructions{font-size:15px;color:var(--ink-2);margin:14px 0 0;border-top:1px solid var(--line);padding-top:12px}
@@ -555,7 +555,11 @@ dialog.note-dialog{max-width:min(800px,96vw)}
  .choice .choice-word{display:none}
  .question-footer{position:sticky;bottom:calc(64px + env(safe-area-inset-bottom));z-index:6;background:var(--surface);margin:20px -16px 0;padding:12px 16px;border-top:1px solid var(--line);box-shadow:0 -10px 18px -14px #0000004d;gap:8px;grid-template-columns:1fr 1.5fr}
  .question-footer>.btn.primary{grid-column:2;min-width:0}
- .question-footer .source-links{justify-content:flex-start;font-size:13px}
+ .source-links{justify-content:flex-start;font-size:13px}
+ /* While solving, the sticky answer bar replaces the bottom tab bar so more of the question and explanation fits on screen. */
+ body[data-route=quiz] nav{display:none}
+ body[data-route=quiz] .question-footer{bottom:0;padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+ body[data-route=quiz] footer{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
  .quiz-side .number-grid{grid-template-columns:repeat(6,1fr)}
  .library-card{padding:16px;gap:10px;flex-wrap:wrap}
  .library-copy{min-width:100%}
@@ -601,6 +605,15 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 .option-reasons{list-style:none;padding:0;margin:0}
 .option-reasons li{display:grid;grid-template-columns:105px 1fr;gap:12px;border-top:1px solid var(--line);padding:12px 0}
 .option-reasons .answer-option b{color:var(--accent)}
+.option-reasons .picked-option:not(.answer-option) b{color:var(--bad)}
+.pick-reasons{display:grid;gap:10px;margin:16px 0 4px}
+.pick-reason{border:1px solid var(--line);border-left-width:4px;border-radius:12px;padding:12px 16px;background:var(--surface)}
+.pick-reason b{display:block;font-size:15px;margin-bottom:4px}
+.pick-reason p{margin:0;line-height:1.75;overflow-wrap:anywhere}
+.pick-reason.wrong{border-left-color:var(--bad)}
+.pick-reason.wrong b{color:var(--bad)}
+.pick-reason.right{border-left-color:var(--ok)}
+.pick-reason.right b{color:var(--ok)}
 .explanation-sources{border-top:1px solid var(--line);margin-top:20px;padding-top:12px}
 .explanation-sources summary{cursor:pointer;font-weight:600;min-height:40px}
 .explanation-sources small{display:block;color:var(--muted)}

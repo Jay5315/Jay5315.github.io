@@ -135,6 +135,13 @@ with sync_playwright() as pw:
         expect(page.locator('.question-card .explanation-body h3')).to_have_text(n['title'])
         expect(page.locator('.question-card .explanation-authorship')).to_contain_text('공식 해설 아님')
         expect(page.locator('.question-card .option-reasons li')).to_have_count(4)
+        # After grading, the reasons for the chosen option and the official answer come first.
+        reasons = {o['number']: o['reason'] for o in n['option_notes']}
+        picked_wrong = answer not in n['answers']
+        expect(page.locator('.question-card .pick-reason')).to_have_count(len(n['answers']) + picked_wrong)
+        expect(page.locator('.question-card .pick-reason.right').first).to_contain_text(reasons[n['answers'][0]])
+        if picked_wrong:
+            expect(page.locator('.question-card .pick-reason.wrong')).to_contain_text(reasons[answer])
         expect(page.locator('.question-card .solution-steps li')).to_have_count(len(n['steps']))
         if n['review_status'] == 'partial':
             expect(page.locator('.question-card .explanation-body')).to_contain_text('기준서 재대조 필요')
@@ -283,6 +290,22 @@ with sync_playwright() as pw:
     assert len(state['active']['ids']) == len(items) and state['version'] == 1
     assert set(state['active']['ids']) == {n['question_id'] for n in items}
     assert state['results']['2026-01-006']['attempts'] == 1
+    # Mobile quiz: PDF line wraps inside choices are joined for display, and the bottom tab bar
+    # gives way to the sticky answer bar.
+    mobile = browser.new_page(viewport={'width': 390, 'height': 844})
+    mobile.on('pageerror', lambda e: errors.append(str(e)))
+    mobile.goto(URL + '#library')
+    mobile.locator('#library-query').fill('2023-06-018')
+    mobile.locator('[data-action=preview]').first.click()
+    mobile.locator('dialog [data-action=single]').click()
+    expect(mobile.locator('.question-text .q-choice').nth(1)).to_contain_text('차감하여 측정한다.')
+    expect(mobile.locator('nav#nav')).to_be_hidden()
+    footer = mobile.locator('.question-footer').bounding_box()
+    assert footer['y'] + footer['height'] <= 844 + 1, footer
+    expect(mobile.locator('.source-links')).to_be_visible()
+    mobile.goto(URL + '#home')
+    expect(mobile.locator('nav#nav')).to_be_visible()
+    mobile.close()
     assert not errors, errors
     browser.close()
-    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), {len(concept_changes)} enriched concept pages and new examples, {len(opinion_changes)} revised opinion previews and {len(round21.get("resolutions",[]))} official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice; no browser errors')
+    print(f'PASS: all {len(items)} explanation bodies rendered; {len(interactive)} grading flows (original 30 + new part/concept/calculation coverage), {len(concept_changes)} enriched concept pages and new examples, {len(opinion_changes)} revised opinion previews and {len(round21.get("resolutions",[]))} official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice, chosen-option reasons first, joined choice wraps, quiz bottom bar; no browser errors')
