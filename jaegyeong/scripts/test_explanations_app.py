@@ -320,6 +320,12 @@ with sync_playwright() as pw:
     expect(mobile.locator('.parts-fold')).not_to_have_attribute('open', '')
     mobile.locator('.parts-fold > summary').click()
     expect(mobile.locator('.parts-fold .part-row').first).to_be_visible()
+    # Search ignores spaces and PDF line breaks, and every query word must match.
+    mobile.goto(URL + '#library')
+    mobile.locator('#library-query').fill('비재무적 자가제조')
+    expect(mobile.locator('.library-card').filter(has_text='2023-06')).not_to_have_count(0)
+    mobile.locator('#library-query').fill('비재 무적 존재하지않는단어')
+    expect(mobile.locator('.library-card')).to_have_count(0)
     # Library preview drops formula-font private-use glyphs; '문제 보기' is the one primary action.
     mobile.goto(URL + '#library')
     mobile.locator('#library-query').fill('2026-09-118')

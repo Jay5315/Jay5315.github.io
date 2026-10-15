@@ -38,6 +38,16 @@
           "after": "f4a20fe12d9cf820e8869ddae3786b719f839bbf8026c373125f203d2911bf92"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 검색이 공백·PDF 줄바꿈을 무시하고, 여러 단어를 입력하면 모든 단어가 들어 있는 문제만 찾도록 변경",
+      "files": {
+        "assets/app.js": {
+          "before": "f4a20fe12d9cf820e8869ddae3786b719f839bbf8026c373125f203d2911bf92",
+          "after": "70f43e9c726017a503aa4bf33a438a8325cbb156efe5053ce83922ee9fc130c9"
+        }
+      }
     }
   ]
 }
