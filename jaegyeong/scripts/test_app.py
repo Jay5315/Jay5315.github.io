@@ -59,12 +59,17 @@ with sync_playwright() as pw:
  assert state()['results']['2026-07-026']['correct']==2
  goto('library');page.locator('#library-query').fill('2024-09-063');expect(page.locator('.library-card')).to_have_count(0)
  # A finished session spanning several parts shows a per-part breakdown, weakest part first.
+ before_parts=page.evaluate("k=>localStorage.getItem(k)",KEY)
  page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative);const a=qs.find(q=>q.part==='F03'),b=qs.find(q=>q.part==='F04'),c=qs.find(q=>q.part==='F05');
   s.sessions.unshift({id:'parts-test',title:'parts',ids:[a.id,b.id,c.id],answers:{[a.id]:a.answers[0],[b.id]:b.answers[0]%4+1},index:1,startedAt:Date.now()-720000,finishedAt:Date.now()});localStorage.setItem(k,JSON.stringify(s));}""",KEY)
  goto('result/parts-test');page.reload();expect(page.locator('.part-result')).to_have_count(2)
  assert '12분 소요' in page.locator('.result-hero .sub').inner_text()
  expect(page.locator('.part-result').first).to_contain_text('0/1');expect(page.locator('.part-result').last).to_contain_text('1/1 · 100%');expect(page.locator('.part-results-note')).to_have_text('응답하지 않은 파트 1개는 제외했어요.')
- page.evaluate("k=>{const s=JSON.parse(localStorage.getItem(k));s.sessions=s.sessions.filter(x=>x.id!=='parts-test');localStorage.setItem(k,JSON.stringify(s));}",KEY);goto('library');page.reload()
+ page.locator('[data-action=retry-all]').click()
+ if page.locator('#replace-session').count():page.locator('#replace-session').click()
+ expect(page.locator('.question-card')).to_be_visible()
+ assert state()['active']['ids']==state()['sessions'][0]['ids'] and state()['active']['answers']=={} and state()['active']['title']=='parts 다시 풀기'
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,before_parts]);goto('library');page.reload()
  # Wrong-answer notes list the most recently missed question first.
  saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
  old_new=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).sort((a,b)=>a.id.localeCompare(b.id));const a=qs[0],b=qs[qs.length-1];
