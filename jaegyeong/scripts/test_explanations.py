@@ -486,7 +486,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
-        # Newest stage: round-3 spacing (whitespace only, Hangul followed by an English word).
+        # Newest stage: round-4 spacing (rejoins counters/suffixes split off English words).
+        spacing4 = (cls.audit or {}).get('spacing_round4')
+        if spacing4:
+            cls.stage_after['spacing_round4'] = copy.deepcopy(cls.data)
+            cls.audit_after['spacing_round4'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in spacing4['notes']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            del cls.audit['spacing_round4']
+        cls.before_spacing4 = copy.deepcopy(cls.data)
+        # Next: round-3 spacing (whitespace only, Hangul followed by an English word).
         spacing3 = (cls.audit or {}).get('spacing_round3')
         if spacing3:
             cls.stage_after['spacing_round3'] = copy.deepcopy(cls.data)
@@ -518,7 +528,15 @@ class ExplanationTests(unittest.TestCase):
             del cls.audit['spacing_round2']
         cls.before_spacing2 = copy.deepcopy(cls.data)
         # Reverse round 26 first; every earlier ledger keeps its original checks.
-        cls.before_round26_concepts = read('concept-notes')
+        # The concept wording fix (reports/concept-wording.json) is newer than round 26; undo it so
+        # round 26 and older concept checks see the file they recorded.
+        cls.concepts_before_wording = read('concept-notes')
+        wording_path = R / 'reports/concept-wording.json'
+        if wording_path.exists():
+            index = {n['id']: i for i, n in enumerate(cls.concepts_before_wording['notes'])}
+            for record in json.loads(wording_path.read_text())['notes']:
+                cls.concepts_before_wording['notes'][index[record['note_id']]] = copy.deepcopy(record['before'])
+        cls.before_round26_concepts = copy.deepcopy(cls.concepts_before_wording)
         cls.before_round26_concept_audit = json.loads((R/'reports/concept-expansion.json').read_text())
         round26 = (cls.audit or {}).get('round26_followups')
         if round26:
@@ -1142,6 +1160,9 @@ class ExplanationTests(unittest.TestCase):
     def test_spacing_round3_changes_only_whitespace(self):
         self.check_whitespace_ledger('spacing_round3', self.before_spacing3)
 
+    def test_spacing_round4_changes_only_whitespace(self):
+        self.check_whitespace_ledger('spacing_round4', self.before_spacing4)
+
     def test_spacing_amendments_change_only_whitespace(self):
         amendments = (self.audit or {}).get('spacing_amendments')
         if not amendments:
@@ -1590,7 +1611,7 @@ class ExplanationTests(unittest.TestCase):
         before = {n['question_id']:n for n in self.before_round26_data['items']}
         current = {n['question_id']:n for n in after['items']}
         cbefore = {n['id']:n for n in self.before_round26_concepts['notes']}
-        concepts=json.loads((R/'data/concept-notes.json').read_text())
+        concepts=copy.deepcopy(self.concepts_before_wording)
         cafter={n['id']:n for n in concepts['notes']}
         self.assertEqual(len(current),4281)
         self.assertEqual(group['baseline_count'],4281)

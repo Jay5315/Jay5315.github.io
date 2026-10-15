@@ -2,6 +2,7 @@
 import json
 import os
 import shutil
+import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
 
@@ -90,8 +91,13 @@ with sync_playwright() as pw:
     # Approved concept additions must reach the learner, including expandable
     # example solutions, while browsing remains read-only for study records.
     concept_state = page.evaluate('(k)=>localStorage.getItem(k)', KEY)
+    current_concepts = {c['id']: c for c in json.loads((R / 'data/concept-notes.json').read_text())['notes']}
+    sys.path.insert(0, str(R / 'scripts'))
+    from apply_concept_wording import fix_text as concept_fix_text
     for change in concept_changes:
-        n, previous = change['after'], change['before']
+        # Later wording-only fixes (reports/concept-wording.json) may have changed the recorded text;
+        # check the current note and pass recorded amendment texts through the same fix.
+        n, previous = current_concepts[change['after']['id']], change['before']
         page.goto(URL + '#concept/' + n['part_id'])
         expect(page.locator('.note-page')).to_be_visible()
         for field in ('key_points','pitfalls'):
@@ -109,7 +115,7 @@ with sync_playwright() as pw:
             expect(box.locator('.example-answer')).to_have_text(example['answer'])
         if change.get('stage') == 'round26_followups':
             for amendment in change.get('text_amendments',[]):
-                expect(page.locator('.note-page')).to_contain_text(amendment['after'])
+                expect(page.locator('.note-page')).to_contain_text(concept_fix_text(amendment['after']) if (R / 'reports/concept-wording.json').exists() else amendment['after'])
             expect(page.locator('.note-page')).to_contain_text(n['review_note'])
             for formula in n['formulas'][len(previous['formulas']):]:
                 expect(page.locator('.note-page')).to_contain_text(formula['expression'])

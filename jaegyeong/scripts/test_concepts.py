@@ -19,6 +19,33 @@ class ConceptNotesTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.c=read('concept-notes');cls.t={p['id']:p for p in read('taxonomy')};cls.notes=cls.c['notes']
+        # Notes as they were before the newest concept wording fix; earlier audits are checked on these.
+        cls.wording=json.loads((R/'reports/concept-wording.json').read_text()) if (R/'reports/concept-wording.json').exists() else None
+        cls.notes_before_wording=copy.deepcopy(cls.notes)
+        if cls.wording:
+            index={n['id']:i for i,n in enumerate(cls.notes_before_wording)}
+            for r in cls.wording['notes']:cls.notes_before_wording[index[r['note_id']]]=copy.deepcopy(r['before'])
+    def test_concept_wording_applies_only_listed_fixes(self):
+        if not self.wording:self.skipTest('No concept wording fix')
+        import sys;sys.path.insert(0,str(R/'scripts'))
+        from apply_concept_wording import fix_note,PARTICLE_FIXES
+        def digest(x):return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        self.assertEqual(self.wording['particle_fixes'],[list(x) for x in PARTICLE_FIXES])
+        current={n['id']:n for n in self.notes};ids={r['note_id'] for r in self.wording['notes']}
+        self.assertEqual(self.wording['count'],len(ids))
+        for before in self.notes_before_wording:
+            id=before['id']
+            # Re-applying the fix to the earlier note must give exactly the current note.
+            self.assertEqual(fix_note(before),current[id],id)
+            self.assertEqual(id in ids,before!=current[id],id)
+        for r in self.wording['notes']:
+            self.assertEqual(digest(r['before']),r['before_hash'],r['note_id'])
+            self.assertEqual(digest(current[r['note_id']]),r['after_hash'],r['note_id'])
+            b,a=r['before'],current[r['note_id']]
+            for k in ('id','part_id','related_part_ids','tags','sources','review_status','year_table'):
+                self.assertEqual(b.get(k),a.get(k),(r['note_id'],k))
+            for fb,fa in zip(b['formulas'],a['formulas']):
+                for k in ('name','expression','variables'):self.assertEqual(fb.get(k),fa.get(k),r['note_id'])
     def test_structure_and_part_links(self):
         fields={'id','part_id','title','summary','key_points','formulas','pitfalls','examples','related_part_ids','tags','applicability','sources','review_status','review_note'}
         ids=[n['id'] for n in self.notes];parts=[n['part_id'] for n in self.notes]
@@ -130,7 +157,7 @@ class ConceptNotesTest(unittest.TestCase):
         if not path.exists():self.skipTest('No concept expansion audit yet')
         a=json.loads(path.read_text())
         def digest(x):return hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-        notes=copy.deepcopy({n['id']:n for n in self.notes})
+        notes=copy.deepcopy({n['id']:n for n in self.notes_before_wording})
         # Verify later enrichments first, then reconstruct the previous protected snapshots.
         for u in reversed(a.get('followup_note_amendments',[])):
             id=u['note_id'];after=notes[id];before=u['before']

@@ -1,6 +1,11 @@
 # 다른 AI를 위한 인수인계
 
-## 2026-10-15 한글 뒤 영문 띄어쓰기 (spacing_round3 · 가장 최근)
+## 2026-10-15 개념 노트 정리와 영문 뒤 단위 붙임 보정 (가장 최근)
+
+- 개념 노트 26개의 설명 문장을 고쳤습니다: 조사 오류 "구별를"→"구별을" 1곳, 영문 약어 뒤 한글 단어·한글 뒤 영문 단어·마침표 뒤 띄어쓰기. 공식(name·expression·variables)·연도표·태그·출처는 그대로입니다. 26차 기준선이 `concept-expansion.json` 전체를 고정하므로 기록은 별도 파일 `reports/concept-wording.json`(변경 전 노트·해시)에 두고, `scripts/apply_concept_wording.py`로 적용합니다. `test_concepts`와 `test_explanations`는 이 기록을 먼저 되돌린 노트로 이전 감사를 검사하고, 새 테스트가 변경 전 노트에 같은 수정 함수를 다시 적용해 현재 노트와 같은지 확인합니다. `test_explanations_app`의 개념 화면 검사는 현재 노트를 기준으로 합니다.
+- spacing_round2의 기계 규칙이 영문 뒤 단위·접미사·어미까지 띄운 곳을 해설 78개에서 다시 붙였습니다(`spacing_round4`, 공백만 제거): "A160 개"→"A160개", "A16 억원"→"A16억원", "PDF9 쪽"→"PDF9쪽", "kg 당"→"kg당", "NPV 법"→"NPV법", "OCI 라고"→"OCI라고", "OCI 일 때"→"OCI일 때". "FIFO 당기", "EU 법령"처럼 명사는 띄운 채 둡니다.
+
+## 2026-10-15 한글 뒤 영문 띄어쓰기 (spacing_round3)
 
 - 해설 824개에서 한글 바로 뒤에 영문 대문자 단어가 붙은 곳에 공백을 넣었습니다("원본PDF"→"원본 PDF", "한국어K-IFRS"→"한국어 K-IFRS", "변동을PL"→"변동을 PL"). 공백만 바꿨고 기록은 `spacing_round3`, 적용 스크립트는 `scripts/apply_spacing_round3.py`입니다. 테스트는 spacing_round3 → wording_round3 → spacing_round2 → 26차 순으로 되돌리며, 공백 전용 기록 두 개는 같은 `check_whitespace_ledger`로 검사합니다.
 - 개념 노트에는 조사 오류 1곳("구별를")과 영문 약어 뒤 붙임 약 27곳이 남아 있습니다. 개념 노트는 26차 기준선이 파일 해시를 고정하고 있어, 고칠 때는 해설처럼 되돌리기 단계를 함께 추가해야 합니다.
