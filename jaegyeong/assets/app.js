@@ -148,11 +148,14 @@ const UNIT_GAP=/(\d) (개월|원|년|월|일|개|%|단위|시간|명|주|회|배
 function tidyUnits(s){return String(s).replace(UNIT_GAP,(m,d,u,n)=>UNIT_SKIP.has(u+n)?m:d+u);}
 // Stem lines with column gaps (two or more spaces) are PDF table rows. Consecutive rows, with short
 // label lines between them (e.g. a row-group name), are shown as a table so the columns line up.
-const ROW=/\S\s{2,}\S/;
+// Double spaces that are not column gaps: blanks such as '(  ㄱ  )', after list markers ('ㄷ.  …')
+// and inside spaced dates ('2 월  5 일'). They are collapsed before rows are detected or split.
+const tidyGaps=l=>l.replace(/\(\s+([^()\s]{0,3})\s+\)/g,'($1)').replace(/^(\s*(?:[ㄱ-ㅎ가-하]\.|\(\d+\)|[ⓐ-ⓩ]))\s+/,'$1 ').replace(/(년|월)\s{2,}(?=\d)/g,'$1 ');
+const ROW_GAP=/\S\s{2,}\S/,ROW={test:l=>{const s=tidyGaps(l);return ROW_GAP.test(s)&&s.trim().split(/\s{2,}/).every(c=>c.length<=60);}};
 const NUMERIC=/^[\s\d,.%()△▲\-+원개단위년월일시간주]+$/;  // cells that should not wrap
 function stemHtml(lines){const out=[];let i=0;const isRow=l=>ROW.test(l),isLabel=l=>l.trim().length>0&&l.trim().length<=10&&!/[.?]$/.test(l.trim());
  while(i<lines.length){if(isRow(lines[i])){let j=i;while(j<lines.length&&(isRow(lines[j])||(isLabel(lines[j])&&j+1<lines.length&&isRow(lines[j+1]))))j++;const rows=lines.slice(i,j);
-  if(rows.filter(isRow).length>=2){out.push(`<span class="q-table-wrap"><span class="q-table" role="table">${rows.map((r,k)=>`<span class="q-row${k===0&&!/\d/.test(r)?' q-head':''}" role="row">${r.trim().split(/\s{2,}/).map(c=>`<span class="q-cell${NUMERIC.test(c)?' num':''}" role="cell">${esc(tidyUnits(c))}</span>`).join('')}</span>`).join('')}</span></span>`);i=j;continue;}}
+  if(rows.filter(isRow).length>=2){out.push(`<span class="q-table-wrap"><span class="q-table" role="table">${rows.map((r,k)=>`<span class="q-row${k===0&&!/\d/.test(r)?' q-head':''}" role="row">${tidyGaps(r).trim().split(/\s{2,}/).map(c=>`<span class="q-cell${NUMERIC.test(c)?' num':''}" role="cell">${esc(tidyUnits(c))}</span>`).join('')}</span>`).join('')}</span></span>`);i=j;continue;}}
   out.push(esc(tidyUnits(lines[i]))+(i<lines.length-1?'\n':''));i++;}
  return out.join('').replace(/\n+$/,'');}
 function listPool(){const ids=route==='wrong'?new Set(wrongIds()):route==='bookmarks'?new Set(state.bookmarks):null;const terms=list.query.toLowerCase().split(/\s+/).filter(Boolean);return Q.filter(q=>(!ids||ids.has(q.id))&&(!list.subject||q.subject===list.subject)&&(!list.explanationsOnly||explanationsById.has(q.id))&&(!terms.length||terms.every(x=>searchText(q).includes(x)))).sort((a,b)=>b.id.localeCompare(a.id));}
