@@ -338,6 +338,16 @@
           "after": "f2fd982010395c690fcdb1515b55514b40dc36c9cc289563338fcd6c0bcfbf75"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "학습 홈 날짜 옆에 '오늘 N문제 풀이' 표시(학습 기록 updatedAt이 오늘인 문항 수, 0이면 표시 안 함)",
+      "files": {
+        "assets/app.js": {
+          "before": "f2fd982010395c690fcdb1515b55514b40dc36c9cc289563338fcd6c0bcfbf75",
+          "after": "78ca15c1a77e144c9be7a4cf688b1c5863a2bce91385f8e362d2a8c59f5c3aa1"
+        }
+      }
     }
   ]
 }

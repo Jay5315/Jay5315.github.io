@@ -178,6 +178,8 @@ with sync_playwright() as pw:
  page.locator('[data-action="choose"]').first.click();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
  # Returning learners get next steps; parts are grouped so each chapter heading appears once.
+ goto('home');n=page.evaluate("(()=>{const t=new Date().setHours(0,0,0,0);return Object.values(JSON.parse(localStorage.getItem('chagok.study.v1')).results).filter(r=>r.updatedAt>=t).length})()")
+ assert (f'오늘 {n}문제 풀이' in page.locator('.home-date').inner_text()) if n else ('오늘' not in page.locator('.home-date').inner_text())
  goto('home');expect(page.locator('.next-steps')).to_be_visible();expect(page.locator('.hero')).to_have_count(0)
  page.locator('[data-action=subject][data-subject="재무회계"]').click()
  heads=page.locator('.chapter-title').all_inner_texts();assert len(heads)==len(set(heads)),heads
