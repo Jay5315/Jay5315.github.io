@@ -66,3 +66,29 @@ def choice_breaks(text, words, pairs):
         if in_choice and not CHOICE.match(nxt):
             out.append(decide(prev, nxt, words, pairs))
     return ''.join(out)
+
+
+def _width(line):
+    return sum(2 if '\uac00' <= c <= '\ud7a3' else 1 for c in line)
+
+
+def stem_breaks(text, words, pairs):
+    """One decision per line break in the question stem (before the first choice).
+
+    Stems mix wrapped prose with data lines and tables, so a break is only joined when the
+    previous line is nearly full width (a PDF wrap), does not end a sentence or clause, and
+    neither line looks like a table row or list item; otherwise it is kept ('k').
+    """
+    lines = text.split('\n')
+    widest = max((_width(l) for l in lines), default=0)
+    out = []
+    for prev, nxt in zip(lines, lines[1:]):
+        if CHOICE.match(nxt) or CHOICE.match(prev):
+            break
+        full = widest and _width(prev) >= 0.8 * widest
+        ends = not prev.strip() or prev.rstrip()[-1] in '.?:)다'
+        if not full or ends or STRUCTURAL.match(nxt) or TABLE.search(prev.strip()) or TABLE.search(nxt.strip()):
+            out.append('k')
+        else:
+            out.append(decide(prev, nxt, words, pairs))
+    return ''.join(out)

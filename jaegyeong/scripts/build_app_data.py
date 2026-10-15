@@ -2,7 +2,7 @@
 from pathlib import Path
 import json
 from explanation_data import validate_explanations
-from choice_breaks import corpus_counts,choice_breaks
+from choice_breaks import corpus_counts,choice_breaks,stem_breaks
 R=Path(__file__).resolve().parents[1]
 def read(n):return json.loads((R/'data'/f'{n}.json').read_text())
 def amend_adjudication_evidence(records, amendments):
@@ -58,7 +58,8 @@ def main():
  texts=[q['text'] for q in qs.values()]+[s for n in explanations['items'] for s in [n['summary'],*n['steps'],*[o['reason'] for o in n['option_notes']]]]
  words,pairs=corpus_counts(texts)
  breaks={r['id']:b for r in rows if (b:=choice_breaks(r['text'],words,pairs))}
- data=dict(answerNotes=answer_notes,choiceBreaks=breaks,explanationBasis=explanation_basis,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
+ stem={r['id']:b for r in rows if 'j' in (b:=stem_breaks(r['text'],words,pairs)) or 's' in b}
+ data=dict(answerNotes=answer_notes,choiceBreaks=breaks,stemBreaks=stem,explanationBasis=explanation_basis,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
  out=R/'assets/bank-data.js';out.write_text('window.BANK_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
  print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes, {len(explanations["items"])} explanations: {out.stat().st_size/1048576:.1f} MiB')
 if __name__=='__main__':main()

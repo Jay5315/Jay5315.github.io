@@ -28,6 +28,16 @@
           "after": "aa471121ce61c6e24e40382b00373db668fd8b6ed03e1774ff82ea83c3d52f00"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "문제 본문(지문)의 PDF 줄바꿈도 화면에서 이어 붙임: 거의 꽉 찬 줄이 문장 끝이 아니고 표·목록 줄이 아닐 때만 붙이고, 나머지 줄바꿈은 유지(stemBreaks)",
+      "files": {
+        "assets/app.js": {
+          "before": "92d6d5536b8e7aa645b2977a1acf92cbf442ef6e3294c699558faf7fbde232c9",
+          "after": "f4a20fe12d9cf820e8869ddae3786b719f839bbf8026c373125f203d2911bf92"
+        }
+      }
     }
   ]
 }

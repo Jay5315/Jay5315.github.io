@@ -459,6 +459,25 @@ class ExplanationTests(unittest.TestCase):
                     sha = step['after']
         self.assertEqual(current, sha, name)
 
+    def test_bundle_line_break_decisions_match_build(self):
+        import sys
+        sys.path.insert(0, str(R / 'scripts'))
+        from choice_breaks import corpus_counts, choice_breaks, stem_breaks
+        raw = (R / 'assets/bank-data.js').read_text()
+        b = json.loads(raw[len('window.BANK_DATA='):-2])
+        # Example: the PDF wrapped '비재\n무적' mid-word; the stem decision joins it without a space.
+        q = self.qs['2023-06-112']
+        texts = [x['text'] for x in self.qs.values()]
+        texts += [s for n in self.current_data['items']
+                  for s in [n['summary'], *n['steps'], *[o['reason'] for o in n['option_notes']]]]
+        words, pairs = corpus_counts(texts)
+        self.assertEqual(stem_breaks(q['text'], words, pairs), 'j')
+        self.assertEqual(b['stemBreaks']['2023-06-112'], 'j')
+        for row in b['questions']:
+            self.assertEqual(b['choiceBreaks'].get(row['id'], ''), choice_breaks(row['text'], words, pairs), row['id'])
+            sb = stem_breaks(row['text'], words, pairs)
+            self.assertEqual(b['stemBreaks'].get(row['id'], ''), sb if set(sb) - {'k'} else '', row['id'])
+
     def test_ui_change_log_is_a_chain_ending_at_current_files(self):
         log = json.loads((R / 'reports/ui-changes.json').read_text())
         for name in UI_FILES:
