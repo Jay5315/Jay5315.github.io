@@ -722,3 +722,4 @@ a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decora
  .option-reasons li{grid-template-columns:auto minmax(0,1fr);column-gap:10px}
  .option-reasons li:is(.answer-option,.picked-option)>*{grid-column:1/-1}
 }
+.part-results-note{margin:2px 0 0;font-size:13px;color:var(--muted)}

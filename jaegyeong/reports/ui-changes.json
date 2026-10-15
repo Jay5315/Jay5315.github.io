@@ -432,6 +432,20 @@
           "after": "518bd2b547cf71eba75947571e7cbe6523ba6ed402e5a4250311730b6552d55e"
         }
       }
+    },
+    {
+      "date": "2026-10-15",
+      "summary": "파트별 결과에서 응답하지 않은 파트는 목록에서 빼고 '응답하지 않은 파트 N개는 제외했어요.'로 요약(응답한 파트가 없으면 구역 생략)",
+      "files": {
+        "assets/app.js": {
+          "before": "36c0cc6897a44a5bf4316ec4584d46fee97bc285f8bf5ba769bd88d2b613f17d",
+          "after": "b6f2e19858c875bec46369a4370bda96d893b0fd31e9e3102d668d804330881e"
+        },
+        "assets/app.css": {
+          "before": "518bd2b547cf71eba75947571e7cbe6523ba6ed402e5a4250311730b6552d55e",
+          "after": "39149be1b7c19ba058dc813b8e3e8c9e5613e133b4d05b8187eb0e806b65f378"
+        }
+      }
     }
   ]
 }
