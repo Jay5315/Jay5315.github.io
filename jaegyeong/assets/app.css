@@ -694,3 +694,11 @@ a.part-result-name{color:var(--brand-text);text-decoration:underline;text-decora
 .part-result-bar{height:8px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
 .part-result-bar i{display:block;height:100%;background:var(--brand)}
 .part-result-num{text-align:right;font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media print{
+ :root:root:root{--bg:#fff;--surface:#fff;--surface-2:#f4f2ed;--surface-3:#e8e4da;--ink:#111;--ink-2:#333;--muted:#555;--faint:#666;--line:#ddd;--line-strong:#bbb;--brand:#1f5e4a;--brand-text:#1b5743;--brand-soft:#e3eee7;--accent:#9c5414;--accent-soft:#f8ead8;--ok:#21703f;--ok-bg:#e5f2e8;--ok-line:#b5d8bf;--bad:#b03a2a;--bad-bg:#fbeae6;--bad-line:#eec3ba;--warn:#7a5310;--warn-bg:#fbf2de;--warn-line:#eadaa9;--info:#2b5384;--info-bg:#e8eef8;--shadow:none;color-scheme:light}
+ body{background:#fff;transition:none}
+ .appbar,nav,footer,.skip,#toast,.btn,.icon-btn,.text-button,.list-actions,.result-actions,.question-view-switch,.quiz-side,.pager,.back-link,.segments{display:none!important}
+ .question-image,.zoom-scroll img{filter:none!important}
+ .box,.question-card,.note-page,.library-card,.result-table,.part-results,.history-card{box-shadow:none;break-inside:avoid-page}
+ a{color:inherit}
+}

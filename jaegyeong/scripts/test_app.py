@@ -161,6 +161,10 @@ with sync_playwright() as pw:
  page.locator('[data-action="grade"]').focus();page.keyboard.press('Enter')
  assert page.evaluate("document.activeElement.dataset.action")=='next'
  page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');page.reload()
+ # Printing hides app chrome and uses light colours whatever the theme.
+ goto('concept/C11');page.emulate_media(media='print',color_scheme='dark')
+ assert page.evaluate("[getComputedStyle(document.querySelector('.appbar')).display,getComputedStyle(document.body).backgroundColor,getComputedStyle(document.querySelector('.note-page')).color]")==['none','rgb(255, 255, 255)','rgb(17, 17, 17)']
+ page.emulate_media(media='screen',color_scheme='light');goto('quiz')
  # Korean text wraps between words, not inside them.
  assert page.evaluate("getComputedStyle(document.querySelector('.question-text')).wordBreak")=='keep-all'
  # Shortcuts still work after clicking a choice (focus sits on a button).
