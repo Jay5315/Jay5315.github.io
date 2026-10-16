@@ -12,6 +12,7 @@
   - 저장 공간 초과(`QuotaExceededError`) 시 오래된 완료 세션부터 절반씩 줄여 다시 저장합니다. 측정상 '해설 4281문항 풀기' 세션 하나가 약 6만 자라 88개 정도에서 이후 모든 채점 저장이 실패할 수 있었습니다.
 - 새 회귀 검사 `scripts/test_robustness.py`(`test_app.py`에서 실행): 위 7가지를 각각 재현합니다. 수정 전 `app.js`·매니페스트로 되돌려 실행하면 첫 항목에서 실패함을 확인했습니다.
 - 실제 결과: test_bank·test_parts·test_concepts·test_explanations·test_app(robustness 포함)·test_browser·test_explanations_app·test_offline 모두 PASS. `package_app.py` 두 ZIP CRC·문항 자료 검증 PASS, `test_portable_runtime.py` PASS. axe 위반 0건, 360px 가로 넘침 0건.
+- 배포 확인: 앱 커밋 `c65da1b`를 `main`·작업 브랜치에 저장했고 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/38912199122)이 성공했습니다. 공개 HTML·`sw.js`·로더·앱 JS/CSS·`offline.js`·아이콘·매니페스트·코어·세 과목 해설·전체 번들 13개 파일의 SHA-256이 로컬과 일치합니다(정상 TLS 검증 유지). 공개 사이트 실브라우저 접속은 이전과 같은 인증서 신뢰 문제로 미검증입니다.
 - 남은 문제: 해설 미등록 40건(새 근거 필요)은 그대로입니다. 실제 `file://` 탐색과 공개 사이트 실브라우저 접속은 이전과 같은 환경 제한으로 미검증입니다. 보관된 `.unreadable` 기록을 화면에서 내려받는 기능은 없습니다(브라우저 개발자 도구로만 확인 가능). 다음 기능 후보는 그대로 실전 시험 모드 → 간격 복습입니다.
 
 ## 2026-10-16 ZIP 배포본 추가 검증 (QA)
