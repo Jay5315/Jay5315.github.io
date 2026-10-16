@@ -23,6 +23,17 @@ READY = '#offline-status[data-state="ready"]'
 TIMEOUT = 90000
 
 
+def go_offline(context, url):
+    """Emulate offline and also abort app-origin requests.
+
+    Chromium's offline emulation does not cover a service worker restarted by a
+    reload made while offline, so its fetches could still reach the server.
+    """
+    origin = '{0.scheme}://{0.netloc}'.format(urlsplit(url))
+    context.set_offline(True)
+    context.route(lambda target: target.startswith(origin), lambda route: route.abort('internetdisconnected'))
+
+
 def open_ready(context, url):
     page = context.new_page()
     page.goto(url, wait_until='domcontentloaded')
@@ -104,7 +115,7 @@ with sync_playwright() as p:
       return false;
     }''', arg=images[0])
     assert not page.evaluate('async url => !!(await caches.match(url))', images[1])
-    context.set_offline(True)
+    go_offline(context, URL)
     # This is the FIRST reload after the first visit, without an intervening online reload.
     page.reload(wait_until='domcontentloaded')
     page.wait_for_selector(READY, timeout=TIMEOUT)
@@ -155,7 +166,7 @@ self.addEventListener('fetch',event=>{
         # Allow an obsolete v1 status probe to time out; it must not replace new readiness.
         page.wait_for_timeout(6500)
         assert page.locator(READY).count() == 1
-        legacy.set_offline(True)
+        go_offline(legacy, server.url)
         page.reload(wait_until='domcontentloaded')
         page.wait_for_selector(READY, timeout=TIMEOUT)
         page.wait_for_selector('.home-head', timeout=TIMEOUT)
@@ -176,7 +187,7 @@ self.addEventListener('fetch',event=>{
         page.wait_for_selector('#offline-status[data-state="unavailable"]', timeout=TIMEOUT)
         assert not page.locator(READY).count()
         # The failed update preserves the previously usable offline app.
-        updated.set_offline(True)
+        go_offline(updated, server.url)
         page.reload(wait_until='domcontentloaded')
         page.wait_for_selector('.home-head', timeout=TIMEOUT)
         updated.close()
@@ -196,7 +207,7 @@ self.addEventListener('fetch',event=>{
         page.wait_for_selector('#offline-status[data-state="unavailable"]', timeout=TIMEOUT)
         assert page.evaluate('BANK_MANIFEST.build_id') != old_build
         assert page.evaluate('caches.keys()').count('chagok-offline-v3-' + old_build) == 1
-        versioned.set_offline(True)
+        go_offline(versioned, server.url)
         page.reload(wait_until='domcontentloaded')
         page.wait_for_selector(READY, timeout=TIMEOUT)
         assert page.evaluate('BANK_MANIFEST.build_id') == old_build

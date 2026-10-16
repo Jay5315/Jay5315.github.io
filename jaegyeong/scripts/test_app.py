@@ -4,6 +4,7 @@ import json,shutil,os
 from playwright.sync_api import sync_playwright,expect
 from test_ui_regressions import run_ui_regressions
 from test_lazy_loading import run_lazy_loading
+from test_robustness import run_robustness
 R=Path(__file__).resolve().parents[1]
 URL=os.environ.get('APP_BASE_URL','http://127.0.0.1:8000/jaegyeong/').rstrip('/')+'/'
 ARTIFACTS=Path(os.environ.get('TEST_ARTIFACT_DIR',str(R/'_artifacts')))
@@ -301,5 +302,6 @@ with sync_playwright() as pw:
  assert not errors,errors
  print('PASS: '+run_ui_regressions(browser,URL))
  print('PASS: '+run_lazy_loading(browser,URL))
+ print('PASS: '+run_robustness(browser,URL))
  browser.close()
  print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors')
