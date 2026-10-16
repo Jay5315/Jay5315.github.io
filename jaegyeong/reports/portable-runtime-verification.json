@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-10-16T14:37:05+09:00",
+  "base_commit": "10b2839164e60757f20d7d8ca7eea91c46bcde16",
+  "scope": "실제 portable ZIP의 런타임·HTTP 호환 경로·채점/저장/복원·모바일 오프라인 추가 검증",
+  "runtime_changed": false,
+  "portable_browser_check": {
+    "archive": "chagok-webapp.zip",
+    "build_id": "6d0f976697b2a1d0ca9f",
+    "runtime_hashes": {
+      "index.html": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+      "sw.js": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+      "assets/bank-data.js": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+      "assets/bank-manifest.json": "b24f163343d0af85471b65e460c0e0113fb48ce15970e1544290e470dc34516d",
+      "assets/app.css": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb",
+      "assets/app.js": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b",
+      "assets/data-loader.js": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
+      "assets/offline.js": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
+      "assets/icon.svg": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+      "assets/bank/core-4c27033b8c4ebfa4.js": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+      "assets/bank/explanations-finance-8024d0dec9102ff0.js": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+      "assets/bank/explanations-tax-abcdd69587ae437a.js": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+      "assets/bank/explanations-cost-f6fc11b9cab6ab81.js": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e"
+    },
+    "cases": [
+      "ZIP CRC, 13 exact runtime hashes, every question image/PDF reference",
+      "HTTP full-bundle compatibility simulation: grading, all four reasons, bookmark, reload, result, wrong notebook",
+      "Separate tab sees saved results; JSON backup restores in a fresh browser context",
+      "Extracted ZIP mobile web: initial lazy loading, real offline reload, exact search, deferred cost explanation, no overflow"
+    ],
+    "actual_file_navigation": "UNVERIFIED: managed browser policy; HTTP branch simulation only",
+    "browser_errors": [],
+    "result": "PASS"
+  },
+  "canonical_public_asset_check": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "mime_type": "text/html",
+      "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+      "matches": true
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+      "matches": true
+    },
+    {
+      "file": "assets/bank-data.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+      "matches": true
+    },
+    {
+      "file": "assets/bank-manifest.json",
+      "status": 200,
+      "mime_type": "application/json",
+      "sha256": "b24f163343d0af85471b65e460c0e0113fb48ce15970e1544290e470dc34516d",
+      "matches": true
+    },
+    {
+      "file": "assets/app.css",
+      "status": 200,
+      "mime_type": "text/css",
+      "sha256": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb",
+      "matches": true
+    },
+    {
+      "file": "assets/app.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b",
+      "matches": true
+    },
+    {
+      "file": "assets/data-loader.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
+      "matches": true
+    },
+    {
+      "file": "assets/offline.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
+      "matches": true
+    },
+    {
+      "file": "assets/icon.svg",
+      "status": 200,
+      "mime_type": "image/svg+xml",
+      "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+      "matches": true
+    },
+    {
+      "file": "assets/bank/core-4c27033b8c4ebfa4.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+      "matches": true
+    },
+    {
+      "file": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+      "matches": true
+    },
+    {
+      "file": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+      "matches": true
+    },
+    {
+      "file": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+      "status": 200,
+      "mime_type": "application/javascript",
+      "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+      "matches": true
+    }
+  ],
+  "public_browser_check": {
+    "result": "UNVERIFIED",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://jay5315.github.io/jaegyeong/\nCall log:\n  - navigating to \"https://jay5315.github.io/jaegyeong/\", waiting until \"domcontentloaded\"\n",
+    "browser_errors": []
+  },
+  "initial_test_issue": {
+    "result": "TEST_ASSERTION_CORRECTED",
+    "detail": "백업 JSON의 exportedAt은 내보내기 메타데이터이며 저장 형식에는 들어가지 않습니다. 최초 검사에서 이를 학습 필드와 함께 비교해 실패했습니다. exportedAt의 존재를 검사하고 나머지 모든 필드를 정확히 비교하도록 고친 후 통과했습니다. 앱 수정은 없습니다."
+  },
+  "limits": [
+    "HTTP에서 전체 번들 로더 분기를 선택하는 픽스처 검사이며 실제 file:// 브라우저 실행이 아닙니다.",
+    "실제 file:// 탐색은 관리 브라우저 정책으로 미검증입니다.",
+    "공개 사이트 실브라우저 접속은 프록시 인증서 신뢰 문제로 미검증입니다. TLS 검증·브라우저 정책을 변경하지 않았습니다."
+  ],
+  "regression_policy": "앱·데이터·런타임 파일이 바뀌지 않아 기존 7개 테스트를 반복하지 않았습니다. 새 ZIP 통합 검사와 공개 파일 검증만 실행했습니다.",
+  "test_script_sha256": "bda54c3e9a457239897fb39422dbff1011657df01d702fa05d99e2649eaccf58"
+}
