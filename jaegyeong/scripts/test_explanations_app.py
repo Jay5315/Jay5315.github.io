@@ -53,6 +53,7 @@ with sync_playwright() as pw:
     page.locator('#library-subject').select_option('')
     expect(page.locator('.library-card')).to_have_count(20)  # pagination, not a truncated data set
 
+    page.evaluate('async () => { await window.BANK_DATA_LOADER?.all(); }')
     rendered = page.evaluate("""() => {
         const before = localStorage.getItem('chagok.study.v1');
         const trigger = document.createElement('button');

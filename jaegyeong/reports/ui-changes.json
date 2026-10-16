@@ -584,6 +584,16 @@
           "after": "15ba928fe08fdea5ec910bd967fd897a01845c45d529bbaaf0a56698cb0f83ca"
         }
       }
+    },
+    {
+      "date": "2026-10-16",
+      "summary": "초기 경량 데이터 로더 완료 후 앱 시작, 과목별 해설 지연 로딩·다운로드 실패 재시도 및 채점 기록 보존",
+      "files": {
+        "assets/app.js": {
+          "before": "15ba928fe08fdea5ec910bd967fd897a01845c45d529bbaaf0a56698cb0f83ca",
+          "after": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b"
+        }
+      }
     }
   ]
 }

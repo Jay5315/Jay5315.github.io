@@ -61,5 +61,7 @@ def main():
  stem={r['id']:b for r in rows if 'j' in (b:=stem_breaks(r['text'],words,pairs)) or 's' in b}
  data=dict(answerNotes=answer_notes,choiceBreaks=breaks,stemBreaks=stem,explanationBasis=explanation_basis,questions=rows,parts=read('taxonomy'),summary=read('summary'),classification=read('classification-summary'),concepts=concepts,explanations=explanations)
  out=R/'assets/bank-data.js';out.write_text('window.BANK_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
+ from runtime_data import build_runtime_data
+ build_runtime_data(data)
  print(f'Bundled {len(rows)} questions, {len(concepts["notes"])} concept notes, {len(explanations["items"])} explanations: {out.stat().st_size/1048576:.1f} MiB')
 if __name__=='__main__':main()

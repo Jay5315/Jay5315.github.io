@@ -7,6 +7,7 @@ No repository files or existing browser profiles are changed.
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
+import hashlib
 import os
 from pathlib import Path
 import shutil
@@ -14,6 +15,7 @@ import threading
 from urllib.parse import urlsplit
 
 from playwright.sync_api import sync_playwright
+from runtime_data import packed
 
 ROOT = Path(__file__).resolve().parents[1]
 URL = os.environ.get('APP_BASE_URL', 'http://127.0.0.1:8000/jaegyeong/').rstrip('/') + '/'
@@ -35,6 +37,7 @@ class FailureServer:
         self.fail = set()
         self.sw_suffix = ''
         self.sw_source = None
+        self.manifest = None
         owner = self
 
         class Handler(SimpleHTTPRequestHandler):
@@ -45,6 +48,15 @@ class FailureServer:
                 path = urlsplit(self.path).path
                 if path in owner.fail:
                     self.send_error(503, 'Deliberate offline regression failure')
+                    return
+                if path == '/jaegyeong/assets/bank-manifest.json' and owner.manifest is not None:
+                    body = json.dumps(owner.manifest, ensure_ascii=False).encode()
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'application/json; charset=utf-8')
+                    self.send_header('Cache-Control', 'no-store')
+                    self.send_header('Content-Length', str(len(body)))
+                    self.end_headers()
+                    self.wfile.write(body)
                     return
                 if path == '/jaegyeong/sw.js':
                     body = ((owner.sw_source if owner.sw_source is not None else (ROOT / 'sw.js').read_text()) + owner.sw_suffix).encode()
@@ -96,8 +108,10 @@ with sync_playwright() as p:
     # This is the FIRST reload after the first visit, without an intervening online reload.
     page.reload(wait_until='domcontentloaded')
     page.wait_for_selector(READY, timeout=TIMEOUT)
-    assert page.locator('#main h1').count() > 0
+    page.wait_for_selector('.home-head', timeout=TIMEOUT)
     assert page.evaluate('window.BANK_DATA.explanations.items.length') > 0
+    page.evaluate('async () => { await window.BANK_DATA_LOADER?.all(); }')
+    assert page.evaluate('window.BANK_DATA.explanations.items.every(n=>n.option_notes?.length===4)')
     assert page.evaluate("localStorage.getItem('chagok.study.v1')") == seed
     assert page.evaluate('async url => (await fetch(url)).ok', images[0])
     assert not page.evaluate('async url => { try { return (await fetch(url)).ok; } catch (_) { return false; } }', images[1])
@@ -144,9 +158,9 @@ self.addEventListener('fetch',event=>{
         legacy.set_offline(True)
         page.reload(wait_until='domcontentloaded')
         page.wait_for_selector(READY, timeout=TIMEOUT)
-        assert page.locator('#main h1').count() > 0
+        page.wait_for_selector('.home-head', timeout=TIMEOUT)
         legacy.close()
-        print('PASS: active legacy v1 worker upgrades to the complete v2 cache; obsolete status probes do not overwrite readiness.')
+        print('PASS: active legacy v1 worker upgrades to the complete versioned cache; obsolete status probes do not overwrite readiness.')
 
         server.sw_suffix = ''
         updated = browser.new_context()
@@ -164,9 +178,34 @@ self.addEventListener('fetch',event=>{
         # The failed update preserves the previously usable offline app.
         updated.set_offline(True)
         page.reload(wait_until='domcontentloaded')
-        assert page.locator('#main h1').count() > 0
+        page.wait_for_selector('.home-head', timeout=TIMEOUT)
         updated.close()
         print('PASS: HTTP 503 cache fallback; failed update reports unavailable while preserving the previous offline app.')
+        server.fail.clear()
+        server.sw_suffix = ''
+        versioned = browser.new_context()
+        page = open_ready(versioned, server.url)
+        old_build = page.evaluate('BANK_MANIFEST.build_id')
+        changed = json.loads((ROOT / 'assets/bank-manifest.json').read_text())
+        changed.pop('build_id')
+        changed['regression_revision'] = 2
+        changed['build_id'] = hashlib.sha256(packed(changed).encode()).hexdigest()[:20]
+        server.manifest = changed
+        server.fail.add('/jaegyeong/assets/icon.svg')
+        page.reload(wait_until='domcontentloaded')
+        page.wait_for_selector('#offline-status[data-state="unavailable"]', timeout=TIMEOUT)
+        assert page.evaluate('BANK_MANIFEST.build_id') != old_build
+        assert page.evaluate('caches.keys()').count('chagok-offline-v3-' + old_build) == 1
+        versioned.set_offline(True)
+        page.reload(wait_until='domcontentloaded')
+        page.wait_for_selector(READY, timeout=TIMEOUT)
+        assert page.evaluate('BANK_MANIFEST.build_id') == old_build
+        page.wait_for_selector('.home-head', timeout=TIMEOUT)
+        page.evaluate('async () => await BANK_DATA_LOADER.all()')
+        assert page.evaluate('BANK_DATA.explanations.items.every(n=>n.option_notes?.length===4)')
+        versioned.close()
+        print('PASS: failed different-build update preserves the previous manifest, all three deferred subjects, and offline readiness.')
+
     finally:
         server.close()
     browser.close()

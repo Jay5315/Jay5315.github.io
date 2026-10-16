@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "core": {
+    "url": "assets/bank/core-4c27033b8c4ebfa4.js",
+    "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+    "bytes": 8028773
+  },
+  "subjects": {
+    "finance": {
+      "url": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+      "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+      "bytes": 4889539,
+      "count": 1449
+    },
+    "tax": {
+      "url": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+      "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+      "bytes": 3947769,
+      "count": 1453
+    },
+    "cost": {
+      "url": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+      "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+      "bytes": 3691847,
+      "count": 1379
+    }
+  },
+  "runtime": {
+    "index.html": {
+      "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+      "bytes": 2304
+    },
+    "assets/app.css": {
+      "sha256": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb",
+      "bytes": 57199
+    },
+    "assets/app.js": {
+      "sha256": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b",
+      "bytes": 82718
+    },
+    "assets/data-loader.js": {
+      "sha256": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
+      "bytes": 4372
+    },
+    "assets/offline.js": {
+      "sha256": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
+      "bytes": 3973
+    },
+    "assets/icon.svg": {
+      "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+      "bytes": 216
+    }
+  },
+  "part_subjects": {
+    "F01": "finance",
+    "F02": "finance",
+    "F03": "finance",
+    "F04": "finance",
+    "F05": "finance",
+    "F06": "finance",
+    "F07": "finance",
+    "F08": "finance",
+    "F09": "finance",
+    "F10": "finance",
+    "F11": "finance",
+    "F12": "finance",
+    "F13": "finance",
+    "F14": "finance",
+    "F15": "finance",
+    "F16": "finance",
+    "F17": "finance",
+    "F18": "finance",
+    "F19": "finance",
+    "F20": "finance",
+    "F21": "finance",
+    "F22": "finance",
+    "F23": "finance",
+    "F24": "finance",
+    "F25": "finance",
+    "F26": "finance",
+    "T01": "tax",
+    "T02": "tax",
+    "C01": "tax",
+    "C02": "tax",
+    "C03": "tax",
+    "C04": "tax",
+    "C05": "tax",
+    "C06": "tax",
+    "C07": "tax",
+    "C08": "tax",
+    "C09": "tax",
+    "C10": "tax",
+    "C11": "tax",
+    "I01": "tax",
+    "I02": "tax",
+    "I03": "tax",
+    "I04": "tax",
+    "I05": "tax",
+    "I06": "tax",
+    "I07": "tax",
+    "I08": "tax",
+    "V01": "tax",
+    "V02": "tax",
+    "V03": "tax",
+    "V04": "tax",
+    "V05": "tax",
+    "V06": "tax",
+    "V07": "tax",
+    "M01": "cost",
+    "M02": "cost",
+    "M03": "cost",
+    "M04": "cost",
+    "M05": "cost",
+    "M06": "cost",
+    "M07": "cost",
+    "M08": "cost",
+    "M09": "cost",
+    "M10": "cost",
+    "M11": "cost",
+    "M12": "cost",
+    "M13": "cost",
+    "M14": "cost",
+    "M15": "cost",
+    "M16": "cost",
+    "M17": "cost",
+    "M18": "cost",
+    "M19": "cost",
+    "M20": "cost"
+  },
+  "build_id": "6d0f976697b2a1d0ca9f"
+}

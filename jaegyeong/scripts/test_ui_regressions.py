@@ -139,6 +139,7 @@ def run_ui_regressions(browser, url=URL):
         expect(page.locator('.library-card')).to_have_count(1)
         page.locator('.library-card [data-action=explanation]').click()
         expect(page.locator('dialog .explanation-body')).to_be_visible()
+        expect(page.locator('dialog .option-reasons li')).to_have_count(4)
 
     open_explanation('2026-01-007')
     assert page.evaluate("BANK_DATA.explanations.items.find(e=>e.question_id==='2026-01-007').checks.length") == 0

@@ -11,6 +11,7 @@ from pathlib import Path
 
 from explanation_data import validate_explanations
 from test_concepts import calc
+from test_runtime_data import RuntimeDataTests
 
 R = Path(__file__).resolve().parents[1]
 
@@ -450,8 +451,13 @@ class ExplanationTests(unittest.TestCase):
 
     def assert_protected_file(self, name, sha):
         """A file pinned by an audit baseline must still have that hash. Only the app's UI files
-        may move on, and only along the before/after chain recorded in reports/ui-changes.json."""
-        current = hashlib.sha256((R / name).read_bytes()).hexdigest()
+        may move on along reports/ui-changes.json. The HTML entrypoint has a separate
+        exact, reversible script-reference amendment; all earlier HTML bytes are still checked."""
+        body = (R / name).read_bytes()
+        if name == 'index.html':
+            from loader_entrypoint import restore_entrypoint
+            body = restore_entrypoint(body)
+        current = hashlib.sha256(body).hexdigest()
         if name in UI_FILES:
             for change in json.loads((R / 'reports/ui-changes.json').read_text())['changes']:
                 step = change['files'].get(name)

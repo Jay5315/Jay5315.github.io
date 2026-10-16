@@ -47,7 +47,7 @@
       if (!/^https?:$/.test(location.protocol) || !('serviceWorker' in navigator)) return;
       status('preparing', '오프라인 사용 준비 중입니다. 문제·해설을 저장하고 있습니다.');
       try {
-        const registration = await navigator.serviceWorker.register('sw.js', {scope: './', updateViaCache: 'none'});
+        const registration = await navigator.serviceWorker.register('sw.js'+(window.BANK_MANIFEST?'?build='+window.BANK_MANIFEST.build_id:''), {scope: './', updateViaCache: 'none'});
         const watched = new WeakSet();
         async function refresh() {
           const worker = registration.active;
@@ -57,7 +57,7 @@
             if (registration.active !== worker) return;
             const result = await probe(worker);
             if (registration.active !== worker) return;
-            if (result.type !== 'CHAGOK_OFFLINE_STATUS' || !result.ready) { unavailable(); return; }
+            if (result.type !== 'CHAGOK_OFFLINE_STATUS' || !result.ready || (window.BANK_MANIFEST && result.buildId !== window.BANK_MANIFEST.build_id)) { unavailable(); return; }
             status('ready', '오프라인 준비 완료 · 문제 텍스트·해설은 인터넷 없이 열 수 있습니다. ' + SOURCE_NOTE);
           } catch (_) { if (registration.active === worker) unavailable(); }
         }

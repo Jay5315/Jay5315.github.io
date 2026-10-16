@@ -1,0 +1,245 @@
+{
+  "checked_at": "2026-10-16T10:09:02+09:00",
+  "base_commit": "f9e63853fc25aa5d50e91e3e658bab86a6494717",
+  "scope": "웹 초기 경량 인덱스·과목별 해설 지연 로딩·판본 무결성·오프라인 호환",
+  "actual_subagents": 0,
+  "build_id": "6d0f976697b2a1d0ca9f",
+  "counts": {
+    "question_entries": 4322,
+    "study_eligible": 4321,
+    "explanations": 4281,
+    "concept_notes": 74,
+    "source_definitions": 1862,
+    "currently_unreferenced_source_definitions_preserved": 220
+  },
+  "metrics": {
+    "full_data_bytes": 20358583,
+    "core_bytes": 8028773,
+    "manifest_bytes": 3213,
+    "loader_bytes": 4372,
+    "initial_data_and_loader_bytes": 8036358,
+    "initial_reduction_percent": 60.53,
+    "gzip_full_data_bytes": 3079197,
+    "gzip_initial_data_and_loader_bytes": 1266757,
+    "subject_files": {
+      "finance": {
+        "url": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+        "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "bytes": 4889539,
+        "count": 1449
+      },
+      "tax": {
+        "url": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+        "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "bytes": 3947769,
+        "count": 1453
+      },
+      "cost": {
+        "url": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+        "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+        "bytes": 3691847,
+        "count": 1379
+      }
+    },
+    "note": "코어·자료 목록·로더 기준입니다. 공통 앱/CSS/폰트와 백그라운드 오프라인 저장 트래픽은 제외하며 실제 소요 시간이나 총 전송량 감소를 뜻하지 않습니다."
+  },
+  "behavior": [
+    "초기에는 모든 문제·개념과 해설 ID/파트 목록만 읽고, 해설 최초 열람 시 과목별 파일을 읽습니다.",
+    "동일 과목 요청을 공유하고 실패 시 다시 시도합니다. 채점은 해설 다운로드와 별개로 공식 정답 기준으로 저장합니다.",
+    "앱도 코어 준비 후 빌드별 URL·SRI를 확인해 실행하므로 구버전 캐시 앱과 새 코어를 혼합하지 않습니다.",
+    "화면 표시 후 필수 파일·전체 과목을 검증해 백그라운드 오프라인 저장합니다. 이전 정상 스냅샷 하나를 보존합니다.",
+    "file://에서는 기존 전체 번들로 돌아갑니다. 실제 파일 탐색은 환경 정책 때문에 미검증이며 로더 분기 단위 검사만 통과했습니다."
+  ],
+  "tests": [
+    {
+      "name": "test_bank",
+      "exit_code": 0,
+      "seconds": 0.47,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_bank.py",
+      "output": "test_changed_knowledge_and_negation_not_merged (__main__.BankTests.test_changed_knowledge_and_negation_not_merged) ... ok\ntest_every_source_is_retained_exactly_once (__main__.BankTests.test_every_source_is_retained_exactly_once) ... ok\ntest_family_membership_and_assets (__main__.BankTests.test_family_membership_and_assets) ... ok\ntest_governing_tax_year_is_not_assumed_from_exam_year (__main__.BankTests.test_governing_tax_year_is_not_assumed_from_exam_year) ... ok\ntest_incomplete_original_is_quarantined (__main__.BankTests.test_incomplete_original_is_quarantined) ... ok\ntest_multiple_official_answers (__main__.BankTests.test_multiple_official_answers) ... ok\ntest_numeric_variations_retained_in_same_family (__main__.BankTests.test_numeric_variations_retained_in_same_family) ... ok\ntest_reordered_options_keep_representative_answer (__main__.BankTests.test_reordered_options_keep_representative_answer) ... ok\ntest_same_question_with_reordered_all_word_not_over_restricted (__main__.BankTests.test_same_question_with_reordered_all_word_not_over_restricted) ... ok\ntest_verified_equivalent_wording (__main__.BankTests.test_verified_equivalent_wording) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.298s\n\nOK\n"
+    },
+    {
+      "name": "test_parts",
+      "exit_code": 0,
+      "seconds": 0.48,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_parts.py",
+      "output": "test_complete_valid_subjects (__main__.PartsTest.test_complete_valid_subjects) ... ok\ntest_content_focus_regressions (__main__.PartsTest.test_content_focus_regressions) ... ok\ntest_numeric_families (__main__.PartsTest.test_numeric_families) ... ok\ntest_review_manifest (__main__.PartsTest.test_review_manifest) ... ok\ntest_tags_and_original_answers (__main__.PartsTest.test_tags_and_original_answers) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.342s\n\nOK\n"
+    },
+    {
+      "name": "test_concepts",
+      "exit_code": 0,
+      "seconds": 0.45,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_concepts.py",
+      "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.375s\n\nOK\n"
+    },
+    {
+      "name": "test_explanations",
+      "exit_code": 0,
+      "seconds": 36.48,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations.py",
+      "output": "..............................................................\n----------------------------------------------------------------------\nRan 62 tests in 32.142s\n\nOK\n"
+    },
+    {
+      "name": "test_app",
+      "exit_code": 0,
+      "seconds": null,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_app.py",
+      "output": "PASS: exact sitting/number/occurrence search, requested vs representative metadata, source/calculation badges, partial warnings, filtered progress, unchanged study schema\nPASS: file:// loader branch uses the complete local bundle, no fetch/manifest/subject requests.\nSKIP: real file:// browser navigation is blocked by managed browser policy; file-loader unit branch passed.\nPASS: lightweight startup, deferred explanations, shared downloads, retry/storage, SRI including stale-app rejection, startup retry; file:// unit passed (real browser blocked)\nPASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors\n",
+      "note": "비동기 초기 표시/해설 준비를 기다리도록 검사 보완 후 재실행. 재실행 시간은 별도 측정하지 않았습니다."
+    },
+    {
+      "name": "test_explanations_app",
+      "exit_code": 0,
+      "seconds": 145.81,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_explanations_app.py",
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calculation coverage), 26 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice, chosen-option reasons first, joined choice wraps, quiz bottom bar; no browser errors\n"
+    },
+    {
+      "name": "test_browser",
+      "exit_code": 0,
+      "seconds": 3.0,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_browser.py",
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.\n"
+    },
+    {
+      "name": "test_offline",
+      "exit_code": 0,
+      "seconds": 26.09,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_offline.py",
+      "output": "PASS: first visit → ready → first offline reload; text/explanations, saved image, limited-media notice, study storage, v1 migration, mobile layout.\nPASS: failed essential download never announces offline readiness.\nPASS: active legacy v1 worker upgrades to the complete versioned cache; obsolete status probes do not overwrite readiness.\nPASS: HTTP 503 cache fallback; failed update reports unavailable while preserving the previous offline app.\nPASS: failed different-build update preserves the previous manifest, all three deferred subjects, and offline readiness.\nPASS: offline browser regressions complete.\n"
+    },
+    {
+      "name": "test_runtime_data",
+      "exit_code": 0,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.354s\n\nOK\n"
+    },
+    {
+      "name": "test_lazy_loading",
+      "exit_code": 0,
+      "output": "PASS: file:// loader branch uses the complete local bundle, no fetch/manifest/subject requests.\nSKIP: real file:// browser navigation is blocked by managed browser policy; file-loader unit branch passed.\nPASS: lightweight startup, deferred explanations, shared downloads, retry/storage, SRI including stale-app rejection, startup retry; file:// unit passed (real browser blocked)\n"
+    }
+  ],
+  "packaging": {
+    "exit_code": 0,
+    "output": "/workspace/Jay5315.github.io/jaegyeong/dist/chagok-webapp.zip: 149.1 MiB, CRC and all question assets verified\n/workspace/Jay5315.github.io/jaegyeong/dist/jaegyeong-question-bank.zip: 276.9 MiB, CRC and all question assets verified\n",
+    "note": "두 ZIP의 CRC·문항 이미지/PDF·경량 로더·매니페스트·분할 파일·서비스 워커 참조를 확인했습니다. dist는 커밋하지 않습니다."
+  },
+  "skipped": [
+    {
+      "feature": "실제 브라우저 file:// 탐색 및 전체 파일 UI",
+      "reason": "관리 브라우저 정책 ERR_BLOCKED_BY_ADMINISTRATOR",
+      "fallback": "Node VM에서 file:// 분기·전체 번들·앱 경로·fetch 미사용을 검사했습니다. 실제 브라우저 파일 실행과는 구분합니다.",
+      "policy_bypassed": false
+    }
+  ],
+  "intermediate_issues": [
+    {
+      "issue": "첫 임시 분할 결과의 재구성이 현재 연결되지 않은 출처 정의 220개를 누락",
+      "fix": "이 출처 정의도 재무 과목 파일에 보존하고 전체 재구성 검사를 통과했습니다. 원본 전체 번들과 출처 원본은 변경하지 않았습니다."
+    },
+    {
+      "issue": "초기 비동기 부팅 전 키보드/헤더 조작과 메타데이터 읽기를 시도한 기존 검사 실패",
+      "fix": "헤더는 앱 준비까지 비활성화하고, 화면·해설 내용이 실제 준비된 뒤 기존 동작/정답 검사를 수행하도록 조건을 강화했습니다. 새로고침 직후 BANK_DATA 미정의와 해설 placeholder checks 미정의 실패도 재현·수정했습니다."
+    },
+    {
+      "issue": "오프라인 새로고침 직후 h1 개수 검사 실패",
+      "fix": "비동기 시작 완료 후 실제 홈 표시를 확인하고, 세 과목 해설 본문을 모두 오프라인 로딩해 더 강하게 검사합니다."
+    },
+    {
+      "issue": "실제 file:// 브라우저 탐색은 관리 정책으로 차단",
+      "fix": "우회하지 않고 SKIP과 단위 검사 범위를 명시합니다."
+    },
+    {
+      "issue": "배포 전 검토에서 새 로더와 이전 캐시 앱 코드 혼합 가능성을 확인",
+      "fix": "진입 HTML의 인접한 두 script 참조만 로더로 교체하고 앱도 빌드 URL·SRI로 검증해 실행합니다. 오래된/손상된 앱 거부 검사를 통과했습니다."
+    }
+  ],
+  "initial_final_suite_failure": [
+    {
+      "name": "test_app",
+      "exit_code": 1,
+      "seconds": 5.81,
+      "command": "/workspace/Jay5315.github.io/jaegyeong/.venv/bin/python -u /workspace/Jay5315.github.io/jaegyeong/scripts/test_app.py",
+      "output": "Traceback (most recent call last):\n  File \"/workspace/Jay5315.github.io/jaegyeong/scripts/test_app.py\", line 91, in <module>\n    order=page.evaluate(\"\"\"k=>{const s=JSON.parse(localStorage.getItem(k));const ids=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).map(q=>q.id).sort().slice(0,3);s.bookmarks=ids.slice().reverse();localStorage.setItem(k,JSON.stringify(s));return ids;}\"\"\",KEY)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 9385, in evaluate\n    self._sync(\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/_impl/_page.py\", line 472, in evaluate\n    return await self._main_frame.evaluate(expression, arg)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/_impl/_frame.py\", line 345, in evaluate\n    await self._channel.send(\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py\", line 76, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Jay5315.github.io/jaegyeong/.venv/lib/python3.12/site-packages/playwright/_impl/_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Page.evaluate: ReferenceError: BANK_DATA is not defined\n    at eval (eval at evaluate (:311:30), <anonymous>:1:59)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n"
+    }
+  ],
+  "integrity": {
+    "root_site_unchanged": true,
+    "question_ids_and_official_answers_unchanged": true,
+    "study_storage_key": "chagok.study.v1",
+    "storage_schema_unchanged": true,
+    "protected_files": {
+      "assets/bank-data.js": {
+        "before_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "after_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "unchanged": true
+      },
+      "data/questions.json": {
+        "before_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "after_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "unchanged": true
+      },
+      "data/entries.json": {
+        "before_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "after_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "unchanged": true
+      },
+      "data/families.json": {
+        "before_sha256": "df59d4d5d509b732c6d14e63699796db3465080c52f3f66a0ddfccb872b3f367",
+        "after_sha256": "df59d4d5d509b732c6d14e63699796db3465080c52f3f66a0ddfccb872b3f367",
+        "unchanged": true
+      },
+      "data/taxonomy.json": {
+        "before_sha256": "70eab55cbe22feb46f38f3d6ef54145ab29c344077b7568ff2a732b716a5ce1b",
+        "after_sha256": "70eab55cbe22feb46f38f3d6ef54145ab29c344077b7568ff2a732b716a5ce1b",
+        "unchanged": true
+      },
+      "data/explanations.json": {
+        "before_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "after_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "unchanged": true
+      },
+      "data/concept-notes.json": {
+        "before_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "after_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "unchanged": true
+      },
+      "reports/explanation-expansion.json": {
+        "before_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "after_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "unchanged": true
+      }
+    },
+    "entrypoint_amendment": "reports/runtime-entrypoint.json",
+    "entrypoint_original_sha256": "803ffda69c5daa8a8fc161d00afae2cd1184156ae549b822be51e617f31627be",
+    "modified_and_generated_sha256": {
+      "assets/app.js": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b",
+      "assets/data-loader.js": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
+      "assets/offline.js": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
+      "sw.js": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+      "assets/bank-manifest.json": "b24f163343d0af85471b65e460c0e0113fb48ce15970e1544290e470dc34516d",
+      "index.html": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+      "scripts/runtime_data.py": "aa1c0f44192bcfbc1769d47619f414daf146bc54bc479ad0f8f45126d78bd58d",
+      "scripts/loader_entrypoint.py": "32923d7452991a2afbdbbaff09e3ef8aae6e49a9350c2b85edc9dd9f1c5c6b7b",
+      "scripts/test_runtime_data.py": "ecd974dd85e6d1f5dcc6be8ccd35f07d327be9c6b30ad229e8ede93ae933c53f",
+      "scripts/test_lazy_loading.py": "e0cd5fc825a8bd8c9d341e979d810b001a2cd19c8a429cf4a6eb7695802e1b4e",
+      "scripts/test_file_loader.cjs": "955cf30f27268eeda653f5a335afdb22b8e64dfe0f54cd59df84d0ed5f2f29f3",
+      "assets/bank/core-4c27033b8c4ebfa4.js": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+      "assets/bank/explanations-finance-8024d0dec9102ff0.js": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+      "assets/bank/explanations-tax-abcdd69587ae437a.js": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+      "assets/bank/explanations-cost-f6fc11b9cab6ab81.js": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e"
+    }
+  },
+  "limitations": [
+    "필수 초기 데이터의 용량 비교이며 실제 시간이나 총 트래픽 감소율을 측정한 것이 아닙니다. 전체 오프라인 저장은 화면 뒤에서 여전히 수행합니다.",
+    "이미지 전용 문항의 원본과 PDF 전체 저장은 보장하지 않습니다. 기존 파일당 5MiB·최근 40개 제한을 유지합니다.",
+    "공개 웹·오프라인은 브라우저 검증했지만 실제 파일 직접 열기는 관리 정책 때문에 미검증입니다."
+  ],
+  "deployment": {
+    "status": "pending",
+    "target_branches": [
+      "main",
+      "claude/practical-allen-zjsicv"
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 'use strict';
 (()=>{
+function boot(){
 const D=window.BANK_DATA;
 if(!D){document.getElementById('main').textContent='데이터를 읽지 못했어요. 압축을 모두 풀고 index.html을 다시 열어 주세요.';return;}
 const Q=D.questions.filter(q=>q.eligible),byId=new Map(Q.map(q=>[q.id,q])),parts=new Map(D.parts.map(p=>[p.id,p])),subjects=['재무회계','세무회계','원가관리회계'];
@@ -9,21 +10,32 @@ const paths={home:'M3 10 12 3l9 7M5 9v12h5v-7h4v7h5V9',book:'M4 4h6a3 3 0 0 1 3 
 const icon=n=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${paths[n]||paths.book}"/></svg>`;
 const C=D.concepts||{notes:[],sources:{},verification:{}},notesByPart=new Map(C.notes.map(n=>[n.part_id,n]));
 const E=D.explanations||{items:[],sources:{}},explanationsById=new Map(E.items.map(n=>[n.question_id,n]));
+const explanationRequests=new Set(),explanationErrors=new Set();
+function loadExplanation(id){
+ const n=explanationsById.get(id);if(!n||n.option_notes||explanationRequests.has(id))return;
+ explanationRequests.add(id);explanationErrors.delete(id);
+ Promise.resolve().then(()=>window.BANK_DATA_LOADER?.explanation(id)).then(()=>{if(!n.option_notes)throw Error('Missing explanation');}).catch(()=>explanationErrors.add(id)).finally(()=>{
+  explanationRequests.delete(id);
+  document.querySelectorAll(`[data-explanation-id="${id}"]`).forEach(el=>{el.outerHTML=explanationBody(byId.get(id),Number(el.dataset.picked)||null);});
+  if(!explanationErrors.has(id)&&route==='quiz'&&state.active?.ids[state.active.index]===id&&state.active.answers[id])render(false);
+ });
+}
 const answerNotes=D.answerNotes||{};
 function answerNote(q){const a=answerNotes[q.id];return a?`<aside class="answer-dispute ${a.kind}" role="note"><b>${esc(a.label)}</b><p>${esc(a.text)}</p><small>공식 정답은 바꾸지 않았고, 검토 의견만 따로 표시합니다. 시험 채점은 공식 정답 기준입니다.</small></aside>`:'';}
 function explanationBody(q,picked=null){
  const n=explanationsById.get(q.id);if(!n)return '<p class="notice explanation-pending">이 문항의 해설은 준비 중입니다. 관련 개념과 원본 답안을 확인해 주세요.</p>';
+ if(!n.option_notes)return `<div class="explanation-body" data-explanation-id="${q.id}" data-picked="${picked||''}"><p class="notice explanation-loading" role="status">${explanationErrors.has(q.id)?'해설을 불러오지 못했습니다. 인터넷 연결 또는 오프라인 저장 상태를 확인해 주세요.':'해설을 불러오고 있습니다.'}</p>${explanationErrors.has(q.id)?`<button class="btn" data-action="reload-explanation" data-id="${q.id}">해설 다시 불러오기</button>`:''}</div>`;
  const basis=(D.explanationBasis||{})[q.id],weak=basis==='textbook'&&q.subject!=='원가관리회계',partial=n.review_status!=='source_checked',status=partial?'부분 확인':basis==='domestic'?'국내 법령·기준서 대조':basis==='ifrs'?'IFRS 영문 원문 대조':'공개 교재·강의 대조',statusTip=basis==='ifrs'?'IASB 공통 영문 본문(EU·호주·싱가포르 수록본 등)과 대조했어요. 한글 K-IFRS 원문 대조는 아니에요.':weak?'법령·기준서 원문이 아닌 공개 교재·강의 자료로 대조했어요. 시험 기준은 K-IFRS·세법 원문이에요.':'';
  const srcs=n.sources.map(x=>{const src=E.sources[x.ref];return `<li><a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.title)} ↗</a><span>${esc(x.locator)}</span><small>${esc(src.version)} · ${esc(src.verification)}</small>${src.mirror_url?`<a href="${esc(src.mirror_url)}" target="_blank" rel="noopener">대조한 판본 ↗</a>`:''}</li>`;}).join('');
- return `<div class="explanation-body"><div class="note-badges"><span class="chip ${n.review_status==='partial'||weak?'status-neutral':'status-ok'}"${statusTip?` title="${esc(statusTip)}"`:''}>${status}</span>${n.checks.length?'<span class="chip status-info">계산 검산</span>':''}${n.tax_law_year?`<span class="chip blue">문항 적용 세법 ${n.tax_law_year}년</span>`:''}</div>${statusTip?`<p class="note-foot basis-note">${esc(statusTip)}</p>`:''}${partial?'<p class="note-foot partial-note">확인한 범위 안에서 작성한 해설입니다. 아래 추가 확인 사항과 출처의 검토 상태를 함께 확인해 주세요.</p>':''}<h3>${esc(n.title)}</h3><p class="note-foot explanation-authorship">${esc(n.authorship)}</p><p class="note-summary">${esc(n.summary)}</p><section class="note-sec"><h4>단계별 풀이</h4><ol class="solution-steps">${n.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></section><section class="note-sec"><h4>보기별 설명</h4><ul class="option-reasons">${n.option_notes.map(x=>`<li class="${x.is_answer?'answer-option':''}${x.number===picked?' picked-option':''}"><b>${circ(x.number)}${x.is_answer?' · 정답 보기':''}${x.number===picked&&!x.is_answer?' · 내가 고른 보기':''}</b><span>${esc(x.reason)}</span></li>`).join('')}</ul></section>${n.unchecked_points.length?`<section class="unchecked-box"><h4>추가 확인이 필요한 내용</h4><ul>${n.unchecked_points.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`:''}<details class="explanation-sources"><summary>출처 · 검토 상태</summary><p>${esc(n.review_note)}</p><ul class="sources">${srcs}</ul><small>확인일 ${esc(n.checked_on)} · ${esc(n.authorship)}</small></details><div class="concept-row">${conceptButton(q.id,'관련 개념')}</div></div>`;
+ return `<div class="explanation-body" data-explanation-id="${q.id}" data-picked="${picked||''}"><div class="note-badges"><span class="chip ${n.review_status==='partial'||weak?'status-neutral':'status-ok'}"${statusTip?` title="${esc(statusTip)}"`:''}>${status}</span>${n.checks.length?'<span class="chip status-info">계산 검산</span>':''}${n.tax_law_year?`<span class="chip blue">문항 적용 세법 ${n.tax_law_year}년</span>`:''}</div>${statusTip?`<p class="note-foot basis-note">${esc(statusTip)}</p>`:''}${partial?'<p class="note-foot partial-note">확인한 범위 안에서 작성한 해설입니다. 아래 추가 확인 사항과 출처의 검토 상태를 함께 확인해 주세요.</p>':''}<h3>${esc(n.title)}</h3><p class="note-foot explanation-authorship">${esc(n.authorship)}</p><p class="note-summary">${esc(n.summary)}</p><section class="note-sec"><h4>단계별 풀이</h4><ol class="solution-steps">${n.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></section><section class="note-sec"><h4>보기별 설명</h4><ul class="option-reasons">${n.option_notes.map(x=>`<li class="${x.is_answer?'answer-option':''}${x.number===picked?' picked-option':''}"><b>${circ(x.number)}${x.is_answer?' · 정답 보기':''}${x.number===picked&&!x.is_answer?' · 내가 고른 보기':''}</b><span>${esc(x.reason)}</span></li>`).join('')}</ul></section>${n.unchecked_points.length?`<section class="unchecked-box"><h4>추가 확인이 필요한 내용</h4><ul>${n.unchecked_points.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`:''}<details class="explanation-sources"><summary>출처 · 검토 상태</summary><p>${esc(n.review_note)}</p><ul class="sources">${srcs}</ul><small>확인일 ${esc(n.checked_on)} · ${esc(n.authorship)}</small></details><div class="concept-row">${conceptButton(q.id,'관련 개념')}</div></div>`;
 }
 // picked: the option the learner chose. After grading, the reasons for that option and the
 // official answer are shown first, before the full explanation.
-function pickReasons(q,picked){const n=explanationsById.get(q.id);if(!n||!picked)return '';const by=new Map(n.option_notes.map(x=>[x.number,x])),mine=by.get(picked);if(!mine)return '';const rows=[...(mine.is_answer?[]:[[mine,'wrong','내가 고른 보기']]),...n.option_notes.filter(x=>x.is_answer).map(x=>[x,'right',x.number===picked?'정답 · 내가 고른 보기':'정답 보기'])];return `<section class="pick-reasons" aria-label="고른 보기와 정답 보기 설명">${rows.map(([x,kind,label])=>`<div class="pick-reason ${kind}"><b>${circ(x.number)} ${label}</b><p>${esc(x.reason)}</p></div>`).join('')}</section>`;}
+function pickReasons(q,picked){const n=explanationsById.get(q.id);if(!n?.option_notes||!picked)return '';const by=new Map(n.option_notes.map(x=>[x.number,x])),mine=by.get(picked);if(!mine)return '';const rows=[...(mine.is_answer?[]:[[mine,'wrong','내가 고른 보기']]),...n.option_notes.filter(x=>x.is_answer).map(x=>[x,'right',x.number===picked?'정답 · 내가 고른 보기':'정답 보기'])];return `<section class="pick-reasons" aria-label="고른 보기와 정답 보기 설명">${rows.map(([x,kind,label])=>`<div class="pick-reason ${kind}"><b>${circ(x.number)} ${label}</b><p>${esc(x.reason)}</p></div>`).join('')}</section>`;}
 function explanationPanel(q,open=false,picked=null){return answerNote(q)+pickReasons(q,picked)+(explanationsById.has(q.id)?`<details class="question-explanation" ${open?'open':''}><summary>${picked?'전체 풀이 · 출처 보기':'정답 해설 · 풀이 보기'}</summary>${explanationBody(q,picked)}</details>`:explanationBody(q));}
 function explanationButton(q){return explanationsById.has(q.id)?`<button class="btn" data-action="explanation" data-id="${q.id}">${icon('book')} 해설</button>`:answerNotes[q.id]?`<button class="btn" data-action="answer-note" data-id="${q.id}">${icon('book')} ${esc(answerNotes[q.id].label)}</button>`:'';}
 function openAnswerNote(id){const q=byId.get(id);if(!q)return;modal(`<div class="modal-head"><h2>정답 검토 의견</h2>${closeButton()}</div>${qMeta(q)}${answerNote(q)}<div class="modal-actions"><button class="btn" data-action="close-modal">닫기</button><button class="btn primary" data-action="single" data-id="${q.id}">이 문제 다시 풀기 ${icon('play')}</button></div>`,false,'note-dialog');}
-function openExplanation(id){const q=byId.get(id);if(!q)return;modal(`<div class="modal-head"><h2>정답 해설 · 풀이</h2>${closeButton()}</div>${qMeta(q)}${answerNote(q)}${explanationBody(q)}<div class="modal-actions"><button class="btn" data-action="close-modal">닫기</button><button class="btn primary" data-action="single" data-id="${q.id}">이 문제 다시 풀기 ${icon('play')}</button></div>`,false,'note-dialog');}
+function openExplanation(id){const q=byId.get(id);if(!q)return;modal(`<div class="modal-head"><h2>정답 해설 · 풀이</h2>${closeButton()}</div>${qMeta(q)}${answerNote(q)}${explanationBody(q)}<div class="modal-actions"><button class="btn" data-action="close-modal">닫기</button><button class="btn primary" data-action="single" data-id="${q.id}">이 문제 다시 풀기 ${icon('play')}</button></div>`,false,'note-dialog');loadExplanation(id);}
 const STATUS={source_checked:['출처 대조 완료','ok','법령 조문, K-IFRS 기준서, 공개 교재 원문과 노트 내용을 대조했어요. 전문가 검수는 아직이에요.'],partial:['부분 확인','neutral','확인한 내용과 추가 확인이 필요한 범위를 노트 안에 나누어 표시했어요. 세부 조건과 적용 범위를 함께 확인해 주세요.'],calc_checked:['계산 검증 · 출처 미대조','info','공식과 예시 계산은 검산했어요. 교재와의 대조는 아직이에요.'],needs_source:['출처 확인 필요','warn','원문과 아직 대조하지 못한 초안이에요. 교재로 한 번 더 확인하세요.']};
 const statusChip=n=>{const s=STATUS[n.review_status]||['검토 필요','warn'];return `<span class="chip status-${s[1]}">${esc(s[0])}</span>`;};
 const yearsText=ys=>ys&&ys.length?(ys.length>1?`${ys[0]}~${ys[ys.length-1]}년`:ys[0]+'년'):'';
@@ -222,6 +234,7 @@ function render(resetFocus=true){
  $('main').innerHTML=route==='concepts'?conceptsIndex():route.startsWith('concept/')?conceptPage():route==='home'?home():route==='quiz'?quiz():route.startsWith('result/')?result():route==='history'?history():library();
  if(route.startsWith('concept/'))noteToc();
  scrollables($('main'));
+ if(route==='quiz'&&state.active){const id=state.active.ids[state.active.index];if(state.active.answers[id])loadExplanation(id);}
  document.querySelectorAll('.question-image').forEach(img=>{img.onerror=()=>{img.alt=location.protocol==='file:'?'문제 이미지를 불러오지 못했습니다. ZIP 전체를 압축 해제했는지 확인해 주세요.':!navigator.onLine?'이 원본 이미지는 저장되어 있지 않습니다. 인터넷에 연결한 후 다시 열어 주세요.':'원본 이미지를 불러오지 못했습니다. 인터넷 연결을 확인하거나 원본 PDF를 열어 주세요.';};});
  if(resetFocus)$('main').focus({preventScroll:true});
  else if(keep){const same=keep[3]?document.getElementById(keep[3]):$('main').querySelector(`[data-action="${keep[0]}"]${keep[1]?`[data-answer="${keep[1]}"]`:''}${keep[2]?`[data-id="${CSS.escape(keep[2])}"]`:''}`),el=same&&!same.disabled?same:$('main').querySelector('[data-action="next"]');if(el)el.focus({preventScroll:true});}
@@ -229,6 +242,7 @@ function render(resetFocus=true){
 document.addEventListener('click',e=>{
  if(e.target.closest('.skip')){e.preventDefault();$('main').focus();return;}
  const b=e.target.closest('[data-action]');if(!b||b.disabled)return;const a=b.dataset.action,id=b.dataset.id;
+ if(a==='reload-explanation'){loadExplanation(id);return;}
  if(a==='explanation')openExplanation(id);else if(a==='answer-note')openAnswerNote(id);else if(a==='practice-explanations')startSession(shuffled(Q.filter(q=>explanationsById.has(q.id))),`해설 있는 ${E.items.length}문항`);else if(a==='home')go('home');else if(a==='resume')go('quiz');else if(a==='settings')settings();else if(a==='close-modal')closeModal();else if(a==='export')exportState();else if(a==='import')$('backup-file').click();else if(a==='bookmark')toggleBookmark(id);else if(a==='zoom')zoom(id);else if(a==='preview')preview(id);
  else if(a==='concept'){closeModal();go('concept/'+id);}
  else if(a==='close-modal-link')closeModal();
@@ -259,6 +273,7 @@ document.addEventListener('change',e=>{
  if(e.target.id==='library-explanations'){list.explanationsOnly=e.target.checked;list.page=0;$('library-results').innerHTML=libraryRows();}
  if(e.target.id==='library-subject'){list.subject=e.target.value;list.part='';list.page=0;$('library-part').outerHTML=partSelect();$('library-results').innerHTML=libraryRows();}else if(e.target.id==='library-part'){list.part=e.target.value;list.page=0;$('library-results').innerHTML=libraryRows();}
 });
+document.addEventListener('toggle',e=>{if(e.target.matches?.('.question-explanation')&&e.target.open){const body=e.target.querySelector('[data-explanation-id]');if(body)loadExplanation(body.dataset.explanationId);}},true);
 document.addEventListener('input',e=>{if(e.target.id==='library-query'){list.query=e.target.value;list.page=0;$('library-results').innerHTML=libraryRows();}});
 document.addEventListener('keydown',e=>{if(route!=='quiz'||!state.active||$('modal').open||e.ctrlKey||e.metaKey||e.altKey||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||e.target.isContentEditable)return;if(['1','2','3','4'].includes(e.key)){e.preventDefault();choose(Number(e.key));}if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(state.active.index+(e.key==='ArrowRight'?1:-1));}
  if(e.key==='Enter'&&!['BUTTON','A','SUMMARY'].includes(e.target.tagName)){e.preventDefault();const s=state.active;if(s.answers[s.ids[s.index]]){if(s.index===s.ids.length-1)finish();else move(s.index+1);}else grade();}});
@@ -266,6 +281,10 @@ $('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('mod
 window.addEventListener('hashchange',()=>{draft=null;list={subject:'',part:'',query:'',page:0,explanationsOnly:false};render();scrollTo(0,0);});
 window.addEventListener('storage',e=>{if(e.key===KEY){try{state=e.newValue?cleanState(JSON.parse(e.newValue)):fresh();draft=null;render(false);toast('다른 창의 최신 기록을 반영했어요.');}catch(err){toast('다른 창의 기록을 읽지 못했어요. 기록 백업을 확인해 주세요.');}}});
 applySize(lsGet('chagok.size'));matchMedia('(max-width:640px)').addEventListener?.('change',()=>{if(route==='home'&&!$('modal').open)render(false);});applyTheme(themeName());matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>applyTheme(themeName()));render(false);if(!storageOK)setTimeout(()=>toast('브라우저 저장소를 사용할 수 없어요. 기록 백업 기능을 이용해 주세요.'),500);
-// Load offline support after the app is usable; keep the fixed HTML shell unchanged.
+document.querySelectorAll('.appbar button').forEach(button=>{button.disabled=false;});
+// Start offline preparation after the lightweight index has made the app usable.
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){const script=document.createElement('script');script.src='assets/offline.js';script.onload=()=>window.CHAGOK_OFFLINE?.start();script.onerror=()=>{const hint=document.createElement('p');hint.className='footer-note';hint.textContent='오프라인 저장을 시작하지 못했습니다. 인터넷 연결 후 다시 열어 주세요.';document.querySelector('.footer-inner').append(hint);};document.head.append(script);}
+}
+if(window.BANK_READY)window.BANK_READY.then(boot).catch(()=>{const main=document.getElementById('main');main.innerHTML='<div class="empty"><h1>문제은행을 다시 불러와 주세요</h1><p>문제은행을 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.</p><button class="btn primary" id="retry-bank">다시 불러오기</button></div>';document.getElementById('retry-bank').onclick=()=>location.reload();});
+else boot();
 })();

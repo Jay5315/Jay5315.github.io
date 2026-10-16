@@ -3,6 +3,7 @@ from pathlib import Path
 import json,shutil,os
 from playwright.sync_api import sync_playwright,expect
 from test_ui_regressions import run_ui_regressions
+from test_lazy_loading import run_lazy_loading
 R=Path(__file__).resolve().parents[1]
 URL=os.environ.get('APP_BASE_URL','http://127.0.0.1:8000/jaegyeong/').rstrip('/')+'/'
 ARTIFACTS=Path(os.environ.get('TEST_ARTIFACT_DIR',str(R/'_artifacts')))
@@ -16,7 +17,8 @@ with sync_playwright() as pw:
  page.goto(URL);expect(page.locator('.subject-card')).to_have_count(3)
  def state():return page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY)
  def active_q():return page.evaluate('(k)=>{const s=JSON.parse(localStorage.getItem(k)).active;return BANK_DATA.questions.find(q=>q.id===s.ids[s.index])}',KEY)
- def goto(route):page.goto(URL+'#'+route);page.wait_for_timeout(100)
+ def goto(route):page.goto(URL+'#'+route);expect(page.locator('body')).to_have_attribute('data-route',route.split('/')[0])
+ def reload():page.reload();page.wait_for_function('!!document.body.dataset.route')
  def choose(n):page.get_by_role('button',name=f'{n}번 선택',exact=True).click();page.locator('[data-action=grade]').click()
  # Specific part, count, order and classification eligibility.
  page.locator('[data-action=subject][data-subject="재무회계"]').click()
@@ -30,7 +32,7 @@ with sync_playwright() as pw:
  page.locator('[data-action=bookmark]').click();choose(bad)
  expect(page.locator('.feedback')).to_contain_text('오답 노트에 담았어요')
  assert state()['results'][first]['attempts']==1
- page.reload();expect(page.locator('.feedback')).to_be_visible();assert state()['results'][first]['attempts']==1
+ reload();expect(page.locator('.feedback')).to_be_visible();assert state()['results'][first]['attempts']==1
  page.locator('[data-action=next]').click();second=active_q();choose(second['answers'][0])
  page.locator('[data-action=home]').click();expect(page.locator('.resume')).to_be_visible()
  a=state()['active'];w=float(page.locator('.resume-bar i').get_attribute('style').split(':')[1].rstrip('%'));assert abs(w-len(a['answers'])/len(a['ids'])*100)<0.01,w
@@ -64,19 +66,19 @@ with sync_playwright() as pw:
  before_parts=page.evaluate("k=>localStorage.getItem(k)",KEY)
  page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative);const a=qs.find(q=>q.part==='F03'),b=qs.find(q=>q.part==='F04'),c=qs.find(q=>q.part==='F05');
   s.sessions.unshift({id:'parts-test',title:'parts',ids:[a.id,b.id,c.id],answers:{[a.id]:a.answers[0],[b.id]:b.answers[0]%4+1},index:1,startedAt:Date.now()-720000,finishedAt:Date.now()});localStorage.setItem(k,JSON.stringify(s));}""",KEY)
- goto('result/parts-test');page.reload();expect(page.locator('.part-result')).to_have_count(2)
+ goto('result/parts-test');reload();expect(page.locator('.part-result')).to_have_count(2)
  assert '12분 소요' in page.locator('.result-hero .sub').inner_text()
  expect(page.locator('.part-result').first).to_contain_text('0/1');expect(page.locator('.part-result').last).to_contain_text('1/1 · 100%');expect(page.locator('.part-results-note')).to_have_text('응답하지 않은 파트 1개는 제외했어요.')
  page.locator('[data-action=retry-all]').click()
  if page.locator('#replace-session').count():page.locator('#replace-session').click()
  expect(page.locator('.question-card')).to_be_visible()
  assert state()['active']['ids']==state()['sessions'][0]['ids'] and state()['active']['answers']=={} and state()['active']['title']=='parts 다시 풀기'
- page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,before_parts]);goto('library');page.reload()
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,before_parts]);goto('library');reload()
  # Wrong-answer notes list the most recently missed question first.
  saved=page.evaluate("k=>localStorage.getItem(k)",KEY)
  old_new=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const qs=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).sort((a,b)=>a.id.localeCompare(b.id));const a=qs[0],b=qs[qs.length-1];
   s.results={[a.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:a.answers[0]%4+1,updatedAt:2000},[b.id]:{attempts:1,correct:0,lastCorrect:false,lastAnswer:b.answers[0]%4+1,updatedAt:1000}};localStorage.setItem(k,JSON.stringify(s));return [a.id,b.id];}""",KEY)
- goto('wrong');page.reload();expect(page.locator('.library-card')).to_have_count(2);expect(page.locator('.section-head .sub').first).to_contain_text('최근에 틀린 순')
+ goto('wrong');reload();expect(page.locator('.library-card')).to_have_count(2);expect(page.locator('.section-head .sub').first).to_contain_text('최근에 틀린 순')
  expect(page.locator('#nav a[href="#wrong"]')).to_have_attribute('aria-label','오답 노트 2문제')
  assert sum(int(x.split('(')[1].rstrip(')')) for x in page.locator('#library-subject option').all_inner_texts()[1:])==2
  # Tablet widths stack short labels under nav icons; links also keep an accessible name and tooltip.
@@ -84,13 +86,13 @@ with sync_playwright() as pw:
  assert page.evaluate("document.querySelector('#nav').getBoundingClientRect().right<=document.querySelector('.top-right').getBoundingClientRect().left")
  expect(page.locator('#nav a[href="#home"]')).to_have_attribute('aria-label','학습 홈');expect(page.locator('#nav a[href="#home"]')).to_have_attribute('title','학습 홈');page.set_viewport_size({'width':1440,'height':1000})
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==old_new
- page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');page.reload()
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('library');reload()
  # Bookmarks list the most recently starred question first.
  saved_bm=page.evaluate("k=>localStorage.getItem(k)",KEY)
  order=page.evaluate("""k=>{const s=JSON.parse(localStorage.getItem(k));const ids=BANK_DATA.questions.filter(q=>q.eligible!==false&&q.representative).map(q=>q.id).sort().slice(0,3);s.bookmarks=ids.slice().reverse();localStorage.setItem(k,JSON.stringify(s));return ids;}""",KEY)
- goto('bookmarks');page.reload();expect(page.locator('.section-head .sub').first).to_contain_text('최근에 담은 순')
+ goto('bookmarks');reload();expect(page.locator('.section-head .sub').first).to_contain_text('최근에 담은 순')
  assert page.evaluate("[...document.querySelectorAll('.library-card [data-action=preview]')].map(b=>b.dataset.id)")==order
- page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_bm]);goto('library');page.reload()
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_bm]);goto('library');reload()
  # Search also matches subject names and "N번" question numbers.
  page.locator('#library-query').fill('2024-11 40번');expect(page.locator('.library-card')).to_have_count(page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.occurrences.some(o=>o.startsWith('2024-11-')&&((Number(o.slice(-3))-1)%40)+1===40)).length"))
  page.locator('#library-query').fill('')
@@ -102,7 +104,7 @@ with sync_playwright() as pw:
  if page.locator('#replace-session').count():page.locator('#replace-session').click()
  a=state()['active'];nums=[page.evaluate("id=>{const o=BANK_DATA.questions.find(q=>q.id===id).occurrences.find(o=>o.startsWith('2024-11-'));return ((Number(o.slice(-3))-1)%40)+1;}",i) for i in a['ids']]
  assert a['title']=='2024-11 · 원가관리회계' and nums==sorted(nums) and len(nums)==n,(a['title'],nums)
- page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_pl]);goto('library');page.reload();page.locator('#library-query').fill('');page.locator('#library-subject').select_option('')
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved_pl]);goto('library');reload();page.locator('#library-query').fill('');page.locator('#library-subject').select_option('')
  # Part filter follows the subject filter and narrows the list.
  page.locator('#library-subject').select_option('세무회계');n_sub=page.locator('#library-part option').count()-1
  assert n_sub==page.evaluate("BANK_DATA.parts.filter(p=>p.subject==='세무회계').length")
@@ -174,8 +176,8 @@ with sync_playwright() as pw:
  fixture=json.loads((R/'assets/bank-data.js').read_text()[len('window.BANK_DATA='):-2])
  fixture['concepts']['notes']=[n for n in fixture['concepts']['notes'] if n['part_id']!='F01']
  pending_context=browser.new_context()
- pending_context.route('**/bank-data.js',lambda route:route.fulfill(
-  status=200,content_type='application/javascript',body='window.BANK_DATA='+json.dumps(fixture,ensure_ascii=False)+';'))
+ pending_context.route('**/data-loader.js',lambda route:route.fulfill(
+  status=200,content_type='application/javascript',body='window.BANK_DATA='+json.dumps(fixture,ensure_ascii=False)+";const app=document.createElement('script');app.src='assets/app.js';document.head.append(app);"))
  pending_page=pending_context.new_page();pending_page.on('pageerror',lambda e:errors.append(str(e)))
  pending_page.goto(URL+'#concept/F01');expect(pending_page.locator('.empty')).to_contain_text('준비 중')
  pending_page.goto(URL+'#library');pending_page.locator('#library-query').fill(financial)
@@ -192,7 +194,7 @@ with sync_playwright() as pw:
  assert __import__('re').search(r'\d:\d\d$',stamp) and not __import__('re').search(r'\d:\d\d:\d\d',stamp),stamp
  retry_ids=[q['id'] for q in page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.part==='F03'&&q.representative).slice(0,3)")]
  page.evaluate("([k,ids])=>{const s=JSON.parse(localStorage.getItem(k));s.active={id:'arrow',title:'arrow',ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null};localStorage.setItem(k,JSON.stringify(s));}",[KEY,retry_ids])
- goto('quiz');page.reload();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
+ goto('quiz');reload();expect(page.locator('.question-card')).to_be_visible();page.locator('#main').focus();page.keyboard.press('ArrowRight');assert state()['active']['index']==1
  page.keyboard.press('ArrowLeft');assert state()['active']['index']==0
  # Concept index keeps the per-status part list folded and hides a zero pending count.
  goto('concepts');expect(page.locator('.status-list').first).not_to_have_attribute('open','');expect(page.locator('.status-parts a').first).to_be_hidden()
@@ -210,7 +212,7 @@ with sync_playwright() as pw:
  bg=sel.evaluate("e=>getComputedStyle(e).backgroundColor");page.mouse.move(0,0);assert sel.evaluate("e=>getComputedStyle(e).backgroundColor")==bg,'hover must not change the selected background'
  page.locator('[data-action="grade"]').focus();page.keyboard.press('Enter')
  assert page.evaluate("document.activeElement.dataset.action")=='next'
- page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');page.reload()
+ page.evaluate("([k,v])=>localStorage.setItem(k,v)",[KEY,saved]);goto('quiz');reload()
  # Wide screens get a sticky table of contents for concept notes; it scrolls to the section without changing the route.
  goto('concept/C11');expect(page.locator('.note-toc button')).to_have_count(page.locator('.note-page > section.note-sec > h3').count())
  page.locator('.note-toc button',has_text='자주 틀리는 포인트').click();page.wait_for_timeout(800)
@@ -235,7 +237,7 @@ with sync_playwright() as pw:
  before=json.dumps(state(),sort_keys=True)
  goto('home');page.locator('#theme-btn').click();assert page.evaluate("document.documentElement.dataset.theme")=='light'
  page.locator('#theme-btn').click();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
- page.reload();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
+ reload();assert page.evaluate("document.documentElement.dataset.theme")=='dark'
  assert page.evaluate("getComputedStyle(document.body).backgroundColor")!='rgb(245, 246, 243)'
  page.locator('.avatar').click();page.locator('#img-invert').uncheck();assert page.evaluate("localStorage.getItem('chagok.img')")=='original'
  page.locator('#img-invert').check();page.locator('[data-action=theme-set][data-theme=system]').click()
@@ -246,26 +248,26 @@ with sync_playwright() as pw:
  assert json.dumps(state(),sort_keys=True)==before,'theme settings must not touch chagok.study.v1'
  goto('home');page.locator('#setup-subject').select_option('');page.locator('#setup-part').select_option('F04');expect(page.locator('.setup-concept')).to_contain_text('핵심 개념')
  # Reload, dashboard, desktop and mobile layout, text/original switch, zoom.
- page.reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
+ reload();expect(page.locator('.stat').first.locator('strong')).to_contain_text(str(len(state()['results'])))
  page.screenshot(path=str(ARTIFACTS/'app-home-desktop.png'),full_page=False)
  assert page.evaluate("[...document.querySelectorAll('.step')].map(e=>e.textContent)")==['01','02','03']
  mobile=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True)
  m=mobile.new_page();m.on('pageerror',lambda e:errors.append(str(e)));m.goto(URL)
  expect(m.locator('.subject-card')).to_have_count(3)
  # List cards keep their actions on one row at phone width.
- m.goto(URL+'#library');m.wait_for_timeout(200)
+ m.goto(URL+'#library');expect(m.locator('body')).to_have_attribute('data-route','library')
  # Accessibility: overflowing tables are focusable regions; list pages keep h1 > h2 > h3 order.
- m.goto(URL+'#concept/C11');m.wait_for_timeout(200);expect(m.locator('.note-toc')).to_be_hidden();m.locator('.note-toc-fold summary').click()
+ m.goto(URL+'#concept/C11');expect(m.locator('body')).to_have_attribute('data-route','concept');expect(m.locator('.note-toc')).to_be_hidden();m.locator('.note-toc-fold summary').click()
  m.locator('.note-toc-fold button',has_text='자주 틀리는 포인트').click();m.wait_for_timeout(800);assert m.evaluate("[location.hash,document.querySelector('.note-toc-fold').open]")==['#concept/C11',False]
  assert 0<=m.evaluate("[...document.querySelectorAll('.note-page > section.note-sec > h3')].find(h=>h.textContent==='자주 틀리는 포인트').getBoundingClientRect().top")<200
- m.goto(URL+'#concept/C11');m.wait_for_timeout(200);expect(m.locator('.table-scroll').first).to_have_attribute('tabindex','0');expect(m.locator('.table-scroll').first).to_have_attribute('role','region')
- m.goto(URL+'#library');m.wait_for_timeout(200);assert m.evaluate("[...document.querySelectorAll('#main h1,#main h2,#main h3')].map(h=>h.tagName).slice(0,3)")==['H1','H2','H3']
+ m.goto(URL+'#concept/C11');expect(m.locator('body')).to_have_attribute('data-route','concept');expect(m.locator('.table-scroll').first).to_have_attribute('tabindex','0');expect(m.locator('.table-scroll').first).to_have_attribute('role','region')
+ m.goto(URL+'#library');expect(m.locator('body')).to_have_attribute('data-route','library');assert m.evaluate("[...document.querySelectorAll('#main h1,#main h2,#main h3')].map(h=>h.tagName).slice(0,3)")==['H1','H2','H3']
  m.locator('[data-action=page]').last.click();assert m.evaluate("document.activeElement.id")=='library-results'
  # Phone previews follow the quiz text view; the original image sits in a toggle.
  m.locator('[data-action=preview]').first.click();expect(m.locator('dialog .question-text')).to_be_visible()
  expect(m.locator('dialog details.instructions summary').first).to_have_text('원본 이미지 보기');m.keyboard.press('Escape')
  assert m.evaluate("[...document.querySelectorAll('.list-actions')].every(a=>new Set([...a.children].map(c=>{const k=c.getBoundingClientRect();return Math.round((k.top+k.bottom)/20)})).size===1)")
- m.goto(URL);m.wait_for_timeout(200)
+ m.goto(URL);expect(m.locator('.home-head')).to_be_visible()
  # Section numbers follow the on-screen order (mobile moves study setup above the part list).
  m.set_viewport_size({'width':900,'height':844});m.wait_for_timeout(200);assert m.evaluate("[...document.querySelectorAll('.step')].map(e=>e.textContent)")==['01','02','03'] and m.locator('.parts-fold').count()==0
  m.set_viewport_size({'width':390,'height':844});m.wait_for_timeout(200);expect(m.locator('.parts-fold')).to_have_count(1)
@@ -298,5 +300,6 @@ with sync_playwright() as pw:
  m.locator('#keep-session').click();expect(m.locator('.question-card')).to_be_visible()
  assert not errors,errors
  print('PASS: '+run_ui_regressions(browser,URL))
+ print('PASS: '+run_lazy_loading(browser,URL))
  browser.close()
  print('PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors')
