@@ -130,6 +130,12 @@
       "reason": "관리 브라우저 정책 ERR_BLOCKED_BY_ADMINISTRATOR",
       "fallback": "Node VM에서 file:// 분기·전체 번들·앱 경로·fetch 미사용을 검사했습니다. 실제 브라우저 파일 실행과는 구분합니다.",
       "policy_bypassed": false
+    },
+    {
+      "feature": "공개 사이트 실브라우저 접속 추가 점검",
+      "reason": "환경 프록시 인증서의 브라우저 신뢰 실패 ERR_CERT_AUTHORITY_INVALID",
+      "fallback": "TLS 검증을 유지한 Python HTTPS로 공개 런타임·데이터 13개 SHA-256을 대조했습니다. 로컬 실제 브라우저 기능 검사는 통과했습니다.",
+      "policy_bypassed": false
     }
   ],
   "intermediate_issues": [
@@ -233,13 +239,107 @@
   "limitations": [
     "필수 초기 데이터의 용량 비교이며 실제 시간이나 총 트래픽 감소율을 측정한 것이 아닙니다. 전체 오프라인 저장은 화면 뒤에서 여전히 수행합니다.",
     "이미지 전용 문항의 원본과 PDF 전체 저장은 보장하지 않습니다. 기존 파일당 5MiB·최근 40개 제한을 유지합니다.",
-    "공개 웹·오프라인은 브라우저 검증했지만 실제 파일 직접 열기는 관리 정책 때문에 미검증입니다."
+    "로컬 웹·오프라인은 브라우저 검증했습니다. 실제 file://는 관리 정책으로 차단되고, 공개 사이트 실브라우저 접속은 환경 프록시 인증서 신뢰 문제(ERR_CERT_AUTHORITY_INVALID)로 미검증입니다. 공개 파일은 정상 TLS 검증으로 읽어 SHA-256 일치를 확인했으며 TLS 검증을 비활성화하지 않았습니다."
   ],
   "deployment": {
-    "status": "pending",
+    "status": "success",
+    "app_commit": "9206f48def8b0e6af6aa329087b0ab7c421056c0",
+    "pages_run": {
+      "conclusion": "success",
+      "headSha": "9206f48def8b0e6af6aa329087b0ab7c421056c0",
+      "status": "completed",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/38833606255"
+    },
+    "public_asset_checks": [
+      {
+        "file": "index.html",
+        "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank-manifest.json",
+        "sha256": "b24f163343d0af85471b65e460c0e0113fb48ce15970e1544290e470dc34516d",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "sw.js",
+        "sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank-data.js",
+        "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/app.css",
+        "sha256": "8beb0fa3e77b573ae6b0f7ce8465dea81286d6207459fabde1bc0453e909f8fb",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/app.js",
+        "sha256": "9106bfd77df480d80d34b4f355f07a0d13ae13003ede77a8c77033438ae1d24b",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/data-loader.js",
+        "sha256": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/offline.js",
+        "sha256": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/icon.svg",
+        "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/core-4c27033b8c4ebfa4.js",
+        "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+        "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+        "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "http_status": 200,
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+        "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+        "http_status": 200,
+        "matches_local": true
+      }
+    ],
+    "checked_at": "2026-10-16T10:11:53+09:00",
     "target_branches": [
       "main",
       "claude/practical-allen-zjsicv"
-    ]
+    ],
+    "public_browser_probe": {
+      "result": "UNVERIFIED",
+      "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://jay5315.github.io/jaegyeong/\nCall log:\n  - navigating to \"https://jay5315.github.io/jaegyeong/\", waiting until \"domcontentloaded\"\n",
+      "browser_errors": []
+    },
+    "note": "이 배포 확인 기록을 저장하는 후속 문서 커밋은 앱·데이터·테스트를 변경하지 않습니다."
   }
 }
