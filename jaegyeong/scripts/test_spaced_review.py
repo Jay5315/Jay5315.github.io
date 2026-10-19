@@ -65,12 +65,15 @@ def run_spaced_review(browser, url=URL):
     assert active['title'] == '오늘의 복습' and active['ids'] == [ids[0], ids[1]], active
 
     # Leitner moves: due + correct → next box; early + correct → same box; wrong → box 1 / 1 day.
-    seed({}, {ids[3]: {'box': 3, 'due': now - DAY}, ids[4]: {'box': 3, 'due': now + 5 * DAY}, ids[5]: {'box': 4, 'due': now - DAY}})
-    solve(ids[3], True)
-    solve(ids[4], True)
-    solve(ids[5], False)
+    # ids[0]: an old correct record with no schedule (derived box 2, due) promotes to box 3 on its first review.
+    # ids[1]: due later today (as the home tile counts it) also promotes.
+    later_today = min(now + 3600000, page.evaluate('new Date().setHours(24,0,0,0)') - 60000)
+    seed({ids[0]: {'attempts': 1, 'correct': 1, 'lastCorrect': True, 'lastAnswer': 1, 'updatedAt': now - 10 * DAY}},
+         {ids[1]: {'box': 2, 'due': later_today}, ids[3]: {'box': 3, 'due': now - DAY}, ids[4]: {'box': 3, 'due': now + 5 * DAY}, ids[5]: {'box': 4, 'due': now - DAY}})
+    for qid, correct in [(ids[0], True), (ids[1], True), (ids[3], True), (ids[4], True), (ids[5], False)]:
+        solve(qid, correct)
     items = review()
-    for qid, box, days in [(ids[3], 4, 14), (ids[4], 3, 7), (ids[5], 1, 1)]:
+    for qid, box, days in [(ids[0], 3, 7), (ids[1], 3, 7), (ids[3], 4, 14), (ids[4], 3, 7), (ids[5], 1, 1)]:
         assert items[qid]['box'] == box, (qid, items[qid])
         assert abs(items[qid]['due'] - (time.time() * 1000 + days * DAY)) < 120000, (qid, items[qid])
     assert set(study()) == STUDY_FIELDS, 'study record format changed'
@@ -113,7 +116,7 @@ def run_spaced_review(browser, url=URL):
     expect(other.locator('[data-action=practice-review]')).to_contain_text('오늘 복습 1문제')
     assert not errors, errors
     context.close()
-    return 'derived schedule without writes, due-ordered review session, Leitner box moves, next-date tile, backup/restore with and without schedule, unreadable schedule preserved, cross-tab update, unchanged study schema'
+    return 'first review of pre-existing records promotes, due-later-today promotes, derived schedule without writes, due-ordered review session, Leitner box moves, next-date tile, backup/restore with and without schedule, unreadable schedule preserved, cross-tab update, unchanged study schema'
 
 
 if __name__ == '__main__':

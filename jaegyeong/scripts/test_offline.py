@@ -241,13 +241,15 @@ self.addEventListener('fetch',event=>{
         page.wait_for_selector('.home-head', timeout=TIMEOUT)
         record = json.dumps({'version': 1, 'results': {}, 'bookmarks': [], 'sessions': [], 'active': None})
         page.evaluate("v => localStorage.setItem('chagok.study.v1', v)", record)
+        schedule = {'version': 1, 'items': {'2022-01-001': {'box': 4, 'due': 1}}}
+        page.evaluate("v => localStorage.setItem('chagok.review.v1', v)", json.dumps(schedule))
         server.fail.add('/jaegyeong/assets/bank-manifest.json')
         page.reload(wait_until='domcontentloaded')
         page.wait_for_selector('#export-record', timeout=TIMEOUT)
         for selector in ['#export-record', 'footer [data-action="settings"]']:
             with page.expect_download() as info:
                 page.locator(selector).click()
-            assert Path(info.value.path()).read_text(encoding='utf-8') == record
+            assert json.loads(Path(info.value.path()).read_text(encoding='utf-8')) == {**json.loads(record), 'review': schedule}
         server.fail.clear()
         broken.close()
         print('PASS: a failed bank load still offers the unchanged study record for download.')

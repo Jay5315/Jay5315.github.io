@@ -72,7 +72,12 @@
     : {url: 'assets/app.js'})).catch(() => {
       const main = document.getElementById('main');
       let record = null;
-      try { record = localStorage.getItem('chagok.study.v1'); } catch (_) {}
+      try {
+        record = localStorage.getItem('chagok.study.v1');
+        // Match the app's backup shape so the spaced-review schedule is not lost on restore.
+        const schedule = localStorage.getItem('chagok.review.v1');
+        if (record && schedule) record = JSON.stringify({...JSON.parse(record), review: JSON.parse(schedule)});
+      } catch (_) {}
       main.innerHTML = '<div class="empty"><h1>문제은행을 다시 불러와 주세요</h1><p>자료를 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.</p><button class="btn primary" id="retry-bank">다시 불러오기</button>' +
         (record ? '<p>학습 기록은 이 브라우저에 그대로 있습니다. 필요하면 지금 내려받아 둘 수 있습니다.</p><button class="btn" id="export-record">학습 기록 내려받기</button>' : '') + '</div>';
       document.getElementById('retry-bank').onclick = () => location.reload();
