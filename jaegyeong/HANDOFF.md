@@ -11,6 +11,7 @@
 - `assets/data-loader.js`: 문제은행을 불러오지 못한 화면에서 저장된 학습 기록이 있으면 '학습 기록 내려받기'를 보여 주고, 앱이 없어 동작하지 않던 하단 '기록 백업·복원' 버튼도 같은 원본 다운로드로 연결합니다(기록이 없으면 비활성). 내려받은 파일은 기존 백업 복원에 그대로 쓸 수 있습니다.
 - 회귀 검사: `test_robustness.py`에 오래된 마치기 창·삭제 문항 뒤 이어 풀기·보관 기록 내려받기를, `test_offline.py`에 이전 빌드 탭의 '새 버전 저장' 표시·로더 실패 시 기록 다운로드(화면 버튼·하단 버튼)를 추가했습니다. 수정 전 런타임 파일로 되돌려 각각 실패함을 확인했습니다.
 - 런타임 변경 후 `build_app_data.py`로 매니페스트·SRI를 다시 만들었고 `app.js` 변경은 `reports/ui-changes.json` 체인에 추가했습니다. 문항·공식 정답·ID·`chagok.study.v1` 형식·해설/개념 데이터·`index.html`·루트 사이트는 그대로입니다.
+- 실제 결과: 필수 7개+`test_offline.py` PASS, `package_app.py` 두 ZIP 검증·`test_portable_runtime.py` PASS. 앱 커밋 `fa9b4fe`의 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/39214731436) 성공, 공개 13개 파일 SHA-256 일치(정상 TLS 검증). 실제 `file://`와 공개 사이트 실브라우저 접속은 여전히 환경 제한으로 미검증입니다. 해설 미등록 40건은 그대로입니다.
 
 ## 2026-10-16 안정성 점검·버그 수정 (UI)
 
