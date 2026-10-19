@@ -11,6 +11,7 @@
 - 회귀 검사 `scripts/test_spaced_review.py`(`test_app.py`에서 실행): 추정 일정·쓰기 없음, 기한 순 세션, 상자 이동 3가지(±2분 내 기한), 다음 날짜 표시, 일정 포함/미포함 백업 복원, 손상 일정 보관, 다른 창 반영, 학습 기록 필드 불변.
 - `test_portable_runtime.py`의 백업 복원 비교는 이제 백업에서 `exportedAt`·`review`를 뺀 값과 학습 기록을 정확히 비교하고, `review`가 `chagok.review.v1`로 그대로 복원되는지 따로 확인합니다(검사 약화 없음).
 - 실제 결과: 필수 7개(+robustness·spaced review)·`test_offline.py` PASS, 두 ZIP 검증·`test_portable_runtime.py` PASS, axe(1280·820·390px, 라이트·다크) 위반 0건.
+- 배포 확인: 앱 커밋 `fcba6f8`의 [Pages 실행](https://github.com/Jay5315/Jay5315.github.io/actions/runs/39216204860) 성공, 공개 13개 파일 SHA-256 일치(정상 TLS 검증). 공개 사이트 실브라우저 접속과 실제 `file://`는 환경 제한으로 미검증입니다.
 - 남은 범위: 서버 동기화는 없습니다(기기별 일정, 백업 파일로 이동). 복습 대상은 한 번 이상 채점한 문항뿐이며, 하루 30문제 상한과 간격 값은 상수(`REVIEW_DAYS`, `slice(0,30)`)로 조정합니다.
 
 ## 2026-10-19 2차 점검·버그 수정 (UI)
