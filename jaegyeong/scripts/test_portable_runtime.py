@@ -121,8 +121,11 @@ def run():
                 expect(fresh.locator('.home-head')).to_be_visible()
                 actual = fresh.evaluate('k=>JSON.parse(localStorage.getItem(k))', KEY)
                 assert 'exportedAt' in backup_data
-                expected = {key: value for key, value in backup_data.items() if key != 'exportedAt'}
+                expected = {key: value for key, value in backup_data.items() if key not in ('exportedAt', 'review')}
                 assert actual == expected, {'actual': actual, 'expected': expected}
+                # The spaced-review schedule travels in the backup's separate `review` field.
+                assert 'review' in backup_data
+                assert fresh.evaluate("JSON.parse(localStorage.getItem('chagok.review.v1'))") == backup_data['review']
                 summary['cases'].append('Separate tab sees saved results; JSON backup restores in a fresh browser context')
                 restored.close()
                 legacy.close()
