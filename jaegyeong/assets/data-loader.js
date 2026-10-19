@@ -71,7 +71,21 @@
     ? {url: 'assets/app.js?build=' + manifest.build_id, sha256: manifest.runtime['assets/app.js'].sha256}
     : {url: 'assets/app.js'})).catch(() => {
       const main = document.getElementById('main');
-      main.innerHTML = '<div class="empty"><h1>문제은행을 다시 불러와 주세요</h1><p>자료를 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.</p><button class="btn primary" id="retry-bank">다시 불러오기</button></div>';
+      let record = null;
+      try { record = localStorage.getItem('chagok.study.v1'); } catch (_) {}
+      main.innerHTML = '<div class="empty"><h1>문제은행을 다시 불러와 주세요</h1><p>자료를 불러오지 못했습니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요.</p><button class="btn primary" id="retry-bank">다시 불러오기</button>' +
+        (record ? '<p>학습 기록은 이 브라우저에 그대로 있습니다. 필요하면 지금 내려받아 둘 수 있습니다.</p><button class="btn" id="export-record">학습 기록 내려받기</button>' : '') + '</div>';
       document.getElementById('retry-bank').onclick = () => location.reload();
+      // app.js is not running, so the footer backup button needs its own minimal fallback.
+      const exportRecord = () => {
+        const url = URL.createObjectURL(new Blob([record], {type: 'application/json'})), link = document.createElement('a');
+        link.href = url; link.download = '차곡-학습기록-' + new Date().toISOString().slice(0, 10) + '.json'; link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      };
+      const footerButton = document.querySelector('footer [data-action="settings"]');
+      if (record) {
+        document.getElementById('export-record').onclick = exportRecord;
+        if (footerButton) footerButton.onclick = exportRecord;
+      } else if (footerButton) footerButton.disabled = true;
     });
 })();

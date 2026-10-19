@@ -44,6 +44,12 @@ def run_robustness(browser, url=URL):
     page.locator('.library-card [data-action=bookmark]').first.click()
     assert page.evaluate("k=>localStorage.getItem(k+'.unreadable')", KEY) == broken
     assert json.loads(page.evaluate('k=>localStorage.getItem(k)', KEY))['bookmarks'], 'new record should still save'
+    page.locator('.avatar').click()
+    with page.expect_download() as info:
+        page.locator('[data-action=export-unreadable]').click()
+    with open(info.value.path(), encoding='utf-8') as fh:
+        assert json.load(fh) == {KEY + '.unreadable': broken}, 'preserved record must download verbatim'
+    page.keyboard.press('Escape')
     future = json.dumps({'version': 2, 'results': {}, 'bookmarks': [], 'sessions': [], 'futureField': True})
     page.evaluate('([k,v])=>localStorage.setItem(k,v)', [KEY, future])
     page.reload()
@@ -118,7 +124,37 @@ def run_robustness(browser, url=URL):
     page.evaluate("localStorage.removeItem('rb.filler')")
     assert not errors, errors
     context.close()
-    return 'malformed hash, unreadable/newer record preservation, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
+    # Cross-tab: a finish dialog opened for one session never ends a session another tab started.
+    context, page, errors = _context(browser)
+    page.goto(url)
+    expect(page.locator('.subject-card').first).to_be_visible()
+    three = page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.representative).slice(0,3).map(q=>q.id)")
+    seed = "([k,ids,id])=>localStorage.setItem(k,JSON.stringify({version:1,results:{},bookmarks:[],sessions:[],active:{id,title:id,ids,answers:{},index:0,startedAt:Date.now(),finishedAt:null}}))"
+    page.evaluate(seed, [KEY, three, 'old'])
+    other = context.new_page()
+    other.goto(url + '#quiz')
+    page.goto(url + '#quiz')
+    page.reload()
+    page.locator('[data-action=finish]').click()
+    expect(page.locator('[data-action=finish-now]')).to_be_visible()
+    other.evaluate(seed, [KEY, three, 'new'])
+    expect(page.locator('dialog[open]')).to_have_count(0)
+    assert page.evaluate('k=>JSON.parse(localStorage.getItem(k)).active.id', KEY) == 'new'
+    assert not errors, errors
+    context.close()
+
+    # Resuming after a rebuild removed an id keeps the learner on the question they were viewing.
+    context, page, errors = _context(browser)
+    page.goto(url)
+    expect(page.locator('.subject-card').first).to_be_visible()
+    three = page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.representative).slice(0,3).map(q=>q.id)")
+    page.evaluate("([k,ids])=>localStorage.setItem(k,JSON.stringify({version:1,results:{},bookmarks:[],sessions:[],active:{id:'gap',title:'gap',ids,answers:{},index:2,startedAt:Date.now(),finishedAt:null}}))", [KEY, [three[0], '1999-01-999', three[1], three[2]]])
+    page.goto(url + '#quiz')
+    page.reload()
+    expect(page.locator('.quiz-top .sub')).to_contain_text('2 / 3')
+    assert not errors, errors
+    context.close()
+    return 'stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
 
 
 if __name__ == '__main__':

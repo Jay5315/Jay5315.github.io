@@ -604,6 +604,26 @@
           "after": "a0939359566258f617ca2b4797f92a751eecb9fcffa68b5859e0ccc7760b442f"
         }
       }
+    },
+    {
+      "date": "2026-10-16",
+      "summary": "설정 창: 읽지 못해 따로 보관한 이전 학습 기록(chagok.study.v1.unreadable*)이 있으면 개수를 알리고 원래 내용 그대로 내려받는 버튼 제공",
+      "files": {
+        "assets/app.js": {
+          "before": "a0939359566258f617ca2b4797f92a751eecb9fcffa68b5859e0ccc7760b442f",
+          "after": "8373a17dace86e59ab714748e68e9fb8e185b4ab59fe075ebd40b6b6e9ee18dd"
+        }
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "summary": "다중 창·복원 안정성: 다른 창에서 학습이 바뀌면 열린 '학습 마치기'·'세션 교체' 창을 닫고, 마치기 버튼은 열린 세션 ID가 같을 때만 동작. 데이터 재생성으로 사라진 문항이 있어도 보던 문항에서 이어 풀기",
+      "files": {
+        "assets/app.js": {
+          "before": "8373a17dace86e59ab714748e68e9fb8e185b4ab59fe075ebd40b6b6e9ee18dd",
+          "after": "1aab0a98720d075a37f97fd074fc7441d7b7e8819739ce743f7672a2ab0b3aaf"
+        }
+      }
     }
   ]
 }

@@ -35,16 +35,16 @@
       "bytes": 57199
     },
     "assets/app.js": {
-      "sha256": "a0939359566258f617ca2b4797f92a751eecb9fcffa68b5859e0ccc7760b442f",
-      "bytes": 85218
+      "sha256": "1aab0a98720d075a37f97fd074fc7441d7b7e8819739ce743f7672a2ab0b3aaf",
+      "bytes": 86640
     },
     "assets/data-loader.js": {
-      "sha256": "3857f8f83912975fdb44ec2f155e13cd85b249fe8e9ba2404966a63122ab2844",
-      "bytes": 4372
+      "sha256": "88f3de477dfbd26a9999cfbf0292a450dadf0012e860d6a768919b9140ddd20c",
+      "bytes": 5455
     },
     "assets/offline.js": {
-      "sha256": "2b853bc0c63b07015a6f68112dfc531cea71ad9961a9ae244dc302fa6fefc851",
-      "bytes": 3973
+      "sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+      "bytes": 4695
     },
     "assets/icon.svg": {
       "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
@@ -127,5 +127,5 @@
     "M19": "cost",
     "M20": "cost"
   },
-  "build_id": "19e4a4b71f0c46dbc86d"
+  "build_id": "27654124b5f4f6d429cd"
 }

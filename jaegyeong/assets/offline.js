@@ -57,6 +57,14 @@
             if (registration.active !== worker) return;
             const result = await probe(worker);
             if (registration.active !== worker) return;
+            if (result.type === 'CHAGOK_OFFLINE_STATUS' && result.ready && window.BANK_MANIFEST && result.buildId !== window.BANK_MANIFEST.build_id) {
+              // A newer deployment finished saving while this tab still runs the previous build.
+              let latest = null;
+              try { latest = (await (await fetch('assets/bank-manifest.json', {cache: 'no-store'})).json()).build_id; } catch (_) {}
+              if (registration.active !== worker) return;
+              if (latest && latest === result.buildId) { status('update', '새 버전이 오프라인용으로 저장되었습니다. 새로고침하면 적용됩니다. ' + SOURCE_NOTE); return; }
+              unavailable(); return;
+            }
             if (result.type !== 'CHAGOK_OFFLINE_STATUS' || !result.ready || (window.BANK_MANIFEST && result.buildId !== window.BANK_MANIFEST.build_id)) { unavailable(); return; }
             status('ready', '오프라인 준비 완료 · 문제 텍스트·해설은 인터넷 없이 열 수 있습니다. ' + SOURCE_NOTE);
           } catch (_) { if (registration.active === worker) unavailable(); }

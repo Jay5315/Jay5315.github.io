@@ -217,6 +217,41 @@ self.addEventListener('fetch',event=>{
         versioned.close()
         print('PASS: failed different-build update preserves the previous manifest, all three deferred subjects, and offline readiness.')
 
+        # A tab still on the previous build reports a saved newer version instead of a storage failure.
+        server.fail.clear()
+        server.manifest = None
+        upgraded = browser.new_context()
+        old_page = open_ready(upgraded, server.url)
+        newer = json.loads((ROOT / 'assets/bank-manifest.json').read_text())
+        newer.pop('build_id')
+        newer['regression_revision'] = 3
+        newer['build_id'] = hashlib.sha256(packed(newer).encode()).hexdigest()[:20]
+        server.manifest = newer
+        open_ready(upgraded, server.url)
+        old_page.wait_for_selector('#offline-status[data-state="update"]', timeout=TIMEOUT)
+        assert '새로고침' in old_page.locator('#offline-status').inner_text()
+        upgraded.close()
+        server.manifest = None
+        print('PASS: an open tab on the previous build announces the saved newer version rather than a failure.')
+
+        # When the bank cannot load, the study record can still be downloaded unchanged.
+        broken = browser.new_context(service_workers='block')
+        page = broken.new_page()
+        page.goto(server.url, wait_until='domcontentloaded')
+        page.wait_for_selector('.home-head', timeout=TIMEOUT)
+        record = json.dumps({'version': 1, 'results': {}, 'bookmarks': [], 'sessions': [], 'active': None})
+        page.evaluate("v => localStorage.setItem('chagok.study.v1', v)", record)
+        server.fail.add('/jaegyeong/assets/bank-manifest.json')
+        page.reload(wait_until='domcontentloaded')
+        page.wait_for_selector('#export-record', timeout=TIMEOUT)
+        for selector in ['#export-record', 'footer [data-action="settings"]']:
+            with page.expect_download() as info:
+                page.locator(selector).click()
+            assert Path(info.value.path()).read_text(encoding='utf-8') == record
+        server.fail.clear()
+        broken.close()
+        print('PASS: a failed bank load still offers the unchanged study record for download.')
+
     finally:
         server.close()
     browser.close()
