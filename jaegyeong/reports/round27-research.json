@@ -1,0 +1,447 @@
+{
+  "checked_on": "2026-10-21",
+  "actual_new_subagents": 0,
+  "scope": "기존 미확인 목록의 데이터 집계와 원가 교재 추가 탐색. 신규 출처로 해소한 6개 쟁점을 기존 작성자와 다른 현재 주 담당자가 실제 대조했습니다. 전체 부분 확인 해설·법령·기준서를 이번에 새로 재검토했다는 뜻은 아닙니다.",
+  "source_reads_used_for_changes": [
+    {
+      "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/08-1.mp4",
+      "version": "2023년 1학기 KOCW 공개강의 08-1.mp4; 표시 교재의 출판사·발행 판본은 확정하지 않음",
+      "sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+      "actually_read": true,
+      "read_locator": "파일 1020초: 원가관리회계6장.pdf PDF4쪽 공학적 방법 장단점; 1140·1170·1230초: 계정분석법·산포도법; 1500초: PDF5쪽 고저점법 장단점",
+      "cache_file": "est.mp4"
+    },
+    {
+      "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/03-1.mp4",
+      "version": "2023년 1학기 KOCW 공개강의 03-1.mp4; 표시 교재의 출판사·발행 판본은 확정하지 않음",
+      "sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+      "actually_read": true,
+      "read_locator": "파일 1275초: 원가관리회계2장.pdf 표시 099쪽, 작업지시서 정의·주문 제품별 작성 원칙과 기재 항목 전체; 1290초: 작업지시서 서식; 1320·1380·1440초: 작업원가표와 원가집계",
+      "cache_file": "process.mp4"
+    },
+    {
+      "ref": "R27_CUP2023_ABC_VIDEO",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/07-1.mp4",
+      "version": "2023년 1학기 KOCW 공개강의 07-1.mp4; 표시 교재의 출판사·발행 판본은 확정하지 않음",
+      "sha256": "c6b1c8fb91511b5bba9c9f6f5564d4a715d7d7c12a76d6d846d61d81c141527c",
+      "actually_read": true,
+      "read_locator": "파일 1660·1680초: 원가관리회계5장.pdf PDF6쪽 「03 활동기준원가계산의 장단점」 ① 활동별 집계·제품별 추적 및 직접원가 표현, ③ 고객·서비스 원가대상과 의사결정·성과평가; 600초: PDF3쪽 다품종·제품다양화 배경",
+      "cache_file": "abc.mp4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s06-02-how-a-job-costing-system-works.html",
+      "sha256": "f645d136cdf278a82cbbbd65d26e32f4835e4c47a1914aa0551696a313ad9a92",
+      "actually_read": true,
+      "cache_file": "s06-02-how-a-job-costing-system-works.html",
+      "version": "Saylor Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "read_locator": "Using a Job Cost Sheet·Assigning Direct Labor Costs·Key Takeaway"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-03-using-activity-based-costing-t.html",
+      "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+      "actually_read": true,
+      "cache_file": "s07-03-using-activity-based-costing-t.html",
+      "version": "Saylor Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "read_locator": "Advantages and Disadvantages·Business in Action 3.1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-05-using-activity-based-costing-a.html",
+      "sha256": "ae5a88d8bcf987bfa86b63eb7767ce229de582ef4703c0d5669c59fb1f69f7c8",
+      "actually_read": true,
+      "cache_file": "s07-05-using-activity-based-costing-a.html",
+      "version": "Saylor Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "read_locator": "도입부의 서비스 조직 적용·은행 사례"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-02-cost-estimation-methods.html",
+      "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285",
+      "actually_read": true,
+      "cache_file": "s09-02-cost-estimation-methods.html",
+      "version": "Saylor Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+      "read_locator": "Account Analysis·High-Low의 대표성 한계·Scattergraph Method"
+    },
+    {
+      "repo_path": "sources/2023-01-answers.pdf",
+      "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+      "actually_read": true,
+      "version": "사용자 제공 해당 회차 공식 확정답안 PDF",
+      "read_locator": "원가관리회계 과목 내 22번=② (전체102번)"
+    },
+    {
+      "repo_path": "sources/2026-07-answers.pdf",
+      "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+      "actually_read": true,
+      "version": "사용자 제공 해당 회차 공식 확정답안 PDF",
+      "read_locator": "원가관리회계 102번=④"
+    },
+    {
+      "repo_path": "sources/2026-06-answers.pdf",
+      "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+      "actually_read": true,
+      "version": "사용자 제공 해당 회차 공식 확정답안 PDF",
+      "read_locator": "원가관리회계 85번=①"
+    },
+    {
+      "repo_path": "sources/2025-03-answers.pdf",
+      "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73",
+      "actually_read": true,
+      "version": "사용자 제공 해당 회차 공식 확정답안 PDF",
+      "read_locator": "원가관리회계 101번=①"
+    },
+    {
+      "repo_path": "sources/2024-06-answers.pdf",
+      "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+      "actually_read": true,
+      "version": "사용자 제공 해당 회차 공식 확정답안 PDF",
+      "read_locator": "원가관리회계 과목 내 21번=④ (전체101번)"
+    },
+    {
+      "repo_path": "images/2023-01-102.webp",
+      "sha256": "75f65084264065a6a205bdcd60d61f3575230f30a9051a29903606b055dc64b7",
+      "actually_read": true,
+      "version": "보존 원본 문항 이미지",
+      "read_locator": "문제 본문과 보기 네 개 전체"
+    },
+    {
+      "repo_path": "images/2026-07-102.webp",
+      "sha256": "caa707d962d6bd0dd0334d115d6ba7fda25ef1d985fd7ab95bcb847ff60f6483",
+      "actually_read": true,
+      "version": "보존 원본 문항 이미지",
+      "read_locator": "문제 본문과 보기 네 개 전체"
+    },
+    {
+      "repo_path": "images/2026-06-085.webp",
+      "sha256": "e903580c77031625ae5baeed02d771ead20c0d156a492277086062ff795e99d9",
+      "actually_read": true,
+      "version": "보존 원본 문항 이미지",
+      "read_locator": "문제 본문과 보기 네 개 전체"
+    },
+    {
+      "repo_path": "images/2025-03-101.webp",
+      "sha256": "611781353fb50eddd973005ca48bb26c8fcbbc0ca7effd9951897eff210e476b",
+      "actually_read": true,
+      "version": "보존 원본 문항 이미지",
+      "read_locator": "문제 본문과 보기 네 개 전체"
+    },
+    {
+      "repo_path": "images/2024-06-101.webp",
+      "sha256": "96589bca3e7376c0eecb998d60d9a30848eafcb53d4e55d09203feb1677862b4",
+      "actually_read": true,
+      "version": "보존 원본 문항 이미지",
+      "read_locator": "문제 본문과 보기 네 개 전체"
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/08-2.mp4",
+      "version": "2023년 1학기 KOCW 공개강의 08-2.mp4; 표시 교재의 출판사·발행 판본은 확정하지 않음",
+      "sha256": "ac2ac2e178740c27262ac141343a6a576683877954b76c9d6566c5176c7f702a",
+      "ref": "R27_CUP2023_REGRESSION_VIDEO",
+      "actually_read": true,
+      "read_locator": "파일 420·540초: 원가관리회계6장.pdf PDF7쪽 「5 회귀분석법」 의의와 장단점 표; 단점 「적용이 어렵다」",
+      "cache_file": "regression.mp4"
+    },
+    {
+      "repo_path": "sources/2023-03-answers.pdf",
+      "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+      "actually_read": true,
+      "version": "보존된 사용자 제공 원문·공식 확정답안",
+      "read_locator": "원가관리회계 과목 내 22번=④ (전체102번)"
+    },
+    {
+      "repo_path": "images/2023-03-102.webp",
+      "sha256": "5cde4bc0941e924b18fbfaace0b771580bce7f805fc9ac406df6087b558ba1bb",
+      "actually_read": true,
+      "version": "보존된 사용자 제공 원문·공식 확정답안",
+      "read_locator": "본문과 보기 네 개 전체"
+    }
+  ],
+  "other_inspections": [
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/05-2.mp4",
+      "sha256": "d8c5114f80b69b1d0903d4fdf422fecdcb2d4d189d85f740f18a53f5844a558b",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "120초 간격 접촉판/PDF24~36쪽",
+      "result": "표준 원가차이 계산·표시 예시입니다. 국내 기타손익법의 영업외 분류 직접 근거로 사용하지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/05-1.mp4",
+      "sha256": "a0cc3b6672d113184e2b2b2a7e80411de324283da5792726b7fe7d54c691dd70",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "파일 1240·1319·1320.7초/PDF8~9쪽",
+      "result": "기타손익법의 비배분 분류·총원가 및 원가요소별 기준을 직접 확인했습니다. 다만 본문은 정상원가계산의 제조간접원가 배부차이이며, 표준원가 문항의 모든 세부 표시·영업외손익 분류를 직접 설명하지 않아 해당 해설을 승격하지 않았습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/03-2.mp4",
+      "sha256": "00db7d0b78341278fe33eb56f3a92e88c2133c8970deedb651bf319e0cf50adb",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "파일 180·600·1020·1440초",
+      "result": "강의 목록 명칭과 달리 실제 표시는 개별원가계산·작업별 원가집계 예시입니다. 종합원가·공손의 근거로 오인하지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "파일 30·60·120·180초/PDF11쪽, 1440초/PDF15쪽",
+      "result": "표는 초변동 이익의 판매량·생산량 의존과 예제의 변동 가공원가를 보여줍니다. 반면 같은 강의의 이론 본문은 비재료 원가 고정화를 가정합니다. 모형 범위를 동일시하거나 2026-09-097의 수요변동 산업·장기가격 비교를 해결했다고 보지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/04-1.mp4",
+      "sha256": "f493fd48a045c84296ec6c4b4d0a7706e70f3bf3847a5126076362cb8eb48c0f",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "120초 간격 접촉판의 PDF 초반 단원·원가흐름 화면",
+      "result": "표시 본문은 종합원가계산 기초와 계산 예시입니다. 접촉판에서 공손 검사시점 배분의 직접 근거를 확보하지 못했으며 전체 강의에 해당 내용이 없다고 단정하지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-2.mp4",
+      "sha256": "874dbe8ae988bd2f8929b449ff52b4f54e5eb88b540b180759429bc490c17496",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "120초 간격 접촉판의 원가 개념·분류 화면",
+      "result": "기존 원가 개념·자산/비용/손실 구분과 원가분류를 확인했습니다. 원가 일반을 소비 시점으로만 한정하는 표현이나 비화폐 정보 배제의 직접 근거를 추가 확보하지 못했습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "파일 1200·1440초/PDF5쪽, 1560초/PDF6쪽",
+      "result": "초변동 제품원가·운영비용과 비재료 원가의 고정화 가정을 확인했습니다. 이론 본문과 별도 비교표의 범위를 구분하고, 미등록 조합 문항의 정답 유일성을 증명했다고 주장하지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/07-2.mp4",
+      "sha256": "c41af60e7643563afadb0e252af11ca17cc20369b2a0fd9af6777242799ce7fc",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "120초 간격 접촉판의 PDF10~13쪽 연습문제",
+      "result": "활동기준원가계산 관련 문제 예시를 확인했습니다. 읽은 범위를 이론 본문 전체 검증으로 확대하지 않습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/10-1.mp4",
+      "sha256": "115747cb88aae5d7b3d628ab3ea343f39f152cf97096992bd15b9a34ffca3ca3",
+      "version": "KOCW 부산가톨릭대학교 신성욱 2023년 1학기 공개강의",
+      "actually_read": true,
+      "read_method": "지정 프레임 또는 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "120초 간격 접촉판/PDF1~15쪽",
+      "result": "의사결정 기초·특별주문·제한 자원 예시입니다. 외부 전문성 활용과 품질관리 난이도의 직접 비교를 확보하지 못했습니다."
+    },
+    {
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/10-2.mp4",
+      "sha256": "00d2d663b172bad29bd3808a6dc47c78c540cf734b58b3da753e2e2cbc7e388f",
+      "version": "2023년 1학기 KOCW 공개강의",
+      "actually_read": true,
+      "read_method": "120초 간격 접촉판의 표시 화면 읽기; 전체 영상·음성 시청 아님",
+      "read_locator": "접촉판의 PDF30~52쪽 자본예산·현금흐름·투자 평가 화면",
+      "result": "접촉판 범위에서 외부 전문성과 품질관리 난이도의 직접 비교를 확보하지 못했습니다. 생략된 단원이나 전체 영상의 내용 부재를 단정하지 않습니다."
+    }
+  ],
+  "unregistered_source_cases": [
+    {
+      "question_id": "2026-09-097",
+      "prior_reason": "새 ICMAI P16 PDF304/308쪽은 super-variable material-only와 unit-level spending(i.e.material) 및 생산증대로 평균배부원가를 낮추는 유인 제거를 직접 명시합니다. PDF309쪽 기타원가의 전액OE당기처리도 확인됐습니다. 따라서 기존 단순영문명칭 부재의 한계는 줄었으나ㄴ 수요변동 산업에서 특히유용이라는 특정비교와ㄷ 장기가격의 전부법 비교우위,ㄹ의 판매/생산 이익관계가 한국 초변동의 실제비용행태와 어떤 모형으로 대응하는지는 완전히 확정되지 않았습니다. P16은 장기계획/가격의 throughput 장점도 별도로 주장하므로 다른 비교대상을 같은명제로 바꾸지 않습니다. ①1/②2/③3/④4개의 공식③을 유지합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2022-05-046",
+      "prior_reason": "2022영61②/70①1/76①②/111①를대조했습니다. 새지급이자집행기준의본문범위로이금융회사정의차이를추가해소하지않습니다. 외화평가강제군1–7,원천징수예외군1–28등,표준산업분류금융보험업을동일시할수없습니다. 원문의금융업만으로두군을정하지않고공식②를유지합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2022-09-015",
+      "prior_reason": "공식1007 문단6–7의 현금/요구불예금과 적격투자기간·현금수요목적·경미위험을 직접 재독했습니다. 양도성예금증서라는 명칭만으로 요구불예금이나 취득시잔여만기를 정하지 않습니다. 배당금지급통지표·당좌230,000원에 적격CD100,000원을 더하면③330,000원이지만 CD 조건은 원문에 없습니다.120일RP와 같은목록에 있다는 이유로 CD에3개월요건을 추가하지 않습니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2025-01-027",
+      "prior_reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 1102호30/33 및IG사례12·12A의 공식한국어 표는 권리공정가치와 행사내재가치를 별도열로 둡니다. 원문은 기말 주식FV를 주고 권리FV를 주지 않아 주가−행사가격을 권리FV로 자동대체할 수 없습니다. 그 대체에서만 당기276,666.67원③이고 기말표가권리FV라는 다른읽기에서는743,333.33원으로보기없음입니다. 실제기말권리FV 또는표정정 확인이 남습니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2024-05-029",
+      "prior_reason": "공식 KASB1012호5와9의범위를재독했습니다.5는차감일시적차이/미사용결손금/미사용세액공제이월을구분하고9는이미비용처리된금액이후기세무공제되면장부0/세무기준액으로일시적차이를초래할수있다고합니다. 기부금한도초과를언제나영구차이라고하거나미래공제가능성만으로재무상태표자산부채일시적차이라고일괄판정하지않습니다. 해당국내기부금이월의분류경계를직접확인하지못해공식②를유일제외항목으로완료하지않습니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2023-12-029",
+      "prior_reason": "공식1012 문단5의 차감일시적차이/미사용결손금/미사용세액공제 분리와9의 비인식비용미래공제 세무기준액을 직접대조했습니다. 미래공제 가능성만으로 전부영구차이나 전부별도이월공제라고 정할 수 없고 국내기부금한도초과 이월이 어떤범주인지 기준서일반정의만으로 확정되지 않습니다.④감가상각 한도초과의 장부/세무차이는7예시로 지지되지만②분류를 특정하는 국내세법/교육의 추가범위가 남아 공식④보존합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2023-09-022",
+      "prior_reason": "2026-10-13 공식 KASB PDF 및 실제 획득캐시·판본을 대조했습니다. 공식1033호19–21은 기간가중유통주식수를 분모로 요구합니다. 자본금/액면으로 기말2,000주는 구해도 전기간유통·설립일·증자시점 및 RE기타변동을 확정하지 못합니다.2,000주전기간/순이익1백만원 모형의EPS500원은 조건부이고 원문신설/무배당만으로③·④의 단정 전체를 확인하지 않습니다. 공식④를 바꾸지 않습니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2022-11-048",
+      "prior_reason": "새2024집행기준24-36-2①은미지급기부금지출전불인정을직접설명하고2022영36③과같습니다. 그러나2022영76②의외화평가선택·신고조건때문에④의환산이익무조정까지원문만으로확정할수없습니다. 공식③유지합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2023-09-120",
+      "prior_reason": "새 ICMAI P16 PDF191–194쪽 고객요구파악→목표가격→목표원가/설계의 순서를 직접 읽어③의 고객파악 순서 혼동을 보강했습니다. PDF64–65쪽 품질프로그램/품질원가와 PDF212–214쪽 전수명 원가를 대조하여②는 목표원가 목적과 다르고④의 네품질원가범주 핵심은 기존 국내교재와 부합합니다. 그러나① 수명단축/기술급변에 대응하여 대두된 원가시스템이 어떤 것이라는 특정배경은 새LCC본문에서도 기술발전으로제품쇠퇴/단계별비용추적으로 설명할뿐 해당도입명제를 직접 명시하지 않습니다. 중요성과 역사적 대두를 몰래 동일시하지 않고 공식④를 유지합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    },
+    {
+      "question_id": "2022-09-064",
+      "prior_reason": "신규법인22601-1054의첨부HTML원문인소득1264-2443을직접읽었습니다. 등록근로복지기금의무주택자주택보조금이근로/기타소득아니라는직접문장이있어ㄹ의기존부족근거를보완합니다. 다만1991회신/1984원문등록요건과2022체계연결,ㄷ차량제공운임의현금통근수당과별개분류는남습니다. 공식④유지합니다.",
+      "outcome": "remain_unregistered",
+      "new_source_verification_complete": false
+    }
+  ],
+  "remaining_inventory": "reports/round27-remaining.csv",
+  "remaining_inventory_scope": "현재 저장된 미확인 문구를 그대로 추출한 목록이며, 모든 행에 대한 이번 회차의 신규 조사 완료 기록은 아닙니다.",
+  "acquisition_provenance": [
+    {
+      "url": "https://www.kocw.net/home/cview.do?cid=6a926409524b6fea",
+      "sha256": "536cd2c6b12cf3afae189e79c173242375ac7c1feedd424adc5ed3d9b9a6cddb",
+      "actually_read": true,
+      "read_locator": "공개강의 목록과 lectureId 및 공개 재생 위치 API 호출 코드",
+      "version": "2026-10-21 정상 HTTPS 응답, 2023년 1학기 강의 목록"
+    },
+    {
+      "url": "https://www.kocw.net/home/search/searchLectureLoc.do",
+      "request_method": "POST",
+      "lectureId": "1478277",
+      "sha256": "075c645732c184958038909c43b25ea0fa50c38be7e006784d8028fd97ca9d28",
+      "actually_read": true,
+      "read_locator": "JSON location·lectureTitle 응답을 읽어 공개 영상 URL을 확인",
+      "version": "2026-10-21 공개 재생 위치 응답"
+    },
+    {
+      "url": "https://www.kocw.net/home/search/searchLectureLoc.do",
+      "request_method": "POST",
+      "lectureId": "1478267",
+      "sha256": "5b2ab1fd8d33555ad7ea37fa921a9052a682d70419bdd0d3e6f5f8fcad68dc7a",
+      "actually_read": true,
+      "read_locator": "JSON location·lectureTitle 응답을 읽어 공개 영상 URL을 확인",
+      "version": "2026-10-21 공개 재생 위치 응답"
+    },
+    {
+      "url": "https://www.kocw.net/home/search/searchLectureLoc.do",
+      "request_method": "POST",
+      "lectureId": "1478275",
+      "sha256": "5d271c2006f6f8d917c89385de8a747819fd52bbdc5e2f849685845d3d982ffe",
+      "actually_read": true,
+      "read_locator": "JSON location·lectureTitle 응답을 읽어 공개 영상 URL을 확인",
+      "version": "2026-10-21 공개 재생 위치 응답"
+    },
+    {
+      "url": "https://www.kocw.net/home/search/searchLectureLoc.do",
+      "request_method": "POST",
+      "lectureId": "1478278",
+      "sha256": "aed67bd452dba4fe55243c1dda65ba50515fc0aa998917c4a39b9b1856d9970e",
+      "actually_read": true,
+      "read_locator": "JSON location·lectureTitle 응답을 읽어 공개 영상 URL을 확인",
+      "version": "2026-10-21 공개 재생 위치 응답"
+    }
+  ],
+  "pdf_exploration": [
+    {
+      "name": "hanyang1",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/1.pdf",
+      "status": 200,
+      "bytes": 81485,
+      "sha256": "65c56f5cb1f941f116c47743d253f10cb955d50f8616031a942d1d9b988a25a9",
+      "read_scope": "기초 원가 개념의 추출 본문",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang4",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/4.pdf",
+      "status": 200,
+      "bytes": 106700,
+      "sha256": "7e54328671e4618a1cad0fe32afa9d6f7c2b72e0fed2273d8604bb0c02e57f4e",
+      "read_scope": "개별원가계산 단원의 작업별 원가집계 발췌",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang5",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/5.pdf",
+      "status": 200,
+      "bytes": 99789,
+      "sha256": "21a69d8da8abc30a636b836e3ade7b29589a71a75967ae42ab947c982f54725f",
+      "read_scope": "종합원가계산 평균법·선입선출법 발췌; 공손 검사시점의 직접 근거 미확보",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang6",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/6.pdf",
+      "status": 200,
+      "bytes": 115871,
+      "sha256": "ed43b1ddc1551caa9ef8caf527c82d1edd5ff0599993a27f311ba06e376d3853",
+      "read_scope": "결합원가 단원 발췌",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang10",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/10.pdf",
+      "status": 200,
+      "bytes": 51027,
+      "sha256": "cacf1cccdbe4cb733747eaf654bafbf613eccc176f1900474cf9f809a1c87f9b",
+      "read_scope": "전부·변동원가 이익 비교 발췌",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang11",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/11.pdf",
+      "error": "HTTP Error 404: Not Found",
+      "read_scope": "HTTP404로 원문 읽지 못함",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "hanyang12",
+      "url": "https://contents.kocw.or.kr/KOCW/document/2014/hanyang/yisungwook/12.pdf",
+      "error": "HTTP Error 404: Not Found",
+      "read_scope": "HTTP404로 원문 읽지 못함",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "silla12",
+      "url": "https://kocw-n.xcache.kinxcdn.com/data/document/2010/silla/jungjaeeul1018/12.pdf",
+      "status": 200,
+      "bytes": 389522,
+      "sha256": "6d2be140524955fa92b02043fbc979e35fd69e523842d5a40718f7da6eb919e9",
+      "read_scope": "목차와 원가추정 장단점 검색 주변; 공학적 방법 장단점 직접 비교 미확보",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "cup4",
+      "url": "https://contents2.kocw.or.kr/KOCW/data/document/2019/cup/shinsungwook0713/4.pdf",
+      "status": 200,
+      "bytes": 874968,
+      "sha256": "22670936c5e2d65ad883fe5cbaf2ac43fffe665e51f096564eac440fecff5765",
+      "read_scope": "종합원가계산 기초·평균법 발췌; 공손 직접 근거 미확보",
+      "supports_any_new_upgrade": false
+    },
+    {
+      "name": "ICMAI P8",
+      "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/P8_0904_2026.pdf",
+      "sha256": "e95b519b3d36de923f0e87d8adc3dee1266d8392e483c2d027a3f6230c82a40d",
+      "version": "2022 초판, 2024 개정, 2026년 1월 재인쇄(판권 발췌 확인)",
+      "read_scope": "판권 및 normal/abnormal loss 관련 검색 주변 본문. 검사시점에 따른 정상공손 배분의 직접 근거 미확보. 책 전체를 읽은 것으로 표시하지 않음",
+      "supports_any_new_upgrade": false
+    }
+  ]
+}

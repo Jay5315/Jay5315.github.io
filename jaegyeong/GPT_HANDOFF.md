@@ -17,9 +17,11 @@
 |---|---|
 | 서비스 | https://jay5315.github.io/jaegyeong/ (GitHub Pages, `main` 브랜치) |
 | 문항 | 원본 4,560 → 중복 정리 4,322 · 학습 가능 4,321 · 대표 4,144 |
-| 해설 | 4,281 (source_checked 4,160 · partial 121), **미등록 검토 40건** (`reports/explanation-expansion.json`의 `review`) |
+| 해설 | 4,281 (source_checked 4,166 · partial 115), **미등록 검토 40건** (`reports/explanation-expansion.json`의 `review`) |
 | 개념 노트 | 74 (source_checked 66 · partial 8) |
 | 기능 | 검색(회차·번호 정확 검색)·파트 필터·채점·오답·즐겨찾기·이어 풀기·결과/기록·백업/복원·개념 노트·간격 복습·오프라인·글자 크기·인쇄 |
+
+최신 데이터: 27차에 기존 부분 해설 6개를 출처 대조 완료로 전환했습니다. [검토 범위와 남은 쟁점](reports/round27-review.md)을 먼저 확인하세요. 미등록 40개·부분 해설 115개·부분 개념 8개는 구분합니다.
 
 다음 기능 후보: 사용자가 **실전 시험 모드는 하지 않기로** 했습니다. 간격 복습은 구현 완료(2026-10-19).
 

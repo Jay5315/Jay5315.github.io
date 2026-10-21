@@ -1,0 +1,117 @@
+{
+  "checked_on": "2026-10-21",
+  "baseline_commit": "08355c8d5b9c146d99ff66dff5409c251d2d4dff",
+  "result": "PASS",
+  "build_id": "c2c6836cefa7e54e230a",
+  "tests": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "seconds": 0.67,
+      "stdout_sha256": "51422ab55d764f32b9e13b76793a0a58b315a71efd1fc585c0a52a06e7bc6e5e",
+      "result_tail": [
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 0.400s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "seconds": 0.52,
+      "stdout_sha256": "207b66c68e740e2cd1e1b4e31806c9569bd08c0436cb19f0b481cfb971ae9016",
+      "result_tail": [
+        "----------------------------------------------------------------------",
+        "Ran 5 tests in 0.313s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "seconds": 0.52,
+      "stdout_sha256": "cf4b056ebad3268f2d6dc595e9b17a3d563e475cd5723ec36f91708258f36f8a",
+      "result_tail": [
+        "----------------------------------------------------------------------",
+        "Ran 8 tests in 0.391s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "seconds": 27.092,
+      "result": "Ran 64 tests; OK; 새 회귀 2개 포함",
+      "execution_evidence": "현재 세션의 명령 실행 결과",
+      "command": "jaegyeong/.venv/bin/python jaegyeong/scripts/test_explanations.py"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "seconds": 63.39,
+      "stdout_sha256": "1711d82691a3f07fc6ae5b5b786121f5921e63f568dc5e1648734f3903594572",
+      "result_tail": [
+        "PASS: lightweight startup, deferred explanations, shared downloads, retry/storage, SRI including stale-app rejection, startup retry; file:// unit passed (real browser blocked)",
+        "PASS: keyboard groups/modal replacement/bookmark return focus; persistent grade-once and debounced result live regions; preview hides review notes until the answer is opened, xl text in modals/pick reasons, no concept overflow at xl, live bookmark subject counts, stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning",
+        "PASS: first review of pre-existing records promotes, due-later-today promotes, derived schedule without writes, due-ordered review session, Leitner box moves, next-date tile, backup/restore with and without schedule, unreadable schedule preserved, cross-tab update, unchanged study schema",
+        "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks, search, multi-answer, quarantine, export/import, history, keyboard, desktop/mobile/text/zoom, concept notes (index/pending/related/part study/quiz-wrong-preview links/tax-year highlight/state kept), choice blocks, arrow keys, next steps, grouped chapters, theme toggle; no browser errors"
+      ]
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "seconds": 2.93,
+      "stdout_sha256": "ed35525002668b3b32f2b722e19031e0587fcce8b0b3215ed3455ad80d3d2236",
+      "result_tail": [
+        "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors."
+      ]
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "seconds": 142.26,
+      "stdout_sha256": "717b0ddd38f5b5f11174e9b89e8f3298e0c2e5e0183d2ab8f6be8719254d7ffb",
+      "result_tail": [
+        "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calculation coverage), 26 enriched concept pages and new examples, 12 revised opinion previews and 4 official-key grading/reload checks, no pre-grade reveal, 4 options, review status/year, reload, wrong notebook, related concepts, unchanged records, independent variants, pending content, mobile, explanation-only practice, chosen-option reasons first, joined choice wraps, quiz bottom bar; no browser errors"
+      ]
+    },
+    {
+      "suite": "test_offline",
+      "exit_code": 0,
+      "seconds": 27.52,
+      "stdout_sha256": "0e77c665613e7a19c1c0251ad1a8adc0c1b66a627f13a25787a023c675d56a76",
+      "result_tail": [
+        "PASS: failed different-build update preserves the previous manifest, all three deferred subjects, and offline readiness.",
+        "PASS: an open tab on the previous build announces the saved newer version rather than a failure.",
+        "PASS: a failed bank load still offers the unchanged study record for download.",
+        "PASS: offline browser regressions complete."
+      ]
+    }
+  ],
+  "required_suite_count": 7,
+  "additional_suites": [
+    "test_offline"
+  ],
+  "data_summary": {
+    "explanations": 4281,
+    "source_checked": 4166,
+    "partial": 115,
+    "unregistered": 40,
+    "concepts": 74,
+    "concept_partial": 8,
+    "upgraded": 6
+  },
+  "limits": [
+    "브라우저 검사는 로컬 Chromium이며 공개 HTTPS 실브라우저를 새로 확인하지 않았습니다.",
+    "실제 file:// 브라우저 탐색은 환경 정책으로 차단되어 기존 검사에서 SKIP했습니다. file-loader 단위 분기는 통과했습니다.",
+    "이전 작성자와 다른 현재 주 담당자의 출처 대조이며 이번에 새 독립 하위 에이전트·전문가 검수는 실행하지 않았습니다.",
+    "부분 확인 115개·미등록 40개·부분 개념 8개는 완료로 처리하지 않았습니다."
+  ],
+  "deployment": {
+    "status": "pending_push",
+    "verification_plan": "해당 커밋 Pages 성공 및 공개 13개 파일 SHA-256 대조"
+  }
+}

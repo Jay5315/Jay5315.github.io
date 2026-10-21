@@ -19,9 +19,9 @@
       "count": 1453
     },
     "cost": {
-      "url": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
-      "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
-      "bytes": 3691847,
+      "url": "assets/bank/explanations-cost-de0e563e397fddad.js",
+      "sha256": "a2932532d9b51a25f151e8457bf653874518cb589700b5aaeddb79a2f76668c0",
+      "bytes": 3697977,
       "count": 1379
     }
   },
@@ -127,5 +127,5 @@
     "M19": "cost",
     "M20": "cost"
   },
-  "build_id": "7c32d78274c8e512afd9"
+  "build_id": "c2c6836cefa7e54e230a"
 }

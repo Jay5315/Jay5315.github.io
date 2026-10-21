@@ -537,6 +537,19 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Reverse the latest source checks before all historical protection tests.
+        round27 = (cls.audit or {}).get('round27_sources')
+        if round27:
+            cls.stage_after['round27_sources'] = copy.deepcopy(cls.data)
+            cls.audit_after['round27_sources'] = copy.deepcopy(cls.audit)
+            index = {n['question_id']: i for i, n in enumerate(cls.data['items'])}
+            for record in round27['amendments']:
+                cls.data['items'][index[record['question_id']]] = copy.deepcopy(record['before'])
+            for ref in round27['new_source_refs']:
+                del cls.data['sources'][ref]
+            del cls.audit['round27_sources']
+        cls.before_round27_data = copy.deepcopy(cls.data)
+        cls.before_round27_audit = copy.deepcopy(cls.audit)
         # Newest stage: round-4 wording clean-up (double spaces, comma spacing, doubled periods).
         wording4 = (cls.audit or {}).get('wording_round4')
         if wording4:
@@ -1669,6 +1682,89 @@ class ExplanationTests(unittest.TestCase):
         changed=copy.deepcopy(concept);changed['examples'].append({'checks':[{'expr':'9//2','expected':4}]})
         with self.assertRaises(ValueError):protect_concept(concept,changed,concept['id'])
 
+
+    def test_round27_source_checks_preserve_all_older_content_and_bind_actual_evidence(self):
+        from apply_round27_sources import GROUP, PROPOSAL, VERIFIER, digest, validate_row
+        after = self.stage_after.get(GROUP)
+        if after is None:
+            self.skipTest('No round-27 source checks applied')
+        audit = self.audit_after[GROUP]
+        group = audit[GROUP]
+        proposal = json.loads((R/PROPOSAL).read_text())
+        self.assertEqual(digest(proposal),group['proposal_sha256'])
+        self.assertEqual(digest(self.before_round27_data),group['baseline_data_hash'])
+        self.assertEqual(digest(self.before_round27_audit),group['baseline_audit_hash'])
+        self.assertEqual(proposal['baseline_data_hash'],group['baseline_data_hash'])
+        self.assertEqual(proposal['baseline_audit_hash'],group['baseline_audit_hash'])
+        self.assertEqual({k:v for k,v in audit.items() if k!=GROUP},self.before_round27_audit)
+        self.assertEqual(group['actual_new_subagents'],0)
+        self.assertEqual(group['verifier'],VERIFIER)
+        self.assertEqual(group['amendments'],proposal['amendments'])
+        self.assertEqual(group['amended_count'],len(proposal['amendments']))
+        expected_ids={'2023-01-102','2026-07-102','2026-06-085',
+                      '2025-03-101','2024-06-101','2023-03-102'}
+        rows={r['question_id']:r for r in proposal['amendments']}
+        self.assertEqual(set(rows),expected_ids)
+        self.assertEqual(len(rows),len(proposal['amendments']))
+        before={n['question_id']:n for n in self.before_round27_data['items']}
+        current={n['question_id']:n for n in after['items']}
+        self.assertEqual(set(current),set(before))
+        self.assertEqual(len(current),4281)
+        for qid,n in before.items():
+            self.assertEqual(current[qid],rows[qid]['after'] if qid in rows else n,qid)
+        for qid,row in rows.items():
+            self.assertEqual(row['before'],before[qid])
+            validate_row(row,proposal['new_sources'])
+            original=next(r for r in self.audit_after['round26_followups']['round26_followups']['partial_inspections']
+                          if r['question_id']==qid)
+            self.assertEqual(row['previous_author'],original['author'])
+        self.assertEqual(Counter(n['review_status'] for n in before.values()),group['before_counts'])
+        self.assertEqual(Counter(n['review_status'] for n in current.values()),group['after_counts'])
+        self.assertEqual(group['after_counts'],{'source_checked':4166,'partial':115})
+        self.assertEqual(group['remaining_unregistered'],len(audit['review']))
+        self.assertEqual(len(audit['review']),40)
+        old_sources=self.before_round27_data['sources']
+        self.assertEqual({k:digest(v) for k,v in old_sources.items()},group['baseline_source_hashes'])
+        self.assertEqual(set(after['sources'])-set(old_sources),set(group['new_source_refs']))
+        self.assertEqual({k:v for k,v in after['sources'].items() if k not in old_sources},proposal['new_sources'])
+        for ref,source in old_sources.items():self.assertEqual(after['sources'][ref],source,ref)
+        self.assertEqual({k:v for k,v in self.before_round27_data.items() if k not in {'items','sources'}},
+                         {k:v for k,v in after.items() if k not in {'items','sources'}})
+        for file,expected in group['protected_file_sha256'].items():
+            self.assertEqual(hashlib.sha256((R/file).read_bytes()).hexdigest(),expected,file)
+        receipts={r['sha256']:r for r in proposal['actual_file_reads']}
+        for read in proposal['actual_file_reads']:
+            self.assertIs(read['actually_read'],True)
+            self.assertRegex(read['sha256'],r'^[0-9a-f]{64}$')
+            self.assertTrue(read['version'] and read['read_locator'])
+            self.assertNotIn('private_path',read)
+            if read.get('repo_path'):
+                self.assertEqual(hashlib.sha256((R/read['repo_path']).read_bytes()).hexdigest(),read['sha256'])
+        for row in proposal['amendments']:
+            for read in row['source_reads']:
+                self.assertIn(read['sha256'],receipts)
+                self.assertEqual(read['read_locator'],receipts[read['sha256']]['read_locator'])
+
+    def test_round27_rejects_stale_answers_missing_options_and_unproven_source_upgrades(self):
+        from apply_round27_sources import PROPOSAL, digest, validate_row
+        proposal=json.loads((R/PROPOSAL).read_text())
+        original=proposal['amendments'][0]
+        def rejected(mutate):
+            row=copy.deepcopy(original)
+            mutate(row)
+            # Rebind hashes so protected-field checks cannot rely on a stale hash.
+            row['after_hash']=digest(row['after'])
+            with self.assertRaises(ValueError):validate_row(row,proposal['new_sources'])
+        rejected(lambda r:r['after'].update(answers=[1]))
+        rejected(lambda r:r['after'].update(checks=[{'expr':'2+2','expected':4}]))
+        rejected(lambda r:r['after']['option_notes'][0].update(is_answer=True))
+        rejected(lambda r:r.update(resolved_unchecked_points=[]))
+        rejected(lambda r:r['resolved_unchecked_points'][0].update(locator='unread location'))
+        rejected(lambda r:r['after'].update(unchecked_points=['still unresolved']))
+        rejected(lambda r:r.update(source_reads=[]))
+        rejected(lambda r:r['source_reads'][0].update(sha256='0'*64))
+        rejected(lambda r:r.update(four_option_findings=r['four_option_findings'][:3]))
+        rejected(lambda r:r.update(review_method='independent agent review'))
 
     def test_round26_all_inspections_and_append_only_concept_evidence(self):
         from apply_round10_followups import digest, public_record
