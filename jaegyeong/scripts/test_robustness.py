@@ -154,7 +154,52 @@ def run_robustness(browser, url=URL):
     expect(page.locator('.quiz-top .sub')).to_contain_text('2 / 3')
     assert not errors, errors
     context.close()
-    return 'stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
+    # Preview keeps review notes (which name the official answer) inside the folded answer section.
+    context, page, errors = _context(browser, viewport={'width': 360, 'height': 800})
+    page.goto(url)
+    expect(page.locator('.subject-card').first).to_be_visible()
+    noted = page.evaluate("BANK_DATA.questions.find(q=>q.id==='2026-06-054')?'2026-06-054':null")
+    assert noted, 'expected question with a review note'
+    page.goto(url + '#library')
+    page.locator('#library-query').fill(noted)
+    page.locator('[data-action=preview]').first.click()
+    expect(page.locator('dialog .answer-dispute')).to_be_hidden()
+    page.locator('dialog details.instructions summary', has_text='공식 정답 확인').click()
+    expect(page.locator('dialog .answer-dispute')).to_be_visible()
+    page.keyboard.press('Escape')
+    # The largest text size reaches explanation/concept modals and pick reasons without double zoom or overflow.
+    page.evaluate("localStorage.setItem('chagok.size','xl')")
+    page.goto(url + '#concept/F02')
+    page.reload()
+    expect(page.locator('.note-page')).to_be_visible()
+    assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), 'concept page scrolls sideways at xl'
+    page.goto(url + '#library')
+    page.locator('#library-query').fill('')
+    page.locator('.library-card [data-action=explanation]').first.click()
+    page.evaluate('async()=>{await BANK_DATA_LOADER.all();}')
+    expect(page.locator('#modal-body>.explanation-body .note-summary')).to_be_visible()
+    assert abs(page.evaluate("document.querySelector('#modal-body>.explanation-body').currentCSSZoom") - 1.25) < 0.01
+    page.keyboard.press('Escape')
+    page.locator('.library-card [data-action=concept-modal]').first.click()
+    assert abs(page.evaluate("document.querySelector('#modal-body .note-zoom').currentCSSZoom") - 1.25) < 0.01
+    page.keyboard.press('Escape')
+    assert not errors, errors
+    context.close()
+
+    # Subject counts in the bookmark filter follow un-bookmarking.
+    context, page, errors = _context(browser)
+    page.goto(url)
+    expect(page.locator('.subject-card').first).to_be_visible()
+    pair = page.evaluate("['재무회계','세무회계'].map(s=>BANK_DATA.questions.find(q=>q.eligible&&q.representative&&q.subject===s).id)")
+    page.evaluate("([k,b])=>localStorage.setItem(k,JSON.stringify({version:1,results:{},bookmarks:b,sessions:[],active:null}))", [KEY, pair])
+    page.goto(url + '#bookmarks')
+    page.reload()
+    expect(page.locator('#library-subject option', has_text='세무회계 (1)')).to_have_count(1)
+    page.locator(f'.library-card [data-action=bookmark][data-id="{pair[1]}"]').click()
+    expect(page.locator('#library-subject option', has_text='세무회계 (0)')).to_have_count(1)
+    assert not errors, errors
+    context.close()
+    return 'preview hides review notes until the answer is opened, xl text in modals/pick reasons, no concept overflow at xl, live bookmark subject counts, stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
 
 
 if __name__ == '__main__':
