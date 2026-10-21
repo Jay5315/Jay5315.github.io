@@ -2,7 +2,7 @@
 
 **서비스:** https://jay5315.github.io/jaegyeong/
 
-**다른 AI가 이어서 작업할 때:** [HANDOFF.md](HANDOFF.md)를 먼저 읽으세요.
+**다른 AI가 이어서 작업할 때:** [GPT_HANDOFF.md](GPT_HANDOFF.md)(규칙·구조·절차·남은 일 요약)와 [HANDOFF.md](HANDOFF.md)(최신 이력)를 먼저 읽으세요.
 
 **개념 노트:** [파트별 핵심 개념·학습 팁](CONCEPT_NOTES_PLAN.md) — 74개 파트 작성, 출처 대조 66개·부분 확인 8개(미확인 범위 별도 표시), 20차에서18개 파트에 팁·자체 예제 추가
 
