@@ -150,6 +150,115 @@
     "ZIP 구조·로더는 변경하지 않아 ZIP을 다시 만들거나 ZIP 검사를 반복하지 않았습니다."
   ],
   "deployment": {
-    "status": "pending"
+    "status": "success",
+    "app_commit": "a524dc97012904aa89071de3614e4cc2a16cadc3",
+    "pages_run": {
+      "conclusion": "success",
+      "headSha": "a524dc97012904aa89071de3614e4cc2a16cadc3",
+      "status": "completed",
+      "url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/39533920700"
+    },
+    "public_assets": {
+      "checked_at": "2026-10-21T02:36:59.531340+00:00",
+      "tls_verification": true,
+      "checks": [
+        {
+          "file": "index.html",
+          "http_status": 200,
+          "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+          "local_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+          "matches_local": true
+        },
+        {
+          "file": "sw.js",
+          "http_status": 200,
+          "sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+          "local_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank-manifest.json",
+          "http_status": 200,
+          "sha256": "1941b2f6d5b2e2cfc119780b4235f5a116d8239e44a23ea0da7977cee0726a29",
+          "local_sha256": "1941b2f6d5b2e2cfc119780b4235f5a116d8239e44a23ea0da7977cee0726a29",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank-data.js",
+          "http_status": 200,
+          "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+          "local_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+          "matches_local": true
+        },
+        {
+          "file": "assets/app.js",
+          "http_status": 200,
+          "sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+          "local_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+          "matches_local": true
+        },
+        {
+          "file": "assets/app.css",
+          "http_status": 200,
+          "sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+          "local_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+          "matches_local": true
+        },
+        {
+          "file": "assets/data-loader.js",
+          "http_status": 200,
+          "sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+          "local_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+          "matches_local": true
+        },
+        {
+          "file": "assets/offline.js",
+          "http_status": 200,
+          "sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+          "local_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+          "matches_local": true
+        },
+        {
+          "file": "assets/icon.svg",
+          "http_status": 200,
+          "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+          "local_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank/core-4c27033b8c4ebfa4.js",
+          "http_status": 200,
+          "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+          "local_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+          "http_status": 200,
+          "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+          "local_sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+          "http_status": 200,
+          "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+          "local_sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+          "matches_local": true
+        },
+        {
+          "file": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+          "http_status": 200,
+          "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+          "local_sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+          "matches_local": true
+        }
+      ]
+    },
+    "target_branches": [
+      "main",
+      "claude/practical-allen-zjsicv"
+    ],
+    "note": "이 배포 확인 결과를 저장하는 후속 문서 커밋은 앱·데이터·테스트를 변경하지 않습니다."
   }
 }
