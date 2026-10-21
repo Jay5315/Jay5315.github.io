@@ -105,6 +105,7 @@ bash jaegyeong/scripts/run_checks.sh --zip    # ZIP 구조·런타임을 바꿨�
 
 ## 7. 남은 일·미검증
 
+- **실사용 추가 점검:** 로컬 PC 키보드·모바일 터치 화면 모사·새 브라우저로의 JSON 기록 이전이 통과했습니다. 범위·검사 자체의 초기 실패는 [reports/user-journey-validation.json](reports/user-journey-validation.json), 실제 기기에서 아직 확인할 순서와 빈 결과란은 [MANUAL_ACCEPTANCE.md](MANUAL_ACCEPTANCE.md)에 있습니다. `scripts/test_user_journey.py`로 별도 재현합니다. 실제 기기·화면낭독기 음성을 확인했다고 처리하지 않습니다.
 - **해설 미등록 40건**: 새 근거(원문 확인·출처)가 필요합니다. 추정으로 채우지 마세요. 목록은 `reports/explanation-expansion.json`의 `review`, 최근 조사 기록은 `reports/round25-*`, `round26-*`.
 - **미검증(환경 제한)**: 실제 `file://` 탐색(관리 브라우저 정책 차단), 공개 사이트 실브라우저 접속(프록시 인증서 신뢰 문제). 우회하지 말고 미검증으로 보고하세요. 로컬 브라우저·ZIP HTTP 실행·공개 파일 13개 해시 대조는 통과합니다.
 - **키보드·화면낭독기 관련 5건 수정 (2026-10-21)**: 최신 `HANDOFF.md`와 `reports/keyboard-accessibility-validation.json`을 확인하세요. 수정 전 코드에서 5개 회귀 검사 모두 실패했고, 수정 후 통과했습니다.

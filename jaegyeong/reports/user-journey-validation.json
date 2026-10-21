@@ -1,0 +1,277 @@
+{
+  "checked_at": "2026-10-21T12:42:35.025167+09:00",
+  "base_commit": "2471bea330416f49afc70083068f5f38d05e606d",
+  "scope": "실제 기기 확인의 사전 단계: 로컬 PC 키보드·모바일 터치 화면 모사·브라우저 사이 JSON 기록 이전",
+  "new_app_defects_found": [],
+  "automated_journey": {
+    "method": "Chromium; desktop keyboard and mobile touch emulation",
+    "origin": "loopback HTTP server",
+    "physical_devices": false,
+    "screen_reader_speech": "UNVERIFIED",
+    "external_fonts": "blocked for local-only test; installed fallback fonts",
+    "cases": [
+      "desktop keyboard: setup, bookmark, wrong grade, concept/return focus, resume, finish, correct replay removes wrong entry",
+      "JSON backup/restore across isolated browser contexts: all study fields, review schedule, active position, cancel safety, export round-trip",
+      "360px touch emulation: xl/dark, resume at 2/10, unobstructed grading, explanation, reload persistence, landscape resize",
+      "360/390/820px: exact exam search, subject filter, preview, xl concept page, TOC focus, light/dark; no document overflow"
+    ],
+    "browser_errors": [],
+    "screenshots": [
+      "desktop-home.png",
+      "desktop-home-viewport.png",
+      "desktop-graded.png",
+      "desktop-graded-viewport.png",
+      "desktop-result.png",
+      "desktop-result-viewport.png",
+      "mobile-settings-xl-dark.png",
+      "mobile-settings-xl-dark-viewport.png",
+      "mobile-graded-xl-dark.png",
+      "mobile-graded-xl-dark-viewport.png",
+      "mobile-landscape-xl-dark.png",
+      "mobile-landscape-xl-dark-viewport.png",
+      "mobile-home-xl-dark.png",
+      "mobile-home-xl-dark-viewport.png",
+      "preview-360-xl-dark.png",
+      "preview-360-xl-dark-viewport.png",
+      "concept-360-xl-dark.png",
+      "concept-360-xl-dark-viewport.png",
+      "concept-360-xl-light.png",
+      "concept-360-xl-light-viewport.png",
+      "preview-390-xl-dark.png",
+      "preview-390-xl-dark-viewport.png",
+      "concept-390-xl-dark.png",
+      "concept-390-xl-dark-viewport.png",
+      "concept-390-xl-light.png",
+      "concept-390-xl-light-viewport.png",
+      "preview-820-xl-dark.png",
+      "preview-820-xl-dark-viewport.png",
+      "concept-820-xl-dark.png",
+      "concept-820-xl-dark-viewport.png",
+      "concept-820-xl-light.png",
+      "concept-820-xl-light-viewport.png"
+    ],
+    "result": "PASS"
+  },
+  "command": "TEST_ARTIFACT_DIR=<output> jaegyeong/.venv/bin/python jaegyeong/scripts/test_user_journey.py",
+  "manual_screenshot_inspection": [
+    "desktop-graded.png",
+    "mobile-graded-xl-dark-viewport.png",
+    "preview-360-xl-dark.png",
+    "concept-390-xl-light-viewport.png",
+    "mobile-landscape-xl-dark-viewport.png"
+  ],
+  "screenshot_artifacts": "화면 16개에 전체·뷰포트 캡처 각 1개, 총 32개. Git 제외. 스크립트 기본 결과 위치 _artifacts/user-journey/.",
+  "public_browser_probe": {
+    "checked_at": "2026-10-21T03:34:05.778560+00:00",
+    "url": "https://jay5315.github.io/jaegyeong/",
+    "tls_verification": true,
+    "physical_device": false,
+    "status": "UNVERIFIED",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://jay5315.github.io/jaegyeong/\nCall log:\n  - navigating to \"https://jay5315.github.io/jaegyeong/\", waiting until \"domcontentloaded\"\n",
+    "browser_errors": []
+  },
+  "public_asset_checks": {
+    "tls_verification": true,
+    "matches": 13,
+    "total": 13,
+    "files": [
+      {
+        "file": "index.html",
+        "http_status": 200,
+        "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "local_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "matches_local": true
+      },
+      {
+        "file": "sw.js",
+        "http_status": 200,
+        "sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "local_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank-manifest.json",
+        "http_status": 200,
+        "sha256": "1941b2f6d5b2e2cfc119780b4235f5a116d8239e44a23ea0da7977cee0726a29",
+        "local_sha256": "1941b2f6d5b2e2cfc119780b4235f5a116d8239e44a23ea0da7977cee0726a29",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank-data.js",
+        "http_status": 200,
+        "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "local_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "matches_local": true
+      },
+      {
+        "file": "assets/app.js",
+        "http_status": 200,
+        "sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "local_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "matches_local": true
+      },
+      {
+        "file": "assets/app.css",
+        "http_status": 200,
+        "sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "local_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "matches_local": true
+      },
+      {
+        "file": "assets/data-loader.js",
+        "http_status": 200,
+        "sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "local_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "matches_local": true
+      },
+      {
+        "file": "assets/offline.js",
+        "http_status": 200,
+        "sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "local_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "matches_local": true
+      },
+      {
+        "file": "assets/icon.svg",
+        "http_status": 200,
+        "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "local_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/core-4c27033b8c4ebfa4.js",
+        "http_status": 200,
+        "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "local_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+        "http_status": 200,
+        "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "local_sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+        "http_status": 200,
+        "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "local_sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "matches_local": true
+      },
+      {
+        "file": "assets/bank/explanations-cost-f6fc11b9cab6ab81.js",
+        "http_status": 200,
+        "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+        "local_sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+        "matches_local": true
+      }
+    ]
+  },
+  "harness_failures_and_corrections": [
+    {
+      "failure": "명시적 프록시로 localhost를 열어 Domain forbidden",
+      "correction": "로컬 검사는 임시 루프백 HTTP 서버에 정상 접속하며 외부 요청을 차단합니다. 공개 사이트 검사는 세션 프록시·TLS 검증을 유지했습니다.",
+      "app_change": false
+    },
+    {
+      "failure": "개념 버튼·복원 취소의 복수 요소 strict locator 오류",
+      "correction": "본문의 직접 자식 개념 버튼과 이름이 취소인 버튼으로 검사 대상을 명확히 했습니다.",
+      "app_change": false
+    },
+    {
+      "failure": "이 문제 풀기 직후 해시 라우팅 완료 전에 숫자 단축키를 보내 채점 버튼에 도달하지 못함",
+      "correction": "실제 문제 카드 표시를 기다린 후 키 입력을 시작합니다.",
+      "app_change": false
+    }
+  ],
+  "integrity": {
+    "root_site_unchanged": true,
+    "runtime_and_data_unchanged": {
+      "index.html": {
+        "sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "unchanged": true
+      },
+      "sw.js": {
+        "sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "unchanged": true
+      },
+      "assets/bank-manifest.json": {
+        "sha256": "1941b2f6d5b2e2cfc119780b4235f5a116d8239e44a23ea0da7977cee0726a29",
+        "unchanged": true
+      },
+      "assets/bank-data.js": {
+        "sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "unchanged": true
+      },
+      "assets/app.js": {
+        "sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "unchanged": true
+      },
+      "assets/app.css": {
+        "sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "unchanged": true
+      },
+      "assets/data-loader.js": {
+        "sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "unchanged": true
+      },
+      "assets/offline.js": {
+        "sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "unchanged": true
+      },
+      "assets/icon.svg": {
+        "sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "unchanged": true
+      },
+      "assets/bank/core-4c27033b8c4ebfa4.js": {
+        "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "unchanged": true
+      },
+      "assets/bank/explanations-finance-8024d0dec9102ff0.js": {
+        "sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "unchanged": true
+      },
+      "assets/bank/explanations-tax-abcdd69587ae437a.js": {
+        "sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "unchanged": true
+      },
+      "assets/bank/explanations-cost-f6fc11b9cab6ab81.js": {
+        "sha256": "8143135a9f8244fd62896f743b63a2d855e047f8c97b1575d1d17daf75aa464e",
+        "unchanged": true
+      },
+      "data/questions.json": {
+        "sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "unchanged": true
+      },
+      "data/explanations.json": {
+        "sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "unchanged": true
+      },
+      "data/concept-notes.json": {
+        "sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "unchanged": true
+      },
+      "reports/explanation-expansion.json": {
+        "sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "unchanged": true
+      },
+      "reports/ui-changes.json": {
+        "sha256": "82db8d1139d3f00e6d487b467e3c32fed5bb4afa3f244c5ac25bd5fc7980dbc7",
+        "unchanged": true
+      }
+    },
+    "study_key": "chagok.study.v1",
+    "study_schema_unchanged": true
+  },
+  "test_policy": "런타임·데이터·기존 테스트 변경이 없어 직전 통과한 필수 7개+오프라인 검사는 반복하지 않았습니다. 새 통합 검사는 전체·뷰포트 캡처를 포함한 최종본으로 PASS. Python 문법·git diff 검사도 수행합니다.",
+  "limitations": [
+    "실제 PC·휴대폰 하드웨어, iOS Safari·Android Chrome의 OS 키보드·다운로드 화면은 미검증입니다.",
+    "NVDA·VoiceOver·TalkBack 음성 출력은 미검증입니다.",
+    "공개 HTTPS의 Chromium 탐색은 ERR_CERT_AUTHORITY_INVALID로 실패해 미검증입니다. TLS 검증·환경 정책을 변경하지 않았습니다.",
+    "로컬 검사는 서비스 워커를 차단하고 외부 폰트 대신 설치된 대체 글꼴을 사용합니다. 오프라인 저장·CDN 폰트 검사가 아닙니다.",
+    "실제 file:// 실행은 이번 범위 밖이며 기존 관리 정책 제한으로 미검증입니다."
+  ],
+  "manual_followup": "MANUAL_ACCEPTANCE.md의 빈 체크박스를 실제 기기·화면낭독기로 확인하고 기종·버전·재현 순서를 기록합니다.",
+  "deployment": "앱 파일은 기존 배포와 같습니다. 이 검증 문서·스크립트 저장 커밋의 Pages 결과는 GitHub Actions에서 확인합니다."
+}

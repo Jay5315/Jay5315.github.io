@@ -84,6 +84,8 @@ python jaegyeong/scripts/build_bank.py --reextract
 
 ## 검증
 
+실제 휴대폰·PC·화면낭독기에서 확인할 순서는 [실제 기기 최종 점검](MANUAL_ACCEPTANCE.md)에 있습니다. 로컬 키보드·터치 화면 모사·기록 이전 통합 검사는 `jaegyeong/.venv/bin/python jaegyeong/scripts/test_user_journey.py`로 별도 실행합니다. 실제 기기 검증과 자동 검증은 구분합니다.
+
 ```sh
 python jaegyeong/scripts/test_bank.py
 python jaegyeong/scripts/test_parts.py
