@@ -1,0 +1,155 @@
+{
+  "checked_at": "2026-10-21T02:35:51.966676+00:00",
+  "base_commit": "d10294bf26554e2f82d2488024f87f8aadeb93e4",
+  "scope": "인수인계 5개 키보드·화면낭독기 관련 버그 수정과 회귀 검사",
+  "baseline_regressions": [
+    {
+      "case": "groups",
+      "result": "FAIL",
+      "error": "[data-action=count][data-count=\"20\"]"
+    },
+    {
+      "case": "modal",
+      "result": "FAIL",
+      "error": "modal replacement lost focus"
+    },
+    {
+      "case": "bookmark",
+      "result": "FAIL",
+      "error": "Locator expected to be focused\nActual value: inactive \nCall log:\n  - Expect \"to_be_focused\" with timeout 2000ms\n  - waiting for locator(\"#library-results\")\n    21 × locator resolved to <div id=\"library-results\">…</div>\n       - unexpected value \"inactive\"\n\nAria snapshot:\n- paragraph: 0개 문제 · 최근에 담은 순\n- heading \"아직 저장한 문제가 없어요\" [level=2]\n- paragraph: 문제의 별표를 눌러 나만의 복습 목록을 만들어 보세요.\n- button \"학습 시작하기\""
+    },
+    {
+      "case": "grading",
+      "result": "FAIL",
+      "error": "Locator expected to have count '1'\nActual value: 0 \nCall log:\n  - Expect \"to_have_count\" with timeout 2000ms\n  - waiting for locator(\"#study-announcement\")\n    21 × locator resolved to 0 elements\n       - unexpected value \"0\"\n"
+    },
+    {
+      "case": "search",
+      "result": "FAIL",
+      "error": "Locator expected to have count '1'\nActual value: 0 \nCall log:\n  - Expect \"to_have_count\" with timeout 2000ms\n  - waiting for locator(\"#study-announcement\")\n    21 × locator resolved to 0 elements\n       - unexpected value \"0\"\n"
+    }
+  ],
+  "changes": [
+    "모든 dataset 값을 이용한 정확한 버튼 포커스 복원",
+    "열린 대화상자 내용 교체 시 선택된 탭 또는 첫 조작 요소로 포커스 이동",
+    "대화상자 닫기 시 사라진 열기 버튼 대신 결과 목록·본문으로 포커스 복귀",
+    "지속적인 공용 라이브 영역에서 채점할 때만 1회 알림; 같은 문구의 다음 채점도 알림",
+    "검색·과목·파트·해설 필터 결과 수 350ms 지연 알림; 한글 조합 대기와 화면 이동 취소",
+    "Enter 단축키 안내에 버튼 포커스 예외 명시"
+  ],
+  "accessibility_regressions": {
+    "result": "PASS",
+    "output": "PASS: keyboard groups/modal replacement/bookmark return focus; persistent grade-once and debounced result live regions",
+    "additional_cases": [
+      "개념 탭 전환",
+      "백업 복원 확인창",
+      "살아 있는 열기 버튼으로 정상 복귀",
+      "해설 지연 도착 뒤 재알림 없음",
+      "표시 방식 전환 뒤 재알림 없음",
+      "다른 창 갱신 뒤 재알림 없음",
+      "동일 문구 다음 채점",
+      "오답 안내",
+      "한글 조합 중 대기",
+      "화면 이동 시 검색 알림 취소"
+    ],
+    "method": "로컬 Chromium 실제 Enter·Escape·문자 키 입력, activeElement 및 DOM MutationObserver 검증"
+  },
+  "tests": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "summary": "OK"
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "summary": "OK"
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "summary": "OK"
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "summary": "OK"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "summary": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "summary": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "summary": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "suite": "test_offline",
+      "exit_code": 0,
+      "summary": "PASS: offline browser regressions complete."
+    }
+  ],
+  "test_runner": "bash jaegyeong/scripts/run_checks.sh",
+  "test_runner_output": "== test_bank rc=0 OK\n== test_parts rc=0 OK\n== test_concepts rc=0 OK\n== test_explanations rc=0 OK\n== test_app rc=0 PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,\n== test_browser rc=0 PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,\n== test_explanations_app rc=0 PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul\n== test_offline rc=0 PASS: offline browser regressions complete.\n",
+  "integrity": {
+    "files": {
+      "index.html": {
+        "before_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "after_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "unchanged": true
+      },
+      "assets/bank-data.js": {
+        "before_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "after_sha256": "54d6316d2e32a866eb208dc1222903ce7cc945cb09245192a2d83afbb549bb11",
+        "unchanged": true
+      },
+      "data/questions.json": {
+        "before_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "after_sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "unchanged": true
+      },
+      "data/entries.json": {
+        "before_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "after_sha256": "91d873f5aa6529fc37a525e04b4c6cd155e34fd2c744ebf36b3ba7d35671c9a4",
+        "unchanged": true
+      },
+      "data/explanations.json": {
+        "before_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "after_sha256": "fe7656014bb78567612df76f76a9025457ceded982feca83e1850188a0653238",
+        "unchanged": true
+      },
+      "data/concept-notes.json": {
+        "before_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "after_sha256": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+        "unchanged": true
+      },
+      "reports/explanation-expansion.json": {
+        "before_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "after_sha256": "ebc60f71f94d56daeb00180f6f952e41e103e924daf1d89b1600ca1c166d4c3e",
+        "unchanged": true
+      }
+    },
+    "root_site_unchanged": true,
+    "question_ids_and_official_answers_unchanged": true,
+    "study_key": "chagok.study.v1",
+    "study_schema_unchanged": true,
+    "ui_hash_chain": "reports/ui-changes.json",
+    "manifest_regenerated": true
+  },
+  "limitations": [
+    "NVDA·VoiceOver 등 실제 화면낭독기 음성 출력은 미검증입니다.",
+    "실제 file:// 탐색·공개 사이트 실브라우저 접속은 기존 환경 제한으로 미검증입니다.",
+    "해설 미등록 40건은 새로운 원문·근거가 필요하여 이번 UI 수정 대상에 포함하지 않았습니다.",
+    "ZIP 구조·로더는 변경하지 않아 ZIP을 다시 만들거나 ZIP 검사를 반복하지 않았습니다."
+  ],
+  "deployment": {
+    "status": "pending"
+  }
+}

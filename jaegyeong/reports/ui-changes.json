@@ -662,6 +662,26 @@
           "after": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6"
         }
       }
+    },
+    {
+      "date": "2026-10-21",
+      "summary": "분할 버튼·대화상자 포커스 복원, 채점 1회 알림과 검색 결과 지연 알림, Enter 안내 정정",
+      "files": {
+        "assets/app.js": {
+          "before": "a91cb5da7279791d39c28aab70ebe5622fe573de4d0653ca9f868223135e7988",
+          "after": "96f29cb4f03e3f9df8176cdce2137eb2915cf187a2786f3fb14e17e953497024"
+        }
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "summary": "채점 시각 피드백의 중복 status 역할 제거 및 Enter 안내 보완",
+      "files": {
+        "assets/app.js": {
+          "before": "96f29cb4f03e3f9df8176cdce2137eb2915cf187a2786f3fb14e17e953497024",
+          "after": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b"
+        }
+      }
     }
   ]
 }

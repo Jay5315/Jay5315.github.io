@@ -35,8 +35,8 @@
       "bytes": 57514
     },
     "assets/app.js": {
-      "sha256": "a91cb5da7279791d39c28aab70ebe5622fe573de4d0653ca9f868223135e7988",
-      "bytes": 90311
+      "sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+      "bytes": 92263
     },
     "assets/data-loader.js": {
       "sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
@@ -127,5 +127,5 @@
     "M19": "cost",
     "M20": "cost"
   },
-  "build_id": "b59b57429492ce28663d"
+  "build_id": "7c32d78274c8e512afd9"
 }

@@ -5,6 +5,7 @@ Each check uses its own browser context so saved learner history in other tests 
 import json
 import os
 import shutil
+import sys
 from playwright.sync_api import expect, sync_playwright
 
 KEY = 'chagok.study.v1'
@@ -22,6 +23,192 @@ def _context(browser, **kw):
 def _storage_event(page):
     # The same event another tab's save would deliver.
     page.evaluate("k=>dispatchEvent(new StorageEvent('storage',{key:k,newValue:localStorage.getItem(k)}))", KEY)
+
+
+def run_accessibility(browser, url=URL, only=None):
+    """Actual keyboard focus plus persistent live-region mutations, not spoken SR output."""
+    def ready(page, route='home'):
+        page.goto(url + '#' + route)
+        expect(page.locator('body')).to_have_attribute('data-route', route)
+
+    def activate(page, selector):
+        page.locator(selector).focus()
+        page.keyboard.press('Enter')
+
+    def seed(page, ids, bookmarks=None):
+        page.evaluate("""([k,ids,bookmarks])=>localStorage.setItem(k,JSON.stringify({version:1,
+          results:{},bookmarks,sessions:[],active:{id:'a11y',title:'a11y',ids,answers:{},
+          index:0,startedAt:Date.now(),finishedAt:null}}))""", [KEY, ids, bookmarks or []])
+        page.reload()
+        expect(page.locator('body')).to_have_attribute('data-route', 'quiz')
+
+    def groups(page):
+        ready(page)
+        for selector, attr, value in [
+            ('[data-action=count][data-count="20"]', 'data-count', '20'),
+            ('[data-action=subject][data-subject="세무회계"]', 'data-subject', '세무회계'),
+        ]:
+            activate(page, selector)
+            assert page.evaluate('(a)=>document.activeElement.getAttribute(a)', attr) == value, selector
+            page.keyboard.press('Enter')
+            assert page.evaluate('(a)=>document.activeElement.getAttribute(a)', attr) == value, selector
+        expect(page.locator('[data-action=count][data-count="20"]')).to_have_attribute('aria-pressed', 'true')
+        ready(page, 'concepts')
+        selector = '[data-action=concept-subject][data-subject="원가관리회계"]'
+        activate(page, selector)
+        expect(page.locator(selector)).to_be_focused()
+        page.keyboard.press('Enter')
+        expect(page.locator(selector)).to_have_attribute('aria-pressed', 'true')
+        ready(page, 'quiz')  # Seed a real question with both display modes.
+        ids = page.evaluate('BANK_DATA.questions.filter(q=>q.eligible&&!q.originalOnly).slice(0,1).map(q=>q.id)')
+        seed(page, ids)
+        activate(page, '[data-action=question-view][data-view=image]')
+        expect(page.locator('[data-action=question-view][data-view=image]')).to_be_focused()
+        page.keyboard.press('Enter')
+        expect(page.locator('[data-action=question-view][data-view=image]')).to_have_attribute('aria-pressed', 'true')
+        # Numeric question navigation has the same shared action name.
+        activate(page, '[data-action=choose][data-answer="2"]')
+        expect(page.locator('[data-action=choose][data-answer="2"]')).to_be_focused()
+
+    def modal_replace(page):
+        ready(page, 'library')
+        activate(page, '.library-card:first-child [data-action=preview]')
+        activate(page, '#modal-body [data-action=concept-modal]')
+        assert page.evaluate('document.querySelector("#modal-body").contains(document.activeElement)'), 'modal replacement lost focus'
+        # Find a question with multiple concept tabs through real preview UI.
+        page.keyboard.press('Escape')
+        candidates = page.evaluate("BANK_DATA.questions.filter(q=>q.eligible&&q.secondary?.length).slice(0,30).map(q=>q.id)")
+        for qid in candidates:
+            page.locator('#library-query').fill(qid)
+            activate(page, '.library-card:first-child [data-action=concept-modal]')
+            if page.locator('#modal-body [role=tab]').count() > 1:
+                tab = page.locator('#modal-body [role=tab]').nth(1)
+                tab.focus()
+                page.keyboard.press('Enter')
+                expect(page.locator('#modal-body [role=tab][aria-selected=true]')).to_be_focused()
+                break
+            page.keyboard.press('Escape')
+        else:
+            raise AssertionError('multi-concept fixture not found')
+        page.keyboard.press('Escape')
+        activate(page, '.avatar')
+        page.locator('#backup-file').set_input_files({'name':'backup.json','mimeType':'application/json',
+            'buffer':json.dumps({'version':1,'results':{},'bookmarks':[],'sessions':[],'active':None}).encode()})
+        expect(page.locator('#confirm-import')).to_be_visible()
+        assert page.evaluate('document.querySelector("#modal-body").contains(document.activeElement)'), 'import confirmation lost focus'
+
+    def bookmark_close(page):
+        ready(page)
+        ids = page.evaluate('BANK_DATA.questions.filter(q=>q.eligible&&q.representative).slice(0,1).map(q=>q.id)')
+        page.evaluate('([k,ids])=>localStorage.setItem(k,JSON.stringify({version:1,results:{},bookmarks:ids,sessions:[],active:null}))', [KEY, ids])
+        ready(page, 'bookmarks')
+        page.reload()
+        activate(page, '.library-card:first-child [data-action=preview]')
+        activate(page, '#modal-body [data-action=bookmark]')
+        page.keyboard.press('Escape')
+        expect(page.locator('#library-results')).to_be_focused()
+        expect(page.locator('.library-card')).to_have_count(0)
+        # A surviving opener keeps the browser's normal return focus.
+        ready(page, 'library')
+        opener = '.library-card:first-child [data-action=preview]'
+        activate(page, opener)
+        page.keyboard.press('Escape')
+        expect(page.locator(opener)).to_be_focused()
+
+    def grading_live(page):
+        ready(page)
+        ids = page.evaluate("""()=>{const qs=BANK_DATA.questions.filter(q=>q.eligible&&!q.originalOnly);
+          return [...qs.filter(q=>q.answers.includes(1)).slice(0,2),qs.find(q=>!q.answers.includes(1))].map(q=>q.id);}""")
+        ready(page, 'quiz')
+        seed(page, ids)
+        # Persist outside #main, empty before grading, with one mutation per grade.
+        expect(page.locator('#study-announcement')).to_have_count(1)
+        assert page.evaluate('!document.querySelector("#main").contains(document.querySelector("#study-announcement"))')
+        page.evaluate("""()=>{window.liveNode=document.querySelector('#study-announcement');window.liveMessages=[];
+          new MutationObserver(()=>{if(liveNode.textContent)liveMessages.push(liveNode.textContent);})
+            .observe(liveNode,{childList:true,characterData:true,subtree:true});}""")
+        # Delay body arrival to prove it never announces the same grade twice.
+        held = []
+        page.route('**/assets/bank/explanations-*.js', lambda route: held.append(route))
+        activate(page, '[data-action=choose][data-answer="1"]')
+        activate(page, '[data-action=grade]')
+        expect(page.locator('#study-announcement')).to_contain_text('공식 정답')
+        expect(page.locator('#study-announcement')).to_have_attribute('aria-live', 'polite')
+        assert page.evaluate('liveMessages.length') == 1
+        expect(page.locator('.feedback[role=status]')).to_have_count(0)
+        page.wait_for_function('document.querySelector("[data-explanation-id]")')
+        # Pump pending request events, then release the subject script.
+        page.wait_for_timeout(100)
+        assert held, 'explanation request was not intercepted'
+        for request in held:
+            request.fulfill(response=request.fetch())
+        expect(page.locator('.pick-reasons')).to_be_visible()
+        activate(page, '[data-action=question-view][data-view=image]')
+        _storage_event(page)
+        assert page.evaluate('document.querySelector("#study-announcement")===liveNode&&liveMessages.length===1')
+        # A second grade with identical wording still makes a fresh announcement.
+        activate(page, '[data-action=next]')
+        activate(page, '[data-action=choose][data-answer="1"]')
+        activate(page, '[data-action=grade]')
+        expect(page.locator('.feedback')).to_be_visible()
+        page.wait_for_function('liveMessages.length===2')
+        assert page.evaluate('liveMessages[0]===liveMessages[1]'), 'same-answer fixture must repeat identical feedback'
+        activate(page, '[data-action=next]')
+        activate(page, '[data-action=choose][data-answer="1"]')
+        activate(page, '[data-action=grade]')
+        page.wait_for_function('liveMessages.length===3')
+        expect(page.locator('#study-announcement')).to_contain_text('내가 고른 답 ①')
+        expect(page.locator('.feedback.wrong')).to_be_visible()
+
+    def search_live(page):
+        ready(page, 'library')
+        expect(page.locator('#study-announcement')).to_have_count(1)
+        page.evaluate("""()=>{window.liveMessages=[];window.liveNode=document.querySelector('#study-announcement');
+          new MutationObserver(()=>{if(liveNode.textContent)liveMessages.push(liveNode.textContent);})
+            .observe(liveNode,{childList:true,characterData:true,subtree:true});}""")
+        page.locator('#library-query').focus()
+        page.keyboard.type('2024-11', delay=20)
+        page.wait_for_function('liveMessages.length===1')
+        expected = page.locator('#library-results .section-head .sub').inner_text().split('·')[0].strip()
+        expect(page.locator('#study-announcement')).to_contain_text(expected)
+        expect(page.locator('#library-query')).to_be_focused()
+        page.locator('#library-subject').select_option('세무회계')
+        page.wait_for_function('liveMessages.length===2')
+        expected = page.locator('#library-results .section-head .sub').inner_text().split('·')[0].strip()
+        expect(page.locator('#study-announcement')).to_contain_text(expected)
+        page.locator('#library-part').select_option('V01')
+        page.wait_for_function('liveMessages.length===3')
+        page.locator('#library-explanations').check()
+        page.wait_for_function('liveMessages.length===4')
+        page.locator('#library-query').fill('아무결과없는검색XYZ')
+        page.wait_for_function('liveMessages.length===5')
+        expect(page.locator('#study-announcement')).to_contain_text('0개 문제')
+        # IME composition updates the list but waits until the syllable is committed.
+        page.locator('#library-query').evaluate("""e=>{e.value='재고';
+          e.dispatchEvent(new InputEvent('input',{bubbles:true,isComposing:true}));}""")
+        page.wait_for_timeout(500)
+        assert page.evaluate('liveMessages.length') == 5
+        page.locator('#library-query').evaluate("e=>e.dispatchEvent(new CompositionEvent('compositionend',{bubbles:true}))")
+        page.wait_for_function('liveMessages.length===6')
+        # Navigating away cancels pending result announcements.
+        page.locator('#library-query').fill('재고')
+        page.locator('.brand').click()
+        expect(page.locator('.home-head')).to_be_visible()
+        page.wait_for_timeout(500)
+        assert page.evaluate('liveMessages.length') == 6
+
+    cases = {'groups':groups, 'modal':modal_replace, 'bookmark':bookmark_close,
+             'grading':grading_live, 'search':search_live}
+    for name, check in cases.items():
+        if only and name != only:
+            continue
+        context, page, errors = _context(browser)
+        try:
+            check(page)
+            assert not errors, errors
+        finally:
+            context.close()
+    return 'keyboard groups/modal replacement/bookmark return focus; persistent grade-once and debounced result live regions'
 
 
 def run_robustness(browser, url=URL):
@@ -199,13 +386,15 @@ def run_robustness(browser, url=URL):
     expect(page.locator('#library-subject option', has_text='세무회계 (0)')).to_have_count(1)
     assert not errors, errors
     context.close()
-    return 'preview hides review notes until the answer is opened, xl text in modals/pick reasons, no concept overflow at xl, live bookmark subject counts, stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
+    accessibility = run_accessibility(browser, url)
+    return accessibility + '; preview hides review notes until the answer is opened, xl text in modals/pick reasons, no concept overflow at xl, live bookmark subject counts, stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
 
 
 if __name__ == '__main__':
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True, executable_path=shutil.which('chromium'))
         try:
-            print('PASS: ' + run_robustness(browser))
+            print('PASS: ' + (run_accessibility(browser, only=sys.argv[2] if len(sys.argv)>2 else None)
+                             if '--accessibility' in sys.argv else run_robustness(browser)))
         finally:
             browser.close()
