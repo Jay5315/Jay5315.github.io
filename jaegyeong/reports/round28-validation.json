@@ -80,11 +80,106 @@
   },
   "protected_fields_and_paths": "question IDs, official answers, is_answer, original checks, chagok.study.v1, questions/entries/taxonomy/concepts, root site, app.js/app.css, jaegyeong/index.html, MANUAL_ACCEPTANCE.md unchanged",
   "actual_distinct_subagents_this_work_order": 6,
-  "deployment": "pending task-3 commit/main push",
+  "deployment": {
+    "pages_run": 40244819125,
+    "pages_run_url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/40244819125",
+    "pages_conclusion": "success",
+    "checked_at_utc": "2026-10-25T23:30:07.849609+00:00",
+    "commit": "cb4d34fdaed0aa99a03b11c1c704c2c13e80ca73",
+    "tls_verification": true,
+    "all_match": true,
+    "file_count": 13,
+    "files": [
+      {
+        "path": "index.html",
+        "expected_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "public_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "match": true
+      },
+      {
+        "path": "sw.js",
+        "expected_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "public_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "match": true
+      },
+      {
+        "path": "assets/bank-manifest.json",
+        "expected_sha256": "f92d251408fa3357b73ee27a37f6a724d46a0cc0bee93d715616a7d6c81192ac",
+        "public_sha256": "f92d251408fa3357b73ee27a37f6a724d46a0cc0bee93d715616a7d6c81192ac",
+        "match": true
+      },
+      {
+        "path": "assets/bank-data.js",
+        "expected_sha256": "1d3dc8bf9e83104911e404080d7af01c7e9744424646afa228e84f4ba697d78b",
+        "public_sha256": "1d3dc8bf9e83104911e404080d7af01c7e9744424646afa228e84f4ba697d78b",
+        "match": true
+      },
+      {
+        "path": "assets/app.js",
+        "expected_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "public_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "match": true
+      },
+      {
+        "path": "assets/app.css",
+        "expected_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "public_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "match": true
+      },
+      {
+        "path": "assets/data-loader.js",
+        "expected_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "public_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "match": true
+      },
+      {
+        "path": "assets/offline.js",
+        "expected_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "public_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "match": true
+      },
+      {
+        "path": "assets/icon.svg",
+        "expected_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "public_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "match": true
+      },
+      {
+        "path": "assets/bank/core-4c27033b8c4ebfa4.js",
+        "expected_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "public_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "match": true
+      },
+      {
+        "path": "assets/bank/explanations-finance-1bbca50e9cd83a27.js",
+        "expected_sha256": "2164420b9ce213c0f57733b431a6ed03b3d4656491d5e68dbd68f51d3744d02d",
+        "public_sha256": "2164420b9ce213c0f57733b431a6ed03b3d4656491d5e68dbd68f51d3744d02d",
+        "match": true
+      },
+      {
+        "path": "assets/bank/explanations-tax-bc3aa3bf66dac7c1.js",
+        "expected_sha256": "91fb73fc0ce3394d52f73380c5956aeff5126cb9cf0ebbebeb54e12f5a7a0d1a",
+        "public_sha256": "91fb73fc0ce3394d52f73380c5956aeff5126cb9cf0ebbebeb54e12f5a7a0d1a",
+        "match": true
+      },
+      {
+        "path": "assets/bank/explanations-cost-4b67afd60ffee633.js",
+        "expected_sha256": "cf7243c7a5d9783dea015fdde5f4dc596ca39ff5081f708c94f79c9fc20491af",
+        "public_sha256": "cf7243c7a5d9783dea015fdde5f4dc596ca39ff5081f708c94f79c9fc20491af",
+        "match": true
+      }
+    ]
+  },
   "limits": [
     "physical devices and screen-reader speech remain unverified",
     "entire videos/audio and precise publication edition not verified",
     "only explicitly recorded source scopes were reread; 115 grouping is not 115 newly confirmed explanations",
     "actual file:// browser restriction remains; ZIP HTTP/unit cases passed"
-  ]
+  ],
+  "work_order_commits": {
+    "task1": "9d78e5c",
+    "task2": "c5b27a4",
+    "task3": "cb4d34f"
+  },
+  "supervisor_review": "Claude pending; this report does not grant supervisor approval"
 }
