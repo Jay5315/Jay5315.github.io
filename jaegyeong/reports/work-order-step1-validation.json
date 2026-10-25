@@ -1,0 +1,76 @@
+{
+  "task": 1,
+  "baseline_commit": "b8999dc",
+  "tests": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "suite": "test_offline",
+      "exit_code": 0,
+      "output": "PASS: offline browser regressions complete."
+    }
+  ],
+  "run_checks_log_sha256": "1a434a513602a07752b4a41803aa435e8a3be15340bfd6b9314dbab7d7223679",
+  "new_regressions": {
+    "before": "2 errors: independent report absent (FileNotFoundError)",
+    "after": "2 PASS; integrated into test_explanations",
+    "negative_cases": [
+      "same author",
+      "missing transcription",
+      "missing question"
+    ]
+  },
+  "independent_verdicts": {
+    "pass": 6,
+    "disagree": 0,
+    "unverified": 0
+  },
+  "frame_count": 22,
+  "file_sha256_preflight_count": 58,
+  "integration_initial_errors": [
+    "PDF file and rendered PNG were initially conflated by the temporary integrator; corrected using original repo path and separate render hash",
+    "step/number/step_number aliases normalized before validation"
+  ],
+  "runtime_changed": false,
+  "data_changed": false,
+  "zip_rerun": "not required: runtime/ZIP unchanged",
+  "deployment": "pending task-unit commit and push",
+  "remaining": [
+    "entire video/audio not watched",
+    "publication edition not confirmed",
+    "physical devices and screen-reader speech not checked"
+  ]
+}

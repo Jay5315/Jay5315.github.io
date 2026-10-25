@@ -1,0 +1,1512 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-25",
+  "baseline_commit": "b8999dc",
+  "original_author": "/root",
+  "actual_independent_reviewers": 3,
+  "method": "원작성자가 아닌 새 하위 에이전트 3명의 독립 판독. 주 담당자는 결과의 파일 해시·구조·현재 데이터 결속만 통합 검증했습니다.",
+  "frame_images_committed": false,
+  "reviews": [
+    {
+      "reviewer": "/root/r27_engineering_review",
+      "submission_sha256": "1639743a9174c5928d9579adcf9b9b1c50fc4852ce8ad050e4456480f893177f",
+      "review_method": "new_separate_agent_review",
+      "source_reads": [
+        {
+          "evidence_id": "video-est",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "video",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/08-1.mp4",
+          "sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "bytes": 69323754,
+          "local_cache_mtime_utc": "2026-10-21T04:00:44.391630+00:00",
+          "hash_command": "sha256sum SOURCE_DIR/est.mp4",
+          "duration_seconds": 1615.637007,
+          "embedded_creation_time": null,
+          "actually_read": "전체 파일 해시 계산 및 아래 7개 정지 프레임만 직접 읽음. 전체 동영상 재생·음성 청취는 하지 않음.",
+          "version": "2023년 1학기 KOCW 공개강의 08-1.mp4; 표시 교재의 출판사·발행 판본은 확정하지 않음"
+        },
+        {
+          "evidence_id": "est-frame-900",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 900,
+          "file_time_hms": "00:15:00",
+          "on_screen_recording_clock": "00:14:48",
+          "sha256": "e59c19208b1bedc5968994dba419a6d2e4b9b0c5f335ec9fa64f99575afbcd25",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 900 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-900.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF3/94, 공학적 방법 (1) 의의",
+          "short_transcription": "투입과 산출 사이의 관계를 계량적으로 분석하여 원가함수를 추정하는 방법",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "투입과 산출 사이의 관계를 계량적으로 분석하여 원가함수를 추정하는 방법",
+          "read_locator": "원가관리회계 6장.pdf PDF3/94, 공학적 방법 (1) 의의",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1020",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1020,
+          "file_time_hms": "00:17:00",
+          "on_screen_recording_clock": "00:16:48",
+          "sha256": "532aaf405e03ba9a7944da2617e7a15aaf43997296747180eddcace71f7e45f4",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1020 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1020.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF4/94, 공학적 방법 (2) 장단점 및 계정분석법 (1) 의의",
+          "short_transcription": "정확성이 높다. / 과거의 원가 자료를 이용할 수 없는 경우에도 사용 가능하다. / 제조간접원가의 추정에는 적용이 어렵다. / 시간과 비용이 많이 소요된다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "정확성이 높다. / 과거의 원가 자료를 이용할 수 없는 경우에도 사용 가능하다. / 제조간접원가의 추정에는 적용이 어렵다. / 시간과 비용이 많이 소요된다.",
+          "read_locator": "원가관리회계 6장.pdf PDF4/94, 공학적 방법 (2) 장단점 및 계정분석법 (1) 의의",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1140",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1140,
+          "file_time_hms": "00:19:00",
+          "on_screen_recording_clock": "00:18:48",
+          "sha256": "ecf231b869cb7b5ef8ec77a8a5fa3964a031080c56c0afc8205c3dd66a09eb71",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1140 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1140.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF4/94, 계정분석법 의의·장단점",
+          "short_transcription": "각 계정과목에 기록된 원가를 변동원가와 고정원가로 분석하여 원가함수를 추정하는 방법이다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "각 계정과목에 기록된 원가를 변동원가와 고정원가로 분석하여 원가함수를 추정하는 방법이다.",
+          "read_locator": "원가관리회계 6장.pdf PDF4/94, 계정분석법 의의·장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1170",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1170,
+          "file_time_hms": "00:19:30",
+          "on_screen_recording_clock": "00:19:18",
+          "sha256": "237da5ee454b1bae0cd5664434793b642fd92333788978aba2a9bd50435b802f",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1170 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1170.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF4/94, 인쇄282쪽, 산포도법 의의·장단점",
+          "short_transcription": "예비적 검토시 많이 활용될 수 있다. / 분석자의 주관적 판단이 개입될 수 있다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "예비적 검토시 많이 활용될 수 있다. / 분석자의 주관적 판단이 개입될 수 있다.",
+          "read_locator": "원가관리회계 6장.pdf PDF4/94, 인쇄282쪽, 산포도법 의의·장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1230",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1230,
+          "file_time_hms": "00:20:30",
+          "on_screen_recording_clock": "00:20:18",
+          "sha256": "c549eeb3d060e829f2cf4d735a8c4e2ddd11303dfb42da133c03eef0d88abd2e",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1230 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1230.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF4/94, 인쇄282쪽, 산포도법 의의",
+          "short_transcription": "조업도와 원가의 실제치를 도표에 점으로 표시하고 눈대중으로 이러한 점들을 대표하는 원가추정선을 도출하여 원가함수를 추정하는 방법이다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "조업도와 원가의 실제치를 도표에 점으로 표시하고 눈대중으로 이러한 점들을 대표하는 원가추정선을 도출하여 원가함수를 추정하는 방법이다.",
+          "read_locator": "원가관리회계 6장.pdf PDF4/94, 인쇄282쪽, 산포도법 의의",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1440",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1440,
+          "file_time_hms": "00:24:00",
+          "on_screen_recording_clock": "00:23:48",
+          "sha256": "3386f24d3a9360fa17102782066d634c2c2092a446b2e9f7c3ceaf2d497015b5",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1440 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1440.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF5/94, 고저점법 의의 첫 문장; 붉은 필기가 일부 본문을 가림",
+          "short_transcription": "최고조업도와 최저조업도의 원가자료를 이용하여 원가함수를 추정하는 방법이다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "최고조업도와 최저조업도의 원가자료를 이용하여 원가함수를 추정하는 방법이다.",
+          "read_locator": "원가관리회계 6장.pdf PDF5/94, 고저점법 의의 첫 문장; 붉은 필기가 일부 본문을 가림",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-frame-1500",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "kind": "frame",
+          "video_evidence_id": "video-est",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1500,
+          "file_time_hms": "00:25:00",
+          "on_screen_recording_clock": "00:24:48",
+          "sha256": "03d60831eb7d7c682102980ce034014cc1e547feacf8fd531c1a5db507d553d7",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1500 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1500.png",
+          "read_method": "tools.view_image로 본 검수자가 직접 판독",
+          "locator": "원가관리회계 6장.pdf PDF5/94, 인쇄283쪽, 고저점법 (2) 장단점",
+          "short_transcription": "비정상적인 결과가 도출될 수 있다. / 원가함수가 모든 원가자료를 대표하지 못한다.",
+          "limits": "화면 녹화기 시계는 파일 시각보다 약 12초 작음. 근거 위치는 ffmpeg 파일 시각을 기준으로 함.",
+          "extraction_tool": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+          "transcription": "비정상적인 결과가 도출될 수 있다. / 원가함수가 모든 원가자료를 대표하지 못한다.",
+          "read_locator": "원가관리회계 6장.pdf PDF5/94, 인쇄283쪽, 고저점법 (2) 장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "answer-2023-01",
+          "kind": "repository_file",
+          "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+          "locator": "PDF1쪽 원가관리회계 표 22번 정답2; questions.json subject_number22와 전체번호102 매핑 대조",
+          "read_method": "pdftotext -layout 본문과 pdftoppm PNG를 tools.view_image로 직접 대조",
+          "render_sha256": "455d85064d3890abf889252d50e4f6bad21d1b1f1cc0d4ca963edbf62a95d4f0",
+          "render_command": "pdftoppm -f 1 -singlefile -scale-to 1500 -png SOURCE_DIR/2023-01-answers.pdf /tmp/chagok-order-20261025/step1/engineering-frames/2023-01-answers",
+          "official_answers": [
+            2
+          ],
+          "repo_path": "sources/2023-01-answers.pdf"
+        },
+        {
+          "evidence_id": "answer-2026-07",
+          "kind": "repository_file",
+          "sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+          "locator": "PDF1쪽 3) 원가관리회계 표 102번 정답4",
+          "read_method": "pdftotext -layout 본문과 pdftoppm PNG를 tools.view_image로 직접 대조",
+          "render_sha256": "c67397a73791fd79bc41469eeab3e1c537752544cc7e06f99270ffb8add63150",
+          "render_command": "pdftoppm -f 1 -singlefile -scale-to 1500 -png SOURCE_DIR/2026-07-answers.pdf /tmp/chagok-order-20261025/step1/engineering-frames/2026-07-answers",
+          "official_answers": [
+            4
+          ],
+          "repo_path": "sources/2026-07-answers.pdf"
+        },
+        {
+          "evidence_id": "image-2023-01-102",
+          "kind": "repository_file",
+          "sha256": "75f65084264065a6a205bdcd60d61f3575230f30a9051a29903606b055dc64b7",
+          "read_method": "tools.view_image로 원문 질문과 보기1~4 직접 읽음",
+          "locator": "전체102번: 원가추정방법 장단점 중 옳지 않은 보기 선택",
+          "finding": "①공학적 방법 정확성·시간비용, ③산포도법 예비검토·주관판단은 공통. 계정분석법은 2023-01② / 2026-07④, 고저점법은 2023-01④ / 2026-07②.",
+          "repo_path": "images/2023-01-102.webp"
+        },
+        {
+          "evidence_id": "image-2026-07-102",
+          "kind": "repository_file",
+          "sha256": "caa707d962d6bd0dd0334d115d6ba7fda25ef1d985fd7ab95bcb847ff60f6483",
+          "read_method": "tools.view_image로 원문 질문과 보기1~4 직접 읽음",
+          "locator": "전체102번: 원가추정방법 장단점 중 옳지 않은 보기 선택",
+          "finding": "①공학적 방법 정확성·시간비용, ③산포도법 예비검토·주관판단은 공통. 계정분석법은 2023-01② / 2026-07④, 고저점법은 2023-01④ / 2026-07②.",
+          "repo_path": "images/2026-07-102.webp"
+        },
+        {
+          "evidence_id": "saylor-est",
+          "kind": "public_text",
+          "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-02-cost-estimation-methods.html",
+          "version": "Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+          "read_method": "캐시 HTML에서 본문 문단을 직접 추출·재독해, 해시 재계산",
+          "locators": [
+            "heisinger_1.0-ch05_s02_s01_p01,p03",
+            "heisinger_1.0-ch05_s02_s02_p01,p02,p22,p23",
+            "heisinger_1.0-ch05_s02_s03_p02,p23,p24"
+          ],
+          "short_transcriptions": [
+            "requires a review of accounts by an experienced employee or group of employees",
+            "The high and low data points may not represent the data set as a whole, and using these points can result in distorted estimates.",
+            "If certain data points seem unusual (statistics books often call these points outliers), we can exclude them",
+            "The line is drawn using our best judgment and a bit of guesswork"
+          ]
+        },
+        {
+          "evidence_id": "saylor-standard",
+          "kind": "public_text",
+          "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-02-standard-costs.html",
+          "version": "Git commit 6b8ed09bd60909a2b170cfe16897266020b2968f",
+          "read_method": "정상 TLS curl 다운로드 후 본문 p02/p03 네 문단 직접 재독해",
+          "locators": [
+            "heisinger_1.0-ch10_s02_s02_s01_p02,p03",
+            "heisinger_1.0-ch10_s02_s02_s02_p02,p03"
+          ],
+          "short_transcriptions": [
+            "product specifications outlined by product engineers",
+            "time and motion studies performed by engineers who observe production workers and analyze the time required to perform production activities",
+            "Companies also review labor contracts to estimate the costs associated with direct labor."
+          ],
+          "limits": "표준원가 소요량·단가 설명의 공학 분석을 확인한 범위. 이 Saylor 문단 자체가 국내 공학적 방법 명칭이나 정확성·시간비용 비교를 서술한다고 주장하지 않음."
+        }
+      ],
+      "items": [
+        {
+          "question_id": "2023-01-102",
+          "current_explanation_sha256": "b9a6af758515afb681f6ecf24d39d2671da59588a73781932286a22875ed2b9a",
+          "question_image_sha256": "75f65084264065a6a205bdcd60d61f3575230f30a9051a29903606b055dc64b7",
+          "answer_pdf_sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+          "official_answers": [
+            2
+          ],
+          "verdict": "pass",
+          "summary_finding": "정답 2번 및 계정분석법의 자료 요구 설명이 원본 이미지·공식답안과 일치한다. 공학적 방법의 높은 정확성과 많은 시간·비용은 본 검수자가 새 추출한 1020초 표에서 직접 확인했으므로 기존 미확인 쟁점 해소에 동의한다.",
+          "step_findings": [
+            {
+              "step_number": 1,
+              "status": "pass",
+              "finding": "계정분석법은 실제 기록된 계정원가의 고정·변동 분류 절차다. 과거 원가자료가 전혀 없어도 가능하다는 보기를 반박한다. 경험 있는 담당자 설명은 Saylor 계정분석 정의와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1140",
+                "est-frame-900",
+                "saylor-est"
+              ]
+            },
+            {
+              "step_number": 2,
+              "status": "pass",
+              "finding": "공학적 방법의 투입·산출 분석은 900초, 제품규격·시간동작은 Saylor 표준원가, 정확성·과거자료 불필요·제조간접원가 추정 어려움·많은 시간비용은 1020초 표와 일치한다. 개별 추정치의 정확성을 보장하지 않는다는 제한은 근거를 과장하지 않는다.",
+              "evidence_refs": [
+                "est-frame-900",
+                "est-frame-1020",
+                "saylor-standard"
+              ]
+            },
+            {
+              "step_number": 3,
+              "status": "pass",
+              "finding": "전체 자료점 표시·눈대중 직선·예비검토 유용성·주관판단은 1170/1230초와 일치한다. 이상치 검토의 추가 설명도 Saylor 해당 문단에서 직접 확인했다.",
+              "evidence_refs": [
+                "est-frame-1170",
+                "est-frame-1230",
+                "saylor-est"
+              ]
+            },
+            {
+              "step_number": 4,
+              "status": "pass",
+              "finding": "최고·최저 조업도의 두 자료점 정의와 대표성 부족·비정상 추정 가능성은 1440/1500초 및 Saylor high-low 정의·한계 문단과 일치한다. 비정상 기간 자료라면 왜곡될 수 있다는 조건부 예시는 Saylor 예시와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1440",
+                "est-frame-1500",
+                "saylor-est"
+              ]
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "공학적 방법의 투입·산출 분석은 900초, 제품규격·시간동작은 Saylor 표준원가, 정확성·과거자료 불필요·제조간접원가 추정 어려움·많은 시간비용은 1020초 표와 일치한다. 개별 추정치의 정확성을 보장하지 않는다는 제한은 근거를 과장하지 않는다.",
+              "evidence_refs": [
+                "est-frame-900",
+                "est-frame-1020",
+                "saylor-standard"
+              ]
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "is_answer": true,
+              "finding": "계정분석법은 실제 기록된 계정원가의 고정·변동 분류 절차다. 과거 원가자료가 전혀 없어도 가능하다는 보기를 반박한다. 경험 있는 담당자 설명은 Saylor 계정분석 정의와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1140",
+                "est-frame-900",
+                "saylor-est"
+              ]
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "전체 자료점 표시·눈대중 직선·예비검토 유용성·주관판단은 1170/1230초와 일치한다. 이상치 검토의 추가 설명도 Saylor 해당 문단에서 직접 확인했다.",
+              "evidence_refs": [
+                "est-frame-1170",
+                "est-frame-1230",
+                "saylor-est"
+              ]
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "최고·최저 조업도의 두 자료점 정의와 대표성 부족·비정상 추정 가능성은 1440/1500초 및 Saylor high-low 정의·한계 문단과 일치한다. 비정상 기간 자료라면 왜곡될 수 있다는 조건부 예시는 Saylor 예시와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1440",
+                "est-frame-1500",
+                "saylor-est"
+              ]
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "정답을 맞추기 위한 원문 밖 조건·계산 가정이 없다. 자료가 없는 경우의 불가 판단은 계정분석 절차와 900초 공학적 방법의 대조 문장에서 확인된다. 이상치·제품규격 설명은 확인한 Saylor 범위의 부연이며 선택지의 의미를 바꾸지 않는다."
+          },
+          "before_after_review": {
+            "before_sha256": "3e8c11838a3fd869334a5fd7cace54567cd5bfffbade0dea4584fd814279c6b5",
+            "after_sha256": "b9a6af758515afb681f6ecf24d39d2671da59588a73781932286a22875ed2b9a",
+            "after_equals_current": true,
+            "changed_fields": [
+              "checked_on",
+              "option_notes",
+              "review_note",
+              "review_status",
+              "sources",
+              "steps",
+              "summary",
+              "unchecked_points"
+            ],
+            "body_changed_fields": [
+              "summary",
+              "steps",
+              "option_notes"
+            ],
+            "preserved_fields": [
+              "question_id",
+              "question_fingerprint",
+              "answers",
+              "part_id",
+              "title",
+              "checks",
+              "tax_law_year",
+              "authorship"
+            ],
+            "finding": "before가 직접 확인하지 못했다고 남긴 공학적 방법의 장단점을 새 프레임 표에서 재확인했다. after의 교재 직접 확인 문구와 source_checked 전환에 동의한다. before/after의 번호·정답·보기별 is_answer는 보존된다."
+          },
+          "limits": [
+            "영상은 900·1020·1140·1170·1230·1440·1500초의 정지 프레임만 읽었다. 전체 재생·음성 청취는 하지 않았다.",
+            "교재 출판사·발행 판본이나 시험 당시 판본과의 동일성, 전문가 검수는 확인하지 않았다.",
+            "1440초 본문은 붉은 필기가 일부 가려 첫 문장과 최고·최저 자료 사용만 보조 근거로 삼았다. 두 점 한계는 1500초 및 Saylor 원문으로 확인했다.",
+            "1020초 표가 직접 명시하는 것은 공학적 방법의 높은 정확성과 많은 시간·비용이라는 일반 장단점이다. 모든 다른 방법 대비 우월 순위나 모든 개별 사례의 비교까지 입증하지 않으며, 현재 after도 그 보편적 순위를 단정하지 않는다."
+          ],
+          "evidence_refs": [
+            "image-2023-01-102",
+            "answer-2023-01",
+            "video-est",
+            "est-frame-900",
+            "est-frame-1020",
+            "est-frame-1140",
+            "est-frame-1170",
+            "est-frame-1230",
+            "est-frame-1440",
+            "est-frame-1500",
+            "saylor-est",
+            "saylor-standard"
+          ]
+        },
+        {
+          "question_id": "2026-07-102",
+          "current_explanation_sha256": "f8445f7f8a13406a581759918532353096de5c1b2d3adbee392b6f1929d20c2b",
+          "question_image_sha256": "caa707d962d6bd0dd0334d115d6ba7fda25ef1d985fd7ab95bcb847ff60f6483",
+          "answer_pdf_sha256": "38bededa856b6b40c9358a1efa6339155e0eec55f161fd2bcab94f7c409dc7b0",
+          "official_answers": [
+            4
+          ],
+          "verdict": "pass",
+          "summary_finding": "정답 4번 및 계정분석법의 자료 요구 설명이 원본 이미지·공식답안과 일치한다. 공학적 방법의 높은 정확성과 많은 시간·비용은 본 검수자가 새 추출한 1020초 표에서 직접 확인했으므로 기존 미확인 쟁점 해소에 동의한다.",
+          "step_findings": [
+            {
+              "step_number": 1,
+              "status": "pass",
+              "finding": "계정분석법은 실제 기록된 계정원가의 고정·변동 분류 절차다. 과거 원가자료가 전혀 없어도 가능하다는 보기를 반박한다. 경험 있는 담당자 설명은 Saylor 계정분석 정의와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1140",
+                "est-frame-900",
+                "saylor-est"
+              ]
+            },
+            {
+              "step_number": 2,
+              "status": "pass",
+              "finding": "최고·최저 조업도의 두 자료점 정의와 대표성 부족·비정상 추정 가능성은 1440/1500초 및 Saylor high-low 정의·한계 문단과 일치한다. 비정상 기간 자료라면 왜곡될 수 있다는 조건부 예시는 Saylor 예시와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1440",
+                "est-frame-1500",
+                "saylor-est"
+              ]
+            },
+            {
+              "step_number": 3,
+              "status": "pass",
+              "finding": "전체 자료점 표시·눈대중 직선·예비검토 유용성·주관판단은 1170/1230초와 일치한다. 이상치 검토의 추가 설명도 Saylor 해당 문단에서 직접 확인했다.",
+              "evidence_refs": [
+                "est-frame-1170",
+                "est-frame-1230",
+                "saylor-est"
+              ]
+            },
+            {
+              "step_number": 4,
+              "status": "pass",
+              "finding": "공학적 방법의 투입·산출 분석은 900초, 제품규격·시간동작은 Saylor 표준원가, 정확성·과거자료 불필요·제조간접원가 추정 어려움·많은 시간비용은 1020초 표와 일치한다. 개별 추정치의 정확성을 보장하지 않는다는 제한은 근거를 과장하지 않는다.",
+              "evidence_refs": [
+                "est-frame-900",
+                "est-frame-1020",
+                "saylor-standard"
+              ]
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "공학적 방법의 투입·산출 분석은 900초, 제품규격·시간동작은 Saylor 표준원가, 정확성·과거자료 불필요·제조간접원가 추정 어려움·많은 시간비용은 1020초 표와 일치한다. 개별 추정치의 정확성을 보장하지 않는다는 제한은 근거를 과장하지 않는다.",
+              "evidence_refs": [
+                "est-frame-900",
+                "est-frame-1020",
+                "saylor-standard"
+              ]
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "최고·최저 조업도의 두 자료점 정의와 대표성 부족·비정상 추정 가능성은 1440/1500초 및 Saylor high-low 정의·한계 문단과 일치한다. 비정상 기간 자료라면 왜곡될 수 있다는 조건부 예시는 Saylor 예시와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1440",
+                "est-frame-1500",
+                "saylor-est"
+              ]
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "is_answer": false,
+              "finding": "전체 자료점 표시·눈대중 직선·예비검토 유용성·주관판단은 1170/1230초와 일치한다. 이상치 검토의 추가 설명도 Saylor 해당 문단에서 직접 확인했다.",
+              "evidence_refs": [
+                "est-frame-1170",
+                "est-frame-1230",
+                "saylor-est"
+              ]
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "is_answer": true,
+              "finding": "계정분석법은 실제 기록된 계정원가의 고정·변동 분류 절차다. 과거 원가자료가 전혀 없어도 가능하다는 보기를 반박한다. 경험 있는 담당자 설명은 Saylor 계정분석 정의와 일치한다.",
+              "evidence_refs": [
+                "est-frame-1140",
+                "est-frame-900",
+                "saylor-est"
+              ]
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "정답을 맞추기 위한 원문 밖 조건·계산 가정이 없다. 자료가 없는 경우의 불가 판단은 계정분석 절차와 900초 공학적 방법의 대조 문장에서 확인된다. 이상치·제품규격 설명은 확인한 Saylor 범위의 부연이며 선택지의 의미를 바꾸지 않는다."
+          },
+          "before_after_review": {
+            "before_sha256": "1e93b6f4538d773d376a1d14f0c74fb2569a7c222f236118c086daf85497c448",
+            "after_sha256": "f8445f7f8a13406a581759918532353096de5c1b2d3adbee392b6f1929d20c2b",
+            "after_equals_current": true,
+            "changed_fields": [
+              "checked_on",
+              "option_notes",
+              "review_note",
+              "review_status",
+              "sources",
+              "steps",
+              "summary",
+              "unchecked_points"
+            ],
+            "body_changed_fields": [
+              "summary",
+              "steps",
+              "option_notes"
+            ],
+            "preserved_fields": [
+              "question_id",
+              "question_fingerprint",
+              "answers",
+              "part_id",
+              "title",
+              "checks",
+              "tax_law_year",
+              "authorship"
+            ],
+            "finding": "before가 직접 확인하지 못했다고 남긴 공학적 방법의 장단점을 새 프레임 표에서 재확인했다. after의 교재 직접 확인 문구와 source_checked 전환에 동의한다. before/after의 번호·정답·보기별 is_answer는 보존된다."
+          },
+          "limits": [
+            "영상은 900·1020·1140·1170·1230·1440·1500초의 정지 프레임만 읽었다. 전체 재생·음성 청취는 하지 않았다.",
+            "교재 출판사·발행 판본이나 시험 당시 판본과의 동일성, 전문가 검수는 확인하지 않았다.",
+            "1440초 본문은 붉은 필기가 일부 가려 첫 문장과 최고·최저 자료 사용만 보조 근거로 삼았다. 두 점 한계는 1500초 및 Saylor 원문으로 확인했다.",
+            "1020초 표가 직접 명시하는 것은 공학적 방법의 높은 정확성과 많은 시간·비용이라는 일반 장단점이다. 모든 다른 방법 대비 우월 순위나 모든 개별 사례의 비교까지 입증하지 않으며, 현재 after도 그 보편적 순위를 단정하지 않는다."
+          ],
+          "evidence_refs": [
+            "image-2026-07-102",
+            "answer-2026-07",
+            "video-est",
+            "est-frame-900",
+            "est-frame-1020",
+            "est-frame-1140",
+            "est-frame-1170",
+            "est-frame-1230",
+            "est-frame-1440",
+            "est-frame-1500",
+            "saylor-est",
+            "saylor-standard"
+          ]
+        }
+      ]
+    },
+    {
+      "reviewer": "/root/r27_abc_review",
+      "submission_sha256": "1067704204e18c62b2c76d1cc483134d80aa19ce8f9ddf5b8df318ddb190cbd7",
+      "review_method": "new_separate_agent_review",
+      "source_reads": [
+        {
+          "evidence_id": "abc-video",
+          "ref": "R27_CUP2023_ABC_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/07-1.mp4",
+          "version": "2023년 1학기 공개강의 07-1.mp4; 화면 파일명 원가관리회계5장.pdf; 출판사·발행판본 미확정",
+          "sha256": "c6b1c8fb91511b5bba9c9f6f5564d4a715d7d7c12a76d6d846d61d81c141527c",
+          "hash_method": "직접 전체 파일 바이트를 SHA-256 계산; 지시받은 전체파일 해시와 일치",
+          "bytes": 79850167,
+          "actually_read": "아래 세 프레임의 교재 화면만 직접 view_image로 읽음; 전체 영상 또는 음성 시청 아님",
+          "kind": "video"
+        },
+        {
+          "evidence_id": "abc-frame-600",
+          "ref": "R27_CUP2023_ABC_VIDEO",
+          "video_sha256": "c6b1c8fb91511b5bba9c9f6f5564d4a715d7d7c12a76d6d846d61d81c141527c",
+          "file_time_seconds": 600,
+          "file_time_hms": "00:10:00",
+          "embedded_recording_clock": "00:09:48",
+          "read_locator": "PDF3/14쪽: 제조환경 변화·ABC 적합성",
+          "frame_sha256": "efae1689233b404dd8691f353fa463aba51c31365ceaa52a929f55a25106f3d2",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 600 -i SOURCE_DIR/abc.mp4 -frames:v 1 -update 1 SOURCE_DIR/abc-independent-600.png",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1; built with gcc 14 (Debian 14.2.0-19)",
+          "directly_viewed": true,
+          "transcriptions": [
+            "다품종 소량생산을 주로 하고 원가요소 중 제조간접원가의 비중이 큰 기업에 매우 적합하다."
+          ],
+          "transcription_note": "직접 판독한 짧은 발췌",
+          "sha256": "efae1689233b404dd8691f353fa463aba51c31365ceaa52a929f55a25106f3d2",
+          "kind": "frame",
+          "transcription": "다품종 소량생산을 주로 하고 원가요소 중 제조간접원가의 비중이 큰 기업에 매우 적합하다."
+        },
+        {
+          "evidence_id": "abc-frame-1660",
+          "ref": "R27_CUP2023_ABC_VIDEO",
+          "video_sha256": "c6b1c8fb91511b5bba9c9f6f5564d4a715d7d7c12a76d6d846d61d81c141527c",
+          "file_time_seconds": 1660,
+          "file_time_hms": "00:27:40",
+          "embedded_recording_clock": "00:27:28",
+          "read_locator": "PDF6/14쪽: 03 활동기준원가계산의 장단점, ①·②·③",
+          "frame_sha256": "79d91913ae1d5aeaa41ac0976560b0c0df5b240cd221d25fe328b325aaa47085",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1660 -i SOURCE_DIR/abc.mp4 -frames:v 1 -update 1 SOURCE_DIR/abc-independent-1660.png",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1; built with gcc 14 (Debian 14.2.0-19)",
+          "directly_viewed": true,
+          "transcriptions": [
+            "원가를 다양하고 세분화한 원가대상인 활동별로 집계하고 각 활동별로 적절한 배부기준을 사용하여 원가를 배부하기 때문에",
+            "특정제품별로 집계되어 개별제품에 추적가능한 직접원가로 인식되어 원가계산이 보다 정확해진다."
+          ],
+          "transcription_note": "필요한 짧은 발췌만 전사. 1660초 ①의 두 발췌 사이에는 감독비·작업준비비·품질검사비 예시 및 ABC 적용 설명이 있음.",
+          "sha256": "79d91913ae1d5aeaa41ac0976560b0c0df5b240cd221d25fe328b325aaa47085",
+          "kind": "frame",
+          "transcription": "원가를 다양하고 세분화한 원가대상인 활동별로 집계하고 각 활동별로 적절한 배부기준을 사용하여 원가를 배부하기 때문에 특정제품별로 집계되어 개별제품에 추적가능한 직접원가로 인식되어 원가계산이 보다 정확해진다."
+        },
+        {
+          "evidence_id": "abc-frame-1680",
+          "ref": "R27_CUP2023_ABC_VIDEO",
+          "video_sha256": "c6b1c8fb91511b5bba9c9f6f5564d4a715d7d7c12a76d6d846d61d81c141527c",
+          "file_time_seconds": 1680,
+          "file_time_hms": "00:28:00",
+          "embedded_recording_clock": "00:27:48",
+          "read_locator": "PDF6/14쪽: 03 활동기준원가계산의 장단점, ①·②·③",
+          "frame_sha256": "5b61664e77067b1c309622b6316225e188bf424e1c98aea9f63aa2448517b197",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1680 -i SOURCE_DIR/abc.mp4 -frames:v 1 -update 1 SOURCE_DIR/abc-independent-1680.png",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1; built with gcc 14 (Debian 14.2.0-19)",
+          "directly_viewed": true,
+          "transcriptions": [
+            "활동기준원가계산은 의사결정과 성과평가에 유용하다.",
+            "정확한 원가대상(제품, 고객, 부문, 서비스)의 원가계산이 가능하고"
+          ],
+          "transcription_note": "직접 판독한 짧은 발췌",
+          "sha256": "5b61664e77067b1c309622b6316225e188bf424e1c98aea9f63aa2448517b197",
+          "kind": "frame",
+          "transcription": "활동기준원가계산은 의사결정과 성과평가에 유용하다. 정확한 원가대상(제품, 고객, 부문, 서비스)의 원가계산이 가능하고"
+        },
+        {
+          "evidence_id": "image-2025-03-101",
+          "repo_path": "images/2025-03-101.webp",
+          "sha256": "611781353fb50eddd973005ca48bb26c8fcbbc0ca7effd9951897eff210e476b",
+          "directly_viewed": true,
+          "read_locator": "문제 본문과 보기 ①~④ 전체",
+          "transcriptions": [],
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "answers-2025-03",
+          "repo_path": "sources/2025-03-answers.pdf",
+          "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73",
+          "directly_viewed": true,
+          "read_locator": "1쪽 원가관리회계 101번 정답 1",
+          "rendered_png_sha256": "36f7ce693a5cd7d0aedee788091816cfd117e0f2bdaa4947cec8d113dfdfaa3b",
+          "render_command": "pdftoppm -f 1 -singlefile -scale-to 1800 -png jaegyeong/sources/2025-03-answers.pdf /tmp/chagok-order-20261025/step1/abc-reviewer/2025-03-answers-page1",
+          "transcriptions": [
+            "101: 1"
+          ],
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "image-2024-06-101",
+          "repo_path": "images/2024-06-101.webp",
+          "sha256": "96589bca3e7376c0eecb998d60d9a30848eafcb53d4e55d09203feb1677862b4",
+          "directly_viewed": true,
+          "read_locator": "문제 본문과 보기 ①~④ 전체",
+          "transcriptions": [],
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "answers-2024-06",
+          "repo_path": "sources/2024-06-answers.pdf",
+          "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+          "directly_viewed": true,
+          "read_locator": "1쪽 원가관리회계 과목 내 21번(전체 101번) 정답 4",
+          "rendered_png_sha256": "1dcb64c78b4bae9ab2fc3a5b876bd96157ab5f31aafc113ccc7469f10af1ed4a",
+          "render_command": "pdftoppm -f 1 -singlefile -scale-to 1800 -png jaegyeong/sources/2024-06-answers.pdf /tmp/chagok-order-20261025/step1/abc-reviewer/2024-06-answers-page1",
+          "transcriptions": [
+            "원가관리회계 21: 4"
+          ],
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "saylor33",
+          "ref": "s07-03-using-activity-based-costing-t",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-03-using-activity-based-costing-t.html",
+          "version": "Git 6b8ed09bd60909a2b170cfe16897266020b2968f",
+          "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+          "actually_read": true,
+          "read_locator": "Advantages and Disadvantages; Business in Action 3.1; ABC Cost Flows; Key Takeaway",
+          "method": "HTML 본문을 표준 html.parser로 추출해 직접 재독",
+          "transcriptions": [
+            "More accurate cost information leads to better decisions.",
+            "ABC systems can be costly to implement.",
+            "The accounting costs incurred to maintain such a system can be prohibitively high.",
+            "users of ABC indicated their systems were more adequate than traditional systems in providing useful information for performance evaluation and cost reduction."
+          ],
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "saylor34",
+          "ref": "s07-04-using-activity-based-managemen",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-04-using-activity-based-managemen.html",
+          "version": "Git 6b8ed09bd60909a2b170cfe16897266020b2968f",
+          "sha256": "80eafb36979eca33266a9ba0f1080e15a48ec7443fd3da1bc8222f548f151730",
+          "actually_read": true,
+          "read_locator": "3.4 Business in Action 3.3",
+          "method": "HTML 본문을 표준 html.parser로 추출해 직접 재독",
+          "transcriptions": [
+            "To evaluate performance (49 percent)"
+          ],
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "saylor35",
+          "ref": "R6_COST06_SAYLOR_SERVICE",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s07-05-using-activity-based-costing-a.html",
+          "version": "Git 6b8ed09bd60909a2b170cfe16897266020b2968f",
+          "sha256": "ae5a88d8bcf987bfa86b63eb7767ce229de582ef4703c0d5669c59fb1f69f7c8",
+          "actually_read": true,
+          "read_locator": "3.5 도입부·Service Organization Example of ABC·Key Takeaway",
+          "method": "HTML 본문을 표준 html.parser로 추출해 직접 재독",
+          "transcriptions": [
+            "service organizations, such as banks, hospitals, airlines, and government agencies, also use ABC and ABM.",
+            "75 percent of companies that use ABC are in the public sector, a service industry, or a consulting industry."
+          ],
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "acca-abc",
+          "ref": "R7_COST04_ACCA_ABC",
+          "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/ABC.html",
+          "version": "2026-10-25 검수자가 정상 TLS로 새로 확보한 공개 HTML. 기존 2026-10-13 HTML과 바이트 일치 주장은 하지 않음",
+          "sha256": "fb7ba8cca6cb4c3d28f1620c0736e3919c38b0533a787a6a9ed40bc21de94d33",
+          "actually_read": true,
+          "read_locator": "ABC process; Example 1/2; Deluxe 소량 배치 비교; 마지막 비용·시간 문단",
+          "method": "HTML script/style 제외 본문을 표준 html.parser로 추출해 직접 재독",
+          "transcriptions": [
+            "Allocate costs to the product based on how much the product uses of the cost driver.",
+            "ABC undoubtedly requires an organisation to spend time and effort investigating more fully what causes it to incur costs"
+          ],
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "acca-abm",
+          "ref": "R7_COST04_ACCA_ABM",
+          "url": "https://www.accaglobal.com/gb/en/student/exam-support-resources/professional-exams-study-resources/p5/technical-articles/activity-based-management.html",
+          "version": "2026-10-25 검수자가 정상 TLS로 새로 확보한 공개 HTML. 기존 2026-10-13 HTML과 바이트 일치 주장은 하지 않음",
+          "sha256": "213372942b5a0b20a6fbd860df69044778cd4b9d4348e6a4442a38e73cb8df91",
+          "actually_read": true,
+          "read_locator": "Strategic ABM(customer profitability analysis); Evaluation of ABM",
+          "method": "HTML script/style 제외 본문을 표준 html.parser로 추출해 직접 재독",
+          "transcriptions": [
+            "Using ABM, overhead costs are also apportioned to customers using appropriate cost drivers",
+            "The benefits of ABM (and ABC) are greatest in organisations that have high indirect costs.",
+            "ABC is most useful in organisations with a wider range of products",
+            "Users of ABM and ABC often assume that all overhead costs are variable. This is not the case"
+          ],
+          "kind": "public_text"
+        }
+      ],
+      "items": [
+        {
+          "question_id": "2025-03-101",
+          "current_explanation_sha256": "0e4f79b29956bd2b44eae2188264e724437445d30cbb790bbbc0725c8aea3e95",
+          "question_image_sha256": "611781353fb50eddd973005ca48bb26c8fcbbc0ca7effd9951897eff210e476b",
+          "answer_pdf_sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73",
+          "official_answers": [
+            1
+          ],
+          "verdict": "pass",
+          "summary_finding": "원본 이미지의 적용 불가능 보기 번호와 PDF 공식 답안에 일치한다. 고객·서비스 적용 가능 결론은 교재 ③과 직접 재독한 서비스·고객수익성 자료로 뒷받침된다.",
+          "step_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "활동별 원가집합·동인·소비량 배부는 ACCA ABC process 및 Saylor 3.3 Key Takeaway와 일치한다.",
+              "step_number": 1
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "ACCA ABM의 고객 간접원가 배부 사례와 Saylor 3.5 은행 대출상품 사례를 직접 읽었다. 75% 통계도 Saylor 도입부에 실제 존재한다.",
+              "step_number": 2
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "가격·배합·원가절감·성과평가는 Saylor 3.3, 고간접원가·다품종 적합성은 ACCA ABM Evaluation 및 600초 교재 화면으로 확인된다.",
+              "step_number": 3
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다.",
+              "step_number": 4
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "고객·서비스에도 적용하므로 적용할 수 없다는 보기를 오답 진술로 판정한 설명은 교재 ③, ACCA ABM, Saylor 3.5와 일치한다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "Saylor 3.3 Advantages 및 Business in Action 3.1에 의사결정·성과평가·원가절감 효익이 있어 현재 설명과 일치한다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "600초 교재의 다품종 소량·간접원가 비중이 큰 기업 적합성 문장과 일치한다. ACCA의 고간접원가·다품종 효익 문장은 ABC 글 자체보다 함께 인용된 ABM의 Evaluation에 명시되어 있다. ABC 글의 Deluxe 소량배치 예시도 설명과 일치하므로 실질 불일치는 없다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다."
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다."
+          },
+          "before_after_check": {
+            "before_sha256": "8e74ebfcaddb420bbe58947c9fe0155cabcec206acc727679855333e89e7e842",
+            "after_sha256": "0e4f79b29956bd2b44eae2188264e724437445d30cbb790bbbc0725c8aea3e95",
+            "current_equals_round27_after": true,
+            "summary_changed": false,
+            "step_change": "기존 3단계는 보존되고 직접원가 인식의 범위를 설명하는 4단계가 추가됨",
+            "option_change": "직접원가 보기 4번 설명 교체",
+            "other_three_option_reasons_unchanged": true
+          },
+          "limits": [
+            "교재 화면 600·1660·1680초 세 프레임만 읽었으며, 전체 영상·음성을 시청하지 않았다.",
+            "교재의 발행판본이나 시험 당시 동일성, 전문가 검수는 확인하지 않았다.",
+            "기존 ACCA 두 문헌의 인용 내용은 재확보 본문에서 확인했으나 예전 파일 바이트를 독립 보존·재확보하지는 않았다.",
+            "2024-06 해설에 남은 OpenStax m68137 참조 본문은 이번 독립 재독 범위에 넣지 않았다. 현재 요약·단계·4보기의 실질 주장들은 위 직접 재독 출처들로 교차 확인했다."
+          ],
+          "evidence_refs": [
+            "abc-video",
+            "abc-frame-600",
+            "abc-frame-1660",
+            "abc-frame-1680",
+            "image-2025-03-101",
+            "answers-2025-03",
+            "saylor33",
+            "saylor34",
+            "saylor35",
+            "acca-abc",
+            "acca-abm"
+          ]
+        },
+        {
+          "question_id": "2024-06-101",
+          "current_explanation_sha256": "bc852800eefd611cb817ccb05956a1764e02471e80f871ed7424512b0f38592b",
+          "question_image_sha256": "96589bca3e7376c0eecb998d60d9a30848eafcb53d4e55d09203feb1677862b4",
+          "answer_pdf_sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+          "official_answers": [
+            4
+          ],
+          "verdict": "pass",
+          "summary_finding": "원본 이미지의 적용 불가능 보기 번호와 PDF 공식 답안에 일치한다. 고객·서비스 적용 가능 결론은 교재 ③과 직접 재독한 서비스·고객수익성 자료로 뒷받침된다.",
+          "step_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "활동·원가동인 식별과 배부는 ACCA ABC process에, 고객·서비스 원가대상은 교재 PDF6쪽 ③과 Saylor 3.5에 명시되어 있다.",
+              "step_number": 1
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "ACCA ABM 고객수익성 사례와 Saylor 3.5 서비스 조직 예시가 직접 뒷받침한다.",
+              "step_number": 2
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "Saylor 3.3 Disadvantages는 활동 식별·비용배정·동인 추적·회계부서 배부와 유지에 시간과 큰 비용이 든다고 명시한다.",
+              "step_number": 3
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다.",
+              "step_number": 4
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "Saylor 3.3의 가격·배합 결정 개선, 3.4 Business in Action 3.3의 성과평가 49% 목적 조사와 일치한다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "Saylor 3.3의 활동 식별·동인 추적·배부 및 유지 비용·시간 설명과 ACCA ABC 마지막 문단의 time and effort에 일치한다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "고객·서비스도 원가대상이라는 교재 ③, ACCA ABM 및 Saylor 3.5에 비추어 적용 불가능 진술을 틀리다고 한 설명은 타당하다."
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "PDF6쪽 ①의 원가집계 대상은 활동이며 활동별 배부기준을 사용한다고 명시되어 있다. 예시 간접원가를 특정제품에 연결하여 직접원가로 인식한다는 교재 표현을 해설이 설명한다. 현재 본문은 모든 간접원가의 자동 직접원가 전환을 명시적으로 부정하고, 활동소비 추적 및 원가동인 배부가 필요하다고 유지한다. 이는 보기의 정답을 맞추기 위해 새 수치·가정을 넣은 것이 아니고 읽은 교재 문장의 적용 범위를 설명한 것이다. 직접/간접과 고정/변동은 다른 분류이므로 원가행태가 자동 변한다는 주장을 하지 않는 것도 Saylor 3.3과 ACCA ABM의 고정원가 경고에 부합한다."
+          },
+          "before_after_check": {
+            "before_sha256": "a69575bb5f5f2e56ae2baa24392224bb41548aa5d78bf5fa60b4abe5951820a8",
+            "after_sha256": "bc852800eefd611cb817ccb05956a1764e02471e80f871ed7424512b0f38592b",
+            "current_equals_round27_after": true,
+            "summary_changed": false,
+            "step_change": "기존 3단계는 보존되고 직접원가 인식의 범위를 설명하는 4단계가 추가됨",
+            "option_change": "직접원가 보기 3번 설명 교체",
+            "other_three_option_reasons_unchanged": true
+          },
+          "limits": [
+            "교재 화면 600·1660·1680초 세 프레임만 읽었으며, 전체 영상·음성을 시청하지 않았다.",
+            "교재의 발행판본이나 시험 당시 동일성, 전문가 검수는 확인하지 않았다.",
+            "기존 ACCA 두 문헌의 인용 내용은 재확보 본문에서 확인했으나 예전 파일 바이트를 독립 보존·재확보하지는 않았다.",
+            "2024-06 해설에 남은 OpenStax m68137 참조 본문은 이번 독립 재독 범위에 넣지 않았다. 현재 요약·단계·4보기의 실질 주장들은 위 직접 재독 출처들로 교차 확인했다."
+          ],
+          "evidence_refs": [
+            "abc-video",
+            "abc-frame-600",
+            "abc-frame-1660",
+            "abc-frame-1680",
+            "image-2024-06-101",
+            "answers-2024-06",
+            "saylor33",
+            "saylor34",
+            "saylor35",
+            "acca-abc",
+            "acca-abm"
+          ]
+        }
+      ]
+    },
+    {
+      "reviewer": "/root/r27_job_regression_review",
+      "submission_sha256": "a0f3c6a4dfe3c5ffd5c2c9a433cf6ff795947bdec93f7f285875fc276c397cc6",
+      "review_method": "new_separate_agent_review",
+      "source_reads": [
+        {
+          "evidence_id": "process-video",
+          "type": "video_file",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/03-1.mp4",
+          "sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "sha256_computed_by_reviewer": true,
+          "locator": "전체 파일 해시만 계산; 아래 지정 프레임만 직접 읽음",
+          "full_video_watched": false,
+          "audio_listened": false,
+          "transcription": null,
+          "kind": "video"
+        },
+        {
+          "evidence_id": "regression-video",
+          "type": "video_file",
+          "ref": "R27_CUP2023_REGRESSION_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/08-2.mp4",
+          "sha256": "ac2ac2e178740c27262ac141343a6a576683877954b76c9d6566c5176c7f702a",
+          "sha256_computed_by_reviewer": true,
+          "locator": "전체 파일 해시만 계산; 아래 지정 프레임만 직접 읽음",
+          "full_video_watched": false,
+          "audio_listened": false,
+          "transcription": null,
+          "kind": "video"
+        },
+        {
+          "evidence_id": "est-video",
+          "type": "video_file",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/08-1.mp4",
+          "sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "sha256_computed_by_reviewer": true,
+          "locator": "전체 파일 해시만 계산; 아래 지정 프레임만 직접 읽음",
+          "full_video_watched": false,
+          "audio_listened": false,
+          "transcription": null,
+          "kind": "video"
+        },
+        {
+          "evidence_id": "process-1275",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "video_sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "file_time_seconds": 1275,
+          "file_time_hms": "00:21:15",
+          "frame_sha256": "2e533f7c2a466e925ea1277b2f08b070fcf62654dcfbb395d2567eb5be70741f",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1275 -i SOURCE_DIR/process.mp4 -frames:v 1 -y SOURCE_DIR/process-1275.png",
+          "locator": "원가관리회계2장.pdf 표시 099쪽, 작업지시서 본문",
+          "transcription": "작업지시서는 주문받은 제품별로 작성하는 것이 원칙이며, 작업번호, 작성일, 제품의 명칭과 규격, 수량, 제조착수일과 완성일 등의 사항이 기재된다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "2e533f7c2a466e925ea1277b2f08b070fcf62654dcfbb395d2567eb5be70741f",
+          "kind": "frame",
+          "read_locator": "원가관리회계2장.pdf 표시 099쪽, 작업지시서 본문",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "process-1290",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "video_sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "file_time_seconds": 1290,
+          "file_time_hms": "00:21:30",
+          "frame_sha256": "2dc55a85e4912d4abae868bce7f8e169a7d99385f505582e85c8234ca6e48598",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1290 -i SOURCE_DIR/process.mp4 -frames:v 1 -y SOURCE_DIR/process-1290.png",
+          "locator": "표 2-1 작업지시서 예시",
+          "transcription": "작업지시서 / NO. / 년 월 일 / 제품(품종·규격) / 수량",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "2dc55a85e4912d4abae868bce7f8e169a7d99385f505582e85c8234ca6e48598",
+          "kind": "frame",
+          "read_locator": "표 2-1 작업지시서 예시",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "process-1320",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "video_sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "file_time_seconds": 1320,
+          "file_time_hms": "00:22:00",
+          "frame_sha256": "3208f169270fa322e5659e32d763f62004e963df11df91bec72b2dd70380155d",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1320 -i SOURCE_DIR/process.mp4 -frames:v 1 -y SOURCE_DIR/process-1320.png",
+          "locator": "표시 100쪽 (2) 작업원가표 본문",
+          "transcription": "작업원가표(job-cost sheet)란 개별원가계산제도의 기본적 요소로서 일정한 작업에 대한 원가를 개별제품별로 기록, 집계하기 위하여 사용되는 것이다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "3208f169270fa322e5659e32d763f62004e963df11df91bec72b2dd70380155d",
+          "kind": "frame",
+          "read_locator": "표시 100쪽 (2) 작업원가표 본문",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "process-1380",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "video_sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "file_time_seconds": 1380,
+          "file_time_hms": "00:23:00",
+          "frame_sha256": "373989e877e5e32142a045c47f8d55d2989a8710a0db28d4acd714731ff9161e",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1380 -i SOURCE_DIR/process.mp4 -frames:v 1 -y SOURCE_DIR/process-1380.png",
+          "locator": "표 2-2 작업원가표 서식",
+          "transcription": "직접재료원가 / 직접노무원가 / 제조간접원가 / 원가집계표",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "373989e877e5e32142a045c47f8d55d2989a8710a0db28d4acd714731ff9161e",
+          "kind": "frame",
+          "read_locator": "표 2-2 작업원가표 서식",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "process-1440",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_JOB_ORDER_VIDEO",
+          "video_sha256": "529d785e45e2af74ae9bc3f1ff4cca584107fdf844054fd13783a84c87a33b70",
+          "file_time_seconds": 1440,
+          "file_time_hms": "00:24:00",
+          "frame_sha256": "9697cebc9cda6e38f0e959f35d8d5c1d9733f3353835bd348be5dfa1da2c3b0e",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1440 -i SOURCE_DIR/process.mp4 -frames:v 1 -y SOURCE_DIR/process-1440.png",
+          "locator": "표 2-3 재료출고청구서 양식 아래 본문과 분개",
+          "transcription": "출고된 재료가 직접재료원가를 구성할 경우에는 해당 작업의 재공품계정에 바로 기입하고, 간접재료원가일 경우에는 제조간접원가 통제계정에 기입한다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "9697cebc9cda6e38f0e959f35d8d5c1d9733f3353835bd348be5dfa1da2c3b0e",
+          "kind": "frame",
+          "read_locator": "표 2-3 재료출고청구서 양식 아래 본문과 분개",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "regression-420",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_REGRESSION_VIDEO",
+          "video_sha256": "ac2ac2e178740c27262ac141343a6a576683877954b76c9d6566c5176c7f702a",
+          "file_time_seconds": 420,
+          "file_time_hms": "00:07:00",
+          "frame_sha256": "03ff6fa5a714d292c7eb16df2dbccde1430195255a8f5ec33518286fbacb48f8",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 420 -i SOURCE_DIR/regression.mp4 -frames:v 1 -y SOURCE_DIR/regression-420.png",
+          "locator": "원가관리회계6장.pdf PDF 7쪽, 5 회귀분석법 장단점 표",
+          "transcription": "객관적이다. 정상적인 원가자료를 모두 이용한다. 다양한 통계자료를 제공한다. 통계적 가정이 충족되지 않을 경우에는 무의미한 결과가 산출될 수 있다. 적용이 어렵다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "03ff6fa5a714d292c7eb16df2dbccde1430195255a8f5ec33518286fbacb48f8",
+          "kind": "frame",
+          "read_locator": "원가관리회계6장.pdf PDF 7쪽, 5 회귀분석법 장단점 표",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "regression-540",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_REGRESSION_VIDEO",
+          "video_sha256": "ac2ac2e178740c27262ac141343a6a576683877954b76c9d6566c5176c7f702a",
+          "file_time_seconds": 540,
+          "file_time_hms": "00:09:00",
+          "frame_sha256": "d5a61a9832f784cdc7b9ba243ad3e6ded8e5216258f2db22bb42fc3aabd5248c",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 540 -i SOURCE_DIR/regression.mp4 -frames:v 1 -y SOURCE_DIR/regression-540.png",
+          "locator": "원가관리회계6장.pdf PDF 7쪽, 같은 장단점 표 재확인",
+          "transcription": "단점: 적용이 어렵다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "d5a61a9832f784cdc7b9ba243ad3e6ded8e5216258f2db22bb42fc3aabd5248c",
+          "kind": "frame",
+          "read_locator": "원가관리회계6장.pdf PDF 7쪽, 같은 장단점 표 재확인",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-1020",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1020,
+          "file_time_hms": "00:17:00",
+          "frame_sha256": "532aaf405e03ba9a7944da2617e7a15aaf43997296747180eddcace71f7e45f4",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1020 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1020.png",
+          "locator": "원가관리회계6장.pdf PDF 4쪽, 공학적 방법 장단점 / 계정분석법 의의",
+          "transcription": "과거의 원가 자료를 이용할 수 없는 경우에도 사용 가능하다. 분석자의 전문적 판단에 따라 각 계정과목에 기록된 원가를 변동원가와 고정원가로 분석하여 원가함수를 추정하는 방법이다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "532aaf405e03ba9a7944da2617e7a15aaf43997296747180eddcace71f7e45f4",
+          "kind": "frame",
+          "read_locator": "원가관리회계6장.pdf PDF 4쪽, 공학적 방법 장단점 / 계정분석법 의의",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-1140",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1140,
+          "file_time_hms": "00:19:00",
+          "frame_sha256": "ecf231b869cb7b5ef8ec77a8a5fa3964a031080c56c0afc8205c3dd66a09eb71",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1140 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1140.png",
+          "locator": "PDF 4쪽, 계정분석법 장단점",
+          "transcription": "분석자의 주관적 판단이 개입될 수 있다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "ecf231b869cb7b5ef8ec77a8a5fa3964a031080c56c0afc8205c3dd66a09eb71",
+          "kind": "frame",
+          "read_locator": "PDF 4쪽, 계정분석법 장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-1170",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1170,
+          "file_time_hms": "00:19:30",
+          "frame_sha256": "237da5ee454b1bae0cd5664434793b642fd92333788978aba2a9bd50435b802f",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1170 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1170.png",
+          "locator": "PDF 4쪽 표시 282쪽, 산포도법 의의와 장단점",
+          "transcription": "조업도와 원가의 실제치를 도표에 점으로 표시하고 눈대중으로 이러한 점들을 대표하는 원가추정선을 도출하여 원가함수를 추정하는 방법이다. 분석자의 주관적 판단이 개입될 수 있다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "237da5ee454b1bae0cd5664434793b642fd92333788978aba2a9bd50435b802f",
+          "kind": "frame",
+          "read_locator": "PDF 4쪽 표시 282쪽, 산포도법 의의와 장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-1230",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1230,
+          "file_time_hms": "00:20:30",
+          "frame_sha256": "c549eeb3d060e829f2cf4d735a8c4e2ddd11303dfb42da133c03eef0d88abd2e",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1230 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1230.png",
+          "locator": "PDF 4쪽 표시 282쪽, 산포도법 표 재확인",
+          "transcription": "적용이 간단하고 이해하기 쉽다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "c549eeb3d060e829f2cf4d735a8c4e2ddd11303dfb42da133c03eef0d88abd2e",
+          "kind": "frame",
+          "read_locator": "PDF 4쪽 표시 282쪽, 산포도법 표 재확인",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "est-1500",
+          "type": "video_frame",
+          "ref": "R27_CUP2023_COST_ESTIMATION_VIDEO",
+          "video_sha256": "7f7a211144be6ab027a506fb07134d259eca4c90316c40b9871981e9f9a34305",
+          "file_time_seconds": 1500,
+          "file_time_hms": "00:25:00",
+          "frame_sha256": "03d60831eb7d7c682102980ce034014cc1e547feacf8fd531c1a5db507d553d7",
+          "extraction_command": "ffmpeg -hide_banner -loglevel error -ss 1500 -i SOURCE_DIR/est.mp4 -frames:v 1 -y SOURCE_DIR/est-1500.png",
+          "locator": "PDF 5쪽 표시 283쪽, 고저점법 장단점",
+          "transcription": "객관적이다. 시간과 비용이 적게 소요된다. 원가함수가 모든 원가자료를 대표하지 못한다.",
+          "read_method": "reviewer executed fresh ffmpeg extraction, then view_image on this PNG",
+          "actually_read_by_reviewer": true,
+          "sha256": "03d60831eb7d7c682102980ce034014cc1e547feacf8fd531c1a5db507d553d7",
+          "kind": "frame",
+          "read_locator": "PDF 5쪽 표시 283쪽, 고저점법 장단점",
+          "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+        },
+        {
+          "evidence_id": "process-1275-readability-crop",
+          "type": "frame_readability_crop",
+          "derived_from": "process-1275",
+          "sha256": "84eee13719925ab9f3c309ccb3188c6829f68556bd0239c81b5b692c317e538d",
+          "command": "ffmpeg -hide_banner -loglevel error -i SOURCE_DIR/process-1275.png -vf crop=630:355:642:183,scale=1890:1065 -frames:v 1 -y SOURCE_DIR/process-1275-crop.png",
+          "locator": "오른쪽 교재 화면을 확대하여 같은 내용을 재확인",
+          "transcription": null,
+          "actually_read_by_reviewer": true,
+          "kind": "derived_image"
+        },
+        {
+          "evidence_id": "process-1290-readability-crop",
+          "type": "frame_readability_crop",
+          "derived_from": "process-1290",
+          "sha256": "04573100fc6a16abb9e927256d91807498ecfce38b3275e3272127dfe67dbb9d",
+          "command": "ffmpeg -hide_banner -loglevel error -i SOURCE_DIR/process-1290.png -vf crop=630:355:642:183,scale=1890:1065 -frames:v 1 -y SOURCE_DIR/process-1290-crop.png",
+          "locator": "오른쪽 교재 화면을 확대하여 같은 내용을 재확인",
+          "transcription": null,
+          "actually_read_by_reviewer": true,
+          "kind": "derived_image"
+        },
+        {
+          "evidence_id": "process-1440-readability-crop",
+          "type": "frame_readability_crop",
+          "derived_from": "process-1440",
+          "sha256": "dfb967067ff776c7d489dc0047bb3f47f5cfa25a54ed2041404a703c8e2ce467",
+          "command": "ffmpeg -hide_banner -loglevel error -i SOURCE_DIR/process-1440.png -vf crop=630:355:642:183,scale=1890:1065 -frames:v 1 -y SOURCE_DIR/process-1440-crop.png",
+          "locator": "오른쪽 교재 화면을 확대하여 같은 내용을 재확인",
+          "transcription": null,
+          "actually_read_by_reviewer": true,
+          "kind": "derived_image"
+        },
+        {
+          "evidence_id": "2026-06-085-question",
+          "type": "question_image",
+          "repo_path": "images/2026-06-085.webp",
+          "sha256": "e903580c77031625ae5baeed02d771ead20c0d156a492277086062ff795e99d9",
+          "locator": "본문·모든 진술·네 보기 전체를 view_image로 직접 읽음",
+          "transcription": "ㄷ. 작업지시서는 주문받은 제품별로 작성하는 것이 원칙이며, 작업번호, 작성일, 제품의 명칭과 규격, 수량, 제조착수일과 완성일 등의 사항이 기재된다.",
+          "actually_read_by_reviewer": true,
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "2023-03-102-question",
+          "type": "question_image",
+          "repo_path": "images/2023-03-102.webp",
+          "sha256": "5cde4bc0941e924b18fbfaace0b771580bce7f805fc9ac406df6087b558ba1bb",
+          "locator": "본문·모든 진술·네 보기 전체를 view_image로 직접 읽음",
+          "transcription": "④ 고저점법과 회귀분석법은 상대적으로 적용이 쉽고 시간과 비용이 적게 소요된다는 장점이 있다.",
+          "actually_read_by_reviewer": true,
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "2026-06-official-answer",
+          "type": "official_answer_pdf",
+          "repo_path": "sources/2026-06-answers.pdf",
+          "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+          "locator": "PDF 1쪽 3) 원가관리회계, 전체 85번 행",
+          "transcription": "85 / 1",
+          "render_command": "pdftoppm -scale-to 1600 -png -singlefile /workspace/Jay5315.github.io/jaegyeong/sources/2026-06-answers.pdf /tmp/chagok-order-20261025/step1/job-regression-evidence/2026-06-answers",
+          "render_sha256": "f16ea1ad41d4bd5ee38cecac7c56fda4e115335d93a20d5640bb28d8195396a5",
+          "read_method": "reviewer rendered PDF and read PNG via view_image",
+          "actually_read_by_reviewer": true,
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "2023-03-official-answer",
+          "type": "official_answer_pdf",
+          "repo_path": "sources/2023-03-answers.pdf",
+          "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+          "locator": "PDF 1쪽 원가관리회계, 과목 내 22번(전체102번) 행",
+          "transcription": "22 / 4",
+          "render_command": "pdftoppm -scale-to 1600 -png -singlefile /workspace/Jay5315.github.io/jaegyeong/sources/2023-03-answers.pdf /tmp/chagok-order-20261025/step1/job-regression-evidence/2023-03-answers",
+          "render_sha256": "7221714255e75a5f94ea306783685b1249993b9f0481cc848f94355dfa2500b4",
+          "read_method": "reviewer rendered PDF and read PNG via view_image",
+          "actually_read_by_reviewer": true,
+          "kind": "repository_file"
+        },
+        {
+          "evidence_id": "saylor-job",
+          "type": "public_textbook_html",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s06-02-how-a-job-costing-system-works.html",
+          "sha256": "f645d136cdf278a82cbbbd65d26e32f4835e4c47a1914aa0551696a313ad9a92",
+          "locator": "2.2 Using a Job Cost Sheet, Assigning Direct Labor Costs to Jobs, Key Takeaway, Review Problem answer",
+          "transcription": "The total of all WIP inventory subsidiary ledgers matches the WIP inventory account shown on the balance sheet. Direct materials (entry b) and direct labor (entry c) are by definition easily traceable to the job and therefore must be recorded on the job cost sheet when the cost is incurred.",
+          "read_method": "reviewer read HTML body after own standard-library HTMLParser extraction; also read relevant cached text passages",
+          "actually_read_by_reviewer": true,
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "saylor-est",
+          "type": "public_textbook_html",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s09-02-cost-estimation-methods.html",
+          "sha256": "0367bb280378287c5613ea9bd50b4ed5d1af1350974b9bc9a2f5fe09e0ec3285",
+          "locator": "5.2 Account Analysis 본문; High-Low Method·Scattergraph Method·Regression Analysis의 관련 문단 재독",
+          "transcription": "Accountants who use this approach are looking for a quick and easy way to estimate costs. The line is drawn using our best judgment and a bit of guesswork. Rather than running these computations by hand, most companies use computer software, such as Excel, to perform regression analysis.",
+          "read_method": "reviewer read HTML body after own standard-library HTMLParser extraction; also read relevant cached text passages",
+          "actually_read_by_reviewer": true,
+          "kind": "public_text"
+        },
+        {
+          "evidence_id": "saylor-engineering",
+          "type": "public_textbook_html",
+          "url": "https://raw.githubusercontent.com/saylordotorg/text_managerial-accounting/6b8ed09bd60909a2b170cfe16897266020b2968f/s14-02-standard-costs.html",
+          "sha256": "aa641c15dd88cb4398fe56350289e84bec25e3b7add68d141fc2127dbdd14770",
+          "locator": "10.2 Direct Materials Standard Quantity and Standard Price, Direct Labor Standard Hours and Standard Rate",
+          "transcription": "companies might find the standard quantity in the product specifications outlined by product engineers. companies might use time and motion studies performed by engineers who observe production workers and analyze the time required to perform production activities. Companies also review labor contracts to estimate the costs associated with direct labor.",
+          "read_method": "reviewer read HTML body after own standard-library HTMLParser extraction; also read relevant cached text passages",
+          "actually_read_by_reviewer": true,
+          "kind": "public_text"
+        }
+      ],
+      "items": [
+        {
+          "question_id": "2026-06-085",
+          "current_explanation_sha256": "bf1751525783bb8cb1a5ac652c4a5e75fe043861f1ed9de8d0bab4272259066f",
+          "current_matches_round27_after": true,
+          "round27_before_sha256": "fda7d2419ed52a435cd6fe7823c29388e0f1f72487e369f0b334e63ca1d89a45",
+          "question_image_sha256": "e903580c77031625ae5baeed02d771ead20c0d156a492277086062ff795e99d9",
+          "answer_pdf_sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+          "official_answers": [
+            1
+          ],
+          "verdict": "pass",
+          "limits": [
+            "전체 영상 연속 시청 및 음성 청취는 하지 않았고, 기록된 프레임의 교재 화면만 읽었습니다.",
+            "화면에 표시된 교재의 출판사·정확한 발행 판본과 시험 당시 판본 동일성은 확인하지 않았습니다.",
+            "공식 답안과 이미지·본문을 직접 대조했으며 출제기관의 공식 해설이나 전문가 검수는 아닙니다."
+          ],
+          "summary_finding": "현재 요약 및 변경된 단계·보기 설명은 직접 읽은 문항과 출처에 부합합니다. 1275초 본문에서 주문 제품별 작성 원칙과 작업번호·작성일·제품명/규격·수량·제조착수일/완성일을 모두 확인했습니다. ㄱ·ㄴ만 틀린 진술이므로 공식 ①의 완전성도 확인됩니다.",
+          "step_findings": [
+            {
+              "step": 1,
+              "status": "pass",
+              "finding": "Saylor 2.2는 재공품 총계와 작업별 보조원장/작업원가표 및 그 합계 일치를 설명합니다. ㄱ은 통제·보조 관계를 뒤집었습니다.",
+              "step_number": 1
+            },
+            {
+              "step": 2,
+              "status": "pass",
+              "finding": "Saylor 직접재료/노무 설명 및 해답은 발생 시 작업별 기록을 명시합니다. 1440초 화면도 직접재료의 재공품 차변과 간접재료의 제조간접원가 통제계정 차변을 구별합니다.",
+              "step_number": 2
+            },
+            {
+              "step": 3,
+              "status": "pass",
+              "finding": "1320초 정의가 ㄹ의 개별 제품별 기록·집계와 직접 일치합니다.",
+              "step_number": 3
+            },
+            {
+              "step": 4,
+              "status": "pass",
+              "finding": "Saylor 재공품/작업원가표의 동시 기록 설명과 1440초 직접재료 분개가 ㅁ의 관계를 지지합니다. 이는 원가 부과 기록 문맥입니다.",
+              "step_number": 4
+            },
+            {
+              "step": 5,
+              "status": "pass",
+              "finding": "1275초 본문에 원칙과 항목 전체가 명시되어 ㄷ의 검증 공백이 해소됩니다. 1290초 서식은 보조 확인이며 본문이 주된 근거입니다.",
+              "step_number": 5
+            },
+            {
+              "step": 6,
+              "status": "pass",
+              "finding": "ㄱ·ㄴ의 오류 및 ㄷ·ㄹ·ㅁ의 타당성을 개별 확인했으므로 ① 선택이 일관됩니다.",
+              "step_number": 6
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "ㄱ·ㄴ만 옳지 않아 ①을 골라야 합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "ㄷ·ㄹ은 모두 옳은 진술이므로 둘을 틀렸다고 한 ②는 부적절합니다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "ㄴ은 틀리지만 ㅁ은 옳고 틀린 ㄱ이 빠져 ③은 부적절합니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "ㄱ은 틀리지만 ㄹ·ㅁ은 옳고 틀린 ㄴ이 빠져 ④는 부적절합니다."
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "원문은 일반 기재 내용을 설명하며 법적 필수 서식이라고 하지 않습니다. 현재 단계5 역시 일반 문서 구성이라고 명시하므로 법령상 강행 요건·항목의 법적 필수성을 덧붙이지 않았습니다. 이전 unchecked_points의 ‘모두 필수 항목’이라는 강한 해석을 현재 해설의 요건으로 유지할 이유가 없습니다."
+          },
+          "evidence_refs": [
+            "2026-06-085-question",
+            "2026-06-official-answer",
+            "process-video",
+            "process-1275",
+            "process-1290",
+            "process-1320",
+            "process-1380",
+            "process-1440",
+            "saylor-job"
+          ]
+        },
+        {
+          "question_id": "2023-03-102",
+          "current_explanation_sha256": "3fb6269d0fc41a1a66d49d6cefc2807026607e2eb7cf002d0abc9a6833d77776",
+          "current_matches_round27_after": true,
+          "round27_before_sha256": "275c10d2af7853da49da7a6ea02a8a3eb25eedf1d753b0977edd1c52c2a31571",
+          "question_image_sha256": "5cde4bc0941e924b18fbfaace0b771580bce7f805fc9ac406df6087b558ba1bb",
+          "answer_pdf_sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+          "official_answers": [
+            4
+          ],
+          "verdict": "pass",
+          "limits": [
+            "전체 영상 연속 시청 및 음성 청취는 하지 않았고, 기록된 프레임의 교재 화면만 읽었습니다.",
+            "화면에 표시된 교재의 출판사·정확한 발행 판본과 시험 당시 판본 동일성은 확인하지 않았습니다.",
+            "공식 답안과 이미지·본문을 직접 대조했으며 출제기관의 공식 해설이나 전문가 검수는 아닙니다.",
+            "‘상대적으로’의 비교대상은 문항에 명시되어 있지 않습니다. 적용이 어렵다는 정성적 교재 문장만으로 임의의 비교대상·작업자·소프트웨어 환경에서의 상대 난이도나 시간·비용을 수학적으로 반증했다고 주장하지 않습니다. 판정은 해당 문항의 일반적인 방법별 장단점 비교 문맥에 한정됩니다.",
+            "직접 읽은 회귀 화면에는 시간·비용이 다른 방법보다 크다는 직접 비교 문장이 없습니다. 그 비교 자체의 검증은 하지 않았습니다."
+          ],
+          "summary_finding": "현재 해설은 일반적인 원가추정방법의 장단점을 비교하는 문항 문맥에서 타당합니다. 고저점법과 회귀분석법 양쪽에 ‘쉽고 시간·비용이 적다’는 장점을 일괄 부여한 ④는 회귀분석법에 명시된 ‘적용이 어렵다’와 맞지 않습니다. 복합진술 중 이 구성요소가 성립하지 않으므로 시간·비용의 보편적 우열까지 증명할 필요가 없다는 현재 논리는 수용합니다.",
+          "step_findings": [
+            {
+              "step": 1,
+              "status": "pass",
+              "finding": "1020초 화면의 공학적 방법 장점은 과거 자료 없이도 사용 가능하다고 명시하며 Saylor 10.2의 제품 규격·시간동작연구·계약 단가 예시는 이를 보완합니다.",
+              "step_number": 1
+            },
+            {
+              "step": 2,
+              "status": "pass",
+              "finding": "1140초 계정분석법 및 1170/1230초 산포도법 화면에 주관적 판단 개입이 명시되어 있습니다. Saylor 본문도 경험적 계정 분류와 눈대중 직선 판단을 설명합니다.",
+              "step_number": 2
+            },
+            {
+              "step": 3,
+              "status": "pass",
+              "finding": "고저점법의 두 조업도점 정의와 간편성은 Saylor 5.2에 명시되고 1500초 화면은 시간·비용이 적게 소요된다는 장점을 확인합니다.",
+              "step_number": 3
+            },
+            {
+              "step": 4,
+              "status": "pass",
+              "finding": "420/540초 화면의 회귀분석법 정의·장단점이 현행 단계4와 일치합니다. 현재 단계는 모든 상황에서 회귀분석이 더 비싸거나 오래 걸린다고 추론하지 않습니다.",
+              "step_number": 4
+            }
+          ],
+          "four_option_findings": [
+            {
+              "number": 1,
+              "status": "pass",
+              "finding": "과거 자료를 이용할 수 없어도 적용 가능하다는 ①은 1020초 본문과 일치합니다."
+            },
+            {
+              "number": 2,
+              "status": "pass",
+              "finding": "계정분석법과 산포도법의 주관성이라는 ②는 1140/1170/1230초 교재 문장과 일치합니다."
+            },
+            {
+              "number": 3,
+              "status": "pass",
+              "finding": "최고·최저 조업도와 그 원가를 사용하는 ③은 Saylor 5.2 정의와 일치합니다."
+            },
+            {
+              "number": 4,
+              "status": "pass",
+              "finding": "이 문항은 나열된 방법들의 일반적 장단점을 묻습니다. 그 문맥에서 회귀분석까지 적용의 용이성을 공통 장점으로 묶은 ④는 명시적인 ‘적용이 어렵다’라는 단점과 불일치합니다. ‘상대적으로’가 붙었다고 해서 이 분류상 불일치가 없어지지는 않습니다. 시간·비용 절약도 별도로 거짓이어야 한다는 논리적 요구는 없습니다."
+            }
+          ],
+          "added_conditions_check": {
+            "status": "pass",
+            "finding": "현재 해설은 수작업 계산을 전제하거나 소프트웨어가 없다는 조건을 더하지 않습니다. 난이도 진술 하나로 복합진술을 배제한다는 추론은 추가 사실 가정이 아닙니다. 다만 교재의 난이도 표기를 실증적·보편적 비교 우열의 증거로 확대해서는 안 됩니다."
+          },
+          "evidence_refs": [
+            "2023-03-102-question",
+            "2023-03-official-answer",
+            "regression-video",
+            "regression-420",
+            "regression-540",
+            "est-video",
+            "est-1020",
+            "est-1140",
+            "est-1170",
+            "est-1230",
+            "est-1500",
+            "saylor-est",
+            "saylor-engineering"
+          ]
+        }
+      ]
+    }
+  ],
+  "disagreement_resolution": [],
+  "data_action": "6개 모두 독립 pass; 현재 해설 및 source_checked 유지. 데이터 변경·새 감사 단계 없음.",
+  "file_preflight": {
+    "checked_files": 58,
+    "all_sha256_match": true,
+    "method": "주 담당자가 제출된 실제 파일의 SHA-256을 재계산했습니다. 출처의 의미에 대한 독립 판정은 각 검수자에게 귀속됩니다."
+  }
+}
