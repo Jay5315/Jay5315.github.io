@@ -13,6 +13,7 @@ from explanation_data import validate_explanations
 from test_concepts import calc
 from test_runtime_data import RuntimeDataTests
 from test_round27_independent_review import Round27IndependentReviewTests
+from test_work_order_reports import WorkOrderStep2Tests
 
 R = Path(__file__).resolve().parents[1]
 

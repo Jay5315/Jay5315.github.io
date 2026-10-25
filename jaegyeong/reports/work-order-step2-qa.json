@@ -1,0 +1,2747 @@
+{
+  "initial": {
+    "reviewer": "/root/r28_matrix_qa",
+    "review_type": "작업2 조사표 정확성 QA; 현재 데이터 변경 승인이나 신규 해설 등록 검수 아님",
+    "baseline_commit": "9d78e5c",
+    "checked_at_utc": "2026-10-25T22:41:39.631468+00:00",
+    "coverage_ids": [
+      "2022-01-022",
+      "2022-01-055",
+      "2022-05-046",
+      "2022-06-019",
+      "2022-06-064",
+      "2022-09-015",
+      "2022-09-048",
+      "2022-09-064",
+      "2022-11-018",
+      "2022-11-048",
+      "2022-11-049",
+      "2022-11-065",
+      "2023-01-048",
+      "2023-03-083",
+      "2023-05-059",
+      "2023-09-022",
+      "2023-09-080",
+      "2023-09-085",
+      "2023-09-120",
+      "2023-11-024",
+      "2023-11-060",
+      "2023-12-029",
+      "2024-05-029",
+      "2024-05-100",
+      "2024-06-045",
+      "2024-06-048",
+      "2024-07-054",
+      "2025-01-027",
+      "2025-01-054",
+      "2025-01-077",
+      "2025-01-078",
+      "2025-06-080",
+      "2025-06-117",
+      "2025-09-080",
+      "2025-11-054",
+      "2025-12-052",
+      "2026-03-055",
+      "2026-06-054",
+      "2026-09-049",
+      "2026-09-097"
+    ],
+    "verdict": "amend_required",
+    "findings": [
+      {
+        "id": "F01",
+        "severity": "minor",
+        "status": "amend_required",
+        "affected_file": "CACHE_DIR/tax_a-result.json",
+        "affected_field": "limits[2]",
+        "question_ids": [
+          "2023-11-060"
+        ],
+        "finding": "“해당 시험 이전 및 명시 법연도의 고정판본을 선택했다”라는 포괄적 설명은 예외를 누락한다. 해당 행은 2023-11 시험 이후 공포된 법률19926(2023-12-31 공포/2024-01-01 시행)과 NTS2024 신고안내를 사후 참고한다.",
+        "evidence": "행 needed_evidence는 기한 도래일 적용 기본법을 요구하고 searched_scope/source_reads에 부칙19926 제1조가 명시된다. 실제 법령표본 제5조와 부칙 제1조를 QA가 읽음. 따라서 부칙 확인 없는 소급적용·당시원문확인 단정으로 판정하지 않는다.",
+        "required_amendment": "한계문에 2023-11-060의 2024 신고기한에는 시험 이후 판본과 NTS2024 안내를 사후 참고했으며 시험 당시 확보·확인된 원문으로 간주하지 않는다는 예외를 명시한다. 보류결론과 공식답안은 유지한다."
+      },
+      {
+        "id": "F02",
+        "severity": "info",
+        "status": "pass",
+        "finding": "review40과 조사40의 ID 집합 일치, 중복/누락/추가0. 필요근거·실제탐색·보류결과 필드 전부 존재. source_read_ids 끊김0.",
+        "counts": {
+          "finance": 9,
+          "tax_a": 13,
+          "tax_b": 12,
+          "cost": 6,
+          "total": 40,
+          "register": 0,
+          "hold": 40,
+          "answer_suspected": 18
+        }
+      },
+      {
+        "id": "F03",
+        "severity": "info",
+        "status": "pass",
+        "finding": "40개 official_answers가 questions.json answers와 전부 일치하고 등록·답안변경을 완료했다고 주장한 행이 없다. 40개 원본 이미지 SHA-256도 일치. 보존 공식PDF의 답표는 지정3회차 표본만 시각 재독했다."
+      },
+      {
+        "id": "F04",
+        "severity": "info",
+        "status": "pass",
+        "question_ids": [
+          "2022-11-049",
+          "2025-01-077",
+          "2023-09-120"
+        ],
+        "finding": "지정 원문3개와 관련 조문/Saylor 표본을 직접 대조했다. 영업사원은 업무중이라는 문구를 포함하지 않는다. 피부과 레이저시술만으로 시행령35제1호 단서의 요양급여대상 제외·구체 진료목록 요건이 확정되지 않는다. ③은 고객요구 파악을 가격결정 후 최초 수행한다고 명시하지 않으며, Saylor의 초기 구상·가격과 후속 상세설계를 구별한 조사 표현은 타당하다. 모두 미해결 범위로 남겼다."
+      },
+      {
+        "id": "F05",
+        "severity": "info",
+        "status": "pass_with_limit",
+        "finding": "접근200 HTML껍데기와 본문, 공식사이트와 Git고정미러, 다운로드/기계검색과 정독, 프레임과 전체시청을 구별하는 제한을 확인했다. 새1109 통합본을2022 전체 역사판본으로 확대하지 않는다. tax_b의 초기 NTS 접근확인-only 시도와 후속 본문 직접읽기 시도는 별개 기록이며 최종 본문읽기기록과 모순으로 간주하지 않는다."
+      },
+      {
+        "id": "F06",
+        "severity": "info",
+        "status": "pass_with_limit",
+        "finding": "185 source_reads의 대표 파일 존재·기록 SHA-256은 전부 재계산 일치. tax_b의 repo PDF SHA와 cache PNG SHA는 서로 별도 필드로 대조했다. 이 수치는185개 원문 내용의 독립대조 완료를 의미하지 않는다."
+      }
+    ],
+    "source_reads_actually_checked": [
+      {
+        "sha256": "09a32f0f6bf5740b129901a8e0b4b64a201e61cd989ddb3ed1eadab657f21c6c",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "16494db5294fd7da20abf19c7e811e8a2db64133016a83d1c5b40f4937f027d0",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "96ae9b6975f807826bcd018b496d8f7d43993a957d8929c4d790e782769eaa05",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "c2dde67606c4da50f55231a94441348a0825d5fbb66198933cda353686a561f4",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "5fb78687ff3813a114ec759d9807a22a4f8385b70ed3baed07a3483b7c8c36b4",
+        "range": "review 40개 question_id/category 대조; 원장 전체 과거 기록 재검증 아님",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "range": "40개 ID의 answers 및 이미지 경로, 지정4문항 본문·공통조건 직접 확인; 나머지 본문 전부 독립재검토 아님",
+        "method": "JSON structural comparison and selected direct text reading"
+      },
+      {
+        "sha256": "6715750d7631b0e54b971fde0190727323984a36d18275748a12c8590706465c",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "b6528efa91bfa9e7f8ddba060351c77aea8e92a57df1b961e516aed19b644343",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "3dba0c145b19a7e49821f51a813eeae9fc162c99de6a7250cddead00b786b10f",
+        "range": "49번 공식②; 2022-11 보존 공식PDF49쪽 세무회계 답표 크롭",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "164ab0ab4db07fc9c834fbfafa49d6854ce6b103b9b05251a46d3f1a3b0c82f6",
+        "range": "77번 공식③; 2025-01 보존 공식PDF1쪽 세무회계 답표 크롭",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "b416d05e76a6a59dbb22089b6300b6ebdbf1837cf55d570bc5bd4231805f7106",
+        "range": "원가40번(전체120) 공식④ 및 원가5번(전체85)②",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "a9a1b91713f31990f4ecd5c637ec3815db38ab08b54e3db205720429aeb2735c",
+        "range": "PDF355/인쇄333쪽 접대비 한도초과액·법인명의 신용카드 미사용액 기타사외유출 표",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "range": "제35조 전체: 특히 제1호 의사 용역 본문과 요양급여대상 제외인 가·나목의 구체 진료 목록",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "ddf64ea215a264910249d7c18c8ae36484e3c055d9d087537e51f3ae015bed12",
+        "range": "제106조 전체: 특히 제1항1호 귀속자 분기 및 제3호나목의 제1호에도 불구한 기타사외유출",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "range": "제25조 전체: 접대비 정의·증빙 및 한도",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "989ae2df79f20861ae6b2e63f451353515ef471f51c4646f18e116266aebb14e",
+        "range": "제5조 전체 및 파일말미 부칙19926 제1~8조 중 시행일·적용례",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "dd3bd276783b6210d92417279e8b65b2206dea008d13165ce7d2e056f7de55c1",
+        "range": "7.7 Target Costing 본문 네 단계 및 HP 예제. Step1 고객요구/가격/구상과 Step4 상세설계를 구별",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+        "range": "PDF74~75쪽 시행문단 및 PDF93쪽 상각후원가/97쪽 유효이자율 정의. 2022 역사판본 확인으로 간주하지 않음",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      }
+    ],
+    "file_integrity_checks_only": [
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-question_image",
+        "sha256": "0232e2651347d4c779b794b2888b3c0d5af949fadac05ed0774039a6c6840ed6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-question_pdf",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-official_answer_pdf",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-question_image",
+        "sha256": "114c24ecb6e0470eadb6f54adaf182b7b29bc99fc23e9558eb3d98ae5b834f79",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-question_pdf",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-official_answer_pdf",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-question_image",
+        "sha256": "d37dee173536b31c2c22758b2f269e3c148c2d5a7efcbf1ebe4d5c824a5aca3a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-question_pdf",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-official_answer_pdf",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-question_image",
+        "sha256": "69fde6a8c2e2f63cdaf301f7b76f0e24e97734105a6ce61bbaf2498859ccdb27",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-question_pdf",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-official_answer_pdf",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-question_image",
+        "sha256": "e634f7b538275f85184f48dfcec1dfe6db461f6d8974a68cc859ad804909b775",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-question_pdf",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-official_answer_pdf",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-question_image",
+        "sha256": "d8d969c46fe4613c8355e47f0eba47110d66254460396846f1453e03795ec6ab",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-question_pdf",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-official_answer_pdf",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-question_image",
+        "sha256": "c14257c2cfffc8bb72fa84e8e2994b27d83db59923087868d63d2fdb1bb302c0",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-question_pdf",
+        "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-official_answer_pdf",
+        "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-question_image",
+        "sha256": "84a1cd80ebc9d7e2ee0f06b3dedd0d46a62e83c27b1f0eacfbb0e0e2a86b427b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-question_pdf",
+        "sha256": "438d17eced34f979cd64a56d3ed0f8cd77025bcbf2ea2040ec19aeb4ce0ab274",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-official_answer_pdf",
+        "sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-question_image",
+        "sha256": "91edd7f1aa97260db00afd4afd6c3f386f2685b88037cbd0586024eacc18b4dc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-question_pdf",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-official_answer_pdf",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1007",
+        "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1102",
+        "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1033",
+        "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1012",
+        "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1115",
+        "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1109",
+        "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1032",
+        "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-list",
+        "sha256": "28c2986db7f8bc4062b8d737fa41dcc6746684cb416d2464354b3ed7e8ecd6d8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation",
+        "sha256": "d9c65fbb9b7fd6e1faa90104d8eb2f4b459842f922c2158dc363e531c505edaa",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation-limit",
+        "sha256": "be7fb9681a50dd88daaf493b5cc68831ead25ba5c916936a0e67cbd7ccb8fac9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation-carry",
+        "sha256": "086c921340d7b9ef5ea7638235334e2949733591c5b021f9d29a85cb20ee4513",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2022",
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2023",
+        "sha256": "03fc88dc3841daca7af84289d0e2724aef06c65d7fcc8e8e88444a9b598316ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2024",
+        "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2025",
+        "sha256": "d3985c156bde0ccd02a1d7c6b23fcff01670a9e592b1e5929654e8340ad13fa8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2026",
+        "sha256": "71b37268c2313c0eadff2d35da06b0ff98a8eb7ac48c8147e38501755c11c1b8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2022_JAN",
+        "sha256": "0c2fd1e4bb98f5676aaff0e7cccfac31596ac8da55f80186e2fd9225412e1275",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2022",
+        "sha256": "ddf64ea215a264910249d7c18c8ae36484e3c055d9d087537e51f3ae015bed12",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2023_JAN",
+        "sha256": "f8565b42b6131428a632109d4a5a0d219e5d39575deec948de2171990f1298ad",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2024",
+        "sha256": "6e156f0b4b02ab7c85d1566638185241c4967b74481e0447fa3c1ca8ccbcd65c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2025",
+        "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2026",
+        "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "VAT_LAW_2024",
+        "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "VAT_DECREE_2024",
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "R3T006_BASIC_LAW_20240101",
+        "sha256": "989ae2df79f20861ae6b2e63f451353515ef471f51c4646f18e116266aebb14e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_OLD10",
+        "sha256": "ae72fb8d5c01b076542e370c2f221be8f70dee4814999631b2c705959e9bd0d9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2022",
+        "sha256": "2d1af1ba6cd4a1cba40416ee234db2bb7666419bb201d70de8cd481862925807",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2024",
+        "sha256": "490ecc8128e3f8b07923e8857ce558682c897cf2dd11bafd9cd8473879af85e2",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2025",
+        "sha256": "ed153b912fdbf80d68df9743e126ac1b213ec0437e2bb8c823d73c4b15e9778b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2026",
+        "sha256": "d3002c90324245469cc044f01190c92b80ae3ad37965219bc9a364fcd771ac22",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "R3T1_WATER22",
+        "sha256": "75ca8302ae34c6c9c27699d1c9f916935664ef037d08dd98af0dc755eac47606",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_CROSS01_CIT_LAW_20251001",
+        "sha256": "5660285a14faf83605793130d9e903549ba26baa9b55cc54ca623e2938dbf6d8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-01",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-01",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-05",
+        "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-05",
+        "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-01",
+        "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-01",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-05",
+        "sha256": "b35038c0bc11dda99d6adb0e8500869eef6e646e8b57bd7f4893578c8fa715ce",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-05",
+        "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-11",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-11",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2024-06",
+        "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2024-06",
+        "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2024-07",
+        "sha256": "e7ff73319b2b88e155937534bf2757ea675337bc2a215fb5262a35a8521a7354",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2024-07",
+        "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2025-01",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2025-01",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2025-11",
+        "sha256": "9d5f96865775539f30f7256c0af276a2ce0ff37bdafffb5625684502f856fc5f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2025-11",
+        "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2026-06",
+        "sha256": "82d6d1c653c9902bdec623c69f06296f48f8a84787d1b0ff4c47a821ca625620",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2026-06",
+        "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2026-06-054",
+        "sha256": "6b21fa1abdd33c71d17ca1f298970a44e6204d2be9b9f4ee149c1e5ff170f77b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-11-054",
+        "sha256": "90794c46caad909e4c8d8643a2f4b32aee32a83f962cb8c21b0359858cb9b8f5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-01-077",
+        "sha256": "b6528efa91bfa9e7f8ddba060351c77aea8e92a57df1b961e516aed19b644343",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-01-054",
+        "sha256": "98154a6e524a29ce63c77c2b2d404277c674e9180c32a152454e0bdd8d49b02c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2024-07-054",
+        "sha256": "e9707dcaafc458f5c3f56975022e4badbab4da47cc2694034eecf2d0c792ae24",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-11-060",
+        "sha256": "7ef2d0c54fd9118f479d8fa82e218e7a2081be2eeb163b4452f60fa72c8191c0",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-05-059",
+        "sha256": "50dc9881bded10df4347e9fbb24c0e447045bf1d5160c38bd9fdda5831aae4a7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-11-049",
+        "sha256": "6715750d7631b0e54b971fde0190727323984a36d18275748a12c8590706465c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-01-055",
+        "sha256": "229967d1071357c0641009712281815e2f771534bb9f47f6f7fd27fca07a0ea6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-05-046",
+        "sha256": "79d1045d3eb462d1abb0701530a48abf978a94ab95fd7eb31c310142d17b1d41",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2024-06-045",
+        "sha256": "bbb115fdd299ab449e7d406f3e44e92a6f8b0b5df017c9beaca61b8d3754e8bd",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-01-048",
+        "sha256": "877b57cbd005a249234b98ebbd95db4bd7386c5702579f59610bea4874de0ac7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-09-048",
+        "sha256": "31b7edfeac52eb61c76eb0cda23ea650812f3321f2df8393b08694339374d6da",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2026",
+        "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2025",
+        "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_LAW_2024",
+        "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2024",
+        "sha256": "6e156f0b4b02ab7c85d1566638185241c4967b74481e0447fa3c1ca8ccbcd65c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX01_법인세법_법률_20220101",
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R9_CIT_ENF_2022",
+        "sha256": "dcfb0f6db1f8cac2cae397629e24d898790d8bd7448e99467c9a0850cbced921",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2024",
+        "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_DECREE_2024",
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2025",
+        "sha256": "d935881ac5a3abfbbe0a8922e9f277ce2ac4a506d8d5fe4023458fcf3b78319a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_DECREE_2025",
+        "sha256": "7b5d2015eecc249743b8d7c7f4cffec62fa57aa5dfbdb5864d520bd1c1025f72",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_법률_20220101",
+        "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_시행령_20220531",
+        "sha256": "4e813f7f3c9ee428fb6756e9055473413a8a3a662a24fcf485e1da604b869592",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_시행령_20220802",
+        "sha256": "e4e3f50d92df2972d1bcd779776950df55939e34b1f6e3f83d0be0d4fb59a3c7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2023",
+        "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTB_LAW_2025",
+        "sha256": "00df53008528d3975580e4443a2fa62993cd8fa74f7c4958c2832b416ec42d6e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "tax_a_02__VAT_LAW_2025",
+        "sha256": "3afaa77a990f9853e57e6ecef3201e47b3faf9d5487520bc33bebaab111929b8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_AGENTS.md",
+        "sha256": "7c535ca1669a9d4cac6053d0e365a3e625f9a1687f9143c5a46b2d3efc0befc3",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_GPT_WORK_ORDER.md",
+        "sha256": "5b8754594bf47da6024ade669660992d438edee85d5547f1a7cf92c64bb0268f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_GPT_HANDOFF.md",
+        "sha256": "d65a37d1cb850278900fe0ba9e47e260fc6cbcf442d318125c2000767a586307",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_HANDOFF.md",
+        "sha256": "3cda0d155a99357afb688cdb1cff1e8a8577eb7aa75eac1df2d705c6fc64dc0d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_README.md",
+        "sha256": "8df3152f7d8509f57e26317c1254b34294908f8477004bde1c6e27a78befaf06",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_EXPLANATIONS.md",
+        "sha256": "9b5ea96e469efcfc6d0883ab20d2d036788ad4cf0b850ac523654b54ab7b7a17",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "prior_brief",
+        "sha256": "1c1eca81d0ca034f66aa4d0eecb46a3e0530217eb3e083c89325dfc3f0c11c09",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2026-09-049",
+        "sha256": "9f9f5cbcf45b3c0c446c9dfaa2f83cff41affb86b5e0123150f4130612da2027",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2026-03-055",
+        "sha256": "05a2fe38bd88a376e5f2b92bc4425aec34aee480b17467898a3369c3d5c7c010",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-12-052",
+        "sha256": "20f6a1030ecf5bca53549a813adaca4a39c4e0f23d1b0569687c13c1d876c6fe",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2024-06-048",
+        "sha256": "e57c373ea7252c2c6537ca53acf6f985c181ba33ee256a594b9a8f949c6b55ba",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-11-048",
+        "sha256": "e8d19c53ac3df3a789e00e5af96033134d4d282546c6a02e5f23185b2416e8e4",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-01-078",
+        "sha256": "4e7c1b88ffc48c704ef67e18835ad912333d70e760582824e10c909f865d4864",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2023-09-080",
+        "sha256": "e410e718ff1b81170862ec6977c14b7b51e1e24b2e2567aa5e959491b179cd33",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-09-064",
+        "sha256": "5a11fe82633fa5196f32a7121be58df18acd7e32bcfa511fa2a1e41c987ae01d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-06-064",
+        "sha256": "d2f4168f0659b04bfb7902be056d41d4c2ccf168e830357fe20103873a11c0a6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-09-080",
+        "sha256": "203a5ff9db2f64e1d269beb5ff99f73055731ac08129818e51c14051dc3da83e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-06-080",
+        "sha256": "d14e500f16c58726c4bccf295301ae8ddde7af2ab2e2d0c0a3c87e59a429dcfc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-11-065",
+        "sha256": "248a88e82c9d977545e4a8e82039bdb6c93765613636a2e2b90f5c4332e049ea",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-06",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-06",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2023-09",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2023-09",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2024-06",
+        "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2024-06",
+        "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-01",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-01",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-06",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-06",
+        "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-09",
+        "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-09",
+        "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-12",
+        "sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-12",
+        "sha256": "6a37603f836f12dd387a8522e87fef8b1ad6e25c2f0580482ab2b96544d89411",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2026-03",
+        "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2026-03",
+        "sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2026-09",
+        "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2026-09",
+        "sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTS_2024_GUIDE_DIRECT",
+        "sha256": "dbb702ba304285591994a36ff7e2003c088e5da6e94dff2c949b595679c38e3d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTS_MAY2025_DIRECT",
+        "sha256": "9fb07c01c4e582b6fddb17d0fe20fb53af12167f80c78aa704ab24e752b02ce7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-097-image",
+        "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-100-image",
+        "sha256": "158811fe9fc1e325b80a7fc0b62110e2245980fb00cf2312c149dc27da04775c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-083-image",
+        "sha256": "661605cad4e446432b106deb0d2703d24f1136fcf83553f4ba29aaba4d05cfef",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-085-image",
+        "sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-117-image",
+        "sha256": "43a65a042014bbed7f04c2e5af326aef73e61de79275ad47c5278839a78de31c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-120-image",
+        "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-answer",
+        "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-common",
+        "sha256": "10c7cb960dbda7f35ef8445207a875cfd6c98392edbb4670a77fba6c748d6c13",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-answer",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-common",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-answer",
+        "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-common",
+        "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-answer",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-common",
+        "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-answer",
+        "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-common",
+        "sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "hanyang3",
+        "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "hanyang9",
+        "sha256": "08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "bufs-lcc",
+        "sha256": "28beb7730a0a39d0b573fa2c187cec4ca357a5e925a944227f6f42f1398c66ec",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "bufs-quality",
+        "sha256": "30f01e342d4846a57e26094cf9637016bb2aaea242327d3f20453e2635a6fc7b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-target",
+        "sha256": "dd3bd276783b6210d92417279e8b65b2206dea008d13165ce7d2e056f7de55c1",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-quality",
+        "sha256": "5081757470f40e3a305106c1aab0da88b05946df348d8aabb0d7a98b68aab976",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-payback",
+        "sha256": "7898d14fb8a9dcb2c2071a683faa0383bd47997504efa391546856d8716a0b46",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-tax-cash",
+        "sha256": "3c166ffcba390ec28804486b298085f446d1910e48147133b78f2b85a528ba90",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-overhead",
+        "sha256": "5eaabc521fc4a82b82cc23196281450a62c4d1bce69c9b74fbc2024e11a6da29",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-30",
+        "sha256": "6f92709b2c1b90e2ba3695393520d2a7296eb290973b69a248522172b48c7d22",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-90",
+        "sha256": "8a19d144523378a9eba3a2be828ce4829f6ac53b3f4a4468286c3ccf2b09e4f6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-1440",
+        "sha256": "c57e9f0531eeacfcb5e926d114cbfbfe52c236191dffe10d55c96af8e48afbc8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "absorption-1200",
+        "sha256": "4eb221b3b1472ea981ac3c0e0dfca281edcdd864b602ec4065014b23e11fb47f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "absorption-1560",
+        "sha256": "49283f20689e7b0cbcada2593306ac0b7246483711581644746d9bd570fb4185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      }
+    ],
+    "limits": [
+      "이 보고서는 네 조사결과의 표 정확성을 점검한다. 총괄검수자 승인, 새 해설 등록 승인, 기존 보류결론의 학술·법률적 확정판정이 아니다.",
+      "작성자 source_reads185개 전부를 독립적으로 내용대조하지 않았다. 185는 파일존재/해시의 기계확인 수이며 직접 읽은 원문·이미지·조문은 source_reads_actually_checked에 범위를 구분해 기록했다.",
+      "40행의 답안은 보존 questions.json과 전수 비교했다. 공식PDF 표를 별도로 시각 판독한 범위는2022-11/2025-01/2023-09 표본이다. 출제기관의 최신 정오표 유무나 공식키 최신성을 전수 확인하지 않았다.",
+      "법령의 시행일은 결과 메타데이터와 문항월·명시 법연도를 비교했다. 동일월의 실제 시험일을 새로 확인하지 않아 월내 시행일 전후를 전수 확정하지 않는다. 미래연도 판본의 드러난 예외는F01에 기록했다.",
+      "네트워크 새 원문 취득, 전체 영상 시청·음성 청취, 회귀검사 실행, 부분해설115개 정리는 수행하지 않았다. 공유 저장소는 이 QA에서 수정하지 않았다.",
+      "F01은 범위설명 문장 보완 요구이다. 현재 공식답안·문항 ID·등록 여부·데이터를 변경하라는 뜻이 아니다."
+    ]
+  },
+  "final": {
+    "reviewer": "/root/r28_matrix_qa",
+    "review_type": "작업2 조사표 정확성 QA; 현재 데이터 변경 승인이나 신규 해설 등록 검수 아님",
+    "baseline_commit": "9d78e5c",
+    "checked_at_utc": "2026-10-25T22:42:04.539261+00:00",
+    "coverage_ids": [
+      "2022-01-022",
+      "2022-01-055",
+      "2022-05-046",
+      "2022-06-019",
+      "2022-06-064",
+      "2022-09-015",
+      "2022-09-048",
+      "2022-09-064",
+      "2022-11-018",
+      "2022-11-048",
+      "2022-11-049",
+      "2022-11-065",
+      "2023-01-048",
+      "2023-03-083",
+      "2023-05-059",
+      "2023-09-022",
+      "2023-09-080",
+      "2023-09-085",
+      "2023-09-120",
+      "2023-11-024",
+      "2023-11-060",
+      "2023-12-029",
+      "2024-05-029",
+      "2024-05-100",
+      "2024-06-045",
+      "2024-06-048",
+      "2024-07-054",
+      "2025-01-027",
+      "2025-01-054",
+      "2025-01-077",
+      "2025-01-078",
+      "2025-06-080",
+      "2025-06-117",
+      "2025-09-080",
+      "2025-11-054",
+      "2025-12-052",
+      "2026-03-055",
+      "2026-06-054",
+      "2026-09-049",
+      "2026-09-097"
+    ],
+    "verdict": "pass",
+    "findings": [
+      {
+        "id": "F01",
+        "severity": "minor",
+        "status": "resolved",
+        "affected_file": "CACHE_DIR/tax_a-result.json",
+        "affected_field": "limits[2]",
+        "question_ids": [
+          "2023-11-060"
+        ],
+        "finding": "“해당 시험 이전 및 명시 법연도의 고정판본을 선택했다”라는 포괄적 설명은 예외를 누락한다. 해당 행은 2023-11 시험 이후 공포된 법률19926(2023-12-31 공포/2024-01-01 시행)과 NTS2024 신고안내를 사후 참고한다.",
+        "evidence": "행 needed_evidence는 기한 도래일 적용 기본법을 요구하고 searched_scope/source_reads에 부칙19926 제1조가 명시된다. 실제 법령표본 제5조와 부칙 제1조를 QA가 읽음. 따라서 부칙 확인 없는 소급적용·당시원문확인 단정으로 판정하지 않는다.",
+        "required_amendment": "한계문에 2023-11-060의 2024 신고기한에는 시험 이후 판본과 NTS2024 안내를 사후 참고했으며 시험 당시 확보·확인된 원문으로 간주하지 않는다는 예외를 명시한다. 보류결론과 공식답안은 유지한다.",
+        "initial_status": "amend_required",
+        "resolution": "작성자가 원본 제출을 pre-qa.json으로 보존하고 limits[2]만 정정했다. QA가 원본·수정본 구조를 재귀 비교해 변경 경로가 /limits/2 하나임을 독립 확인했으며 수정 문장도 직접 읽었다. 항목·출처·시도·답안·판정은 동일하다."
+      },
+      {
+        "id": "F02",
+        "severity": "info",
+        "status": "pass",
+        "finding": "review40과 조사40의 ID 집합 일치, 중복/누락/추가0. 필요근거·실제탐색·보류결과 필드 전부 존재. source_read_ids 끊김0.",
+        "counts": {
+          "finance": 9,
+          "tax_a": 13,
+          "tax_b": 12,
+          "cost": 6,
+          "total": 40,
+          "register": 0,
+          "hold": 40,
+          "answer_suspected": 18
+        }
+      },
+      {
+        "id": "F03",
+        "severity": "info",
+        "status": "pass",
+        "finding": "40개 official_answers가 questions.json answers와 전부 일치하고 등록·답안변경을 완료했다고 주장한 행이 없다. 40개 원본 이미지 SHA-256도 일치. 보존 공식PDF의 답표는 지정3회차 표본만 시각 재독했다."
+      },
+      {
+        "id": "F04",
+        "severity": "info",
+        "status": "pass",
+        "question_ids": [
+          "2022-11-049",
+          "2025-01-077",
+          "2023-09-120"
+        ],
+        "finding": "지정 원문3개와 관련 조문/Saylor 표본을 직접 대조했다. 영업사원은 업무중이라는 문구를 포함하지 않는다. 피부과 레이저시술만으로 시행령35제1호 단서의 요양급여대상 제외·구체 진료목록 요건이 확정되지 않는다. ③은 고객요구 파악을 가격결정 후 최초 수행한다고 명시하지 않으며, Saylor의 초기 구상·가격과 후속 상세설계를 구별한 조사 표현은 타당하다. 모두 미해결 범위로 남겼다."
+      },
+      {
+        "id": "F05",
+        "severity": "info",
+        "status": "pass_with_limit",
+        "finding": "접근200 HTML껍데기와 본문, 공식사이트와 Git고정미러, 다운로드/기계검색과 정독, 프레임과 전체시청을 구별하는 제한을 확인했다. 새1109 통합본을2022 전체 역사판본으로 확대하지 않는다. tax_b의 초기 NTS 접근확인-only 시도와 후속 본문 직접읽기 시도는 별개 기록이며 최종 본문읽기기록과 모순으로 간주하지 않는다."
+      },
+      {
+        "id": "F06",
+        "severity": "info",
+        "status": "pass_with_limit",
+        "finding": "185 source_reads의 대표 파일 존재·기록 SHA-256은 전부 재계산 일치. tax_b의 repo PDF SHA와 cache PNG SHA는 서로 별도 필드로 대조했다. 이 수치는185개 원문 내용의 독립대조 완료를 의미하지 않는다."
+      }
+    ],
+    "source_reads_actually_checked": [
+      {
+        "sha256": "09a32f0f6bf5740b129901a8e0b4b64a201e61cd989ddb3ed1eadab657f21c6c",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "09adc3d56c44bc7fb0c3a90b87476402259b1c8b5ccbdf889ef55212756ff477",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별. 초기 제출본을 보존한 pre-qa 복사본 해시와 일치.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "96ae9b6975f807826bcd018b496d8f7d43993a957d8929c4d790e782769eaa05",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "c2dde67606c4da50f55231a94441348a0825d5fbb66198933cda353686a561f4",
+        "range": "40행 전체의 필요근거·검색범위·보류이유·답안·출처연결·한계 및 source_reads/attempts 메타데이터 검토. 원문185건 내용의 독립대조와 구별.",
+        "method": "JSON direct field reading and structural inspection"
+      },
+      {
+        "sha256": "5fb78687ff3813a114ec759d9807a22a4f8385b70ed3baed07a3483b7c8c36b4",
+        "range": "review 40개 question_id/category 대조; 원장 전체 과거 기록 재검증 아님",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+        "range": "40개 ID의 answers 및 이미지 경로, 지정4문항 본문·공통조건 직접 확인; 나머지 본문 전부 독립재검토 아님",
+        "method": "JSON structural comparison and selected direct text reading"
+      },
+      {
+        "sha256": "6715750d7631b0e54b971fde0190727323984a36d18275748a12c8590706465c",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "b6528efa91bfa9e7f8ddba060351c77aea8e92a57df1b961e516aed19b644343",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+        "range": "원본 문항 이미지 전체",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "3dba0c145b19a7e49821f51a813eeae9fc162c99de6a7250cddead00b786b10f",
+        "range": "49번 공식②; 2022-11 보존 공식PDF49쪽 세무회계 답표 크롭",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "164ab0ab4db07fc9c834fbfafa49d6854ce6b103b9b05251a46d3f1a3b0c82f6",
+        "range": "77번 공식③; 2025-01 보존 공식PDF1쪽 세무회계 답표 크롭",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "b416d05e76a6a59dbb22089b6300b6ebdbf1837cf55d570bc5bd4231805f7106",
+        "range": "원가40번(전체120) 공식④ 및 원가5번(전체85)②",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "a9a1b91713f31990f4ecd5c637ec3815db38ab08b54e3db205720429aeb2735c",
+        "range": "PDF355/인쇄333쪽 접대비 한도초과액·법인명의 신용카드 미사용액 기타사외유출 표",
+        "method": "tools.view_image actual visual reading"
+      },
+      {
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "range": "제35조 전체: 특히 제1호 의사 용역 본문과 요양급여대상 제외인 가·나목의 구체 진료 목록",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "ddf64ea215a264910249d7c18c8ae36484e3c055d9d087537e51f3ae015bed12",
+        "range": "제106조 전체: 특히 제1항1호 귀속자 분기 및 제3호나목의 제1호에도 불구한 기타사외유출",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "range": "제25조 전체: 접대비 정의·증빙 및 한도",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "989ae2df79f20861ae6b2e63f451353515ef471f51c4646f18e116266aebb14e",
+        "range": "제5조 전체 및 파일말미 부칙19926 제1~8조 중 시행일·적용례",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "dd3bd276783b6210d92417279e8b65b2206dea008d13165ce7d2e056f7de55c1",
+        "range": "7.7 Target Costing 본문 네 단계 및 HP 예제. Step1 고객요구/가격/구상과 Step4 상세설계를 구별",
+        "method": "direct text read"
+      },
+      {
+        "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+        "range": "PDF74~75쪽 시행문단 및 PDF93쪽 상각후원가/97쪽 유효이자율 정의. 2022 역사판본 확인으로 간주하지 않음",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "range": "PDF1쪽 추출문 일부: 공통지시 존재 확인; 전체PDF 읽기 아님",
+        "method": "PyMuPDF page text direct reading"
+      },
+      {
+        "sha256": "16494db5294fd7da20abf19c7e811e8a2db64133016a83d1c5b40f4937f027d0",
+        "range": "limits[2] 정정문 직접 재독 및 보존 원본과 JSON 전체 재귀 비교. 변경필드는/limits/2 하나.",
+        "method": "direct text read and recursive JSON diff"
+      },
+      {
+        "sha256": "c55531dab37def335cf37005b0b9ab7d9a9d65ae95c72bc2c2eb6d09ac4db76f",
+        "range": "전체 변경보고와 전후 해시/변경필드/동일성 주장 대조",
+        "method": "direct text read and recursive JSON diff"
+      }
+    ],
+    "file_integrity_checks_only": [
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-question_image",
+        "sha256": "0232e2651347d4c779b794b2888b3c0d5af949fadac05ed0774039a6c6840ed6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-question_pdf",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-11-024-official_answer_pdf",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-question_image",
+        "sha256": "114c24ecb6e0470eadb6f54adaf182b7b29bc99fc23e9558eb3d98ae5b834f79",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-question_pdf",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-09-015-official_answer_pdf",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-question_image",
+        "sha256": "d37dee173536b31c2c22758b2f269e3c148c2d5a7efcbf1ebe4d5c824a5aca3a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-question_pdf",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-06-019-official_answer_pdf",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-question_image",
+        "sha256": "69fde6a8c2e2f63cdaf301f7b76f0e24e97734105a6ce61bbaf2498859ccdb27",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-question_pdf",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-11-018-official_answer_pdf",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-question_image",
+        "sha256": "e634f7b538275f85184f48dfcec1dfe6db461f6d8974a68cc859ad804909b775",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-question_pdf",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2022-01-022-official_answer_pdf",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-question_image",
+        "sha256": "d8d969c46fe4613c8355e47f0eba47110d66254460396846f1453e03795ec6ab",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-question_pdf",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2025-01-027-official_answer_pdf",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-question_image",
+        "sha256": "c14257c2cfffc8bb72fa84e8e2994b27d83db59923087868d63d2fdb1bb302c0",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-question_pdf",
+        "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2024-05-029-official_answer_pdf",
+        "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-question_image",
+        "sha256": "84a1cd80ebc9d7e2ee0f06b3dedd0d46a62e83c27b1f0eacfbb0e0e2a86b427b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-question_pdf",
+        "sha256": "438d17eced34f979cd64a56d3ed0f8cd77025bcbf2ea2040ec19aeb4ce0ab274",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-12-029-official_answer_pdf",
+        "sha256": "2df84ff51b025f5909c9a75f102a0afdd8cc5725dd029e14fbf26b5e94b7a1c8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-question_image",
+        "sha256": "91edd7f1aa97260db00afd4afd6c3f386f2685b88037cbd0586024eacc18b4dc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-question_pdf",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "2023-09-022-official_answer_pdf",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1007",
+        "sha256": "2dd27f38096202f2c04342f120ce64672caaf2e717a3bdab5ebfbd56a0dd927c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1102",
+        "sha256": "d0c41842116d30db11e7a064732e0aae5a3681f3e5820b7939edb74805b4d1bb",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1033",
+        "sha256": "93b666ac84708fd5550c149de1e0003953056f13b5d295c25f324a0e10afeba3",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1012",
+        "sha256": "cf7587997f93f57825fb7a0f041c3ee75d31f8d5fb2d101d6be240cf32e50817",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1115",
+        "sha256": "b62f86b1d7192f42eb77a2808619b634191f5e21792cc339ad30cd30889fd83f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1109",
+        "sha256": "6f21521295f284482409eed7d6ed3e57aaef8c378b24435dd68891762f4a3444",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "KASB-1032",
+        "sha256": "79a6b1bc944a1ee30e51734ab092bc7f7661b94560962d669bd79cc3534e7cfd",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-list",
+        "sha256": "28c2986db7f8bc4062b8d737fa41dcc6746684cb416d2464354b3ed7e8ecd6d8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation",
+        "sha256": "d9c65fbb9b7fd6e1faa90104d8eb2f4b459842f922c2158dc363e531c505edaa",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation-limit",
+        "sha256": "be7fb9681a50dd88daaf493b5cc68831ead25ba5c916936a0e67cbd7ccb8fac9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "finance",
+        "source_read_id": "kasb-search-donation-carry",
+        "sha256": "086c921340d7b9ef5ea7638235334e2949733591c5b021f9d29a85cb20ee4513",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2022",
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2023",
+        "sha256": "03fc88dc3841daca7af84289d0e2724aef06c65d7fcc8e8e88444a9b598316ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2024",
+        "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2025",
+        "sha256": "d3985c156bde0ccd02a1d7c6b23fcff01670a9e592b1e5929654e8340ad13fa8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_2026",
+        "sha256": "71b37268c2313c0eadff2d35da06b0ff98a8eb7ac48c8147e38501755c11c1b8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2022_JAN",
+        "sha256": "0c2fd1e4bb98f5676aaff0e7cccfac31596ac8da55f80186e2fd9225412e1275",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2022",
+        "sha256": "ddf64ea215a264910249d7c18c8ae36484e3c055d9d087537e51f3ae015bed12",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2023_JAN",
+        "sha256": "f8565b42b6131428a632109d4a5a0d219e5d39575deec948de2171990f1298ad",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2024",
+        "sha256": "6e156f0b4b02ab7c85d1566638185241c4967b74481e0447fa3c1ca8ccbcd65c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2025",
+        "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_DECREE_2026",
+        "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "VAT_LAW_2024",
+        "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "VAT_DECREE_2024",
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "R3T006_BASIC_LAW_20240101",
+        "sha256": "989ae2df79f20861ae6b2e63f451353515ef471f51c4646f18e116266aebb14e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "CIT_LAW_OLD10",
+        "sha256": "ae72fb8d5c01b076542e370c2f221be8f70dee4814999631b2c705959e9bd0d9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2022",
+        "sha256": "2d1af1ba6cd4a1cba40416ee234db2bb7666419bb201d70de8cd481862925807",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2024",
+        "sha256": "490ecc8128e3f8b07923e8857ce558682c897cf2dd11bafd9cd8473879af85e2",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2025",
+        "sha256": "ed153b912fdbf80d68df9743e126ac1b213ec0437e2bb8c823d73c4b15e9778b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_NTS_CIT_GUIDE_2026",
+        "sha256": "d3002c90324245469cc044f01190c92b80ae3ad37965219bc9a364fcd771ac22",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "R3T1_WATER22",
+        "sha256": "75ca8302ae34c6c9c27699d1c9f916935664ef037d08dd98af0dc755eac47606",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "TA_CROSS01_CIT_LAW_20251001",
+        "sha256": "5660285a14faf83605793130d9e903549ba26baa9b55cc54ca623e2938dbf6d8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-01",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-01",
+        "sha256": "220085d9e315fa62aa8ca4521f1ee71637f629407ab419f5217a639dd7f82142",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-05",
+        "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-05",
+        "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-01",
+        "sha256": "c8ec379144e3d1b8c530ce15092d0094184a1728335e5bb2c50557e04a283eda",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-01",
+        "sha256": "e11a0696064baab2afed3d6dea0403aed24ddf8d0b6f909dfd8f5460d42e02e7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-05",
+        "sha256": "b35038c0bc11dda99d6adb0e8500869eef6e646e8b57bd7f4893578c8fa715ce",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-05",
+        "sha256": "cd83ad0b87cfc7b08db9acd48e62b3223daa8a67515282ce357abe97cef8bd36",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2023-11",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2023-11",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2024-06",
+        "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2024-06",
+        "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2024-07",
+        "sha256": "e7ff73319b2b88e155937534bf2757ea675337bc2a215fb5262a35a8521a7354",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2024-07",
+        "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2025-01",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2025-01",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2025-11",
+        "sha256": "9d5f96865775539f30f7256c0af276a2ce0ff37bdafffb5625684502f856fc5f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2025-11",
+        "sha256": "8e3239c36cf110abcd8ac0f09d3249c8c3f2551888d8c44c5b20a135f233e9c8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "questionpdf-2026-06",
+        "sha256": "82d6d1c653c9902bdec623c69f06296f48f8a84787d1b0ff4c47a821ca625620",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "answerpdf-2026-06",
+        "sha256": "d3af44749dbcf500252cbf7e329f6f054d34b01aafcd10e6756176840de5e69d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2026-06-054",
+        "sha256": "6b21fa1abdd33c71d17ca1f298970a44e6204d2be9b9f4ee149c1e5ff170f77b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-11-054",
+        "sha256": "90794c46caad909e4c8d8643a2f4b32aee32a83f962cb8c21b0359858cb9b8f5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-01-077",
+        "sha256": "b6528efa91bfa9e7f8ddba060351c77aea8e92a57df1b961e516aed19b644343",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2025-01-054",
+        "sha256": "98154a6e524a29ce63c77c2b2d404277c674e9180c32a152454e0bdd8d49b02c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2024-07-054",
+        "sha256": "e9707dcaafc458f5c3f56975022e4badbab4da47cc2694034eecf2d0c792ae24",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-11-060",
+        "sha256": "7ef2d0c54fd9118f479d8fa82e218e7a2081be2eeb163b4452f60fa72c8191c0",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-05-059",
+        "sha256": "50dc9881bded10df4347e9fbb24c0e447045bf1d5160c38bd9fdda5831aae4a7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-11-049",
+        "sha256": "6715750d7631b0e54b971fde0190727323984a36d18275748a12c8590706465c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-01-055",
+        "sha256": "229967d1071357c0641009712281815e2f771534bb9f47f6f7fd27fca07a0ea6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-05-046",
+        "sha256": "79d1045d3eb462d1abb0701530a48abf978a94ab95fd7eb31c310142d17b1d41",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2024-06-045",
+        "sha256": "bbb115fdd299ab449e7d406f3e44e92a6f8b0b5df017c9beaca61b8d3754e8bd",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2023-01-048",
+        "sha256": "877b57cbd005a249234b98ebbd95db4bd7386c5702579f59610bea4874de0ac7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_a",
+        "source_read_id": "image-2022-09-048",
+        "sha256": "31b7edfeac52eb61c76eb0cda23ea650812f3321f2df8393b08694339374d6da",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2026",
+        "sha256": "2c2b99d7421eac2ceae7bed88018740fc37651f401250089210de19e68e62df9",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2025",
+        "sha256": "c83eb88324b23aab520e812fc6b20d9c9d5bfd42eb38b3fe6c7c1344551bbf4a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_LAW_2024",
+        "sha256": "fb99f6390539444059318db34d56a40152b3a85b9af169c6359e702289776c71",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "CIT_DECREE_2024",
+        "sha256": "6e156f0b4b02ab7c85d1566638185241c4967b74481e0447fa3c1ca8ccbcd65c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX01_법인세법_법률_20220101",
+        "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R9_CIT_ENF_2022",
+        "sha256": "dcfb0f6db1f8cac2cae397629e24d898790d8bd7448e99467c9a0850cbced921",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2024",
+        "sha256": "274e9383da7415b94b1b2dbdfc8e478d66729aa9277d1ac81678ca21c37551d7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_DECREE_2024",
+        "sha256": "245ce1089dc0ca77581f3873f581a82b73b4be9fc2c6200e0d6df73a4680bde5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2025",
+        "sha256": "d935881ac5a3abfbbe0a8922e9f277ce2ac4a506d8d5fe4023458fcf3b78319a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_DECREE_2025",
+        "sha256": "7b5d2015eecc249743b8d7c7f4cffec62fa57aa5dfbdb5864d520bd1c1025f72",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_법률_20220101",
+        "sha256": "ea4b6796a17d6ef443f0bae4d84aa45a14b8fd79c45ef426d5a0a51aa688a36f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_시행령_20220531",
+        "sha256": "4e813f7f3c9ee428fb6756e9055473413a8a3a662a24fcf485e1da604b869592",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "R7_TAX03_소득세법_시행령_20220802",
+        "sha256": "e4e3f50d92df2972d1bcd779776950df55939e34b1f6e3f83d0be0d4fb59a3c7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "VAT_LAW_2023",
+        "sha256": "967924b847dd6cafe84e4e871baf5699444d03dee0189e64aaf751d02b63ed12",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTB_LAW_2025",
+        "sha256": "00df53008528d3975580e4443a2fa62993cd8fa74f7c4958c2832b416ec42d6e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "tax_a_02__VAT_LAW_2025",
+        "sha256": "3afaa77a990f9853e57e6ecef3201e47b3faf9d5487520bc33bebaab111929b8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_AGENTS.md",
+        "sha256": "7c535ca1669a9d4cac6053d0e365a3e625f9a1687f9143c5a46b2d3efc0befc3",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_GPT_WORK_ORDER.md",
+        "sha256": "5b8754594bf47da6024ade669660992d438edee85d5547f1a7cf92c64bb0268f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_GPT_HANDOFF.md",
+        "sha256": "d65a37d1cb850278900fe0ba9e47e260fc6cbcf442d318125c2000767a586307",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_HANDOFF.md",
+        "sha256": "3cda0d155a99357afb688cdb1cff1e8a8577eb7aa75eac1df2d705c6fc64dc0d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_README.md",
+        "sha256": "8df3152f7d8509f57e26317c1254b34294908f8477004bde1c6e27a78befaf06",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "context_EXPLANATIONS.md",
+        "sha256": "9b5ea96e469efcfc6d0883ab20d2d036788ad4cf0b850ac523654b54ab7b7a17",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "prior_brief",
+        "sha256": "1c1eca81d0ca034f66aa4d0eecb46a3e0530217eb3e083c89325dfc3f0c11c09",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2026-09-049",
+        "sha256": "9f9f5cbcf45b3c0c446c9dfaa2f83cff41affb86b5e0123150f4130612da2027",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2026-03-055",
+        "sha256": "05a2fe38bd88a376e5f2b92bc4425aec34aee480b17467898a3369c3d5c7c010",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-12-052",
+        "sha256": "20f6a1030ecf5bca53549a813adaca4a39c4e0f23d1b0569687c13c1d876c6fe",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2024-06-048",
+        "sha256": "e57c373ea7252c2c6537ca53acf6f985c181ba33ee256a594b9a8f949c6b55ba",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-11-048",
+        "sha256": "e8d19c53ac3df3a789e00e5af96033134d4d282546c6a02e5f23185b2416e8e4",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-01-078",
+        "sha256": "4e7c1b88ffc48c704ef67e18835ad912333d70e760582824e10c909f865d4864",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2023-09-080",
+        "sha256": "e410e718ff1b81170862ec6977c14b7b51e1e24b2e2567aa5e959491b179cd33",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-09-064",
+        "sha256": "5a11fe82633fa5196f32a7121be58df18acd7e32bcfa511fa2a1e41c987ae01d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-06-064",
+        "sha256": "d2f4168f0659b04bfb7902be056d41d4c2ccf168e830357fe20103873a11c0a6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-09-080",
+        "sha256": "203a5ff9db2f64e1d269beb5ff99f73055731ac08129818e51c14051dc3da83e",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2025-06-080",
+        "sha256": "d14e500f16c58726c4bccf295301ae8ddde7af2ab2e2d0c0a3c87e59a429dcfc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "img_2022-11-065",
+        "sha256": "248a88e82c9d977545e4a8e82039bdb6c93765613636a2e2b90f5c4332e049ea",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-06",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-06",
+        "sha256": "36d92507a23e57e5f485a0222694c1e95819c84ed4dabe4050cdd5aebcb4c812",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-09",
+        "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2022-11",
+        "sha256": "348e2277f305552b26460aae0eb9bbe0987153698fdfa34133fb8452797ff201",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2023-09",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2023-09",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2024-06",
+        "sha256": "da58eebf49a3fc8e95605f03dd0d190de6cb45e759dca238d5a8c762e909def5",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2024-06",
+        "sha256": "715832a06314a9f6a8cf5f50068c272f4c05b1b0caabcdc0026b6ed20f237385",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-01",
+        "sha256": "438909c988bdc3d0498ddccde6bdb41574c424852f937184543006777093b13b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-01",
+        "sha256": "8d61e6921a30dd30dafe66f7e050cdb5ba59a2298d580f87f7a8d404e5c28285",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-06",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-06",
+        "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-09",
+        "sha256": "315388c5a344c034e609af335f85fc865c5919ea6dd0d37f806876875c67710a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-09",
+        "sha256": "0d0f45929d7d7563d6e18382940f113de62593c8604446fe85da5b5061b53bbc",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2025-12",
+        "sha256": "2cfb6bcc028ab44dc1a4aedcb064e4360ec27d79715311286b18763d6f40e3ac",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2025-12",
+        "sha256": "6a37603f836f12dd387a8522e87fef8b1ad6e25c2f0580482ab2b96544d89411",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2026-03",
+        "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2026-03",
+        "sha256": "b002e67b8b805f37f87a36c517313bf7cce824b7ce1dc8c7c61045194c261a55",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "ans_2026-09",
+        "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "common_2026-09",
+        "sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTS_2024_GUIDE_DIRECT",
+        "sha256": "dbb702ba304285591994a36ff7e2003c088e5da6e94dff2c949b595679c38e3d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "tax_b",
+        "source_read_id": "NTS_MAY2025_DIRECT",
+        "sha256": "9fb07c01c4e582b6fddb17d0fe20fb53af12167f80c78aa704ab24e752b02ce7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-097-image",
+        "sha256": "36b78881258722b7f11574fa17785c91859fac481e67ea16ff63501ecc7a0a8a",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-100-image",
+        "sha256": "158811fe9fc1e325b80a7fc0b62110e2245980fb00cf2312c149dc27da04775c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-083-image",
+        "sha256": "661605cad4e446432b106deb0d2703d24f1136fcf83553f4ba29aaba4d05cfef",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-085-image",
+        "sha256": "9af8d0ba44bbbeb5d06f015aeb82a724177479748b6a1f1066dd49f1088c9c3d",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-117-image",
+        "sha256": "43a65a042014bbed7f04c2e5af326aef73e61de79275ad47c5278839a78de31c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-120-image",
+        "sha256": "bff6bc4c4ed974788db644c6d68675ecf24cabcd1d79f2bee2464144a7352dc6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-answer",
+        "sha256": "b3180f05cccce1bf017aba1a16a2e871d4dfabd64200bf1464587e400074e2c6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-03-common",
+        "sha256": "10c7cb960dbda7f35ef8445207a875cfd6c98392edbb4670a77fba6c748d6c13",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-answer",
+        "sha256": "a09f593fe1dda0db4dea29c9a63ad875d17afe9abc826ca7d7621c8f82893b9c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2023-09-common",
+        "sha256": "717ed38a11944d9e7dce77a6475eabe980c13e1fdd480d704cb071c8e3d76d6c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-answer",
+        "sha256": "5c3242b850d66f57db4b26fa75c7b81c6272402c86a46dec91c8470dbc744185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2024-05-common",
+        "sha256": "dec403a26d72f6c7a48c2b99eb18f9cb37100921fa324cfe22adc8fe48edfd8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-answer",
+        "sha256": "4d51b9f67d7e6684f48b4f752f92d6b0acfcf60672dba62ffa82960a6c02318b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2025-06-common",
+        "sha256": "7d03dc7653a93fa89f3700e9a12c5978716683734b6c51d29cb16416e8a57623",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-answer",
+        "sha256": "56e13efcd02ddb6b4f4d0db764f82169081737b68459769289c94789462a69ae",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "2026-09-common",
+        "sha256": "6c29df0dc013ccf02e5cad696789406efd8d5f66910b5e66e43daa18e1a54f8c",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "hanyang3",
+        "sha256": "58f718dc6d0ed61e32e10072f3deb823a81a88b1e44f6abd0ee50ced14c83bc7",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "hanyang9",
+        "sha256": "08f4020ec29383578c9dadec28ca76346f9acddee8246f5bf454efcaf17d8129",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "bufs-lcc",
+        "sha256": "28beb7730a0a39d0b573fa2c187cec4ca357a5e925a944227f6f42f1398c66ec",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "bufs-quality",
+        "sha256": "30f01e342d4846a57e26094cf9637016bb2aaea242327d3f20453e2635a6fc7b",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-target",
+        "sha256": "dd3bd276783b6210d92417279e8b65b2206dea008d13165ce7d2e056f7de55c1",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-quality",
+        "sha256": "5081757470f40e3a305106c1aab0da88b05946df348d8aabb0d7a98b68aab976",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-payback",
+        "sha256": "7898d14fb8a9dcb2c2071a683faa0383bd47997504efa391546856d8716a0b46",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-tax-cash",
+        "sha256": "3c166ffcba390ec28804486b298085f446d1910e48147133b78f2b85a528ba90",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "saylor-overhead",
+        "sha256": "5eaabc521fc4a82b82cc23196281450a62c4d1bce69c9b74fbc2024e11a6da29",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-30",
+        "sha256": "6f92709b2c1b90e2ba3695393520d2a7296eb290973b69a248522172b48c7d22",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-90",
+        "sha256": "8a19d144523378a9eba3a2be828ce4829f6ac53b3f4a4468286c3ccf2b09e4f6",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "super-1440",
+        "sha256": "c57e9f0531eeacfcb5e926d114cbfbfe52c236191dffe10d55c96af8e48afbc8",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "absorption-1200",
+        "sha256": "4eb221b3b1472ea981ac3c0e0dfca281edcdd864b602ec4065014b23e11fb47f",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      },
+      {
+        "result": "cost",
+        "source_read_id": "absorption-1560",
+        "sha256": "49283f20689e7b0cbcada2593306ac0b7246483711581644746d9bd570fb4185",
+        "check": "file existence and SHA-256 only; content not independently re-read unless listed separately"
+      }
+    ],
+    "limits": [
+      "이 보고서는 네 조사결과의 표 정확성을 점검한다. 총괄검수자 승인, 새 해설 등록 승인, 기존 보류결론의 학술·법률적 확정판정이 아니다.",
+      "작성자 source_reads185개 전부를 독립적으로 내용대조하지 않았다. 185는 파일존재/해시의 기계확인 수이며 직접 읽은 원문·이미지·조문은 source_reads_actually_checked에 범위를 구분해 기록했다.",
+      "40행의 답안은 보존 questions.json과 전수 비교했다. 공식PDF 표를 별도로 시각 판독한 범위는2022-11/2025-01/2023-09 표본이다. 출제기관의 최신 정오표 유무나 공식키 최신성을 전수 확인하지 않았다.",
+      "법령의 시행일은 결과 메타데이터와 문항월·명시 법연도를 비교했다. 동일월의 실제 시험일을 새로 확인하지 않아 월내 시행일 전후를 전수 확정하지 않는다. 미래연도 판본의 드러난 예외는F01에 기록했다.",
+      "네트워크 새 원문 취득, 전체 영상 시청·음성 청취, 회귀검사 실행, 부분해설115개 정리는 수행하지 않았다. 공유 저장소는 이 QA에서 수정하지 않았다.",
+      "F01은 범위설명 문장 정정만 요구했고 수정 후 pass로 재판정했다. 공식답안·문항 ID·등록 여부·데이터를 변경하라는 뜻이 아니다."
+    ],
+    "initial_verdict": "amend_required",
+    "amendment_review": {
+      "initial_qa_path": "CACHE_DIR/matrix-qa.initial.json",
+      "initial_qa_sha256": "7cfd0419f0866c9562fd71eeff670cdc9b4d55868e72864c0130a626f280cacd",
+      "before_result_path": "CACHE_DIR/tax_a-result.pre-qa.json",
+      "before_result_sha256": "09adc3d56c44bc7fb0c3a90b87476402259b1c8b5ccbdf889ef55212756ff477",
+      "after_result_path": "CACHE_DIR/tax_a-result.json",
+      "after_result_sha256": "16494db5294fd7da20abf19c7e811e8a2db64133016a83d1c5b40f4937f027d0",
+      "revision_path": "CACHE_DIR/tax_a-qa-revision.json",
+      "revision_sha256": "c55531dab37def335cf37005b0b9ab7d9a9d65ae95c72bc2c2eb6d09ac4db76f",
+      "independently_computed_changed_paths": [
+        "/limits/2"
+      ],
+      "items_source_reads_attempts_identical": true,
+      "final_scope": "표현 정정 후 조사표 정확성 QA pass. 신규등록/기존데이터 변경 승인 아님."
+    }
+  },
+  "author_revision": {
+    "author": "/root/r27_abc_review",
+    "review_requester": "/root",
+    "qa_reviewer": "/root/r28_matrix_qa",
+    "date": "2026-10-25",
+    "original_submission_path": "CACHE_DIR/tax_a-result.pre-qa.json",
+    "revised_submission_path": "CACHE_DIR/tax_a-result.json",
+    "before_submission_sha256": "09adc3d56c44bc7fb0c3a90b87476402259b1c8b5ccbdf889ef55212756ff477",
+    "backup_sha256": "09adc3d56c44bc7fb0c3a90b87476402259b1c8b5ccbdf889ef55212756ff477",
+    "after_submission_sha256": "16494db5294fd7da20abf19c7e811e8a2db64133016a83d1c5b40f4937f027d0",
+    "changed_fields": [
+      "limits[2]"
+    ],
+    "before_text": "해당 시험 이전 및 명시 법연도의 고정판본을 선택했다. 과목공통에 법연도가 없는 문항의 tax_law_year=null은 그대로 보존하고 원문의 거래·사업연도에 한정해 법령을 비교했다.",
+    "after_text": "일반적으로 시험 이전·명시 법연도의 고정판본을 선택하되, 2023-11-060의 2024년 기한 판단에는 시험 이후 시행판본인 국세기본법 2024-01-01판과 국세청 NTS2024 신고안내를 사후 참고했다. 이를 시험 당시 원문을 확인한 것으로 간주하지 않는다. 과목공통에 법연도가 없는 문항의 tax_law_year=null은 그대로 보존하고 원문의 거래·사업연도 및 기한 도래일을 구분해 비교했다.",
+    "basis": "QA 지적 수용: 2023-11-060에서 읽은 2024-01-01 시행 기본법과 NTS2024 안내는 시험 후 자료이다. 기존 source_reads와 항목별 조사내용에 실제 판본을 기록했지만 총괄 한계문장이 이를 시험 이전 자료로 포괄할 수 있어 범위를 정확히 한정했다.",
+    "unchanged_assertions": {
+      "items_identical": true,
+      "source_reads_identical": true,
+      "attempts_identical": true,
+      "all_item_decisions_and_official_answers_identical": true,
+      "other_limit_entries_identical": true,
+      "repository_files_modified": false
+    }
+  }
+}

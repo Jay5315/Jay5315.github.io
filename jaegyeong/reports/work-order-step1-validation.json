@@ -67,7 +67,108 @@
   "runtime_changed": false,
   "data_changed": false,
   "zip_rerun": "not required: runtime/ZIP unchanged",
-  "deployment": "pending task-unit commit and push",
+  "deployment": {
+    "pages_run": 40240278184,
+    "conclusion": "success",
+    "checked_at": "2026-10-25T22:31:47.433072+00:00",
+    "commit": "9d78e5ce4297f8aeea9e525e55fca3d246c238e1",
+    "tls_verification": true,
+    "all_match": true,
+    "file_count": 13,
+    "files": [
+      {
+        "path": "index.html",
+        "local_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "public_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+        "match": true,
+        "bytes": 2304
+      },
+      {
+        "path": "sw.js",
+        "local_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "public_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+        "match": true,
+        "bytes": 6876
+      },
+      {
+        "path": "assets/bank-manifest.json",
+        "local_sha256": "266d2ae1c1951f49443160d76e9c71a0b17797aa97426e36a1a36cb947bfc4e9",
+        "public_sha256": "266d2ae1c1951f49443160d76e9c71a0b17797aa97426e36a1a36cb947bfc4e9",
+        "match": true,
+        "bytes": 3213
+      },
+      {
+        "path": "assets/bank-data.js",
+        "local_sha256": "23515c64470bace5c00ce1e680e83adf5babb8bc7ce195b9d84f2bc1c5a2b8dc",
+        "public_sha256": "23515c64470bace5c00ce1e680e83adf5babb8bc7ce195b9d84f2bc1c5a2b8dc",
+        "match": true,
+        "bytes": 20364713
+      },
+      {
+        "path": "assets/app.js",
+        "local_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "public_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+        "match": true,
+        "bytes": 92263
+      },
+      {
+        "path": "assets/app.css",
+        "local_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "public_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+        "match": true,
+        "bytes": 57514
+      },
+      {
+        "path": "assets/data-loader.js",
+        "local_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "public_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+        "match": true,
+        "bytes": 5742
+      },
+      {
+        "path": "assets/offline.js",
+        "local_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "public_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+        "match": true,
+        "bytes": 4695
+      },
+      {
+        "path": "assets/icon.svg",
+        "local_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "public_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+        "match": true,
+        "bytes": 216
+      },
+      {
+        "path": "assets/bank/core-4c27033b8c4ebfa4.js",
+        "local_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "public_sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+        "match": true,
+        "bytes": 8028773
+      },
+      {
+        "path": "assets/bank/explanations-finance-8024d0dec9102ff0.js",
+        "local_sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "public_sha256": "15a40ff7baacb13b3dd00bbbab8be255875e4ce789ae4ff6cf49411385ceeb37",
+        "match": true,
+        "bytes": 4889539
+      },
+      {
+        "path": "assets/bank/explanations-tax-abcdd69587ae437a.js",
+        "local_sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "public_sha256": "98af2e94a98ecfb978da854391e3b7ece5f972f30862141c196939b860d7d61d",
+        "match": true,
+        "bytes": 3947769
+      },
+      {
+        "path": "assets/bank/explanations-cost-de0e563e397fddad.js",
+        "local_sha256": "a2932532d9b51a25f151e8457bf653874518cb589700b5aaeddb79a2f76668c0",
+        "public_sha256": "a2932532d9b51a25f151e8457bf653874518cb589700b5aaeddb79a2f76668c0",
+        "match": true,
+        "bytes": 3697977
+      }
+    ]
+  },
   "remaining": [
     "entire video/audio not watched",
     "publication edition not confirmed",

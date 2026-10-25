@@ -1,0 +1,72 @@
+{
+  "task": 2,
+  "baseline_commit": "9d78e5c",
+  "tests": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "suite": "test_offline",
+      "exit_code": 0,
+      "output": "PASS: offline browser regressions complete."
+    }
+  ],
+  "run_checks_log_sha256": "1a434a513602a07752b4a41803aa435e8a3be15340bfd6b9314dbab7d7223679",
+  "after_qa_explanations": "PASS: Ran 68 tests in 26.418s; OK after context/source separation",
+  "matrix": {
+    "items": 40,
+    "hold": 40,
+    "register": 0,
+    "source_reads": 179,
+    "file_hashes_checked": 212,
+    "actual_authors": 4,
+    "historical_work_context_reads": 6
+  },
+  "qa": {
+    "reviewer": "/root/r28_matrix_qa",
+    "initial": "amend_required: one overly broad publication-date limit",
+    "final": "pass after limits[2] only correction",
+    "independent_semantic_scope": "25 explicitly recorded samples; 185 files checked mechanically for hashes, not all content independently read"
+  },
+  "new_regressions": {
+    "before": "2 FileNotFoundError errors: required matrix absent",
+    "after": "2 PASS; omission/unknown source/unsupported registration rejected"
+  },
+  "data_changed": false,
+  "runtime_changed": false,
+  "zip_rerun": "not needed: runtime and ZIP unchanged",
+  "deployment": "pending unit commit/main push",
+  "after_qa_initial_failure": "1 error: mutable HANDOFF context compared to current file. Six work-rule context reads were preserved at revision 9d78e5c separately from 179 question/source receipts; no original question/statute/source check removed."
+}
