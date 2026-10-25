@@ -1,0 +1,1706 @@
+{
+  "reviewer": "/root/r28_matrix_qa",
+  "review_type": "작성자가 아닌 별도 검수자의8개 실제 변경안 내용 검수.115건 그룹 목록 검사는 별도이고 전체 출처 재검증과 구별.",
+  "baseline_commit": "c5b27a4",
+  "created_at_utc": "2026-10-25T23:13:33.854858+00:00",
+  "verdict": "pass",
+  "proposal_binding_scope": "각 amendment 객체의 정확 canonical JSON digest에 개별 판정 결속. 전역 proposals 파일 해시는 승인 결속에 사용하지 않음.",
+  "amendments": [
+    {
+      "question_id": "2022-09-054",
+      "author": "/root/r27_abc_review",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "f634215753a8c3a1eee75ede3a312e642f6cd1e867c68edae2a391d42af6af81",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "cecc3de1494e15b532b7cdaa48f5f3976accdaeae85c48f05307335c14414b4b",
+          "finding": "영42① 본문의 기업회계기준 매출액 설명과 맞는 일반 설명이다. 원문의 일반 표현을 예외 없는 법칙으로 새로 확대하지 않았다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "018a54edfd18ec6bbf681e61c3cc959cb4f1cf02df968d9c61e1d31bfd7bca04",
+          "finding": "영36①2·3호에 따라 특수관계인에게 기부한 지정기부금 현물은 장부가액과 시가 중 큰 금액이라는 설명이 맞다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "9040cbd0d5265ef51cc72de1b9c715e7d84d37034974fd85835a9a6d145f3a9b",
+          "finding": "20% 법정최소기준과 공식③을 제시하되30% 사례해석의 반론을 명시하므로 partial 설명으로 정확하다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "98a000bd59ec9d2b93f39a495a15c16d5b7da45f104e75bed1c7c6402a338ca0",
+          "finding": "국세청PDF290/42의 일반규칙과 예외를 함께 보존한다. 모든 약정포기가 항상 접대비라는 단정이나 원문에 없는 포기사유 추가가 없다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "tax_corporate::image-2022-09-054",
+        "tax_corporate::answerpdf-2022-09",
+        "tax_corporate::CIT_LAW_2022",
+        "tax_corporate::R9_CIT_ENF_2022",
+        "tax_corporate::TA_NTS_CIT_GUIDE_2022"
+      ],
+      "limits": [
+        "③의30% 문언에 따른 정답 유일성과④의 실제 포기사유는 해결되지 않았다. partial 유지에 대한 한정된 설명 검수다.",
+        "기본통칙 독립문서 전체를 재독한 것이 아니라 국세청2022 안내의 실제 인용문·예외를 확인했다.",
+        "법령은 고정 Git 미러의 지정 조문·부칙을 읽었으며 원기관 역사판본 전체 동일성을 입증하지 않는다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "ad988e2150fb9c9a72b1e777e53ec5a103067a108abfc92b86a93a013e9fe2b1",
+        "finding": "법58①의20% 기준과 공식③을 설명하면서 30% 사례도20% 요건을 충족한다는 기존 문언 한계를 보기③·unchecked_points에 유지한다. 요약을 정답 유일성의 독립 입증으로 읽지 않는 partial 범위에서 정확하다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "a1136ced2fc1f0eef117c4761a25ffedf00df37cc88d9a41804a21a623b5337c",
+          "finding": "법58①의20%·납세곤란·한도와 영95①의 토지제외 사업용자산 범위를 직접 읽었다. 단계 설명과 일치한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "9c09f08026f0ba4ca0d800faaf7a226097935a243d8ea4d46a0c397a570f1e15",
+          "finding": "법정 최소비율과30%라는 제시비율의 차이는 정확하다.30% 사례 자체를 배제하는 결론으로 확대하지 않으며 보기③·미확인란에 그 한계가 있다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "527cd10656a1dc3a6aab14ae02ef1ab1cd857bc3e9b43e3c0594fec234f9dcd5",
+          "finding": "영42① 본문 매출액과36①2·3호의 지정기부금 현물평가를 직접 읽어 일치 확인. 특수법인 수입금액 예외까지 전수 검토한 주장은 아니다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "0018433b9ccfdb76cf3737b64fcd464ced2a47ce3769de6b90ae03f902dac87a",
+          "finding": "국세청PDF290쪽의 약정포기 접대비/기부금 규칙과42쪽 정당사유 예외를 직접 읽었다. 구체 포기사유 미제시라는 제한을 정확히 유지한다."
+        }
+      ],
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": false,
+        "before_text_sha256": "f62e18881980f448358e50920618ea2b35fa9e4a608af81e231f1fa5998b45f5",
+        "after_text_sha256": "f62e18881980f448358e50920618ea2b35fa9e4a608af81e231f1fa5998b45f5",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      }
+    },
+    {
+      "question_id": "2022-09-073",
+      "author": "/root/r28_tax_b_research",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "7f212c9e23878cc1fa16762dd74e4f3f24df9c2861715644372dabb967cd3745",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "4cb58e83e3d916f176855d14b69bec84c7e35a327bde5f52622d10cacd975fa8",
+          "finding": "법29③2호의 자신이 공급한 재화 시가와 대가로 받은 제품 시가를 구별한 오류 설명이 맞다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "c5302868a6125e025747340a73ab42b6bd5fa5dda0f860d85c2cb536a6429fc6",
+          "finding": "부자의 특수관계인 조문 연결만 새로 확인했고 무상/저가·부당조세감소 요건 및 임대료 미제시 한계를 함께 둬 정확하다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "1979b96fb0aed3d2b95ec3be4e40895c26e30b23869543030337a8de853687fc",
+          "finding": "법29⑥의 장려금·대손금액 불공제와 일치한다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "adc2f0c1fb242b7fbebf63f58253744686125d5322864193a3892f8281d324c2",
+          "finding": "법29③3호 본문을 설명하면서⑪의 감가상각자산 예외를 밝힌다. 이 일반 보기의 비교판정 문제는 unchecked_points에 남는다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "tax_income_vat::img_2022-09-073",
+        "tax_income_vat::key_2022-09",
+        "tax_income_vat::VAT_LAW_2022",
+        "tax_income_vat::VAT_DECREE_EARLY_2023",
+        "tax_income_vat::PID_20220802",
+        "tax_income_vat::NTB_DECREE_20220802_SNAPSHOT"
+      ],
+      "limits": [
+        "임대료 조건이 미제시되어 모든 특수관계 임대의 과세표준이 시가라고 확정할 수 없다.",
+        "①이②·④보다 가장 올바르지 않다는 비교는 공식답안 처리이며 독립적으로 정답 유일성을 확정하지 않았다.",
+        "2022 시행법령의 친족범위만 확인했다.2023 친족범위 개정을 소급 적용하지 않는다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "21d8d9477638ade7112f9f015bf2cba884ce30319cf41184841436ccf6f71852",
+        "finding": "금전 외 대가의 공급가액은 자신이 공급한 재화의 시가라는 법29③2호와 맞다. 공식①이 가장 틀리다는 비교의 유일성은 여전히 partial의 미확인 항목으로 유지한다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "614870946e52f3b472e96af2f40e8c67f308c64c7b680564d44884c244b94d60",
+          "finding": "법29③2호를 직접 읽어 대가로 받은 제품의 시가와 자신이 공급한 제품의 시가를 구별한 설명이 정확함을 확인했다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "dfa5ff7790f22eeb65c79126ab59c384efd7cf92a06cdbd647c9b6219cd8e646",
+          "finding": "법12②·29④ 및 영26을 직접 읽었다. 특수관계 사업용부동산 무상/부당저가와 부당한 조세감소 요건을 정확히 한정한다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "5d4ca70c738ed6569343bbdb4ace48ab9f2d577672568d43b3ed1c9e1bceaae4",
+          "finding": "영26①→소득세영98①→국기영1의2①1호의 실제2022판 조문·부칙을 직접 읽었다. 부자는6촌 이내 혈족이고, 임대료 사실은 별개라고 구분한 설명이 정확하다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "13b80cdc448d9240ca410d91dd9e160885d02aacd456fc138009dbb549ed4c94",
+          "finding": "법29⑥의 장려금·대손금액 과세표준 불공제와 일치한다."
+        },
+        {
+          "step_number": 5,
+          "verdict": "pass",
+          "text_sha256": "2fdb03133790f1432049347db4df0768e3e29fdc876752b5fe7306e24cd5032b",
+          "finding": "법29③3호의 시가와⑪의 감가자산 별도계산을 구별하여 정확하다."
+        }
+      ],
+      "previous_proposal_sha256": "0e803af37026579dd4f1534eeca59372a58ed9ccf9538fe493128f3d032f9700",
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": true,
+        "before_text_sha256": "3fb245e1233a79bd1c2ce7a265cdc1a4f89b41e0267659c56816505fd764eb42",
+        "after_text_sha256": "cfb4dcd1bd601005f3dd6a2b14338d027d557903c58faded8e8e862fab156d44",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    },
+    {
+      "question_id": "2024-07-081",
+      "author": "/root/r27_job_regression_review",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "a098578d2a4a758cad11b00d1c621b51ae1de89f46d1d34ec38d549cb03a0fc2",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "05abcefe39cfc77c0994157bef3d5130e0b8f097f01f46603f8c77f43c60b8d7",
+          "finding": "1550초에 직접 있는 문구이며, 제안은 이 국내교재의 화폐단위 원가정보 범위로 한정한다. Saylor의 넓은 관리회계와 충돌하도록 일반화하지 않는다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "85179acf6b59fbacbc3afb9462a93680eabeafc862fbd013ccb7d96f2d0e4ffc",
+          "finding": "1550초의 모든 결정 목적적합성 한계와 직접 일치한다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "ae341452e52bb5a4e585d1931a142a1ca4d6bc7fea892b27e73fa909da398132",
+          "finding": "1550초의 목적별 절차 적용 어려움과 직접 일치한다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "2f629c6eb1b0d621d5f7e0851f37fdc4c489061e5f95e40a5c066eadb52f5231",
+          "finding": "1550초에서 재무회계 특성과 원가회계 절차 부담을 구별한 내용을 대조했으며, 자료수집 어려움이라는 결론을 원가회계 한계로 잘못 연결한 설명이 정확하다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": true,
+      "source_read_ids": [
+        "cost_definitions_makebuy::2024-07-081-image",
+        "cost_definitions_makebuy::2024-07-key",
+        "cost_definitions_makebuy::video-01-1",
+        "cost_definitions_makebuy::saylor-ma"
+      ],
+      "limits": [
+        "승격은 실제 읽은 국내교재의 정량적 원가정보 문맥에 한정한다. 모든 원가·관리회계가 비재무정보를 제공하지 못한다는 보편 명제를 승인하지 않는다.",
+        "정확한 교재 출판판본·시험 당시 판본 동일성·전체영상/음성은 확인하지 않았다.",
+        "옛 Saylor/여러회차 답안 인용 전체를 다시 읽지는 않았다. 핵심 미확인 두 항목은 새 국내본문과 Saylor1.1의 범위구별로 직접 확인했다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "06d17294a048931b854e2fddebd376ffe974847da354b0cb876e3cb08e6c74ba",
+        "finding": "새로 직접 읽은1550초 교재는 객관적 측정 자료의 수익·비용 인식을 재무회계에 연결하고 원가회계의 목적별 절차 부담을 구별한다. 이를 자료수집 어려움으로 바꾼④의 설명과 정확히 대응한다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "1a383c1a300b72457481bda9b3738417fa2d78e57b04f96285c0e62b0943279f",
+          "finding": "1550초의 화폐단위 계량자료와 비화폐·질적정보 한계를 직접 읽었다. 넓은 관리회계의 비재무정보와 적용 범위를 명시적으로 구별한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "7211ecc3d9364d6a74b7e25c4f759703cef068208373ccbee6d7f0dc154880e8",
+          "finding": "1550초에 모든 의사결정에 목적적합한 정보를 제공할 수 없다는 문장을 직접 확인하여②와 일치한다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "da33ff219495ff9dd8b5ce439b463385f6938f3948b5765636acb62ce438730f",
+          "finding": "1550초의 경영자 목적별 다양한 회계절차 적용 어려움과③이 직접 일치한다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "6f83d8aeba11ba0deba5d02812dce7e913c5d5c9e29b728440b72fd10a1d7cfa",
+          "finding": "1550초는 객관적 측정자료 수익·비용 인식을 재무회계 특성으로 배치한다.④는 그 특성에 자료수집 곤란을 붙여 원가회계 한계로 돌렸으므로 교재의 해당 한계 목록과 맞지 않는다는 설명이 정확하다."
+        }
+      ],
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": false,
+        "before_text_sha256": "294b1ba88b0d3ca28c08ea8a09b545d4f757cb532e8eee5a56d9143518823956",
+        "after_text_sha256": "294b1ba88b0d3ca28c08ea8a09b545d4f757cb532e8eee5a56d9143518823956",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      }
+    },
+    {
+      "question_id": "2026-01-081",
+      "author": "/root/r27_job_regression_review",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "84cbfe33e70b97da882a607d3310bcaeee5808fc36b29c98f994e2665df26d7c",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "6c8cd583415260b5869bbca961af1b17cf7d64da07945864abb969b8751a810b",
+          "finding": "새 비용효익 본문 및 Saylor3.3과 일치하여 고려하지 않는다는①의 오류 설명이 정확하다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "18097c2caec34f86fc044d3871dccefecfb2df93d52c2b25b7369ef082c517da",
+          "finding": "목적에 따라 달라지는 적합성과 특정 시점 모든 결정의 한계가1550초에 직접 있어 맞다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "dc07a70c4c330f7ec62477d7cae1395a6f701d00c43e1aa0c297ea6cd1dfc3a9",
+          "finding": "경영자 목적별 서로 다른 회계절차 적용 부담이1550초와 직접 일치한다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "dd3c0c8e1fef70f391593ea9fc6df398490442fe05156e68f276512257ad3542",
+          "finding": "1550초 국내교재의 화폐단위 원가정보 문맥으로 한정하고 관리회계의 비재무정보 제공을 구별하므로 정확하다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": true,
+      "source_read_ids": [
+        "cost_definitions_makebuy::2026-01-081-image",
+        "cost_definitions_makebuy::2026-01-key",
+        "cost_definitions_makebuy::video-01-1",
+        "cost_definitions_makebuy::saylor-ma"
+      ],
+      "limits": [
+        "④는 해당 국내교재의 화폐단위 원가정보 문맥으로 한정한다. 넓은 관리회계에 대한 보편적 비재무정보 금지로 읽지 않는다.",
+        "정확한 교재 출판판본·시험 당시 판본 동일성·전체영상/음성은 확인하지 않았다.",
+        "새1550/1552/1558초 및 Saylor1.1·3.3의 지정 문단만 직접 읽었으며 기존 모든 인용을 전수 재검증하지 않았다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "dad0646f0ed7189344f8b12a84f8f26d0ec9cae9b1707f6ecdc2d03d851fd9c1",
+        "finding": "1552초 비용·효익 분석으로 원가정보 양을 정한다는 직접 문장 및 Saylor3.3의 비용효익 비교와 일치한다. 비용대비 효익을 고려하지 않는다는①의 오류 설명이 정확하다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "3542b566991c273f5fbb18e1d26eca3d37e59e8a43c28be4d86af2ad3aaee937",
+          "finding": "Saylor3.3 도입문답과 ABC의 비용·효익 단점을 직접 읽었다. 다수원가집합·원가동인 추적이 비용을 요구하며 효익과 비교한다는 기존 예시가 정확하다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "e982850d4640ad2fa6dcc9b1b1c634c1c0ff9c813f782f33aaecd7e809955d2a",
+          "finding": "1552초의 원가정보 양을 비용효익으로 정한다는 문장과1550초 재무회계 객관측정 대비를 직접 읽어 일치 확인했다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "0af3ee2090b6113c3bda8b7d319b9f20d195c34bd3d485c11edaf3aba256fc77",
+          "finding": "1550초의 모든 결정 목적적합성 한계 및 목적별 절차 적용 어려움과②·③의 설명이 일치한다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "3de6059ca56812aa749bcdd1f06c8e794e897ca5276eb194c17769b355690fd7",
+          "finding": "1550초의 화폐단위 계량자료 정의범위에서 비화폐·질적정보 한계가 직접 확인된다. 넓은 관리회계로 일반화하지 않아 기존 정의충돌이 해소된다."
+        }
+      ],
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": false,
+        "before_text_sha256": "294b1ba88b0d3ca28c08ea8a09b545d4f757cb532e8eee5a56d9143518823956",
+        "after_text_sha256": "294b1ba88b0d3ca28c08ea8a09b545d4f757cb532e8eee5a56d9143518823956",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      }
+    },
+    {
+      "question_id": "2022-05-091",
+      "author": "/root/r28_cost_models (작성자; 독립 검수자 아님)",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "ea68305760f302497667254f528b27274faa0ec871af490624d35ff7f005ea51",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "59e34cfc24f554d04066fe04a4d2a88e01eddeaca7a4e9dffae530d612f6adf5",
+          "finding": "계량정보 산출과 비계량정보 동시활용 가능성을 구별하고 직접 부정근거 부재를 남기므로 partial의 정확한 제한 설명이다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "71c03b8d8f01f2cdf84b9b5789dd57550b6ceb738df75e0c8622360f0c5aefc1",
+          "finding": "미리 정한 표준원가라는 설명은1340초와 맞는다. Lumen/Saylor 기존인용의 각 문장 전체를 새로 재검증한 주장은 아니다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "6918926e29a742ae25fc82fd3bfe08fdff8b47a3032400e48f61b3aa38372aed",
+          "finding": "표준·실제 비교에 의한 통제라는 기존 설명을 보존한다. 예외관리의 Lumen 인용 자체는 이번 별도 재독 범위 밖이다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "73a8eb4a6c40fbef0b0a3e671036631b9502b8c302f44beace8763ee0e39ab8d",
+          "finding": "새1600초의 출고량·사용량 및 완성즉시 계산 문구와 직접 일치한다. 실제사용량과 표준허용수량을 같은 값으로 바꾸지 않는다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "cost_models::cost_models-standard-1340",
+        "cost_models::cost_models-standard-1600",
+        "cost_models::2022-05-091-image",
+        "cost_models::2022-05-answer-page49"
+      ],
+      "limits": [
+        "①의 비계량정보 활용 가능성 문제는 해결되지 않았다. partial 유지 및④의 직접 문구만 보강하는 검수다.",
+        "기존 Lumen8.2/8.5·Saylor10.2/10.9 전부를 독립 재독하지 않았다. 신규 국내1340/1600초와 원문·공식답안을 직접 재독했다.",
+        "R28_COST_MODELS_CUP_STANDARD_BODY를 동일05-1영상의 기존 R22_W0_CUP2023_STANDARD_VIDEO로 바꾼 ref 정규화는 내용 추가가 아니다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "286c518e68f8b8eaf001324afd271156851e5869794c27e4384e5a052ebf46bd",
+        "finding": "새1600초는 출고량·사용량과 완성즉시 원가계산 문구를 직접 포함한다.①의 비계량정보 가능성을 반박하지 못했다는 한계를 유지하여 partial 보강 범위에 정확하다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "e57b76c90ab90f42d8c7e6e5924b66908637ca1030e5b8faafddbf8749b7521a",
+          "finding": "새1340초의 제품원가를 미리 정한 표준원가로 측정한다는 정의와 일치한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "27cad4a6f52724e1d6fd21bf0a22613f6b5cfe7b0b7e3b60b94ffd4f9c3d8d5a",
+          "finding": "표준과 실제 비교·통제 및 미리 정한 표준에 따른 계산이라는 기존 설명을 점검했다. 이번 독립 재독의 신규 직접 근거는1340/1600초이고 Lumen 기존 인용 전체 재독은 하지 않았다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "b5aa2092cf444b79b97a1bbe0f932b23999823761f3f8b59a5563f40fa4093a4",
+          "finding": "공식①의 처리와 비계량정보의 직접 부정근거 부재를 명시하여, 소거법을 완전한 가능성 반박으로 과장하지 않는다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "acb00c5480603430e8ab165305bfcf62633b272e41c1ee653111682080c338f9",
+          "finding": "1600초의 회계업무 간소화·원가보고 신속성 문단을 직접 읽어 출고량/사용량 표현과 일치 확인.①의 별도 가능성 문제를 해결한 것으로 세지 않는다."
+        }
+      ],
+      "previous_proposal_sha256": "e25af7330622f377a30298f888a725c63b84bbf81a8add986a5fc5bf2d742a17",
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": true,
+        "before_text_sha256": "5362e2705fcb6cfd0de1d9a5194777832d7c0f8f12225366ac51bf69dec0ee1d",
+        "after_text_sha256": "da25e740809784fc5a7a32adfc89c77acf66d7fe6046ecf2d27bb6b41d58ff35",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    },
+    {
+      "question_id": "2023-11-096",
+      "author": "/root/r28_cost_models (작성자; 독립 검수자 아님)",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "b009c65c9a9a17f6609e54ef3154085d46f0e53a566a239f6a1ea4a133520b6e",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "cb426b4b6a969e33c86922a5801f10667794f4499f2e0df856e7fef1d6bb1429",
+          "finding": "원문의 선택지1 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "1df42bf04299879fb75c6fdde031738c8f9bd13d4bdb5600d0ace9d47db64ee9",
+          "finding": "원문의 선택지2 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "794e7eb8e0b1b92d2f27dab17fa2236e1de7758381e2e0ac374719c9083f87f7",
+          "finding": "원문의 선택지3 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "94004cdf4b0d1036c641d4dd340b91b96b2670d6845783baed12f87ebfd1f5d5",
+          "finding": "원문의 선택지4 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "cost_models::cost_models-absorption-1200",
+        "cost_models::cost_models-absorption-1560",
+        "cost_models::cost_models-absorption-1650",
+        "cost_models::cost_models-super-30",
+        "cost_models::cost_models-super-90",
+        "cost_models::2023-11-096-image",
+        "cost_models::2023-11-answer-page1"
+      ],
+      "limits": [
+        "본 검수의 보기별 pass는 조건부 설명과 한계 표시가 정확하다는 뜻이다. 각 진술의 보편적 참·거짓 또는 정답 유일성을 모두 입증했다는 뜻이 아니다.",
+        "비교표의 문구와 고정화 본문 사이 적용 범위 충돌·운영비용 중요성 진술의 직접 반박은 남으므로 partial을 유지한다.",
+        "기존 ACCA/OpenStax 원문 전체를 이번에 다시 읽지 않았다. 이번에는 해당 국내영상 지정 새프레임·문항이미지·공식답안을 직접 읽었다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "7ff5604925d9eb5357b6fff962282549ba859ae290aa701c2853b12a77dd9468",
+        "finding": "06-2 비교표의 판매량·생산량 문구와06-1의 고정화 가정 간 충돌을 동시에 알리고, 운영비용 직접 반박 미확인을 남긴다. partial 보강 범위의 정확한 요약이다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "6b32dcc87cfa5649d7da6c7f33b20ed778871f73b707722838d9f4d34a7de458",
+          "finding": "06-1 새1200/1560초에서 직접재료만 제품원가·나머지 기간원가·고정화된 운영비용 및 손익식을 직접 확인했다. 제안은 이 가정과 변동가공원가 모형을 구별한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "03b7382ffdb42d18fa284b7dbe4f8cc41ac740012077f425bfc9f07b66ff435e",
+          "finding": "06-2 새30/90초 표에는 판매량과 생산량이 실제 적혀 있지만 같은 표 이론근거와06-1 본문은 고정화를 전제한다. 제안이 그 충돌과 조건부 생산량 효과를 명시하여 정확하다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "891e9c817dabb7d49438738104ea97e7b09cdc3b4069dc03b5f5207aa38f7e84",
+          "finding": "재고 증가 시 양수 변동가공원가와 단가 조건 아래 초변동 이익이 낮아질 수 있다는 조건부 설명이다. 기간 간 단가 불변 미제시 한계를 unchecked_points에 남긴다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "d7d6984a4f5adf958536e9a6a319f1e46a6d67f415d3946bf5a80aa33482a8bb",
+          "finding": "제조원가를 제품에 붙이는 전부원가 정의에서 도출한 설명과 공식답안 처리를 구별했다. 운영비용 중요성 진술의 직접 반박은 여전히 미확인이라고 남긴다."
+        },
+        {
+          "step_number": 5,
+          "verdict": "pass",
+          "text_sha256": "45c4e37b291ff7661f9fea56118a91e5662ef14af146b29bc288f8acbb2974e9",
+          "finding": "06-1 새1650초는 CVP에서 변동원가정보가 유용하다고 명시한다. 제안은 일반적인 변동가공원가 모형에 한정하고 다른 고정원가 모형에까지 보편적 우열을 입증했다고 주장하지 않는다."
+        },
+        {
+          "step_number": 6,
+          "verdict": "pass",
+          "text_sha256": "c5be61f7c4e1a867d355050e419c59a255f915e36193d4ae75dbbb024f32c52a",
+          "finding": "원문의 보기 조합과 해당 회차 공식키를 실제 읽어 대응을 확인했다. 명시된 모형 및 공식키에 따른 설명이며 모든 진술의 직접 입증이 아니라는 제한을 유지한다."
+        }
+      ],
+      "previous_proposal_sha256": "8489116a107db33a397120a01ae37bcec148b6d7d55932f0ca5de6f324184196",
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": true,
+        "before_text_sha256": "3170f72f1fff7d2119723f7112f5ed0e97cc7dbc44d091656b8bd909aecbb09e",
+        "after_text_sha256": "9bd909164a1fd5c6247354302212e7907080bda1b035e32d7802284b297a202b",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    },
+    {
+      "question_id": "2026-03-097",
+      "author": "/root/r28_cost_models (작성자; 독립 검수자 아님)",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "224b4de6af0f095f4cd594b6831deb7c73874e60ac8a31bbaee143da49a49cfe",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "a1db43d2924648407daf486b9fea18e839cda14158ebf0303aa5766d67acffef",
+          "finding": "원문의 선택지1 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "d5ed6bd58cb0c8a34577c09811055f64ba603a31c754671c84c83ef220f5504c",
+          "finding": "원문의 선택지2 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "d867ee1f7e0d6dd171de3445ed8e14677b4c50cfcbdebfe685b5fbdb901126da",
+          "finding": "원문의 선택지3 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "9e07d2e59252030809876690730132b1e27c7d88781c13c68942fa0fbafc7378",
+          "finding": "원문의 선택지4 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "cost_models::cost_models-absorption-1200",
+        "cost_models::cost_models-absorption-1560",
+        "cost_models::cost_models-absorption-1650",
+        "cost_models::cost_models-super-30",
+        "cost_models::cost_models-super-90",
+        "cost_models::2026-03-097-image",
+        "cost_models::2026-03-answer-page1"
+      ],
+      "limits": [
+        "본 검수의 보기별 pass는 조건부 설명과 한계 표시가 정확하다는 뜻이다. 각 진술의 보편적 참·거짓 또는 정답 유일성을 모두 입증했다는 뜻이 아니다.",
+        "비교표의 문구와 고정화 본문 사이 적용 범위 충돌·운영비용 중요성 진술의 직접 반박은 남으므로 partial을 유지한다.",
+        "기존 ACCA/OpenStax 원문 전체를 이번에 다시 읽지 않았다. 이번에는 해당 국내영상 지정 새프레임·문항이미지·공식답안을 직접 읽었다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "1288542b66854b94803ba1a3aa2f6795679a1eea5ae61398f15d4efb9083ce1c",
+        "finding": "06-2 비교표의 판매량·생산량 문구와06-1의 고정화 가정 간 충돌을 동시에 알리고, 운영비용 직접 반박 미확인을 남긴다. partial 보강 범위의 정확한 요약이다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "6b32dcc87cfa5649d7da6c7f33b20ed778871f73b707722838d9f4d34a7de458",
+          "finding": "06-1 새1200/1560초에서 직접재료만 제품원가·나머지 기간원가·고정화된 운영비용 및 손익식을 직접 확인했다. 제안은 이 가정과 변동가공원가 모형을 구별한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "03b7382ffdb42d18fa284b7dbe4f8cc41ac740012077f425bfc9f07b66ff435e",
+          "finding": "06-2 새30/90초 표에는 판매량과 생산량이 실제 적혀 있지만 같은 표 이론근거와06-1 본문은 고정화를 전제한다. 제안이 그 충돌과 조건부 생산량 효과를 명시하여 정확하다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "bc8746c112b012ef3b5a359cd98aa6f817d46244d3786e2b3925b0d3b5ba30fa",
+          "finding": "원문의 단가불변 및 재고감소를 직접 읽었다. 양수 변동가공원가 모형에서 초변동 이익이 높다는 계산관계이며, 그 양수 전제까지 명시되지 않았다는 한계를 unchecked_points에 유지한다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "d7d6984a4f5adf958536e9a6a319f1e46a6d67f415d3946bf5a80aa33482a8bb",
+          "finding": "제조원가를 제품에 붙이는 전부원가 정의에서 도출한 설명과 공식답안 처리를 구별했다. 운영비용 중요성 진술의 직접 반박은 여전히 미확인이라고 남긴다."
+        },
+        {
+          "step_number": 5,
+          "verdict": "pass",
+          "text_sha256": "45c4e37b291ff7661f9fea56118a91e5662ef14af146b29bc288f8acbb2974e9",
+          "finding": "06-1 새1650초는 CVP에서 변동원가정보가 유용하다고 명시한다. 제안은 일반적인 변동가공원가 모형에 한정하고 다른 고정원가 모형에까지 보편적 우열을 입증했다고 주장하지 않는다."
+        },
+        {
+          "step_number": 6,
+          "verdict": "pass",
+          "text_sha256": "3b978f3acbe8d3ac7420820724e37673ff1de9e7ef908649e968b7045100211b",
+          "finding": "원문의 보기 조합과 해당 회차 공식키를 실제 읽어 대응을 확인했다. 명시된 모형 및 공식키에 따른 설명이며 모든 진술의 직접 입증이 아니라는 제한을 유지한다."
+        }
+      ],
+      "previous_proposal_sha256": "1f36e7f51d7d68b749ae3c0434d6d803bc52b26385e59ec74dc0c4ac886d01a0",
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": true,
+        "before_text_sha256": "3170f72f1fff7d2119723f7112f5ed0e97cc7dbc44d091656b8bd909aecbb09e",
+        "after_text_sha256": "9bd909164a1fd5c6247354302212e7907080bda1b035e32d7802284b297a202b",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    },
+    {
+      "question_id": "2025-03-096",
+      "author": "/root/r28_cost_models (작성자; 독립 검수자 아님)",
+      "reviewer": "/root/r28_matrix_qa",
+      "verdict": "pass",
+      "proposal_sha256": "89bbba3f2e5b1d53bbf8aafe3b40cbf83e7c9326b18075dbe9d6cb340519c07c",
+      "proposal_hash_algorithm": "SHA256 UTF-8 json.dumps(amendment, ensure_ascii=False, sort_keys=True, separators=(comma,colon))",
+      "four_option_findings": [
+        {
+          "number": 1,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "9282ad812dfc3474c27d314236ec4fb5ac33ab0acc57a449b95172bb832bf6b6",
+          "finding": "원문의 선택지1 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 2,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "95826dabdb70f7e3ec6deed2ce10b7dbeb605475dacf7a37dead6f89338ead35",
+          "finding": "원문의 선택지2 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "79a6fd539a9d0633eae7b6591a9740f95e2a407c725a1665315b352c53cefa1f",
+          "finding": "원문의 선택지3 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        },
+        {
+          "number": 4,
+          "verdict": "pass",
+          "is_answer_preserved": true,
+          "reason_sha256": "2f2367176b0707d6656adde61b5b19bf7d02cbd7d61e55b69bc9e11bc6b93a21",
+          "finding": "원문의 선택지4 조합을 실제 읽어 해설의 진술번호 대응을 확인했다. 공식키와 명시한 변동가공원가 모형에 따른 판정이라는 범위를 유지하며, 고정화 모형 충돌이나 운영비용 미확인을 해결한 것으로 세지 않는다."
+        }
+      ],
+      "four_option_pass_semantics": "명시한 정의·모형·미확인 한계 범위에서 설명이 정확함. partial 항목의 미확인 진술까지 보편적으로 입증했다는 뜻이 아님.",
+      "all_unchecked_points_resolved": false,
+      "source_read_ids": [
+        "cost_models::cost_models-absorption-1200",
+        "cost_models::cost_models-absorption-1560",
+        "cost_models::cost_models-absorption-1650",
+        "cost_models::cost_models-super-30",
+        "cost_models::cost_models-super-90",
+        "cost_models::2025-03-096-image",
+        "cost_models::2025-03-answer-page1"
+      ],
+      "limits": [
+        "본 검수의 보기별 pass는 조건부 설명과 한계 표시가 정확하다는 뜻이다. 각 진술의 보편적 참·거짓 또는 정답 유일성을 모두 입증했다는 뜻이 아니다.",
+        "비교표의 문구와 고정화 본문 사이 적용 범위 충돌·운영비용 중요성 진술의 직접 반박은 남으므로 partial을 유지한다.",
+        "기존 ACCA/OpenStax 원문 전체를 이번에 다시 읽지 않았다. 이번에는 해당 국내영상 지정 새프레임·문항이미지·공식답안을 직접 읽었다."
+      ],
+      "summary_finding": {
+        "verdict": "pass",
+        "text_sha256": "1fa51763cea9c2a7b00624840da1869f3cfe9dde16e14d8f6a177b3727ae6bca",
+        "finding": "06-2 비교표의 판매량·생산량 문구와06-1의 고정화 가정 간 충돌을 동시에 알리고, 운영비용 직접 반박 미확인을 남긴다. partial 보강 범위의 정확한 요약이다."
+      },
+      "step_findings": [
+        {
+          "step_number": 1,
+          "verdict": "pass",
+          "text_sha256": "6b32dcc87cfa5649d7da6c7f33b20ed778871f73b707722838d9f4d34a7de458",
+          "finding": "06-1 새1200/1560초에서 직접재료만 제품원가·나머지 기간원가·고정화된 운영비용 및 손익식을 직접 확인했다. 제안은 이 가정과 변동가공원가 모형을 구별한다."
+        },
+        {
+          "step_number": 2,
+          "verdict": "pass",
+          "text_sha256": "03b7382ffdb42d18fa284b7dbe4f8cc41ac740012077f425bfc9f07b66ff435e",
+          "finding": "06-2 새30/90초 표에는 판매량과 생산량이 실제 적혀 있지만 같은 표 이론근거와06-1 본문은 고정화를 전제한다. 제안이 그 충돌과 조건부 생산량 효과를 명시하여 정확하다."
+        },
+        {
+          "step_number": 3,
+          "verdict": "pass",
+          "text_sha256": "d7d6984a4f5adf958536e9a6a319f1e46a6d67f415d3946bf5a80aa33482a8bb",
+          "finding": "제조원가를 제품에 붙이는 전부원가 정의에서 도출한 설명과 공식답안 처리를 구별했다. 운영비용 중요성 진술의 직접 반박은 여전히 미확인이라고 남긴다."
+        },
+        {
+          "step_number": 4,
+          "verdict": "pass",
+          "text_sha256": "45c4e37b291ff7661f9fea56118a91e5662ef14af146b29bc288f8acbb2974e9",
+          "finding": "06-1 새1650초는 CVP에서 변동원가정보가 유용하다고 명시한다. 제안은 일반적인 변동가공원가 모형에 한정하고 다른 고정원가 모형에까지 보편적 우열을 입증했다고 주장하지 않는다."
+        },
+        {
+          "step_number": 5,
+          "verdict": "pass",
+          "text_sha256": "e603a8becdbeb92e8794dd1c00be3d31294df632bc3d3c42e2db34b65382eba0",
+          "finding": "원문의 보기 조합과 해당 회차 공식키를 실제 읽어 대응을 확인했다. 명시된 모형 및 공식키에 따른 설명이며 모든 진술의 직접 입증이 아니라는 제한을 유지한다."
+        }
+      ],
+      "previous_proposal_sha256": "023ef3ff7b1ae248b16821be5f336c40eaec5a43c70497b092bbc07daaa49925",
+      "review_note_finding": {
+        "verdict": "pass",
+        "changed": true,
+        "before_text_sha256": "3170f72f1fff7d2119723f7112f5ed0e97cc7dbc44d091656b8bd909aecbb09e",
+        "after_text_sha256": "9bd909164a1fd5c6247354302212e7907080bda1b035e32d7802284b297a202b",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    }
+  ],
+  "source_reads": [
+    {
+      "id": "QA_CUP2023_01_1",
+      "kind": "independent_new_video_frames",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/01-1.mp4",
+      "sha256": "1d28d27cf003ef3ffaadba7d70db2ba5f21184ee9078e2a01de91b780c5cacf4",
+      "whole_video_sha256_computed_by_reviewer": true,
+      "version": "2023년1학기 공개강의01-1.mp4; 표시 원가관리회계1장.pdf",
+      "read_locator": "1550초 인쇄018쪽 한계(1)~(3),1552/1558초 다음쪽 비용효익·원가개념;1545초는문맥",
+      "frames": [
+        {
+          "seconds": 1545,
+          "time_hms": "00:25:45",
+          "png_sha256": "5700908ba4a8ee440a3f6784aa9f4752f2207ff18cab6bb3249af32e42f80a0d",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1545 -i CACHE_DIR/01-1.mp4 -frames:v 1 -y CACHE_DIR/01-1-1545.png",
+          "actually_viewed": true,
+          "transcription": "표시017쪽 원가회계와 관리회계 관계 도식 및018쪽 한계 제목 진입. 본문 판단은1550초 이후 프레임을 사용."
+        },
+        {
+          "seconds": 1550,
+          "time_hms": "00:25:50",
+          "png_sha256": "e77267beb9d485b524c2f12fe40fb25afd1ba85db04b5f9bef4f1d14d0368464",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1550 -i CACHE_DIR/01-1.mp4 -frames:v 1 -y CACHE_DIR/01-1-1550.png",
+          "actually_viewed": true,
+          "transcription": "원가회계가 제공하는 정보는 화폐단위로 표시되는 계량적 자료이다. / 그러나 원가회계는 비화폐성 정보와 질적인 정보는 제공하지 못한다. / 재무회계는 객관적으로 측정가능한 회계자료를 기초로 수익과 비용을 인식한다. 그러나 원가회계는 경영자의 목적에 따라 다양한 회계절차를 적용해야 하는 어려움이 있다. / 특정한 시점에서 원가회계가 모든 의사결정에 목적적합한 원가정보를 제공할 수는 없다.",
+          "readability_crop": {
+            "png_sha256": "da8de006d5162b748d9ddd25292c4050970690b801f73700d2beb6d2a95b3885",
+            "command": "ffmpeg -hide_banner -loglevel error -ss 1550 -i CACHE_DIR/01-1.mp4 -vf crop=560:345:710:190,scale=1680:1035 -frames:v 1 -y CACHE_DIR/01-1-1550-text.png",
+            "actually_viewed": true
+          }
+        },
+        {
+          "seconds": 1552,
+          "time_hms": "00:25:52",
+          "png_sha256": "c1df434aed51b1616a06b39b1040609d5dd9b046e4954a56508580cf4f6e9803",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1552 -i CACHE_DIR/01-1.mp4 -frames:v 1 -y CACHE_DIR/01-1-1552.png",
+          "actually_viewed": true,
+          "transcription": "경영자는 비용과 효익을 분석하여 원가정보의 양을 적절히 정해야 하며, 특히 원가분석담당자는 비경제적인 정보생산이 일어나지 않도록 항상 유의하여야 한다.",
+          "readability_crop": {
+            "png_sha256": "d81fb90ddfae428cfd0aee0bf10c4d2f1fd887b5910710bf927a63110af198ff",
+            "command": "ffmpeg -hide_banner -loglevel error -ss 1552 -i CACHE_DIR/01-1.mp4 -vf crop=560:345:710:190,scale=1680:1035 -frames:v 1 -y CACHE_DIR/01-1-1552-text.png",
+            "actually_viewed": true
+          }
+        },
+        {
+          "seconds": 1558,
+          "time_hms": "00:25:58",
+          "png_sha256": "8301f4f191846897a4e0512c5914f2fb737a39bfc79e266406d943d420df838f",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1558 -i CACHE_DIR/01-1.mp4 -frames:v 1 -y CACHE_DIR/01-1-1558.png",
+          "actually_viewed": true,
+          "transcription": "원가(cost)란 특정목적을 달성하기 위해 소비된 경제적 자원의 희생을 화폐가치로 측정한 것으로, 기업이 수익을 획득하기 위해서 특정물품이나 서비스를 구입하거나 제조하면서 지출되는 금액 등이 원가가 된다.",
+          "readability_crop": {
+            "png_sha256": "bb03f14f0b8d2317ba65a9efa8e6058f21e6c6eaf3127ddc7c727a3e8a086bce",
+            "command": "ffmpeg -hide_banner -loglevel error -ss 1558 -i CACHE_DIR/01-1.mp4 -vf crop=560:345:710:190,scale=1680:1035 -frames:v 1 -y CACHE_DIR/01-1-1558-text.png",
+            "actually_viewed": true
+          }
+        }
+      ],
+      "ffmpeg_version": "7.1.5-0+deb13u1",
+      "actually_read": true,
+      "full_video_watched": false,
+      "audio_listened": false,
+      "limit": "본 검수자가 전체파일SHA를 직접 계산하고 새 경로에 프레임을 직접 추출·view_image 판독했다. 제공받은영상캐시를 사용했고 직접다운로드/전체시청/정확교재발행판본확인은주장하지않음."
+    },
+    {
+      "id": "QA_IMAGE_2024-07-081",
+      "kind": "original_question_image",
+      "sha256": "62ed5b2a5295cd0442d108f5c62e4f124116b16cdb8ffbfbf699352fda2fee4c",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2024-07",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "8fce802fb889e169372f6b8f759d6470a1b98b4ea482fdc5fed31ba6a4834051",
+      "read_locator": "PDF1쪽 2024-07-081 공식4",
+      "frame_path": "CACHE_DIR/2024-07-answers-p1.png",
+      "frame_sha256": "668c08a0c7724ee69096b52f2f2b7fe761aa06270de178fec95b63a47b3ee931",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본검수자가새렌더를추출해view_image직접판독"
+    },
+    {
+      "id": "QA_IMAGE_2026-01-081",
+      "kind": "original_question_image",
+      "sha256": "9bb1c001b7918bea5acfbe9a6cfe4690bfe9e921098ceca789120cc56adbe9d0",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2026-01",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "6c05bdb2e74c2cd561bdc2796f967c7aae33d4c92fb785124c2023352b5735c8",
+      "read_locator": "PDF1쪽 2026-01-081 공식1",
+      "frame_path": "CACHE_DIR/2026-01-answers-p1.png",
+      "frame_sha256": "7a93a9b680382ac6abc0cb36f8115f89e6705cd5ce813635d8bc55b9c5381049",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본검수자가새렌더를추출해view_image직접판독"
+    },
+    {
+      "id": "QA_IMAGE_2022-09-054",
+      "kind": "original_question_image",
+      "sha256": "2c1f1534c6382688bb2b2ba03aa624e316afab5f0859d88e611477d11efdc677",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2022-09",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "610cf912002656696e3883831636cd4bbb5d9454ba90e49d4d9a8737ef8fea73",
+      "read_locator": "PDF49쪽 2022-09-054 공식3 및 73번① (같은 페이지에서 실제 판독)",
+      "frame_path": "CACHE_DIR/2022-09-answers-p49.png",
+      "frame_sha256": "e41892427d4fffa26c4da7bcfdf4e5763f98272f90d73a5bb555c3de33d75b04",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본검수자가새렌더를추출해view_image직접판독"
+    },
+    {
+      "id": "QA_NTS2022_WAIVER",
+      "kind": "official_guidance_pdf",
+      "sha256": "2d1af1ba6cd4a1cba40416ee234db2bb7666419bb201d70de8cd481862925807",
+      "version": "국세청2022법인세신고안내",
+      "read_locator": "PDF42쪽(책20) 마지막 약정에의한채권포기액 행;PDF290쪽(책268) 접대비 범위·약정포기 일반규칙",
+      "frames": [
+        {
+          "page": 42,
+          "png_sha256": "56d3ba081c3a608a3b6195bccbcbc9690bbbda27046327aac59a96e52ce1a72d",
+          "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.6,1.6))",
+          "actually_viewed": true
+        },
+        {
+          "page": 290,
+          "png_sha256": "f70a4b4dc379210bf547380025ac3674e1d5d7368f05c327424d05852fdf6dbb",
+          "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.6,1.6))",
+          "actually_viewed": true
+        }
+      ],
+      "transcriptions": [
+        "약정에 의하여 채권의 전부 또는 일부를 포기하는 경우 당해 채권포기 금액은 접대비 또는 기부금으로 봅니다(통칙19의2-19의2…5).",
+        "다만, 특수관계인 외의 자와의 거래에서 발생한 채권에 대해 불가피하게 포기한 경우로서 객관적으로 정당한 사유가 있는 때에는 손금에 산입"
+      ],
+      "actually_read": true,
+      "method": "본검수자가지정쪽추출본문을직접읽고새PNG렌더·view_image직접판독",
+      "limit": "기본통칙독립문서전체읽기아님;원문포기사유추가안함"
+    },
+    {
+      "id": "QA_CIT2022",
+      "kind": "fixed_legal_mirror",
+      "sha256": "435cc62f66ebba1cbad7f7eb64bd80d8ec7d76e2af811aae317405007c5baa5e",
+      "read_locator": "표제공포·시행일,25조전체,58조전체(58의2/3문맥포함),부칙18590제1조",
+      "actually_read": true,
+      "method": "파일지정본문직접읽기;HTML은HTMLParser로직접추출하여재독",
+      "limit": "법령은제3자고정미러본문이며원기관역사본직접다운로드아님"
+    },
+    {
+      "id": "QA_CIT_DECREE20220802",
+      "kind": "fixed_legal_mirror",
+      "sha256": "dcfb0f6db1f8cac2cae397629e24d898790d8bd7448e99467c9a0850cbced921",
+      "read_locator": "표제공포·시행일,36조1항,42조1항,95조1항,부칙32829제1~3조",
+      "actually_read": true,
+      "method": "파일지정본문직접읽기;HTML은HTMLParser로직접추출하여재독",
+      "limit": "법령은제3자고정미러본문이며원기관역사본직접다운로드아님"
+    },
+    {
+      "id": "QA_SAYLOR_MA",
+      "kind": "public_textbook_html",
+      "sha256": "2dd094170f4958ce8022b988ec7c2ab4ea5f19430a5dd21ef170408f49c86a02",
+      "read_locator": "1.1비재무측정치문단·Table1.1관리회계와재무회계구별",
+      "actually_read": true,
+      "method": "파일지정본문직접읽기;HTML은HTMLParser로직접추출하여재독",
+      "limit": "원가회계의좁은정의와넓은관리회계구별;교재전체정독아님"
+    },
+    {
+      "id": "QA_SAYLOR_ABC",
+      "kind": "public_textbook_html",
+      "sha256": "31685441ec9f4b695f15421edb055e8cafe07b9f6f513d0b5ff5c2eb200fb050",
+      "read_locator": "3.3도입비용효익문답및Disadvantages 비용/추적시간/효익비교문단",
+      "actually_read": true,
+      "method": "파일지정본문직접읽기;HTML은HTMLParser로직접추출하여재독",
+      "limit": "원가회계의좁은정의와넓은관리회계구별;교재전체정독아님"
+    },
+    {
+      "id": "QA_CUP2023_05_1",
+      "kind": "independent_new_video_frames",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/05-1.mp4",
+      "sha256": "a0cc3b6672d113184e2b2b2a7e80411de324283da5792726b7fe7d54c691dd70",
+      "whole_video_sha256_computed_by_reviewer": true,
+      "frames": [
+        {
+          "seconds": 1340,
+          "time_hms": "00:22:20",
+          "png_sha256": "0e0f26808d3265fc703e94a79c81807bba9b6a579e0cf4fb9ae236c553bbcbf4",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1340 -i CACHE_DIR/standard.mp4 -frames:v 1 -y CACHE_DIR/standard-1340.png",
+          "actually_viewed": true,
+          "transcription": "표준원가계산은 제품원가를 미리 정해 놓은 표준원가로 측정하는 원가계산제도이다."
+        },
+        {
+          "seconds": 1600,
+          "time_hms": "00:26:40",
+          "png_sha256": "56058cc35a3e03bc97ce8459b08e83cdc7cc066280bcf5ac6950495ad9059ce4",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1600 -i CACHE_DIR/standard.mp4 -frames:v 1 -y CACHE_DIR/standard-1600.png",
+          "actually_viewed": true,
+          "transcription": "각 작업지시서별로 표준재료원가, 표준노무원가, 표준간접원가 등이 기입되기 때문에 출고량과 사용량만 파악하면 제품완성과 동시에 원가를 계산할 수 있다."
+        }
+      ],
+      "actually_read": true,
+      "method": "전체 영상 SHA-256을 본 검수자가 계산하고 새 프레임을 독립 추출하여 view_image 원본화면 직접 판독",
+      "ffmpeg_version": "7.1.5-0+deb13u1",
+      "full_video_watched": false,
+      "audio_listened": false,
+      "limit": "제공 캐시를 사용했으며 새 다운로드 아님. 초기 판독용 crop은 화면 왼쪽 문장을 잘라 포함하지 않았으므로 근거로 사용하지 않고 새 전체 프레임을 직접 읽었다. 정확한 교재 출판 판본은 미확인."
+    },
+    {
+      "id": "QA_CUP2023_06_1",
+      "kind": "independent_new_video_frames",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-1.mp4",
+      "sha256": "1df45fe7bd4d17aa8b98edc94b120a873aca556b295cc461d6a8e418f509c799",
+      "whole_video_sha256_computed_by_reviewer": true,
+      "frames": [
+        {
+          "seconds": 1200,
+          "time_hms": "00:20:00",
+          "png_sha256": "4eb221b3b1472ea981ac3c0e0dfca281edcdd864b602ec4065014b23e11fb47f",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1200 -i CACHE_DIR/absorption.mp4 -frames:v 1 -y CACHE_DIR/absorption-1200.png",
+          "actually_viewed": true,
+          "transcription": "초변동원가계산은 직접재료원가만을 제품원가로 간주하고, 나머지 모든 원가를 기간원가로 처리하는 원가계산방법이다. / 직접노무원가 역시 주로 자동화 설비의 운영, 점검, 보수, 유지 업무이므로 생산량과 무관하게 고정원가화되어 있다."
+        },
+        {
+          "seconds": 1560,
+          "time_hms": "00:26:00",
+          "png_sha256": "49283f20689e7b0cbcada2593306ac0b7246483711581644746d9bd570fb4185",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1560 -i CACHE_DIR/absorption.mp4 -frames:v 1 -y CACHE_DIR/absorption-1560.png",
+          "actually_viewed": true,
+          "transcription": "초변동원가계산에 의한 영업이익 = 판매수량 × 단위당 재료처리량공헌이익 − 운영비용."
+        },
+        {
+          "seconds": 1650,
+          "time_hms": "00:27:30",
+          "png_sha256": "247bd7b3fec73b8bc34581dca307ce5ef9d5a830e08e19bee9f1421d6fdde611",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 1650 -i CACHE_DIR/absorption.mp4 -frames:v 1 -y CACHE_DIR/absorption-1650.png",
+          "actually_viewed": true,
+          "transcription": "CVP분석이나 가격결정 등 경영자의 관리적 의사결정에는 변동원가계산에 의한 원가정보가 매우 유용하다."
+        }
+      ],
+      "actually_read": true,
+      "method": "전체 영상 SHA-256을 본 검수자가 계산하고 새 프레임을 독립 추출하여 view_image 원본화면 직접 판독",
+      "ffmpeg_version": "7.1.5-0+deb13u1",
+      "full_video_watched": false,
+      "audio_listened": false,
+      "limit": "제공 캐시를 사용했으며 새 다운로드 아님. 초기 판독용 crop은 화면 왼쪽 문장을 잘라 포함하지 않았으므로 근거로 사용하지 않고 새 전체 프레임을 직접 읽었다. 정확한 교재 출판 판본은 미확인."
+    },
+    {
+      "id": "QA_CUP2023_06_2",
+      "kind": "independent_new_video_frames",
+      "url": "https://kocw-n.xcache.kinxcdn.com/v/lec/2023/first_term/cup/shinsungwook0918/06-2.mp4",
+      "sha256": "ef39cf9e51337e0c271bc262854162a10ecdf59824f5cd5f8df662b6cdfe33b0",
+      "whole_video_sha256_computed_by_reviewer": true,
+      "frames": [
+        {
+          "seconds": 30,
+          "time_hms": "00:00:30",
+          "png_sha256": "6f92709b2c1b90e2ba3695393520d2a7296eb290973b69a248522172b48c7d22",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 30 -i CACHE_DIR/super.mp4 -frames:v 1 -y CACHE_DIR/super-30.png",
+          "actually_viewed": true,
+          "transcription": "이익의 결정요인: 전부원가계산 판매량과 생산량, 변동원가계산 판매량, 초변동원가계산 판매량과 생산량. / 고정화된 직접노무원가와 제조간접원가는 원가회피가능성이 없으므로 기간비용으로 처리해야 한다."
+        },
+        {
+          "seconds": 90,
+          "time_hms": "00:01:30",
+          "png_sha256": "8a19d144523378a9eba3a2be828ce4829f6ac53b3f4a4468286c3ccf2b09e4f6",
+          "command": "ffmpeg -hide_banner -loglevel error -ss 90 -i CACHE_DIR/super.mp4 -frames:v 1 -y CACHE_DIR/super-90.png",
+          "actually_viewed": true,
+          "transcription": "동일 표 PDF11쪽의 판매량·생산량 행과 고정화된 직접노무·제조간접원가의 이론적 근거를 재독함."
+        }
+      ],
+      "actually_read": true,
+      "method": "전체 영상 SHA-256을 본 검수자가 계산하고 새 프레임을 독립 추출하여 view_image 원본화면 직접 판독",
+      "ffmpeg_version": "7.1.5-0+deb13u1",
+      "full_video_watched": false,
+      "audio_listened": false,
+      "limit": "제공 캐시를 사용했으며 새 다운로드 아님. 초기 판독용 crop은 화면 왼쪽 문장을 잘라 포함하지 않았으므로 근거로 사용하지 않고 새 전체 프레임을 직접 읽었다. 정확한 교재 출판 판본은 미확인."
+    },
+    {
+      "id": "QA_IMAGE_2022-05-091",
+      "kind": "original_question_image",
+      "sha256": "11f0b1234da278f53a436241edb28ad504562c2fee8a24317c4c2943844735ab",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_IMAGE_2023-11-096",
+      "kind": "original_question_image",
+      "sha256": "28c8b7af2335883422fd2ca3e7a4743d1b054c62ee32f3c9357d58fda4c16ce3",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_IMAGE_2026-03-097",
+      "kind": "original_question_image",
+      "sha256": "6d6de7cd7cb64d73419aaa81d35ef9db64240ec30338e643b32c2ba9feab2391",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_IMAGE_2025-03-096",
+      "kind": "original_question_image",
+      "sha256": "6a0931db4cd5fff97b596ce310e21abc832023309c77e43df634e9219d4aa70f",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_IMAGE_2022-09-073",
+      "kind": "original_question_image",
+      "sha256": "3a6b35bfd605c8f5587d85a8b04a1efc75fc70a4d26d8f699120c912114973e9",
+      "read_locator": "원본 문항 전체",
+      "actually_read": true,
+      "method": "tools.view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2022-05",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "af953d7b51edd6ef59038a5b9b2ed8582b540ff75b3a1ae2287ec30ba80a1fcf",
+      "read_locator": "PDF49쪽 91번①",
+      "frame_path": "CACHE_DIR/2022-05-answers-p49.png",
+      "frame_sha256": "3bc93c5734d2bccedb559cf7a3b17d424907aa5768f08c8cb132bacc0e5a628c",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본 검수자가 새 렌더를 추출해 view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2023-11",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+      "read_locator": "PDF1쪽 원가16번(전체96번)④",
+      "frame_path": "CACHE_DIR/2023-11-answers-p1.png",
+      "frame_sha256": "3dac6b20f4feb61afac6cd3371f215676c3ba4df76ce28f42a6b513c1e65b59a",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본 검수자가 새 렌더를 추출해 view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2026-03",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "5af2e21deb4ce1679b688b5f670e936eb3508b536489fdce6a5746cf071d3f77",
+      "read_locator": "PDF1쪽 97번③",
+      "frame_path": "CACHE_DIR/2026-03-answers-p1.png",
+      "frame_sha256": "a9a0d8fcc5ce330aea039fc15372064f74b6edd88060a5f8a497c2aa664df419",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본 검수자가 새 렌더를 추출해 view_image 직접 판독"
+    },
+    {
+      "id": "QA_ANSWER_2025-03",
+      "kind": "preserved_official_answer_pdf",
+      "sha256": "47288f986da493c4bb03f0521ac63e1f9c8ba895d0b6ac6e588d83f3a926be73",
+      "read_locator": "PDF1쪽 96번②",
+      "frame_path": "CACHE_DIR/2025-03-answers-p1.png",
+      "frame_sha256": "663a696ebd329e6cb4a71ee4fcf12a89ab04d9f39d5f8a401994b9997e761e6c",
+      "render_method": "PyMuPDF get_pixmap(matrix=fitz.Matrix(1.5,1.5))",
+      "actually_read": true,
+      "method": "본 검수자가 새 렌더를 추출해 view_image 직접 판독"
+    },
+    {
+      "id": "QA_TIV_VAT_LAW_2022",
+      "kind": "fixed_legal_mirror",
+      "sha256": "7c47dddd89d230f99842ed5ec8ebf576030f3f51de08d4b7b9850be683e682a2",
+      "read_locator": "표제 공포·시행일, 제12조 전체, 제29조 전체, 부칙18577호 제1~3조 및 다음조 문맥",
+      "actually_read": true,
+      "method": "지정 파일의 해당 조문 및 부칙 직접 재독",
+      "limit": "법령기관 역사본 직접 다운로드가 아닌 제3자 고정 Git 미러. 파일명 EARLY_2023은 시행2022-07-01이라는 실제 표제와 구별."
+    },
+    {
+      "id": "QA_TIV_VAT_DECREE_EARLY_2023",
+      "kind": "fixed_legal_mirror",
+      "sha256": "e86f030071153e674cb674eaab81bc779bdae78ee3fbfe3c635a76036ebf4740",
+      "read_locator": "표제 공포·시행일, 제26조 전체, 부칙32734호 제1~3조",
+      "actually_read": true,
+      "method": "지정 파일의 해당 조문 및 부칙 직접 재독",
+      "limit": "법령기관 역사본 직접 다운로드가 아닌 제3자 고정 Git 미러. 파일명 EARLY_2023은 시행2022-07-01이라는 실제 표제와 구별."
+    },
+    {
+      "id": "QA_TIV_PID_20220802",
+      "kind": "fixed_legal_mirror",
+      "sha256": "e4e3f50d92df2972d1bcd779776950df55939e34b1f6e3f83d0be0d4fb59a3c7",
+      "read_locator": "표제 공포·시행일, 제98조제1항, 부칙32830호 제1~2조",
+      "actually_read": true,
+      "method": "지정 파일의 해당 조문 및 부칙 직접 재독",
+      "limit": "법령기관 역사본 직접 다운로드가 아닌 제3자 고정 Git 미러. 파일명 EARLY_2023은 시행2022-07-01이라는 실제 표제와 구별."
+    },
+    {
+      "id": "QA_TIV_NTB_DECREE_20220802_SNAPSHOT",
+      "kind": "fixed_legal_mirror",
+      "sha256": "2eab2f12808f0623c05e9b04513d2d2c271a0ead36e06a44687412637805e2b3",
+      "read_locator": "표제 공포·시행일, 제1조의2제1항, 부칙32424호 제1~5조 및 다음조 문맥",
+      "actually_read": true,
+      "method": "지정 파일의 해당 조문 및 부칙 직접 재독",
+      "limit": "법령기관 역사본 직접 다운로드가 아닌 제3자 고정 Git 미러. 파일명 EARLY_2023은 시행2022-07-01이라는 실제 표제와 구별."
+    }
+  ],
+  "group_coverage_report": {
+    "path": "CACHE_DIR/group-coverage.json",
+    "sha256": "a345d40b95e63024ecec8611bae0ce90023a5e2f9a53823bc09dc8377e19bc2c",
+    "scope": "65그룹115행 목록/분할만 전수 점검;115개 원문 내용 전수 대조 아님"
+  },
+  "counts": {
+    "reviewed_actual_amendments": 8,
+    "source_checked_upgrades": 2,
+    "partial_amendments": 6,
+    "independent_source_read_groups": 28
+  },
+  "limits": [
+    "115건 그룹의 목록·분할 정확성 검사와8개 실제 변경안 출처·설명 검수를 구별했다.115건 전부를 새 출처로 확인했다고 주장하지 않는다.",
+    "각 partial 행의 보기별 pass는 미확인·모형·정의 한계를 밝힌 설명의 정확성에 대한 판정이다. 미확인 진술 자체가 완전히 증명됐다는 판정이 아니다.",
+    "제공 캐시 영상 전체 SHA를 직접 재계산하고 지정 새 프레임을 독립 추출·시각 판독했다. 전체영상 시청·음성청취·정확한 교재 발행판본 동일성은 확인하지 않았다.",
+    "법령은 지정 고정 Git 미러의 관련 조문과 부칙을 직접 읽었다. 원기관 역사법령 서비스 직접취득이나 모든 개정이력의 전수 검증으로 확대하지 않는다.",
+    "기존 모든 Saylor/Lumen/ACCA/OpenStax 인용과 과거 다른 회차 공식키를 전수 재독하지 않았다. 직접 읽은 범위는 각행 limits와source_reads에 명시한다.",
+    "공유 저장소·보호필드·공식답안·검사를 변경하지 않았으며 재귀 에이전트를 생성하지 않았다. 별도 검수는 Claude 총괄 승인이나 배포 승인을 대신하지 않는다.",
+    "이번 재검수는5개 review_note의 수행상태 정정과 coordinator_edits의 정확성을 직접 확인한 뒤 새 amendment digest로 재판정한 것이다. 새 원문 출처 추가 확인이나 partial 승격은 없다."
+  ],
+  "note_recheck": {
+    "reviewer": "/root/r28_matrix_qa",
+    "reviewed_changed_ids": [
+      "2022-05-091",
+      "2022-09-073",
+      "2023-11-096",
+      "2025-03-096",
+      "2026-03-097"
+    ],
+    "unchanged_ids": [
+      "2022-09-054",
+      "2024-07-081",
+      "2026-01-081"
+    ],
+    "verdict": "pass",
+    "previous_review_submission": {
+      "path": "CACHE_DIR/independent-review.pre-note.json",
+      "sha256": "78bc377688eebb54f18c70742dc836e846994cc421542376e227beeac417a10c"
+    },
+    "before_proposals": {
+      "path": "CACHE_DIR/proposals.pre-final-review-note.json",
+      "sha256": "7ed88dbb947ba0237a78f9ab2291f4ab3a322d2c9651980f7348932c51574824"
+    },
+    "after_proposals_read": {
+      "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round28-proposals.json",
+      "sha256": "5259844c6548f936786cab4cabb323c04f311338718a876f4320f0088ce4ef5d"
+    },
+    "scope": "5개 review_note 정정문을 실제 읽고 객체 전체 JSON 전후 재귀 대조했다.3개 amendment는 정확 digest 불변. 풀이·요약·보기·미확인점·출처·공식답안·checks는8개 모두 이전 검수본과 동일하다.",
+    "submission_hash_record_path": "CACHE_DIR/independent-review-note-recheck.json",
+    "details": [
+      {
+        "question_id": "2022-09-054",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "f634215753a8c3a1eee75ede3a312e642f6cd1e867c68edae2a391d42af6af81",
+        "after_proposal_sha256": "f634215753a8c3a1eee75ede3a312e642f6cd1e867c68edae2a391d42af6af81",
+        "before_note": "원문 이미지·문제 PDF22쪽과 과목머리17쪽·공식 답안PDF49쪽54번③을 다시 읽고, 2022 시행 법인세법25·58조와 2022.8.2 시행령36·42·95조 및 부칙을 대조했습니다. 국세청2022 법인세 신고안내290·42쪽에서 약정 채권포기의 기본통칙 인용과 객관적 정당사유에 따른 예외를 직접 확인하여 4번의 근거를 보강했습니다. 원문은 구체 포기 사유를 제시하지 않으며 3번의30% 문장을 사례로 읽을 여지도 남으므로 partial을 유지합니다. ",
+        "after_note": "원문 이미지·문제 PDF22쪽과 과목머리17쪽·공식 답안PDF49쪽54번③을 다시 읽고, 2022 시행 법인세법25·58조와 2022.8.2 시행령36·42·95조 및 부칙을 대조했습니다. 국세청2022 법인세 신고안내290·42쪽에서 약정 채권포기의 기본통칙 인용과 객관적 정당사유에 따른 예외를 직접 확인하여 4번의 근거를 보강했습니다. 원문은 구체 포기 사유를 제시하지 않으며 3번의30% 문장을 사례로 읽을 여지도 남으므로 partial을 유지합니다. ",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2022-09-073",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "0e803af37026579dd4f1534eeca59372a58ed9ccf9538fe493128f3d032f9700",
+        "after_proposal_sha256": "7f212c9e23878cc1fa16762dd74e4f3f24df9c2861715644372dabb967cd3745",
+        "before_note": "원문 이미지와 공식 답안(2022년 9월 73번 1번)을 대조했고, 시험 시점에 시행 중인 부가가치세법(법률 제18577호)과 시행령(대통령령 제32734호) 조문을 직접 읽었습니다. 전문가 검수는 아직입니다. 2026-10-25 재조사에서 시행령 제26조제1항 → 소득세법 시행령 제98조제1항 → 국세기본법 시행령 제1조의2제1항제1호와 각 판본 부칙을 직접 읽어 아버지·아들의 특수관계인 해당 부분을 확인했습니다. 임대료 조건과 정답의 유일성에 관한 미확인은 그대로이므로 부분 확인을 유지합니다. 이 추가 제안의 독립 검수는 아직입니다.",
+        "after_note": "원문 이미지와 공식 답안(2022년 9월 73번 1번)을 대조했고, 시험 시점에 시행 중인 부가가치세법(법률 제18577호)과 시행령(대통령령 제32734호) 조문을 직접 읽었습니다. 전문가 검수는 아직입니다. 2026-10-25 재조사에서 시행령 제26조제1항 → 소득세법 시행령 제98조제1항 → 국세기본법 시행령 제1조의2제1항제1호와 각 판본 부칙을 직접 읽어 아버지·아들의 특수관계인 해당 부분을 확인했습니다. 임대료 조건과 정답의 유일성에 관한 미확인은 그대로이므로 부분 확인을 유지합니다. 이 추가 근거와 남은 한계는 별도 검수자가 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2024-07-081",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "a098578d2a4a758cad11b00d1c621b51ae1de89f46d1d34ec38d549cb03a0fc2",
+        "after_proposal_sha256": "a098578d2a4a758cad11b00d1c621b51ae1de89f46d1d34ec38d549cb03a0fc2",
+        "before_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "after_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2026-01-081",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "84cbfe33e70b97da882a607d3310bcaeee5808fc36b29c98f994e2665df26d7c",
+        "after_proposal_sha256": "84cbfe33e70b97da882a607d3310bcaeee5808fc36b29c98f994e2665df26d7c",
+        "before_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "after_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2022-05-091",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "e25af7330622f377a30298f888a725c63b84bbf81a8add986a5fc5bf2d742a17",
+        "after_proposal_sha256": "ea68305760f302497667254f528b27274faa0ec871af490624d35ff7f005ea51",
+        "before_note": "기존 공개 교재 검토 기록과 인용을 보존했습니다. 이번 작성자는 원문 이미지·원본 PDF의1·33·37쪽과 공식 정답표 PDF49쪽(91번=1), 05-1.mp4의 새1340·1600초 프레임을 직접 읽었습니다. ④의 국내 직접 문구만 새로 확인했고 ①의 가능성에 관한 미확인은 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 공개 교재 검토 기록과 인용을 보존했습니다. 이번 작성자는 원문 이미지·원본 PDF의1·33·37쪽과 공식 정답표 PDF49쪽(91번=1), 05-1.mp4의 새1340·1600초 프레임을 직접 읽었습니다. ④의 국내 직접 문구만 새로 확인했고 ①의 가능성에 관한 미확인은 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2023-11-096",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "8489116a107db33a397120a01ae37bcec148b6d7d55932f0ca5de6f324184196",
+        "after_proposal_sha256": "b009c65c9a9a17f6609e54ef3154085d46f0e53a566a239f6a1ea4a133520b6e",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2026-03-097",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "1f36e7f51d7d68b749ae3c0434d6d803bc52b26385e59ec74dc0c4ac886d01a0",
+        "after_proposal_sha256": "224b4de6af0f095f4cd594b6831deb7c73874e60ac8a31bbaee143da49a49cfe",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2025-03-096",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "023ef3ff7b1ae248b16821be5f336c40eaec5a43c70497b092bbc07daaa49925",
+        "after_proposal_sha256": "89bbba3f2e5b1d53bbf8aafe3b40cbf83e7c9326b18075dbe9d6cb340519c07c",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    ]
+  },
+  "independent_group_coverage": {
+    "reviewer": "/root/r28_matrix_qa",
+    "review_type": "115건 쟁점 그룹의 목록·분할 정확성 검사;115건 출처 내용 전수 독립 검수 아님",
+    "coverage_ids": [
+      "2022-01-025",
+      "2022-01-036",
+      "2022-03-095",
+      "2022-05-012",
+      "2022-05-025",
+      "2022-05-045",
+      "2022-05-058",
+      "2022-05-072",
+      "2022-05-075",
+      "2022-05-091",
+      "2022-06-026",
+      "2022-06-036",
+      "2022-06-056",
+      "2022-06-068",
+      "2022-06-101",
+      "2022-07-003",
+      "2022-07-018",
+      "2022-07-019",
+      "2022-07-023",
+      "2022-07-025",
+      "2022-07-031",
+      "2022-07-073",
+      "2022-09-054",
+      "2022-09-072",
+      "2022-09-073",
+      "2022-09-081",
+      "2022-09-101",
+      "2022-11-002",
+      "2022-11-019",
+      "2022-11-024",
+      "2022-11-061",
+      "2022-11-077",
+      "2022-11-101",
+      "2022-11-110",
+      "2022-12-058",
+      "2022-12-076",
+      "2022-12-077",
+      "2022-12-081",
+      "2022-12-083",
+      "2022-12-100",
+      "2022-12-107",
+      "2022-12-115",
+      "2023-01-026",
+      "2023-01-068",
+      "2023-01-093",
+      "2023-01-114",
+      "2023-03-015",
+      "2023-03-099",
+      "2023-05-006",
+      "2023-05-026",
+      "2023-05-061",
+      "2023-06-026",
+      "2023-06-057",
+      "2023-06-061",
+      "2023-06-112",
+      "2023-07-025",
+      "2023-07-038",
+      "2023-07-068",
+      "2023-09-016",
+      "2023-11-069",
+      "2023-11-075",
+      "2023-11-096",
+      "2023-12-105",
+      "2024-01-032",
+      "2024-01-055",
+      "2024-01-066",
+      "2024-03-066",
+      "2024-03-081",
+      "2024-05-031",
+      "2024-05-038",
+      "2024-05-071",
+      "2024-05-088",
+      "2024-05-112",
+      "2024-06-012",
+      "2024-06-027",
+      "2024-06-057",
+      "2024-07-081",
+      "2024-11-060",
+      "2024-11-080",
+      "2024-11-095",
+      "2024-11-119",
+      "2024-12-006",
+      "2024-12-036",
+      "2024-12-081",
+      "2025-01-055",
+      "2025-01-061",
+      "2025-03-096",
+      "2025-06-007",
+      "2025-06-085",
+      "2025-06-092",
+      "2025-06-095",
+      "2025-07-112",
+      "2025-09-014",
+      "2025-09-017",
+      "2025-09-057",
+      "2025-09-061",
+      "2025-09-069",
+      "2025-09-081",
+      "2025-11-017",
+      "2026-01-009",
+      "2026-01-018",
+      "2026-01-035",
+      "2026-01-081",
+      "2026-01-085",
+      "2026-03-097",
+      "2026-05-004",
+      "2026-05-021",
+      "2026-05-081",
+      "2026-06-018",
+      "2026-06-055",
+      "2026-07-026",
+      "2026-09-010",
+      "2026-09-022",
+      "2026-09-035",
+      "2026-09-110"
+    ],
+    "source_results": [
+      {
+        "path": "CACHE_DIR/finance-result.json",
+        "sha256": "9f0bd10f0cf5cd708df51b418d570b05bb97a95ac9e0c7883035087723e4c345",
+        "author": "/root/r27_engineering_review",
+        "items": 44,
+        "groups": 28,
+        "group_membership_matches_items": true,
+        "group_membership_duplicate_ids": []
+      },
+      {
+        "path": "CACHE_DIR/tax_corporate-result.json",
+        "sha256": "d2c50386044683c5b9e68aeb5585bc1ef724465db3a460e50ed63c11d00decfc",
+        "author": "/root/r27_abc_review",
+        "items": 12,
+        "groups": 8,
+        "group_membership_matches_items": true,
+        "group_membership_duplicate_ids": []
+      },
+      {
+        "path": "CACHE_DIR/tax_income_vat-result.json",
+        "sha256": "cc64b2c7a7b075a63219a414f056f7dae473a804ff086b45a8329c07579e28da",
+        "author": "/root/r28_tax_b_research",
+        "items": 23,
+        "groups": 11,
+        "group_membership_matches_items": true,
+        "group_membership_duplicate_ids": []
+      },
+      {
+        "path": "CACHE_DIR/cost_definitions_makebuy-result.json",
+        "sha256": "041cfad363fc9854cb0e58a19823d97399113e21a824ec5c658a4bf1583092da",
+        "author": "/root/r27_job_regression_review",
+        "items": 15,
+        "groups": 4,
+        "group_membership_matches_items": true,
+        "group_membership_duplicate_ids": []
+      },
+      {
+        "path": "CACHE_DIR/cost_models-result.json",
+        "sha256": "63eece67dbe006120bc1989c259abf9ff8c44bcd2bfdcb3e5e7e28b0fe8784a1",
+        "author": "/root/r28_cost_models (작성자; 독립 검수자 아님)",
+        "items": 21,
+        "groups": 14,
+        "group_membership_matches_items": true,
+        "group_membership_duplicate_ids": []
+      }
+    ],
+    "verdict": "pass",
+    "counts": {
+      "items": 115,
+      "unique_ids": 115,
+      "expected_partial_ids": 115,
+      "missing": 0,
+      "extra": 0,
+      "groups": 65
+    },
+    "limits": [
+      "작성자 보고서의 그룹명과 쟁점 요약을 읽고 그룹 멤버십·현재 partial ID 집합을 기계 대조했다.",
+      "115건의 기존 해설·모든 근거 내용을 새로 독립 검수한 것은 아니다. 실제 변경 제안은 별도 proposal digest 결속 검수 대상으로 구분한다."
+    ]
+  },
+  "file_sha256_preflight": {
+    "all_match": true,
+    "receipt_count": 354,
+    "scope": "작성자·검수자 실재 캐시 및 새 프레임/렌더 파일을 주 담당자가 재해시; 의미 판독은 각 실제 읽은 범위만 해당"
+  },
+  "review_note_recheck": {
+    "reviewer": "/root/r28_matrix_qa",
+    "verdict": "pass",
+    "before_review_submission": {
+      "path": "/tmp/chagok-order-20261025/step3/independent-review.pre-note.json",
+      "sha256": "78bc377688eebb54f18c70742dc836e846994cc421542376e227beeac417a10c"
+    },
+    "after_review_submission": {
+      "path": "/tmp/chagok-order-20261025/step3/independent-review.json",
+      "sha256": "e3622a9ec5cb80f5eee2f40bda28bbd512972165ab654a6511113d4a157e5351"
+    },
+    "before_proposals": {
+      "path": "/tmp/chagok-order-20261025/step3/proposals.pre-final-review-note.json",
+      "sha256": "7ed88dbb947ba0237a78f9ab2291f4ab3a322d2c9651980f7348932c51574824"
+    },
+    "after_proposals_read": {
+      "path": "/workspace/Jay5315.github.io/jaegyeong/reports/round28-proposals.json",
+      "sha256": "5259844c6548f936786cab4cabb323c04f311338718a876f4320f0088ce4ef5d"
+    },
+    "changed_after_fields_only": [
+      "review_note"
+    ],
+    "amendment_metadata_changes": [
+      "after_hash",
+      "coordinator_edits"
+    ],
+    "rebound_proposal_sha256_count": 5,
+    "unchanged_exact_proposal_digest_count": 3,
+    "reviews": [
+      {
+        "question_id": "2022-09-054",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "f634215753a8c3a1eee75ede3a312e642f6cd1e867c68edae2a391d42af6af81",
+        "after_proposal_sha256": "f634215753a8c3a1eee75ede3a312e642f6cd1e867c68edae2a391d42af6af81",
+        "before_note": "원문 이미지·문제 PDF22쪽과 과목머리17쪽·공식 답안PDF49쪽54번③을 다시 읽고, 2022 시행 법인세법25·58조와 2022.8.2 시행령36·42·95조 및 부칙을 대조했습니다. 국세청2022 법인세 신고안내290·42쪽에서 약정 채권포기의 기본통칙 인용과 객관적 정당사유에 따른 예외를 직접 확인하여 4번의 근거를 보강했습니다. 원문은 구체 포기 사유를 제시하지 않으며 3번의30% 문장을 사례로 읽을 여지도 남으므로 partial을 유지합니다. ",
+        "after_note": "원문 이미지·문제 PDF22쪽과 과목머리17쪽·공식 답안PDF49쪽54번③을 다시 읽고, 2022 시행 법인세법25·58조와 2022.8.2 시행령36·42·95조 및 부칙을 대조했습니다. 국세청2022 법인세 신고안내290·42쪽에서 약정 채권포기의 기본통칙 인용과 객관적 정당사유에 따른 예외를 직접 확인하여 4번의 근거를 보강했습니다. 원문은 구체 포기 사유를 제시하지 않으며 3번의30% 문장을 사례로 읽을 여지도 남으므로 partial을 유지합니다. ",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2022-09-073",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "0e803af37026579dd4f1534eeca59372a58ed9ccf9538fe493128f3d032f9700",
+        "after_proposal_sha256": "7f212c9e23878cc1fa16762dd74e4f3f24df9c2861715644372dabb967cd3745",
+        "before_note": "원문 이미지와 공식 답안(2022년 9월 73번 1번)을 대조했고, 시험 시점에 시행 중인 부가가치세법(법률 제18577호)과 시행령(대통령령 제32734호) 조문을 직접 읽었습니다. 전문가 검수는 아직입니다. 2026-10-25 재조사에서 시행령 제26조제1항 → 소득세법 시행령 제98조제1항 → 국세기본법 시행령 제1조의2제1항제1호와 각 판본 부칙을 직접 읽어 아버지·아들의 특수관계인 해당 부분을 확인했습니다. 임대료 조건과 정답의 유일성에 관한 미확인은 그대로이므로 부분 확인을 유지합니다. 이 추가 제안의 독립 검수는 아직입니다.",
+        "after_note": "원문 이미지와 공식 답안(2022년 9월 73번 1번)을 대조했고, 시험 시점에 시행 중인 부가가치세법(법률 제18577호)과 시행령(대통령령 제32734호) 조문을 직접 읽었습니다. 전문가 검수는 아직입니다. 2026-10-25 재조사에서 시행령 제26조제1항 → 소득세법 시행령 제98조제1항 → 국세기본법 시행령 제1조의2제1항제1호와 각 판본 부칙을 직접 읽어 아버지·아들의 특수관계인 해당 부분을 확인했습니다. 임대료 조건과 정답의 유일성에 관한 미확인은 그대로이므로 부분 확인을 유지합니다. 이 추가 근거와 남은 한계는 별도 검수자가 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2024-07-081",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "a098578d2a4a758cad11b00d1c621b51ae1de89f46d1d34ec38d549cb03a0fc2",
+        "after_proposal_sha256": "a098578d2a4a758cad11b00d1c621b51ae1de89f46d1d34ec38d549cb03a0fc2",
+        "before_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "after_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2026-01-081",
+        "changed": false,
+        "amendment_changed_paths": [],
+        "after_object_changed_fields": [],
+        "before_proposal_sha256": "84cbfe33e70b97da882a607d3310bcaeee5808fc36b29c98f994e2665df26d7c",
+        "after_proposal_sha256": "84cbfe33e70b97da882a607d3310bcaeee5808fc36b29c98f994e2665df26d7c",
+        "before_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "after_note": "원본 문항 이미지와 해당 회차 공식 답안을 다시 읽고, 국내 공개강의의 실제 교재 화면에서 원가회계 정보의 한계·목적별 회계절차·상황적합성·비용과 효익을 직접 대조했습니다. 이 교재가 구별하는 정량적 원가회계의 문맥이며, 관리회계 전체의 비재무 정보 제공을 부정하는 것은 아닙니다. 실제 프레임 시각과 해시는 별도 감사 증거에 보존하며 전문가 검수나 시험 당시 교재 판본 동일성을 뜻하지 않습니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 amendment 전체 객체를 재귀 대조하여 변경이 없고 기존 proposal digest와 정확히 같음을 확인했다. 기존 요약·단계·보기·근거 범위의 판정과 결속을 유지한다."
+      },
+      {
+        "question_id": "2022-05-091",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "e25af7330622f377a30298f888a725c63b84bbf81a8add986a5fc5bf2d742a17",
+        "after_proposal_sha256": "ea68305760f302497667254f528b27274faa0ec871af490624d35ff7f005ea51",
+        "before_note": "기존 공개 교재 검토 기록과 인용을 보존했습니다. 이번 작성자는 원문 이미지·원본 PDF의1·33·37쪽과 공식 정답표 PDF49쪽(91번=1), 05-1.mp4의 새1340·1600초 프레임을 직접 읽었습니다. ④의 국내 직접 문구만 새로 확인했고 ①의 가능성에 관한 미확인은 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 공개 교재 검토 기록과 인용을 보존했습니다. 이번 작성자는 원문 이미지·원본 PDF의1·33·37쪽과 공식 정답표 PDF49쪽(91번=1), 05-1.mp4의 새1340·1600초 프레임을 직접 읽었습니다. ④의 국내 직접 문구만 새로 확인했고 ①의 가능성에 관한 미확인은 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2023-11-096",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "8489116a107db33a397120a01ae37bcec148b6d7d55932f0ca5de6f324184196",
+        "after_proposal_sha256": "b009c65c9a9a17f6609e54ef3154085d46f0e53a566a239f6a1ea4a133520b6e",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2026-03-097",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "1f36e7f51d7d68b749ae3c0434d6d803bc52b26385e59ec74dc0c4ac886d01a0",
+        "after_proposal_sha256": "224b4de6af0f095f4cd594b6831deb7c73874e60ac8a31bbaee143da49a49cfe",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      },
+      {
+        "question_id": "2025-03-096",
+        "changed": true,
+        "amendment_changed_paths": [
+          "/after/review_note",
+          "/after_hash",
+          "/coordinator_edits"
+        ],
+        "after_object_changed_fields": [
+          "review_note"
+        ],
+        "before_proposal_sha256": "023ef3ff7b1ae248b16821be5f336c40eaec5a43c70497b092bbc07daaa49925",
+        "after_proposal_sha256": "89bbba3f2e5b1d53bbf8aafe3b40cbf83e7c9326b18075dbe9d6cb340519c07c",
+        "before_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 작성자 확인이며 독립 검수는 아직입니다.",
+        "after_note": "기존 ACCA·OpenStax·공식 답안의 인용과 검토 이력을 보존했습니다. 이번 작성자는 원문 이미지, 원본 PDF1쪽 안내·33쪽 과목 머리·해당 문항 쪽과 공식 키, 06-1 새1200·1560·1650초 및 06-2 새30·90초 프레임을 직접 읽었습니다. 국내 비교표의 문구는 새로 확인했으나 본문의 고정화 가정과의 적용 범위 충돌 및 운영비용 중요성 진술의 직접 반박 미확인을 유지합니다. 별도 검수자가 추가 근거와 남은 한계를 확인했으며, 그 범위와 판정을 감사 기록에 남겼습니다. 전문가 검수는 아직입니다.",
+        "verdict": "pass",
+        "finding": "정정 전후 문장을 직접 읽었다. 실제 수행한 별도 검수의 추가 근거·남은 한계 확인 사실과 일치하고, 전문가 미검수와 partial의 미확인 범위를 유지한다. 독립 검수를 정답 유일성·모든 미확인 해소로 확대하지 않는다. amendment 객체의 변경경로도 review_note·그 객체 해시·coordinator_edits뿐임을 재귀 대조했으므로 재판정 pass."
+      }
+    ],
+    "limits": [
+      "기존 내용 검수의 실제 범위를 유지한다. 이번에 새로 확인한 것은 검수 상태 문장의 정확성과 JSON 차이이며, 원문자료 내용의 추가 재독을 뜻하지 않는다."
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "task": 3,
+  "baseline_commit": "c5b27a4",
+  "tests": [
+    {
+      "suite": "test_bank",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_parts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_concepts",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_explanations",
+      "exit_code": 0,
+      "output": "OK"
+    },
+    {
+      "suite": "test_app",
+      "exit_code": 0,
+      "output": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "suite": "test_browser",
+      "exit_code": 0,
+      "output": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "suite": "test_explanations_app",
+      "exit_code": 0,
+      "output": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "suite": "test_offline",
+      "exit_code": 0,
+      "output": "PASS: offline browser regressions complete."
+    }
+  ],
+  "explanation_test_count": 70,
+  "run_checks_log_sha256": "a67588144f5e99eb827d4b4e9fc9c0a09d84c43fe7e44736de92db3e63124eeb",
+  "zip": {
+    "chagok-webapp.zip": "149.1 MiB; CRC and all question assets verified",
+    "jaegyeong-question-bank.zip": "277.5 MiB; CRC and all question assets verified",
+    "test_portable_runtime": "PASS"
+  },
+  "new_regressions": {
+    "before_report": "2 errors: no independent review artifact",
+    "before_data": "2 errors: independently reviewed changes not recorded in round28_followups",
+    "after": "2 PASS; all historical protection tests preserved"
+  },
+  "initial_apply_error": "Stopped before any write because reviewer used verdict where new adapter expected status; both explicit fields must equal pass after correction. No answer/calculation guard was relaxed.",
+  "review_note_correction": "5 draft-state notes changed only after actual independent review and independently rechecked against the new exact proposal hashes",
+  "research": {
+    "inventory": 115,
+    "groups": 65,
+    "proposal_amendments": 8,
+    "upgraded": 2,
+    "partial_amendments": 6,
+    "kept": 107,
+    "actual_authors": 5,
+    "independent_amendment_reviewer": "/root/r28_matrix_qa",
+    "writer_read_receipts": 235,
+    "independent_evidence_bundles": 28,
+    "file_hash_receipts_checked": 354,
+    "classification_is_not_full_source_reverification": true
+  },
+  "current_data": {
+    "explanations": 4281,
+    "source_checked": 4168,
+    "partial": 113,
+    "unregistered": 40,
+    "concepts": 74
+  },
+  "protected_fields_and_paths": "question IDs, official answers, is_answer, original checks, chagok.study.v1, questions/entries/taxonomy/concepts, root site, app.js/app.css, jaegyeong/index.html, MANUAL_ACCEPTANCE.md unchanged",
+  "actual_distinct_subagents_this_work_order": 6,
+  "deployment": "pending task-3 commit/main push",
+  "limits": [
+    "physical devices and screen-reader speech remain unverified",
+    "entire videos/audio and precise publication edition not verified",
+    "only explicitly recorded source scopes were reread; 115 grouping is not 115 newly confirmed explanations",
+    "actual file:// browser restriction remains; ZIP HTTP/unit cases passed"
+  ]
+}

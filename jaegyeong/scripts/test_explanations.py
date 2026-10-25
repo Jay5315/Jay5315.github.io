@@ -14,6 +14,7 @@ from test_concepts import calc
 from test_runtime_data import RuntimeDataTests
 from test_round27_independent_review import Round27IndependentReviewTests
 from test_work_order_reports import WorkOrderStep2Tests
+from test_round28_followups import Round28FollowupTests
 
 R = Path(__file__).resolve().parents[1]
 
@@ -539,6 +540,17 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Latest data stage: reverse independently reviewed round-28 changes first.
+        round28=(cls.audit or {}).get('round28_followups')
+        if round28:
+            cls.stage_after['round28_followups']=copy.deepcopy(cls.data)
+            cls.audit_after['round28_followups']=copy.deepcopy(cls.audit)
+            index={n['question_id']:i for i,n in enumerate(cls.data['items'])}
+            for record in round28['amendments']:
+                cls.data['items'][index[record['question_id']]]=copy.deepcopy(record['before'])
+            for ref in round28['new_source_refs']:
+                del cls.data['sources'][ref]
+            del cls.audit['round28_followups']
         # Reverse the latest source checks before all historical protection tests.
         round27 = (cls.audit or {}).get('round27_sources')
         if round27:
