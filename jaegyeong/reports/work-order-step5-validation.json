@@ -1,0 +1,1106 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "6d79c13",
+  "task": 5,
+  "status": "candidate_mitigation_verified_ten_full_runs_passed_historical_cause_unconfirmed",
+  "historical_root_cause_proven": false,
+  "finding": "닫힌 미리보기의 close 리스너가 아직 실행되지 않은 상태에서는 학습 본문과 미리보기 본문이 함께 .question-text에 일치합니다. 통제 실험에서 원래59행의 strict mode 오류를 재현했고, 실제 학습 본문의 채점·저장은 정상이었습니다. 정상 스케줄링 반복에서는 이력상의 실패를 재현하지 못했으므로 두 사건이 같은 원인이라고 확정하지 않습니다.",
+  "changes": {
+    "scripts/test_app.py": "기존 다중정답/키보드/색상/저장 단언 유지. 키 입력 전 #modal-body 비어 있음 및 .question-text 유일성의 정확한 전제조건만 추가(기본 타임아웃 그대로).",
+    "scripts/test_app_grading_readiness.py": "실제 close 콜백을 잠시 보류/재개하여 기존 준비조건의 누락, 새 조건의 거부, 실제 키보드/저장 성공, 정리 뒤 기존59행 통과를 검증.",
+    "scripts/test_browser.py": "위 독립 컨텍스트 회귀 검사를 추가로 호출하고 진단 JSON 저장.",
+    "scripts/diagnose_app_flake.py": "기존 테스트 소스의59행 단언만 메모리에서 감싼 재시작 반복 도구. 전체 실행과59행까지의 부분 실행, 일반/CPU4 실험을 구분. 앱/검사 원본 실행 중 수정 없음."
+  },
+  "pre_fix_repetition": {
+    "initial-baseline": {
+      "runs": [
+        {
+          "run": 1,
+          "server_pid": 432477,
+          "returncode": 0,
+          "seconds": 56.95,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-01"
+        },
+        {
+          "run": 2,
+          "server_pid": 433832,
+          "returncode": 0,
+          "seconds": 53.565,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-02"
+        },
+        {
+          "run": 3,
+          "server_pid": 435166,
+          "returncode": 0,
+          "seconds": 3.584,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-03"
+        },
+        {
+          "run": 4,
+          "server_pid": 435325,
+          "returncode": 0,
+          "seconds": 3.583,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-04"
+        },
+        {
+          "run": 5,
+          "server_pid": 435484,
+          "returncode": 0,
+          "seconds": 3.382,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-05"
+        },
+        {
+          "run": 6,
+          "server_pid": 435642,
+          "returncode": 0,
+          "seconds": 3.292,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-06"
+        },
+        {
+          "run": 7,
+          "server_pid": 435805,
+          "returncode": 0,
+          "seconds": 3.484,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-07"
+        },
+        {
+          "run": 8,
+          "server_pid": 435962,
+          "returncode": 0,
+          "seconds": 3.433,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-08"
+        },
+        {
+          "run": 9,
+          "server_pid": 436119,
+          "returncode": 0,
+          "seconds": 3.4,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-09"
+        },
+        {
+          "run": 10,
+          "server_pid": 436275,
+          "returncode": 0,
+          "seconds": 3.733,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-10"
+        },
+        {
+          "run": 11,
+          "server_pid": 436436,
+          "returncode": 0,
+          "seconds": 3.737,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-11"
+        },
+        {
+          "run": 12,
+          "server_pid": 436595,
+          "returncode": 0,
+          "seconds": 3.489,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-12"
+        },
+        {
+          "run": 13,
+          "server_pid": 436758,
+          "returncode": 0,
+          "seconds": 3.432,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-13"
+        },
+        {
+          "run": 14,
+          "server_pid": 436917,
+          "returncode": 0,
+          "seconds": 3.696,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-14"
+        },
+        {
+          "run": 15,
+          "server_pid": 437086,
+          "returncode": 0,
+          "seconds": 3.586,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-15"
+        }
+      ],
+      "passes": 15,
+      "non_app_wrapper_errors": 0
+    },
+    "baseline": {
+      "runs": [
+        {
+          "run": 1,
+          "server_pid": 437266,
+          "returncode": 0,
+          "seconds": 3.84,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-01"
+        },
+        {
+          "run": 2,
+          "server_pid": 437453,
+          "returncode": 0,
+          "seconds": 3.535,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-02"
+        },
+        {
+          "run": 3,
+          "server_pid": 437612,
+          "returncode": 0,
+          "seconds": 3.585,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-03"
+        },
+        {
+          "run": 4,
+          "server_pid": 437809,
+          "returncode": 0,
+          "seconds": 3.49,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-04"
+        },
+        {
+          "run": 5,
+          "server_pid": 437965,
+          "returncode": 0,
+          "seconds": 3.578,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-05"
+        },
+        {
+          "run": 6,
+          "server_pid": 438147,
+          "returncode": 0,
+          "seconds": 3.594,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-06"
+        },
+        {
+          "run": 7,
+          "server_pid": 438327,
+          "returncode": 0,
+          "seconds": 3.736,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-07"
+        },
+        {
+          "run": 8,
+          "server_pid": 438489,
+          "returncode": 0,
+          "seconds": 3.326,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-08"
+        },
+        {
+          "run": 9,
+          "server_pid": 438650,
+          "returncode": 0,
+          "seconds": 3.382,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-09"
+        },
+        {
+          "run": 10,
+          "server_pid": 438807,
+          "returncode": 0,
+          "seconds": 3.493,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-10"
+        },
+        {
+          "run": 11,
+          "server_pid": 438960,
+          "returncode": 0,
+          "seconds": 3.631,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-11"
+        },
+        {
+          "run": 12,
+          "server_pid": 439124,
+          "returncode": 0,
+          "seconds": 3.73,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-12"
+        },
+        {
+          "run": 13,
+          "server_pid": 439282,
+          "returncode": 0,
+          "seconds": 3.785,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-13"
+        },
+        {
+          "run": 14,
+          "server_pid": 439441,
+          "returncode": 0,
+          "seconds": 3.547,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-14"
+        },
+        {
+          "run": 15,
+          "server_pid": 439596,
+          "returncode": 0,
+          "seconds": 3.888,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-15"
+        },
+        {
+          "run": 16,
+          "server_pid": 439774,
+          "returncode": 0,
+          "seconds": 3.532,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-16"
+        },
+        {
+          "run": 17,
+          "server_pid": 439931,
+          "returncode": 0,
+          "seconds": 3.634,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-17"
+        },
+        {
+          "run": 18,
+          "server_pid": 440091,
+          "returncode": 0,
+          "seconds": 3.643,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-18"
+        },
+        {
+          "run": 19,
+          "server_pid": 440254,
+          "returncode": 0,
+          "seconds": 3.43,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-19"
+        },
+        {
+          "run": 20,
+          "server_pid": 440412,
+          "returncode": 0,
+          "seconds": 3.481,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-20"
+        },
+        {
+          "run": 21,
+          "server_pid": 440571,
+          "returncode": 0,
+          "seconds": 3.534,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-21"
+        },
+        {
+          "run": 22,
+          "server_pid": 440730,
+          "returncode": 0,
+          "seconds": 3.589,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-22"
+        },
+        {
+          "run": 23,
+          "server_pid": 440889,
+          "returncode": 0,
+          "seconds": 3.637,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-23"
+        },
+        {
+          "run": 24,
+          "server_pid": 441051,
+          "returncode": 0,
+          "seconds": 3.481,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-24"
+        },
+        {
+          "run": 25,
+          "server_pid": 441206,
+          "returncode": 0,
+          "seconds": 3.437,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-25"
+        },
+        {
+          "run": 26,
+          "server_pid": 441370,
+          "returncode": 1,
+          "seconds": 0.016,
+          "artifacts": "/tmp/chagok-20261026/step5/baseline-26"
+        }
+      ],
+      "passes": 25,
+      "non_app_wrapper_errors": 1
+    },
+    "minimal": {
+      "runs": [
+        {
+          "run": 1,
+          "server_pid": 441522,
+          "returncode": 0,
+          "seconds": 3.545,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-01"
+        },
+        {
+          "run": 2,
+          "server_pid": 441716,
+          "returncode": 0,
+          "seconds": 3.382,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-02"
+        },
+        {
+          "run": 3,
+          "server_pid": 441874,
+          "returncode": 0,
+          "seconds": 3.382,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-03"
+        },
+        {
+          "run": 4,
+          "server_pid": 442053,
+          "returncode": 0,
+          "seconds": 3.432,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-04"
+        },
+        {
+          "run": 5,
+          "server_pid": 442217,
+          "returncode": 0,
+          "seconds": 3.43,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-05"
+        },
+        {
+          "run": 6,
+          "server_pid": 442378,
+          "returncode": 0,
+          "seconds": 3.489,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-06"
+        },
+        {
+          "run": 7,
+          "server_pid": 442536,
+          "returncode": 0,
+          "seconds": 3.384,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-07"
+        },
+        {
+          "run": 8,
+          "server_pid": 442692,
+          "returncode": 0,
+          "seconds": 3.544,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-08"
+        },
+        {
+          "run": 9,
+          "server_pid": 442850,
+          "returncode": 0,
+          "seconds": 3.726,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-09"
+        },
+        {
+          "run": 10,
+          "server_pid": 443012,
+          "returncode": 0,
+          "seconds": 3.893,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-10"
+        },
+        {
+          "run": 11,
+          "server_pid": 443177,
+          "returncode": 0,
+          "seconds": 3.529,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-11"
+        },
+        {
+          "run": 12,
+          "server_pid": 443355,
+          "returncode": 1,
+          "seconds": 0.032,
+          "artifacts": "/tmp/chagok-20261026/step5/minimal-12"
+        }
+      ],
+      "passes": 11,
+      "non_app_wrapper_errors": 1
+    },
+    "cpu4": {
+      "runs": [
+        {
+          "run": 1,
+          "server_pid": 443374,
+          "returncode": 0,
+          "seconds": 6.487,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-01"
+        },
+        {
+          "run": 2,
+          "server_pid": 443532,
+          "returncode": 0,
+          "seconds": 6.853,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-02"
+        },
+        {
+          "run": 3,
+          "server_pid": 443695,
+          "returncode": 0,
+          "seconds": 7.05,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-03"
+        },
+        {
+          "run": 4,
+          "server_pid": 443858,
+          "returncode": 0,
+          "seconds": 7.7,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-04"
+        },
+        {
+          "run": 5,
+          "server_pid": 444021,
+          "returncode": 0,
+          "seconds": 7.867,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-05"
+        },
+        {
+          "run": 6,
+          "server_pid": 444201,
+          "returncode": 0,
+          "seconds": 7.14,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-06"
+        },
+        {
+          "run": 7,
+          "server_pid": 444363,
+          "returncode": 0,
+          "seconds": 7.162,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-07"
+        },
+        {
+          "run": 8,
+          "server_pid": 444525,
+          "returncode": 0,
+          "seconds": 6.954,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-08"
+        },
+        {
+          "run": 9,
+          "server_pid": 444683,
+          "returncode": 0,
+          "seconds": 6.85,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-09"
+        },
+        {
+          "run": 10,
+          "server_pid": 444851,
+          "returncode": 0,
+          "seconds": 6.643,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-10"
+        },
+        {
+          "run": 11,
+          "server_pid": 445014,
+          "returncode": 0,
+          "seconds": 6.395,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-11"
+        },
+        {
+          "run": 12,
+          "server_pid": 445186,
+          "returncode": 0,
+          "seconds": 7.213,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-12"
+        },
+        {
+          "run": 13,
+          "server_pid": 445364,
+          "returncode": 0,
+          "seconds": 6.755,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-13"
+        },
+        {
+          "run": 14,
+          "server_pid": 445526,
+          "returncode": 0,
+          "seconds": 6.771,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-14"
+        },
+        {
+          "run": 15,
+          "server_pid": 445703,
+          "returncode": 0,
+          "seconds": 6.803,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-15"
+        },
+        {
+          "run": 16,
+          "server_pid": 445864,
+          "returncode": 0,
+          "seconds": 6.698,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-16"
+        },
+        {
+          "run": 17,
+          "server_pid": 446026,
+          "returncode": 0,
+          "seconds": 6.499,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-17"
+        },
+        {
+          "run": 18,
+          "server_pid": 446186,
+          "returncode": 0,
+          "seconds": 6.086,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-18"
+        },
+        {
+          "run": 19,
+          "server_pid": 446347,
+          "returncode": 0,
+          "seconds": 6.392,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-19"
+        },
+        {
+          "run": 20,
+          "server_pid": 446515,
+          "returncode": 0,
+          "seconds": 6.207,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-20"
+        },
+        {
+          "run": 21,
+          "server_pid": 446675,
+          "returncode": 0,
+          "seconds": 6.001,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-21"
+        },
+        {
+          "run": 22,
+          "server_pid": 446834,
+          "returncode": 0,
+          "seconds": 6.693,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-22"
+        },
+        {
+          "run": 23,
+          "server_pid": 447000,
+          "returncode": 0,
+          "seconds": 7.258,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-23"
+        },
+        {
+          "run": 24,
+          "server_pid": 447165,
+          "returncode": 0,
+          "seconds": 7.01,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-24"
+        },
+        {
+          "run": 25,
+          "server_pid": 447324,
+          "returncode": 0,
+          "seconds": 6.908,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-25"
+        },
+        {
+          "run": 26,
+          "server_pid": 447487,
+          "returncode": 0,
+          "seconds": 7.25,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-26"
+        },
+        {
+          "run": 27,
+          "server_pid": 447650,
+          "returncode": 0,
+          "seconds": 7.447,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-27"
+        },
+        {
+          "run": 28,
+          "server_pid": 447817,
+          "returncode": 0,
+          "seconds": 6.497,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-28"
+        },
+        {
+          "run": 29,
+          "server_pid": 447978,
+          "returncode": 0,
+          "seconds": 6.444,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-29"
+        },
+        {
+          "run": 30,
+          "server_pid": 448141,
+          "returncode": 0,
+          "seconds": 6.947,
+          "artifacts": "/tmp/chagok-20261026/step5/cpu4-30"
+        }
+      ],
+      "passes": 30,
+      "non_app_wrapper_errors": 0
+    }
+  },
+  "pre_fix_scope_notes": [
+    "initial-baseline15회 중1~2 전체,3~15는 원래 UI 흐름65행까지. 이후25+11회도 같은 부분흐름.",
+    "정상 CPU: 전체2회와 부분49회 모두 PASS. CPU4로 부분30회 모두 PASS. 자연 실패0건.",
+    "임시 래퍼 편집 중 컴파일 오류2회는 브라우저 실행 전 종료한 도구 오류이며 앱 실패/통과 횟수에서 제외합니다. 원본 검사 파일은 당시 변경하지 않았습니다.",
+    "초기 scratch 폴더명이 재사용되어 초반 원시 로그 일부가 덮였습니다. initial-baseline결과 목록은 별도로 보존했으며, 최종10회는 별도 폴더에 전부 보존합니다."
+  ],
+  "controlled_probe": {
+    "ordinary_assertion": {
+      "passed": true
+    },
+    "controlled_scheduling": true,
+    "historical_cause_proven": false,
+    "assertion": {
+      "passed": false,
+      "type": "AssertionError",
+      "error": "Locator expected to have attribute '1 4'\nActual value: None\nError: strict mode violation: locator(\".question-text\") resolved to 2 elements:\n    1) <div data-picked=\"1\" data-correct=\"1 4\" class=\"question-text\">…</div> aka locator(\"div\").filter(has_text=\"㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를\").nth(1)\n    2) <div class=\"question-text\">…</div> aka locator(\"#modal-body div\").filter(has_text=\"㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를\")\n \nCall log:\n  - Expect \"to_have_attribute\" with timeout 5000ms\n  - waiting for locator(\".question-text\")\n"
+    },
+    "snapshot": {
+      "questionText": [
+        {
+          "inMain": true,
+          "inModal": false,
+          "hidden": false,
+          "correct": "1 4",
+          "picked": "1",
+          "connected": true,
+          "html": "<div class=\"question-text\" data-correct=\"1 4\" data-picked=\"1\"><span class=\"q-stem\">㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를 2년 후에 이전하기로 하고 10,000원을 수령하였다. ㈜삼일의 증분차입이자율이 연 5% 인 경우 ㈜삼일이 20X2년에 인식할 매출액은 얼마인가(단, 계약에 있는 금융요소는 유의적인 것으로 가정한다)?</span><span class=\"q-choices\"><span class=\"q-choice\" data-n=\"1\"><b>①</b><span>0원</span></span><span class=\"q-choice\" data-n=\"2\"><b>②</b><span>10,000원</span></span><span class="
+        },
+        {
+          "inMain": false,
+          "inModal": true,
+          "hidden": false,
+          "correct": null,
+          "picked": null,
+          "connected": true,
+          "html": "<div class=\"question-text\"><span class=\"q-stem\">㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를 2년 후에 이전하기로 하고 10,000원을 수령하였다. ㈜삼일의 증분차입이자율이 연 5% 인 경우 ㈜삼일이 20X2년에 인식할 매출액은 얼마인가(단, 계약에 있는 금융요소는 유의적인 것으로 가정한다)?</span><span class=\"q-choices\"><span class=\"q-choice\" data-n=\"1\"><b>①</b><span>0원</span></span><span class=\"q-choice\" data-n=\"2\"><b>②</b><span>10,000원</span></span><span class=\"q-choice\" data-n=\"3\"><b>③</b><span"
+        }
+      ],
+      "allCount": 2,
+      "mainCount": 1,
+      "modalCount": 1,
+      "dialogOpen": false,
+      "hash": "#quiz",
+      "route": "quiz",
+      "focus": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 1문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행률\" aria-valuemin=\"0\" aria-valuemax=\"1\" aria-valuenow=\"1\" aria-valuetext=\"1문제 중 1문제 채점 완료\"><div class=\"progress-fill\" style=\"width:100%\"></div></div><div class=\"quiz-layout\"><section class=\"question-ca",
+      "active": {
+        "id": "s1792977292153-vngwo",
+        "title": "2026-07 · 수익인식",
+        "ids": [
+          "2026-07-026"
+        ],
+        "answers": {
+          "2026-07-026": 1
+        },
+        "index": 0,
+        "startedAt": 1792977292153,
+        "finishedAt": null
+      },
+      "probe": {
+        "hold": true,
+        "held": 1,
+        "closeCallbacks": 1,
+        "timeline": [
+          {
+            "time": 593.7000000476837,
+            "type": "native-close-listener",
+            "hash": "#quiz",
+            "focus": "<button class=\"btn primary\" data-action=\"preview\" data-id=\"2026-07-026\">문제 보기</button>",
+            "modalOpen": false,
+            "held": true
+          },
+          {
+            "time": 594.7000000476837,
+            "type": "hashchange-capture",
+            "hash": "#quiz",
+            "focus": "<button class=\"btn primary\" data-action=\"preview\" data-id=\"2026-07-026\">문제 보기</button>",
+            "modalOpen": false,
+            "oldURL": "http://127.0.0.1:8056/jaegyeong/#library",
+            "newURL": "http://127.0.0.1:8056/jaegyeong/#quiz"
+          },
+          {
+            "time": 641.8000000715256,
+            "type": "keydown-capture",
+            "hash": "#quiz",
+            "focus": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행",
+            "modalOpen": false,
+            "key": "1",
+            "target": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행"
+          },
+          {
+            "time": 642.1000000238419,
+            "type": "keydown-bubble-before-app",
+            "hash": "#quiz",
+            "focus": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행",
+            "modalOpen": false,
+            "key": "1",
+            "prevented": false,
+            "selected": null,
+            "mainCorrect": null
+          },
+          {
+            "time": 654,
+            "type": "keydown-capture",
+            "hash": "#quiz",
+            "focus": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행",
+            "modalOpen": false,
+            "key": "Enter",
+            "target": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행"
+          },
+          {
+            "time": 654,
+            "type": "keydown-bubble-before-app",
+            "hash": "#quiz",
+            "focus": "<main id=\"main\" tabindex=\"-1\"><div class=\"quiz-top\"><div><p class=\"eyebrow\">FOCUS &amp; GROW</p><h1>2026-07 · 수익인식</h1><p class=\"sub\">1 / 1문제 · 0문제 채점 완료</p></div><button class=\"text-button\" data-action=\"home\">나중에 이어 풀기 ↗</button></div><div class=\"progress-track\" role=\"progressbar\" aria-label=\"학습 진행",
+            "modalOpen": false,
+            "key": "Enter",
+            "prevented": false,
+            "selected": "1",
+            "mainCorrect": null
+          }
+        ]
+      }
+    },
+    "main_scoped_passed": true,
+    "original_assertion_after_cleanup_passed": true,
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+      },
+      {
+        "type": "warning",
+        "text": "Service Worker registration blocked by Playwright"
+      }
+    ],
+    "page_errors": []
+  },
+  "evidence_files": [
+    {
+      "path": "/tmp/chagok-20261026/step5/modal-probe-artifacts/controlled-held-close/after-enter.png",
+      "sha256": "848a6144f6fd2c88637f5c6a891ec0adbc7facb9f3826901b5ee1ee2f5ac39a0",
+      "bytes": 188035
+    },
+    {
+      "path": "/tmp/chagok-20261026/step5/modal-probe-artifacts/controlled-held-close/original-assertion-failure.png",
+      "sha256": "64b37cdc174aebb949e84863b57bd587eaf0272690cc0da93e16999b05004585",
+      "bytes": 442828
+    },
+    {
+      "path": "/tmp/chagok-20261026/step5/modal-probe-artifacts/controlled-held-close/report.json",
+      "sha256": "7f04c63539bf2b67afeeafba6f83cb7d4f61bda4c0fbe183bee45a46e72a4b21",
+      "bytes": 31872
+    },
+    {
+      "path": "/tmp/chagok-20261026/step5/modal-probe-artifacts/ordinary-scheduling/after-enter.png",
+      "sha256": "848a6144f6fd2c88637f5c6a891ec0adbc7facb9f3826901b5ee1ee2f5ac39a0",
+      "bytes": 188035
+    },
+    {
+      "path": "/tmp/chagok-20261026/step5/modal-probe-artifacts/ordinary-scheduling/report.json",
+      "sha256": "eb736a2054f66df8f99a31d51efc5df6b914957a3d16ace1ef63706416cab68a",
+      "bytes": 21287
+    }
+  ],
+  "unchanged_files_sha256": {
+    "assets/app.js": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+    "assets/app.css": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+    "assets/data-loader.js": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+    "assets/offline.js": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+    "sw.js": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+    "index.html": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+    "data/questions.json": "5b28c7c9d861503a033f1712a24427c16f2256a87ecb2d261415edc633607d2f",
+    "data/explanations.json": "f2b2d9a41628972280fbb8c8d8b57b6a3cddc2ca3ffea09096bc4cdf6914eeae",
+    "data/concept-notes.json": "052984361d3a73823a270fdca59ff697954a16fde3bb6548d698aa65934dfead",
+    "MANUAL_ACCEPTANCE.md": "43ca8741c6d4ee081c5bf4cf75d8dd4ccdba116b1ea15ecff1b381b09b2dcd81"
+  },
+  "tests": {
+    "command": "APP_BASE_URL=http://127.0.0.1:8056/jaegyeong/ TEST_ARTIFACT_DIR=/tmp/chagok-20261026/step5/checks bash jaegyeong/scripts/run_checks.sh",
+    "suites": [
+      {
+        "name": "test_bank",
+        "returncode": 0,
+        "summary": "OK"
+      },
+      {
+        "name": "test_parts",
+        "returncode": 0,
+        "summary": "OK"
+      },
+      {
+        "name": "test_concepts",
+        "returncode": 0,
+        "summary": "OK"
+      },
+      {
+        "name": "test_explanations",
+        "returncode": 0,
+        "summary": "OK"
+      },
+      {
+        "name": "test_app",
+        "returncode": 0,
+        "summary": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+      },
+      {
+        "name": "test_browser",
+        "returncode": 0,
+        "summary": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+      },
+      {
+        "name": "test_explanations_app",
+        "returncode": 0,
+        "summary": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+      },
+      {
+        "name": "test_offline",
+        "returncode": 0,
+        "summary": "PASS: offline browser regressions complete."
+      }
+    ],
+    "all_passed": true,
+    "log_sha256": "1a434a513602a07752b4a41803aa435e8a3be15340bfd6b9314dbab7d7223679",
+    "grading_readiness": {
+      "controlled_scheduling": true,
+      "historical_root_cause_proven": false,
+      "held_before_keys": {
+        "count": 2,
+        "mainCount": 1,
+        "previewCount": 1,
+        "nodes": [
+          {
+            "inMain": true,
+            "correct": null,
+            "picked": null
+          },
+          {
+            "inMain": false,
+            "correct": null,
+            "picked": null
+          }
+        ],
+        "dialogOpen": false,
+        "hash": "#quiz",
+        "focus": "main",
+        "active": {
+          "id": "s1792978003378-reyo4",
+          "title": "2026-07 · 수익인식",
+          "ids": [
+            "2026-07-026"
+          ],
+          "answers": {},
+          "index": 0,
+          "startedAt": 1792978003378,
+          "finishedAt": null
+        },
+        "heldCallbacks": 1,
+        "keys": []
+      },
+      "original_guard_accepted": true,
+      "guard_rejection": "Locator expected to be empty\nActual value: notEmpty \nCall log:\n  - Expect \"to_be_empty\" with timeout 250ms\n  - waiting for locator(\"#modal-body\")\n    5 × locator resolved to <div id=\"modal-body\">…</div>\n      - unexpected value \"notEmpty\"\n\nAria snapshot:\n- link \"본문으로 이동\":\n  - /url: \"#main\"\n- banner:\n  - link \"차곡 홈\":\n    - /url: \"#home\"\n    - text: 차곡 재경관리사 기출\n  - navigation \"주 메뉴\":\n    - link \"학습 홈\":\n      - /url: \"#home\"\n    - link \"개념 노트\":\n      - /url: \"#concepts\"\n    - link \"문제 둘러보기\":\n      - /url: \"#library\"\n    - link \"오답 노트\":\n      - /url: \"#wrong\"\n    - link \"즐겨찾기\":\n      - /url: \"#bookmarks\"\n    - link \"학습 기록\":\n      - /url: \"#history\"\n  - text: 집중 학습\n  - 'button \"화면 테마: 자동 (기기 설정) (눌러서 바꾸기)\"'\n  - button \"내 기록 관리\": 나\n- main:\n  - heading \"2026-07 · 수익인식\" [level=1]\n  - paragraph: 1 / 1문제 · 0문제 채점 완료\n  - button \"나중에 이어 풀기 ↗\"\n  - progressbar \"학습 진행률\"\n  - text: 재무회계 2026-07 · 26번\n  - heading \"수익인식\" [level=2]\n  - button \"즐겨찾기 추가\"\n  - group \"문제 표시 방식\":\n    - button \"텍스트로 읽기\" [pressed]\n    - button \"원본 이미지\"\n  - text: ㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를 2년 후에 이전하기로 하고 10,000원을 수령하였다. ㈜삼일의 증분차입이자율이 연 5% 인 경우 ㈜삼일이 20X2년에 인식할 매출액은 얼마인가(단, 계약에 있는 금융요소는 유의적인 것으로 가정한다)? ① 0원 ② 10,000원 ③ 10,500원 ④ 11,025원 표·수식·도표는 원본도 확인하세요.\n  - button \"크게 보기\"\n  - button \"관련 개념 보기\": 관련 개념 1\n  - paragraph: 정답이라고 생각하는 보기를 선택하세요.\n  - group \"정답 선택\":\n    - button \"1번 선택\": ① 1번\n    - button \"2번 선택\": ② 2번\n    - button \"3번 선택\": ③ 3번\n    - button \"4번 선택\": ④ 4번\n  - button \"이전\" [disabled]\n  - button \"정답 확인\" [disabled]\n  - link \"원본 PDF ↗\":\n    - /url: sources/2026-07-questions.pdf#page=10\n  - link \"확정답안 ↗\":\n    - /url: sources/2026-07-answers.pdf\n  - group: 시험 공통 안내 보기\n  - group: 출제 이력 1건\n  - complementary:\n    - heading \"나의 학습 현황\" [level=3]\n    - paragraph: 번호를 눌러 문제를 이동하세요.\n    - button \"1번째 문제로 이동\": \"1\"\n    - text: 정답 오답\n    - button \"학습 마치기\"\n    - paragraph: 채점할 때마다 기록을 저장해요. 잠깐 쉬어도 홈에서 이어 풀 수 있어요.\n    - paragraph: 1 – 4 보기 선택 Enter 정답 확인 / 다음 문제 버튼에 초점이 있으면 해당 버튼 실행← → 이전 / 다음 문제\n- status\n- contentinfo:\n  - text: 나의 브라우저에 저장 중\n  - button \"기록 백업·복원\"\n  - text: 차곡 · 2022–2026.09 재경관리사 기출 · 학습 기록은 이 브라우저에만 저장됩니다.\n  - status: 오프라인 저장을 완료하지 못했습니다. 인터넷 연결과 브라우저 저장 공간을 확인한 뒤 다시 접속해 주세요.\n- status",
+      "held_after_grading": {
+        "count": 2,
+        "mainCount": 1,
+        "previewCount": 1,
+        "nodes": [
+          {
+            "inMain": true,
+            "correct": "1 4",
+            "picked": "1"
+          },
+          {
+            "inMain": false,
+            "correct": null,
+            "picked": null
+          }
+        ],
+        "dialogOpen": false,
+        "hash": "#quiz",
+        "focus": "main",
+        "active": {
+          "id": "s1792978003378-reyo4",
+          "title": "2026-07 · 수익인식",
+          "ids": [
+            "2026-07-026"
+          ],
+          "answers": {
+            "2026-07-026": 1
+          },
+          "index": 0,
+          "startedAt": 1792978003378,
+          "finishedAt": null
+        },
+        "heldCallbacks": 1,
+        "keys": [
+          {
+            "key": "1",
+            "target": "main",
+            "modalOpen": false
+          },
+          {
+            "key": "Enter",
+            "target": "main",
+            "modalOpen": false
+          }
+        ]
+      },
+      "original_assertion_rejection": "Locator expected to have attribute '1 4'\nActual value: None\nError: strict mode violation: locator(\".question-text\") resolved to 2 elements:\n    1) <div data-picked=\"1\" data-correct=\"1 4\" class=\"question-text\">…</div> aka locator(\"section div\").filter(has_text=\"㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를\")\n    2) <div class=\"question-text\">…</div> aka locator(\"#modal-body div\").filter(has_text=\"㈜삼일은 ㈜용산에 20X1년 1월 1일 제품 A 를\")\n \nCall log:\n  - Expect \"to_have_attribute\" with timeout 250ms\n  - waiting for locator(\".question-text\")\n",
+      "controlled_failure_screenshot": {
+        "path": "/tmp/chagok-20261026/step5/checks/grading-readiness-controlled-failure.png",
+        "sha256": "848a6144f6fd2c88637f5c6a891ec0adbc7facb9f3826901b5ee1ee2f5ac39a0"
+      },
+      "released": {
+        "count": 1,
+        "mainCount": 1,
+        "previewCount": 0,
+        "nodes": [
+          {
+            "inMain": true,
+            "correct": "1 4",
+            "picked": "1"
+          }
+        ],
+        "dialogOpen": false,
+        "hash": "#quiz",
+        "focus": "main",
+        "active": {
+          "id": "s1792978003378-reyo4",
+          "title": "2026-07 · 수익인식",
+          "ids": [
+            "2026-07-026"
+          ],
+          "answers": {
+            "2026-07-026": 1
+          },
+          "index": 0,
+          "startedAt": 1792978003378,
+          "finishedAt": null
+        },
+        "heldCallbacks": 0,
+        "keys": [
+          {
+            "key": "1",
+            "target": "main",
+            "modalOpen": false
+          },
+          {
+            "key": "Enter",
+            "target": "main",
+            "modalOpen": false
+          }
+        ]
+      },
+      "page_errors": []
+    },
+    "py_compile": "PASS",
+    "git_diff_check": "PASS",
+    "zip": "not rerun; no runtime or packaging changes"
+  },
+  "deployment": {
+    "requested_and_pushed": false,
+    "runtime_files_changed": false,
+    "note": "Tests and documentation only. Commit/Pages receipts will be recorded after push."
+  },
+  "limits": [
+    "실제 과거59행 실패의 원시 trace/DOM 자료가 없어 과거 실패 원인은 아직 확정하지 못했습니다. 통제된 재현을 자연 실패라고 보고하지 않습니다.",
+    "앱 런타임·데이터는 바꾸지 않았습니다. 실제 기기/화면낭독기 수동 승인을 수행하지 않았습니다."
+  ],
+  "supervisory_review": "Claude pending",
+  "source_code_observations": [
+    {
+      "file": "assets/app.js",
+      "baseline_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+      "locations": [
+        "closeModal243",
+        "modal close listener244",
+        "preview246",
+        "choose230/grade231",
+        "hashchange310"
+      ],
+      "finding": "dialog.close()와 DOM 삭제는 같은 동기 처리가 아닙니다. close 리스너가 modal-body를 비웁니다. choose/grade는 동기 처리이고 채점된 답은 render 전에 저장됩니다."
+    }
+  ],
+  "code_review": {
+    "reviewer": "/root/step5_code_review",
+    "verdict": "accepted_as_candidate_mitigation",
+    "executed_browser": false,
+    "checks": [
+      "원래 test_app의 모든 줄을 순서대로 보존",
+      "보호 10개 파일 SHA 일치",
+      "추가 4개 Python 소스 AST 구문 검사",
+      "준비 조건의 통제 실험과 기존 채점 단언 유지"
+    ],
+    "limits": [
+      "close 콜백을 인위적으로 단언의 타임아웃까지 보류한 뒤 수동 재개한 통제 실험입니다. 과거 자연 실패와 동일 원인이라고 확정하지 않습니다.",
+      "회귀 fixture는 인라인 조건과 같은 별도 helper를 사용합니다. 인라인 행 삭제만 검출하는 배선 검사는 아니며 조건의 실제 동작을 비교합니다."
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "cpu_baseline": 1,
+    "slow_cpu_probe": 4,
+    "browser_tests_parallel": false
+  },
+  "ten_consecutive_full_runs": {
+    "mode": "full_test_app",
+    "cpu_rate": 1,
+    "server_restarted_each_run": true,
+    "test_app_sha256": "d40f88fd8ec29058a0a4cf4d5b2a75da24a64ec006bc5db4449dc6368d33beb0",
+    "historical_root_cause_proven": false,
+    "runs": [
+      {
+        "run": 1,
+        "server_pid": 448716,
+        "returncode": 0,
+        "seconds": 53.046,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-01"
+      },
+      {
+        "run": 2,
+        "server_pid": 450029,
+        "returncode": 0,
+        "seconds": 53.592,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-02"
+      },
+      {
+        "run": 3,
+        "server_pid": 451380,
+        "returncode": 0,
+        "seconds": 52.837,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-03"
+      },
+      {
+        "run": 4,
+        "server_pid": 452727,
+        "returncode": 0,
+        "seconds": 51.784,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-04"
+      },
+      {
+        "run": 5,
+        "server_pid": 454051,
+        "returncode": 0,
+        "seconds": 54.064,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-05"
+      },
+      {
+        "run": 6,
+        "server_pid": 455560,
+        "returncode": 0,
+        "seconds": 51.848,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-06"
+      },
+      {
+        "run": 7,
+        "server_pid": 456886,
+        "returncode": 0,
+        "seconds": 52.186,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-07"
+      },
+      {
+        "run": 8,
+        "server_pid": 458184,
+        "returncode": 0,
+        "seconds": 54.126,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-08"
+      },
+      {
+        "run": 9,
+        "server_pid": 459572,
+        "returncode": 0,
+        "seconds": 56.006,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-09"
+      },
+      {
+        "run": 10,
+        "server_pid": 460895,
+        "returncode": 0,
+        "seconds": 54.6,
+        "artifact_directory": "/tmp/chagok-20261026/step5/full-ten/run-10"
+      }
+    ],
+    "consecutive_passes": 10
+  },
+  "task5_closed": false
+}

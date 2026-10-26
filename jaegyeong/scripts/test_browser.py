@@ -1,6 +1,7 @@
 from pathlib import Path
-import shutil,os
+import json,shutil,os
 from playwright.sync_api import sync_playwright
+from test_app_grading_readiness import run_grading_readiness
 
 ROOT=Path(__file__).resolve().parents[1]
 URL=os.environ.get('APP_BASE_URL','http://127.0.0.1:8000/jaegyeong/').rstrip('/')+'/'
@@ -71,5 +72,7 @@ with sync_playwright() as p:
     assert page.evaluate('document.documentElement.scrollWidth<=window.innerWidth')
     page.screenshot(path=str(ARTIFACTS/'browser-mobile.png'),full_page=True)
     assert not errors,errors
+    readiness=run_grading_readiness(browser,URL,artifact_dir=ARTIFACTS)
+    (ARTIFACTS/'grading-readiness.json').write_text(json.dumps(readiness,ensure_ascii=False,indent=2)+'\n')
     browser.close()
     print('PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters, subject reset, tag search, classification review filter, mobile layout; no browser errors.')
