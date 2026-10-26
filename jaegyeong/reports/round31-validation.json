@@ -80,14 +80,114 @@
   "unique_evidence_file_count": 13,
   "review_report_sha256": "bc8f17e821a5cbe09f190c77559e752ad19ac3c2dbc37aaf2535a4ca2a137dbf",
   "deployment": {
-    "status": "pending_final_document_commit",
+    "status": "success",
+    "commit": "554879ebd72f4fa4ca58ec942f73bbd07b8e6f54",
+    "pages_run_id": 40276726300,
+    "pages_url": "https://github.com/Jay5315/Jay5315.github.io/actions/runs/40276726300",
+    "pages_conclusion": "success",
+    "completed_at_utc": "2026-10-26T05:54:37Z",
+    "public_file_verification": {
+      "checked_at_utc": "2026-10-26T05:55:11.851010+00:00",
+      "commit": "554879ebd72f4fa4ca58ec942f73bbd07b8e6f54",
+      "tls_verification": true,
+      "all_match": true,
+      "file_count": 13,
+      "files": [
+        {
+          "path": "index.html",
+          "expected_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+          "public_sha256": "4f1c77f2b5d39fea2b253a3949a444468f91ad481acae84b913ef72310704a82",
+          "match": true
+        },
+        {
+          "path": "sw.js",
+          "expected_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+          "public_sha256": "56b07b613ab5689598b193b3421498b1d9654db325c2461cd31f2634195ac86f",
+          "match": true
+        },
+        {
+          "path": "assets/bank-manifest.json",
+          "expected_sha256": "44412cc18990bd1368d9f575e42475a8f5cf62604c77971c63037c16c30d87e4",
+          "public_sha256": "44412cc18990bd1368d9f575e42475a8f5cf62604c77971c63037c16c30d87e4",
+          "match": true
+        },
+        {
+          "path": "assets/bank-data.js",
+          "expected_sha256": "bee4b151a1f4e66bfe2a04565a72da1956f35bb0b405862b8a103d0c7eb90c29",
+          "public_sha256": "bee4b151a1f4e66bfe2a04565a72da1956f35bb0b405862b8a103d0c7eb90c29",
+          "match": true
+        },
+        {
+          "path": "assets/app.js",
+          "expected_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+          "public_sha256": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+          "match": true
+        },
+        {
+          "path": "assets/app.css",
+          "expected_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+          "public_sha256": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+          "match": true
+        },
+        {
+          "path": "assets/data-loader.js",
+          "expected_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+          "public_sha256": "195b497b910e0fd14f39be455e80d553c78447449e92b611761d3c42feeccd8f",
+          "match": true
+        },
+        {
+          "path": "assets/offline.js",
+          "expected_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+          "public_sha256": "fa73e3cc64340cbbc7531f284e33ae71e2b5ec1b7f813e9e52ab1f96e2259922",
+          "match": true
+        },
+        {
+          "path": "assets/icon.svg",
+          "expected_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+          "public_sha256": "468b23c39008699e0231ec21960395730402785678ff31a5d31e41c8b9f485a1",
+          "match": true
+        },
+        {
+          "path": "assets/bank/core-37c2cec5657ba6ce.js",
+          "expected_sha256": "37c2cec5657ba6cee765f3ee3c5dda5792b55b85a5df998dab90605e377ff105",
+          "public_sha256": "37c2cec5657ba6cee765f3ee3c5dda5792b55b85a5df998dab90605e377ff105",
+          "match": true
+        },
+        {
+          "path": "assets/bank/explanations-finance-1bbca50e9cd83a27.js",
+          "expected_sha256": "2164420b9ce213c0f57733b431a6ed03b3d4656491d5e68dbd68f51d3744d02d",
+          "public_sha256": "2164420b9ce213c0f57733b431a6ed03b3d4656491d5e68dbd68f51d3744d02d",
+          "match": true
+        },
+        {
+          "path": "assets/bank/explanations-tax-55372e1c73b0844a.js",
+          "expected_sha256": "95447be07f39dd6b688bc54953a32999dc6584b107beca4dea2063a58e841b4f",
+          "public_sha256": "95447be07f39dd6b688bc54953a32999dc6584b107beca4dea2063a58e841b4f",
+          "match": true
+        },
+        {
+          "path": "assets/bank/explanations-cost-3e63657d575bdfd8.js",
+          "expected_sha256": "b8553572a13ad1be886dec7d1417924f6aaeca548ba6beab43fb738a68fb2e6a",
+          "public_sha256": "b8553572a13ad1be886dec7d1417924f6aaeca548ba6beab43fb738a68fb2e6a",
+          "match": true
+        }
+      ]
+    },
     "runtime_files_changed": false,
-    "note": "작업9 문서 커밋 후 함께 푸시하고 해당 커밋의 자동 Pages·공개13개 파일 해시를 후속 기록합니다."
+    "note": "작업8 761763f와 작업9 554879e를 main에 함께 푸시했습니다. 이 후속 기록 커밋도 문서만 변경합니다."
   },
   "limits": [
     "전문가·Claude 총괄 검수는 실행하지 않았습니다.",
     "법률88·89·94조와 관련 시행 부칙 및 시행령157조·기재 부칙, 원문·공식 답안만 읽었습니다.",
     "법률 신규 다운로드와 캐시 시행령 재독을 구별합니다.",
     "기존 실제 기기·음성 화면낭독기·file://·공개 실브라우저 제한은 유지합니다."
-  ]
+  ],
+  "task9_document_only": {
+    "plan": "reports/ledger-split-plan.md",
+    "implementation_performed": false,
+    "tests_reused_from_task8_because_app_data_scripts_unchanged": true,
+    "protected_files_rechecked": 103,
+    "ledger_sha256": "d3e161e7dbb8cd35937a096aa65168f5b6f848fa78a89691782d24310b9e29fe",
+    "future_migration_tests_executed": false
+  }
 }
