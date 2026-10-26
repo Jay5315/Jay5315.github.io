@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "task": 11,
+  "checked_at_kst": "2026-10-26T16:16:48.535736+09:00",
+  "baseline_commit": "15ceea1ea9fa06d5e6e2ad474941815de58d99c1",
+  "changes": {
+    "home_count_templates": 2,
+    "mobile_text_button_targets": 2,
+    "CSS_scope": "max-width640px; only text-button all-parts/settings",
+    "actual_mobile_before_height_px": 22.390625,
+    "actual_mobile_after_height_px": 44.390625,
+    "desktop_height_px": 22.390625,
+    "app_js_exactly_two_fmt_substitutions": true,
+    "data_audit_bank_sources_unchanged_from_task10": true,
+    "root_and_entrypoint_unchanged": true
+  },
+  "browser_cases": [
+    {
+      "width": 360,
+      "theme": "light",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 640,
+      "theme": "light",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 641,
+      "theme": "light",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "size": "normal",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 22.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "size": "xl",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(27, 87, 67)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "size": "xl",
+      "buttons": {
+        "all-parts": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.03125,
+          "glyph_width": 83.03125,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        },
+        "settings": {
+          "before_height": 22.390625,
+          "after_height": 44.390625,
+          "width": 83.375,
+          "glyph_width": 83.375,
+          "glyph_height": 19,
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "lineHeight": "22.4px",
+          "color": "rgb(148, 214, 182)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "all_type_color_glyph_metrics_match_before": true
+        }
+      }
+    }
+  ],
+  "browser_results": {
+    "cases": 10,
+    "counts": "PASS",
+    "glyph_edge_taps": "PASS",
+    "horizontal_overflow": 0,
+    "JS_errors": 0,
+    "type_color_glyph_metrics_equal_before_after": true,
+    "physical_devices_tested": false,
+    "CDN_fonts_blocked_for_stable_local_measurements": true
+  },
+  "dedicated_tests": {
+    "home_polish": "10 cases PASS",
+    "UI_chain": {
+      "count": 2,
+      "result": "PASS"
+    },
+    "round30_after_chain_policy": {
+      "count": 2,
+      "result": "PASS"
+    },
+    "all_explanations": {
+      "count": 79,
+      "result": "PASS"
+    }
+  },
+  "command": "APP_BASE_URL=http://127.0.0.1:8062/jaegyeong/ TEST_ARTIFACT_DIR=/tmp/chagok-20261026/ui-small/checks NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost bash jaegyeong/scripts/run_checks.sh --zip",
+  "command_returncode": 0,
+  "tests": [
+    {
+      "name": "test_bank",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_parts",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_concepts",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_explanations",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_app",
+      "returncode": 0,
+      "summary": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "name": "test_browser",
+      "returncode": 0,
+      "summary": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "name": "test_explanations_app",
+      "returncode": 0,
+      "summary": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "name": "test_offline",
+      "returncode": 0,
+      "summary": "PASS: offline browser regressions complete."
+    }
+  ],
+  "zip": {
+    "webapp_MiB": 149.1,
+    "full_source_MiB": 278.4,
+    "CRC_and_question_assets": "PASS",
+    "portable_runtime": "PASS"
+  },
+  "before_fix_verification": {
+    "counts": {
+      "result": "FAIL as expected",
+      "actual": "해설4281문항 풀기",
+      "expected": "해설4,281문항 풀기"
+    },
+    "targets": {
+      "result": "FAIL as expected",
+      "width": 360,
+      "actual_height_px": 22.390625,
+      "minimum_height_px": 44
+    },
+    "after_UI_record_before_policy_alignment": {
+      "suite": "test_round30_followups",
+      "tests": 2,
+      "failures": 1,
+      "reason": "Historical UI pin compared directly instead of using the existing UI hash-chain policy",
+      "file": "assets/app.js"
+    },
+    "negative_UI_chain_tests": [
+      "missing final record does not authorize current bytes",
+      "empty chain does not authorize current bytes",
+      "broken link rejected",
+      "invalid hash rejected",
+      "non-UI scope rejected",
+      "empty summary rejected"
+    ],
+    "measurement_helper_error": "One initial Git object lookup used jaegyeong/../index.html; normalized repository-relative paths and all byte checks then passed. No application changes were made by that command."
+  },
+  "UI_hash_policy": {
+    "existing_baseline_hashes_modified": false,
+    "existing_chain_end_test_retained": true,
+    "non_UI_exact_hashes_retained": true,
+    "same_policy_now_applies_to_rounds": [
+      27,
+      28,
+      29,
+      30
+    ],
+    "new_validation": "continuous before/after links,64hex hashes,allowed UI scope and actual terminal file hash"
+  },
+  "logs": {
+    "run-checks.log": "c5901324268c371283d9cad13082eefabdaeb5da08871e13b977acc2839c58ae",
+    "before-counts.log": "90bbc01a3c634e6f7b7c3d2c02b0d0cfc3c86b9119118e1f51ddd16e458407e5",
+    "before-targets.log": "1565f67b2dd36015720cbbb29997ae35a10fcdca60ebdee810d227ec9f58df11",
+    "before-capture.log": "337c4d6b91f53aefd28db28cf871dd40f6fe2f0d65758563d2dedeb2f91b1d3a",
+    "before-ui-chain-policy.log": "c510c3015cc1a05a7254a33b9ff0cc49b238e352c244d2967ba7fa500adf09a5",
+    "after-ui-chain-policy.log": "88ff4200ea5392ff22732845388c9ba363f97d6a3809afdb262211d39787c7b5",
+    "after-ui.log": "337c4d6b91f53aefd28db28cf871dd40f6fe2f0d65758563d2dedeb2f91b1d3a",
+    "test-explanations.log": "83589b82d1c908946f740f61b71ae31a0762d80035f54320082c5a16e4b7b686"
+  },
+  "screenshots": [
+    {
+      "path": "/tmp/chagok-20261026/ui-small/after/home-light.png",
+      "sha256": "b13b633081ddc92f8e0b38d368c40aaacc37a6e5bf7f565f3d50cb30f3809a67",
+      "visually_read_by": "/root"
+    },
+    {
+      "path": "/tmp/chagok-20261026/ui-small/after/home-dark.png",
+      "sha256": "e570c6ba6534872cf144915b4cc7a6d014343448924f59cbac9bc52e02ea26a7",
+      "visually_read_by": "/root"
+    }
+  ],
+  "counts_unchanged": {
+    "explanations": 4281,
+    "source_checked": 4169,
+    "partial": 112,
+    "unregistered": 40,
+    "concepts": 74
+  },
+  "deployment": {
+    "status": "pending_commit_and_push"
+  },
+  "limits": [
+    "로컬 Chromium 화면·터치 좌표 모사입니다. 물리적 휴대폰은 검사하지 않았습니다.",
+    "실제 음성 화면낭독기·file://·공개 실브라우저의 기존 제한은 유지합니다.",
+    "Claude 총괄 검수는 미실행입니다.",
+    "미등록40건·원장분할·실전모드·수동체크는 진행하지 않았습니다."
+  ]
+}

@@ -502,6 +502,8 @@ dialog.note-dialog{max-width:min(800px,96vw)}
 
 /* Phone: compact top bar + bottom tab bar */
 @media(max-width:640px){
+ /* Expand the hit area while preserving the text and its layout footprint. */
+ .text-button:is([data-action="all-parts"],[data-action="settings"]){min-height:44px;padding-block:11px;margin-block:-11px}
  :root{--appbar:56px}
  .appbar{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--bg)}
  h1{font-size:24px}

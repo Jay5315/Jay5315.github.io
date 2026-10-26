@@ -6,6 +6,7 @@ import re
 import unittest
 from collections import Counter
 from pathlib import Path
+from log_ui_change import expected_ui_hash
 
 from apply_round10_followups import digest
 from apply_round29_followups import GROUP, restore_round29, validate_amendment
@@ -73,7 +74,7 @@ class Round29FollowupTests(unittest.TestCase):
         self.assertEqual(p['before_counts'],dict(Counter(n['review_status'] for n in before['items'])))
         self.assertEqual(p['after_counts'],dict(Counter(n['review_status'] for n in data['items'])))
         for filename,expected in p['protected_file_sha256'].items():
-            self.assertEqual(hashlib.sha256((R/filename).read_bytes()).hexdigest(),expected,filename)
+            self.assertEqual(hashlib.sha256((R/filename).read_bytes()).hexdigest(),expected_ui_hash(filename,expected,R),filename)
         if changes:
             self.assertEqual(audit[GROUP]['proposal_sha256'],digest(p))
             self.assertEqual(audit[GROUP]['review_sha256'],digest(qa))

@@ -18,6 +18,7 @@ from test_round28_followups import Round28FollowupTests
 from test_round29_followups import Round29FollowupTests
 from test_round30_followups import Round30FollowupTests
 from test_spacing_round6 import SpacingRound6Tests
+from test_ui_change_chain import UIChangeChainTests
 
 R = Path(__file__).resolve().parents[1]
 
@@ -464,11 +465,8 @@ class ExplanationTests(unittest.TestCase):
             from loader_entrypoint import restore_entrypoint
             body = restore_entrypoint(body)
         current = hashlib.sha256(body).hexdigest()
-        if name in UI_FILES:
-            for change in json.loads((R / 'reports/ui-changes.json').read_text())['changes']:
-                step = change['files'].get(name)
-                if step and step['before'] == sha:
-                    sha = step['after']
+        from log_ui_change import expected_ui_hash
+        sha = expected_ui_hash(name, sha, R)
         self.assertEqual(current, sha, name)
 
     def test_bundle_line_break_decisions_match_build(self):
@@ -1770,7 +1768,7 @@ class ExplanationTests(unittest.TestCase):
         self.assertEqual({k:v for k,v in self.before_round27_data.items() if k not in {'items','sources'}},
                          {k:v for k,v in after.items() if k not in {'items','sources'}})
         for file,expected in group['protected_file_sha256'].items():
-            self.assertEqual(hashlib.sha256((R/file).read_bytes()).hexdigest(),expected,file)
+            self.assert_protected_file(file, expected)
         receipts={r['sha256']:r for r in proposal['actual_file_reads']}
         for read in proposal['actual_file_reads']:
             self.assertIs(read['actually_read'],True)

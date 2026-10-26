@@ -5,6 +5,7 @@ import json
 import unittest
 from collections import Counter
 from pathlib import Path
+from log_ui_change import expected_ui_hash
 
 from apply_round10_followups import digest
 from apply_round28_followups import GROUP,validate_amendment
@@ -71,7 +72,7 @@ class Round28FollowupTests(unittest.TestCase):
             self.assertEqual({k:v for k,v in record.items() if k!='independent_review'},row)
             self.assertEqual(record['independent_review'],reviews[qid])
         for file,expected in g['protected_file_sha256'].items():
-            self.assertEqual(hashlib.sha256((R/file).read_bytes()).hexdigest(),expected,file)
+            self.assertEqual(hashlib.sha256((R/file).read_bytes()).hexdigest(),expected_ui_hash(file,expected,R),file)
         for ref,meta in before['sources'].items():
             self.assertEqual(data['sources'][ref],meta,ref)
             self.assertEqual(digest(meta),g['baseline_source_hashes'][ref])

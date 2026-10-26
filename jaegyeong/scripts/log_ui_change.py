@@ -11,11 +11,40 @@ python3 scripts/build_app_data.py so the manifest/SRI match the new runtime file
 import datetime
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ('assets/app.js', 'assets/app.css')
+
+
+def expected_ui_hash(name, pinned, root=ROOT):
+    """Advance only UI baselines along the existing, continuous audited chain.
+
+    Other files retain their exact hash. Historical hashes are never rewritten.
+    Callers still compare the returned hash with the actual file bytes.
+    """
+    if name not in FILES:
+        return pinned
+    changes = json.loads((root / 'reports/ui-changes.json').read_text())['changes']
+    previous = None
+    expected = pinned
+    for change in changes:
+        if not change['summary'] or not change['date'] or not set(change['files']) <= set(FILES):
+            raise ValueError('Invalid UI change record')
+        step = change['files'].get(name)
+        if not step:
+            continue
+        if any(not isinstance(step.get(k), str) or not re.fullmatch(r'[0-9a-f]{64}', step[k])
+               for k in ('before', 'after')):
+            raise ValueError('Invalid UI hash')
+        if previous is not None and step['before'] != previous:
+            raise ValueError('Broken UI change chain')
+        if step['before'] == expected:
+            expected = step['after']
+        previous = step['after']
+    return expected
 
 
 def sha(path):

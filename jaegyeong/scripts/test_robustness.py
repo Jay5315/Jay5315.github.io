@@ -7,6 +7,7 @@ import os
 import shutil
 import sys
 from playwright.sync_api import expect, sync_playwright
+from test_home_polish import run_home_polish
 
 KEY = 'chagok.study.v1'
 URL = os.environ.get('APP_BASE_URL', 'http://127.0.0.1:8000/jaegyeong/').rstrip('/') + '/'
@@ -386,6 +387,7 @@ def run_robustness(browser, url=URL):
     expect(page.locator('#library-subject option', has_text='세무회계 (0)')).to_have_count(1)
     assert not errors, errors
     context.close()
+    run_home_polish(browser, url)
     accessibility = run_accessibility(browser, url)
     return accessibility + '; preview hides review notes until the answer is opened, xl text in modals/pick reasons, no concept overflow at xl, live bookmark subject counts, stale cross-tab finish dialog, resume position after removed ids, malformed hash, unreadable/newer record preservation and download, re-render keeps details/focus/caret, table arrow keys, bookmark focus, quota pruning'
 

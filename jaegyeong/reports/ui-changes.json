@@ -682,6 +682,20 @@
           "after": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b"
         }
       }
+    },
+    {
+      "date": "2026-10-26",
+      "summary": "홈 해설 문항 수 천 단위 표시와 모바일 글자 버튼2개의 누르는 영역 확장",
+      "files": {
+        "assets/app.js": {
+          "before": "95ddff672c6e4f61d5b7c1d8d4dd68a681835e26248d20ae606b61400f6c2d2b",
+          "after": "4a709e4aab42efbd96b7c2e3f09229c3eaa42c743aaa516817c22c2af9df6367"
+        },
+        "assets/app.css": {
+          "before": "76f21acea719587f03ebaf43f6a547265b6f311ff92877b8db7dcff3418f26b6",
+          "after": "0dbc9814478bd8ff5ab42809db61778b3fe88915ff12a60584944cbb110c3699"
+        }
+      }
     }
   ]
 }
