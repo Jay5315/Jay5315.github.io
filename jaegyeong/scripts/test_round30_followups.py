@@ -18,6 +18,8 @@ SELECTED_IDS='c9bec5659be1821651e616bf1f2c0a157be47edf9a730df7a4b6d66ae19ed983'
 def load():
     data=json.loads((R/'data/explanations.json').read_text())
     audit=json.loads((R/'reports/explanation-expansion.json').read_text())
+    from apply_spacing_round6 import restore_spacing_round6
+    data,audit=restore_spacing_round6(data,audit)
     proposal=json.loads((R/'reports/round30-proposals.json').read_text())
     review=json.loads((R/'reports/round30-independent-reviews.json').read_text())
     before,previous=restore_round30(data,audit)

@@ -7,21 +7,21 @@
   },
   "subjects": {
     "finance": {
-      "url": "assets/bank/explanations-finance-1bbca50e9cd83a27.js",
-      "sha256": "2164420b9ce213c0f57733b431a6ed03b3d4656491d5e68dbd68f51d3744d02d",
-      "bytes": 4888931,
+      "url": "assets/bank/explanations-finance-ee20c390479b4418.js",
+      "sha256": "c46fd1179b39ebf5f6fb5f49be56028bc2c877d15f1e6701207f942e89f7b1c4",
+      "bytes": 4889000,
       "count": 1449
     },
     "tax": {
-      "url": "assets/bank/explanations-tax-55372e1c73b0844a.js",
-      "sha256": "95447be07f39dd6b688bc54953a32999dc6584b107beca4dea2063a58e841b4f",
-      "bytes": 3952973,
+      "url": "assets/bank/explanations-tax-1bb96f21cf6eac4e.js",
+      "sha256": "3d0928f8d4c5925df7f9768c0bb14d314f8c5b750cc8710d92de4b9725fd137e",
+      "bytes": 3952975,
       "count": 1453
     },
     "cost": {
-      "url": "assets/bank/explanations-cost-3e63657d575bdfd8.js",
-      "sha256": "b8553572a13ad1be886dec7d1417924f6aaeca548ba6beab43fb738a68fb2e6a",
-      "bytes": 3716059,
+      "url": "assets/bank/explanations-cost-f250ac9f73f5993d.js",
+      "sha256": "0d1e0fdfeb446018af009f353d41852092d94e0e0654159380427e48a3aa59a9",
+      "bytes": 3716312,
       "count": 1379
     }
   },
@@ -127,5 +127,5 @@
     "M19": "cost",
     "M20": "cost"
   },
-  "build_id": "87d81dc5a328427f1264"
+  "build_id": "95d62b20c22a87c44f94"
 }

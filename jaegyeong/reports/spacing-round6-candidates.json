@@ -1,0 +1,5026 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "bdcdd888d361288ddc088d49e2f0409ae0673f63",
+  "policy": "ASCII 공백 삽입만 허용; 기존 공백·숫자·기호·공식·법령·기준서 참조 보존",
+  "rows": [
+    {
+      "question_id": "2023-01-105",
+      "field": "summary",
+      "index": null,
+      "before": "DOL5 × 매출증가율 20% = 영업이익 증가율 100%,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 32,
+          "end": 33,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-001",
+      "author": "/root",
+      "after": "DOL5 × 매출증가율 20% = 영업이익 증가율 100%, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-104",
+      "field": "summary",
+      "index": null,
+      "before": "필요 단위당 공헌이익 40,000원에 변동원가 20,000원을 더하면 판매가격 60,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 51,
+          "end": 52,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-002",
+      "author": "/root",
+      "after": "필요 단위당 공헌이익 40,000원에 변동원가 20,000원을 더하면 판매가격 60,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-103",
+      "field": "summary",
+      "index": null,
+      "before": "새 가격 800원·판매량 6,500개에서 공헌이익 1,300,000원이며 고정원가를 빼면 300,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 58,
+          "end": 59,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-003",
+      "author": "/root",
+      "after": "새 가격 800원·판매량 6,500개에서 공헌이익 1,300,000원이며 고정원가를 빼면 300,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-092",
+      "field": "summary",
+      "index": null,
+      "before": "구입량 1,460개에서 실제가격이 35원 낮아 표준가격은 285원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 36,
+          "end": 37,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-004",
+      "author": "/root",
+      "after": "구입량 1,460개에서 실제가격이 35원 낮아 표준가격은 285원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-11-105",
+      "field": "summary",
+      "index": null,
+      "before": "공헌이익률 40%,손익분기 매출 7,000,000원으로 안전한계율 30%,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 9,
+          "end": 10,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 40,
+          "end": 41,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-005",
+      "author": "/root",
+      "after": "공헌이익률 40%, 손익분기 매출 7,000,000원으로 안전한계율 30%, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-11-104",
+      "field": "summary",
+      "index": null,
+      "before": "매출의 40% 공헌이익에서 25% 목표이익을 남기면 15%로 고정원가를 충당합니다. 목표매출 200,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 60,
+          "end": 61,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-006",
+      "author": "/root",
+      "after": "매출의 40% 공헌이익에서 25% 목표이익을 남기면 15%로 고정원가를 충당합니다. 목표매출 200,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-09-105",
+      "field": "summary",
+      "index": null,
+      "before": "공헌이익률 40%에서 목표이익 2,000원에 필요한 추가매출은 5,000원입니다. 총 20,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 55,
+          "end": 56,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-007",
+      "author": "/root",
+      "after": "공헌이익률 40%에서 목표이익 2,000원에 필요한 추가매출은 5,000원입니다. 총 20,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-09-103",
+      "field": "summary",
+      "index": null,
+      "before": "손익분기 매출 2,400,000원과 예산매출 3,000,000원의 차이는 600,000원입니다. 안전한계율 20%,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 63,
+          "end": 64,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-008",
+      "author": "/root",
+      "after": "손익분기 매출 2,400,000원과 예산매출 3,000,000원의 차이는 600,000원입니다. 안전한계율 20%, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-104",
+      "field": "summary",
+      "index": null,
+      "before": "공헌이익률 40%,손익분기 매출 37,500원으로 안전한계율 25%입니다. ③이 옳습니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 9,
+          "end": 10,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-009",
+      "author": "/root",
+      "after": "공헌이익률 40%, 손익분기 매출 37,500원으로 안전한계율 25%입니다. ③이 옳습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-103",
+      "field": "summary",
+      "index": null,
+      "before": "공헌이익률 30%에서 목표이익률 20%를 빼면 10%로 고정원가를 충당합니다. 목표매출 300,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 57,
+          "end": 58,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-010",
+      "author": "/root",
+      "after": "공헌이익률 30%에서 목표이익률 20%를 빼면 10%로 고정원가를 충당합니다. 목표매출 300,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-102",
+      "field": "summary",
+      "index": null,
+      "before": "단위당 공헌이익 120원 ÷ 판매가격 400원 =30%,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 30,
+          "end": 31,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-011",
+      "author": "/root",
+      "after": "단위당 공헌이익 120원 ÷ 판매가격 400원 =30%, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-100",
+      "field": "summary",
+      "index": null,
+      "before": "기말 300개에 고정제조간접원가 200원씩 포함하므로 재고액 차이는 60,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 45,
+          "end": 46,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-012",
+      "author": "/root",
+      "after": "기말 300개에 고정제조간접원가 200원씩 포함하므로 재고액 차이는 60,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-096",
+      "field": "summary",
+      "index": null,
+      "before": "판매량 4,420개에 가격 7,000원을 적용한 매출액 30,940,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 42,
+          "end": 43,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-013",
+      "author": "/root",
+      "after": "판매량 4,420개에 가격 7,000원을 적용한 매출액 30,940,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-113",
+      "field": "summary",
+      "index": null,
+      "before": "공헌이익 150,000원을 잃고 회피원가 40,000원을 절약하면 이익은 110,000원 줄어 490,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 61,
+          "end": 62,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-014",
+      "author": "/root",
+      "after": "공헌이익 150,000원을 잃고 회피원가 40,000원을 절약하면 이익은 110,000원 줄어 490,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-097",
+      "field": "summary",
+      "index": null,
+      "before": "단위당 전부제품원가 67원에서 판매 800개의 원가 53,600원과 변동판매관리 8,000원을 빼면 이익 18,400원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 66,
+          "end": 67,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-015",
+      "author": "/root",
+      "after": "단위당 전부제품원가 67원에서 판매 800개의 원가 53,600원과 변동판매관리 8,000원을 빼면 이익 18,400원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-06-082",
+      "field": "summary",
+      "index": null,
+      "before": "재료 2,300원+가공 45,000원에 재공품 순감소를 반영하면 제품제조원가 43,300원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 50,
+          "end": 51,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-016",
+      "author": "/root",
+      "after": "재료 2,300원+가공 45,000원에 재공품 순감소를 반영하면 제품제조원가 43,300원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-082",
+      "field": "summary",
+      "index": null,
+      "before": "재료 260원·노무 380원·경비 260원의 총제조 900원에서 재공품 순증가 5원을 빼면 895원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 55,
+          "end": 56,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-017",
+      "author": "/root",
+      "after": "재료 260원·노무 380원·경비 260원의 총제조 900원에서 재공품 순증가 5원을 빼면 895원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-082",
+      "field": "summary",
+      "index": null,
+      "before": "노무발생액 64,000원은 가공원가의 80%이므로 가공 80,000원에 재료 32,000원을 합한 112,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 63,
+          "end": 64,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-018",
+      "author": "/root",
+      "after": "노무발생액 64,000원은 가공원가의 80%이므로 가공 80,000원에 재료 32,000원을 합한 112,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-05-082",
+      "field": "summary",
+      "index": null,
+      "before": "직접재료 23,000원+가공 35,000원−재공품 증가 4,000원=제품제조 54,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 50,
+          "end": 51,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-019",
+      "author": "/root",
+      "after": "직접재료 23,000원+가공 35,000원−재공품 증가 4,000원=제품제조 54,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-082",
+      "field": "summary",
+      "index": null,
+      "before": "총제조 940,000원에서 재료 240,000원을 빼면 노무·간접 700,000원입니다. 노무 560,000원과 재료의 합인 기초원가 800,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 83,
+          "end": 84,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-020",
+      "author": "/root",
+      "after": "총제조 940,000원에서 재료 240,000원을 빼면 노무·간접 700,000원입니다. 노무 560,000원과 재료의 합인 기초원가 800,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-11-082",
+      "field": "summary",
+      "index": null,
+      "before": "총제조 31,000원에 기초·기말재공품을 조정하면 34,000원,③입니다. 본사 감가상각은 제조원가가 아닙니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-021",
+      "author": "/root",
+      "after": "총제조 31,000원에 기초·기말재공품을 조정하면 34,000원, ③입니다. 본사 감가상각은 제조원가가 아닙니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-07-082",
+      "field": "summary",
+      "index": null,
+      "before": "재료 23,000원+가공 32,000원에 두 재고 감소를 더하면 매출원가 62,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 48,
+          "end": 49,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-022",
+      "author": "/root",
+      "after": "재료 23,000원+가공 32,000원에 두 재고 감소를 더하면 매출원가 62,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-06-082",
+      "field": "summary",
+      "index": null,
+      "before": "노무의 70%인 간접 21,000원을 포함하고 재공품 감소 5,000원을 더하면 96,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 52,
+          "end": 53,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-023",
+      "author": "/root",
+      "after": "노무의 70%인 간접 21,000원을 포함하고 재공품 감소 5,000원을 더하면 96,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-03-082",
+      "field": "summary",
+      "index": null,
+      "before": "재료 23,000원+가공 45,000원에 재공품 증가 4,000원을 빼면 제품제조 64,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 53,
+          "end": 54,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-024",
+      "author": "/root",
+      "after": "재료 23,000원+가공 45,000원에 재공품 증가 4,000원을 빼면 제품제조 64,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-010",
+      "field": "summary",
+      "index": null,
+      "before": "처분직전 장부금액 312,500,000원보다 대가 300,000,000원이 작으므로 처분손실 12,500,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 63,
+          "end": 64,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-025",
+      "author": "/root",
+      "after": "처분직전 장부금액 312,500,000원보다 대가 300,000,000원이 작으므로 처분손실 12,500,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-009",
+      "field": "summary",
+      "index": null,
+      "before": "설치후 장부금액 700,000원에서 새 연상각 140,000원을 빼면 560,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 47,
+          "end": 48,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-026",
+      "author": "/root",
+      "after": "설치후 장부금액 700,000원에서 새 연상각 140,000원을 빼면 560,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-013",
+      "field": "summary",
+      "index": null,
+      "before": "연구·인식미충족액 178,000원에 상각 3,600원을 더하면 181,600원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 43,
+          "end": 44,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-027",
+      "author": "/root",
+      "after": "연구·인식미충족액 178,000원에 상각 3,600원을 더하면 181,600원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-03-013",
+      "field": "summary",
+      "index": null,
+      "before": "비용지출 27,000,000원에 인식개발비 상각 250,000원을 더하면 27,250,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 52,
+          "end": 53,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-028",
+      "author": "/root",
+      "after": "비용지출 27,000,000원에 인식개발비 상각 250,000원을 더하면 27,250,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-01-013",
+      "field": "summary",
+      "index": null,
+      "before": "인식금액 1,300,000원에서 6개월 상각 130,000원을 빼면 1,170,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 48,
+          "end": 49,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-029",
+      "author": "/root",
+      "after": "인식금액 1,300,000원에서 6개월 상각 130,000원을 빼면 1,170,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-013",
+      "field": "option",
+      "index": 2,
+      "before": "1,250,000원은나 900,000원에 연구단계가 350,000원을 더했습니다. 연구지출은 자산화 대상에서 제외합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 8,
+          "end": 11,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-030",
+      "author": "/root",
+      "after": "1,250,000원은 나 900,000원에 연구 단계 가 350,000원을 더했습니다. 연구지출은 자산화 대상에서 제외합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-013",
+      "field": "option",
+      "index": 3,
+      "before": "1,900,000원은나 900,000원에 조건미충족다 1,000,000원을 더했습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 8,
+          "end": 11,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-031",
+      "author": "/root",
+      "after": "1,900,000원은 나 900,000원에 조건 미충족 다 1,000,000원을 더했습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-013",
+      "field": "option",
+      "index": 4,
+      "before": "2,250,000원은세 프로젝트 전액의 합계로 연구단계와 미충족 지출을 구분하지 않았습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 8,
+          "end": 11,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-032",
+      "author": "/root",
+      "after": "2,250,000원은 세 프로젝트 전액의 합계로 연구단계와 미충족 지출을 구분하지 않았습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-07-012",
+      "field": "summary",
+      "index": null,
+      "before": "90억원에서 2개월 상각 3억원을 빼면 87억원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 26,
+          "end": 27,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-033",
+      "author": "/root",
+      "after": "90억원에서 2개월 상각 3억원을 빼면 87억원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-01-012",
+      "field": "option",
+      "index": 3,
+      "before": "480,000원은인식개발 320,000원에 내부영업권 160,000원을 더한 값입니다. 내부창출 영업권은 인식하지 않습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 9,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-034",
+      "author": "/root",
+      "after": "480,000원은 인식개발 320,000원에 내부영업권 160,000원을 더한 값입니다. 내부창출 영업권은 인식하지 않습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-01-012",
+      "field": "option",
+      "index": 4,
+      "before": "680,000원은인식개발 320,000원에 내부브랜드 200,000원과 내부영업권 160,000원을 더한 값입니다. 두 내부평가액을 제외해야 합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 9,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-035",
+      "author": "/root",
+      "after": "680,000원은 인식개발 320,000원에 내부브랜드 200,000원과 내부영업권 160,000원을 더한 값입니다. 두 내부평가액을 제외해야 합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-12-012",
+      "field": "summary",
+      "index": null,
+      "before": "연구 70억원과 미충족개발 30억원의 합계 100억원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 29,
+          "end": 30,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-036",
+      "author": "/root",
+      "after": "연구 70억원과 미충족개발 30억원의 합계 100억원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-11-012",
+      "field": "summary",
+      "index": null,
+      "before": "72,000원에서 3개월 상각 6,000원을 빼면 66,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-037",
+      "author": "/root",
+      "after": "72,000원에서 3개월 상각 6,000원을 빼면 66,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-012",
+      "field": "summary",
+      "index": null,
+      "before": "조건충족 개발 900,000원과소프트웨어 250,000원의합계 1,150,000원으로 ②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 17,
+          "text": "0원과"
+        },
+        {
+          "rule": "particle",
+          "start": 29,
+          "end": 32,
+          "text": "0원의"
+        }
+      ],
+      "candidate_id": "S6-038",
+      "author": "/root",
+      "after": "조건충족 개발 900,000원과 소프트웨어 250,000원의 합계 1,150,000원으로 ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-012",
+      "field": "summary",
+      "index": null,
+      "before": "조건충족 개발 900,000원과소프트웨어 250,000원의합계 1,150,000원으로 ②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 17,
+          "text": "0원과"
+        },
+        {
+          "rule": "particle",
+          "start": 29,
+          "end": 32,
+          "text": "0원의"
+        }
+      ],
+      "candidate_id": "S6-039",
+      "author": "/root",
+      "after": "조건충족 개발 900,000원과 소프트웨어 250,000원의 합계 1,150,000원으로 ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-09-087",
+      "field": "summary",
+      "index": null,
+      "before": "재료기준 배부율 75%에서 #1 원가 10,900원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 28,
+          "end": 29,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-040",
+      "author": "/root",
+      "after": "재료기준 배부율 75%에서 #1 원가 10,900원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-07-086",
+      "field": "summary",
+      "index": null,
+      "before": "당기투입 917,000원에서 미완성 53,000원을 빼면 완성원가 864,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 45,
+          "end": 46,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-041",
+      "author": "/root",
+      "after": "당기투입 917,000원에서 미완성 53,000원을 빼면 완성원가 864,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-06-087",
+      "field": "summary",
+      "index": null,
+      "before": "#301 완성 366,000원+#302 미완성 318,000원=684,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 43,
+          "end": 44,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-042",
+      "author": "/root",
+      "after": "#301 완성 366,000원+#302 미완성 318,000원=684,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-087",
+      "field": "steps",
+      "index": 0,
+      "before": "총간접 240,000÷총노무 60,000=400%입니다.B노무 60,000÷4=15,000원,C노무도 15,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 51,
+          "end": 52,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-043",
+      "author": "/root",
+      "after": "총간접 240,000÷총노무 60,000=400%입니다. B노무 60,000÷4=15,000원, C노무도 15,000원입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2026-05-087",
+      "field": "steps",
+      "index": 1,
+      "before": "A=27,000+350,000+30,000+120,000=527,000원,B=140,000+15,000+60,000=215,000원,C=90,000+15,000+60,000=165,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 40,
+          "end": 41,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 73,
+          "end": 74,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-044",
+      "author": "/root",
+      "after": "A=27,000+350,000+30,000+120,000=527,000원,B=140,000+15,000+60,000=215,000원,C=90,000+15,000+60,000=165,000원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2026-03-087",
+      "field": "summary",
+      "index": null,
+      "before": "직접재료+노무 기준 배부율 30%로 #2 재공품 14,400원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 34,
+          "end": 35,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-045",
+      "author": "/root",
+      "after": "직접재료+노무 기준 배부율 30%로 #2 재공품 14,400원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-087",
+      "field": "summary",
+      "index": null,
+      "before": "직접재료+노무 기준 배부율 30%로 #2 재공품 14,400원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 34,
+          "end": 35,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-046",
+      "author": "/root",
+      "after": "직접재료+노무 기준 배부율 30%로 #2 재공품 14,400원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-01-087",
+      "field": "summary",
+      "index": null,
+      "before": "기초 53,000원+당기 767,000원=완성 820,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 34,
+          "end": 35,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-047",
+      "author": "/root",
+      "after": "기초 53,000원+당기 767,000원=완성 820,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-12-086",
+      "field": "steps",
+      "index": 0,
+      "before": "배부율=200,000÷50,000=400%입니다.B노무 12,500원,C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 38,
+          "end": 39,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-048",
+      "author": "/root",
+      "after": "배부율=200,000÷50,000=400%입니다. B노무 12,500원, C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2025-12-086",
+      "field": "steps",
+      "index": 1,
+      "before": "A=22,500+315,000+25,000+100,000=462,500원,B=125,000+12,500+50,000=187,500원,C=85,000+12,500+50,000=147,500원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 40,
+          "end": 41,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 73,
+          "end": 74,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-049",
+      "author": "/root",
+      "after": "A=22,500+315,000+25,000+100,000=462,500원,B=125,000+12,500+50,000=187,500원,C=85,000+12,500+50,000=147,500원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-12-087",
+      "field": "summary",
+      "index": null,
+      "before": "노무 52,000원+A간접 20,000원+B간접 19,200원=가공 91,200원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 45,
+          "end": 46,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-050",
+      "author": "/root",
+      "after": "노무 52,000원+A간접 20,000원+B간접 19,200원=가공 91,200원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-11-086",
+      "field": "summary",
+      "index": null,
+      "before": "A노무 60,000원과 B간접 15,000원으로 총제조 255,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 39,
+          "end": 40,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-051",
+      "author": "/root",
+      "after": "A노무 60,000원과 B간접 15,000원으로 총제조 255,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-11-087",
+      "field": "summary",
+      "index": null,
+      "before": "일반 400,000원·프리미엄 1,470,000원의 차이 1,070,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 42,
+          "end": 43,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-052",
+      "author": "/root",
+      "after": "일반 400,000원·프리미엄 1,470,000원의 차이 1,070,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-086",
+      "field": "summary",
+      "index": null,
+      "before": "기초 163,000원+당기 657,000원=820,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 32,
+          "end": 33,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-053",
+      "author": "/root",
+      "after": "기초 163,000원+당기 657,000원=820,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-087",
+      "field": "summary",
+      "index": null,
+      "before": "B노무 9,000원에 200%를 적용한 B간접 18,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-054",
+      "author": "/root",
+      "after": "B노무 9,000원에 200%를 적용한 B간접 18,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-086",
+      "field": "summary",
+      "index": null,
+      "before": "시간당 간접 400원에서 일반형 300,000+100,000+400,000=800,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 50,
+          "end": 51,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-055",
+      "author": "/root",
+      "after": "시간당 간접 400원에서 일반형 300,000+100,000+400,000=800,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-01-085",
+      "field": "steps",
+      "index": 0,
+      "before": "A노무=90,000÷180%=50,000원,B간접=40,000×60%=24,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 23,
+          "end": 24,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-056",
+      "author": "/root",
+      "after": "A노무=90,000÷180%=50,000원,B간접=40,000×60%=24,000원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2024-05-089",
+      "field": "summary",
+      "index": null,
+      "before": "기말 1500개에 가공 1050개분이 투입되어 완성도 70%,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-057",
+      "author": "/root",
+      "after": "기말 1500개에 가공 1050개분이 투입되어 완성도 70%, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-11-090",
+      "field": "summary",
+      "index": null,
+      "before": "기말가공 1200개분×단가 8원=9,600원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 24,
+          "end": 25,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-058",
+      "author": "/root",
+      "after": "기말가공 1200개분×단가 8원=9,600원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-01-088",
+      "field": "summary",
+      "index": null,
+      "before": "총환산량 1,200 중 완성 800을 빼면 기말 400환산단위로 완성도 50%,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 43,
+          "end": 44,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-059",
+      "author": "/root",
+      "after": "총환산량 1,200 중 완성 800을 빼면 기말 400환산단위로 완성도 50%, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-05-091",
+      "field": "steps",
+      "index": 2,
+      "before": "과대배부 30,000을빼면 실제액 390,000원, ③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 10,
+          "end": 12,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-060",
+      "author": "/root",
+      "after": "과대배부 30,000을 빼면 실제액 390,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-05-095",
+      "field": "option",
+      "index": 1,
+      "before": "실제생산 허용시간 10,800에율 200을 적용한 2,160,000원으로 옳습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 15,
+          "end": 17,
+          "text": "0에"
+        }
+      ],
+      "candidate_id": "S6-061",
+      "author": "/root",
+      "after": "실제생산 허용시간 10,800에 율 200을 적용한 2,160,000원으로 옳습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-094",
+      "field": "summary",
+      "index": null,
+      "before": "표준시간 30,000을 단위당 3시간으로 나누어 10,000단위,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-062",
+      "author": "/root",
+      "after": "표준시간 30,000을 단위당 3시간으로 나누어 10,000단위, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-094",
+      "field": "option",
+      "index": 1,
+      "before": "8,500단위의허용시간 25,500은 계산값 30,000보다 4,500시간 적습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0단위의"
+        }
+      ],
+      "candidate_id": "S6-063",
+      "author": "/root",
+      "after": "8,500단위의 허용시간 25,500은 계산값 30,000보다 4,500시간 적습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-094",
+      "field": "option",
+      "index": 2,
+      "before": "9,000단위의허용시간 27,000은 계산값보다 3,000시간 적습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0단위의"
+        }
+      ],
+      "candidate_id": "S6-064",
+      "author": "/root",
+      "after": "9,000단위의 허용시간 27,000은 계산값보다 3,000시간 적습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-094",
+      "field": "option",
+      "index": 3,
+      "before": "9,500단위의허용시간 28,500은 계산값보다 1,500시간 적습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0단위의"
+        }
+      ],
+      "candidate_id": "S6-065",
+      "author": "/root",
+      "after": "9,500단위의 허용시간 28,500은 계산값보다 1,500시간 적습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-094",
+      "field": "steps",
+      "index": 3,
+      "before": "제품생산량은 900÷9=100단위,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 18,
+          "end": 19,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-066",
+      "author": "/root",
+      "after": "제품생산량은 900÷9=100단위, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-095",
+      "field": "option",
+      "index": 1,
+      "before": "300원유리가맞습니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 2,
+          "end": 4,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-067",
+      "author": "/root",
+      "after": "300원 유리가 맞습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-096",
+      "field": "steps",
+      "index": 2,
+      "before": "변동이익 370,000에 100,000을더하여전부이익 470,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 20,
+          "end": 22,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 38,
+          "end": 39,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-068",
+      "author": "/root",
+      "after": "변동이익 370,000에 100,000을 더하여 전부이익 470,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-100",
+      "field": "steps",
+      "index": 3,
+      "before": "총고정원가 144,000에서기초 20,000을빼면당기 124,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 23,
+          "end": 25,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 38,
+          "end": 39,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-069",
+      "author": "/root",
+      "after": "총고정원가 144,000에서 기초 20,000을 빼면 당기 124,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-09-101",
+      "field": "summary",
+      "index": null,
+      "before": "ABC 단위 6,100원은전통 7,900원보다 1,800원작아 ④감소입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 14,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-070",
+      "author": "/root",
+      "after": "ABC 단위 6,100원은 전통 7,900원보다 1,800원 작아 ④ 감소입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-09-101",
+      "field": "option",
+      "index": 4,
+      "before": "1,800원감소가맞습니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 4,
+          "end": 6,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-071",
+      "author": "/root",
+      "after": "1,800원 감소가 맞습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-101",
+      "field": "steps",
+      "index": 1,
+      "before": "직접원가 9,000,000을더하면 14,550,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 13,
+          "end": 15,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-072",
+      "author": "/root",
+      "after": "직접원가 9,000,000을 더하면 14,550,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-101",
+      "field": "steps",
+      "index": 2,
+      "before": "5,000개로나누면 2,910원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 17,
+          "end": 18,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-073",
+      "author": "/root",
+      "after": "5,000개로 나누면 2,910원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-01-101",
+      "field": "steps",
+      "index": 2,
+      "before": "50단위총원가는 23,050원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 16,
+          "end": 17,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-074",
+      "author": "/root",
+      "after": "50단위 총원가는 23,050원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-101",
+      "field": "steps",
+      "index": 2,
+      "before": "직접원가 11,000,000을더하고 5,000개로나누면 3,310원,③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 37,
+          "end": 38,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-075",
+      "author": "/root",
+      "after": "직접원가 11,000,000을 더하고 5,000개로 나누면 3,310원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-01-102",
+      "field": "steps",
+      "index": 1,
+      "before": "직접원가 12,000,000과합하면 16,600,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0과"
+        }
+      ],
+      "candidate_id": "S6-076",
+      "author": "/root",
+      "after": "직접원가 12,000,000과 합하면 16,600,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-01-102",
+      "field": "steps",
+      "index": 2,
+      "before": "특수형 4,000개로나누면 4,150원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 21,
+          "end": 22,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-077",
+      "author": "/root",
+      "after": "특수형 4,000개로 나누면 4,150원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-102",
+      "field": "option",
+      "index": 4,
+      "before": "1,000시간을대입하면 150,000+45×1,000=195,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0시간을"
+        }
+      ],
+      "candidate_id": "S6-078",
+      "author": "/root",
+      "after": "1,000시간을 대입하면 150,000+45×1,000=195,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-06-102",
+      "field": "option",
+      "index": 4,
+      "before": "1,000시간을대입하면 100,000+40×1,000=140,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0시간을"
+        }
+      ],
+      "candidate_id": "S6-079",
+      "author": "/root",
+      "after": "1,000시간을 대입하면 100,000+40×1,000=140,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-05-102",
+      "field": "option",
+      "index": 4,
+      "before": "1,000시간을대입하면 200,000+38×1,000=238,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0시간을"
+        }
+      ],
+      "candidate_id": "S6-080",
+      "author": "/root",
+      "after": "1,000시간을 대입하면 200,000+38×1,000=238,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-09-102",
+      "field": "option",
+      "index": 4,
+      "before": "1,000시간을대입하면 200,000+38×1,000=238,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 8,
+          "text": "0시간을"
+        }
+      ],
+      "candidate_id": "S6-081",
+      "author": "/root",
+      "after": "1,000시간을 대입하면 200,000+38×1,000=238,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-11-103",
+      "field": "steps",
+      "index": 2,
+      "before": "최고활동 5월 350시간원가는 9,800,000+350×36,000=22,400,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 49,
+          "end": 50,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-082",
+      "author": "/root",
+      "after": "최고활동 5월 350시간 원가는 9,800,000+350×36,000=22,400,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-07-102",
+      "field": "steps",
+      "index": 0,
+      "before": "최고 2월 13,000시간 1,600,000원·최저 4월 4,000시간 700,000원을선택합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 46,
+          "end": 49,
+          "text": "0원을"
+        }
+      ],
+      "candidate_id": "S6-083",
+      "author": "/root",
+      "after": "최고 2월 13,000시간 1,600,000원·최저 4월 4,000시간 700,000원을 선택합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-07-102",
+      "field": "steps",
+      "index": 2,
+      "before": "5월 10,000시간총원가는 1,300,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 26,
+          "end": 27,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-084",
+      "author": "/root",
+      "after": "5월 10,000시간 총원가는 1,300,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-01-103",
+      "field": "steps",
+      "index": 2,
+      "before": "150시간총원가는 17,600+6,000=23,600원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 30,
+          "end": 31,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-085",
+      "author": "/root",
+      "after": "150시간 총원가는 17,600+6,000=23,600원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-083",
+      "field": "steps",
+      "index": 2,
+      "before": "3,000개총원가는 30,000,000+60,000,000=90,000,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 44,
+          "end": 45,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-086",
+      "author": "/root",
+      "after": "3,000개 총원가는 30,000,000+60,000,000=90,000,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-102",
+      "field": "steps",
+      "index": 2,
+      "before": "700시간원가는 30,000+70,000=100,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 31,
+          "end": 32,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-087",
+      "author": "/root",
+      "after": "700시간 원가는 30,000+70,000=100,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-104",
+      "field": "steps",
+      "index": 1,
+      "before": "목표매출=(200,000+100,000)÷40%=750,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-088",
+      "author": "/root",
+      "after": "목표매출=(200,000+100,000)÷40%=750,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-06-025",
+      "field": "option",
+      "index": 4,
+      "before": "24,000,000원은두 해의 누적원가이며 질문은 20X2년 당기 발생원가입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 9,
+          "end": 12,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-089",
+      "author": "/root",
+      "after": "24,000,000원은 두 해의 누적원가이며 질문은 20X2년 당기 발생원가입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-025",
+      "field": "option",
+      "index": 1,
+      "before": "24%는첫 해 수익 12,000,000원만 총계약금액으로 나눈 첫 해 진행률입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 1,
+          "end": 4,
+          "text": "4%는"
+        }
+      ],
+      "candidate_id": "S6-090",
+      "author": "/root",
+      "after": "24%는 첫 해 수익 12,000,000원만 총계약금액으로 나눈 첫 해 진행률입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-025",
+      "field": "option",
+      "index": 2,
+      "before": "30%는제시된 누적수익 22,000,000원과 총계약금액의 비율 44%보다 14%p 작습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 1,
+          "end": 4,
+          "text": "0%는"
+        }
+      ],
+      "candidate_id": "S6-091",
+      "author": "/root",
+      "after": "30%는 제시된 누적수익 22,000,000원과 총계약금액의 비율 44%보다 14%p 작습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-025",
+      "field": "option",
+      "index": 4,
+      "before": "56%는누적진행률 44%의 남은부분 100%−44%입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 1,
+          "end": 4,
+          "text": "6%는"
+        }
+      ],
+      "candidate_id": "S6-092",
+      "author": "/root",
+      "after": "56%는 누적진행률 44%의 남은 부분 100%−44%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-025",
+      "field": "steps",
+      "index": 0,
+      "before": "누적발생원가 기준 진행률은 첫 해 20%,둘째 해 80%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 22,
+          "end": 23,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-093",
+      "author": "/root",
+      "after": "누적발생원가 기준 진행률은 첫 해 20%, 둘째 해 80%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-03-111",
+      "field": "steps",
+      "index": 0,
+      "before": "A ROI=78,000÷300,000=26%,신규 ROI=9,000÷50,000=18%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 24,
+          "end": 25,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-094",
+      "author": "/root",
+      "after": "A ROI=78,000÷300,000=26%, 신규 ROI=9,000÷50,000=18%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-03-111",
+      "field": "steps",
+      "index": 1,
+      "before": "투자후 ROI=87,000÷350,000≈24.86%로낮아집니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 27,
+          "end": 30,
+          "text": "6%로"
+        }
+      ],
+      "candidate_id": "S6-095",
+      "author": "/root",
+      "after": "투자 후 ROI=87,000÷350,000≈24.86%로 낮아집니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-03-111",
+      "field": "option",
+      "index": 1,
+      "before": "A현재 ROI26%와 RI33,000원은 B25%·20,000원,C약 25.33%·15,500원보다높습니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        },
+        {
+          "rule": "abbreviation",
+          "start": 4,
+          "end": 7,
+          "text": "ROI"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 12,
+          "end": 14,
+          "text": "RI"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 23,
+          "end": 24,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-096",
+      "author": "/root",
+      "after": "A 현재 ROI 26%와 RI 33,000원은 B 25%·20,000원, C 약 25.33%·15,500원보다 높습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-03-111",
+      "field": "option",
+      "index": 3,
+      "before": "RI 증분 9,000−50,000×15%=1,500원양수라수용합니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 27,
+          "end": 29,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-097",
+      "author": "/root",
+      "after": "RI 증분 9,000−50,000×15%=1,500원 양수라 수용합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-111",
+      "field": "option",
+      "index": 1,
+      "before": "125,000은계산값보다 75,000작습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 8,
+          "text": "0은"
+        }
+      ],
+      "candidate_id": "S6-098",
+      "author": "/root",
+      "after": "125,000은 계산값보다 75,000 작습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-111",
+      "field": "option",
+      "index": 2,
+      "before": "150,000은계산값보다 50,000작습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 8,
+          "text": "0은"
+        }
+      ],
+      "candidate_id": "S6-099",
+      "author": "/root",
+      "after": "150,000은 계산값보다 50,000 작습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-05-111",
+      "field": "option",
+      "index": 3,
+      "before": "175,000은계산값보다 25,000작습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 8,
+          "text": "0은"
+        }
+      ],
+      "candidate_id": "S6-100",
+      "author": "/root",
+      "after": "175,000은 계산값보다 25,000 작습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-01-111",
+      "field": "steps",
+      "index": 1,
+      "before": "세후부채비용 9.5%×80%=7.6%,WACC=7.6%×50%+16%×50%=11.8%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 20,
+          "end": 21,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-101",
+      "author": "/root",
+      "after": "세후부채비용 9.5%×80%=7.6%, WACC=7.6%×50%+16%×50%=11.8%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-01-111",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=100−400×11.8%=52.8억원,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 24,
+          "end": 25,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-102",
+      "author": "/root",
+      "after": "EVA=100−400×11.8%=52.8억원, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-01-111",
+      "field": "option",
+      "index": 1,
+      "before": "52.8 억원은계산한 52.8와일치합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 15,
+          "end": 17,
+          "text": "8와"
+        }
+      ],
+      "candidate_id": "S6-103",
+      "author": "/root",
+      "after": "52.8 억원은 계산한 52.8와 일치합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-07-111",
+      "field": "steps",
+      "index": 2,
+      "before": "세금없이 EVA=10,400−80,000×11%=1,600원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-104",
+      "author": "/root",
+      "after": "세금없이 EVA=10,400−80,000×11%=1,600원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-07-111",
+      "field": "option",
+      "index": 3,
+      "before": "1,600 원은계산한 1600와일치합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 15,
+          "end": 17,
+          "text": "0와"
+        }
+      ],
+      "candidate_id": "S6-105",
+      "author": "/root",
+      "after": "1,600 원은 계산한 1600와 일치합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-11-111",
+      "field": "summary",
+      "index": null,
+      "before": "자본비용 18억원중부채 6억원을뺀자기자본 12억원으로 12%,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-106",
+      "author": "/root",
+      "after": "자본비용 18억원 중 부채 6억원을 뺀 자기자본 12억원으로 12%, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-12-110",
+      "field": "option",
+      "index": 3,
+      "before": "43%는계산값보다 7%p높습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 1,
+          "end": 4,
+          "text": "3%는"
+        }
+      ],
+      "candidate_id": "S6-107",
+      "author": "/root",
+      "after": "43%는 계산값보다 7%p 높습니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2024-11-111",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=100−400×8.4%=66.4억원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 23,
+          "end": 24,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-108",
+      "author": "/root",
+      "after": "EVA=100−400×8.4%=66.4억원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-09-111",
+      "field": "steps",
+      "index": 3,
+      "before": "자기자본 80억원 대비 11%,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 16,
+          "end": 17,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-109",
+      "author": "/root",
+      "after": "자기자본 80억원 대비 11%, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-06-108",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=10−5.5=4.5억원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 16,
+          "end": 17,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-110",
+      "author": "/root",
+      "after": "EVA=10−5.5=4.5억원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-05-107",
+      "field": "steps",
+      "index": 2,
+      "before": "변동원가 30,000에더한 35,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 10,
+          "end": 12,
+          "text": "0에"
+        },
+        {
+          "rule": "comma",
+          "start": 22,
+          "end": 23,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-111",
+      "author": "/root",
+      "after": "변동원가 30,000에 더한 35,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-01-109",
+      "field": "option",
+      "index": 3,
+      "before": "700,000은통제불능원가 200,000을차감했습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 8,
+          "text": "0은"
+        },
+        {
+          "rule": "particle",
+          "start": 21,
+          "end": 23,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-112",
+      "author": "/root",
+      "after": "700,000은 통제불능원가 200,000을 차감했습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-01-111",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=175,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 12,
+          "end": 13,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-113",
+      "author": "/root",
+      "after": "EVA=175,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-108",
+      "field": "steps",
+      "index": 1,
+      "before": "80,000÷400,000=20%,①입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 18,
+          "end": 19,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-114",
+      "author": "/root",
+      "after": "80,000÷400,000=20%, ①입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-111",
+      "field": "steps",
+      "index": 2,
+      "before": "WACC=9%×2/3+15%×1/3=11%,EVA=150−400×11%=106억원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 23,
+          "end": 24,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 45,
+          "end": 46,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-115",
+      "author": "/root",
+      "after": "WACC=9%×2/3+15%×1/3=11%, EVA=150−400×11%=106억원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-09-110",
+      "field": "steps",
+      "index": 1,
+      "before": "세후부채 6.25%×80%=5%,WACC=5%×50%+15%×50%=10%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 17,
+          "end": 18,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-116",
+      "author": "/root",
+      "after": "세후부채 6.25%×80%=5%, WACC=5%×50%+15%×50%=10%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-09-110",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=110−500×10%=60억원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 20,
+          "end": 21,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-117",
+      "author": "/root",
+      "after": "EVA=110−500×10%=60억원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-07-111",
+      "field": "steps",
+      "index": 2,
+      "before": "EVA=64,000−300,000×11%=31,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 30,
+          "end": 31,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-118",
+      "author": "/root",
+      "after": "EVA=64,000−300,000×11%=31,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-111",
+      "field": "steps",
+      "index": 2,
+      "before": "영업이익=EVA30,000+자본비용 270,000=300,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 36,
+          "end": 37,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-119",
+      "author": "/root",
+      "after": "영업이익=EVA30,000+자본비용 270,000=300,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-109",
+      "field": "steps",
+      "index": 2,
+      "before": "세금없이 EVA=10,000−80,000×11%=1,200원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-120",
+      "author": "/root",
+      "after": "세금없이 EVA=10,000−80,000×11%=1,200원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-108",
+      "field": "option",
+      "index": 1,
+      "before": "A20%는맞지만 B는 15%가아니라 17.5%입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 2,
+          "end": 5,
+          "text": "0%는"
+        },
+        {
+          "rule": "particle",
+          "start": 13,
+          "end": 16,
+          "text": "5%가"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 0,
+          "end": 1,
+          "text": "A"
+        }
+      ],
+      "candidate_id": "S6-121",
+      "author": "/root",
+      "after": "A 20%는 맞지만 B는 15%가 아니라 17.5%입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-108",
+      "field": "option",
+      "index": 2,
+      "before": "A15%·B20%모두계산과다릅니다.",
+      "matches": [
+        {
+          "rule": "abbreviation",
+          "start": 0,
+          "end": 1,
+          "text": "A"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 5,
+          "end": 6,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-122",
+      "author": "/root",
+      "after": "A 15%·B 20% 모두 계산과 다릅니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-07-031",
+      "field": "option",
+      "index": 1,
+      "before": "이익잉여금 90,000원은누적오류를 10,000원으로 본 값이고 당기이익 29,000원도 기초·기말 5,000원 과대효과를 수정하지 않았습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 14,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-123",
+      "author": "/root",
+      "after": "이익잉여금 90,000원은 누적오류를 10,000원으로 본 값이고 당기이익 29,000원도 기초·기말 5,000원 과대효과를 수정하지 않았습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-09-109",
+      "field": "steps",
+      "index": 1,
+      "before": "A=150,000−500,000×20%=50,000원,B=270,000−1,000,000×20%=70,000원,C=480,000−2,000,000×20%=80,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 29,
+          "end": 30,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 61,
+          "end": 62,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-124",
+      "author": "/root",
+      "after": "A=150,000−500,000×20%=50,000원,B=270,000−1,000,000×20%=70,000원,C=480,000−2,000,000×20%=80,000원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-09-109",
+      "field": "option",
+      "index": 3,
+      "before": "C80,000>B70,000>A50,000의순서와일치합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 22,
+          "end": 24,
+          "text": "0의"
+        }
+      ],
+      "candidate_id": "S6-125",
+      "author": "/root",
+      "after": "C80,000>B70,000>A50,000의순서와일치합니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-07-110",
+      "field": "steps",
+      "index": 0,
+      "before": "이익률은 A20÷300≈6.67%,B35÷400=8.75%입니다. 회전율은 A300÷100=3회,B400÷200=2회입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 18,
+          "end": 19,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-126",
+      "author": "/root",
+      "after": "이익률은 A20÷300≈6.67%,B35÷400=8.75%입니다. 회전율은 A300÷100=3회,B400÷200=2회입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-07-110",
+      "field": "steps",
+      "index": 1,
+      "before": "ROI는 A20÷100=20%,B35÷200=17.5%입니다. RI는 A20−100×4%=16억원,B35−200×4%=27억원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 16,
+          "end": 17,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 54,
+          "end": 55,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-127",
+      "author": "/root",
+      "after": "ROI는 A20÷100=20%,B35÷200=17.5%입니다. RI는 A20−100×4%=16억원,B35−200×4%=27억원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-07-110",
+      "field": "option",
+      "index": 1,
+      "before": "B8.75%는맞지만 A이익률은 6.67%로 9.25%가아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 7,
+          "text": "5%는"
+        },
+        {
+          "rule": "particle",
+          "start": 27,
+          "end": 30,
+          "text": "5%가"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 0,
+          "end": 1,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-128",
+      "author": "/root",
+      "after": "B 8.75%는 맞지만 A 이익률은 6.67%로 9.25%가 아닙니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-07-110",
+      "field": "option",
+      "index": 2,
+      "before": "ROI는 A20%·B17.5%로 15%·20%가아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 23,
+          "end": 26,
+          "text": "0%가"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 5,
+          "end": 6,
+          "text": "A"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 10,
+          "end": 11,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-129",
+      "author": "/root",
+      "after": "ROI는 A 20%·B 17.5%로 15%·20%가 아닙니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-06-109",
+      "field": "steps",
+      "index": 0,
+      "before": "영업이익 200,000원이같을때목표 25%의필요자산=200,000÷25%=800,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 21,
+          "end": 24,
+          "text": "5%의"
+        }
+      ],
+      "candidate_id": "S6-130",
+      "author": "/root",
+      "after": "영업이익 200,000원이 같을 때 목표 25%의 필요자산=200,000÷25%=800,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-06-111",
+      "field": "steps",
+      "index": 0,
+      "before": "ROI는 A400÷2,000=20%,B720÷4,000=18%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 19,
+          "end": 20,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-131",
+      "author": "/root",
+      "after": "ROI는 A400÷2,000=20%,B720÷4,000=18%입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-06-111",
+      "field": "steps",
+      "index": 1,
+      "before": "RI는 A 400−2,000×0.1=200,B 720−4,000×0.1=320입니다. 비율과 절대금액의 순위가 다를 수 있습니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 23,
+          "end": 24,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-132",
+      "author": "/root",
+      "after": "RI는 A 400−2,000×0.1=200,B 720−4,000×0.1=320입니다. 비율과 절대금액의 순위가 다를 수 있습니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-05-111",
+      "field": "steps",
+      "index": 0,
+      "before": "이익률은 A20÷300≈6.67%,B35÷400=8.75%입니다. 회전율은 A300÷100=3회,B400÷200=2회입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 18,
+          "end": 19,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-133",
+      "author": "/root",
+      "after": "이익률은 A20÷300≈6.67%,B35÷400=8.75%입니다. 회전율은 A300÷100=3회,B400÷200=2회입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-05-111",
+      "field": "steps",
+      "index": 1,
+      "before": "ROI는 A20÷100=20%,B35÷200=17.5%입니다. RI는 A20−100×4%=16억원,B35−200×4%=27억원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 16,
+          "end": 17,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 54,
+          "end": 55,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-134",
+      "author": "/root",
+      "after": "ROI는 A20÷100=20%,B35÷200=17.5%입니다. RI는 A20−100×4%=16억원,B35−200×4%=27억원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-05-111",
+      "field": "option",
+      "index": 1,
+      "before": "B8.75%는맞지만 A이익률은 6.67%로 9.25%가아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 7,
+          "text": "5%는"
+        },
+        {
+          "rule": "particle",
+          "start": 27,
+          "end": 30,
+          "text": "5%가"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 0,
+          "end": 1,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-135",
+      "author": "/root",
+      "after": "B 8.75%는 맞지만 A 이익률은 6.67%로 9.25%가 아닙니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-05-111",
+      "field": "option",
+      "index": 2,
+      "before": "ROI는 A20%·B17.5%로 15%·20%가아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 23,
+          "end": 26,
+          "text": "0%가"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 5,
+          "end": 6,
+          "text": "A"
+        },
+        {
+          "rule": "abbreviation",
+          "start": 10,
+          "end": 11,
+          "text": "B"
+        }
+      ],
+      "candidate_id": "S6-136",
+      "author": "/root",
+      "after": "ROI는 A 20%·B 17.5%로 15%·20%가 아닙니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-03-110",
+      "field": "steps",
+      "index": 0,
+      "before": "ROI는 A20,000,000÷250,000,000=8%,B22,500,000÷300,000,000=7.5%입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 31,
+          "end": 32,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-137",
+      "author": "/root",
+      "after": "ROI는 A20,000,000÷250,000,000=8%,B22,500,000÷300,000,000=7.5%입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-03-110",
+      "field": "steps",
+      "index": 1,
+      "before": "RI는 A 20,000,000−250,000,000×0.06=5,000,000,B 22,500,000−300,000,000×0.06=4,500,000입니다. 감가상각비는 주어진 영업이익에 별도로 다시 빼거나 더하지 않습니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 43,
+          "end": 44,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-138",
+      "author": "/root",
+      "after": "RI는 A 20,000,000−250,000,000×0.06=5,000,000,B 22,500,000−300,000,000×0.06=4,500,000입니다. 감가상각비는 주어진 영업이익에 별도로 다시 빼거나 더하지 않습니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-01-111",
+      "field": "steps",
+      "index": 1,
+      "before": "A=500,000−1,000,000×10%=400,000원,B=1,000,000−2,000,000×40%=200,000원,C=1,000,000−3,000,000×30%=100,000원입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 32,
+          "end": 33,
+          "text": ","
+        },
+        {
+          "rule": "comma",
+          "start": 67,
+          "end": 68,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-139",
+      "author": "/root",
+      "after": "A=500,000−1,000,000×10%=400,000원,B=1,000,000−2,000,000×40%=200,000원,C=1,000,000−3,000,000×30%=100,000원입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-01-112",
+      "field": "summary",
+      "index": null,
+      "before": "상실공헌 220,000−회피고정 100,000=120,000원감소로 ②입니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 32,
+          "end": 34,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-140",
+      "author": "/root",
+      "after": "상실공헌 220,000−회피고정 100,000=120,000원 감소로 ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-112",
+      "field": "steps",
+      "index": 1,
+      "before": "고정원가 120,000중회피하는 100,000만절감됩니다. 순이익변화=100,000−220,000=−120,000원입니다. 남는 20,000은계속비용입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 77,
+          "end": 79,
+          "text": "0은"
+        }
+      ],
+      "candidate_id": "S6-141",
+      "author": "/root",
+      "after": "고정원가 120,000 중 회피하는 100,000만 절감됩니다. 순이익변화=100,000−220,000=−120,000원입니다. 남는 20,000은 계속비용입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-118",
+      "field": "steps",
+      "index": 1,
+      "before": "세후이익 800,000에비현금감가상각 600,000을더한연현금흐름은 1,400,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "0에"
+        },
+        {
+          "rule": "particle",
+          "start": 27,
+          "end": 29,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-142",
+      "author": "/root",
+      "after": "세후이익 800,000에 비현금감가상각 600,000을 더한 연현금흐름은 1,400,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-06-118",
+      "field": "steps",
+      "index": 2,
+      "before": "주어진연금현가 3.61을사용하면 1,400,000×3.61−3,000,000=2,054,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "1을"
+        },
+        {
+          "rule": "comma",
+          "start": 53,
+          "end": 54,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-143",
+      "author": "/root",
+      "after": "주어진 연금현가 3.61을 사용하면 1,400,000×3.61−3,000,000=2,054,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-05-118",
+      "field": "steps",
+      "index": 1,
+      "before": "투자현가 12,000,000을빼면 NPV2,000,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 32,
+          "end": 33,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-144",
+      "author": "/root",
+      "after": "투자현가 12,000,000을 빼면 NPV 2,000,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2025-01-117",
+      "field": "steps",
+      "index": 1,
+      "before": "연감가상각 80,000의절세효과는 20,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "0의"
+        }
+      ],
+      "candidate_id": "S6-145",
+      "author": "/root",
+      "after": "연감가상각 80,000의 절세효과는 20,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-01-117",
+      "field": "steps",
+      "index": 2,
+      "before": "세후현금절약 150,000+절세 20,000=170,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 33,
+          "end": 34,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-146",
+      "author": "/root",
+      "after": "세후현금절약 150,000+절세 20,000=170,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-11-117",
+      "field": "steps",
+      "index": 1,
+      "before": "초기 1,000,000을빼면 NPV378,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 27,
+          "end": 28,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-147",
+      "author": "/root",
+      "after": "초기 1,000,000을 빼면 NPV 378,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2024-09-117",
+      "field": "steps",
+      "index": 2,
+      "before": "초기 950,000을빼면 NPV111,200원,①입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 9,
+          "end": 11,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 25,
+          "end": 26,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-148",
+      "author": "/root",
+      "after": "초기 950,000을 빼면 NPV 111,200원, ①입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2025-09-115",
+      "field": "steps",
+      "index": 0,
+      "before": "1년말현금절약 6,000,000을 1.1로나눕니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 21,
+          "end": 23,
+          "text": "1로"
+        }
+      ],
+      "candidate_id": "S6-149",
+      "author": "/root",
+      "after": "1년 말 현금절약 6,000,000을 1.1로 나눕니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-115",
+      "field": "steps",
+      "index": 1,
+      "before": "2년말절약 3,000,000과처분 1,000,000합 4,000,000을 1.1²로나눕니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0과"
+        }
+      ],
+      "candidate_id": "S6-150",
+      "author": "/root",
+      "after": "2년 말 절약 3,000,000과 처분 1,000,000 합 4,000,000을 1.1²로 나눕니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-117",
+      "field": "steps",
+      "index": 2,
+      "before": "3년절약 39,000,000을더하면−6,000,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-151",
+      "author": "/root",
+      "after": "3년 절약 39,000,000을 더하면 −6,000,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-117",
+      "field": "option",
+      "index": 2,
+      "before": "6,000,000원유출이초기순투자 45,000,000과 3년절약 39,000,000의차이입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 45,
+          "end": 47,
+          "text": "0의"
+        }
+      ],
+      "candidate_id": "S6-152",
+      "author": "/root",
+      "after": "6,000,000원 유출이 초기순투자 45,000,000과 3년 절약 39,000,000의 차이입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-03-118",
+      "field": "option",
+      "index": 4,
+      "before": "NPV는음수 4가아니라양수 580입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 7,
+          "end": 9,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-153",
+      "author": "/root",
+      "after": "NPV는 음수 4가 아니라 양수 580입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-01-119",
+      "field": "steps",
+      "index": 0,
+      "before": "매년동일절약 6,000,000에 3년연금현가 2.40을곱하면 14,400,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 28,
+          "end": 30,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-154",
+      "author": "/root",
+      "after": "매년 동일 절약 6,000,000에 3년 연금현가 2.40을 곱하면 14,400,000원입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2023-01-119",
+      "field": "steps",
+      "index": 1,
+      "before": "초기 8,000,000을빼면 NPV6,400,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 29,
+          "end": 30,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-155",
+      "author": "/root",
+      "after": "초기 8,000,000을 빼면 NPV 6,400,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2022-12-116",
+      "field": "steps",
+      "index": 2,
+      "before": "NPV=5,100,000×2.40−9,000,000=3,240,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 39,
+          "end": 40,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-156",
+      "author": "/root",
+      "after": "NPV=5,100,000×2.40−9,000,000=3,240,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-11-117",
+      "field": "steps",
+      "index": 0,
+      "before": "매년말동일 300,000원이므로연금현가 3.79를사용합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 25,
+          "end": 27,
+          "text": "9를"
+        }
+      ],
+      "candidate_id": "S6-157",
+      "author": "/root",
+      "after": "매년 말 동일 300,000원이므로 연금현가 3.79를 사용합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-11-117",
+      "field": "steps",
+      "index": 1,
+      "before": "현가 1,137,000−초기 950,000=187,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 32,
+          "end": 33,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-158",
+      "author": "/root",
+      "after": "현가 1,137,000−초기 950,000=187,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-118",
+      "field": "steps",
+      "index": 2,
+      "before": "NPV=762,000×3.61−2,200,000=550,820원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 35,
+          "end": 36,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-159",
+      "author": "/root",
+      "after": "NPV=762,000×3.61−2,200,000=550,820원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-05-117",
+      "field": "steps",
+      "index": 1,
+      "before": "초기 8,000,000을빼면 NPV1,800,000원,①입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 11,
+          "end": 13,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 29,
+          "end": 30,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-160",
+      "author": "/root",
+      "after": "초기 8,000,000을 빼면 NPV 1,800,000원, ①입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2022-03-116",
+      "field": "steps",
+      "index": 1,
+      "before": "초기 10,000,000을빼면 NPV2,200,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 12,
+          "end": 14,
+          "text": "0을"
+        },
+        {
+          "rule": "comma",
+          "start": 30,
+          "end": 31,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-161",
+      "author": "/root",
+      "after": "초기 10,000,000을 빼면 NPV 2,200,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2022-07-117",
+      "field": "steps",
+      "index": 2,
+      "before": "세후현금 12,600,000+감가상각절세 2,700,000=15,300,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 44,
+          "end": 45,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-162",
+      "author": "/root",
+      "after": "세후현금 12,600,000+감가상각절세 2,700,000=15,300,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-01-118",
+      "field": "steps",
+      "index": 2,
+      "before": "세후현금 12,600,000+감가상각절세 2,700,000=15,300,000원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 44,
+          "end": 45,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-163",
+      "author": "/root",
+      "after": "세후현금 12,600,000+감가상각절세 2,700,000=15,300,000원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-09-119",
+      "field": "steps",
+      "index": 2,
+      "before": "최소가격=630+130=760원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 17,
+          "end": 18,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-164",
+      "author": "/root",
+      "after": "최소가격=630+130=760원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-07-119",
+      "field": "steps",
+      "index": 2,
+      "before": "최소가격 270+210=480원,②입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 17,
+          "end": 18,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-165",
+      "author": "/root",
+      "after": "최소가격 270+210=480원, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-05-119",
+      "field": "steps",
+      "index": 2,
+      "before": "최소대체가격 200+180=380원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 19,
+          "end": 20,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-166",
+      "author": "/root",
+      "after": "최소대체가격 200+180=380원, ④입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2025-09-119",
+      "field": "summary",
+      "index": null,
+      "before": "갑의최소 920원과을의외부구입 950원사이로 ③입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 7,
+          "end": 10,
+          "text": "0원과"
+        }
+      ],
+      "candidate_id": "S6-167",
+      "author": "/root",
+      "after": "갑의 최소 920원과 을의 외부구입 950원 사이로 ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-06-119",
+      "field": "steps",
+      "index": 1,
+      "before": "외부판매공헌 11,000−7,000=4,000과내부제품공헌 25,000−7,000−10,000=8,000을비교합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 24,
+          "end": 26,
+          "text": "0과"
+        },
+        {
+          "rule": "particle",
+          "start": 57,
+          "end": 59,
+          "text": "0을"
+        }
+      ],
+      "candidate_id": "S6-168",
+      "author": "/root",
+      "after": "외부판매공헌 11,000−7,000=4,000과 내부제품공헌 25,000−7,000−10,000=8,000을 비교합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-07-039",
+      "field": "steps",
+      "index": 2,
+      "before": "채권감소 15,000원은가산, 매입채무감소 12,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 10,
+          "end": 13,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 29,
+          "end": 32,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-169",
+      "author": "/root",
+      "after": "채권감소 15,000원은 가산, 매입채무감소 12,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-07-039",
+      "field": "option",
+      "index": 2,
+      "before": "154,000원은투자분류 이자의 미수증가 6,000원을 영업금액에 가산한 값입니다. 관련미수변동은 영업계산에 넣지 않습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 6,
+          "end": 9,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-170",
+      "author": "/root",
+      "after": "154,000원은 투자분류 이자의 미수증가 6,000원을 영업금액에 가산한 값입니다. 관련 미수변동은 영업계산에 넣지 않습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-06-040",
+      "field": "option",
+      "index": 3,
+      "before": "2,000원은금액은맞지만 유입이 아니라유출입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 4,
+          "end": 7,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-171",
+      "author": "/root",
+      "after": "2,000원은 금액은 맞지만 유입이 아니라 유출입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-03-040",
+      "field": "steps",
+      "index": 0,
+      "before": "미지급이자의 기말잔액 250,000원은기초 100,000원에 당기비용 300,000원을 더하고 지급현금을 차감한 값입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 18,
+          "end": 21,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-172",
+      "author": "/root",
+      "after": "미지급이자의 기말잔액 250,000원은 기초 100,000원에 당기비용 300,000원을 더하고 지급현금을 차감한 값입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-01-039",
+      "field": "summary",
+      "index": null,
+      "before": "당기지급현금은 175,000원으로 ①입니다. 전기매출원가 210,000원은당기계산에 쓰지 않습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 38,
+          "end": 41,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-173",
+      "author": "/root",
+      "after": "당기지급현금은 175,000원으로 ①입니다. 전기매출원가 210,000원은 당기계산에 쓰지 않습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-01-039",
+      "field": "steps",
+      "index": 2,
+      "before": "당기지급현금은 175,000원으로 ①입니다. 전기매출원가 210,000원은당기계산에 쓰지 않습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 38,
+          "end": 41,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-174",
+      "author": "/root",
+      "after": "당기지급현금은 175,000원으로 ①입니다. 전기매출원가 210,000원은 당기계산에 쓰지 않습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-12-040",
+      "field": "steps",
+      "index": 0,
+      "before": "당기 20X2년 이자수익 200,000원을기준으로 시작합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 20,
+          "end": 23,
+          "text": "0원을"
+        }
+      ],
+      "candidate_id": "S6-175",
+      "author": "/root",
+      "after": "당기 20X2년 이자수익 200,000원을 기준으로 시작합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-05-055",
+      "field": "steps",
+      "index": 0,
+      "before": "충당금은 기말 장부잔액과 대상채권×큰비율(1%,대손실적률)의 한도를 비교합니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 25,
+          "end": 26,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-176",
+      "author": "/root",
+      "after": "충당금은 기말 장부잔액과 대상채권×큰비율(1%,대손실적률)의 한도를 비교합니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2024-07-118",
+      "field": "summary",
+      "index": null,
+      "before": "연간 3,800원현금으로 10,000원을회수하여약 2.63년,②입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 19,
+          "end": 22,
+          "text": "0원을"
+        }
+      ],
+      "candidate_id": "S6-177",
+      "author": "/root",
+      "after": "연간 3,800원 현금으로 10,000원을 회수하여 약 2.63년, ②입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-06-119",
+      "field": "steps",
+      "index": 1,
+      "before": "세후이익 1,000,000×70%=700,000원에비현금감가 400,000원을더하면연간현금 1,100,000원입니다. 세전현금 1,400,000×70%+감가절세 120,000원으로도같습니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 25,
+          "end": 28,
+          "text": "0원에"
+        },
+        {
+          "rule": "particle",
+          "start": 40,
+          "end": 43,
+          "text": "0원을"
+        }
+      ],
+      "candidate_id": "S6-178",
+      "author": "/root",
+      "after": "세후이익 1,000,000×70%=700,000원에 비현금감가 400,000원을 더하면 연간현금 1,100,000원입니다. 세전현금 1,400,000×70%+감가절세 120,000원으로도 같습니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-03-118",
+      "field": "steps",
+      "index": 0,
+      "before": "처음 2년동액 6,000,000원의현재가치는 6,000,000×1.69=10,140,000원입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 16,
+          "end": 19,
+          "text": "0원의"
+        }
+      ],
+      "candidate_id": "S6-179",
+      "author": "/root",
+      "after": "처음 2년 동액 6,000,000원의 현재가치는 6,000,000×1.69=10,140,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2024-06-119",
+      "field": "option",
+      "index": 3,
+      "before": "갑최저 940·을최대 980의범위와일치합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 14,
+          "end": 16,
+          "text": "0의"
+        }
+      ],
+      "candidate_id": "S6-180",
+      "author": "/root",
+      "after": "갑 최저 940·을 최대 980의 범위와 일치합니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2022-03-118",
+      "field": "option",
+      "index": 3,
+      "before": "외부구입 470−내부변동 250=220원증가로일치합니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 20,
+          "end": 22,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-181",
+      "author": "/root",
+      "after": "외부구입 470−내부변동 250=220원 증가로 일치합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-040",
+      "field": "steps",
+      "index": 2,
+      "before": "사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은재무활동이므로 제외합니다. 미지급이자증가 2,000원은가산, 미지급법인세감소 3,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 31,
+          "end": 34,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 61,
+          "end": 64,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 81,
+          "end": 84,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-182",
+      "author": "/root",
+      "after": "사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은 재무활동이므로 제외합니다. 미지급이자증가 2,000원은 가산, 미지급법인세감소 3,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-040",
+      "field": "option",
+      "index": 1,
+      "before": "68,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은재무활동이므로 제외합니다. 미지급이자증가 2,000원은가산, 미지급법인세감소 3,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 55,
+          "end": 58,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 85,
+          "end": 88,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 105,
+          "end": 108,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-183",
+      "author": "/root",
+      "after": "68,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은 재무활동이므로 제외합니다. 미지급이자증가 2,000원은 가산, 미지급법인세감소 3,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-040",
+      "field": "option",
+      "index": 2,
+      "before": "87,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은재무활동이므로 제외합니다. 미지급이자증가 2,000원은가산, 미지급법인세감소 3,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 55,
+          "end": 58,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 85,
+          "end": 88,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 105,
+          "end": 108,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-184",
+      "author": "/root",
+      "after": "87,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은 재무활동이므로 제외합니다. 미지급이자증가 2,000원은 가산, 미지급법인세감소 3,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-040",
+      "field": "option",
+      "index": 3,
+      "before": "89,000 원은 89,000원이라는 계산결과와 일치합니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은재무활동이므로 제외합니다. 미지급이자증가 2,000원은가산, 미지급법인세감소 3,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 65,
+          "end": 68,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 95,
+          "end": 98,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 115,
+          "end": 118,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-185",
+      "author": "/root",
+      "after": "89,000 원은 89,000원이라는 계산결과와 일치합니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은 재무활동이므로 제외합니다. 미지급이자증가 2,000원은 가산, 미지급법인세감소 3,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-040",
+      "field": "option",
+      "index": 4,
+      "before": "91,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은재무활동이므로 제외합니다. 미지급이자증가 2,000원은가산, 미지급법인세감소 3,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 55,
+          "end": 58,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 85,
+          "end": 88,
+          "text": "0원은"
+        },
+        {
+          "rule": "particle",
+          "start": 105,
+          "end": 108,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-186",
+      "author": "/root",
+      "after": "91,000 원 대신 89,000원입니다. 사채상환이익 2,000원을 차감하고 사채원금감소 7,000원은 재무활동이므로 제외합니다. 미지급이자증가 2,000원은 가산, 미지급법인세감소 3,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-040",
+      "field": "steps",
+      "index": 2,
+      "before": "채권은감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 46,
+          "end": 49,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-187",
+      "author": "/root",
+      "after": "채권은 감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-040",
+      "field": "option",
+      "index": 1,
+      "before": "23,700 원 대신 33,700원입니다. 채권은감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 70,
+          "end": 73,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-188",
+      "author": "/root",
+      "after": "23,700 원 대신 33,700원입니다. 채권은 감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-040",
+      "field": "option",
+      "index": 2,
+      "before": "33,700 원은 33,700원이라는 계산결과와 일치합니다. 채권은감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 80,
+          "end": 83,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-189",
+      "author": "/root",
+      "after": "33,700 원은 33,700원이라는 계산결과와 일치합니다. 채권은 감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-040",
+      "field": "option",
+      "index": 3,
+      "before": "35,500 원 대신 33,700원입니다. 채권은감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 70,
+          "end": 73,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-190",
+      "author": "/root",
+      "after": "35,500 원 대신 33,700원입니다. 채권은 감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-03-040",
+      "field": "option",
+      "index": 4,
+      "before": "37,300 원 대신 33,700원입니다. 채권은감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은차감합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 70,
+          "end": 73,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-191",
+      "author": "/root",
+      "after": "37,300 원 대신 33,700원입니다. 채권은 감소 15,000원이라 가산하고 재고증가 10,000원 및 채무감소 22,000원은 차감합니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2023-03-040",
+      "field": "steps",
+      "index": 1,
+      "before": "매입채무가 2,000원에서 4,000원으로증가했으므로 당기매입 58,000원 중 2,000원은미지급입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 49,
+          "end": 52,
+          "text": "0원은"
+        }
+      ],
+      "candidate_id": "S6-192",
+      "author": "/root",
+      "after": "매입채무가 2,000원에서 4,000원으로 증가했으므로 당기매입 58,000원 중 2,000원은 미지급입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-12-040",
+      "field": "steps",
+      "index": 0,
+      "before": "기계순장부는 70,000원에서 35,000원으로 35,000원감소했습니다. 취득이없고 감가상각 15,000원도감소원인이므로 처분장부는 20,000원입니다.",
+      "matches": [
+        {
+          "rule": "unit_word",
+          "start": 32,
+          "end": 34,
+          "text": "0원"
+        }
+      ],
+      "candidate_id": "S6-193",
+      "author": "/root",
+      "after": "기계순장부는 70,000원에서 35,000원으로 35,000원 감소했습니다. 취득이 없고 감가상각 15,000원도 감소원인이므로 처분장부는 20,000원입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2026-09-078",
+      "field": "steps",
+      "index": 3,
+      "before": "취득가 400,000,000×(1−5%×2)=360,000,000에 제품 20,000,000을 더하면 380,000,000원,③입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 69,
+          "end": 70,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-194",
+      "author": "/root",
+      "after": "취득가 400,000,000×(1−5%×2)=360,000,000에 제품 20,000,000을 더하면 380,000,000원, ③입니다.",
+      "decision": "accept",
+      "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+    },
+    {
+      "question_id": "2022-06-044",
+      "field": "steps",
+      "index": 0,
+      "before": "제47조의 2제1항은 부정행위무신고에 40%(역외부정 60%),일반무신고에 20%를정합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 43,
+          "end": 46,
+          "text": "0%를"
+        }
+      ],
+      "candidate_id": "S6-195",
+      "author": "/root",
+      "after": "제47조의 2제1항은 부정행위무신고에 40%(역외부정 60%),일반무신고에 20%를정합니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2023-09-079",
+      "field": "steps",
+      "index": 3,
+      "before": "5,000,000−3,500,000+100,000=1,600,000원,④입니다.",
+      "matches": [
+        {
+          "rule": "comma",
+          "start": 38,
+          "end": 39,
+          "text": ","
+        }
+      ],
+      "candidate_id": "S6-196",
+      "author": "/root",
+      "after": "5,000,000−3,500,000+100,000=1,600,000원, ④입니다.",
+      "decision": "accept",
+      "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+    },
+    {
+      "question_id": "2025-06-073",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "5을"
+        }
+      ],
+      "candidate_id": "S6-197",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-06-074",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "5을"
+        }
+      ],
+      "candidate_id": "S6-198",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-05-073",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "5을"
+        }
+      ],
+      "candidate_id": "S6-199",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-05-074",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "5을"
+        }
+      ],
+      "candidate_id": "S6-200",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2025을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-03-071",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-201",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-03-073",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-202",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-03-074",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-203",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-01-071",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-204",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-01-073",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-205",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-01-074",
+      "field": "review_note",
+      "index": null,
+      "before": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 75,
+          "end": 77,
+          "text": "4을"
+        }
+      ],
+      "candidate_id": "S6-206",
+      "author": "/root",
+      "after": "원문·공식답 PDF와 시행일이 출제월말/원문세법연도말 중 빠른날 이내인 Git 법령의 조문·부칙을 직접 대조했습니다. 원문세법연도2024을보존했습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2025-09-003",
+      "field": "review_note",
+      "index": null,
+      "before": "3차 원문 PDF/재무회계회차지침·공식 ③과2025-07-30 EU 영문 IAS1 문단25·26을직접대조했습니다. 계속기업 작성과 예외의 IFRS 일반규칙만검증하며 기업용개념체계 전체나한국어 KIFRS를읽었다고하지않습니다. 전문가검수는아직입니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 52,
+          "end": 54,
+          "text": "6을"
+        }
+      ],
+      "candidate_id": "S6-207",
+      "author": "/root",
+      "after": "3차 원문 PDF/재무회계회차지침·공식 ③과2025-07-30 EU 영문 IAS1 문단25·26을직접대조했습니다. 계속기업 작성과 예외의 IFRS 일반규칙만검증하며 기업용개념체계 전체나한국어 KIFRS를읽었다고하지않습니다. 전문가검수는아직입니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-01-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-208",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-05-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-209",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-06-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-210",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-09-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-211",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-11-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-212",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-03-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-213",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-07-028",
+      "field": "review_note",
+      "index": null,
+      "before": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 372,
+          "end": 374,
+          "text": "4가"
+        }
+      ],
+      "candidate_id": "S6-214",
+      "author": "/root",
+      "after": "3차에서 원문 PDF·네 보기·단위/도표 및 실제 재무회계 공통 유의사항을 읽고 해당 공개 IFRS 공통 단락·개별 시행일과 독립 계산을 대조했습니다. 출처는 EU 영문 법령의 비공식 Git 재형식화 미러이며 원 PDF·공식 EUR-Lex 사이트·한글 K-IFRS 원문 직접 검증은 아닙니다. 원문 tax_law_year=null을 보존했고 2023/2025 출처로2022시험 당시 규정을 소급확인했다는 주장은 하지 않습니다. IFRS18 2027시행을2026 현재원칙으로 자동적용하지 않았습니다. 전문가 검수는 아직 받지 않았습니다. IFRS2 필수11·15·19·20·30·32·33·AppendixA와 전체 개정60~63E를2023/2025에서 실제 읽어2014가득정의·2018현금결제 측정·2020참조각주 개정 및 이후 해당핵심 변경이 없는 범위로 한정 역사검증했습니다. 2022판본 전체 직접확인이나 원publisher hash 대조는 아닙니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2024-07-036",
+      "field": "option",
+      "index": 4,
+      "before": "6.1.1의 위험관리 효과 표시를 위해6.5.8은수단과대상의 회피손익을 대칭적으로 반영하고6.5.11은미래 손익시기에 맞춰 CFreserve를 처리합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 25,
+          "end": 27,
+          "text": "8은"
+        },
+        {
+          "rule": "particle",
+          "start": 55,
+          "end": 57,
+          "text": "1은"
+        }
+      ],
+      "candidate_id": "S6-215",
+      "author": "/root",
+      "after": "6.1.1의 위험관리 효과 표시를 위해6.5.8은수단과대상의 회피손익을 대칭적으로 반영하고6.5.11은미래 손익시기에 맞춰 CFreserve를 처리합니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-09-061",
+      "field": "steps",
+      "index": 2,
+      "before": "제3조제2항은 비거주자에게 국내원천소득에 대해서만 과세한다고 정하고, 제1조의2제1항제1호와 시행령 제4조제3항은 국내에 주소를 두거나 1과세기간 동안 183일 이상 거소를 둔 개인을 거주자로 봅니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 76,
+          "end": 78,
+          "text": "1과"
+        }
+      ],
+      "candidate_id": "S6-216",
+      "author": "/root",
+      "after": "제3조제2항은 비거주자에게 국내원천소득에 대해서만 과세한다고 정하고, 제1조의2제1항제1호와 시행령 제4조제3항은 국내에 주소를 두거나 1과세기간 동안 183일 이상 거소를 둔 개인을 거주자로 봅니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    },
+    {
+      "question_id": "2022-09-061",
+      "field": "option",
+      "index": 4,
+      "before": "제1조의2제1항제1호와 시행령 제4조제3항(1과세기간 동안 183일 이상 거소)에 따른 거주자 정의와 일치합니다.",
+      "matches": [
+        {
+          "rule": "particle",
+          "start": 24,
+          "end": 26,
+          "text": "1과"
+        }
+      ],
+      "candidate_id": "S6-217",
+      "author": "/root",
+      "after": "제1조의2제1항제1호와 시행령 제4조제3항(1과세기간 동안 183일 이상 거소)에 따른 거주자 정의와 일치합니다.",
+      "decision": "decline",
+      "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+    }
+  ],
+  "baseline_data_hash": "3a7a39ecc2562ff6dec179b20cba7df40ce58339fe67123b2ad963ff1ebdb6fa",
+  "baseline_audit_hash": "13d0e0c36632a5c168458b8cf2b9bb70b176a9ff4b9ac33da169ea6daa12228c",
+  "selection_patterns": [
+    "\\d(?:원|%|단위|시간)?(?:은|는|을|를|의|가|에|로|과|와)(?!서|도|만|게|는|의)(?=[가-힣])",
+    "\\d원(?=(?:증가|감소|양수|음수|당기|차이|유리|불리)[가-힣])",
+    "(?<=[0-9%원위]),(?=[가-힣①②③④A-Za-z])",
+    "\\b(?:RI|ROI)(?=\\d)|\\b[AB](?=\\d+(?:\\.\\d+)?%)"
+  ],
+  "revision_history": {
+    "initial_candidate_file_sha256": "6d008dfd613f696501b24d4bf41f0407ae5338ebfc87611c84d3b79bad21de89",
+    "initial_review_file_sha256": "d3a36192637403359b3dd6cc01855e59cdae40bd9d60afbafdde1da4a4989ce2",
+    "changes": [
+      {
+        "candidate_id": "S6-043",
+        "before": {
+          "question_id": "2026-05-087",
+          "field": "steps",
+          "index": 0,
+          "before": "총간접 240,000÷총노무 60,000=400%입니다.B노무 60,000÷4=15,000원,C노무도 15,000원입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 51,
+              "end": 52,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-043",
+          "author": "/root",
+          "after": "총간접 240,000÷총노무 60,000=400%입니다.B노무 60,000÷4=15,000원, C노무도 15,000원입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2026-05-087",
+          "field": "steps",
+          "index": 0,
+          "before": "총간접 240,000÷총노무 60,000=400%입니다.B노무 60,000÷4=15,000원,C노무도 15,000원입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 51,
+              "end": 52,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-043",
+          "author": "/root",
+          "after": "총간접 240,000÷총노무 60,000=400%입니다. B노무 60,000÷4=15,000원, C노무도 15,000원입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "400%입니다.B노무의 문장 경계가 여전히 붙어 있어 마침표 뒤 ASCII 공백도 넣어야 합니다. 240,000÷총노무60,000 등의 수식 내부는 그대로 둡니다."
+      },
+      {
+        "candidate_id": "S6-048",
+        "before": {
+          "question_id": "2025-12-086",
+          "field": "steps",
+          "index": 0,
+          "before": "배부율=200,000÷50,000=400%입니다.B노무 12,500원,C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 38,
+              "end": 39,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-048",
+          "author": "/root",
+          "after": "배부율=200,000÷50,000=400%입니다.B노무 12,500원, C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2025-12-086",
+          "field": "steps",
+          "index": 0,
+          "before": "배부율=200,000÷50,000=400%입니다.B노무 12,500원,C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 38,
+              "end": 39,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-048",
+          "author": "/root",
+          "after": "배부율=200,000÷50,000=400%입니다. B노무 12,500원, C노무 12,500원이며 간접 A100,000·B50,000·C50,000원입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "400%입니다.B노무의 문장 경계가 남아 있습니다. 나열된 A100,000·B50,000·C50,000은 이번에는 보수적으로 보존해도 되지만 마침표 뒤는 띄우는 것이 맞습니다."
+      },
+      {
+        "candidate_id": "S6-107",
+        "before": {
+          "question_id": "2024-12-110",
+          "field": "option",
+          "index": 3,
+          "before": "43%는계산값보다 7%p높습니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 1,
+              "end": 4,
+              "text": "3%는"
+            }
+          ],
+          "candidate_id": "S6-107",
+          "author": "/root",
+          "after": "43%는계산값보다 7%p 높습니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2024-12-110",
+          "field": "option",
+          "index": 3,
+          "before": "43%는계산값보다 7%p높습니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 1,
+              "end": 4,
+              "text": "3%는"
+            }
+          ],
+          "candidate_id": "S6-107",
+          "author": "/root",
+          "after": "43%는 계산값보다 7%p 높습니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "43%는계산값보다에서 조사 는 뒤 단어가 아직 붙어 있습니다. 7%p 높습니다와 함께 는 계산값보다로 마무리합니다."
+      },
+      {
+        "candidate_id": "S6-144",
+        "before": {
+          "question_id": "2025-05-118",
+          "field": "steps",
+          "index": 1,
+          "before": "투자현가 12,000,000을빼면 NPV2,000,000원,②입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 14,
+              "end": 16,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 32,
+              "end": 33,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-144",
+          "author": "/root",
+          "after": "투자현가 12,000,000을 빼면 NPV2,000,000원, ②입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2025-05-118",
+          "field": "steps",
+          "index": 1,
+          "before": "투자현가 12,000,000을빼면 NPV2,000,000원,②입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 14,
+              "end": 16,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 32,
+              "end": 33,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-144",
+          "author": "/root",
+          "after": "투자현가 12,000,000을 빼면 NPV 2,000,000원, ②입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV2,000,000은 등호 없는 서술상의 지표명/금액 나열이므로 NPV 2,000,000으로 나눌 수 있습니다. 수식 내부 수정이 아닙니다."
+      },
+      {
+        "candidate_id": "S6-147",
+        "before": {
+          "question_id": "2024-11-117",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 1,000,000을빼면 NPV378,000원,②입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 27,
+              "end": 28,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-147",
+          "author": "/root",
+          "after": "초기 1,000,000을 빼면 NPV378,000원, ②입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2024-11-117",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 1,000,000을빼면 NPV378,000원,②입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 27,
+              "end": 28,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-147",
+          "author": "/root",
+          "after": "초기 1,000,000을 빼면 NPV 378,000원, ②입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV378,000은 등호 없는 지표명과 계산 결과의 문장 경계이므로 NPV 378,000으로 띄웁니다."
+      },
+      {
+        "candidate_id": "S6-148",
+        "before": {
+          "question_id": "2024-09-117",
+          "field": "steps",
+          "index": 2,
+          "before": "초기 950,000을빼면 NPV111,200원,①입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 9,
+              "end": 11,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 25,
+              "end": 26,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-148",
+          "author": "/root",
+          "after": "초기 950,000을 빼면 NPV111,200원, ①입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2024-09-117",
+          "field": "steps",
+          "index": 2,
+          "before": "초기 950,000을빼면 NPV111,200원,①입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 9,
+              "end": 11,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 25,
+              "end": 26,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-148",
+          "author": "/root",
+          "after": "초기 950,000을 빼면 NPV 111,200원, ①입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV111,200은 등호 없는 지표명과 금액의 경계이므로 NPV 111,200으로 띄웁니다."
+      },
+      {
+        "candidate_id": "S6-154",
+        "before": {
+          "question_id": "2023-01-119",
+          "field": "steps",
+          "index": 0,
+          "before": "매년동일절약 6,000,000에 3년연금현가 2.40을곱하면 14,400,000원입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 28,
+              "end": 30,
+              "text": "0을"
+            }
+          ],
+          "candidate_id": "S6-154",
+          "author": "/root",
+          "after": "매년 동일절약 6,000,000에 3년 연금현가 2.40을 곱하면 14,400,000원입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2023-01-119",
+          "field": "steps",
+          "index": 0,
+          "before": "매년동일절약 6,000,000에 3년연금현가 2.40을곱하면 14,400,000원입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 28,
+              "end": 30,
+              "text": "0을"
+            }
+          ],
+          "candidate_id": "S6-154",
+          "author": "/root",
+          "after": "매년 동일 절약 6,000,000에 3년 연금현가 2.40을 곱하면 14,400,000원입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "매년 동일절약에서 동일은 다음 명사 절약을 수식하므로 동일 절약으로 마무리합니다. 6,000,000×2.40 수식은 그대로 유지합니다."
+      },
+      {
+        "candidate_id": "S6-155",
+        "before": {
+          "question_id": "2023-01-119",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 8,000,000을빼면 NPV6,400,000원,④입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 29,
+              "end": 30,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-155",
+          "author": "/root",
+          "after": "초기 8,000,000을 빼면 NPV6,400,000원, ④입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2023-01-119",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 8,000,000을빼면 NPV6,400,000원,④입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 29,
+              "end": 30,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-155",
+          "author": "/root",
+          "after": "초기 8,000,000을 빼면 NPV 6,400,000원, ④입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV6,400,000은 지표명 다음 금액의 서술 경계이므로 NPV 6,400,000으로 띄웁니다."
+      },
+      {
+        "candidate_id": "S6-160",
+        "before": {
+          "question_id": "2022-05-117",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 8,000,000을빼면 NPV1,800,000원,①입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 29,
+              "end": 30,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-160",
+          "author": "/root",
+          "after": "초기 8,000,000을 빼면 NPV1,800,000원, ①입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2022-05-117",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 8,000,000을빼면 NPV1,800,000원,①입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 11,
+              "end": 13,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 29,
+              "end": 30,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-160",
+          "author": "/root",
+          "after": "초기 8,000,000을 빼면 NPV 1,800,000원, ①입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV1,800,000은 지표명과 결과 금액이 붙어 있으므로 NPV 1,800,000으로 띄웁니다."
+      },
+      {
+        "candidate_id": "S6-161",
+        "before": {
+          "question_id": "2022-03-116",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 10,000,000을빼면 NPV2,200,000원,③입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 12,
+              "end": 14,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 30,
+              "end": 31,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-161",
+          "author": "/root",
+          "after": "초기 10,000,000을 빼면 NPV2,200,000원, ③입니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2022-03-116",
+          "field": "steps",
+          "index": 1,
+          "before": "초기 10,000,000을빼면 NPV2,200,000원,③입니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 12,
+              "end": 14,
+              "text": "0을"
+            },
+            {
+              "rule": "comma",
+              "start": 30,
+              "end": 31,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-161",
+          "author": "/root",
+          "after": "초기 10,000,000을 빼면 NPV 2,200,000원, ③입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "NPV2,200,000은 등호가 없는 지표명/금액 경계이므로 NPV 2,200,000으로 띄웁니다."
+      },
+      {
+        "candidate_id": "S6-180",
+        "before": {
+          "question_id": "2024-06-119",
+          "field": "option",
+          "index": 3,
+          "before": "갑최저 940·을최대 980의범위와일치합니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 14,
+              "end": 16,
+              "text": "0의"
+            }
+          ],
+          "candidate_id": "S6-180",
+          "author": "/root",
+          "after": "갑최저 940·을최대 980의 범위와 일치합니다.",
+          "decision": "accept",
+          "reason": "숫자 뒤 문장·조사 뒤 단어 또는 쉼표 경계를 띄우며 수식·참조 번호는 보존합니다."
+        },
+        "after": {
+          "question_id": "2024-06-119",
+          "field": "option",
+          "index": 3,
+          "before": "갑최저 940·을최대 980의범위와일치합니다.",
+          "matches": [
+            {
+              "rule": "particle",
+              "start": 14,
+              "end": 16,
+              "text": "0의"
+            }
+          ],
+          "candidate_id": "S6-180",
+          "author": "/root",
+          "after": "갑 최저 940·을 최대 980의 범위와 일치합니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "갑최저·을최대에서 거래 당사자 표지와 최저/최대라는 문장 단어를 구별해 갑 최저·을 최대로 씁니다. 940·980의 수치는 그대로입니다."
+      },
+      {
+        "candidate_id": "S6-196",
+        "before": {
+          "question_id": "2023-09-079",
+          "field": "steps",
+          "index": 3,
+          "before": "5,000,000−3,500,000+100,000=1,600,000원,④입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 38,
+              "end": 39,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-196",
+          "author": "/root",
+          "after": "5,000,000−3,500,000+100,000=1,600,000원,④입니다.",
+          "decision": "decline",
+          "reason": "수식·참조 또는 이번 좁은 계산 문장 범위 밖이거나 추가 공백이 필요하지 않아 보존합니다."
+        },
+        "after": {
+          "question_id": "2023-09-079",
+          "field": "steps",
+          "index": 3,
+          "before": "5,000,000−3,500,000+100,000=1,600,000원,④입니다.",
+          "matches": [
+            {
+              "rule": "comma",
+              "start": 38,
+              "end": 39,
+              "text": ","
+            }
+          ],
+          "candidate_id": "S6-196",
+          "author": "/root",
+          "after": "5,000,000−3,500,000+100,000=1,600,000원, ④입니다.",
+          "decision": "accept",
+          "reason": "독립 검수가 지적한 같은 문장 안의 단어·쉼표 경계까지 공백만 추가했습니다."
+        },
+        "review_reason": "이 행은 5,000,000−3,500,000+100,000=1,600,000원 계산 결과 뒤의 ,④입니다만 띄우면 되는 안전한 후보입니다. 앞선 동일 유형과 달리 일괄 순번 범위로 decline할 근거가 없으므로 식은 보존하고 쉼표 뒤만 수정하도록 요청합니다."
+      }
+    ]
+  }
+}

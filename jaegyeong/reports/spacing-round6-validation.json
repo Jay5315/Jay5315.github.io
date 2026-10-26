@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "task": 10,
+  "checked_at_kst": "2026-10-26T16:04:54.215995+09:00",
+  "baseline_commit": "bdcdd888d361288ddc088d49e2f0409ae0673f63",
+  "actual_independent_reviewers": 1,
+  "author": "/root",
+  "reviewer": "/root/spacing6_reviewer",
+  "counts": {
+    "candidates": 217,
+    "changed_explanations": 139,
+    "changed_fields": 180,
+    "inserted_ASCII_spaces": 324,
+    "declined_fields": 37,
+    "revised_candidates_after_initial_review": 12,
+    "explanations": 4281,
+    "source_checked": 4169,
+    "partial": 112,
+    "unregistered": 40,
+    "concepts": 74
+  },
+  "whitespace_only": {
+    "all_changed_strings_match_without_whitespace": true,
+    "existing_characters_and_whitespace_preserved": true,
+    "only_ASCII_space_insertions": true,
+    "protected_references_units_formulas_unchanged": true,
+    "old95_audit_keys_and_values_unchanged": true
+  },
+  "dedicated_tests": {
+    "count": 2,
+    "status": "PASS"
+  },
+  "explanation_tests": {
+    "count": 77,
+    "status": "PASS"
+  },
+  "command": "APP_BASE_URL=http://127.0.0.1:8062/jaegyeong/ TEST_ARTIFACT_DIR=/tmp/chagok-20261026/spacing6/checks NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost bash jaegyeong/scripts/run_checks.sh --zip",
+  "command_returncode": 0,
+  "tests": [
+    {
+      "name": "test_bank",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_parts",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_concepts",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_explanations",
+      "returncode": 0,
+      "summary": "OK"
+    },
+    {
+      "name": "test_app",
+      "returncode": 0,
+      "summary": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "name": "test_browser",
+      "returncode": 0,
+      "summary": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "name": "test_explanations_app",
+      "returncode": 0,
+      "summary": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "name": "test_offline",
+      "returncode": 0,
+      "summary": "PASS: offline browser regressions complete."
+    }
+  ],
+  "zip": {
+    "webapp_MiB": 149.1,
+    "full_source_MiB": 278.4,
+    "CRC_and_question_assets": "PASS",
+    "portable_runtime": "PASS"
+  },
+  "before_fix_verification": {
+    "missing_reports": "1 error/2 tests; FileNotFoundError",
+    "reports_present_before_application": "1 failure/2 tests; missing spacing_round6 audit stage",
+    "final_source_against_baseline": "same missing-stage failure verified using read-only baseline data/audit",
+    "reject_bad_edits": "1 test PASS before and after",
+    "initial_large_failure_message": "Replaced assertIn diagnostic with equivalent assertTrue diagnostic to avoid printing the entire57MB ledger; condition unchanged"
+  },
+  "logs": {
+    "run-checks.log": "c5901324268c371283d9cad13082eefabdaeb5da08871e13b977acc2839c58ae",
+    "before-reports.log": "4086f3f0d69d993557c4b17bad2be954591157e1289c67d9a6716f72780def01",
+    "before-data.log": "2390d18a5267b2cab578c105f9b91c74d0cfc6b2058613ba589098d9ac7551b2",
+    "before-data-final-test.log": "5315c70b90195f2ca0bf5d1eee431be362bf9fa5607ad315d584af9a37b23363",
+    "test-spacing.log": "5bef0d3034ac07d0a5b478d56cf2c0ec2aecb26e815503556b0af9fc6fb7f508",
+    "test-explanations.log": "9284a3fbdf634e6322a63d31b924c7677621381d28cddf5ccea115912b14dfee"
+  },
+  "proposal_file_sha256": "a98382e1ed92ecef6fa0e99ee3bf097b1b3b3a6c955d7dcbcf64dbefb5495be6",
+  "review_file_sha256": "92c8479fabea6549f05cc1ce40881a08a398cd346630bbe2a786d9cc2d293a6e",
+  "deployment": {
+    "status": "pending_task11",
+    "runtime_changed_in_task10": false,
+    "data_generated_from_source": true
+  },
+  "limits": [
+    "한국어 전체 교정이나 정답·계산·출처 내용 재검증이 아닙니다.",
+    "보존 후보37개와 해설의 기존 unchecked_points를 유지합니다.",
+    "미등록40건·원장분할·실전모드·수동체크는 진행하지 않았습니다.",
+    "Claude 총괄 검수와 실제 기기/음성 화면낭독기 검증은 미실행입니다."
+  ]
+}

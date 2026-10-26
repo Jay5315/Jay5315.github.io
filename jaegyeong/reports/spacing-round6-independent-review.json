@@ -1,0 +1,1844 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/spacing6_reviewer",
+  "author": "/root",
+  "baseline_commit": "bdcdd888d361288ddc088d49e2f0409ae0673f63",
+  "reviewed_at_utc": "2026-10-26T06:55:58.785817+00:00",
+  "candidates_sha256": "a98382e1ed92ecef6fa0e99ee3bf097b1b3b3a6c955d7dcbcf64dbefb5495be6",
+  "rows": [
+    {
+      "candidate_id": "S6-001",
+      "proposal_sha256": "d62fdf1b921d6419051b0538850d7baf138c1098dac4591d1eb90f6bc0760345",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-105 summary의 경계 «익 증가율 100%,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-002",
+      "proposal_sha256": "51f037e639059cb7f8a22fb6a8dba146117120c1e188994ea6e898378089ce0f",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-104 summary의 경계 «가격 60,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-003",
+      "proposal_sha256": "e3fdd9ecda8a775567e7128e76207ecb5c880940f6e389f4af09b4d81446a9cd",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-103 summary의 경계 «면 300,000원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-004",
+      "proposal_sha256": "540baef30c962e27ea6dac955748fb4327212d9a4ef7345486aec6e673bbac20",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-092 summary의 경계 «표준가격은 285원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-005",
+      "proposal_sha256": "a0c6988e62d03c950f3109dc6787de726d4238037aa19a554e035938bfbd8a80",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-11-105 summary의 경계 «공헌이익률 40%,손익분기 매출 7,00 /  안전한계율 30%,③입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-006",
+      "proposal_sha256": "037648f316516bb02060096720c255607db86e1f384a50ef09b94107dd53bda6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-11-104 summary의 경계 «출 200,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-007",
+      "proposal_sha256": "9ed8a377647099e954e139dd638ace0d6d5a8080a07ab907435a04cc5a635836",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-105 summary의 경계 « 총 20,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-008",
+      "proposal_sha256": "417a3fdc075fcc3363b1061a4796bdda9353a0f2dad3ba538095f7f85fe5a68b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-103 summary의 경계 « 안전한계율 20%,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-009",
+      "proposal_sha256": "bdb3844865d44b76bde98ae8e129d91346f46b16e6a25972d78d738736222ffc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-104 summary의 경계 «공헌이익률 40%,손익분기 매출 37,5»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-010",
+      "proposal_sha256": "a1348bba45040d94e432fc20ec8f7a7b085e3cd14ee1970bfb08e9169ec49524",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-103 summary의 경계 «출 300,000원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-011",
+      "proposal_sha256": "c76141efb6e6101667c53a6ef390195c964c30cdcda2128b968408faacdf5b4c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-102 summary의 경계 « 400원 =30%,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-012",
+      "proposal_sha256": "2c8550c7716e221322fe645824f5c15d96a18d844b9aafeeb89c0bb3d349aa5c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-100 summary의 경계 «이는 60,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-013",
+      "proposal_sha256": "d2314922ae9e811aa591358a8961a4f568bf71231bf0ee1be850143e75772be6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-096 summary의 경계 «0,940,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-014",
+      "proposal_sha256": "3a46035d1e3aa1c7790bece17881232998fde7609831dac3704a316df9e65424",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-113 summary의 경계 «어 490,000원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-015",
+      "proposal_sha256": "36e7f6c4249eea2a17a33dd0eaa03d9928bcaa3897986792f922bdaf0373bb22",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-097 summary의 경계 «이익 18,400원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-016",
+      "proposal_sha256": "bad55cb0046a6c594564f84995fd1ba6a11502f54e5d185eea17400557202d45",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-06-082 summary의 경계 «원가 43,300원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-017",
+      "proposal_sha256": "8907775c74de4f69fea00af8145b7e35abfc2505076c2235b76c4eb1fca36f8a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-082 summary의 경계 «원을 빼면 895원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-018",
+      "proposal_sha256": "0898bb93ea6f05cae78f5305a9669935cfd01133c2efd68a7a90179f0d0c3227",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-082 summary의 경계 «한 112,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-019",
+      "proposal_sha256": "7b237a240c2ba0a1b936b11edaac88dc574e21aa340c11fde6af454c30f4cde6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-082 summary의 경계 «제조 54,000원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-020",
+      "proposal_sha256": "c1d0cf41cfc28bf675e2b3b8c59ca319a192ab70ce4c0d968f3c2b5a944aee0c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-082 summary의 경계 «가 800,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-021",
+      "proposal_sha256": "d10015b5e26bdd08c85138f3bba987a2ac32f3d8a0c0143ddb4f56b6fb23f497",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-11-082 summary의 경계 «하면 34,000원,③입니다. 본사 감가상»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-022",
+      "proposal_sha256": "c31c8303fe3fe7928bd96643c002f94a39840c82e9efc7ee62b80c9094c620af",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-082 summary의 경계 «원가 62,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-023",
+      "proposal_sha256": "1fe955c18b0d40eafe5f98ae94783570b57506753d329f5a738622a3c8f88af8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-06-082 summary의 경계 «하면 96,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-024",
+      "proposal_sha256": "2ce47f7eb5f5eef4e34ca2eefbf4a2eba522a0cb0261c383560319dec90af64c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-03-082 summary의 경계 «제조 64,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-025",
+      "proposal_sha256": "e332f2b030eab6922a3655e55dd4a4d929647701aac72fd1a6b9530042bbe28e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-010 summary의 경계 «2,500,000원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-026",
+      "proposal_sha256": "8c389d4c8cf958ad5f4a6517031c6b9968ce71110c3daa3d535badf8a9f63dd3",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-009 summary의 경계 «면 560,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-027",
+      "proposal_sha256": "41a327743eb1da2f3308a93c835ec43edbe617f735eff580da2cd473ee9f11dc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-013 summary의 경계 «면 181,600원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-028",
+      "proposal_sha256": "46d72ada94d9f696850d364dec77399466b51894d6dd9bd71b6a8c686b855623",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-03-013 summary의 경계 «7,250,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-029",
+      "proposal_sha256": "75c795b5b34ebd008041e02efc72bcac5351f6577c60ec3f9b06e2ef23f11fb0",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-013 summary의 경계 «1,170,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-030",
+      "proposal_sha256": "7b784ff757f2149ee920bdfcf7644e97b3b820282c29550ee9b7ad38feff508d",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-013 option의 경계 «1,250,000원은나 900,000원에  / 00,000원에 연구단계가 350,000원 / ,000원에 연구단계가 350,000원을 »를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-031",
+      "proposal_sha256": "be3e00c730ec8646f2deaf204cb148358a8abc9ace116dcda9d8c7bc19c02ad7",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-013 option의 경계 «1,900,000원은나 900,000원에  / 00,000원에 조건미충족다 1,000,0 / 000원에 조건미충족다 1,000,000원»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-032",
+      "proposal_sha256": "1401af36ece451a54d81232033d9bcf1bda5cc9c6ae4c5899cd742c2b41de182",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-013 option의 경계 «2,250,000원은세 프로젝트 전액의 합»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-033",
+      "proposal_sha256": "d358a39868d9e6713681a94c9dc3194586ad514d64748a14964f7285bd554f11",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-012 summary의 경계 «원을 빼면 87억원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-034",
+      "proposal_sha256": "9166dc6a0580541947c0ae07b829ab62bc17c192259565a1e90bd051e1d99807",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-01-012 option의 경계 «480,000원은인식개발 320,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-035",
+      "proposal_sha256": "2a34b43f15e7961a26bd17439dac36078c89d64c4ae4b42102d07ff8e000d299",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-01-012 option의 경계 «680,000원은인식개발 320,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-036",
+      "proposal_sha256": "3c95f8c93db7a434b1b01f69576a80af646bad192f542c04a48f4ca9966dfbe1",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-12-012 summary의 경계 «의 합계 100억원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-037",
+      "proposal_sha256": "313fc4859014720035f44e9d08505e716c98bd3bd6f8e0f770e9c184891019b6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-11-012 summary의 경계 «빼면 66,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-038",
+      "proposal_sha256": "7020525af499318883a58fa0e2ad4dc4613bd80c63a626d7ee838151ec20d833",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-012 summary의 경계 «발 900,000원과소프트웨어 250,00 / 어 250,000원의합계 1,150,000»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-039",
+      "proposal_sha256": "c2cb40b526c962858b92e374b993ae88d7e001273cddaacc65fab41565cb3479",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-012 summary의 경계 «발 900,000원과소프트웨어 250,00 / 어 250,000원의합계 1,150,000»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-040",
+      "proposal_sha256": "a1adc19aec294b421234b34cec5a11452fb1f717ac42b06f47dbe01469f4c157",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-09-087 summary의 경계 «원가 10,900원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-041",
+      "proposal_sha256": "65e94ae1b37d570877b9340ac0285c6b1e87c69c764112fb070054273c2804b9",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-07-086 summary의 경계 «가 864,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-042",
+      "proposal_sha256": "279d28c3047f61be13022005b72553df34387e1516ef202c7cee442dfe5e50ce",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-06-087 summary의 경계 «원=684,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-043",
+      "proposal_sha256": "975c3c2136604492728beb60e772c3a3815c47846ad82f0cb7a730b3f387db97",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-087 steps: 초기 검수 요청대로 400%입니다. B노무의 마침표 뒤 문장 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-044",
+      "proposal_sha256": "48b0a785fc14905626a7b7fce717b69888f50c1b1707e791b62a934567442365",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-087 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-045",
+      "proposal_sha256": "09729ab17ac80d7008ee218362dda52467b4d59a4a9570e0c08b7082a5103a5f",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-03-087 summary의 경계 «공품 14,400원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-046",
+      "proposal_sha256": "f1d76e12ea402c4513c7650d5025802f74807e122c30ab7c627f14784ca4fd5e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-087 summary의 경계 «공품 14,400원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-047",
+      "proposal_sha256": "aa22a0ac76e370ceb65fc86ec81db19c4a0fc92070316f759e163e36e33a42a1",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-01-087 summary의 경계 «성 820,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-048",
+      "proposal_sha256": "b32104d964715fae783caddf8ad51deb3ba2d62ef2e73cc172dd77f5b0627923",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-12-086 steps: 초기 검수 요청대로 400%입니다. B노무의 문장 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-049",
+      "proposal_sha256": "c30f1bd0b89b2d0c6b3b0d5451c62c4cc70fb720c430e380f3f0546fc2aa8e60",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-12-086 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-050",
+      "proposal_sha256": "8936b02d4259f67a36da9e16ea15c0331ad96497d3b507d1de7f1ad2fe56ac44",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-12-087 summary의 경계 «가공 91,200원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-051",
+      "proposal_sha256": "925db4b3c86edc981378d7c87b27bbddd5b0b1b9cce2a300aa42841296d42493",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-11-086 summary의 경계 «조 255,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-052",
+      "proposal_sha256": "717002a49455cfb07065660db72632aec0953d1faec1e6418e7e79df043870f2",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-11-087 summary의 경계 «1,070,000원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-053",
+      "proposal_sha256": "57c357df38c8046733e4a901f65516b39ab8897811da4ef055037b4e4ffc90ce",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-086 summary의 경계 «원=820,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-054",
+      "proposal_sha256": "5f6ca7ba6a2dbfc16f3105d7afb8ec2cfeea1245f5a6e4123d3b8106a770d2d0",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-087 summary의 경계 «간접 18,000원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-055",
+      "proposal_sha256": "2a6a16e81cda936d11887ae977cc4740da64ad02152dcbd22fc52860ce0d1706",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-086 summary의 경계 «0=800,000원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-056",
+      "proposal_sha256": "08c1973a14c67359f4e02be7c2ae09caaa0e155a42c2cb8af946c2e31ae56bf3",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-085 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-057",
+      "proposal_sha256": "84a8629e01828c898327bce391a08563dec9bcb817316921e70888761a0cf18d",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-05-089 summary의 경계 «되어 완성도 70%,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-058",
+      "proposal_sha256": "ad6a90ea7fcf48a7da816cf17040a4ecd7856366cc49c8607df6805eec872107",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-11-090 summary의 경계 « 8원=9,600원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-059",
+      "proposal_sha256": "969cd748676974bb20d0b170014442aea43371ee296584f36d1663164c06a6a4",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-088 summary의 경계 «위로 완성도 50%,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-060",
+      "proposal_sha256": "31fa46fb534d059b10982defdc2b43375e589c8fb968afd0e3e042df8c22d00a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-091 steps의 경계 «대배부 30,000을빼면 실제액 390,0»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-061",
+      "proposal_sha256": "ebdc3a43a2594cf2e9610434010832528c585249cb6344b1352ec84e2a3b5138",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-05-095 option의 경계 «용시간 10,800에율 200을 적용한 2»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-062",
+      "proposal_sha256": "2eb05f8ec0dc46afe2ce9421ef7ae3869dcb5edb946143587e67e5cec01fd3c4",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-094 summary의 경계 «어 10,000단위,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-063",
+      "proposal_sha256": "64271529e18f69bc685f02e229228f2b3ec0c9c82e2871db58b8835c5ba8cc26",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-094 option의 경계 «8,500단위의허용시간 25,500은»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-064",
+      "proposal_sha256": "fa55654608685df29ad2a1d31805a4f769762647ddf8a495702249cca15c5c3d",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-094 option의 경계 «9,000단위의허용시간 27,000은»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-065",
+      "proposal_sha256": "f7d748103b638cb9ef23fd7b790a425d8be6f98526cb0c86c444b70b1f8b13fc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-094 option의 경계 «9,500단위의허용시간 28,500은»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-066",
+      "proposal_sha256": "407dcd6c6d4b10c8c145fe2ac4b23588518231d57d055bd768c62d557f6bdaf8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-094 steps의 경계 «00÷9=100단위,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-067",
+      "proposal_sha256": "e49715373416f9b9d0b4509c5f0a6f75ce2991d3a9a5fbf0ac5377e00404776a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-095 option의 경계 «300원유리가맞습니다. / 300원유리가맞습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-068",
+      "proposal_sha256": "13f80e8dcd9d343fadba0c408ae7a3d67711d6b318a989f137ab027983bb2144",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-096 steps의 경계 «0에 100,000을더하여전부이익 470, / 100,000을더하여전부이익 470,000 / 익 470,000원,③입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-069",
+      "proposal_sha256": "6340432aeee73c2c3b6f742254bfff5e8c7eaea9d6cf3f025f51f5a4ff5ae968",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-100 steps의 경계 «가 144,000에서기초 20,000을빼면 / 서기초 20,000을빼면당기 124,000 / 초 20,000을빼면당기 124,000원, / 기 124,000원,④입니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-070",
+      "proposal_sha256": "0eea747c226bf17d67884bb1b16b80d7aa8ba6cf929b0475ecdb409b6f4dc7a5",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-09-101 summary의 경계 « 단위 6,100원은전통 7,900원보다  / 0원보다 1,800원작아 ④감소입니다. /  1,800원작아 ④감소입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-071",
+      "proposal_sha256": "4a9e59989c843aa3b713b9c0534dd9fba438acedb66bb7769cd0275ba169bd92",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-09-101 option의 경계 «1,800원감소가맞습니다. / 1,800원감소가맞습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-072",
+      "proposal_sha256": "41c2f600958cba574128bf5a23d246d62fdc3547eff7f13bcf0ae2cd70cc89d9",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-101 steps의 경계 « 9,000,000을더하면 14,550,0»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-073",
+      "proposal_sha256": "8b746d865666565ebde0cf24b7747751ba90c84e55638aacfce86b72febe6ab7",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-101 steps의 경계 «5,000개로나누면 2,910원,③ / 나누면 2,910원,③입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-074",
+      "proposal_sha256": "b3e29b4cfb22451c16d91f717e5819d30fc1858f1e9b88ff3068efaadb69cd0e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-01-101 steps의 경계 «50단위총원가는 23,050원 / 가는 23,050원,④입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-075",
+      "proposal_sha256": "8a17b3131e26cf5d6614907954cdc8cee18cdc5faaf6566b4d9fa26f9b565330",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-101 steps의 경계 «11,000,000을더하고 5,000개로나 / 더하고 5,000개로나누면 3,310원,③ / 나누면 3,310원,③입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-076",
+      "proposal_sha256": "9bf876b83b01751d889a6c220563cf2f8692390c513cb17b70d3894308178ae1",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-102 steps의 경계 «12,000,000과합하면 16,600,0»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-077",
+      "proposal_sha256": "966a2f907a4898b119f93412a4677a10db524f654da9a5f68631037dc696a702",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-102 steps의 경계 «특수형 4,000개로나누면 4,150원,④ / 나누면 4,150원,④입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-078",
+      "proposal_sha256": "dd6d87618bfbccf1638d9a31709761ff284e3f7565a9f1f8dd44b86ec4bd6839",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-102 option의 경계 «1,000시간을대입하면 150,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-079",
+      "proposal_sha256": "81f7633131c7586691d2f1e533c83902e23bed608c61081d32a6795d5aeddcfa",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-06-102 option의 경계 «1,000시간을대입하면 100,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-080",
+      "proposal_sha256": "d661f95d36676764e1af9a573cbae3323b4451ea0226970172405fcd89e25172",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-102 option의 경계 «1,000시간을대입하면 200,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-081",
+      "proposal_sha256": "07146f9b5be3162e97fc2f1a99be01ada2c183ac95fb01bdef5d2de0eb26a23b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-102 option의 경계 «1,000시간을대입하면 200,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-082",
+      "proposal_sha256": "603a53db23be1798e9a090c21870d252d9ea87361b548d831068209fb1498e84",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-11-103 steps의 경계 «활동 5월 350시간원가는 9,800,00 / 2,400,000원,③입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-083",
+      "proposal_sha256": "7ec91bc7983472b76407a1e2bd9eab8d2a96e384c5dca694c7f7616608576f2c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-102 steps의 경계 «간 700,000원을선택합니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-084",
+      "proposal_sha256": "99820e0f8f04cf356d01f64d96ea52ba1effa21eb3ebb6c390bcb25be729a467",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-102 steps의 경계 «5월 10,000시간총원가는 1,300,0 / 1,300,000원,④입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-085",
+      "proposal_sha256": "d5b37fe30b6fa034dc3eca78fa364dfaa0bf46e710d5ae336ca0e038bd8e230b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-103 steps의 경계 «150시간총원가는 17,600+ / 00=23,600원,①입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-086",
+      "proposal_sha256": "eca96700f94b8840f14fa19e0f0eb03595c9ba854b589252c457b10e9c7096e0",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-083 steps의 경계 «3,000개총원가는 30,000, / 0,000,000원,②입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-087",
+      "proposal_sha256": "5fb73e53e232b5014c5fca8a18d4236a7e15d07dae9e190192610927ce327dfb",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-102 steps의 경계 «700시간원가는 30,000+7 / 0=100,000원,①입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-088",
+      "proposal_sha256": "4a9ff801300ca5b82c67e2904ce2a7a1c156ae244a95742e16ea7e65dac6b813",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-104 steps의 경계 «%=750,000원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-089",
+      "proposal_sha256": "75d3e15ec1f9beac11dd46be87b15875c7f76228c2bcda80d1b795af3dd94173",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-06-025 option의 경계 «4,000,000원은두 해의 누적원가이며 »를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-090",
+      "proposal_sha256": "0649ca9a2a0b5d348c2b5706a668bc31f88334a44d86d9d9d69c54680d1f7ded",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-025 option의 경계 «24%는첫 해 수익 12,00»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-091",
+      "proposal_sha256": "5fa066188f280f49009a1de73616a4189975d8ced52c7dde047ad24930e4cd7e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-025 option의 경계 «30%는제시된 누적수익 22,»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-092",
+      "proposal_sha256": "469e70e45065191dcfda5f468d0565d1a164ecce37651f549d1fcef303d25a68",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-025 option의 경계 «56%는누적진행률 44%의 남 / 진행률 44%의 남은부분 100%−44%입»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-093",
+      "proposal_sha256": "d596c123eef1790e6786e71d4b6b6304f8989844353db742d3bd0882050b0ba9",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-025 steps의 경계 «률은 첫 해 20%,둘째 해 80%입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-094",
+      "proposal_sha256": "26c44558c681f3fc3da6e8a539cef0a1a9103891ce9ac0bade11e1e3046fb883",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-03-111 steps의 경계 «00,000=26%,신규 ROI=9,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-095",
+      "proposal_sha256": "59e55686b1403b85cce0402d70175f10cfb18b3f3c0449bdaa2a1c24d1f1966c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-03-111 steps의 경계 «투자후 ROI=87,000 / 000≈24.86%로낮아집니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-096",
+      "proposal_sha256": "812ff28b6e4e22c01342aa2eed3dfd711f764052b6b9fa880126925311725062",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-03-111 option의 경계 «A현재 ROI26%와 R / A현재 ROI26%와 RI33,00 /  ROI26%와 RI33,000원은 B25 / I33,000원은 B25%·20,000원, / 5%·20,000원,C약 25.33%·15 / %·20,000원,C약 25.33%·15, / %·15,500원보다높습니다.»를 실제 대조했습니다. 추가된 7개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-097",
+      "proposal_sha256": "8a85c6a26fd3e4c2abe0c1ab9c164743867155a7f6d967d45b5bb7efd21801f1",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-03-111 option의 경계 «×15%=1,500원양수라수용합니다. / %=1,500원양수라수용합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-098",
+      "proposal_sha256": "6e17035c91fa07c031992d53cac438e156cd1c7b1b212d026ed7f3d35fdd10c6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-111 option의 경계 «125,000은계산값보다 75,000 / 산값보다 75,000작습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-099",
+      "proposal_sha256": "d68fa37d2757fbccc3a5cfe2eacc927af1d24cf42b62b0d96d21d51917243dc8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-111 option의 경계 «150,000은계산값보다 50,000 / 산값보다 50,000작습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-100",
+      "proposal_sha256": "c029744ea7631aded636a2e75849b6d43f51b80a9fddcd662f2702e6eb8b31cc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-05-111 option의 경계 «175,000은계산값보다 25,000 / 산값보다 25,000작습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-101",
+      "proposal_sha256": "3cd622d3ecba3c4b28762d3239b4419c53cf2a28bb1964bcf94030983c8adcf5",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-01-111 steps의 경계 «%×80%=7.6%,WACC=7.6%×50»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-102",
+      "proposal_sha256": "104126256cc065c7810e20a9b8b1bb7cc8063a6543c5655a08f2d66e851bc114",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-01-111 steps의 경계 «.8%=52.8억원,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-103",
+      "proposal_sha256": "beeb9fe267f9f37131643678f2f7932ba37f614c3c7a94125bf3ea4969f442bc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-01-111 option의 경계 «52.8 억원은계산한 52.8와일치합 / 원은계산한 52.8와일치합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-104",
+      "proposal_sha256": "df34c03f9ce6a8f50267e7f37fe05186f402d703206ae6cbd67dfbea88a6fc21",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-07-111 steps의 경계 «11%=1,600원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-105",
+      "proposal_sha256": "04ee1c07e5cb5a435888d5b5408048bcea632b6b35bdec5d9a2efd3517cc9906",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-07-111 option의 경계 «1,600 원은계산한 1600와일치합 / 원은계산한 1600와일치합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-106",
+      "proposal_sha256": "88e60c6ad2e7a447c9591b72efbe089aa093177e4b3c172b6e6128cb27f348b8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-11-111 summary의 경계 «자본비용 18억원중부채 6억원을뺀자기자 / 자본비용 18억원중부채 6억원을뺀자기자본 / 8억원중부채 6억원을뺀자기자본 12억원으로 / 억원중부채 6억원을뺀자기자본 12억원으로  / 12억원으로 12%,③입니다.»를 실제 대조했습니다. 추가된 5개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-107",
+      "proposal_sha256": "aa713e732e60eee0d680618b097df0fc1917e95c3e0d5569be8d5d5c26422c91",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-12-110 option: 초기 검수 요청대로 43%는 계산값보다의 조사 뒤 단어 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-108",
+      "proposal_sha256": "02b6269444faa0ea2f2b75180e005e672630e207cee67d673e937dc654ed27a6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-11-111 steps의 경계 «.4%=66.4억원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-109",
+      "proposal_sha256": "d682c846d4c52c4b5753048f67d187cba775bfb826b69366b059ac15ef6b0bd6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-09-111 steps의 경계 «0억원 대비 11%,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-110",
+      "proposal_sha256": "75d3f00e70c38acbba2185a4dda958833f8ef12e32db91e7213ebde49ee52f1a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-06-108 steps의 경계 «−5.5=4.5억원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-111",
+      "proposal_sha256": "0a631220d4a9f11efe7f9af8c483ed77d2889e241a3c508a29317435bf298775",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-05-107 steps의 경계 «동원가 30,000에더한 35,000원,② / 더한 35,000원,②입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-112",
+      "proposal_sha256": "f9dabdefaedd6eb84641f342c502aec1b8f835c992daab2a12328b89714f0e3e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-01-109 option의 경계 «700,000은통제불능원가 200,0 / 원가 200,000을차감했습니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-113",
+      "proposal_sha256": "423ba26e34d2827d0aef0ab3928d30aa9a9ca59b0b7ee8b0c521e6140788722b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-111 steps의 경계 «A=175,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-114",
+      "proposal_sha256": "0dd4a7127d480356ad6e6db21f755b9285b0b98aa1310c27388004e768995d67",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-108 steps의 경계 «00,000=20%,①입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-115",
+      "proposal_sha256": "7410cbf371bbeaaef9bc9178bf5ebc4241b7c679e521c2cd55a7f2596569e965",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-111 steps의 경계 «5%×1/3=11%,EVA=150−400× / ×11%=106억원,③입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-116",
+      "proposal_sha256": "afd46aeb40c9a183ae6f48f842a39a9392baeba0245086308d60095b471fae7b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-110 steps의 경계 «25%×80%=5%,WACC=5%×50%+»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-117",
+      "proposal_sha256": "8db1ab811682c611f6d730039e4d2112b6432abca2caa8bbe7476ead99b561ec",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-110 steps의 경계 «0×10%=60억원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-118",
+      "proposal_sha256": "cf6d0f254842b878b7bdc491e6ecf303c960885d562f4afb389259c2839fb461",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-111 steps의 경계 «1%=31,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-119",
+      "proposal_sha256": "8aa49c0c7e710d34650f405d313812d4ba7646225899595c0db9c85409532072",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-111 steps의 경계 «0=300,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-120",
+      "proposal_sha256": "39c31134622e4942333de453862f14aec20cd92b2759bee8c4085a7e54557a9a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-109 steps의 경계 «11%=1,200원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-121",
+      "proposal_sha256": "b28d7f259bc9675152f9339d97bb65b016fc6f8cdb3dd86d023caa37ea4d166b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-108 option의 경계 «A20%는맞지만 B는 1 / A20%는맞지만 B는 15%가아 / 맞지만 B는 15%가아니라 17.5%입니다»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-122",
+      "proposal_sha256": "3990bb7ed1a7c6ce860aab2e6d98d74a8e17d0cdd6cd431cbb3d2aa3a27d0804",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-108 option의 경계 «A15%·B20%모두계산 / A15%·B20%모두계산과다릅니다 / A15%·B20%모두계산과다릅니다. / A15%·B20%모두계산과다릅니다. / %·B20%모두계산과다릅니다.»를 실제 대조했습니다. 추가된 5개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-123",
+      "proposal_sha256": "745def369ff507ed7fccc7fe80acda271bc42793ba17904675b774e4b4b063bd",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-031 option의 경계 «여금 90,000원은누적오류를 10,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-124",
+      "proposal_sha256": "3bc257e804b04cd1cc0d6b4219cf5a12e660dc2fa4c3dff42ca1ddc8568bab33",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-09-109 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-125",
+      "proposal_sha256": "dde3c20f5e7cb5c72e8ad1d5d66371303e44d81867b404778e038106ba5fbec6",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-09-109 option: C80,000>B70,000>A50,000 비교식과 붙은 표현을 이번에는 보수적으로 통째로 보존합니다. 비교식 내부에 공백을 추가한 것으로 처리하지 않습니다."
+    },
+    {
+      "candidate_id": "S6-126",
+      "proposal_sha256": "94e18643e07de81d4ea70c71cbfb545a26cd22a160013ede7d6fee20bc33692d",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-110 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-127",
+      "proposal_sha256": "b87fba4bb3a75ab65e8489e357f764d5f38431afd58b6904cb47b3266ffa47ba",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-110 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-128",
+      "proposal_sha256": "42f2615e3bb7c18cc2c242bac630c64cc21fa7fab1a20b701a7e588ff58ccc30",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-110 option의 경계 «B8.75%는맞지만 A이 / B8.75%는맞지만 A이익률은 6. / 8.75%는맞지만 A이익률은 6.67%로  / 67%로 9.25%가아닙니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-129",
+      "proposal_sha256": "ea8d0b74b35f93179326991657bad6ea5a39035a11931d5be6fb9308f7ab2ede",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-07-110 option의 경계 «ROI는 A20%·B17.5%로  / ROI는 A20%·B17.5%로 15%·2 / %로 15%·20%가아닙니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-130",
+      "proposal_sha256": "9da20d9862140ac95ee4d94484f69b88ea51a645d638bdc6b174b1612324347b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-06-109 steps의 경계 «익 200,000원이같을때목표 25%의필요 / 200,000원이같을때목표 25%의필요자산 / 00,000원이같을때목표 25%의필요자산= / 이같을때목표 25%의필요자산=200,000»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-131",
+      "proposal_sha256": "fc7b0b00c8defc56a009a69816ef6ededa90b634bb84484a829d6d1c495fee81",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-06-111 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-132",
+      "proposal_sha256": "c82965035048c31a9f802380c2e4b2854a62eea5563b2afebe9aa5af537e9ce9",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-06-111 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-133",
+      "proposal_sha256": "134bc34abc3cc4d198c54d764d0a745bd76c91ef7a40690bb72cd3c55c0db789",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-111 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-134",
+      "proposal_sha256": "2d80b665acdea7b9949da5150b1369a5b7d29640f819147ff8e6da4077bf4942",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-111 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-135",
+      "proposal_sha256": "4a13eb82ef9f634f8f490669ee441b63e52c11676bdd63dd9520bc05bfffe6a1",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-111 option의 경계 «B8.75%는맞지만 A이 / B8.75%는맞지만 A이익률은 6. / 8.75%는맞지만 A이익률은 6.67%로  / 67%로 9.25%가아닙니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-136",
+      "proposal_sha256": "8dc5c2552477f036715eb64268a5d395650f776d339d784782685f4a6ca2f4e4",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-111 option의 경계 «ROI는 A20%·B17.5%로  / ROI는 A20%·B17.5%로 15%·2 / %로 15%·20%가아닙니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-137",
+      "proposal_sha256": "9222e3622172facb51f5f15616e18107ee5b8bfea69e129a9ef9d7b6690597e8",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-03-110 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-138",
+      "proposal_sha256": "7741ff3b4f0e8c2821be398b2df4ff9ee99d22f9ff5936c05ab5773d3cb3b0c2",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-03-110 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-139",
+      "proposal_sha256": "323cbfd37d4fafebe7d858bbc54e04444587176a8b1d2102256d1f2f96686a1c",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-111 steps: A/B/C별 연속 수식 나열을 보수적으로 그대로 두는 결정입니다. 수식 안의 식별자와 숫자를 나누지 않았고 전후 문장이 동일하므로 거부 기록을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-140",
+      "proposal_sha256": "1348c06be97d78d92d9a79c939767ed557e36c6072ed4d07187ed9a3db25b672",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-112 summary의 경계 «00=120,000원감소로 ②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-141",
+      "proposal_sha256": "db93fea419a541a871ec05556bffe8167ae61d47a8a5c97df5213b58d401d2b4",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-112 steps의 경계 «정원가 120,000중회피하는 100,00 / 원가 120,000중회피하는 100,000 / 하는 100,000만절감됩니다. 순이익변화 /  남는 20,000은계속비용입니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-142",
+      "proposal_sha256": "12f49c799192c6aae2178f13fb40002c496be80020db0e6ec15cdf8802c0c671",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-118 steps의 경계 «이익 800,000에비현금감가상각 600, / 상각 600,000을더한연현금흐름은 1,4 /  600,000을더한연현금흐름은 1,400»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-143",
+      "proposal_sha256": "f5e4173f1b421f072a73759f27cdacd954957143bb16e24e6b328cfdb851c4c7",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-118 steps의 경계 «주어진연금현가 3.61을사용 / 진연금현가 3.61을사용하면 1,400,0 / 2,054,000원,③입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-144",
+      "proposal_sha256": "e0242341208acef00d1585cdb97c4a5e97555aa5e3c9d73ea49513c09a85dd70",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-118 steps: 초기 검수 요청대로 NPV 2,000,000의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-145",
+      "proposal_sha256": "4e86052a42878358964a6a34ec8cba37daa8e386d5d97e44a43e0bdc51a2427a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-117 steps의 경계 «가상각 80,000의절세효과는 20,000»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-146",
+      "proposal_sha256": "a605d6cba00eda49c0c478b8b16e1b4fa8509f9f90e1ab3c762be0f8ccbf52b9",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-117 steps의 경계 «0=170,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-147",
+      "proposal_sha256": "ed13916d76c962381f712dbc35ab816c33f235c86921e01db56095526913c11e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-11-117 steps: 초기 검수 요청대로 NPV 378,000의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-148",
+      "proposal_sha256": "abc6aadcc654683f6196281b11d6b9bf1ffdbac39c2209282bc0ad4cefbd1ce3",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-09-117 steps: 초기 검수 요청대로 NPV 111,200의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-149",
+      "proposal_sha256": "663f845bb292780bf794805f2230b8b059939525cc6ac1c7cca4674f9953e32c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-115 steps의 경계 «1년말현금절약 6,000, / 1년말현금절약 6,000,0 / 0,000을 1.1로나눕니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-150",
+      "proposal_sha256": "bc54425370be47a45d32af6a1a7fdf1b83c96a45bba9f7bb16c77b57d7d08ba0",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-115 steps의 경계 «2년말절약 3,000,00 / 2년말절약 3,000,000 /  3,000,000과처분 1,000,000 / 분 1,000,000합 4,000,000을 / ,000을 1.1²로나눕니다.»를 실제 대조했습니다. 추가된 5개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-151",
+      "proposal_sha256": "74fde6ccc3c03d61400b77f5ac5c1004ac83242b16cb59f39df24173e264f5cf",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-117 steps의 경계 «3년절약 39,000,00 / 39,000,000을더하면−6,000,00 / 000,000을더하면−6,000,000원입»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-152",
+      "proposal_sha256": "3887432dce89a240d01de9a957b3a8971f51a81fc37a73451e35a97fb03a564a",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-117 option의 경계 «6,000,000원유출이초기순투자 45, / 000,000원유출이초기순투자 45,000 / 000,000과 3년절약 39,000,00 / 39,000,000의차이입니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-153",
+      "proposal_sha256": "9cd8101ca40e49c7e060f48d8a009489664affc16121fa85759b4a40065c93ea",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-03-118 option의 경계 «NPV는음수 4가아니라양수 5 / NPV는음수 4가아니라양수 580입니다 / PV는음수 4가아니라양수 580입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-154",
+      "proposal_sha256": "a065b0ae851600ec727964e053d12ee5335dc4010f6cba242f412a403c144e44",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-119 steps: 초기 검수 요청대로 매년 동일 절약의 수식어/명사 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-155",
+      "proposal_sha256": "08f8d7ff3cac2245fbd15bb98bb9aaaf25dda0c1ebc229ec0907d0d394f4f556",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-01-119 steps: 초기 검수 요청대로 NPV 6,400,000의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-156",
+      "proposal_sha256": "292f48df190975f7d03bdf8924b475f61ab4a79ffc3e233cf3e918e6687bda2c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-116 steps의 경계 «3,240,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-157",
+      "proposal_sha256": "d8a59abaca0fb6ca5523b36d98e20924bfb34619afd2cf4943449e4374f33c73",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-11-117 steps의 경계 «매년말동일 300,000원 / 매년말동일 300,000원이 / 300,000원이므로연금현가 3.79를사용 / 로연금현가 3.79를사용합니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-158",
+      "proposal_sha256": "da4f1b9f44c76c6f8a25c3a2121bca1e53f1d694247feeed9aa34a231c4bec02",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-11-117 steps의 경계 «0=187,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-159",
+      "proposal_sha256": "59d6676e89ce803c35bb189494cdc1dc6bd5cb04e0e6c556810abdf89259e514",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-118 steps의 경계 «0=550,820원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-160",
+      "proposal_sha256": "2e5eb90eb231f10f77ab1ef8aa8c390e3ab31d37a26201ec281b8f879a0d75b2",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-05-117 steps: 초기 검수 요청대로 NPV 1,800,000의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-161",
+      "proposal_sha256": "4ab4331fde099db93d99e1fdb67dc1aaa21683180a35194a3bcea1543117f8d8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-116 steps: 초기 검수 요청대로 NPV 2,200,000의 지표명/금액 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-162",
+      "proposal_sha256": "fcee8ff60a2721a798a84bd4a68ad006fd9d3497e9f25a3d77b1e9da66e3ec20",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-117 steps의 경계 «5,300,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-163",
+      "proposal_sha256": "8857884d9fcc887d33a399813ed5fec95820be7f0df781afae6ab7025888681b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-118 steps의 경계 «5,300,000원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-164",
+      "proposal_sha256": "ec7678b76d52c9f1153d3d6c1f6ada3f34b1cfc44102bbb922a3319b6d292a13",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-09-119 steps의 경계 «0+130=760원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-165",
+      "proposal_sha256": "2ab5a35abde1af2c1ee01d5e41a737ed0b390845a1459527dd3a137beb390b64",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-07-119 steps의 경계 «0+210=480원,②입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-166",
+      "proposal_sha256": "e80dfe37cc8a5423bb9145760a986080dc91d6d9ad3532d45b16b759b1e933b6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-119 steps의 경계 «0+180=380원,④입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-167",
+      "proposal_sha256": "4af8342e0e8cf0b3c7c2e1b0a8a13fa2d957954b4f065f9e6eb32844acd6d206",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-119 summary의 경계 «갑의최소 920원과을의외부 / 갑의최소 920원과을의외부구입 950원사 / 의최소 920원과을의외부구입 950원사이로 / 을의외부구입 950원사이로 ③입니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-168",
+      "proposal_sha256": "07fbe5af614345b64f073c068a312e004e9ad9aa23e2a21bc7635a628e5d167c",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-06-119 steps의 경계 «,000=4,000과내부제품공헌 25,00 / ,000=8,000을비교합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-169",
+      "proposal_sha256": "b58022e98b0fbec3a31c26119acaa51955270a178d76c3ab38ca2c5880cbc497",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-039 steps의 경계 «감소 15,000원은가산, 매입채무감소 1 / 감소 12,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-170",
+      "proposal_sha256": "cfbc630926a2ac7c7834adee8e15b0d245ffaacc1bab7da9e9cea8430612dad6",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-039 option의 경계 «154,000원은투자분류 이자의 미수증 / 산한 값입니다. 관련미수변동은 영업계산에 »를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-171",
+      "proposal_sha256": "abf4657149e2d81c587258f0398ecca0dcc00cbb2300392eecf72f42caad8818",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-06-040 option의 경계 «2,000원은금액은맞지만 유입이 아 / 2,000원은금액은맞지만 유입이 아니라유 / 맞지만 유입이 아니라유출입니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-172",
+      "proposal_sha256": "363b3b140173c260e0d0ad1536024e00720e206fa060506996eb40234d18db91",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-03-040 steps의 경계 «액 250,000원은기초 100,000원에»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-173",
+      "proposal_sha256": "6c087772fb33a28760876053108ead25df6f72cf5613e6c1819d4f25152e7e28",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-01-039 summary의 경계 «가 210,000원은당기계산에 쓰지 않습니»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-174",
+      "proposal_sha256": "163bda044ffa826270aff7fc5b6fb51ac43ec346ede040dd3ca59854cffd04fc",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-01-039 steps의 경계 «가 210,000원은당기계산에 쓰지 않습니»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-175",
+      "proposal_sha256": "3897c30b86dbe93067c2962a68f34eb639f6e9f93e6e68bae3e9737a8f5952e2",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-12-040 steps의 경계 «익 200,000원을기준으로 시작합니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-176",
+      "proposal_sha256": "88ccf2cb8e1a626c99ad272cf733e1790747fe03478e73f2f459ccf7da675fa6",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-05-055 steps: 큰비율(1%,대손실적률)의 인수 구분 쉼표는 문장 쉼표가 아닌 함수형 수식 내부이므로 보존합니다."
+    },
+    {
+      "candidate_id": "S6-177",
+      "proposal_sha256": "e3bc10e6d401ded5a999e38b9f2152ad54d1b151ae45196033a9b335402fe901",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-118 summary의 경계 «연간 3,800원현금으로 10,000원 / 으로 10,000원을회수하여약 2.63년, / 0,000원을회수하여약 2.63년,②입니다 / 수하여약 2.63년,②입니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-178",
+      "proposal_sha256": "d7702cfbac0e1853254b2e058ca6d0536dd29193cdbbe0f148deb88e4b23483e",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-06-119 steps의 경계 «%=700,000원에비현금감가 400,00 / 가 400,000원을더하면연간현금 1,10 / 00,000원을더하면연간현금 1,100,0 / 120,000원으로도같습니다.»를 실제 대조했습니다. 추가된 4개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-179",
+      "proposal_sha256": "6921c4821f310edfe3f837bec77cdce41efc8e98048ba5c2959c7c3cc48be616",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-03-118 steps의 경계 «처음 2년동액 6,000,000 / 6,000,000원의현재가치는 6,000,»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-180",
+      "proposal_sha256": "591e9da3135ea36b53245f68eb684a6cb4cdbffcd33f03fea4e06c5817dfbccd",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-06-119 option: 초기 검수 요청대로 갑 최저·을 최대의 거래 당사자/한도 설명 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-181",
+      "proposal_sha256": "fb27eb0b3f2215200651739b8899de10668146bbe37ead3a2d3b6a0e01d51d68",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-118 option의 경계 «변동 250=220원증가로일치합니다. / 250=220원증가로일치합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-182",
+      "proposal_sha256": "72a26c85930814d41260acbb084cac790391535740c6a36adfb5cb6fcd898ed8",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-040 steps의 경계 «금감소 7,000원은재무활동이므로 제외합니 / 자증가 2,000원은가산, 미지급법인세감소 / 세감소 3,000원은차감합니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-183",
+      "proposal_sha256": "69b2f3ee92330d1dfbc1f4a6427712f67128dda5f821e75b70277c7001336b3b",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-040 option의 경계 «금감소 7,000원은재무활동이므로 제외합니 / 자증가 2,000원은가산, 미지급법인세감소 / 세감소 3,000원은차감합니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-184",
+      "proposal_sha256": "8ce53029860f9fcc8a39c0e624de1ef5a565352c9efe758711b8233a36779c72",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-040 option의 경계 «금감소 7,000원은재무활동이므로 제외합니 / 자증가 2,000원은가산, 미지급법인세감소 / 세감소 3,000원은차감합니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-185",
+      "proposal_sha256": "12d7ca50854288e799cb0877703d0624449f1da9c2d3b10bfcead418fdef829f",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-040 option의 경계 «금감소 7,000원은재무활동이므로 제외합니 / 자증가 2,000원은가산, 미지급법인세감소 / 세감소 3,000원은차감합니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-186",
+      "proposal_sha256": "8a91153b91505f127ba71c53c982ee5e7ef3b2633bbe17acdff77fb35cd5143f",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-040 option의 경계 «금감소 7,000원은재무활동이므로 제외합니 / 자증가 2,000원은가산, 미지급법인세감소 / 세감소 3,000원은차감합니다.»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-187",
+      "proposal_sha256": "1c1221a1ce9e1d9427235be25ecfcf853d474220a5ce4fb6b2810fe10d961ddb",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-040 steps의 경계 «채권은감소 15,000원이라 / 감소 22,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-188",
+      "proposal_sha256": "eb15ee8409243a5d351f5eb8bc68aced4cb4f03184d61d2b90fbfd7827170615",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-040 option의 경계 «00원입니다. 채권은감소 15,000원이라 / 감소 22,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-189",
+      "proposal_sha256": "f362705de0d56a04b0cc96d8ef97e856ee86da246bd97d329621db4ae897b860",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-040 option의 경계 « 일치합니다. 채권은감소 15,000원이라 / 감소 22,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-190",
+      "proposal_sha256": "6d622e4ee3142dc99c4c810ef36fb7d9ccc375f66184f7bb3d34b086ea3ae3d7",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-040 option의 경계 «00원입니다. 채권은감소 15,000원이라 / 감소 22,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-191",
+      "proposal_sha256": "02de68734efa3b2427c9a8fc2a242a20fa011f7fee2794fa9e0d5aa74f3ead27",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-040 option의 경계 «00원입니다. 채권은감소 15,000원이라 / 감소 22,000원은차감합니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-192",
+      "proposal_sha256": "daf262b77da9d09dbb0938b8bd3db38d0211bbef43e9c52ae26b87f9f02f6abf",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-03-040 steps의 경계 «에서 4,000원으로증가했으므로 당기매입  / 원 중 2,000원은미지급입니다.»를 실제 대조했습니다. 추가된 2개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-193",
+      "proposal_sha256": "a96ced5326f57d2b5f69bcc3de48b073d16926eb4c64833638cd61c5bc1d1be3",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-12-040 steps의 경계 «원으로 35,000원감소했습니다. 취득이없 / 감소했습니다. 취득이없고 감가상각 15,0 / 상각 15,000원도감소원인이므로 처분장부»를 실제 대조했습니다. 추가된 3개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-194",
+      "proposal_sha256": "5e8210f3ea57e45dc2693dc9f0f6fe52c4190707cd5f4bae57ad44a8b9b9bab3",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2026-09-078 steps의 경계 «0,000,000원,③입니다.»를 실제 대조했습니다. 추가된 1개 ASCII 공백은 문장·조사·나열 경계이며 숫자·기호·수식 내부·조문·문단 참조를 변경하지 않아 승인합니다."
+    },
+    {
+      "candidate_id": "S6-195",
+      "proposal_sha256": "14eb3cbaecb4a0254b01dc3eee659f9d9518c4dbf4f4586888772b274d6858b4",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-044 steps: 제47조의 2제1항 인용을 포함한 세법 문장을 이번 좁은 계산형 정리에서 보수적으로 보류합니다. 남은 문장 공백 누락이 모두 해결되었다고 뜻하지 않습니다."
+    },
+    {
+      "candidate_id": "S6-196",
+      "proposal_sha256": "b616d4104fb3b1eb304dbb9b537ee4ece2572b160683dbc1340aeee23fd73c1f",
+      "verdict": "approve",
+      "decision": "accept",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2023-09-079 steps: 초기 검수 요청대로 1,600,000원, ④입니다의 계산 결과 뒤 쉼표 경계를 실제 다시 읽어 확인했습니다. 최종안이 suggested_after와 정확히 같고 기존 수식·참조·기호·숫자는 보존하며 ASCII 공백만 삽입하므로 승인합니다."
+    },
+    {
+      "candidate_id": "S6-197",
+      "proposal_sha256": "e93db1b9265bd37bf1e29c6caa31ae31e639236ba586fc5d597be0e8da1285a1",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-073 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-198",
+      "proposal_sha256": "3049d0af269a0917cde352682d6c19fc92da927d0a5201bf77d6ce9bda2adce7",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-06-074 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-199",
+      "proposal_sha256": "a34f6e5d915c842a50643eb1b28f2b0a33e7a8a7364943737a44107757d80ab0",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-073 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-200",
+      "proposal_sha256": "f19a510464d0cbb8704dba490a52293dd0701869740f7ea77ceda9e98c67ff75",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-05-074 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-201",
+      "proposal_sha256": "044a16534e5d616197334c6a98479a5ce1955988a7b149a7904c6f99e6af7e74",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-03-071 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-202",
+      "proposal_sha256": "1c673e93608df3575614e11b46d22ae08b2e753864c6b3bdcdc25e44c079da29",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-03-073 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-203",
+      "proposal_sha256": "4092af48930b1929222b82ecf8bf483ccf1da2f9f973b924f80ac2c0165059c7",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-03-074 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-204",
+      "proposal_sha256": "ca7a1dbf8756e50312622130a06d6c6f6d52b8a099caa8ee504eeb08260d1237",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-071 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-205",
+      "proposal_sha256": "d02559500218f32042e07a7f975ed708814c943db92d949bd724f109bc19986f",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-073 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-206",
+      "proposal_sha256": "f77528e968393da32bd500d57851107f3e8aa2af96e1e0b33db240b411a2dac9",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-01-074 review_note: 원문세법연도/검수이력의 review_note 통문장은 이번 계산 결과·숫자 뒤 경계 정리에서 제외했습니다. 실제로 after가 before와 같으며 출처 검증 범위나 이력 내용도 그대로입니다."
+    },
+    {
+      "candidate_id": "S6-207",
+      "proposal_sha256": "8f48bf77eebdb64ae3f3cd6a89708a2322373262e91c9205c410c2360744d343",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2025-09-003 review_note: IAS1 문단25·26 등 인용과 검수이력의 통문장 정비는 범위를 넓히지 않고 보류합니다. 기준서 문단 번호를 띄운 변경은 없습니다."
+    },
+    {
+      "candidate_id": "S6-208",
+      "proposal_sha256": "3ac87b92078f4061a8e7fb2c14eed3241ea97610fde5f2faeb976516d8d63db3",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-01-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-209",
+      "proposal_sha256": "c3ca5955117e476e1ca827e8fe11a80654ebe108ccce897a0532c415ec2c9b75",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-05-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-210",
+      "proposal_sha256": "e57b960e49173008d0cbc5576e744e21bb7e9e362e0de7faba1e30e41ccf2a5f",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-06-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-211",
+      "proposal_sha256": "4c010b71915d1cea9824108a19947849917c61d55825e0f425a36fdeb3191fca",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-212",
+      "proposal_sha256": "5024712306ce216a8209b2bf8a67e489fcaf41f51cffcdda63db40fb7123a8d9",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-11-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-213",
+      "proposal_sha256": "54e14a3d35c2d46f3e3fefe0e7f2d54a84dea1e9c429b2cb629bedcf8cef98d4",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-03-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-214",
+      "proposal_sha256": "3c7b85caeae6b888be723db66c9eb6537a2b25bb27ea1d01556b937937aa54d6",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-07-028 review_note: IFRS18 시행연도·IFRS2 문단목록·연혁 설명이 섞인 review_note입니다. 이번에는 관련 참조를 포함한 통문장을 보존하며 실제 문장 내용 변경이 없습니다."
+    },
+    {
+      "candidate_id": "S6-215",
+      "proposal_sha256": "fa533e6540f1412286cc525b3076084824faaeaa6827b034884fa2a0e9bcf23c",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2024-07-036 option: 6.1.1·6.5.8·6.5.11은 기준서 문단 번호라 숫자 경계 자동 규칙으로 나눌 수 없습니다. 원래 문장 전체를 보존한 것을 승인합니다."
+    },
+    {
+      "candidate_id": "S6-216",
+      "proposal_sha256": "e9934d4c986537a8a9a03858bbd1dfa21864671465db7fe96c45301a2c99e4ec",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-061 steps: 제3조제2항·제1조의2제1항제1호·제4조제3항 등의 연속 조문 표시는 붙여 써야 하며 1과세기간은 하나의 세법상 단위 표현입니다. 이 후보는 수정하지 않는 것이 맞습니다."
+    },
+    {
+      "candidate_id": "S6-217",
+      "proposal_sha256": "a6d7bdd3dafbbb96f16f5b70841344a53445dbc26bb301c5bfa7874607c92d71",
+      "verdict": "approve",
+      "decision": "decline",
+      "reviewer": "/root/spacing6_reviewer",
+      "reason": "2022-09-061 option: 제3조제2항·제1조의2제1항제1호·제4조제3항 등의 연속 조문 표시는 붙여 써야 하며 1과세기간은 하나의 세법상 단위 표현입니다. 이 후보는 수정하지 않는 것이 맞습니다."
+    }
+  ],
+  "revision_review": {
+    "initial_candidates_sha256": "6d008dfd613f696501b24d4bf41f0407ae5338ebfc87611c84d3b79bad21de89",
+    "initial_review_sha256": "d3a36192637403359b3dd6cc01855e59cdae40bd9d60afbafdde1da4a4989ce2",
+    "initial_changes_requested_count": 12,
+    "final_changed_rows_reread": [
+      {
+        "candidate_id": "S6-043",
+        "initial_proposal_sha256": "4217fd7513334442693c60fce46b887e2da5ad4f425fec5451f126402de2dc4c",
+        "final_proposal_sha256": "975c3c2136604492728beb60e772c3a3815c47846ad82f0cb7a730b3f387db97",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-048",
+        "initial_proposal_sha256": "7f805c5627e8e8850484fecc83bb1ee8bdc9bb287a66d7ce105aa71729002e15",
+        "final_proposal_sha256": "b32104d964715fae783caddf8ad51deb3ba2d62ef2e73cc172dd77f5b0627923",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-107",
+        "initial_proposal_sha256": "1b96ae281dfdab71edcbdb58fa7aabb459f52b522a36f883933eef0c0d4cfc80",
+        "final_proposal_sha256": "aa713e732e60eee0d680618b097df0fc1917e95c3e0d5569be8d5d5c26422c91",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-144",
+        "initial_proposal_sha256": "a6e12c6ef83cc5313d0d18bdfee176d4db63fe4d5fc73028eac46e67f41c09bc",
+        "final_proposal_sha256": "e0242341208acef00d1585cdb97c4a5e97555aa5e3c9d73ea49513c09a85dd70",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-147",
+        "initial_proposal_sha256": "33433bf3fac738fbff18af4a87ade8dd1c782060e83097bff6d55acd476e00b7",
+        "final_proposal_sha256": "ed13916d76c962381f712dbc35ab816c33f235c86921e01db56095526913c11e",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-148",
+        "initial_proposal_sha256": "f5a60cb4b34a638c3e7f5ee0799ce04982feb2afd68ba3916e55c44ec6afed5b",
+        "final_proposal_sha256": "abc6aadcc654683f6196281b11d6b9bf1ffdbac39c2209282bc0ad4cefbd1ce3",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-154",
+        "initial_proposal_sha256": "b4b537b2255ebb2dbe688c091f166abd16bee1f4e21395c7a7f5502f242b4195",
+        "final_proposal_sha256": "a065b0ae851600ec727964e053d12ee5335dc4010f6cba242f412a403c144e44",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-155",
+        "initial_proposal_sha256": "42842872b7a3029d04fcd8ee8f4b7a8180c2bcbe9e781b2a9ec63a21ea4986c8",
+        "final_proposal_sha256": "08f8d7ff3cac2245fbd15bb98bb9aaaf25dda0c1ebc229ec0907d0d394f4f556",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-160",
+        "initial_proposal_sha256": "06b0cbfbe6758ade2c45421655aa18fa9d52e68f5ff8afc3d7bd6f0bfc3634ba",
+        "final_proposal_sha256": "2e5eb90eb231f10f77ab1ef8aa8c390e3ab31d37a26201ec281b8f879a0d75b2",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-161",
+        "initial_proposal_sha256": "9340de61ff3fde814367faf81aaf4e32b0ae2925049b9118cecc39c134a2057e",
+        "final_proposal_sha256": "4ab4331fde099db93d99e1fdb67dc1aaa21683180a35194a3bcea1543117f8d8",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-180",
+        "initial_proposal_sha256": "2e9053c595d1881375a2e41c9bc092bbe8273da4493d21e06ace3638cba92f26",
+        "final_proposal_sha256": "591e9da3135ea36b53245f68eb684a6cb4cdbffcd33f03fea4e06c5817dfbccd",
+        "requested_after_matched_exactly": true
+      },
+      {
+        "candidate_id": "S6-196",
+        "initial_proposal_sha256": "d7249d36a9b2b4c82b93800eb8a1efecd51d342404ac65937380f0ce6848f878",
+        "final_proposal_sha256": "b616d4104fb3b1eb304dbb9b537ee4ece2572b160683dbc1340aeee23fd73c1f",
+        "requested_after_matched_exactly": true
+      }
+    ],
+    "other_rows_exactly_unchanged": 205
+  },
+  "summary": {
+    "actually_read_candidate_count": 217,
+    "final_amended_rows_reread": 12,
+    "unchanged_rows_hash_and_full_object_comparison": 205,
+    "approved_count": 217,
+    "changes_requested_count": 0,
+    "accepted_candidate_count": 180,
+    "declined_candidate_count": 37,
+    "accepted_explanation_count": 139,
+    "inserted_ascii_spaces": 324,
+    "source_field_bindings_verified": 217
+  },
+  "limits": [
+    "초기 검수에서 후보217개 전체의 before/after를 읽었습니다. 최종 검수에서는 수정12행을 실제 재독하고, 나머지205행이 초기와 객체 단위로 동일함을 확인했습니다.",
+    "원데이터 TEXT_FIELDS의 기준 커밋 필드와 결속하고 기존 공백을 보존한 ASCII 공백 삽입만 확인했습니다.",
+    "계산·정답의 정확성이나 공식 출처 대조를 이번 띄어쓰기 검수로 주장하지 않습니다.",
+    "보류된37개 후보가 모든 문장 띄어쓰기가 완전하다는 뜻은 아닙니다. 수식·인용·이력 문구의 이번 좁은 정리 범위 밖을 보수적으로 보존했습니다."
+  ]
+}

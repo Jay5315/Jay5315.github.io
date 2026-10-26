@@ -17,6 +17,7 @@ from test_work_order_reports import WorkOrderStep2Tests
 from test_round28_followups import Round28FollowupTests
 from test_round29_followups import Round29FollowupTests
 from test_round30_followups import Round30FollowupTests
+from test_spacing_round6 import SpacingRound6Tests
 
 R = Path(__file__).resolve().parents[1]
 
@@ -542,6 +543,13 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Reverse the newest spacing-only stage before every earlier protection.
+        from apply_spacing_round6 import restore_spacing_round6
+        if (cls.audit or {}).get('spacing_round6'):
+            cls.stage_after['spacing_round6'] = copy.deepcopy(cls.data)
+            cls.audit_after['spacing_round6'] = copy.deepcopy(cls.audit)
+            cls.data, cls.audit = restore_spacing_round6(cls.data, cls.audit)
+        cls.before_spacing6 = copy.deepcopy(cls.data)
         # Round 30 must be verified/reversed before every older stage.
         from apply_round30_followups import restore_round30
         if (cls.audit or {}).get('round30_followups'):
@@ -1297,6 +1305,9 @@ class ExplanationTests(unittest.TestCase):
 
     def test_spacing_round4_changes_only_whitespace(self):
         self.check_whitespace_ledger('spacing_round4', self.before_spacing4)
+
+    def test_spacing_round6_changes_only_whitespace(self):
+        self.check_whitespace_ledger('spacing_round6', self.before_spacing6)
 
     def test_spacing_round5_changes_only_whitespace(self):
         self.check_whitespace_ledger('spacing_round5', self.before_spacing5)
