@@ -1,8 +1,8 @@
 {
   "format": 1,
   "core": {
-    "url": "assets/bank/core-4c27033b8c4ebfa4.js",
-    "sha256": "4c27033b8c4ebfa42c906f1dd94dc5fe3745fae0c1003f1bed03e73823b722e3",
+    "url": "assets/bank/core-f36bc102213f31cf.js",
+    "sha256": "f36bc102213f31cf9b1bc1b942d48cc3baadbeed81e50f9e458b092dae46ae8e",
     "bytes": 8028773
   },
   "subjects": {
@@ -19,9 +19,9 @@
       "count": 1453
     },
     "cost": {
-      "url": "assets/bank/explanations-cost-4b67afd60ffee633.js",
-      "sha256": "cf7243c7a5d9783dea015fdde5f4dc596ca39ff5081f708c94f79c9fc20491af",
-      "bytes": 3706309,
+      "url": "assets/bank/explanations-cost-9d7326b1625338c9.js",
+      "sha256": "70b45573cb041ea0ae7b0fd8cd471ba891ba2f35c22d6bbd690114412b174fcb",
+      "bytes": 3708196,
       "count": 1379
     }
   },
@@ -127,5 +127,5 @@
     "M19": "cost",
     "M20": "cost"
   },
-  "build_id": "42e49b28172abc9345c1"
+  "build_id": "b74c0771ef58f05767f3"
 }
