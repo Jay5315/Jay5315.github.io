@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "task": 8,
+  "round": 31,
+  "baseline_commit": "74942cd7c9f8743d822545a98171d21b60037ef3",
+  "question_id": "2023-11-069",
+  "targeted_source_reread_complete": true,
+  "decision": "keep_partial",
+  "amendment_count": 0,
+  "source_upgrade_count": 0,
+  "author": {
+    "schema_version": 1,
+    "baseline_commit": "74942cd7c9f8743d822545a98171d21b60037ef3",
+    "question_id": "2023-11-069",
+    "author": "/root",
+    "acquisition": {
+      "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=247467&efYd=20230701&type=XML",
+      "started_at_utc": "2026-10-26T05:45:04.886749+00:00",
+      "finished_at_utc": "2026-10-26T05:45:09.978753+00:00",
+      "status": 200,
+      "response_headers": {
+        "date": "Mon, 26 Oct 2026 05:45:07 GMT",
+        "server": "envoy",
+        "access-control-allow-methods": "POST, GET, OPTIONS, DELETE",
+        "access-control-max-age": "3600",
+        "access-control-allow-headers": "x-requested-with",
+        "access-control-allow-origin": "*",
+        "cache-control": "no-cache",
+        "pragma": "no-cache",
+        "content-language": "en-US",
+        "content-type": "text/xml;charset=UTF-8",
+        "x-envoy-upstream-service-time": "891",
+        "connection": "close",
+        "transfer-encoding": "chunked"
+      },
+      "response_sha256": "86261525d61b972ca844c14484e429cb4b66e9b8ea295b2d3c9d9bdfc95582ce",
+      "response_bytes": 1168703,
+      "response_local_path": "attempt-1.body",
+      "tls_verification": true,
+      "proxy_bypassed": false,
+      "received_at_kst": "2026-10-26T14:45:09.978753+09:00"
+    },
+    "expected_sha256": "86261525d61b972ca844c14484e429cb4b66e9b8ea295b2d3c9d9bdfc95582ce",
+    "acquisition_matches_existing_source": true,
+    "source_reads": [
+      {
+        "id": "R31_AUTHOR_LAW",
+        "local_path": "attempt-1.body",
+        "sha256": "86261525d61b972ca844c14484e429cb4b66e9b8ea295b2d3c9d9bdfc95582ce",
+        "bytes": 1168703,
+        "locator": "기본정보 공포19196/시행20230701; 조문키0088001/0089001/0094001; 부칙2022123119196 제1·2조",
+        "short_transcription": "현물출자 등을 통하여 유상으로 사실상 이전; 비과세 양도소득에는 과세하지 아니한다; 상장 대주주·비대주주 장외 양도; 부동산과 함께 양도하는 영업권",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_DECREE",
+        "local_path": "PIT_DECREE_20231001_EFLAW.xml",
+        "sha256": "31c309291a7ac16de9196fa129aaa2688cdaf885823b38b42531e4f7e16dd744",
+        "bytes": 2781170,
+        "locator": "기본정보 공포33736/시행20231001; 조문키0157001 제157조제4·5항; 부칙33207 제1·2조,33267 제1조제3호·제21조,33736 제1조",
+        "short_transcription": "주주1인1% 또는10억원, 최대주주그룹이면 기타주주합산; 코스닥2%·코넥스4%;33267 개정은2024년1월1일부터",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_QUESTION_PDF",
+        "local_path": "sources/2023-11-questions.pdf",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "bytes": 386329,
+        "locator": "PDF28쪽 인쇄28쪽 69번 clip[25,95.28575897216797,570,347.44573974609375]",
+        "short_transcription": "6항목, 주식보유0.5%·5억, 장외거래아님; 보기2·3·4·5개",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_QUESTION_IMAGE",
+        "local_path": "images/2023-11-069.webp",
+        "sha256": "9e898505f55b1955e71a590029feb4040dbbda229e622c0b04ffc5c38c38c33c",
+        "bytes": 26314,
+        "locator": "문항전체; PDF렌더원본과대조",
+        "short_transcription": "토지현물출자, 건물무상이전, 임대점포,1세대1주택,상장주식,영업권",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_KEY",
+        "local_path": "sources/2023-11-answers.pdf",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "bytes": 62224,
+        "locator": "PDF1쪽 세무회계표29번",
+        "short_transcription": "29번 공식 정답2",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_QUESTION_RENDER",
+        "local_path": "root-original-p28.png",
+        "sha256": "340c70df595f827131963cb25e505c803de21a41e7a4916a99bdcecae81f1296",
+        "bytes": 45484,
+        "locator": "PDF28쪽해당clip 렌더; 실제시각읽기",
+        "short_transcription": "①2개②3개③4개④5개",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_KEY_RENDER",
+        "local_path": "root-key-p1.png",
+        "sha256": "0a6ed1352be7e60a29a1a3d0f9519d6d5e9b36dbe410b2f3c517163141d9eacf",
+        "bytes": 91181,
+        "locator": "PDF1쪽160%렌더; 실제시각읽기",
+        "short_transcription": "세무회계29=2",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_LAW_EXCERPT",
+        "local_path": "law-selected.xml",
+        "sha256": "a86716631d07cc5616ed580bc0ecfc02beb2af2421d4a5e49d869395cc3959b3",
+        "bytes": 31130,
+        "locator": "전체XML에서기본정보·조문88/89/94·19196부칙추출 후 직접읽기",
+        "short_transcription": "원XML의위치및전사기록에결속",
+        "actually_read": true,
+        "reader": "/root"
+      },
+      {
+        "id": "R31_AUTHOR_DECREE_EXCERPT",
+        "local_path": "root-decree-selected.xml",
+        "sha256": "771d6b625fc0b6ec212e250e93befe252986257b9147846df188dca9e1ee6c65",
+        "bytes": 22066,
+        "locator": "157조본문과33207/33267/33736부칙추출 후 직접읽기",
+        "short_transcription": "157조의2등가지조문과구별",
+        "actually_read": true,
+        "reader": "/root"
+      }
+    ],
+    "before_hash": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "after_hash": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "official_answers": [
+      2
+    ],
+    "decision": "keep_partial",
+    "changed_fields": [],
+    "existing_unchecked_points": [
+      "지문의 주주가 배우자·4촌 이내 혈족 등 특수관계인과 합쳐 해당 법인의 최대주주 그룹에 속하는지는 나와 있지 않습니다. 시행령 제157조제4항 단서에 따라 최대주주 그룹이면 기타주주 보유분을 합산하므로 대주주가 될 수도 있습니다. 해설은 본문 원칙(주주 1인 보유분 기준)에 따라 판단했습니다.",
+      "'과세대상'에서 1세대 1주택 비과세분을 제외한 것은 제89조의 '과세하지 아니한다'를 근거로 한 출제 관행입니다. 양도소득의 범위(제94조) 자체에는 주택도 포함되므로 비과세분까지 과세대상으로 세면 4개가 됩니다."
+    ],
+    "reason": "30차에서 정확한 법률 원문을 재수신하지 못했던 제한은 해소했습니다. 그러나 원문에 없는 최대주주 그룹 사실과 과세대상·비과세 구별은 법률 재독만으로 추가 확정되지 않으므로, 기존 해설·partial 상태·두 경고를 보존합니다.",
+    "video_evidence": "해당 없음. XML과 원문·공식 답안 PDF만 읽었으며 영상을 인용하지 않습니다.",
+    "expert_reviewed": false
+  },
+  "independent_review": {
+    "schema_version": 1,
+    "question_id": "2023-11-069",
+    "baseline_commit": "74942cd",
+    "author": "/root",
+    "reviewer": "/root/round31_independent_review",
+    "reviewed_at_utc": "2026-10-26T05:47:28.169552+00:00",
+    "verdict": "pass_keep_partial",
+    "targeted_source_reread_complete": true,
+    "decision": "keep",
+    "amendment_count": 0,
+    "source_upgrade": false,
+    "before_hash": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "after_hash": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "official_answers": [
+      2
+    ],
+    "official_answers_unchanged": true,
+    "question_id_unchanged": true,
+    "checks_unchanged": true,
+    "arithmetic_check": {
+      "expr": "1+0+1+0+0+1",
+      "expected": 3,
+      "actual": 3
+    },
+    "review_status": "partial",
+    "four_option_findings": [
+      {
+        "number": 1,
+        "is_answer": false,
+        "status": "pass_with_retained_limits",
+        "finding": "①2개는 본문원칙에따른 과세3개(현물출자·점포·부동산동반영업권)중하나를빼는결과입니다. 현물출자유상양도근거는88조제1호입니다. 최대주주합산을배제하는사실을추가하지않습니다."
+      },
+      {
+        "number": 2,
+        "is_answer": true,
+        "status": "pass_with_retained_limits",
+        "finding": "②3개는 공식세무29번정답2와일치하고 1+0+1+0+0+1=3으로검산했습니다. 단 상장주식이합산대주주에해당하지않는범위의풀이이며 원문미제시사실을확정하지않습니다."
+      },
+      {
+        "number": 3,
+        "is_answer": false,
+        "status": "pass_with_retained_limits",
+        "finding": "③4개는 비과세주택까지범위로세거나 주식이합산대주주인경우에달라질수있습니다. 법89조비과세와94조소득범위를구분하는기존설명·경고가필요하며어떤경우에도불가능하다고단정하지않습니다."
+      },
+      {
+        "number": 4,
+        "is_answer": false,
+        "status": "pass_with_retained_limits",
+        "finding": "④5개는 본문원칙에서제외한세항목중둘을추가해야합니다. 건물무상이전은88조유상양도에해당하지않는다는현재설명이적절하고부담부증여등원문밖사실을추가하지않았습니다."
+      }
+    ],
+    "unchecked_point_findings": [
+      {
+        "before_text": "지문의 주주가 배우자·4촌 이내 혈족 등 특수관계인과 합쳐 해당 법인의 최대주주 그룹에 속하는지는 나와 있지 않습니다. 시행령 제157조제4항 단서에 따라 최대주주 그룹이면 기타주주 보유분을 합산하므로 대주주가 될 수도 있습니다. 해설은 본문 원칙(주주 1인 보유분 기준)에 따라 판단했습니다.",
+        "status": "unresolved_retained",
+        "finding": "XML 재확보는 원문에 없는 합산 대상자 보유·최대주주 그룹 여부를 보충하지 못하므로 경고를 삭제할 수 없습니다."
+      },
+      {
+        "before_text": "'과세대상'에서 1세대 1주택 비과세분을 제외한 것은 제89조의 '과세하지 아니한다'를 근거로 한 출제 관행입니다. 양도소득의 범위(제94조) 자체에는 주택도 포함되므로 비과세분까지 과세대상으로 세면 4개가 됩니다.",
+        "status": "unresolved_retained",
+        "finding": "법89조의비과세와94조의소득범위구분을실제확인했으나 이시험의과세대상용어가넓은자산범위를뜻하지않는다는추가출제설명은없어경고를유지합니다."
+      }
+    ],
+    "source_reads": [
+      {
+        "id": "R31_QA_ORIGINAL_IMAGE",
+        "kind": "original_question_image",
+        "local_path": "images/2023-11-069.webp",
+        "url": "images/2023-11-069.webp",
+        "version": "2023년11월 재경관리사 기출문제",
+        "locator": "총69번/세무회계29번, 원문 박스6항목·보기①2개②3개③4개④5개",
+        "actually_read": true,
+        "method": "view_image로 원본WEBP 시각 재독",
+        "transcription": "직전 사업연도말 현재 상장법인의 총발행주식의 0.5%(시가5억)를 보유한 주주가 보유주식을 전부 매각한 경우(장외거래분 아님). 최대주주그룹·특수관계인 합산 여부는 기재되어 있지 않습니다.",
+        "sha256": "9e898505f55b1955e71a590029feb4040dbbda229e622c0b04ffc5c38c38c33c",
+        "reviewer": "/root/round31_independent_review"
+      },
+      {
+        "id": "R31_QA_ORIGINAL_PDF",
+        "kind": "original_question_pdf",
+        "local_path": "sources/2023-11-questions.pdf",
+        "url": "sources/2023-11-questions.pdf",
+        "version": "2023년11월 재경관리사 기출문제",
+        "locator": "PDF28/48·인쇄28쪽·69번",
+        "actually_read": true,
+        "method": "PDF28쪽 신규 렌더PNG를 view_image로 시각 재독, 추출텍스트 보조",
+        "transcription": "단, 제시된 소득은 사업소득에 해당하지 않는다. 토지의 현물출자/건물의 무상이전/임대하던 점포/3년 거주1세대1주택(고가주택 아님)/0.5%·5억원 장내 주식양도/부동산과 함께 양도하는 영업권의6항목입니다.",
+        "rendered_path": "question-p28.png",
+        "rendered_sha256": "9716b9ae4c9c3421d98b078c3c58474216a99fd3364348644d104396a710b5c3",
+        "sha256": "72166ea378ba9d790509849a303c0c3a4f6d7c81be3af1be80343994b2b276a5",
+        "reviewer": "/root/round31_independent_review"
+      },
+      {
+        "id": "R31_QA_OFFICIAL_KEY",
+        "kind": "official_answer_pdf",
+        "local_path": "sources/2023-11-answers.pdf",
+        "url": "sources/2023-11-answers.pdf",
+        "version": "2023년11월 재경관리사 답안모음",
+        "locator": "PDF1/1, 가운데 세무회계표 번호29/정답2",
+        "actually_read": true,
+        "method": "PDF1쪽 신규 렌더PNG를 view_image로 직접 시각 재독",
+        "transcription": "가운데 세무회계표21~30열에서29행 정답2를 읽었습니다. 전체69번에 대응합니다.",
+        "rendered_path": "key-p1.png",
+        "rendered_sha256": "5fc6282d9b00fdc55f5b976ea50d070d5caf906cb07e3cc1eb46ce63b4a08dd6",
+        "sha256": "c00139b66aa9bae55bac566408398e008eff02edf64458e5c62ba992744c6585",
+        "reviewer": "/root/round31_independent_review"
+      },
+      {
+        "id": "R31_QA_PIT_LAW_20230701",
+        "kind": "official_effective_law_xml",
+        "local_path": "attempt-1.body",
+        "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=247467&efYd=20230701&type=XML",
+        "version": "법률제19196호(2022.12.31공포), 시행일기준2023.07.01; 기존출처SHA와일치",
+        "locator": "기본정보 공포19196·시행20230701; 조문키0088001 제88조제1호,0089001 제89조제1항제3호가목,0094001 제94조제1항제1호·제3호가목·제4호가목; 부칙키2022123119196 제1조(시행일)·제2조(일반적적용례)",
+        "actually_read": true,
+        "method": "root의2026-10-26T05:45:09.978753Z 정상TLS신규수신raw를 독립적으로SHA재계산 후ElementTree로해당조문·부칙추출해직접읽음. 검수자가별도HTTP재다운로드했다고주장하지않음",
+        "transcription": "제88조제1호는 법인에 대한 현물출자 등을 통하여 자산을 유상으로 사실상이전하는 것을 양도로정의합니다. 제89조제1항은 다음각호의소득에 양도소득세를 과세하지아니한다고하고3호가목은 요건충족1세대1주택을정합니다. 제94조제1항제1호는 토지·건물,3호가목은 상장대주주·비대주주장외양도,4호가목은 사업용부동산등과함께양도하는영업권입니다.19196부칙제1조본문2023.01.01,제4호특정규정2023.07.01,제2조각규정시행일이후소득적용을직접읽었습니다.",
+        "derived_excerpt_path": "law-read.txt",
+        "derived_excerpt_sha256": "11e3599d77cbf4959a4a1b5b75aebb7002c74ea7c570df6ccd39fbe17655e3a1",
+        "source_ref": "PIT_LAW_20230701_EFLAW",
+        "sha256": "86261525d61b972ca844c14484e429cb4b66e9b8ea295b2d3c9d9bdfc95582ce",
+        "reviewer": "/root/round31_independent_review"
+      },
+      {
+        "id": "R31_QA_PIT_DECREE_20231001",
+        "kind": "official_effective_decree_xml",
+        "local_path": "PIT_DECREE_20231001_EFLAW.xml",
+        "url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST=254955&efYd=20231001&type=XML",
+        "version": "대통령령제33736호(2023.09.26공포), 시행일기준2023.10.01;30차캐시독립재독",
+        "locator": "기본정보33736/20231001; 조문키0157001 제157조제4항제1·2호및제5·12항; 부칙33207제1·2조,33267제1조제3호·제21조,33736제1조",
+        "actually_read": true,
+        "method": "기존30차캐시raw SHA재계산·기존출처와일치,제157조키0157001을가지조문157의2/3과구별해직접읽고시행부칙재독",
+        "transcription": "주주1인1%이상 또는10억원이상이며 최대주주1인등이면 기타주주합산하는단서가있습니다. 코스닥2%·코넥스4%/10억원특례도읽었으며 지문0.5%·5억원은어느개인기준에도미달하지만합산여부는확정불가입니다.33207부칙2023.01.01시행/그이전양도종전규정,33267부칙157조개정2024.01.01시행/그전양도종전규정,33736부칙2023.10.01시행을읽었습니다.",
+        "derived_excerpt_path": "decree-read.txt",
+        "derived_excerpt_sha256": "cff6785215c74c7c32e975868bc52d97e3eeefa2d9c221ca48bda0c24b431a91",
+        "source_ref": "PIT_DECREE_20231001_EFLAW",
+        "sha256": "31c309291a7ac16de9196fa129aaa2688cdaf885823b38b42531e4f7e16dd744",
+        "reviewer": "/root/round31_independent_review"
+      }
+    ],
+    "limits": [
+      "법률·시행령 전체를통독하거나모든조문연혁을새로조사한검수가아닙니다. 특정88·89·94·157조와기재부칙및원문보기·공식키범위입니다.",
+      "검수자는별도HTTP재다운로드를하지않고금번정상TLS수신법률raw및기존30차시행령캐시를해시검증후직접독립재독했습니다.",
+      "신규교재·출제기관정정이나최대주주합산사실을확보하지않았으며공식정답의무조건유일성이나전문가검수를확정하지않습니다.",
+      "영상인용이없는법령문항이므로영상시각·프레임해시는해당없음입니다. 원본PDF위치·렌더PNG해시와XML판본·원시해시는위에기록합니다."
+    ]
+  },
+  "independent_review_original_file_sha256": "604e7b631b57a66ccc03777a6db28cfda6a2108f26059aeb38c14b4322dbf57f",
+  "evidence_receipts_verified": 18,
+  "unique_evidence_file_count": 13,
+  "preservation": {
+    "protected_file_count": 103,
+    "all_equal_to_baseline": true,
+    "question_row_sha256": "5031a8e818101bc21ab54f2c2168776be8c07daf61bef682aab46e58c050ef01",
+    "explanation_object_sha256": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "before_after_equal": true,
+    "counts": {
+      "explanations": 4281,
+      "source_checked": 4169,
+      "partial": 112,
+      "unregistered": 40
+    }
+  },
+  "limits": [
+    "정확한 법률 재독 차단의 해소와 두 내용상 의문의 해소는 다릅니다. 기존 unchecked_points를 유지합니다.",
+    "법률 전체 통독·새 교재 조사·전문가 검수를 수행하지 않았습니다.",
+    "법률은 이번 정상 TLS 신규 응답, 시행령은 30차의 인증된 기존 캐시 재독입니다.",
+    "저작권 원본·렌더 이미지는 커밋하지 않고 판본·위치·해시·짧은 전사만 보존합니다.",
+    "독립 검수자는 새로 받은 동일 법률 파일을 별도로 읽었습니다. 별도 HTTP 다운로드를 했다고 보고하지 않습니다."
+  ]
+}

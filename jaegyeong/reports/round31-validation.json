@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "task": 8,
+  "baseline_commit": "74942cd7c9f8743d822545a98171d21b60037ef3",
+  "checked_at_kst": "2026-10-26T14:53:17.981783+09:00",
+  "command": "APP_BASE_URL=http://127.0.0.1:8061/jaegyeong/ TEST_ARTIFACT_DIR=/tmp/chagok-20261026/round31/checks NO_PROXY=127.0.0.1,localhost no_proxy=127.0.0.1,localhost bash jaegyeong/scripts/run_checks.sh",
+  "command_returncode": 0,
+  "tests": [
+    {
+      "name": "test_bank",
+      "returncode": 0,
+      "output_summary": "OK"
+    },
+    {
+      "name": "test_parts",
+      "returncode": 0,
+      "output_summary": "OK"
+    },
+    {
+      "name": "test_concepts",
+      "returncode": 0,
+      "output_summary": "OK"
+    },
+    {
+      "name": "test_explanations",
+      "returncode": 0,
+      "output_summary": "OK"
+    },
+    {
+      "name": "test_app",
+      "returncode": 0,
+      "output_summary": "PASS: part/count/review filters, grading, reload/resume, incomplete finish, wrong replay, bookmarks,"
+    },
+    {
+      "name": "test_browser",
+      "returncode": 0,
+      "output_summary": "PASS: load, images, search, multiple-answer scoring, variants, quarantine, comparison, part filters,"
+    },
+    {
+      "name": "test_explanations_app",
+      "returncode": 0,
+      "output_summary": "PASS: all 4281 explanation bodies rendered; 225 grading flows (original 30 + new part/concept/calcul"
+    },
+    {
+      "name": "test_offline",
+      "returncode": 0,
+      "output_summary": "PASS: offline browser regressions complete."
+    }
+  ],
+  "log_sha256": "1a434a513602a07752b4a41803aa435e8a3be15340bfd6b9314dbab7d7223679",
+  "zip_tests": {
+    "run": false,
+    "reason": "문서·증거만 추가했으며 런타임·ZIP 구조·데이터는 불변입니다."
+  },
+  "before_fix_failure": {
+    "applicable": false,
+    "reason": "앱·해설·기존 검사 수정이나 새 회귀 검사를 추가하지 않았습니다. 30차 API 실패 원인은 변경하지 않았으며 같은 원문을 재요청해 이번에는 HTTP200을 수신했습니다."
+  },
+  "independent_review": {
+    "author": "/root",
+    "reviewer": "/root/round31_independent_review",
+    "verdict": "pass_keep_partial",
+    "separate_http_download_by_reviewer": false,
+    "expert_reviewed": false
+  },
+  "preservation": {
+    "protected_file_count": 103,
+    "all_equal_to_baseline": true,
+    "question_row_sha256": "5031a8e818101bc21ab54f2c2168776be8c07daf61bef682aab46e58c050ef01",
+    "explanation_object_sha256": "af13af227dc9bfde03a030c52f771b5f02bb6e393db551bcb64b880ded847677",
+    "before_after_equal": true,
+    "counts": {
+      "explanations": 4281,
+      "source_checked": 4169,
+      "partial": 112,
+      "unregistered": 40
+    }
+  },
+  "evidence_receipts_verified": 18,
+  "unique_evidence_file_count": 13,
+  "review_report_sha256": "bc8f17e821a5cbe09f190c77559e752ad19ac3c2dbc37aaf2535a4ca2a137dbf",
+  "deployment": {
+    "status": "pending_final_document_commit",
+    "runtime_files_changed": false,
+    "note": "작업9 문서 커밋 후 함께 푸시하고 해당 커밋의 자동 Pages·공개13개 파일 해시를 후속 기록합니다."
+  },
+  "limits": [
+    "전문가·Claude 총괄 검수는 실행하지 않았습니다.",
+    "법률88·89·94조와 관련 시행 부칙 및 시행령157조·기재 부칙, 원문·공식 답안만 읽었습니다.",
+    "법률 신규 다운로드와 캐시 시행령 재독을 구별합니다.",
+    "기존 실제 기기·음성 화면낭독기·file://·공개 실브라우저 제한은 유지합니다."
+  ]
+}
