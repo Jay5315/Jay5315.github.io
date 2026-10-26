@@ -16,6 +16,7 @@ from test_round27_independent_review import Round27IndependentReviewTests
 from test_work_order_reports import WorkOrderStep2Tests
 from test_round28_followups import Round28FollowupTests
 from test_round29_followups import Round29FollowupTests
+from test_round30_followups import Round30FollowupTests
 
 R = Path(__file__).resolve().parents[1]
 
@@ -541,6 +542,12 @@ class ExplanationTests(unittest.TestCase):
         cls.data = copy.deepcopy(cls.current_data)
         cls.stage_after = {}
         cls.audit_after = {}
+        # Round 30 must be verified/reversed before every older stage.
+        from apply_round30_followups import restore_round30
+        if (cls.audit or {}).get('round30_followups'):
+            cls.stage_after['round30_followups']=copy.deepcopy(cls.data)
+            cls.audit_after['round30_followups']=copy.deepcopy(cls.audit)
+            cls.data,cls.audit=restore_round30(cls.data,cls.audit)
         # Reverse the newest independently reviewed stage before older protections.
         from apply_round29_followups import restore_round29
         if (cls.audit or {}).get('round29_followups'):

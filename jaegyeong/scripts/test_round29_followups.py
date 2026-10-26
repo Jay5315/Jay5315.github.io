@@ -18,6 +18,8 @@ SELECTED_IDS='2e91292bd81f52ce946dd905c818801073cfb53504961f9f068c82902b64e0fe'
 def load():
     data=json.loads((R/'data/explanations.json').read_text())
     audit=json.loads((R/'reports/explanation-expansion.json').read_text())
+    from apply_round30_followups import restore_round30
+    data,audit=restore_round30(data,audit)
     proposal=json.loads((R/'reports/round29-proposals.json').read_text())
     review=json.loads((R/'reports/round29-independent-reviews.json').read_text())
     before,previous=restore_round29(data,audit)

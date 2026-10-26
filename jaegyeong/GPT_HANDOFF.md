@@ -19,13 +19,15 @@
 |---|---|
 | 서비스 | https://jay5315.github.io/jaegyeong/ (GitHub Pages, `main` 브랜치) |
 | 문항 | 원본 4,560 → 중복 정리 4,322 · 학습 가능 4,321 · 대표 4,144 |
-| 해설 | 4,281 (source_checked 4,168 · partial 113), **미등록 검토 40건** (`reports/explanation-expansion.json`의 `review`) |
+| 해설 | 4,281 (source_checked 4,169 · partial 112), **미등록 검토 40건** (`reports/explanation-expansion.json`의 `review`) |
 | 개념 노트 | 74 (source_checked 66 · partial 8) |
 | 기능 | 검색(회차·번호 정확 검색)·파트 필터·채점·오답·즐겨찾기·이어 풀기·결과/기록·백업/복원·개념 노트·간격 복습·오프라인·글자 크기·인쇄 |
 
 작업 지시서 1~3은 Claude가 승인했습니다(`GPT_WORK_ORDER.md` 5절). 27차 6개 독립 재확인, 미등록 40건 조사표, 115개 65쟁점 분류 및 8개 보강(2개 승격)입니다. [28차 실제 범위와 미해결](reports/round28-review.md)을 보세요. 부분 113개·미등록 40개는 남아 있으며 전체 115개를 신규 출처검수 완료라고 표시하지 않습니다.
 
-작업 5에서는 미리보기 DOM 정리를 기다리는 정확한 검사 조건을 보완하고 서버 재시작 후 전체 검사를 10회 연속 통과했습니다. 통제 실험에서는 검사 대상 중복을 재현했지만 **Claude의 과거 자연 실패와 같은 원인인지는 미확정**입니다. 다음 실패의 DOM·세션·포커스·콘솔·화면을 모으는 `scripts/diagnose_app_flake.py`와 [진단 기록](reports/work-order-step5-validation.json)을 보세요. 작업 6의 29차에서는 분류만 했던 29묶음·37문항을 실제 대조해 35개 유지·원가 2개 부분 보강·승격 0개로 처리했습니다. 다른 76개는 이번 새 읽기 범위 밖입니다. [실제 범위·남은 조건](reports/round29-review.md)과 [독립 검수](reports/round29-independent-reviews.json)를 보세요.
+작업 5에서는 미리보기 DOM 정리를 기다리는 정확한 검사 조건을 보완하고 서버 재시작 후 전체 검사를 10회 연속 통과했습니다. Claude가 실제 과거 오류의 `.question-text` 2개 strict mode 위반을 재확인해 **검사 준비 조건 누락으로 원인을 확정하고 승인했습니다**(`GPT_WORK_ORDER.md` 7절, `0bb924c`). DOM·세션·포커스·콘솔·화면 진단을 보존한 `scripts/diagnose_app_flake.py`와 [진단 기록](reports/work-order-step5-validation.json)을 보세요. 작업 6의 29차에서는 분류만 했던 29묶음·37문항을 실제 대조해 35개 유지·원가 2개 부분 보강·승격 0개로 처리했습니다. 다른 76개는 이번 새 읽기 범위 밖입니다. [실제 범위·남은 조건](reports/round29-review.md)과 [독립 검수](reports/round29-independent-reviews.json)를 보세요.
+
+작업 7의 30차는 남은 76개·35묶음 중 원문·공식 답안은 모두 재독했고, 집중 출처 대조·독립 검수 완료 75개와 일부 재독 후 차단 1개를 구별합니다. 8개 부분 보강·1개 출처 확인 전환으로 현재 출처 확인 4,169·부분 112입니다. `2023-11-069`의 정확한 2023년 법률 원문은 HTTP502/캐시 부재로 미독이며 수정하지 않았습니다. [30차 실제 범위](reports/round30-review.md)·[독립 검수](reports/round30-independent-reviews.json)·[검증](reports/round30-validation.json)을 보세요.
 
 다음 기능 후보: 사용자가 **실전 시험 모드는 하지 않기로** 했습니다. 간격 복습은 구현 완료(2026-10-19).
 
@@ -105,7 +107,7 @@ bash jaegyeong/scripts/run_checks.sh --zip    # ZIP 구조·런타임을 바꿨�
 ### 테스트 하네스 주의점
 
 - **Chromium `set_offline`은 오프라인 상태로 새로고침해 다시 시작된 서비스 워커에는 적용되지 않습니다.** 오프라인 검사는 `test_offline.py`의 `go_offline()`처럼 앱 출처 요청을 `route.abort`로 함께 막아야 실제로 오프라인입니다.
-- 브라우저 검사는 순차로 돌리세요. 과거 `test_app.py` 실패를 병렬 부하 때문이라고 단정한 판단은 철회됐습니다. 작업 5에서 정확한 미리보기 정리 조건을 보완했지만 이력상의 실패 원인은 아직 미확정입니다. 다시 나면 `diagnose_app_flake.py`로 실패 순간을 수집하고 대기 시간부터 늘리지 마세요.
+- 브라우저 검사는 순차로 돌리세요. 과거 `test_app.py` 실패를 병렬 부하 때문이라고 단정한 판단은 철회됐습니다. Claude가 실제 strict mode 오류를 재확인해 미리보기 정리 전 단언이라는 원인을 확정하고 작업 5 보완을 승인했습니다. 다시 나면 `diagnose_app_flake.py`로 실패 순간을 수집하고 대기 시간부터 늘리지 마세요.
 - 브라우저 검사는 `browser.new_context(service_workers='block')`로 격리하면 오프라인 캐시 영향을 받지 않습니다.
 - 수정 중인 `app.js`를 검사 도중 바꾸면 SRI 불일치로 결과가 무의미해집니다.
 

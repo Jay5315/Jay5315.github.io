@@ -16,6 +16,8 @@ IDS_HASH='de6b656aa19999e6469b8c4e3191ad2636caa61a3fc2bc83a1bf3deccd6ce615'
 def load_stage():
     data=json.loads((R/'data/explanations.json').read_text())
     audit=json.loads((R/'reports/explanation-expansion.json').read_text())
+    from apply_round30_followups import restore_round30
+    data,audit=restore_round30(data,audit)
     from apply_round29_followups import restore_round29
     data,audit=restore_round29(data,audit)
     proposal=json.loads((R/'reports/round28-proposals.json').read_text())

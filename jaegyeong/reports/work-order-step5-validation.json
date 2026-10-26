@@ -1191,5 +1191,14 @@
     ],
     "consecutive_passes": 10
   },
-  "task5_closed": false
+  "task5_closed": false,
+  "supervisor_resolution": {
+    "date": "2026-10-26",
+    "reviewer": "Claude",
+    "source_commit": "0bb924c",
+    "source_document": "GPT_WORK_ORDER.md section7",
+    "finding": "Claude가 실제 실패 기록의 오류가 .question-text 두 요소 strict mode 위반임을 재확인했습니다. 미리보기 DOM 정리 전 채점 단언이라는 통제 실험과 일치해 검사 준비 조건 누락으로 원인을 확정하고 승인했습니다.",
+    "task5_closed": true,
+    "note": "이전 본문은 제출 당시의 관찰 기록으로 보존합니다. 이 후속 판정은 Claude가 추가 확인한 실제 오류 기록에 근거합니다."
+  }
 }
